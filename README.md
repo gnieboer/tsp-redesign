@@ -10,7 +10,7 @@
 
 After cloning the repo, navigate to the correct folder and install Jekyll and any necessary dependencies using:
 ```
-cd tsp-uswds/sandbox
+cd tsp-redesign
 ```
 
 ```
@@ -21,7 +21,7 @@ npm install
 bundle install
 ```
 
-To run the site locally, from the `sandbox` folder, run:
+To run the site locally, run:
 
 ```
 bundle exec jekyll serve
