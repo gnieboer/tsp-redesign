@@ -21,3 +21,10 @@ sass:
     - _sass
     - node_modules
   style: compressed
+  
+exclude:
+  - circle.yml
+  - README.md
+  - package-lock.json
+  - package.json
+  
