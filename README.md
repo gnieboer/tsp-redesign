@@ -24,7 +24,7 @@ bundle install
 To run the site locally, run:
 
 ```
-bundle exec jekyll serve --baseurl ''
+bundle exec jekyll serve
 ```
 
 If all goes well, visit the site at `http://localhost:4000`.
