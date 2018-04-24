@@ -1,0 +1,118 @@
+/* CSS BUTTON BASE STYLES */
+
+a.cssBtn:link,
+a.cssBtn:visited,
+a.cssBtn:hover,
+.content a.cssBtn:link,
+.content a.cssBtn:visited,
+.content a.cssBtn:hover {
+    color: #FFFFFF;
+    font-family: 'PT Sans', Arial, sans-serif;
+    text-shadow: .05em .05em #666;
+    text-decoration: none;
+}
+
+a.cssBtn {
+    background: none;
+    border: none;
+    font-size: 12px;
+    line-height: 18px;
+    min-height: 18px;
+    margin: 2px 2px;
+    padding-top: 3px;
+    padding-right: 24px;
+    padding-bottom: 3px;
+    padding-left: 24px;
+}
+
+a.cssBtn,
+.buttonFrame {
+    -webkit-border-radius: 4;
+    -moz-border-radius: 4;
+    border: none;
+    border-radius: 4px;
+    box-sizing: border-box;
+    display: inline-block;
+    /*    text-align: center;*/
+}
+
+.buttonFrame {
+    /* BASE BROWN COLOR */
+    background: #ed9762;
+    background-image: -webkit-linear-gradient(top, #ed9762, #BA5B21);
+    background-image: -moz-linear-gradient(top, #ed9762, #BA5B21);
+    background-image: -ms-linear-gradient(top, #ed9762, #BA5B21);
+    background-image: -o-linear-gradient(top, #ed9762, #BA5B21);
+    background-image: linear-gradient(to bottom, #ed9762, #BA5B21);
+}
+
+
+/* DISABLED BUTTON COLOR */
+
+.disabled {
+    background: #bebebe;
+    background-image: -webkit-linear-gradient(top, #e0d9d9, #bebebe, #bebebe, #bebebe);
+    background-image: -moz-linear-gradient(top, #e0d9d9, #bebebe, #bebebe, #bebebe);
+    background-image: -ms-linear-gradient(top, #e0d9d9, #bebebe, #bebebe, #bebebe);
+    background-image: -o-linear-gradient(top, #e0d9d9, #bebebe, #bebebe, #bebebe);
+    background-image: linear-gradient(top, #e0d9d9, #bebebe, #bebebe, #bebebe);
+}
+
+
+/* CLOSE WINDOW BUTTON COLOR */
+
+.close {
+    background: #DFD8C5;
+    background-image: -webkit-linear-gradient(top, #F0EDE4, #DFD8C5);
+    background-image: -moz-linear-gradient(top, #F0EDE4, #DFD8C5);
+    background-image: -ms-linear-gradient(top, #F0EDE4, #DFD8C5);
+    background-image: -o-linear-gradient(top, #F0EDE4, #DFD8C5);
+    background-image: linear-gradient(top, #F0EDE4, #DFD8C5, #DFD8C5, #DFD8C5);
+    border: 1px solid #948F89;
+}
+
+
+/* CLOSE WINDOW BUTTON TEXT COLOR */
+
+a.closeBtn:link,
+a.closeBtn:visited,
+a.closeBtn:hover {
+    color: #333333;
+    text-shadow: none;
+}
+
+
+/* BUTTONS WITH FONT ICONS */
+
+a.cssBtn:before,
+a.cssBtn:after {
+    font-size: 9px;
+    font-family: 'FontAwesome';
+    font-style: normal;
+}
+
+a.cssBtn:before {
+    padding-right: 5px;
+}
+
+a.cssBtn:after {
+    padding-left: 5px;
+}
+
+a.cssBtn.back:before {
+    content: "\25c0";
+}
+
+a.cssBtn.forward:after {
+    content: "\25b6";
+}
+
+a.cssBtn.external:after {
+    content: "\f08e";
+    font-size: 11px;
+}
+
+a.primary {
+    border: 1px solid #fff;
+    padding-bottom: 2px;
+}

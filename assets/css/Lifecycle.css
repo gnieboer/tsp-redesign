@@ -1,0 +1,145 @@
+/*
+.ui-slider { position: relative; text-align: left; }
+.ui-slider .ui-slider-handle { position: absolute; z-index: 2; width: 34px; height: 40px; cursor: pointer;
+        background:url("../images/pointer2.png") repeat-x scroll 0 0 #FFFFFF; }
+.ui-slider .ui-slider-range { position: absolute; z-index: 1; font-size: .7em; display: block; border: 0;
+        background: url("../images/h30.png") repeat-x scroll 0 0 transparent; }
+
+.ui-slider-horizontal { height: 29px; border: 1px solid #999999; border-radius: 5px; box-shadow: 0 0 2px #999999 inset; margin: 22px 0px 24px 7px; width: 660px;}
+.ui-slider-horizontal .ui-slider-handle { margin: -0.8em -2em }
+.ui-slider-horizontal .ui-slider-range { top: 0; height: 100%; box-shadow: 0 0 2px #999999 inset;}
+.ui-slider-horizontal .ui-slider-range-min { left: 0; }
+.ui-slider-horizontal .ui-slider-range-max { right: 0; }
+
+.ui-slider-vertical { width: .8em; height: 100px; }
+.ui-slider-vertical .ui-slider-handle { left: -.3em; margin-left: 0; margin-bottom: -.6em; }
+.ui-slider-vertical .ui-slider-range { left: 0; width: 100%; }
+.ui-slider-vertical .ui-slider-range-min { bottom: 0; }
+.ui-slider-vertical .ui-slider-range-max { top: 0; }
+.range {}
+.centerText {text-align:center; margin: 12px -72px -1px 9px; padding:7px; width:648px; border: 1px solid #BBBBBB;}
+.largerType{font-size:1.2em !important}
+.secondText{margin-top:5px;}
+*/
+
+.ui-slider {
+        position: relative;
+        text-align: left;
+        background: #AAAAAA;
+}
+.ui-slider .ui-slider-handle {
+        position: absolute;
+        z-index: 2;
+        width: 1.2em;
+        height: 1.2em;
+        cursor: default;
+}
+.ui-slider .ui-slider-range {
+        position: absolute;
+        z-index: 1;
+        font-size: .7em;
+        display: block;
+        border: 0;
+        background-position: 0 0;
+        background-color: #4A8BF5; /* Played content color */
+}
+
+/* For IE8 - See #6727 */
+.ui-slider.ui-state-disabled .ui-slider-handle,
+.ui-slider.ui-state-disabled .ui-slider-range {
+        filter: inherit;
+}
+
+.ui-slider-horizontal {
+        height: 0.24em;
+        border: 0px solid #CCCCCC;
+        background-color: #CCCCCC;
+        border-radius: 0;
+        box-shadow: none;
+        margin: 22px 0px 24px 7px;
+}
+
+
+.ui-slider-horizontal .ui-slider-handle {
+	top: .20em;
+	border: 2px solid #fff;
+	margin-left: -.6em;
+	border-radius: 50%;
+	background: none;
+	background-color: #4A8BF5;
+	behavior: url("/resources/javascript/pie/PIE.htc"); /* CSS3 PIE http://css3pie.com/about/ */
+}
+.ui-slider-horizontal .ui-slider-range {
+        top: 0;
+        height: 100%;
+}
+.ui-slider-horizontal .ui-slider-range-min {
+        left: 0;
+}
+.ui-slider-horizontal .ui-slider-range-max {
+        right: 0;
+}
+
+.ui-slider-vertical {
+        width: .8em;
+        height: 100px;
+}
+.ui-slider-vertical .ui-slider-handle {
+        left: -.3em;
+        margin-left: 0;
+        margin-bottom: -.6em;
+}
+.ui-slider-vertical .ui-slider-range {
+        left: 0;
+        width: 100%;
+}
+.ui-slider-vertical .ui-slider-range-min {
+        bottom: 0;
+}
+.ui-slider-vertical .ui-slider-range-max {
+        top: 0;
+}
+
+/* DIV LAYOUT STYLES */
+
+#slider { width: 340px; }
+#bigcontainer { height: 310px; width: 368px; float: right; }
+#container { height: 239px; width: 366px; float: right; }
+
+/* PIE CHART PLAYER CONTROLS */
+#controls {
+	 text-align: center; 
+	 display:block;
+	 margin-top: 1em;
+}
+
+.running { 
+	border : solid 1px #4A8BF5;
+	color : #4A8BF5;
+    background-color: #FFFFFF;
+}
+	
+.stopped { 
+	border : solid 1px #7D7D7D;
+	color : #7D7D7D;
+	background-color: white;
+}
+
+.LifecycleControls {
+	min-width: 30px;
+	min-height: 26px;
+	max-height: 26px;
+	vertical-align: middle;
+}
+
+input.LifecycleControls {
+	font-size: 1.4em;
+	padding-top: 0;
+}
+
+select.LifecycleControls {
+	border : solid 1px #7D7D7D;
+	color : #666666;
+	line-height: 1.5em;
+	*zoom: 1.2; /* TO SET BOX HEIGHT IN IE 7 */
+}
