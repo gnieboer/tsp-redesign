@@ -56,8 +56,8 @@ t = {
         // the color names below are not HTML defined names, just a close name to identify what is on the screen
         // var colorLeft = '#9C1B9C';
         // var colorRight = '#F4B55B';
-        var colorLeft = 'cornflowerblue';
-        var colorRight = 'seagreen';
+        var colorLeft = '#00b5e2';
+        var colorRight = '#004986';
         var colorTrad = '#9C1B9C';
         var colorAgency = '#58A4C3';
         var colorRoth = '#EA6A17';
@@ -450,7 +450,8 @@ t = {
                         };
                     }
                     , useHTML: true
-                    , borderColor: '#aaaaaa', //              backgroundColor: 'white',
+                    , borderColor: '#aaaaaa', //
+                    backgroundColor: 'white',
                     formatter: function () {
                         if (this.series.index <= 0) {
                             return null;
@@ -652,11 +653,11 @@ t = {
                 }
                 , series: [{
                     name: leftPercent + '%'
-                    , color: 'blue', // data: [CurrencyFormatted(leftTotal,'no_cent')]
+                    , color: '#00b5e2', // data: [CurrencyFormatted(leftTotal,'no_cent')]
                     data: [leftTotal]
             }, {
                     name: rightPercent + '%'
-                    , color: 'green', // data: [CurrencyFormatted(rightTotal,'no_cent')]
+                    , color: '#004986', // data: [CurrencyFormatted(rightTotal,'no_cent')]
                     data: [rightTotal]
             }]
             });
