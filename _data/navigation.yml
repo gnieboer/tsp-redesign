@@ -10,13 +10,13 @@
 #   links: primary
 #
 primary:
-  - text: Get started with the TSP
+  - text: Get started
     href: /getStarted/
-  - text: Learn about your fund options
+  - text: Learn about fund options
     href: #
-  - text: Borrow from your retirement
+  - text: Use your retirement savings
     href: #
-  - text: Preparing for retirement
+  - text: Prepare for retirement
     href: #
 
 secondary:

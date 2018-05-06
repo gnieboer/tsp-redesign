@@ -13,7 +13,11 @@
     font-size: $h5-font-size;
   }
 }
-
+.usa-hero {
+  h2 {
+    font-size: 4rem;
+  }
+}
 .home-about {
   .usa-width-two-thirds {
     padding-right: $spacing-md-small;
