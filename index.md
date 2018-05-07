@@ -37,7 +37,7 @@ hero:
   <div class="usa-grid flex items-stretch">
     <div class="usa-width-two-thirds border-right">
       <h2>Who we are</h2>
-      <p>We’re the retirement savings and investment plan for federal workers, including uniformed services members. We’re unlike any other retirement plan in the world! Our commitment to serving you and helping you make smart choices for a confident life in retirement is not only business, it’s personal. Aer all, we’re participants too.</p>
+      <p>We’re the retirement savings and investment plan for federal workers, including uniformed services members. We’re unlike any other retirement plan in the world! Our commitment to serving you and helping you make smart choices for a confident life in retirement is not only business, it’s personal. After all, we’re participants too.</p>
     </div>
     <div class="usa-width-one-third">
 
