@@ -15,30 +15,30 @@ scripts:
 
 permalink: /getStarted/
 ---
-
+<aside class="usa-width-one-fourth usa-layout-docs-sidenav">
+  <ul class="usa-sidenav-list">
+    <li>
+      <a href="javascript:void(0);">Overview</a>
+    </li>
+    <li>
+      <a href="javascript:void(0);">Account basics</a>
+    </li>
+    <li>
+      <a class="usa-current" href="javascript:void(0);">Starting contributions</a>
+    </li>
+    <li>
+      <a href="javascript:void(0);">Revisiting your TSP</a>
+    </li>
+    <li>
+      <a href="javascript:void(0);">Beneficiary basics</a>
+    </li>
+    <li>
+      <a href="javascript:void(0);">Account troubleshooting</a>
+    </li>
+  </ul>
+</aside>
 <main class="usa-grid usa-section usa-content usa-layout-docs" id="main-content">
-    <aside class="usa-width-one-fourth usa-layout-docs-sidenav">
-      <ul class="usa-sidenav-list">
-        <li>
-          <a href="javascript:void(0);">Overview</a>
-        </li>
-        <li>
-          <a href="javascript:void(0);">Account basics</a>
-        </li>
-        <li>
-          <a class="usa-current" href="javascript:void(0);">Starting contributions</a>
-        </li>
-        <li>
-          <a href="javascript:void(0);">Revisiting your TSP</a>
-        </li>
-        <li>
-          <a href="javascript:void(0);">Beneficiary basics</a>
-        </li>
-        <li>
-          <a href="javascript:void(0);">Account troubleshooting</a>
-        </li>
-      </ul>
-    </aside>
+
 
     <div class="usa-width-three-fourths usa-layout-docs-main_content">
       <h2>How much should I contribute?</h2>
@@ -89,7 +89,7 @@ permalink: /getStarted/
       <hr>
       <BR>
       <BR>
-  
+
       <div id="message" name="message">
           <h2>$100,000* earned with as little as $10 per paycheck.</h2> Don't leave $20,000 on the table. </div>
       <br>
