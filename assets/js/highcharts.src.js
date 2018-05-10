@@ -1345,7 +1345,7 @@ defaultLabelOptions = {
 	},*/
 	style: {
 		color: '#666',
-		fontSize: '11px',
+		fontSize: '14px',
 		lineHeight: '14px'
 	}
 };

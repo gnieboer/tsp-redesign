@@ -580,88 +580,126 @@ t = {
         }
 
         function make2Bar(side, leftTotal, rightTotal, leftPercent, rightPercent) {
-            var borderColor = colorLeft;
-            return new Highcharts.Chart({
-                credits: {
-                    enabled: false
+
+
+
+  var borderColor = colorLeft;
+
+  return  new Highcharts.Chart({
+
+        chart: {
+
+            renderTo: side,
+
+            defaultSeriesType: 'column'
+
+        },
+
+        title: { text: '', x: -20 },
+
+        credits: { enabled: false },
+
+        plotOptions: {
+
+            column: {
+
+                    dataLabels: {
+
+                        verticalAlign: 'top', y: -20,
+
+                        color: (Highcharts.theme && Highcharts.theme.dataLabelsColor) || 'black',
+
+                        formatter: function() {
+
+                            if (this.y == null) return '';
+
+                            return '<strong>' + CurrencyFormatted(this.y, 'no_cent') + '</strong>'; },
+
+                        enabled: true,
+
+                        crop: false,
+
+                        overflow: false,
+
+                        style: {"fontWeight":"bold"}
+
+                    },
+
+                    inside: false,
+
+                    shadow: false,
+
+                    point:{"events":{}},
+
+                    pointWidth: 120,
+
+                    pointPadding: 0.4,
+
+                    groupPadding: 0.0,
+
+                    borderWidth: 1,
+
+                    borderColor: 'black',
+
+                    stacking: 'normal'
+
                 }
-                , chart: {
-                    height: 370
-                    , spacingBottom: 20, //              marginTop: 100,
-                    //                zoomType: 'y',
-                    //              redraw: function() { check_labels(); },
-                    type: 'column'
-                    , renderTo: side
-                }
-                , title: {
-                    text: null
-                }
-                , xAxis: {
-                    categories: [' '], //                categories: ['Default countribution ('+leftPercent+')', 'Matching Funds ('+rightPercent+')'],
-                    labels: {
-                        y: 25
-                        , style: {
-                            font: '14px Helvetica'
-                            , fontWeight: 'bold'
-                        }
-                    }
-                    //              useHTML : true
-                }
-                , yAxis: {
-                    //                min: 0, max: chartMax,
-                    title: {
-                        text: ''
-                    }
-                    , startOnTick: false
-                    , endOnTick: false
-                    , alignTicks: false
-                    , gridLineWidth: 0
-                    , labels: {
-                        enabled: false
-                    }
-                }
-                , tooltip: {
-                    enabled: false
-                , }
-                , legend: {
-                    enabled: false
-                , }
-                , plotOptions: {
-                    cursor: "pointer"
-                    , series: {
-                        pointWidth: 120
-                        , pointPadding: 0.4
-                        , groupPadding: 0.0
-                    }
-                    , column: {
-                        dataLabels: {
-                            color: (Highcharts.theme && Highcharts.theme.dataLabelsColor) || 'black'
-                            , formatter: function () {
-                                return '<strong>' + CurrencyFormatted(this.y, 'no_cent') + '</strong>';
-                            }
-                            , enabled: true
-                            , style: {
-                                "fontWeight": "bold"
-                            }
-                        }
-                        , inside: false
-                        , point: {
-                            "events": {}
-                        }
-                        , verticalAlign: 'top'
-                    }
-                }
-                , series: [{
-                    name: leftPercent + '%'
-                    , color: '#00b5e2', // data: [CurrencyFormatted(leftTotal,'no_cent')]
-                    data: [leftTotal]
-            }, {
-                    name: rightPercent + '%'
-                    , color: '#004986', // data: [CurrencyFormatted(rightTotal,'no_cent')]
-                    data: [rightTotal]
-            }]
-            });
-        }
+
+        },
+
+        tooltip: { enabled: false, },
+
+        legend: { enabled: false, },
+
+        xAxis: {
+
+            title: { text: null },
+
+            labels: { y: 25, style: { color: 'black' } },
+
+            categories: ['Default contribution (3%)', 'MatchingFunds (5%)'],
+
+            minPadding: 0,
+
+            maxPadding: 0
+
+        },
+
+        yAxis: {
+
+            title: {
+
+                text: '', align: 'high'
+
+            },
+
+                startOnTick: false, endOnTick: false, alignTicks: false,
+
+                gridLineWidth: 0, labels: { enabled: false }
+
+        },
+
+        series: [{
+
+            name: 'left',
+
+            color: '#00B5E2',
+
+            data: [leftTotal, null]
+
+        }, {
+
+            name: 'right',
+
+            color: '#004986',
+
+            data: [null, rightTotal]
+
+        }]
+
+        });
+
+}
 
         function reDraw() {
             var maxYears = parseInt($('#retire').val() - $('#age').val()); // parseInt($('#yearsToContribute').val()) + parseInt($('#yearsToGo').val());

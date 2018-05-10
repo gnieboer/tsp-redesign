@@ -11,7 +11,7 @@
 // Removing the !default from $em-base so we are not inheriting that
 // value from Bourbon.
 $em-base:             10px;
-$base-font-size:      1.7rem !default;
+$base-font-size:      2.0rem !default;
 $small-font-size:     1.4rem !default;
 $lead-font-size:      2rem !default;
 $title-font-size:     5.2rem !default;
@@ -85,6 +85,7 @@ $color-purple:               #4c2c92 !default;
 $color-primary:              $color-blue !default;
 $color-primary-darker:       $color-blue-darker !default;
 $color-primary-darkest:      $color-blue-darkest !default;
+$color-primary-light:        $color-blue-light !default;
 
 $color-primary-alt:          $color-aqua !default;
 $color-primary-alt-dark:     $color-aqua-dark !default;

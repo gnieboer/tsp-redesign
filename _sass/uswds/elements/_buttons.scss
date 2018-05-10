@@ -35,7 +35,7 @@ button,
   @include font-smoothing;
   @include margin(0.5em 0.5em 0.5em null);
   appearance: none;
-  background-color: $color-primary;
+  background-color: $color-primary-light;
   border: 0;
   border-radius: $button-border-radius;
   color: $color-white;
