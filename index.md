@@ -58,7 +58,7 @@ hero:
   <div class="usa-grid">
     <h2 class="center"><img src="{{ site.baseurl }}/assets/img/icons/cog.svg" width="60px" style="padding-bottom: .75em;" alt="" class=""><br />Want to change your TSP contribution amount?</h2>
     <div class="usa-grid">
-    <p class="center" style="font-weight: 400; line-height: 1.75em">You must use your electronic payroll system (e.g. myPay, EBIS, NFC EPP, LiteBlue and Employee Express) or complete <a href="#">Form TSP-1</a> or <a href="#">Form TSP-U-1</a>.</p>
+    <p class="center" style="font-weight: 400; line-height: 1.75em">You must use your electronic payroll system (e.g. <a href="https://mypay.dfas.mil/mypay.aspx" target="\_blank">myPay</a>, <a href="https://www.ebis.hr.dla.mil/ebisii/login.aspx" target="\_blank">EBIS</a>, <a href="https://www.nfc.usda.gov/EPPS/eplogin.aspx" target="\_blank">NFC EPP</a>, <a href="https://liteblue.usps.gov/wps/portal/!ut/p/z1/jY9NC4JAEIZ_SweP60zaF92kQxF9EGLaXEJhWxfWXdHV6N8ndSiir7m9M8888AJBAqTTVorUSqNT1eUDjY6zebAYjFeIW2-P6G2G4Q6j0Md1H-IbgB8mQKB__r8A9F0fA_1ClkBCmezeJtCZPxFAFT_xilduU3Xr3NqynjrooJKWZ6rhbsEfgSkjpGZGK6k5a-qyZi8nYVoH3-lzU1tInqxQFlGCjLLLOehdAUrfAgc!/dz/d5/L2dBISEvZ0FBIS9nQSEh/" target="\_blank">LiteBlue</a> and <a href="https://www.employeeexpress.gov/Default.aspx" target="\_blank">Employee Express</a>) or complete <a href="#">Form TSP-1</a> or <a href="#">Form TSP-U-1</a>.</p>
     </div>
   </div>
 </div>

@@ -1,6 +1,6 @@
 ---
 layout: page
-title: What contributions do I start with?
+title: Maximize your savings
 
 
 
@@ -18,19 +18,16 @@ permalink: /getStarted/
 <aside class="usa-width-one-fourth usa-layout-docs-sidenav">
   <ul class="usa-sidenav-list">
     <li>
-      <a href="javascript:void(0);">Overview</a>
-    </li>
-    <li>
       <a href="javascript:void(0);">Account basics</a>
     </li>
     <li>
-      <a class="usa-current" href="javascript:void(0);">Starting contributions</a>
+      <a class="usa-current" href="javascript:void(0);">Maximize your savings</a>
     </li>
     <li>
-      <a href="javascript:void(0);">Revisiting your TSP</a>
+      <a href="javascript:void(0);">Manage life changes</a>
     </li>
     <li>
-      <a href="javascript:void(0);">Beneficiary basics</a>
+      <a href="beneficiary-basics.html">Beneficiary basics</a>
     </li>
     <li>
       <a href="javascript:void(0);">Account troubleshooting</a>
@@ -55,6 +52,21 @@ permalink: /getStarted/
 <section id="widget">
 
       <div class="usa-width-one-half">
+      <div>
+
+        <input type="radio" name="rs" id="civilian" value="civilian" onChange="reDraw();" checked>
+
+        <label for="civilian">Civilian</label>
+
+        <input type="radio" name="rs" id="usbrs" value="usbrs" onChange="reDraw();">
+
+        <label for="usbrs">US BRS</label>
+
+        <input type="radio" name="rs" id="nonbrs" value="nonbrs" onChange="reDraw();">
+
+        <label for="nonbrs">US Non-BRS</label>
+
+      </div>
       <table cellspacing="0" cellpadding="0" box-sizing="border-box;">
               <tr><td colspan="2" style="padding-top: 1em;">What is your age?</td></tr>
               <tr>

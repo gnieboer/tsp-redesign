@@ -1,0 +1,54 @@
+/* CONTACT PAGE CSS */
+
+
+.inline-block {
+  display: inline-block;
+}
+
+.mt10 {
+  margin-top: 10rem;
+}
+
+/* END CONTACT PAGE CSS */
+
+.flex-list {
+    display: flex;
+    list-style-type: none;
+    width: 100%;
+    margin: 0;
+  }
+
+
+.flexRow {
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    /* flex items along the cross axis */
+    padding: 15px 0;
+}
+
+.flexAlignCenter {
+    /* flex items are centered in the cross-axis */
+    align-items: center;
+}
+
+.flexEnd {
+    justify-content: flex-end;
+}
+
+.flexCenter {
+    justify-content: center;
+}
+
+.flexColumn {
+    flex-flow: column wrap;
+    padding: 0;
+}
+
+.flexRow li {
+    padding: 0 10px;
+    float: right;
+}
+
+.flexColumn li {
+    padding: 10px 0;
+}
