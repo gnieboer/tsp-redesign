@@ -35,20 +35,22 @@ hero:
 
 <section class="who-we-are">
 <div class="usa-section home-about bg-gray-light">
-  <div class="usa-grid flex items-stretch">
-    <div class="usa-width-two-thirds border-right">
+  <div class="usa-grid">
+    <div class="usa-width-one-whole">
       <h2>Who we are</h2>
-      <p>We’re the retirement savings and investment plan for federal workers, including uniformed services members. We’re unlike any other retirement plan in the world! Our commitment to serving you and helping you make smart choices for a confident life in retirement is not only business, it’s personal. After all, we’re participants too.</p>
+      <p>We’re the retirement savings and investment plan for federal workers, including uniformed services members. We’re unlike any other retirement plan in the world! Our commitment to serving you and helping you make smart choices for a confident life in retirement is not only business, it’s personal.</p>
+      <p>After all, we’re participants too.</p>
     </div>
-    <div class="usa-width-one-third">
-      <h2><img src="{{ site.baseurl }}/assets/img/icons/alarm-bell.svg" width="24" alt="" class="mr1"><br />Stay informed</h2>
+    <!-- <div class="usa-width-one-third">
+      <h2><img src="{{ site.baseurl }}/assets/img/icons/alarm-bell.svg" width="24" alt="" class="mr1"><br />
+      Stay informed</h2>
       <p>Sign up to receive updates, announcements, and the <a href="#">latest news</a> from us.</p>
       <form>
-  <label for="input-type-text">Your email address</label>
-  <input id="input-type-text" name="input-type-text" type="text">
-  </form>
+        <label for="input-type-text">Your email address</label>
+        <input id="input-type-text" name="input-type-text" type="text">
+      </form>
       <a href="#" class="usa-button">Sign up</a>
-    </div>
+    </div> -->
   </div>
 </div>
 </section>
