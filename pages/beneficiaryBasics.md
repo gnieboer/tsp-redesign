@@ -11,7 +11,7 @@ permalink: /getStarted/beneficiary-basics
 <aside class="usa-width-one-fourth usa-layout-docs-sidenav">
   <ul class="usa-sidenav-list">
     <li>
-      <a href="javascript:void(0);">Account basics</a>
+      <a href="account-basics.html">Account basics</a>
     </li>
     <li>
       <a href="index.html">Maximize your savings</a>

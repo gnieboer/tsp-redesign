@@ -18,7 +18,7 @@ permalink: /getStarted/
 <aside class="usa-width-one-fourth usa-layout-docs-sidenav">
   <ul class="usa-sidenav-list">
     <li>
-      <a href="javascript:void(0);">Account basics</a>
+      <a href="account-basics.html">Account basics</a>
     </li>
     <li>
       <a class="usa-current" href="javascript:void(0);">Maximize your savings</a>
