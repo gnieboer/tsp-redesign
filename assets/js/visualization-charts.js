@@ -21,17 +21,6 @@ function CurrencyFormatted(num, no_cent) {
   }
 }
 
-var leftGrowth = new Array();
-var rightGrowth = new Array();
-
-function get_pay_freq(paySchedule) {
-  if (paySchedule == 'Biweekly')      return 26.0;
-  if (paySchedule == 'Weekly')        return 52.0;
-  if (paySchedule == 'Semimonthly')  return 24.0;
-  if (paySchedule == 'Monthly')       return 12.0;
-  return 1.0;
-}
-
 // Calculate how much FERS will match users contrib
 function FERSmatch(matchPercent) {
   if (matchPercent <= 0.00) { return 0.01; }
@@ -74,7 +63,7 @@ function setData(xObj, verbose) {
     // These variables hold values used in the calculations
     var agency = 'agency';
     var isMatching = false;
-    // var rs = 'FERS';
+    // var rs = 'none';
     var contributionsText = 'Contributions';
     if ((rs == 'FERS') || (rs == 'USBRS')) {
       contributionsText = 'Contributions*';
@@ -95,21 +84,14 @@ console.log(age, retire, yearsToContribute, yearsToGo, rs);
     var DIEMSdate = '';
     var matchDelay = 0;
     // if (Date.parse(DIEMSdate) < Date.parse('01/01/2018')) { matchDelay = 2; }
-    var paySchedule = 'Monthly';
     var annualPayPercent = xObj['Percent'];
     var annualPayIncreasePercent = 0.0; // parseFloat($('#annualPayIncreasePercent').val());
     var yearsServed = parseInt(0);
     var catchupAmount = parseInt(0);
     var rateOfReturn = 6.0; // parseFloat($('#rateOfReturn').val());
 
-    var growthSelector = 'bothGrowth';
-    if (rs == 'BP') { growthSelector = 'balanceOnly'; }
-    // if (growthSelector == 'futureOnly') { amountToUse = 0; }
-    // if (growthSelector == 'balanceOnly') { yearsToContribute = 0; }
-    // alert(growthSelector);
-
     // loop control
-    var periodLength = get_pay_freq(paySchedule);
+    var periodLength = xObj['periodLength'];
     if (rs == 'US') { periodLength = 12.0; }
     if (rs == 'USBRS') { periodLength = 12.0; }
     if (rs == 'BP') { periodLength = 1.0; }
@@ -125,6 +107,7 @@ console.log(age, retire, yearsToContribute, yearsToGo, rs);
     // hack here to ignore rs and break contribution into participant and agency parts
     var origAnnualPayRate = annualPayRate;
     var newAnnualPayRate = FERSmatch(annualPayRate) - origAnnualPayRate;
+    if (xObj['isMatching'] != 1) { newAnnualPayRate = 0.0; }
     if (rs == 'FERS') { annualPayRate = FERSmatch(annualPayRate); }
     // if (rs == 'BP') { yearsToContribute = 0; }
     // annualPayRate = annualPayRate / periodLength;
@@ -208,6 +191,9 @@ var color5m = 'skyblue';
 
 function make2Bar(side, leftObj, rightObj) {
 
+  var showMatching =  true;
+  if (leftObj['isMatching'] != 1) { showMatching = false; }
+
   return  new Highcharts.Chart({
             credits: { enabled: false },
             chart: {
@@ -215,7 +201,8 @@ function make2Bar(side, leftObj, rightObj) {
                 type: 'column'
             },
             title: { text: '' },
-            xAxis: { categories: ['Default contribution (3%)', 'Matching Funds (5%)'],
+            xAxis: { categories: ['Default contribution (3%)<br/>' + CurrencyFormatted(leftObj['perPay']) + ' per paycheck',
+                                'Matching Funds (5%)<br/>' + CurrencyFormatted(rightObj['perPay']) + ' per paycheck'],
             },
             yAxis: {
                 min: 0,
@@ -238,8 +225,11 @@ function make2Bar(side, leftObj, rightObj) {
             },
             legend: {
                 itemStyle: { fontSize: "10px" },
-                // width: 380,
-                itemWidth: 150,
+                // width: 300,
+                // x: 10,
+                // margin: 12,
+                // padding: 40,
+                itemWidth: 170,
                 enabled: true
             },
             tooltip: { enabled: false },
@@ -247,7 +237,7 @@ function make2Bar(side, leftObj, rightObj) {
                 column: {
                     stacking: 'normal',
                     dataLabels: {
-                        enabled: true,
+                        enabled: showMatching,
                         formatter: function() {
                             if (this.y == null) return '';
                             // return ''; // uncomment this to hide the value in each box
@@ -270,24 +260,28 @@ function make2Bar(side, leftObj, rightObj) {
             },
             series: [{
                 name: '3% contributions',
+                showInLegend: true,
                 color: color3c,
                 legendIndex: 3,
                 data: [{y: leftObj['matching']+leftObj['matchingGrowth'], color: color3m},
                     {y: rightObj['matching']+rightObj['matchingGrowth'], color: color5m}]
             }, {
-                name: '3% matching',
+                name: 'Matching',
+                showInLegend: showMatching,
                 color: color3m,
                 legendIndex: 1,
                 data: [{y: null},
                     {y: null}]
             }, {
                 name: '5% contributions',
+                showInLegend: true,
                 color: color5c,
                 legendIndex: 4,
                 data: [{y: leftObj['contributions']+leftObj['contributionGrowth'], color: color3c},
                     {y: rightObj['contributions']+rightObj['contributionGrowth'], color: color5c}]
             }, {
-                name: '5% matching',
+                name: 'Matching',
+                showInLegend: showMatching,
                 color: color5m,
                 legendIndex: 2,
                 data: [{y: null},
@@ -296,11 +290,41 @@ function make2Bar(side, leftObj, rightObj) {
    });
 }
 
+// set paySchedule and matching based on selected RS
+function checkRS(xObj) {
+  if ($('#nonBRS').is(':checked')) { xObj['nonBRS'] = 1; } else { xObj['nonBRS'] = 0; }
+  var rs = $('input[name=rs]:checked').val();
+  xObj['rs'] = rs;
+  if (rs == 'usbrs') {
+    xObj['paySchedule'] = 'monthly';
+    xObj['periodLength'] = 12;
+    xObj['isMatching'] = 1;
+    return;
+  }
+  if (rs == 'nonbrs') {
+    xObj['paySchedule'] = 'monthly';
+    xObj['periodLength'] = 12;
+    xObj['isMatching'] = 0;
+    return;
+  }
+  // assume its civilian
+  xObj['paySchedule'] = 'bi-weekly';
+  xObj['periodLength'] = 26;
+  xObj['isMatching'] = 1;
+  return;
+}
+
 function reDraw() {
   var leftObj = {};
   var rightObj = {};
+  var salary = parseInt($('#salary').val());
+  checkRS(leftObj); checkRS(rightObj);
   leftObj['Percent'] = 3; // parseInt($('#leftPercent').val());
   rightObj['Percent'] = 5; // parseInt($('#rightPercent').val());
+  var paycheck = salary / leftObj['periodLength'];
+  leftObj['perPay'] = paycheck * leftObj['Percent']/100.0;
+  rightObj['perPay'] = paycheck * rightObj['Percent']/100.0;
+  var perpay = rightObj['perPay'] - leftObj['perPay'];
   if ((leftObj['Percent'] < 5) || (rightObj['Percent'] < 5)) { $('#bonusWarning').show(); } else { $('#bonusWarning').hide(); }
   setData(leftObj, 1);
   setData(rightObj, 1);
@@ -308,13 +332,12 @@ console.log(leftObj['Total'], rightObj['Total']);
   make2Bar('bar', leftObj, rightObj);
 
   // now lets set the text
-  var salary = parseInt($('#salary').val());
-  var perpay = (salary/12.0) * 0.02;
   // var newText = "<h2>" + CurrencyFormatted(rightObj['Total'], 'no_cent') + "* earned with as little as "
   //   + CurrencyFormatted(perpay) + " per paycheck.</h2>"
   //   + "Don't leave " + CurrencyFormatted(rightObj['Total']-leftObj['Total'], 'no_cent') + " on the table.";
-  var newText = "An extra 2% reduces your paycheck by only " + CurrencyFormatted(perpay) + "."
-  + "<br/>But that increases your balance at retirement by " + CurrencyFormatted(rightObj['Total'], 'no_cent') + "*."
-  + "<br/><br/>Don't leave " + CurrencyFormatted(rightObj['Total']-leftObj['Total'], 'no_cent') + " on the table.";
+  var newText = "<h3 class='mt0'>An extra 2% reduces your " + leftObj['paySchedule'] + " paycheck by only</h3> <h2 class='mt3'>" + CurrencyFormatted(perpay) + "</h2>"
+  + "<h3 class='mt0'>But that increases your balance at retirement by </h3>" + "<h2 class='mt3'>" + CurrencyFormatted(rightObj['Total'], 'no_cent') + "*</h2>"
+  + "<h4 class='mt0'>Don't leave " + "<span style='font-size: 2rem;'>" + CurrencyFormatted(rightObj['Total']-leftObj['Total'], 'no_cent') + "</span> on the table.</h4>";
   $('#message').html("<small>"+newText+"</small>");
+console.log('rs = ' + leftObj['rs']);
 }

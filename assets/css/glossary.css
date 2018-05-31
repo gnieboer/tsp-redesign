@@ -1,0 +1,218 @@
+* {
+  box-sizing: border-box;
+}
+
+.glossary {
+  font-family: serif;
+  background-color: #212121;
+  color: #fff;
+  border-left: 1px solid #205493;
+  max-width: 30rem;
+  width: 75%;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  padding: .5rem;
+  transition: right .2s;
+  overflow-y: scroll;
+  padding: 4rem 3rem;
+  z-index: 9001;
+}
+
+.glossary[aria-hidden=true] {
+  right: -30rem;
+}
+
+.glossary div[aria-hidden=true] {
+  display: none !important;
+}
+
+/* .glossary button {
+    -webkit-transition: background-color,.1s,color,.1s,border-color,.1s;
+    -moz-transition: background-color,.1s,color,.1s,border-color,.1s;
+    transition: background-color,.1s,color,.1s,border-color,.1s;
+    border: 2px solid;
+    border-radius: 2px;
+    color: #112e51;
+    display: inline-block;
+    font-family: karla,sans-serif;
+    font-size: 1.4rem;
+    line-height: 1;
+    padding: 8px 2rem;
+    text-align: center;
+    vertical-align: middle;
+} */
+
+.glossary .button--close--inverse {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.button--close--inverse {
+    background-image: url("/assets/img/symbol_close.svg");
+    color: #fff;
+    background-color: #212121;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 50%;
+    height: 4rem;
+    width: 4rem;
+    border: none;
+}
+
+.label {
+    color: inherit;
+    display: block;
+    font-family: karla,sans-serif;
+    font-size: 1.4rem;
+    font-weight: 700;
+    margin-bottom: .5rem;
+    padding: 0;
+    text-transform: uppercase;
+}
+.u-visually-hidden {
+    position: absolute!important;
+    top: auto;
+    left: -9999px!important;
+}
+.glossary__definition {
+    font-family: $font-serif;
+    letter-spacing: -.3px;
+}
+
+.accordion__content {
+    border-bottom: 1px solid #212121;
+    padding: 2rem;
+    font-family: karla,sans-serif;
+}
+ul {
+  padding: 0;
+}
+
+li {
+  list-style-type: none;
+}
+
+button {
+  /* background: 0 0; */
+    border: none;
+    border-radius: 0;
+    cursor: pointer;
+    display: inline-block;
+    font-family: karla,sans-serif;
+    line-height: 1;
+    text-decoration: none;
+    user-select: none;
+}
+
+.js-accordion button {
+  width: 100%;
+}
+
+.accordion-trigger--expanded {
+  background-color: #112e51;
+}
+
+/* Added by TSP */
+
+.term:focus, .term-end:focus, .term:hover, .term-end:hover {
+  border-bottom: 1px solid #323c42;
+  text-decoration: none;
+}
+
+.term-end {
+  box-shadow: none;
+  margin-right: 0.15rem;
+}
+
+.term, .term-end {
+  background-image: url("/assets/img/icons/glossary.svg");
+  background-repeat: no-repeat;
+  -webkit-transition: background-color, .2s, box-shadow, .2s, color, .2s;
+  -moz-transition: background-color, .2s, box-shadow, .2s, color, .2s;
+  transition: background-color, .2s, box-shadow, .2s, color, .2s;
+  background-size: .6em;
+  background-position: 100% 50%;
+  background-color: transparent;
+  box-shadow: 0 0 0 4px transparent;
+  border-bottom: none;
+  cursor: pointer;
+  margin-right: 2px;
+  padding-right: .9em;
+}
+
+.t-sans {
+    font-family: karla,sans-serif;
+    letter-spacing: -.3px;
+}
+.t-note {
+    display: inline-block;
+    font-family: gandhi,serif;
+    font-weight: 400;
+    font-style: italic;
+    font-size: 1.4rem;
+}
+.search__example {
+    line-height: 1.2;
+    margin-top: 1rem;
+}
+
+/* FEC.GOV CSS */
+
+.glossary__definition ol li, .glossary__definition ul li, .list--bulleted li, .list--bulleted--alt li, .list--numbered li {
+  margin-left: 2rem;
+  padding: .5rem 0;
+  font-size: 1.6rem
+}
+
+.glossary__definition ol li:last-child, .glossary__definition ul li:last-child, .list--bulleted li:last-child, .list--bulleted--alt li:last-child, .list--numbered li:last-child {
+  margin-bottom: 1.5rem
+}
+
+.glossary__definition ol ol, .glossary__definition ol ul, .glossary__definition ul ol, .glossary__definition ul ul, .list--bulleted ol, .list--bulleted ul, .list--bulleted--alt ol, .list--bulleted--alt ul, .list--numbered ol, .list--numbered ul {
+  margin-left: 1.5rem
+}
+
+.glossary__definition ol ol li:last-of-type, .glossary__definition ol ul li:last-of-type, .glossary__definition ul ol li:last-of-type, .glossary__definition ul ul li:last-of-type, .list--bulleted ol li:last-of-type, .list--bulleted ul li:last-of-type, .list--bulleted--alt ol li:last-of-type, .list--bulleted--alt ul li:last-of-type, .list--numbered ol li:last-of-type, .list--numbered ul li:last-of-type {
+  margin-bottom: 0;
+  padding-bottom: 0
+}
+
+.glossary__definition ol ul li, .glossary__definition ul ul li, .list--bulleted ul li, .list--bulleted--alt ul li, .list--numbered ul li {
+  list-style-type: circle
+}
+
+.glossary__definition ol ul ul li, .glossary__definition ul ul ul li, .list--bulleted ul ul li, .list--bulleted--alt ul ul li, .list--numbered ul ul li {
+  list-style-type: square
+}
+
+.glossary__definition ol>li, .list--numbered>li {
+  list-style-type: decimal
+}
+
+.glossary__definition ol ul, .list--numbered ul {
+  margin-bottom: 0;
+  margin-left: 1.5rem
+}
+
+.glossary__definition ol ul li, .list--numbered ul li {
+  list-style-type: circle
+}
+
+.glossary__definition ol ol li, .list--numbered ol li {
+  list-style-type: lower-alpha
+}
+
+.glossary__definition ol ol li ol li, .list--numbered ol li ol li {
+  list-style-type: lower-roman
+}
+
+.glossary__definition ol ol li li, .list--numbered ol li li {
+  list-style-type: decimal
+}
+
+.glossary__definition ul li, .list--bulleted li {
+  list-style-type: disc
+}
