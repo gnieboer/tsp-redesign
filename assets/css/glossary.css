@@ -3,7 +3,7 @@
 }
 
 .glossary {
-  font-family: serif;
+  font-family: $font-sans;
   background-color: #212121;
   color: #fff;
   border-left: 1px solid #205493;
@@ -65,10 +65,10 @@
 .label {
     color: inherit;
     display: block;
-    font-family: karla,sans-serif;
+    font-family: $font-sans;
     font-size: 1.4rem;
-    font-weight: 700;
-    margin-bottom: .5rem;
+    font-weight: 400;
+    margin-bottom: 1rem;
     padding: 0;
     text-transform: uppercase;
 }
@@ -78,15 +78,21 @@
     left: -9999px!important;
 }
 .glossary__definition {
-    font-family: $font-serif;
+    font-family: $font-sans;
     letter-spacing: -.3px;
+    line-height: 1.8;
+    font-size: 1.4rem;
+    padding: 2rem;
+}
+.glossary__definition {
+    font-family: $font-sans;
+    letter-spacing: -.3px;
+    line-height: 1.8;
+    font-size: 1.5rem;
+    padding: 2rem;
+    border-bottom: 1px solid #fff;
 }
 
-.accordion__content {
-    border-bottom: 1px solid #212121;
-    padding: 2rem;
-    font-family: karla,sans-serif;
-}
 ul {
   padding: 0;
 }
@@ -95,13 +101,14 @@ li {
   list-style-type: none;
 }
 
-button {
-  /* background: 0 0; */
+.glossary button, .glossary button:visited {
+    /* background: 0 0; */
+    background-color: #212121;
+    background-position: 0;
     border: none;
     border-radius: 0;
     cursor: pointer;
     display: inline-block;
-    font-family: karla,sans-serif;
     line-height: 1;
     text-decoration: none;
     user-select: none;
@@ -117,8 +124,53 @@ button {
 
 /* Added by TSP */
 
+/* ACCORDION FUNCTION */
+.accordion__content {
+    border-bottom: 1px solid #212121;
+    padding: 2rem;
+    font-family: karla,sans-serif;
+}
+
+.accordion--inverse .accordion__button {
+    background-image: url(data:image/svg+xml;charset=utf8, %3Csvg%20%20fill%3D%27%23ffffff%27%20width…%200%20.952.42.952.937a.945.945%200%200%201-.952.938z%22%2F%3E%3C%2Fsvg%3E);
+    background-repeat: no-repeat;
+    background-position: 100% 50%;
+    border-color: #fff;
+    color: #fff;
+}
+
+.glossary__content button {
+    background-image: url("/assets/img/symbol-accordion-close.svg");
+    background-color: #212121
+    background-repeat: no-repeat;
+    background-size: 2rem;
+    background-position: 95% 50%;
+    /* border-bottom: 1px solid #fff; */
+    margin: 0 0 -1px 0;
+    color: #fff;
+    font-size: 1.4rem;
+    font-weight: 700;
+    letter-spacing: -.3px;
+    padding: 1rem 4rem 1rem 0;
+    text-align: left;
+    width: 100%;
+    line-height: 1.6;
+}
+
+.glossary__content button[aria-expanded=true] {
+    background-image: url("/assets/img/symbol-accordion-close.svg");
+    background-repeat: no-repeat;
+
+}
+
+.glossary__content button[aria-expanded=false] {
+    background-image: url("/assets/img/symbol-accordion-open.svg");
+    background-repeat: no-repeat;
+    border-bottom: 1px solid #fff;
+}
+
 .term:focus, .term-end:focus, .term:hover, .term-end:hover {
-  border-bottom: 1px solid #323c42;
+  border-bottom: 1px dashed #323c42;
   text-decoration: none;
 }
 
@@ -132,8 +184,8 @@ button {
   background-repeat: no-repeat;
   -webkit-transition: background-color, .2s, box-shadow, .2s, color, .2s;
   -moz-transition: background-color, .2s, box-shadow, .2s, color, .2s;
-  transition: background-color, .2s, box-shadow, .2s, color, .2s;
-  background-size: .6em;
+  transition: background-color, .5s, box-shadow, .2s, color, .2s;
+  background-size: .7em;
   background-position: 100% 50%;
   background-color: transparent;
   box-shadow: 0 0 0 4px transparent;
@@ -141,6 +193,11 @@ button {
   cursor: pointer;
   margin-right: 2px;
   padding-right: .9em;
+  border-bottom: 1px dashed #323c42;
+  text-decoration: none;
+}
+.term:hover, .term:active {
+    background-color: #d3d3d3;
 }
 
 .t-sans {
@@ -149,7 +206,7 @@ button {
 }
 .t-note {
     display: inline-block;
-    font-family: gandhi,serif;
+    font-family: $font-sans;
     font-weight: 400;
     font-style: italic;
     font-size: 1.4rem;
