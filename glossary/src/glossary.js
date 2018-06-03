@@ -34,7 +34,7 @@ function forEach(values, callback) {
 
 var itemTemplate = function(values) {
   return '<li class="' + values.glossaryItemClass + '">' +
-      '<button class="data-glossary-term ' + values.termClass + '">' +
+      '<button class="data-glossary-term accordion__button' + values.termClass + '">' +
         values.term +
       '</button>' +
       '<div class="' + values.definitionClass + '">' + values.definition + '</div>' +
