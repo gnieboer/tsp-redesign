@@ -40,6 +40,7 @@ permalink: /contact/
 </div>
 <!-- ROW 2 -->
 <div class="usa-grid-full usa-layout-docs-main_content mt10">
+  <!-- WEB COMMENTS -->
     <div class="usa-width-one-twelfth">
       <img src="{{ site.baseurl }}/assets/img/icons/contact_comment.svg" height="38" alt="" class="">
     </div>
@@ -49,17 +50,7 @@ permalink: /contact/
 <strong>Do not leave personally identifiable information.</strong><br />
  <a href="#">Leave a comment.</a></p>
     </div>
-    <div class="usa-width-one-twelfth">
-      <img src="{{ site.baseurl }}/assets/img/icons/contact_social.svg" height="38" alt="" class="">
-    </div>
-    <div class="usa-width-five-twelfths ">
-      <h3 class="mt0">Social media</h3>
-      <p class="mt0">Connect with us on social media to post a question or share your feedback.<br />
-      <a href="#">Facebook</a> | <a href="#">Twitter</a></p>
-    </div>
-</div>
-<!-- ROW 3 -->
-<div class="usa-grid-full usa-layout-docs-main_content mt10">
+    <!-- MAIL & FAX -->
     <div class="usa-width-one-twelfth">
       <img src="{{ site.baseurl }}/assets/img/icons/contact_mail.svg" height="30" alt="" class="">
     </div>
@@ -72,6 +63,19 @@ permalink: /contact/
       Birmingham, AL 35238<br />
       <a href="#">Additional addresses</a></p>
     </div>
+</div>
+<!-- ROW 3 -->
+<div class="usa-grid-full usa-layout-docs-main_content mt10">
+    <!-- SOCIAL MEDIA -->
+    <div class="usa-width-one-twelfth">
+      <img src="{{ site.baseurl }}/assets/img/icons/contact_social.svg" height="38" alt="" class="">
+    </div>
+    <div class="usa-width-five-twelfths ">
+      <h3 class="mt0">Social media</h3>
+      <p class="mt0">Connect with us on social media to post a question or share your feedback.<br />
+      <a href="https://www.facebook.com/tsp4gov" target="\_blank">Facebook</a> | <a href="https://twitter.com/tsp4gov" target="\_blank">Twitter</a></p>
+    </div>
+
     <!-- <div class="usa-width-one-twelfth borders right-align">
       <img src="{{ site.baseurl }}/assets/img/icons/contact_secure.svg" width="24px" alt="" class="">
     </div>

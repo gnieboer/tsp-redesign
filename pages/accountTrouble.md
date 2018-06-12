@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Beneficiary basics
+title: Account Troubleshooting
 
 sidenav: manage
 
@@ -8,7 +8,7 @@ styles:
 
 scripts:
 
-permalink: /manage/beneficiary-basics
+permalink: /manage/account-troubleshooting
 ---
 <main class="usa-grid usa-section usa-content usa-layout-docs" id="main-content">
     <div class="usa-width-three-fourths usa-layout-docs-main_content">

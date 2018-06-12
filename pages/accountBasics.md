@@ -2,31 +2,14 @@
 layout: page
 title: Account basics
 
+sidenav: manage
+
 styles:
 
 scripts:
 
-permalink: /getStarted/account-basics
+permalink: /manage/account-basics
 ---
-<aside class="usa-width-one-fourth usa-layout-docs-sidenav">
-  <ul class="usa-sidenav-list">
-    <li>
-      <a class="usa-current" href="javascript:void(0);">Account basics</a>
-    </li>
-    <li>
-      <a href="index.html">Maximize your savings</a>
-    </li>
-    <li>
-      <a href="javascript:void(0);">Manage life changes</a>
-    </li>
-    <li>
-      <a href="beneficiary-basics.html">Beneficiary basics</a>
-    </li>
-    <li>
-      <a href="javascript:void(0);">Account troubleshooting</a>
-    </li>
-  </ul>
-</aside>
 <main class="usa-grid usa-section usa-content usa-layout-docs" id="main-content">
     <div class="usa-width-three-fourths usa-layout-docs-main_content">
     <h1>Account basics</h1>
