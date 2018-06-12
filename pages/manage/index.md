@@ -6,32 +6,15 @@ styles:
   - /assets/css/Lifecycle.css
   - /assets/css/cssBtn.css
 
+sidenav: manage
+
 scripts:
   - /assets/js/highcharts.src.js
   - /assets/js/visualizaion-sliders.js
   - /assets/js/visualization-charts.js
 
-permalink: /getStarted/
+permalink: /manage/
 ---
-<aside class="usa-width-one-fourth usa-layout-docs-sidenav">
-  <ul class="usa-sidenav-list">
-    <li>
-      <a href="account-basics.html">Account basics</a>
-    </li>
-    <li>
-      <a class="usa-current" href="javascript:void(0);">Maximize your savings</a>
-    </li>
-    <li>
-      <a href="javascript:void(0);">Manage life changes</a>
-    </li>
-    <li>
-      <a href="beneficiary-basics.html">Beneficiary basics</a>
-    </li>
-    <li>
-      <a href="javascript:void(0);">Account troubleshooting</a>
-    </li>
-  </ul>
-</aside>
 <main class="usa-grid usa-section usa-content usa-layout-docs" id="main-content">
     <div class="usa-width-three-fourths usa-layout-docs-main_content" >
       <h2>How much should I contribute?</h2>

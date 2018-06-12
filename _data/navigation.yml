@@ -10,14 +10,22 @@
 #   links: primary
 #
 primary:
-  - text: Get started
-    href: /getStarted/
+  - text: Manage your plan
+    href: /manage/
   - text: Learn about fund options
     href: #
   - text: Use your retirement savings
     href: #
   - text: Prepare to retire
     href: #
+  - text: Text with links
+    links:
+      - text: Demo link A
+        href: /manage/
+      - text: Demo link B
+        href: /manage/
+      - text: Demo link C
+        href: /about/
 
 secondary:
   - text: Contact
@@ -25,13 +33,21 @@ secondary:
   - text: Login
     href: #
 
-docs:
-  - text: Documentation
-    href: /about/
-  - text: Navigation section
+manage:
+  - text: Account basics
+    href: /manage/account-basics
+  - text: Maximize your savings
+    href: /manage/
+  - text: Manage life changes
+    href: /manage/manage-life-changes
+  - text: Beneficiary basics
+    href: /manage/beneficiary-basics
+  - text: Account troubleshooting
+    href: /manage/account-troubleshooting
+  - text: Text with links
     links:
       - text: Demo link A
-        href: /about/
+        href: /manage/
       - text: Demo link B
         href: /about/
       - text: Demo link C

@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Beneficiary basics
+title: Manage Life Changes
 
 sidenav: manage
 
@@ -8,7 +8,7 @@ styles:
 
 scripts:
 
-permalink: /manage/beneficiary-basics
+permalink: /manage/manage-life-changes
 ---
 <main class="usa-grid usa-section usa-content usa-layout-docs" id="main-content">
     <div class="usa-width-three-fourths usa-layout-docs-main_content">
