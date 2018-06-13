@@ -10,33 +10,27 @@ scripts:
 permalink: /contact/
 ---
 
-<style>
-.borders { border: 1px solid black;}
-</style>
-
-<main class="usa-grid usa-section usa-content usa-layout-docs" id="main-content">
-
 <section id="contact">
 <!-- ROW 1 -->
-<div class="usa-grid-full usa-layout-docs-main_content">
-    <div class="usa-width-one-twelfth">
-      <img src="{{ site.baseurl }}/assets/img/icons/contact_phone.svg" width="28px" alt="" class="">
-    </div>
-    <div class="usa-width-five-twelfths ">
-      <h3 class="mt0">Phone</h3>
-      <p class="mt0"><strong>ThriftLine:</strong> 1-877-968-3778<br />
-      (M&#8211;F) 7:00 a.m. to 9:00 p.m., eastern time<br />
-      <strong>International:</strong> (404) 233-4400 (not toll free)<br />
-      Additional phone numbers</p>
-    </div>
-    <div class="usa-width-one-twelfth">
-      <img src="{{ site.baseurl }}/assets/img/icons/contact_secure.svg" height="38" alt="" class="">
-    </div>
-    <div class="usa-width-five-twelfths ">
-      <h3 class="mt0">Secure message center</h3>
-      <p class="mt0">For account-specific inquiries, log in to My Account, click <strong>Message Center</strong>, and go to the <strong>Messages</strong> tab.<br />
-      We will respond within 24 business hours.</p>
-    </div>
+<div class="usa-grid-full usa-layout-docs-main_content mt10">
+  <div class="usa-width-one-twelfth">
+    <img src="{{ site.baseurl }}/assets/img/icons/contact_phone.svg" width="28px" alt="" class="">
+  </div>
+  <div class="usa-width-five-twelfths ">
+    <h3 class="mt0">Phone</h3>
+    <p class="mt0"><strong>ThriftLine:</strong> 1-877-968-3778<br />
+    (M&#8211;F) 7:00 a.m. to 9:00 p.m., eastern time<br />
+    <strong>International:</strong> (404) 233-4400 (not toll free)<br />
+    Additional phone numbers</p>
+  </div>
+  <div class="usa-width-one-twelfth">
+    <img src="{{ site.baseurl }}/assets/img/icons/contact_secure.svg" height="38" alt="" class="">
+  </div>
+  <div class="usa-width-five-twelfths ">
+    <h3 class="mt0">Secure message center</h3>
+    <p class="mt0">For account-specific inquiries, log in to My Account, click <strong>Message Center</strong>, and go to the <strong>Messages</strong> tab.<br />
+    We will respond within 24 business hours.</p>
+  </div>
 </div>
 <!-- ROW 2 -->
 <div class="usa-grid-full usa-layout-docs-main_content mt10">
@@ -75,18 +69,6 @@ permalink: /contact/
       <p class="mt0">Connect with us on social media to post a question or share your feedback.<br />
       <a href="https://www.facebook.com/tsp4gov" target="\_blank">Facebook</a> | <a href="https://twitter.com/tsp4gov" target="\_blank">Twitter</a></p>
     </div>
-
-    <!-- <div class="usa-width-one-twelfth borders right-align">
-      <img src="{{ site.baseurl }}/assets/img/icons/contact_secure.svg" width="24px" alt="" class="">
-    </div>
-    <div class="usa-width-five-twelfths borders">
-      <h3 class="inline-block no-margin-top">Secure message center</h3><br />
-      For account-specific inquiries, log in to My Account, click <strong>Message Center</strong>, and go to the <strong>Messages</strong> tab.<br />
-      We will respond within 24 business hours.
-    </div> -->
 </div>
 </section>
-
-
-  </main>
 <!-- CONTENT END -->
