@@ -15,15 +15,15 @@ primary:
     - text: Account basics
       href: /manage/
     - text: Making contributions
-      href: /manage/making-contributions
+      href: /manage/making-contributions.html
     - text: Maximize your savings
-      href: /manage/maximize-your-savings
+      href: /manage/maximize-your-savings.html
     - text: Manage life changes
-      href: /manage/manage-life-changes
+      href: /manage/manage-life-changes.html
     - text: Beneficiary basics
-      href: /manage/beneficiary-basics
+      href: /manage/beneficiary-basics.html
     - text: Account troubleshooting
-      href: /manage/account-troubleshooting
+      href: /manage/account-troubleshooting.html
   - text: Learn about fund options
     href: #
   - text: Use your retirement savings
@@ -41,15 +41,15 @@ manage:
   - text: Account basics
     href: /manage/
   - text: Making contributions
-    href: /manage/making-contributions
+    href: /manage/making-contributions.html
   - text: Maximize your savings
-    href: /manage/maximize-your-savings
+    href: /manage/maximize-your-savings.html
   - text: Manage life changes
-    href: /manage/manage-life-changes
+    href: /manage/manage-life-changes.html
   - text: Beneficiary basics
-    href: /manage/beneficiary-basics
+    href: /manage/beneficiary-basics.html
   - text: Account troubleshooting
-    href: /manage/account-troubleshooting
+    href: /manage/account-troubleshooting.html
   # - text: Referenced section
   #   links: footer
   # - text: External link
