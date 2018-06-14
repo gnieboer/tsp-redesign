@@ -93,11 +93,11 @@
     border-bottom: 1px solid #fff;
 }
 
-ul {
+.glossary__content ul {
   padding: 0;
 }
 
-li {
+.glossary__content li {
   list-style-type: none;
 }
 

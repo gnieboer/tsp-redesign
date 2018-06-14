@@ -13,9 +13,11 @@ primary:
   - text: Manage your plan
     links:
     - text: Account basics
-      href: /manage/account-basics
-    - text: Maximize your savings
       href: /manage/
+    - text: Making contributions
+      href: /manage/making-contributions
+    - text: Maximize your savings
+      href: /manage/maximize-your-savings
     - text: Manage life changes
       href: /manage/manage-life-changes
     - text: Beneficiary basics
@@ -37,9 +39,11 @@ secondary:
 
 manage:
   - text: Account basics
-    href: /manage/account-basics
-  - text: Maximize your savings
     href: /manage/
+  - text: Making contributions
+    href: /manage/making-contributions
+  - text: Maximize your savings
+    href: /manage/maximize-your-savings
   - text: Manage life changes
     href: /manage/manage-life-changes
   - text: Beneficiary basics

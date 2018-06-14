@@ -1,6 +1,7 @@
 ---
 layout: page
-title: Manage Life Changes
+
+title: Manage life changes
 
 sidenav: manage
 
@@ -10,10 +11,6 @@ scripts:
 
 permalink: /manage/manage-life-changes
 ---
-
-<main class="usa-grid usa-section usa-content usa-layout-docs" id="main-content">
-    <div class="usa-width-three-fourths usa-layout-docs-main_content">
-
 <h2>How do I change my address?</h2>
 
 <p>How you change your address with us depends on whether or not you still work for the federal government.</p>
@@ -115,7 +112,4 @@ IBS - TSP Processing Unit
 Birmingham, AL 35242
 
 <p><span class="bold">NOTE:</span> Do not submit any withdrawal forms to these addresses. Instead, use the "<a href="#general-correspondence">TSP Forms and General Correspondence</a>" address above.</p>
-
-  </div>
-  </main>
 <!-- CONTENT END -->
