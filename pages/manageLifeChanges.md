@@ -9,7 +9,7 @@ styles:
 
 scripts:
 
-permalink: /manage/manage-life-changes
+permalink: /manage/manage-life-changes.html
 ---
 <h2>How do I change my address?</h2>
 
