@@ -8,7 +8,7 @@ sidenav: manage
 
 scripts:
 
-permalink: /manage/making-contributions
+permalink: /manage/making-contributions.html
 ---
 
 <h2>How much should I contribute?</h2>
