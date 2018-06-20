@@ -15,25 +15,23 @@ primary:
     - text: Account basics
       href: /manage/
     - text: Making contributions
-      href: /manage/making-contributions.html
+      href: /manage/making-contributions/
     - text: Maximize your savings
-      href: /manage/maximize-your-savings.html
+      href: /manage/maximize-your-savings/
     - text: Manage life changes
-      href: /manage/manage-life-changes.html
+      href: /manage/manage-life-changes/
     - text: Beneficiary basics
-      href: /manage/beneficiary-basics.html
+      href: /manage/beneficiary-basics/
     - text: Account troubleshooting
-      href: /manage/account-troubleshooting.html
+      href: /manage/account-troubleshooting/
   - text: Learn about fund options
     href: #
   - text: Use your retirement savings
     href: #
-  - text: Prepare to retire
-    href: #
+  # - text: Prepare to retire
+  #   href: #
 
 secondary:
-  - text: Contact
-    href: /contact/
   - text: Login
     href: #
 
@@ -41,15 +39,15 @@ manage:
   - text: Account basics
     href: /manage/
   - text: Making contributions
-    href: /manage/making-contributions.html
+    href: /manage/making-contributions/
   - text: Maximize your savings
-    href: /manage/maximize-your-savings.html
+    href: /manage/maximize-your-savings/
   - text: Manage life changes
-    href: /manage/manage-life-changes.html
+    href: /manage/manage-life-changes/
   - text: Beneficiary basics
-    href: /manage/beneficiary-basics.html
+    href: /manage/beneficiary-basics/
   - text: Account troubleshooting
-    href: /manage/account-troubleshooting.html
+    href: /manage/account-troubleshooting/
   # - text: Referenced section
   #   links: footer
   # - text: External link

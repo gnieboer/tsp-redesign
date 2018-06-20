@@ -8,7 +8,7 @@ sidenav: manage
 
 scripts:
 
-permalink: /manage/maximize-your-savings.html
+permalink: /manage/maximize-your-savings/
 ---
 
 <h2>Infographic</h2>
