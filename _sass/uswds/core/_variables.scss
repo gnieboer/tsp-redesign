@@ -33,9 +33,14 @@ $font-normal:         400 !default;
 $font-bold:           700 !default;
 
 // Color
-$color-blue:                 #003865 !default;
+$color-blue:                 #112e51 !default;
 $color-blue-darker:          #205493 !default;
 $color-blue-darkest:         #112e51 !default;
+
+// $color-blue:                #112e51;
+// $color-blue-darker:         darken($color-blue, 3%);
+// $color-blue-darkest:        darken($color-blue, 5%);
+
 
 $color-aqua:                 #02bfe7 !default;
 $color-aqua-dark:            #00a6d2 !default;
