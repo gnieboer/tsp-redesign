@@ -12,7 +12,9 @@ jobs:
           name: deploy
           command: |
             if [ "${CIRCLE_BRANCH}" = "master" ]; then
-              aws s3 sync ./_site s3://tspdev.gov/test/ --delete
+              aws s3 sync ./_site s3://tspdev.gov/ --delete
+            elif [ "${CIRCLE_BRANCH}" = "staging" ]; then
+              aws s3 sync ./_site s3://tspstaging.gov/ --delete
             else
-              echo "Not master branch, dry run only"
+              echo "If not staging or master branch, dry run only"
             fi
