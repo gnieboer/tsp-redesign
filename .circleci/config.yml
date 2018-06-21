@@ -8,6 +8,7 @@ jobs:
       - run: npm install
       - run: bundle install
       - run: bundle exec jekyll build
+      - run: sudo pip install awscli
       - deploy:
           name: deploy
           command: |
