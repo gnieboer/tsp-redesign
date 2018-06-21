@@ -10,7 +10,7 @@
 #   links: primary
 #
 primary:
-  - text: Manage your plan
+  - text: Staging - Manage your plan
     links:
     - text: Account basics
       href: /manage/
@@ -24,7 +24,7 @@ primary:
       href: /manage/beneficiary-basics/
     - text: Account troubleshooting
       href: /manage/account-troubleshooting/
-  - text: Learn about fund options
+  - text: Staging - Learn about fund options
     href: #
   - text: Use your retirement savings
     href: #
