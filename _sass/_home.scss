@@ -39,11 +39,23 @@
   }
 }
 
-#login {
+.login {
     background-color: #fff;
     padding: 2rem 2rem;
     font-size: 1.5rem;
     margin-top: 4rem;
     z-index: 10; /* keep on top of other elements on the page */
     outline: 9999px solid rgba(0,0,0,0.5);
+}
+
+.fadeOut {
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s linear 400ms, opacity 400ms;
+}
+
+.fadeIn {
+  visibility: visible;
+  opacity: 1;
+  transition: visibility 0s linear 0s, opacity 400ms;
 }
