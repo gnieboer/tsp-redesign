@@ -3,6 +3,11 @@ title: Home
 permalink: /
 layout: home
 
+scripts:
+  - /assets/js/jquery.min.js
+  - /assets/js/login.js
+
+
 hero:
   image: /assets/img/hero.jpg
   callout:

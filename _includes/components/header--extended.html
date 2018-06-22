@@ -1,6 +1,5 @@
 {% if header %}
 <header class="usa-header usa-header-extended" role="banner">
-
   <div class="usa-navbar">
     <div class="usa-logo" id="logo">
       <em class="usa-logo-text">
@@ -11,12 +10,9 @@
     </div>
     <button class="usa-menu-btn">Menu</button>
   </div>
-
   <nav role="navigation" class="usa-nav">
     <div class="usa-nav-inner">
-      <button class="usa-nav-close">
-        <img src="{{ site.baseurl }}/assets/uswds/img/close.svg" alt="close">
-      </button>
+      <button class="usa-nav-close"><img src="{{ site.baseurl }}/assets/uswds/img/close.svg" alt="close"></button>
 
       {% assign _primary = header.primary.links %}
       {% assign primary_links = site.data.navigation[_primary] | default: _primary %}
@@ -50,7 +46,7 @@
 
       {% assign _secondary = header.secondary %}
       {% if _secondary %}
-      <div class="usa-nav-secondary">
+        <div class="usa-nav-secondary">
         {% if site.search_site_handle  %}
           <form accept-charset="UTF-8" action="https://search.usa.gov/search" id="search_form" method="get" class="usa-search usa-search-small js-search-form usa-sr-only">
             <div style="margin:0;padding:0;display:inline">
@@ -75,14 +71,35 @@
           {% assign secondary_links = site.data.navigation[_secondary.links] | default: _secondary.links %}
           {% for _link in secondary_links %}
           <li>
-            <a href="{% if _link.external %}{{ _link.href }}{% else %}{{ _link.href | relative_url }}{% endif %}">{{ _link.text }}</a>
+            <a href="{% if _link.external %}{{ _link.href }}{% else %}{{ _link.href }}{% endif %}">{{ _link.text }}</a>
           </li>
           {% endfor %}
         </ul>
-      </div>
-      {% endif %}
+        <form id="login" class="hide" method="dialog">
+  <fieldset>
+    <!-- <legend class="usa-drop_text">Sign in</legend>
+    <span>or <a href="javascript:void(0);">create an account</a></span> -->
+    <label for="username">Username or account number</label>
+    <input id="username" name="username" type="text" autocapitalize="off" autocorrect="off">
 
+    <label for="password-sign-in">Password</label>
+    <input id="password-sign-in" name="password" type="password">
+    <p class="usa-form-note">
+      <a title="Show password" href="javascript:void(0);"
+        class="usa-show_password"
+        aria-controls="password-sign-in">Show password</a>
+    </p>
+
+    <input type="submit" value="Login">
+    <p><a href="javascript:void(0);" title="Forgot username">
+      Forgot username?</a></p>
+    <p><a href="javascript:void(0);" title="Forgot password">
+      Forgot password?</a></p>
+  </fieldset>
+</form>
+<!-- <button id="show">Open Dialog!</button> -->
     </div>
+    {% endif %}
   </nav>
 </header>
 <div class="usa-overlay"></div>

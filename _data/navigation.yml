@@ -33,7 +33,7 @@ primary:
 
 secondary:
   - text: Login
-    href: #
+    href: "javascript:void(0);"
 
 manage:
   - text: Account basics
