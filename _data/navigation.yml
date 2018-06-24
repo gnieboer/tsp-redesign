@@ -25,11 +25,25 @@ primary:
     - text: Account troubleshooting
       href: /manage/account-troubleshooting/
   - text: Learn about fund options
-    href: #
+    links:
+    - text: What type of investor am I?
+      href: /funds/
+    - text: Fund comparison matrix
+      href: #
+    - text: Fund details
+      href: #
+    - text: Share price history
+      href: #
   - text: Use your retirement savings
-    href: #
-  # - text: Prepare to retire
-  #   href: #
+    links:
+    - text: Loan basics
+      href: #
+    - text: In-service withdrawal basics
+      href: #
+    - text: Retirement withdrawal basics
+      href: #
+    - text: Annuity basics
+      href: #
 
 secondary:
   - text: Login
@@ -56,6 +70,20 @@ manage:
   # - text: External link
   #   href: https://tsp.gov
   #   external: true
+
+funds:
+  - text: What type of investor am I?
+    href: /funds/
+  - text: Fund comparison matrix
+    href: #
+  - text: Fund details
+    href: #
+  - text: Share price history
+    href: #
+
+privacy:
+  - text: Privacy Policy
+    href: /privacy/
 
 footer:
   - text: Documentation
