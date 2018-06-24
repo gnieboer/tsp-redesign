@@ -71,7 +71,7 @@
           {% assign secondary_links = site.data.navigation[_secondary.links] | default: _secondary.links %}
           {% for _link in secondary_links %}
           <li>
-            <a href="{% if _link.external %}{{ _link.href }}{% else %}{{ _link.href }}{% endif %}">{{ _link.text }}</a>
+            <a href="{% if _link.external %}{{ _link.href }}{% else %}{{ _link.href }}{% endif %}" id="{{ _link.id }}" class="{{ _link.class }}">{{ _link.text }}</a>
           </li>
           {% endfor %}
         </ul>

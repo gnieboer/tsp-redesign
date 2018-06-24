@@ -3,8 +3,6 @@
 /* SCRIPTS TO REMOVE AND ADD CLASSES */
 /* href$ = The $ operator means 'ends with' */
 
-$("a:contains('Login')").attr('id', 'login-reveal').addClass("login-toggle");
-
 var fader = document.getElementById("login-panel");
 var loggle = document.getElementsByClassName("login-toggle");
 

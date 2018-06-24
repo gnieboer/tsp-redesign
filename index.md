@@ -4,8 +4,6 @@ permalink: /
 layout: home
 
 scripts:
-  - /assets/js/jquery.min.js
-  - /assets/js/login.js
 
 
 hero:
