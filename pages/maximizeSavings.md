@@ -11,6 +11,4 @@ scripts:
 permalink: /manage/maximize-your-savings/
 ---
 
-<h2>Infographic</h2>
-
 <img src="{{ site.baseurl }}/assets/img/infographs/maximize-your-savings.svg">
