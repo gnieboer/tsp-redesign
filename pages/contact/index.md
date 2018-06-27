@@ -59,16 +59,5 @@ permalink: /contact/
     </div>
 </div>
 <!-- ROW 3 -->
-<div class="usa-grid-full usa-layout-docs-main_content mt10">
-    <!-- SOCIAL MEDIA -->
-    <div class="usa-width-one-twelfth">
-      <img src="{{ site.baseurl }}/assets/img/icons/contact_social.svg" height="38" alt="" class="">
-    </div>
-    <div class="usa-width-five-twelfths ">
-      <h3 class="mt0">Social media</h3>
-      <p class="mt0">Connect with us on social media to post a question or share your feedback.<br />
-      <a href="https://www.facebook.com/tsp4gov" target="\_blank">Facebook</a> | <a href="https://twitter.com/tsp4gov" target="\_blank">Twitter</a></p>
-    </div>
-</div>
 </section>
 <!-- CONTENT END -->
