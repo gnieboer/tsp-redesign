@@ -1,10 +1,13 @@
 ---
 layout: page
+
 title: Making contributions
 
 styles:
 
 sidenav: manage
+
+subnav: sub-making-contributions
 
 scripts:
 

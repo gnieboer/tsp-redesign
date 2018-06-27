@@ -1,3 +1,4 @@
+{% assign subnav = site.data.navigation[page.subnav] | default: page.subnav %}
 <ul class="usa-sidenav-list">
   {% for link in include.links %}
     {% assign _href = link.href %}
@@ -12,7 +13,7 @@
     </a>
     {% if _current and page.subnav %}
     <ul class="usa-sidenav-sub_list">
-      {% include subnav.html links=page.subnav %}
+      {% include subnav.html links=subnav %}
     </ul>
     {% endif %}
   </li>

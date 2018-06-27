@@ -5,15 +5,19 @@ title: Manage life changes
 
 sidenav: manage
 
+subnav: sub-life-changes
+
 styles:
 
 scripts:
 
 permalink: /manage/manage-life-changes/
 ---
+
+{:#address}
 ## How do I change my address?
 
-How you change your address with us depends on whether or not you still work for the federal government.
+How you change your address with us depends on whether or not you still work for the federal government
 
 If you’re currently a federal employee, you must report your correct address to your agency or service. We can’t accept address changes directly from you.
 
@@ -21,6 +25,7 @@ If you’re no longer a federal employee, log into the My Account section of tsp
 
 If you’re an active duty uniformed services member, you can update your address through the <a href="https://mypay.dfas.mil/mypay.aspx" target="\_blank">myPay</a> website. Just make sure that you log in and go to the TSP section to change your TSP address. If you change it in the “Correspondence Address” section of myPay, it will not change your TSP address.
 
+{:#beneficiaries}
 ## How do I update my beneficiaries?
 
 If you’d like your TSP account to be distributed according to the statutory order of precedence, you don’t have to do anything. In the event of your death, your TSP account would be paid as follows:
@@ -37,6 +42,7 @@ Otherwise, you’ll want to complete [Form TSP-3](#), _Designation of Beneficiar
 
 If you don’t remember whether you’ve submitted a Form TSP-3 or you’re not sure who you named as your beneficiaries, look at your annual statement, check the online wizard, or call the ThriftLine at 1-877-968-3778.  Even if you’re certain your designated beneficiaries are current, check them periodically. You may need to make changes if you’ve had a change in your family such as a birth, death, divorce, or marriage.
 
+{:#leaving}
 ## Leaving Federal Service
 If your account balance is $200 or more, you can leave it in the TSP when you leave federal service——and continue to enjoy earnings and low administrative expenses. Once you leave federal service, you’ll no longer be able to make employee contributions. However, you can transfer money into your TSP account from traditional IRAs and other eligible employer plans. Your account will continue to accrue earnings, and you’ll still be able to change the way your money is invested in the TSP funds by making interfund transfers.
 
@@ -49,6 +55,7 @@ If you’re separating from federal service, there are four important things you
 
 Preparing to retire? Visit [Entering Retirement](javascript:void(0)).
 
+{:#send-forms}
 ## Where do I send forms?
 
 ### Sending Fax or Mail
@@ -251,6 +258,7 @@ These documents can also be faxed to (703) 592-0170.
 
 **NOTE**: Do not submit any withdrawal forms to these addresses. Instead, use the "TSP Forms and General Correspondence" address above.
 
+{:#nonpay}
 ## Entering a nonpay status
 
 ### What is nonpay status?

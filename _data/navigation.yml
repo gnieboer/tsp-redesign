@@ -56,7 +56,7 @@ manage:
   - text: Account basics
     href: /manage/
   - text: Making contributions
-    href: /manage/making-contributions/
+    links: sub-making-contributions
   - text: Maximize your savings
     href: /manage/maximize-your-savings/
   - text: Manage life changes
@@ -71,15 +71,30 @@ manage:
   #   href: https://tsp.gov
   #   external: true
 
-funds:
-  - text: What type of investor am I?
-    href: /funds/
-  - text: Fund comparison matrix
-    href: #
-  - text: Fund details
-    href: #
-  - text: Share price history
-    href: #
+# SUBNAV MENUS
+sub-making-contributions:
+  - text: What’s the difference between making Traditional vs. Roth Contributions?
+    href: /making-contributions/traditional-and-roth/
+  - text: How do I start, change, and stop contributions?
+    href: /making-contributions/
+  - text: Making contributions: What are the different types of contributions?
+    href: /making-contributions/different-types/
+  - text: How much should I contribute?
+    href: /making-contributions/how-much-to-contribute/
+  - text: What are the contribution limits?
+    href: /making-contributions/contribution-limits/
+
+sub-life-changes:
+  - text: How do I change my address?
+    href: /manage/manage-life-changes/#address
+  - text: How do I update my beneficiaries?
+    href: /manage/manage-life-changes/#beneficiaries
+  - text: Leaving Federal Service
+    href: /manage/manage-life-changes/#leaving
+  - text: Where do I send forms?
+    href: /manage/manage-life-changes/#send-forms
+  - text: Entering a nonpay status
+    href: /manage/manage-life-changes/#nonpay
 
 privacy:
   - text: Privacy Policy
