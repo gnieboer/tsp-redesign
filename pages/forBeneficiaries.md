@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Beneficiary basics
+title: For beneficiaries
 
 sidenav: manage
 
@@ -8,7 +8,7 @@ styles:
 
 scripts:
 
-permalink: /beneficiary-basics/
+permalink: /for-beneficiaries/
 ---
 <h2>What should I know about being a beneficiary participant?</h2>
 
@@ -22,6 +22,8 @@ permalink: /beneficiary-basics/
   <li>A diversified choice of <a href="javascript:void(0)">investment options</a></li>
   <li>You can leave your money in the TSP, or choose from several withdrawal options.</li>
 </ul>
+
+## How do I get my distribution as a beneficiary?
 
 <div class="usa-alert usa-alert-info" >
   <div class="usa-alert-body"><h3 class="usa-alert-heading">How to update your beneficiaries</h3>

@@ -26,7 +26,7 @@ If you’re no longer a federal employee, log into the My Account section of tsp
 If you’re an active duty uniformed services member, you can update your address through the <a href="https://mypay.dfas.mil/mypay.aspx" target="\_blank">myPay</a> website. Just make sure that you log in and go to the TSP section to change your TSP address. If you change it in the “Correspondence Address” section of myPay, it will not change your TSP address.
 
 {:#beneficiaries}
-## How do I update my beneficiaries?
+## Beneficiary basics
 
 If you’d like your TSP account to be distributed according to the statutory order of precedence, you don’t have to do anything. In the event of your death, your TSP account would be paid as follows:
 

@@ -7,8 +7,6 @@ styles:
 
 sidenav: manage
 
-subnav: sub-making-contributions
-
 scripts:
 
 permalink: /making-contributions/how-much-to-contribute/

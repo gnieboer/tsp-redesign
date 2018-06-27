@@ -20,8 +20,8 @@ primary:
       href: /maximize-your-savings/
     - text: Manage life changes
       href: /manage-life-changes/
-    - text: Beneficiary basics
-      href: /beneficiary-basics/
+    - text: For beneficiaries
+      href: /for-beneficiaries/
     - text: Account troubleshooting
       href: /account-troubleshooting/
   - text: Learn about fund options
@@ -51,18 +51,38 @@ secondary:
     # id:
     class: login-toggle
 
-
+# SIDENAV MENUS
 manage:
   - text: Account basics
     href: /manage/
   - text: Making contributions
     href: /making-contributions/
+    subnav:
+      - text: What’s the difference between making Traditional vs. Roth Contributions?
+        href: /making-contributions/traditional-and-roth/
+      - text: What are the different types of contributions?
+        href: /making-contributions/different-types/
+      - text: How much should I contribute?
+        href: /making-contributions/how-much-to-contribute/
+      - text: What are the contribution limits?
+        href: /making-contributions/contribution-limits/
   - text: Maximize your savings
     href: /maximize-your-savings/
   - text: Manage life changes
     href: /manage-life-changes/
-  - text: Beneficiary basics
-    href: /beneficiary-basics/
+    subnav:
+      - text: How do I change my address?
+        href: /manage-life-changes/#address
+      - text: Beneficiary basics
+        href: /manage-life-changes/#beneficiaries
+      - text: Leaving Federal Service
+        href: /manage-life-changes/#leaving
+      - text: Where do I send forms?
+        href: /manage-life-changes/#send-forms
+      - text: Entering a nonpay status
+        href: /manage-life-changes/#nonpay
+  - text: For beneficiaries
+    href: /for-beneficiaries/
   - text: Account troubleshooting
     href: /account-troubleshooting/
   # - text: Referenced section
@@ -72,17 +92,7 @@ manage:
   #   external: true
 
 # SUBNAV MENUS
-sub-making-contributions:
-  - text: How do I start, change, and stop contributions?
-    href: /making-contributions/
-  - text: What’s the difference between making Traditional vs. Roth Contributions?
-    href: /making-contributions/traditional-and-roth/
-  - text: What are the different types of contributions?
-    href: /making-contributions/different-types/
-  - text: How much should I contribute?
-    href: /making-contributions/how-much-to-contribute/
-  - text: What are the contribution limits?
-    href: /making-contributions/contribution-limits/
+
 
 sub-life-changes:
   - text: How do I change my address?

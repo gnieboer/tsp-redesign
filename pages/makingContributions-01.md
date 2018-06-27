@@ -7,13 +7,9 @@ styles:
 
 sidenav: manage
 
-subnav: sub-making-contributions
-
 scripts:
 
 permalink: /making-contributions/
-
-parent: making-contributions
 ---
 
 ## How do I start, change, and stop contributions?

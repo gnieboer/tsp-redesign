@@ -12,6 +12,6 @@ permalink: /account-troubleshooting/
 ---
 <h1>Account troubleshooting</h1>
 
-This page may go away. The most salient information will be represented in the elusive Login box.
+This page may go away.
 
 <!-- CONTENT END -->

@@ -10,6 +10,12 @@
   border-right: 1px solid $color-blue-darkest;
 }
 
+.sticky {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+}
+
 @media (min-width: #{$medium-screen}) {
   .usa-hero-callout {
     max-width: 36rem;
