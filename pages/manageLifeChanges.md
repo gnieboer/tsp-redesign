@@ -11,7 +11,7 @@ styles:
 
 scripts:
 
-permalink: /manage/manage-life-changes/
+permalink: /manage-life-changes/
 ---
 
 {:#address}

@@ -8,7 +8,7 @@ sidenav: manage
 
 scripts:
 
-permalink: /manage/maximize-your-savings/
+permalink: /maximize-your-savings/
 ---
 
 <img src="{{ site.baseurl }}/assets/img/infographs/maximize-your-savings.svg">

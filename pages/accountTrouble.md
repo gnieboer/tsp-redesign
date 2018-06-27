@@ -8,7 +8,7 @@ styles:
 
 scripts:
 
-permalink: /manage/account-troubleshooting/
+permalink: /account-troubleshooting/
 ---
 <h1>Account troubleshooting</h1>
 

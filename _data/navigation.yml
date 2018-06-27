@@ -15,15 +15,15 @@ primary:
     - text: Account basics
       href: /manage/
     - text: Making contributions
-      href: /manage/making-contributions/
+      href: /making-contributions/
     - text: Maximize your savings
-      href: /manage/maximize-your-savings/
+      href: /maximize-your-savings/
     - text: Manage life changes
-      href: /manage/manage-life-changes/
+      href: /manage-life-changes/
     - text: Beneficiary basics
-      href: /manage/beneficiary-basics/
+      href: /beneficiary-basics/
     - text: Account troubleshooting
-      href: /manage/account-troubleshooting/
+      href: /account-troubleshooting/
   - text: Learn about fund options
     links:
     - text: What type of investor am I?
@@ -56,15 +56,15 @@ manage:
   - text: Account basics
     href: /manage/
   - text: Making contributions
-    links: sub-making-contributions
+    href: /making-contributions/
   - text: Maximize your savings
-    href: /manage/maximize-your-savings/
+    href: /maximize-your-savings/
   - text: Manage life changes
-    href: /manage/manage-life-changes/
+    href: /manage-life-changes/
   - text: Beneficiary basics
-    href: /manage/beneficiary-basics/
+    href: /beneficiary-basics/
   - text: Account troubleshooting
-    href: /manage/account-troubleshooting/
+    href: /account-troubleshooting/
   # - text: Referenced section
   #   links: footer
   # - text: External link
@@ -73,11 +73,11 @@ manage:
 
 # SUBNAV MENUS
 sub-making-contributions:
-  - text: What’s the difference between making Traditional vs. Roth Contributions?
-    href: /making-contributions/traditional-and-roth/
   - text: How do I start, change, and stop contributions?
     href: /making-contributions/
-  - text: Making contributions: What are the different types of contributions?
+  - text: What’s the difference between making Traditional vs. Roth Contributions?
+    href: /making-contributions/traditional-and-roth/
+  - text: What are the different types of contributions?
     href: /making-contributions/different-types/
   - text: How much should I contribute?
     href: /making-contributions/how-much-to-contribute/
@@ -86,15 +86,15 @@ sub-making-contributions:
 
 sub-life-changes:
   - text: How do I change my address?
-    href: /manage/manage-life-changes/#address
+    href: /manage-life-changes/#address
   - text: How do I update my beneficiaries?
-    href: /manage/manage-life-changes/#beneficiaries
+    href: /manage-life-changes/#beneficiaries
   - text: Leaving Federal Service
-    href: /manage/manage-life-changes/#leaving
+    href: /manage-life-changes/#leaving
   - text: Where do I send forms?
-    href: /manage/manage-life-changes/#send-forms
+    href: /manage-life-changes/#send-forms
   - text: Entering a nonpay status
-    href: /manage/manage-life-changes/#nonpay
+    href: /manage-life-changes/#nonpay
 
 privacy:
   - text: Privacy Policy

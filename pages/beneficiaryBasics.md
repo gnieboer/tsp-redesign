@@ -8,7 +8,7 @@ styles:
 
 scripts:
 
-permalink: /manage/beneficiary-basics/
+permalink: /beneficiary-basics/
 ---
 <h2>What should I know about being a beneficiary participant?</h2>
 
