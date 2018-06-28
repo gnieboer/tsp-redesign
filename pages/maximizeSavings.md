@@ -4,7 +4,7 @@ title: Maximize your savings
 
 styles:
 
-sidenav: #
+sidenav: manage
 
 scripts:
 
