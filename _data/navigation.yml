@@ -22,8 +22,6 @@ primary:
       href: /manage-life-changes/
     - text: For beneficiaries
       href: /for-beneficiaries/
-    - text: Account troubleshooting
-      href: /account-troubleshooting/
   - text: Learn about fund options
     links:
     - text: What type of investor am I?
@@ -34,10 +32,10 @@ primary:
       href: #
     - text: Share price history
       href: #
-  - text: Use your retirement savings
+  - text: Use your savings
     links:
     - text: Loan basics
-      href: #
+      href: /savings/
     - text: In-service withdrawal basics
       href: #
     - text: Retirement withdrawal basics
@@ -83,13 +81,31 @@ manage:
         href: /manage-life-changes/#nonpay
   - text: For beneficiaries
     href: /for-beneficiaries/
-  - text: Account troubleshooting
-    href: /account-troubleshooting/
   # - text: Referenced section
   #   links: footer
   # - text: External link
   #   href: https://tsp.gov
   #   external: true
+
+funds:
+  - text: How to invest
+    href: /funds/
+  - text: Fund basics
+    href: #
+  - text: Fund comparison matrix
+    href: #
+  - text: Fund performance
+    href: #
+
+savings:
+  - text: Loan basics
+    href: /savings/
+  - text: In-service withdrawal basics
+    href: #
+  - text: Retirement withdrawal basics
+    href: #
+  - text: Annuity basics
+    href: #
 
 # FOOTERNAV MENUS
 

@@ -1,6 +1,7 @@
 ---
 layout: page
-title: What type of investor am I?
+
+title: How to invest
 
 styles:
 
@@ -24,3 +25,11 @@ If you are willing to tolerate fluctuations in your account value in exchange fo
 retirement portfolio.
 
 Learn more about our funds by viewing the “TSP Investment Options” videos at <a href="https://www.youtube.com/tsp4gov" target="\_blank">youtube.com/tsp4gov.</a>
+
+## How do I pick an approach that's right for me?
+
+Content under development
+
+## How do I change how my money is invested?
+
+Content under development

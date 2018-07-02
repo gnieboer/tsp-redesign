@@ -20,15 +20,15 @@ hero:
     <h2>Get started</h2>
     <div class="usa-grid">
       <div class="usa-width-one-third px2">
-        <h3><img src="{{ site.baseurl }}/assets/img/icons/lock.svg" width="20" alt="" class="mr1">Manage your plan</h3>
+        <h3><img src="{{ site.baseurl }}/assets/img/icons/lock.svg" width="20" alt="" class="mr1"><a href="/manage/">Manage your plan</a></h3>
         <p>I want to understand the basics, add a beneficiary, or roll over my 401(k).</p>
       </div>
       <div class="usa-width-one-third px2">
-        <h3><img src="{{ site.baseurl }}/assets/img/icons/compass.svg" width="20" alt="" class="mr1">Learn about fund options</h3>
+        <h3><img src="{{ site.baseurl }}/assets/img/icons/compass.svg" width="20" alt="" class="mr1"><a href="/funds/">Learn about fund options</a></h3>
         <p>Help me understand each TSP fund's investment strategy, risks, rewards, and performance history.</p>
       </div>
       <div class="usa-width-one-third px2">
-        <h3><img src="{{ site.baseurl }}/assets/img/icons/sun.svg" width="20" alt="" class="mr1">Use your retirement savings</h3>
+        <h3><img src="{{ site.baseurl }}/assets/img/icons/sun.svg" width="20" alt="" class="mr1"><a href="/savings/">Use your retirement savings</a></h3>
         <p>I'd like to know the eligibility requirements and rules for making withdrawals from my account, including obtaining a TSP loan.
         </p>
       </div>
