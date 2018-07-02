@@ -1,5 +1,6 @@
 ---
 layout: page
+
 title: For beneficiaries
 
 sidenav: manage
@@ -10,9 +11,9 @@ scripts:
 
 permalink: /for-beneficiaries/
 ---
-<h2>What should I know about being a beneficiary participant?</h2>
+## What should I know about being a beneficiary participant?
 
-<p>As a beneficiary participant, you will not be able to make contributions to, borrow from, or transfer money into your beneficiary participant account; however, we offer a number of other great features:</p>
+As a beneficiary participant, you will not be able to make contributions to, borrow from, or transfer money into your beneficiary participant account; however, we offer a number of other great features:
 
 <ul>
   <li>Low administrative and investment expenses that can increase your savings potential</li>
