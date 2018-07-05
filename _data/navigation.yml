@@ -70,15 +70,15 @@ manage:
     href: /manage-life-changes/
     subnav:
       - text: How do I change my address?
-        href: /manage-life-changes/#address
+        href: /manage-life-changes/
       - text: Beneficiary basics
-        href: /manage-life-changes/#beneficiaries
+        href: /manage-life-changes/beneficiary-basics/
       - text: Leaving Federal Service
-        href: /manage-life-changes/#leaving
+        href: /manage-life-changes/leaving-federal-service/
       - text: Where do I send forms?
-        href: /manage-life-changes/#send-forms
+        href: /manage-life-changes/where-to-send-forms/
       - text: Entering a nonpay status
-        href: /manage-life-changes/#nonpay
+        href: /manage-life-changes/entering-nonpay-status/
   - text: For beneficiaries
     href: /for-beneficiaries/
   # - text: Referenced section

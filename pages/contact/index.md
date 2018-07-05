@@ -30,6 +30,11 @@ permalink: /contact/
     <h3 class="mt0">Secure message center</h3>
     <p class="mt0">For account-specific inquiries, log in to My Account, click <strong>Message Center</strong>, and go to the <strong>Messages</strong> tab.<br />
     We will respond within 24 business hours.</p>
+<div class="usa-alert usa-alert-info" >
+  <div class="usa-alert-body"><h3 class="usa-alert-heading">Living overseas?</h3>
+  <p class="usa-alert-text">This is the best way to reach us outside ThriftLine business hours.</p>
+  </div>
+</div>
   </div>
 </div>
 <!-- ROW 2 -->
