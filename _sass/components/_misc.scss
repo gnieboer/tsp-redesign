@@ -16,6 +16,10 @@
   top: 0;
 }
 
+.blue-medium {
+  background-color: #116C97;
+}
+
 @media (min-width: #{$medium-screen}) {
   .usa-hero-callout {
     max-width: 36rem;

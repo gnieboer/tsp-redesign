@@ -24,8 +24,29 @@
   p {
     font-size: $h5-font-size;
   }
-  .usa-section-dark {
-    background-color: #003865;
+}
+
+.agency-service .usa-grid {
+  h2 {
+    text-align: center;
+    font-size: 3rem;
+    font-family: $font-sans;
+  }
+  h2, h3, p {
+    text-align: center;
+    color: white;
+  }
+  p {
+    font-size: $h3-font-size;
+  }
+}
+.tertiary-navigation .usa-grid {
+  ul {
+    font-size: 1.5rem;
+  }
+  li:first-of-type {
+    font-family: $font-serif;
+    font-weight: bold;
   }
 }
 
@@ -33,7 +54,6 @@
   .usa-width-two-thirds {
     padding-right: $spacing-md-small;
   }
-
   .usa-width-one-third {
 
   }
