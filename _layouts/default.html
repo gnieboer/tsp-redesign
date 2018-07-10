@@ -8,9 +8,6 @@ scripts:
 
 sidenav:
 ---
-
-{% include components/glossary.html %}
-
 <!DOCTYPE html>
 <html lang="{{ page.lang | default: site.lang | default: 'en-US' }}">
   <head>
@@ -39,7 +36,7 @@ sidenav:
     <main id="main-content"{% for _attr in layout.main %} {{ _attr[0] }}="{{ _attr[1] }}"{% endfor %}>
     {{ content }}
     </main>
-
+    {% include components/glossary.html %}
     {% include footer.html %}
     {% include scripts.html %}
   </body>
