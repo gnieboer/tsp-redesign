@@ -1,14 +1,24 @@
 .usa-grid {
   .usa-hero-callout h1 {
-    font-size: 5rem;
+    font-size: 5.65rem;
     font-family: $font-sans;
+    margin-top: 0;
+  }
+  .usa-hero-callout p {
+    font-size: 2.4rem;
+    text-transform: uppercase;
+    margin-bottom: 0;
   }
   .usa-hero-callout {
     // margin-top: 1rem;
     // margin-right: 0;
     // margin-bottom: 1rem;
     // margin-left: 0;
-    margin: 3rem 0;
+    margin: 6rem 0;
+    color: #fff;
+    max-width: 56rem;
+    background-color: transparent;
+    padding: 3rem 3rem 3rem 0;
   }
 }
 
@@ -18,14 +28,24 @@
     font-size: 3.5rem;
   }
   h2, h3, p {
-    text-align: center;
     color: white;
+  }
+  h3 {
+    font-size: 2.4rem;
+    font-weight: 400;
   }
   p {
     font-size: $h5-font-size;
   }
+  img {
+    width: 50;
+    vertical-align: text-top;
+  }
 }
-
+.usa-section-dark a {
+  color: #ffffff;
+  text-decoration: none;
+}
 .agency-service .usa-grid {
   h2 {
     text-align: center;

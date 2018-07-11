@@ -2,8 +2,9 @@
 <section class="usa-hero"{% if hero.image %}
   style="background-image: url('{{ hero.image | relative_url }}')"{% endif %}>
   <div class="usa-grid">
-    <div class="usa-hero-callout usa-section-dark">
+    <div class="usa-hero-callout">
       {% if hero.callout %}
+      {{ hero.content | markdownify }}
       <h1>
         {% if hero.callout.alt %}
         <span class="usa-hero-callout-alt inline">{{ hero.callout.alt }}</span>
@@ -18,7 +19,7 @@
       </a>
       {% endif %}
 
-      {{ hero.content | markdownify }}
+
 
       {% if hero.button %}
       <a class="usa-button usa-button-primary-alt block"
