@@ -77,19 +77,13 @@
     top: auto;
     left: -9999px!important;
 }
-.glossary__definition {
-    font-family: $font-sans;
-    letter-spacing: -.3px;
-    line-height: 1.8;
-    font-size: 1.4rem;
-    padding: 2rem;
-}
+
 .glossary__definition {
     font-family: $font-sans;
     letter-spacing: -.3px;
     line-height: 1.8;
     font-size: 1.5rem;
-    padding: 2rem;
+    padding: 2rem 0;
     border-bottom: 1px solid #fff;
 }
 
