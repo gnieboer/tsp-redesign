@@ -15,7 +15,7 @@ permalink: /manage-life-changes/beneficiary-basics/
 {:#beneficiaries}
 ## Beneficiary basics
 
-If you’d like your TSP account to be distributed according to the statutory order of precedence, you don’t have to do anything. In the event of your death, your TSP account would be paid as follows:
+If you’d like your TSP account to be distributed according to the <span data-term="statutory order of precedence" class="js-glossary-toggle term term-end">statutory order of precedence</span>, you don’t have to do anything. In the event of your death, your TSP account would be paid as follows:
 
 <ol>
 <li>To your spouse</li>
