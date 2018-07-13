@@ -1,9 +1,7 @@
 {% assign footer = site.data.footer %}
-
+{% include components/footer.html %}
 {% if footer.footer_nav %}
   <nav role="navigation" class="tertiary-navigation">
   {% include components/footernav.html  %}
   </nav>
 {% endif %}
-
-{% include components/footer.html %}
