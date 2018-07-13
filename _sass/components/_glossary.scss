@@ -126,7 +126,7 @@
 }
 
 .accordion--inverse .accordion__button {
-    background-image: url(data:image/svg+xml;charset=utf8, %3Csvg%20%20fill%3D%27%23ffffff%27%20width…%200%20.952.42.952.937a.945.945%200%200%201-.952.938z%22%2F%3E%3C%2Fsvg%3E);
+    // background-image: url(data:image/svg+xml;charset=utf8, %3Csvg%20%20fill%3D%27%23ffffff%27%20width…%200%20.952.42.952.937a.945.945%200%200%201-.952.938z%22%2F%3E%3C%2Fsvg%3E);
     background-repeat: no-repeat;
     background-position: 100% 50%;
     border-color: #fff;
@@ -135,7 +135,7 @@
 
 .glossary__content button {
     background-image: url("/assets/img/symbol-accordion-close.svg");
-    background-color: #212121
+    background-color: #212121;
     background-repeat: no-repeat;
     background-size: 2rem;
     background-position: 95% 50%;
