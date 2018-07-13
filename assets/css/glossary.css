@@ -87,7 +87,7 @@
     border-bottom: 1px solid #fff;
 }
 
-.glossary__content ul {
+.glossary__content ul, .glossary__content ol {
   padding: 0;
 }
 
