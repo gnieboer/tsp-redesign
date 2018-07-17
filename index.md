@@ -46,7 +46,7 @@ hero:
 </section>
 
 <section class="our-funds">
-<div class="callout">
+<div class="callout arrow-bottom-section arrow-bottom arrow-bottom-blue">
   <div class="usa-grid usa-content">
   <p>Invest in funds for a short-term U.S. Treasury security to several index funds compromised of domestic and international stocks.</p>
   </div>
