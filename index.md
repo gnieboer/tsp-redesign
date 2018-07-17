@@ -117,19 +117,3 @@ hero:
       <p class="center" style="font-weight: 400; line-height: 1.75em">You must use your electronic payroll system (e.g. <a href="https://mypay.dfas.mil/mypay.aspx" target="\_blank">myPay</a>, EBIS, <a href="https://www.nfc.usda.gov/EPPS/eplogin.aspx" target="\_blank">NFC EPP</a>, <a href="https://liteblue.usps.gov/wps/portal/!ut/p/z1/jY9NC4JAEIZ_SweP60zaF92kQxF9EGLaXEJhWxfWXdHV6N8ndSiir7m9M8888AJBAqTTVorUSqNT1eUDjY6zebAYjFeIW2-P6G2G4Q6j0Md1H-IbgB8mQKB__r8A9F0fA_1ClkBCmezeJtCZPxFAFT_xilduU3Xr3NqynjrooJKWZ6rhbsEfgSkjpGZGK6k5a-qyZi8nYVoH3-lzU1tInqxQFlGCjLLLOehdAUrfAgc!/dz/d5/L2dBISEvZ0FBIS9nQSEh/" target="\_blank">LiteBlue</a> and <a href="https://www.employeeexpress.gov/Default.aspx" target="\_blank">Employee Express</a>) or complete <a href="#">Form TSP-1</a> or <a href="#">Form TSP-U-1</a>.</p></div>
   </div>
 </section> -->
-
-<section class="bg-gray py4">
-  <div class="usa-grid">
-  <div class="usa-width-two-thirds">
-    <h2>Questions? 1-877-968-3778</h2>
-    Or <a href="/contact/">contact us</a> another way.
-  </div>
-  <div class="usa-width-one-third">
-    <ul class="list-reset flex items-center">
-      <li class="mb0 pr1"><a href="https://www.facebook.com/tsp4gov" target="_blank" class="h5"><img src="{{ site.baseurl }}/assets/img/icons/social_fb.svg" height="32px" alt="Facebook" title="Facebook" class="mr1"></a></li>
-      <li class="mb0 pr1"><a alt="Facebook" href="https://twitter.com/tsp4gov" target="_blank" class="h5"><img src="{{ site.baseurl }}/assets/img/icons/social_twitter.svg" height="23px" alt="Twitter" title="Twitter" class="mr1"></a></li>
-      <li class="mb0 pr1"><a href="https://www.youtube.com/user/tsp4gov" target="_blank" class="h5"><img src="{{ site.baseurl }}/assets/img/icons/social_yt.svg" height="32px" alt="YouTube" title="YouTube" class="mr1"></a></li>
-    </ul>
-  </div>
-  </div>
-</section>
