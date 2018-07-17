@@ -34,7 +34,22 @@ hero:
     </div>
   </div>
 </section>
-
+<section class="quick-links">
+<div class="usa-grid text-center">
+<div class="usa-width-one-fourth">
+  <a href="#">Fund performance</a>
+</div>
+<div class="usa-width-one-fourth">
+  <a href="#">Contribution limits</a>
+</div>
+<div class="usa-width-one-fourth">
+  <a href="#">Forms and publications</a>
+</div>
+<div class="usa-width-one-fourth">
+  <a href="#">Change your address</a>
+</div>
+</div>
+</section>
 <section class="section-investor">
   <div class="usa-grid">
     <div class="usa-width-one-half">
