@@ -34,7 +34,22 @@ hero:
     </div>
   </div>
 </section>
-
+<section class="quick-links">
+<div class="usa-grid text-center">
+<div class="usa-width-one-fourth">
+  <a href="#">Fund performance</a>
+</div>
+<div class="usa-width-one-fourth">
+  <a href="#">Contribution limits</a>
+</div>
+<div class="usa-width-one-fourth">
+  <a href="#">Forms and publications</a>
+</div>
+<div class="usa-width-one-fourth">
+  <a href="#">Change your address</a>
+</div>
+</div>
+</section>
 <section class="section-investor">
   <div class="usa-grid">
     <div class="usa-width-one-half">
@@ -46,7 +61,7 @@ hero:
 </section>
 
 <section class="our-funds">
-<div class="callout">
+<div class="callout arrow-bottom-section arrow-bottom arrow-bottom-blue">
   <div class="usa-grid usa-content">
   <p>Invest in funds for a short-term U.S. Treasury security to several index funds compromised of domestic and international stocks.</p>
   </div>
