@@ -52,7 +52,7 @@ colors:
   #   top-nav-link-current: '#fff'
     top-nav-dropdown-bg: '#323a45'
   #   top-nav-dropdown-link: '#fff'
-  #   top-nav-dropdown-link-hover-bg: '#1ba7d0'
+    top-nav-dropdown-link-hover-bg: '#323a45'
 
 # Side navigation colors
   side-navigation:

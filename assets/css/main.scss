@@ -92,12 +92,3 @@ $image-path: '../uswds/img';
 {% if site.site_width %}
   @import 'components/site-width';
 {% endif %}
-
-@import 'components/variables';
-@import 'components/header';
-@import 'components/misc';
-@import 'components/typography';
-@import 'components/feedback';
-@import 'components/home';
-@import 'components/glossary';
-@import 'components/top-nav';

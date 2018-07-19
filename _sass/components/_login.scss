@@ -1,0 +1,40 @@
+.login {
+  background-color: #fff;
+  padding: 2rem 2rem;
+  font-size: 1.5rem;
+  margin-top: 4rem;
+  z-index: 1000000;
+  outline: 9999px solid rgba(0,0,0,0.5);
+  right: 50%;
+  position: relative;
+  h1 {
+    margin-top: 0;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    font-size: 2.5rem;
+  }
+}
+
+#login-close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 10px;
+  font-size: 24px;
+  color: #5b616b;
+  background: none;
+  text-decoration: none;
+  width: auto;
+}
+
+.fadeOut {
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s linear 400ms, opacity 400ms;
+}
+
+.fadeIn {
+  visibility: visible;
+  opacity: 1;
+  transition: visibility 0s linear 0s, opacity 400ms;
+}
