@@ -1,0 +1,133 @@
+.usa-section-dark a {
+  color: #ffffff;
+  text-decoration: none;
+}
+.agency-service .usa-grid {
+  h2 {
+    text-align: center;
+    font-size: 3rem;
+    font-family: $font-sans;
+  }
+  h2, h3, p {
+    text-align: center;
+    color: white;
+  }
+  p {
+    font-size: $h3-font-size;
+  }
+}
+.tertiary-navigation .usa-grid {
+  ul {
+    font-size: 1.5rem;
+  }
+  li:first-of-type {
+    font-family: $font-serif;
+    font-weight: bold;
+  }
+}
+
+.home-about {
+  .usa-width-two-thirds {
+    padding-right: $spacing-md-small;
+  }
+  .usa-width-one-third {
+
+  }
+}
+
+// New homepage styles
+
+.home-getting-started {
+  .usa-width-one-third {
+    padding:4rem 1.5rem;
+    }
+    h2 {
+      text-align: center;
+      font-size: 3.5rem;
+    }
+    h2, h3, p {
+      color: white;
+    }
+    h3 {
+      font-size: 2.4rem;
+      font-weight: 400;
+    }
+    p {
+      font-size: $h5-font-size;
+    }
+    img {
+      width: 50px;
+      vertical-align: text-top;
+      float:left;
+      margin-right: 1rem;
+    }
+  }
+
+
+.usa-section-dark {
+  background-color: #323a45;
+}
+.usa-hero {
+  h1 {
+    font-weight: 500;
+    width: 15ch;
+    line-height: 6rem;
+  }
+}
+.section-investor {
+  background-image: url('/assets/img/Woman_FeatherEdge.png');
+  background-size: cover;
+  padding: 22rem 0;
+  color: #323a45;
+  h1 {
+    margin-top: 0;
+    color: #323a45;
+  }
+  a {
+    color: #323a45;
+    font-size: 3rem;
+    text-decoration: none;
+    padding: 1rem 0;
+    img {
+      width: 40px;
+      height: 40px;
+      vertical-align: middle;
+      margin-right: 1rem;
+    }
+  }
+}
+.our-funds {
+  .callout {
+    background-color: #1ba7d0;
+    color: #fff;
+    p {
+      text-align: center;
+      margin:auto;
+      font-size: 3rem;
+      padding: 3rem 0;
+    }
+  }
+
+}
+
+
+.text-center {
+  text-align: center;
+}
+
+.fund-grid {
+h3 {
+  font-family: "Source Sans Pro", "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
+  margin-bottom: 1rem;
+}
+ p {margin:0;}
+ .usa-width-one-third {
+   margin-bottom: 8rem;
+ }
+ img {
+   height: 25px;
+    width: 25px;
+    vertical-align: bottom;
+    margin-left: 1rem;
+ }
+}

@@ -7,7 +7,4 @@
   },
   "author": "18F",
   "license": "SEE LICENSE IN LICENSE.md",
-  "dependencies": {
-    "basscss-sass": "^4.0.0"
-  }
 }
