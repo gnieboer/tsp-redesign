@@ -1,18 +1,12 @@
 ---
 layout: page
 title: Contact
-
-styles:
-  - /assets/css/flex.css
-
-scripts:
-
 permalink: /contact/
 ---
 
 <section id="contact">
 <!-- ROW 1 -->
-<div class="usa-grid-full usa-layout-docs-main_content mt10">
+<div class="usa-grid-full usa-layout-docs-main_content">
   <div class="usa-width-one-twelfth">
     <img src="{{ site.baseurl }}/assets/img/icons/contact_phone.svg" width="28px" alt="" class="">
   </div>
@@ -38,7 +32,7 @@ permalink: /contact/
   </div>
 </div>
 <!-- ROW 2 -->
-<div class="usa-grid-full usa-layout-docs-main_content mt10">
+<div class="usa-grid-full usa-layout-docs-main_content">
   <!-- WEB COMMENTS -->
     <div class="usa-width-one-twelfth">
       <img src="{{ site.baseurl }}/assets/img/icons/contact_comment.svg" height="38" alt="" class="">

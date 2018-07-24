@@ -10,8 +10,8 @@ hero:
   image: /assets/img/hero.jpg
   callout:
     alt:
-    text: Plan for a lifetime with the TSP.
-  content: invest in your future
+    text: Invest in your future
+  content: Plan for a lifetime with the TSP.
 
 ---
 

@@ -1,0 +1,23 @@
+.footer-nav {
+  background-color: #323a45;
+  color: #1ba7d0;
+
+  .usa-width-one-fourth {
+    padding-bottom: 3rem;
+    padding-top: 3rem;
+  }
+
+  a {
+    color: #fff;
+    text-decoration: none;
+  }
+}
+
+.footer-section {
+  padding: 3rem 0;
+  background-color: #E5E1E6;
+  .usa-unstyled-list li {
+    display: inline-block;
+    margin-right: 1rem;
+  }
+}

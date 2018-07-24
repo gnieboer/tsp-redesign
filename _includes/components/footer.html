@@ -1,11 +1,11 @@
-<section class="bg-gray py4">
+<section class="footer-section"> 
   <div class="usa-grid">
   <div class="usa-width-two-thirds">
     <h2>Questions? 1-877-968-3778</h2>
     Or <a href="/contact/">contact us</a> another way.
   </div>
   <div class="usa-width-one-third">
-    <ul class="list-reset flex items-center">
+    <ul class="list-reset flex items-center usa-unstyled-list">
       <li class="mb0 pr1"><a href="https://www.facebook.com/tsp4gov" target="_blank" class="h5"><img src="{{ site.baseurl }}/assets/img/icons/social_fb.svg" height="32px" alt="Facebook" title="Facebook" class="mr1"></a></li>
       <li class="mb0 pr1"><a alt="Facebook" href="https://twitter.com/tsp4gov" target="_blank" class="h5"><img src="{{ site.baseurl }}/assets/img/icons/social_twitter.svg" height="23px" alt="Twitter" title="Twitter" class="mr1"></a></li>
       <li class="mb0 pr1"><a href="https://www.youtube.com/user/tsp4gov" target="_blank" class="h5"><img src="{{ site.baseurl }}/assets/img/icons/social_yt.svg" height="32px" alt="YouTube" title="YouTube" class="mr1"></a></li>
@@ -13,3 +13,123 @@
   </div>
   </div>
 </section>
+<div class="footer-nav">
+  <div class="usa-grid">
+    <!-- FOOTER NAV COLUMN 1 -->
+    <div class="usa-width-one-fourth">
+      {% assign _column01 = footer.column01.links %}
+      {% assign column01_links = site.data.navigation[_column01] | default: _column01 %}
+      {% if column01_links %}
+      <ul class="usa-unstyled-list">
+      {% for _section in column01_links %}
+      <li>
+        {% if _section.links %}
+          {% assign section_links = site.data.navigation[_section.links] | default: _section.links %}
+        {{ _section.text }}</li>
+
+      {% for _link in section_links %}
+        {% assign _href = link.href %}
+        {% assign _current = false %}
+        {% if link.href == page.url or link.href == page.permalink %}
+          {% assign _current = true %}
+        {% endif %}
+      <li>
+      <a href="{% if link.external == true %}{{ link.href }}{% else %}{{ link.href | relative_url }}{% endif %}" class="{% if _current %}usa-current{% endif %} {% if page.url contains _href or page.permalink contains _href %}current-parent{% endif %}">
+      {{ _link.text }}
+      </a>
+      </li>
+      {% endfor %} <!-- end for _link in section_links -->
+      {% endif %} <!-- end if _section.links -->
+      {% endfor %} <!-- end for _section in column01_links -->
+      </ul>
+    </div>
+      {% endif %} <!-- end if column01_links -->
+    <!-- FOOTER NAV COLUMN 2 -->
+    <div class="usa-width-one-fourth">
+      {% assign _column02 = footer.column02.links %}
+      {% assign column02_links = site.data.navigation[_column02] | default: _column02 %}
+      {% if column02_links %}
+      <ul class="usa-unstyled-list">
+      {% for _section in column02_links %}
+      <li>
+        {% if _section.links %}
+          {% assign section_links = site.data.navigation[_section.links] | default: _section.links %}
+        {{ _section.text }}</li>
+
+      {% for _link in section_links %}
+        {% assign _href = link.href %}
+        {% assign _current = false %}
+        {% if link.href == page.url or link.href == page.permalink %}
+          {% assign _current = true %}
+        {% endif %}
+      <li>
+      <a href="{% if link.external == true %}{{ link.href }}{% else %}{{ link.href | relative_url }}{% endif %}" class="{% if _current %}usa-current{% endif %} {% if page.url contains _href or page.permalink contains _href %}current-parent{% endif %}">
+      {{ _link.text }}
+      </a>
+      </li>
+      {% endfor %} <!-- end for _link in section_links -->
+      {% endif %} <!-- end if _section.links -->
+      {% endfor %} <!-- end for _section in column02_links -->
+      </ul>
+    </div>
+      {% endif %} <!-- end if column02_links -->
+    <!-- FOOTER NAV COLUMN 3 -->
+    <div class="usa-width-one-fourth">
+      {% assign _column03 = footer.column03.links %}
+      {% assign column03_links = site.data.navigation[_column03] | default: _column03 %}
+      {% if column03_links %}
+      <ul class="usa-unstyled-list">
+      {% for _section in column03_links %}
+      <li>
+        {% if _section.links %}
+          {% assign section_links = site.data.navigation[_section.links] | default: _section.links %}
+        {{ _section.text }}</li>
+
+      {% for _link in section_links %}
+        {% assign _href = link.href %}
+        {% assign _current = false %}
+        {% if link.href == page.url or link.href == page.permalink %}
+          {% assign _current = true %}
+        {% endif %}
+      <li>
+      <a href="{% if link.external == true %}{{ link.href }}{% else %}{{ link.href | relative_url }}{% endif %}" class="{% if _current %}usa-current{% endif %} {% if page.url contains _href or page.permalink contains _href %}current-parent{% endif %}">
+      {{ _link.text }}
+      </a>
+      </li>
+      {% endfor %} <!-- end for _link in section_links -->
+      {% endif %} <!-- end if _section.links -->
+      {% endfor %} <!-- end for _section in column03_links -->
+      </ul>
+    </div>
+      {% endif %} <!-- end if column03_links -->
+    <!-- FOOTER NAV COLUMN 4 -->
+    <div class="usa-width-one-fourth">
+      {% assign _column04 = footer.column04.links %}
+      {% assign column04_links = site.data.navigation[_column04] | default: _column04 %}
+      {% if column04_links %}
+      <ul class="usa-unstyled-list">
+      {% for _section in column04_links %}
+      <li>
+        {% if _section.links %}
+          {% assign section_links = site.data.navigation[_section.links] | default: _section.links %}
+        {{ _section.text }}</li>
+
+      {% for _link in section_links %}
+        {% assign _href = link.href %}
+        {% assign _current = false %}
+        {% if link.href == page.url or link.href == page.permalink %}
+          {% assign _current = true %}
+        {% endif %}
+      <li>
+      <a href="{% if link.external == true %}{{ link.href }}{% else %}{{ link.href | relative_url }}{% endif %}" class="{% if _current %}usa-current{% endif %} {% if page.url contains _href or page.permalink contains _href %}current-parent{% endif %}">
+      {{ _link.text }}
+      </a>
+      </li>
+      {% endfor %} <!-- end for _link in section_links -->
+      {% endif %} <!-- end if _section.links -->
+      {% endfor %} <!-- end for _section in column04_links -->
+      </ul>
+    </div>
+      {% endif %} <!-- end if column04_links -->
+  </div>
+</div>
