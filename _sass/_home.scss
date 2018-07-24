@@ -88,6 +88,17 @@
     outline: 9999px solid rgba(0,0,0,0.5);
 }
 
+a.protect::before {
+    content: "";
+    display: block;
+    background: url("/assets/img/icons/lock.svg") no-repeat;
+    background-size: 2.3rem;
+    width: 2.3rem;
+    height: 2.7rem;
+    float: left;
+    margin: 0 .4rem 0 0;
+}
+
 .fadeOut {
   visibility: hidden;
   opacity: 0;
