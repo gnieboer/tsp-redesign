@@ -64,6 +64,36 @@
   }
 
 
+
+  .arrow-bottom-section {
+      position: relative;
+  }
+  .arrow-bottom::after {
+    content: '';
+     position: absolute;
+     left: 50%;
+     top: 100%;
+     width: 0;
+     height: 0;
+     border-left: 20px solid transparent;
+     border-right: 20px solid transparent;
+     border-top-width: 20px;
+     border-top-style: solid;
+     clear: both;
+  }
+    .arrow-bottom-blue::after {
+      border-top-color: #1ba7d0;
+  }
+
+  .quick-links {
+    background-color: #1ba7d0;
+    a {
+      padding: 2rem 0 ;
+      display:inline-block;
+      color: #fff;
+    }
+  }
+
 .usa-section-dark {
   background-color: #323a45;
 }
@@ -110,11 +140,6 @@
 
 }
 
-
-.text-center {
-  text-align: center;
-}
-
 .fund-grid {
 h3 {
   font-family: "Source Sans Pro", "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
@@ -130,4 +155,8 @@ h3 {
     vertical-align: bottom;
     margin-left: 1rem;
  }
+}
+
+.text-center {
+  text-align: center;
 }
