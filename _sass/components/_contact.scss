@@ -1,0 +1,19 @@
+#contact {
+  .usa-width-one-half {
+    position: relative;
+    padding-left: 49px;
+    margin-bottom: 4em;
+    img {
+      width: 28px;
+      position: absolute;
+      left:0;
+      top: 0;
+    }
+  h3 {
+    margin-top: 0;
+  }
+  :first-child {
+    margin: 0;
+  }
+  }
+}
