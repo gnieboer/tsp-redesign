@@ -45,7 +45,7 @@ For more information, read the fact sheet _[TSP Benefits That Apply to Members o
 
 * You will not receive <span data-term="Agency Matching Contributions" class="js-glossary-toggle term term-end">Agency Matching Contributions</span> (which are based on your employee contributions).
 
-* You will not receive <span data-term="Agency Automatic Contributions" class="js-glossary-toggle term term-end">Agency Automatic (1%) Contributions</span>, which are calculated on basic pay earned each pay period.
+* You will not receive <span data-term="Agency Automatic (1%) Contributions" class="js-glossary-toggle term term-end">Agency Automatic (1%) Contributions</span>, which are calculated on basic pay earned each pay period.
 
 ### What are the effects of nonpay status on my contributions and loans?
 
