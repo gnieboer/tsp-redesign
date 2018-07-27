@@ -31,7 +31,7 @@ module.exports=[
   "definition": "Contributions that are made after taxes have been taken from pay. Roth contributions are made after-tax."
   },
   {
-  "term": "Agency Automatic Contributions",
+  "term": "Agency Automatic (1%) Contributions",
   "definition": "Contributions equal to 1% of basic pay each pay period, contributed to a FERS participant's TSP account by his or her agency."
   },
   {
