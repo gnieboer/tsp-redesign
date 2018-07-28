@@ -83,11 +83,13 @@ manage:
         href: /manage-life-changes/entering-nonpay-status/
   - text: For beneficiaries
     href: /for-beneficiaries/
-  # - text: Referenced section
-  #   links: footer
-  # - text: External link
-  #   href: https://tsp.gov
-  #   external: true
+    subnav:
+      - text: Being a beneficiary participant
+        href: /for-beneficiaries/
+      - text: Combining your TSP accounts
+        href: /for-beneficiaries/combining-tsp-accounts/
+      - text: Beneficiary designation
+        href: /for-beneficiaries/beneficiary-designation/
 
 funds:
   - text: How to invest
