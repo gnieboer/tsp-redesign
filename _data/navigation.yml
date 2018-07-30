@@ -42,6 +42,13 @@ primary:
       href: #
     - text: Annuity basics
       href: #
+  - text: Manage life changes
+    links:
+    - text: Estate planning
+      href: /estate-planning/
+    - text: Federal service changes
+      href: /federal-service-changes/
+
 
 secondary:
   - text: About us
@@ -110,6 +117,32 @@ savings:
     href: #
   - text: Annuity basics
     href: #
+
+manage-life-changes:
+  - text: Estate planning
+    href: /estate-planning/
+    subnav:
+      - text: Beneficiary basics
+        href: #
+      - text: Changes in your family status
+        href: #
+      - text: Economic hardship
+        href: #
+      - text: Power of attorney
+        href: #
+      - text: Court Appointments
+        href: #
+  - text: Federal service changes
+    href: /federal-service-changes/
+    subnav:
+      - text: Leaving federal service
+        href: #
+      - text: Returning to federal service
+        href: #
+      - text: Entering a non-pay status
+        href: #
+      - text: Preparing for active duty
+        href: #
 
 # FOOTERNAV MENUS
 
