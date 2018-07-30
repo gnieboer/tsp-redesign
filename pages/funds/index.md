@@ -12,7 +12,7 @@ scripts:
 permalink: /funds/
 ---
 
-## What type of investor am I?
+# Investor types
 
 Think about the type of investor you are.
 
@@ -26,10 +26,17 @@ retirement portfolio.
 
 Learn more about our funds by viewing the “TSP Investment Options” videos at <a href="https://www.youtube.com/tsp4gov" target="\_blank">youtube.com/tsp4gov.</a>
 
-## How do I pick an approach that's right for me?
+## Before you invest
 
 Content under development
 
-## How do I change how my money is invested?
+## Changing your investments
 
-Content under development
+To change which fund(s) you invest in, there are two transactions you can make:
+
+ A contribution allocation tells us how you want to invest NEW money coming into your account.
+
+An interfund transfer (IFT) allows you to change the way money ALREADY in your account is invested.
+You are allowed two IFTs in a calendar month. After that, you can only transfer money into the G Fund.
+
+You may request a contribution allocation or an IFT by logging into My Account and visiting the “Online Transactions” menu on the left. You can also call the ThriftLine at 1-877-968-3778 and follow the automated prompts.
