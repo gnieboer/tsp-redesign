@@ -1,18 +1,13 @@
 ---
 layout: page
-
 title: Making contributions
-
 styles:
-
 sidenav: manage
-
 scripts:
-
 permalink: /making-contributions/how-much-to-contribute/
 ---
 
-## How much should I contribute?
+# How much should I contribute?
 
 When contributing to your retirement, make sure you’re not leaving money on the table. By  contributing **at least** 5% of your pay, you’re taking full advantage of thousands of dollars in matching funds from your agency or service over time.
 

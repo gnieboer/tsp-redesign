@@ -63,12 +63,12 @@ colors:
     side-nav-link-current: '#323a45'
 
 # Footer colors
-  footer:
-    primary-footer-bg: 'Gainsboro'
-    primary-footer-link: 'black'
-    footer-bg: 'DarkSlateGray'
-    footer-text: 'white'
-    footer-link: 'LightBlue'
+  # footer:
+  #   primary-footer-bg: 'Gainsboro'
+  #   primary-footer-link: 'black'
+  #   footer-bg: 'DarkSlateGray'
+  #   footer-text: 'white'
+  #   footer-link: 'LightBlue'
 
 
 # Font configurations
