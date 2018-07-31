@@ -1,18 +1,13 @@
 ---
 layout: page
-
 title: How to invest
-
 styles:
-
 sidenav: funds
-
 scripts:
-
 permalink: /funds/
 ---
 
-## What type of investor am I?
+# Investor types
 
 Think about the type of investor you are.
 
@@ -26,10 +21,6 @@ retirement portfolio.
 
 Learn more about our funds by viewing the “TSP Investment Options” videos at <a href="https://www.youtube.com/tsp4gov" target="\_blank">youtube.com/tsp4gov.</a>
 
-## How do I pick an approach that's right for me?
-
-Content under development
-
-## How do I change how my money is invested?
+## Before you invest
 
 Content under development

@@ -101,6 +101,9 @@ manage:
 funds:
   - text: How to invest
     href: /funds/
+    subnav:
+      - text: Change investments
+        href: /funds/change-investments/
   - text: Fund basics
     href: #
   - text: Fund comparison matrix
