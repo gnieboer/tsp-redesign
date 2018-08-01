@@ -92,8 +92,9 @@ St. Louis, MO 63101
       aria-controls="a2">
       Court Orders and Legal Process Actions
     </button>
-<div id="a2" class="usa-accordion-content" markdown="1">
-
+<div id="a2" class="usa-accordion-content">
+<div class="usa-grid-full">
+<div class="usa-width-two-thirds" markdown="1">
 Use this post office box if you are sending the TSP a court order or legal process,
 power of attorney, guardianship or conservatorship order, Exception to Spousal
 Requirements (Form TSP-16/TSP-U-16), Privacy Act request, tax levy, or associated
@@ -102,7 +103,8 @@ sent to you with the decision letter (e.g., Spouse’s Election of Payment Metho
 (Form TSP-13-S-C/ U-13-S-C), W-4Ps, or the request to waive the waiting period)
 should be returned to this post office box. Inquiries regarding these actions should
 also be sent to this address.
-
+</div>
+<div class="usa-width-one-third" markdown="1">
 **TSP Legal Processing Unit**  
 P.O. Box 4390  
 Fairfax, VA 22038-4390  
@@ -114,6 +116,11 @@ Attn: TSP Legal Processing Unit
 12219 Fairfax Town Center  
 Unit 906  
 Fairfax, VA 22033  
+</div>
+</div>
+
+
+
 
 </div>
   </li><li>
@@ -122,11 +129,14 @@ Fairfax, VA 22033
       aria-controls="a3">
       Federal Tax Levies and Criminal Restitution Orders
     </button>
-<div id="a3" class="usa-accordion-content" markdown="1">
+<div id="a3" class="usa-accordion-content">
+<div class="usa-grid-full">
+<div class="usa-width-two-thirds" markdown="1">
 
 Use this post office box if you are sending the TSP a Federal tax levy or a restitution
 order pursuant to the Mandatory Victims Restitution Act (MRVA).
-
+</div>
+<div class="usa-width-one-third" markdown="1">
 **TSP Legal Processing Unit**  
 P.O. Box 4570  
 Fairfax, VA 22038-9998  
@@ -138,6 +148,11 @@ Attn: TSP Legal Processing Unit
 12210 Fairfax Town Center  
 Unit 906  
 Fairfax, VA 22033  
+</div>
+</div>
+
+
+
 
 </div>
   </li><li>
@@ -146,15 +161,18 @@ Fairfax, VA 22033
       aria-controls="a4">
       Death Benefit Claims
     </button>
-<div id="a4" class="usa-accordion-content" markdown="1">
+<div id="a4" class="usa-accordion-content">
 
+<div class="usa-grid-full">
+<div class="usa-width-two-thirds" markdown="1">
 Use this post office box if you are submitting a death benefit claim for a TSP
 account. This includes Form TSP-17/U-17, Information Relating to Deceased
 Participant, death certificates, or other documentation. If you are the recipient of a
 death benefit payment, the forms sent to you with the “Intent to Pay” letter (e.g.,
 W-4Ps or the request to waive the waiting period) should be returned to this post
 office box. Inquiries regarding these actions should also be sent to this address.
-
+</div>
+<div class="usa-width-one-third" markdown="1">
 **TSP Death Benefits**  
 Processing Unit  
 P.O. Box 4450  
@@ -168,6 +186,10 @@ Processing Unit
 12210 Fairfax Town Center  
 Unit 906  
 Fairfax, VA 22033  
+</div>
+</div>
+
+
 
 </div>
   </li><li>
@@ -176,12 +198,20 @@ Fairfax, VA 22033
       aria-controls="a5">
       Transfer or Rollover Funds to the TSP
     </button>
-<div id="a5" class="usa-accordion-content" markdown="1">
+<div id="a5" class="usa-accordion-content">
 
+<div class="usa-grid-full">
+<div class="usa-width-two-thirds" markdown="1">
 Use this post office box if you are transferring or rolling over funds to the TSP. This
 includes Form TSP-60/U-60, Request for a Transfer Into the TSP, the associated
 check for the funds, and any additional documentation. Inquiries regarding these
 actions should also be sent to this address.
+
+<small>NOTE: Do not submit any withdrawal forms to these addresses. Instead, use the “TSP Forms
+and General Correspondence” address above.</small>
+
+</div>
+<div class="usa-width-one-third" markdown="1">
 
 **TSP Rollover and Transfer**  
 Processing Unit  
@@ -198,8 +228,10 @@ IBS - TSP Processing Unit
 Suite 610  
 Birmingham, AL 35242  
 
-<small>NOTE: Do not submit any withdrawal forms to these addresses. Instead, use the “TSP Forms
-and General Correspondence” address above.</small>
+</div>
+</div>
+
+
 
 
 </div>
