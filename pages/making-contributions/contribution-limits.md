@@ -1,15 +1,15 @@
 ---
 layout: page
-title: Making contributions
+title: Contribution limits
 styles:
 sidenav: manage-your-plan
 scripts:
 permalink: /making-contributions/contribution-limits/
 ---
 
-# What are the contribution limits?
+# Contribution limits
 
-The Internal Revenue Code (IRC) places limits on the dollar amount of contributions you can make to the TSP. The Internal Revenue Service (IRS) calculates them every year and they can change annually. We announce the limits here and the ThriftLine, through various publications, and on our Facebook and Twitter pages.
+The Internal Revenue Code (IRC) places limits on the dollar amount of contributions you can make to the TSP. The Internal Revenue Service (IRS) calculates them every year and they can change annually. We announce the limits here and the ThriftLine, through various publications, and on our [Facebook](#) and [Twitter](#) pages.
 
 <table>
   <caption>Contribution Limits for 2018</caption>

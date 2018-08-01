@@ -4,10 +4,10 @@ title: Making contributions
 styles:
 sidenav: manage-your-plan
 scripts:
-permalink: /making-contributions/different-types/
+permalink: /making-contributions/contribution-types/
 ---
 
-# What are the different types of contributions?
+# Contribution types
 
 ## Regular Employee Contributions
 

@@ -4,10 +4,10 @@ title: Making contributions
 styles:
 sidenav: manage-your-plan
 scripts:
-permalink: /making-contributions/traditional-and-roth/
+permalink: /making-contributions/traditional-and-roth-contributions/
 ---
 
-# What’s the difference between making Traditional vs. Roth Contributions?
+# Traditional and Roth contributions
 
 You can choose between two tax treatments for your TSP contributions:
 
@@ -24,10 +24,7 @@ your money.
   <div class="usa-width-one-half" markdown="1">
 ## Roth contributions
 
-You pay the taxes up front,
-so during retirement, you’ll
-receive qualified Roth
-distributions tax-free.
+With Roth TSP contributions, you pay the taxes up front, so during retirement, you’ll receive qualified Roth distributions tax-free.
   </div>
 </div>
 

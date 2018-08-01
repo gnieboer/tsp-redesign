@@ -72,13 +72,15 @@ manage-your-plan:
   - text: Making contributions
     href: /making-contributions/
     subnav:
-      - text: What’s the difference between making Traditional vs. Roth Contributions?
-        href: /making-contributions/traditional-and-roth/
-      - text: What are the different types of contributions?
-        href: /making-contributions/different-types/
-      - text: How much should I contribute?
-        href: /making-contributions/how-much-to-contribute/
-      - text: What are the contribution limits?
+      - text: How to start, change, and stop contributions
+        href: /making-contributions/start-change-stop-contributions/
+      - text: Traditional and Roth Contributions
+        href: /making-contributions/traditional-and-roth-contributions/
+      - text: Contribution types
+        href: /making-contributions/contribution-types/
+      - text: Maximize your savings
+        href: /making-contributions/maximize-your-savings/
+      - text: Contribution limits
         href: /making-contributions/contribution-limits/
   - text: For beneficiaries
     href: /for-beneficiaries/
