@@ -21,21 +21,21 @@ primary:
   - text: Learn about fund options
     links:
     - text: How to invest
-      href: #
+      href: /how-to-invest/
     - text: Fund basics
-      href: #
+      href: /fund-basics/
     - text: Fund performance
-      href: #
+      href: /fund-performance/
   - text: Use your savings
     links:
     - text: Loan basics
-      href: #
+      href: /loan-basics/
     - text: In-service withdrawal basics
-      href: #
+      href: /in-service-withdrawal-basics/
     - text: Living in retirement
-      href: #
+      href: /living-in-retirement/
     - text: Annuity basics
-      href: #
+      href: /annuity-basics/
   - text: Manage life changes
     links:
     - text: Estate planning
@@ -92,28 +92,62 @@ manage-your-plan:
       - text: Beneficiary participant account distributions
         href: /for-beneficiaries/beneficiary-participant-account-distribution/
 
-funds:
+fund-options:
   - text: How to invest
-    href: /funds/
+    href: /how-to-invest/
     subnav:
-      - text: Change investments
-        href: /funds/change-investments/
+      - text: Investor types
+        href: /how-to-invest/investor-types/
+      - text: Before you invest
+        href: /how-to-invest/before-you-invest/
+      - text: Changing your investments
+        href: /how-to-invest/change-your-investments/
   - text: Fund basics
-    href: #
-  - text: Fund comparison matrix
-    href: #
+    href: /fund-basics/
   - text: Fund performance
-    href: #
+    href: /fund-performance/
 
 savings:
   - text: Loan basics
-    href: /savings/
+    href: /loan-basics/
+    subnav:
+      - text: Cost benefit analysis
+        href: #
+      - text: Applying for a loan
+        href: #
+      - text: Loan application wizard
+        href: #
+      - text: Your loan in a non-pay status
+        href: #
+      - text: Repaying your loan
+        href: #
   - text: In-service withdrawal basics
-    href: #
-  - text: Retirement withdrawal basics
-    href: #
+    href: /in-service-withdrawal-basics/
+    subnav:
+      - text: Cost benefit analysis
+        href: #
+      - text: Types of in-service withdrawals
+        href: #
+      - text: Making an in-service withdrawal
+        href: #
+      - text: Alternatives to Withdrawals
+        href: #
+  - text: Living in retirement
+    href: /living-in-retirement/
+    subnav:
+      - text: Retirement withdrawal basics
+        href: #
+      - text: Stay with the TSP
+        href: #
+      - text: Make or change your withdrawal
+        href: #
   - text: Annuity basics
-    href: #
+    href: /annuity-basics/
+    subnav:
+      - text: Cost benefit analysis
+        href: #
+      - text: Start an annuity
+        href: #
 
 manage-life-changes:
   - text: Estate planning
