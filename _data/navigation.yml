@@ -16,10 +16,6 @@ primary:
       href: /manage/
     - text: Making contributions
       href: /making-contributions/
-    - text: Maximize your savings
-      href: /maximize-your-savings/
-    - text: Manage life changes
-      href: /manage-life-changes/
     - text: For beneficiaries
       href: /for-beneficiaries/
   - text: Learn about fund options
@@ -59,9 +55,18 @@ secondary:
     class: login-toggle usa-button
 
 # SIDENAV MENUS
-manage:
+manage-your-plan:
   - text: Account basics
-    href: /manage/
+    href: /account-basics/
+    subnav:
+      - text: What’s the difference between making Traditional vs. Roth Contributions?
+        href: /making-contributions/traditional-and-roth/
+      - text: What are the different types of contributions?
+        href: /making-contributions/different-types/
+      - text: How much should I contribute?
+        href: /making-contributions/how-much-to-contribute/
+      - text: What are the contribution limits?
+        href: /making-contributions/contribution-limits/
   - text: Making contributions
     href: /making-contributions/
     subnav:
