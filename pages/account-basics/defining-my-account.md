@@ -1,17 +1,14 @@
 ---
 layout: page
-
 title: Defining my account
-
 sidenav: manage-your-plan
-
 styles:
-
 scripts:
-
 permalink: /account-basics/defining-my-account/
 ---
+
 # Defining my account
+
 [My Account](/tsp/accountBalance.do?subaction=view&amp;\_name=acctbal) is the secure, convenient section of tsp.gov where you can log in to find out your account balance or perform certain transactions.
 
 Get access any time to make sure you’re on track to meet your retirement goals:
