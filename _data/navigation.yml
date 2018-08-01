@@ -57,14 +57,18 @@ manage-your-plan:
   - text: Account basics
     href: /account-basics/
     subnav:
-      - text: What’s the difference between making Traditional vs. Roth Contributions?
-        href: /making-contributions/traditional-and-roth/
-      - text: What are the different types of contributions?
-        href: /making-contributions/different-types/
-      - text: How much should I contribute?
-        href: /making-contributions/how-much-to-contribute/
-      - text: What are the contribution limits?
-        href: /making-contributions/contribution-limits/
+      - text: Defining my account
+        href: /account-basics/defining-my-account/
+      - text: Your account number
+        href: /account-basics/your-account-number/
+      - text: How the TSP fits into your retirement
+        href: /account-basics/how-tsp-fits/
+      - text: Move money into the TSP
+        href: /account-basics/move-money-into-tsp/
+      - text: Protect your TSP account
+        href: /account-basics/protect-your-tsp-account/
+      - text: Update your personal information
+        href: /account-basics/update-personal-information/
   - text: Making contributions
     href: /making-contributions/
     subnav:
@@ -76,30 +80,15 @@ manage-your-plan:
         href: /making-contributions/how-much-to-contribute/
       - text: What are the contribution limits?
         href: /making-contributions/contribution-limits/
-  - text: Maximize your savings
-    href: /maximize-your-savings/
-  - text: Manage life changes
-    href: /manage-life-changes/
-    subnav:
-      - text: How do I change my address?
-        href: /manage-life-changes/
-      - text: Beneficiary basics
-        href: /manage-life-changes/beneficiary-basics/
-      - text: Leaving Federal Service
-        href: /manage-life-changes/leaving-federal-service/
-      - text: Where do I send forms?
-        href: /manage-life-changes/where-to-send-forms/
-      - text: Entering a nonpay status
-        href: /manage-life-changes/entering-nonpay-status/
   - text: For beneficiaries
     href: /for-beneficiaries/
     subnav:
       - text: Being a beneficiary participant
-        href: /for-beneficiaries/
-      - text: Combining your TSP accounts
-        href: /for-beneficiaries/combining-tsp-accounts/
+        href: /for-beneficiaries/being-a-beneficiary/
       - text: Beneficiary designation
         href: /for-beneficiaries/beneficiary-designation/
+      - text: Beneficiary participant account distributions
+        href: /for-beneficiaries/beneficiary-participant-account-distribution/
 
 funds:
   - text: How to invest

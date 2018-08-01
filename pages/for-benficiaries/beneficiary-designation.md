@@ -1,7 +1,7 @@
 ---
 layout: page
-title: For beneficiaries
-sidenav: manage
+title: Beneficiary designation
+sidenav: manage-your-plan
 styles:
 scripts:
 permalink: /for-beneficiaries/beneficiary-designation/

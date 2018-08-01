@@ -3,7 +3,7 @@ layout: page
 
 title: Move money into the TSP
 
-sidenav: manage
+sidenav: manage-your-plan
 
 styles:
 
@@ -45,7 +45,7 @@ Tax rules differ depending upon which method you choose to move your IRA or elig
 
 ### Transfers
 
-You don’t have to pay taxes on the money you transfer in immediately. However, depending on the type of money you transfer, you may have to pay income taxes when you start taking withdrawals from your TSP account. For more information, read [Important Tax Information About Payments From Your TSP Account](javascript:void(0)).
+You don’t have to pay taxes on the money you transfer in immediately. However, depending on the type of money you transfer, you may have to pay income taxes when you start taking withdrawals from your TSP account. For more information, read [*Important Tax Information About Payments From Your TSP Account*](javascript:void(0)).
 
 ### Rollovers
 
