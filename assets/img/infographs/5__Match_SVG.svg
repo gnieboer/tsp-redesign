@@ -1,0 +1,338 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 3024 11887">
+  <defs>
+    <style>
+      .cls-1 {
+        clip-path: url(#clip-_5_Match_v6_);
+      }
+
+      .cls-12, .cls-2, .cls-20 {
+        fill: none;
+      }
+
+      .cls-2, .cls-29 {
+        stroke: #707070;
+      }
+
+      .cls-3 {
+        fill: #f1f1f1;
+      }
+
+      .cls-4 {
+        fill: #132f50;
+      }
+
+      .cls-13, .cls-19, .cls-27, .cls-28, .cls-29, .cls-32, .cls-33, .cls-5 {
+        fill: #fff;
+      }
+
+      .cls-6 {
+        fill: #00a651;
+      }
+
+      .cls-7 {
+        fill: #8dc63f;
+      }
+
+      .cls-8 {
+        fill: #009444;
+      }
+
+      .cls-9 {
+        fill: #f7f7f7;
+      }
+
+      .cls-10 {
+        fill: #0071bb;
+      }
+
+      .cls-11 {
+        fill: #00aeef;
+      }
+
+      .cls-12 {
+        stroke: #00aeef;
+        stroke-width: 5px;
+        stroke-dasharray: 12;
+      }
+
+      .cls-13 {
+        font-size: 195px;
+      }
+
+      .cls-13, .cls-14, .cls-15, .cls-21, .cls-22, .cls-23, .cls-24, .cls-25, .cls-26, .cls-27, .cls-28, .cls-33, .cls-35, .cls-37 {
+        font-family: SourceSansPro-Semibold, Source Sans Pro;
+        font-weight: 600;
+      }
+
+      .cls-14 {
+        fill: #fdb81e;
+        font-size: 211px;
+      }
+
+      .cls-15 {
+        font-size: 130px;
+      }
+
+      .cls-16 {
+        fill: #1073b9;
+      }
+
+      .cls-17 {
+        fill: #235591;
+      }
+
+      .cls-18, .cls-30 {
+        fill: #046b99;
+      }
+
+      .cls-19 {
+        font-size: 109px;
+      }
+
+      .cls-19, .cls-31 {
+        font-family: SourceSansPro-Bold, Source Sans Pro;
+        font-weight: 700;
+      }
+
+      .cls-20, .cls-32 {
+        stroke: #fff;
+      }
+
+      .cls-20 {
+        stroke-width: 8px;
+      }
+
+      .cls-21, .cls-22, .cls-23, .cls-24, .cls-25, .cls-26 {
+        fill: #1ba7d0;
+      }
+
+      .cls-21 {
+        font-size: 181px;
+      }
+
+      .cls-22, .cls-37 {
+        font-size: 95px;
+      }
+
+      .cls-23 {
+        font-size: 177px;
+      }
+
+      .cls-24 {
+        font-size: 93px;
+      }
+
+      .cls-25 {
+        font-size: 176px;
+      }
+
+      .cls-26 {
+        font-size: 92px;
+      }
+
+      .cls-27 {
+        font-size: 98px;
+      }
+
+      .cls-28 {
+        font-size: 369px;
+      }
+
+      .cls-30 {
+        font-size: 183px;
+      }
+
+      .cls-30, .cls-34, .cls-36 {
+        font-family: SourceSansPro-Regular, Source Sans Pro;
+      }
+
+      .cls-32 {
+        stroke-width: 10px;
+      }
+
+      .cls-33 {
+        font-size: 138px;
+      }
+
+      .cls-34 {
+        font-size: 105px;
+      }
+
+      .cls-36 {
+        font-weight: 400;
+      }
+
+      .cls-38 {
+        filter: url(#Rectangle_120);
+      }
+    </style>
+    <filter id="Rectangle_120" x="431" y="6148" width="2188" height="770" filterUnits="userSpaceOnUse">
+      <feOffset dx="14" dy="5" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="4" result="blur"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <clipPath id="clip-_5_Match_v6_">
+      <rect width="3024" height="11887"/>
+    </clipPath>
+  </defs>
+  <g id="_5_Match_v6_" data-name="5% Match_v6 " class="cls-1">
+    <rect class="cls-5" width="3024" height="11887"/>
+    <line id="Line_14" data-name="Line 14" class="cls-2" x2="1920" transform="translate(0.5 0.5)"/>
+    <rect id="Rectangle_129" data-name="Rectangle 129" class="cls-3" width="3024" height="441" transform="translate(0 3073)"/>
+    <rect id="Rectangle_133" data-name="Rectangle 133" class="cls-4" width="3024" height="2403" transform="translate(0 -11)"/>
+    <g id="Group_76" data-name="Group 76" transform="translate(744 170)">
+      <path id="Path_322" data-name="Path 322" class="cls-5" d="M61.7,186.937,1264.769,147.7l-27.908,189.275L61.976,234.186Z" transform="translate(105.946 254.736)"/>
+      <path id="Path_323" data-name="Path 323" class="cls-6" d="M182.357,766.683,65.2,109.057,654.024,12.9,786.1,691.8Z" transform="translate(114.956 22.744)"/>
+      <path id="Path_324" data-name="Path 324" class="cls-7" d="M85.4,159.359l29.842-53.052L535.514,36.4,597.409,69,700.2,615.829l-13.539,2.763L585.251,78.123,533.028,50.768,124.084,118.741l-24.039,43.1,92.565,511.18-13.539,2.487Z" transform="translate(150.572 64.178)"/>
+      <circle id="Ellipse_5" data-name="Ellipse 5" class="cls-7" cx="183.196" cy="183.196" r="183.196" transform="matrix(0.221, -0.975, 0.975, 0.221, 357.735, 759.66)"/>
+      <path id="Path_325" data-name="Path 325" class="cls-8" d="M150.2,667.573,179.213,0,774.668,34.539,755.6,725.875Z" transform="translate(264.823)"/>
+      <path id="Path_326" data-name="Path 326" class="cls-7" d="M673.364,644.692l18.79-549.311L647.114,57.25,233.2,34.592l-32.881,36.75-21,518.917-13.816-.553,21.276-523.89L227.394,20.5,652.64,43.71l53.329,45.315L687.18,645.245Z" transform="translate(291.799 36.144)"/>
+      <path id="Path_327" data-name="Path 327" class="cls-7" d="M557.911,361.125c-22.105,98.644-119.92,160.814-218.84,138.986-98.644-22.1-160.814-119.92-138.986-218.84,22.1-98.644,119.92-160.814,218.84-138.986A183.162,183.162,0,0,1,557.911,361.125Z" transform="translate(345.081 243.172)"/>
+      <path id="Path_328" data-name="Path 328" class="cls-6" d="M201,612.576,473.445,2.2l541.022,250.893L742.851,889.166Z" transform="translate(354.39 3.879)"/>
+      <path id="Path_329" data-name="Path 329" class="cls-7" d="M672.849,775.688,892.241,271.416,864.61,219.469,487.719,46.5,443.785,68.6,233.51,543.585l-12.71-5.526L433.009,58.379,487.719,31.3,874.557,208.969l33.158,61.894L685.559,781.214Z" transform="translate(389.3 55.186)"/>
+      <path id="Path_330" data-name="Path 330" class="cls-7" d="M587.488,449.08C530.567,532.8,416.726,554.632,333,497.988,249.28,441.067,227.451,327.226,284.1,243.5,341.016,159.78,454.857,137.951,538.58,194.6,622.3,251.516,644.132,365.357,587.488,449.08Z" transform="translate(445.372 287.571)"/>
+      <path id="Path_331" data-name="Path 331" class="cls-9" d="M72.781,306.388,60.9,204.152l1.658-41.723,21.276-.829-5.526,3.316.829,33.986,4.974,4.421,1235.4-17.131-21,207.235Z" transform="translate(107.375 284.922)"/>
+      <path id="Path_332" data-name="Path 332" class="cls-10" d="M1541,197.7,1393.725,1333.071,770.362,1597.5,147.275,1333.071,0,197.7Z" transform="translate(0 348.572)"/>
+      <path id="Path_333" data-name="Path 333" class="cls-10" d="M278.8,1597.5V197.7h770.638L902.163,1333.071Z" transform="translate(491.562 348.572)"/>
+      <path id="Path_334" data-name="Path 334" class="cls-11" d="M701.413,635.234l5.526-12.71,9.118,3.868,15.75-6.908h0l5.526,12.711-21.276,9.118-14.645-6.079Zm-61.065-25.974,5.526-12.711,30.394,12.987-5.526,12.71-30.395-12.987Zm122.131-2.487,30.394-12.987L798.4,606.5,768,619.484l-5.526-12.71ZM579.558,583.287l5.526-12.711,30.395,12.987-5.526,12.71-30.394-12.987ZM823.267,580.8l30.394-12.987,5.526,12.71-30.394,12.987-5.526-12.71ZM518.493,557.037l5.526-12.71,30.394,12.987-5.526,12.71-30.394-12.987Zm365.839-2.487,30.394-12.987,5.526,12.71-30.394,12.987-5.526-12.711Zm-426.9-23.487,5.526-12.711,30.394,12.987-5.526,12.711-30.395-12.987Zm487.97-2.487,30.395-12.987,5.526,12.71-30.395,12.987-5.526-12.71ZM396.639,504.814l5.526-12.71L432.56,505.09,427.033,517.8l-30.394-12.987Zm609.824-2.21,30.395-12.987,5.526,12.71-30.395,12.987-5.526-12.71ZM335.574,478.841l5.526-12.71,30.394,12.987-5.526,12.71-30.394-12.987Zm731.678-2.211,30.394-12.987,5.526,12.711-30.395,12.987-5.526-12.71ZM274.508,452.867l5.526-12.71,30.394,12.987-5.526,12.71-30.394-12.987Zm853.809-2.211,30.394-12.987,5.526,12.71-30.395,12.987-5.526-12.71Zm-914.6-24.039,5.526-12.71,30.395,12.987-5.526,12.71-30.395-12.987Zm975.663-2.21,30.394-12.987,5.526,12.711-30.395,12.987-5.526-12.71ZM152.654,400.644l5.526-12.71,30.394,12.987-5.526,12.711-30.394-12.987Zm1097.793-2.211,30.395-12.987,5.526,12.71-30.395,12.987-5.526-12.711ZM91.589,374.671l5.526-12.71,30.394,12.987-5.526,12.711L91.589,374.671Zm1219.647-2.21,30.394-12.987,5.527,12.71-30.395,12.987-5.526-12.71ZM30.8,348.421l5.526-12.71L66.721,348.7l-5.526,12.71L30.8,348.421Zm1341.5-1.934L1402.7,333.5l5.526,12.71L1377.828,359.2l-5.526-12.71Z" transform="translate(54.305 588.005)"/>
+      <path id="Path_335" data-name="Path 335" class="cls-11" d="M701.413,676.534l5.526-12.71,9.118,3.868,15.75-6.908h0l5.526,12.711-21.276,9.118-14.645-6.079Zm-61.065-25.973,5.526-12.71,30.394,12.986-5.526,12.711-30.395-12.987Zm122.131-2.487,30.394-12.987L798.4,647.8,768,660.784l-5.526-12.71ZM579.558,624.587l5.526-12.711,30.395,12.987-5.526,12.71-30.394-12.987ZM823.267,622.1l30.394-12.987,5.526,12.71-30.394,12.987-5.526-12.71ZM518.493,598.338l5.526-12.711,30.394,12.987-5.526,12.71-30.394-12.987Zm365.839-2.211,30.394-12.987,5.526,12.71-30.394,12.987-5.526-12.71Zm-426.9-23.763,5.526-12.71,30.394,12.987-5.526,12.71-30.395-12.987Zm487.97-2.487,30.395-12.987,5.526,12.711-30.395,12.987L945.4,569.877ZM396.639,546.114l5.526-12.711,30.395,12.987L427.033,559.1l-30.394-12.987Zm609.824-2.21,30.395-12.987,5.526,12.71-30.395,12.987-5.526-12.71ZM335.574,520.141,341.1,507.43l30.394,12.987-5.526,12.71-30.394-12.987Zm731.678-2.21,30.394-12.987,5.526,12.71-30.395,12.987-5.526-12.71ZM274.508,494.167l5.526-12.711,30.394,12.987-5.526,12.71-30.394-12.987Zm853.809-2.211,30.394-12.987,5.526,12.71-30.395,12.987-5.526-12.711Zm-914.6-24.039,5.526-12.71,30.395,12.987L244.114,480.9l-30.395-12.987Zm975.663-2.211,30.394-12.987,5.526,12.71-30.395,12.987-5.526-12.71ZM152.654,441.944l5.526-12.71,30.394,12.987-5.526,12.711-30.394-12.987Zm1097.793-2.21,30.395-12.987,5.526,12.71-30.395,12.987-5.526-12.711ZM91.589,415.971l5.526-12.71,30.394,12.987-5.526,12.711L91.589,415.971Zm1219.647-2.21,30.394-12.987,5.527,12.711-30.395,12.987-5.526-12.71ZM30.8,389.721l5.526-12.711L66.721,390l-5.526,12.71L30.8,389.721Zm1341.5-1.934L1402.7,374.8l5.526,12.71L1377.828,400.5l-5.526-12.71Z" transform="translate(54.305 660.823)"/>
+      <path id="Path_336" data-name="Path 336" class="cls-12" d="M1394.8,227,1264.658,1230.847,713.413,1464.608,162.444,1230.847,32.3,227Z" transform="translate(56.949 400.231)"/>
+    </g>
+    <text id="HOW_TO_MAXIMIZE_YOUR" data-name="HOW TO MAXIMIZE YOUR" class="cls-13" transform="translate(485 1756)"><tspan x="0" y="0">HOW TO MAXIMIZE YOUR</tspan></text>
+    <text id="_5_MATCHING_CONTRIBUTIONS" data-name=" 5% MATCHING CONTRIBUTIONS" class="cls-14" transform="translate(62 1969)"><tspan x="0" y="0" xml:space="preserve"> 5% MATCHING CONTRIBUTIONS</tspan></text>
+    <text id="Here_s_how_we_calculate_the_5_match." data-name="Here’s how we calculate the 5% match." class="cls-15" transform="translate(425 3340)"><tspan x="0" y="0">Here’s how we calculate the 5% match.</tspan></text>
+    <rect id="Rectangle_103" data-name="Rectangle 103" class="cls-16" width="1019.254" height="3014" transform="translate(0 3514)"/>
+    <rect id="Rectangle_106" data-name="Rectangle 106" class="cls-17" width="1033.001" height="3014" transform="translate(1019 3514)"/>
+    <rect id="Rectangle_111" data-name="Rectangle 111" class="cls-4" width="1035" height="3014" transform="translate(1989 3514)"/>
+    <rect id="Rectangle_115" data-name="Rectangle 115" class="cls-18" width="3024" height="201" transform="translate(0 6980)"/>
+    <text id="Here_s_an_example" data-name="Here’s an example" class="cls-19" transform="translate(1071 7119)"><tspan x="0" y="0">Here’s an example</tspan></text>
+    <rect id="Rectangle_60" data-name="Rectangle 60" class="cls-3" width="3024" height="1380.816" transform="translate(0 7171)"/>
+    <g id="Group_203" data-name="Group 203" transform="translate(0.121 2163)">
+      <line id="Line_15" data-name="Line 15" class="cls-20" y2="1380.5" transform="translate(996.878 5008)"/>
+      <line id="Line_16" data-name="Line 16" class="cls-20" y2="1380.161" transform="translate(2027.498 5008.339)"/>
+    </g>
+    <text id="_65k" data-name="$65k" class="cls-21" transform="translate(1513 8166)"><tspan x="-186.52" y="0">$65k</tspan></text>
+    <text id="Annual_Salary" data-name="Annual Salary" class="cls-22" transform="translate(1513 8306.592)"><tspan x="-283.528" y="0">Annual Salary</tspan></text>
+    <g id="Group_81" data-name="Group 81" transform="translate(1245 7380)">
+      <path id="Path_346" data-name="Path 346" class="cls-18" d="M12.7,109.34H324.341c-14.882-49.9-78.786-87.54-155.82-87.54S27.582,59.442,12.7,109.34Z" transform="translate(98.054 169.036)"/>
+      <path id="Path_347" data-name="Path 347" class="cls-18" d="M193.828,86.664a86.664,86.664,0,0,0-173.328,0c0,47.271,38.517,86.664,86.664,86.664S193.828,133.936,193.828,86.664Z" transform="translate(158.535)"/>
+      <path id="Path_348" data-name="Path 348" class="cls-18" d="M4.5,63.863l22.76,7V56.86H436.07V70.867l23.636-7V34.1H4.5Z" transform="translate(34.472 264.41)"/>
+      <path id="Path_349" data-name="Path 349" class="cls-18" d="M460.481,55.7c-8.754,0-16.633-.875-23.636-3.5v56.025H28.036V52.2A51.777,51.777,0,0,1,4.4,55.7v76.159H459.606V55.7Z" transform="translate(33.697 404.756)"/>
+      <rect id="Rectangle_62" data-name="Rectangle 62" class="cls-18" width="133.06" height="16.633" transform="translate(109.879 392.177)"/>
+      <rect id="Rectangle_63" data-name="Rectangle 63" class="cls-18" width="321.27" height="16.633" transform="translate(109.879 451.704)"/>
+      <path id="Path_350" data-name="Path 350" class="cls-18" d="M32,41.2v62.153H172.939V41.2ZM156.306,85.845H48.633V56.957H156.306Z" transform="translate(247.706 319.463)"/>
+      <path id="Path_351" data-name="Path 351" class="cls-18" d="M107.147,39.624c-4.377,0-11.38,1.751-19.259,4.377C65.128,51,47.62,72.014,52,95.65c3.5,21.01,21.885,36.767,42.894,37.642,7,0,18.383-3.5,21.009-4.377,25.387-7.879,21.885-24.511,17.508-49.022C129.032,58.883,124.655,38.749,107.147,39.624Z" transform="translate(397.535 307.032)"/>
+      <path id="Path_352" data-name="Path 352" class="cls-18" d="M3.129,79.893C-1.248,104.4-4.75,120.161,20.637,128.915c3.5.875,14.882,5.252,21.009,4.377,20.134,0,38.517-16.633,42.894-37.642C88.918,71.139,71.41,51,48.649,44c-8.754-2.626-14.882-4.377-19.259-4.377C11.007,38.749,6.63,58.883,3.129,79.893Z" transform="translate(-0.048 307.032)"/>
+    </g>
+    <text id="_31" data-name="31" class="cls-23" transform="translate(498 8162)"><tspan x="-90.801" y="0">31</tspan></text>
+    <text id="Years_Old" data-name="Years Old" class="cls-24" transform="translate(498 8307.572)"><tspan x="-184.744" y="0">Years Old</tspan></text>
+    <g id="Group_88" data-name="Group 88" transform="translate(295.184 7392)">
+      <g id="Group_87" data-name="Group 87" transform="translate(0 0)">
+        <g id="Group_86" data-name="Group 86">
+          <path id="Path_357" data-name="Path 357" class="cls-18" d="M203.449,186c-23.375-3.463-39.824-11.255-50.213-21.644s-12.12-23.375-12.12-30.3c0-13.852,10.389-42.421,44.153-51.079V59.6H221.63V82.979c25.972,6.926,44.153,26.838,44.153,50.213H227.69c0-11.255-11.255-20.778-24.241-20.778-24.241,0-27.7,22.509-20.778,29.435,3.463,2.6,9.523,7.792,26.838,9.523,18.181,2.6,33.764,8.657,43.287,17.315,25.107,23.375,12.12,53.676-.866,65.8-7.792,7.792-18.181,12.986-29.435,16.449v19.046H408.63v-87.44C408.63,87.307,316.862,31.9,204.315,31.9S0,86.442,0,182.539V271.71H186.134V252.664c-22.509-6.06-39.824-22.509-43.287-42.421h38.958c3.463,6.926,12.12,12.12,22.509,12.12" transform="translate(0 244.272)"/>
+          <path id="Path_358" data-name="Path 358" class="cls-18" d="M256.9,123.8A123.8,123.8,0,1,0,133.1,247.6,123.775,123.775,0,0,0,256.9,123.8Z" transform="translate(71.214 0)"/>
+        </g>
+        <rect id="Rectangle_66" data-name="Rectangle 66" class="cls-18" width="195.055" height="217.34" transform="translate(104.376 298.642)"/>
+      </g>
+      <rect id="Rectangle_67" data-name="Rectangle 67" class="cls-18" width="408.63" height="28.462" transform="translate(0 496.049)"/>
+    </g>
+    <text id="_2500" data-name="$2500" class="cls-25" transform="translate(2526 8161)"><tspan x="-225.72" y="0">$2500</tspan></text>
+    <text id="Biweekly_Gross_Pay" data-name="Biweekly Gross Pay" class="cls-26" transform="translate(2526 8307.383)"><tspan x="-380.512" y="0">Biweekly Gross Pay</tspan></text>
+    <rect id="Rectangle_116" data-name="Rectangle 116" class="cls-3" width="90.213" height="46.96" transform="translate(2047.945 7909.729)"/>
+    <rect id="Rectangle_60-2" data-name="Rectangle 60" class="cls-3" width="3024" height="1380.816" transform="translate(0 8618)"/>
+    <g id="Group_203-2" data-name="Group 203" transform="translate(0.121 3610)">
+      <line id="Line_15-2" data-name="Line 15" class="cls-20" y2="1380.5" transform="translate(996.878 5008)"/>
+      <line id="Line_16-2" data-name="Line 16" class="cls-20" y2="1380.161" transform="translate(2027.498 5008.339)"/>
+    </g>
+    <text id="_25" data-name="$25" class="cls-21" transform="translate(1513 9612.839)"><tspan x="-139.279" y="0">$25</tspan></text>
+    <text id="_1_Agency_Service_Contribution" data-name="1% Agency/
+Service Contribution" class="cls-22" transform="translate(1513 9755)"><tspan x="-236.598" y="0">1% Agency/</tspan><tspan x="-421.372" y="110">Service Contribution</tspan></text>
+    <text id="_125" data-name="$125" class="cls-21" transform="translate(498 9619.839)"><tspan x="-185.706" y="0">$125</tspan></text>
+    <text id="Your_5_Contribution" data-name="Your 5%
+Contribution" class="cls-22" transform="translate(498 9755)"><tspan x="-165.632" y="0">Your 5%</tspan><tspan x="-262.675" y="110">Contribution</tspan></text>
+    <g id="Group_216" data-name="Group 216" transform="translate(-1017.766 2196)">
+      <path id="Path_346-2" data-name="Path 346" class="cls-18" d="M12.7,109.34H324.341c-14.882-49.9-78.786-87.54-155.82-87.54S27.582,59.442,12.7,109.34Z" transform="translate(1346.82 6817.036)"/>
+      <path id="Path_347-2" data-name="Path 347" class="cls-18" d="M193.828,86.664a86.664,86.664,0,0,0-173.328,0c0,47.271,38.517,86.664,86.664,86.664S193.828,133.936,193.828,86.664Z" transform="translate(1407.301 6648)"/>
+      <path id="Path_348-2" data-name="Path 348" class="cls-18" d="M4.5,63.863l22.76,7V56.86H436.07V70.867l23.636-7V34.1H4.5Z" transform="translate(1283.238 6912.41)"/>
+      <path id="Path_349-2" data-name="Path 349" class="cls-18" d="M460.481,55.7c-8.754,0-16.633-.875-23.636-3.5v56.025H28.036V52.2A51.777,51.777,0,0,1,4.4,55.7v76.159H459.606V55.7Z" transform="translate(1282.462 7052.756)"/>
+      <rect id="Rectangle_62-2" data-name="Rectangle 62" class="cls-18" width="133.06" height="16.633" transform="translate(1358.645 7040.177)"/>
+      <rect id="Rectangle_63-2" data-name="Rectangle 63" class="cls-18" width="321.27" height="16.633" transform="translate(1358.645 7099.704)"/>
+      <path id="Path_350-2" data-name="Path 350" class="cls-18" d="M32,41.2v62.153H172.939V41.2ZM156.306,85.845H48.633V56.957H156.306Z" transform="translate(1496.471 6967.463)"/>
+      <path id="Path_351-2" data-name="Path 351" class="cls-18" d="M107.147,39.624c-4.377,0-11.38,1.751-19.259,4.377C65.128,51,47.62,72.014,52,95.65c3.5,21.01,21.885,36.767,42.894,37.642,7,0,18.383-3.5,21.009-4.377,25.387-7.879,21.885-24.511,17.508-49.022C129.032,58.883,124.655,38.749,107.147,39.624Z" transform="translate(1646.301 6955.032)"/>
+      <path id="Path_352-2" data-name="Path 352" class="cls-18" d="M3.129,79.893C-1.248,104.4-4.75,120.161,20.637,128.915c3.5.875,14.882,5.252,21.009,4.377,20.134,0,38.517-16.633,42.894-37.642C88.918,71.139,71.41,51,48.649,44c-8.754-2.626-14.882-4.377-19.259-4.377C11.007,38.749,6.63,58.883,3.129,79.893Z" transform="translate(1248.718 6955.032)"/>
+    </g>
+    <text id="_100" data-name="$100" class="cls-25" transform="translate(2526 9615.138)"><tspan x="-180.576" y="0">$100</tspan></text>
+    <text id="_4_Agency_Service_Match" data-name="4% Agency/ 
+Service Match" class="cls-26" transform="translate(2526 9753)"><tspan x="-238.556" y="0">4% Agency/ </tspan><tspan x="-274.942" y="110">Service Match</tspan></text>
+    <rect id="Rectangle_116-2" data-name="Rectangle 116" class="cls-3" width="90.213" height="46.96" transform="translate(2047.945 9356.729)"/>
+    <text id="_3_of_your_basic_pay_is_deposited_into_the_traditional_balance_of_your_TSP_account_each_pay_period." data-name="3% of your basic pay is deposited into the traditional balance of  your TSP account each pay period." class="cls-27" transform="translate(59 5054)"><tspan x="0" y="96">3% of your basic pay </tspan><tspan x="0" y="256">is deposited into the </tspan><tspan x="0" y="416">traditional balance </tspan><tspan x="0" y="576" xml:space="preserve">of  your TSP account </tspan><tspan x="0" y="736">each pay period.</tspan></text>
+    <g id="Group_174" data-name="Group 174" transform="translate(237.952 3792)">
+      <path id="Path_346-3" data-name="Path 346" class="cls-5" d="M12.7,110.771H329.439C314.313,60.058,249.364,21.8,171.069,21.8S27.825,60.058,12.7,110.771Z" transform="translate(99.914 172.158)"/>
+      <path id="Path_347-3" data-name="Path 347" class="cls-5" d="M196.664,88.082a88.082,88.082,0,0,0-176.164,0c0,48.045,39.147,88.082,88.082,88.082S196.664,136.126,196.664,88.082Z" transform="translate(161.512)"/>
+      <path id="Path_348-3" data-name="Path 348" class="cls-5" d="M4.5,64.35l23.133,7.118V57.233h415.5V71.468l24.022-7.118V34.1H4.5Z" transform="translate(35.158 269.293)"/>
+      <path id="Path_349-3" data-name="Path 349" class="cls-5" d="M467.941,55.759c-8.9,0-16.9-.89-24.022-3.559v56.942H28.422V52.2A52.624,52.624,0,0,1,4.4,55.759v77.405H467.052V55.759Z" transform="translate(34.368 412.231)"/>
+      <rect id="Rectangle_62-3" data-name="Rectangle 62" class="cls-5" width="135.237" height="16.905" transform="translate(111.724 398.592)"/>
+      <rect id="Rectangle_63-3" data-name="Rectangle 63" class="cls-5" width="326.525" height="16.905" transform="translate(111.724 459.093)"/>
+      <path id="Path_350-3" data-name="Path 350" class="cls-5" d="M32,41.2v63.17H175.244V41.2ZM158.34,86.575H48.9V57.215H158.34Z" transform="translate(252.329 325.363)"/>
+      <path id="Path_351-3" data-name="Path 351" class="cls-5" d="M108.06,39.625c-4.449,0-11.566,1.779-19.574,4.449C65.354,51.191,47.56,72.544,52.008,96.567c3.559,21.353,22.243,37.368,43.6,38.258,7.118,0,18.684-3.559,21.353-4.449,25.8-8.007,22.243-24.912,17.794-49.824C130.3,59.2,125.855,38.735,108.06,39.625Z" transform="translate(404.926 312.702)"/>
+      <path id="Path_352-3" data-name="Path 352" class="cls-5" d="M3.179,80.552c-4.449,24.912-8.007,40.927,17.794,49.824,3.559.89,15.125,5.338,21.353,4.449,20.463,0,39.147-16.9,43.6-38.258,4.449-24.912-13.346-45.375-36.478-52.493-8.9-2.669-15.125-4.449-19.574-4.449C11.187,38.735,6.738,59.2,3.179,80.552Z" transform="translate(0 312.702)"/>
+    </g>
+    <text id="_3_" data-name="3%" class="cls-28" transform="translate(260 4837)"><tspan x="0" y="0">3%</tspan></text>
+    <text id="Next_your_agency_service_matches_your_3_contribution_dollar-for-dollar." data-name="Next, your agency/service matches 
+your 3% contribution dollar-for-dollar." class="cls-27" transform="translate(1070 5054)"><tspan x="0" y="96">Next, your agency/</tspan><tspan x="0" y="256">service matches </tspan><tspan x="0" y="416">your 3% contribution </tspan><tspan x="0" y="576">dollar-for-dollar.</tspan></text>
+    <text id="_3_2" data-name="3%" class="cls-28" transform="translate(1286 4837)"><tspan x="0" y="0">3%</tspan></text>
+    <g id="building" transform="translate(1262.526 3791.55)">
+      <rect id="Rectangle_107" data-name="Rectangle 107" class="cls-29" width="89.257" height="221.404" transform="translate(73.804 207.364)"/>
+      <path id="Path_546" data-name="Path 546" class="cls-29" d="M6.571,184.18H539.8a11.872,11.872,0,0,0,5.8-6.955c1.159-4.637,0-10.433-4.637-12.751L277.82,2.189a8.694,8.694,0,0,0-10.433,0L5.412,164.474c-3.478,2.318-5.8,8.114-4.637,12.751A11.872,11.872,0,0,0,6.571,184.18Z" transform="translate(0 0)"/>
+      <rect id="Rectangle_108" data-name="Rectangle 108" class="cls-29" width="89.257" height="221.404" transform="translate(382.146 207.364)"/>
+      <rect id="Rectangle_109" data-name="Rectangle 109" class="cls-29" width="89.257" height="221.404" transform="translate(227.975 207.364)"/>
+      <rect id="Rectangle_110" data-name="Rectangle 110" class="cls-29" width="467.15" height="93.894" transform="translate(40.188 451.951)"/>
+    </g>
+    <text id="The_next_2_will_be_matched_at_50_on_the_dollar." data-name="The next 2% will be matched at 50¢ on the dollar." class="cls-27" transform="translate(2089 5054)"><tspan x="0" y="96">The next 2% will be </tspan><tspan x="0" y="256">matched at 50¢ on </tspan><tspan x="0" y="416">the dollar.</tspan></text>
+    <text id="_2_" data-name="2%" class="cls-28" transform="translate(2257 4837)"><tspan x="0" y="0">2%</tspan></text>
+    <path id="Path_601" data-name="Path 601" class="cls-5" d="M355.848,290.579a104.175,104.175,0,0,0-26.823-19.67c-10.729-6.259-25.035-12.517-43.81-18.776q-28.164-10.729-40.234-21.458c-8.047-8.047-11.623-17.882-11.623-30.4,0-14.305,3.576-25.035,11.623-33.081s18.776-11.623,33.081-11.623,25.035,5.365,33.975,16.094c8.047,10.729,12.517,25.035,12.517,43.81h52.751c0-28.611-7.153-51.857-20.564-69.739q-21.458-26.823-59.01-32.187V64.375h-34.87v47.387c-25.035,2.682-45.6,12.517-59.9,27.717-15.2,16.094-22.352,35.764-22.352,59.9,0,35.764,16.988,62.586,50.963,81.362,9.835,5.365,24.14,11.623,42.916,17.882s31.293,13.411,39.34,22.352c8.047,8.047,11.623,18.776,11.623,30.4q0,20.117-13.411,32.187c-8.941,8.047-21.458,12.517-38.446,12.517s-30.4-5.365-39.34-15.2-14.305-24.14-14.305-42.916H166.3c0,28.611,8.047,51.857,23.246,69.739S227.1,435.422,256.6,439v42.916h34.87V439c26.823-2.682,48.281-11.623,63.48-26.823s22.352-35.764,22.352-59.9c0-13.411-1.788-25.035-6.259-34.87C368.365,307.567,363,298.626,355.848,290.579ZM272.7,545.4C122.49,545.4,0,422.9,0,272.7S122.49,0,272.7,0,545.4,122.49,545.4,272.7,422.9,545.4,272.7,545.4Zm153.784-5.365c92.985-53.645,154.678-152.89,154.678-267.333S518.573,59.01,426.481,5.365C550.76,30.4,644.639,141.266,644.639,272.7S550.76,515,426.481,540.031Zm99.244,0C617.817,486.385,680.4,387.141,680.4,272.7S617.817,59.01,525.725,5.365C650,30.4,743.883,141.266,743.883,272.7S650,515,525.725,540.031Z" transform="translate(2135 3792)"/>
+    <rect id="Rectangle_119" data-name="Rectangle 119" class="cls-4" width="3024" height="934" transform="translate(0 10953)"/>
+    <g id="building-2" data-name="building" transform="translate(1243.525 8843.55)">
+      <rect id="Rectangle_107-2" data-name="Rectangle 107" class="cls-18" width="87.82" height="217.84" transform="translate(72.624 204.034)"/>
+      <path id="Path_546-2" data-name="Path 546" class="cls-18" d="M6.473,181.223H531.115a11.681,11.681,0,0,0,5.7-6.843c1.141-4.562,0-10.265-4.562-12.546L273.356,2.161a8.554,8.554,0,0,0-10.265,0L5.333,161.834c-3.422,2.281-5.7,7.984-4.562,12.546A11.681,11.681,0,0,0,6.473,181.223Z" transform="translate(0 0)"/>
+      <rect id="Rectangle_108-2" data-name="Rectangle 108" class="cls-18" width="87.82" height="217.84" transform="translate(376.004 204.034)"/>
+      <rect id="Rectangle_109-2" data-name="Rectangle 109" class="cls-18" width="87.82" height="217.84" transform="translate(224.314 204.034)"/>
+      <rect id="Rectangle_110-2" data-name="Rectangle 110" class="cls-18" width="459.632" height="92.383" transform="translate(39.549 444.685)"/>
+    </g>
+    <g id="building-3" data-name="building" transform="translate(2257.525 8843.55)">
+      <rect id="Rectangle_107-3" data-name="Rectangle 107" class="cls-18" width="87.82" height="217.84" transform="translate(72.624 204.034)"/>
+      <path id="Path_546-3" data-name="Path 546" class="cls-18" d="M6.473,181.223H531.115a11.681,11.681,0,0,0,5.7-6.843c1.141-4.562,0-10.265-4.562-12.546L273.356,2.161a8.554,8.554,0,0,0-10.265,0L5.333,161.834c-3.422,2.281-5.7,7.984-4.562,12.546A11.681,11.681,0,0,0,6.473,181.223Z" transform="translate(0 0)"/>
+      <rect id="Rectangle_108-3" data-name="Rectangle 108" class="cls-18" width="87.82" height="217.84" transform="translate(376.004 204.034)"/>
+      <rect id="Rectangle_109-3" data-name="Rectangle 109" class="cls-18" width="87.82" height="217.84" transform="translate(224.314 204.034)"/>
+      <rect id="Rectangle_110-3" data-name="Rectangle 110" class="cls-18" width="459.632" height="92.383" transform="translate(39.549 444.685)"/>
+    </g>
+    <text id="That_s_250_biweekly_towards_your_retirement_goal._" data-name="That’s $250 biweekly towards 
+your retirement goal. " class="cls-30" transform="translate(1512 10448)"><tspan x="-1178.063" y="0">That’s </tspan><tspan class="cls-31" y="0">$250 biweekly</tspan><tspan y="0" xml:space="preserve"> towards </tspan><tspan x="-821.853" y="202">your retirement goal. </tspan></text>
+    <g id="Group_201" data-name="Group 201" transform="translate(-1.568 3214)">
+      <g id="Group_105" data-name="Group 105" transform="translate(1307.568 7870)">
+        <path id="Path_369" data-name="Path 369" class="cls-5" d="M166.779,202.278c-34.2-22.2-59.393-58.193-59.393-102.587h44.994L76.191,23.5,0,99.691H43.195C42.595,142.285,86.989,212.477,166.779,202.278Z" transform="translate(0 117.483)"/>
+        <path id="Path_370" data-name="Path 370" class="cls-5" d="M123.027,198.575c19.2,2.4,30.6,8.4,34.8,12.6,13.2,12,6,46.794-34.2,46.794-16.2,0-30.6-8.4-36.6-20.4H22.839c6,33,34.2,59.393,70.791,68.992v27.6h59.993v-27.6c83.39-16.2,117.585-145.182-21-163.78-28.2-3.6-38.4-11.4-43.195-16.2-11.4-10.2-5.4-47.394,34.8-47.394,22.2,0,39.6,15,40.2,33.6h62.392c0-39-30.6-71.391-71.991-82.19V0H94.83V30.6C1.242,53.993-16.156,182.378,123.027,198.575Z" transform="translate(107.945)"/>
+      </g>
+      <path id="Path_602" data-name="Path 602" class="cls-32" d="M0,0H412.824" transform="translate(1307.568 8258.836)"/>
+    </g>
+    <text id="Don_t_leave_free_money_on_the_table_" data-name="Don’t leave free money on the table!" class="cls-33" transform="translate(436 11686)"><tspan x="0" y="0">Don’t leave free money on the table!</tspan></text>
+    <g id="Cash" transform="translate(2253.188 7388.6)">
+      <path id="Path_630" data-name="Path 630" class="cls-18" d="M6.656,365.977V352.631a11.746,11.746,0,0,1,11.678-11.678h464.9a11.746,11.746,0,0,1,11.678,11.678v13.346a11.746,11.746,0,0,1-11.678,11.678H17.778C11.661,377.1,6.656,372.094,6.656,365.977Zm11.122,83.415h464.9a11.746,11.746,0,0,0,11.678-11.678V424.368a11.746,11.746,0,0,0-11.678-11.678H17.778A11.746,11.746,0,0,0,6.1,424.368v13.346C6.656,444.387,11.661,449.392,17.778,449.392Zm0,71.737h464.9a11.746,11.746,0,0,0,11.678-11.678V496.1a11.746,11.746,0,0,0-11.678-11.678H17.778A11.746,11.746,0,0,0,6.1,496.1v13.346C6.656,516.124,11.661,521.129,17.778,521.129ZM343.1,154.659a92.313,92.313,0,1,1-92.313-92.313C301.389,61.79,343.1,103.5,343.1,154.659Zm-75.073-6.117a133.13,133.13,0,0,0-15.571-7.229,25.673,25.673,0,0,1-8.341-5c-5-3.893-3.893-10.566,1.668-13.346a16.237,16.237,0,0,1,5-1.112c6.673-.556,13.346,1.112,19.463,3.893,3.337,1.668,3.893,1.112,5-2.224a67.236,67.236,0,0,0,2.78-10.01c.556-2.224,0-3.893-2.224-5a78.753,78.753,0,0,0-12.234-3.893c-5.561-1.112-5.561-1.112-5.561-6.673,0-7.785,0-7.785-7.785-7.785h-3.337c-3.893,0-4.449.556-4.449,4.449v5c0,5,0,5-5,6.673-11.678,4.449-18.351,12.234-19.464,24.468-.556,11.122,5,18.351,14.459,23.912,5.561,3.337,11.678,5.561,17.8,7.785a41.479,41.479,0,0,1,6.673,3.893,8.994,8.994,0,0,1-2.224,15.571A20.762,20.762,0,0,1,243,183.576a47.308,47.308,0,0,1-17.239-5c-3.337-1.668-3.893-1.112-5,2.224-1.112,2.78-1.668,6.117-2.781,8.9-1.112,3.893-.556,5,3.337,6.673a50.083,50.083,0,0,0,15.571,4.449c4.449.556,4.449,1.112,4.449,5v6.117c0,2.781,1.112,3.893,3.893,3.893h8.9c2.224,0,3.893-1.112,3.893-3.893V203.6c0-2.781,1.112-4.449,3.893-5a31.483,31.483,0,0,0,15.571-10.01C288.043,177.459,284.15,157.44,268.023,148.542ZM493.8,15.078v278.05a11.4,11.4,0,0,1-11.678,11.678H18.89A11.4,11.4,0,0,1,7.212,293.128V15.078A11.4,11.4,0,0,1,18.89,3.4H482.678C488.795,3.956,493.8,8.961,493.8,15.078ZM458.209,91.82c-3.337,1.112-6.673,1.112-10.566,1.112a42.838,42.838,0,0,1-42.82-42.82,68.136,68.136,0,0,1,1.112-10.566H92.3a36.713,36.713,0,0,1,.556,7.785,42.838,42.838,0,0,1-42.82,42.82A29.378,29.378,0,0,1,42.8,89.6V219.167a31.708,31.708,0,0,1,7.229-.556,42.838,42.838,0,0,1,42.82,42.82,34.2,34.2,0,0,1-.556,7.785H404.824c0-1.668-.556-3.337-.556-5.561a42.838,42.838,0,0,1,42.82-42.82,61.592,61.592,0,0,1,10.566,1.112V91.82Zm-45.6,46.712h-35.59a5.573,5.573,0,0,0-5.561,5.561v20.576a5.573,5.573,0,0,0,5.561,5.561h35.59a5.573,5.573,0,0,0,5.561-5.561V144.093A5.98,5.98,0,0,0,412.609,138.532Zm-288.06,0H88.959a5.573,5.573,0,0,0-5.561,5.561v20.576a5.573,5.573,0,0,0,5.561,5.561h35.59a5.573,5.573,0,0,0,5.561-5.561V144.093A5.573,5.573,0,0,0,124.549,138.532Z" transform="translate(22.713 0)"/>
+    </g>
+    <text id="Your_agency_or_service_will_contribute_up_to_5_on_top_of_your_salary_or_basic_pay_to_your_TSP_account_each_paycheck._" data-name="Your agency or service will contribute up to 
+5%, on top of your  salary or basic pay, to your 
+TSP account each paycheck. 
+" class="cls-34" transform="translate(388 2489)"><tspan x="158.525" y="103">Your </tspan><tspan class="cls-35" y="103">agency or service will contribute up to </tspan><tspan class="cls-35"><tspan x="117.942" y="263">5%</tspan><tspan class="cls-36" y="263" xml:space="preserve">, on top of your  salary or basic pay, to your </tspan></tspan><tspan x="506.022" y="423">TSP account each paycheck. </tspan></text>
+    <g class="cls-38" transform="matrix(1, 0, 0, 1, 0, 0)">
+      <rect id="Rectangle_120-2" data-name="Rectangle 120" class="cls-5" width="2162" height="746" transform="translate(431 6155)"/>
+    </g>
+    <text id="Combined_with_the_Agency_Service_Automatic_1_Contributions_Matching_Contributions_can_add_as_much_as_5_free_money_to_your_TSP_account._" data-name="Combined with the Agency/Service Automatic 
+(1%) Contributions, Matching Contributions can add as much as 5% free money to your 
+TSP account. 
+
+
+" class="cls-37" transform="translate(491 6219)"><tspan x="89.383" y="93">Combined with the Agency/Service Automatic </tspan><tspan x="45.73" y="253">(1%) Contributions, Matching Contributions can </tspan><tspan x="237.867" y="413">add as much as 5% free money to your </tspan><tspan x="757.138" y="573">TSP account. </tspan></text>
+  </g>
+</svg>
