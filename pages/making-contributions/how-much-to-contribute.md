@@ -2,7 +2,7 @@
 layout: page
 title: Making contributions
 styles:
-sidenav: manage
+sidenav: manage-your-plan
 scripts:
 permalink: /making-contributions/how-much-to-contribute/
 ---
