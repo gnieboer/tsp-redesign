@@ -13,28 +13,26 @@ primary:
   - text: Manage your plan
     links:
     - text: Account basics
-      href: /manage/
+      href: /account-basics/
     - text: Making contributions
       href: /making-contributions/
     - text: For beneficiaries
       href: /for-beneficiaries/
   - text: Learn about fund options
     links:
-    - text: What type of investor am I?
-      href: /funds/
-    - text: Fund comparison matrix
+    - text: How to invest
       href: #
-    - text: Fund details
+    - text: Fund basics
       href: #
-    - text: Share price history
+    - text: Fund performance
       href: #
   - text: Use your savings
     links:
     - text: Loan basics
-      href: /savings/
+      href: #
     - text: In-service withdrawal basics
       href: #
-    - text: Retirement withdrawal basics
+    - text: Living in retirement
       href: #
     - text: Annuity basics
       href: #
