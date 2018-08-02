@@ -9,4 +9,4 @@ permalink: /for-beneficiaries/
 
 # For beneficiaries
 
-Landing page
+This page is for beneficiaries.
