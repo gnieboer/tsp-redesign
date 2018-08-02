@@ -14,7 +14,7 @@ maximize your savings. You can start by making sure you’re not leaving free
 money on the table. Are you contributing enough to get at least the full match
 from your agency or service?
 
-![How to maximize your 5% matching contributions]({{site.baseurl}}/assets/img/infographs/5__Match_SVG.svg)
+![How to maximize your 5% matching contributions](/assets/img/infographs/5__Match_SVG.svg)
 
 
 Getting the full agency/service match is just the beginning. Increasing your
