@@ -57,8 +57,6 @@ manage-your-plan:
   - text: Account basics
     href: /account-basics/
     subnav:
-      - text: Defining my account
-        href: /account-basics/defining-my-account/
       - text: Your account number
         href: /account-basics/your-account-number/
       - text: How the TSP fits into your retirement
