@@ -15,24 +15,37 @@ hero:
 
 ---
 
-<section class="home-getting-started usa-section-dark py3">
-  <div class="usa-grid py3">
-    <div class="usa-grid">
-      <div class="usa-width-one-third px2">
-        <h3><img src="{{ site.baseurl }}/assets/img/icons/settings.svg" alt="" class="left mr1"><a href="/manage/">Manage your plan</a></h3>
-        <p>We explain the basics of your account, help you add a beneficiary, or roll over an IRA and so much more.</p>
-      </div>
-      <div class="usa-width-one-third px2">
-        <h3><img src="{{ site.baseurl }}/assets/img/icons/compass.svg" alt="" class="left mr1"><a href="/funds/">Learn about fund options</a></h3>
-        <p>Choosing the right funds can be tricky, but we'll hep you understand each fund, their risks, rewards and performance.</p>
-      </div>
-      <div class="usa-width-one-third px2">
-        <h3><img src="{{ site.baseurl }}/assets/img/icons/sun.svg" alt="" class="left mr1"><a href="/savings/">Use your  <br />savings</a></h3>
-        <p>Your big day is around the corner, now what? We'll help you navigate your plan before, during and after you retire.
-        </p>
-      </div>
-    </div>
-  </div>
+<section class="home-getting-started usa-section-dark">
+<div class="usa-grid">
+
+<div class="usa-width-one-fourth" markdown="1">
+### <img src="{{ site.baseurl }}/assets/img/icons/settings.svg" alt="" class="left mr1">[Manage your account](/account-basics/)
+
+We explain the basics of your account, describe how to start saving, help you transfer from other plans into the TSP, and more.
+</div>
+
+<div class="usa-width-one-fourth" markdown="1">
+### <img src="{{ site.baseurl }}/assets/img/icons/compass.svg" alt="" class="left mr1">[Learn about fund options](/how-to-invest/)
+
+Choosing the right funds can be tricky, but our L Funds help take the guesswork out of investing. We'll help you understand these and our other fund options.
+
+</div>
+
+<div class="usa-width-one-fourth" markdown="1">
+### <img src="{{ site.baseurl }}/assets/img/icons/sun.svg" alt="" class="left mr1">[Use your<br /> savings](/loan-basics/)
+
+Your big day is around the corner, now what? We'll help you navigate your plan before, during and after you retire.
+
+</div>
+
+<div class="usa-width-one-fourth" markdown="1">
+### <img src="{{ site.baseurl }}/assets/img/icons/sun.svg" alt="" class="left mr1">[Why the TSP?](/loan-basics/)
+
+The TSP is one of the largest retirement plans in the world, with more than 5 million federal civilian and uniformed services participants.
+</div>
+
+
+</div>
 </section>
 <section class="quick-links">
 <div class="usa-grid text-center">
@@ -62,9 +75,11 @@ hero:
 
 <section class="our-funds">
 <div class="callout arrow-bottom-section arrow-bottom arrow-bottom-blue">
-  <div class="usa-grid usa-content">
-  <p>Invest in funds for a short-term U.S. Treasury security to several index funds compromised of domestic and international stocks.</p>
-  </div>
+<div class="usa-grid usa-content" markdown="1">
+
+We offer L Funds, which are customized based on when you'll need your money, as well as U.S. Treasury securities and stock and bond index funds.
+
+</div>
   </div>
   <div class="usa-grid usa-section">
   <h2 class="text-center">Our Funds at a Glance</h2>
@@ -72,18 +87,23 @@ hero:
   <div class="usa-grid fund-grid">
     <div class="usa-width-one-third"><h3>G Fund <img src="/assets/img/icons/Arrow_circle.svg"/></h3>
     <p>Government securities specially issued to the Thrift Savings Plan</p></div>
+<div class="usa-width-one-third" markdown="1">
+
+### L Funds<img src="/assets/img/icons/Arrow_circle.svg"/><br />(L 2050, L 2040, L 2030, L 2020, and L Income)
+
+Our experts designed the L Funds to maximize returns and minimize risk based on the year you'll need your money. Each one has a mix of the C, S, I, F, and G Funds.
+
+</div>
     <div class="usa-width-one-third"><h3>F Fund <img src="/assets/img/icons/Arrow_circle.svg"/></h3>
     <p>Government, corporate, and mortgage-backed bonds</p></div>
-    <div class="usa-width-one-third"><h3>C Fund <img src="/assets/img/icons/Arrow_circle.svg"/></h3>
-    <p>Stocks of large and medium-sized U.S. companies</p></div>
   </div>
   <div class="usa-grid fund-grid">
     <div class="usa-width-one-third"><h3>S Fund <img src="/assets/img/icons/Arrow_circle.svg"/></h3>
     <p>Stocks of small to medium-sized U.S. companies not included in the C Fund</p></div>
     <div class="usa-width-one-third"><h3>I Fund <img src="/assets/img/icons/Arrow_circle.svg"/></h3>
-    <p>International stocks of more than 20 eveloped <a href="#">countries</a></p></div>
-    <div class="usa-width-one-third"><h3>L Funds <img src="/assets/img/icons/Arrow_circle.svg"/></h3>
-    <p>Invested in the G,F,C,S,and I Funds</p></div>
+    <p>International stocks of more than 20 developed <a href="#">countries</a></p></div>
+    <div class="usa-width-one-third"><h3>C Fund <img src="/assets/img/icons/Arrow_circle.svg"/></h3>
+    <p>Stocks of large and medium-sized U.S. companies</p></div>
   </div>
 </section>
 

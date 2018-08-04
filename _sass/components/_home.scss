@@ -30,7 +30,7 @@
   .usa-width-two-thirds {
     padding-right: $spacing-md-small;
   }
-  .usa-width-one-third {
+  .usa-width-one-third, .usa-width-one-fourth {
 
   }
 }
@@ -38,7 +38,7 @@
 // New homepage styles
 
 .home-getting-started {
-  .usa-width-one-third {
+  .usa-width-one-third, .usa-width-one-fourth  {
     padding:4rem 1.5rem;
     }
     h2 {
