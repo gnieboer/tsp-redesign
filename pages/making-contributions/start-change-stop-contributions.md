@@ -24,3 +24,9 @@ Download the [Form TSP-1](#), _Election Form_ ([TSP-U-1](#) for uniformed servic
 {: .usa-alert-text}
 </div>
 </div>
+
+## I was just hired. Am I already contributing?
+
+If you are a brand new employee of the federal government or uniformed services, you were automatically enrolled in the TSP at 3% of your salary. Many people who were automatically enrolled decide to increase their contributions to at least 5% of their salary to [get the full match](#) from their agency or service.
+
+<!--  full match should link to "How do I get the full match?" page -->
