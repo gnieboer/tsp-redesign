@@ -20,5 +20,5 @@ For most people, this is often the best option, since it accounts for changes li
 
 If you'd like to make an exception, you may complete [Form TSP-3](#), _Designation of Beneficiary_.
 
-If you don’t remember whether you’ve submitted a Form TSP-3 or you’re not sure who you named as your beneficiaries, look at your annual statement, check the online wizard, or call the ThriftLine at 1-877-968-3778.  Even if you’re certain your designated beneficiaries are current, check them periodically. You may need to make changes if you’ve had a change in your family such as a birth, death, divorce, or marriage.
+If you don’t remember whether you’ve submitted a Form TSP-3 or you’re not sure who you named as your beneficiaries, look at your annual statement, check the online wizard, or call the ThriftLine at 1-877-968-3778.  Even if you’re certain your designated beneficiaries are current, check them periodically.
 <!-- CONTENT END -->
