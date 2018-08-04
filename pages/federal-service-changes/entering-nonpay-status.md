@@ -3,13 +3,13 @@ layout: page
 
 title: Entering a nonpay status
 
-sidenav: manage
+sidenav: manage-life-changes
 
 styles:
 
 scripts:
 
-permalink: /manage-life-changes/entering-nonpay-status/
+permalink: /federal-service-changes/entering-nonpay-status/
 ---
 
 {:#nonpay}
