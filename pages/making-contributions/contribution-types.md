@@ -11,7 +11,7 @@ permalink: /making-contributions/contribution-types/
 
 ## Regular Employee Contributions
 
-Each pay period, your agency or service will deduct your contribution from your basic pay in the amount or percentage that chose when you started contributing (or at 3% of your pay if you were automatically enrolled and haven't made any changes).
+Each pay period, your agency or service will deduct your contribution from your basic pay in the amount or percentage that you chose when you started contributing (or at 3% of your pay if you were automatically enrolled and haven't made any changes).
 
 Your agency or service will continue to deduct your contribution until you do the following:
 
