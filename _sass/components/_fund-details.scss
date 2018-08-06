@@ -1,0 +1,100 @@
+.fund-details {
+
+
+.fund-details-header {
+  border-bottom: 2px solid #B5B3B3;
+  padding-bottom: 3rem;
+  .compare-funds-button {
+    float:right;
+  }
+}
+.fund-questions {
+  .usa-accordion-button {
+    background-position: left 2rem center;
+    padding: 1.5rem 2rem 1.5rem 5.5rem;
+    background-color: $color-white;
+    font-size: $h3-font-size;
+    background-image: url('/assets/img/icons/minus-circle.svg');
+    color: $color-primary;
+    background-size: initial;
+    &[aria-expanded=false] {
+    background-image: url('/assets/img/icons/plus-circle.svg');
+    color: $color-base;
+    }
+  }
+}
+
+.fund-objective {
+  font-size: 2rem;
+  padding: 3rem;
+  background-color: $color-primary-alt-darkest;
+  color: $color-white;
+}
+
+.avg-annual-returns {
+  width: 100%;
+  border-bottom: 2px solid $color-gray-lightest;
+
+  th, td {text-align: center;border: none;}
+  th:first-child {
+    padding-left: 1.5rem;
+  }
+  td {color: $color-green;}
+  caption {
+    font-family: $font-sans;
+    text-align:center;
+    font-size: $h2-font-size;
+    font-weight: $font-normal;
+    border-bottom: 1px solid $color-gray-lightest;
+    border-top: 1px solid $color-gray-lightest;
+    padding: .5rem 0;
+  }
+}
+
+}
+
+
+@media screen and (min-width: 992px) {
+
+.usa-tabs {
+  width: auto;
+  li {
+    display:inline;
+    width: auto;
+    background-color: transparent;
+    margin-right: 1rem;
+  }
+  .usa-accordion-button {
+    width: auto;
+    display:inline-block;
+    clear:both;
+    color: #afafaf;
+    background-color: $color-white;
+    background-image: none;
+    font-weight: normal;
+    padding-right: 2rem;
+    border: none;
+    border-bottom-color: transparent;
+    &[aria-expanded="true"] {
+      background-color: $color-white;
+      color: $color-base;
+      font-weight: $font-bold;
+      &:after {
+        content: '';
+        border-bottom: 4px solid $color-gold;
+        display: block;
+      }
+    }
+  }
+  .usa-accordion-content {
+    float:left;
+    clear:both;
+    width: 100%;
+    border-top: none;
+    &[aria-hidden="false"] {
+      background-color: #fff;
+      margin-top: -2px;
+    }
+  }
+}
+}

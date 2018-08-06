@@ -1,0 +1,26 @@
+$h1-font-size: 4rem;
+$h2-font-size: 3rem;
+$h3-font-size: 2rem;
+$h4-font-size: 1.7rem;
+$h5-font-size: 1.5rem;
+$h6-font-size: 1.3rem;
+
+$spacing-x-small: 0.5rem;
+$spacing-small: 1rem;
+$spacing-md-small: 1.5rem;
+$spacing-medium: 2rem;
+$spacing-large: 3rem;
+
+$color-blue: #112e51;
+$color-blue-darker: darken($color-blue, 3%);
+$color-blue-darkest: darken($color-blue, 5%);
+
+$color-aqua: #00B5E2;
+$color-aqua-dark: darken($color-aqua, 5%);
+$color-aqua-darkest: darken($color-aqua, 10%);
+$color-aqua-light: #99D6EA;
+$color-aqua-lightest: lighten($color-aqua-light, 10%);
+
+$small-screen:  481px;
+$medium-screen: 600px;
+$large-screen:  951px;

@@ -1,20 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- Generator: Adobe Illustrator 22.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 viewBox="0 0 100 125" style="enable-background:new 0 0 100 125;" xml:space="preserve">
+	 viewBox="-5 -5 120 120" style="enable-background:new 0 0 100 100;" xml:space="preserve">
 <style type="text/css">
-	.st0{fill:#112E51;}
-	.st1{font-family:'HelveticaNeue-Bold';}
-	.st2{font-size:5px;}
+	.st0{fill:#323a45;}
 </style>
-<title>arrow</title>
 <g>
 	<g>
-		<path class="st0" d="M50,2c26.5,0,48,21.5,48,48S76.5,98,50,98S2,76.5,2,50C2,23.5,23.5,2,50,2 M50,0C22.4,0,0,22.4,0,50
+		<path stroke="#323a45" stroke-width="5" class="st0" d="M50,2c26.5,0,48,21.5,48,48S76.5,98,50,98S2,76.5,2,50C2,23.5,23.5,2,50,2 M50,0C22.4,0,0,22.4,0,50
 			s22.4,50,50,50s50-22.4,50-50S77.6,0,50,0z"/>
-		<polygon class="st0" points="45,67.2 43.5,65.8 59.8,49.5 43.5,33.2 45,31.8 62.7,49.5 		"/>
+		<polygon stroke="#323a45" stroke-width="5" class="st0" points="45,67.2 43.5,65.8 59.8,49.5 43.5,33.2 45,31.8 62.7,49.5 		"/>
 	</g>
 </g>
-<text transform="matrix(1 0 0 1 0 115)" class="st1 st2">Created by Makarenko Andrey</text>
-<text transform="matrix(1 0 0 1 0 120)" class="st1 st2">from the Noun Project</text>
 </svg>

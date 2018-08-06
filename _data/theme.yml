@@ -1,0 +1,86 @@
+## Color configurations
+## 'primary' - Defines content link color, primary button bg color, return to top link color
+## 'primary darker' - Defines content link hover color, primary button hover bg color, return to top link hover color
+## 'base' - Defines header site title, active top nav link color, left nav link color, link color in primary and main footer and text in usa-banner
+## 'visited' - Defines visited link color
+#
+colors:
+  primary: '#046b99'
+  primary-darker: '#323a45'
+  base: '#222223'
+  # visited: 'red'
+
+# USA banner colors
+  # usa-banner:
+  #   usa-banner-bg: 'LightBlue'
+  #   usa-banner-text: 'Black'
+  #   usa-banner-link: 'Gray'
+  #   usa-banner-link-hover: 'Gray'
+
+# Header colors
+  # header:
+  #   header-bg: '#e6e3d0'
+  #   header-title: 'Black'
+  #   header-link: 'DarkSlateGray'
+  #   header-link-hover: 'Indigo'
+
+# Alt section colors
+  # alt-section:
+  #   bg-color: '#e6e3d0'
+  #   header-color: 'DarkSlateGray'
+  #   text-color: 'Black'
+  #   link-color: 'red'
+  #   link-hover-color: 'orange'
+
+# Hero colors
+  hero:
+    hero-bg: 'white'
+    hero-header: '#fff'
+    hero-header-alt: '#fff'
+    hero-text: '#fff'
+    hero-link: '#fff'
+    hero-button-bg: '#fff'
+    hero-button-text: '#fff'
+
+# Top navigation colors
+  top-navigation:
+  #   top-nav-bg: '#fff'
+    top-nav-link: '#5B616E'
+  #   top-nav-link-hover: '#5B616E'
+    top-nav-link-active: '#fff'
+  #   top-nav-link-hover-bg: '#fff'
+  #   top-nav-link-current: '#fff'
+    top-nav-dropdown-bg: '#323a45'
+  #   top-nav-dropdown-link: '#fff'
+    top-nav-dropdown-link-hover-bg: '#323a45'
+
+# Side navigation colors
+  side-navigation:
+    side-nav-bg: 'white'
+    side-nav-link: 'black'
+    side-nav-link-hover: '#323a45'
+    side-nav-link-hover-bg: '#f1f1f1'
+    side-nav-link-current: '#323a45'
+
+# Footer colors
+  # footer:
+  #   primary-footer-bg: 'Gainsboro'
+  #   primary-footer-link: 'black'
+  #   footer-bg: 'DarkSlateGray'
+  #   footer-text: 'white'
+  #   footer-link: 'LightBlue'
+
+
+# Font configurations
+# 'sans' - Defines navigation and body text
+# 'serif' - Defines headings
+# 'normal' - Defines the default font weight
+# 'bold' - Defines the bold font weight
+
+fonts:
+  sans: >-
+      "Source Sans Pro", "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
+  serif: >-
+      "Merriweather", "Georgia", "Cambria", "Times New Roman", "Times", serif;
+  normal: 400
+  bold: 800

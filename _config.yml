@@ -3,6 +3,8 @@ description:
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 
+theme: uswds-jekyll
+
 # To enable search, uncomment the search section
 # You will need to setup a search account with search.gov
 # https://search.usa.gov/signup
@@ -10,19 +12,24 @@ url: "" # the base hostname & protocol for your site, e.g. http://example.com
 
 search_site_handle: searchgov-site-handle
 
+
+# Configuration for Google Analytics, add your UA code here:
+google_analytics_ua: UA-33523145-2
+
+# Configuration for DAP, add your agency ID here:
+dap_agency: FRTIB
+
 # Build settings
 markdown: kramdown
 
-styles:
-  - /assets/css/main.css
-
 scripts:
+  - assets/uswds/js/uswds.min.js
+  - /glossary/example/main.js
+  - /assets/js/login.js
 
+# Compress Sass
 sass:
-  load_paths:
-    - _sass
-    - node_modules
-  # style: compressed
+  style: compressed
 
 exclude:
   - circle.yml
