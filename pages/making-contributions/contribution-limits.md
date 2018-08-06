@@ -9,7 +9,7 @@ permalink: /making-contributions/contribution-limits/
 
 # Contribution limits
 
-The Internal Revenue Code (IRC) places limits on the dollar amount of contributions you can make to the TSP. The Internal Revenue Service (IRS) calculates them every year and they can change annually. We announce the limits here and the ThriftLine, through various publications, and on our [Facebook](#) and [Twitter](#) pages.
+The Internal Revenue Code (IRC) places limits on the dollar amount of contributions you can make to the TSP. The Internal Revenue Service (IRS) calculates them every year and they can change annually. We announce the limits here and the ThriftLine, and on our [Facebook](https://fb.com/tsp4gov){:target="\_blank"} and [Twitter](https://twitter.com/tsp4gov){:target="\_blank"} pages.
 
 <table>
   <caption>Contribution Limits for 2018</caption>
@@ -18,7 +18,7 @@ The Internal Revenue Code (IRC) places limits on the dollar amount of contributi
         <th scope="row">Elective Deferral Limit</th>
         <td>$18,500</td>
         <td>IRC §402(g)</td>
-        <td><p>Applies to combined total of traditional and Roth contributions. For members of the uniformed services, it includes all traditional and Roth contributions from taxable <a class="glossaryTerm" href="../../sitehelp/glossary/glossary.html?term=BasicPay" title="Glossary term will open in a new window.">basic pay</a>, <a class="glossaryTerm" href="../../sitehelp/glossary/glossary.html?term=IncentivePayUniformedServices" title="Glossary term will open in a new window.">incentive pay</a>, <a class="glossaryTerm" href="../../sitehelp/glossary/glossary.html?term=SpecialPayUniformedServices" title="Glossary term will open in a new window.">special pay</a>, and <a class="glossaryTerm" href="../../sitehelp/glossary/glossary.html?term=BonusPayUniformedServices" title="Glossary term will open in a new window.">bonus pay</a>, but does not apply to traditional contributions made from tax-exempt pay earned in a combat zone.</p>
+        <td><p>Applies to combined total of traditional and Roth contributions but does not apply to automatic or matching contributions from your agency or service.</p>
         </td>
       </tr>
       <tr>
