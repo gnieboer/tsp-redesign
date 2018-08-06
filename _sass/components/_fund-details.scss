@@ -11,6 +11,27 @@
   font-size: 2rem;
   padding: 3rem;
 }
+
+.avg-annual-returns {
+  width: 100%;
+  border-bottom: 2px solid #dfdfdf;
+
+  th, td {text-align: center;border: none;}
+  th:first-child {
+    padding-left: 1.5rem;
+  }
+  td {color: green;}
+  caption {
+    font-family: $font-sans;
+    text-align:center;
+    font-size: $h2-font-size;
+    font-weight: $font-normal;
+    border-bottom: 1px solid #dfdfdf;
+    border-top: 1px solid #efefef;
+    padding: .5rem 0;
+  }
+}
+
 }
 
 
@@ -28,19 +49,29 @@
     width: auto;
     display:inline-block;
     clear:both;
+    color: #afafaf;
+    background-color: $color-white;
     background-image: none;
+    font-weight: normal;
     padding-right: 2rem;
-    border: 2px solid $color-gray-lightest;
+    border: none;
     border-bottom-color: transparent;
     &[aria-expanded="true"] {
       background-color: $color-white;
+      color: $color-base;
+      font-weight: $font-bold;
+      &:after {
+        content: '';
+        border-bottom: 4px solid orange;
+        display: block;
+      }
     }
   }
   .usa-accordion-content {
     float:left;
     clear:both;
     width: 100%;
-    border-top: 2px solid $color-gray-lightest;
+    border-top: none;
     &[aria-hidden="false"] {
       background-color: #fff;
       margin-top: -2px;
