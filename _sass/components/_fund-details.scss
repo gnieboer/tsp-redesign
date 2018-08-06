@@ -1,33 +1,52 @@
 .fund-details {
 
+
 .fund-details-header {
-  border-bottom: 2px solid #E5E1E6;
+  border-bottom: 2px solid #B5B3B3;
   padding-bottom: 3rem;
   .compare-funds-button {
     float:right;
   }
 }
+.fund-questions {
+  .usa-accordion-button {
+    background-position: left 2rem center;
+    padding: 1.5rem 2rem 1.5rem 5.5rem;
+    background-color: $color-white;
+    font-size: $h3-font-size;
+    background-image: url('/assets/img/icons/minus-circle.svg');
+    color: $color-primary;
+    background-size: initial;
+    &[aria-expanded=false] {
+    background-image: url('/assets/img/icons/plus-circle.svg');
+    color: $color-base;
+    }
+  }
+}
+
 .fund-objective {
   font-size: 2rem;
   padding: 3rem;
+  background-color: $color-primary-alt-darkest;
+  color: $color-white;
 }
 
 .avg-annual-returns {
   width: 100%;
-  border-bottom: 2px solid #dfdfdf;
+  border-bottom: 2px solid $color-gray-lightest;
 
   th, td {text-align: center;border: none;}
   th:first-child {
     padding-left: 1.5rem;
   }
-  td {color: green;}
+  td {color: $color-green;}
   caption {
     font-family: $font-sans;
     text-align:center;
     font-size: $h2-font-size;
     font-weight: $font-normal;
-    border-bottom: 1px solid #dfdfdf;
-    border-top: 1px solid #efefef;
+    border-bottom: 1px solid $color-gray-lightest;
+    border-top: 1px solid $color-gray-lightest;
     padding: .5rem 0;
   }
 }
@@ -62,7 +81,7 @@
       font-weight: $font-bold;
       &:after {
         content: '';
-        border-bottom: 4px solid orange;
+        border-bottom: 4px solid $color-gold;
         display: block;
       }
     }
