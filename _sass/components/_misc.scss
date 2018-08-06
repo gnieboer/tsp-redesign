@@ -60,3 +60,13 @@
     font-size: 2.5rem;
   }
 }
+
+#footnotes {
+  ol {
+    padding-left: 20px;
+    max-width: inherit;
+  }
+  margin-top: 50px;
+  border-top: 1px solid silver;
+  font-size: 0.8em;
+}
