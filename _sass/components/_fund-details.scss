@@ -1,0 +1,50 @@
+.fund-details {
+
+.fund-details-header {
+  border-bottom: 2px solid #E5E1E6;
+  padding-bottom: 3rem;
+  .compare-funds-button {
+    float:right;
+  }
+}
+.fund-objective {
+  font-size: 2rem;
+  padding: 3rem;
+}
+}
+
+
+@media screen and (min-width: 992px) {
+
+.usa-tabs {
+  width: auto;
+  li {
+    display:inline;
+    width: auto;
+    background-color: transparent;
+    margin-right: 1rem;
+  }
+  .usa-accordion-button {
+    width: auto;
+    display:inline-block;
+    clear:both;
+    background-image: none;
+    padding-right: 2rem;
+    border: 2px solid $color-gray-lightest;
+    border-bottom-color: transparent;
+    &[aria-expanded="true"] {
+      background-color: $color-white;
+    }
+  }
+  .usa-accordion-content {
+    float:left;
+    clear:both;
+    width: 100%;
+    border-top: 2px solid $color-gray-lightest;
+    &[aria-hidden="false"] {
+      background-color: #fff;
+      margin-top: -2px;
+    }
+  }
+}
+}
