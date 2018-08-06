@@ -102,6 +102,9 @@ fund-options:
         href: /how-to-invest/change-your-investments/
   - text: Fund basics
     href: /fund-basics/
+    subnav:
+      - text: S Fund
+        href: /fund-basics/s-fund/
   - text: Fund performance
     href: /fund-performance/
 

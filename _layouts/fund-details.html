@@ -1,0 +1,78 @@
+---
+layout: default
+main:
+  class: usa-grid usa-section usa-content usa-layout-docs fund-details
+---
+{% assign sidenav = site.data.navigation[page.sidenav] | default: page.sidenav %}
+{% if sidenav %}
+<aside class="usa-width-one-fourth usa-layout-docs-sidenav sticky">
+  {% include sidenav.html links=sidenav %}
+</aside>
+
+<div class="usa-width-three-fourths usa-layout-docs-main_content">
+<div class="fund-details-header usa-grid-full">
+  <h1>{{ page.Fund_name }}</h1>
+  <a href="#" class="usa-button compare-funds-button">Compare funds</a>
+  <p>
+    {{page.Fund_subtitle_line_1}}<br>
+    {{page.Fund_subtitle_line_2}}
+  </p>
+</div>
+<div class="usa-section fund-questions">
+  <h2>First, let's answer a few questions.</h2>
+  <ul class="usa-accordion">
+    {% for item in page.questions %}
+    <li>
+      <button class="usa-accordion-button"
+        aria-expanded="true"
+        aria-controls="question-{{ forloop.index }}">
+        {{ item.question }}
+      </button>
+      <div id="question-{{ forloop.index }}" class="usa-accordion-content usa-content">
+        <p>{{ item.answer }}</p>
+      </div>
+    </li>
+    {% endfor %}
+  </ul>
+</div>
+
+
+  <div class="fund-objective">
+    <div class="usa-grid usa-content">
+    <p>{{ page.Fund_objective }}</p>
+  </div>
+  </div>
+
+<div class="usa-section">
+<h2>Performance</h2>
+<p>As of 12/31/{{ 'now' | date: "%Y" | minus: 1 }}</p>
+<table class="usa-table-borderless avg-annual-returns">
+  <caption>Average annual returns</caption>
+  <thead>
+  <tr>
+    <th>YTD (Daily)</th>
+    <th>1 Yr</th>
+    <th>3 Yrs</th>
+    <th>5 Yrs</th>
+    <th>10 Yrs</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td>{{ page.avg_annual_returns.ytd }}</td>
+    <td>{{ page.avg_annual_returns.one_yr }}</td>
+    <td>{{ page.avg_annual_returns.three_yr }}</td>
+    <td>{{ page.avg_annual_returns.five_yr }}</td>
+    <td>{{ page.avg_annual_returns.ten_yr }}</td>
+  </tr>
+</tbody>
+</table>
+
+</div>
+  {{ content }}
+</div>
+{% else %}
+<div class="usa-layout-docs-main_content">
+  {{ content }}
+</div>
+{% endif %}
