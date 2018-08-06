@@ -11,7 +11,7 @@ scripts:
 
 permalink: /federal-service-changes/leaving-federal-service/
 ---
-## Leaving federal service
+# Leaving federal service
 
 You don't need to do a thing with your TSP account when you leave federal or uniformed service. It will stay right where it is (if your balance is $200 or more), and you'll continue to enjoy potential earnings and our very low administrative fees. Once you leave federal service, you’ll no longer be able to make employee contributions. However, you can transfer money into your TSP account from traditional IRAs and other eligible employer plans. Your account will continue to accrue earnings, and you’ll still be able to change the way your money is invested in the TSP funds by making interfund transfers. You can also still transfer money into your TSP account from traditional IRAs and other eligible employer plans.
 
