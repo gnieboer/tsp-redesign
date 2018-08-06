@@ -10,7 +10,7 @@
 #   links: primary
 #
 primary:
-  - text: Manage your account
+  - text: Manage your plan
     links:
     - text: Account basics
       href: /account-basics/
