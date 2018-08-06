@@ -4,7 +4,7 @@ title: Being a beneficiary participant
 sidenav: manage-your-plan
 styles:
 scripts:
-permalink: /for-beneficiaries/being-a-beneficiary/
+permalink: /for-beneficiaries/being-a-beneficiary-participipant/
 ---
 
 # Being a beneficiary participant

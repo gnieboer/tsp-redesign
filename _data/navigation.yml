@@ -84,11 +84,11 @@ manage-your-plan:
     href: /for-beneficiaries/
     subnav:
       - text: Being a beneficiary participant
-        href: /for-beneficiaries/being-a-beneficiary/
-      - text: Beneficiary designation
-        href: /for-beneficiaries/beneficiary-designation/
-      - text: Beneficiary participant account distributions
-        href: /for-beneficiaries/beneficiary-participant-account-distribution/
+        href: /for-beneficiaries/being-a-beneficiary-participipant
+      - text: Designating beneficiaries
+        href: /for-beneficiaries/designating-beneficiaries/
+      - text: Beneficiary distributions
+        href: /for-beneficiaries/beneficiary-distributions/
 
 fund-options:
   - text: How to invest

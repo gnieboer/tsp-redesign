@@ -1,13 +1,13 @@
 ---
 layout: page
-title: Beneficiary participant account distributions
+title: Beneficiary distributions
 sidenav: manage-your-plan
 styles:
 scripts:
-permalink: /for-beneficiaries/beneficiary-participant-account-distribution/
+permalink: /for-beneficiaries/beneficiary-distributions/
 ---
 
-# Beneficiary participant account distributions
+# Beneficiary distributions
 
 If you have an existing TSP account from your own employment with the federal government or the uniformed services, you can move your beneficiary participant account (BPS) into your existing TSP account by completing Form TSP-90, Withdrawal Request for Beneficiary Participants. The money you move will be treated as an employee contribution, but it will not be subject to the Internal Revenue Code (IRC) annual elective deferral limit. (See the instructions on Form TSP-90 for more information on combining accounts.)
 
