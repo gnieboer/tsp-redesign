@@ -155,7 +155,7 @@ manage-life-changes:
     href: /estate-planning/
     subnav:
       - text: Beneficiary basics
-        href: #
+        href: /estate-planning/beneficiary-basics/
       - text: Changes in your family status
         href: #
       - text: Economic hardship
@@ -168,11 +168,11 @@ manage-life-changes:
     href: /federal-service-changes/
     subnav:
       - text: Leaving federal service
-        href: #
+        href: /federal-service-changes/leaving-federal-service/
       - text: Returning to federal service
         href: #
       - text: Entering a non-pay status
-        href: #
+        href: /federal-service-changes/entering-nonpay-status/
       - text: Preparing for active duty
         href: #
 
