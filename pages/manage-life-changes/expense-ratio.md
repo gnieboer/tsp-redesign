@@ -1,6 +1,6 @@
 ---
 title: Expense Ratio
-layout: secondary
+layout: page
 permalink: /manage-life-changes/expense-ratio/
 sidenav: manage
 styles:
