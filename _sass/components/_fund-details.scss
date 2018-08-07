@@ -58,7 +58,11 @@
 
 .usa-tabs {
   width: auto;
-  li {
+  h2, h3, h4  {
+    font-family: $font-sans;
+    font-weight: $font-normal;
+  }
+  > li {
     display:inline;
     width: auto;
     background-color: transparent;
@@ -91,9 +95,17 @@
     clear:both;
     width: 100%;
     border-top: none;
+    background-color: $color-gray-lightest;
+    .usa-grid-full {
+      display: flex;
+      > div {
+        background-color: $color-white;
+        padding: 2rem;
+      }
+    }
     &[aria-hidden="false"] {
-      background-color: #fff;
-      margin-top: -2px;
+      background-color: $color-gray-lightest;;
+
     }
   }
 }
