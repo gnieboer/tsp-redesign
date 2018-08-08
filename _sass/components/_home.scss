@@ -30,7 +30,7 @@
   .usa-width-two-thirds {
     padding-right: $spacing-md-small;
   }
-  .usa-width-one-third {
+  .usa-width-one-third, .usa-width-one-fourth {
 
   }
 }
@@ -38,7 +38,7 @@
 // New homepage styles
 
 .home-getting-started {
-  .usa-width-one-third {
+  .usa-width-one-third  {
     padding:4rem 1.5rem;
     }
     h2 {
@@ -84,6 +84,9 @@
     .arrow-bottom-blue::after {
       border-top-color: #1ba7d0;
   }
+    .arrow-bottom-gray::after {
+      border-top-color: $color-gray;
+  }
 
   .quick-links {
     background-color: #1ba7d0;
@@ -126,7 +129,7 @@
     }
   }
 }
-.our-funds {
+.our-funds, .our-core-funds {
   .callout {
     background-color: #1ba7d0;
     color: #fff;
@@ -137,7 +140,11 @@
       padding: 3rem 0;
     }
   }
-
+}
+.our-core-funds {
+  .callout {
+    background-color: #5b616b;
+  }
 }
 
 .fund-grid {
