@@ -58,4 +58,34 @@ additional_info: |
   This liquidity reserve is invested in futures
   contracts of the S&P 400 and Russell 2000
   (other broad equity indexes).
+risks: |
+  Your investment in the C Fund is subject to [market risk](#) because the prices of the stocks in the S&P 500 Index rise and fall.
+
+  By investing in the C Fund, you are also exposed to [inflation risk](#), meaning your C Fund investment may not grow enough to offset inflation.
+rewards: |
+  While investment in the C Fund carries risk, it also offers the opportunity to experience gains from equity ownership of large and mid-sized U.S. company stocks.
 ---
+<li>
+    <button class="usa-accordion-button" aria-expanded="false" aria-controls="a2">
+  Performance &amp; risks
+</button>
+    <div id="a2" class="usa-accordion-content">
+      <div class="usa-grid-full">
+        <div class="usa-width-one-whole">
+          <h3>Charts and graphs</h3>
+        </div>
+      </div>
+    </div>
+</li>
+<li>
+    <button class="usa-accordion-button" aria-expanded="false" aria-controls="a3">
+  Composition
+</button>
+    <div id="a3" class="usa-accordion-content">
+    <div class="usa-grid-full">
+      <div class="usa-width-one-whole">
+        <h3>Charts and graphs 2</h3>
+      </div>
+    </div>
+    </div>
+</li>

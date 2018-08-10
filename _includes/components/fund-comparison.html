@@ -50,12 +50,14 @@ returns.
       <span>{{ fund.Fund_letter }}</span>
       {{ fund.Fund_subtitle }}
         </div>
+          <div class="fund-content">
         <p>1-Yr <b>{{ fund.avg_annual_returns.one_yr }}</b></p>
         <p>3-Yrs <b>{{ fund.avg_annual_returns.three_yr }}</b></p>
         <p>5-Yrs <b>{{ fund.avg_annual_returns.five_yr }}</b></p>
         <p>10-Yrs <b>{{ fund.avg_annual_returns.ten_yr }}</b></p>
         <p>Inception <b>{{ fund.avg_annual_returns.inception }}</b></p>
       </div>
+    </div>
       </label>
         {% endfor %}
       </div>
@@ -76,12 +78,26 @@ returns.
       <span>{{ fund.Fund_letter }}</span>
       {{ fund.Fund_subtitle }}
         </div>
-        <p>1-Yr <b>{{ fund.avg_annual_returns.one_yr }}</b></p>
-        <p>3-Yrs <b>{{ fund.avg_annual_returns.three_yr }}</b></p>
-        <p>5-Yrs <b>{{ fund.avg_annual_returns.five_yr }}</b></p>
-        <p>10-Yrs <b>{{ fund.avg_annual_returns.ten_yr }}</b></p>
-        <p>Inception <b>{{ fund.avg_annual_returns.inception }}</b></p>
+          <div class="fund-content">
+            <div class="fund-summary-details">
+                <p><b>Assets</b><br>
+                {{ fund.summary_details.assets }}
+              </p>
+              <p><b>Net admin expense</b><br>
+                {{ fund.summary_details.admin_expense }}
+              </p>
+              <p><b>Other expense</b><br>
+                {{ fund.summary_details.other_expense }}
+              </p>
+                <p><b>Benchmark index</b><br>
+                  {{ fund.summary_details.benchmark_index }}
+                </p>
+                <p><b>Asset manager</b><br>
+                {{ fund.summary_details.asset_manager }}
+              </p>
+            </div>
       </div>
+    </div>
       </label>
         {% endfor %}
       </div>
@@ -102,12 +118,10 @@ returns.
       <span>{{ fund.Fund_letter }}</span>
       {{ fund.Fund_subtitle }}
         </div>
-        <p>1-Yr <b>{{ fund.avg_annual_returns.one_yr }}</b></p>
-        <p>3-Yrs <b>{{ fund.avg_annual_returns.three_yr }}</b></p>
-        <p>5-Yrs <b>{{ fund.avg_annual_returns.five_yr }}</b></p>
-        <p>10-Yrs <b>{{ fund.avg_annual_returns.ten_yr }}</b></p>
-        <p>Inception <b>{{ fund.avg_annual_returns.inception }}</b></p>
+        <div class="fund-content">
+        <p>{{ fund.risks | markdownify }}</p>
       </div>
+    </div>
       </label>
         {% endfor %}
       </div>
@@ -129,11 +143,7 @@ returns.
       {{ fund.Fund_subtitle }}
         </div>
         <div class="fund-content">
-        <p>1-Yr <b>{{ fund.avg_annual_returns.one_yr }}</b></p>
-        <p>3-Yrs <b>{{ fund.avg_annual_returns.three_yr }}</b></p>
-        <p>5-Yrs <b>{{ fund.avg_annual_returns.five_yr }}</b></p>
-        <p>10-Yrs <b>{{ fund.avg_annual_returns.ten_yr }}</b></p>
-        <p>Inception <b>{{ fund.avg_annual_returns.inception }}</b></p>
+        <p>{{ fund.rewards | markdownify }}</p>
         </div>
       </div>
       </label>
