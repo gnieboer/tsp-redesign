@@ -1,7 +1,7 @@
 ---
 title: Expense Ratio
 layout: page
-permalink: /manage-life-changes/expense-ratio/
+permalink: /fund-performance/expense-ratio/
 sidenav: manage
 styles:
 scripts:
