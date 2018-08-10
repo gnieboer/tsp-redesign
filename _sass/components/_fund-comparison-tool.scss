@@ -1,0 +1,48 @@
+.fund-comparison-tool {
+  select {
+    display:inline-block;
+    width: auto;
+    padding-right: 4rem;
+  }
+  .flex-container {
+    display: flex;
+  }
+  .fund-item {
+    color: #666;
+  }
+  .fund-header {
+    text-align: center;
+    color: #fff;
+    background-color: #666;
+    padding: 1rem;
+    span {font-size: 8rem;font-weight:800;
+    display:block;
+    }
+    &:hover {
+      background-color: #323a45;
+    }
+  }
+.fund-content {
+  padding: 1rem;
+}
+}
+
+
+
+#show-c-fund:checked,
+#show-s-fund:checked,
+#show-i-fund:checked,
+#show-f-fund:checked,
+#show-g-fund:checked
+ {
+ + label {
+   .fund-item {
+  color: $color-base;
+  background-color: #fff;
+}
+.fund-header {
+  color: #fff;
+  background-color: #323a45;
+}
+}
+}

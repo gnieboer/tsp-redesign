@@ -1,13 +1,11 @@
 ---
+permalink: /fund-basics/g-fund/
 layout: fund-details
-title: S Fund
-styles:
+title: G fund
 sidenav: fund-options
-scripts:
-permalink: /fund-basics/s-fund/
-Fund_name: S Fund
-Fund_subtitle_line_1: Small cap stock
-Fund_subtitle_line_2: Index investment fund
+Fund_letter: G
+subfund_name:
+Fund_subtitle: Government Securities Investment Fund
 Fund_objective: The S Fund's investment objective is to match the performance of the Dow Jones U.S. Completion Total Stock Market Index, a broad market index made up of stocks of small-to-medium U.S. companies not included in the S&P 500 Index.
 questions:
   - question: Why should I invest in the S Fund?
@@ -22,6 +20,7 @@ avg_annual_returns:
     three_yr: +14.89%
     five_yr: +15.89%
     ten_yr: +16.89%
+    inception:
 summary_details:
     assets: $67.6 billion
     admin_expense: $0.032/$1,000 account balance. 0.032% (3.2 basis points)
@@ -59,9 +58,7 @@ additional_info: |
   This liquidity reserve is invested in futures
   contracts of the S&P 400 and Russell 2000
   (other broad equity indexes).
-
 ---
-
 
 <li>
     <button class="usa-accordion-button" aria-expanded="false" aria-controls="a2">
