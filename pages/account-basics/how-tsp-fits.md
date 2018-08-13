@@ -1,13 +1,13 @@
 ---
 layout: page
-title: Account basics
+title: How the TSP fits into your retirement
 sidenav: manage-your-plan
 styles:
 scripts:
 permalink: /account-basics/how-tsp-fits/
 ---
 
-# How the TSP fits into my retirement package
+# How the TSP fits into your retirement
 
 If you’re covered by the [Federal Employees' Retirement System](#glossary) (FERS), the TSP is one part of a three-part retirement package that also includes your FERS basic annuity and Social Security.
 
