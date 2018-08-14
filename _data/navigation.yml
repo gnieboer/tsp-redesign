@@ -186,70 +186,6 @@ manage-life-changes:
       - text: Preparing for active duty
         href: #
 
-# FOOTERNAV MENUS
-
-column01:
-  - text: Where to send forms
-    links:
-    - text: General Correspondence
-      href: /privacy/
-    - text: Court Orders, Legal Processes, and Powers of Attorney
-      href: /making-contributions/
-    - text: Death Benefit Claims
-      href: /maximize-your-savings/
-    - text: Loan Payments
-      href: /manage-life-changes/
-    - text: Transfers or Rollovers of Funds to the TSP
-      href: /for-beneficiaries/
-
-column02:
-  - text: Privacy
-    links:
-    - text: Who We Are
-      href: /privacy/
-    - text: Our Mission
-      href: /privacy/
-    - text: How We Protect Your Data
-      href: /privacy/
-    - text: How to Contact Us
-      href: /privacy/
-    - text: Website Privacy Policy
-      href: /privacy/
-
-column03:
-  - text: Securing your account
-    links:
-    - text: What do I do if I suspect fraud?
-      href: #
-    - text: Link
-      href: #
-    - text: Link
-      href: #
-    - text: Link
-      href: #
-    - text: Link
-      href: #
-
-column04:
-  - text: Calculators
-    links:
-    - text: How much should I save?
-      href: #
-    - text: How much will my savngs grow?
-      href: #
-    - text: How much can I contribute?
-      href: #
-    - text: Paycheck estimator
-      href: #
-    - text: Contribution comparison calculator
-      href: #
-    - text: Retirement income calculator
-      href: #
-    - text: TSP monthly payment calculator
-      href: #
-    - text: Estimate loan payments
-      href: #
-
 # MISCELLANEOUS
 privacy:
   - text: FRTIB Privacy Division
@@ -291,10 +227,15 @@ privacy:
     href: #
 
 footer:
-  - text: Documentation
-    href: /about/
-  - text: Demo link
-    href: /about/
-  - text: External link
-    href: https://tsp.gov
-    external: true
+  - text: Privacy
+    href: #
+  - text: Agency & Service Rep Resources
+    href: #
+  - text: News & Resources
+    href: #
+  - text: Calculators
+    href: #
+  - text: FOIA
+    href: #
+  - text: FRTIB
+    href: #

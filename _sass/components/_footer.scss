@@ -1,15 +1,30 @@
-.footer-nav {
-  background-color: #323a45;
-  color: #1ba7d0;
 
-  .usa-width-one-fourth {
-    padding-bottom: 3rem;
-    padding-top: 3rem;
+.usa-footer-primary-section {
+  padding: 3rem 0;
+  @if variable-exists(primary-footer-bg) {
+    background-color: $primary-footer-bg;
+  }
+
+  .usa-footer-primary-link {
+    @if variable-exists(primary-footer-link) {
+      color: $primary-footer-link;
+    }
+  }
+}
+
+.usa-footer-secondary_section {
+  display: none;
+  @if variable-exists(footer-bg) {
+    background-color: $footer-bg;
+  }
+  @if variable-exists(footer-text) {
+    color: $footer-text;
   }
 
   a {
-    color: #fff;
-    text-decoration: none;
+    @if variable-exists(footer-link) {
+      color: $footer-link;
+    }
   }
 }
 
