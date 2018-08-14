@@ -10,7 +10,7 @@ permalink: /contact/
 <div class="usa-grid-full usa-layout-docs-main_content">
   <div class="usa-width-one-half" markdown="1">
 ![alt text]({{ site.baseurl }}/assets/img/icons/contact_phone.svg)
-**Thriftline:** 1-877-968-3778  
+**ThriftLine:** 1-877-968-3778  
 (M - F) 7:00 a.m. to 9:00 p.m., eastern time
 
 **International:**
