@@ -242,8 +242,43 @@ column04:
 
 # MISCELLANEOUS
 privacy:
-  - text: Privacy Policy
+  - text: FRTIB Privacy Division
     href: /privacy/
+    subnav:
+      - text: Who we are
+        href: /privacy/who-we-are/
+      - text: Our mission
+        href: /privacy/our-mission/
+  - text: How we protect your data
+    href: /how-we-protect-your-data/
+    subnav:
+      - text: Our privacy policy
+        href: /how-we-protect-your-data/privacy-policy/
+      - text: Publicly available policies on privacy
+        href: /how-we-protect-your-data/privacy-policies/
+      - text: Publicly available agency reports on privacy
+        href: /how-we-protect-your-data/privacy-reports/
+      - text: FRTIB rules implementing the privacy act
+        href: /how-we-protect-your-data/privacy-rules/
+      - text: System of records notices (SORNS)
+        href: /how-we-protect-your-data/system-of-records-notices/
+      - text: Exemptions to the privacy act
+        href: /how-we-protect-your-data/exemptions-to-privacy-act/
+      - text: Privacy impact assessments (PIAS)
+        href: /how-we-protect-your-data/privacy-impact-assessments/
+      - text: Matching notices (computer matching agreements)
+        href: /how-we-protect-your-data/matching-notices/
+  - text: How to contact us
+    href: /contact-privacy/
+    subnav:
+      - text: Contact information for the senior agency official for privacy (SAOP)
+        href: /contact-privacy/contact-information-saop/
+      - text: How to submit a privacy act request
+        href: /contact-privacy/submit-privacy-act-request/
+      - text: How to submit a privacy question or complaint
+        href: /contact-privacy/submit-privacy-question-or-complaint/
+  - text: Website privacy policy
+    href: #
 
 footer:
   - text: Documentation

@@ -15,7 +15,9 @@
   position: sticky;
   top: 0;
 }
-
+.nobr {
+  white-space: nowrap;
+}
 .blue-medium {
   background-color: #116C97;
 }
