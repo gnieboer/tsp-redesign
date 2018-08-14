@@ -1,13 +1,12 @@
 ---
+permalink: /fund-basics/c-fund/
 layout: fund-details
-title: S Fund
-styles:
+title: C fund
 sidenav: fund-options
-scripts:
-permalink: /fund-basics/s-fund/
-Fund_name: S Fund
-Fund_subtitle_line_1: Small cap stock
-Fund_subtitle_line_2: Index investment fund
+Fund_letter: C
+Fund_order: 3
+subfund_name:
+Fund_subtitle: Common Stock Index Investment Fund
 Fund_objective: The S Fund's investment objective is to match the performance of the Dow Jones U.S. Completion Total Stock Market Index, a broad market index made up of stocks of small-to-medium U.S. companies not included in the S&P 500 Index.
 questions:
   - question: Why should I invest in the S Fund?
@@ -17,11 +16,12 @@ questions:
   - question: How can I use the S Fund in my TSP?
     answer: The S Fund can be useful in a portfolio that also contains stock funds that track other indexes. The C, S, and I Funds, for example, track different segments of the overall stock market without overlapping. By investing in all segments of the stock market (as opposed to just one), you reduce your exposure to market risk.
 avg_annual_returns:
-    ytd: +12.89%
-    one_yr: +13.89%
-    three_yr: +14.89%
-    five_yr: +15.89%
-    ten_yr: +16.89%
+    ytd: 12.89%
+    one_yr: 13.89%
+    three_yr: 14.89%
+    five_yr: 15.89%
+    ten_yr: 16.89%
+    inception:
 summary_details:
     assets: $67.6 billion
     admin_expense: $0.032/$1,000 account balance. 0.032% (3.2 basis points)
@@ -59,9 +59,13 @@ additional_info: |
   This liquidity reserve is invested in futures
   contracts of the S&P 400 and Russell 2000
   (other broad equity indexes).
+risks: |
+  Your investment in the C Fund is subject to [market risk](#) because the prices of the stocks in the S&P 500 Index rise and fall.
 
+  By investing in the C Fund, you are also exposed to [inflation risk](#), meaning your C Fund investment may not grow enough to offset inflation.
+rewards: |
+  While investment in the C Fund carries risk, it also offers the opportunity to experience gains from equity ownership of large and mid-sized U.S. company stocks.
 ---
-
 
 <li>
     <button class="usa-accordion-button" aria-expanded="false" aria-controls="a2">

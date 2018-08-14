@@ -105,6 +105,16 @@ fund-options:
     subnav:
       - text: S Fund
         href: /fund-basics/s-fund/
+      - text: G Fund
+        href: /fund-basics/g-fund/
+      - text: C Fund
+        href: /fund-basics/c-fund/
+      - text: F Fund
+        href: /fund-basics/f-fund/
+      - text: I Fund
+        href: /fund-basics/i-fund/
+      - text: L Fund
+        href: /fund-basics/l-fund/
   - text: Fund performance
     href: /fund-performance/
 

@@ -37,3 +37,7 @@ exclude:
   - package-lock.json
   - package.json
   - vendor
+
+collections:
+  funds:
+    output: true

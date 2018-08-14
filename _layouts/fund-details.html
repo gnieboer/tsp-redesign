@@ -11,11 +11,10 @@ main:
 
 <div class="usa-width-three-fourths usa-layout-docs-main_content">
 <div class="fund-details-header usa-grid-full">
-  <h1>{{ page.Fund_name }}</h1>
-  <a href="#" class="usa-button compare-funds-button">Compare funds</a>
+  <h1>{{ page.Fund_letter }}</h1>
+  <a href="/fund-basics/fund-comparison/" class="usa-button compare-funds-button">Compare funds</a>
   <p>
-    {{page.Fund_subtitle_line_1}}<br>
-    {{page.Fund_subtitle_line_2}}
+    {{page.Fund_subtitle}}
   </p>
 </div>
 <div class="usa-section fund-questions">
@@ -109,7 +108,7 @@ main:
           </div>
         </div>
     </li>
-  {{ content }}
+  {{ page.content }}
     <li>
         <button class="usa-accordion-button" aria-expanded="false" aria-controls="a4">
       Fees &amp; more info
