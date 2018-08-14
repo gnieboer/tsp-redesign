@@ -8,7 +8,9 @@ scripts:
 ---
 
 # Expense Ratio
-Running the TSP involves many necessary expenses. Because of our size, we're able to save you money by keeping our expenses very low. For example, by saving in the TSP, you'll pay 20% less in fees after 25 years than you would in the average IRA. __For 2017, the average TSP net expense for participants was $.033* for every $1,000 invested.__
+Running the TSP involves many necessary expenses. Because of our size, we're able to save you money by keeping our expenses very low. For example, by saving in the TSP, you'll pay 20% less in fees after 25 years than you would in the average IRA.
+
+__For 2017, the average TSP net expense for participants was $.033* for every $1,000 invested.__
 
 The gross expenses include:
 
