@@ -8,15 +8,15 @@ scripts:
 ---
 
 # Expense Ratio
-Running the TSP involves many necessary expenses. Because of our size, we're able to save you money by keeping our expenses very low. For example, by saving in the TSP, you'll pay 20% less in fees after 25 years than you would in the average IRA. The gross expenses include:
+Running the TSP involves many necessary expenses. Because of our size, we're able to save you money by keeping our expenses very low. For example, by saving in the TSP, you'll pay 20% less in fees after 25 years than you would in the average IRA. __For 2017, the average TSP net expense for participants was $.033* for every $1,000 invested.__
+
+The gross expenses include:
 
 * The costs of operating and maintaining the TSP's recordkeeping system,
 * The cost of providing participant services, and
 * The printing and mailing of notices, statements, and publications.
 
 These expenses are paid by the forfeitures of Agency/Service Automatic (1%) Contributions of FERS and BRS participants who leave federal service before they are vested, other forfeitures, and loan fees. Because these amounts are not sufficient to cover all of the expenses, participants share in the remainder of the costs.
-
-__For 2017, the average TSP net expense for participants was $.033* for every $1,000 invested.__
 
 The net expense ratio represents the amount that your investment returns were reduced by TSP administrative expenses.
 
