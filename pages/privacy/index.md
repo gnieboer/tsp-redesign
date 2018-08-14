@@ -1,6 +1,6 @@
 ---
 layout: page
-title: FRTIB Privacy Policy
+title: FRTIB Privacy Division
 
 sidenav: privacy
 
@@ -10,5 +10,8 @@ scripts:
 
 permalink: /privacy/
 ---
-## Privacy Policy
+# FRTIB Privacy Division
+
+Landing page for **/privacy** category.
+
 <!-- CONTENT END -->
