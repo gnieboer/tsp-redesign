@@ -36,7 +36,7 @@ In addition to being covered by an eligible retirement system, you must also be:
 - In a pay status, in order to contribute, and
 - Working full- or part-time.
 
-## Establishing Your TSP account
+## Establishing your TSP account
 
 
 <ul class="usa-accordion">
