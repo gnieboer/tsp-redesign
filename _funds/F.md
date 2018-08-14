@@ -4,6 +4,7 @@ layout: fund-details
 title: F fund
 sidenav: fund-options
 Fund_letter: F
+Fund_order: 2
 subfund_name:
 Fund_subtitle: Fixed Income Index Investment Fund
 Fund_objective: The S Fund's investment objective is to match the performance of the Dow Jones U.S. Completion Total Stock Market Index, a broad market index made up of stocks of small-to-medium U.S. companies not included in the S&P 500 Index.

@@ -1,12 +1,12 @@
 ---
-permalink: /fund-basics/c-fund/
+permalink: /fund-basics/l-fund/
 layout: fund-details
-title: C fund
+title: L fund
 sidenav: fund-options
-Fund_letter: C
-Fund_order: 3
+Fund_letter: L
+Fund_order: 6
 subfund_name:
-Fund_subtitle: Common Stock Index Investment Fund
+Fund_subtitle: Lifecycle funds
 Fund_objective: The S Fund's investment objective is to match the performance of the Dow Jones U.S. Completion Total Stock Market Index, a broad market index made up of stocks of small-to-medium U.S. companies not included in the S&P 500 Index.
 questions:
   - question: Why should I invest in the S Fund?
@@ -21,7 +21,7 @@ avg_annual_returns:
     three_yr: 14.89%
     five_yr: 15.89%
     ten_yr: 16.89%
-    inception:
+    inception: 5.09%
 summary_details:
     assets: $67.6 billion
     admin_expense: $0.032/$1,000 account balance. 0.032% (3.2 basis points)
@@ -65,6 +65,7 @@ risks: |
   By investing in the C Fund, you are also exposed to [inflation risk](#), meaning your C Fund investment may not grow enough to offset inflation.
 rewards: |
   While investment in the C Fund carries risk, it also offers the opportunity to experience gains from equity ownership of large and mid-sized U.S. company stocks.
+
 ---
 
 <li>
