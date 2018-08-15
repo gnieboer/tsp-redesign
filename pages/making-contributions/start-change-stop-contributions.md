@@ -1,13 +1,13 @@
 ---
 layout: page
-title: How to start, change, and stop contributions
+title: Start, change, or stop contributions 
 styles:
 sidenav: manage-your-plan
 scripts:
 permalink: /making-contributions/start-change-stop-contributions/
 ---
 
-# How to start, change, and stop contributions
+# Start, change, or stop contributions
 
 In most cases, you'll use your agency's or service's electronic payroll system to change, stop, or start your TSP contributions.
 
