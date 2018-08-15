@@ -90,10 +90,24 @@
 
   .quick-links {
     background-color: #1ba7d0;
+    .usa-width-one-fourth {
+      border-right: 4px solid $color-white;
+      background-image:url('/assets/img/icons/chevron-right-gold.svg');
+      background-repeat: no-repeat;
+      font-size: 2rem;
+      background-position: 16rem center;
+      padding-right: 3rem;
+      background-size: 5rem;
+    }
     a {
       padding: 2rem 0 ;
       display:inline-block;
       color: #fff;
+      max-width: 15rem;
+      text-decoration: none;
+    }
+    .usa-grid {
+      border-left: 4px solid $color-white;
     }
   }
 

@@ -40,7 +40,7 @@ Your big day is around the corner, now what? We'll help you navigate your plan b
 </div>
 </section>
 <section class="quick-links">
-<div class="usa-grid text-center">
+<div class="usa-grid">
 <div class="usa-width-one-fourth">
   <a href="#">Fund performance</a>
 </div>
