@@ -108,7 +108,7 @@ If you’re a FERS or CSRS employee rehired after July 31, 2010, your agency has
     </button>
 <div id="a6" class="usa-accordion-content" markdown="1">
 
-If you were already in the BRS plan before you left the service—whether as a new member of the uniformed services or an opt-in—you will be automatically reenrolled when you reenter. If you were not in BRS but had fewer than 12 years of service when you left, your service may give you the opportunity to opt in when you reenter. In either case, assuming you had served 60 days before leaving, your enrollment will begin with the first pay period after reentering. If neither situation applies to you, you can still start a TSP account or resume contributing to your existing account as a non-BRS member. Follow the instructions in [How do I start, change or stop contributions?](#)
+If you were already in the BRS plan before you left the service—whether as a new member of the uniformed services or an opt-in—you will be automatically reenrolled when you reenter. If you were not in BRS but had fewer than 12 years of service when you left, your service may give you the opportunity to opt in when you reenter. In either case, assuming you had served 60 days before leaving, your enrollment will begin with the first pay period after reentering. If neither situation applies to you, you can still start a TSP account or resume contributing to your existing account as a non-BRS member. Follow the instructions in [Start, change, or stop contributions](/making-contributions/start-change-stop-contributions/)
 
 </div>
   </li>
