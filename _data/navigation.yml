@@ -70,7 +70,7 @@ manage-your-plan:
   - text: Making contributions
     href: /making-contributions/
     subnav:
-      - text: How to start, change, and stop contributions
+      - text: Start, change, or stop contributions
         href: /making-contributions/start-change-stop-contributions/
       - text: Traditional and Roth Contributions
         href: /making-contributions/traditional-and-roth-contributions/
