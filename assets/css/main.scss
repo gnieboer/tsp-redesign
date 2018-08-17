@@ -43,6 +43,7 @@ $image-path: '../uswds/img';
 {% if site.data.theme.colors.top-navigation.top-nav-link-hover %}$top-nav-link-hover: {{ site.data.theme.colors.top-navigation.top-nav-link-hover }};{% endif %}
 {% if site.data.theme.colors.top-navigation.top-nav-link-hover-bg %}$top-nav-link-hover-bg: {{ site.data.theme.colors.top-navigation.top-nav-link-hover-bg }};{% endif %}
 {% if site.data.theme.colors.top-navigation.top-nav-link-current %}$top-nav-link-current: {{ site.data.theme.colors.top-navigation.top-nav-link-current }};{% endif %}
+{% if site.data.theme.colors.top-navigation.top-nav-link-active %}$top-nav-link-active: {{ site.data.theme.colors.top-navigation.top-nav-link-active }};{% endif %}
 {% if site.data.theme.colors.top-navigation.top-nav-dropdown-bg %}$top-nav-dropdown-bg: {{ site.data.theme.colors.top-navigation.top-nav-dropdown-bg }};{% endif %}
 {% if site.data.theme.colors.top-navigation.top-nav-dropdown-link %}$top-nav-dropdown-link: {{ site.data.theme.colors.top-navigation.top-nav-dropdown-link }};{% endif %}
 {% if site.data.theme.colors.top-navigation.top-nav-dropdown-link-hover-bg %}$top-nav-dropdown-link-hover-bg: {{ site.data.theme.colors.top-navigation.top-nav-dropdown-link-hover-bg }};{% endif %}
