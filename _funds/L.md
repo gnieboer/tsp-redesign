@@ -5,7 +5,6 @@ title: L fund
 sidenav: fund-options
 Fund_letter: L
 Fund_order: 6
-subfund_name:
 Fund_subtitle: Lifecycle funds
 Fund_objective: The S Fund's investment objective is to match the performance of the Dow Jones U.S. Completion Total Stock Market Index, a broad market index made up of stocks of small-to-medium U.S. companies not included in the S&P 500 Index.
 questions:
@@ -65,7 +64,11 @@ risks: |
   By investing in the C Fund, you are also exposed to [inflation risk](#), meaning your C Fund investment may not grow enough to offset inflation.
 rewards: |
   While investment in the C Fund carries risk, it also offers the opportunity to experience gains from equity ownership of large and mid-sized U.S. company stocks.
-
+subfunds:
+  - name: L2020
+  - name: L2030
+  - name: L2040
+  - name: L2040
 ---
 
 <li>
