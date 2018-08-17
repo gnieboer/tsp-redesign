@@ -1,6 +1,6 @@
 ---
-layout: page
 title: Fund performance
+layout: page
 styles:
 sidenav: fund-options
 scripts:
