@@ -44,14 +44,14 @@ colors:
 
 # Top navigation colors
   top-navigation:
-  #   top-nav-bg: '#fff'
+    # top-nav-bg: '#fff'
     top-nav-link: '#5B616E'
-  #   top-nav-link-hover: '#5B616E'
+    top-nav-link-hover: '#5B616E'
     top-nav-link-active: '#fff'
-  #   top-nav-link-hover-bg: '#fff'
-  #   top-nav-link-current: '#fff'
+    # top-nav-link-hover-bg: '#fff'
+    # top-nav-link-current: '#fff'
     top-nav-dropdown-bg: '#323a45'
-  #   top-nav-dropdown-link: '#fff'
+    # top-nav-dropdown-link: '#fff'
     top-nav-dropdown-link-hover-bg: '#323a45'
 
 # Side navigation colors

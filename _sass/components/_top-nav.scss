@@ -22,11 +22,14 @@
           color: $top-nav-link;
         }
       }
-      &[aria-expanded=true] span {
+      &[aria-expanded=true] {
+        span,
+        &:hover span {
         @if variable-exists(top-nav-link-active) {
           color: $top-nav-link-active;
         }
       }
+    }
       &:hover {
         @if variable-exists(top-nav-link-hover) {
           color: $top-nav-link-hover;
