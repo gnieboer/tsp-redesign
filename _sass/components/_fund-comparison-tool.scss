@@ -16,6 +16,7 @@
     background-color: #666;
     padding: 1rem;
     font-size: 1.3rem;
+    min-height: 20rem;
     span {font-size: 8rem;font-weight:800;
     display:block;
     }
@@ -24,24 +25,53 @@
     }
   }
 .fund-content {
-  padding: 1rem;
   font-size: 1.3rem;
+   p {
+     border-bottom: #dfdfdf 1px solid;
+     padding: 1rem;
+   }
+}
+.usa-accordion-content[aria-hidden="false"] {
+  padding: 0;
+  margin: 0;
+  background-color: transparent;
+}
+[type=checkbox]+label::before {
+  display: none;
 }
 }
 
 
 
-#show-c-fund:checked,
-#show-s-fund:checked,
-#show-i-fund:checked,
-#show-f-fund:checked,
-#show-g-fund:checked,
-#show-l-fund:checked
+#ror-show-c-fund:checked,
+#ror-show-s-fund:checked,
+#ror-show-i-fund:checked,
+#ror-show-f-fund:checked,
+#ror-show-g-fund:checked,
+#ror-show-l-fund:checked,
+#sum-show-c-fund:checked,
+#sum-show-s-fund:checked,
+#sum-show-i-fund:checked,
+#sum-show-f-fund:checked,
+#sum-show-g-fund:checked,
+#sum-show-l-fund:checked,
+#risk-show-c-fund:checked,
+#risk-show-s-fund:checked,
+#risk-show-i-fund:checked,
+#risk-show-f-fund:checked,
+#risk-show-g-fund:checked,
+#risk-show-l-fund:checked,
+#reward-show-c-fund:checked,
+#reward-show-s-fund:checked,
+#reward-show-i-fund:checked,
+#reward-show-f-fund:checked,
+#reward-show-g-fund:checked,
+#reward-show-l-fund:checked
  {
  + label {
    .fund-item {
   color: $color-base;
-  background-color: #fff;
+  background-color: #fff1d2;
 }
 .fund-header {
   color: #fff;

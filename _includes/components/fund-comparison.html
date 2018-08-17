@@ -1,38 +1,4 @@
 <div class="fund-comparison-tool">
-<h2>Let’s decide on a simple investor profile. If you know already, skip this step</h2>
-<form>
-  <p> I consider myself risk <label class="usa-sr-only" for="options">Risk type</label>
-  <select name="options" id="options">
-    <option value>- Select -</option>
-    <option value="value1">Option A</option>
-    <option value="value2">Option B</option>
-    <option value="value3">Option C</option>
-  </select> and I expect to retire in <label class="usa-sr-only" for="options">Years</label>
-  <select name="options" id="options">
-    <option value>- Select -</option>
-    <option value="value1">Option A</option>
-    <option value="value2">Option B</option>
-    <option value="value3">Option C</option>
-  </select>
-years.
- I'm happy with <label class="usa-sr-only" for="options">type of returns</label>
-  <select name="options" id="options">
-    <option value>- Select -</option>
-    <option value="value1">Option A</option>
-    <option value="value2">Option B</option>
-    <option value="value3">Option C</option>
-  </select>
-returns.
-  </p>
-</form>
-
-<div class="usa-alert usa-alert-info">
-  <div class="usa-alert-body">
-<p class="usa-alert-text">You are a _______________ investor, and the best funds for your investment profile are highlighted below. Let's take a look.</p>
-</div>
-</div>
-
-
 <ul class="usa-accordion usa-tabs">
   <li>
     <button class="usa-accordion-button"
@@ -42,13 +8,28 @@ returns.
     </button>
     <div id="a1" class="usa-accordion-content">
       <div class="flex-container" id="fund-listing">
-      {% for fund in site.funds %}
-      <input type="checkbox" id="show-{{ fund.Fund_letter | downcase }}-fund" />
-      <label for="show-{{ fund.Fund_letter | downcase }}-fund">
+      {% assign sorted = (site.funds | sort: 'Fund_order')%}
+      {% for fund in sorted  %}
+      <input type="checkbox" id="ror-show-{{ fund.Fund_letter | downcase }}-fund" />
+      <label for="ror-show-{{ fund.Fund_letter | downcase }}-fund">
       <div class="flex-item fund-item fund-item-inactive visible" id="{{ fund.Fund_letter }}-fund">
       <div class="fund-header">
       <span>{{ fund.Fund_letter }}</span>
       {{ fund.Fund_subtitle }}
+      {% if fund.subfunds %}
+      <form class="usa-form">
+        <label for="options" class="usa-sr-only">Select L fund</label>
+        <select name="options" id="options">
+            {% for item in fund.subfunds %}
+          <option value="{{ item.name }}">{{ item.name }}</option>
+            {% endfor %}
+        </select>
+      </form>
+      {% endif %}
+
+
+
+
         </div>
           <div class="fund-content">
         <p>1-Yr <b>{{ fund.avg_annual_returns.one_yr }}</b></p>
@@ -70,13 +51,24 @@ returns.
     </button>
     <div id="a2" class="usa-accordion-content">
       <div class="flex-container" id="fund-listing">
-      {% for fund in site.funds %}
-      <input type="checkbox" id="show-{{ fund.Fund_letter | downcase }}-fund" />
-      <label for="show-{{ fund.Fund_letter | downcase }}-fund">
+        {% assign sorted = (site.funds | sort: 'Fund_order')%}
+        {% for fund in sorted  %}
+      <input type="checkbox" id="sum-show-{{ fund.Fund_letter | downcase }}-fund" />
+      <label for="sum-show-{{ fund.Fund_letter | downcase }}-fund">
       <div class="flex-item fund-item fund-item-inactive visible" id="{{ fund.Fund_letter }}-fund">
       <div class="fund-header">
       <span>{{ fund.Fund_letter }}</span>
-      {{ fund.Fund_subtitle }}
+          {{ fund.Fund_subtitle }}
+          {% if fund.subfunds %}
+          <form class="usa-form">
+            <label for="options" class="usa-sr-only">Select L fund</label>
+            <select name="options" id="options">
+                {% for item in fund.subfunds %}
+              <option value="{{ item.name }}">{{ item.name }}</option>
+                {% endfor %}
+            </select>
+          </form>
+          {% endif %}
         </div>
           <div class="fund-content">
             <div class="fund-summary-details">
@@ -110,16 +102,27 @@ returns.
     </button>
     <div id="a3" class="usa-accordion-content">
       <div class="flex-container" id="fund-listing">
-      {% for fund in site.funds %}
-      <input type="checkbox" id="show-{{ fund.Fund_letter | downcase }}-fund" />
-      <label for="show-{{ fund.Fund_letter | downcase }}-fund">
+        {% assign sorted = (site.funds | sort: 'Fund_order')%}
+        {% for fund in sorted  %}
+      <input type="checkbox" id="risk-show-{{ fund.Fund_letter | downcase }}-fund" />
+      <label for="risk-show-{{ fund.Fund_letter | downcase }}-fund">
       <div class="flex-item fund-item fund-item-inactive visible" id="{{ fund.Fund_letter }}-fund">
       <div class="fund-header">
       <span>{{ fund.Fund_letter }}</span>
       {{ fund.Fund_subtitle }}
+      {% if fund.subfunds %}
+      <form class="usa-form">
+        <label for="options" class="usa-sr-only">Select L fund</label>
+        <select name="options" id="options">
+            {% for item in fund.subfunds %}
+          <option value="{{ item.name }}">{{ item.name }}</option>
+            {% endfor %}
+        </select>
+      </form>
+      {% endif %}
         </div>
         <div class="fund-content">
-        <p>{{ fund.risks | markdownify }}</p>
+        {{ fund.risks | markdownify }}
       </div>
     </div>
       </label>
@@ -134,16 +137,27 @@ returns.
     </button>
     <div id="a4" class="usa-accordion-content">
       <div class="flex-container" id="fund-listing">
-      {% for fund in site.funds %}
-      <input type="checkbox" id="show-{{ fund.Fund_letter | downcase }}-fund" />
-      <label for="show-{{ fund.Fund_letter | downcase }}-fund">
+        {% assign sorted = (site.funds | sort: 'Fund_order')%}
+        {% for fund in sorted  %}
+      <input type="checkbox" id="reward-show-{{ fund.Fund_letter | downcase }}-fund" />
+      <label for="reward-show-{{ fund.Fund_letter | downcase }}-fund">
       <div class="flex-item fund-item fund-item-inactive visible" id="{{ fund.Fund_letter }}-fund">
       <div class="fund-header">
       <span>{{ fund.Fund_letter }}</span>
       {{ fund.Fund_subtitle }}
+      {% if fund.subfunds %}
+      <form class="usa-form">
+        <label for="options" class="usa-sr-only">Select L fund</label>
+        <select name="options" id="options">
+            {% for item in fund.subfunds %}
+          <option value="{{ item.name }}">{{ item.name }}</option>
+            {% endfor %}
+        </select>
+      </form>
+      {% endif %}
         </div>
         <div class="fund-content">
-        <p>{{ fund.rewards | markdownify }}</p>
+        {{ fund.rewards | markdownify }}
         </div>
       </div>
       </label>
