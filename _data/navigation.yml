@@ -117,6 +117,13 @@ fund-options:
         href: /fund-basics/l-fund/
   - text: Fund performance
     href: /fund-performance/
+    subnav:
+      - text: Rates of returns
+        href: /fund-performance/rates-of-returns/
+      - text: Share price history
+        href: /fund-performance/share-price-history/
+      - text: Share price calculation
+        href: /fund-performance/share-price-calculation/
 
 savings:
   - text: Loan basics
