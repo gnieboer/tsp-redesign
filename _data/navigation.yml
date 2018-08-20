@@ -224,11 +224,20 @@ privacy:
       - text: How to submit a privacy question or complaint
         href: /contact-privacy/submit-privacy-question-or-complaint/
   - text: Website privacy policy
-    href: #
+    href: /privacy-policy/
+    subnav:
+      - text: Information Automatically Captured and Stored
+        href: /privacy-policy/information-captured-stored/
+      - text: Comments submitted online
+        href: /privacy-policy/comments-submitted-online/
+      - text: Cookies
+        href: /privacy-policy/cookies/
+      - text: Security monitoring
+        href: /privacy-policy/security-monitoring/
 
 footer:
   - text: Privacy
-    href: #
+    href: /privacy/
   - text: Agency & Service Rep Resources
     href: #
   - text: News & Resources
