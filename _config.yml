@@ -28,8 +28,8 @@ scripts:
   - /assets/js/login.js
 
 # Compress Sass
-sass:
-  style: compressed
+# sass:
+#   style: compressed
 
 exclude:
   - circle.yml
