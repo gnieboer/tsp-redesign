@@ -1,0 +1,41 @@
+.usa-alert {
+border-top-style: solid;
+border-top-width: 16px;
+margin-bottom: 3rem;
+background-size: 4rem;
+  &:before {
+    width: 0;
+  }
+  .usa-alert-body {
+    padding-left:0;
+    > :first-child {
+      margin-top: 0;
+    }
+  }
+  h2, h3, h4, h5 {
+    font-size: 2.5rem;
+  }
+}
+
+
+.usa-alert-success {
+  border-top-color: #2e8540;
+  background-image: url('/assets/img/icons/check-circle-green.svg');
+  .usa-alert-body {
+    padding-left: 5rem;
+  }
+}
+.usa-alert-info {
+  background-image: url('/assets/img/icons/info.svg');
+  border-top-color: #02bfe7;
+  .usa-alert-body {
+    padding-left: 5rem;
+  }
+}
+.usa-alert-error {
+  border-top-color: #e31c3d;
+  background-image: url('/assets/img/icons/x-circle-red.svg');
+  .usa-alert-body {
+    padding-left: 5rem;
+  }
+}
