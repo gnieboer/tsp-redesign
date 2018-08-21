@@ -9,4 +9,11 @@ permalink: /how-to-invest/before-you-invest/
 
 # Before you invest
 
-Content being developed
+Consider the following when you plan your retirement strategy.
+{: .usa-font-lead }
+
+## it's easy as 1-2-3!
+
+___
+
+{% include /components/before-you-invest.html %}
