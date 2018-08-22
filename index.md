@@ -59,7 +59,7 @@ Your big day is around the corner, now what? We'll help you navigate your plan b
   <div class="usa-grid">
     <div class="usa-width-one-half">
       <h1>What kind of investor are you ?</h1>
-      <p>When you know yourself as an investor, tumultuous times in the market can be easier to deal with.</p>
+      <p>When you know yourself as an investor, you can make better choices regardless of what happens in the market.</p>
       <a href="/funds/"><img src="/assets/img/icons/Arrow_circle.svg"/>Take me there</a>
     </div>
   </div>
@@ -69,7 +69,7 @@ Your big day is around the corner, now what? We'll help you navigate your plan b
 <div class="callout arrow-bottom-section arrow-bottom arrow-bottom-blue">
 <div class="usa-grid usa-content" markdown="1">
 
-We offer L Funds, which our experts designed to maximize returns and minimize risk based on the year you'll need your money.
+We offer the L Funds, professionally designed to maximize returns and minimize risk based on the year you'll need your money.
 
 </div>
 </div>
