@@ -34,7 +34,7 @@ Choosing the right funds can be tricky, but our L Funds help take the guesswork 
 <div class="usa-width-one-third" markdown="1">
 ### <img src="{{ site.baseurl }}/assets/img/icons/sun.svg" alt="" class="left mr1">[Use your<br /> savings](/loan-basics/)
 
-Your big day is around the corner, now what? We'll help you navigate your plan before, during and after you retire.
+Your big day is around the corner, now what? We'll help you navigate your plan before, during, and after you retire.
 
 </div>
 </div>
@@ -124,7 +124,7 @@ For participants who will begin to withdraw their money in 2045 or later.
 <div class="callout arrow-bottom-section arrow-bottom arrow-bottom-gray">
 <div class="usa-grid usa-content" markdown="1">
 
-Each L Fund has a different mix of the C, S, I, F, and G Funds.
+Each L Fund has a different mix of the G, F, C, S, and I Funds.
 
 </div>
 </div>
