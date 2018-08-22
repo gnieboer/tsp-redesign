@@ -37,23 +37,22 @@ A “rollover” is when you receive money directly from your traditional IRA or
 
 ### More to know:
 Transfer or rollover money does not count towards the IRC contribution limits, and your transfer and rollover will be invested according to your <span data-term="contribution allocation" class="js-glossary-toggle term term-end">contribution allocation</span> on file.
-<div class="usa-alert">
-<div class="usa-alert-body" markdown="1">
-## Tax Considerations
 
+<div class="card" markdown="1">
+## Tax Considerations
+{: .card-title}
 
 Tax rules differ depending upon which method you choose to move your IRA or eligible plan money into the TSP.
 
 ### Transfers
-
+{: .card-title}
 
 You don’t have to pay taxes on the money you transfer in immediately. However, depending on the type of money you transfer, you may have to pay income taxes when you start taking withdrawals from your TSP account. For more information, read [*Important Tax Information About Payments From Your TSP Account*](javascript:void(0)).
 
 ### Rollovers
-
+{: .card-title}
 
 If you rollover money, you will have 60 days from the date you receive the funds to complete the transaction.
 
 You may roll over all or part of the money you receive. Your traditional IRA or former plan should withhold the appropriate amount for taxes before it sends the money to you. Otherwise, if you roll over your entire balance, you’ll have to make up the difference (i.e., the amount withheld for taxes) from your own funds. Any amount that you do not roll over may be subject to federal income tax and a 10% early withdrawal penalty tax.
-</div>
 </div>

@@ -17,12 +17,12 @@ Your agency or service will continue to deduct your contribution until you do th
 
 <div class="usa-grid contribution-type">
 <div class="usa-width-one-half" markdown="1">
-<img src="{{ site.baseurl }}/assets/img/icons/plus-circle-green.svg" alt="">
+<img src="{{ site.baseurl }}/assets/img/icons/add-sign-circle.svg" alt="">
 Make a new election  
 changing the amount
 </div>
 <div class="usa-width-one-half" markdown="1">
-<img src="{{ site.baseurl }}/assets/img/icons/x-circle-red-fill.svg" alt="">
+<img src="{{ site.baseurl }}/assets/img/icons/Hand.svg" alt="">
 Elect to stop  
 your contributions
 </div>
@@ -30,12 +30,12 @@ your contributions
 
 <div class="usa-grid contribution-type">
 <div class="usa-width-one-half" markdown="1">
-<img src="{{ site.baseurl }}/assets/img/icons/arrow-up-circle.svg" alt="">
+<img src="{{ site.baseurl }}/assets/img/icons/arrow-up.svg" alt="">
 Reach the IRS  
 contribution limit
 </div>
 <div class="usa-width-one-half" markdown="1">
-<img src="{{ site.baseurl }}/assets/img/icons/arrow-down-circle.svg" alt="">
+<img src="{{ site.baseurl }}/assets/img/icons/arrow-down.svg" alt="">
 Take a financial  
 hardship withdrawal
 </div>
@@ -50,8 +50,7 @@ If you are a FERS or BRS employee, your agency or service will contribute an amo
 **Agency/Service Automatic (1%) Contributions are not taken out of your
 pay and do not reduce your pay for income tax purposes.**
 
-<div class="usa-alert">
-<div class="usa-alert-body" markdown="1">
+<div class="card" markdown="1">
 ### A Few Words about Vesting
 {: .card-title}
 
@@ -73,7 +72,6 @@ will be forfeited to the TSP.
 
 If you die before separating from service, you’re automatically
 considered vested in all the money in your account.
-</div>
 </div>
 
 ## Agency/Service Matching Contributions
