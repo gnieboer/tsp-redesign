@@ -12,7 +12,7 @@ permalink: /how-we-protect-your-data/privacy-impact-assessments/
 ---
 # Privacy impact assessments (PIAS)
 
-A Privacy Impact Assessment (PIA) is legally required by Section 208 of the E-Government Act of 2002 and analyzes how information in an identifiable form is collected, maintained, stored, and disseminated. The PIA analyzes the privacy risks as well as the protections and process for handling information to mitigate the privacy risks.
+FRTIB complies with Section 208 of the E-Government Act of 2002, which requires federal agencies to conduct Privacy Impact Assessments (PIAs) that analyze how information in an identifiable form is collected, maintained, stored, and disseminated. A PIA analyzes the privacy risks as well as the protections and process for handling information to mitigate the privacy risks.
 
 FRTIB has completed PIAs for the following systems:
 

@@ -53,6 +53,67 @@ secondary:
     class: login-toggle usa-button
 
 # SIDENAV MENUS
+fund-options:
+  - text: How to invest
+    href: /how-to-invest/
+    subnav:
+      - text: Investor types
+        href: /how-to-invest/investor-types/
+      - text: Before you invest
+        href: /how-to-invest/before-you-invest/
+      - text: Changing your investments
+        href: /how-to-invest/change-your-investments/
+  - text: Fund basics
+    href: /fund-basics/
+    subnav:
+      - text: S Fund
+        href: /fund-basics/s-fund/
+      - text: G Fund
+        href: /fund-basics/g-fund/
+      - text: C Fund
+        href: /fund-basics/c-fund/
+      - text: F Fund
+        href: /fund-basics/f-fund/
+      - text: I Fund
+        href: /fund-basics/i-fund/
+      - text: L Fund
+        href: /fund-basics/l-fund/
+  - text: Fund performance
+    href: /fund-performance/
+    subnav:
+      - text: Rates of returns
+        href: /fund-performance/rates-of-returns/
+      - text: Share price history
+        href: /fund-performance/share-price-history/
+      - text: Share price calculation
+        href: /fund-performance/share-price-calculation/
+
+manage-life-changes:
+  - text: Estate planning
+    href: /estate-planning/
+    subnav:
+      - text: Beneficiary basics
+        href: /estate-planning/beneficiary-basics/
+      - text: Changes in your family status
+        href: #
+      - text: Economic hardship
+        href: #
+      - text: Power of attorney
+        href: #
+      - text: Court Appointments
+        href: #
+  - text: Federal service changes
+    href: /federal-service-changes/
+    subnav:
+      - text: Leaving federal service
+        href: /federal-service-changes/leaving-federal-service/
+      - text: Returning to federal service
+        href: #
+      - text: Entering a non-pay status
+        href: /federal-service-changes/entering-nonpay-status/
+      - text: Preparing for active duty
+        href: #
+
 manage-your-plan:
   - text: Account basics
     href: /account-basics/
@@ -90,40 +151,46 @@ manage-your-plan:
       - text: Beneficiary distributions
         href: /for-beneficiaries/beneficiary-distributions/
 
-fund-options:
-  - text: How to invest
-    href: /how-to-invest/
+privacy:
+  - text: FRTIB Privacy Division
+    href: /privacy/
+  - text: How we protect your data
+    href: /how-we-protect-your-data/
     subnav:
-      - text: Investor types
-        href: /how-to-invest/investor-types/
-      - text: Before you invest
-        href: /how-to-invest/before-you-invest/
-      - text: Changing your investments
-        href: /how-to-invest/change-your-investments/
-  - text: Fund basics
-    href: /fund-basics/
+      - text: FRTIB’s Privacy Program Plan
+        href: /how-we-protect-your-data/privacy-program-plan/
+      - text: Publicly available agency reports on privacy
+        href: /how-we-protect-your-data/privacy-reports/
+      - text: FRTIB rules implementing the privacy act
+        href: /how-we-protect-your-data/privacy-rules/
+      - text: System of records notices (SORNS)
+        href: /how-we-protect-your-data/system-of-records-notices/
+      - text: Exemptions to the privacy act
+        href: /how-we-protect-your-data/exemptions-to-privacy-act/
+      - text: Privacy impact assessments (PIAS)
+        href: /how-we-protect-your-data/privacy-impact-assessments/
+      - text: Matching notices (computer matching agreements)
+        href: /how-we-protect-your-data/matching-notices/
+  - text: How to contact us
+    href: /contact-privacy/
     subnav:
-      - text: S Fund
-        href: /fund-basics/s-fund/
-      - text: G Fund
-        href: /fund-basics/g-fund/
-      - text: C Fund
-        href: /fund-basics/c-fund/
-      - text: F Fund
-        href: /fund-basics/f-fund/
-      - text: I Fund
-        href: /fund-basics/i-fund/
-      - text: L Fund
-        href: /fund-basics/l-fund/
-  - text: Fund performance
-    href: /fund-performance/
+      - text: Contact information for the senior agency official for privacy (SAOP)
+        href: /contact-privacy/contact-information-saop/
+      - text: How to submit a privacy act request
+        href: /contact-privacy/submit-privacy-act-request/
+      - text: How to submit a privacy question or complaint
+        href: /contact-privacy/submit-privacy-question-or-complaint/
+  - text: Website privacy policy
+    href: /privacy-policy/
     subnav:
-      - text: Rates of returns
-        href: /fund-performance/rates-of-returns/
-      - text: Share price history
-        href: /fund-performance/share-price-history/
-      - text: Share price calculation
-        href: /fund-performance/share-price-calculation/
+      - text: Information Automatically Captured and Stored
+        href: /privacy-policy/information-captured-stored/
+      - text: Comments submitted online
+        href: /privacy-policy/comments-submitted-online/
+      - text: Cookies
+        href: /privacy-policy/cookies/
+      - text: Security monitoring
+        href: /privacy-policy/security-monitoring/
 
 savings:
   - text: Loan basics
@@ -167,81 +234,7 @@ savings:
       - text: Start an annuity
         href: #
 
-manage-life-changes:
-  - text: Estate planning
-    href: /estate-planning/
-    subnav:
-      - text: Beneficiary basics
-        href: /estate-planning/beneficiary-basics/
-      - text: Changes in your family status
-        href: #
-      - text: Economic hardship
-        href: #
-      - text: Power of attorney
-        href: #
-      - text: Court Appointments
-        href: #
-  - text: Federal service changes
-    href: /federal-service-changes/
-    subnav:
-      - text: Leaving federal service
-        href: /federal-service-changes/leaving-federal-service/
-      - text: Returning to federal service
-        href: #
-      - text: Entering a non-pay status
-        href: /federal-service-changes/entering-nonpay-status/
-      - text: Preparing for active duty
-        href: #
-
 # MISCELLANEOUS
-privacy:
-  - text: FRTIB Privacy Division
-    href: /privacy/
-    subnav:
-      - text: Who we are
-        href: /privacy/who-we-are/
-      - text: Our mission
-        href: /privacy/our-mission/
-  - text: How we protect your data
-    href: /how-we-protect-your-data/
-    subnav:
-      - text: Our privacy policy
-        href: /how-we-protect-your-data/privacy-policy/
-      - text: Publicly available policies on privacy
-        href: /how-we-protect-your-data/privacy-policies/
-      - text: Publicly available agency reports on privacy
-        href: /how-we-protect-your-data/privacy-reports/
-      - text: FRTIB rules implementing the privacy act
-        href: /how-we-protect-your-data/privacy-rules/
-      - text: System of records notices (SORNS)
-        href: /how-we-protect-your-data/system-of-records-notices/
-      - text: Exemptions to the privacy act
-        href: /how-we-protect-your-data/exemptions-to-privacy-act/
-      - text: Privacy impact assessments (PIAS)
-        href: /how-we-protect-your-data/privacy-impact-assessments/
-      - text: Matching notices (computer matching agreements)
-        href: /how-we-protect-your-data/matching-notices/
-  - text: How to contact us
-    href: /contact-privacy/
-    subnav:
-      - text: Contact information for the senior agency official for privacy (SAOP)
-        href: /contact-privacy/contact-information-saop/
-      - text: How to submit a privacy act request
-        href: /contact-privacy/submit-privacy-act-request/
-      - text: How to submit a privacy question or complaint
-        href: /contact-privacy/submit-privacy-question-or-complaint/
-  - text: Website privacy policy
-    href: /privacy-policy/
-    subnav:
-      - text: Information Automatically Captured and Stored
-        href: /privacy-policy/information-captured-stored/
-      - text: Comments submitted online
-        href: /privacy-policy/comments-submitted-online/
-      - text: Cookies
-        href: /privacy-policy/cookies/
-      - text: Security monitoring
-        href: /privacy-policy/security-monitoring/
-
 footer:
   - text: Privacy
     href: /privacy/
