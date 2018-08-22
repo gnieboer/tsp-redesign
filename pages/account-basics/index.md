@@ -10,26 +10,18 @@ styles:
 scripts:
 
 permalink: /account-basics/
----
+
+
 # Account basics
 
-[My Account](/tsp/accountBalance.do?subaction=view&amp;\_name=acctbal) is the secure, convenient section of tsp.gov where you can log in to find out your account balance or perform certain transactions.
+As a Federal employee, a member of the uniformed services, or a beneficiary participant, you have the opportunity to participate in one of the finest retirement plans in the world. Investing in your future doesn’t have to be hard. Whether you’re a new TSP participant, or you need a refresher, *Account Basics* gives you all the basic knowledge you need to get saving.
 
-Get access any time to make sure you’re on track to meet your retirement goals:
+##### In this section:
 
-**[Account Overview](#):** View your recent transactions and activity summary.
++ Your account number
++ How the TSP fits into your retirement
++ Move money into the TSP
++ Protect your TSP account
++ Update your personal information
 
-**[Statements](#)**: View or download past or current quarterly and annual participant statements.
-
-**[Profile settings](#)**: Update your personal and account access information; validate your contact info.
-
-**[Contribution allocations](#)**: Change how you invest future money coming into your account.
-
-**[Interfund transfers](#)**: Redistribute all or part of your existing TSP account among the different TSP funds.
-
-**[Secure messaging](#)**: Send a message to our Participant Service Representatives. We will respond to your inquiry within 24 business hours.
-
-**[Apply for a Loan](#)**: Be sure to read the booklet [*Loans*](#) before you apply for a TSP loan.
-
-**[Request a Withdrawal](#)**: Be sure to read the booklets [*In-Service Withdrawals*](#) and [*Withdrawing Your TSP Account After Leaving Federal Service*](#) completely before you begin the application process.
 <!-- CONTENT END -->
