@@ -14,10 +14,13 @@ If you’re covered by the [Federal Employees' Retirement System](#glossary) (FE
 If you’re covered by the [Civil Service Retirement System](#glossary) (CSRS) or are a member of the [uniformed services](#glossary), the TSP is a supplement to your CSRS annuity or military retired pay.
 
 
-<div class="usa-alert usa-alert-info" markdown="1">
-{: .usa-alert-body}
+<div class="usa-alert usa-alert-info">
+<div class="usa-alert-body" markdown="1">
+
 ## Not sure which retirement system you are covered under?
+
 Check with your personnel or benefits office.
+</div>
 </div>
 
 
