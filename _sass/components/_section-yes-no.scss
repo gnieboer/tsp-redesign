@@ -1,0 +1,21 @@
+.usa-alert {
+border-top-style: solid;
+border-top-width: 8px;
+margin-bottom: 3rem;
+
+  &:before {
+    width: 0;
+  }
+}
+
+
+.usa-alert-success {
+  border-top-color: #2e8540;
+  background-image: url(/assets/img/icons/check.svg);
+}
+
+.usa-alert-error {
+  background-color: #f9dede;
+  border-top-color: #e31c3d;
+  background-image: url(/assets/img/icons/cancel.svg);
+}
