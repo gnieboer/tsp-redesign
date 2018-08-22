@@ -12,7 +12,7 @@ permalink: /account-basics/your-account-number/
 **Starting in the year you turn 50**, you may be eligible to make catch-up contributions to your TSP account in addition to your regular employee
 contributions.
 
-## How to gain access to my account
+## How to gain access to My Account
 
 To log in to My Account, enter your 13-digit TSP account number, which was
 mailed to you, or your user ID that you created and your web password.
