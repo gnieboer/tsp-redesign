@@ -46,7 +46,7 @@ Thrift Savings Plan
 Birmingham, AL 35238
 
 ### General fax number
-**Fax Number:** 1-866-817-5023
+1-866-817-5023
 
 </div>
   <!-- WEB COMMENTS -->
@@ -70,7 +70,7 @@ Submit comments about this website (1,000 characters maximum). We do not respond
     <button class="usa-accordion-button"
       aria-expanded="false"
       aria-controls="a1">
-      Loan Payments | Form TSP-26, Loan Payment Coupon with payment
+      Loan Payments
     </button>
 <div id="a1" class="usa-accordion-content" markdown="1">
 
@@ -133,8 +133,8 @@ Fairfax, VA 22033
 <div class="usa-grid-full">
 <div class="usa-width-two-thirds" markdown="1">
 
-Use this post office box if you are sending the TSP a Federal tax levy or a restitution
-order pursuant to the Mandatory Victims Restitution Act (MRVA).
+Use this post office box if you are sending the TSP a federal tax levy or a restitution
+order pursuant to the Mandatory Victims Restitution Act (MVRA).
 </div>
 <div class="usa-width-one-third" markdown="1">
 **TSP Legal Processing Unit**  
@@ -196,7 +196,7 @@ Fairfax, VA 22033
     <button class="usa-accordion-button"
       aria-expanded="false"
       aria-controls="a5">
-      Transfer or Rollover Funds to the TSP
+      Transfers and Rollovers to the TSP
     </button>
 <div id="a5" class="usa-accordion-content">
 
