@@ -166,7 +166,7 @@ Fairfax, VA 22033
 <div class="usa-grid-full">
 <div class="usa-width-two-thirds" markdown="1">
 Use this post office box if you are submitting a death benefit claim for a TSP
-account. This includes Form TSP-17/U-17, Information Relating to Deceased
+account. This includes Form TSP-17, Information Relating to Deceased
 Participant, death certificates, or other documentation. If you are the recipient of a
 death benefit payment, the forms sent to you with the “Intent to Pay” letter (e.g.,
 W-4Ps or the request to waive the waiting period) should be returned to this post
