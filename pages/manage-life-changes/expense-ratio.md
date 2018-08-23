@@ -1,6 +1,6 @@
 ---
 title: Expense Ratio
-layout: secondary
+layout: page
 permalink: /manage-life-changes/expense-ratio/
 sidenav: manage
 styles:
@@ -9,9 +9,9 @@ scripts:
 
 # Expense Ratio
 If you’re looking for the best place to save and invest for your retirement, your search could be over. The TSP is a better, less expensive home for your retirement savings.
- 
-Like private sector 401 (k) plans, administering the TSP involves many kinds of expenses, and these expenses are passed on to you. But the TSP has built a solid group of investment funds that provide a broad diversification, at remarkably low cost. This is one of the reasons record numbers of you have been transferring money into the TSP from IRAs and other eligible employer plans, and you’re also keeping it in the TSP when you leave federal service. 
- 
+
+Like private sector 401 (k) plans, administering the TSP involves many kinds of expenses, and these expenses are passed on to you. But the TSP has built a solid group of investment funds that provide a broad diversification, at remarkably low cost. This is one of the reasons record numbers of you have been transferring money into the TSP from IRAs and other eligible employer plans, and you’re also keeping it in the TSP when you leave federal service.
+
 The TSP expenses are the costs of administering your TSP. The gross expenses include:
 * The costs of operating and maintaining the TSP's recordkeeping system,
 * The cost of providing participant services, and
