@@ -19,7 +19,7 @@ As a TSP participant, you're allowed to borrow from your TSP account. While you 
 When you take a TSP loan, you deplete your balance. That means you'd miss out on the [compound earnings](glossary term) from those savings had they remained in your account. Not only that, you must repay your loan with interest and the loan fee is deducted from the total loan amount. Remember: The purpose of contributing to the TSP is to provide you with income in retirement, so it pays to think twice before you take a TSP loan. 
 
 
- ##### In this section:
+ ## In this section:
 
 + Cost-benefit analysis
 + Applying for a loan
