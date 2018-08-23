@@ -32,7 +32,7 @@ The L Income Fund’s investment objective is to achieve a low level of growth w
  
 **Summary:**
 	
-  **Details:**
+  Details:
 		
     Assets: Info already on mock up
 		
