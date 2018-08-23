@@ -7,7 +7,7 @@ scripts:
 permalink: /fund-basics/l-income-fund/
 ---
 # L Income Fund
-## Lifecycle Income Fund
+## Lifecycle Funds
 **First, let’s answer a few questions:**
 
 **Q1: Why should I invest in the L Income Fund?**
