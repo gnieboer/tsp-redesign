@@ -14,9 +14,10 @@ permalink: /loan-basics/
 
 # Loan basics
 
-If you’re employed by the federal government or are a member of the uniformed services, the TSP allows you to borrow from your retirement savings via a TSP loan. And while TSP loans generally have fewer fees than commercial loans, you should consider the effect of taking out a TSP loan on your retirement savings.
+As a TSP participant, you're allowed to borrow from your TSP account. While you might be tempted to take a TSP loan, you should consider the effects that taking out a loan will have on your retirement savings. It might cost you more than you think.
 
-When you take a TSP loan, you borrow from your TSP account. That means you are missing out on the [compound earnings](glossary term) from those savings had they remained in your account. Before taking out a loan, consider doing a cost-benefit analysis or using one of our calculators to determine if taking out a TSP loan is right for you.
+When you take a TSP loan, you deplete your balance. That means you'd miss out on the [compound earnings](glossary term) from those savings had they remained in your account. Not only that, you must repay your loan with interest and the loan fee is deducted from the total loan amount. Remember: The purpose of contributing to the TSP is to provide you with income in retirement, so it pays to think twice before you take a TSP loan. 
+
 
  ##### In this section:
 
