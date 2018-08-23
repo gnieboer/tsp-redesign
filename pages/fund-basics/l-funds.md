@@ -34,7 +34,7 @@ Each quarter, the L Funds' target asset allocations change, moving towards a les
  
 **Summary:**
 	
-  **Details:**
+  Details:
 		
     Assets: Info already on mock up
 		
