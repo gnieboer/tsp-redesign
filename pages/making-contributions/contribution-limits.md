@@ -38,7 +38,7 @@ Catch-up contributions are made on top of your regular employee contributions; h
               
 <div class="usa-alert usa-alert-info">
 <div class="usa-alert-body">
-You must make a new catch-up contribution election each calendar year--they do not restart automatically. <b>year</b>.
+You must make a new catch-up contribution election each calendar year--they do not restart automatically.
 </div>
 </div>
 </td>
@@ -120,7 +120,7 @@ The annual addition limit affects mostly members of the uniformed services who c
           <tr>
             <th scope="row">What to do</th>
             <td markdown="1">
-Even if you don't reach the annual addtion limit, keep it in mind when deciding how much you'll contribute to your TSP account to avoid penalties.
+Even if you don't reach the annual addition limit, keep it in mind when deciding how much you'll contribute to your TSP account to avoid penalties.
               
   </td>
           </tr>
@@ -130,7 +130,7 @@ Even if you don't reach the annual addtion limit, keep it in mind when deciding 
   </li>
 </ul>
 
-**Are you about to max out? Be careful not to exceed the contribution limits before December 31. If you do, we won't be able to process any more of your contributions for the remainder of the year, which mean you'll miss out on Matching Contributions.**
+**Are you about to max out? Be careful not to exceed the contribution limits before December 31. If you do, we won't be able to process any more of your contributions for the remainder of the year, which means you'll miss out on Matching Contributions.**
 
 Grab your latest Leave and Earnings Statement and check
 out our [calculator](#), “How much should I contribute?”
