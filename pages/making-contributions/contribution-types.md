@@ -17,12 +17,12 @@ Your agency or service will continue to deduct your contribution until you do th
 
 <div class="usa-grid contribution-type">
 <div class="usa-width-one-half" markdown="1">
-<img src="{{ site.baseurl }}/assets/img/icons/add-sign-circle.svg" alt="">
+<img src="{{ site.baseurl }}/assets/img/icons/plus-circle-green.svg" alt="">
 Make a new election  
 changing the amount
 </div>
 <div class="usa-width-one-half" markdown="1">
-<img src="{{ site.baseurl }}/assets/img/icons/Hand.svg" alt="">
+<img src="{{ site.baseurl }}/assets/img/icons/x-circle-red-fill.svg" alt="">
 Elect to stop  
 your contributions
 </div>
@@ -30,12 +30,12 @@ your contributions
 
 <div class="usa-grid contribution-type">
 <div class="usa-width-one-half" markdown="1">
-<img src="{{ site.baseurl }}/assets/img/icons/arrow-up.svg" alt="">
+<img src="{{ site.baseurl }}/assets/img/icons/arrow-up-circle.svg" alt="">
 Reach the IRS  
 contribution limit
 </div>
 <div class="usa-width-one-half" markdown="1">
-<img src="{{ site.baseurl }}/assets/img/icons/arrow-down.svg" alt="">
+<img src="{{ site.baseurl }}/assets/img/icons/arrow-down-circle.svg" alt="">
 Take a financial  
 hardship withdrawal
 </div>
