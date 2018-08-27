@@ -9,4 +9,12 @@ permalink: /how-to-invest/
 
 # How to invest
 
-Landing page for **How to invest** category.
+We offer an variety of investment options for your retirement. You can choose your own mix of investments from short-term U.S. Treasury security to index funds made of domestic and international stocks. Or, if you prefer, choose one of our Lifecycle (L) Funds that uses a professionally determined investment mix designed to deliver a balanced approach to investing based on when you'll need your money.
+
+## In this section:
+
++ Investor types
++ Before you invest
++ Changing your investments
+
+<!-- CONTENT END -->
