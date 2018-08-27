@@ -9,9 +9,9 @@ permalink: /making-contributions/contribution-limits/
 
 # Know your limits
 
-Here at the TSP, we like to keep our participants informed, so we’ve done a little
-work for you. The 2018 Contributions Limits are below, along with additional
-information to help you make informed decisions.
+Each year, the Internal Revenue Service (IRS) determines the limit of contributions, also called elective deferrals, you can make to your TSP account. Below are the **2018** IRC limits and additional information to keep you informed.
+
+**Select an option and take a look.** 
 
 <ul class="usa-accordion usa-tabs contribution-limits">
   <li>
@@ -25,35 +25,28 @@ information to help you make informed decisions.
     <table class="usa-table-borderless">
         <tbody>
           <tr>
-            <th scope="row">What’s this?</th>
+            <th scope="row">What it means</th>
             <td markdown="1">
 ## Age 50 and over
-This year, on top of the $18,500 regular limit to a retirement plan,
-like the Thri Savings Plan, participants **50 and older can add
-$6000 per year** in catch-up contributions.
+Beginning in the year you turn 50, you have the opportunity to **make additional contributions above the IRS' elective deferral limit.** These "catch-up contributions" provide a chance to put away extra money for retirement, even if you're not behind.
 </td>
           </tr>
           <tr>
-            <th scope="row">Why it matters?</th>
+            <th scope="row">What to know</th>
             <td markdown="1">
-The additional savings could amount to an **additional $1,000
-per month once you’ve entered retirement.** Contributions are
-also tax-free, but keep in mind that withdrawals are taxed as
-income in retirement.
+Catch-up contributions are made on top of your regular employee contributions; however, they do not receive any matching. In order to be eligible to make these special contributions, you must be on track to meet the maximum elective deferral limit. 
+              
 <div class="usa-alert usa-alert-info">
 <div class="usa-alert-body">
-Catch-up contributions can be made any time during
-the <b>year in which you turn 55</b>.
+You must make a new catch-up contribution election each calendar year--they do not restart automatically.
 </div>
 </div>
 </td>
           </tr>
           <tr>
-            <th scope="row">Here’s what you
-should do now.</th>
+            <th scope="row">What to do</th>
             <td markdown="1">
-**Consider adding that addition $6,000 to your Thrift Savings
-Plan** to help reach your retirement savings goals.
+Whether you're trying to boost the retirement savings you already have or you've recently started saving, consider making catch-up contributions each year to save more.
 
 You’ll thank yourself later.
 
@@ -73,38 +66,27 @@ You’ll thank yourself later.
     <table class="usa-table-borderless">
         <tbody>
           <tr>
-            <th scope="row">What’s this?</th>
+            <th scope="row">What it means</th>
             <td markdown="1">
 ## Age 49 and under
-The IRS has announced the **2018 contribution limits** for
-retirement savings accounts, including contribution limits for
-401(k), 403(b), and most 457 plans, as well as income limits for
-IRA contribution deductibility.
+This limit applies to the **combined total of traditional and Roth contributions.** For uniformed services members, this does not apply to traditional contributions from combat-zone pay.
 </td>
 
           </tr>
           <tr>
-            <th scope="row">Why it matters?</th>
+            <th scope="row">What to know</th>
             <td markdown="1">
-**These limits don’t include the matching contribution you
-may receive from your employer.** You get an **immediate tax
-break**, because contributions come out of your paycheck before
-taxes are withheld. There’s the possibility of a matching
-contribution from your employer.
+Contributing from your pay before taxes allows your money to grow tax-deferred until you withdraw it. If you make Roth (after-tax) contributions, those contributions could be "qualified" and tax free at retirement. Knowing this limit helps you decide how much to put away each year.
 
-And you get **tax-deferred growth** — meaning you don’t pay
-taxes each year on capital gains, dividends, and other
-distributions.
+Additionally, this limit does not include matching contributions that you receive from your agency or service, so you're actually saving more.
+
 
 </td>
           </tr>
           <tr>
-            <th scope="row">Here’s what you
-should do now.</th>
+            <th scope="row">What to do</th>
             <td markdown="1">
-If you are not saving to the max in your Thrift Savings Plan today,
-**consider increasing your contribution in 2018 to the IRS limit
-of $18,500** to help reach your retirement savings goals.
+If you're not maxing out your contributions, consider increasing your contribution amount each chance you get to help reach your retirement savings goals. You might be surprised how big of a difference a small increase can make.
 </td>
           </tr>
         </tbody>
@@ -121,38 +103,25 @@ of $18,500** to help reach your retirement savings goals.
     <table class="usa-table-borderless">
         <tbody>
           <tr>
-            <th scope="row">What’s this?</th>
+            <th scope="row">What it means</th>
             <td markdown="1">
 ## All Ages
-The annual addition is the total dollar amount contributed in a
-given year to a participant’s retirement account under a defined contribution
-plan (DC plan). This **annual addition limit is the
-lesser of 100% of the participant’s compensation for the year**
-or the dollar limit in effect for the year.
+The annual addition limit is the **total amount of all the contributions you make in a calendar year.** This limit is per employer and includes money from all sources: employee contributions (tax-deferred, after-tax, and tax-exempt), Agency/Service Automatic (1%) Contributions, and Agency/Service Matching Contributions. 
 </td>
 
           </tr>
           <tr>
-            <th scope="row">Why it matters?</th>
+            <th scope="row">What to know</th>
             <td markdown="1">
-When you begin with the federal government, **you must wait
-three years years to begin receiving annual additions** to your
-retirement plan. Although you can begin contributing sooner,
-this benefit is oen delayed to ensure that employees stays in
-the position long enough to begin adding value. This period is
-called vesting. This information is on your TSP account on your
-TSP **statement** for your convenience.
+The annual addition limit affects mostly members of the uniformed services who can exceed the annual elective deferral limit. The excess contributions go into the traditional portion of your account from tax-exempt pay earned in a combat zone. 
 
   </td>
           </tr>
           <tr>
-            <th scope="row">Here’s what you
-  should do now.</th>
+            <th scope="row">What to do</th>
             <td markdown="1">
-Consider staying with your employer for the **vesting period**
-so you don’t miss out on free money.
-
-You’ll thank yourself later.
+Even if you don't reach the annual addition limit, keep it in mind when deciding how much you'll contribute to your TSP account to avoid penalties.
+              
   </td>
           </tr>
         </tbody>
@@ -160,6 +129,8 @@ You’ll thank yourself later.
     </div>
   </li>
 </ul>
+
+**Are you about to max out? Be careful not to exceed the contribution limits before December 31. If you do, we won't be able to process any more of your contributions for the remainder of the year, which means you'll miss out on Matching Contributions.**
 
 Grab your latest Leave and Earnings Statement and check
 out our [calculator](#), “How much should I contribute?”
