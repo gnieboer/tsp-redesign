@@ -60,7 +60,7 @@ Your big day is around the corner, now what? We'll help you navigate your plan b
     <div class="usa-width-one-half">
       <h1>What kind of investor are you ?</h1>
       <p>When you know yourself as an investor, you can make better choices regardless of what happens in the market.</p>
-      <a href="/funds/"><img src="/assets/img/icons/Arrow_circle.svg"/>Take me there</a>
+      <a href="/funds/">Take me there</a>
     </div>
   </div>
 </section>
@@ -84,19 +84,20 @@ We offer the L Funds, professionally designed to maximize returns and minimize r
 <!-- ROW 1 -->
 <div class="usa-grid fund-grid">
 <div class="usa-width-one-third" markdown="1">
-### L Income <img src="/assets/img/icons/Arrow_circle.svg"/>
+<h3><a href="#">L Income </a></h3>
 
 For participants who are currently withdrawing their TSP accounts in monthly payments or who plan to begin withdrawing before 2019.
 </div>
 
 <div class="usa-width-one-third" markdown="1">
-### L 2020 <img src="/assets/img/icons/Arrow_circle.svg"/>
+<h3><a href="#">L 2020 </a></h3>
 
 For participants who will withdraw their money beginning 2019 through 2024.
 </div>
 
 <div class="usa-width-one-third" markdown="1">
-### L 2030 <img src="/assets/img/icons/Arrow_circle.svg"/>
+<h3><a href="#">L 2030 </a></h3>
+
 
 For participants who will withdraw their money beginning 2025 through 2034.
 </div>
@@ -105,13 +106,13 @@ For participants who will withdraw their money beginning 2025 through 2034.
 <div class="usa-grid fund-grid">
 
 <div class="usa-width-one-third" markdown="1">
-### L 2040 <img src="/assets/img/icons/Arrow_circle.svg"/>
+<h3><a href="#">L 2040 </a></h3>
 
 For participants who will withdraw their money beginning 2035 through 2044.
 </div>
 
 <div class="usa-width-one-third" markdown="1">
-### L 2050 <img src="/assets/img/icons/Arrow_circle.svg"/>
+<h3><a href="#">L 2050 </a></h3>
 
 For participants who will begin to withdraw their money in 2045 or later.
 </div>
@@ -140,7 +141,7 @@ Each L Fund has a different mix of the G, F, C, S, and I Funds.
 <div class="usa-grid fund-grid">
 <div class="usa-width-one-third" markdown="1">
 
-### G Fund <img src="/assets/img/icons/Arrow_circle.svg"/>
+<h3><a href="#">G Fund</a></h3>
 
 Government securities specially issued to the Thrift Savings Plan
 
@@ -148,14 +149,14 @@ Government securities specially issued to the Thrift Savings Plan
 
 <div class="usa-width-one-third" markdown="1">
 
-### C Fund <img src="/assets/img/icons/Arrow_circle.svg"/>
+<h3><a href="#">C Fund</a></h3>
 
 Stocks of large and medium-sized U.S. companies
 
 </div>
 
 <div class="usa-width-one-third" markdown="1">
-### F Fund <img src="/assets/img/icons/Arrow_circle.svg"/>
+<h3><a href="#">F Fund</a></h3>
 
 Government, corporate, and mortgage-backed bonds
 
@@ -165,7 +166,7 @@ Government, corporate, and mortgage-backed bonds
 <div class="usa-grid fund-grid">
 <div class="usa-width-one-third" markdown="1">
 
-### S Fund <img src="/assets/img/icons/Arrow_circle.svg"/>
+<h3><a href="#">S Fund</a></h3>
 
 Stocks of small to medium-sized U.S. companies not included in the C Fund
 
@@ -173,7 +174,7 @@ Stocks of small to medium-sized U.S. companies not included in the C Fund
 
 <div class="usa-width-one-third" markdown="1">
 
-### I Fund <img src="/assets/img/icons/Arrow_circle.svg"/>
+<h3><a href="#">I Fund</a></h3>
 
 International stocks of more than 20 developed [countries](#)
 
