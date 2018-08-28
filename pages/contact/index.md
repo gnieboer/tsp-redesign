@@ -9,8 +9,8 @@ permalink: /contact/
 <!-- ROW 1 -->
 <div class="usa-grid-full usa-layout-docs-main_content">
   <div class="usa-width-one-half" markdown="1">
-![alt text]({{ site.baseurl }}/assets/img/icons/contact_phone.svg)
-**ThriftLine:** 1-877-968-3778 (toll free) 
+![alt text]({{ site.baseurl }}/assets/img/icons/smartphone.svg)
+**ThriftLine:** 1-877-968-3778 (toll free)
 (M - F) 7:00 a.m. to 9:00 p.m., eastern time
 
 **International:**
@@ -20,7 +20,7 @@ permalink: /contact/
 1-877-847-4385 (for the hearing-impaired)
   </div>
   <div class="usa-width-one-half" markdown="1">
-![alt text]({{ site.baseurl }}/assets/img/icons/contact_secure.svg)
+![alt text]({{ site.baseurl }}/assets/img/icons/shield.svg)
 
 ### Secure message center
 For account-specific inquiries, log in to My Account, click **Message Center**, and go to the **Messages** tab. We will respond within 24 business hours.
@@ -39,7 +39,7 @@ For account-specific inquiries, log in to My Account, click **Message Center**, 
 <div class="usa-grid-full usa-layout-docs-main_content">
 <div class="usa-width-one-half" markdown="1">
 
-![alt text]({{ site.baseurl }}/assets/img/icons/contact_mail.svg)
+![alt text]({{ site.baseurl }}/assets/img/icons/mail.svg)
 ### General mailing address
 Thrift Savings Plan  
  P.O. Box 385021   
@@ -51,7 +51,7 @@ Birmingham, AL 35238
 </div>
   <!-- WEB COMMENTS -->
     <div class="usa-width-one-half" markdown="1">
-![alt text]({{ site.baseurl }}/assets/img/icons/contact_comment.svg)
+![alt text]({{ site.baseurl }}/assets/img/icons/message-square.svg)
 ### Web comments    
 Submit comments about this website (1,000 characters maximum). We do not respond to comments submitted through this page.
 **Do not leave personally identifiable information.**
