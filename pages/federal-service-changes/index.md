@@ -19,7 +19,7 @@ If you leave federal service, get deployed, or experience any other changes in y
 
 + Leaving federal service
 + Returning to federal service
-+ Entering a non-pay status
++ Entering a nonpay status
 + Preparing for active duty
 
 <!-- CONTENT END -->
