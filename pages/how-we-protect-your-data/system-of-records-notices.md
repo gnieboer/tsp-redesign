@@ -1,6 +1,6 @@
 ---
 layout: page
-title: System of records notices (SORNS)
+title: System of Records Notices (SORNs)
 
 sidenav: privacy
 
@@ -10,7 +10,7 @@ scripts:
 
 permalink: /how-we-protect-your-data/system-of-records-notices/
 ---
-# System of records notices (SORNS)
+# System of Records Notices (SORNs)
 
 The Privacy Act of 1974 requires all federal agencies to publish a formal notice to the public in the Federal Register that identifies the purposes for which personally identifiable information (PII) is collected; how the PII is used by the Agency; how the Agency shares PII externally; and, most importantly, how individuals can access and correct the information a federal government agency maintains on the subject individual. These notices are called System of Records Notices (SORNs).
 
@@ -1409,7 +1409,7 @@ FRTIB is required to publish a SORN anytime it creates, substantially modifies, 
   [78 Fed. Reg. 73863 (Dec. 9, 2013)](https://www.federalregister.gov/documents/2013/12/09/2013-29342/privacy-act-of-1974-amendment-to-system-of-records){:target="\_blank"}
 
   [76 Fed. Reg. 24489 (May 2, 2011)](https://www.federalregister.gov/documents/2011/05/02/2011-10628/privacy-act-of-1974-amendment-to-system-of-records){:target="\_blank"}, as modified at [77 Fed. Reg. 45353 (July 31, 2012)](https://www.federalregister.gov/documents/2012/07/31/2012-18658/privacy-act-of-1974-amendment-to-system-of-records){:target="\_blank"}
-  
+
   [68 Fed. Reg. 3098 (Jan. 22, 2003)](https://www.federalregister.gov/documents/2003/01/22/03-1101/privacy-act-of-1974-systems-of-records){:target="\_blank"}, as corrected at [68 Fed. Reg. 24744 (May 8, 2003)](https://www.federalregister.gov/documents/2003/05/08/03-11416/privacy-act-of-1974-systems-of-records-notice-correction){:target="\_blank"}
   (replaced FRTIB-8, FRTIB-11)
   </div>

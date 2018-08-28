@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Exemptions to the privacy act
+title: Exemptions to the Privacy Act
 
 sidenav: privacy
 
@@ -10,7 +10,7 @@ scripts:
 
 permalink: /how-we-protect-your-data/exemptions-to-privacy-act/
 ---
-# Exemptions to the privacy act
+# Exemptions to the Privacy Act
 
 Under subsection (k) of the Privacy Act, 5 U.S.C. 552a, investigatory material compiled for law enforcement purposes in the following systems is exempt from certain Privacy Act requirements: [FRTIB-2 (Personnel Security Investigation Files)](#), [FRTIB-13 (Fraud and Forgery Records)](#), [FRTIB-14 (FRTIB Legal Case Files)](#), [FRTIB-15 (Internal Investigations of Harassment and Hostile Work Environment Allegations)](#).
 

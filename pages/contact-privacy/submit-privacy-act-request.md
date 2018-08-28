@@ -1,12 +1,12 @@
 ---
 layout: page
-title: How to submit a privacy act request
+title: How to submit a Privacy Act request
 sidenav: privacy
 styles:
 scripts:
 permalink: /contact-privacy/submit-privacy-act-request/
 ---
-# How to submit a privacy act request
+# How to submit a Privacy Act request
 
 You should use the processes outlined below if you wish to access or correct records that the Agency maintains about you. The entity you contact will vary according to the type of record you wish to access or correct.
 

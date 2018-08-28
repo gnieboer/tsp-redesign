@@ -163,22 +163,22 @@ privacy:
         href: /how-we-protect-your-data/privacy-program-plan/
       - text: Publicly available agency reports on privacy
         href: /how-we-protect-your-data/privacy-reports/
-      - text: FRTIB rules implementing the privacy act
+      - text: FRTIB rules implementing the Privacy Act
         href: /how-we-protect-your-data/privacy-rules/
-      - text: System of records notices (SORNS)
+      - text: System of Records Notices (SORNs)
         href: /how-we-protect-your-data/system-of-records-notices/
-      - text: Exemptions to the privacy act
+      - text: Exemptions to the Privacy Act
         href: /how-we-protect-your-data/exemptions-to-privacy-act/
-      - text: Privacy impact assessments (PIAS)
+      - text: Privacy Impact Assessments (PIAs)
         href: /how-we-protect-your-data/privacy-impact-assessments/
-      - text: Matching notices (computer matching agreements)
+      - text: Matching notices (Computer Matching Agreements)
         href: /how-we-protect-your-data/matching-notices/
   - text: How to contact us
     href: /contact-privacy/
     subnav:
-      - text: Contact information for the senior agency official for privacy (SAOP)
-        href: /contact-privacy/contact-information-saop/
-      - text: How to submit a privacy act request
+      # - text: Contact information for the senior agency official for privacy (SAOP)
+      #   href: /contact-privacy/contact-information-saop/
+      - text: How to submit a Privacy Act request
         href: /contact-privacy/submit-privacy-act-request/
       - text: How to submit a privacy question or complaint
         href: /contact-privacy/submit-privacy-question-or-complaint/
