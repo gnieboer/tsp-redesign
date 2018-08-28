@@ -11,11 +11,16 @@ main:
 
 <div class="usa-width-three-fourths usa-layout-docs-main_content">
 <div class="fund-details-header usa-grid-full">
+  <div class="usa-width-three-fourths">
   <h1>{{ page.Fund_letter }}</h1>
-  <a href="/fund-basics/fund-comparison/" class="usa-button compare-funds-button">Compare funds</a>
-  <p>
+
+  <p class="fund-subtitle">
     {{page.Fund_subtitle}}
   </p>
+</div>
+<div class="usa-width-one-fourth">
+  <a href="/fund-basics/fund-comparison/" class="usa-button compare-funds-button">Compare funds</a>
+</div>
 </div>
 <div class="usa-section fund-questions">
   <h2>First, let's answer a few questions.</h2>
@@ -44,7 +49,7 @@ main:
 
 <div class="usa-section">
 <h2>Performance</h2>
-<p>As of 12/31/{{ 'now' | date: "%Y" | minus: 1 }}</p>
+<p class="as-of-date">As of 12/31/{{ 'now' | date: "%Y" | minus: 1 }}</p>
 <table class="usa-table-borderless avg-annual-returns">
   <caption>Average annual returns</caption>
   <thead>
@@ -77,7 +82,7 @@ main:
         <div id="a1" class="usa-accordion-content">
           <div class="usa-grid-full">
             <div class="usa-width-one-half fund-summary-details">
-              <h3>Details <span>As of 12/31/{{ 'now' | date: "%Y" | minus: 1 }}</span></h3>
+              <h3>Details <span class="as-of-date">As of 12/31/{{ 'now' | date: "%Y" | minus: 1 }}</span></h3>
                 <p><b>Assets</b><br>
                 {{ page.summary_details.assets }}
               </p>
@@ -95,11 +100,11 @@ main:
               </p>
             </div>
             <div class="usa-width-one-half fund-summary-top-ten">
-              <h3>Top ten holdings <span>As of 12/31/{{ 'now' | date: "%Y" | minus: 1 }}</span></h3>
+              <h3>Top ten holdings <span class="as-of-date">As of 12/31/{{ 'now' | date: "%Y" | minus: 1 }}</span></h3>
               <ol>
               {% for item in page.top_ten_holdings %}
               <li>
-                  {{ item.abbr }}
+                  <span class="holdings-abbr">{{ item.abbr }}</span>
                   {{ item.name }}
               </li>
               {% endfor %}
@@ -116,7 +121,7 @@ main:
         <div id="a4" class="usa-accordion-content">
           <div class="usa-grid-full">
             <div class="usa-width-one-half">
-              <h3>Fees <span>As of 12/31/{{ 'now' | date: "%Y" | minus: 1 }}</span></h3>
+              <h3>Fees <span class="as-of-date">As of 12/31/{{ 'now' | date: "%Y" | minus: 1 }}</span></h3>
               <p><b>Net admin expense<sup>*</sup></b><br>
                 {{ page.summary_details.admin_expense }}
               </p>
