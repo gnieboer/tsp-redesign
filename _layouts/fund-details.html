@@ -85,7 +85,9 @@ main:
                 {{ page.summary_details.admin_expense }}
               </p>
               <p><b>Other expense</b><br>
-                {{ page.summary_details.other_expense }}
+                {% for item in page.summary_details.other_expense %}
+                  {{ item }}<br>
+                {% endfor %}
               </p>
                 <p><b>Benchmark index</b><br>
                   {{ page.summary_details.benchmark_index }}
@@ -120,9 +122,12 @@ main:
               <p><b>Net admin expense<sup>*</sup></b><br>
                 {{ page.summary_details.admin_expense }}
               </p>
-              <p><b>Other expense<sup>**</sup></b><br>
-                {{ page.summary_details.other_expense }}
-              </p>
+              <p><b>Other expense<sup>**</sup></b><br></p>
+                {% for item in page.summary_details.other_expense %}
+                  {{ item }}<br>
+                {% endfor %}
+
+
               <p>
                 <sup>*</sup>An expense ratio of .032% translates to 3.2 basis points or $0.32 per $1,000 acount balance.
               </p>
