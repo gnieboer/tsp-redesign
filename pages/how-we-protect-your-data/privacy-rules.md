@@ -1,6 +1,6 @@
 ---
 layout: page
-title: FRTIB rules implementing the privacy act
+title: FRTIB rules implementing the Privacy Act
 
 sidenav: privacy
 
@@ -10,7 +10,7 @@ scripts:
 
 permalink: /how-we-protect-your-data/privacy-rules/
 ---
-# FRTIB rules implementing the privacy act
+# FRTIB rules implementing the Privacy Act
 
 As required by the Privacy Act, FRTIB promulgated regulations that establish procedures for notifying individuals if a system of records contains a record about them as well as procedures for the disclosure and amendment of the record.
 

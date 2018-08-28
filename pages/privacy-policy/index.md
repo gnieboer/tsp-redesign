@@ -16,9 +16,9 @@ Thank you for visiting the Federal Retirement Thrift Investment Board's (FRTIB) 
 
 FRTIB's policy for both its websites (www.tsp.gov and [www.frtib.gov](https://www.frtib.gov){:target="\_blank"} is that no personal information about you is collected unless you provide it to us in order to access your account.
 
-- [Information Automatically Captured and Stored](/privacy-policy/information-captured-stored/)
-- [Comments Submitted Online](/privacy-policy/comments-submitted-online/)
-- [Cookies](/privacy-policy/cookies/)
-- [Security Monitoring](/privacy-policy/security-monitoring/)
+- Information Automatically Captured and Stored
+- Comments Submitted Online
+- Cookies
+- Security Monitoring
 
 <!-- CONTENT END -->
