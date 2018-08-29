@@ -1,18 +1,14 @@
 ---
 layout: page
-title: FRTIB’s Privacy Program Plan
-
+title: FRTIB Privacy Program Plan
 sidenav: privacy
-
 styles:
-
 scripts:
-
-permalink: /how-we-protect-your-data/privacy-program-plan/
+permalink: /privacy-plan/
 ---
-# FRTIB’s Privacy Program Plan
+# FRTIB Privacy Program Plan
 
-FRTIB’s [Privacy Program Plan](/privacy-plan/) includes:
+The purpose of the Federal Retirement Thrift Investment Board (FRTIB) Privacy Program Plan is to provide an overview of FRTIB’s privacy program. This Plan, which is consistent with the requirements enumerated in OMB Circular A-130, Managing Information as a Strategic Resource includes:
 
 - A description of the structure of FRTIB’s privacy program;
 - The resources dedicated to FRTIB’s privacy program;

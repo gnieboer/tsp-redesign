@@ -247,6 +247,31 @@ privacy:
         href: /privacy-policy/cookies/
       - text: Security monitoring
         href: /privacy-policy/security-monitoring/
+  - text: FRTIB Privacy Program Plan
+    href: /privacy-plan/
+    subnav:
+      - text: Overview of FRTIB Privacy Program
+        href: /privacy-plan/overview/
+      - text: Privacy Workforce Management
+        href: /privacy-plan/privacy-workforce-management/
+      - text: Budget and Acquisition
+        href: /privacy-plan/budget-and-acquisition/
+      - text: Fair Information Practice Principles
+        href: /privacy-plan/fair-information-practice-principles/
+      - text: Privacy Risk Management Framework
+        href: /privacy-plan/privacy-risk-management-framework/
+      - text: Privacy Control Requirements
+        href: /privacy-plan/privacy-control-requirements/
+      - text: Overview of Handling and Protecting Personally Identifiable Information (PII)
+        href: /privacy-plan/protecting-pii/
+      - text: Breach Response and Management
+        href: /privacy-plan/breach-response-and-management/
+      - text: Awareness and Training
+        href: /privacy-plan/awareness-and-training/
+      - text: Privacy Reporting
+        href: /privacy-plan/privacy-reporting/
+      - text: Conclusion
+        href: /privacy-plan/conclusion/
 
 # MISCELLANEOUS
 footer:
