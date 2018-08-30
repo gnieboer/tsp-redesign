@@ -22,8 +22,10 @@ primary:
     links:
     - text: How to invest
       href: /how-to-invest/
-    - text: Fund basics
-      href: /fund-basics/
+    - text: Core funds
+      href: /funds-core/
+    - text: Lifecycle funds
+      href: /funds-lifecycle/
     - text: Fund performance
       href: /fund-performance/
   - text: Use your savings
@@ -102,31 +104,34 @@ fund-options:
         href: /how-to-invest/before-you-invest/
       - text: Changing your investments
         href: /how-to-invest/change-your-investments/
-  - text: Fund basics
-    href: /fund-basics/
+  - text: Core funds
+    href: /funds-core/
     subnav:
-      - text: S Fund
-        href: /fund-basics/s-fund/
       - text: G Fund
-        href: /fund-basics/g-fund/
-      - text: C Fund
-        href: /fund-basics/c-fund/
+        href: /funds-core/g-fund/
       - text: F Fund
-        href: /fund-basics/f-fund/
+        href: /funds-core/f-fund/
+      - text: C Fund
+        href: /funds-core/c-fund/
+      - text: S Fund
+        href: /funds-core/s-fund/
       - text: I Fund
-        href: /fund-basics/i-fund/
+        href: /funds-core/i-fund/
+  - text: Lifecycle funds
+    href: /funds-lifecycle/
+    subnav:
       - text: L Funds
-        href: /fund-basics/l-funds/
+        href: /funds-lifecycle/l-funds/
       - text: L Income
-        href: /fund-basics/l-income/
+        href: /funds-lifecycle/l-income/
       - text: L 2020
-        href: /fund-basics/l-2020/
+        href: /funds-lifecycle/l-2020/
       - text: L 2030
-        href: /fund-basics/l-2030/
+        href: /funds-lifecycle/l-2030/
       - text: L 2040
-        href: /fund-basics/l-2040/
+        href: /funds-lifecycle/l-2040/
       - text: L 2050
-        href: /fund-basics/l-2050/
+        href: /funds-lifecycle/l-2050/
   - text: Fund performance
     href: /fund-performance/
     subnav:

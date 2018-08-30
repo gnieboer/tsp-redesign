@@ -1,5 +1,5 @@
 ---
-permalink: /fund-basics/g-fund/
+permalink: /funds-core/g-fund/
 layout: fund-details
 title: G fund
 sidenav: fund-options
