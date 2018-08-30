@@ -50,7 +50,7 @@ In addition to being covered by an eligible retirement system, you must also be:
 
 If you’re a FERS employee hired after July 31, 2010, your agency has automatically enrolled you in the TSP and 3% of your basic pay is deducted each pay period and deposited in the traditional balance of your TSP account.
 
-If you’re a FERS employee hired before August 1, 2010, you already have a TSP account with accruing Agency/Service Automatic (1%) Contributions. In addition, you can make contributions to your account from your pay and receive Agency/Service Matching Contributions.
+If you’re a FERS employee hired before August 1, 2010, you already have a TSP account with accruing Agency/Service Automatic (1%) Contributions. In addition, you can make contributions to your account from your pay and receive Agency Matching Contributions.
 
 To make a contribution election, use your agency’s electronic payroll system (e.g., Employee Express) or complete and submit [Form TSP-1](/PDF/forms/tsp-1.pdf), *Election Form*.
 
