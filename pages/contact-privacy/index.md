@@ -1,26 +1,16 @@
 ---
 layout: page
 title: How to contact us
-
 sidenav: privacy
-
 styles:
-
 scripts:
-
 permalink: /contact-privacy/
 ---
 # How to contact us
 
-**Senior Agency Official for Privacy (SAOP)**:  
-Megan Grumbine (General Counsel)  
-**Phone**: (202) 639-1670  
-**Email**: [privacy@tsp.gov](mailto;privacy@tsp.gov)  
+The Office of Management and Budget (OMB) requires that each Government agency designate a Senior Agency Official for Privacy (SAOP) who has agency-wide responsibility and accountability for the agency’s privacy program. General Counsel Megan Grumbine serves as FRTIB’s SAOP.
 
-Additionally, we developed processes specifically for the following types of requests:
+If you would like to contact FRTIB’s Privacy Office, or if you would like to submit a privacy complaint, please email us at [privacy@tsp.gov](mailto;privacy@tsp.gov).
 
-- How to submit a privacy act request
-- How to submit a privacy question or complaint
-
-
+Additionally, we have developed instructions for submitting a [Privacy Act request](/contact-privacy/submit-privacy-act-request/) if you wish to access or correct records that FRTIB maintains about you.
 <!-- CONTENT END -->
