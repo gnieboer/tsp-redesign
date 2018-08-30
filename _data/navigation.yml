@@ -205,8 +205,6 @@ manage-life-changes:
       - text: Preparing for active duty
         href: #
 
-
-
 privacy:
   - text: FRTIB Privacy Division
     href: /privacy/
@@ -230,12 +228,8 @@ privacy:
   - text: How to contact us
     href: /contact-privacy/
     subnav:
-      # - text: Contact information for the senior agency official for privacy (SAOP)
-      #   href: /contact-privacy/contact-information-saop/
       - text: How to submit a Privacy Act request
         href: /contact-privacy/submit-privacy-act-request/
-      - text: How to submit a privacy question or complaint
-        href: /contact-privacy/submit-privacy-question-or-complaint/
   - text: Website privacy policy
     href: /privacy-policy/
     subnav:
