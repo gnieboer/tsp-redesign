@@ -1,5 +1,5 @@
 ---
-permalink: /fund-basics/l-funds/
+permalink: /funds-lifecycle/l-funds/
 layout: fund-details
 title: L Funds
 sidenav: fund-options

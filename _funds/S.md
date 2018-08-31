@@ -1,5 +1,5 @@
 ---
-permalink: /fund-basics/s-fund/
+permalink: /funds-core/s-fund/
 layout: fund-details
 title: S fund
 sidenav: fund-options

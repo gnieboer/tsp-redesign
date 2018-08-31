@@ -1,5 +1,5 @@
 ---
-permalink: /fund-basics/l-income/
+permalink: /funds-lifecycle/l-income/
 layout: fund-details
 title: L Income
 sidenav: fund-options
