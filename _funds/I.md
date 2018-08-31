@@ -7,14 +7,14 @@ Fund_letter: I
 Fund_order: 5
 subfund_name:
 Fund_subtitle: International Stock Index Investment Fund
-Fund_objective: The S Fund's investment objective is to match the performance of the Dow Jones U.S. Completion Total Stock Market Index, a broad market index made up of stocks of small-to-medium U.S. companies not included in the S&P 500 Index.
+Fund_objective: The I Fund's investment objective is to match the performance of the MSCI EAFE (Europe, Australasia, Far East) Index.
 questions:
-  - question: Why should I invest in the S Fund?
-    answer: While investment in the S Fund carries risk, it also offers the opportunity to experience gains from equity ownership of small-to-mid-sized U.S. companies. It provides and excellent means of further diversifying your domestic equity holdings.
+  - question: Why should I invest in the I Fund?
+    answer: Investment in the I Fund offers the opportunity to experience gains from equity ownership of non-U.S. companies. Because it represents the stocks of companies in many developed countries (excluding the U.S.), it is an excellent way to diversify the stock portion of your TSP allocation.
   - question: Am I ok with market and inflation risk?
-    answer: There is a risk of loss if the Dow Jones U.S. Completion TSM Index declines in response to changes in overall economic conditions (market risk) or if the S Fund does not grow enough to offset the reduction in purchasing power (inflation risk).
-  - question: How can I use the S Fund in my TSP?
-    answer: The S Fund can be useful in a portfolio that also contains stock funds that track other indexes. The C, S, and I Funds, for example, track different segments of the overall stock market without overlapping. By investing in all segments of the stock market (as opposed to just one), you reduce your exposure to market risk.
+    answer: I Fund returns move up and down with the returns in the MSCI EAFE (market risk). The EAFE Index (and the I Fund returns) will rise or fall as the value of the U.S. dollar decreases or increases relative to the value of the currencies of the countries represented in the EAFE index (currency risk) or if I Fund investments do not grow enough to offset the reduction in purchasing power (inflation risk).
+  - question: How can I use the I Fund in my TSP?
+    answer: The I Fund can be useful in a portfolio that also contains stock funds that track other indexes such as the C Fund and the S Fund. By investing in all segments of the stock market (as opposed to just one), you reduce your exposure to market risk. The I Fund can also be useful in a portfolio that contains bonds. A retirement portfolio that contains a bond fund like the F Fund, along with other stock funds, like the C and S Funds, will tend to be less volatile than one that contains stock funds alone.
 avg_annual_returns:
     ytd: 12.89%
     one_yr: 13.89%
@@ -34,31 +34,11 @@ top_ten_holdings:
   - name: Las Vegas Sands Corp.
     abbr: LVS
 additional_info: |
-  The S Fund is invested in a separate account
-  that is managed by BlackRock Institutional
-  Trust Company, N.A. The Fund is invested in
-  the Dow Jones U.S. Completion TSM Index,
-  which contains a large number of stocks,
-  including illiquid stocks with low trading
-  volume and stocks with prices lower than
-  $1.00 per share.
+  By law, the I Fund must be invested in a portfolio designed to track the performance of an index of common stocks representing international stock markets outside of the United States. The Federal Retirement Thrift Investment Board has chosen as its benchmark the MSCI EAFE (Europe, Australasia, Far East) Index, which tracks the overall performance of the major companies and industries in the European, Australian, and Asian stock markets. 
 
-  Therefore, it is not efficient for the Fund to
-  invest in every stock in the index. The S Fund
-  holds the stocks of most of the companies in
-  the index with market values greater than $1
-  billion. However, a mathematical sampling
-  technique is used to select among the smaller
-  stocks.
+  The EAFE Index, published by MSCI, is an index of the equity markets of the developed world outside of the United States and Canada. It is the most widely used international stock index. As of December 31, 2017, the index covered the equity markets of 21 countries, as shown in the table.
 
-  The performance of the S Fund is evaluated
-  on the basis of how closely its returns match
-  those of the Dow Jones U.S. Completion TSM
-  Index. A portion of S Fund assets is reserved
-  to meet the needs of daily client activity.
-  This liquidity reserve is invested in futures
-  contracts of the S&P 400 and Russell 2000
-  (other broad equity indexes).
+  The I Fund is invested in a separate account that is managed by BlackRock Institutional Trust Company, N.A. The I Fund holds common stocks of all the companies represented in the EAFE Index in virtually the same weights that they have in the index. The performance of the I Fund is evaluated on the basis of how closely its returns match those of the EAFE Index.
 risks: |
   Your investment in the C Fund is subject to [market risk](#) because the prices of the stocks in the S&P 500 Index rise and fall.
 
