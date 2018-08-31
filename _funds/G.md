@@ -7,14 +7,14 @@ Fund_letter: G
 Fund_order: 1
 subfund_name:
 Fund_subtitle: Government Securities Investment Fund
-Fund_objective: The S Fund's investment objective is to match the performance of the Dow Jones U.S. Completion Total Stock Market Index, a broad market index made up of stocks of small-to-medium U.S. companies not included in the S&P 500 Index.
+Fund_objective: The G Fund's investment objective is to produce a rate of return that is higher than inflation while avoiding exposure to credit (default) risk and market price fluctuations.
 questions:
-  - question: Why should I invest in the S Fund?
-    answer: While investment in the S Fund carries risk, it also offers the opportunity to experience gains from equity ownership of small-to-mid-sized U.S. companies. It provides and excellent means of further diversifying your domestic equity holdings.
+  - question: Why should I invest in the G Fund?
+    answer: The payment of G Fund principal and interest is guaranteed by the U.S. Government. This means that the U.S. Government will always make the required payments.
   - question: Am I ok with market and inflation risk?
-    answer: There is a risk of loss if the Dow Jones U.S. Completion TSM Index declines in response to changes in overall economic conditions (market risk) or if the S Fund does not grow enough to offset the reduction in purchasing power (inflation risk).
-  - question: How can I use the S Fund in my TSP?
-    answer: The S Fund can be useful in a portfolio that also contains stock funds that track other indexes. The C, S, and I Funds, for example, track different segments of the overall stock market without overlapping. By investing in all segments of the stock market (as opposed to just one), you reduce your exposure to market risk.
+    answer: The G Fund is subject to the possibility that your investment will not grow enough to offset the reduction in purchasing power that results from inflation (inflation risk).
+  - question: How can I use the G Fund in my TSP?
+    answer: Consider investing in the G Fund if you would like to have all or a portion of your TSP account completely protected from loss. If you choose to invest in the G Fund, you are placing a higher priority on the stability and preservation of your money than on the opportunity to potentially achieve greater long-term growth in your account through investment in the other TSP funds.
 avg_annual_returns:
     ytd: 12.89%
     one_yr: 13.89%
@@ -34,31 +34,11 @@ top_ten_holdings:
   - name: Las Vegas Sands Corp.
     abbr: LVS
 additional_info: |
-  The S Fund is invested in a separate account
-  that is managed by BlackRock Institutional
-  Trust Company, N.A. The Fund is invested in
-  the Dow Jones U.S. Completion TSM Index,
-  which contains a large number of stocks,
-  including illiquid stocks with low trading
-  volume and stocks with prices lower than
-  $1.00 per share.
+  The G Fund is invested in short-term U.S. Treasury securities specially issued to the TSP. Payment of principal and interest is guaranteed by the U.S. government. Thus, there is no “credit risk.”
 
-  Therefore, it is not efficient for the Fund to
-  invest in every stock in the index. The S Fund
-  holds the stocks of most of the companies in
-  the index with market values greater than $1
-  billion. However, a mathematical sampling
-  technique is used to select among the smaller
-  stocks.
+  Although the securities in the G Fund earn a long-term interest rate, the Board’s investment in the G Fund is redeemable on any business day with no risk to principal. The value of  G Fund securities does not fluctuate; only the interest rate changes.
 
-  The performance of the S Fund is evaluated
-  on the basis of how closely its returns match
-  those of the Dow Jones U.S. Completion TSM
-  Index. A portion of S Fund assets is reserved
-  to meet the needs of daily client activity.
-  This liquidity reserve is invested in futures
-  contracts of the S&P 400 and Russell 2000
-  (other broad equity indexes).
+  The G Fund Yield Advantage—The G Fund rate calculation results in a long-term rate being earned on short-term securities. Because long-term interest rates are generally higher than short-term rates, G Fund securities usually earn a higher rate of return than do short-term marketable Treasury securities.
 risks: |
   Your investment in the C Fund is subject to [market risk](#) because the prices of the stocks in the S&P 500 Index rise and fall.
 
