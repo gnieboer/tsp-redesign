@@ -109,10 +109,16 @@
 <script>
 
 function showStep2() {
-   document.getElementById('step2').style.display = "block";
+  document.getElementById('step2').style.display = "block";
+  var loc = document.location.toString().split('#')[0];
+  document.location = loc + '#step2';
+  return false;
 }
 function showStep3() {
    document.getElementById('step3').style.display = "block";
+   var loc = document.location.toString().split('#')[0];
+   document.location = loc + '#step3';
+   return false;
 }
 
 function calculate() {
