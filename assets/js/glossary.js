@@ -1,3 +1,5 @@
+/* vendor/glossary.min.js must be included on page before this script */
+
 var glossaryTerms = [
   {
     term: 'Account Access',
@@ -497,3 +499,11 @@ var glossaryTerms = [
       'A general term for a distribution that a participant requests from his or her account. (Includes in-service withdrawal, partial withdrawal, full withdrawal, etc.)'
   }
 ];
+
+function initGlossary() {
+  var Glossary = window.Glossary;
+  if (!Glossary) return;
+  new Glossary(glossaryTerms);
+}
+
+initGlossary();
