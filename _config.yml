@@ -24,8 +24,9 @@ markdown: kramdown
 
 scripts:
   - assets/uswds/js/uswds.min.js
-  - /glossary/example/main.js
+  - /assets/js/vendor/glossary.min.js
   - /assets/js/login.js
+  - /assets/js/glossary.js
 
 # Compress Sass
 # sass:
