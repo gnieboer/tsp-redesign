@@ -9,7 +9,6 @@ permalink: /funds-lifecycle/
 
 # Lifecycle funds
 
-We have a selection of individual and lifecycle funds that offer broad market diversification. You can choose to have your retirement dollars invested in everything from a short-term U.S. Treasury security to index funds made of domestic and
-international stocks.
+The L Funds, or Lifecycle Funds, offer a simple, low maintenance way of investing money in your TSP account by using an appropriate mix of the G, F, C, S, and I Funds that most closely matches your time horizon, or target retirement date.
 
 {% include components/fund-comparison.html %}
