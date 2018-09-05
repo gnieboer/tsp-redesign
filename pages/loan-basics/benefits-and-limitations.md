@@ -14,10 +14,10 @@ permalink: /loan-basics/benefits-and-limitations/
 
 # Benefits and limitations
 
-Our program allows you to borrow money from your account if you are an active federal employee (in pay status) or a member of the uniformed services. Before taking out a loan, you should carefully consider its potential effect on your retirement income.
+If you're an active federal employee or member of the uniformed services, you are allowed to borrow money from your TSP account. Before taking out a loan, you should carefully consider its potential effect on your retirement income.
 
 ## How a TSP loan works
-When you take a loan, you borrow from your TSP account. The amount of your loan cannot exceed the amount of your own contributions and earnings from those contributions. So, if you work under the Federal Employees' Retirement System (FERS), you cannot borrow from any agency contributions or earnings from those contributions.
+When you take a loan, you borrow from your TSP account. The amount of your loan cannot exceed the amount of your own contributions and earnings from those contributions. So, if you receive contributions from your agency or service, you cannot borrow from those contributions or earnings from those contributions.
  
 If you meet the loan eligibility rules and your loan request is approved, the loan amount is removed from your TSP account. You must repay your loan with interest. Repayments for the loan and interest are generally made through payroll deductions. Your repayments restore the amount of your loan, plus interest, to your account.
 For additional information, visit [Repaying your loan](repaying-your-loan.md).
