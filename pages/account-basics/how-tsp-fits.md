@@ -74,7 +74,10 @@ If you’re a CSRS employee, your account is established by your agency after yo
     </button>
 <div id="a3" class="usa-accordion-content" markdown="1">
 
-If you’re a member of the uniformed services who began serving on or after January 1, 2018, your service automatically enrolled you in the TSP (or will) once you had served 60 days and 3% of your basic pay is deducted from your paycheck each pay period and deposited in the traditional balance of your TSP account.
+If you’re a member of the uniformed services who began serving on or after January 1, 2018, you are under the Blended Retirement System (BRS). Your service automatically enrolled you in the TSP (or will) once you had served 60 days and 3% of your basic pay is deducted from your paycheck each pay period and deposited in the traditional balance of your TSP account.
+
+If you had served fewer than 12 years as of December 31, 2017, and you chose to join BRS during calendar year 2018, you have a TSP account with accruing Agency/Service Automatic (1%) Contributions. **In order to start contributing your own money, you have to make a contribution election through your agency or service. Follow the instructions in [Start, change, or stop contributions](/making-contributions/start-change-stop-contributions/).
+ 
 
 </div>
   </li><li>
@@ -85,7 +88,7 @@ If you’re a member of the uniformed services who began serving on or after Jan
     </button>
 <div id="a4" class="usa-accordion-content" markdown="1">
 
-If you’re a member of the uniformed services who is not covered by the BRS, your account is established by your service after you make a contribution election using your service's electronic payroll system (e.g., myPay), or complete and submit [Form TSP-U-1](/PDF/forms/tsp-u-1.pdf), *Election Form*.
+If you’re a member of the uniformed services who is not covered by the Blended Retirement System (BRS), your TSP account is established by your service after you make a contribution election using your service's electronic payroll system (e.g., myPay), or complete and submit [Form TSP-U-1](/PDF/forms/tsp-u-1.pdf), *Election Form*.
 
 </div>
   </li><li>
@@ -108,7 +111,7 @@ If you’re a FERS or CSRS employee rehired after July 31, 2010, your agency has
     </button>
 <div id="a6" class="usa-accordion-content" markdown="1">
 
-If you were already in the BRS plan before you left the service—whether as a new member of the uniformed services or an opt-in—you will be automatically reenrolled when you reenter. If you were not in BRS but had fewer than 12 years of service when you left, your service may give you the opportunity to opt in when you reenter. In either case, assuming you had served 60 days before leaving, your enrollment will begin with the first pay period after reentering. If neither situation applies to you, you can still start a TSP account or resume contributing to your existing account as a non-BRS member. Follow the instructions in [Start, change, or stop contributions](/making-contributions/start-change-stop-contributions/)
+If you were already in the BRS plan before you left the service—whether as a new member of the uniformed services or an opt-in—you will be automatically reenrolled when you reenter. If you were not in BRS but had fewer than 12 years of service when you left, your service may give you the opportunity to opt in when you reenter. In either case, assuming you had served 60 days before leaving, your enrollment will begin with the first pay period after reentering. If neither situation applies to you, you can still start a TSP account or resume contributing to your existing account as a non-BRS member. Follow the instructions in [Start, change, or stop contributions](/making-contributions/start-change-stop-contributions/).
 
 </div>
   </li>
