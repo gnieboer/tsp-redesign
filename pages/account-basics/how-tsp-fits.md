@@ -76,7 +76,7 @@ If you’re a CSRS employee, your account is established by your agency after yo
 
 If you’re a member of the uniformed services who began serving on or after January 1, 2018, you are under the Blended Retirement System (BRS). Your service automatically enrolled you in the TSP (or will) once you had served 60 days and 3% of your basic pay is deducted from your paycheck each pay period and deposited in the traditional balance of your TSP account.
 
-If you had served fewer than 12 years as of December 31, 2017, and you chose to join BRS during calendar year 2018, you have a TSP account with accruing Agency/Service Automatic (1%) Contributions. **In order to start contributing your own money, you have to make a contribution election through your agency or service. Follow the instructions in [Start, change, or stop contributions](/making-contributions/start-change-stop-contributions/).
+If you had served fewer than 12 years as of December 31, 2017, and you chose to join BRS during calendar year 2018, you have a TSP account with accruing Agency/Service Automatic (1%) Contributions. **In order to start contributing your own money, you have to make a contribution election through your agency or service.** Follow the instructions in [Start, change, or stop contributions](/making-contributions/start-change-stop-contributions/).
  
 
 </div>
