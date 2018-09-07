@@ -22,12 +22,12 @@ If you’re in nonpay status due to active military service:
 + The suspension of loan payments may continue for the duration of your military service.
 + You cannot repay your civilian loan by making loan deductions from your uniformed services pay.
 + Your loan accrues interest while your payments are suspended.
-+ To continue making loan payments, send a personal check or money order along with [Form TSP-26](#), _Loan Payment Coupon_. Your payments will be taken into account when the loan is reamortized once you return to pay status.
++ Send a personal check or money order along with [Form TSP-26](#), _Loan Payment Coupon_, to continue making loan payments. Your payments will be taken into account when the loan is reamortized once you return to pay status.
 If you’re in nonpay status for reasons other than active military service:
 + The maximum period that we can suspend your loan payments is one year.
 + If your nonpay period exceeds one year, your loan will be automatically reamortized and you must make payments from your personal funds to avoid being in default.
 + Your loan accrues interest while your payments are suspended.
-+ To continue making loan payments, send a personal check or money order along with [Form TSP-26](#), _Loan Payment Coupon_. Your payments will be taken into account when the loan is reamortized once you return to pay status.
++ Send a personal check or money order along with [Form TSP-26](#), _Loan Payment Coupon_, to continue making loan payments. Your payments will be taken into account when the loan is reamortized once you return to pay status.
  
 ## Notifying the TSP of your nonpay status
 When you begin your period of nonpay status, you or your agency must submit one of the following forms to us:
