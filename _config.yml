@@ -42,3 +42,9 @@ exclude:
 collections:
   funds:
     output: true
+  forms:
+    output: true
+  publications:
+    output: true
+  newslatters:
+    output: true
