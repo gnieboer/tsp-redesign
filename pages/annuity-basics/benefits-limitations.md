@@ -14,7 +14,8 @@ permalink: /annuity-basics/benefits-limitations/
 
 # Annuity benefits and limitations
 ## Annuity types
-We offer the following annuity options, or guaranteed monthly payments, through our annuity provider:
+
+Purchasing an annuity means that you pay now to receive monthly payments that last for the rest of your life. We offer the following annuity options through our annuity provider:
 Single life annuity and a joint life annuity with your spouse or with someone other than your spouse. 
 <div class="usa-alert usa-alert-info">
 <div class="usa-alert-body" markdown="1">
