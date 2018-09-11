@@ -9,7 +9,7 @@ permalink: /making-contributions/start-change-stop-contributions/
 
 # Start, change, or stop contributions
 
-In most cases, you'll use your agency's or service's electronic payroll system to change, stop, or start your TSP contributions.
+In most cases, you'll use your agency's or service's electronic payroll system to start, change, or stop your TSP contributions.
 
 For example, civilian payroll systems include [Employee Express](https://www.employeeexpress.gov/Default.aspx){:target="\_blank"}, [myPay](https://mypay.dfas.mil/mypay.aspx){:target="\_blank"}, [LiteBlue](https://liteblue.usps.gov/wps/portal/!ut/p/z1/jY9NC4JAEIZ_SweP60zaF92kQxF9EGLaXEJhWxfWXdHV6N8ndSiir7m9M8888AJBAqTTVorUSqNT1eUDjY6zebAYjFeIW2-P6G2G4Q6j0Md1H-IbgB8mQKB__r8A9F0fA_1ClkBCmezeJtCZPxFAFT_xilduU3Xr3NqynjrooJKWZ6rhbsEfgSkjpGZGK6k5a-qyZi8nYVoH3-lzU1tInqxQFlGCjLLLOehdAUrfAgc!/dz/d5/L2dBISEvZ0FBIS9nQSEh/){:target="\_blank"}, EBIS, and [NFC EPP](https://www.nfc.usda.gov/EPPS/eplogin.aspx){:target="\_blank"}.
 
