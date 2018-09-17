@@ -3,9 +3,9 @@ permalink: /funds-lifecycle/l-income/
 layout: fund-details
 title: L Income
 sidenav: fund-options
-Fund_letter: L Income
+Fund_letter: L
 Fund_order: 7
-Fund_subtitle: Lifecycle funds
+Fund_subtitle: L income
 Fund_objective: The L Income Fund’s investment objective is to achieve a low level of growth with a high emphasis on preservation of assets. Unlike the other four L Funds, the L Income Fund's asset allocation does not change quarterly. However, like the other funds, it is rebalanced daily to maintain its target investment mix.
 questions:
   - question: Why should I invest in the L Income Fund?

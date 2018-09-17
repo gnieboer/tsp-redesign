@@ -3,7 +3,7 @@ permalink: /funds-lifecycle/l-funds/
 layout: fund-details
 title: L Funds
 sidenav: fund-options
-Fund_letter: L Funds
+Fund_letter: L
 Fund_order: 6
 Fund_subtitle: Lifecycle Funds
 Fund_objective: The L Funds’ investment objective is to strike an optimal balance between the expected risk and return associated with each fund. Any other use of the L Funds may result in a greater amount of risk in your portfolio than is necessary in order to achieve the same expected rate of return. Each quarter, the L Funds' target asset allocations change, moving towards a less risky mix of investments as the target date approaches. So if you are invested in one of the L Funds, you’ll notice that as you get closer to your target date, your allocation to the riskier TSP funds will get smaller while your allocation to the more conservative G Fund gets larger.
