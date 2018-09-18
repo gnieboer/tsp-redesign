@@ -17,4 +17,4 @@ An [interfund transfer ](#)(IFT) allows you to change the way money ALREADY in y
 
 You are allowed two IFTs in a calendar month. After that, you can only transfer money into the G Fund.
 
-You may request a contribution allocation or an IFT by visiting [Online Transactions.]You can also call the ThriftLine at 1-877-968-3778 and follow the automated prompts.
+You may request a contribution allocation or an IFT by visiting [Online Transactions.] You can also call the ThriftLine at 1-877-968-3778 and follow the automated prompts.
