@@ -22,6 +22,7 @@ When you take a TSP loan, you deplete your balance. That means you'd miss out on
  ## In this section:
 
 + Types of loans
++ Benefits and limitations
 + Applying for a loan
 + Your loan in a non-pay status
 + Repaying your loan
