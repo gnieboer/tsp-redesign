@@ -36,4 +36,4 @@ Having the option of taking an in-service withdrawal from your TSP account can b
  
  
  
-For detailed information about financial hardship withdrawal eligibility and application rules, read [In-Service Withdrawals](https://www.tsp.gov/PDF/formspubs/tspbk12.pdf).
+For detailed information about financial hardship withdrawals, visit [Types of In-Service Withdrawals](https://www.tsp.gov/PDF/formspubs/tspbk12.pdf).
