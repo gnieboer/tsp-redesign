@@ -11,7 +11,7 @@ permalink: /making-contributions/traditional-and-roth-contributions/
 
 You can choose between two tax treatments for your TSP contributions:
 
-<div class="usa-grid flex-grid">
+<div class="usa-grid-full flex-grid">
   <div class="usa-width-one-half">
   <div class="usa-alert">
   <div class="usa-alert-body" markdown="1">
