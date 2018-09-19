@@ -76,3 +76,10 @@
 #main-content {
   min-height: calc(100vh - 300px);
 }
+
+.flex-grid {
+  display: flex;
+  .usa-alert {
+    height: 100%;
+  }
+}
