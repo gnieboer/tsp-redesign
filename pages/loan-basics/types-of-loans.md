@@ -13,7 +13,7 @@ permalink: /loan-basics/types-of-loans/
 
 ---
 
-## How a TSP loan works 
+# How a TSP loan works 
 
 When you take a loan, you borrow from your TSP account. The amount of your loan cannot exceed the amount of your own contributions and earnings from those contributions. So, if you work under the Federal Employees' Retirement System (FERS), you cannot borrow from any agency contributions or earnings from those contributions.
  
@@ -23,11 +23,11 @@ For additional information, visit [Repaying your loan](repaying-your-loan.md).
 
 ## Loan types and terms
 
-#### General purpose 
+### General purpose 
 + May be used for any purpose
 + Requires no documentation
 + Has a repayment term of 1 to 5 years
-#### Residential
+### Residential
 + May only be used for the purchase or construction of a primary residence
 + Requires documentation
 + Has a repayment term of 1 to 15 years
@@ -38,7 +38,7 @@ For details, visit Residential Loan Documentation.
 
 ## Loan eligibility
 
-#### General eligibility rules
+### General eligibility rules
 
 If you have both a civilian account and a uniformed services account, the loan eligibility rules apply to the TSP account from which you intend to borrow.
  
@@ -51,7 +51,7 @@ If you have both a civilian account and a uniformed services account, the loan e
 + must not have had a taxable distribution of a loan within the past 12 months unless it was the result of your separation from federal service.
 + must not have a court order against your account.
 
-#### Residential loan eligibility rules
+### Residential loan eligibility rules
 **In addition to the general eligibility rules:**
 + You can only use a residential loan for purchasing or constructing a primary residence, which may include any of the following:
 . . + House
