@@ -29,7 +29,7 @@ To qualify for a financial hardship withdrawal, you must have a financial need f
 - Personal casualty loss(es) that you have not yet paid and that are not covered by insurance
 - Legal expenses (such as attorneys' fees and court costs) that you have not yet paid for separation or divorce from your spouse
 
-### Additional Requirements for Financial Hardship Withdrawals
+### Additional requirements for financial hardship withdrawals
  
 In addition to the eligibility rules, the following apply:
 
@@ -40,7 +40,7 @@ In addition to the eligibility rules, the following apply:
 
 When you complete your application, you will be required to certify, under penalty of perjury, that you have a genuine financial hardship.
 
-### Consequences of Financial Hardship Withdrawals
+### Consequences of financial hardship withdrawals
 
 When you make a financial hardship withdrawal, consider the following effects on your TSP account:
 
@@ -55,7 +55,7 @@ Be sure to read the Tax Notice [*Important Tax Information About Payments From Y
 
 An age-based in-service withdrawal is a one-time withdrawal that you can make from your TSP account when you’re at or after age 591/2. 
 
-### Eligibility Rules
+### Eligibility rules
 
 To qualify for an age-based in-service withdrawal, the following rules apply:
 
@@ -65,7 +65,7 @@ To qualify for an age-based in-service withdrawal, the following rules apply:
 
 We determine your age based on the date of birth reported by your employing agency or service. If that date is incorrect, you must ask your agency or service to change it.
 
-### Consequences of Age-Based Withdrawals
+### Consequences of age-based withdrawals
 
 When you make a age-based withdrawal, consider the following effects on your TSP account:
 
