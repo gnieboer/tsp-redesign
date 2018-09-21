@@ -49,7 +49,7 @@ When you make a financial hardship withdrawal, consider the following effects on
 - At the end of the 6-month period, you must make a new contribution election on [Form TSP-1](https://www.tsp.gov/PDF/formspubs/tsp-1.pdf), *Election Form* ([TSP-U-1](https://www.tsp.gov/PDF/formspubs/tsp-u-1.pdf), uniformed services) to resume your employee contributions. 
 - If you are a member of the uniformed services (whether BRS or not), when your employee contributions from basic pay stop, any contributions from incentive pay, special pay, or bonus pay will also stop.
 
-Be sure to read the Tax Notice [*Important Tax Information About Payments From Your TSP Account*](https://www.tsp.gov/PDF/formspubs/tsp-536.pdf) to learn more about the tax rules affecting your financial hardship withdrawals.
+Be sure to read the Tax Notice [*Important Tax Information About Payments From Your TSP Account*](https://www.tsp.gov/PDF/formspubs/tsp-536.pdf) to learn more about the tax rules affecting your financial hardship withdrawal.
 
 ## Age-based in-service withdrawals
 
@@ -72,5 +72,5 @@ When you make a age-based withdrawal, consider the following effects on your TSP
 - You must pay 20% federal income tax on the taxable portion of your age-based withdrawal unless you transfer or roll it over to an an IRA or an eligible employer plan. 
 - You will not be eligible to receive a partial withdrawal from the same account after you separate from service.
 
-Be sure to read the Tax Notice [*Important Tax Information About Payments From Your TSP Account*](https://www.tsp.gov/PDF/formspubs/tsp-536.pdf)  to learn more about the tax rules affecting your age-based withdrawals.
+Be sure to read the Tax Notice [*Important Tax Information About Payments From Your TSP Account*](https://www.tsp.gov/PDF/formspubs/tsp-536.pdf) to learn more about the tax rules affecting your age-based withdrawal.
 
