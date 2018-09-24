@@ -14,16 +14,16 @@ variants:
     context:
       alert:
         alert_type: error
-        heading: This is the warning heading
+        heading: Error callout box
 
   - name: Info
     context:
       alert:
         alert_type: info
-        heading: This is the info heading
+        heading: Info callout box
 
   - name: Success
     context:
       alert:
         alert_type: success
-        heading: This is the info heading
+        heading: Success callout box
