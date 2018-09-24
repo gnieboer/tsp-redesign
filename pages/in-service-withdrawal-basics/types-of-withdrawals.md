@@ -53,7 +53,7 @@ Be sure to read the Tax Notice [*Important Tax Information About Payments From Y
 
 ## Age-based in-service withdrawals
 
-An age-based in-service withdrawal is a one-time withdrawal that you can make from your TSP account when you’re at or after age 591/2. 
+An age-based in-service withdrawal is a one-time withdrawal that you can make from your TSP account when you’re at or after age 591/2. We determine your age based on the date of birth reported by your employing agency or service. If that date is incorrect, you must ask your agency or service to change it. 
 
 ### Eligibility rules
 
@@ -62,8 +62,6 @@ To qualify for an age-based in-service withdrawal, the following rules apply:
 - You can only withdraw funds in which you are vested (i.e., funds you are entitled to keep) based on your years of service.
 - The amount of your age-based withdrawals must be at least $1,000 or your entire vested account balance (even if it's less than $1,000).
 - If you have two separate TSP accounts - a civilian TSP account and a uniformed services account - you can only make an age-based withdrawal from the account associated with your active employment at the time of your withdrawal. However, if both of your accounts are associated with your active employment, you can make one age-based withdrawal from each account.
-
-We determine your age based on the date of birth reported by your employing agency or service. If that date is incorrect, you must ask your agency or service to change it.
 
 ### Consequences of age-based withdrawals
 
