@@ -49,11 +49,11 @@ When you make a financial hardship withdrawal, consider the following effects on
 - At the end of the 6-month period, you must make a new contribution election on [Form TSP-1](https://www.tsp.gov/PDF/formspubs/tsp-1.pdf), *Election Form* ([TSP-U-1](https://www.tsp.gov/PDF/formspubs/tsp-u-1.pdf), uniformed services) to resume your employee contributions. 
 - If you are a member of the uniformed services (whether BRS or not), when your employee contributions from basic pay stop, any contributions from incentive pay, special pay, or bonus pay will also stop.
 
-Be sure to read the Tax Notice [*Important Tax Information About Payments From Your TSP Account*](https://www.tsp.gov/PDF/formspubs/tsp-536.pdf) to learn more about the tax rules affecting your financial hardship withdrawals.
+Be sure to read the Tax Notice [*Important Tax Information About Payments From Your TSP Account*](https://www.tsp.gov/PDF/formspubs/tsp-536.pdf) to learn more about the tax rules affecting your financial hardship withdrawal.
 
 ## Age-based in-service withdrawals
 
-An age-based in-service withdrawal is a one-time withdrawal that you can make from your TSP account when you’re at or after age 591/2. 
+An age-based in-service withdrawal is a one-time withdrawal that you can make from your TSP account when you’re at or after age 591/2. We determine your age based on the date of birth reported by your employing agency or service. If that date is incorrect, you must ask your agency or service to change it. 
 
 ### Eligibility rules
 
@@ -63,8 +63,6 @@ To qualify for an age-based in-service withdrawal, the following rules apply:
 - The amount of your age-based withdrawals must be at least $1,000 or your entire vested account balance (even if it's less than $1,000).
 - If you have two separate TSP accounts - a civilian TSP account and a uniformed services account - you can only make an age-based withdrawal from the account associated with your active employment at the time of your withdrawal. However, if both of your accounts are associated with your active employment, you can make one age-based withdrawal from each account.
 
-We determine your age based on the date of birth reported by your employing agency or service. If that date is incorrect, you must ask your agency or service to change it.
-
 ### Consequences of age-based withdrawals
 
 When you make a age-based withdrawal, consider the following effects on your TSP account:
@@ -72,5 +70,5 @@ When you make a age-based withdrawal, consider the following effects on your TSP
 - You must pay 20% federal income tax on the taxable portion of your age-based withdrawal unless you transfer or roll it over to an an IRA or an eligible employer plan. 
 - You will not be eligible to receive a partial withdrawal from the same account after you separate from service.
 
-Be sure to read the Tax Notice [*Important Tax Information About Payments From Your TSP Account*](https://www.tsp.gov/PDF/formspubs/tsp-536.pdf)  to learn more about the tax rules affecting your age-based withdrawals.
+Be sure to read the Tax Notice [*Important Tax Information About Payments From Your TSP Account*](https://www.tsp.gov/PDF/formspubs/tsp-536.pdf) to learn more about the tax rules affecting your age-based withdrawal.
 
