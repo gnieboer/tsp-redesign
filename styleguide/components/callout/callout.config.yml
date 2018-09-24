@@ -1,0 +1,29 @@
+label: Alerts
+status: ready
+preview: '@preview'
+
+
+variants:
+  - name: default
+    context:
+      alert:
+        alert_type:
+        heading: Default callout box
+
+  - name: Error
+    context:
+      alert:
+        alert_type: error
+        heading: This is the warning heading
+
+  - name: Info
+    context:
+      alert:
+        alert_type: info
+        heading: This is the info heading
+
+  - name: Success
+    context:
+      alert:
+        alert_type: success
+        heading: This is the info heading
