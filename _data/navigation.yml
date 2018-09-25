@@ -120,8 +120,6 @@ fund-options:
   - text: Lifecycle funds
     href: /funds-lifecycle/
     subnav:
-      - text: L Funds
-        href: /funds-lifecycle/l-funds/
       - text: L Income
         href: /funds-lifecycle/l-income/
       - text: L 2020
