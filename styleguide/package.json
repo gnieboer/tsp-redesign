@@ -6,7 +6,6 @@
     "@frctl/mandelbrot": "^1.2.0"
   },
   "scripts": {
-  "start": "fractal start --sync",
   "build": "fractal build"
 }
 }
