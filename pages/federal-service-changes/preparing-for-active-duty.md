@@ -31,7 +31,7 @@ Don’t have a uniformed services account yet? You may want to establish one by 
 
 Read _[TSP Benefits That Apply to Members of the Military Who Return to Federal Civilian Service](https://www.tsp.gov/PDF/formspubs/tspfs08.pdf)_ to learn more.
 
-### TSP Loans
+### TSP loans
 
 Loan payments for your civilian account will stop because they come from payroll deductions. Also, you cannot make payments on that loan from your uniformed services pay. However, you can continue to make loan payments by sending in a personal check or money order to the TSP along with [Form TSP-26](#), _Loan Payment Coupon_.
 
