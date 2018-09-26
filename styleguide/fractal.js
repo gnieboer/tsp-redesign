@@ -39,10 +39,10 @@ const myCustomisedTheme = mandelbrot({
 
 fractal.web.theme(myCustomisedTheme); // tell Fractal to use the configured theme by default
 
+fractal.web.set('builder.dest', __dirname + '/build');
+
 const builder = fractal.web.builder();
 
 builder.build().then(function(){
     console.log(`Fractal static HTML build complete!`);
 });
-
-fractal.web.set('builder.dest', __dirname + '/build');
