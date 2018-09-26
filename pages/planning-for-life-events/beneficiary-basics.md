@@ -26,7 +26,7 @@ In the event of your death, your TSP account would be distributed this way:
 
 For most people, this is the best option, since it accounts for life changes like births, deaths, divorce, or marriage that may happen after you open your account.
 
-If you’d like to make an exception, you may complete [Form TSP-3](#), _Designation of Beneficiary_.. The easiest way to do this is to use the online “wizard,” which you’ll find by logging into [My Account](#) and selecting “Beneficiaries” on the left.   
+If you’d like to make an exception, you may complete [Form TSP-3](#), _Designation of Beneficiary_.. The easiest way to do this is to use the online “wizard,” which you’ll find by logging in here: [My Account](https://www.tsp.gov/tsp/beneficiaries.do?subaction=beneLanding&_name=bene).   
 
 Don’t remember whether you’ve submitted a Form TSP-3 or you’re not sure who you named as your beneficiaries? Look at your annual statement, check the online wizard, or call the ThriftLine at 1-877-968-3778.
 
