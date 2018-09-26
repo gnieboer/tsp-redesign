@@ -11,7 +11,7 @@ permalink: /for-beneficiaries/beneficiary-distributions/
 
 ## Payment of death benefits
  
-In order for your beneficiaries to receive your account balance after your death, they (or their representatives) must complete the [Form TSP-17], *Information Relating to Deceased Participant,* and submit it with a copy of the certified death certificate. Once we process the information and determine the beneficiaries for your account, we’ll contact them with additional information and instructions.
+In order for your beneficiaries to receive your account balance after your death, they (or their representatives) must complete the [Form TSP-17](https://www.tsp.gov/PDF/formspubs/tsp-17.pdf), *Information Relating to Deceased Participant,* and submit it with a copy of the certified death certificate. Once we process the information and determine the beneficiaries for your account, we’ll contact them with additional information and instructions.
  
 Death benefit payments made from your beneficiary participant account must be paid directly to your beneficiary(ies). These payments cannot be transferred or rolled over into an IRA or eligible employer plan. In addition, the payment will be fully taxable in the year your beneficiary(ies) receive it.
 Your beneficiaries will not owe taxes on Roth contributions, qualified earnings on Roth contributions, and tax-exempt contributions in the account.
