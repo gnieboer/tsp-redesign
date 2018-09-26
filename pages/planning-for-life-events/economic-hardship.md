@@ -22,14 +22,14 @@ Having the option of taking an in-service withdrawal from your TSP account can b
 
 ### Tax Considerations
 
-- **We’ll withhold 10% on the taxable portion of your withdrawal for federal income tax.** You have the option of increasing or waiving this withholding.
-- **The taxable portion of your withdrawal is subject to federal income tax at your ordinary rate.** Also, you may have to pay state income tax.
-- **An additional IRS early withdrawal penalty of 10% may apply** if you're under the age of 59½.
+- We’ll withhold 10% on the taxable portion of your withdrawal for federal income tax.** You have the option of increasing or waiving this withholding.
+- The taxable portion of your withdrawal is subject to federal income tax at your ordinary rate.** Also, you may have to pay state income tax.
+- An additional IRS early withdrawal penalty of 10% may apply** if you're under the age of 59½.
 
 ### Spousal Rights
 
-- **If you’re a FERS employees or a uniformed services member**, a financial hardship withdrawal requires your spouse's notarized consent.
-- **If you’re a CSRS employee**, a financial hardship withdrawal requires spouse notification.
+- If you’re a FERS employees or a uniformed services member**, a financial hardship withdrawal requires your spouse's notarized consent.
+- If you’re a CSRS employee**, a financial hardship withdrawal requires spouse notification.
 
 For detailed information about financial hardship withdrawal eligibility and application rules, read *[In-Service Withdrawals](javascript:void(0))*.
 
