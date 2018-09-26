@@ -9,7 +9,7 @@ jobs:
       - run: bundle install
       - run: bundle exec jekyll build
       - run: sudo npm i -g @frctl/fractal
-      - run: (cd styleguide && fractal build)
+      - run: (cd styleguide && npm install && fractal build)
       - run: sudo apt install python-pip python-dev
       - run: sudo pip install awscli
       - deploy:
