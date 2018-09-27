@@ -1,7 +1,7 @@
 ---
 layout: page
 
-title: Benefits and limitations
+title: Loan types and terms
 
 styles:
 
@@ -9,20 +9,13 @@ sidenav: loan-basics
 
 scripts:
 
-permalink: /loan-basics/benefits-and-limitations/
+permalink: /loan-basics/loan-types-and-terms/
 ---
 
-# Benefits and limitations
+# Loan types and terms
 
 Before taking out a loan, you should carefully consider its potential effect on your retirement income.
 
-## Borrowing limits
-
-### Minimum loan amount
-The minimum loan amount that you can borrow is $1,000. The amount of your account balance that consists of your own contributions and earnings on those contributions, must be at least equal to the minimum loan amount. 
-
-### Maximum loan amount
-The maximum loan amount that you can borrow is the smallest of the following:
 
 ## How a TSP loan works
 When you take a loan, you borrow from your contributions to your TSP account. Your loan amount can’t exceed the amount of your own contributions and earnings from those contributions. Also, you cannot borrow from contributions or earnings you get from your agency or service.
