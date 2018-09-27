@@ -38,6 +38,10 @@ exclude:
   - package-lock.json
   - package.json
   - vendor
+  - styleguide
+
+keep_files:
+  - styleguide
 
 collections:
   funds:

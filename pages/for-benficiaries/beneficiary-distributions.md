@@ -9,13 +9,18 @@ permalink: /for-beneficiaries/beneficiary-distributions/
 
 # Beneficiary distributions
 
-If you have an existing TSP account from your own employment with the federal government or the uniformed services, you can move your beneficiary participant account (BPS) into your existing TSP account by completing Form TSP-90, Withdrawal Request for Beneficiary Participants. The money you move will be treated as an employee contribution, but it will not be subject to the Internal Revenue Code (IRC) annual elective deferral limit. (See the instructions on Form TSP-90 for more information on combining accounts.)
+## Payment of death benefits
+ 
+In order for your beneficiaries to receive your account balance after your death, they (or their representatives) must complete the [Form TSP-17](https://www.tsp.gov/PDF/formspubs/tsp-17.pdf), *Information Relating to Deceased Participant,* and submit it with a copy of the certified death certificate. Once we process the information and determine the beneficiaries for your account, we’ll contact them with additional information and instructions.
+ 
+Death benefit payments made from your beneficiary participant account must be paid directly to your beneficiary(ies). These payments cannot be transferred or rolled over into an IRA or eligible employer plan. In addition, the payment will be fully taxable in the year your beneficiary(ies) receive it.
+Your beneficiaries will not owe taxes on Roth contributions, qualified earnings on Roth contributions, and tax-exempt contributions in the account.
 
-In general, once you combine your BPA with your existing TSP account, your BPA money will be subject to the rules that govern the account to which it was moved.
-If both accounts contain Roth contributions, the Roth Initiation Date that will apply to your combined account is the earlier of the two. If only one of the accounts contains Roth money, the Roth Initiation Date associated with that account becomes the date for your combined account.
+## Receiving distributions
 
-If you have Roth money in your BPA, the earnings on that money qualify to be paid tax-free if 5 years have passed since January 1 of the calendar year when the first Roth contribution was made. But once you move your beneficiary participant account to your own account, the following rule also applies in order for your Roth earnings to qualify for tax-free withdrawal: You must be 59½, permanently disabled, or deceased.
-
-If your BPA resulted from a uniformed services TSP account and the account contains tax-exempt money from combat pay, those funds cannot be transferred into your civilian TSP account. In this case, the tax-exempt funds will be distributed directly to you. Check your quarterly or annual statements to see whether your BPA account contains tax-exempt money.
-
-**Note:** You cannot move an existing TSP account into your beneficiary participant account. And if you have more than one beneficiary participant account, you cannot combine them. Also, if you have an IRA or other retirement plan, you will not be able to transfer or roll over those funds into your beneficiary participant account.
+For more detailed information about the rules associated with death benefit payments, read *[Important Tax Information About Thrift Savings Plan Death Benefit Payments](https://www.tsp.gov/PDF/formspubs/tsp-583.pdf).* You may also want to consult a tax advisor.
+ 
+ 
+The Internal Revenue Code (IRC) requires that you begin receiving distributions from your beneficiary participant account based on your life expectancy. The rules for when you must take Required Minimum Distributions depend in part on the deceased participant’s age on the date of his or her death. 
+ 
+Because the rules are complex, more specific information about the IRS required minimum distribution rules can be found in the tax notice *[Tax Information About TSP Withdrawals and Required Minimum Distributions for Beneficiary Participants](https://www.tsp.gov/PDF/formspubs/tsp-776.pdf).*
