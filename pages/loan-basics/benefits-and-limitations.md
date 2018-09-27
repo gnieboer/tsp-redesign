@@ -18,13 +18,13 @@ Before taking out a loan, you should carefully consider its potential effect on 
 
 ## Borrowing limits
 
-#### Minimum loan amount
+### Minimum loan amount
 The minimum loan amount that you can borrow is $1,000. The amount of your account balance that consists of your own contributions and earnings on those contributions, must be at least equal to the minimum loan amount. 
 
-#### Maximum loan amount
+### Maximum loan amount
 The maximum loan amount that you can borrow is the smallest of the following:
 
-# How a TSP loan works
+## How a TSP loan works
 When you take a loan, you borrow from your contributions to your TSP account. Your loan amount can’t exceed the amount of your own contributions and earnings from those contributions. Also, you cannot borrow from contributions or earnings you get from your agency or service.
  
 If you meet the loan eligibility rules and your loan request is approved, the loan amount is removed from your TSP account. You must repay your loan with interest. Generally, loans are repaid through payroll deductions. Your repayments restore the amount of your loan, plus interest, to your account. For additional information, visit [Repaying your loan](repaying-your-loan.md).
@@ -42,7 +42,7 @@ For details, visit [Residential Loan Documentation](#).
 
 ![alert](tsp-redesign/assets/img/alert-circle.svg "alert circle") Your loan payments must start within 60 days of your loan being disbursed.
 
-## Loan eligibility
+### Loan eligibility
  
 **To be eligible for a loan, you:**
 + must be an active federal employee or a member of the uniformed services.
@@ -91,17 +91,17 @@ TSP account balances are recalculated at the end of each business day based on d
 
 TSP account balances are recalculated at the end of each business day based on daily share prices. As a result, the maximum loan amount may change on a daily basis.
 
-_To find out more about the maximum amount available for a loan, use the calculator, [ _Estimate Loan Payments_](#) , or contact us._
+To find out more about the maximum amount available for a loan, use the calculator, [ _Estimate Loan Payments_](#) , or contact us.
 
 ## Loan costs
 
 ### Direct costs
 
-_**Loan Fee**_ We charge a loan fee of $50 for administrative expenses. This fee is deducted from your loan proceeds. For example, if you request a loan for $1,000, the amount paid to you will be $950.
+**Loan Fee** We charge a loan fee of $50 for administrative expenses. This fee is deducted from your loan proceeds. For example, if you request a loan for $1,000, the amount paid to you will be $950.
  
-_**Interest**_ The interest rate on your loan is the G Fund rate at the time your loan application is processed. This rate is fixed for the life of the loan. Although loan interest is not tax-deductible, all of the interest goes back into your TSP account.
+**Interest** The interest rate on your loan is the G Fund rate at the time your loan application is processed. This rate is fixed for the life of the loan. Although loan interest is not tax-deductible, all of the interest goes back into your TSP account.
 
-#### Indirect costs
+### Indirect costs
 
 When you take a loan, you sacrifice the earnings that might have accrued on the borrowed money, had it remained in your TSP account.
  
