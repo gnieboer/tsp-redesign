@@ -19,7 +19,7 @@ permalink: /planning-for-life-events/beneficiary-basics/
 In the event of your death, your TSP account would be distributed this way:
 
 1. To your spouse
-2. If none, to your child or children equally, with the share due any deceased child divided equally among that child’s descendants
+2. If none, to your child or children equally, with the share for any deceased child divided equally among that child’s descendants
 3. If none, to your parents equally or to your surviving parent
 4. If none, to the appointed executor or administrator of your estate
 5. If none, to your next of kin who is entitled to your estate under the laws of the state you lived in at the time of your death
