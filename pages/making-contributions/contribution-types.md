@@ -15,7 +15,7 @@ Each pay period, your agency or service will deduct your contribution from your 
 
 Your agency or service will continue to deduct your contribution until you do the following:
 
-<div class="usa-grid contribution-type">
+<div class="usa-grid-full contribution-type">
 <div class="usa-width-one-half" markdown="1">
 <img src="{{ site.baseurl }}/assets/img/icons/plus-circle-green.svg" alt="">
 Make a new election  
@@ -28,7 +28,7 @@ your contributions
 </div>
 </div>
 
-<div class="usa-grid contribution-type">
+<div class="usa-grid-full contribution-type">
 <div class="usa-width-one-half" markdown="1">
 <img src="{{ site.baseurl }}/assets/img/icons/arrow-up-circle.svg" alt="">
 Reach the IRS  

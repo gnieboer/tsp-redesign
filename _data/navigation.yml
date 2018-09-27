@@ -40,8 +40,8 @@ primary:
       href: /annuity-basics/
   - text: Manage life changes
     links:
-    - text: Estate planning
-      href: /estate-planning/
+    - text: Planning for life events
+      href: /planning-for-life-events/
     - text: Federal service changes
       href: /federal-service-changes/
 
@@ -120,8 +120,6 @@ fund-options:
   - text: Lifecycle funds
     href: /funds-lifecycle/
     subnav:
-      - text: L Funds
-        href: /funds-lifecycle/l-funds/
       - text: L Income
         href: /funds-lifecycle/l-income/
       - text: L 2020
@@ -185,30 +183,30 @@ savings:
         href: #
 
 manage-life-changes:
-  - text: Estate planning
-    href: /estate-planning/
+  - text: Planning for life events
+    href: /planning-for-life-events/
     subnav:
       - text: Beneficiary basics
-        href: /estate-planning/beneficiary-basics/
+        href: /planning-for-life-events/beneficiary-basics/
       - text: Changes in your family status
-        href: #
+        href: /planning-for-life-events/changes-in-your-family-status/
       - text: Economic hardship
-        href: #
+        href: /planning-for-life-events/economic-hardship/
       - text: Power of attorney
-        href: #
-      - text: Court Appointments
-        href: #
+        href: /planning-for-life-events/power-of-attorney/
+      - text: Court appointments
+        href: /planning-for-life-events/court-appointments/
   - text: Federal service changes
     href: /federal-service-changes/
     subnav:
       - text: Leaving federal service
         href: /federal-service-changes/leaving-federal-service/
       - text: Returning to federal service
-        href: #
+        href: /federal-service-changes/returning-to-federal-service/
       - text: Entering a non-pay status
         href: /federal-service-changes/entering-nonpay-status/
       - text: Preparing for active duty
-        href: #
+        href: /federal-service-changes/preparing-for-active-duty/
 
 privacy:
   - text: FRTIB Privacy Division

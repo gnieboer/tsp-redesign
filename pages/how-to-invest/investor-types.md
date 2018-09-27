@@ -9,7 +9,7 @@ permalink: /how-to-invest/investor-types/
 
 # Investor types
 
-There’s always risk associated with investing. Don’t let the risks associated with investing prevent you from developing and maintaining an investment strategy through each phase of your working years.
+There’s always risk associated with investing. But don’t let the risks prevent you from developing and maintaining an investment strategy through each phase of your working years.
 
 ## Early career
 
@@ -21,9 +21,9 @@ Also, by spreading your investments across the different funds, you become less 
 
 
 ## Mid-career
-If you haven't started saving for retirement, it's not too late—start contributing now. And if you've been saving steadily, you'll definitely want to stay on track.
+If you haven't started saving for retirement already, it's not too late—start contributing now. And if you've been saving steadily, you will definitely want to stay on track.
 
-At this stage of your career, your time horizon is shorter than when you first started working. This might be the right time to revisit your asset allocation and determine if you need to scale back the amount of risk you’re taking in your TSP account. That is, if you are heavily invested in the TSP stock funds or solely invested in the G Fund, you'll want to be sure that your allocation is appropriate, given other retirement resources you may have.
+At this stage of your career, your time horizon is shorter than when you first started working. This might be the right time to revisit your asset allocation and determine if you need to scale back the amount of risk you’re taking in your TSP account. That is, if you're heavily invested in the TSP stock funds or solely invested in the G Fund, you'll want to be sure that your allocation is appropriate, given other retirement resources you may have.
 
 
 ## Nearing retirement

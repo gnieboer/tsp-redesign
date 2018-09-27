@@ -29,6 +29,7 @@ If you have both a traditional balance and a Roth balance in your account, the $
 ## Step three
 After we receive all of the information and documentation necessary to purchase your annuity, it may take up to several weeks to process your request and disburse your funds.
 Your annuity will be purchased from our annuity provider. The annuity provider is competitively chosen by the [Federal Retirement Thrift Investment Board](frtib.gov), the agency that administers the TSP.
+
 <div class="usa-alert usa-alert-info">
 <div class="usa-alert-body" markdown="1">
 Once the funds have been disbursed, you cannot cancel your annuity, change your annuity option, or change your joint annuitant.
@@ -36,8 +37,11 @@ Once the funds have been disbursed, you cannot cancel your annuity, change your 
 {: .usa-alert-text}
 </div>
 </div>
+
 ## Step four
+
 Once the money has left your account, you should direct all communications concerning your annuity to the annuity provider. The provider will send you a package of information and an annuity contract. Your monthly annuity payments will begin approximately one month after the annuity is purchased.
+
 <div class="usa-alert usa-alert-info">
 <div class="usa-alert-body" markdown="1">
 Use our [Retirement Income Calculator](#) to see whether receiving monthly income is right for you by comparing the available options and features that might meet your needs.
