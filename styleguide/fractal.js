@@ -30,7 +30,7 @@ fractal.docs.set('path', path.join(__dirname, 'docs'));
  */
 fractal.web.set('static.path', path.join(__dirname, 'public'));
 
-fractal.web.set('builder.dest', '/styleguide/build');
+fractal.web.set('builder.dest', __dirname + '/styleguide');
 
 const builder = fractal.web.builder();
 
