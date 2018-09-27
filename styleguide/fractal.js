@@ -30,10 +30,6 @@ fractal.docs.set('path', path.join(__dirname, 'docs'));
  */
 fractal.web.set('static.path', path.join(__dirname, 'public'));
 
-const myCustomisedTheme = mandelbrot({
-    // any other theme configuration values here
-    panels: ["html", "view", "notes"]
-});
 
 fractal.web.theme(myCustomisedTheme); // tell Fractal to use the configured theme by default
 
