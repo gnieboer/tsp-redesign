@@ -5,7 +5,7 @@ title: Repaying your loan
 
 styles:
 
-sidenav: loan-basics
+sidenav: savings
 
 scripts:
 
