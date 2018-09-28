@@ -1,19 +1,17 @@
 ---
 layout: page
 
-title: Annuity benefits and limitations
-
+title: Annuity types and terms
 styles:
 
 sidenav: savings
 
 scripts:
 
-permalink: /annuity-basics/benefits-limitations/
+permalink: /annuity-basics/types-and-terms/
 ---
 
-# Annuity benefits and limitations
-## Annuity types
+# Annuity types and terms
 
 Purchasing an annuity means that you pay now to receive monthly payments that last for the rest of your life. We offer the following annuity options through our annuity provider:
 
@@ -26,10 +24,10 @@ The TSP annuity is not the same as the annuity you receive as part of your CSRS 
 </div>
 </div>
 
-### Single life annuity
+## Single life annuity
 A single life annuity provides a monthly amount only to you for as long as you live. It stops paying after your death.
 
-### Joint life annuity
+## Joint life annuity
 A joint life annuity provides a monthly amount to you while you and the person with whom you choose to share your annuity (your "joint annuitant") are alive. When either you or your joint annuitant dies, the annuity will continue to pay monthly benefits to the survivor for the rest of his or her life.
 
 In most cases, participants choose their spouse as the joint annuitant. If you choose someone other than your spouse as your joint annuitant, he or she must be either a former spouse or someone with an insurable interest. This means that the person is financially dependent on you and could reasonably expect to benefit financially from your continued life. Blood relatives or adopted relatives (but not relatives by marriage) who are closer than first cousins are presumed to have an insurable interest in you.
@@ -44,7 +42,7 @@ The amount of the monthly payment to the survivor - whether the survivor is you 
 
 If you name a joint annuitant other than your spouse who is more than 10 years younger than you, you must choose a joint life annuity with the 50% survivor benefit.
 
-For more information about joint annuitants, refer to the Annuities section of the booklet [_Withdrawing Your TSP Account After Leaving Federal Service_](#). 
+For more information about joint annuitants, refer to the Annuities section of the booklet _[Withdrawing Your TSP Account After Leaving Federal Service](https://www.tsp.gov/PDF/formspubs/tspbk02.pdf)._
 
 ## Annuity payment options
 Once you’ve chosen either a single life or a joint life annuity, you must decide whether you want to receive level or increasing payments. Review these carefully to select the options and features that best suit your needs.
