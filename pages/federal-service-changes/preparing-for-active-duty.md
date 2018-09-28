@@ -26,7 +26,7 @@ Don’t have a uniformed services account yet? You may want to establish one by 
  
 Read *[TSP Benefits That Apply to Members of the Military Who Return to Federal Civilian Service](https://www.tsp.gov/PDF/formspubs/tspfs08.pdf)* to learn more.
  
-### TSP Loans
+### TSP loans
  
 Loan payments for your civilian account will stop because they come from payroll deductions. Also, you cannot make payments on that loan from your uniformed services pay. However, you can continue to make loan payments by sending in a personal check or money order to the TSP along with [Form TSP-26](https://www.tsp.gov/PDF/formspubs/tsp-26.html), _Loan Payment Coupon_.
 
@@ -41,16 +41,16 @@ Confirm how much you have contributed to your employer's defined contribution pl
 ### Remember the basics
 
 + Make sure we have your current mailing address. If necessary, ask your agency and/or your service to correct or change your mailing address for your TSP account.
-+ Be sure you have your TSP account number (or user ID), your web password, and ThriftLine PIN. If you have lost or forgotten these numbers
++ Be sure you have your TSP account number (or user ID), web password, and ThriftLine PIN. If you have lost or forgotten these numbers, you may request your account number be mailed to you.
 + Acquaint yourself with TSP [contribution limits](/making-contributions/contribution-limits/).
 
-### Giving a power of attorney
+### Give a power of attorney
 
 Before you go on active duty, you can designate a power of attorney—an individual to serve as your agent in any business with the TSP. Your agent can be given very specific powers or unlimited power to act on your behalf. Use the *[Special Power of Attorney](https://www.tsp.gov/PDF/formspubs/oc01-10.pdf)* form to designate a power of attorney.
  
 ### Review beneficiaries
  
-If you’d like your TSP account paid out in the statutory order of precedence in the event of your death, it is **not** necessary to designate beneficiaries. 
+If you’d like your TSP account paid out in the [statutory order of precedence](/planning-for-life-events/beneficiary-basics/) in the event of your death, it is **not** necessary to designate beneficiaries. 
 
 If you have designated beneficiaries on file with us, review, update, or change information, if necessary. We do not accept any other types of designations (such as wills).
 <!-- CONTENT END -->
