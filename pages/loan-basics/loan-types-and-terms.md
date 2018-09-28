@@ -5,7 +5,7 @@ title: Loan types and terms
 
 styles:
 
-sidenav: loan-basics
+sidenav: savings
 
 scripts:
 
