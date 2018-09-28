@@ -15,7 +15,7 @@ permalink: /annuity-basics/purchase-an-annuity/
 # Purchase an annuity
  
 ## Step one
-Before completing the necessary forms to purchase your annuity, you should read the booklet, **[Withdrawing Your TSP Account After Leaving Federal Service](https://www.tsp.gov/PDF/formspubs/tspbk02.pdf).** **Once your request has been processed and your balance is removed from your account, you cannot cancel the annuity.**
+Before completing the necessary forms to purchase your annuity, you should read the booklet, *[Withdrawing Your TSP Account After Leaving Federal Service](https://www.tsp.gov/PDF/formspubs/tspbk02.pdf).* **Once your request has been processed and your balance is removed from your account, you cannot cancel the annuity.**
 ## Step two
 If you've determined that an annuity is appropriate for your needs, complete [Form TSP-70](#), _Request for Full Withdrawal_. Be sure to read the form and instructions carefully as they outline specific requirements you must meet in order to avoid any unnecessary delays in processing. Remember that there is a $3,500 minimum amount required to purchase an annuity. If you're using only a portion of your account for an annuity, the percentage of your account that you choose when requesting it must equal $3,500 or more of your vested account balance.
 <div class="usa-alert usa-alert-info">
