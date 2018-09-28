@@ -12,7 +12,7 @@ scripts:
 permalink: /annuity-basics/purchase-an-annuity/
 ---
 
-# Start an annuity
+# Purchase an annuity
  
 ## Step one
 Before completing the necessary forms to purchase your annuity, you should read the booklet, [Withdrawing Your TSP Account After Leaving Federal Service](#). **Once your request has been processed and your balance is removed from your account, you cannot cancel the annuity.**
