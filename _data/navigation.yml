@@ -153,7 +153,7 @@ savings:
       - text: Your loan in a non-pay status
         href: #
       - text: Repaying your loan
-        href: #
+        href: /loan-basics/repaying-your-loan/
   - text: In-service withdrawal basics
     href: /in-service-withdrawal-basics/
     subnav:
