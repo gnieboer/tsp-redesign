@@ -145,19 +145,17 @@ savings:
     href: /loan-basics/
     subnav:
       - text: Loan types and terms
-        href: #
+        href: /loan-basics/loan-types-and-terms/
       - text: Applying for a loan
-        href: #
-      - text: Your loan in a non-pay status
-        href: #
+        href: /loan-basics/applying-for-a-loan/
+      - text: Your loan in a nonpay status
+        href: /loan-basics/your-loan-in-nonpay-status/
       - text: Repaying your loan
         href: /loan-basics/repaying-your-loan/
   - text: In-service withdrawal basics
     href: /in-service-withdrawal-basics/
     subnav:
-      - text: Cost benefit analysis
-        href: #
-      - text: Types of in-service withdrawals
+      - text: In-service withdrawal types and terms
         href: #
       - text: Making an in-service withdrawal
         href: #
