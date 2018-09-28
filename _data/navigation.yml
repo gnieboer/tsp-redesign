@@ -161,7 +161,7 @@ savings:
         href: #
       - text: Making an in-service withdrawal
         href: #
-      - text: Alternatives to Withdrawals
+      - text: Alternatives to withdrawals
         href: #
   - text: Living in retirement
     href: /living-in-retirement/
@@ -175,10 +175,10 @@ savings:
   - text: Annuity basics
     href: /annuity-basics/
     subnav:
-      - text: Cost benefit analysis
-        href: #
-      - text: Start an annuity
-        href: #
+      - text: Annuity types and terms
+        href: /annuity-basics/annuity-types-and-terms/
+      - text: Purchase an annuity
+        href: /annuity-basics/purchase-an-annuity/
 
 manage-life-changes:
   - text: Planning for life events
