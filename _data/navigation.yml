@@ -144,11 +144,9 @@ savings:
   - text: Loan basics
     href: /loan-basics/
     subnav:
-      - text: Cost benefit analysis
+      - text: Loan types and terms
         href: #
       - text: Applying for a loan
-        href: #
-      - text: Loan application wizard
         href: #
       - text: Your loan in a non-pay status
         href: #
