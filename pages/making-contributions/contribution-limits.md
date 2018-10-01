@@ -11,12 +11,12 @@ permalink: /making-contributions/contribution-limits/
 
 Each year, the Internal Revenue Service (IRS) determines the limit of contributions, also called elective deferrals, you can make to your TSP account. Below are the **2018** IRC limits and additional information to keep you informed.
 
-**Select an option and take a look.** 
+**Select an option and take a look.**
 
 <ul class="usa-accordion usa-tabs contribution-limits">
   <li>
     <button class="usa-accordion-button"
-      aria-expanded="true"
+      aria-expanded="false"
       aria-controls="a1">
       <span>$6,000</span>
       Catch-up<br>contributions
@@ -28,14 +28,14 @@ Each year, the Internal Revenue Service (IRS) determines the limit of contributi
             <th scope="row">What it means</th>
             <td markdown="1">
 ## Age 50 and over
-Beginning in the year you turn 50, you have the opportunity to **make additional contributions above the IRS' elective deferral limit.** These "catch-up contributions" provide a chance to put away extra money for retirement, even if you're not behind.
+Beginning in the year you turn 50&frac12;, you have the opportunity to **make additional contributions above the IRS' elective deferral limit.** These "catch-up contributions" provide a chance to put away extra money for retirement, even if you're not behind.
 </td>
           </tr>
           <tr>
             <th scope="row">What to know</th>
             <td markdown="1">
-Catch-up contributions are made on top of your regular employee contributions; however, they do not receive any matching. In order to be eligible to make these special contributions, you must be on track to meet the maximum elective deferral limit. 
-              
+Catch-up contributions are made on top of your regular employee contributions; however, they do not receive any matching. In order to be eligible to make these special contributions, you must be on track to meet the maximum elective deferral limit.
+
 <div class="usa-alert usa-alert-info">
 <div class="usa-alert-body">
 You must make a new catch-up contribution election each calendar year--they do not restart automatically.
@@ -57,7 +57,7 @@ You’ll thank yourself later.
     </div>
   </li><li>
     <button class="usa-accordion-button"
-      aria-expanded="false"
+      aria-expanded="true"
       aria-controls="a2">
       <span>$18,500</span>
       Annual<br>Elective Deferral
@@ -68,7 +68,7 @@ You’ll thank yourself later.
           <tr>
             <th scope="row">What it means</th>
             <td markdown="1">
-## Age 49 and under
+## All ages
 This limit applies to the **combined total of traditional and Roth contributions.** For uniformed services members, this does not apply to traditional contributions from combat-zone pay.
 </td>
 
@@ -106,14 +106,14 @@ If you're not maxing out your contributions, consider increasing your contributi
             <th scope="row">What it means</th>
             <td markdown="1">
 ## All Ages
-The annual addition limit is the **total amount of all the contributions you make in a calendar year.** This limit is per employer and includes money from all sources: employee contributions (tax-deferred, after-tax, and tax-exempt), Agency/Service Automatic (1%) Contributions, and Agency/Service Matching Contributions. 
+The annual addition limit is the **total amount of all the contributions you make in a calendar year.** This limit is per employer and includes money from all sources: employee contributions (tax-deferred, after-tax, and tax-exempt), Agency/Service Automatic (1%) Contributions, and Agency/Service Matching Contributions.
 </td>
 
           </tr>
           <tr>
             <th scope="row">What to know</th>
             <td markdown="1">
-The annual addition limit affects mostly members of the uniformed services who can exceed the annual elective deferral limit. The excess contributions go into the traditional portion of your account from tax-exempt pay earned in a combat zone. 
+The annual addition limit affects mostly members of the uniformed services who can exceed the annual elective deferral limit. The excess contributions go into the traditional portion of your account from tax-exempt pay earned in a combat zone.
 
   </td>
           </tr>
@@ -121,7 +121,7 @@ The annual addition limit affects mostly members of the uniformed services who c
             <th scope="row">What to do</th>
             <td markdown="1">
 Even if you don't reach the annual addition limit, keep it in mind when deciding how much you'll contribute to your TSP account to avoid penalties.
-              
+
   </td>
           </tr>
         </tbody>
