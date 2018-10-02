@@ -9,7 +9,7 @@ permalink: /making-contributions/contribution-limits/
 
 # Know your limits
 
-Each year, the Internal Revenue Service (IRS) determines the limit of contributions, also called elective deferrals, you can make to your TSP account. Below are the **2018** IRC limits and additional information to keep you informed.
+Each year, the Internal Revenue Service (IRS) determines the limit of contributions, also called elective deferrals, you can make to your TSP account. Below are the **2018** IRS limits and additional information to keep you informed.
 
 **Select an option and take a look.**
 
@@ -28,17 +28,17 @@ Each year, the Internal Revenue Service (IRS) determines the limit of contributi
             <th scope="row">What it means</th>
             <td markdown="1">
 ## Age 50 and over
-Beginning in the year you turn 50&frac12;, you have the opportunity to **make additional contributions above the IRS' elective deferral limit.** These "catch-up contributions" provide a chance to put away extra money for retirement, even if you're not behind.
+At any time beginning in the year you turn 50, you have the opportunity to **make additional contributions above the IRS' elective deferral limit.** These "catch-up contributions" provide a chance to put away extra money for retirement, even if you're not behind.
 </td>
           </tr>
           <tr>
             <th scope="row">What to know</th>
             <td markdown="1">
-Catch-up contributions are made on top of your regular employee contributions; however, they do not receive any matching. In order to be eligible to make these special contributions, you must be on track to meet the maximum elective deferral limit.
+Catch-up contributions are made on top of your regular employee contributions; however, they do not receive any matching. To be eligible to make these special contributions, you must be on track to meet the IRS elective deferral limit.
 
 <div class="usa-alert usa-alert-info">
 <div class="usa-alert-body">
-You must make a new catch-up contribution election each calendar year--they do not restart automatically.
+You must make a new catch-up contribution election each calendar year—they do not restart automatically.
 </div>
 </div>
 </td>
