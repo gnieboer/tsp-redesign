@@ -9,7 +9,7 @@ sidenav: savings
 
 scripts:
 
-permalink: /in-service-withdrawal-basics/alternatives/
+permalink: /in-service-withdrawal-basics/alternatives-to-withdrawals/
 ---
 
 # Alternatives to withdrawals
@@ -23,7 +23,7 @@ You should consider the consequences before taking a TSP loan or making an in-se
 |  |   |- With financial hardship withdrawal, no employee contributions for 6 months (and no matching contributions, if you're a FERS or BRS participant); uniformed services members cannot contribute from incentive, special, or bonus pay  |
 |**Effect on Taxes** |-None (unless loan is not paid back and we report a taxable distribution*) |- Immediate tax liability (unless age-based withdrawal is transferred to an IRA or eligible employer plan) |
 |   |   |- Possible additional 10% early withdrawal penalty tax |
-|**Effect on Earnings** |-No earnings on amount of loan until funds are repaid |- No earnings on amount withdrawn | 
+|**Effect on Earnings** |-No earnings on amount of loan until funds are repaid |- No earnings on amount withdrawn |
  |   |   |- With financial hardship withdrawal, no new contributions to accrue earnings for 6 months
 |**Effect on Matching Contributions (FERS and BRS Only)** |- None |-With financial hardship withdrawal, no matching contributions while employee contributions are suspended  |
 
