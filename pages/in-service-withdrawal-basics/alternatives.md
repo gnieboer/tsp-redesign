@@ -20,7 +20,7 @@ You should consider the consequences before taking a TSP loan or making an in-se
 |:-:|:-:|:-:|
 |**Cost to Participant**  |- $50 loan fee |- Retirement savings permanently reduced by amount of withdrawal |
 |  |- No earnings on any outstanding loan amount |- No future earnings on amount withdrawn |
-|  |   |- With financial hardship withdrawal, no employee contributions for 6 months (and no matching contributions, if you are a FERS or BRS participant); members of the uniformed services cannot contribute from incentive, special, or bonus pay  |
+|  |   |- With financial hardship withdrawal, no employee contributions for 6 months (and no matching contributions, if you're a FERS or BRS participant); uniformed services members cannot contribute from incentive, special, or bonus pay  |
 |**Effect on Taxes** |-None (unless loan is not paid back and we report a taxable distribution*) |- Immediate tax liability (unless age-based withdrawal is transferred to an IRA or eligible employer plan) |
 |   |   |- Possible additional 10% early withdrawal penalty tax |
 |**Effect on Earnings** |-No earnings on amount of loan until funds are repaid |- No earnings on amount withdrawn | 
