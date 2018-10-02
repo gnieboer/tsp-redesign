@@ -1,11 +1,24 @@
 .fund-details {
 
-
+.as-of-date {
+  color: #999;
+  font-size: 1.5rem;
+}
 .fund-details-header {
   border-bottom: 2px solid #B5B3B3;
   padding-bottom: 3rem;
+  h1 {
+    margin-bottom: 0;
+    font-size: 5rem;
+    line-height: 5rem;
+  }
   .compare-funds-button {
     float:right;
+  }
+  .fund-subtitle {
+    font-size: 2.5rem;
+    margin-top: 0;
+    width: 25ch;
   }
 }
 .fund-questions {
@@ -24,13 +37,16 @@
   }
 }
 
+
 .fund-objective {
   font-size: 2rem;
   padding: 3rem;
   background-color: $color-primary-alt-darkest;
   color: $color-white;
 }
-
+h2, h3, h4, h5, h6 {
+  font-family: $font-sans;
+}
 .avg-annual-returns {
   width: 100%;
   border-bottom: 2px solid $color-gray-lightest;
@@ -58,7 +74,11 @@
 
 .usa-tabs {
   width: auto;
-  li {
+  h2, h3, h4  {
+    font-family: $font-sans;
+    font-weight: $font-normal;
+  }
+  > li {
     display:inline;
     width: auto;
     background-color: transparent;
@@ -79,9 +99,10 @@
       background-color: $color-white;
       color: $color-base;
       font-weight: $font-bold;
+      line-height: 3rem;
       &:after {
         content: '';
-        border-bottom: 4px solid $color-gold;
+        border-bottom: 4px solid $color-primary-alt;
         display: block;
       }
     }
@@ -91,10 +112,36 @@
     clear:both;
     width: 100%;
     border-top: none;
+    background-color: $color-gray-lightest;
+    .usa-grid-full {
+      display: flex;
+      > div {
+        background-color: $color-white;
+        padding: 2rem;
+      }
+    }
     &[aria-hidden="false"] {
-      background-color: #fff;
-      margin-top: -2px;
+      background-color: $color-gray-lightest;
+
     }
   }
 }
+}
+
+.fund-summary-top-ten {
+  ol {
+    list-style: none;
+    padding: 0;
+  }
+  .holdings-abbr {
+    color: $color-primary;
+    font-weight: 800;
+    display: inline-block;
+    margin-right: 2rem;
+    width: 4rem;
+  }
+  li {
+    border-bottom: 1px solid #dfdfdf;
+    padding: .25rem 0 1rem;
+  }
 }

@@ -15,7 +15,9 @@
   position: sticky;
   top: 0;
 }
-
+.nobr {
+  white-space: nowrap;
+}
 .blue-medium {
   background-color: #116C97;
 }
@@ -58,5 +60,26 @@
     font-family: $font-sans;
     font-weight: 400;
     font-size: 2.5rem;
+  }
+}
+
+#footnotes {
+  ol {
+    padding-left: 20px;
+    max-width: inherit;
+  }
+  margin-top: 50px;
+  border-top: 1px solid silver;
+  font-size: 0.8em;
+}
+
+#main-content {
+  min-height: calc(100vh - 300px);
+}
+
+.flex-grid {
+  display: flex;
+  .usa-alert {
+    height: 100%;
   }
 }

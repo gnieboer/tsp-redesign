@@ -9,8 +9,8 @@ permalink: /contact/
 <!-- ROW 1 -->
 <div class="usa-grid-full usa-layout-docs-main_content">
   <div class="usa-width-one-half" markdown="1">
-![alt text]({{ site.baseurl }}/assets/img/icons/contact_phone.svg)
-**Thriftline:** 1-877-968-3778  
+![alt text]({{ site.baseurl }}/assets/img/icons/smartphone.svg)
+**ThriftLine:** 1-877-968-3778 (toll free)
 (M - F) 7:00 a.m. to 9:00 p.m., eastern time
 
 **International:**
@@ -20,7 +20,7 @@ permalink: /contact/
 1-877-847-4385 (for the hearing-impaired)
   </div>
   <div class="usa-width-one-half" markdown="1">
-![alt text]({{ site.baseurl }}/assets/img/icons/contact_secure.svg)
+![alt text]({{ site.baseurl }}/assets/img/icons/shield.svg)
 
 ### Secure message center
 For account-specific inquiries, log in to My Account, click **Message Center**, and go to the **Messages** tab. We will respond within 24 business hours.
@@ -39,19 +39,19 @@ For account-specific inquiries, log in to My Account, click **Message Center**, 
 <div class="usa-grid-full usa-layout-docs-main_content">
 <div class="usa-width-one-half" markdown="1">
 
-![alt text]({{ site.baseurl }}/assets/img/icons/contact_mail.svg)
+![alt text]({{ site.baseurl }}/assets/img/icons/mail.svg)
 ### General mailing address
 Thrift Savings Plan  
  P.O. Box 385021   
 Birmingham, AL 35238
 
 ### General fax number
-**Fax Number:** 1-866-817-5023
+1-866-817-5023
 
 </div>
   <!-- WEB COMMENTS -->
     <div class="usa-width-one-half" markdown="1">
-![alt text]({{ site.baseurl }}/assets/img/icons/contact_comment.svg)
+![alt text]({{ site.baseurl }}/assets/img/icons/message-square.svg)
 ### Web comments    
 Submit comments about this website (1,000 characters maximum). We do not respond to comments submitted through this page.
 **Do not leave personally identifiable information.**
@@ -70,7 +70,7 @@ Submit comments about this website (1,000 characters maximum). We do not respond
     <button class="usa-accordion-button"
       aria-expanded="false"
       aria-controls="a1">
-      Loan Payments | Form TSP-26, Loan Payment Coupon with payment
+      Loan Payments
     </button>
 <div id="a1" class="usa-accordion-content" markdown="1">
 
@@ -133,8 +133,8 @@ Fairfax, VA 22033
 <div class="usa-grid-full">
 <div class="usa-width-two-thirds" markdown="1">
 
-Use this post office box if you are sending the TSP a Federal tax levy or a restitution
-order pursuant to the Mandatory Victims Restitution Act (MRVA).
+Use this post office box if you are sending the TSP a federal tax levy or a restitution
+order pursuant to the Mandatory Victims Restitution Act (MVRA).
 </div>
 <div class="usa-width-one-third" markdown="1">
 **TSP Legal Processing Unit**  
@@ -166,7 +166,7 @@ Fairfax, VA 22033
 <div class="usa-grid-full">
 <div class="usa-width-two-thirds" markdown="1">
 Use this post office box if you are submitting a death benefit claim for a TSP
-account. This includes Form TSP-17/U-17, Information Relating to Deceased
+account. This includes Form TSP-17, Information Relating to Deceased
 Participant, death certificates, or other documentation. If you are the recipient of a
 death benefit payment, the forms sent to you with the “Intent to Pay” letter (e.g.,
 W-4Ps or the request to waive the waiting period) should be returned to this post
@@ -196,7 +196,7 @@ Fairfax, VA 22033
     <button class="usa-accordion-button"
       aria-expanded="false"
       aria-controls="a5">
-      Transfer or Rollover Funds to the TSP
+      Transfers and Rollovers to the TSP
     </button>
 <div id="a5" class="usa-accordion-content">
 

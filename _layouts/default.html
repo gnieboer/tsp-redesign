@@ -29,7 +29,10 @@
     {{ content }}
     </main>
     {% include components/glossary.html %}
-    {% include footer.html %}
+    <footer>
+      {% include components/top-footer.html %} 
+      {% include footer.html %}
+    </footer>
     {% include scripts.html %}
   </body>
 </html>

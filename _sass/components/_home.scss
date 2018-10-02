@@ -30,7 +30,7 @@
   .usa-width-two-thirds {
     padding-right: $spacing-md-small;
   }
-  .usa-width-one-third {
+  .usa-width-one-third, .usa-width-one-fourth {
 
   }
 }
@@ -38,7 +38,7 @@
 // New homepage styles
 
 .home-getting-started {
-  .usa-width-one-third {
+  .usa-width-one-third, .usa-width-one-fourth  {
     padding:4rem 1.5rem;
     }
     h2 {
@@ -49,7 +49,7 @@
       color: white;
     }
     h3 {
-      font-size: 2.4rem;
+      font-size: 2rem;
       font-weight: 400;
     }
     p {
@@ -84,13 +84,32 @@
     .arrow-bottom-blue::after {
       border-top-color: #1ba7d0;
   }
+    .arrow-bottom-gray::after {
+      border-top-color: $color-gray;
+  }
 
   .quick-links {
     background-color: #1ba7d0;
+    .usa-grid {
+      display: flex;
+      justify-content: space-evenly;
+      padding:0;
+    }
+    .usa-width-one-fourth {
+      border-right: 4px solid $color-white;
+      font-size: 2rem;
+      margin:0;
+      width: 25%;
+    }
     a {
-      padding: 2rem 0 ;
-      display:inline-block;
+      padding: 3rem 0 ;
+      display:block;
       color: #fff;
+      text-decoration: none;
+      text-align: center;
+    }
+    .usa-grid {
+      border-left: 4px solid $color-white;
     }
   }
 
@@ -118,6 +137,9 @@
     font-size: 3rem;
     text-decoration: none;
     padding: 1rem 0;
+    &:hover {
+      border-bottom: 4px solid $color-primary-alt;
+    }
     img {
       width: 40px;
       height: 40px;
@@ -126,7 +148,7 @@
     }
   }
 }
-.our-funds {
+.our-funds, .our-core-funds {
   .callout {
     background-color: #1ba7d0;
     color: #fff;
@@ -137,13 +159,29 @@
       padding: 3rem 0;
     }
   }
-
+}
+.our-core-funds {
+  .callout {
+    background-color: #5b616b;
+  }
 }
 
 .fund-grid {
 h3 {
   font-family: "Source Sans Pro", "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
   margin-bottom: 1rem;
+  font-size: 2rem;
+  font-weight: 800;
+  text-decoration: none;
+  border-bottom: 4px solid transparent;
+  color: initial;
+  a {
+    text-decoration: none;
+    color: initial;
+    &:hover {
+      border-bottom: 4px solid $color-primary-alt;
+    }
+  }
 }
  p {margin:0;}
  .usa-width-one-third {

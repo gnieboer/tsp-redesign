@@ -11,31 +11,31 @@ permalink: /making-contributions/contribution-types/
 
 ## Regular Employee Contributions
 
-Each pay period, your agency or service will deduct your contribution from your basic pay in the amount or percentage that you indicated when you submitted your contribution election information.
+Each pay period, your agency or service will deduct your contribution from your basic pay in the amount or percentage that you chose when you started contributing (or at 3% of your pay if you were automatically enrolled and haven't made any changes).
 
 Your agency or service will continue to deduct your contribution until you do the following:
 
-<div class="usa-grid contribution-type">
+<div class="usa-grid-full contribution-type">
 <div class="usa-width-one-half" markdown="1">
-<img src="{{ site.baseurl }}/assets/img/icons/add-sign-circle.svg" alt="">
+<img src="{{ site.baseurl }}/assets/img/icons/plus-circle-green.svg" alt="">
 Make a new election  
 changing the amount
 </div>
 <div class="usa-width-one-half" markdown="1">
-<img src="{{ site.baseurl }}/assets/img/icons/Hand.svg" alt="">
+<img src="{{ site.baseurl }}/assets/img/icons/x-circle-red-fill.svg" alt="">
 Elect to stop  
 your contributions
 </div>
 </div>
 
-<div class="usa-grid contribution-type">
+<div class="usa-grid-full contribution-type">
 <div class="usa-width-one-half" markdown="1">
-<img src="{{ site.baseurl }}/assets/img/icons/arrow-up.svg" alt="">
+<img src="{{ site.baseurl }}/assets/img/icons/arrow-up-circle.svg" alt="">
 Reach the IRS  
 contribution limit
 </div>
 <div class="usa-width-one-half" markdown="1">
-<img src="{{ site.baseurl }}/assets/img/icons/arrow-down.svg" alt="">
+<img src="{{ site.baseurl }}/assets/img/icons/arrow-down-circle.svg" alt="">
 Take a financial  
 hardship withdrawal
 </div>
@@ -56,8 +56,10 @@ pay and do not reduce your pay for income tax purposes.**
 
 Agency/Service Automatic (1%) Contributions are subject to vesting
 rules. You are vested in (entitled to keep) all of your Agency/Service
-Automatic (1%) Contributions, as well as any earnings that they accrue
-aer a certain period of federal service.
+Automatic (1%) Contributions, as well as any earnings that they accrue,
+aer a certain period of federal service. In order to count toward vesting, the years of service must be in a position that is eligible to participant in the TSP, not just the years in which you were a participant.
+
+
 
 Most FERS participants are vested in automatic contributions aer
 completing 3 years of service. BRS members and FERS employees in

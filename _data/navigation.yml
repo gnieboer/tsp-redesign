@@ -22,8 +22,10 @@ primary:
     links:
     - text: How to invest
       href: /how-to-invest/
-    - text: Fund basics
-      href: /fund-basics/
+    - text: Core funds
+      href: /funds-core/
+    - text: Lifecycle funds
+      href: /funds-lifecycle/
     - text: Fund performance
       href: /fund-performance/
   - text: Use your savings
@@ -38,8 +40,8 @@ primary:
       href: /annuity-basics/
   - text: Manage life changes
     links:
-    - text: Estate planning
-      href: /estate-planning/
+    - text: Planning for life events
+      href: /planning-for-life-events/
     - text: Federal service changes
       href: /federal-service-changes/
 
@@ -67,10 +69,12 @@ manage-your-plan:
         href: /account-basics/protect-your-tsp-account/
       - text: Update your personal information
         href: /account-basics/update-personal-information/
+      - text: Administrative costs
+        href: /account-basics/administrative-costs/
   - text: Making contributions
     href: /making-contributions/
     subnav:
-      - text: How to start, change, and stop contributions
+      - text: Start, change, or stop contributions
         href: /making-contributions/start-change-stop-contributions/
       - text: Traditional and Roth Contributions
         href: /making-contributions/traditional-and-roth-contributions/
@@ -84,11 +88,11 @@ manage-your-plan:
     href: /for-beneficiaries/
     subnav:
       - text: Being a beneficiary participant
-        href: /for-beneficiaries/being-a-beneficiary/
-      - text: Beneficiary designation
-        href: /for-beneficiaries/beneficiary-designation/
-      - text: Beneficiary participant account distributions
-        href: /for-beneficiaries/beneficiary-participant-account-distribution/
+        href: /for-beneficiaries/being-a-beneficiary-participipant
+      - text: Designating beneficiaries
+        href: /for-beneficiaries/designating-beneficiaries/
+      - text: Beneficiary distributions
+        href: /for-beneficiaries/beneficiary-distributions/
 
 fund-options:
   - text: How to invest
@@ -100,38 +104,62 @@ fund-options:
         href: /how-to-invest/before-you-invest/
       - text: Changing your investments
         href: /how-to-invest/change-your-investments/
-  - text: Fund basics
-    href: /fund-basics/
+  - text: Core funds
+    href: /funds-core/
     subnav:
+      - text: G Fund
+        href: /funds-core/g-fund/
+      - text: F Fund
+        href: /funds-core/f-fund/
+      - text: C Fund
+        href: /funds-core/c-fund/
       - text: S Fund
-        href: /fund-basics/s-fund/
+        href: /funds-core/s-fund/
+      - text: I Fund
+        href: /funds-core/i-fund/
+  - text: Lifecycle funds
+    href: /funds-lifecycle/
+    subnav:
+      - text: L Income
+        href: /funds-lifecycle/l-income/
+      - text: L 2020
+        href: /funds-lifecycle/l-2020/
+      - text: L 2030
+        href: /funds-lifecycle/l-2030/
+      - text: L 2040
+        href: /funds-lifecycle/l-2040/
+      - text: L 2050
+        href: /funds-lifecycle/l-2050/
   - text: Fund performance
     href: /fund-performance/
+    subnav:
+      - text: Rates of returns
+        href: /fund-performance/rates-of-returns/
+      - text: Share price history
+        href: /fund-performance/share-price-history/
+      - text: Share price calculation
+        href: /fund-performance/share-price-calculation/
 
 savings:
   - text: Loan basics
     href: /loan-basics/
     subnav:
-      - text: Cost benefit analysis
-        href: #
+      - text: Loan types and terms
+        href: /loan-basics/loan-types-and-terms/
       - text: Applying for a loan
-        href: #
-      - text: Loan application wizard
-        href: #
-      - text: Your loan in a non-pay status
-        href: #
+        href: /loan-basics/applying-for-a-loan/
+      - text: Your loan in a nonpay status
+        href: /loan-basics/your-loan-in-nonpay-status/
       - text: Repaying your loan
-        href: #
+        href: /loan-basics/repaying-your-loan/
   - text: In-service withdrawal basics
     href: /in-service-withdrawal-basics/
     subnav:
-      - text: Cost benefit analysis
-        href: #
-      - text: Types of in-service withdrawals
+      - text: In-service withdrawal types and terms
         href: #
       - text: Making an in-service withdrawal
         href: #
-      - text: Alternatives to Withdrawals
+      - text: Alternatives to withdrawals
         href: #
   - text: Living in retirement
     href: /living-in-retirement/
@@ -145,111 +173,110 @@ savings:
   - text: Annuity basics
     href: /annuity-basics/
     subnav:
-      - text: Cost benefit analysis
-        href: #
-      - text: Start an annuity
-        href: #
+      - text: Annuity types and terms
+        href: /annuity-basics/annuity-types-and-terms/
+      - text: Purchase an annuity
+        href: /annuity-basics/purchase-an-annuity/
 
 manage-life-changes:
-  - text: Estate planning
-    href: /estate-planning/
+  - text: Planning for life events
+    href: /planning-for-life-events/
     subnav:
       - text: Beneficiary basics
-        href: #
+        href: /planning-for-life-events/beneficiary-basics/
       - text: Changes in your family status
-        href: #
+        href: /planning-for-life-events/changes-in-your-family-status/
       - text: Economic hardship
-        href: #
+        href: /planning-for-life-events/economic-hardship/
       - text: Power of attorney
-        href: #
-      - text: Court Appointments
-        href: #
+        href: /planning-for-life-events/power-of-attorney/
+      - text: Court appointments
+        href: /planning-for-life-events/court-appointments/
   - text: Federal service changes
     href: /federal-service-changes/
     subnav:
       - text: Leaving federal service
-        href: #
+        href: /federal-service-changes/leaving-federal-service/
       - text: Returning to federal service
-        href: #
+        href: /federal-service-changes/returning-to-federal-service/
       - text: Entering a non-pay status
-        href: #
+        href: /federal-service-changes/entering-nonpay-status/
       - text: Preparing for active duty
-        href: #
+        href: /federal-service-changes/preparing-for-active-duty/
 
-# FOOTERNAV MENUS
-
-column01:
-  - text: Where to send forms
-    links:
-    - text: General Correspondence
-      href: /privacy/
-    - text: Court Orders, Legal Processes, and Powers of Attorney
-      href: /making-contributions/
-    - text: Death Benefit Claims
-      href: /maximize-your-savings/
-    - text: Loan Payments
-      href: /manage-life-changes/
-    - text: Transfers or Rollovers of Funds to the TSP
-      href: /for-beneficiaries/
-
-column02:
-  - text: Privacy
-    links:
-    - text: Who We Are
-      href: /privacy/
-    - text: Our Mission
-      href: /privacy/
-    - text: How We Protect Your Data
-      href: /privacy/
-    - text: How to Contact Us
-      href: /privacy/
-    - text: Website Privacy Policy
-      href: /privacy/
-
-column03:
-  - text: Securing your account
-    links:
-    - text: What do I do if I suspect fraud?
-      href: #
-    - text: Link
-      href: #
-    - text: Link
-      href: #
-    - text: Link
-      href: #
-    - text: Link
-      href: #
-
-column04:
-  - text: Calculators
-    links:
-    - text: How much should I save?
-      href: #
-    - text: How much will my savngs grow?
-      href: #
-    - text: How much can I contribute?
-      href: #
-    - text: Paycheck estimator
-      href: #
-    - text: Contribution comparison calculator
-      href: #
-    - text: Retirement income calculator
-      href: #
-    - text: TSP monthly payment calculator
-      href: #
-    - text: Estimate loan payments
-      href: #
+privacy:
+  - text: FRTIB Privacy Division
+    href: /privacy/
+  - text: How we protect your data
+    href: /how-we-protect-your-data/
+    subnav:
+      - text: FRTIB’s Privacy Program Plan
+        href: /how-we-protect-your-data/privacy-program-plan/
+      - text: Publicly available agency reports on privacy
+        href: /how-we-protect-your-data/privacy-reports/
+      - text: FRTIB rules implementing the Privacy Act
+        href: /how-we-protect-your-data/privacy-rules/
+      - text: System of Records Notices (SORNs)
+        href: /how-we-protect-your-data/system-of-records-notices/
+      - text: Exemptions to the Privacy Act
+        href: /how-we-protect-your-data/exemptions-to-privacy-act/
+      - text: Privacy Impact Assessments (PIAs)
+        href: /how-we-protect-your-data/privacy-impact-assessments/
+      - text: Matching notices (Computer Matching Agreements)
+        href: /how-we-protect-your-data/matching-notices/
+  - text: How to contact us
+    href: /contact-privacy/
+    subnav:
+      - text: How to submit a Privacy Act request
+        href: /contact-privacy/submit-privacy-act-request/
+  - text: Website privacy policy
+    href: /privacy-policy/
+    subnav:
+      - text: Information Automatically Captured and Stored
+        href: /privacy-policy/information-captured-stored/
+      - text: Comments submitted online
+        href: /privacy-policy/comments-submitted-online/
+      - text: Cookies
+        href: /privacy-policy/cookies/
+      - text: Security monitoring
+        href: /privacy-policy/security-monitoring/
+  - text: FRTIB Privacy Program Plan
+    href: /privacy-plan/
+    subnav:
+      - text: Overview of FRTIB Privacy Program
+        href: /privacy-plan/overview/
+      - text: Privacy Workforce Management
+        href: /privacy-plan/privacy-workforce-management/
+      - text: Budget and Acquisition
+        href: /privacy-plan/budget-and-acquisition/
+      - text: Fair Information Practice Principles
+        href: /privacy-plan/fair-information-practice-principles/
+      - text: Privacy Risk Management Framework
+        href: /privacy-plan/privacy-risk-management-framework/
+      - text: Privacy Control Requirements
+        href: /privacy-plan/privacy-control-requirements/
+      - text: Overview of Handling and Protecting Personally Identifiable Information (PII)
+        href: /privacy-plan/protecting-pii/
+      - text: Breach Response and Management
+        href: /privacy-plan/breach-response-and-management/
+      - text: Awareness and Training
+        href: /privacy-plan/awareness-and-training/
+      - text: Privacy Reporting
+        href: /privacy-plan/privacy-reporting/
+      - text: Conclusion
+        href: /privacy-plan/conclusion/
 
 # MISCELLANEOUS
-privacy:
-  - text: Privacy Policy
-    href: /privacy/
-
 footer:
-  - text: Documentation
-    href: /about/
-  - text: Demo link
-    href: /about/
-  - text: External link
-    href: https://tsp.gov
-    external: true
+  - text: Privacy
+    href: /privacy/
+  - text: Agency & Service Rep Resources
+    href: #
+  - text: News & Resources
+    href: #
+  - text: Calculators
+    href: #
+  - text: FOIA
+    href: #
+  - text: FRTIB
+    href: #

@@ -1,0 +1,129 @@
+{% if include.lifecycle %}
+  {% assign sorted = site.funds | where: "Fund_letter", "L" | sort: 'Fund_order' %}
+{% else %}
+  {% assign sorted = site.funds | where_exp:"fund", "fund.Fund_letter != 'L'" | sort: 'Fund_order' %}
+{% endif %}
+
+
+<div class="fund-comparison-tool">
+<ul class="usa-accordion usa-tabs">
+  <li>
+    <button class="usa-accordion-button"
+      aria-expanded="true"
+      aria-controls="a1">
+      ROR (YTD)
+    </button>
+    <div id="a1" class="usa-accordion-content">
+      <div class="flex-container" id="fund-listing">
+      {% for fund in sorted %}
+      <input type="checkbox" id="ror-show-{{ fund.Fund_letter | downcase }}-fund" />
+      <label for="ror-show-{{ fund.Fund_letter | downcase }}-fund">
+      <div class="flex-item fund-item fund-item-inactive visible" id="{{ fund.Fund_letter }}-fund">
+      <div class="fund-header">
+      <span>{{ fund.Fund_letter }}</span>
+      {{ fund.Fund_subtitle }}
+        </div>
+          <div class="fund-content">
+        <p>1-Yr <b>{{ fund.avg_annual_returns.one_yr }}</b></p>
+        <p>3-Yrs <b>{{ fund.avg_annual_returns.three_yr }}</b></p>
+        <p>5-Yrs <b>{{ fund.avg_annual_returns.five_yr }}</b></p>
+        <p>10-Yrs <b>{{ fund.avg_annual_returns.ten_yr }}</b></p>
+        <p>Inception <b>{{ fund.avg_annual_returns.inception }}</b></p>
+      </div>
+    </div>
+      </label>
+        {% endfor %}
+      </div>
+    </div>
+
+  </li><li>
+    <button class="usa-accordion-button"
+      aria-expanded="false"
+      aria-controls="a2">
+      Summary
+    </button>
+    <div id="a2" class="usa-accordion-content">
+      <div class="flex-container" id="fund-listing">
+        {% for fund in sorted  %}
+      <input type="checkbox" id="sum-show-{{ fund.Fund_letter | downcase }}-fund" />
+      <label for="sum-show-{{ fund.Fund_letter | downcase }}-fund">
+      <div class="flex-item fund-item fund-item-inactive visible" id="{{ fund.Fund_letter }}-fund">
+      <div class="fund-header">
+      <span>{{ fund.Fund_letter }}</span>
+          {{ fund.Fund_subtitle }}
+        </div>
+          <div class="fund-content">
+            <div class="fund-summary-details">
+                <p><b>Assets</b><br>
+                {{ fund.summary_details.assets }}
+              </p>
+              <p><b>Net admin expense</b><br>
+                {{ fund.summary_details.admin_expense }}
+              </p>
+              <p><b>Other expense</b><br>
+                {{ fund.summary_details.other_expense }}
+              </p>
+                <p><b>Benchmark index</b><br>
+                  {{ fund.summary_details.benchmark_index }}
+                </p>
+                <p><b>Asset manager</b><br>
+                {{ fund.summary_details.asset_manager }}
+              </p>
+            </div>
+      </div>
+    </div>
+      </label>
+        {% endfor %}
+      </div>
+    </div>
+  </li><li>
+    <button class="usa-accordion-button"
+      aria-expanded="false"
+      aria-controls="a3">
+      Risks
+    </button>
+    <div id="a3" class="usa-accordion-content">
+      <div class="flex-container" id="fund-listing">
+        {% for fund in sorted  %}
+      <input type="checkbox" id="risk-show-{{ fund.Fund_letter | downcase }}-fund" />
+      <label for="risk-show-{{ fund.Fund_letter | downcase }}-fund">
+      <div class="flex-item fund-item fund-item-inactive visible" id="{{ fund.Fund_letter }}-fund">
+      <div class="fund-header">
+      <span>{{ fund.Fund_letter }}</span>
+      {{ fund.Fund_subtitle }}
+        </div>
+        <div class="fund-content">
+        {{ fund.risks | markdownify }}
+      </div>
+    </div>
+      </label>
+        {% endfor %}
+      </div>
+    </div>
+  </li><li>
+    <button class="usa-accordion-button"
+      aria-expanded="false"
+      aria-controls="a4">
+      Rewards
+    </button>
+    <div id="a4" class="usa-accordion-content">
+      <div class="flex-container" id="fund-listing">
+        {% for fund in sorted  %}
+      <input type="checkbox" id="reward-show-{{ fund.Fund_letter | downcase }}-fund" />
+      <label for="reward-show-{{ fund.Fund_letter | downcase }}-fund">
+      <div class="flex-item fund-item fund-item-inactive visible" id="{{ fund.Fund_letter }}-fund">
+      <div class="fund-header">
+      <span>{{ fund.Fund_letter }}</span>
+      {{ fund.Fund_subtitle }}
+        </div>
+        <div class="fund-content">
+        {{ fund.rewards | markdownify }}
+        </div>
+      </div>
+      </label>
+        {% endfor %}
+      </div>
+    </div>
+  </li>
+</ul>
+</div>

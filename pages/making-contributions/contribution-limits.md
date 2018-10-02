@@ -7,40 +7,131 @@ scripts:
 permalink: /making-contributions/contribution-limits/
 ---
 
-# Contribution limits
+# Know your limits
 
-The Internal Revenue Code (IRC) places limits on the dollar amount of contributions you can make to the TSP. The Internal Revenue Service (IRS) calculates them every year and they can change annually. We announce the limits here and the ThriftLine, through various publications, and on our [Facebook](#) and [Twitter](#) pages.
+Each year, the Internal Revenue Service (IRS) determines the limit of contributions, also called elective deferrals, you can make to your TSP account. Below are the **2018** IRS limits and additional information to keep you informed.
 
-<table>
-  <caption>Contribution Limits for 2018</caption>
-    <tbody>
-      <tr>
-        <th scope="row">Elective Deferral Limit</th>
-        <td>$18,500</td>
-        <td>IRC §402(g)</td>
-        <td><p>Applies to combined total of traditional and Roth contributions. For members of the uniformed services, it includes all traditional and Roth contributions from taxable <a class="glossaryTerm" href="../../sitehelp/glossary/glossary.html?term=BasicPay" title="Glossary term will open in a new window.">basic pay</a>, <a class="glossaryTerm" href="../../sitehelp/glossary/glossary.html?term=IncentivePayUniformedServices" title="Glossary term will open in a new window.">incentive pay</a>, <a class="glossaryTerm" href="../../sitehelp/glossary/glossary.html?term=SpecialPayUniformedServices" title="Glossary term will open in a new window.">special pay</a>, and <a class="glossaryTerm" href="../../sitehelp/glossary/glossary.html?term=BonusPayUniformedServices" title="Glossary term will open in a new window.">bonus pay</a>, but does not apply to traditional contributions made from tax-exempt pay earned in a combat zone.</p>
-        </td>
-      </tr>
-      <tr>
-        <th scope="row">Annual Addition Limit</th>
-        <td>$55,000</td>
-        <td>IRC §415(c)</td>
-        <td><p>An additional limit imposed on the total amount of all contributions made on behalf of an employee in a calendar year. <span>This limit is per employer and includes employee contributions</span>&nbsp;(tax-deferred, after-tax, and <a class="glossaryTerm" href="../../sitehelp/glossary/glossary.html?term=TaxExemptContributions" title="Glossary term will open in a new window.">tax-exempt</a>), Agency/Service Automatic (1%) Contributions, and <a class="glossaryTerm" href="../../sitehelp/glossary/glossary.html?term=MatchingContributions" title="Glossary term will open in a new window.">Matching Contributions</a>.&nbsp;<span>For 415(c) purposes, working for multiple Federal agencies or services in the same year is considered having one employer.</span></p></td>
-      </tr>
-      <tr>
-        <th scope="row">Catch-up Contribution Limit</th>
-        <td>$6,000</td>
-        <td>IRC §414(v)</td>
-        <td>The maximum amount of <a class="glossaryTerm" href="../../sitehelp/glossary/glossary.html?term=CatchUpContributions" title="Glossary term will open in a new window.">catch-up contributions</a> that can be contributed in a given year by participants age 50 and older. It is separate from the elective deferral and annual addition limit imposed on regular employee contributions.</td>
-      </tr>
-    </tbody>
-</table>
+**Select an option and take a look.**
 
-## Uniformed services members:
-* Roth contributions are subject to the elective deferral limit ($18,500 for 2018) even if you make them from tax-exempt pay.
-* You will have to elect traditional contributions for any amount over the elective deferral limit in order to contribute tax-exempt pay toward the annual additions limit.
-* If you are eligible to make catch-up contributions and you are deployed to a designated combat zone, you will not be able to make any traditional catch-up contributions from your tax-exempt pay. However, you will be able to make Roth catch-up contributions from tax-exempt pay.
+<ul class="usa-accordion usa-tabs contribution-limits">
+  <li>
+    <button class="usa-accordion-button"
+      aria-expanded="false"
+      aria-controls="a1">
+      <span>$6,000</span>
+      Catch-up<br>contributions
+    </button>
+    <div id="a1" class="usa-accordion-content">
+    <table class="usa-table-borderless">
+        <tbody>
+          <tr>
+            <th scope="row">What it means</th>
+            <td markdown="1">
+## Age 50 and over
+At any time beginning in the year you turn 50, you have the opportunity to **make additional contributions above the IRS' elective deferral limit.** These "catch-up contributions" provide a chance to put away extra money for retirement, even if you're not behind.
+</td>
+          </tr>
+          <tr>
+            <th scope="row">What to know</th>
+            <td markdown="1">
+Catch-up contributions are made on top of your regular employee contributions; however, they do not receive any matching. To be eligible to make these special contributions, you must be on track to meet the IRS elective deferral limit.
 
-## Ready Reserve members:
-* If you are contributing to both a uniformed services and a civilian TSP account, the elective deferral and catch-up contribution limits apply to the total amount of tax-deferred employee contributions you make in a calendar year to both accounts.
-* If you are called to active duty and make tax-exempt contributions while deployed in a combat zone, the amount of employee and agency contributions to your civilian account as well as the tax-exempt contributions you make to your uniformed services account cannot exceed the annual addition limit.
+<div class="usa-alert usa-alert-info">
+<div class="usa-alert-body">
+You must make a new catch-up contribution election each calendar year—they do not restart automatically.
+</div>
+</div>
+</td>
+          </tr>
+          <tr>
+            <th scope="row">What to do</th>
+            <td markdown="1">
+Whether you're trying to boost the retirement savings you already have or you've recently started saving, consider making catch-up contributions each year to save more.
+
+You’ll thank yourself later.
+
+</td>
+          </tr>
+        </tbody>
+    </table>
+    </div>
+  </li><li>
+    <button class="usa-accordion-button"
+      aria-expanded="true"
+      aria-controls="a2">
+      <span>$18,500</span>
+      Annual<br>Elective Deferral
+    </button>
+    <div id="a2" class="usa-accordion-content">
+    <table class="usa-table-borderless">
+        <tbody>
+          <tr>
+            <th scope="row">What it means</th>
+            <td markdown="1">
+## All ages
+This limit applies to the **combined total of traditional and Roth contributions.** For uniformed services members, this does not apply to traditional contributions from combat-zone pay.
+</td>
+
+          </tr>
+          <tr>
+            <th scope="row">What to know</th>
+            <td markdown="1">
+Contributing from your pay before taxes allows your money to grow tax-deferred until you withdraw it. If you make Roth (after-tax) contributions, those contributions could be "qualified" and tax free at retirement. Knowing this limit helps you decide how much to put away each year.
+
+Additionally, this limit does not include matching contributions that you receive from your agency or service, so you're actually saving more.
+
+
+</td>
+          </tr>
+          <tr>
+            <th scope="row">What to do</th>
+            <td markdown="1">
+If you're not maxing out your contributions, consider increasing your contribution amount each chance you get to help reach your retirement savings goals. You might be surprised how big of a difference a small increase can make.
+</td>
+          </tr>
+        </tbody>
+    </table>
+    </div>
+  </li><li>
+    <button class="usa-accordion-button"
+      aria-expanded="false"
+      aria-controls="a3">
+      <span>$55,000</span>
+      Annual<br>Addition
+    </button>
+    <div id="a3" class="usa-accordion-content">
+    <table class="usa-table-borderless">
+        <tbody>
+          <tr>
+            <th scope="row">What it means</th>
+            <td markdown="1">
+## All Ages
+The annual addition limit is the **total amount of all the contributions you make in a calendar year.** This limit is per employer and includes money from all sources: employee contributions (tax-deferred, after-tax, and tax-exempt), Agency/Service Automatic (1%) Contributions, and Agency/Service Matching Contributions.
+</td>
+
+          </tr>
+          <tr>
+            <th scope="row">What to know</th>
+            <td markdown="1">
+The annual addition limit affects mostly members of the uniformed services who can exceed the annual elective deferral limit. The excess contributions go into the traditional portion of your account from tax-exempt pay earned in a combat zone.
+
+  </td>
+          </tr>
+          <tr>
+            <th scope="row">What to do</th>
+            <td markdown="1">
+Even if you don't reach the annual addition limit, keep it in mind when deciding how much you'll contribute to your TSP account to avoid penalties.
+
+  </td>
+          </tr>
+        </tbody>
+    </table>
+    </div>
+  </li>
+</ul>
+
+**Are you about to max out? Be careful not to exceed the contribution limits before December 31. If you do, we won't be able to process any more of your contributions for the remainder of the year, which means you'll miss out on Matching Contributions.**
+
+Grab your latest Leave and Earnings Statement and check
+out our [calculator](#), “How much should I contribute?”
+{: .usa-font-lead .text-center }

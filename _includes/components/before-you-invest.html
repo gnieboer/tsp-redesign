@@ -1,0 +1,177 @@
+
+
+
+<div class="before-you-invest-tool">
+  <div class="step1" id="step1">
+    <h3 class="step-title"><span>1.</span> First, let's choose your investment style.</h3>
+    <div class="usa-grid-full">
+      <div class="usa-width-one-third">
+        <div class="usa-alert">
+          <div class="usa-alert-body">
+            <div class="usa-alert-heading">
+              <h4>Risk-averse</h4>
+              </div>
+              <ul>
+                <li>You get anxious with every dip in the market</li>
+                <li>You place higherpriority on stability and less risk</li>
+                <li>You place less priority on significant long-term growth</li>
+              </ul> <button onclick="showStep2()" class="usa-btn-primary">Select</button>
+          </div>
+        </div>
+      </div>
+      <div class="usa-width-one-third">
+        <div class="usa-alert">
+          <div class="usa-alert-body">
+            <div class="usa-alert-heading">
+              <h4>Somewhat risky</h4>
+              </div>
+              <ul>
+                <li>You prefer a low maintenance way of investing money</li>
+                <li>You prefer a diversified mix of funds in your portfolio</li>
+                <li>You would like to set-it and forget-it</li>
+              </ul> <button onclick="showStep2()" class="usa-btn-primary">Select</button>
+          </div>
+        </div>
+      </div>
+      <div class="usa-width-one-third">
+        <div class="usa-alert">
+          <div class="usa-alert-body">
+            <div class="usa-alert-heading">
+              <h4>Risky</h4>
+              </div>
+              <ul>
+                <li>You're willing to tolerate ups and downs in your account</li>
+                <li>You have more time to let your money ride out the market waves</li>
+                <li>You place higher priority on achieving long-term growth</li>
+              </ul> <button onclick="showStep2()" class="usa-btn-primary">Select</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="step2" id="step2" style="display:none;">
+
+      <h3 class="step-title"><span>2.</span> OK, let's see how many years you have to invest. Time impacts your ability to save for retirement.</h3>
+      <p><label for="your-age">Age</label>
+      <input id="your-age" name="retire-age" type="text" onchange="calculate()"></p>
+  <p> <label for="retire-age">Age you plan to retire</label>
+    <input id="retire-age" name="retire-age" type="text" onchange="calculate()">
+  </p>
+      <p>You have <input id="years-to-invest" name="years-to-invest" type="text"> years to invest.</p>
+      <button onclick="showStep3()" class="usa-btn-primary">Find my funds</button>
+
+  </div>
+  <div class="step3" id="step3" style="display:none;">
+    <h3 class="step-title"><span>3.</span> Great! Now review the funds ideally suited for both your presonal investment style and your time horizon</h3>
+
+    <div class="usa-grid">
+    <div class="usa-width-one-sixth">
+      <h4>C Fund</h4>
+      <img src="/assets/img/icons/pie-chart.svg"/>
+      <label for="range-slider" class="usa-sr-only">Fund 1 percentage</label>
+      <input id="fund-1" type="range" min="0" max="100" step="10" value="20">
+      <span id="fund-1-value" class="fund-value-percentage">20</span>
+    </div>
+    <div class="usa-width-one-sixth">
+      <h4>S Fund</h4>
+      <img src="/assets/img/icons/pie-chart.svg"/>
+      <label for="range-slider" class="usa-sr-only">Fund 2 percentage</label>
+      <input id="fund-2" type="range" min="0" max="100" step="10" value="50">
+      <span id="fund-2-value" class="fund-value-percentage">50</span>
+
+    </div>
+    <div class="usa-width-one-sixth">
+      <h4>I Fund</h4>
+      <img src="/assets/img/icons/pie-chart.svg"/>
+      <label for="range-slider" class="usa-sr-only">Fund 3 percentage</label>
+      <input id="fund-3" type="range" min="0" max="100" step="10" value="30">
+      <span id="fund-3-value" class="fund-value-percentage">30</span>
+    </div>
+    <div class="usa-width-one-sixth "><p class="or-divider">OR</p></div>
+    <div class="usa-width-one-sixth">
+      <h4>L Fund</h4>
+      <img src="/assets/img/icons/pie-chart.svg"/>
+    </div>
+  </div>
+    <div class="usa-alert usa-alert-info" >
+    <div class="usa-alert-body">
+      <p class="usa-alert-text usa-font-lead">We've provided a recommendation, but free to change your investment mix. Keep in mind that your funds must equal 100% or invest 100% in an L Fund.</p>
+    </div>
+  </div>
+  </div>
+
+
+
+</div>
+
+
+
+<script>
+
+function showStep2() {
+  document.getElementById('step2').style.display = "block";
+  var loc = document.location.toString().split('#')[0];
+  document.location = loc + '#step2';
+  return false;
+}
+function showStep3() {
+   document.getElementById('step3').style.display = "block";
+   var loc = document.location.toString().split('#')[0];
+   document.location = loc + '#step3';
+   return false;
+}
+
+function calculate() {
+  var age = parseInt(document.getElementById('your-age').value);
+  var retireAge = parseInt(document.getElementById('retire-age').value);
+  var yrsToInvest = document.getElementById('years-to-invest');
+  if (!age) { age = 0; }
+  if (!retireAge) { retireAge = age; }
+  yrsToInvest.value = retireAge - age;
+}
+
+
+var fund1 = document.getElementById('fund-1');
+var fund2 = document.getElementById('fund-2');
+var fund3 = document.getElementById('fund-3');
+
+read("mousedown");
+read("mousemove");
+read("keydown"); // include this to also allow keyboard control
+
+function read(evtType) {
+  fund1.addEventListener(evtType, function() {
+    window.requestAnimationFrame(function () {
+      document.getElementById('fund-1-value').innerHTML = fund1.value;
+      fund1.setAttribute("aria-valuenow", fund1.value); // include for accessibility
+    });
+  });
+}
+
+read2("mousedown");
+read2("mousemove");
+read2("keydown"); // include this to also allow keyboard control
+
+function read2(evtType) {
+  fund2.addEventListener(evtType, function() {
+    window.requestAnimationFrame(function () {
+      document.getElementById('fund-2-value').innerHTML = fund2.value;
+      fund2.setAttribute("aria-valuenow", fund2.value); // include for accessibility
+    });
+  });
+}
+
+read3("mousedown");
+read3("mousemove");
+read3("keydown"); // include this to also allow keyboard control
+
+function read3(evtType) {
+  fund3.addEventListener(evtType, function() {
+    window.requestAnimationFrame(function () {
+      document.getElementById('fund-3-value').innerHTML = fund3.value;
+      fund3.setAttribute("aria-valuenow", fund3.value); // include for accessibility
+    });
+  });
+}
+
+</script>

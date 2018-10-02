@@ -24,12 +24,13 @@ markdown: kramdown
 
 scripts:
   - assets/uswds/js/uswds.min.js
-  - /glossary/example/main.js
+  - /assets/js/vendor/glossary.min.js
   - /assets/js/login.js
+  - /assets/js/glossary.js
 
 # Compress Sass
-sass:
-  style: compressed
+# sass:
+#   style: compressed
 
 exclude:
   - circle.yml
@@ -37,3 +38,17 @@ exclude:
   - package-lock.json
   - package.json
   - vendor
+  - styleguide
+
+keep_files:
+  - styleguide
+
+collections:
+  funds:
+    output: true
+  forms:
+    output: true
+  publications:
+    output: true
+  newslatters:
+    output: true

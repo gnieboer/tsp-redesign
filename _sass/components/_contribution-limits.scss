@@ -1,0 +1,38 @@
+.contribution-limits.usa-tabs {
+
+  .usa-accordion-button {
+    text-align: center;
+    font-size: 2rem;
+    width: 20rem;
+    border: 1px solid #333;
+    margin-bottom: 1rem;
+    span {
+      display:block;
+      margin-bottom: 1rem;
+      font-size: 3rem;
+    }
+    &[aria-expanded="true"]:after {
+      content: none;
+    }
+  }
+
+  th {font-weight: 700;
+    width: 20rem;
+    padding-left: 2rem;
+    vertical-align: text-top;
+  }
+  td {
+    > :first-child {
+      margin-top: 0;
+    }
+    h2:first-child {
+      background-image: url('/assets/img/icons/check-circle-green.svg');
+      background-repeat: no-repeat;
+      padding-left: 3rem;
+      background-position: left center;
+    }
+  }
+  .usa-accordion-content {
+    margin-bottom: 3rem;
+  }
+}
