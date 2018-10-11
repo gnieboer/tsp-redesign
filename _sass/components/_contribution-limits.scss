@@ -11,6 +11,9 @@
       margin-bottom: 1rem;
       font-size: 3rem;
     }
+    &[aria-expanded="true"] {
+      background-color: #e1f3f8;
+    }
     &[aria-expanded="true"]:after {
       content: none;
     }
