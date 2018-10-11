@@ -1,7 +1,7 @@
 ---
 layout: page
 
-title: Types of withdrawals
+title: In-service withdrawal types and terms
 
 styles:
 
@@ -9,10 +9,10 @@ sidenav: savings
 
 scripts:
 
-permalink: /in-service-withdrawal-basics/types-of-withdrawals/
+permalink: /in-service-withdrawal-basics/in-service-withdrawal-types-and-terms/
 ---
 
-# Types of in-service withdrawals
+# In-service withdrawal types and terms
 
 If you’re an active federal employee or a member of the uniformed services, you can make two types of in-service withdrawals from your TSP account: financial hardship and age-based. 
 

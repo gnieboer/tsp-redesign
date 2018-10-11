@@ -33,7 +33,7 @@ Choosing the right funds can be tricky, but our L Funds help take the guesswork 
 </div>
 <!-- USE YOUR SAVINGS -->
 <div class="usa-width-one-fourth" markdown="1">
-### <img src="{{ site.baseurl }}/assets/img/icons/sun.svg" alt="" class="left mr1">[Use your<br /> savings](/loan-basics/)
+### <img src="{{ site.baseurl }}/assets/img/icons/sun.svg" alt="" class="left mr1">[Use your savings](/loan-basics/)
 
 Your big day is around the corner, now what? We'll help you navigate your plan before, during, and after you retire.
 
@@ -43,7 +43,7 @@ Your big day is around the corner, now what? We'll help you navigate your plan b
 <div class="usa-width-one-fourth" markdown="1">
 ### <img src="{{ site.baseurl }}/assets/img/icons/sun.svg" alt="" class="left mr1">[Manage life events](/planning-for-life-events/)
 
-Life happen, but you don’t have to go it alone. A solid financial plan can help you prepare for these life events.
+Life happens, but you don’t have to go it alone. A solid financial plan can help you prepare for these life events.
 
 </div>
 </div>
@@ -177,7 +177,7 @@ Government, corporate, and mortgage-backed bonds
 
 <h3><a href="/funds-core/s-fund/">S Fund</a></h3>
 
-Stocks of small to medium-sized U.S. companies not included in the C Fund
+<span data-term="Stocks" class="js-glossary-toggle term term-end">Stocks</span> of small to medium-sized U.S. companies not included in the C Fund
 
 </div>
 
