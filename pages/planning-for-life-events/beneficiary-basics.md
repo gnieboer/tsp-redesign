@@ -24,7 +24,7 @@ In the event of your death, your TSP account would be distributed this way:
 4. If none, to the appointed executor or administrator of your estate
 5. If none, to your next of kin who is entitled to your estate under the laws of the state you lived in at the time of your death
 
-For most people, this is a good option, since it accounts for life changes like births, deaths, divorce, or marriage that may happen after you open your account.
+For most people, this is the best option, since it accounts for life changes like births, deaths, divorce, or marriage that may happen after you open your account.
 
 If you’d like to make an exception, you may complete [Form TSP-3](#), _Designation of Beneficiary_. The easiest way to do this is to use the online “wizard,” which you’ll find by logging in here: [My Account:Beneficiaries](https://www.tsp.gov/tsp/beneficiaries.do?subaction=beneLanding&_name=bene).   
 
