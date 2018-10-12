@@ -62,7 +62,7 @@ FRTIB’s Privacy Division is in the process of finalizing its baseline privacy 
   <button class="usa-accordion-button"
     aria-expanded="false"
     aria-controls="a4">
-    FRTIB Control Allocation
+    Contractors and Third Parties
   </button>
   <div id="a4" class="usa-accordion-content" markdown="1">
 
@@ -88,7 +88,7 @@ FRTIB’s Privacy Division is in the process of finalizing its baseline privacy 
   <button class="usa-accordion-button"
     aria-expanded="false"
     aria-controls="a6">
-    FRTIB Control Allocation
+    Privacy Act Statements
   </button>
   <div id="a6" class="usa-accordion-content" markdown="1">
 
