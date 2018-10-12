@@ -1,15 +1,15 @@
 ---
 layout: page
 
-title: Beneficiary basics
+title: Designating beneficiaries
 
-sidenav: manage-life-changes
+sidenav: account-basics
 
 styles:
 
 scripts:
 
-permalink: /planning-for-life-events/beneficiary-basics/
+permalink: /account-basics/designating-beneficiaries/
 ---
 
 # Beneficiary basics
