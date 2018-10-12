@@ -1,10 +1,10 @@
 ---
 layout: page
-title: Beneficiary designation
-sidenav: manage-your-plan
+title: Designating a beneficiary
+sidenav: manage-life-changes
 styles:
 scripts:
-permalink: /for-beneficiaries/designating-beneficiaries/
+permalink: /for-beneficiary-participants/designating-beneficiaries/
 ---
 # Designating beneficiaries
 
