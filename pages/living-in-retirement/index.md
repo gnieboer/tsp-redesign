@@ -33,7 +33,6 @@ And be sure to check out our other videos at [youtube.com/tsp4gov](youtube.com/t
 
 ## In this section:
 
-+ Stay with the TSP
 + Retirement withdrawal basics
 + Make or change your withdrawal
 
