@@ -8,7 +8,7 @@ permalink: /for-beneficiary-participants/designating-beneficiaries/
 ---
 # Designating beneficiaries
 
-Upon your death, the money in your beneficiary participant account cannot remain with us. The remaining funds will be distributed this way:
+Upon your death, the money in your beneficiary participant account cannot stay with us. The remaining funds will be distributed this way:
 
 1. To your spouse
 2. If none, to your child or children equally, and to the descendants of deceased children
