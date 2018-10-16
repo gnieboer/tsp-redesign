@@ -1,10 +1,10 @@
 ---
 layout: page
 title: Being a beneficiary participant
-sidenav: manage-your-plan
+sidenav: manage-life-changes
 styles:
 scripts:
-permalink: /for-beneficiaries/being-a-beneficiary-participipant/
+permalink: /for-beneficiary-participants/being-a-beneficiary-participipant/
 ---
 
 # Being a beneficiary participant
