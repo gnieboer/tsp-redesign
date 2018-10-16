@@ -1,10 +1,10 @@
 ---
 layout: page
 title: Beneficiary distributions
-sidenav: manage-your-plan
+sidenav: manage-life-changes
 styles:
 scripts:
-permalink: /for-beneficiaries/beneficiary-distributions/
+permalink: /for-beneficiary-participants/beneficiary-distributions/
 ---
 
 # Beneficiary distributions
