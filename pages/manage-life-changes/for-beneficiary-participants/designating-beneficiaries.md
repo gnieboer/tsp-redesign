@@ -8,7 +8,7 @@ permalink: /for-beneficiary-participants/designating-beneficiaries/
 ---
 # Designating beneficiaries
 
-Upon your death, the remaining money in your TSP account will be distributed this way:
+Upon your death, the money in your beneficiary participant account cannot remain with us. The remaining funds will be distributed this way:
 
 1. To your spouse
 2. If none, to your child or children equally, and to the descendants of deceased children
@@ -18,7 +18,8 @@ Upon your death, the remaining money in your TSP account will be distributed thi
 
 For most people, this is a good option, since it accounts for changes like births, deaths, divorce, or marriage that may happen long after you open your account.
 
-If you'd like to make an exception, you may complete [Form TSP-3](#), _Designation of Beneficiary_.
+If you'd like to make an exception, you may complete [Form TSP-3](#), _Designation of Beneficiary_. Note: We will not honor a will or a prenuptual agreement. 
 
 If you don’t remember whether you’ve submitted a Form TSP-3 or you’re not sure who you named as your beneficiaries, look at your annual statement, check the online wizard, or call the ThriftLine at 1-877-968-3778.  Even if you’re certain your designated beneficiaries are current, check them periodically.
+
 <!-- CONTENT END -->
