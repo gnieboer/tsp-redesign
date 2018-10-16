@@ -1,13 +1,13 @@
 ---
 layout: page
-title: For beneficiaries
-sidenav: manage-your-plan
+title: For beneficiary participants
+sidenav: manage-life-changes
 styles:
 scripts:
-permalink: /for-beneficiaries/
+permalink: /for-beneficiary-participants/
 ---
 
-# For beneficiaries
+# For beneficiary participants
 
 ## Notifying the TSP of a participant’s death
 
