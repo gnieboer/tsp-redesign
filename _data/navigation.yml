@@ -156,22 +156,22 @@ savings:
     href: /in-service-withdrawal-basics/
     subnav:
       - text: In-service withdrawal types and terms
-        href: /in-service-withdrawal-types-and-terms/
+        href: /in-service-withdrawal-basics/in-service-withdrawal-types-and-terms/
       - text: Making an in-service withdrawal
-        href: /making-an-in-service-withdrawal/
+        href: /in-service-withdrawal-basics/making-an-in-service-withdrawal/
       - text: Alternatives to withdrawals
         href: /in-service-withdrawal-basics/alternatives-to-withdrawals/
   - text: Living in retirement
     href: /living-in-retirement/
     subnav:
       - text: Before you withdraw
-        href: /before-you-withdraw/
+        href: /living-in-retirement/before-you-withdraw/
       - text: Withdrawal options
-        href: /withdrawal-options/
+        href: /living-in-retirement/withdrawal-options/
       - text: Make a withdrawal
-        href: /make-a-withdrawal
+        href: /living-in-retirement/make-a-withdrawal/
       - text: Change your withdrawal
-      - href: /change-your-withdrawal
+      - href: /living-in-retirement/change-your-withdrawal/
   - text: Annuity basics
     href: /annuity-basics/
     subnav:
