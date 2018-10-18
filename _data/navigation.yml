@@ -164,12 +164,14 @@ savings:
   - text: Living in retirement
     href: /living-in-retirement/
     subnav:
-      - text: Retirement withdrawal basics
-        href: #
-      - text: Stay with the TSP
-        href: #
-      - text: Make or change your withdrawal
-        href: #
+      - text: Before you withdraw
+        href: /before-you-withdraw/
+      - text: Withdrawal options
+        href: /withdrawal-options/
+      - text: Make a withdrawal
+        href: /make-a-withdrawal
+      - text: Change your withdrawal
+      - href: /change-your-withdrawal
   - text: Annuity basics
     href: /annuity-basics/
     subnav:
