@@ -1,14 +1,9 @@
 ---
 layout: page
-
 title: Annuity basics
-
 styles:
-
 sidenav: savings
-
 scripts:
-
 permalink: /annuity-basics/
 ---
 
