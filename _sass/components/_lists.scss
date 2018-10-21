@@ -11,3 +11,14 @@
 .roman {
   list-style-type: lower-roman;
 }
+
+ul.check {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  li {
+    background: url('/assets/img/icons/check-circle-green.svg') no-repeat left top;
+    padding-left: 40px;
+    margin-bottom: 1.3rem;
+  }
+}

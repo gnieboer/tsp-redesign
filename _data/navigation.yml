@@ -16,8 +16,6 @@ primary:
       href: /account-basics/
     - text: Making contributions
       href: /making-contributions/
-    - text: For beneficiaries
-      href: /for-beneficiaries/
   - text: Learn about fund options
     links:
     - text: How to invest
@@ -44,6 +42,8 @@ primary:
       href: /planning-for-life-events/
     - text: Federal service changes
       href: /federal-service-changes/
+    - text: For beneficiary participants
+      href: /for-beneficiary-participants/
 
 
 secondary:
@@ -84,15 +84,6 @@ manage-your-plan:
         href: /making-contributions/maximize-your-savings/
       - text: Contribution limits
         href: /making-contributions/contribution-limits/
-  - text: For beneficiaries
-    href: /for-beneficiaries/
-    subnav:
-      - text: Being a beneficiary participant
-        href: /for-beneficiaries/being-a-beneficiary-participipant
-      - text: Designating beneficiaries
-        href: /for-beneficiaries/designating-beneficiaries/
-      - text: Beneficiary distributions
-        href: /for-beneficiaries/beneficiary-distributions/
 
 fund-options:
   - text: How to invest
@@ -171,12 +162,12 @@ savings:
       - text: Make a withdrawal
         href: /living-in-retirement/make-a-withdrawal/
       - text: Change your withdrawal
-      - href: /living-in-retirement/change-your-withdrawal/
+        href: /living-in-retirement/change-your-withdrawal/
   - text: Annuity basics
     href: /annuity-basics/
     subnav:
-      - text: Annuity types and terms
-        href: /annuity-basics/annuity-types-and-terms/
+      - text: Annuity benefits and limitations
+        href: /annuity-basics/annuity-benefits-and-limitations/
       - text: Purchase an annuity
         href: /annuity-basics/purchase-an-annuity/
 
@@ -184,8 +175,6 @@ manage-life-changes:
   - text: Planning for life events
     href: /planning-for-life-events/
     subnav:
-      - text: Beneficiary basics
-        href: /planning-for-life-events/beneficiary-basics/
       - text: Changes in your family status
         href: /planning-for-life-events/changes-in-your-family-status/
       - text: Economic hardship
@@ -205,6 +194,15 @@ manage-life-changes:
         href: /federal-service-changes/entering-nonpay-status/
       - text: Preparing for active duty
         href: /federal-service-changes/preparing-for-active-duty/
+  - text: For beneficiary participants
+    href: /for-beneficiary-participants/
+    subnav:
+      - text: Being a beneficiary participant
+        href: /for-beneficiary-participants/being-a-beneficiary-participant/
+      - text: Designating beneficiaries
+        href: /for-beneficiary-participants/designating-beneficiaries/
+      - text: Beneficiary distributions
+        href: /for-beneficiary-participants/beneficiary-distributions/
 
 privacy:
   - text: FRTIB Privacy Division

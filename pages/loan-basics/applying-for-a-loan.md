@@ -9,7 +9,7 @@ sidenav: savings
 
 scripts:
 
-permalink: /loan-basics/applying-for-loan/
+permalink: /loan-basics/applying-for-a-loan/
 ---
 
 # Applying for a loan
@@ -20,11 +20,11 @@ Before you apply for a TSP loan, please review our booklet, [Loans](#), which is
 + If you’re unable to complete the loan process online, print out the Loan Agreement and mail it to us with any additional required information. We must receive the Loan Agreement before the expiration date that appears at the top of the Agreement.
 <div class="usa-alert usa-alert-info">
 <div class="usa-alert-body" markdown="1">
-Use our [Loan Calculator](#) to estimate loan payments based on the amount you want to borrow from your TSP account, the current loan interest rate, and other factors. 
+Use our [Loan Calculator](#) to estimate loan payments based on the amount you want to borrow from your TSP account, the current loan interest rate, and other factors.
 {: .usa-alert-text}
 </div>
 </div>
- 
+
 ## Spousal rules
 By law, your spouse has certain rights to your TSP account. When requesting a loan, you must indicate if you are married, even if you are separated from your spouse.
 + FERS or uniformed services participants: Your spouse must consent to your TSP loan by signing the Loan Agreement that you print from this website.
@@ -67,4 +67,3 @@ Purchasing a boat as a primary residence requires you to provide all of the foll
 
 + If your loan request was made and approved online, you will receive your money in the form of a check, mailed to your address of record. You will not have the option of receiving your funds by electronic funds transfer (EFT).
 + If your account is invested in more than one TSP fund, your loan payments will be deducted proportionally from the traditional and Roth contributions and earnings in each fund.
-
