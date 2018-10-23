@@ -9,12 +9,15 @@ permalink: /for-beneficiary-participants/
 
 # For beneficiary participants
 
-## Notifying the TSP of a participant’s death
+## Reporting a participant’s death
 
-If you are the next-of-kin or legal representative of a deceased TSP participant, you should notify us __immediately__ in the event of their death. You can do this in one of two ways:
+
+If you are the next-of-kin or legal representative of a deceased TSP participant, you should notify us __immediately__ in the event of their death. You can do this in one of three ways:
 
 + If the participant was an active federal employee or member of the uniformed services, report the death to the participant's employing agency or service.
-+ Otherwise, report the participant's death to us by calling 1-877-968-3778. Press 3 from the main menu and hold to speak to a Participant Service Representative.
++ Report the participant's death to us by calling 1-877-968-3778. Press 3 from the main menu to speak to a Participant Service Representative.
++ Read, complete, and submit [Form TSP-17](https://www.tsp.gov/PDF/formspubs/tsp-17.pdf), *Information Relating to Deceased Participant*, along with the participant's certified death certificate. 
+
 
 ## In this section:
 
