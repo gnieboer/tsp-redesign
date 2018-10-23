@@ -18,5 +18,7 @@ As a federal employee, a member of the uniformed services, or a beneficiary part
 + Move money into the TSP
 + Protect your TSP account
 + Update your personal information
++ Administrative costs
++ Designating beneficiaries
 
 <!-- CONTENT END -->

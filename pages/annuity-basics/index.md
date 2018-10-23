@@ -14,6 +14,6 @@ A life annuity provides guaranteed monthly payments for as long as you are alive
 ## In this section:
 
 + Annuity benefits and limitations
-+ Start an annuity
++ Purchase an annuity
 
 <!-- CONTENT END -->

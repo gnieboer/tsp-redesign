@@ -71,6 +71,8 @@ manage-your-plan:
         href: /account-basics/update-personal-information/
       - text: Administrative costs
         href: /account-basics/administrative-costs/
+      - text: Designating beneficiaries
+        href: /account-basics/designating-beneficiaries/
   - text: Making contributions
     href: /making-contributions/
     subnav:
@@ -190,7 +192,7 @@ manage-life-changes:
         href: /federal-service-changes/leaving-federal-service/
       - text: Returning to federal service
         href: /federal-service-changes/returning-to-federal-service/
-      - text: Entering a non-pay status
+      - text: Entering a nonpay status
         href: /federal-service-changes/entering-nonpay-status/
       - text: Preparing for active duty
         href: /federal-service-changes/preparing-for-active-duty/

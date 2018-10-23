@@ -17,7 +17,6 @@ Throughout your life you will experience circumstances that may effect your reti
 
 ## In this section:
 
-+ Beneficiary basics
 + Changes in your family status 
 + Economic hardship
 + Power of attorney
