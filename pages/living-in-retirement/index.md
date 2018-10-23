@@ -33,7 +33,7 @@ And be sure to check out our other videos at [youtube.com/tsp4gov](youtube.com/t
 
 + Before you withdraw
 + Withdrawal options
-+ Make a withdrawal
++ Making a withdrawal
 + Change your withdrawal
 
 <!-- CONTENT END -->
