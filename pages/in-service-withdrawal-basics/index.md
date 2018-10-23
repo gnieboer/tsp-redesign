@@ -25,8 +25,7 @@ In-service withdrawals are withdrawals you make from your TSP account while you'
 
 ## In this section:
 
-+ Benefits and limitations
-+ Types of in-service withdrawals
++ In-service withdrawal types and terms
 + Making an in-service withdrawal
 + Alternatives to withdrawals
 

@@ -1,18 +1,13 @@
 ---
 layout: page
-
 title: Designating beneficiaries
-
-sidenav: account-basics
-
+sidenav: manage-your-plan
 styles:
-
 scripts:
-
 permalink: /account-basics/designating-beneficiaries/
 ---
 
-# Beneficiary basics
+# Designating beneficiaries
 
 ## Do you need to designate a beneficiary? For most of us, the answer is, “NO.”
 
