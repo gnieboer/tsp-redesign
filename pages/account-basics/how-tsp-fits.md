@@ -32,9 +32,9 @@ Most employees of the United States government are eligible to participate in th
 
 In addition to being covered by an eligible retirement system, you must also be:
 
-- Actively employed by the federal government as a civilian employee or as a member of the uniformed services,
-- In a pay status, in order to contribute, and
-- Working full- or part-time.
+- actively employed by the federal government as a civilian employee or as a member of the uniformed services,
+- in a pay status, in order to contribute, and
+- working full- or part-time.
 
 ## Establishing your TSP account
 
@@ -48,9 +48,9 @@ In addition to being covered by an eligible retirement system, you must also be:
     </button>
 <div id="a1" class="usa-accordion-content" markdown="1">
 
-If you’re a FERS employee hired after July 31, 2010, your agency has automatically enrolled you in the TSP and 3% of your basic pay is deducted each pay period and deposited in the traditional balance of your TSP account.
+If you’re a FERS employee hired after July 31, 2010, your agency has automatically enrolled you in the TSP and 3% of your basic pay is deducted each pay period and deposited in the traditional balance of your TSP account. You also receive Agency Automatic (1%) Contributions that you're entitled to keep after you meet the [vesting] requirement. 
 
-If you’re a FERS employee hired before August 1, 2010, you already have a TSP account with accruing Agency Automatic (1%) Contributions. In addition, you can make contributions to your account from your pay and receive Agency Matching Contributions.
+If you’re a FERS employee hired before August 1, 2010, you already have a TSP account with accruing Agency Automatic (1%) Contributions. In addition, you can choose to make contributions to your account from your pay and receive Agency Matching Contributions.
 
 To make a contribution election, use your agency’s electronic payroll system (e.g., Employee Express) or complete and submit [Form TSP-1](/PDF/forms/tsp-1.pdf), *Election Form*.
 
