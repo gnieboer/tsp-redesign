@@ -30,9 +30,9 @@ If you have a pending application for one type of in-service withdrawal or for a
 
 We will mail your in-service withdrawal check to the address we have on record, unless you request to have your withdrawal payment electronically deposited into your checking or savings account.
 
-If you're transferring any portion of your age-based withdrawal, we will mail the check to your IRA or eligible employer plan.
++ If you're transferring any portion of your age-based withdrawal, we will mail the check to your IRA or eligible employer plan.
 
-If you complete your request online, we cannot deposit your money electronically or transfer any part of your withdrawal to an eligible employer plan.
++ If you complete your request online, we cannot deposit your money electronically or transfer any part of your withdrawal to an eligible employer plan.
 
 It will take several weeks from the time we receive your properly completed form until the time we send your check.
 
