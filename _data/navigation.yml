@@ -48,7 +48,7 @@ primary:
 
 secondary:
   - text: About us
-    href: /about
+    href: /about-us/
   - text: Login
     href: "javascript:void(0);"
     # id:
