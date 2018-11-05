@@ -9,7 +9,7 @@ permalink: /making-contributions/contribution-limits/
 
 # Know your limits
 
-Each year, the Internal Revenue Service (IRS) determines the limit of contributions, also called elective deferrals, you can make to your TSP account. Below are the **2018** IRS limits and additional information to keep you informed.
+Each year, the Internal Revenue Service (IRS) determines the limit of contributions, also called elective deferrals, you can make to your TSP account. Below are the **2019** IRS limits and additional information to keep you informed.
 
 **Select an option and take a look.**
 
@@ -59,7 +59,7 @@ You’ll thank yourself later.
     <button class="usa-accordion-button"
       aria-expanded="true"
       aria-controls="a2">
-      <span>$18,500</span>
+      <span>$19,000</span>
       Annual<br>Elective Deferral
     </button>
     <div id="a2" class="usa-accordion-content">
@@ -96,7 +96,7 @@ If you're not maxing out your contributions, consider increasing your contributi
     <button class="usa-accordion-button"
       aria-expanded="false"
       aria-controls="a3">
-      <span>$55,000</span>
+      <span>$56,000</span>
       Annual<br>Addition
     </button>
     <div id="a3" class="usa-accordion-content">
