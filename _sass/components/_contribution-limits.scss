@@ -1,9 +1,17 @@
-.contribution-limits.usa-tabs {
 
+// .usa-accordion.contribution-limits > li, .usa-accordion-bordered.contribution-limits > li {
+//   background-color: inherit;
+// }
+
+.contribution-limits.usa-tabs.usa-accordion {
+  li {
+    background-color: inherit;
+  }
   .usa-accordion-button {
     text-align: center;
     font-size: 2rem;
-    width: 20rem;
+    width: 100%;
+    background-color: #ffffff;
     border: 1px solid #333;
     margin-bottom: 1rem;
     span {
@@ -19,7 +27,8 @@
     }
   }
 
-  th {font-weight: 700;
+  th {
+    font-weight: 700;
     width: 20rem;
     padding-left: 2rem;
     vertical-align: text-top;
@@ -37,5 +46,14 @@
   }
   .usa-accordion-content {
     margin-bottom: 3rem;
+  }
+}
+
+
+@media screen and (min-width: 992px) {
+  .contribution-limits.usa-tabs.usa-accordion {
+    .usa-accordion-button {
+      width: 20rem;
+    }
   }
 }
