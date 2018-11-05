@@ -14,6 +14,46 @@ Each year, the Internal Revenue Service (IRS) determines the limit of contributi
 **Select an option and take a look.**
 
 <ul class="usa-accordion usa-tabs contribution-limits">
+<!-- ANNUAL ELECTIVE DEFERRAL -->
+  <li>
+    <button class="usa-accordion-button"
+      aria-expanded="true"
+      aria-controls="a2">
+      <span>$19,000</span>
+      Annual<br>Elective Deferral
+    </button>
+    <div id="a2" class="usa-accordion-content">
+    <table class="usa-table-borderless">
+        <tbody>
+          <tr>
+            <th scope="row">What it means</th>
+            <td markdown="1">
+## All ages
+This limit applies to the **combined total of traditional and Roth contributions.** For uniformed services members, this does not apply to traditional contributions from combat-zone pay.
+</td>
+
+          </tr>
+          <tr>
+            <th scope="row">What to know</th>
+            <td markdown="1">
+Contributing from your pay before taxes allows your money to grow tax-deferred until you withdraw it. If you make Roth (after-tax) contributions, those contributions could be "qualified" and tax free at retirement. Knowing this limit helps you decide how much to put away each year.
+
+Additionally, this limit does not include matching contributions that you receive from your agency or service, so you're actually saving more.
+
+
+</td>
+          </tr>
+          <tr>
+            <th scope="row">What to do</th>
+            <td markdown="1">
+If you're not maxing out your contributions, consider increasing your contribution amount each chance you get to help reach your retirement savings goals. You might be surprised how big of a difference a small increase can make.
+</td>
+          </tr>
+        </tbody>
+    </table>
+    </div>
+  </li>
+<!-- CATCH-UP CONTRIBUTIONS -->
   <li>
     <button class="usa-accordion-button"
       aria-expanded="false"
@@ -55,44 +95,9 @@ You’ll thank yourself later.
         </tbody>
     </table>
     </div>
-  </li><li>
-    <button class="usa-accordion-button"
-      aria-expanded="true"
-      aria-controls="a2">
-      <span>$19,000</span>
-      Annual<br>Elective Deferral
-    </button>
-    <div id="a2" class="usa-accordion-content">
-    <table class="usa-table-borderless">
-        <tbody>
-          <tr>
-            <th scope="row">What it means</th>
-            <td markdown="1">
-## All ages
-This limit applies to the **combined total of traditional and Roth contributions.** For uniformed services members, this does not apply to traditional contributions from combat-zone pay.
-</td>
-
-          </tr>
-          <tr>
-            <th scope="row">What to know</th>
-            <td markdown="1">
-Contributing from your pay before taxes allows your money to grow tax-deferred until you withdraw it. If you make Roth (after-tax) contributions, those contributions could be "qualified" and tax free at retirement. Knowing this limit helps you decide how much to put away each year.
-
-Additionally, this limit does not include matching contributions that you receive from your agency or service, so you're actually saving more.
-
-
-</td>
-          </tr>
-          <tr>
-            <th scope="row">What to do</th>
-            <td markdown="1">
-If you're not maxing out your contributions, consider increasing your contribution amount each chance you get to help reach your retirement savings goals. You might be surprised how big of a difference a small increase can make.
-</td>
-          </tr>
-        </tbody>
-    </table>
-    </div>
-  </li><li>
+  </li>
+<!-- ANNUAL ADDITION -->
+  <li>
     <button class="usa-accordion-button"
       aria-expanded="false"
       aria-controls="a3">
