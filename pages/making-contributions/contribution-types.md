@@ -57,11 +57,11 @@ pay and do not reduce your pay for income tax purposes.**
 Agency/Service Automatic (1%) Contributions are subject to vesting
 rules. You are vested in (entitled to keep) all of your Agency/Service
 Automatic (1%) Contributions, as well as any earnings that they accrue,
-aer a certain period of federal service. In order to count toward vesting, the years of service must be in a position that is eligible to participant in the TSP, not just the years in which you were a participant.
+are a certain period of federal service. In order to count toward vesting, the years of service must be in a position that is eligible to participate in the TSP, not just the years in which you were a participant.
 
 
 
-Most FERS participants are vested in automatic contributions aer
+Most FERS participants are vested in automatic contributions are
 completing 3 years of service. BRS members and FERS employees in
 congressional and certain non-career positions become vested aer
 2 years of service.
