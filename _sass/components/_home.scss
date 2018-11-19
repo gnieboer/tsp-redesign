@@ -2,28 +2,37 @@
   h2, h3 {
     font-family: $font-sans;
   }
-  a {
-    font-family: $font-sans;
-    font-size: 2.6rem;
-    color: #046B99;
-    margin-top: 0;
-    text-decoration: none;
-    &:hover {
-      text-decoration: underline;
-    }
+}
+
+// a {
+//   font-family: $font-sans;
+//   font-size: 2.6rem;
+//   color: #046B99;
+//   margin-top: 0;
+//   text-decoration: none;
+//   &:hover {
+//     text-decoration: underline;
+//   }
+// }
+a.learn-more, .usa-learn-more a {
+  font-family: $font-sans;
+  font-size: 2.6rem;
+  color: #046B99;
+  margin-top: 0;
+  text-decoration: none;
+  font-weight: 600;
+  &::after {
+    content: '';
+    position: absolute;
+    display: inline-block;
+    background: url("/assets/img/icons/arrow_sw.svg") no-repeat;
+    transform: rotate(180deg);
+    width: 1.8rem;
+    height: 2.8rem;
+    margin: 0 0 0 1.4rem;
   }
-  a.learn-more, .usa-learn-more a {
-    font-weight: 600;
-    &::after {
-      content: '';
-      position: absolute;
-      display: inline-block;
-      background: url("/assets/img/icons/arrow_sw.svg") no-repeat;
-      transform: rotate(180deg);
-      width: 1.8rem;
-      height: 2.8rem;
-      margin: 0 0 0 1.4rem;
-    }
+  &:hover {
+    text-decoration: underline;
   }
 }
   // a.learn-more {
@@ -72,10 +81,11 @@
 
   h2 {
     color: #046b99;
+    font-size: 2.5rem;
   }
 
   .usa-width-one-third {
-    padding:4rem 1.5rem;
+    padding:4rem 1.5rem 0 1.5rem;
     div:nth-of-type(1) {
     height: 16rem;
     display: flex;
@@ -91,9 +101,9 @@
         height: 12rem;
       }
     }
-    .usa-learn-more {
-      padding: 0 1.5rem 4rem 1.5rem;
-    }
+  }
+  .usa-learn-more {
+    padding: 0 1.5rem 4rem 1.5rem;
   }
 
   // a::after {

@@ -55,22 +55,22 @@ If you're new to the federal government or preparing to retire, we'll help guide
 
 </div>
 <!-- LEARN MORE -->
-<div class="usa-grid">
+<div class="usa-grid usa-learn-more">
 
 <!-- NEW TO THE TSP? -->
-<div class="usa-width-one-third usa-learn-more" markdown="1">
+<div class="usa-width-one-third" markdown="1">
 
 [Get started](/account-basics/)
 </div>
 
 <!-- EVERYTHING YOU NEED -->
-<div class="usa-width-one-third usa-learn-more" markdown="1">
+<div class="usa-width-one-third" markdown="1">
 
 [Learn more](/how-to-invest/)
 
 </div>
 <!-- WE'LL BE WITH YOU -->
-<div class="usa-width-one-third usa-learn-more" markdown="1">
+<div class="usa-width-one-third" markdown="1">
 
 [Learn more](/planning-for-life-events/)
 
