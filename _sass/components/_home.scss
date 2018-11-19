@@ -70,15 +70,12 @@
 
 .home-getting-started {
 
+  h2 {
+    color: #046b99;
+  }
+
   .usa-width-one-third {
     padding:4rem 1.5rem;
-  }
-
-  .usa-learn-more {
-    padding: 0 1.5rem 4rem 1.5rem;
-  }
-
-  .usa-width-one-third {
     div:nth-of-type(1) {
     height: 16rem;
     display: flex;
@@ -93,6 +90,9 @@
       img.team {
         height: 12rem;
       }
+    }
+    .usa-learn-more {
+      padding: 0 1.5rem 4rem 1.5rem;
     }
   }
 
