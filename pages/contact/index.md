@@ -234,7 +234,7 @@ Birmingham, AL 35242
 
 </div>
 </li>
-<!-- PRIVACY CONTACDT -->
+<!-- PRIVACY CONTACT -->
 <li>
     <button class="usa-accordion-button"
       aria-expanded="false"
