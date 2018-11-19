@@ -9,71 +9,95 @@ scripts:
 hero:
   image: /assets/img/hero.jpg
   callout:
-    alt:
-    text: Invest in your future
-  content: Plan for a lifetime with the TSP.
+  alt:
+  text:
+  content: Plan for a lifetime with the TSP
 
 ---
 
-<section class="home-getting-started usa-section-dark">
+<section class="home-getting-started">
 <div class="usa-grid">
-<!-- MANAGE YOUR PLAN -->
-<div class="usa-width-one-fourth" markdown="1">
-### <img src="{{ site.baseurl }}/assets/img/icons/settings.svg" alt="" class="left mr1">[Manage your plan](/account-basics/)
 
-We explain the basics of your account, describe how to start saving, help you transfer from other plans into the TSP, and more.
+<!-- NEW TO THE TSP? -->
+<div class="usa-width-one-third" markdown="1">
+<div>
+<img src="{{ site.baseurl }}/assets/img/icons/sun.svg" alt="">
 </div>
 
-<!-- LEARN ABOUT FUND OPTIONS -->
-<div class="usa-width-one-fourth" markdown="1">
-### <img src="{{ site.baseurl }}/assets/img/icons/compass.svg" alt="" class="left mr1">[Learn about fund options](/how-to-invest/)
+## New to the TSP? Let’s start with the basics
 
-Choosing the right funds can be tricky, but our L Funds help take the guesswork out of investing. We'll help you understand these and our other fund options.
-
-</div>
-<!-- USE YOUR SAVINGS -->
-<div class="usa-width-one-fourth" markdown="1">
-### <img src="{{ site.baseurl }}/assets/img/icons/sun.svg" alt="" class="left mr1">[Use your savings](/loan-basics/)
-
-Your big day is around the corner, now what? We'll help you navigate your plan before, during, and after you retire.
+You can setup your account, rollover a 401(k), and so much more.
 
 </div>
 
-<!-- MANAGE LIFE EVENTS -->
-<div class="usa-width-one-fourth" markdown="1">
-### <img src="{{ site.baseurl }}/assets/img/icons/sun.svg" alt="" class="left mr1">[Manage life events](/planning-for-life-events/)
+<!-- EVERYTHING YOU NEED -->
+<div class="usa-width-one-third" markdown="1">
+<div class="">
+<img src="{{ site.baseurl }}/assets/img/icons/graph_up.svg" alt="">
+</div>
 
-Life happens, but you don’t have to go it alone. A solid financial plan can help you prepare for these life events.
+## Everything you need to know about our funds
+
+We’ll help you understand each fund, and their risks, rewards and performance.
 
 </div>
+<!-- WE'LL BE WITH YOU -->
+<div class="usa-width-one-third" markdown="1">
+<div>
+<img src="{{ site.baseurl }}/assets/img/icons/team_blue.svg" alt="" class="team">
+</div>
+
+## We’ll be with you every step of the way
+
+If you're new to the federal government or preparing to retire, we'll help guide you along the way.
+
+</div>
+
+</div>
+<!-- LEARN MORE -->
+<div class="usa-grid">
+
+<!-- NEW TO THE TSP? -->
+<div class="usa-width-one-third usa-learn-more" markdown="1">
+
+[Get started](/account-basics/)
+</div>
+
+<!-- EVERYTHING YOU NEED -->
+<div class="usa-width-one-third usa-learn-more" markdown="1">
+
+[Learn more](/how-to-invest/)
+
+</div>
+<!-- WE'LL BE WITH YOU -->
+<div class="usa-width-one-third usa-learn-more" markdown="1">
+
+[Learn more](/planning-for-life-events/)
+
+</div>
+
 </div>
 </section>
+
+<!-- QUICK LINKS -->
 <section class="quick-links">
 <div class="usa-grid">
-<div class="usa-width-one-fourth">
-  <a href="/fund-performance/">Fund performance</a>
+<div class="usa-width-one-fourth" markdown="1">
+[Fund performance](/fund-performance/)
 </div>
-<div class="usa-width-one-fourth">
-  <a href="/making-contributions/contribution-limits/">Contribution limits</a>
+<div class="usa-width-one-fourth" markdown="1">
+[Forms and publications](/forms/)
 </div>
-<div class="usa-width-one-fourth">
-  <a href="/forms/">Forms and publications</a>
+<div class="usa-width-one-fourth" markdown="1">
+[Contribution limits](/making-contributions/contribution-limits/)
 </div>
-<div class="usa-width-one-fourth">
-  <a href="/account-basics/update-personal-information/">Change your address</a>
+<div class="usa-width-one-fourth" markdown="1">
+[Calculators](/calculators/)
 </div>
 </div>
 </section>
-<section class="section-investor">
-  <div class="usa-grid">
-    <div class="usa-width-one-half">
-      <h1>What kind of investor are you ?</h1>
-      <p>When you know yourself as an investor, you can make better choices regardless of what happens in the market.</p>
-      <a href="/how-to-invest/before-you-invest/">Take me there</a>
-    </div>
-  </div>
-</section>
-<!-- L FUNDS CALLOUT-->
+
+<!-- L FUNDS CALLOUT
 <section class="our-funds">
 <div class="callout arrow-bottom-section arrow-bottom arrow-bottom-blue">
 <div class="usa-grid usa-content" markdown="1">
@@ -82,114 +106,109 @@ We offer the L Funds, professionally designed to maximize returns and minimize r
 
 </div>
 </div>
-</section>
-<!-- L FUNDS GRID -->
-<section>
-<div class="usa-grid usa-section" markdown="1">
-## Our L Funds at a Glance
-{: .text-center}
+</section> -->
+
+<!-- OUR FUNDS AT A GLANCE -->
+<section class="home-our-funds" markdown="1">
+
+## Our funds at a glance
+
+<div class="usa-grid">
+<div class="usa-width-one-whole" markdown="1">
+
+<ul class="usa-accordion usa-tabs our-funds">
+<!-- Lifecycle funds -->
+<li>
+<button class="usa-accordion-button"
+aria-expanded="true"
+aria-controls="a1">
+Lifecycle funds
+</button>
+<div id="a1" class="usa-accordion-content" markdown="1">
+
+L Funds are professionally designed to maximize returns and minimize risk. Each L Fund has a mix of G, F, C, S and I funds.
+
 </div>
+</li>
 
-<!-- ROW 1 -->
-<div class="usa-grid fund-grid">
-<div class="usa-width-one-third" markdown="1">
-<h3><a href="/funds-lifecycle/l-income/">L Income</a></h3>
+<!-- Individual funds -->
+<li>
+<button class="usa-accordion-button"
+aria-expanded="false"
+aria-controls="a2">
+Individual funds
+</button>
+<div id="a2" class="usa-accordion-content" markdown="1">
 
-For participants who are currently withdrawing their TSP accounts in monthly payments or who plan to begin withdrawing before 2019.
+If you're an experienced investor, you can customize your asset allocation with our 5 core funds and invest in everything from short-term government securities to domestic and international stocks.
+
 </div>
-
-<div class="usa-width-one-third" markdown="1">
-<h3><a href="/funds-lifecycle/l-2020/">L 2020</a></h3>
-
-For participants who will withdraw their money beginning 2019 through 2024.
-</div>
-
-<div class="usa-width-one-third" markdown="1">
-<h3><a href="/funds-lifecycle/l-2030/">L 2030</a></h3>
-
-
-For participants who will withdraw their money beginning 2025 through 2034.
-</div>
-</div>
-<!-- ROW 2 -->
-<div class="usa-grid fund-grid">
-
-<div class="usa-width-one-third" markdown="1">
-<h3><a href="/funds-lifecycle/l-2040/">L 2040</a></h3>
-
-For participants who will withdraw their money beginning 2035 through 2044.
-</div>
-
-<div class="usa-width-one-third" markdown="1">
-<h3><a href="/funds-lifecycle/l-2050/">L 2050</a></h3>
-
-For participants who will begin to withdraw their money in 2045 or later.
-</div>
-
-<div class="usa-width-one-third" markdown="1"></div>
-</div>
-</section>
-<!-- CORE FUNDS CALLOUT-->
-<section class="our-core-funds">
-<div class="callout arrow-bottom-section arrow-bottom arrow-bottom-gray">
-<div class="usa-grid usa-content" markdown="1">
-
-Each L Fund has a different mix of the G, F, C, S, and I Funds.
-
+</li>
+</ul>
 </div>
 </div>
 </section>
-<!-- CORE FUNDS GRID -->
-<section>
-<div class="usa-grid usa-section" markdown="1">
 
-## Our Core Funds at a Glance
-{: .text-center}
-  </div>
+<!-- WHEN YOU KNOW YOURSELF -->
+<section class="section-investor">
+<div class="usa-grid">
+<div class="usa-width-one-half usa-learn-more" markdown="1">
+## Know yourself as an investor
 
-<div class="usa-grid fund-grid">
+Being confident about your retirement plans makes it easier to deal with uncertain times in the market.
+
+[Learn more](/how-to-invest/before-you-invest/)
+<!-- maybe link to BYI tool or Stick to Your Plan language that I just discovered doesn't, but should and will eventually exist. -->
+</div>
+</div>
+</section>
+
+<!-- STAY CONNECTED -->
+<section class="section-connected" markdown="1">
+
+## Stay connected with us
+
+<div class="usa-grid">
+<!-- Transfers money to TSP -->
 <div class="usa-width-one-third" markdown="1">
 
-<h3><a href="/funds-core/g-fund/">G Fund</a></h3>
+### Transfers money to TSP
 
-Government securities specially issued to the Thrift Savings Plan
-
+<img src="{{ site.baseurl }}/assets/img/icons/money.svg" alt="">
 </div>
 
+<!-- Change in family status -->
 <div class="usa-width-one-third" markdown="1">
 
-<h3><a href="/funds-core/c-fund/">C Fund</a></h3>
+### Change in family status
 
-Stocks of large and medium-sized U.S. companies
-
+<img src="{{ site.baseurl }}/assets/img/icons/family_blue.svg" alt="">
 </div>
 
-<div class="usa-width-one-third" markdown="1">
-<h3><a href="/funds-core/f-fund/">F Fund</a></h3>
-
-Government, corporate, and mortgage-backed bonds
-
-</div>
-</div>
-
-<div class="usa-grid fund-grid">
+<!-- Update your information -->
 <div class="usa-width-one-third" markdown="1">
 
-<h3><a href="/funds-core/s-fund/">S Fund</a></h3>
+### Update your information
 
-<span data-term="Stocks" class="js-glossary-toggle term term-end">Stocks</span> of small to medium-sized U.S. companies not included in the C Fund
-
+<img src="{{ site.baseurl }}/assets/img/icons/individual_blue.svg" alt="" class="team">
 </div>
 
-<div class="usa-width-one-third" markdown="1">
-
-<h3><a href="/funds-core/i-fund/">I Fund</a></h3>
-
-International stocks of more than 20 developed [countries](#)
-
 </div>
+</section>
 
+<!-- FIND THE ANSWERS -->
+<section class="section-find-answers">
+<div class="usa-grid">
+<div class="usa-width-one-whole" markdown="1">
 
+## Find the answers<br />at your fingertips
+
+To save you time and give you the best<br />
+experience, we’ve prepared answers to the questions<br />
+our participants and beneficiaries ask most often.
+
+[Read our frequently asked questions](javascript:void(0))
+</div>
 </div>
 </section>
 
