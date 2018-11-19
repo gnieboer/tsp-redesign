@@ -1,118 +1,60 @@
-.usa-section-dark a {
-  color: #ffffff;
-  text-decoration: none;
-}
-.agency-service .usa-grid {
-  h2 {
-    text-align: center;
-    font-size: 3rem;
+.homepage {
+  h2, h3 {
     font-family: $font-sans;
   }
-  h2, h3, p {
-    text-align: center;
-    color: white;
-  }
-  p {
-    font-size: $h3-font-size;
-  }
-}
-.tertiary-navigation .usa-grid {
-  ul {
-    font-size: 1.5rem;
-  }
-  li:first-of-type {
-    font-family: $font-serif;
-    font-weight: bold;
-  }
 }
 
-.home-about {
-  .usa-width-two-thirds {
-    padding-right: $spacing-md-small;
-  }
-  .usa-width-one-third, .usa-width-one-fourth {
-
-  }
-}
-
-// New homepage styles
-
-.home-getting-started {
-  .usa-width-one-third, .usa-width-one-fourth  {
-    padding:4rem 1.5rem;
-    }
-    h2 {
-      text-align: center;
-      font-size: 3.5rem;
-    }
-    h2, h3, p {
-      color: white;
-    }
-    h3 {
-      font-size: 2.1rem;
-      font-weight: 400;
-    }
-    p {
-      font-size: $h5-font-size;
-    }
-    img {
-      width: 50px;
-      vertical-align: text-top;
-      float:left;
-      margin-right: 1rem;
-    }
-  }
-
-
-
-  .arrow-bottom-section {
-      position: relative;
-  }
-  .arrow-bottom::after {
+// a {
+//   font-family: $font-sans;
+//   font-size: 2.6rem;
+//   color: #046B99;
+//   margin-top: 0;
+//   text-decoration: none;
+//   &:hover {
+//     text-decoration: underline;
+//   }
+// }
+a.learn-more, .usa-learn-more a {
+  font-family: $font-sans;
+  font-size: 2.6rem;
+  color: #046B99;
+  margin-top: 0;
+  text-decoration: none;
+  font-weight: 600;
+  &::after {
     content: '';
-     position: absolute;
-     left: 50%;
-     top: 100%;
-     width: 0;
-     height: 0;
-     border-left: 20px solid transparent;
-     border-right: 20px solid transparent;
-     border-top-width: 20px;
-     border-top-style: solid;
-     clear: both;
+    position: absolute;
+    display: inline-block;
+    background: url("/assets/img/icons/arrow_sw.svg") no-repeat;
+    transform: rotate(180deg);
+    width: 1.8rem;
+    height: 2.8rem;
+    margin: 0 0 0 1.4rem;
   }
-    .arrow-bottom-blue::after {
-      border-top-color: #1ba7d0;
+  &:hover {
+    text-decoration: underline;
   }
-    .arrow-bottom-gray::after {
-      border-top-color: $color-gray;
-  }
+}
+  // a.learn-more {
+  //   text-decoration: none;
+  //   font-size: 2.6rem;
+  //   font-weight: 600;
+  //   &::after {
+  //     content: '';
+  //     position: absolute;
+  //     display: inline-block;
+  //     background: url("/assets/img/icons/arrow_sw.svg") no-repeat;
+  //     transform: rotate(180deg);
+  //     width: 1.8rem;
+  //     height: 2.8rem;
+  //     margin: 0 0 0 1.4rem;
+  //   }
+  //   &:hover {
+  //     text-decoration: underline;
+  //   }
+  // }
 
-  .quick-links {
-    background-color: #1ba7d0;
-    .usa-grid {
-      display: flex;
-      justify-content: space-evenly;
-      padding:0;
-    }
-    .usa-width-one-fourth {
-      border-right: 4px solid $color-white;
-      font-size: 2rem;
-      margin:0;
-      width: 25%;
-    }
-    a {
-      padding: 3rem 0 ;
-      display:block;
-      color: #fff;
-      text-decoration: none;
-      text-align: center;
-    }
-    .usa-grid {
-      border-left: 4px solid $color-white;
-    }
-  }
-
+// HERO IMAGE
 .usa-section-dark {
   background-color: #323a45;
 }
@@ -123,48 +65,236 @@
     line-height: 6rem;
   }
 }
+
+.home-about {
+  .usa-width-two-thirds {
+    padding-right: $spacing-md-small;
+  }
+  .usa-width-one-third, .usa-width-one-fourth {
+  }
+}
+
+// New homepage styles
+// SECTION 1
+
+.home-getting-started {
+
+  h2 {
+    color: #046b99;
+    font-size: 2.5rem;
+  }
+
+  .usa-width-one-third {
+    padding:4rem 1.5rem 0 1.5rem;
+    div:nth-of-type(1) {
+    height: 16rem;
+    display: flex;
+    align-items: center;
+    margin-bottom: 3rem;
+      img {
+        height: 14rem;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      img.team {
+        height: 12rem;
+      }
+    }
+  }
+  .usa-learn-more {
+    padding: 0 1.5rem 4rem 1.5rem;
+  }
+
+  // a::after {
+  //     content: '';
+  //     position: absolute;
+  //     display: inline-block;
+  //     background: url("/assets/img/icons/arrow_sw.svg") no-repeat;
+  //     transform: rotate(180deg);
+  //     width: 1.8rem;
+  //     height: 2.8rem;
+  //     margin: 0 0 0 1.4rem;
+  // }
+  //
+  // a:link {
+  //   text-decoration: none;
+  //   font-weight: 600;
+  // }
+/* mouse over link */
+  // div.icon-contanier {
+  //   height: 18rem;
+  //   display: flex;
+  //   align-items: center;
+  //   border: 1px solid red;
+  // }
+  // div.icon-contanier img {
+  //   // height: 14rem;
+  //   display: block;
+  //   margin-left: auto;
+  //   margin-right: auto;
+  // }
+  // div.icon-contanier img.team {
+  //   height: 11rem;
+  // }
+  p {
+    font-size: $h3-font-size;
+    color: #000;
+  }
+    // img {
+    //   height: 14rem;
+    //   display: block;
+    //   margin-left: auto;
+    //   margin-right: auto;
+    // }
+}
+
+// SECTION: QUICK LINKS
+  .quick-links {
+    background-color: #046b99;
+    .usa-grid {
+      display: flex;
+      justify-content: space-evenly;
+      padding:0;
+    }
+    .usa-width-one-fourth {
+      border-right: 4px solid $color-white;
+      font-size: 2rem;
+      margin:0;
+      width: 25%;
+      padding: 1rem 0;
+    }
+    a {
+      padding: 3rem 0 ;
+      display:block;
+      color: #fff;
+      text-decoration: none;
+      text-align: center;
+      font-size: 2rem;
+    }
+    .usa-grid {
+      border-left: 4px solid $color-white;
+    }
+  }
+// SECTION: OUR FUNDS AT A GLANCE
+.home-our-funds {
+  background-color: #f1f1f1;
+  h2 {
+    background-color: #fff;
+    color: #323a45;
+    padding: 4rem 0;
+    margin: 0;
+    font-size: 4rem;
+    text-align: center;
+  }
+}
+
+// SECTION: KNOW YOURSELF AS AN INVESTOR
 .section-investor {
-  background-image: url('/assets/img/Woman_FeatherEdge.png');
+  background-image: url('/assets/img/photo/Woman_holding_coffee.jpg');
   background-size: cover;
   padding: 22rem 0;
-  color: #323a45;
-  h1 {
+  h2 {
     margin-top: 0;
     color: #323a45;
+    font-size: 4rem;
+  }
+  p {
+    font-size: 3rem;
+    color: #046b99;
+  }
+}
+
+// SECTION: STAY CONNECTED WITH US
+.section-connected {
+  background-color: #f1f1f1;
+  text-align: center;
+  h2 {
+    background-color: #fff;
+    padding: 4rem 0;
+    margin: 0;
+    font-size: 4rem;
+  }
+  h3 {
+    font-size: 2.6rem;
+    padding: 0 0 4rem 0;
+    margin: 0;
+  }
+  .usa-grid {
+    display: flex;
+    justify-content: space-evenly;
+    padding:0;
+    border-left: 0.8rem solid $color-white;
+  }
+  .usa-width-one-third {
+    border-right: 0.8rem solid $color-white;
+    margin: 0;
+    padding: 4rem 0;
+    img {
+      height: 12rem;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+}
+
+// SECTION: FIND THE ANSWERS AT YOUR FINGERTIPS
+.section-find-answers {
+  background-image: url('/assets/img/photo/Woman_FeatherEdge.png');
+  background-size: cover;
+  padding: 4rem 0 38rem 0;
+  color: #323a45;
+  text-align: center;
+  margin-top: 0.8rem;
+  h2 {
+    margin-top: 0;
+    color: #323a45;
+    font-size: 6rem;
+  }
+  p {
+    font-size: 2.8rem;
+    color: #046b99;
   }
   a {
     color: #323a45;
-    font-size: 3rem;
+    font-size: 3.3rem;
     text-decoration: none;
-    padding: 1rem 0;
+    padding: 0;
+    &::after {
+      content: '';
+      position: absolute;
+      display: inline-block;
+      background: url("/assets/img/icons/arrow_sw.svg") no-repeat;
+      transform: rotate(180deg);
+      width: 2rem;
+      height: 3.7rem;
+      margin: 0 0 0 1.4rem;
+    }
     &:hover {
-      border-bottom: 4px solid $color-primary-alt;
-    }
-    img {
-      width: 40px;
-      height: 40px;
-      vertical-align: middle;
-      margin-right: 1rem;
+      text-decoration: underline;
     }
   }
 }
-.our-funds, .our-core-funds {
-  .callout {
-    background-color: #1ba7d0;
-    color: #fff;
-    p {
-      text-align: center;
-      margin:auto;
-      font-size: 3rem;
-      padding: 3rem 0;
-    }
-  }
-}
-.our-core-funds {
-  .callout {
-    background-color: #5b616b;
-  }
-}
+
+
+// .our-funds, .our-core-funds {
+//   .callout {
+//     background-color: #1ba7d0;
+//     color: #fff;
+//     p {
+//       text-align: center;
+//       margin:auto;
+//       font-size: 3rem;
+//       padding: 3rem 0;
+//     }
+//   }
+// }
+// .our-core-funds {
+//   .callout {
+//     background-color: #5b616b;
+//   }
+// }
 
 .fund-grid {
 h3 {
@@ -195,7 +325,27 @@ h3 {
     margin-left: 1rem;
  }
 }
-
-.text-center {
-  text-align: center;
+// TERTIARY NAVIGATION
+.agency-service .usa-grid {
+  h2 {
+    text-align: center;
+    font-size: 3rem;
+    font-family: $font-sans;
+  }
+  h2, h3, p {
+    text-align: center;
+    color: white;
+  }
+  p {
+    font-size: $h3-font-size;
+  }
+}
+.tertiary-navigation .usa-grid {
+  ul {
+    font-size: 1.5rem;
+  }
+  li:first-of-type {
+    font-family: $font-serif;
+    font-weight: bold;
+  }
 }
