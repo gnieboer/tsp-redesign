@@ -119,9 +119,6 @@ Fairfax, VA 22033
 </div>
 </div>
 
-
-
-
 </div>
   </li><li>
     <button class="usa-accordion-button"
@@ -192,7 +189,8 @@ Fairfax, VA 22033
 
 
 </div>
-  </li><li>
+  </li>
+<li>
     <button class="usa-accordion-button"
       aria-expanded="false"
       aria-controls="a5">
@@ -235,7 +233,33 @@ Birmingham, AL 35242
 
 
 </div>
-  </li>
+</li>
+<!-- PRIVACY CONTACDT -->
+<li>
+    <button class="usa-accordion-button"
+      aria-expanded="false"
+      aria-controls="a6">
+      FRTIB Privacy Division
+    </button>
+<div id="a6" class="usa-accordion-content">
+
+<div class="usa-grid-full">
+<div class="usa-width-two-thirds" markdown="1">
+
+Use this email address if you would like to contact [FRTIB’s Privacy Office](/privacy/), or if you would like to submit a privacy complaint.
+
+Additionally, we have developed instructions for submitting a [Privacy Act request](/contact-privacy/submit-privacy-act-request/) if you wish to access or correct records that FRTIB maintains about you.
+
+</div>
+<div class="usa-width-one-third" markdown="1">
+
+**FRTIB Privacy Division**  
+[privacy@tsp.gov](mailto:privacy@tsp.gov)
+
+</div>
+</div>
+</div>
+</li>
 </ul>
 
 
