@@ -7,11 +7,6 @@
   .usa-grid {
     padding-top: 4rem;
   }
-  // ul {
-  //   display: flex;
-  //   align-items: flex-start;
-  //   justify-content: center;
-  // }
   li {
     margin: 0;
   }
@@ -71,8 +66,48 @@
       padding: 3rem 0;
     }
   }
+  // LEVEL 2: L FUNDS
+  .lifecycle-funds {
+    li {
+      border-bottom: 1px solid #afafaf;
+      &:last-child {
+        border-bottom: none;
+      }
+    }
+    .usa-accordion-button {
+      position: relative;
+      text-align: left;
+      width: 100%;
+      background-color: transparent;
+      font-size: 3rem;
+      padding-left: 0;
+      line-height: 7rem;
+      .secondary {
+        color: #046b99;
+      }
+      &[aria-expanded="true"] {
+        background-color: inherit;
+        color: inherit;
+        line-height: 7rem;
+      }
+      &[aria-expanded="true"]::after {
+        content: none;
+        // position: absolute;
+        // left: 46%;
+        // top: 100%;
+        // width: 0;
+        // height: 0;
+        // border-left: 20px solid transparent;
+        // border-right: 20px solid transparent;
+        // border-bottom: none;
+        // border-top-width: 20px;
+        // border-top-style: solid;
+        // border-top-color: #323a45;
+        // clear: both;
+      }
+    }
+  }
 }
-
 
 @media screen and (min-width: 992px) {
   .our-funds.usa-tabs.usa-accordion {
@@ -81,3 +116,5 @@
     }
   }
 }
+
+// LEVEL 2: L FUNDS
