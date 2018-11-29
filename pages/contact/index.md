@@ -70,7 +70,7 @@ Submit comments about this website (1,000 characters maximum). We do not respond
     <button class="usa-accordion-button"
       aria-expanded="false"
       aria-controls="a1">
-      Loan Payments
+      Loan payments
     </button>
 <div id="a1" class="usa-accordion-content" markdown="1">
 
@@ -90,7 +90,7 @@ St. Louis, MO 63101
     <button class="usa-accordion-button"
       aria-expanded="false"
       aria-controls="a2">
-      Court Orders and Legal Process Actions
+      Court orders and legal process actions
     </button>
 <div id="a2" class="usa-accordion-content">
 <div class="usa-grid-full">
@@ -124,7 +124,7 @@ Fairfax, VA 22033
     <button class="usa-accordion-button"
       aria-expanded="false"
       aria-controls="a3">
-      Federal Tax Levies and Criminal Restitution Orders
+      Federal tax levies and criminal restitution orders
     </button>
 <div id="a3" class="usa-accordion-content">
 <div class="usa-grid-full">
@@ -156,7 +156,7 @@ Fairfax, VA 22033
     <button class="usa-accordion-button"
       aria-expanded="false"
       aria-controls="a4">
-      Death Benefit Claims
+      Death benefit claims
     </button>
 <div id="a4" class="usa-accordion-content">
 
@@ -194,7 +194,7 @@ Fairfax, VA 22033
     <button class="usa-accordion-button"
       aria-expanded="false"
       aria-controls="a5">
-      Transfers and Rollovers to the TSP
+      Transfers and rollovers to the TSP
     </button>
 <div id="a5" class="usa-accordion-content">
 
