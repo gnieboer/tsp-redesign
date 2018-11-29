@@ -23,7 +23,7 @@ dap_agency: FRTIB
 markdown: kramdown
 
 scripts:
-  - assets/uswds/js/uswds.min.js
+  - /assets/uswds/js/uswds.min.js
   - /assets/js/vendor/glossary.min.js
   - /assets/js/login.js
   - /assets/js/glossary.js
