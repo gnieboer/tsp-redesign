@@ -4,28 +4,17 @@
   }
 }
 
-// a {
-//   font-family: $font-sans;
-//   font-size: 2.6rem;
-//   color: #046B99;
-//   margin-top: 0;
-//   text-decoration: none;
-//   &:hover {
-//     text-decoration: underline;
-//   }
-// }
 a.learn-more, .usa-learn-more a {
   font-family: $font-sans;
   font-size: 2.6rem;
-  color: #046B99;
-  margin-top: 0;
+  color: #046b99;
   text-decoration: none;
   font-weight: 600;
   &::after {
     content: '';
-    position: absolute;
+    position: relative;
     display: inline-block;
-    background: url("/assets/img/icons/arrow_sw.svg") no-repeat;
+    background: url(/assets/img/icons/arrow_sw.svg) no-repeat;
     transform: rotate(180deg);
     width: 1.8rem;
     height: 2.8rem;
@@ -35,24 +24,6 @@ a.learn-more, .usa-learn-more a {
     text-decoration: underline;
   }
 }
-  // a.learn-more {
-  //   text-decoration: none;
-  //   font-size: 2.6rem;
-  //   font-weight: 600;
-  //   &::after {
-  //     content: '';
-  //     position: absolute;
-  //     display: inline-block;
-  //     background: url("/assets/img/icons/arrow_sw.svg") no-repeat;
-  //     transform: rotate(180deg);
-  //     width: 1.8rem;
-  //     height: 2.8rem;
-  //     margin: 0 0 0 1.4rem;
-  //   }
-  //   &:hover {
-  //     text-decoration: underline;
-  //   }
-  // }
 
 // HERO IMAGE
 .usa-section-dark {
@@ -105,48 +76,10 @@ a.learn-more, .usa-learn-more a {
   .usa-learn-more {
     padding: 0 1.5rem 4rem 1.5rem;
   }
-
-  // a::after {
-  //     content: '';
-  //     position: absolute;
-  //     display: inline-block;
-  //     background: url("/assets/img/icons/arrow_sw.svg") no-repeat;
-  //     transform: rotate(180deg);
-  //     width: 1.8rem;
-  //     height: 2.8rem;
-  //     margin: 0 0 0 1.4rem;
-  // }
-  //
-  // a:link {
-  //   text-decoration: none;
-  //   font-weight: 600;
-  // }
-/* mouse over link */
-  // div.icon-contanier {
-  //   height: 18rem;
-  //   display: flex;
-  //   align-items: center;
-  //   border: 1px solid red;
-  // }
-  // div.icon-contanier img {
-  //   // height: 14rem;
-  //   display: block;
-  //   margin-left: auto;
-  //   margin-right: auto;
-  // }
-  // div.icon-contanier img.team {
-  //   height: 11rem;
-  // }
   p {
     font-size: $h3-font-size;
     color: #000;
   }
-    // img {
-    //   height: 14rem;
-    //   display: block;
-    //   margin-left: auto;
-    //   margin-right: auto;
-    // }
 }
 
 // SECTION: QUICK LINKS
@@ -197,7 +130,7 @@ a.learn-more, .usa-learn-more a {
   h2 {
     margin-top: 0;
     color: #323a45;
-    font-size: 4rem;
+    font-size: 6rem;
   }
   p {
     font-size: 3rem;
@@ -219,6 +152,16 @@ a.learn-more, .usa-learn-more a {
     font-size: 2.6rem;
     padding: 0 0 4rem 0;
     margin: 0;
+    a {
+      color: $color-black;
+      text-decoration: none;
+      &:hover {
+        text-decoration: underline;
+      }
+      &:visited {
+        color: $color-black;
+      }
+    }
   }
   .usa-grid {
     display: flex;
@@ -276,25 +219,6 @@ a.learn-more, .usa-learn-more a {
     }
   }
 }
-
-
-// .our-funds, .our-core-funds {
-//   .callout {
-//     background-color: #1ba7d0;
-//     color: #fff;
-//     p {
-//       text-align: center;
-//       margin:auto;
-//       font-size: 3rem;
-//       padding: 3rem 0;
-//     }
-//   }
-// }
-// .our-core-funds {
-//   .callout {
-//     background-color: #5b616b;
-//   }
-// }
 
 .fund-grid {
 h3 {
