@@ -1,3 +1,26 @@
 html {
   color: $color-base;
 }
+// Additional font weights
+// MEDIUM 600
+@font-face {
+  font-family: "Source Sans Pro";
+  font-style: normal;
+  font-weight: 600;
+  src: url("../uswds/fonts/sourcesanspro-medium-webfont.eot?#iefix") format("embedded-opentype"), url("../uswds/fonts/sourcesanspro-medium-webfont.woff2") format("woff2"),
+  url("../uswds/fonts/sourcesanspro-medium-webfont.woff") format("woff"),
+  url("../uswds/fonts/sourcesanspro-medium-webfont.ttf") format("truetype");
+}
+// BLACK 900
+@font-face {
+  font-family: "Source Sans Pro";
+  font-style: normal;
+  font-weight: 900;
+  src: url("../uswds/fonts/sourcesanspro-black-webfont.eot?#iefix") format("embedded-opentype"), url("../uswds/fonts/sourcesanspro-black-webfont.woff2") format("woff2"), url("../uswds/fonts/sourcesanspro-black-webfont.woff") format("woff"), url("../uswds/fonts/sourcesanspro-black-webfont.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Merriweather";
+  font-style: normal;
+  font-weight: 900;
+  src: url("../uswds/fonts/merriweather-black-webfont.eot?#iefix") format("embedded-opentype"), url("../uswds/fonts/merriweather-black-webfont.woff2") format("woff2"), url("../uswds/fonts/merriweather-black-webfont.woff") format("woff"), url("../uswds/fonts/merriweather-black-webfont.ttf") format("truetype");
+}

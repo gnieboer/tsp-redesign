@@ -12,6 +12,8 @@ $image-path: '../uswds/img';
 {% if site.data.theme.fonts.serif %}$font-serif: {{ site.data.theme.fonts.serif }};{% endif %}
 {% if site.data.theme.fonts.normal %}$font-normal: {{ site.data.theme.fonts.normal }};{% endif %}
 {% if site.data.theme.fonts.bold %}$font-bold: {{ site.data.theme.fonts.bold }};{% endif %}
+{% if site.data.theme.fonts.light %}$font-light: {{ site.data.theme.fonts.light }};{% endif %}
+{% if site.data.theme.fonts.medium %}$font-medium: {{ site.data.theme.fonts.medium }};{% endif %}
 
 // Color - USA banner
 {% if site.data.theme.colors.usa-banner.usa-banner-bg %}$usa-banner-bg: {{ site.data.theme.colors.usa-banner.usa-banner-bg }};{% endif %}

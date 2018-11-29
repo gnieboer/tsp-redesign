@@ -79,8 +79,14 @@ colors:
 
 fonts:
   sans: >-
-      "Source Sans Pro", "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
-  serif: >-
-      "Merriweather", "Georgia", "Cambria", "Times New Roman", "Times", serif;
+      "Source Sans Pro", Helvetica Neue, Helvetica, Roboto, Arial, sans-serif;
+  light: 300
   normal: 400
-  bold: 800
+  medium: 600
+  bold: 700
+  black: 900
+  serif: >-
+      "Merriweather", Georgia, Cambria, Times New Roman, Times, serif;
+  light: 300
+  normal: 400
+  bold: 700
