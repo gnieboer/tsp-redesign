@@ -63,7 +63,7 @@ Submit comments about this website (1,000 characters maximum). We do not respond
 <!-- ROW 3 -->
 </section>
 
-## These departments have specific contact information
+## Use this contact information for your specific needs
 
 <ul class="usa-accordion">
   <li>
