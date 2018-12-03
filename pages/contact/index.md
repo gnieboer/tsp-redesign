@@ -63,14 +63,14 @@ Submit comments about this website (1,000 characters maximum). We do not respond
 <!-- ROW 3 -->
 </section>
 
-## These departments have specific contact information
+## Use this contact information for your specific needs
 
 <ul class="usa-accordion">
   <li>
     <button class="usa-accordion-button"
       aria-expanded="false"
       aria-controls="a1">
-      Loan Payments
+      Loan payments
     </button>
 <div id="a1" class="usa-accordion-content" markdown="1">
 
@@ -90,7 +90,7 @@ St. Louis, MO 63101
     <button class="usa-accordion-button"
       aria-expanded="false"
       aria-controls="a2">
-      Court Orders and Legal Process Actions
+      Court orders and legal process actions
     </button>
 <div id="a2" class="usa-accordion-content">
 <div class="usa-grid-full">
@@ -119,15 +119,12 @@ Fairfax, VA 22033
 </div>
 </div>
 
-
-
-
 </div>
   </li><li>
     <button class="usa-accordion-button"
       aria-expanded="false"
       aria-controls="a3">
-      Federal Tax Levies and Criminal Restitution Orders
+      Federal tax levies and criminal restitution orders
     </button>
 <div id="a3" class="usa-accordion-content">
 <div class="usa-grid-full">
@@ -159,7 +156,7 @@ Fairfax, VA 22033
     <button class="usa-accordion-button"
       aria-expanded="false"
       aria-controls="a4">
-      Death Benefit Claims
+      Death benefit claims
     </button>
 <div id="a4" class="usa-accordion-content">
 
@@ -192,11 +189,12 @@ Fairfax, VA 22033
 
 
 </div>
-  </li><li>
+  </li>
+<li>
     <button class="usa-accordion-button"
       aria-expanded="false"
       aria-controls="a5">
-      Transfers and Rollovers to the TSP
+      Transfers and rollovers to the TSP
     </button>
 <div id="a5" class="usa-accordion-content">
 
@@ -235,7 +233,33 @@ Birmingham, AL 35242
 
 
 </div>
-  </li>
+</li>
+<!-- PRIVACY CONTACT -->
+<li>
+    <button class="usa-accordion-button"
+      aria-expanded="false"
+      aria-controls="a6">
+      FRTIB Privacy Division
+    </button>
+<div id="a6" class="usa-accordion-content">
+
+<div class="usa-grid-full">
+<div class="usa-width-two-thirds" markdown="1">
+
+Use this email address if you would like to contact [FRTIB’s Privacy Office](/privacy/), or if you would like to submit a privacy complaint.
+
+Additionally, we have developed instructions for submitting a [Privacy Act request](/contact-privacy/submit-privacy-act-request/) if you wish to access or correct records that FRTIB maintains about you.
+
+</div>
+<div class="usa-width-one-third" markdown="1">
+
+**FRTIB Privacy Division**  
+[privacy@tsp.gov](mailto:privacy@tsp.gov)
+
+</div>
+</div>
+</div>
+</li>
 </ul>
 
 
