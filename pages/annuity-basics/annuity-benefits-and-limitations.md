@@ -2,7 +2,7 @@
 layout: page
 title: Annuity benefits and limitations
 styles:
-sidenav: savings
+sidenav: use-your-savings
 scripts:
 permalink: /annuity-basics/annuity-benefits-and-limitations/
 ---

@@ -1,5 +1,6 @@
 ---
 layout: page
+
 title: Information automatically captured and stored
 
 sidenav: privacy

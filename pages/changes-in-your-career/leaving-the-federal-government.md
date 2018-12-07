@@ -1,7 +1,7 @@
 ---
 layout: page
 
-title: Federal service changes
+title: Leaving the federal government
 
 sidenav: manage-life-changes
 
@@ -9,9 +9,10 @@ styles:
 
 scripts:
 
-permalink: /federal-service-changes/leaving-federal-service/
+permalink: /changes-in-your-career/leaving-the-federal-government/
 ---
-# Leaving federal service
+
+# Leaving the federal government
 
 Did you know if your account balance is $200 or more, you can leave it in the TSP when you leave federal service?
 

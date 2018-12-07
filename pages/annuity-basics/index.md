@@ -2,7 +2,7 @@
 layout: page
 title: Annuity basics
 styles:
-sidenav: savings
+sidenav: use-your-savings
 scripts:
 permalink: /annuity-basics/
 ---

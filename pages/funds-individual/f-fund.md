@@ -1,8 +1,8 @@
 ---
 layout: page
-title: S fund
+title: F fund
 styles:
 sidenav: funds-core
 scripts:
-permalink: /funds-core/s-fund/
+permalink: /funds-individual/f-fund/
 ---

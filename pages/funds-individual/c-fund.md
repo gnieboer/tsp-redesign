@@ -1,9 +1,8 @@
 ---
 layout: page
-title: G fund
+title: C fund
 styles:
 sidenav: funds-core
 scripts:
-permalink: /funds-core/g-fund/
+permalink: /funds-individual/c-fund/
 ---
-

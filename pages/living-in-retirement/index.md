@@ -5,7 +5,7 @@ title: Living in retirement
 
 styles:
 
-sidenav: savings
+sidenav: use-your-savings
 
 scripts:
 

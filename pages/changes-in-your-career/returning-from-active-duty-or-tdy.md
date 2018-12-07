@@ -1,7 +1,7 @@
 ---
 layout: page
 
-title: Returning to federal service
+title: Returning from active duty or TDY
 
 sidenav: manage-life-changes
 
@@ -9,19 +9,9 @@ styles:
 
 scripts:
 
-permalink: /federal-service-changes/returning-to-federal-service/
+permalink: /changes-in-your-career/returning-from-active-duty-or-tdy/
 ---
-# Returning to federal service
-
-If you've been rehired by the federal government, there are a few things you need to know.
-
-## Civilians
-
-If you’re a rehired FERS or CSRS employee who’s had a break in service of **31 or more full calendar days**, regardless of whether you were enrolled prior to your break, your agency will automatically enroll you in the TSP. Each pay period, 3% of your basic pay will be deducted from your paycheck and deposited in your TSP account, unless you elect to contribute immediately upon rehire. You can [change or stop your contributions](/making-contributions/start-change-stop-contributions/) at any time after you are rehired. If you’re a FERS employee, your [Agency/Service Automatic (1%)](https://www.tsp.gov/PlanParticipation/EligibilityAndContributions/typesOfContributions.html#agencyServiceAutomatic) and [Agency/Service Matching Contributions](https://www.tsp.gov/PlanParticipation/EligibilityAndContributions/typesOfContributions.html#agencyServiceMatching) (if you are contributing your own money) will also begin immediately.
-
-If you’re a rehired FERS or CSRS employee who’s had a break in service of less than 31 full calendar days and you were previously contributing to the TSP, your employee contributions and your agency contributions will resume upon rehire, if you’re FERS. If you weren’t contributing previously, you can begin at any time. Visit Start, change, or stop contributions, to learn how. The TSP automatic enrollment rules do not apply to your situation.
-
-## Uniformed Services
+# Returning from active duty or TDY
 
 If you’re reentering the uniformed services after a break of **more than 30 days and you were a BRS member prior to your break**, your service will automatically enroll you in the TSP. Each pay period, 3% of your basic pay will be deducted from your paycheck and deposited in your TSP account, unless you elect to contribute immediately upon rehire. You can change or stop your contributions at any time after you are rehired. Visit [Start, change, or stop contributions](/making-contributions/start-change-stop-contributions/), to learn how. Your Service Automatic (1%) and, if you are eligible for it, Service Matching Contributions will also begin immediately.
 

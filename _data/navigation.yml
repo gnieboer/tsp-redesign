@@ -20,10 +20,10 @@ primary:
     links:
     - text: How to invest
       href: /how-to-invest/
-    - text: Core funds
-      href: /funds-core/
     - text: Lifecycle funds
       href: /funds-lifecycle/
+    - text: Individual funds
+      href: /funds-individual/
     - text: Fund performance
       href: /fund-performance/
   - text: Use your savings
@@ -40,8 +40,8 @@ primary:
     links:
     - text: Planning for life events
       href: /planning-for-life-events/
-    - text: Federal service changes
-      href: /federal-service-changes/
+    - text: Changes in your carrer
+      href: /changes-in-your-career/
     - text: For beneficiary participants
       href: /for-beneficiary-participants/
 
@@ -97,19 +97,6 @@ fund-options:
         href: /how-to-invest/before-you-invest/
       - text: Changing your investments
         href: /how-to-invest/change-your-investments/
-  - text: Core funds
-    href: /funds-core/
-    subnav:
-      - text: G Fund
-        href: /funds-core/g-fund/
-      - text: F Fund
-        href: /funds-core/f-fund/
-      - text: C Fund
-        href: /funds-core/c-fund/
-      - text: S Fund
-        href: /funds-core/s-fund/
-      - text: I Fund
-        href: /funds-core/i-fund/
   - text: Lifecycle funds
     href: /funds-lifecycle/
     subnav:
@@ -123,6 +110,19 @@ fund-options:
         href: /funds-lifecycle/l-2040/
       - text: L 2050
         href: /funds-lifecycle/l-2050/
+  - text: Individual funds
+    href: /funds-individual/
+    subnav:
+      - text: G Fund
+        href: /funds-individual/g-fund/
+      - text: F Fund
+        href: /funds-individual/f-fund/
+      - text: C Fund
+        href: /funds-individual/c-fund/
+      - text: S Fund
+        href: /funds-individual/s-fund/
+      - text: I Fund
+        href: /funds-individual/i-fund/
   - text: Fund performance
     href: /fund-performance/
     subnav:
@@ -133,7 +133,7 @@ fund-options:
       - text: Share price calculation
         href: /fund-performance/share-price-calculation/
 
-savings:
+use-your-savings:
   - text: Loan basics
     href: /loan-basics/
     subnav:
@@ -148,6 +148,8 @@ savings:
   - text: In-service withdrawal basics
     href: /in-service-withdrawal-basics/
     subnav:
+      - text: Economic hardship
+        href: /in-service-withdrawal-basics/economic-hardship/
       - text: In-service withdrawal types and terms
         href: /in-service-withdrawal-basics/in-service-withdrawal-types-and-terms/
       - text: Making an in-service withdrawal
@@ -163,8 +165,8 @@ savings:
         href: /living-in-retirement/withdrawal-options/
       - text: Making a withdrawal
         href: /living-in-retirement/making-a-withdrawal/
-      - text: Change your withdrawal
-        href: /living-in-retirement/change-your-withdrawal/
+      - text: Changing your withdrawal
+        href: /living-in-retirement/changing-your-withdrawal/
   - text: Annuity basics
     href: /annuity-basics/
     subnav:
@@ -177,25 +179,37 @@ manage-life-changes:
   - text: Planning for life events
     href: /planning-for-life-events/
     subnav:
+      - text: Marriage
+        href: /planning-for-life-events/marriage/
+      - text: Buying a house
+        href: /planning-for-life-events/buying-a-house/
+      - text: Spouse's rights
+        href: /planning-for-life-events/spouses-rights/
+      - text: Divorce, annulment, and legal separation
+        href: /planning-for-life-events/divorce-annulment-and-legal-separation/
+      - text: Legal matters
+        href: /planning-for-life-events/legal-matters/
       - text: Changes in your family status
         href: /planning-for-life-events/changes-in-your-family-status/
-      - text: Economic hardship
-        href: /planning-for-life-events/economic-hardship/
       - text: Power of attorney
         href: /planning-for-life-events/power-of-attorney/
       - text: Court appointments
         href: /planning-for-life-events/court-appointments/
-  - text: Federal service changes
-    href: /federal-service-changes/
+  - text: Changes in your career
+    href: /changes-in-your-career/
     subnav:
-      - text: Leaving federal service
-        href: /federal-service-changes/leaving-federal-service/
-      - text: Returning to federal service
-        href: /federal-service-changes/returning-to-federal-service/
-      - text: Entering a nonpay status
-        href: /federal-service-changes/entering-nonpay-status/
-      - text: Preparing for active duty
-        href: /federal-service-changes/preparing-for-active-duty/
+      - text: Leaving the federal government
+        href: /changes-in-your-career/leaving-the-federal-government/
+      - text: Returning to the federal government
+        href: /changes-in-your-career/returning-to-the-federal-government/
+      - text: Changing federal agencies
+        href: /changes-in-your-career/changing-federal-agencies/
+      - text: Preparing for active duty or TDY
+        href: /changes-in-your-career/preparing-for-active-duty-or-tdy/
+      - text: Returning from active duty or TDY
+        href: /changes-in-your-career/returning-from-active-duty-or-tdy/
+      - text: Entering a non-pay status
+        href: /changes-in-your-career/entering-non-pay-status/
   - text: For beneficiary participants
     href: /for-beneficiary-participants/
     subnav:

@@ -1,5 +1,5 @@
 ---
-permalink: /funds-core/c-fund/
+permalink: /funds-individual/c-fund/
 layout: fund-details
 title: C fund
 sidenav: fund-options

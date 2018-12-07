@@ -4,5 +4,5 @@ title: I fund
 styles:
 sidenav: funds-core
 scripts:
-permalink: /funds-core/i-fund/
+permalink: /funds-individual/i-fund/
 ---
