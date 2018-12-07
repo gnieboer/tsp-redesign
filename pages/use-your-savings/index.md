@@ -5,11 +5,11 @@ title: Loan basics
 
 styles:
 
-sidenav: savings
+sidenav: use-your-savings
 
 scripts:
 
-permalink: /savings/
+permalink: /use-your-savings/
 ---
 
 ## Cost benefit analysis

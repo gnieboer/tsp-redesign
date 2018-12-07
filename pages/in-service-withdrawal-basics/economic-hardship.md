@@ -3,13 +3,13 @@ layout: page
 
 title: Economic hardship
 
-sidenav: manage-life-changes
-
 styles:
+
+sidenav: use-your-savings
 
 scripts:
 
-permalink: /planning-for-life-events/economic-hardship/
+permalink: /in-service-withdrawal-basics/economic-hardship/
 ---
 
 # Economic hardship

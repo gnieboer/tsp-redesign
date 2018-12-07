@@ -5,7 +5,7 @@ title: Applying for a loan
 
 styles:
 
-sidenav: savings
+sidenav: use-your-savings
 
 scripts:
 

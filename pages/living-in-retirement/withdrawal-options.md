@@ -2,7 +2,7 @@
 layout: page
 title: Withdrawal options
 styles:
-sidenav: savings
+sidenav: use-your-savings
 scripts:
 permalink: /living-in-retirement/withdrawal-options/
 ---

@@ -5,7 +5,7 @@ title: Alternatives to withdrawals
 
 styles:
 
-sidenav: savings
+sidenav: use-your-savings
 
 scripts:
 

@@ -2,7 +2,7 @@
 layout: page
 title: Making a withdrawal
 styles:
-sidenav: savings
+sidenav: use-your-savings
 scripts:
 permalink: /living-in-retirement/making-a-withdrawal/
 ---

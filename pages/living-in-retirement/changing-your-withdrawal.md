@@ -2,7 +2,7 @@
 layout: page
 title: Changing your withdrawal
 styles:
-sidenav: savings
+sidenav: use-your-savings
 scripts:
 permalink: /living-in-retirement/changing-your-withdrawal/
 ---

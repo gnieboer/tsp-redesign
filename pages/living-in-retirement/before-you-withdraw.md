@@ -2,7 +2,7 @@
 layout: page
 title: Before you withdraw
 styles:
-sidenav: savings
+sidenav: use-your-savings
 scripts:
 permalink: /living-in-retirement/before-you-withdraw/
 ---

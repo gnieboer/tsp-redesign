@@ -5,7 +5,7 @@ title: Loan basics
 
 styles:
 
-sidenav: savings
+sidenav: use-your-savings
 
 scripts:
 

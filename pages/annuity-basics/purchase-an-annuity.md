@@ -2,7 +2,7 @@
 layout: page
 title: Purchase an annuity
 styles:
-sidenav: savings
+sidenav: use-your-savings
 scripts:
 permalink: /annuity-basics/purchase-an-annuity/
 ---

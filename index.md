@@ -217,7 +217,7 @@ If you're an experienced investor, you can customize your asset allocation with 
 
   The G Fund's investment objective is to produce a rate of return that is higher than inflation while avoiding exposure to credit (default) risk and market price fluctuations.
 
-  [Learn more](/funds-core/g-fund/){:.learn-more}
+  [Learn more](/funds-individual/g-fund/){:.learn-more}
 
   </div>
   </li>
@@ -232,7 +232,7 @@ If you're an experienced investor, you can customize your asset allocation with 
 
   The F Fund's investment objective is to match the performance of the Bloomberg Barclays U.S. Aggregate Bond Index, a broad index representing the U.S. bond market.
 
-  [Learn more](/funds-core/f-fund/){:.learn-more}
+  [Learn more](/funds-individual/f-fund/){:.learn-more}
 
   </div>
   </li>
@@ -246,7 +246,7 @@ If you're an experienced investor, you can customize your asset allocation with 
 
   The C Fund's investment objective is to match the performance of the Standard and Poor's 500 (S&P 500) Index, a broad market index made up of stocks of 500 large to medium-sized U.S. companies.
 
-  [Learn more](/funds-core/c-fund/){:.learn-more}
+  [Learn more](/funds-individual/c-fund/){:.learn-more}
 
   </div>
   </li>
@@ -261,7 +261,7 @@ If you're an experienced investor, you can customize your asset allocation with 
 
   The S Fund's investment objective is to match the performance of the Dow Jones U.S. Completion Total Stock Market Index, a broad market index made up of stocks of small-to-medium U.S. companies not included in the S&P 500 Index.
 
-  [Learn more](/funds-core/s-fund/){:.learn-more}
+  [Learn more](/funds-individual/s-fund/){:.learn-more}
 
   </div>
   </li>
@@ -275,7 +275,7 @@ If you're an experienced investor, you can customize your asset allocation with 
 
   The I Fund's investment objective is to match the performance of the MSCI EAFE (Europe, Australasia, Far East) Index.
 
-  [Learn more](/funds-core/i-fund/){:.learn-more}
+  [Learn more](/funds-individual/i-fund/){:.learn-more}
 
   </div>
   </li>

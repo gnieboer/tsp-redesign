@@ -1,5 +1,5 @@
 ---
-permalink: /funds-core/f-fund/
+permalink: /funds-individual/f-fund/
 layout: fund-details
 title: F fund
 sidenav: fund-options
