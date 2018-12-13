@@ -19,10 +19,5 @@ If you are the next-of-kin or legal representative of a deceased TSP participant
 + Read, complete, and submit [Form TSP-17](https://www.tsp.gov/PDF/formspubs/tsp-17.pdf), *Information Relating to Deceased Participant*, along with the participant's certified death certificate. 
 
 
-## In this section:
-
-+ Being a beneficiary participant 
-+ Designating beneficiaries
-+ Beneficiary distributions
 
 <!-- CONTENT END -->
