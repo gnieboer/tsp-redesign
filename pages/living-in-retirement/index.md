@@ -29,11 +29,5 @@ Each individual’s situation is different and should be considered when making 
 And be sure to check out our other videos at [youtube.com/tsp4gov](youtube.com/tsp4gov) to learn more. 
 
 
-## In this section:
-
-+ Before you withdraw
-+ Withdrawal options
-+ Making a withdrawal
-+ Change your withdrawal
 
 <!-- CONTENT END -->
