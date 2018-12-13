@@ -23,10 +23,5 @@ In-service withdrawals are withdrawals you make from your TSP account while you'
 + If you take a financial hardship withdrawal, you will not be able to make contributions or receive any Agency/Service Matching Contributions to your account for 6 months. **You** will be responsible for restarting your employee contributions; they do not restart automatically.
 + If you're a married FERS participant or a member of the uniformed services, your spouse must sign a consent waiver for your in-service withdrawal.
 
-## In this section:
-
-+ In-service withdrawal types and terms
-+ Making an in-service withdrawal
-+ Alternatives to withdrawals
 
 <!-- CONTENT END -->
