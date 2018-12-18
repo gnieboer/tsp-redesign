@@ -1310,9 +1310,9 @@ FRTIB is required to publish a SORN anytime it creates, substantially modifies, 
   </button>
   <div id="a20" class="usa-accordion-content" markdown="1">
 
-  **SUMMARY**: Pursuant to the Privacy Act of 1974, 5 U.S.C. 552a, the Federal Retirement Thrift Investment Board (FRTIB) is proposing to establish a new system of records. Records contained in this system will be used to educate participants about various aspects of the TSP.
+  **SUMMARY**: Pursuant to the Privacy Act of 1974, [5 U.S.C. 552](https://api.fdsys.gov/link?collection=uscode&title=5&year=mostrecent&section=552&type=usc&link-type=html){:target="\_blank"}a, the Federal Retirement Thrift Investment Board (FRTIB) is proposing to establish a new system of records. Records contained in this system will be used to educate participants about various aspects of the TSP.
 
-  **DATES**: This system will become effective upon its publication in today’s Federal Register, with the exception of the routine uses, which are effective [INSERT 30 DAYS AFTER DATE OF PUBLICATION IN THE FEDERAL REGISTER]. FRTIB invites written comments on the routine uses or other aspects of this system of records. Submit any comments by [INSERT 30 DAYS AFTER DATE OF PUBLICATION IN THE FEDERAL REGISTER].
+  **DATES**: This system will become effective upon its publication in today’s **Federal Register**, with the exception of the routine uses, which are effective January 10, 2019. FRTIB invites written comments on the routine uses or other aspects of this system of records. Submit any comments by January 10, 2019.
 
   **ADDRESSES**: You may submit written comments to FRTIB by any one of the following methods:
 
@@ -1337,7 +1337,7 @@ FRTIB is required to publish a SORN anytime it creates, substantially modifies, 
 
   **SYSTEM MANAGER**: Director, Office of Communications and Education, Federal Retirement Thrift Investment Board, 77 K Street NE, Suite 1000, Washington, DC 20002, or by phone by calling (202) 942-1600.
 
-  **AUTHORITY FOR MAINTENANCE OF THE SYSTEM**: 5 U.S.C. 8474.
+  **AUTHORITY FOR MAINTENANCE OF THE SYSTEM**: [5 U.S.C. 8474](https://api.fdsys.gov/link?collection=uscode&title=5&year=mostrecent&section=8474&type=usc&link-type=html){:target="\_blank"}.
 
   **PURPOSE OF THE SYSTEM**: The purpose of the system is to educate TSP participants and other individuals about the TSP; to track and analyze aggregated activity to determine the effectiveness of targeted outreach campaigns; and to solicit feedback regarding FRTIB education and outreach efforts.
 
@@ -1374,7 +1374,7 @@ FRTIB is required to publish a SORN anytime it creates, substantially modifies, 
 
   **ADMINISTRATIVE, TECHNICAL, AND PHYSICAL SAFEGUARDS**: FRTIB has adopted appropriate administrative, technical, and physical controls in accordance with FRTIB's security program to protect the security, confidentiality, availability, and integrity of the information, and to ensure that records are not disclosed to or accessed by unauthorized individuals.
 
-  **RECORD ACCESS PROCEDURES:** Individuals seeking to access records within this system must submit a request pursuant to 5 CFR part 1630. Attorneys or other persons acting on behalf of an individual must provide written authorization from that individual, such as a Power of Attorney, in order for the representative to act on their behalf.
+  **RECORD ACCESS PROCEDURES:** Individuals seeking to access records within this system must submit a request pursuant to [5 CFR part 1630](https://www.federalregister.gov/select-citation/2018/12/11/5-CFR-1630){:target="\_blank"}. Attorneys or other persons acting on behalf of an individual must provide written authorization from that individual, such as a Power of Attorney, in order for the representative to act on their behalf.
 
   **CONTESTING RECORD PROCEDURES:** See Record Access Procedures above.
 
