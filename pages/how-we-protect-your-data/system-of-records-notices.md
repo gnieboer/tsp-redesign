@@ -1316,9 +1316,9 @@ FRTIB is required to publish a SORN anytime it creates, substantially modifies, 
 
   **ADDRESSES**: You may submit written comments to FRTIB by any one of the following methods:
 
-  -  _Federal eRulemaking Portal_: [https://www.regulations.gov](https://www.regulations.gov). Follow the website instructions for submitting comments.
-  - _Fax_: (202) 942-1676.
-  - _Mail or Hand Delivery_: Office of General Counsel, Federal Retirement Thrift Investment Board, 77 K Street NE, Suite 1000, Washington, DC 20002.
+  * _Federal eRulemaking Portal_: [https://www.regulations.gov](https://www.regulations.gov){:target="\_blank"}. Follow the website instructions for submitting comments.
+  * _Fax_: (202) 942-1676.
+  * _Mail or Hand Delivery_: Office of General Counsel, Federal Retirement Thrift Investment Board, 77 K Street NE, Suite 1000, Washington, DC 20002.
 
   **FOR FURTHER INFORMATION CONTACT**: Marla Greenberg, Chief Privacy Officer, Federal Retirement Thrift Investment Board, Office of General Counsel, 77 K Street NE, Suite 1000, Washington, DC 20002, (202) 942-1600. For access to any of the FRTIB’s systems of records, contact Amanda Haas, FOIA Officer, Office of General Counsel, at the above address and phone number.
 
@@ -1326,7 +1326,7 @@ FRTIB is required to publish a SORN anytime it creates, substantially modifies, 
 
   Files maintained as part of FRTIB-20 include: information about TSP participants and other individuals who receive educational messages from FRTIB or who have otherwise corresponded with FRTIB, including names, personal and business phone numbers, mailing addresses, email addresses, and social media handles; aggregated data and FRTIB analysis of participant behavior; incoming feedback and other correspondence; FRTIB’s response; the FRTIB responder’s name and business information; additional unsolicited personal information provided by individuals; video recordings of volunteer participants; and related materials. FRTIB is proposing to add sixteen routine uses to apply to FRTIB-20.
 
-  **Megan Grumbine**,
+  **Megan Grumbine**,  
   _General Counsel and Senior Agency Official for Privacy_
 
   **SYSTEM NAME AND NUMBER**: FRTIB-20, Communications, Education, and Outreach Materials.
