@@ -114,9 +114,9 @@ aria-expanded="true"
 aria-controls="a1">
 Lifecycle funds
 </button>
-<div id="a1" class="usa-accordion-content" markdown="1">
+  <div id="a1" class="usa-accordion-content" markdown="1">
 
-L Funds are professionally designed to maximize returns and minimize risk. Each L Fund has a mix of G, F, C, S and I funds.
+  The L Funds are an easy option if you don't have the experience, time, or interest to manage your investments. L Funds give an optimal mix of our 5 [individual funds](javascript:void(0)) based on the date you’ll need to start withdrawing your money.
 
   <ul class="usa-accordion lifecycle-funds">
   <li>
@@ -127,7 +127,7 @@ L Funds are professionally designed to maximize returns and minimize risk. Each 
   </button>
   <div id="a3" class="usa-accordion-content" markdown="1">
 
-  For participants who will begin to withdraw their money in 2045 or later.
+  Consider if you were born 1983 or later or plan to need your TSP savings in 2045 or later.
 
   [Learn more](/funds-lifecycle/l-2050/){:.learn-more}
 
@@ -142,7 +142,7 @@ L Funds are professionally designed to maximize returns and minimize risk. Each 
   </button>
   <div id="a4" class="usa-accordion-content" markdown="1">
 
-  For participants who will begin to withdraw their money in 2035 or later.
+  Consider if you were born 1973–1982 or plan to need your TSP savings between 2035 and 2044.
 
   [Learn more](/funds-lifecycle/l-2040/){:.learn-more}
 
@@ -156,7 +156,7 @@ L Funds are professionally designed to maximize returns and minimize risk. Each 
   </button>
   <div id="a5" class="usa-accordion-content" markdown="1">
 
-  For participants who will begin to withdraw their money in 2025 or later.
+  Consider if you were born 1963–1972 or plan to need your TSP savings between 2025 and 2034.
 
   [Learn more](/funds-lifecycle/l-2030/){:.learn-more}
 
@@ -171,7 +171,7 @@ L Funds are professionally designed to maximize returns and minimize risk. Each 
   </button>
   <div id="a6" class="usa-accordion-content" markdown="1">
 
-  For participants who will begin to withdraw their money in 2015 or later.
+  Consider if you were born 1954–1962 or plan to need your TSP savings between 2018 and 2024.
 
   [Learn more](/funds-lifecycle/l-2020/){:.learn-more}
 
@@ -185,26 +185,25 @@ L Funds are professionally designed to maximize returns and minimize risk. Each 
   </button>
   <div id="a7" class="usa-accordion-content" markdown="1">
 
-  For participants who are currently withdrawing money from their TSP account in monthly payments or who plan to begin withdrawing money before 2019.
+  Consider if you were born before 1954 or are using your TSP savings or expect to in the next year.
 
   [Learn more](/funds-lifecycle/l-income/){:.learn-more}
 
   </div>
   </li>
   </ul>
+  </div>
+  </li>
+  <!-- Individual funds -->
+  <li>
+  <button class="usa-accordion-button"
+  aria-expanded="false"
+  aria-controls="a2">
+  Individual funds
+  </button>
+  <div id="a2" class="usa-accordion-content" markdown="1">
 
-</div>
-</li>
-<!-- Individual funds -->
-<li>
-<button class="usa-accordion-button"
-aria-expanded="false"
-aria-controls="a2">
-Individual funds
-</button>
-<div id="a2" class="usa-accordion-content" markdown="1">
-
-If you're an experienced investor, you can customize your asset allocation with our 5 core funds and invest in everything from short-term government securities to domestic and international stocks.
+  The [Lifecycle (L)](javascript:void(0)) Funds are made of each of the individual funds below. If you’re an experienced investor, you can customize your asset allocation with our 5 individual funds and invest in everything from short-term government securities to domestic and international stocks.
 
   <ul class="usa-accordion lifecycle-funds">
   <li>
@@ -215,7 +214,7 @@ If you're an experienced investor, you can customize your asset allocation with 
   </button>
   <div id="i1" class="usa-accordion-content" markdown="1">
 
-  The G Fund's investment objective is to produce a rate of return that is higher than inflation while avoiding exposure to credit (default) risk and market price fluctuations.
+  A fund containing government securities that are specially issued to the TSP.
 
   [Learn more](/funds-individual/g-fund/){:.learn-more}
 
@@ -230,7 +229,7 @@ If you're an experienced investor, you can customize your asset allocation with 
   </button>
   <div id="i2" class="usa-accordion-content" markdown="1">
 
-  The F Fund's investment objective is to match the performance of the Bloomberg Barclays U.S. Aggregate Bond Index, a broad index representing the U.S. bond market.
+  A fund containing government, corporate, and asset-backed bonds.
 
   [Learn more](/funds-individual/f-fund/){:.learn-more}
 
@@ -244,7 +243,7 @@ If you're an experienced investor, you can customize your asset allocation with 
   </button>
   <div id="i3" class="usa-accordion-content" markdown="1">
 
-  The C Fund's investment objective is to match the performance of the Standard and Poor's 500 (S&P 500) Index, a broad market index made up of stocks of 500 large to medium-sized U.S. companies.
+  A fund containing stocks of large and medium-sized U.S. companies.
 
   [Learn more](/funds-individual/c-fund/){:.learn-more}
 
@@ -259,7 +258,7 @@ If you're an experienced investor, you can customize your asset allocation with 
   </button>
   <div id="i4" class="usa-accordion-content" markdown="1">
 
-  The S Fund's investment objective is to match the performance of the Dow Jones U.S. Completion Total Stock Market Index, a broad market index made up of stocks of small-to-medium U.S. companies not included in the S&P 500 Index.
+  A fund containing stocks of small to medium-sized U.S. companies.
 
   [Learn more](/funds-individual/s-fund/){:.learn-more}
 
@@ -273,7 +272,7 @@ If you're an experienced investor, you can customize your asset allocation with 
   </button>
   <div id="i5" class="usa-accordion-content" markdown="1">
 
-  The I Fund's investment objective is to match the performance of the MSCI EAFE (Europe, Australasia, Far East) Index.
+  A fund containing international stocks from more than 20 developed countries.
 
   [Learn more](/funds-individual/i-fund/){:.learn-more}
 
@@ -281,9 +280,9 @@ If you're an experienced investor, you can customize your asset allocation with 
   </li>
   </ul>
 
-</div>
-</li>
-</ul>
+  </div>
+  </li>
+  </ul>
 </div>
 </div>
 </section>
