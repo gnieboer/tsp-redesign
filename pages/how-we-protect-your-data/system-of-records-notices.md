@@ -1301,6 +1301,94 @@ FRTIB is required to publish a SORN anytime it creates, substantially modifies, 
   **HISTORY:** 81 FR 7106 (Feb. 10, 2016).
   </div>
 </li>
+<!-- FRTIB-20 -->
+<li>
+  <button class="usa-accordion-button"
+    aria-expanded="false"
+    aria-controls="a20">
+    FRTIB-20  | Freedom of Information Act (FOIA) Records
+  </button>
+  <div id="a20" class="usa-accordion-content" markdown="1">
+
+  **SUMMARY**: Pursuant to the Privacy Act of 1974, 5 U.S.C. 552a, the Federal Retirement Thrift Investment Board (FRTIB) is proposing to establish a new system of records. Records contained in this system will be used to educate participants about various aspects of the TSP.
+
+  **DATES**: This system will become effective upon its publication in today’s Federal Register, with the exception of the routine uses, which are effective [INSERT 30 DAYS AFTER DATE OF PUBLICATION IN THE FEDERAL REGISTER]. FRTIB invites written comments on the routine uses or other aspects of this system of records. Submit any comments by [INSERT 30 DAYS AFTER DATE OF PUBLICATION IN THE FEDERAL REGISTER].
+
+  **ADDRESSES**: You may submit written comments to FRTIB by any one of the following methods:
+
+  _Federal eRulemaking Portal_: http://www.regulations.gov. Follow the website instructions for submitting comments.
+  _Fax_: (202) 942-1676.
+  _Mail or Hand Delivery_: Office of General Counsel, Federal Retirement Thrift Investment Board, 77 K Street NE, Suite 1000, Washington, DC 20002.
+
+  **FOR FURTHER INFORMATION CONTACT**: Marla Greenberg, Chief Privacy Officer, Federal Retirement Thrift Investment Board, Office of General Counsel, 77 K Street NE, Suite 1000, Washington, DC 20002, (202) 942-1600. For access to any of the FRTIB’s systems of records, contact Amanda Haas, FOIA Officer, Office of General Counsel, at the above address and phone number.
+
+  **SUPPLEMENTARY INFORMATION**: FRTIB is proposing to establish a new system of records entitled, “FRTIB-20, Communications, Education, and Outreach Materials.” The proposed system of records is necessary to assist FRTIB’s Office of Communications and Education in effectively educating and communicating with Thrift Savings Plan (TSP) participants and other individuals.
+
+  Files maintained as part of FRTIB-20 include: information about TSP participants and other individuals who receive educational messages from FRTIB or who have otherwise corresponded with FRTIB, including names, personal and business phone numbers, mailing addresses, email addresses, and social media handles; aggregated data and FRTIB analysis of participant behavior; incoming feedback and other correspondence; FRTIB’s response; the FRTIB responder’s name and business information; additional unsolicited personal information provided by individuals; video recordings of volunteer participants; and related materials. FRTIB is proposing to add sixteen routine uses to apply to FRTIB-20.
+
+  **Megan Grumbine**,
+  _General Counsel and Senior Agency Official for Privacy_
+
+  **SYSTEM NAME AND NUMBER**: FRTIB-20, Communications, Education, and Outreach Materials.
+
+  **SECURITY CLASSIFICATION**: Unclassified.
+
+  **SYSTEM LOCATION**: Records are located at the Federal Retirement Thrift Investment Board, 77 K Street NE, Suite 1000, Washington, DC 20002. Records may also be maintained at additional locations for Business Continuity purposes.
+
+  **SYSTEM MANAGER**: Director, Office of Communications and Education, Federal Retirement Thrift Investment Board, 77 K Street NE, Suite 1000, Washington, DC 20002, or by phone by calling (202) 942-1600.
+
+  **AUTHORITY FOR MAINTENANCE OF THE SYSTEM**: 5 U.S.C. 8474.
+
+  **PURPOSE OF THE SYSTEM**: The purpose of the system is to educate TSP participants and other individuals about the TSP; to track and analyze aggregated activity to determine the effectiveness of targeted outreach campaigns; and to solicit feedback regarding FRTIB education and outreach efforts.
+
+  **CATEGORIES OF INDIVIDUALS COVERED BY THE SYSTEM**: TSP participants; individuals interested in TSP updates or educational events; and individuals who wish to provide feedback on TSP outreach efforts, including targeted mailings, e-mail campaigns, educational events, social media accounts, and focus groups.
+
+  **CATEGORIES OF RECORDS IN THE SYSTEM**: Records in this system include, but are not limited to records received, created, or compiled through FRTIB social media accounts, educational outreach efforts, educational events, requests for feedback, and other communications. The type of information in the records may include the names and contact information of the data subject, including mailing addresses, email addresses, phone numbers, and social media handles, of TSP participants or other individuals interested in the TSP; aggregated participant activity data, and FRTIB analysis of participant behavior following targeted communications from FRTIB; feedback on FRTIB communications; FRTIB’s response; the name and business information of FRTIB employees; additional unsolicited personal information provided by individuals; and video or audio recordings of participants and others who voluntarily participate in FRTIB’s educational campaigns or events.
+
+  **RECORD SOURCE CATEGORIES:** Information in this system is obtained from TSP participant accounts; individuals who sign up to receive email or SMS/text message updates and educational materials from FRTIB; and individuals who interact with the FRTIB through various social media sites or as a result of other educational outreach efforts.
+
+  **ROUTINE USES OF RECORDS MAINTAINED IN THE SYSTEM, INCLUDING CATEGORIES OF USERS AND PURPOSES OF SUCH USES:**
+
+  Information about covered individuals may be disclosed without consent as permitted by the Privacy Act of 1974, as amended, 5 U.S.C. 552a(b); and:
+
+
+  1. Routine Use—Audit: A record from this system of records may be disclosed to an agency, organization, or individual for the purpose of performing an audit or oversight operations as authorized by law, but only such information as is necessary and relevant to such audit or oversight function when necessary to accomplish an agency function related to this system of records. Individuals provided information under this routine use are subject to the same Privacy Act requirements and limitations on disclosure as are applicable to FRTIB officers and employees.
+  2. Breach Mitigation and Notification: Response to Breach of FRTIB Records: A record from this system of records may be disclosed to appropriate agencies, entities, and persons when (1) FRTIB suspects or has confirmed that there has been a breach of the system of records; (2) FRTIB has determined that as a result of the suspected or confirmed breach there is a risk of harm to individuals, FRTIB (including its information systems, programs, and operations), the Federal Government, or national security; and (3) the disclosure made to such agencies, entities, and persons is reasonably necessary to assist in connection with FRTIB’s efforts to respond to the suspected or confirmed breach or to prevent, minimize, or remedy such harm.
+  3. Routine Use—Response to Breach of Other Records: A record from this system of records may be disclosed to another Federal agency or Federal entity, when FRTIB determines that information from this system of records is reasonably necessary to assist the recipient agency or entity in (1) responding to a suspected or confirmed breach or (2) preventing, minimizing, or remedying the risk of harm to individuals, the recipient agency or entity (including its information systems, programs, and operations), the Federal Government, or national security, resulting from a suspected or confirmed breach.
+  4. Routine Use—Congressional Inquiries: A record from this system of records may be disclosed to a Congressional office from the record of an individual in response to an inquiry from that Congressional office made at the request of the individual to whom the record pertains.
+  5. Routine Use—Contractors, et al.: A record from this system of records may be disclosed to contractors, grantees, experts, consultants, the agents thereof, and others performing or working on a contract, service, grant, cooperative agreement, or other assignment for FRTIB, when necessary to accomplish an agency function related to this system of records. Individuals provided information under this routine use are subject to the same Privacy Act requirements and limitations on disclosure as are applicable to FRTIB officers and employees.
+  6. Routine Use—Former Employees: A record from this system of records may be disclosed to a former employee of the FRTIB, in accordance with applicable regulations, for purposes of responding to an official inquiry by a federal, state, or local government entity or professional licensing authority; or facilitating communications with a former employee that may be necessary for personnel- related or other official purposes where the FRTIB requires information or consultation assistance from the former employee regarding a matter within that person's former area of responsibility.
+  7. Routine Use—Investigations, Third Parties: A record from this system of records may be disclosed to third parties during the course of a law enforcement investigation to the extent necessary to obtain information pertinent to the investigation, provided disclosure is appropriate to the proper performance of the official duties of the third party officer making the disclosure.
+  8. Routine Use—Investigations, Other Agencies: A record from this system of records may be disclosed to appropriate federal, state, local, tribal, or foreign government agencies or multilateral governmental organizations for the purpose of investigating or prosecuting the violations of, or for enforcing or implementing, a statute, rule, regulation, order, license, or treaty where FRTIB determines that the information would assist in the enforcement of civil or criminal laws.
+  9. Routine Use—Law Enforcement Intelligence: A record from this system of records may be disclosed to a federal, state, tribal, local, or foreign government agency or organization, or international organization, lawfully engaged in collecting law enforcement intelligence information, whether civil or criminal, or charged with investigating, prosecuting, enforcing or implementing civil or criminal laws, related rules, regulations or orders, to enable these entities to carry out their law enforcement responsibilities, including the collection of law enforcement intelligence.
+  10. Routine Use—Law Enforcement Referrals: A record from this system of records may be disclosed to an appropriate federal, state, tribal, local, international, or foreign agency or other appropriate authority charged with investigating or prosecuting a violation or enforcing or implementing a law, rule, regulation, or order, where a record, either on its face or in conjunction with other information, indicates a violation or potential violation of law, which includes criminal, civil, or regulatory violations and such disclosure is proper and consistent with the official duties of the person making the disclosure.
+  11. Routine Use—Litigation, DOJ or Outside Counsel: A record from this system of records may be disclosed to the Department of Justice, FRTIB's outside counsel, other federal agency conducting litigation or in proceedings before any court, adjudicative or administrative body, when: (1) FRTIB, or (2) any employee of FRTIB in his or her official capacity, or (3) any employee of FRTIB in his or her individual capacity where DOJ or FRTIB has agreed to represent the employee, or (4) the United States or any agency thereof, is a party to the litigation or has an interest in such litigation, and FRTIB determines that the records are both relevant and necessary to the litigation and the use of such records is compatible with the purpose for which FRTIB collected the records.
+  12. Routine Use—Litigation, Opposing Counsel: A record from this system of records may be disclosed to a court, magistrate, or administrative tribunal in the course of presenting evidence, including disclosures to opposing counsel or witnesses in the course of civil discovery, litigation, or settlement negotiations or in connection with criminal law proceedings or in response to a subpoena.
+  13. Routine Use—NARA/Records Management: A record from this system of records may be disclosed to the National Archives and Records Administration (NARA) or other federal government agencies pursuant to the Federal Records Act.
+  14. Routine Use—Redress: A record from this system of records may be disclosed to a federal, state, tribal, local, international, or foreign government agency or entity for the purpose of consulting with that agency or entity: (1) To assist in making a determination regarding redress for an individual in connection with the operations of a FRTIB program; (2) for the purpose of verifying the identity of an individual seeking redress in connection with the operations of a FRTIB program; or (3) for the purpose of verifying the accuracy of information submitted by an individual who has requested such redress on behalf of another individual.
+  15. Routine Use—Security Threat: A record from this system of records may be disclosed to federal and foreign government intelligence or counterterrorism agencies when FRTIB reasonably believes there to be a threat or potential threat to national or international security for which the information may be useful in countering the threat or potential threat, when FRTIB reasonably believes such use is to assist in anti-terrorism efforts, and disclosure is appropriate to the proper performance of the official duties of the person making the disclosure.
+
+  A record from this system may be shared with other Federal agencies to register and notify individuals regarding TSP-related educational events.
+
+  **POLICIES AND PRACTICES FOR STORAGE OF RECORDS:** Records are maintained in paper and electronic form, including on computer databases and cloud-based services, all of which are securely stored.
+
+  **POLICIES AND PRACTICES FOR RETRIEVAL OF RECORDS:** Records are retrieved by name, account number, email address, phone number, social media handle, demographics, or other unique identifier of the individual about whom they are maintained.
+
+  **POLICIES AND PRACTICES FOR RETENTION AND DISPOSAL OF RECORDS:** These records are maintained in accordance with General Records Schedules 6.4 (Public Affairs Records) and 6.5 (Public Customer Service Records) issued by the National Archives and Records Administration (NARA).
+
+  **ADMINISTRATIVE, TECHNICAL, AND PHYSICAL SAFEGUARDS:** FRTIB has adopted appropriate administrative, technical, and physical controls in accordance with FRTIB's security program to protect the security, confidentiality, availability, and integrity of the information, and to ensure that records are not disclosed to or accessed by unauthorized individuals.
+
+  **RECORD ACCESS PROCEDURES:** Individuals seeking to access records within this system must submit a request pursuant to 5 CFR part 1630. Attorneys or other persons acting on behalf of an individual must provide written authorization from that individual, such as a Power of Attorney, in order for the representative to act on their behalf.
+
+  **CONTESTING RECORD PROCEDURES:** See Record Access Procedures above.
+
+  **NOTIFICATION PROCEDURES:** See Record Access Procedures above.
+
+  **EXEMPTIONS PROMULGATED FOR THE SYSTEM:** None.
+
+  **HISTORY:** None.
+  </div>
+</li>
 </ul>
 
 ## The Agency also uses the following government-wide SORNs:
