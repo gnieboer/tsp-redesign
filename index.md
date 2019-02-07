@@ -24,7 +24,7 @@ hero:
 <img src="{{ site.baseurl }}/assets/img/icons/sun.svg" alt="">
 </div>
 
-## New to the TSP? Let’s start with the basics
+## New to the TSP? Let’s start with the basics. KNOW
 
 You can setup your account, rollover a 401(k), and so much more.
 
