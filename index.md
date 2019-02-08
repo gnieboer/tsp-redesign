@@ -38,7 +38,7 @@ You can setup your account, rollover a 401(k), and so much more.
 
 ## Everything you need to know about our funds
 
-We’ll help you understand each fund, and their risks, rewards and performance.
+We’ll help you understand the risks, rewards, and performance of each fund.
 
 </div>
 <!-- WE'LL BE WITH YOU -->
@@ -49,7 +49,7 @@ We’ll help you understand each fund, and their risks, rewards and performance.
 
 ## We’ll be with you every step of the way
 
-If you're new to the federal government or preparing to retire, we'll help guide you along the way.
+Whether you're new to the federal government or preparing to retire, we're here to help guide you.
 
 </div>
 
@@ -116,7 +116,7 @@ Lifecycle funds
 </button>
   <div id="a1" class="usa-accordion-content" markdown="1">
 
-  The L Funds are an easy option if you don't have the experience, time, or interest to manage your investments. L Funds give an optimal mix of our 5 [individual funds](javascript:void(0)) based on the date you’ll need to start withdrawing your money.
+  Our Lifecycle (L) Funds are an easy option if you don't have the experience, time, or interest to manage your investments. L Funds give an optimal mix of our 5 [individual funds](javascript:void(0)) based on the date you’ll need to start withdrawing your money.
 
   <ul class="usa-accordion lifecycle-funds">
   <li>
