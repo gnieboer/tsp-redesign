@@ -127,7 +127,7 @@ Lifecycle funds
   </button>
   <div id="a3" class="usa-accordion-content" markdown="1">
 
-  Consider if you were born 1983 or later or plan to need your TSP savings in 2045 or later.
+  Consider if you were born 1983 or later, or plan to need your TSP savings in 2045 or later.
 
   [Learn more](/funds-lifecycle/l-2050/){:.learn-more}
 
@@ -142,7 +142,7 @@ Lifecycle funds
   </button>
   <div id="a4" class="usa-accordion-content" markdown="1">
 
-  Consider if you were born 1973–1982 or plan to need your TSP savings between 2035 and 2044.
+  Consider if you were born 1973 – 1982, or plan to need your TSP savings between 2035 and 2044.
 
   [Learn more](/funds-lifecycle/l-2040/){:.learn-more}
 
@@ -156,7 +156,7 @@ Lifecycle funds
   </button>
   <div id="a5" class="usa-accordion-content" markdown="1">
 
-  Consider if you were born 1963–1972 or plan to need your TSP savings between 2025 and 2034.
+  Consider if you were born 1963 – 1972, or plan to need your TSP savings between 2025 and 2034.
 
   [Learn more](/funds-lifecycle/l-2030/){:.learn-more}
 
@@ -171,7 +171,7 @@ Lifecycle funds
   </button>
   <div id="a6" class="usa-accordion-content" markdown="1">
 
-  Consider if you were born 1954–1962 or plan to need your TSP savings between 2018 and 2024.
+  Consider if you were born 1954 – 1962, or plan to need your TSP savings between 2018 and 2024.
 
   [Learn more](/funds-lifecycle/l-2020/){:.learn-more}
 
@@ -185,7 +185,7 @@ Lifecycle funds
   </button>
   <div id="a7" class="usa-accordion-content" markdown="1">
 
-  Consider if you were born before 1954 or are using your TSP savings or expect to in the next year.
+  Consider if you were born before 1954, or are using your TSP savings or expect to in the next year.
 
   [Learn more](/funds-lifecycle/l-income/){:.learn-more}
 
