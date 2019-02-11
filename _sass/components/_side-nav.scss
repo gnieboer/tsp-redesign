@@ -1,0 +1,11 @@
+
+.usa-layout-docs-sidenav {
+  // display: none;
+}
+
+@media screen and (min-width: $large-screen) {
+  .usa-layout-docs-sidenav {
+    // display: block;
+    // width: 21%;
+  }
+}
