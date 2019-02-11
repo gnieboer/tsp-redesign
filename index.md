@@ -38,7 +38,7 @@ You can setup your account, rollover a 401(k), and so much more.
 
 ## Everything you need to know about our funds
 
-We’ll help you understand the risks, rewards, and performance of each fund.
+We’ll help you understand each fund——their risks, rewards, and performance.
 
 </div>
 <!-- WE'LL BE WITH YOU -->
