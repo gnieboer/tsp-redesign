@@ -72,7 +72,7 @@ Federal Retirement Thrift Investment Board
 77 K Street, NE., Suite 1000  
 Washington, DC 20002  
 
-Please include the name and type of records you are requesting; your full name and address; your Social Security number if you are an FRTIB employee; a brief description of the nature, time, place and circumstances of your association with FRTIB, and any other information you believe would help the Privacy Act Officer determine whether the system contains records about you. Please include the words “PRIVACY ACT REQUEST” on both the letter and the envelope.
+Please include the name and type of records you are requesting; your full name and address; your Social Security number if you are an FRTIB employee; a brief description of the nature, time, place, and circumstances of your association with FRTIB, and any other information you believe would help the Privacy Act Officer determine whether the system contains records about you. Please include the words “PRIVACY ACT REQUEST” on both the letter and the envelope.
 
 Attorneys or other persons acting on behalf of an individual must provide signed authorization from that individual, such as a Power of Attorney, in order for the representative to act on their behalf.
 
