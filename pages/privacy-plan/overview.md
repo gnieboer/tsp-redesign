@@ -59,7 +59,7 @@ The Privacy Division’s core mission is to preserve and enhance privacy protect
 - Objective 2.2 – Leverage the expertise of the Federal Privacy Council, as well as experts from professional privacy associations, to foster dialogue and learn about emerging issues.
 
 ### Goal 3
-**Provide outreach, training, and education to promote and enhance privacy Agency-wide**
+**Provide outreach, training, and education to promote and enhance privacy Agency wide**
 
 FRTIB’s Privacy Division ensures that all FRTIB personnel have a baseline understanding of federal privacy requirements by providing training for new hires and annually thereafter. FRTIB’s Privacy Division also develops and provides targeted, role-based training to employees with specialized roles on a periodic basis.
 
