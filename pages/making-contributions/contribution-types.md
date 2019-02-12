@@ -45,7 +45,7 @@ For more information, visit [Contribution Limits](https://www.tsp.gov/PlanPartic
 
 ## Agency/Service Automatic (1%) Contributions
 
-If you are a FERS or BRS employee, your agency or service will contribute an amount equal to 1% of your basic pay each pay date to your TSP account. These are called Agency/Service Automatic (1%) Contributions and you don’t need to make employee contributions to receive them.
+If you're a FERS or BRS employee, your agency or service will contribute an amount equal to 1% of your basic pay each pay period to your TSP account. These are called Agency/Service Automatic (1%) Contributions and you don’t need to make employee contributions to receive them.
 
 **Agency/Service Automatic (1%) Contributions are not taken out of your
 pay and do not reduce your pay for income tax purposes.**
@@ -54,29 +54,17 @@ pay and do not reduce your pay for income tax purposes.**
 ### A Few Words about Vesting
 {: .card-title}
 
-Agency/Service Automatic (1%) Contributions are subject to vesting
-rules. You are vested in (entitled to keep) all of your Agency/Service
-Automatic (1%) Contributions, as well as any earnings that they accrue,
-are a certain period of federal service. In order to count toward vesting, the years of service must be in a position that is eligible to participate in the TSP, not just the years in which you were a participant.
++ Being “vested” means you’re entitled to keep all of the money in your account. Vesting only applies to Agency/Service Automat (1%) Contributions (and their earnings) and occurs after you work in the federal government or uniformed services for a certain number of years. All your years of service in a position eligible for the TSP count toward vesting, even if you don’t contribute to the TSP during that time. Most FERS participants are vested in Agency/Service Automatic (1%) Contributions after completing 3 years of service. 
++ FERS employees in congressional and certain noncareer positions become vested in Agency Automatic (1%) Contributions after 2 years of service.
++ BRS members become vested in Service Automatic (1%) Contributions after 2 years of service.
 
+If you leave government service before satisfying the vesting requirement, the Agency/Service Automatic (1%) Contributions and their earnings will be forfeited to the TSP. If you die before separating from service, you are automatically considered vested in all the money in your account.
 
-
-Most FERS participants are vested in automatic contributions are
-completing 3 years of service. BRS members and FERS employees in
-congressional and certain non-career positions become vested aer
-2 years of service.
-
-If you leave federal service before satisfying the vesting requirement,
-the Agency/Service Automatic (1%) Contributions and their earnings
-will be forfeited to the TSP.
-
-If you die before separating from service, you’re automatically
-considered vested in all the money in your account.
 </div>
 
 ## Agency/Service Matching Contributions
 
-If you are a FERS or BRS participant, you will receive Agency/Service Matching Contributions from your agency or service based on your regular employee contributions once you are eligible. Unlike Agency/Service Automatic (1%) Contributions, Matching Contributions are not subject to vesting requirements.
+If you're a FERS or BRS participant, you will receive Agency/Service Matching Contributions from your agency or service based on your regular employee contributions once you're eligible. Unlike Agency/Service Automatic (1%) Contributions, Matching Contributions are not subject to vesting requirements.
 
 As a FERS or BRS participant, you receive matching contributions on the first 5% of pay that you contribute each pay period.
 
@@ -111,7 +99,7 @@ contributions, but not incentive pay, special pay, or bonus pay.**
 
 To make a catch-up contributions, use your agency’s or service’s payroll website
 (e.g., Employee Express, myPay, LiteBlue, EBIS, or NFC-EPP) or complete Form
-TSP-1-C, Catch-Up Contribution Election (or TSP-U-1-C for uniformed services)
+TSP-1-C, _Catch-Up Contribution Election_ (or TSP-U-1-C for uniformed services)
 and submit it to your payroll office. Download the [form](#) or call the ThriftLine
 at 1-877-968-3778 and choose option 3 to request a copy.
 
