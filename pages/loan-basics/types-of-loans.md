@@ -53,20 +53,20 @@ If you have both a civilian account and a uniformed services account, the loan e
 
 ### Residential loan eligibility rules
 **In addition to the general eligibility rules:**
-+ You can only use a residential loan for purchasing or constructing a primary residence, which may include any of the following:
-. . + House
-. . + Townhouse
-. . + Condominium
-. . + Shares in a cooperative housing corporation
-. . + Boat
-. . + Mobile home
-. . + Recreational vehicle
+You can only use a residential loan for purchasing or constructing a primary residence, which may include any of the following:
++ House
++ Townhouse
++ Condominium
++ Shares in a cooperative housing corporation
++ Boat
++ Mobile home
++ Recreational vehicle
  
-+ You cannot use a residential loan for
-. . + refinancing or prepaying your existing mortgage;
-. . + construction of an addition to your existing residence;
-. . + renovations to your existing residence;
-. . + buying out another person's share in the your current residence; or
-. . + the purchase of land only.
+You cannot use a residential loan for
++ refinancing or prepaying your existing mortgage;
++ construction of an addition to your existing residence;
++ renovations to your existing residence;
++ buying out another person's share in the your current residence; or
++ the purchase of land only.
  
-+ Your primary residence must be purchased in whole or in part by you, or your spouse.
+Your primary residence must be purchased in whole or in part by you, or your spouse.
