@@ -17,7 +17,7 @@ Before you apply for a TSP loan, please review our booklet, [Loans](#), which is
 
 ## Online requests
 + Log in to [My Account](https://www.tsp.gov/tsp/login.html) to use the wizard to complete Form TSP-20, *Loan Application.* **Note:** Depending on your marital status, the type of loan you are requesting, and how you want your funds sent to you, you may not be able to complete your loan request online.
-+ If you’re unable to complete the loan process online, print out the Loan Agreement and mail it to us with any additional required information. We must receive the Loan Agreement before the expiration date that appears at the top of the Agreement.
++ If you’re unable to complete the loan process online, print out the Loan Agreement and mail it to us with any additional required information. We must receive the Loan Agreement before the expiration date that appears at the top.
 <div class="usa-alert usa-alert-info">
 <div class="usa-alert-body" markdown="1">
 Use our [Loan Calculator](#) to estimate loan payments based on the amount you want to borrow from your TSP account, the current loan interest rate, and other factors.
