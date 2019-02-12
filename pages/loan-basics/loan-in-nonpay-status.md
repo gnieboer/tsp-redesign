@@ -22,17 +22,17 @@ If you’re in nonpay status due to active military service:
 + The suspension of loan payments may continue for the duration of your military service.
 + You cannot repay your civilian loan by making loan deductions from your uniformed services pay.
 + Your loan accrues interest while your payments are suspended.
-+ Send a personal check or money order along with [Form TSP-26](#), _Loan Payment Coupon_, to continue making loan payments. Your payments will be taken into account when the loan is reamortized once you return to pay status.
++ Send a personal check or money order along with the [Loan Payment Coupon](#), _Form TSP-26_, to continue making loan payments. Your payments will be taken into account when the loan is reamortized once you return to pay status.
 If you’re in nonpay status for reasons other than active military service:
 + The maximum period that we can suspend your loan payments is one year.
 + If your nonpay period exceeds one year, your loan will be automatically reamortized and you must make payments from your personal funds to avoid being in default.
 + Your loan accrues interest while your payments are suspended.
-+ Send a personal check or money order along with [Form TSP-26](#), _Loan Payment Coupon_, to continue making loan payments. Your payments will be taken into account when the loan is reamortized once you return to pay status.
++ Send a personal check or money order along with the [Loan Payment Coupon](#), _Form TSP-26_, to continue making loan payments. Your payments will be taken into account when the loan is reamortized once you return to pay status.
  
 ## Notifying the TSP of your nonpay status
 When you begin your period of nonpay status, you or your agency must submit one of the following forms to us:
-+ Form [TSP-41](https://www.tsp.gov/PDF/formspubs/tsp-41.pdf), _Notification to TSP of Nonpay Status_; or
-+ [Form SF-50](#), _Notification of Personnel Action_; or
++ [Notification to TSP of Nonpay Status](https://www.tsp.gov/PDF/formspubs/tsp-41.pdf), _Form TSP-41_; or
++ [Notification of Personnel Action](#), _Form SF-50_; or
 + A letter on agency or service letterhead, signed by an appropriate agency official or your commander or adjutant, that contains your name, date of birth, and Social Security number; the beginning date of the nonpay status; and the signature and title of the agency or service representative providing the information; or
 + A copy of your military orders.
 ## Returning from nonpay status
