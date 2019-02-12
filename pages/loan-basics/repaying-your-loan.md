@@ -30,7 +30,7 @@ Daily interest on your loan is calculated as each payment is posted and is based
 Your loan interest payments are not tax deductible.
 
 ## Extra payments
-You can make extra loan payments (in addition to your payroll deduction) at any time using a personal check, cashier's check, or money order. You must send [Form TSP-26](#), _Loan Payment Coupon_, along with your extra payments.
+You can make extra loan payments (in addition to your payroll deduction) at any time using a personal check, cashier's check, or money order. You must send [Loan Payment Coupon](#), _Form TSP-26_, along with your extra payments.
  
 If you use an online banking service to make extra loan payments, be sure to refer to the Loan Payment Coupon to ensure that the information it requires gets included on your bank check. If any information is missing, the check will be returned.
 
