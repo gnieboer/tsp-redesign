@@ -48,14 +48,15 @@ For details, visit [Residential Loan Documentation](#).
 
 ### Residential loan eligibility rules
 Residential loans have specific rules in addition to the general eligibility rules:
-+ You can only use a residential loan for purchasing or constructing a primary residence, which may include any of the following:
-.+ House
-.+ Townhouse
-.+ Condominium
-.+ Shares in a cooperative housing corporation
-.+ Boat
-.+ Mobile home
-.+ Recreational vehicle
+
+You can only use a residential loan for purchasing or constructing a primary residence, which may include any of the following:
++ House
++ Townhouse
++ Condominium
++ Shares in a cooperative housing corporation
++ Boat
++ Mobile home
++ Recreational vehicle
  
 **You cannot use a residential loan for**
 
