@@ -13,10 +13,10 @@ permalink: /loan-basics/applying-for-a-loan/
 ---
 
 # Applying for a loan
-Before you apply for a TSP loan, please review our booklet, [Loans](#), which is available from your agency or service. You’ll be held accountable for all of the rules and information it contains, so be sure to read it thoroughly.
+Before you apply for a TSP loan, please review our booklet, [Loans](#), which is available from your agency or service. Be sure to read it thoroughly to make sure you understand all the rules and eligibility restrictions.
 
 ## Online requests
-+ Log in to [My Account](https://www.tsp.gov/tsp/login.html) to use the wizard to complete Form TSP-20, *Loan Application.* **Note:** Depending on your marital status, the type of loan you are requesting, and how you want your funds sent to you, you may not be able to complete your loan request online.
++ Log in to [My Account](https://www.tsp.gov/tsp/login.html) to use the wizard to complete *Loan Application*, Form TSP-20. **Note:** Depending on your marital status, the type of loan you are requesting, and how you want your funds sent to you, you may not be able to complete your loan request online.
 + If you’re unable to complete the loan process online, print out the Loan Agreement and mail it to us with any additional required information. We must receive the Loan Agreement before the expiration date that appears at the top.
 <div class="usa-alert usa-alert-info">
 <div class="usa-alert-body" markdown="1">
