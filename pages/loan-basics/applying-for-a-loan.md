@@ -16,7 +16,7 @@ permalink: /loan-basics/applying-for-a-loan/
 Before you apply for a TSP loan, please review our booklet, [Loans](#), which is available from your agency or service. Be sure to read it thoroughly to make sure you understand all the rules and eligibility restrictions.
 
 ## Online requests
-+ Log in to [My Account](https://www.tsp.gov/tsp/login.html) to use the wizard to complete *Loan Application*, Form TSP-20. **Note:** Depending on your marital status, the type of loan you are requesting, and how you want your funds sent to you, you may not be able to complete your loan request online.
++ Log in to [My Account](https://www.tsp.gov/tsp/login.html) to use the wizard to complete **Loan Application**, *Form TSP-20*. **Note:** Depending on your marital status, the type of loan you are requesting, and how you want your funds sent to you, you may not be able to complete your loan request online.
 + If you’re unable to complete the loan process online, print out the Loan Agreement and mail it to us with any additional required information. We must receive the Loan Agreement before the expiration date that appears at the top.
 <div class="usa-alert usa-alert-info">
 <div class="usa-alert-body" markdown="1">
@@ -29,7 +29,7 @@ Use our [Loan Calculator](#) to estimate loan payments based on the amount you w
 By law, your spouse has certain rights to your TSP account. When requesting a loan, you must indicate if you are married, even if you are separated from your spouse.
 + FERS or uniformed services participants: Your spouse must consent to your TSP loan by signing the Loan Agreement that you print from this website.
 + CSRS participants: We must notify your spouse when you apply for a loan.
-Exceptions to the spousal rule may be approved under very limited circumstances. For more information, please refer to [Form TSP-16](#), _Exception to Spousal Requirements_ ( [TSP-U-16](#), for uniformed services members), which is available from your agency or service.
+Exceptions to the spousal rule may be approved under very limited circumstances. For more information, please refer to [Exception to Spousal Requirements](#), _Form TSP-16_ ( [TSP-U-16](#), for uniformed services members), which is available from your agency or service.
 ## Residential loan documentation
 When you request a residential loan, you must complete the Residential Loan Agreement and submit it, along with any required documentation, before your loan can be approved. This form documents the costs associated with the purchase or construction of your primary residence.
 ### Documentation requirements
