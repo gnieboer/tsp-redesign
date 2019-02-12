@@ -60,11 +60,11 @@ You can only use a residential loan for purchasing or constructing a primary res
  
 **You cannot use a residential loan for**
 
-![x_red](tsp-redesign/assets/img/x_red.svg "red x") refinancing or prepaying your existing mortgage
-![x_red](tsp-redesign/assets/img/x_red.svg "red x") construction of an addition to your existing residence
-![x_red](tsp-redesign/assets/img/x_red.svg "red x") renovations to your existing residence
-![x_red](tsp-redesign/assets/img/x_red.svg "red x") buying out another person's share in the your current residence 
-![x_red](tsp-redesign/assets/img/x_red.svg "red x") purchasing land only
++![x_red](tsp-redesign/assets/img/x_red.svg "red x") refinancing or prepaying your existing mortgage
++![x_red](tsp-redesign/assets/img/x_red.svg "red x") construction of an addition to your existing residence
++![x_red](tsp-redesign/assets/img/x_red.svg "red x") renovations to your existing residence
++![x_red](tsp-redesign/assets/img/x_red.svg "red x") buying out another person's share in the your current residence 
++![x_red](tsp-redesign/assets/img/x_red.svg "red x") purchasing land only
  
 ![alert](tsp-redesign/assets/img/alert-circle.svg "alert circle") Your primary residence must be purchased in whole or in part by you, or your spouse.
 
