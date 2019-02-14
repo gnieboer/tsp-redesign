@@ -52,7 +52,7 @@ If you’re a FERS employee hired after July 31, 2010, your agency has automatic
 
 If you’re a FERS employee hired before August 1, 2010, you already have a TSP account with accruing Agency Automatic (1%) Contributions. In addition, you can choose to make contributions to your account from your pay and receive Agency Matching Contributions.
 
-To make a contribution election, use your agency’s electronic payroll system (e.g., Employee Express) or complete and submit [Form TSP-1](/PDF/forms/tsp-1.pdf), *Election Form*.
+To make a contribution election, use your agency’s electronic payroll system (e.g., Employee Express) or complete and submit [Election Form](/PDF/forms/tsp-1.pdf), *Form TSP-1*.
 
 </div>
   </li><li>
@@ -63,7 +63,7 @@ To make a contribution election, use your agency’s electronic payroll system (
     </button>
 <div id="a2" class="usa-accordion-content" markdown="1">
 
-If you’re a CSRS employee, your account is established by your agency after you make a contribution election using your agency's electronic payroll system (e.g., Employee Express) or complete and submit [Form TSP-1](/PDF/forms/tsp-1.pdf), *Election Form*.
+If you’re a CSRS employee, your account is established by your agency after you make a contribution election using your agency's electronic payroll system (e.g., Employee Express) or complete and submit [Election Form](/PDF/forms/tsp-1.pdf), *Form TSP-1*.
 
 </div>
   </li><li>
@@ -88,7 +88,7 @@ If you served fewer than 12 years as of December 31, 2017, and you chose to join
     </button>
 <div id="a4" class="usa-accordion-content" markdown="1">
 
-If you’re a member of the uniformed services who is not covered by the Blended Retirement System (BRS), your TSP account is established by your service after you make a contribution election using your service's electronic payroll system (e.g., myPay), or complete and submit [Form TSP-U-1](/PDF/forms/tsp-u-1.pdf), *Election Form*.
+If you’re a member of the uniformed services who is not covered by the Blended Retirement System (BRS), your TSP account is established by your service after you make a contribution election using your service's electronic payroll system (e.g., myPay), or complete and submit [Election Form](/PDF/forms/tsp-u-1.pdf), *Form TSP-U-1*.
 
 </div>
   </li><li>
