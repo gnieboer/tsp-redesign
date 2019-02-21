@@ -27,6 +27,7 @@ scripts:
   - /assets/js/vendor/glossary.min.js
   - /assets/js/login.js
   - /assets/js/glossary.js
+  - /assets/js/dialog.js
 
 # Compress Sass
 # sass:

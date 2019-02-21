@@ -7,6 +7,7 @@
   }
   .usa-banner-content {
     color: #fff;
+    padding-top: 1rem;
       p:first-of-type, h2 {
       margin-top: 0;
       margin-bottom: 0;
@@ -21,7 +22,7 @@
   .usa-banner-button[aria-expanded=true], .usa-banner-button[aria-expanded=false] {
     float: right;
   }
-  .usa-banner-button[aria-expanded=true]::after, .usa-banner-button[aria-expanded=false]::after {
+  .usa-banner-button[aria-expanded=true]::after, .usa-banner-button[aria-expanded=true]:hover::after, .usa-banner-button[aria-expanded=false]::after, .usa-banner-button[aria-expanded=false]:hover::after {
       background-image: url(/assets/img/icons/x-circle-white.svg);
       background-size: 100%;
       content: '';
