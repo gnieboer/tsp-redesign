@@ -9,7 +9,7 @@ permalink: /making-contributions/contribution-types/
 
 # Contribution types
 
-## Regular Employee Contributions
+## Regular employee contributions
 
 Each pay period, your agency or service will deduct your contribution from your basic pay in the amount or percentage that you chose when you started contributing (or at 3% of your pay if you were automatically enrolled and haven't made any changes).
 
@@ -51,7 +51,7 @@ If you're a FERS or BRS employee, your agency or service will contribute an amou
 pay and do not reduce your pay for income tax purposes.**
 
 <div class="card" markdown="1">
-### A Few Words about Vesting
+### A few words about vesting
 {: .card-title}
 
 + Being “vested” means you’re entitled to keep all of the money in your account. Vesting only applies to Agency/Service Automatic (1%) Contributions (and their earnings) and occurs after you work in the federal government or uniformed services for a certain number of years. All your years of service in a position eligible for the TSP count toward vesting, even if you don’t contribute to the TSP during that time. Most FERS participants are vested in Agency/Service Automatic (1%) Contributions after completing 3 years of service. 
@@ -103,7 +103,7 @@ TSP-1-C, _Catch-Up Contribution Election_ (or TSP-U-1-C for uniformed services)
 and submit it to your payroll office. Download the [form](#) or call the ThriftLine
 at 1-877-968-3778 and choose option 3 to request a copy.
 
-## A Note for Members of the Uniformed Services
+## A note for members of the uniformed services
 
 **If you are a member of the uniformed services:**
 
