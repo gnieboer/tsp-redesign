@@ -54,7 +54,7 @@ pay and do not reduce your pay for income tax purposes.**
 ### A Few Words about Vesting
 {: .card-title}
 
-+ Being “vested” means you’re entitled to keep all of the money in your account. Vesting only applies to Agency/Service Automat (1%) Contributions (and their earnings) and occurs after you work in the federal government or uniformed services for a certain number of years. All your years of service in a position eligible for the TSP count toward vesting, even if you don’t contribute to the TSP during that time. Most FERS participants are vested in Agency/Service Automatic (1%) Contributions after completing 3 years of service. 
++ Being “vested” means you’re entitled to keep all of the money in your account. Vesting only applies to Agency/Service Automatic (1%) Contributions (and their earnings) and occurs after you work in the federal government or uniformed services for a certain number of years. All your years of service in a position eligible for the TSP count toward vesting, even if you don’t contribute to the TSP during that time. Most FERS participants are vested in Agency/Service Automatic (1%) Contributions after completing 3 years of service. 
 + FERS employees in congressional and certain noncareer positions become vested in Agency Automatic (1%) Contributions after 2 years of service.
 + BRS members become vested in Service Automatic (1%) Contributions after 2 years of service.
 
