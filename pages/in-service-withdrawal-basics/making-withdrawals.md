@@ -16,8 +16,8 @@ permalink: /in-service-withdrawal-basics/making-an-in-service-withdrawal/
 
 ## Applying for a financial hardship withdrawal or an age-based withdrawal
 
-+ To apply for a financial hardship withdrawal, log in to [My Account](https://www.tsp.gov/tsp/login.html) and use the wizard to complete [Form TSP-76], *Financial Hardship In-Service Withdrawal Request.*
-+ To apply for an age-based withdrawal, log in to [My Account](https://www.tsp.gov/tsp/login.html) and use the wizard to complete [Form TSP-75], *Age-Based In-Service Withdrawal Request.*
++ To apply for a financial hardship withdrawal, log in to [My Account](https://www.tsp.gov/tsp/login.html) and use the wizard to complete the [Financial Hardship In-Service Withdrawal Request], *Form TSP-76.*
++ To apply for an age-based withdrawal, log in to [My Account](https://www.tsp.gov/tsp/login.html) and use the wizard to complete the [Age-Based In-Service Withdrawal Request], *Form TSP-75.*
 
 You can complete your request online unless you are required to obtain your spouse's signed consent or you want to receive your money by check or direct deposit to your bank account.
 
