@@ -54,7 +54,7 @@ As a beneficiary participant, you’ll enjoy many of the same TSP benefits as em
 
 ## Learn how to move your beneficiary participant account and your existing TSP account
 
-You can move your beneficiary participant account (BPA) into your existing employee or uniformed services TSP account by completing [Form TSP-90](javascript:void(0)), _Withdrawal Request for Beneficiary Participants_. The money you move will be treated as an employee contribution, but it will not be subject to the Internal Revenue Code (IRC) annual elective deferral limit. (See the instructions on Form TSP-90 for more information on combining accounts.)
+You can move your beneficiary participant account (BPA) into your existing employee or uniformed services TSP account by completing [Withdrawal Request for Beneficiary Participants](javascript:void(0)), _Form TSP-90_. The money you move will be treated as an employee contribution, but it will not be subject to the Internal Revenue Code (IRC) annual elective deferral limit. (See the instructions on Form TSP-90 for more information on combining accounts.)
 
 In general, once you combine your BPA with your existing TSP account, your BPA money will be subject to the rules that govern the account to which it was moved.
 
@@ -188,7 +188,7 @@ You can also make _**a mixed withdrawal**_ which allows you to combine any or al
 
 ## Learn what you’ll need to do to request a withdrawal from your beneficiary participant account.
 
-To request a withdrawal, complete [Form TSP-90](javascript:void(0)), _Withdrawal Request for Beneficiary Participants_. You would’ve received a copy of this form with your welcome letter, but you can also find it under [Forms & Publications](javascript:void(0)). Be sure to read the instructions carefully to ensure that you make an informed decision and provide all of the necessary information so that we  can process your request.
+To request a withdrawal, complete [Withdrawal Request for Beneficiary Participants](javascript:void(0)), _Form TSP-90_. You would’ve received a copy of this form with your welcome letter, but you can also find it under [Forms & Publications](javascript:void(0)). Be sure to read the instructions carefully to ensure that you make an informed decision and provide all of the necessary information so that we  can process your request.
 
 If you're considering monthly payments or an annuity, you should compare these benefits to see which one best suits your situation. You can get help by using the [Monthly Payment Calculator](javascript:void(0)) and the [Retirement Income Calculator](javascript:void(0)).
 
@@ -243,7 +243,7 @@ Upon your death, the remaining money in your TSP account will be distributed thi
 
 For most people, this is often the best option, since it accounts for changes like births, deaths, divorce, or marriage that may happen long after you open your account.
 
-If you'd like to make an exception, you may complete [Form TSP-3](javascript:void(0)), [_Designation of Beneficiary_](javascript:void(0)). The easiest way to do this is to use the online “wizard,” which you’ll find by logging into My Account and selecting “Beneficiaries” on the left.
+If you'd like to make an exception, you may complete [Designation of Beneficiary](javascript:void(0)), [_Form TSP-3_](javascript:void(0)). The easiest way to do this is to use the online “wizard,” which you’ll find by logging into My Account and selecting “Beneficiaries” on the left.
 
 A will or any other document is not valid for the disposition of your beneficiary participant account. It is not a substitute for a Designation of Beneficiary form.
 
@@ -261,7 +261,7 @@ A will or any other document is not valid for the disposition of your beneficiar
 
 ## Learn how to inform us of a participant’s death
 
-In order for your beneficiaries to receive your account balance after your death, they (or their representatives) must complete the [Form TSP-17](javascript:void(0)), _Information Relating to Deceased Participant_, and submit it with a copy of the certified death certificate. Once we process the information and determine the beneficiaries for your account, we’ll contact them with additional information and instructions.
+In order for your beneficiaries to receive your account balance after your death, they (or their representatives) must complete the [Information Relating to Deceased Participant](javascript:void(0)), _Form TSP-17_, and submit it with a copy of the certified death certificate. Once we process the information and determine the beneficiaries for your account, we’ll contact them with additional information and instructions.
 
 Death benefit payments made from your beneficiary participant account must be paid **directly** to your beneficiary(ies). These payments cannot be transferred or rolled over into an IRA or eligible employer plan. In addition, the payment will be fully taxable in the year your beneficiary(ies) receive it.
 Your beneficiaries will not owe taxes on Roth contributions, qualified earnings on Roth contributions, and tax-exempt contributions in the account.
