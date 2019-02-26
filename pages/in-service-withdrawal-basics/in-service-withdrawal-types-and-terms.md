@@ -46,7 +46,7 @@ When you make a financial hardship withdrawal, consider the following effects on
 
 - You must pay income tax on the taxable portion of your financial hardship withdrawal, and, if you have not reached age 59½, you may also have to pay a 10% early withdrawal penalty tax. 
 - You cannot contribute to your TSP account for 6 months, and you won’t receive any Agency/Service Matching Contributions during that 6-month period. 
-- At the end of the 6-month period, you must make a new contribution election on [Form TSP-1](https://www.tsp.gov/PDF/formspubs/tsp-1.pdf), *Election Form* ([TSP-U-1](https://www.tsp.gov/PDF/formspubs/tsp-u-1.pdf), uniformed services) to resume your employee contributions. 
+- At the end of the 6-month period, you must make a new contribution election on the [Election Form](https://www.tsp.gov/PDF/formspubs/tsp-1.pdf), *Form TSP-1* ([TSP-U-1](https://www.tsp.gov/PDF/formspubs/tsp-u-1.pdf), uniformed services) to resume your employee contributions. 
 - If you are a member of the uniformed services (whether BRS or not), when your employee contributions from basic pay stop, any contributions from incentive pay, special pay, or bonus pay will also stop.
 
 Be sure to read the Tax Notice [*Important Tax Information About Payments From Your TSP Account*](https://www.tsp.gov/PDF/formspubs/tsp-536.pdf) to learn more about the tax rules affecting your financial hardship withdrawals.
