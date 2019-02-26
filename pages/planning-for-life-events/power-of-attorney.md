@@ -18,6 +18,6 @@ You can use a Power of Attorney (POA) to authorize another person (the â€œagentâ
 A POA may be general, giving your agent unlimited power to conduct business with the TSP.
 Or, a POA may choose specific tasks that the agent can do on your behalf, such as obtain information about your account, or borrow or withdraw funds from your account. You can use the [Special Power of Attorney](https://www.tsp.gov/PDF/formspubs/oc01-10.pdf) form to designate a power of attorney.
 
-Be sure to read _[Court Orders and Powers of Attorney](javascript:void(0))_ for a complete understanding of these issues, particularly the sample language for granting a power of attorney.
+Be sure to read _[*Court Orders and Powers of Attorney*](javascript:void(0))_ for a complete understanding of this authorization and to view [sample language for granting a power of attorney](https://www.tsp.gov/PDF/formspubs/oc01-10.pdf). 
 
 <!-- CONTENT END -->
