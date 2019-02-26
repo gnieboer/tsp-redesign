@@ -41,7 +41,7 @@ You are responsible for ensuring that the loan payments are correct and submitte
 At the end of each calendar quarter, we identify all loans with missed payments. If you have missed more than 2½ payments, we will send a notice letting you know that you have until the end of the following calendar quarter to pay the missed amount. You must pay the missed amount directly to us using your own personal funds to avoid a taxable distribution. Your payroll office cannot make up missed payments from your pay.
  
 ## Exceptions for missed payments 
-Certain exceptions for missed payments are granted if you are in [nonpay status](#). For more information, visit [Your loan in a nonpay status](#).
+Certain exceptions for missed payments are granted if you are in [nonpay status](#). For more information, visit [Your loan in a nonpay status](#). 
 
 ## Taxable distributions
 
