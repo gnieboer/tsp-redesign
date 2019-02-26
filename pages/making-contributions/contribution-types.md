@@ -98,7 +98,7 @@ automatically.
 contributions, but not incentive pay, special pay, or bonus pay.**
 
 To make a catch-up contributions, use your agency’s or service’s payroll website
-(e.g., Employee Express, myPay, LiteBlue, EBIS, or NFC-EPP) or complete the Catch-Up Contribution Election, _Form
+(e.g., Employee Express, myPay, LiteBlue, EBIS, or NFC-EPP) or complete the Catch-Up Contribution Election form, _Form
 TSP-1-C_ (or TSP-U-1-C for uniformed services)
 and submit it to your payroll office. Download the [form](#) or call the ThriftLine
 at 1-877-968-3778 and choose option 3 to request a copy.
