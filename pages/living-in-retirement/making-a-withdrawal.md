@@ -13,9 +13,9 @@ permalink: /living-in-retirement/making-a-withdrawal/
 
 Before you request a withdrawal from your TSP savings, be sure to read the booklet [*Withdrawing Your TSP Account After Leaing Federal Service*](https://www.tsp.gov/PDF/formspubs/tspbk02.pdf).
 
-To request a full withdrawal of your TSP savings, complete Form [TSP-70](https://www.tsp.gov/PDF/formspubs/tsp-70.pdf), *Request for Full Withdrawal*.
+To request a full withdrawal of your TSP savings, complete  [Request for Full Withdrawal](https://www.tsp.gov/PDF/formspubs/tsp-70.pdf), *Form TSP-70*.
 
-To request a partial withdrawal from your TSP account, complete Form [TSP-77](https://www.tsp.gov/PDF/formspubs/tsp-77.pdf), *Request for Partial Withdrawal When Separated*.
+To request a partial withdrawal from your TSP account, complete  [Request for Partial Withdrawal When Separated](https://www.tsp.gov/PDF/formspubs/tsp-77.pdf), *Form TSP-77*.
 
 We cannot process your withdrawal request unless your agency or service notifies us that you've separated from service and has provides the date of your separation. It usually takes up to 30 days after the actual date of your separation for this information to be submitted to us.
 
@@ -71,7 +71,7 @@ If you have both a civilian account and a uniformed services account, you may wi
  
 Once you’ve separated, you will have the option of combining your two accounts into one; however, you can only combine the account related to your separation into your other TSP account. Also, if you have a loan in the account you are moving, you must close it before you can combine your accounts.
  
-To combine your TSP accounts, use [Form TSP-65](https://www.tsp.gov/PDF/formspubs/tsp-65.pdf), *Request to Combine Uniformed Services and Civilian TSP Accounts.* Money that you transfer will be deposited as employee contributions into the traditional or Roth balance of the combined account based on the way it was identified in the original account.
+To combine your TSP accounts, use [Request to Combine Uniformed Services and Civilian TSP Accounts](https://www.tsp.gov/PDF/formspubs/tsp-65.pdf), *Form TSP-65.* Money that you transfer will be deposited as employee contributions into the traditional or Roth balance of the combined account based on the way it was identified in the original account.
 
 **Note:** If you have a uniformed services account that includes a tax-exempt balance, that money cannot be transferred to your civilian TSP account unless the tax-exempt contributions are part of your Roth balance. Any tax-exempt contributions that are a part of your traditional balance must remain in your uniformed services account. That account will continue to accrue tax-deferred earnings until you withdraw it.
 
