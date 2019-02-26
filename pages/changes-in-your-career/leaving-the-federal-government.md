@@ -25,9 +25,9 @@ Leaving the federal government
 </button>
 <div id="a1" class="usa-accordion-content" markdown="1">
 
-Did you know if your account balance is $200 or more, you can leave it in the TSP when you leave the federal government?
+Did you know if your account balance is $200 or more, you can keep it in the TSP when you leave the federal government?
 
-Once you leave the federal government, you’ll no longer be able to make employee contributions. However, you can keep more of what you save thanks to our low costs, change your investment mix, and transfer eligible money into your account — all while your account continues to accrue earnings.
+Once you leave the federal government, you’ll no longer be able to make employee contributions. However, you can still change your investment mix, transfer eligible money into your account, and enjoy our low costs—all while your account continues to accrue earnings.
 
 As you prepare to leave federal service, here are four important things you must do:
 
@@ -46,9 +46,9 @@ Leaving uniformed services
 </button>
 <div id="a2" class="usa-accordion-content" markdown="1">
 
-Did you know if your account balance is $200 or more, you can leave it in the TSP when you leave the federal government?
+Did you know if your account balance is $200 or more, you can keep it in the TSP when you leave the federal government?
 
-Once you leave the federal government, you’ll no longer be able to make employee contributions. However, you can keep more of what you save thanks to our low costs, change your investment mix, and transfer eligible money into your account — all while your account continues to accrue earnings.
+Once you leave the federal government, you’ll no longer be able to make employee contributions. However, you can still change your investment mix, transfer eligible money into your account, and enjoy our low costs—all while your account continues to accrue earnings.
 
 As you prepare to leave federal service, here are four important things you must do:
 
