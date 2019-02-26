@@ -37,7 +37,7 @@ A refund of your automatic employee contributions **will not stop** your agency 
 
 If you had a break in service of **less than 31 full calendar days**, be sure to let your new agency know if you have any outstanding TSP loans so your payments can resume.
 
-If you’ve missed any loan payments, you’ll have to make up the ones you missed from your own funds. Mail your loan payment directly to us along with [Form TSP-26](#), _Loan Payment Coupon_.
+If you’ve missed any loan payments, you’ll have to make up the ones you missed from your own funds. Mail your loan payment directly to us along with [Loan Payment Coupon](#), _Form TSP-26_.
 
 ## Withdrawals
 
