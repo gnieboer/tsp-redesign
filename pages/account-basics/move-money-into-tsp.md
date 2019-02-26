@@ -29,11 +29,11 @@ We **will not accept** Roth rollovers that have already been paid to you and **w
 
 ### Transfer money directly into the TSP
 
-A transfer or “direct rollover” occurs when the eligible plan sends all or part of your money to the TSP. Use [Form TSP-60](javascript:void(0)), *Request for a Transfer Into the TSP*, for tax-deferred amounts. To transfer Roth money, use [Form TSP-60-R](javascript:void(0)), *Request for a Roth Transfer Into the TSP*.
+A transfer or “direct rollover” occurs when the eligible plan sends all or part of your money to the TSP. Use [Request for a Transfer Into the TSP](javascript:void(0)), *Form TSP-60*, for tax-deferred amounts. To transfer Roth money, use [Request for a Roth Transfer Into the TSP](javascript:void(0)), *Form TSP-60-R*.
 
 ### Roll Over Traditional Money into the TSP
 
-A “rollover” is when you receive eligible money directly from your traditional IRA or plan and then you later put it into your TSP account. You cannot roll over Roth money into the TSP and you must complete your rollover within 60 days from the date you receive your funds. Use [Form TSP-60](javascript:void(0)), *Request for a Transfer Into the TSP*, to roll over eligible traditional money.
+A “rollover” is when you receive eligible money directly from your traditional IRA or plan and then you later put it into your TSP account. You cannot roll over Roth money into the TSP and you must complete your rollover within 60 days from the date you receive your funds. Use [Request for a Transfer Into the TSP](javascript:void(0)), *Form TSP-60*, to roll over eligible traditional money.
 
 ### More to know:
 Transfer or rollover money does not count towards the Internal Revenue Code (IRC) contribution limits, and your eligible transfer and rollover will be invested according to your <span data-term="contribution allocation" class="js-glossary-toggle term term-end">contribution allocation</span> on file.
