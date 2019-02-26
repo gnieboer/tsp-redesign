@@ -14,7 +14,7 @@ You have two options for withdrawing your TSP account after you leave federal se
 ## Partial withdrawals
 
 A partial withdrawal allows you to make a one-time-only withdrawal and leave the rest of your money in your TSP account until a later date.
-Use [Form TSP-77](#), *Request for Partial Withdrawal When Separated*, which is also available through the ThriftLine.
+Use [Request for Partial Withdrawal When Separated](#), *Form TSP-77*, which is also available through the ThriftLine.
 
 You can make a partial withdrawal if::
 + You have not made a prior partial withdrawal or have one that is currently pending, and
