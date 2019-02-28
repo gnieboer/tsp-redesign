@@ -45,6 +45,6 @@ If your break in service was **less than 31 full calendar days**, you’re not e
 
 If your break in service was **31 or more full calendar days**, you were eligible, but not required to withdraw your TSP account. Any withdrawal must have been paid and received while you were still separated from service.
 
-If you began receiving monthly TSP payments after you separated, those payments will stop when you’re rehire. If you’re receiving annuity payments, they will continue.
+If you began receiving monthly TSP payments after you separated, those payments will stop when you’re rehired. If you’re receiving annuity payments, they will continue.
 
 <!-- CONTENT END -->
