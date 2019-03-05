@@ -69,5 +69,4 @@ You will not owe income taxes on any part of your outstanding loan amount that c
 ## Other consequences of a taxable distribution
 
 + If you’re under age 59½ when the taxable distribution is declared, you may also have to pay a 10% early withdrawal penalty tax.
-+ A taxable distribution affects your eligibility for another loan. You cannot apply for another loan from the same account within 12 months of the date of the taxable distribution. 
-- + The only exception is if the taxable distribution was declared due to your separation from federal service: If you are rehired within that 12-month period, you are immediately eligible to apply for another loan.
++ A taxable distribution affects your eligibility for another loan. You cannot apply for another loan from the same account within 12 months of the date of the taxable distribution. + + The only exception is if the taxable distribution was declared due to your separation from federal service: If you are rehired within that 12-month period, you are immediately eligible to apply for another loan.
