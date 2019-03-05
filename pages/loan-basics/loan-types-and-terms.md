@@ -25,7 +25,7 @@ If you meet the loan eligibility rules and your loan request is approved, the lo
 ## Loan types and terms
 We allow two types of loans:
 
-**General Purpose | Residential**    
+**General Purpose** | **Residential**    
 ----------------- | ----------------- 
 ![check](tsp-redesign/assets/img/check.svg "Check mark") May be used for any purpose | ![check](tsp-redesign/assets/img/check.svg "Check mark") May only be used for the purchase or construction of a primary residence
 ![check](tsp-redesign/assets/img/check.svg "Check mark") Requires no documentation | ![check](tsp-redesign/assets/img/check.svg "Check mark") Requires documentation
