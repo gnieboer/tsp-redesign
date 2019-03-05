@@ -9,7 +9,7 @@ permalink: /annuity-basics/
 
 # Annuity basics
 
-A life annuity provides guaranteed monthly payments for as long as you are alive. Your life annuity can also pay benefits to a survivor, or joint annuitant, if you want. Our life annuity is one of the full withdrawal options that are available to you once you leave federal service.
+Our annuity provides guaranteed monthly payments for as long as you are alive. Your annuity can also pay benefits to a survivor, or joint annuitant, if you want. Our annuity is one of the withdrawal options that are available to you once you leave federal service.
 
 
 
