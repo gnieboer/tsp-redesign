@@ -33,7 +33,7 @@ We allow two types of loans:
 
 For details, visit [Residential Loan Documentation](#).
 
-![alert](tsp-redesign/assets/img/alert-circle.svg "alert circle") Your loan payments must start within 60 days of your loan being disbursed.
+![alert](tsp-redesign/assets/img/alert-circle.svg "alert circle") Your loan payments must start within 60 days of your loan being sent.
 
 ### Loan eligibility
  
