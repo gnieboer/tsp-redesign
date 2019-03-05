@@ -17,7 +17,7 @@ permalink: /for-beneficiary-participants/being-a-beneficiary-participant/
 - Estate planner
 {:.check }
 
-If you’re the spouse beneficiary of a deceased participant's TSP account and your share of the balance is $200 or more, we will establish a beneficiary participant account BPA) in your name.
+If you’re the spouse beneficiary of a deceased participant's TSP account and your share of the balance is $200 or more, we will establish a beneficiary participant account (BPA) in your name.
 
 <div class="usa-alert  usa-alert-error ">
     <div class="usa-alert-body">
@@ -52,7 +52,7 @@ As a beneficiary participant, you’ll enjoy many of the same TSP benefits as em
     </button>
 <div id="r1b1" class="usa-accordion-content" markdown="1">
 
-## Learn how to move your beneficiary participant account and your existing TSP account
+## Learn how to move your beneficiary participant account into your existing TSP account
 
 You can move your beneficiary participant account (BPA) into your existing employee or uniformed services TSP account by completing [Withdrawal Request for Beneficiary Participants](javascript:void(0)), _Form TSP-90_. The money you move will be treated as an employee contribution, but it will not be subject to the Internal Revenue Code (IRC) annual elective deferral limit. (See the instructions on Form TSP-90 for more information on combining accounts.)
 
