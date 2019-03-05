@@ -16,11 +16,11 @@ Once your withdrawal request is processed, you cannot return your withdrawal or 
 Use the Change in Monthly Payment Amount form, [*Form TSP-73,*](https://www.tsp.gov/PDF/formspubs/tsp-73.pdf) to do any of the following:
 
 + Change the monthly dollar amount you are receiving. You may do this once a year. Your request will become effective the following January; or
-+ Change your TSP-computed payments (based on life expectancy) to a specific dollar amount. This is a one-time-only change. Your request will become effective the following January.
++ Change your TSP-computed payments (based on life expectancy) to a specific dollar amount. You may only do this once. Your request will become effective the following January.
 
 ## Managing your monthly payments
 
-Use the Monthly Payments Maintenance form, [*Form TSP-78,*](https://www.tsp.gov/PDF/formspubs/tsp-78.pdf) to make the following immediate changes in the way your monthly payments are handled:
+Use the Monthly Payments Maintenance form, [*Form TSP-78,*](https://www.tsp.gov/PDF/formspubs/tsp-78.pdf) to make the following changes immediately:
 
 + Start the direct deposit of your payments.
 + Change the financial institution or the checking or savings account that is receiving your monthly payments.
@@ -34,4 +34,4 @@ If you’ve chosen an annuity, you cannot change either the annuity option or yo
 
 ## Requesting a final single payment
 
-Use the Change From Monthly Payments to Final Payment form, [*Form TSP-79,*](https://www.tsp.gov/PDF/formspubs/tsp-79.pdf) if you are receiving monthly payments and you want to request a final single payment from your TSP account. Your request for a final single payment will close your TSP account.
+Use the Change From Monthly Payments to Final Payment form, [*Form TSP-79,*](https://www.tsp.gov/PDF/formspubs/tsp-79.pdf) if you are receiving monthly payments and you want to request a final single payment from your TSP account. Your request for a final single payment will close your TSP account, which cannot be reversed.
