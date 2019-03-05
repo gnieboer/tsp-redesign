@@ -59,21 +59,21 @@ calculators:
   - text: Calculators
     href: /calculators/
     subnav:
-      - text: How Much Should I Save? (Ballpark Estimate)
+      - text: How much should I save? (Ballpark Estimate)
         href: "javascript:void(0);"
-      - text: How Much Will My Savings Grow?
+      - text: How much will my savings grow?
         href: #
-      - text: How Much Can I Contribute?
+      - text: Howm much can I contribute?
         href: /calculators/how-much-can-i-contribute/
-      - text: Paycheck Estimator
+      - text: Paycheck estimator
         href: #
-      - text: Contribution Comparison Calculator
+      - text: Contribution comparison calculator
         href: #
-      - text: Retirement Income Calculator
+      - text: Retirement income calculator
         href: #
-      - text: TSP Monthly Payment Calculator
+      - text: TSP monthly payment calculator
         href: #
-      - text: Estimate Loan Payments
+      - text: Estimate loan payments
         href: #
 
 manage-your-plan:
