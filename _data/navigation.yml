@@ -55,6 +55,27 @@ secondary:
     class: login-toggle usa-button
 
 # SIDENAV MENUS
+calculators:
+  - text: Calculators
+    href: /calculators/
+    subnav:
+      - text: How Much Should I Save? (Ballpark Estimate)
+        href: "javascript:void(0);"
+      - text: How Much Will My Savings Grow?
+        href: #
+      - text: How Much Can I Contribute?
+        href: /calculators/how-much-can-i-contribute/
+      - text: Paycheck Estimator
+        href: #
+      - text: Contribution Comparison Calculator
+        href: #
+      - text: Retirement Income Calculator
+        href: #
+      - text: TSP Monthly Payment Calculator
+        href: #
+      - text: Estimate Loan Payments
+        href: #
+
 manage-your-plan:
   - text: Account basics
     href: /account-basics/
