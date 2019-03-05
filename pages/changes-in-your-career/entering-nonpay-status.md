@@ -1,7 +1,7 @@
 ---
 layout: page
 
-title: Entering a non-pay status
+title: Entering a nonpay status
 
 sidenav: manage-life-changes
 
@@ -17,9 +17,9 @@ permalink: /changes-in-your-career/entering-non-pay-status/
 
 ## What is non-pay status?
 
-non-pay status is when active federal government employees, including the uniformed services, do not receiving regular pay because of furlough, suspension, leave without pay (including leave without pay to perform military duty).
+Nonpay status is when active federal government employees, including the uniformed services, do not receive regular pay because of furlough, suspension, or leave without pay (including leave without pay to perform military duty).
 
-Here are some things you can expect while you’re in non-pay status:
+Here are some things you can expect while you’re in nonpay status:
 
 ## What stays the same?
 
