@@ -70,14 +70,14 @@ You can only use a residential loan for purchasing or constructing a primary res
 
 ## Borrowing limits
 ### Minimum loan amount
-The minimum amount that you can borrow is $1,000.  
+The minimum amount you can borrow is $1,000.  
 
 ### Maximum loan amount
-The maximum amount that you can borrow is the smallest of the following:
+The maximum amount you can borrow is the smallest of the following:
 
-+ Your own contributions and earnings on those contributions in the TSP account from which you intend to borrow, not including any outstanding loan balance;
-+ Approximately 50% of your [vested account balance](#) (including any outstanding loan balance) or $10,000, whichever is greater, minus any outstanding loan balance; or
-+ Approximately $50,000 minus your highest outstanding loan balance, if any, during the last 12 months. Even if your loan is currently paid in full, it will still be considered in the calculation if it was open at any time during the last 12 months.
++ Your own contributions and earnings on those contributions in the TSP account you'd like to borrow from, not including any outstanding loan balance;
++ 50% of your [vested account balance](#) (including any outstanding loan balance) or $10,000, whichever is greater, minus any outstanding loan balance (see note below); or
++ $50,000 minus your highest outstanding loan balance, if any, during the last 12 months (see note below). 
 
 Note: If you have both a civilian account and a uniformed services account, the combined account balances and outstanding loan amounts will be used to calculate the maximum loan amount. 
 
@@ -85,7 +85,7 @@ TSP account balances are recalculated at the end of each business day based on d
 
 TSP account balances are recalculated at the end of each business day based on daily share prices. As a result, the maximum loan amount may change on a daily basis.
 
-To find out more about the maximum amount available for a loan, use the calculator, [ _Estimate Loan Payments_](#) , or contact us.
+To find out more about the maximum amount available for a loan, use the calculator, [ _Estimate Loan Payments_](#) , or [contact us](#).
 
 ## Loan costs
 
