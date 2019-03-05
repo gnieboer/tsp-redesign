@@ -13,13 +13,13 @@ permalink: /living-in-retirement/making-a-withdrawal/
 
 Before you request a withdrawal from your TSP savings, be sure to read the booklet [*Withdrawing Your TSP Account After Leaing Federal Service*](https://www.tsp.gov/PDF/formspubs/tspbk02.pdf).
 
-To request a full withdrawal of your TSP savings, complete  [Request for Full Withdrawal](https://www.tsp.gov/PDF/formspubs/tsp-70.pdf), *Form TSP-70*.
+To request a partial withdrawal from your TSP account, log into [My Account: Withdrawals](https://www.tsp.gov/tsp/login.html) and click “Partial Withdrawal.”
 
-To request a partial withdrawal from your TSP account, complete  [Request for Partial Withdrawal When Separated](https://www.tsp.gov/PDF/formspubs/tsp-77.pdf), *Form TSP-77*.
+To request a full withdrawal of your TSP savings, [My Account: Withdrawals](https://www.tsp.gov/tsp/login.html) and click “Full Withdrawal.”
 
-We cannot process your withdrawal request unless your agency or service notifies us that you've separated from service and has provides the date of your separation. It usually takes up to 30 days after the actual date of your separation for this information to be submitted to us.
+We cannot process your withdrawal request unless your agency or service notifies us that you've separated from service and provides the date of your separation. It usually takes up to 30 days after the actual date of your separation for us to receive this information.
 
-## Transferring and rolling over your withdrawal
+## Transferring or rolling over your withdrawal
 
 After you leave federal service, you may be able to transfer or roll over all or part of your partitial or full withdrawal amount to an IRA or eligible employer plan. 
  
@@ -27,11 +27,11 @@ The tax rules regarding transfers and rollovers can be complicated. You should c
 
 ## Depositing your withdrawal electronically
 
-Any single payment or monthly payment that is not transferred directly to an IRA or eligible employer plan can be deposited electronically in your savings or checking account. Simply provide the necessary information on your withdrawal request form.
+Any single payment or monthly payment that is not transferred directly to an IRA or eligible employer plan can be deposited electronically in your savings or checking account. Simply provide the necessary information in your withdrawal request.
 
 ## Receiving your money
 
-Allow at least several weeks from the time you submit your completed withdrawal request and the time that payment is sent. Your withdrawal could take longer if your agency or service delays reporting your separation from federal service, if you have an outstanding TSP loan, or if you submit forms that are not completed properly. We will notify you in writing when your payment has been disbursed. You can go to [My Account: Withdrawals](https://www.tsp.gov/tsp/login.html) or call the ThriftLine to find out the status of your request.
+Allow several weeks from the time you submit your completed withdrawal request and the time that payment is sent. Your withdrawal could take longer if your agency or service delays reporting your separation from federal service, if you have an outstanding TSP loan, or if you submit forms that are not completed properly. We will notify you in writing when your payment has been sent. You can go to [My Account: Withdrawals](https://www.tsp.gov/tsp/login.html) or call the ThriftLine to find out the status of your request.
  
 
 ## Other considerations
@@ -43,17 +43,17 @@ The Internal Revenue Code (IRC) requires that you receive a portion of your TSP 
  
 We calculate RMDs based on your account balance and your age using the IRS Uniform Lifetime Table. For detailed information and the tax rules regarding RMDs, see the TSP tax notice [*Important Tax Information About Your TSP Withdrawal and Required Minimum Distributions*](https://www.tsp.gov/PDF/formspubs/tsp-775.pdf).
 
-#### Minimum distribution requirements
+#### RMD requirements
 
-+ If you do not begin withdrawing from your TSP account balance in the year you turn 70½, we are required to make the required distribution to you by April 1 of the following year.
++ If you have left federal service and do not begin withdrawing from your TSP account balance in the year you turn 70½, we are required to make the required distribution to you by April 1 of the following year.
 
 + If you separate from federal service after age 70½, your account will immediately be subject to the IRS minimum distribution requirements.
  
 + If you’re already receiving a series of monthly payments from your TSP account when you turn 70½, your monthly payments will be used to satisfy the IRS minimum distributions requirement. If the total amount of your monthly payments does not satisfy the requirement, we will issue a supplemental payment for the remaining amount in December.
 
-#### Minimum distribution payment transfers
+#### RMD payment transfers
 
-You cannot transfer or roll over your RMD into another IRA or eligible employer plan. If you withdraw your account in a single payment or monthly payments in a year during which the RMD applies, you cannot transfer the entire payment(s) to your IRA or eligible employer plan. Instead, before transferring any money, we will calculate your RMD amount and mail it directly to you (or to the savings or checking account designated to receive your direct deposit).
+You cannot transfer or roll over your RMD into another IRA or eligible employer plan. If you withdraw your entire account in a single payment or monthly payments in a year during which the RMD applies, you cannot transfer the entire payment(s) to an IRA or eligible employer plan. Instead, before transferring any money, we will calculate your RMD amount and mail it directly to you (or to the savings or checking account designated to receive your direct deposit).
 
 ### Court orders
 
@@ -67,7 +67,7 @@ With the exception of a required minimum distribution (RMD), your withdrawal req
 
 ### Having two account types
 
-If you have both a civilian account and a uniformed services account, you may withdraw only the TSP account related to the type of employment from which you are separating.
+If you have both a civilian account and a uniformed services account, you may only make a partial or full withdrawal from the TSP account related to the type of employment from which you are separating.
  
 Once you’ve separated, you will have the option of combining your two accounts into one; however, you can only combine the account related to your separation into your other TSP account. Also, if you have a loan in the account you are moving, you must close it before you can combine your accounts.
  
