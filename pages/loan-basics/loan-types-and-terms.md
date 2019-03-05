@@ -41,9 +41,9 @@ For details, visit [Residential Loan Documentation](#).
 + must be an active federal employee or a member of the uniformed services.
 + must be in pay status because repayments are set up as payroll deductions.
 + can only have one outstanding general purpose loan and one outstanding residential loan from any one TSP account at a time.
-+ must have at least $1,000 of your own contributions and earnings in your account (agency contributions and earnings cannot be borrowed).
++ must have at least $1,000 of your own contributions and earnings in your account (agency/service contributions and earnings cannot be borrowed).
 + must not have repaid a loan of the same type in full within the past 60 days. (If you have both a civilian account and a uniformed services account, the 60-day waiting period applies separately to each account.)
-+ must not have had a taxable distribution of a loan within the past 12 months unless it was the result of your separation from federal service.
++ must not have had a taxable distribution of a loan within the past 12 months unless it was due to your leaving federal service.
 + must not have a court order against your account.
 
 ### Residential loan eligibility rules
