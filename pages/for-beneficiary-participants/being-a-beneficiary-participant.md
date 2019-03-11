@@ -16,7 +16,7 @@ permalink: /for-beneficiary-participants/being-a-beneficiary-participant/
 - Tax professional
 - Estate planner
 {:.check }
-
+f
 If you’re the spouse beneficiary of a deceased participant's TSP account and your share of the balance is $200 or more, we will establish a beneficiary participant account (BPA) in your name.
 
 <div class="usa-alert  usa-alert-error ">
@@ -41,8 +41,29 @@ As a beneficiary participant, you’ll enjoy many of the same TSP benefits as em
     </div>
 </div>
 
+## You'll need these items to manage your account
+
+<section class="quick-links">
+  <div class="usa-grid">
+  <div class="usa-width-one-fourth" markdown="1">
+  <span data-term="Account number" class="js-glossary-toggle term term-end">Account number</span>
+  </div>
+  <div class="usa-width-one-fourth" markdown="1">
+  <span data-term="password" class="js-glossary-toggle term term-end">Web password</span>
+  </div>
+  <div class="usa-width-one-fourth" markdown="1">
+  <span data-term="Personal Identification Number (PIN)" class="js-glossary-toggle term term-end">ThriftLine PIN</span>
+  </div>
+  <div class="usa-width-one-fourth" markdown="1">
+  <span data-term="Customized User ID" class="js-glossary-toggle term term-end">User ID</span>
+  </div>
+  </div>
+</section>
+
+<section class="bpa-accordion">
 <ul class="usa-accordion usa-tabs being-a-bpa">
 <!-- ROW 1, BOX 1, COMBINE YOUR TSP ACCOUNTS -->
+
   <li>
     <button class="usa-accordion-button"
       aria-expanded="false"
@@ -118,9 +139,12 @@ Choosing how to invest your account is completely up to you. You may invest in a
 </div>
 
 </li>
-</ul>
 
-<ul class="usa-accordion usa-tabs being-a-bpa">
+
+<!-- </ul>
+<ul class="usa-accordion usa-tabs being-a-bpa"> -->
+
+
 <!-- ROW 2, BOX 1, COMBINE YOUR TSP ACCOUNTS -->
   <li>
     <button class="usa-accordion-button"
@@ -199,9 +223,8 @@ You should allow at least several weeks from the time you submit your completed 
 
 </div>
 </li>
-</ul>
-
-<ul class="usa-accordion usa-tabs being-a-bpa">
+<!-- </ul>
+<ul class="usa-accordion usa-tabs being-a-bpa"> -->
 <!-- ROW 3, BOX 1, COMBINE YOUR TSP ACCOUNTS -->
   <li>
     <button class="usa-accordion-button"
@@ -270,3 +293,4 @@ Your beneficiaries will not owe taxes on Roth contributions, qualified earnings 
 </div>
 </li>
 </ul>
+</section>
