@@ -23,6 +23,6 @@ For most people, this is the best option because it accounts for life changes li
 
 If you’d like to make an exception, you may complete Form TSP-3, _[Designation of Beneficiary](#)_. The easiest way to do this is to use the online “wizard,” which you’ll find by logging in here: [My Account:Beneficiaries](https://www.tsp.gov/tsp/beneficiaries.do?subaction=beneLanding&_name=bene).   
 
-Don’t remember whether you’ve submitted a Designation of Beneficiary or you’re not sure who you named as your beneficiaries? Look at your annual statement, check the online wizard, or call the ThriftLine at 1-877-968-3778.
+Don’t remember whether you’ve submitted a _Designation of Beneficiary_ or you’re not sure who you named as your beneficiaries? Look at your annual statement, check the online wizard, or call the ThriftLine at 1-877-968-3778.
 
 <!-- CONTENT END -->
