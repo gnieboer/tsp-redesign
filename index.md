@@ -80,21 +80,21 @@ Whether you're new to the federal government or preparing to retire, we're here 
 </section>
 
 <!-- QUICK LINKS -->
-<section class="quick-links">
-  <div class="usa-grid">
-  <div class="usa-width-one-fourth" markdown="1">
-  [Fund performance](/fund-performance/)
-  </div>
-  <div class="usa-width-one-fourth" markdown="1">
-  [Forms and publications](/forms/)
-  </div>
-  <div class="usa-width-one-fourth" markdown="1">
-  [Contribution limits](/making-contributions/contribution-limits/)
-  </div>
-  <div class="usa-width-one-fourth" markdown="1">
-  [Calculators](/calculators/))
-  </div>
-  </div>
+<section class="quick-links homepage">
+<div class="usa-grid">
+<div class="usa-width-one-fourth" markdown="1">
+[Fund performance](/fund-performance/)
+</div>
+<div class="usa-width-one-fourth" markdown="1">
+[Forms and publications](/forms/)
+</div>
+<div class="usa-width-one-fourth" markdown="1">
+[Contribution limits](/making-contributions/contribution-limits/)
+</div>
+<div class="usa-width-one-fourth" markdown="1">
+[Calculators](/calculators/)
+</div>
+</div>
 </section>
 
 

@@ -1,10 +1,15 @@
+.usa-accordion .usa-tabs .being-a-bpa {
+  display: flex;
+  justify-content: space-between;
+}
 .being-a-bpa.usa-tabs {
   .usa-accordion-button {
+    box-sizing: border-box;
     font-size: 1.7rem;
-    width: 22rem;
-    height: 22rem;
+    width: 23.2rem;
+    height: 23.2rem;
     border: 6px solid #323a45;
-    margin-bottom: 0;
+    margin-bottom: 1rem;
     color: #dce4ef;
     background-color: #323a45;
     line-height: 2.5rem;
@@ -12,51 +17,51 @@
     background-position: right 1rem top;
     background-repeat: no-repeat;
     background-size: 3.2rem;
+      span {
+        display:block;
+        margin-bottom: 2rem;
+        text-align: center;
+      }
+      &[aria-expanded="true"] {
+        font-weight: 400;
+        border: 6px solid #dce4ef;
+        // line-height: 2.5rem;
+      }
+      &[aria-expanded="true"]:after {
+        width: 0;
+      	height: 0;
+      	border-left: 3rem solid transparent;
+      	border-right: 3rem solid transparent;
+      	border-top: 4rem solid #323a45;
+        border-bottom: none;
+        position: relative;
+        content: "";
+        top: 1rem;
+        left: 5rem;
+      }
+  } // .usa-accordion-button END
 
-    span {
-      display:block;
-      margin-bottom: 1rem;
-      text-align: center;
-    }
-    &[aria-expanded="true"] {
-      font-weight: 400;
-      border: 6px solid #dce4ef;
-      // line-height: 2.5rem;
-    }
-    &[aria-expanded="true"]:after {
-      width: 0;
-    	height: 0;
-    	border-left: 3rem solid transparent;
-    	border-right: 3rem solid transparent;
-    	border-top: 4rem solid #323a45;
-      border-bottom: none;
-      position: relative;
-      content: "";
-      top: 1rem;
-      left: 5rem;
-    }
-  }
-
-  th {font-weight: 700;
-    width: 20rem;
-    padding-left: 2rem;
-    vertical-align: text-top;
-  }
-  td {
-    > :first-child {
-      margin-top: 0;
-    }
-    h2:first-child {
-      background-image: url('/assets/img/icons/check-circle-green.svg');
-      background-repeat: no-repeat;
-      padding-left: 3rem;
-      background-position: left center;
-    }
-  }
+  // th {
+  //   font-weight: 700;
+  //   width: 20rem;
+  //   padding-left: 2rem;
+  //   vertical-align: text-top;
+  // }
+  // td {
+  //   > :first-child {
+  //     margin-top: 0;
+  //   }
+  //   h2:first-child {
+  //     background-image: url('/assets/img/icons/check-circle-green.svg');
+  //     background-repeat: no-repeat;
+  //     padding-left: 3rem;
+  //     background-position: left center;
+  //   }
+// } //.being-a-bpa.usa-tabs END
 
   .usa-accordion-content {
-    margin-bottom: 3rem;
-    width: 94%;
+    margin: -1rem 0 3rem 0;
+    width: 99.1%;
 
     h2 {
       color: #1ba7d0;
@@ -67,5 +72,5 @@
     p {
       max-width: 76ch;
     }
-  }
+  } //.usa-accordion-content END
 }
