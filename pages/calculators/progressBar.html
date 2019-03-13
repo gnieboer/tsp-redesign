@@ -10,6 +10,7 @@ clickableSteps: {{ include.clickableSteps }}  // 0
 {% assign step = {{ include.step }} %}
 {% assign step = {{ include.step }} %}
 {% assign my_array = "one|two|three" | split: "|" %}
+{{ product_price | default: 2.99 }}
 // 
 // Generic Progress bar for Calculators
 //
