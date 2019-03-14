@@ -14,7 +14,7 @@ permalink: /planning-for-life-events/buying-a-house/
 
 # Buying a house
 
-If you’re planning to buy or build a new home, you might consider requesting a residential loan. But before you apply, read the TSP booklet, *[Loans]*(https://www.tsp.gov/PDF/formspubs/tspbk04.pdf). Remember that your TSP residential loan is not a mortgage, and your loan interest payments are not tax deductible as they might be for a mortgage or home equity loan.
+If you’re planning to buy or build a new home, you might consider requesting a residential loan. But before you apply, read the TSP booklet, _[Loans](https://www.tsp.gov/PDF/formspubs/tspbk04.pdf)_. Remember that your TSP residential loan is not a mortgage, and your loan interest payments are not tax deductible as they might be for a mortgage or home equity loan.
 
 ## Residential loan documentation
 
