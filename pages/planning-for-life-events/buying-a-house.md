@@ -34,7 +34,7 @@ In addition to the requirements listed above, some types of primary residences r
 When buying a cooperative, you must show that you own shares in a cooperative housing corporation.
 
 #### New home construction purchase
-When you’re constructing a new primary home, you must show evidence that a complete home will be constructed, such as:
+When you’re constructing a new primary home, you must show evidence that a complete home will be constructed, such as the following:
 + Building permits
 + Building receipts
 + Other third-party documents
