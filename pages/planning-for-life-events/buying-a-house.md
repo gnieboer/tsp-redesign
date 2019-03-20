@@ -14,18 +14,19 @@ permalink: /planning-for-life-events/buying-a-house/
 
 # Buying a house
 
-If you’re planning to buy or build a new primary home, you might consider requesting a residential loan. But before you apply, be sure to read the TSP booklet, _[Loans](https://www.tsp.gov/PDF/formspubs/tspbk04.pdf)_. A residential loan is not a mortgage, and your loan interest payments are not tax deductible as they might be for a mortgage or home equity loan. Furthermore, you cannot use a residential loan for refinancing or replaying an existing mortgagge, for renovations or repairs, for buying out another person's share in your current home, or for the purpose of land only.
+If you’re planning to buy or build a new **primary home**, you might consider requesting a residential loan. But before you apply, be sure to read the TSP booklet, _[Loans](https://www.tsp.gov/PDF/formspubs/tspbk04.pdf)_. Keep in mind that a residential loan is not a mortgage, and your loan interest payments are not tax deductible as they might be for a mortgage or home equity loan. Furthermore, you cannot use a residential loan for refinancing or replaying an existing mortgagge, for renovations or repairs, for buying out another person's share in your current home, or for the purpose of land only.
 
 ## Residential loan documentation
 
-When you request a TSP residential loan, log in to My Account to use the online application process and print out and submit the *Loan Agreement* for processing along with any required documentation. 
+When you request a TSP residential loan, log in to My Account:TSP Loans to start the application process online, then print out and submit the *Loan Agreement* for processing along with any required documentation. Visit [Applying for a loan](tsp.gov/loan-basics/applying-for-a-loan) for more information.
 
 ### Documentation requirements
 Documentation for all residential loans must
 + be from a third party or someone who is selling the home to you or building it for you;
-+ be received by us before the expiration date on the *Loan Agreement*; 
-+ show you or your spouse as the purchaser or builder; **and** 
-+ show the full address and costs associated with the purchase or construction of the primary home.
++ be received by us **before** the expiration date at the top of the *Loan Agreement*; 
++ show that you or your spouse is the purchaser or that the residence is being built for you; 
++ show the full address of the primary residence; **and** 
++ show the purchase or construction price.
 
 ### Special requirements
 In addition to the requirements listed above, some types of primary residences require you to show further documentation. 
