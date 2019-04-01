@@ -1,0 +1,12 @@
+{% comment %}
+This script produces an info block/box for the calcualtors.
+{% endcomment %}
+{% assign icon = include.icon | default: 'info' %}
+{% assign title = include.title | default: 'You forgot to specifiy a title for this block' %}
+{% assign textBlock = include.textBlock | default: 'You forgot to specifiy some text for this block' %}
+
+<div class="infoBox" markdown="1">
+  **{{ title }}**
+  <BR>
+  {{ textBlock }}
+</div>

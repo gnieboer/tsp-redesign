@@ -1,0 +1,10 @@
+{% assign text = include.text | default: 'Button Text' %}
+{% assign title = 'title="' | append:include.title | append: '"' | default: '' %}
+{% assign href = "href='javascript:void(0);'" %}
+{% assign onClick = 'onClick="' | append:include.onClick | append: '"' | default: '' %}
+{% assign xtraClass1 = include.xtraClass1 | default: '' %}
+{% assign xtraClass2 = include.xtraClass2 | default: '' %}
+
+{% if include.href %} {% assign href = 'href="' | append:include.href | append: '"' %} {% endif %}
+
+<li><span class="buttonFrame {{ xtraClass1 }}"><a class="cssBtn {{ xtraClass2 }}" {{ href }} {{ title }} {{ onClick }}>{{ text }}</a></span></li>

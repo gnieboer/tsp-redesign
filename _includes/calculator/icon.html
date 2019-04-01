@@ -1,0 +1,39 @@
+{% comment %}
+This script returns an icon for use in a calculator.
+{% endcomment %}
+
+{% assign icon = 'required' %}
+{% assign title = null %}
+{% assign titleID = null %}
+{% assign id = null %}
+{% assign class = null %}
+{% assign srText = '' %}
+
+{% if include.icon %} {% assign icon = include.icon %} {% endif %}
+{% if include.title %} {% assign title = "title='" | append include.title | append "'" %} {% endif %}
+{% if include.titleID %} {% assign titleID = "id='" | append include.titleID | append "'" %} {% endif %}
+{% if include.id %} {% assign id = "id='" | append include.id | append "'" %} {% endif %}
+{% if include.class %} {% assign class = include.class %} {% endif %}
+{% if include.srText %} {% assign srText = include.srText %} {% endif %}
+
+{% if icon == 'trashcan' %}
+<i class="far fa-trash-alt " aria-hidden="true"></i><span class="sr-only">{{ srText }}</span>
+{% endif %}
+{% if icon == 'help' %}
+<span {{ id }} class="fa-layers {{ class }} fa-fw fa-1p65 leftIcon icon-help">
+<i class="fas fa-circle helpBg"></i>
+<i class="fa-inverse fas fa-question" data-fa-transform="shrink-6"></i>
+</span><span class="sr-only">{{ srText }}</span>
+{% endif %}
+{% if icon == 'edit' %}
+<ul class="flex-container space-between flexAlignCenter">
+<li><span {{ titleID }} class="calculatorSectionTitle">{{ title }}</span></li>
+<li><a href="javascript:void(0);" {{ id }} class="change-before leftIcon">Edit</a></li>
+</ul>
+{% endif %}
+{% if icon == 'requiredX' %}
+<i class="fa fa-asterisk {{ class }}"></i><span class="sr-only">Required</span>
+{% endif %}
+{% if icon == 'required' %}
+<i class="fa fa-asterisk required mr3"></i><span class="sr-only">Required</span>
+{% endif %}

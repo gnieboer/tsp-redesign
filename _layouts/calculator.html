@@ -1,0 +1,28 @@
+---
+layout: default
+main:
+  class: usa-grid usa-section usa-content usa-layout-docs
+---
+<script src="/assets/js/jquery.min.js" type="text/javascript"></script>
+<script src="/assets/js/jquery.numeric.js" type="text/javascript"></script><link rel="stylesheet" href="/assets/css/font-awesome.css">
+<script src="/assets/js/fontawesome-all.min.js" type="text/javascript"></script>
+<script src="/assets/js/calculator.js" type="text/javascript"></script>
+<script src="/assets/js/calculator_panels.js" type="text/javascript"></script>
+<link rel="stylesheet" href="/assets/css/errors.css">
+<link rel="stylesheet" href="/assets/css/cssBtn.css">
+<link rel="stylesheet" href="/assets/css/calculator.css">
+
+{% assign contentClass = "" %}
+{% assign sidenav = site.data.navigation[page.sidenav] | default: page.sidenav %}
+{% if sidenav %}
+<aside class="usa-width-one-fourth usa-layout-docs-sidenav sticky">
+  {% include sidenav.html links=sidenav %}
+</aside>
+{% assign contentClass = "usa-width-three-fourths" %}
+{% endif %}
+
+<div class="{{ contentClass }} usa-layout-docs-main_content">
+  {% if page.title %}<h1>{{ page.title }}</h1>{% endif %}
+  {% if page.progressSteps %}{% include calculator/progressBar.html progressSteps=page.progressSteps %}{% endif %}
+  {{ content }}
+</div>

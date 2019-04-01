@@ -60,21 +60,21 @@ calculators:
     href: /calculators/
     subnav:
       - text: How much should I save? (Ballpark Estimate)
-        href: "javascript:void(0);"
+        href: /calculators/boiler-plate/
       - text: How much will my savings grow?
-        href: #
+        href: /calculators/boiler-plate/
       - text: How much can I contribute?
         href: /calculators/how-much-can-i-contribute/
       - text: Paycheck estimator
-        href: #
+        href: /calculators/boiler-plate/
       - text: Contribution comparison calculator
-        href: #
+        href: /calculators/boiler-plate/
       - text: Retirement income calculator
-        href: #
+        href: /calculators/boiler-plate/
       - text: TSP monthly payment calculator
-        href: #
+        href: /calculators/boiler-plate/
       - text: Estimate loan payments
-        href: #
+        href: /calculators/boiler-plate/
 
 manage-your-plan:
   - text: Account basics
