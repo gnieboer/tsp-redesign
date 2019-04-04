@@ -12,22 +12,34 @@ Each year the IRS determines the maximum amount you can contribute to tax-deferr
 <div class="dottedLine"></div>
 
 **What information do you need to use this calculator?**
-- Your most recent Leave and Earnings statement or payslip.
-- The number of salary payments you have left for the year.
 
-<div class="calculatorInnerBox" markdown="1">
+-   Your most recent Leave and Earnings statement or payslip.
+-   The number of salary payments you have left for the year.
+
+<div class="deco-box" markdown="1">
+
+<div class="usa-grid">
+<div class="usa-width-one-whole" markdown="1">
 Choose the year you would like to review, then press Start.
-<table style="margin: 1em auto;"><tr>
-<td><select class="graySelect2" id="planYear" name="planYear">
-                     <option value="2018" selected="">2018</option>
-                     <option value="2019">2019</option>
-                     </select></td>
-<td><ul class="buttonNav flexRow">
-{% capture click %}processPanel({{ panelID }}, 0, {{ panelID | plus: 1}}, 0); return false;{% endcapture %}
-{% include calculator/button.html text='Start' onClick=click xtraClass2='primary' %}
-</ul></td>
-</tr></table>
 </div>
+</div>
+
+<div class="usa-grid">
+  <div class="usa-width-one-whole center">
+    <ul class="deco-box-inner flex-row flex-justify-center">
+      <li>
+        <select class="" id="planYear" name="planYear">
+           <option value="2018" selected="">2018</option>
+           <option value="2019">2019</option>
+        </select>
+      </li>
+      <li>
+        {% capture click %}processPanel({{ panelID }}, 0, {{ panelID | plus: 1}}, 0); return false;{% endcapture %}
+        {% include calculator/button.html text='Start' onClick=click xtraClass2='primary' %}
+      </li>
+    </ul>
+</div>
+</div> <!-- end deco-box -->
 
 {% capture myNote %}
 This calculator is especially important for FERS employees and members of the
@@ -43,7 +55,5 @@ The dollar amount determined by using this calculator distributes your employee/
 contributions over the entire year (or remainder of the year), and thus allows you to
 receive the maximum Agency or Service Matching Contributions.
 {% endcapture %}
-{% include calculator/infoBox.html icon='info'
-    title="Special Note for FERS and BRS Participants" textBlock=myNote %}
-
-</div>
+{% include calculator/infoBox.html icon='info' title="Special Note for FERS and BRS Participants" textBlock=myNote %}
+</div> <!-- end div#panel -->

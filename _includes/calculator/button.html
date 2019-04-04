@@ -7,4 +7,6 @@
 
 {% if include.href %} {% assign href = 'href="' | append:include.href | append: '"' %} {% endif %}
 
-<li><span class="buttonFrame {{ xtraClass1 }}"><a class="cssBtn {{ xtraClass2 }}" {{ href }} {{ title }} {{ onClick }}>{{ text }}</a></span></li>
+<!-- <li><span class="buttonFrame {{ xtraClass1 }}"><a class="cssBtn {{ xtraClass2 }}" {{ href }} {{ title }} {{ onClick }}>{{ text }}</a></span></li> -->
+
+<button class="usa-button {{ xtraClass1 }}" {{ href }} {{ title }} {{ onClick }}>{{ text }}</button>

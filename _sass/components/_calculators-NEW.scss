@@ -1,0 +1,33 @@
+// DECO BOX
+
+.deco-box {
+    background-color: #fff;
+    border: .3rem solid #046b99;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 1.5rem 1.7rem;
+    .usa-width-one-whole ul.deco-box-inner {
+      list-style: none;
+      display: inline-flex;
+      min-width: 50%;
+      margin: 3rem 0;
+    }
+    .deco-box-inner {
+      background-color: $color-silver;
+      border: .2rem solid #046b99;
+      // border-radius: 6px;
+      // -webkit-border-radius: 5;
+      // -moz-border-radius: 5;
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      select, button {
+        margin: 0;
+      }
+
+    }
+    select {
+      width: auto;
+    }
+
+}
