@@ -54,7 +54,7 @@ New styles are imediately below, older stuff to trim later follows after.
 
 
 /* this is the div surrounding the entire panel */
-.calculatorPanel {
+.calculator-panel {
   border:1px solid red;
   min-height: 200px;
 }
@@ -71,11 +71,7 @@ New styles are imediately below, older stuff to trim later follows after.
 }
 
 
-.dottedLine {
-    border-bottom-style: dotted;
-    border-width: .2rem;
-    border-color: #aeb0b5;
-}
+
 
 div.infoBox {
      -moz-border-radius: 6px;

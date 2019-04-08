@@ -5,18 +5,18 @@ Introduction panel (1) for How Much Can I Contribute?.
 {% assign hide = 'display: block;' %}
 {% if include.hide == 1 %} {% assign hide = 'display: none;' %} {% endif %}
 
-<div id="panel{{ panelID }}" class="calculatorPanel" style="{{ hide }}" markdown="1">
+<div id="panel{{ panelID }}" class="calculator-panel" style="{{ hide }}" markdown="1">
 
 Each year the IRS determines the maximum amount you can contribute to tax-deferred savings plans like the TSP. This is known as the [IRS elective deferral limit](javascript:void(0)). Participants should use this calculator to determine the specific dollar amount to be deducted each pay period in order to maximize your contributions and to ensure that you do not miss out on Agency or Service Matching Contributions if you are entitled to them.
 
-<div class="dottedLine"></div>
+<div class="dotted-line"></div>
 
 **What information do you need to use this calculator?**
 
 -   Your most recent Leave and Earnings statement or payslip.
 -   The number of salary payments you have left for the year.
 
-<div class="deco-box" markdown="1">
+<div class="deco-box start" markdown="1">
 
 <div class="usa-grid">
 <div class="usa-width-one-whole" markdown="1">
@@ -38,6 +38,7 @@ Choose the year you would like to review, then press Start.
         {% include calculator/button.html text='Start' onClick=click xtraClass2='primary' %}
       </li>
     </ul>
+  </div>
 </div>
 </div> <!-- end deco-box -->
 

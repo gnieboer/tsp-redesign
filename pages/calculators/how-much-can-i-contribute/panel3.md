@@ -3,9 +3,10 @@ Elective Deferral Limits panel (3) for How Much Can I Contribute?.
 {% endcomment %}
 {% assign panelID = include.panelID | default: 3 %}
 {% assign hide = 'display: block;' %}
+{% assign gridClass2 = include.gridClass2 | default: 'results' %}
 {% if include.hide == 1 %} {% assign hide = 'display: none;' %} {% endif %}
 
-<div id="panel{{ panelID }}" class="calculatorPanel" style="{{ hide }}" markdown="1">
+<div id="panel{{ panelID }}" class="calculator-panel" style="{{ hide }}" markdown="1">
 
 **A summary of your computations based on the data you entered is shown below.**
 
@@ -20,7 +21,7 @@ Elective Deferral Limits panel (3) for How Much Can I Contribute?.
 %}
 
 
-<div class="calculatorInnerBox" markdown="1">
+<div class="deco-box">
 
 {% include calculator/inputRow.html inputType="value" id="contributionYear" right="2000"
   left="Contribution year" %}
@@ -34,13 +35,12 @@ Elective Deferral Limits panel (3) for How Much Can I Contribute?.
   left="Number of salary payments remaining in <span id='yearF'>YYYY</span>" %}
 
 {% capture newAmountTextBlock %}
-<div style="width: 80%"><strong>Here’s the new amount you can contribute each remaining pay period if you
+
+<strong>Here’s the new amount you can contribute each remaining pay period if you
 want to maximize your contributions for <span id='yearG'>YYYY</span></strong> (rounded down to the nearest dollar).
-<br><br>
-To change how much you contribute, log into your payroll system and select the Thrift Savings Plan option. Common payroll systems include
-<a class="externalLink" href="/other/exit/exit_tsp_website.html?urlIdx= 6"
-  title="myPay website opens in a new window.">myPay</a>,
-EBIS,
+
+<p>To change how much you contribute, log into your payroll system and select the Thrift Savings Plan option. Common payroll systems include <a class="externalLink" href="/other/exit/exit_tsp_website.html?urlIdx= 6"
+  title="myPay website opens in a new window.">myPay</a>, EBIS,
 <a class="externalLink" href="/other/exit/exit_tsp_website.html?urlIdx=44"
   title="Employee Personal Page website opens in a new window.">Employee Personal Page</a>,
 <a class="externalLink" href="/other/exit/exit_tsp_website.html?urlIdx=45"
@@ -48,14 +48,14 @@ EBIS,
 <a class="externalLink" href="/other/exit/exit_tsp_website.html?urlIdx=46"
   title="LiteBlue website opens in a new window.">LiteBlue</a>,
 and <a class="externalLink" href="/other/exit/exit_tsp_website.html?urlIdx=47"
-  title="Direct Access website opens in a new window.">Direct Access</a>.
-</div>
+  title="Direct Access website opens in a new window.">Direct Access</a>.</p>
+
 {% endcapture %}
 {% include calculator/inputRow.html inputType="value" id="newContribution" right="2000"
   left=newAmountTextBlock %}
 
 </div>
 
-{% include calculator/buttonBlock.html panelID=panelID revise=2 %}
+{% include calculator/button-block.html panelID=panelID revise=2 %}
 
 </div>
