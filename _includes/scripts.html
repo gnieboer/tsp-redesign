@@ -1,0 +1,13 @@
+{% comment %}
+added by dav - we need to talk about this
+{% endcomment %}
+
+<!-- dav inserted scripts here -->
+{% for script in page.scripts %}
+    {% if script contains "://" %}
+      {% capture script_path %}{{ script }}{% endcapture %}
+    {% else %}
+      {% capture script_path %}{{ script | relative_url }}{% endcapture %}
+    {% endif %}
+    <script src="{{ script_path }}"></script>
+  {% endfor %}

@@ -4,9 +4,11 @@ title: Maximize your savings
 styles:
 sidenav: manage-your-plan
 scripts:
+  - /assets/js/jquery.min.js
+  - /assets/js/calculator/calculator.js
+  - /pages/making-contributions/maximize-your-savings.js
 permalink: /making-contributions/maximize-your-savings/
 ---
-
 # Maximize your savings
 
 When it comes to reaching your retirement goals, it’s important that you
@@ -48,16 +50,16 @@ money on the table. Are you contributing enough to get at least the full match f
   <div class="usa-width-one-third">
   <i class="material-icons md-144">person</i>
   <p><label for="your-age">Age</label>
-  <input id="your-age" name="retire-age" type="text" onchange="calculate()"></p></div>
+  <input id="your-age" name="retire-age" type="number" onchange="checkAge(1);"></p></div>
   <div class="usa-width-one-third">
   <i class="material-icons md-144">attach_money</i>
   <p><label for="your-salary">Salary</label>
-  <input id="your-salary" name="salary" type="text" onchange="calculate()"></p></div>
+  <input id="your-salary" name="salary" type="text" onchange="checkSalary(1);"></p></div>
   <div class="usa-width-one-third">
   <i class="material-icons md-144">person</i>
   <p>
   <label for="pay-frequency">Pay frequency</label>
-    <select id="pay-frequency" name="frequency" type="text" onchange="calculate()">
+    <select id="pay-frequency" name="frequency" type="text" onchange="checkFrequency(1);">
        <option value="Select">Select Your Pay Schedule</option>
        <option value="Biweekly">Biweekly (every 2 weeks, 26 times a year)</option>
        <option value="Weekly">Weekly (52 times a year)</option>
@@ -66,7 +68,7 @@ money on the table. Are you contributing enough to get at least the full match f
     </select></p></div>
 </div>
 <div class="usa-grid-full">
-  <div class="usa-width-one-whole"><button class="usa-button">Customize</button></div>
+  <div class="usa-width-one-whole"><button class="usa-button" onClick="calculate(1);">Customize</button></div>
 </div>
 </section> <!-- // end #customize -->
 
@@ -82,9 +84,9 @@ money on the table. Are you contributing enough to get at least the full match f
  <div class="usa-width-one-third silver"><h3>Your 10% contribution</h3></div>
 </div>
 <div class="usa-grid-full value">
- <div class="usa-width-one-third ">$192.30</div>
- <div class="usa-width-one-third ">$307.69</div>
- <div class="usa-width-one-third ">$384.60</div>
+ <div class="usa-width-one-third " id="contrib1">$0.00</div>
+ <div class="usa-width-one-third " id="contrib2">$0.00</div>
+ <div class="usa-width-one-third " id="contrib3">$0.00</div>
 </div>
 
 <!-- 1% AGENCY/SERVICE CONTRIBUTION -->
@@ -92,7 +94,7 @@ money on the table. Are you contributing enough to get at least the full match f
   <div class="usa-width-one-whole silver"><h3>1% Agency/Service Contribution</h3></div>
 </div>
 <div class="usa-grid-full value">
-  <div class="usa-width-one-whole ">$38.46</div>
+  <div class="usa-width-one-whole " id="agencyContrib">$0.00</div>
 </div>
 
 <!-- 4% AGENCY/SERVICE CONTRIBUTION -->
@@ -100,51 +102,33 @@ money on the table. Are you contributing enough to get at least the full match f
   <div class="usa-width-one-whole silver"><h3>4% Agency/Service Match</h3></div>
 </div>
 <div class="usa-grid-full value">
-  <div class="usa-width-one-whole ">$153.84</div>
+  <div class="usa-width-one-whole " id="agencyMatch">$0.00</div>
 </div>
 
-<!-- BALANCE AGE 62 -->
-<div class="usa-grid-full">
-  <div class="usa-width-one-whole silver"><h3>Balance at 62</h3></div>
-</div>
-<div class="usa-grid-full value">
- <div class="usa-width-one-third">$369,828.62</div>
- <div class="usa-width-one-third">$480,771.72</div>
- <div class="usa-width-one-third">$554,733.53</div>
-</div>
-
-<!-- BALANCE AGE 67 -->
-<div class="usa-grid-full">
-  <div class="usa-width-one-whole silver"><h3>Balance at 67</h3></div>
-</div>
-<div class="usa-grid-full value">
- <div class="usa-width-one-third">$482,586.35</div>
- <div class="usa-width-one-third">$627,355.76</div>
- <div class="usa-width-one-third">$723,867.55</div>
-</div>
-
-<!-- BALANCE AGE 72 -->
-<div class="usa-grid-full">
-  <div class="usa-width-one-whole silver"><h3>Balance at 72</h3></div>
-</div>
-<div class="usa-grid-full value">
- <div class="usa-width-one-third">$613,303.86</div>
- <div class="usa-width-one-third">$797,285.54</div>
- <div class="usa-width-one-third">$919,940.28</div>
-</div>
+<!-- BALANCE blocks for AGEs -->
+{% assign ages = "62, 67, 72" | split: ", " %}
+{% for age in ages %}
+  <!-- BALANCE AGE {{ age }} -->
+  <div class="usa-grid-full">
+    <div class="usa-width-one-whole silver"><h3>Balance at {{ age }}</h3></div>
+  </div>
+  <div class="usa-grid-full value">
+   <div class="usa-width-one-third" id="balance-1-{{ age }}">$0.00</div>
+   <div class="usa-width-one-third" id="balance-2-{{ age }}">$0.00</div>
+   <div class="usa-width-one-third" id="balance-3-{{ age }}">$0.00</div>
+  </div>
+{% endfor %}
 
 <!-- RECALCULATE -->
 <div class="usa-grid-full">
   <div class="usa-width-one-whole recalculate">
   <p>Assumes a 3% rate of return, but you can make your own assumptions.</p>
-  <form>
   <label for="your-rate-of-return">Rate of return</label>
     <span>
-      <input id="your-rate-of-return" name="return-rate" type="number" onchange="calculate()">
+      <input id="your-rate-of-return" name="return-rate" type="number" onchange="checkRate(1);" value="3">
       <span class="percent">%</span>
-      <button class="usa-button">Recalculate</button>
+      <button class="usa-button" onClick="calculate(1);">Recalculate</button>
     </span>
-  </form>
   </div>
 </div>
 
