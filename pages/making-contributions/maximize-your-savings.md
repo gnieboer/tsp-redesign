@@ -56,7 +56,7 @@ money on the table. Are you contributing enough to get at least the full match f
   <p><label for="your-salary">Salary</label>
   <input id="your-salary" name="salary" type="text" onchange="checkSalary(1);"></p></div>
   <div class="usa-width-one-third">
-  <i class="material-icons md-144">person</i>
+  <i class="material-icons md-144">date_range</i>
   <p>
   <label for="pay-frequency">Pay frequency</label>
     <select id="pay-frequency" name="frequency" type="text" onchange="checkFrequency(1);">
@@ -123,12 +123,14 @@ money on the table. Are you contributing enough to get at least the full match f
 <div class="usa-grid-full">
   <div class="usa-width-one-whole recalculate">
   <p>Assumes a 3% rate of return, but you can make your own assumptions.</p>
+  <form>
   <label for="your-rate-of-return">Rate of return</label>
     <span>
       <input id="your-rate-of-return" name="return-rate" type="number" onchange="checkRate(1);" value="3">
       <span class="percent">%</span>
       <button class="usa-button" onClick="calculate(1);">Recalculate</button>
     </span>
+    </form>
   </div>
 </div>
 

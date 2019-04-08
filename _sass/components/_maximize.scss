@@ -82,6 +82,11 @@
         font-size: 2.2rem;
         padding: 1rem 0;
       }
+  }
+  #customize input {
+    width: auto;
+    display: inline-flex;
+    text-align: center;
   } // end #customize
 
   #how-much-you-saved {
