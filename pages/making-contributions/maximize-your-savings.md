@@ -6,7 +6,7 @@ sidenav: manage-your-plan
 scripts:
   - /assets/js/jquery.min.js
   - /assets/js/calculator/calculator.js
-  - /pages/making-contributions/maximize-your-savings.js
+  - /assets/js/calculator/maximize-your-savings.js
 permalink: /making-contributions/maximize-your-savings/
 ---
 # Maximize your savings
