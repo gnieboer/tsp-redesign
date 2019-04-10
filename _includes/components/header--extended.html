@@ -14,7 +14,7 @@
 </section>
 <!-- news banner -->
 
-{% if page.alert.status %}
+{% if page.alert.show-alert == true %}
 <section onclick="myFunction()" id="hp-news" class="usa-banner" mardown="1">
 <div class="usa-accordion">
     <header class="usa-banner-header">
@@ -28,6 +28,7 @@
             <img class="usa-banner-icon usa-media_block-img" src="{{ page.alert.icon | default: '/assets/img/icons/alert-circle-white.svg' }}" alt="Alert">
             <div class="usa-media_block-body">
               <h2>{{ page.alert.title | default: 'No title specified' }}</h2>
+              {% if page.alert.subtitle %}<strong>{{ page.alert.subtitle }}</strong><br>{% endif %}
               <p>{{ page.alert.body | default: 'No body specified' }}</p>
             </div>
           </div>
