@@ -70,15 +70,14 @@ function processCurrentPanel(panel, submitFlag) {
 
 // always return false to override default HTML behaviors
 function processPanel(panel, prev, next, submit) {
-console.log('processing ' + 'panel ' + panel+ 'prev ' + prev+ 'next ' + next+ 'submit ' + submit);
+  // console.log('processing ' + 'panel ' + panel+ 'prev ' + prev+ 'next ' + next+ 'submit ' + submit);
   var myPanel = panel;
   if (myPanel < 0) myPanel = -myPanel;
   if (panelGood[myPanel]) {     // exist
-console.log('do panelgood ' + panel);
+    // console.log('do panelgood ' + panel);
     if (!panelGood[myPanel](1)) { return false; }
     if (panelSure[myPanel]) {   // exist
       // console.log('do panelSure');
-console.log('do panelSure');
       if (!doPanelSure(myPanel, 1)) { if (panel > 0) { return false; } }
     }
     // panel is good, we will leave it so use exit strategy
@@ -131,7 +130,7 @@ function allowContinue(flag, panel) {
 }
 
 function showPanel(num) {
-  console.log('show panel ' + num);
+  // console.log('show panel ' + num);
   for (var i=1; i<=maxPanels; i++) {
     if (i == num) {
       $('#panel'+i).show();

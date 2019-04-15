@@ -1,3 +1,13 @@
+/*
+
+Do not delete this file before checking with Dav.
+
+I need the contents for reference while porting the calculators.
+
+I expect to remove this file before we go to production.
+
+*/
+
 /* getQueryString was delivered in paycheckEstimator.js  */
 function getQueryString(qs) {
   hu = window.location.search.substring(1);
