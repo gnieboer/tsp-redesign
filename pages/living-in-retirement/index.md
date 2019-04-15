@@ -14,11 +14,11 @@ permalink: /living-in-retirement/
 
 # Living in retirement
 
-Statistics show that people are living longer, healthier lives. It's possible that you could spend two, maybe three, decades in retirement. The money in your TSP account plays a big role in your retirement picture. You'll need those savings to provide you with current income when you need it and continuous income to last your entire lifetime. 
+Statistics show that people are living longer, healthier lives. It's possible that you could spend two, maybe three, decades in retirement. The money in your TSP account plays a big role in your retirement picture. You'll need those savings to provide you with income when you need it.
 
-## Stay with the TSP
+## Staying with the TSP
 
-You might be leaving federal service, but you don’t have to take your TSP account with you. Stay with us, and you can keep more of what you save thanks to our low costs. Plus, you can change your investment mix and transfer eligible money into your account. 
+If your vested account balance is $200 or more when you leave federal service, your TSP account stays right where it is until you need it. You can keep more of what you save thanks to our low costs. Plus, you can change your investment mix and transfer eligible money into your account. 
 
 Each individual’s situation is different and should be considered when making this decision. Our goal is to help provide the tools you need to make the best choice for yourself. These eye-opening videos may make you think twice about moving your money to another retirement plan.
 

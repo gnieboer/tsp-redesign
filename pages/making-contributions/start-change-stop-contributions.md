@@ -20,7 +20,7 @@ Uniformed services can use myPay (Army, Air Force, Navy, Marine Corps) or Direct
 ### Does your agency accept paper forms?
 {: .usa-alert-heading}
 
-Download the [Form TSP-1](#), _Election Form_ ([TSP-U-1](#) for uniformed services members), or call the ThriftLine at 1-877-968-3778 and choose option 3 to have it mailed to you.
+Download the [Election Form](#), _Form TSP-1_ ([TSP-U-1](#) for uniformed services members), or call the ThriftLine at 1-877-968-3778 and choose option 3 to have it mailed to you.
 {: .usa-alert-text}
 </div>
 </div>

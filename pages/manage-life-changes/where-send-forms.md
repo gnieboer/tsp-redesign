@@ -147,7 +147,7 @@ Information Relating to Deceased Participant forms (TSP-17), death certificates,
 These documents can also be faxed to (703) 592-0170.
 
 ### Loan Payments
-[Form TSP-26](javascript:void(0)), _Loan Payment Coupon_, with payment can be mailed to:
+[Loan Payment Coupon](javascript:void(0)), _Form TSP-26_, with payment can be mailed to:
 
 <section class="usa-section usa-graphic_list">
   <div class="usa-grid usa-graphic_list-row">
@@ -178,7 +178,7 @@ These documents can also be faxed to (703) 592-0170.
 </section>
 
 ### Transfers or Rollovers of Funds to the TSP
-[Form TSP-60](https://www.tsp.gov/PDF/formspubs/tsp-60.pdf), _Request for a Transfer Into the TSP_, the associated check for the funds, and any additional documentation can be mailed to:
+[Request for a Transfer Into the TSP](https://www.tsp.gov/PDF/formspubs/tsp-60.pdf), _Form TSP-60_, the associated check for the funds, and any additional documentation can be mailed to:
 
 <section class="usa-section usa-graphic_list">
   <div class="usa-grid usa-graphic_list-row">

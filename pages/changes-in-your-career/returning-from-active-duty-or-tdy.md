@@ -37,7 +37,7 @@ A refund of your automatic employee contributions **will not stop** your agency 
 
 If you had a break in service of **less than 31 full calendar days**, be sure to let your new agency know if you have any outstanding TSP loans so your payments can resume.
 
-If you’ve missed any loan payments, you’ll have to make up the ones you missed from your own funds. Mail your loan payment directly to us along with [Form TSP-26](#), _Loan Payment Coupon_.
+If you’ve missed any loan payments, you’ll have to make up the ones you missed from your own funds. Mail your loan payment directly to us along with [Loan Payment Coupon](#), _Form TSP-26_.
 
 ## Withdrawals
 
@@ -45,6 +45,6 @@ If your break in service was **less than 31 full calendar days**, you’re not e
 
 If your break in service was **31 or more full calendar days**, you were eligible, but not required to withdraw your TSP account. Any withdrawal must have been paid and received while you were still separated from service.
 
-If you began receiving monthly TSP payments after you separated, those payments will stop when you’re rehire. If you’re receiving annuity payments, they will continue.
+If you began receiving monthly TSP payments after you separated, those payments will stop when you’re rehired. If you’re receiving annuity payments, they will continue.
 
 <!-- CONTENT END -->

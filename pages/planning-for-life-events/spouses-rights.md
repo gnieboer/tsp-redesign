@@ -16,11 +16,9 @@ permalink: /planning-for-life-events/spouses-rights/
 
 Your spouse has certain rights regarding your TSP account.
 
-Any time you request a loan or withdrawal:
+- If you request a loan or withdrawal and you're a FERS employee or member of the uniformed services, your spouse must consent to your request in writing.
+- If you request a loan or withdrawal and you're a CSRS employee, your spouse must be notified of your quest.
 
-- Your spouse must consent to your request in writing, if you are a FERS employee or member of the uniformed services.
-- Your spouse must be notified of your request, if you are a CSRS employee.
-
-If you’re unable to obtain your spouse's consent or provide your spouse's address for notification, you may submit [Form TSP-16](/funds/tsp-16), Exception to Spousal Requirements ([TSP-U-16](/funds/tsp-u-16.pdf), uniformed services). These exceptions are rarely granted and you must provide documentation.
+- If you’re unable to obtain your spouse's consent or provide your spouse's address for notification, you may submit Form TSP-16, *[Exception to Spousal Requirements]*(/funds/tsp-16) ([TSP-U-16](/funds/tsp-u-16.pdf) for uniformed services). These exceptions are rarely granted and you must provide documentation.
 
 <!-- CONTENT END -->

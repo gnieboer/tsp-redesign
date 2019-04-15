@@ -163,8 +163,8 @@ Fairfax, VA 22033
 <div class="usa-grid-full">
 <div class="usa-width-two-thirds" markdown="1">
 Use this post office box if you are submitting a death benefit claim for a TSP
-account. This includes Form TSP-17, _Information Relating to Deceased
-Participant_, death certificates, or other documentation. If you are the recipient of a
+account. This includes Information Relating to Deceased
+Participant, _Form TSP-17_, death certificates, or other documentation. If you are the recipient of a
 death benefit payment, the forms sent to you with the “Intent to Pay” letter (e.g.,
 W-4Ps or the request to waive the waiting period) should be returned to this post
 office box. Inquiries regarding these actions should also be sent to this address.
@@ -201,7 +201,7 @@ Fairfax, VA 22033
 <div class="usa-grid-full">
 <div class="usa-width-two-thirds" markdown="1">
 Use this post office box if you are transferring or rolling over funds to the TSP. This
-includes Form TSP-60, _Request for a Transfer Into the TSP_, the associated
+includes Request for a Transfer Into the TSP, _Form TSP-60_, the associated
 check for the funds, and any additional documentation. Inquiries regarding these
 actions should also be sent to this address.
 
