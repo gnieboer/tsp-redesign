@@ -76,7 +76,7 @@ As a FERS or BRS participant, you receive matching contributions on the first 5%
 | 3% | 1% | 3% | 7% |
 | 4% | 1% | 3.5% | 8.5% |
 | 5% | 1% | 4% | 10% |
-| 5% + | 1% | 4% | 5% + |
+| 5% + | 1% | 4% | yours +5%  |
 
 The first 3% of pay that you contribute will be matched dollar-for-dollar; the next 2% will be matched at 50 cents on the dollar. Contributions above 5% of your pay will not be matched. If you stop making regular employee contributions, your matching contributions will also stop.
 
