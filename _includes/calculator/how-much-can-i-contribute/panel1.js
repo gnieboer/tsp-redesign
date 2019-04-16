@@ -17,20 +17,7 @@ panelExit[{{ panelID }}] = function(panel) {
     return true;
 }
 
-function getContributionLimit(year) {
-console.log("Dav: update getContributionLimit before going live");
-  if (year == 2019) {
-    return 19000;
-  }
-  return 18500;
-/*
-19000
-100
-18500
-100
-*/
-
-}
+// getContributionLimit moved to javascriptTaxTable.js
 
 $(document ).ready(function() {
 if (panelEnter[1]) { panelEnter[1](1); }
