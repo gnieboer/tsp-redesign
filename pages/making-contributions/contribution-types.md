@@ -97,7 +97,7 @@ automatically.
 **Uniformed services members can use tax-exempt pay to make catch-up
 contributions, but not incentive pay, special pay, or bonus pay.**
 
-To make a catch-up contributions, use your agency’s or service’s payroll website
+To make a catch-up contribution election, use your agency’s or service’s payroll website
 (e.g., Employee Express, myPay, LiteBlue, EBIS, or NFC-EPP) or complete the Catch-Up Contribution Election, _Form
 TSP-1-C_ (or TSP-U-1-C for uniformed services)
 and submit it to your payroll office. Download the [form](#) or call the ThriftLine
