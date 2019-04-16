@@ -1,0 +1,139 @@
+@charset "utf-8";
+/* CSS Document */
+:root {
+  --progress-done-color: #02bfe7;
+  --progress-active-color: #046b99;
+  --progress-notready-color: #aeb0b5;
+  --progress-error-color: #FF2222;
+  --progress-border-color: #FFF;
+}
+/*
+:root {
+  --progress-done-color: #E8C89D;
+  --progress-active-color: #AB4B00;
+  --progress-error-color: #FF2222;
+  --progress-border-color: #FFF;
+}
+*/
+
+/*progress tracker*/
+div#parent {
+    z-index:1;
+	position:relative;
+	margin-left: 15px;
+	}
+div#step {
+	z-index:3;
+	position:relative;
+	}
+div#track {
+	z-index:2;
+	position:relative;
+	padding: 0;
+	}
+
+div.progtrckr2 { margin: -20px 0 20px 0; }
+div.progtrckr3 { margin: -20px 0 20px 0; }
+div.progtrckr4 { margin: -18px 0 20px 0; }
+div.progtrckr5 { margin: -17px 0 20px 0; }
+div.progtrckr6 { margin: -15px 0 20px 0; }
+div.progtrckr7 { margin: -15px 0 20px 0; }
+div.progtrckr8 { margin: -15px 0 20px 0; }
+div.progtrckr9 { margin: -15px 0 20px 0; }
+div.progtrckr10 { margin: -15px 0 20px 0; }
+div.progtrckr11 { margin: -15px 0 20px 0; }
+div.progtrckr12 { margin: -10px 0 16px 0; }
+
+/* Progress Text */
+ol.progtrckr {
+	list-style-type: none;
+	margin-top: 0;
+	margin-right: 0;
+	margin-bottom: 0;
+	margin-left: 0;
+	padding: 0;
+	overflow: hidden;
+}
+ol.progtrckr li {
+	display: inline-block;
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 12px;
+	//color: #999;
+  color: var(--progress-notready-color);
+	float: left;
+	border-top: 3px solid #CCC;
+}
+ol.progtrckr li.progtrckr-done {
+    color: var(--progress-done-color);
+    border-top: 3px solid var(--progress-done-color);
+}
+ol.progtrckr li.progtrckr-active {
+    color: var(--progress-active-color);
+    border-top: 3px solid var(--progress-active-color);
+}
+ol.progtrckr li.progtrckr-error {
+    color: var(--progress-error-color);
+    border-top: 3px solid var(--progress-active-color);
+}
+ol.progtrckr li.progtrckr-disabled {
+    opacity: 0.5;
+}
+/* padding top based on sized of box, width based on total number of steps */
+ol.progtrckr2 li { padding-top: 25px; width: 50%; }
+ol.progtrckr3 li { padding-top: 25px; width: 33.1%; }
+ol.progtrckr4 li { padding-top: 23px; width: 24.8%; }
+ol.progtrckr5 li { padding-top: 22px; width: 19.9%; }
+ol.progtrckr6 li { padding-top: 20px; width: 16.5%; }
+ol.progtrckr7 li { padding-top: 14px; width: 14.2%; }
+ol.progtrckr8 li { padding-top: 14px; width: 12.5%; }
+ol.progtrckr9 li { padding-top: 14px; width: 11.1%; }
+ol.progtrckr10 li { padding-top: 14px; width: 10.0%; }
+ol.progtrckr11 li { padding-top: 14px; width: 9.0%; }
+ol.progtrckr12 li { padding-top: 14px; width: 8.3%; }
+
+/* Progress Number Panels */
+ol.progstep {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+}
+ol.progstep li {
+	display: inline-block;
+	text-align: center;
+	font-size: 14px;
+	font-weight: bold;
+	color: var(--progress-border-color);
+	float:left;
+	border: none;
+	border-radius: 0.2em;
+  //background-color: #ccc;
+  background-color: var(--progress-notready-color);
+}
+ol.progstep li.progstep-done {
+	color: var(--progress-border-color);
+	background-color: var(--progress-done-color);
+}
+ol.progstep li.progstep-active {
+	color: var(--progress-border-color);
+	background-color: var(--progress-active-color);
+}
+ol.progstep li.progstep-error {
+    color: var(--progress-border-color);
+    background-color: var(--progress-error-color);
+}
+ol.progtrckr li.progstep-disabled {
+    opacity: 0.5;
+}
+ol.progstep2 li { width: 5.3%; margin: 0 22.28%; line-height: 2.50em; }
+ol.progstep3 li { width: 5.3%; margin: 0 13.92%; line-height: 2.50em; }
+ol.progstep4 li { width: 5.0%; margin: 0  9.92%; line-height: 2.50em; }
+ol.progstep5 li { width: 4.5%; margin: 0  7.70%; line-height: 2.25em; }
+ol.progstep6 li { width: 3.8%; margin: 0  6.35%; line-height: 2.00em; }
+ol.progstep7 li { width: 3.6%; margin: 2px  5.30%; line-height: 2.00em; }
+ol.progstep8 li { width: 3.4%; margin: 1%  4.55%; line-height: 2.00em; font-size: 12px;}
+ol.progstep9 li { width: 3.4%; margin: 1% 3.85%; line-height: 2.00em; font-size: 12px;}
+ol.progstep10 li { width: 3.3%; margin: 1%  3.35%; line-height: 2.00em; font-size: 10px;}
+ol.progstep11 li { width: 3.2%; margin: 1%  2.90%; line-height: 2.00em; font-size: 10px;}
+ol.progstep12 li { width: 2.5%; margin: 1%  2.90%; line-height: 2.00em; font-size: 10px;}

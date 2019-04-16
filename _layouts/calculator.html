@@ -1,0 +1,40 @@
+---
+layout: default
+main:
+  class: usa-grid usa-section usa-content usa-layout-docs
+
+scripts:
+  - /assets/js/jquery.min.js
+  - /assets/js/jquery.numeric.js
+  - /assets/js/fontawesome-all.min.js
+  - /assets/js/calculator/calculator.js
+  - /assets/js/calculator/calculator_panels.js
+---
+<link rel="stylesheet" href="/assets/css/font-awesome.css">
+{% assign contentClass = "" %}
+{% assign sidenav = site.data.navigation[page.sidenav] | default: page.sidenav %}
+{% if sidenav %}
+<aside class="usa-width-one-fourth usa-layout-docs-sidenav sticky">
+  {% include sidenav.html links=sidenav %}
+</aside>
+{% assign contentClass = "usa-width-three-fourths" %}
+{% endif %}
+
+<div class="{{ contentClass }} usa-layout-docs-main_content">
+  {% if page.title %}<h1>{{ page.title }}</h1>{% endif %}
+  {% if page.progress-steps %}{% include calculator/progressBar.html progressSteps=page.progress-steps %}{% endif %}
+  {{ content }}
+
+  {% if page.panel-names %}
+    {% comment %}This block auto includes the content of the panels.{% endcomment %}
+    {% assign panelNames = page.panel-names | split: ", " %}
+    {% assign hide = 0 %}
+    {% for panelName in panelNames %}
+      {% assign panelID = forloop.index %}
+      {% assign panelMD = 'panel' | append: panelID | append: '.md' %}
+      {% capture panelHTML %}{% include_relative {{ panelMD }} panelID=panelID hide=hide %}{% endcapture %}
+      {{ panelHTML | markdownify }}
+      {% assign hide = 1 %}
+    {% endfor %}
+  {% endif %}
+</div>
