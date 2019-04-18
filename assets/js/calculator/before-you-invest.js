@@ -51,8 +51,10 @@ function bestChoice(fund) {
 }
 
 function showMore(fund) {
-  alert('The more button for fund ' + fund + ' was clicked.');
-  console.log('The more button for fund ' + fund + ' was clicked.');
+  var newpage = '/funds-lifecycle/l-' + fund.toLowerCase() + '/';
+  window.location.href = newpage;
+  // alert('The more button for fund ' + fund + ' was clicked.');
+  // console.log('The more button for fund ' + fund + ' was clicked.');
   return true;
 }
 
