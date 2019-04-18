@@ -1,0 +1,24 @@
+{% comment %}
+This script builds the tall rectangular block on the before you invest page.
+{% endcomment %}
+{% assign prefix = include.prefix | default: 'L' %}
+{% assign fund = include.fund | default: 'XXXX' %}
+{% assign one = include.one | default: 'Your tolerance of the ups and downs is...' %}
+{% assign two = include.two | default: 'Your funds should be a mix of ...' %}
+{% assign three = include.three | default: 'Your long term goal is ...' %}
+
+<div id="{{ prefix }}{{ fund }}outer" class="usa-width-one-third" style="display: none;">
+  <div id="{{ prefix }}{{ fund }}inner" class="usa-alert">
+    <div class="usa-alert-body">
+      <div class="usa-alert-heading">
+        <h4>{{ prefix }} {{ fund }}</h4>
+        </div>
+        <img src="/assets/img/icons/pie-chart.svg"/>
+        <ul>
+          <li>{{ one }}</li>
+          <li>{{ two }}</li>
+          <li>{{ three }}</li>
+        </ul> <button onclick="showMore('{{ fund }}');" class="usa-btn-primary">More</button>
+    </div>
+  </div>
+</div>
