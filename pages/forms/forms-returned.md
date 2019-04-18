@@ -4,7 +4,7 @@ title: Forms
 styles:
 sidenav:
 scripts:
-permalink: /forms/forms/
+permalink: /forms/results/
 ---
 
 # Help me find forms <br>and resources about {#forms}
@@ -26,7 +26,7 @@ permalink: /forms/forms/
         <option value='4'>Death Benefits</option>
         <option value='5'>General Information</option>
         <option value='6'>Legal Documents</option>
-        <option value='7'>Loans</option>
+        <option value='7' selected>Loans</option>
         <option value='8'>Transfers and Rollovers</option>
         <option value='9'>Withdrawals</option>
         </select>
@@ -45,8 +45,8 @@ permalink: /forms/forms/
 
 <section id="returned-forms" markdown="1">
 
-## Most popular forms
-{:.most-popular}
+## We found **4** forms and **3** resources about **Loans**
+{:.results}
 
 <div class="usa-grid-full">
   <div class="usa-width-one-half">
@@ -102,11 +102,10 @@ permalink: /forms/forms/
 </div>
 <!-- IF forms returned for selected TOPIC is greater than 4, display SEE MORE FORMS -->
 <div class="see-more"><span><a href="javascript:void(0)">see more forms</a></span></div>
-</section> <!-- end section#returned-forms -->
-
+</section>
 <section id="returned-resources" markdown="1">
 
-## Most popular resources
+## Loan resources
 {:.most-popular}
 <!-- Row 1 -->
 <div class="usa-grid-full">
