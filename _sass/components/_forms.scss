@@ -1,4 +1,19 @@
 
+.hide {
+  display: none;
+}
+
+.fadeOut {
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s linear 400ms, opacity 400ms;
+}
+
+.fadeIn {
+  visibility: visible;
+  opacity: 1;
+  transition: visibility 0s linear 0s, opacity 400ms;
+}
 h1#forms {
   width: 50rem;
   height: 13.6rem;
@@ -66,7 +81,7 @@ section#search-forms {
   margin-bottom: 0;
 }
 
-section#returned-forms {
+section#returned-forms, section#popular-forms {
   border-top: 1px solid #e3e3e3;
   div.usa-grid-full + div.usa-grid-full {
     margin-top: 3rem;
@@ -121,7 +136,7 @@ section#returned-forms {
   }
 } // end #returned-forms
 
-section#returned-resources {
+section#returned-resources, section#popular-resources {
   border-top: 1px solid #e3e3e3;
   div.usa-grid-full + div.usa-grid-full {
     margin-top: 3rem;
