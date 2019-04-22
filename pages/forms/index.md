@@ -5,7 +5,7 @@ styles:
 sidenav:
 scripts:
  - /assets/js/forms-demo.js
-permalink: /forms/forms/
+permalink: /forms/
 ---
 
 # Help me find forms <br>and resources about {#forms}
