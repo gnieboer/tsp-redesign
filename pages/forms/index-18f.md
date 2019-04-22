@@ -4,7 +4,7 @@ title: Forms
 styles:
 sidenav:
 scripts:
-permalink: /forms/
+permalink: /forms/forms-18f/
 ---
 
 # Forms
