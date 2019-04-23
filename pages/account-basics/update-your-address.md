@@ -4,9 +4,9 @@ title: Account basics
 sidenav: manage-your-plan
 styles:
 scripts:
-permalink: /account-basics/update-personal-information/
+permalink: /account-basics/update-your-address/
 ---
-# Update your personal information
+# Update your address
 
 How you change your address with us depends on whether or not you still work for the federal government.
 
