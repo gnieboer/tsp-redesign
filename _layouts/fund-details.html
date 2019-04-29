@@ -75,84 +75,73 @@ main:
 </div>
 
 <ul class="usa-accordion usa-tabs">
+  <li>
+    <button class="usa-accordion-button" aria-expanded="true" aria-controls="a1">Summary</button>
+    <div id="a1" class="usa-accordion-content">
+    <div class="usa-grid-full">
+    <div class="usa-width-one-half fund-summary-details">
+    <h3>Details <span class="as-of-date">As of 12/31/{{ 'now' | date: "%Y" | minus: 1 }}</span></h3>
+    <p><b>Assets</b><br>
+    {{ page.summary_details.assets }}
+    </p>
+    <p><b>Net admin expense</b><br>
+    {{ page.summary_details.admin_expense }}
+    </p>
+    <p><b>Other expense</b><br>
+    {% for item in page.summary_details.other_expense %}
+      {{ item }}<br>
+    {% endfor %}
+    </p>
+    <p><b>Benchmark index</b><br>
+      {{ page.summary_details.benchmark_index }}
+    </p>
+    <p><b>Asset manager</b><br>
+    {{ page.summary_details.asset_manager }}
+    </p>
+    </div>
+    <div class="usa-width-one-half fund-summary-top-ten">
+    <h3>Top ten holdings <span class="as-of-date">As of 12/31/{{ 'now' | date: "%Y" | minus: 1 }}</span></h3>
+    <ol>
+    {% for item in page.top_ten_holdings %}
     <li>
-        <button class="usa-accordion-button" aria-expanded="true" aria-controls="a1">
-          Summary
-    </button>
-        <div id="a1" class="usa-accordion-content">
-          <div class="usa-grid-full">
-            <div class="usa-width-one-half fund-summary-details">
-              <h3>Details <span class="as-of-date">As of 12/31/{{ 'now' | date: "%Y" | minus: 1 }}</span></h3>
-                <p><b>Assets</b><br>
-                {{ page.summary_details.assets }}
-              </p>
-              <p><b>Net admin expense</b><br>
-                {{ page.summary_details.admin_expense }}
-              </p>
-              <p><b>Other expense</b><br>
-                {% for item in page.summary_details.other_expense %}
-                  {{ item }}<br>
-                {% endfor %}
-              </p>
-                <p><b>Benchmark index</b><br>
-                  {{ page.summary_details.benchmark_index }}
-                </p>
-                <p><b>Asset manager</b><br>
-                {{ page.summary_details.asset_manager }}
-              </p>
-            </div>
-            <div class="usa-width-one-half fund-summary-top-ten">
-              <h3>Top ten holdings <span class="as-of-date">As of 12/31/{{ 'now' | date: "%Y" | minus: 1 }}</span></h3>
-              <ol>
-              {% for item in page.top_ten_holdings %}
-              <li>
-                  <span class="holdings-abbr">{{ item.abbr }}</span>
-                  {{ item.name }}
-              </li>
-              {% endfor %}
-            </ol>
-            </div>
-          </div>
-        </div>
+      <span class="holdings-abbr">{{ item.abbr }}</span>
+      {{ item.name }}
     </li>
-  {{ page.content }}
-    <li>
-        <button class="usa-accordion-button" aria-expanded="false" aria-controls="a4">
-      Fees &amp; more info
-    </button>
-        <div id="a4" class="usa-accordion-content">
-          <div class="usa-grid-full">
-            <div class="usa-width-one-half">
-              <h3>Fees <span class="as-of-date">As of 12/31/{{ 'now' | date: "%Y" | minus: 1 }}</span></h3>
-              <p><b>Net admin expense<sup>*</sup></b><br>
-                {{ page.summary_details.admin_expense }}
-              </p>
-              <p><b>Other expense<sup>**</sup></b><br></p>
-                {% for item in page.summary_details.other_expense %}
-                  {{ item }}<br>
-                {% endfor %}
-
-
-              <p>
-                <sup>*</sup>An expense ratio of .032% translates to 3.2 basis points or $0.32 per $1,000 acount balance.
-              </p>
-              <p><sup>*</sup>Fees associated with securities lending are not included in 2017 administrative expenses.
-                Consistent with standard practice in the industry, they are charged in addition to administrative expenses. The other expenses
-                represent fees paid to the investment manager for administering securities lending programs. Income earned from these programs improved the returns of
-                the fund.
-              </p>
-            </div>
-            <div class="usa-width-one-half">
-              <h3>Additional information </h3>
-              {{ page.additional_info | markdownify }}
-            </div>
-          </div>
-        </div>
-    </li>
+    {% endfor %}
+    </ol>
+    </div>
+    </div>
+    </div>
+  </li>
+    {{ page.content }}
+  <li>
+    <button class="usa-accordion-button" aria-expanded="false" aria-controls="a4">Fees &amp; more info</button>
+    <div id="a4" class="usa-accordion-content">
+    <div class="usa-grid-full">
+    <div class="usa-width-one-half">
+    <h3>Fees <span class="as-of-date">As of 12/31/{{ 'now' | date: "%Y" | minus: 1 }}</span></h3>
+    <p><b>Net admin expense<sup>*</sup></b><br>
+    {{ page.summary_details.admin_expense }}
+    </p>
+    <p><b>Other expense<sup>**</sup></b><br></p>
+    {% for item in page.summary_details.other_expense %}
+      {{ item }}<br>
+    {% endfor %}
+    <p><sup>*</sup>An expense ratio of .032% translates to 3.2 basis points or $0.32 per $1,000 acount balance.</p>
+    <p><sup>*</sup>Fees associated with securities lending are not included in 2017 administrative expenses.
+    Consistent with standard practice in the industry, they are charged in addition to administrative expenses. The other expenses
+    represent fees paid to the investment manager for administering securities lending programs. Income earned from these programs improved the returns of
+    the fund.
+    </p>
+    </div>
+    <div class="usa-width-one-half">
+    <h3>Additional information </h3>
+    {{ page.additional_info | markdownify }}
+    </div>
+    </div>
+    </div>
+  </li>
 </ul>
-
-
-
 </div>
 {% else %}
 <div class="usa-layout-docs-main_content">
