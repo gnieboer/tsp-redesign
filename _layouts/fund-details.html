@@ -51,7 +51,7 @@ main:
 <h2>Performance</h2>
 <p class="as-of-date">As of 12/31/{{ 'now' | date: "%Y" | minus: 1 }}</p>
 <table class="usa-table-borderless avg-annual-returns">
-  <caption>Average annual returns</caption>
+  <caption id="aar_caption">Average annual returns</caption>
   <thead>
   <tr>
     <th>YTD (Daily)</th>
@@ -63,11 +63,14 @@ main:
 </thead>
 <tbody>
   <tr>
-    <td>{{ page.avg_annual_returns.ytd }}</td>
-    <td>{{ page.avg_annual_returns.one_yr }}</td>
-    <td>{{ page.avg_annual_returns.three_yr }}</td>
-    <td>{{ page.avg_annual_returns.five_yr }}</td>
-    <td>{{ page.avg_annual_returns.ten_yr }}</td>
+    <td id="aar_ytd">{{ page.avg_annual_returns.ytd }}</td>
+    <td id="aar_1yr">{{ page.avg_annual_returns.one_yr }}</td>
+    <td id="aar_3yr">{{ page.avg_annual_returns.three_yr }}</td>
+    <td id="aar_5yr">{{ page.avg_annual_returns.five_yr }}</td>
+    <td id="aar_10yr">{{ page.avg_annual_returns.ten_yr }}</td>
+  </tr>
+  <tr>
+    <td id="aar_error" colspan="5" class="usa-error"></td>
   </tr>
 </tbody>
 </table>

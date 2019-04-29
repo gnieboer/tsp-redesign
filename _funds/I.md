@@ -34,7 +34,7 @@ top_ten_holdings:
   - name: Las Vegas Sands Corp.
     abbr: LVS
 additional_info: |
-  By law, the I Fund must be invested in a portfolio designed to track the performance of an index of common stocks representing international stock markets outside of the United States. The Federal Retirement Thrift Investment Board has chosen as its benchmark the MSCI EAFE (Europe, Australasia, Far East) Index, which tracks the overall performance of the major companies and industries in the European, Australian, and Asian stock markets. 
+  By law, the I Fund must be invested in a portfolio designed to track the performance of an index of common stocks representing international stock markets outside of the United States. The Federal Retirement Thrift Investment Board has chosen as its benchmark the MSCI EAFE (Europe, Australasia, Far East) Index, which tracks the overall performance of the major companies and industries in the European, Australian, and Asian stock markets.
 
   The EAFE Index, published by MSCI, is an index of the equity markets of the developed world outside of the United States and Canada. It is the most widely used international stock index. As of December 31, 2017, the index covered the equity markets of 21 countries, as shown in the table.
 
@@ -45,6 +45,11 @@ risks: |
   By investing in the C Fund, you are also exposed to [inflation risk](#), meaning your C Fund investment may not grow enough to offset inflation.
 rewards: |
   While investment in the C Fund carries risk, it also offers the opportunity to experience gains from equity ownership of large and mid-sized U.S. company stocks.
+scripts:
+    - /assets/js/jquery.min.js
+bottom-scripts: /assets/js/ajaxFetch.js
+document-ready:
+  singleFundData('I');
 ---
 <li>
     <button class="usa-accordion-button" aria-expanded="false" aria-controls="a2">

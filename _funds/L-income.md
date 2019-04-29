@@ -53,8 +53,12 @@ subfunds:
   - name: L2030
   - name: L2040
   - name: L2040
+scripts:
+    - /assets/js/jquery.min.js
+bottom-scripts: /assets/js/ajaxFetch.js
+document-ready:
+  singleFundData('Linc');
 ---
-
 <li>
     <button class="usa-accordion-button" aria-expanded="false" aria-controls="a2">
   Performance &amp; risks

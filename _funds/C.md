@@ -45,6 +45,11 @@ risks: |
   By investing in the C Fund, you are also exposed to [inflation risk](#), meaning your C Fund investment may not grow enough to offset inflation.
 rewards: |
   While investment in the C Fund carries risk, it also offers the opportunity to experience gains from equity ownership of large and mid-sized U.S. company stocks.
+scripts:
+    - /assets/js/jquery.min.js
+bottom-scripts: /assets/js/ajaxFetch.js
+document-ready:
+  singleFundData('C');
 ---
 
 <li>
