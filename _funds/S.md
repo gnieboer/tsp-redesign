@@ -69,7 +69,7 @@ scripts:
     - /assets/js/jquery.min.js
 bottom-scripts: /assets/js/ajaxFetch.js
 document-ready:
-  singleFundData('S');
+  - singleFundData('S');
 ---
 
 <li>

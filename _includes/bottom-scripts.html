@@ -31,8 +31,9 @@ Autoloads calculator panel js files.
 <script type="text/javascript">
 <!--
 $(document).ready(function() {
-  console.log(' page is ready in bottom scripts');
-  {{ page.document-ready }}
+  {% for item in page.document-ready %}
+    {{ item }}
+  {% endfor %}
 });
 -->
 </script>
