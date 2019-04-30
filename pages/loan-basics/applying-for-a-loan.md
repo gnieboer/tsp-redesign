@@ -19,6 +19,11 @@ Before you apply for a TSP loan, please review our booklet, [Loans](#). Be sure 
 + Log in to [My Account](https://www.tsp.gov/tsp/loan.do?subaction=menu&amp;_name=loan) to use the wizard to complete the [Loan Application](), *Form TSP-20*. **Note:** Depending on your marital status, the type of loan you are requesting, and how you want your funds sent to you, you may not be able to complete your loan request online.
 + If you’re unable to complete the loan process online, print out the Loan Agreement and mail it to us with any additional required information. We must receive the Loan Agreement before the expiration date that appears at the top.
 
+
+## Submitting your request
++ Log in to [My Account: TSP Loans](https://www.tsp.gov/tsp/login.html) to start your loan request. **Note:** Depending on your marital status, the type of loan you are requesting, and how you want your funds sent to you, you may not be able to submit your loan request online.
++ If you’re unable to complete the loan process online, print out the _Loan Agreement,_ sign it, and mail it to us with any additional required information. We must receive the loan agreement before the expiration date that appears at the top.
+
 <div class="usa-alert usa-alert-info">
 <div class="usa-alert-body" markdown="1">
 Use our [Loan Calculator](#) to estimate loan payments based on the amount you want to borrow from your TSP account, the current loan interest rate, and other factors.
@@ -69,5 +74,5 @@ Purchasing a boat as a primary residence requires you to provide all of the foll
 + You may track the status of your loan by logging into [My Account](https://www.tsp.gov/tsp/login.html) or by [contacting us](#).
 ## Receiving your money
 
-+ If your loan request was made and approved online, you will receive your money in the form of a check, mailed tothe address we have on file for you. You will not have the option of receiving your funds by electronic funds transfer (EFT).
++ If your loan request was made and approved online, you will receive your money in the form of a check, mailed to the address we have on file for you. You will not have the option of receiving your funds by electronic funds transfer (EFT).
 + If your account is invested in more than one TSP fund, your loan payments will be deducted proportionally from the traditional and Roth contributions and earnings in each fund.

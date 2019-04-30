@@ -5,6 +5,13 @@ layout: home
 class: homepage
 scripts:
 
+alert:
+  show-alert: true
+  icon:
+  title: Scheduled Outage
+  subtitle:
+  body:
+  - Due to scheduled system maintenance, <strong>tsp.gov and frtib.gov will be unavailable</strong> Saturday, April 13, from 8:00 a.m. to 11:30 a.m. eastern time.  Thank you for your patience.
 
 hero:
   image: /assets/img/hero.jpg

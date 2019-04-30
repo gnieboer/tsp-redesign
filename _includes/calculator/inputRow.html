@@ -1,0 +1,43 @@
+{% comment %}
+This script produces an input row that is text on the left and an input on the right
+inside a calculator boxed area.
+
+I need to add parameters to make other input types for the right side.
+{% endcomment %}
+{% assign id = include.id | default: 'myValue' %}
+{% assign name = include.name | default: 'myValue' %}
+{% assign inputType = include.inputType | default: 'integer' %}
+{% assign size = include.size | default: 10 %}
+{% assign max = include.max | default: 10 %}
+{% assign left = include.left | default: 'Left Text' %}
+{% assign right = include.right | default: '' %}
+{% assign gridClass = include.gridClass | default: 'calculator' %}
+{% assign rowClass = include.rowClass | default: '' %}
+{% assign leftClass = include.leftClass | default: '' %}
+{% assign rightClass = include.rightClass | default: 'float-right' %}
+{% assign rightInputClass = include.rightInputClass | default: '' %}
+{% assign selectList = include.selectList | default: 10 %}
+{% assign defaultValue = include.defaultValue | default: '' %}
+{% assign onBlur = include.onBlur | default: '' %}
+
+<div class="usa-grid {{ gridClass }} {{ gridClass2 }}">
+  <div class="usa-width-three-fourths {{ rowClass }}{{ leftClass }}">{{ left }}</div>
+  <div class="usa-width-one-fourth {{ rowClass }}{{ rightClass }}">
+  {% if inputType == 'value' %}<span id="{{id}}">{{right}}</span>{% endif %}
+  {% if inputType == 'integer' %}
+    <input id="{{id}}" name="{{name}}" class="{{rightInputClass}}" value="{{defaultValue}}"
+         type="text" size="{{size}}" maxlength="{{max}}" onBlur="{{onBlur}}" onChange="{{onBlur}}">
+  {% endif %}
+  {% if inputType == 'selectList' %}
+
+  {% endif %}
+  {% if inputType == 'selectInt' %}
+  <select class="{{ rightInputClass }}" id="{{ id }}" name="{{ name }}">
+  {% for i in (1..selectList) %}
+  {% if i == defaultValue %}{% assign selected = 'selected' %}{% else %}{% assign selected = '' %}{% endif %}
+    <option value="{{i}}" {{ selected }}>{{i}}</option>
+  {% endfor %}
+  </select>
+  {% endif %}
+  </div>
+</div>

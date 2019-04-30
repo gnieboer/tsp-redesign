@@ -1,0 +1,325 @@
+<script type="text/javascript">
+function round_cents(num) {
+  num = isNaN(num) || num === '' || num === null ? 0.00 : num;
+  return parseFloat(num).toFixed(2);
+}
+
+// 2019 tax values
+var IRC_limit_year = 2019;
+var IRC_contribution_limit = 19000.00;
+var IRC_catchup_contribution_limit = 6000.00;
+// Notice 1036 (Rev. December 2018) page 1
+var withholding_allowance_rate = 4200.00;
+
+// IRS Pub. 15, Table 7(a) SINGLE person, ANNUAL Payroll Period
+var taxtableS = [ [3800.00, 0.00, 0.0], [13500.00, 0.10, 0.0], [43275.00, 0.12, 970.0],
+                [88000.00, 0.22, 4543.0], [164525.00, 0.24, 14382.5], [207900.00, 0.32, 32748.5],
+                [514100.00, 0.35, 46628.5], [-1, 0.37, 153798.5] ];
+
+// IRS Pub. 15, Table 7(b) MARRIED person, ANNUAL Payroll Period
+var taxtableM = [ [11800.00, 0.00, 0.0], [31200.00, 0.10, 0.0], [90750.00, 0.12, 1940.0],
+                [180200.00, 0.22, 9086.0], [333250.00, 0.24, 28765.0], [420000.00, 0.32, 65497.0],
+                [624150.0, 0.35, 93257.0], [-1, 0.37, 164709.50] ];
+var IRC_acting_year = IRC_limit_year;
+
+// Calculate annual income tax for a S (single) or MS (married filing single) person
+function annualTax (income, taxarray) {
+  // handle minimal case
+  if (income < taxarray[0][0]) { return 0.0; }
+
+  // handle other cases
+  // note there is always a lower bracket because lowest is handled above
+  var i = 1;
+  while (i < taxarray.length) {
+    if (income < taxarray[i][0]) {
+      // bracket found
+      return round_cents(taxarray[i][2] + (taxarray[i][1] * (income - taxarray[i-1][0])));
+    }
+    i++;
+  }
+
+  // we didn't find bracket so we must be in highest bracket
+  i = taxarray.length - 1;
+  return round_cents(taxarray[i][2] + (taxarray[i][1] * (income - taxarray[i-1][0])));
+}
+</script>
+{% comment %}
+The rest of the file is the historical contents of the tax table. This is not rendered.
+
+% # This component creates a javascript function which can be called from javascript
+% # to determine the tax liability given the income and filling type(single, married).
+% #
+% # Yearly edit:
+% #     0.  Obtain tax table, withholding allowance and contribution limits for new year.
+% #         (Comes from customer and customer decides when this happens [annually, late October])
+% #     1.  Add new line to hist array (215c stuff)
+% #     2.  Update the PERL array with the yearly limits.
+% #     3.  Add the if block for the new year's tax array and make last if the only >=.
+% #     4.  Update the tax table with the new years data.
+%
+<%init>
+my($day, $month, $year)=(localtime)[3,4,5];
+my($hour, $minute, $second)=(localtime)[2,1,0];
+my $testDate = sprintf "%4d%02d%02d", ($year+1900), ($month+1), $day;
+#$testDate = '20101006';         # use these lines for test/debug
+
+my $dateOverride = $m->comp('/components/getParam.pl', param=>'testDate'); # user specified year
+if (defined($dateOverride)) {
+  $testDate = $dateOverride;
+  print "<font color=red>[Using $testDate as current date.]</font><BR>\n";
+}
+
+$year = substr($testDate, 0, 4);
+$month = substr($testDate, 4, 2);
+
+# array of values for table display on various pages
+# 415c - Section 415C limit,   con - contribution limit,     cup - catchup limit,   pct - percent limit, used by elective cont
+  # Create PERL 2D hash array to hold all the numbers
+  my %hist;
+  $hist{-1} = {'maxyear' => 2019, 'date' => '2018-11-06'};
+  $hist{2019} = {'415c' => 56000, 'con' => 19000, 'cup' => 6000, 'pct' => 100};
+  $hist{2018} = {'415c' => 55000, 'con' => 18500, 'cup' => 6000, 'pct' => 100};
+  $hist{2017} = {'415c' => 54000, 'con' => 18000, 'cup' => 6000, 'pct' => 100};
+  $hist{2016} = {'415c' => 53000, 'con' => 18000, 'cup' => 6000, 'pct' => 100};
+  $hist{2015} = {'415c' => 53000, 'con' => 18000, 'cup' => 6000, 'pct' => 100};
+  $hist{2014} = {'415c' => 52000, 'con' => 17500, 'cup' => 5500, 'pct' => 100};
+  $hist{2013} = {'415c' => 51000, 'con' => 17500, 'cup' => 5500, 'pct' => 100};
+  $hist{2012} = {'415c' => 50000, 'con' => 17000, 'cup' => 5500, 'pct' => 100};
+  $hist{2011} = {'415c' => 49000, 'con' => 16500, 'cup' => 5500, 'pct' => 100};
+  $hist{2010} = {'415c' => 49000, 'con' => 16500, 'cup' => 5500, 'pct' => 100};
+  $hist{2009} = {'415c' => 49000, 'con' => 16500, 'cup' => 5500, 'pct' => 100};
+  $hist{2008} = {'415c' => 46000, 'con' => 15500, 'cup' => 5000, 'pct' => 100};
+  $hist{2007} = {'415c' => 45000, 'con' => 15500, 'cup' => 5000, 'pct' => 100};
+  $hist{2006} = {'415c' => 44000, 'con' => 15000, 'cup' => 5000, 'pct' => 100};
+  $hist{2005} = {'415c' => 42000, 'con' => 14000, 'cup' => 4000, 'pct' => 15};
+  $hist{2004} = {'415c' => 41000, 'con' => 13000, 'cup' => 3000, 'pct' => 14};
+  $hist{2003} = {'415c' => 40000, 'con' => 12000, 'cup' => 2000, 'pct' => 13};
+  $hist{2002} = {'415c' => 40000, 'con' => 11000, 'cup' => 'N/A', 'pct' => 12};
+  $hist{2001} = {'415c' => 'N/A', 'con' => 10500, 'cup' => 'N/A', 'pct' => 'N/A'};
+  $hist{2000} = {'415c' => 'N/A', 'con' => 10500, 'cup' => 'N/A', 'pct' => 'N/A'};
+  $hist{1999} = {'415c' => 'N/A', 'con' => 10000, 'cup' => 'N/A', 'pct' => 'N/A'};
+  $hist{1998} = {'415c' => 'N/A', 'con' => 10000, 'cup' => 'N/A', 'pct' => 'N/A'};
+  $hist{1997} = {'415c' => 'N/A', 'con' => 9500, 'cup' => 'N/A', 'pct' => 'N/A'};
+  $hist{1996} = {'415c' => 'N/A', 'con' => 9500, 'cup' => 'N/A', 'pct' => 'N/A'};
+  $hist{1995} = {'415c' => 'N/A', 'con' => 9240, 'cup' => 'N/A', 'pct' => 'N/A'};
+  $hist{1994} = {'415c' => 'N/A', 'con' => 9240, 'cup' => 'N/A', 'pct' => 'N/A'};
+  $hist{1993} = {'415c' => 'N/A', 'con' => 8994, 'cup' => 'N/A', 'pct' => 'N/A'};
+  $hist{1992} = {'415c' => 'N/A', 'con' => 8728, 'cup' => 'N/A', 'pct' => 'N/A'};
+  $hist{1991} = {'415c' => 'N/A', 'con' => 8475, 'cup' => 'N/A', 'pct' => 'N/A'};
+  $hist{1990} = {'415c' => 'N/A', 'con' => 7979, 'cup' => 'N/A', 'pct' => 'N/A'};
+  $hist{1989} = {'415c' => 'N/A', 'con' => 7627, 'cup' => 'N/A', 'pct' => 'N/A'};
+  $hist{1988} = {'415c' => 'N/A', 'con' => 7313, 'cup' => 'N/A', 'pct' => 'N/A'};
+  $hist{1987} = {'415c' => 'N/A', 'con' => 7000, 'cup' => 'N/A', 'pct' => 'N/A'};
+</%init>
+<%args>
+$returnType => 'taxTables'
+$datayear => undef
+</%args>
+%
+% # handle return code
+% if ($returnType eq 'irs_limit') {
+%   if (!defined($datayear)) { return undef; }
+%   if (!defined($hist{$datayear})) { return undef; }
+%   return($hist{$datayear}{'con'}, $hist{$datayear}{'pct'});
+% }
+%
+% if ($returnType eq 'masonArray') {
+%   return \%hist;
+% }
+% if ($returnType eq 'taxTables') {
+<script type="text/javascript">
+function round_cents(num) {
+  num = isNaN(num) || num === '' || num === null ? 0.00 : num;
+  return parseFloat(num).toFixed(2);
+}
+
+% # Create the numbers used by the calculator based on current year
+% if ($year <= 2011) {
+// 2011 tax values
+var IRC_limit_year = 2011;
+var IRC_contribution_limit = 16500.00;
+var IRC_catchup_contribution_limit = 5500.00;
+var withholding_allowance_rate = 3700.00;
+
+var taxtableS = [ [2100.00, 0.00, 0.0], [10600.00, 0.10, 0.0], [36600.00, 0.15, 850.0],
+                [85700.00, 0.25, 4750.0], [176500.00, 0.28, 17025.00], [381250.00, 0.33, 42449.00],
+                [-1, 0.35, 110016.50] ];
+
+var taxtableM = [ [7900.00, 0.00, 0.0], [24900.00, 0.10, 0.0], [76900.00, 0.15, 1700.0],
+                [147250.00, 0.25, 9500.0], [220200.00, 0.28, 27087.50], [387050.00, 0.33, 47513.50],
+                [-1, 0.35, 102574.00] ];
+% }
+% #
+% if ($year == 2012) {
+// 2012 tax values
+var IRC_limit_year = 2012;
+var IRC_contribution_limit = 17000.00;
+var IRC_catchup_contribution_limit = 5500.00;
+var withholding_allowance_rate = 3800.00;
+
+var taxtableS = [ [2150.00, 0.00, 0.0], [10850.00, 0.10, 0.0], [37500.00, 0.15, 870.0],
+                [87800.00, 0.25, 4867.5], [180800.00, 0.28, 17442.50], [390500.00, 0.33, 43482.50],
+                [-1, 0.35, 112683.50] ];
+
+var taxtableM = [ [8100.00, 0.00, 0.0], [25500.00, 0.10, 0.0], [78800.00, 0.15, 1740.0],
+                [150800.00, 0.25, 9735.0], [225550.00, 0.28, 27735.00], [396450.00, 0.33, 48665.00],
+                [-1, 0.35, 105062.00] ];
+% }
+% #
+% if ($year == 2013) {
+// 2013 tax values
+var IRC_limit_year = 2013;
+var IRC_contribution_limit = 17500.00;
+var IRC_catchup_contribution_limit = 5500.00;
+var withholding_allowance_rate = 3900.00;
+
+var taxtableS = [ [2200.00, 0.00, 0.0], [11125.00, 0.10, 0.0], [38450.00, 0.15, 892.5],
+                [90050.00, 0.25, 4991.25], [185450.00, 0.28, 17891.25], [400550.00, 0.33, 44603.25],
+                [402200.00, 0.35, 115586.25], [-1, 0.396, 116163.75] ];
+
+var taxtableM = [ [8300.00, 0.00, 0.0], [26150.00, 0.10, 0.0], [80800.00, 0.15, 1785.0],
+                [154700.00, 0.25, 9982.5], [231350.00, 0.28, 28457.50], [406650.00, 0.33, 49919.50],
+                [458300.00, 0.35, 107768.5], [-1, 0.396, 125846.00] ];
+% }
+% #
+% if ($year == 2014) {
+// 2014 tax values
+var IRC_limit_year = 2014;
+var IRC_contribution_limit = 17500.00;
+var IRC_catchup_contribution_limit = 5500.00;
+var withholding_allowance_rate = 3950.00;
+
+// IRS Pub. 15, Table 7(a) SINGLE person, ANNUAL Payroll Period
+var taxtableS = [ [2250.00, 0.00, 0.0], [11325.00, 0.10, 0.0], [39150.00, 0.15, 907.5],
+                [91600.00, 0.25, 5081.25], [188600.00, 0.28, 18193.75], [407350.00, 0.33, 45353.75],
+                [409000.00, 0.35, 117541.25], [-1, 0.396, 118118.75] ];
+
+// IRS Pub. 15, Table 7(b) MARRIED person, ANNUAL Payroll Period
+var taxtableM = [ [8450.00, 0.00, 0.0], [26600.00, 0.10, 0.0], [82250.00, 0.15, 1815.0],
+                [157300.00, 0.25, 10162.5], [235300.00, 0.28, 28925.0], [413550.00, 0.33, 50765.0],
+                [466050.00, 0.35, 109587.5], [-1, 0.396, 127962.50] ];
+% }
+% #
+% if ($year == 2015) {
+// 2015 tax values
+var IRC_limit_year = 2015;
+var IRC_contribution_limit = 18000.00;
+var IRC_catchup_contribution_limit = 6000.00;
+// IRS Pub. 15, Table 5. Percentage Method—20yy Amount for One Withholding Allowance
+var withholding_allowance_rate = 3950.00;
+
+// IRS Pub. 15, Table 7(a) SINGLE person, ANNUAL Payroll Period
+var taxtableS = [ [2250.00, 0.00, 0.0], [11325.00, 0.10, 0.0], [39150.00, 0.15, 907.5],
+                [91600.00, 0.25, 5081.25], [188600.00, 0.28, 18193.75], [407350.00, 0.33, 45353.75],
+                [409000.00, 0.35, 117541.25], [-1, 0.396, 118118.75] ];
+
+// IRS Pub. 15, Table 7(b) MARRIED person, ANNUAL Payroll Period
+var taxtableM = [ [8450.00, 0.00, 0.0], [26600.00, 0.10, 0.0], [82250.00, 0.15, 1815.0],
+                [157300.00, 0.25, 10162.5], [235300.00, 0.28, 28925.0], [413550.00, 0.33, 50765.0],
+                [466050.00, 0.35, 109587.5], [-1, 0.396, 127962.50] ];
+% }
+% #
+% if ($year == 2016) {
+// 2016 tax values
+var IRC_limit_year = 2016;
+var IRC_contribution_limit = 18000.00;
+var IRC_catchup_contribution_limit = 6000.00;
+// IRS Pub. 15, Table 5. Percentage Method 20yy Amount for One Withholding Allowance
+var withholding_allowance_rate = 4000.00;
+
+// IRS Pub. 15, Table 7(a) SINGLE person, ANNUAL Payroll Period
+var taxtableS = [ [2300.00, 0.00, 0.0], [11525.00, 0.10, 0.0], [39750.00, 0.15, 922.5],
+                [93050.00, 0.25, 5156.25], [191600.00, 0.28, 18481.25], [413800.00, 0.33, 46075.25],
+                [415500.00, 0.35, 119401.25], [-1, 0.396, 119996.25] ];
+
+// IRS Pub. 15, Table 7(b) MARRIED person, ANNUAL Payroll Period
+var taxtableM = [ [8600.00, 0.00, 0.0], [27050.00, 0.10, 0.0], [83500.00, 0.15, 1845.0],
+                [159800.00, 0.25, 10312.5], [239050.00, 0.28, 29387.5], [420100.00, 0.33, 51577.5],
+                [473450.00, 0.35, 111324.0], [-1, 0.396, 129996.50] ];
+% }
+% #
+% if ($year == 2017) {
+// 2017 tax values
+var IRC_limit_year = 2017;
+var IRC_contribution_limit = 18000.00;
+var IRC_catchup_contribution_limit = 6000.00;
+// IRS Pub. 15, Table 5. Percentage Method 20yy Amount for One Withholding Allowance
+var withholding_allowance_rate = 4050.00;
+
+// IRS Pub. 15, Table 7(a) SINGLE person, ANNUAL Payroll Period
+var taxtableS = [ [2250.00, 0.00, 0.0], [11525.00, 0.10, 0.0], [39900.00, 0.15, 927.5],
+                [93400.00, 0.25, 5183.75], [192400.00, 0.28, 18558.75], [415600.00, 0.33, 46278.75],
+                [417300.00, 0.35, 119934.75], [-1, 0.396, 120529.75] ];
+
+// IRS Pub. 15, Table 7(b) MARRIED person, ANNUAL Payroll Period
+var taxtableM = [ [8550.00, 0.00, 0.0], [27100.00, 0.10, 0.0], [83850.00, 0.15, 1855.0],
+                [160450.00, 0.25, 10367.5], [240000.00, 0.28, 29517.5], [421900.00, 0.33, 51791.5],
+                [475500.00, 0.35, 111818.5], [-1, 0.396, 130578.50] ];
+% }
+% if ($year == 2018) {
+// 2018 tax values
+var IRC_limit_year = 2018;
+var IRC_contribution_limit = 18500.00;
+var IRC_catchup_contribution_limit = 6000.00;
+// Notice 1036 (Rev. January 2018) page 1
+var withholding_allowance_rate = 4150.00;
+
+// IRS Pub. 15, Table 7(a) SINGLE person, ANNUAL Payroll Period
+var taxtableS = [ [3700.00, 0.00, 0.0], [13225.00, 0.10, 0.0], [42400.00, 0.12, 952.5],
+                [86200.00, 0.22, 4453.5], [161200.00, 0.24, 14089.5], [203700.00, 0.32, 32089.5],
+                [503700.00, 0.35, 45689.5], [-1, 0.37, 150689.5] ];
+
+// IRS Pub. 15, Table 7(b) MARRIED person, ANNUAL Payroll Period
+var taxtableM = [ [11550.00, 0.00, 0.0], [30600.00, 0.10, 0.0], [88950.00, 0.12, 1905.0],
+                [176550.00, 0.22, 8907.0], [326550.00, 0.24, 28179.0], [411550.00, 0.32, 64179.0],
+                [611550.00, 0.35, 91379.0], [-1, 0.37, 161379.00] ];
+% }
+% if ($year >= 2019) {
+// 2019 tax values
+var IRC_limit_year = 2019;
+var IRC_contribution_limit = 19000.00;
+var IRC_catchup_contribution_limit = 6000.00;
+// Notice 1036 (Rev. December 2018) page 1
+var withholding_allowance_rate = 4200.00;
+
+// IRS Pub. 15, Table 7(a) SINGLE person, ANNUAL Payroll Period
+var taxtableS = [ [3800.00, 0.00, 0.0], [13500.00, 0.10, 0.0], [43275.00, 0.12, 970.0],
+                [88000.00, 0.22, 4543.0], [164525.00, 0.24, 14382.5], [207900.00, 0.32, 32748.5],
+                [514100.00, 0.35, 46628.5], [-1, 0.37, 153798.5] ];
+
+// IRS Pub. 15, Table 7(b) MARRIED person, ANNUAL Payroll Period
+var taxtableM = [ [11800.00, 0.00, 0.0], [31200.00, 0.10, 0.0], [90750.00, 0.12, 1940.0],
+                [180200.00, 0.22, 9086.0], [333250.00, 0.24, 28765.0], [420000.00, 0.32, 65497.0],
+                [624150.0, 0.35, 93257.0], [-1, 0.37, 164709.50] ];
+% }
+% if ($month >= 11) {
+var IRC_acting_year = IRC_limit_year + 1;
+% } else {
+var IRC_acting_year = IRC_limit_year;
+% }
+% #
+
+// Calculate annual income tax for a S (single) or MS (married filing single) person
+function annualTax (income, taxarray) {
+  // handle minimal case
+  if (income < taxarray[0][0]) { return 0.0; }
+
+  // handle other cases
+  // note there is always a lower bracket because lowest is handled above
+  var i = 1;
+  while (i < taxarray.length) {
+    if (income < taxarray[i][0]) {
+      // bracket found
+      return round_cents(taxarray[i][2] + (taxarray[i][1] * (income - taxarray[i-1][0])));
+    }
+    i++;
+  }
+
+  // we didn't find bracket so we must be in highest bracket
+  i = taxarray.length - 1;
+  return round_cents(taxarray[i][2] + (taxarray[i][1] * (income - taxarray[i-1][0])));
+}
+
+</script>
+% }
+{% endcomment %}

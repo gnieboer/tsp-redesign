@@ -1,0 +1,35 @@
+.flex-row {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    /* flex items along the cross axis */
+    align-items: baseline;
+    padding: 15px 0;
+}
+
+.flex-align-center {
+    /* flex items are centered in the cross-axis */
+    align-items: center;
+}
+
+.flex-end {
+    justify-content: flex-end;
+}
+
+.flex-justify-center {
+    justify-content: center;
+}
+
+.flex-column {
+    flex-flow: column wrap;
+    padding: 0;
+}
+
+.flex-row li {
+    margin: 0;
+    padding: 1rem 1rem;
+}
+
+.flex-column li {
+    padding: 10px 0;
+}

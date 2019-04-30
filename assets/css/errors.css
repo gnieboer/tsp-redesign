@@ -1,0 +1,28 @@
+.tspError {
+  display: none;
+  margin: 0 0 0 0;
+  padding: 0 0 0 5px;
+  color: red;
+}
+input.warningInput 
+{
+    border: 2px solid #fdc76a;
+}
+input.errInput {
+    background-color: #ffffff;
+    border: 2px solid red;
+}
+select.errInput {
+    background-color: #ffffff;
+    border: 2px solid red;
+}
+.tspError2{
+  display: none;
+  margin: 166px 0 0 0;
+  padding: 5px;
+  background: #FFF3F3;
+  border: 2px solid #FFDEDE;
+}
+.tspErrorMessage {
+  padding: 2 2 2 20px;
+}
