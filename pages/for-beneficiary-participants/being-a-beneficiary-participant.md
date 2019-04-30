@@ -16,8 +16,8 @@ permalink: /for-beneficiary-participants/being-a-beneficiary-participant/
 - Tax professional
 - Estate planner
 {:.check }
-
-If you’re the spouse beneficiary of a deceased participant's TSP account and your share of the balance is $200 or more, we will establish a beneficiary participant account BPA) in your name.
+f
+If you’re the spouse beneficiary of a deceased participant's TSP account and your share of the balance is $200 or more, we will establish a beneficiary participant account (BPA) in your name.
 
 <div class="usa-alert  usa-alert-error ">
     <div class="usa-alert-body">
@@ -41,8 +41,29 @@ As a beneficiary participant, you’ll enjoy many of the same TSP benefits as em
     </div>
 </div>
 
+## You'll need these items to manage your account
+
+<section class="quick-links">
+  <div class="usa-grid">
+  <div class="usa-width-one-fourth" markdown="1">
+  <span data-term="Account number" class="js-glossary-toggle term term-end">Account number</span>
+  </div>
+  <div class="usa-width-one-fourth" markdown="1">
+  <span data-term="password" class="js-glossary-toggle term term-end">Web password</span>
+  </div>
+  <div class="usa-width-one-fourth" markdown="1">
+  <span data-term="Personal Identification Number (PIN)" class="js-glossary-toggle term term-end">ThriftLine PIN</span>
+  </div>
+  <div class="usa-width-one-fourth" markdown="1">
+  <span data-term="Customized User ID" class="js-glossary-toggle term term-end">User ID</span>
+  </div>
+  </div>
+</section>
+
+<section class="bpa-accordion">
 <ul class="usa-accordion usa-tabs being-a-bpa">
 <!-- ROW 1, BOX 1, COMBINE YOUR TSP ACCOUNTS -->
+
   <li>
     <button class="usa-accordion-button"
       aria-expanded="false"
@@ -52,7 +73,7 @@ As a beneficiary participant, you’ll enjoy many of the same TSP benefits as em
     </button>
 <div id="r1b1" class="usa-accordion-content" markdown="1">
 
-## Learn how to move your beneficiary participant account and your existing TSP account
+## Learn how to move your beneficiary participant account into your existing TSP account
 
 You can move your beneficiary participant account (BPA) into your existing employee or uniformed services TSP account by completing [Withdrawal Request for Beneficiary Participants](javascript:void(0)), _Form TSP-90_. The money you move will be treated as an employee contribution, but it will not be subject to the Internal Revenue Code (IRC) annual elective deferral limit. (See the instructions on Form TSP-90 for more information on combining accounts.)
 
@@ -108,7 +129,7 @@ money.
 
 ## Learn two approaches to investing the money in your beneficiary participant account.  
 
-When your beneficiary participant account is first established, the entire balance is invested in the [Lifecycle (L) Fund](/pages/funds-lifecycle/) targeted most closely to the year you turn 62 (or the L Income Fund if you’re age 62 or older). This investment remains in place unless you make an [interfund transfer](/how-to-invest/change-your-investments/).
+When your beneficiary participant account is first established, the entire balance is invested in the [Lifecycle (L) Fund](/pages/funds-lifecycle/) targeted most closely to the year you turn 63 (or the L Income Fund if you’re age 62 or older). This investment remains in place unless you make an [interfund transfer](/how-to-invest/change-your-investments/).
 
 **The L Funds** &#8212; These are "lifecycle" funds that are invested according to a professionally designed mix of stocks, bonds, and Government securities. You select your L Fund based on your "time horizon," the future date at which you plan to start withdrawing your money. Depending on your plans, this may be right away or some time in the future.
 
@@ -118,9 +139,12 @@ Choosing how to invest your account is completely up to you. You may invest in a
 </div>
 
 </li>
-</ul>
 
-<ul class="usa-accordion usa-tabs being-a-bpa">
+
+<!-- </ul>
+<ul class="usa-accordion usa-tabs being-a-bpa"> -->
+
+
 <!-- ROW 2, BOX 1, COMBINE YOUR TSP ACCOUNTS -->
   <li>
     <button class="usa-accordion-button"
@@ -151,7 +175,8 @@ You may request an IFT by visiting My Account: Online Transactions. You can also
     </button>
 <div id="r2b2" class="usa-accordion-content" markdown="1">
 
-## You can leave your money with us or tailor your withdrawal decisions to your personal needs.
+## You don't have to withdraw your money—you can keep it in the TSP until you need it (and until the IRS says you have to start withdrawing).
+
 
 There are two types of withdrawals you can make:
 
@@ -168,9 +193,9 @@ There are two types of withdrawals you can make:
 
 _**A single payment**_ allows you to withdraw your entire beneficiary participant account at one time in one payment. It’s sometimes referred to as a "lump sum."
 
-_**Monthly payments**_ allow you to withdraw your entire account in a series of payments. You can ask for a specific dollar amount each month or you can have the TSP calculate a monthly payment based on your life expectancy. If you choose a specific dollar amount, it must be at least $25.
+_**Monthly payments**_ allow you to withdraw your account in a series of payments. You can ask for a specific dollar amount each month or you can have the TSP calculate a monthly payment based on your life expectancy. If you choose a specific dollar amount, it must be at least $25.
 
-_**An annuity**_ pays a benefit to you (or your survivor) every month for life.  We purchase the annuity on your behalf from a private insurance company with all or any portion of your account balance when you request a full withdrawal. An annuity can be purchased for $3,500 or more. Once an annuity is purchased, it cannot be changed.
+_**An annuity**_ you (or your survivor) receive a payment every month for life.  We purchase the annuity on your behalf from a private insurance company with all or any portion of your account balance when you request a full withdrawal. You can purchase an annuity for $3,500 or more. Once you purchase one, it cannot be changed.
 
 You can also make _**a mixed withdrawal**_ which allows you to combine any or all of the three withdrawal options (single payment, monthly payments, or annuity). However, if you request a mixed withdrawal with an annuity, the portion of your account balance used to purchase the annuity cannot equal a dollar amount of less than $3,500.
 
@@ -198,9 +223,8 @@ You should allow at least several weeks from the time you submit your completed 
 
 </div>
 </li>
-</ul>
-
-<ul class="usa-accordion usa-tabs being-a-bpa">
+<!-- </ul>
+<ul class="usa-accordion usa-tabs being-a-bpa"> -->
 <!-- ROW 3, BOX 1, COMBINE YOUR TSP ACCOUNTS -->
   <li>
     <button class="usa-accordion-button"
@@ -241,11 +265,11 @@ Upon your death, the remaining money in your TSP account will be distributed thi
 4. If none, to the appointed executor or administrator of your estate
 5. If none, to your next of kin who is entitled to your estate under the laws of the state you lived in at the time of your death
 
-For most people, this is often the best option, since it accounts for changes like births, deaths, divorce, or marriage that may happen long after you open your account.
+For most people, this is often the best option because it accounts for changes like births, deaths, divorce, or marriage that may happen long after you open your account.
 
 If you'd like to make an exception, you may complete [Designation of Beneficiary](javascript:void(0)), [_Form TSP-3_](javascript:void(0)). The easiest way to do this is to use the online “wizard,” which you’ll find by logging into My Account and selecting “Beneficiaries” on the left.
 
-A will or any other document is not valid for the disposition of your beneficiary participant account. It is not a substitute for a Designation of Beneficiary form.
+A will or any other document is not valid for the disposition of your beneficiary participant account. It is not a substitute for a _Designation of Beneficiary_ form.
 
 </div>
 </li>
@@ -261,11 +285,12 @@ A will or any other document is not valid for the disposition of your beneficiar
 
 ## Learn how to inform us of a participant’s death
 
-In order for your beneficiaries to receive your account balance after your death, they (or their representatives) must complete the [Information Relating to Deceased Participant](javascript:void(0)), _Form TSP-17_, and submit it with a copy of the certified death certificate. Once we process the information and determine the beneficiaries for your account, we’ll contact them with additional information and instructions.
+For your beneficiaries to receive your account balance after your death, they (or their representatives) must complete _[Information Relating to Deceased Participant](javascript:void(0)),_ Form TSP-17, and submit it with a copy of the certified death certificate. Once we process the information and determine the beneficiaries for your account, we’ll contact them with additional information and instructions.
 
-Death benefit payments made from your beneficiary participant account must be paid **directly** to your beneficiary(ies). These payments cannot be transferred or rolled over into an IRA or eligible employer plan. In addition, the payment will be fully taxable in the year your beneficiary(ies) receive it.
+Your beneficiary(ies) will receive death benefit payments **directly** from your beneficiary participant account. These payments cannot be transferred or rolled over into an IRA or eligible employer plan, and will be fully taxable in the year your beneficiary(ies) receive it.
 Your beneficiaries will not owe taxes on Roth contributions, qualified earnings on Roth contributions, and tax-exempt contributions in the account.
 
 </div>
 </li>
 </ul>
+</section>

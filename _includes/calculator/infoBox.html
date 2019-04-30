@@ -1,0 +1,13 @@
+{% comment %}
+This script produces an info block/box for the calcualtors.
+{% endcomment %}
+{% assign icon = include.icon | default: 'info' %}
+{% assign title = include.title | default: 'You forgot to specifiy a title for this block' %}
+{% assign textBlock = include.textBlock | default: 'You forgot to specifiy some text for this block' %}
+
+<div class="usa-alert  usa-alert-info ">
+    <div class="usa-alert-body">
+        <h3 class="usa-alert-heading">{{ title }}</h3>
+        <p class="usa-alert-text" markdown="1">{{ textBlock }}</p>
+    </div>
+</div>

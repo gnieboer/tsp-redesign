@@ -17,8 +17,8 @@ permalink: /in-service-withdrawal-basics/economic-hardship/
 Having the option of taking an in-service withdrawal from your TSP account can be a lifesaver when you’re facing a financial hardship. But before you do, evaluate your options carefully and know the consequences.
 
 - **It's a permanent withdrawal from your TSP account.** You can’t put the money back. Furthermore, it reduces the amount of money that grows and generates compound earnings.
-- **Your TSP contributions are suspended for 6 months.** This means 6 months of forgone retirement savings, tax deferral, and compound earnings. Also, your contributions will not resume automatically after the 6-month period; you’ll have to make a new contribution election.
-- **Agency/Service Matching Contributions are suspended.** FERS and BRS participants will not receive Agency/Service Matching Contributions again until you are eligible to resume contributions and you've completed another election form.
+- **Your TSP contributions are suspended for 6 months.** This means 6 months of missed retirement savings and compound earnings. Also, your contributions will not resume automatically after the 6-month period; you’ll have to make a new contribution election.
+- **Agency/Service Matching Contributions are suspended.** FERS and BRS participants will not receive Agency/Service Matching Contributions until you've restarted your own contributions.
 
 ### Tax considerations
 

@@ -16,6 +16,7 @@ permalink: /loan-basics/loan-types-and-terms/
 
 Before taking out a loan, you should carefully consider its potential effect on your retirement income.
 
+The current loan interest rate on new loans is 2.5%, which is the current G Fund interest rate.
 
 ## How a TSP loan works
 When you take a loan, you borrow from your contributions to your TSP account. Your loan amount can’t exceed the amount of your own contributions and earnings from those contributions. Also, you cannot borrow from contributions or earnings you get from your agency or service.
@@ -25,7 +26,7 @@ If you meet the loan eligibility rules and your loan request is approved, the lo
 ## Loan types and terms
 We allow two types of loans:
 
-**General Purpose | Residential**    
+**General Purpose** | **Residential**    
 ----------------- | ----------------- 
 ![check](tsp-redesign/assets/img/check.svg "Check mark") May be used for any purpose | ![check](tsp-redesign/assets/img/check.svg "Check mark") May only be used for the purchase or construction of a primary residence
 ![check](tsp-redesign/assets/img/check.svg "Check mark") Requires no documentation | ![check](tsp-redesign/assets/img/check.svg "Check mark") Requires documentation
@@ -33,7 +34,7 @@ We allow two types of loans:
 
 For details, visit [Residential Loan Documentation](#).
 
-![alert](tsp-redesign/assets/img/alert-circle.svg "alert circle") Your loan payments must start within 60 days of your loan being disbursed.
+![alert](tsp-redesign/assets/img/alert-circle.svg "alert circle") Your loan payments must start within 60 days of your loan being sent.
 
 ### Loan eligibility
  
@@ -41,9 +42,9 @@ For details, visit [Residential Loan Documentation](#).
 + must be an active federal employee or a member of the uniformed services.
 + must be in pay status because repayments are set up as payroll deductions.
 + can only have one outstanding general purpose loan and one outstanding residential loan from any one TSP account at a time.
-+ must have at least $1,000 of your own contributions and earnings in your account (agency contributions and earnings cannot be borrowed).
++ must have at least $1,000 of your own contributions and earnings in your account (agency/service contributions and earnings cannot be borrowed).
 + must not have repaid a loan of the same type in full within the past 60 days. (If you have both a civilian account and a uniformed services account, the 60-day waiting period applies separately to each account.)
-+ must not have had a taxable distribution of a loan within the past 12 months unless it was the result of your separation from federal service.
++ must not have had a taxable distribution of a loan within the past 12 months unless it was due to your leaving federal service.
 + must not have a court order against your account.
 
 ### Residential loan eligibility rules
@@ -70,14 +71,14 @@ You can only use a residential loan for purchasing or constructing a primary res
 
 ## Borrowing limits
 ### Minimum loan amount
-The minimum amount that you can borrow is $1,000.  
+The minimum amount you can borrow is $1,000.  
 
 ### Maximum loan amount
-The maximum amount that you can borrow is the smallest of the following:
+The maximum amount you can borrow is the smallest of the following:
 
-+ Your own contributions and earnings on those contributions in the TSP account from which you intend to borrow, not including any outstanding loan balance;
-+ Approximately 50% of your [vested account balance](#) (including any outstanding loan balance) or $10,000, whichever is greater, minus any outstanding loan balance; or
-+ Approximately $50,000 minus your highest outstanding loan balance, if any, during the last 12 months. Even if your loan is currently paid in full, it will still be considered in the calculation if it was open at any time during the last 12 months.
++ Your own contributions and earnings on those contributions in the TSP account you'd like to borrow from, not including any outstanding loan balance;
++ 50% of your [vested account balance](#) (including any outstanding loan balance) or $10,000, whichever is greater, minus any outstanding loan balance (see note below); or
++ $50,000 minus your highest outstanding loan balance, if any, during the last 12 months (see note below). 
 
 Note: If you have both a civilian account and a uniformed services account, the combined account balances and outstanding loan amounts will be used to calculate the maximum loan amount. 
 
@@ -85,7 +86,7 @@ TSP account balances are recalculated at the end of each business day based on d
 
 TSP account balances are recalculated at the end of each business day based on daily share prices. As a result, the maximum loan amount may change on a daily basis.
 
-To find out more about the maximum amount available for a loan, use the calculator, [ _Estimate Loan Payments_](#) , or contact us.
+To find out more about the maximum amount available for a loan, use the calculator, [ _Estimate Loan Payments_](#) , or [contact us](#).
 
 ## Loan costs
 

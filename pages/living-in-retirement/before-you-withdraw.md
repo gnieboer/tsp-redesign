@@ -17,7 +17,7 @@ Here are some things to consider:
 + If you need a portion of your TSP savings right away, but want to leave the rest to continue growing, consider taking a partial withdrawal.
 + If you want to avoid paying taxes on the money in your TSP account for as long as possible, do not to take any withdrawals until the IRS requires you to do so. By law, you are required to take required minimum distributions (RMDs) beginning the year you turn 70½. At that time, you'll have to pay taxes at your ordinary income tax rate on any taxable income you receive from your TSP account.  
 + If you decide that you want income from your TSP account every month, be aware that neither the specified dollar amount nor the TSP-computed monthly payment options are guaranteed to last your entire lifetime. 
-+ If you want a guaranteed stream of monthly income, consider purchasing a life annuity, which is a monthly benefit paid to you every month for the rest of your life. This process can sometimes be complicated but we’ve got you covered. Visit [*Annuity basics*](#) for information on purchasing an annuity. 
++ If you want a guaranteed stream of monthly income, consider purchasing a life annuity, which is a monthly benefit paid to you every month for the rest of your life. This process is sometimes complicated, but we’ve got you covered. Visit [*Annuity basics*](#) for information on purchasing an annuity. 
 
 For detailed information about your withdrawal options, read the booklet [*Withdrawing Your TSP Account After Leaving Federal Service*](https://www.tsp.gov/PDF/formspubs/tspbk02.pdf).
 
@@ -29,11 +29,11 @@ For more information about RMDs and tax requirements, see the tax notice [*Impor
  
 Vesting requirements only apply to FERS and BRS participants.
  
-FERS and BRS participants must work for a certain number of years in order to be entitled to, or vested in, the Agency/Service Automatic (1%) Contributions in your account and the earnings on them.
+FERS and BRS participants must work for a certain number of years in order to be entitled to, or vested in, the Agency/Service Automatic (1%) Contributions in their account and the earnings on them.
 If you have not met the vesting requirement by the time you leave service, any Agency/Service Automatic (1%) Contributions and the earnings on them will be removed from your account and forfeited to the TSP.
  
 **Important:** Civilian service does not count toward vesting in a uniformed services account, and uniformed service does not count toward vesting in a civilian account.
-For more information about vesting, visit [A few words about vesting]. 
+For more information about vesting, visit [A few words about vesting](#). 
 
 ### Spouses' rights
 

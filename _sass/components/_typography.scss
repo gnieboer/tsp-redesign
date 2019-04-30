@@ -1,6 +1,12 @@
 html {
   color: $color-base;
 }
+.center {
+  text-align: center;
+}
+.right {
+  text-align: right;
+}
 // Additional font weights
 // MEDIUM 600
 @font-face {

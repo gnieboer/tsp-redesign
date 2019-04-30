@@ -82,33 +82,7 @@ a.learn-more, .usa-learn-more a {
   }
 }
 
-// SECTION: QUICK LINKS
-  .quick-links {
-    background-color: #046b99;
-    .usa-grid {
-      display: flex;
-      justify-content: space-evenly;
-      padding:0;
-    }
-    .usa-width-one-fourth {
-      border-right: 4px solid $color-white;
-      font-size: 2rem;
-      margin:0;
-      width: 25%;
-      padding: 1rem 0;
-    }
-    a {
-      padding: 3rem 0 ;
-      display:block;
-      color: #fff;
-      text-decoration: none;
-      text-align: center;
-      font-size: 2rem;
-    }
-    .usa-grid {
-      border-left: 4px solid $color-white;
-    }
-  }
+
 // SECTION: OUR FUNDS AT A GLANCE
 .home-our-funds {
   background-color: #f1f1f1;
@@ -121,6 +95,7 @@ a.learn-more, .usa-learn-more a {
     text-align: center;
   }
 }
+// SECTION: QUICK LINKS > _quick-links.scss
 
 // SECTION: KNOW YOURSELF AS AN INVESTOR
 .section-investor {

@@ -13,104 +13,107 @@ input {
     padding-bottom: 0;
 }
 
-  .step-title {
-    font-family: $font-sans;
-    font-size: 3rem;
-    font-weight: 500;
-    position: relative;
-    padding-left:8rem;
-    margin-bottom: 3rem;
-    span {
-      border-bottom: 4px solid $color-primary-alt;
-      display: inline-block;
-    position: absolute;
-    left: 0;
-    padding: 0 1rem;
-    }
+.step-title {
+  font-family: $font-sans;
+  font-size: 3rem;
+  font-weight: 500;
+  position: relative;
+  padding-left:8rem;
+  margin-bottom: 3rem;
+  span {
+    border-bottom: 4px solid $color-primary-alt;
+    display: inline-block;
+  position: absolute;
+  left: 0;
+  padding: 0 1rem;
   }
-  #step1 {
-    .usa-grid-full {
-      display: flex;
-    }
-
-    .usa-alert {
-    border-top:0;
-    padding: 0;
-    height: 100%;
-
-    }
-    .usa-alert-body {
-      padding: 1rem;
-      display:block;
-      text-align: center;
-      height: 100%;
-      padding-bottom: 6rem;
-      ul {
-        margin-left: 0;
-        text-align: left;
-        list-style-type: none;
-        li {
-          background: url('/assets/img/icons/check-circle-blue.svg') no-repeat left top;
-          padding-left: 3.5rem;
-        }
-      }
-      button {
-        position: absolute;
-        left: 50%;
-        transform: translateX(-50%);
-        bottom: 0;
-      }
-    }
+}
+#step3 {
+  .usa-grid-full {
+    display: flex;
   }
-  .usa-alert-heading {
-    background-color: $color-primary;
-    color: $color-white;
-
-    margin: -1rem -1rem 0 -1rem;
+  .usa-alert {
+  border-top:0;
+  padding: 0;
+  height: 100%;
+  }
+  .usa-alert.success {
+    border: 5px solid #2e8540;
+  }
+  .usa-alert-body {
     padding: 1rem;
-    > :first-child {
-      margin-top: 0;
-      margin-bottom:0;
-      font-family: $font-sans;
-      text-align: center;
-      font-size: 2rem;
-    }
-  }
-  #step3 {
-    .usa-grid {
-      display:flex;
-      justify-content: center;
-    }
-    input {
-      width: 100%;
-      border-bottom: 0;
-      height: auto;
-      padding: 0;
-      display: block;
-    }
-    img {
-      width: 5rem;
-      margin-top: 1rem;
-      margin-bottom: 1rem;
-    }
-    .fund-value-percentage {
-      &:after {
-        content:'%';
+    display:block;
+    text-align: center;
+    height: 100%;
+    padding-bottom: 6rem;
+    ul {
+      margin-left: 0;
+      text-align: left;
+      list-style-type: none;
+      li {
+        background: url('/assets/img/icons/check-circle-blue.svg') no-repeat left top;
+        padding-left: 3.5rem;
       }
     }
-    .usa-width-one-sixth {
-      text-align:center;
-      .or-divider {
-        font-size: 4rem;
-        padding-top: 3rem;
-      }
+    button {
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      bottom: 0;
     }
   }
-  .usa-alert-info {
-    background-image: url('/assets/img/icons/sliders-white.svg');
-    background-size: 4rem;
-    background-color: $color-primary;
-    color: $color-white;
-    border-top:0;
+  .usa-alert-body.best {
+    padding: 2rem 2rem 2rem 5rem;
+    text-align: left;
   }
+.usa-alert-heading {
+  background-color: $color-primary;
+  color: $color-white;
+  margin: -1rem -1rem 0 -1rem;
+  padding: 1rem;
+  > :first-child {
+    margin-top: 0;
+    margin-bottom:0;
+    font-family: $font-sans;
+    text-align: center;
+    font-size: 2rem;
+  }
+}
+
+  .usa-grid {
+    display:flex;
+    justify-content: center;
+  }
+  input {
+    width: 100%;
+    border-bottom: 0;
+    height: auto;
+    padding: 0;
+    display: block;
+  }
+  img {
+    width: 12rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+  .fund-value-percentage {
+    &:after {
+      content:'%';
+    }
+  }
+  .usa-width-one-third {
+    text-align:center;
+    .or-divider {
+      font-size: 4rem;
+      padding-top: 3rem;
+    }
+  }
+}
+.usa-alert-info {
+  background-image: url('/assets/img/icons/sliders-white.svg');
+  background-size: 4rem;
+  background-color: $color-primary;
+  color: $color-white;
+  border-top:0;
+}
 }

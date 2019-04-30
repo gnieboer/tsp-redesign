@@ -12,8 +12,5 @@ permalink: /how-to-invest/before-you-invest/
 Consider the following when you plan your retirement strategy.
 {: .usa-font-lead }
 
-## It's easy as 1-2-3!
-
-___
 
 {% include /components/before-you-invest.html %}

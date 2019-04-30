@@ -14,7 +14,7 @@ permalink: /in-service-withdrawal-basics/
 
 # In-service withdrawal basics
 
-In-service withdrawals are withdrawals you make from your TSP account while you're still actively employed in federal service or a member of the uniformed services. An in-service withdrawal can have a __serious impact__ on your TSP account. Remember that the purpose of your account is to accumulate savings so that you'll have income during retirement.
+In-service withdrawals are withdrawals you make from your TSP account while you’re still working for the federal government or a member of the uniformed services. An in-service withdrawal can have a __serious impact__ on your TSP account. Remember that the purpose of your account is to accumulate savings so that you'll have income during retirement.
 
 ## Things to consider:
 

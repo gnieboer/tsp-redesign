@@ -1,0 +1,92 @@
+/*  cssDecoBox 11/24/2016 */
+
+.cssDecoBoxFrame {
+    padding: 5px 5px;
+    margin: 0;
+    background: #fff;
+    border-radius: 6px;
+    box-sizing: border-box;
+}
+
+.cssDecoBox {
+    background: #fff;
+    border: 5px solid #DBEFF8;
+    border-radius: 6px;
+    -webkit-border-radius: 5;
+    -moz-border-radius: 5;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.innerDecoBox {
+    background: #fff;
+    border: 5px solid #EADDCD;
+    border-radius: 6px;
+    -webkit-border-radius: 5;
+    -moz-border-radius: 5;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.cssDecoBox h3 {
+    color: #AB4B00;
+    margin: 0px 0px 14px 0px;
+}
+
+.cssDecoBoxText {
+    margin: 0;
+    padding: 1.5em 1.7em;
+}
+
+.buttonBar {
+    margin: 0;
+    padding: 0;
+    background-color: #DBEFF8;
+}
+
+.buttonNav {
+    display: flex;
+    list-style-type: none;
+    width: 100%;
+    margin: 0;
+}
+
+.flexRow {
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    /* flex items along the cross axis */
+    align-items: baseline;
+    padding: 15px 0;
+}
+
+.flexAlignCenter {
+    /* flex items are centered in the cross-axis */
+    align-items: center;
+}
+
+.flexEnd {
+    justify-content: flex-end;
+}
+
+.flexCenter {
+    justify-content: center;
+}
+
+.flexColumn {
+    flex-flow: column wrap;
+    padding: 0;
+}
+
+.flexRow li {
+    padding: 0 10px;
+}
+
+.flexColumn li {
+    padding: 10px 0;
+}
+
+.buttonDivider {
+    border-right: 1px solid #a7a3a3;
+}

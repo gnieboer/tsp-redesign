@@ -1,0 +1,204 @@
+{% comment %}
+progressSteps overrides all the other settings if present, for the calc layout
+calculator layout uses progress steps, others can call either way
+{% endcomment %}
+{% if include.progressSteps %}
+  {% assign stepNames = include.progressSteps | split: ',' %}
+  {% assign curStep = 1 %}
+  {% assign numSteps = stepNames | size %}
+{% else %}
+  {% assign curStep = include.curStep | default: 1 %}
+  {% assign numSteps = include.numSteps | default: 3 %}
+  {% assign stepNames = include.stepNames | default: "Step 1, Step 2, Step 3" | split: ',' %}
+{% endif %}
+{% if numSteps < 1 %} {% assign numSteps = 1 %} {% endif %}
+{% if numSteps > 12 %} {% assign numSteps = 12 %} {% endif %}
+{% if curStep < 1 %} {% assign curStep = 1 %} {% endif %}
+{% if curStep > numSteps %} {% assign curStep = numSteps %} {% endif %}
+
+
+  <link rel="stylesheet" href="/assets/css/progressTracker.css">
+  <!-- PROGRESS BAR START -->
+  <div id="parent">
+    <div id="step">
+      <ol class="progstep{{ numSteps }} progstep">
+{% for i in (1..numSteps) %}
+{% assign progclass = "progstep-done" %}
+{% if i == curStep %}{% assign progclass = "progstep-active" %}{% endif %}
+{% if i > curStep %}{% assign progclass = "progstep" %}{% endif %}
+        <li id="progressStep{{ i }}" class="{{ progclass }}"  onClick='progressStepClick({{ i }});'>{{ i }}</li>
+{% endfor %}
+      </ol>
+   </div>
+   <div id="track" class="progtrckr2">
+     <ol class="progtrckr{{ numSteps }} progtrckr">
+{% for i in (1..numSteps) %}
+{% assign progclass = "progtrckr-done" %}
+{% if i == curStep %}{% assign progclass = "progtrckr-active" %}{% endif %}
+{% if i > curStep %}{% assign progclass = "progtrckr" %}{% endif %}
+{% assign j = i | minus: 1 %}
+       <li id="progressTrack{{ i }}" class="{{ progclass}}">{{ stepNames[j] }}</li>
+{% endfor %}
+    </ol>
+   </div>
+ </div>
+
+<script type="text/javascript">
+<!--
+var progressDone = '-done';
+var progressActive = '-active';
+var progressError = '-error';
+var progressDisabled = '-disabled';
+var progressBarDisabledAt = -1;
+var progressState = new Array(4);
+var progressError = new Array(4);
+for (p=0; p <= {{ numSteps }}; p++) {
+  progressState[p] = '';
+  progressError[p] = 0;
+}
+//  progressError[4] = 1;
+
+// disable bar, step will be marked with an error
+function disableProgressBar(step) {
+  if (step >= 0) { progressBarDisabledAt = step;  return true; }
+  return false;
+}
+function enableProgressBar() {
+  progressBarDisabledAt = -1;
+  return true;
+}
+function progressStepClick(step) {
+  var rung = 'progressStep'+step;
+  // if (($('#'+rung).hasClass('progstep-done')) || ($('#'+rung).hasClass('progstep-active'))) {
+  if ($('#'+rung).hasClass('progstep-done')) {
+ // alert(rung);
+    showPanel(step); // user must define
+    return;
+  }
+  return;
+}
+
+function setProgressStateClass(xclass, xstate, xnode, error) {
+    $('#progress' + xnode).removeClass(xclass);
+    $('#progress' + xnode).removeClass(xclass + progressDone);
+    $('#progress' + xnode).removeClass(xclass + progressActive);
+    $('#progress' + xnode).removeClass(xclass + progressError);
+    $('#progress' + xnode).removeClass(xclass + progressDisabled);
+    $('#progress' + xnode).addClass(xclass+xstate);
+    if (error) {
+      $('#progress' + xnode).addClass(xclass+progressError);
+    } else {
+    }
+}
+
+function setProgressState(step, state) {
+    var error = progressError[step];
+    if (progressBarDisabledAt >= 0) {
+      if (progressBarDisabledAt == step) { error = 1; } else { error = 0; }
+    }
+
+    if (progressBarDisabledAt < 0) { progressState[step] = state; }
+    setProgressStateClass('progstep', state, 'Step'+step, error);
+    setProgressStateClass('progtrckr', state, 'Track'+step, error);
+}
+
+function getProgressState(step) {
+  if ($('#progressStep'+step).hasClass('progstep-done')) { return progressDone; }
+  if ($('#progressStep'+step).hasClass('progstep-active')) { return progressActive; }
+  return '';
+}
+
+// move the highest visited step to a lower value
+function lowerHighwater(step) {
+    var p;
+
+    if ((step <= 0) || (step > {{ numSteps }})) { return; }
+    for (p=0; p <= {{ numSteps }}; p++) {
+        if ((progressState[p] == progressDone) && (p <= step)) { progressState[p] = progressDone; } else { progressState[p] = ''; }
+    }
+}
+function setHighwater(step) {
+    var p;
+
+    if ((step <= 0) || (step > {{ numSteps }})) { return; }
+    for (p=1; p <= {{ numSteps }}; p++) {
+        if (p <= step) { progressState[p] = progressDone; } else { progressState[p] = ''; }
+    }
+}
+function getHighwater() {
+    var p = 1;
+
+    if ((step <= 0) || (step > {{ numSteps }})) { return -1; }
+    while ((progressState[p] == progressDone) || (progressState[p] == progressActive)) { p++; }
+    if ((p <= 0) || (p > {{ numSteps }})) { return -1; }
+    return p;
+}
+function setProgressStateError(step) {
+    if ((step <= 0) || (step > {{ numSteps }})) { return; }
+    progressError[step] = 1;
+}
+function unsetProgressStateError(step) {
+    if ((step <= 0) || (step > {{ numSteps }})) { return; }
+    progressError[step] = 0;
+}
+function getProgressStateError(step) {
+    if ((step <= 0) || (step > {{ numSteps }})) { return; }
+    return progressError[step];
+}
+function getProgressError() {
+    for (p=0; p <= {{ numSteps }}; p++) {
+        if(progressError[p]) { return 1; }
+    }
+    return 0;
+}
+
+// set the progress bar status
+// default behavior
+function setProgressDefault(num) {
+  if (num < 1) num = 1;
+  if (num > {{ numSteps }}) num = {{ numSteps }};
+  var i;
+  for (i=1; i<num; i++) {
+    setProgressState(i, progressDone);
+  }
+  setProgressState(i, progressActive);
+  i++;
+  for (; i<={{ numSteps }}; i++) {
+    setProgressState(i, '');
+  }
+
+  return true;
+};
+
+// clickable progressbar behavior, return true if progressBar enabled
+function setProgress(num) {
+  var i;
+
+
+  // handle disabled state
+  if (progressBarDisabledAt >= 0) {
+    for (i=1; i<{{ numSteps }}; i++) {
+      setProgressState(i, progressDisabled);
+    }
+    return false;
+  }
+
+  if (num < 1) num = 1;
+  if (num > {{ numSteps }}) num = {{ numSteps }};
+  for (i=1; i<num; i++) {
+    setProgressState(i, progressDone);
+  }
+  setProgressState(i, progressActive);
+  i++;
+  for (; i<={{ numSteps }}; i++) {
+    if (progressState[i] == progressActive) { setProgressState(i, progressDone); }
+    else
+      setProgressState(i, progressState[i]);
+  }
+  if (num != {{ numSteps }}) { setProgressState({{ numSteps }}, ''); }
+
+  return true;
+};
+
+-->
+</script>
