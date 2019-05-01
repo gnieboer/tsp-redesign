@@ -9,7 +9,7 @@ styles:
 
 scripts:
 
-permalink: /changes-in-your-career/entering-non-pay-status/
+permalink: /career-changes/entering-non-pay-status/
 ---
 
 {:#non-pay}
