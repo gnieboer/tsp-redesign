@@ -1,7 +1,7 @@
 ---
 layout: page
 
-title: Changes in your career
+title: Career changes
 
 sidenav: manage-life-changes
 
@@ -9,9 +9,9 @@ styles:
 
 scripts:
 
-permalink: /changes-in-your-career/
+permalink: /career-changes/
 ---
-# Changes in your career
+# Career changes
 
 If you leave federal service, get deployed, or experience any other changes in your federal service, there are a number of things to consider when it comes to your TSP account.
 
