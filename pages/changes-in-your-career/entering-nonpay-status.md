@@ -17,7 +17,7 @@ permalink: /changes-in-your-career/entering-non-pay-status/
 
 ## What is non-pay status?
 
-Nonpay status is when active federal government employees, including the uniformed services, do not receive regular pay because of furlough, suspension, or leave without pay (including leave without pay to perform military duty).
+Nonpay status is when active federal government employees, including the uniformed services, do not receive regular pay for one or more pay periods because of furlough, suspension, or leave without pay (including leave to perform military duty).
 
 Here are some things you can expect while you’re in nonpay status:
 
@@ -37,7 +37,7 @@ Here are some things you can expect while you’re in nonpay status:
 
 * If you're a civilian employee in non-pay status to perform military service, you may make contributions to your uniformed services account from your uniformed services pay.
 * You will not receive Agency Contributions in your uniformed services account, but when you return to civilian pay status, you may be entitled to make up TSP contributions to your civilian account (and receive restored Agency Contributions, if you are a FERS employee).
-* If you're a Blended Retirement System (BRS) participant, you will receive Service Automatic (1%) Contributions and Service Matching Contributions, if eligible. Your reclaimed agency contributions to your civilian account will be reduced accordingly.
+* If you're a Blended Retirement System (BRS) participant, you will receive Service Automatic (1%) Contributions and, if eligible, Service Matching Contributions. Your reclaimed agency contributions to your civilian account will be reduced accordingly.
 
 For more information, read the fact sheet [TSP Benefits That Apply to Members of the Military Who Return to Federal Civilian Service](https://www.tsp.gov/PDF/formspubs/tspfs08.pdf).
 
