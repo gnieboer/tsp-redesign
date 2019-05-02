@@ -87,7 +87,7 @@
      padding-inline-start: 0;
      margin-block-end: 0;
      li {
-       color: $color-blue-medium;
+       color: $color-gray-light;
        padding: 0 0.3rem;
        margin: 0;
        font-size: 2.4rem;
@@ -96,27 +96,27 @@
    ul {
      &.low-risk {
        li:nth-child(-n+1) {
-         color: $color-gray-light;
+         color: $color-blue-medium;
        }
      }
      &.low-medium-risk {
        li:nth-child(-n+2) {
-         color: $color-gray-light;
+         color: $color-blue-medium;
        }
      }
      &.medium-risk {
        li:nth-child(-n+3) {
-         color: $color-gray-light;
+         color: $color-blue-medium;
        }
      }
      &.medium-high-risk {
        li:nth-child(-n+4) {
-         color: $color-gray-light;
+         color: $color-blue-medium;
        }
      }
      &.high-risk {
        li:nth-child(-n+5) {
-         color: $color-gray-light;
+         color: $color-blue-medium;
        }
      }
    }
