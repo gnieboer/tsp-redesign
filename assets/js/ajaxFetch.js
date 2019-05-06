@@ -12,13 +12,14 @@ var singleFundData = function(fund) {
       function (data) {
           var values = data.split(", ");
           console.log('values length is ', values.length);
-          if (values.length == 7) {
-            $('#aar_caption').html("Average annual returns (as of December "+values[6]+")");
+          if (values.length == 8) {
+            $('#aar_caption').html("Average annual returns (as of December "+values[7]+")");
             $('#aar_ytd').html(values[1]);
             $('#aar_1yr').html(values[2]);
             $('#aar_3yr').html(values[3]);
             $('#aar_5yr').html(values[4]);
             $('#aar_10yr').html(values[5]);
+            // $('#aar_incep').html(values[6]);
           }
           console.log(name + ': ' + data);
       }
@@ -26,8 +27,13 @@ var singleFundData = function(fund) {
     serverCall.fail(
       function (jqXHR, textStatus, errorThrown) {
           var errMsg = textStatus + ': ' + errorThrown;
-          $('#aar_error').html('data unavailable, try again later');
-          console.log('error getting average annual returns: ' + 'data unavailable, try again later');
+          // $('#aar_caption').html("Average annual returns (as of December "+values[7]+")");
+          $('#aar_ytd').html('unavailable');
+          $('#aar_1yr').html('unavailable');
+          $('#aar_3yr').html('unavailable');
+          $('#aar_5yr').html('unavailable');
+          $('#aar_10yr').html('unavailable');
+          // $('#aar_incep').html(values[6]);
       }
     );
 //    serverCall.always(
