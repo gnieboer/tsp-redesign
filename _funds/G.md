@@ -47,31 +47,10 @@ rewards: |
   While investment in the C Fund carries risk, it also offers the opportunity to experience gains from equity ownership of large and mid-sized U.S. company stocks.
 scripts:
     - /assets/js/jquery.min.js
+    - /assets/js/highcharts/highcharts.js
+    - /assets/js/highcharts/data.js
 bottom-scripts: /assets/js/ajaxFetch.js
 document-ready:
-  singleFundData('G');
+  - singleFundData('G');
+  - getGrowthInception('G');
 ---
-<li>
-    <button class="usa-accordion-button" aria-expanded="false" aria-controls="a2">
-  Performance &amp; risks
-</button>
-    <div id="a2" class="usa-accordion-content">
-      <div class="usa-grid-full">
-        <div class="usa-width-one-whole">
-          <h3>Charts and graphs</h3>
-        </div>
-      </div>
-    </div>
-</li>
-<li>
-    <button class="usa-accordion-button" aria-expanded="false" aria-controls="a3">
-  Composition
-</button>
-    <div id="a3" class="usa-accordion-content">
-    <div class="usa-grid-full">
-      <div class="usa-width-one-whole">
-        <h3>Charts and graphs 2</h3>
-      </div>
-    </div>
-    </div>
-</li>

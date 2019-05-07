@@ -1,3 +1,4 @@
+{% assign sorted = site.funds | where: "Fund_debug", "1" | sort: 'Fund_order' %}
 {% if include.lifecycle %}
   {% assign sorted = site.funds | where: "Fund_letter", "L" | sort: 'Fund_order' %}
 {% else %}

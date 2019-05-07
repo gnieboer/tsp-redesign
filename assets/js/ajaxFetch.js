@@ -41,3 +41,28 @@ var singleFundData = function(fund) {
 //      }
 //    );
 }
+
+function getGrowthInception(fund) {
+  Highcharts.chart('growthInception', {
+    credits: { enabled: false },
+    chart: {
+      type: 'line'
+    },
+    title: {
+      text: 'Growth of $100 since Inception'
+    },
+    data: {
+      csvURL: 'https://www.tsp.gov/components/CORS/getFundGrowthInflation.html?fund='+fund
+    },
+    yAxis: {
+      labels: {
+        formatter: function() {
+          return '$' + this.value;
+        }
+      }
+    },
+    tooltip: {
+      shared: true
+    }
+  });
+}

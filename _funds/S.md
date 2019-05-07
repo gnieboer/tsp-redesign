@@ -5,6 +5,7 @@ title: S fund
 sidenav: fund-options
 Fund_letter: S
 Fund_order: 4
+Fund_debug: 1
 subfund_name:
 Fund_subtitle: Small cap stock Index investment fund
 Fund_objective: The S Fund's investment objective is to match the performance of the Dow Jones U.S. Completion Total Stock Market Index, a broad market index made up of stocks of small-to-medium U.S. companies not included in the S&P 500 Index.
@@ -67,32 +68,10 @@ rewards: |
   While investment in the C Fund carries risk, it also offers the opportunity to experience gains from equity ownership of large and mid-sized U.S. company stocks.
 scripts:
     - /assets/js/jquery.min.js
+    - /assets/js/highcharts/highcharts.js
+    - /assets/js/highcharts/data.js
 bottom-scripts: /assets/js/ajaxFetch.js
 document-ready:
   - singleFundData('S');
+  - getGrowthInception('S');
 ---
-
-<li>
-    <button class="usa-accordion-button" aria-expanded="false" aria-controls="a2">
-  Performance &amp; risks
-</button>
-    <div id="a2" class="usa-accordion-content">
-      <div class="usa-grid-full">
-        <div class="usa-width-one-whole">
-          <h3>Charts and graphs</h3>
-        </div>
-      </div>
-    </div>
-</li>
-<li>
-    <button class="usa-accordion-button" aria-expanded="false" aria-controls="a3">
-  Composition
-</button>
-    <div id="a3" class="usa-accordion-content">
-    <div class="usa-grid-full">
-      <div class="usa-width-one-whole">
-        <h3>Charts and graphs 2</h3>
-      </div>
-    </div>
-    </div>
-</li>
