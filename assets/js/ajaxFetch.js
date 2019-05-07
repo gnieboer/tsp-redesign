@@ -43,6 +43,9 @@ var singleFundData = function(fund) {
 }
 
 function getGrowthInception(fund) {
+  Highcharts.setOptions({
+    colors: ['#058DC7', '#FFFFFF', '#ED561B', '#FFFFFF']
+  });
   Highcharts.chart('growthInception', {
     credits: { enabled: false },
     chart: {
