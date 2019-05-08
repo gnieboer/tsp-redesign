@@ -352,7 +352,7 @@ To save you time and give you the best<br />
 experience, we’ve prepared answers to the questions<br />
 our participants and beneficiaries ask most often.
 
-[Read our frequently asked questions](javascript:void(0))
+[Read our frequently asked questions](/faq/)
 </div>
 </div>
 </section>

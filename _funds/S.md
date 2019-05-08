@@ -8,6 +8,7 @@ Fund_order: 4
 subfund_name:
 Fund_subtitle: Small cap stock Index investment fund
 Fund_objective: The S Fund's investment objective is to match the performance of the Dow Jones U.S. Completion Total Stock Market Index, a broad market index made up of stocks of small-to-medium U.S. companies not included in the S&P 500 Index.
+Fund_objective_short: To match the performance of the Dow Jones U.S. Completion Total Stock Market Index.
 questions:
   - question: Why should I invest in the S Fund?
     answer: While investment in the S Fund carries risk, it also offers the opportunity to experience gains from equity ownership of small-to-mid-sized U.S. companies. It provides and excellent means of further diversifying your domestic equity holdings.
@@ -16,7 +17,7 @@ questions:
   - question: How can I use the S Fund in my TSP?
     answer: The S Fund can be useful in a portfolio that also contains stock funds that track other indexes. The C, S, and I Funds, for example, track different segments of the overall stock market without overlapping. By investing in all segments of the stock market (as opposed to just one), you reduce your exposure to market risk.
 avg_annual_returns:
-    ytd: 12.89%
+    ytd: 15.99%
     one_yr: 13.89%
     three_yr: 14.89%
     five_yr: 15.89%
@@ -63,6 +64,7 @@ risks: |
   Your investment in the C Fund is subject to [market risk](#) because the prices of the stocks in the S&P 500 Index rise and fall.
 
   By investing in the C Fund, you are also exposed to [inflation risk](#), meaning your C Fund investment may not grow enough to offset inflation.
+risk_level: low
 rewards: |
   While investment in the C Fund carries risk, it also offers the opportunity to experience gains from equity ownership of large and mid-sized U.S. company stocks.
 

@@ -108,6 +108,25 @@ manage-your-plan:
       - text: Contribution limits
         href: /making-contributions/contribution-limits/
 
+news-and-resources:
+  - text: Plan News
+    href: /news-and-resources/
+    subnav:
+      - text: Highlights
+        href: /news-and-resources/highlights/
+      - text: Government matters
+        href: /news-and-resources/government-matters/
+      - text: Government shutdown
+        href: /news-and-resources/government-shutdown/
+  - text: FAQs
+    href: /faq/
+  - text: Videos
+    href: "javascript:void(0);"
+  - text: Forms & publications
+    href: "javascript:void(0);"
+  - text: Calculators
+    href: /calculators/
+
 fund-options:
   - text: How to invest
     href: /how-to-invest/
@@ -304,9 +323,9 @@ footer:
   - text: Agency & Service Rep Resources
     href: #
   - text: News & Resources
-    href: #
+    href: /news-and-resources/
   - text: Calculators
-    href: #
+    href: /calculators/
   - text: FOIA
     href: #
   - text: FRTIB

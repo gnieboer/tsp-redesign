@@ -9,7 +9,7 @@ styles:
 
 scripts:
 
-permalink: /changes-in-your-career/leaving-the-federal-government/
+permalink: /career-changes/leaving-the-federal-government/
 ---
 
 # Leaving the federal government

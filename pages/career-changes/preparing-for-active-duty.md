@@ -9,7 +9,7 @@ styles:
 
 scripts:
 
-permalink: /changes-in-your-career/preparing-for-active-duty-or-tdy/
+permalink: /career-changes/preparing-for-active-duty-or-tdy/
 ---
 # Preparing for active duty or TDY
 
