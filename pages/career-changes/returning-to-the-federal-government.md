@@ -9,7 +9,7 @@ styles:
 
 scripts:
 
-permalink: /changes-in-your-career/returning-to-the-federal-government/
+permalink: /career-changes/returning-to-the-federal-government/
 ---
 
 # Returning to the federal government
