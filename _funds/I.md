@@ -8,6 +8,7 @@ Fund_order: 5
 subfund_name:
 Fund_subtitle: International Stock Index Investment Fund
 Fund_objective: The I Fund's investment objective is to match the performance of the MSCI EAFE (Europe, Australasia, Far East) Index.
+Fund_objective_short: To match the performance of the MSCI EAFE (Europe, Australasia, Far East) Index.
 questions:
   - question: Why should I invest in the I Fund?
     answer: Investment in the I Fund offers the opportunity to experience gains from equity ownership of non-U.S. companies. Because it represents the stocks of companies in many developed countries (excluding the U.S.), it is an excellent way to diversify the stock portion of your TSP allocation.
@@ -43,6 +44,7 @@ risks: |
   Your investment in the C Fund is subject to [market risk](#) because the prices of the stocks in the S&P 500 Index rise and fall.
 
   By investing in the C Fund, you are also exposed to [inflation risk](#), meaning your C Fund investment may not grow enough to offset inflation.
+risk_level: high
 rewards: |
   While investment in the C Fund carries risk, it also offers the opportunity to experience gains from equity ownership of large and mid-sized U.S. company stocks.
 scripts:

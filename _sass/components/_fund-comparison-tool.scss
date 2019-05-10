@@ -1,4 +1,35 @@
 .fund-comparison-tool {
+  thead th, td {
+    background-color: inherit;
+    border-top: none;
+    &:first-child {
+      border-left: none;
+    }
+  }
+  th {
+    font-size: 2.4rem;
+    font-weight: $medium;
+    // line-height: 2.4rem;
+    text-align: center;
+    span {
+      font-size: 1.6rem;
+    }
+    label {
+      font-size: 1.2rem;
+      margin-top: 0;
+      margin-bottom: 0;
+    }
+  }
+  tbody th {
+    border-left: none;
+  }
+  tbody tr {
+    &:last-child {
+      td {
+        border-bottom: none;
+      }
+    }
+  }
   select {
     display:inline-block;
     width: auto;
@@ -12,23 +43,87 @@
   }
   .fund-header {
     text-align: center;
-    color: #fff;
-    background-color: #666;
+    color: #000;
+    background-color: #fff;
     padding: 1rem;
     font-size: 1.3rem;
-    min-height: 20rem;
-    span {font-size: 8rem;font-weight:800;
-    display:block;
+    // min-height: 20rem;
+    // border-bottom: #dfdfdf 1px solid;
+    span {
+      font-size: 4rem;
+      font-weight: $medium;
+      display:block;
     }
     &:hover {
-      background-color: #323a45;
+      // background-color: #323a45;
+    }
+    .G-fund {
+      color: $color-g-fund;
+    }
+    .F-fund {
+      color: $color-f-fund;
+    }
+    .C-fund {
+      color: $color-c-fund;
+    }
+    .S-fund {
+      color: $color-s-fund;
+    }
+    .I-fund {
+      color: $color-i-fund;
     }
   }
 .fund-content {
-  font-size: 1.3rem;
+  text-align: center;
    p {
-     border-bottom: #dfdfdf 1px solid;
      padding: 1rem;
+     font-size: 1.6rem;
+   }
+   p.numeric {
+     font-size: 2.4rem;
+   }
+   ul.flex {
+     list-style-type: none;
+     padding-inline-start: 0;
+     margin-block-end: 0;
+     li {
+       color: $color-gray-light;
+       padding: 0 0.3rem;
+       margin: 0;
+       font-size: 2.4rem;
+     }
+   }
+   ul {
+     &.low-risk {
+       li:nth-child(-n+1) {
+         color: $color-blue-medium;
+       }
+     }
+     &.low-medium-risk {
+       li:nth-child(-n+2) {
+         color: $color-blue-medium;
+       }
+     }
+     &.medium-risk {
+       li:nth-child(-n+3) {
+         color: $color-blue-medium;
+       }
+     }
+     &.medium-high-risk {
+       li:nth-child(-n+4) {
+         color: $color-blue-medium;
+       }
+     }
+     &.high-risk {
+       li:nth-child(-n+5) {
+         color: $color-blue-medium;
+       }
+     }
+   }
+   .risk-level {
+     color: #000000;
+     font-size: 1.2rem;
+     margin-bottom: 1rem;
    }
 }
 .usa-accordion-content[aria-hidden="false"] {
@@ -37,10 +132,18 @@
   background-color: transparent;
 }
 [type=checkbox]+label::before {
-  display: none;
+  // display: none;
 }
+}
+fieldset {
+  padding: 3rem;
+  margin: 3rem;
+  text-align: center;
 }
 
+ul#fund-comparison {
+  max-width: none;
+}
 
 
 #ror-show-c-fund:checked,
