@@ -1,21 +1,42 @@
-function checkAge(doCalc) {
-  if ($('#your-age').val() == '') { return false; }
+function ageGood(forSubmit) {
+  if ($('#your-age').val() == '' && forSubmit) { showError('your-age', 'Enter Age.'); return false; }
   var age = getPosInteger('your-age', 0);
-  if (age < 20) { showError('your-age', ''); return false; }
-  if (age > 60) { showError('your-age', ''); return false; }
-  clearError('your-age');
-  if (doCalc) { return calculate(0); }
-  return age;
+  if (age < 20) { showError('your-age', 'Age must be at least 20.'); return false; }
+  if (age > 60) { showError('your-age', 'Age must be less than 60'); return false; }
+  return clearError('your-age');
 }
 
-function checkSalary(doCalc) {
-  if ($('#your-salary').val() == '') { return false; }
+function salaryGood(forSubmit) {
+  if ($('#your-salary').val() == '' && forSubmit) { showError('your-salary', 'Enter Salary.'); return false; }
   var salary = getPosInteger('your-salary', 0);
-  if (salary < 1000) { showError('your-salary', ''); return false; }
-  if (salary > 100000) { showError('your-salary', ''); return false; }
-  clearError('your-salary');
-  if (doCalc) { return calculate(0); }
-  return salary;
+  if (salary < 1000) { showError('your-salary', 'Salary must be at least $1000'); return false; }
+  if (salary > 100000) { showError('your-salary', 'Salary cannot exceed $100,000'); return false; }
+  return clearError('your-salary');
+}
+
+function frequencyGood(forSubmit) {
+  if ($('#pay-frequency').val() == 'Select' && forSubmit) { showError('pay-frequency', 'Enter Frequency.'); return false; }
+  var frequency = getFrequency();
+  if (frequency <= 0) { showError('pay-frequency', 'Unknown frequency selected.'); return false; }
+  return clearError('pay-frequency');
+}
+
+function rateGood(forSubmit) {
+  if ($('#your-rate-of-return').val() == '') { return 3.0; }
+  var rate = getPosFloat('your-rate-of-return', 0);
+  if (rate < 0.0) { showError('your-rate-of-return', 'Rate must be more than 0.0%.'); return false; }
+  if (rate > 12.0) { showError('your-rate-of-return', 'Rate cannot exceed 12.0%.'); return false; }
+  return clearError('your-rate-of-return');
+}
+
+function inputsGood(doCalc) {
+  // is there a value for all fields?
+  var rc = true;
+
+  rc &= ageGood(doCalc);
+  rc &= salaryGood(doCalc);
+  rc &= frequencyGood(doCalc);
+  return rc;
 }
 
 function getFrequency() {
@@ -27,52 +48,13 @@ function getFrequency() {
   return 0;
 }
 
-function checkFrequency(doCalc) {
-  if ($('#pay-frequency').val() == 'Select') { return false; }
-  var frequency = getFrequency();
-  if (frequency <= 0) { showError('pay-frequency', ''); return false; }
-  clearError('pay-frequency');
-  if (doCalc) { return calculate(0); }
-  return frequency;
-}
-
-function checkRate(doCalc) {
-  if ($('#your-rate-of-return').val() == '') { return 3.0; }
-  var rate = getPosFloat('your-rate-of-return', 0);
-  if (rate < 0.0) { showError('your-rate-of-return', ''); return false; }
-  if (rate > 12.0) { showError('your-rate-of-return', ''); return false; }
-  clearError('your-rate-of-return');
-  if (doCalc) { return calculate(0); }
-  return rate;
-}
-
-function checkInputs(doCalc) {
-  // is there a value for all fields?
-  var rc = true;
-
-  if ($('#your-age').val() == '') {
-    if (doCalc == 1) { showError('your-age', ''); }
-    rc = false;
-  }
-  if ($('#your-salary').val() == '') {
-    if (doCalc == 1) { showError('your-salary', ''); }
-    rc = false;
-  }
-  if ($('#pay-frequency').val() == 'Select') {
-    if (doCalc == 1) { showError('pay-frequency', ''); }
-    rc = false;
-  }
-  // if ($('#your-rate-of-return').val() == '') { return false; }
-  return rc;
-}
-
 function calculate(doCalc) {
-  if (checkInputs(doCalc) != true) { return; }
+  if (inputsGood(doCalc) != true) { return; }
   // get values
-  var age = checkAge(0);
-  var salary = checkSalary(0);
-  var frequency = checkFrequency(0);
-  var rate = checkRate(0);
+  var age = getPosInteger('your-age', 0);
+  var salary = getPosInteger('your-salary', 0);
+  var frequency = getFrequency();
+  var rate = getPosFloat('your-rate-of-return', 0);
   var paycheckRate = 1.0 + ((rate / 100.0) / frequency);
   var paycheck = Math.round((salary * 100.0) / frequency) / 100.0;
   var your5 = Math.round(paycheck * 5.0) / 100.0;
