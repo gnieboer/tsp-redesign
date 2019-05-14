@@ -16,6 +16,7 @@ permalink: /loan-basics/loan-types-and-terms/
 
 Before taking out a loan, you should carefully consider its potential effect on your retirement income.
 
+The current loan interest rate on new loans is 2.5%, which is the current G Fund interest rate.
 
 ## How a TSP loan works
 When you take a loan, you borrow from your contributions to your TSP account. Your loan amount can’t exceed the amount of your own contributions and earnings from those contributions. Also, you cannot borrow from contributions or earnings you get from your agency or service.

@@ -41,7 +41,7 @@ primary:
     - text: Planning for life events
       href: /planning-for-life-events/
     - text: Changes in your career
-      href: /changes-in-your-career/
+      href: /career-changes/
     - text: For beneficiary participants
       href: /for-beneficiary-participants/
 
@@ -88,8 +88,8 @@ manage-your-plan:
         href: /account-basics/move-money-into-tsp/
       - text: Protect your TSP account
         href: /account-basics/protect-your-tsp-account/
-      - text: Update your personal information
-        href: /account-basics/update-personal-information/
+      - text: Update your address
+        href: /account-basics/update-your-address/
       - text: Administrative costs
         href: /account-basics/administrative-costs/
       - text: Designating beneficiaries
@@ -107,6 +107,25 @@ manage-your-plan:
         href: /making-contributions/maximize-your-savings/
       - text: Contribution limits
         href: /making-contributions/contribution-limits/
+
+news-and-resources:
+  - text: Plan News
+    href: /news-and-resources/
+    subnav:
+      - text: Highlights
+        href: /news-and-resources/highlights/
+      - text: Government matters
+        href: /news-and-resources/government-matters/
+      - text: Government shutdown
+        href: /news-and-resources/government-shutdown/
+  - text: s
+    href: //
+  - text: Videos
+    href: "javascript:void(0);"
+  - text: Forms & publications
+    href: "javascript:void(0);"
+  - text: Calculators
+    href: /calculators/
 
 fund-options:
   - text: How to invest
@@ -210,21 +229,21 @@ manage-life-changes:
         href: /planning-for-life-events/divorce-annulment-and-legal-separation/
       - text: Legal matters
         href: /planning-for-life-events/legal-matters/
-  - text: Changes in your career
-    href: /changes-in-your-career/
+  - text: Career changes
+    href: /career-changes/
     subnav:
       - text: Leaving the federal government
-        href: /changes-in-your-career/leaving-the-federal-government/
+        href: /career-changes/leaving-the-federal-government/
       - text: Returning to the federal government
-        href: /changes-in-your-career/returning-to-the-federal-government/
+        href: /career-changes/returning-to-the-federal-government/
       - text: Changing federal agencies
-        href: /changes-in-your-career/changing-federal-agencies/
+        href: /career-changes/changing-federal-agencies/
       - text: Preparing for active duty or TDY
-        href: /changes-in-your-career/preparing-for-active-duty-or-tdy/
+        href: /career-changes/preparing-for-active-duty-or-tdy/
       - text: Returning from active duty or TDY
-        href: /changes-in-your-career/returning-from-active-duty-or-tdy/
+        href: /career-changes/returning-from-active-duty-or-tdy/
       - text: Entering a non-pay status
-        href: /changes-in-your-career/entering-non-pay-status/
+        href: /career-changes/entering-non-pay-status/
   - text: For beneficiary participants
     href: /for-beneficiary-participants/
     subnav:
@@ -304,9 +323,9 @@ footer:
   - text: Agency & Service Rep Resources
     href: #
   - text: News & Resources
-    href: #
+    href: /news-and-resources/
   - text: Calculators
-    href: #
+    href: /calculators/
   - text: FOIA
     href: #
   - text: FRTIB
