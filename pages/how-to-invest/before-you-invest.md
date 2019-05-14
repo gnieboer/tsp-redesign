@@ -20,14 +20,15 @@ Consider the following when you plan your retirement strategy.
 <!-- STEP 1 -->
 <div class="before-you-invest-tool step1" id="enter-birthdate">
   <h3 class="step-title"><span>1.</span> First, let's see how many years you have to invest. Time impacts your ability to save for retirement.</h3>
-  <p><label for="your-age">What year were you born?</label>
-  <input id="year-born" name="year-born" type="text" class="positiveinteger regInput"></p>
-  <p><button onclick="checkYearBorn(1);" class="usa-btn-primary">Find my funds</button></p>
+  <label for="year-born">What year were you born?</label>
+  <input id="year-born" name="year-born" type="text" class="positiveinteger">
 </div>
+<p><button onclick="checkYearBorn(1);" class="usa-btn-primary">Find my funds</button></p>
 
-<!-- STEP 3 -->
+
+<!-- STEP 2 -->
 <div class="before-you-invest-tool">
-  <div class="step3" id="review-funds" style="display:block;">
+  <div class="step2" id="review-funds">
     <h3 class="step-title"><span>2.</span> Great! Now review the funds ideally suited for your time horizon</h3>
     <div class="usa-grid-full">
 {% include components/before-you-invest-fund-block.html fund="Income"
