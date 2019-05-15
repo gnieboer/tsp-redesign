@@ -40,10 +40,16 @@
       border-top: 0;
       padding: 0;
       height: 100%;
+
+      h5 {
+        font-family: $font-sans;
+        font-size: 2rem;
+        margin-bottom: 0.25rem;
+      }
     }
 
     .usa-alert.success {
-      border: 5px solid #2e8540;
+      outline: 5px solid #2e8540;
     }
 
     .usa-alert-body {
@@ -54,13 +60,24 @@
       padding-bottom: 6rem;
 
       ul {
+        margin-top: 0;
         margin-left: 0;
         text-align: left;
         list-style-type: none;
 
         li {
           background: url("/assets/img/icons/check-circle-blue.svg") no-repeat left top;
-          padding-left: 3.5rem;
+          padding-left: 0;
+
+          &:first-child {
+            h5 {
+              margin-top: 0;
+            }
+          }
+
+          &:last-child {
+            min-height: 15rem;
+          }
         }
       }
 
@@ -107,8 +124,7 @@
 
     img {
       width: 12rem;
-      margin-top: 1rem;
-      margin-bottom: 1rem;
+      margin: 2rem 0;
     }
 
     .fund-value-percentage {
@@ -133,5 +149,17 @@
     background-color: $color-primary;
     color: $color-white;
     border-top: 0;
+  }
+
+  .results-summary {
+    background-color: $color-primary;
+    color: $color-white;
+    border-top: 0;
+    margin: 3rem 0 0;
+    padding: 2rem 2rem 4rem;
+
+    p {
+      // margin-bottom: 1rem;
+    }
   }
 }

@@ -1,88 +1,110 @@
 .flex {
   display: flex;
-  flex-direction: row ;
+  flex-direction: row;
   flex-wrap: nowrap;
   justify-content: flex-start;
   align-items: stretch;
 }
 /* FLEX DIRECTION */
 .row {
-  flex-direction: row ; /* default */
+  flex-direction: row;
+  /* default */
 }
+
 .row-reverse {
   flex-direction: row-reverse;
 }
+
 .column {
   flex-direction: column;
 }
+
 .column-reverse {
   flex-direction: column-reverse;
 }
 /* FLEX-WRAP */
 .nowrap {
-  flex-wrap: nowrap; /* default */
+  flex-wrap: nowrap;
+  /* default */
 }
+
 .wrap {
   flex-wrap: wrap;
 }
+
 .wrap-reverse {
   flex-wrap: wrap-reverse;
 }
 /* JUSTIFY CONTENT */
 .justify-start {
-    justify-content: flex-start; /*default */
+  justify-content: flex-start;
+  /*default */
 }
+
 .justify-end {
-    justify-content: flex-end;
+  justify-content: flex-end;
 }
+
 .justify-center {
-    justify-content: center;
+  justify-content: center;
 }
+
 .space-between {
-    justify-content: space-between;
+  justify-content: space-between;
 }
+
 .space-around {
-    justify-content: space-around;
+  justify-content: space-around;
 }
+
 .space-evenly {
-    justify-content: space-evenly;
+  justify-content: space-evenly;
 }
 /* ALIGN-ITEMS */
 .align-stretch {
-    align-items: stretch; /* default */
+  align-items: stretch;
+  /* default */
 }
+
 .align-start {
-    align-items: flex-start;
+  align-items: flex-start;
 }
+
 .align-end {
-    align-items: flex-end;
+  align-items: flex-end;
 }
+
 .align-center {
-    align-items: center;
+  align-items: center;
 }
+
 .align-baseline {
-    align-items: baseline;
+  align-items: baseline;
 }
 /* ALIGN CONTENT – property has no effect when there is only one line of flex items. */
 .align-content-start {
-    align-content: flex-start;
-}
-.align-content-end {
-    align-content: flex-end;
-}
-.align-content-center {
-    align-content: center;
-}
-.align-content-space-between {
-    align-content: space-between;
-}
-.align-content-space-around {
-    align-content: space-around;
-}
-.align-content-stretch {
-    align-content: stretch;
+  align-content: flex-start;
 }
 
+.align-content-end {
+  align-content: flex-end;
+}
+
+.align-content-center {
+  align-content: center;
+}
+
+.align-content-space-between {
+  align-content: space-between;
+}
+
+.align-content-space-around {
+  align-content: space-around;
+}
+
+.align-content-stretch {
+  align-content: stretch;
+}
 // .flex-row {
 //     display: flex;
 //     flex-flow: row wrap;
