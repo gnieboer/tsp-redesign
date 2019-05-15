@@ -18,6 +18,7 @@ Consider the following when you plan your retirement strategy.
 {: .usa-font-lead }
 
 <!-- STEP 1 -->
+
 <div class="before-you-invest-tool step1" id="enter-birthdate">
   <h3 class="step-title"><span>1.</span> First, let's see how many years you have to invest. Time impacts your ability to save for retirement.</h3>
   <label for="year-born">What year were you born?</label>
@@ -25,43 +26,47 @@ Consider the following when you plan your retirement strategy.
 </div>
 <p><button onclick="checkYearBorn(1);" class="usa-btn-primary">Find my funds</button></p>
 
-
 <!-- STEP 2 -->
+
 <div class="before-you-invest-tool">
   <div class="step2" id="review-funds">
     <h3 class="step-title"><span>2.</span> Great! Now review the funds ideally suited for your time horizon</h3>
     <div class="usa-grid-full">
 {% include components/before-you-invest-fund-block.html fund="Income"
-  one="You want to minimize the effect of the market DAV"
-  two="You need stability in your account DAV"
-  three="You are no longer concerned with long-term growth DAV"
+  one=""
+  two="Were born 1955 or earlier or are using your TSP savings or expect to in the near future"
+  three="Aims to preserve your assets while providing some growth"
 %}
 {% include components/before-you-invest-fund-block.html fund="2020"
-  one="You're intolerant of dips in the market DAV"
-  two="You can no longer tolerate risk DAV"
-  three="You no longer prioritize long-term growth DAV"
+  one=""
+  two="Were born 1956&ndash;1961 or plan to need your TSP savings between 2020 and 2024"
+  three="Aims to provide moderate growth with a moderate emphasis on preserving your assets"
 %}
 {% include components/before-you-invest-fund-block.html fund="2030"
-  one="You get anxious with every dip in the market"
-  two="You place higher priority on stability and less risk"
-  three="You place less priority on significant long-term growth"
+  one=""
+  two="Were born 1962&ndash;1971 or plan to need your TSP savings between 2025 and 2034"
+  three="Aims to provide moderate-to-high growth over time with a low emphasis on preserving your assets"
 %}
 {% include components/before-you-invest-fund-block.html fund="2040"
-  one="You prefer a low maintenance way of investing money"
-  two="You prefer a diversified mix of funds in your portfolio"
-  three="You would like to set-it and forget-it"
+  one=""
+  two="Were born 1972&ndash;1981 or plan to need your TSP savings between 2035 and 2044"
+  three="Focused more on the potential for high growth over time than on the preservation of assets"
 %}
 {% include components/before-you-invest-fund-block.html fund="2050"
-  one="You're willing to tolerate ups and downs in your account"
-  two="You have more time to let your money ride out the market waves"
-  three="You place higher priority on achieving long-term growth"
+  one=""
+  two="Were born 1982 or later or plan to need your TSP savings in 2045 or later"
+  three="Focused more on the potential for high growth over time than on the preservation of assets"
 %}
     </div>
 
-    <!-- should this be a grid? -->
-    <div class="usa-alert usa-alert-info" >
-    <div class="usa-alert-body best">
-      <p id="best-choice" class="usa-alert-text usa-font-lead">Based on the year you were born L XXXX is a good choice for you because you have time.</p>
+    <!-- Best L Fund explained -->
+    <section class="results-summary">
+    <div class="usa-grid">
+     <div class="usa-width-one-whole">
+       <p id="best-choice" class="usa-alert-text usa-font-lead">Based on the year you were born L XXXX is a good choice for you because you have time.</p>
+     </div>
     </div>
+    </section>
+
   </div>
 </div>
