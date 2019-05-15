@@ -137,7 +137,7 @@ money on the table. Are you contributing enough to get at least the full match f
 <!-- RECALCULATE -->
 <div class="usa-grid-full">
   <div class="usa-width-one-whole recalculate">
-    <p>Assumes a 3% rate of return, but you can make your own assumptions.</p>
+    <p>Assumes a 6% annual rate of return.</p>
     <div id="your-rate-of-return-input-error" class="">
         <label id="your-rate-of-return-label" class="" for="your-rate-of-return">Rate of return</label>
         <span id="your-rate-of-return-error-message" class="" role="alert"></span>
@@ -161,4 +161,4 @@ money on the table. Are you contributing enough to get at least the full match f
 <!-- ![How to maximize your 5% matching contributions](/assets/img/infographs/maximize-your-savings.png) -->
 
 ## Am I eligible for matching?
-Only employees covered by the <span data-term="Federal Employees' Retirement System (FERS)" class="js-glossary-toggle term term-end">Federal Employees Retirement System</span> (for civilians) and the <span data-term="Blended Retirement System (BRS)" class="js-glossary-toggle term term-end">Blended Retirement System </span> (for uniformed services) are eligible for matching. If you are brand new to federal or uniformed service, you are covered by one of these systems.
+Only employees covered by the <span data-term="Federal Employees' Retirement System (FERS)" class="js-glossary-toggle term term-end">Federal Employees Retirement System</span> (for civilians) and the <span data-term="Blended Retirement System (BRS)" class="js-glossary-toggle term term-end">Blended Retirement System </span> (for uniformed services) are eligible for matching. If you're brand new to federal or uniformed service, you are covered by one of these systems.
