@@ -20,7 +20,7 @@ FRTIB is required to publish a SORN anytime it creates, substantially modifies, 
 
 <ul class="usa-accordion">
 <!-- FRTIB-1 -->
-<li>
+<li id="frtib-1">
   <button class="usa-accordion-button"
     aria-expanded="false"
     aria-controls="a1">
@@ -148,7 +148,7 @@ FRTIB is required to publish a SORN anytime it creates, substantially modifies, 
   </div>
 </li>
 <!-- FRTIB-2 -->
-<li>
+<li id="frtib-2">
   <button class="usa-accordion-button"
     aria-expanded="false"
     aria-controls="a2">
@@ -242,7 +242,7 @@ FRTIB is required to publish a SORN anytime it creates, substantially modifies, 
   </div>
 </li>
 <!-- FRTIB-3 -->
-<li>
+<li id="frtib-3">
   <button class="usa-accordion-button"
     disabled
     aria-expanded="false"
@@ -252,7 +252,7 @@ FRTIB is required to publish a SORN anytime it creates, substantially modifies, 
   <div id="a3" class="usa-accordion-content" markdown="1"></div>
 </li>
 <!-- FRTIB-4 -->
-<li>
+<li id="frtib-4">
   <button class="usa-accordion-button"
     disabled
     aria-expanded="false"
@@ -262,7 +262,7 @@ FRTIB is required to publish a SORN anytime it creates, substantially modifies, 
   <div id="a4" class="usa-accordion-content" markdown="1"></div>
 </li>
 <!-- FRTIB-5 -->
-<li>
+<li id="frtib-5">
   <button class="usa-accordion-button"
     aria-expanded="false"
     aria-controls="a5">
@@ -360,7 +360,7 @@ FRTIB is required to publish a SORN anytime it creates, substantially modifies, 
   </div>
 </li>
 <!-- FRTIB-6 -->
-<li>
+<li id="frtib-6">
   <button class="usa-accordion-button"
     disabled
     aria-expanded="false"
@@ -370,7 +370,7 @@ FRTIB is required to publish a SORN anytime it creates, substantially modifies, 
   <div id="a6" class="usa-accordion-content" markdown="1"></div>
 </li>
 <!-- FRTIB-7 -->
-<li>
+<li id="frtib-7">
   <button class="usa-accordion-button"
     aria-expanded="false"
     aria-controls="a7">
@@ -456,7 +456,7 @@ FRTIB is required to publish a SORN anytime it creates, substantially modifies, 
   </div>
 </li>
 <!-- FRTIB-8 -->
-<li>
+<li id="frtib-8">
   <button class="usa-accordion-button"
     disabled
     aria-expanded="false"
@@ -466,7 +466,7 @@ FRTIB is required to publish a SORN anytime it creates, substantially modifies, 
   <div id="a8" class="usa-accordion-content" markdown="1"></div>
 </li>
 <!-- FRTIB-9 -->
-<li>
+<li id="frtib-9">
   <button class="usa-accordion-button"
     aria-expanded="false"
     aria-controls="a9">
@@ -555,7 +555,7 @@ FRTIB is required to publish a SORN anytime it creates, substantially modifies, 
   </div>
 </li>
 <!-- FRTIB-10 -->
-<li>
+<li id="frtib-10">
   <button class="usa-accordion-button"
     disabled
     aria-expanded="false"
@@ -565,7 +565,7 @@ FRTIB is required to publish a SORN anytime it creates, substantially modifies, 
   <div id="a10" class="usa-accordion-content" markdown="1"></div>
 </li>
 <!-- FRTIB-11 -->
-<li>
+<li id="frtib-11">
   <button class="usa-accordion-button"
     disabled
     aria-expanded="false"
@@ -575,7 +575,7 @@ FRTIB is required to publish a SORN anytime it creates, substantially modifies, 
     <div id="a11" class="usa-accordion-content" markdown="1"></div>
 </li>
 <!-- FRTIB-12 -->
-<li>
+<li id="frtib-12">
   <button class="usa-accordion-button"
     aria-expanded="false"
     aria-controls="a12">
@@ -672,7 +672,7 @@ FRTIB is required to publish a SORN anytime it creates, substantially modifies, 
   </div>
 </li>
 <!-- FRTIB-13 -->
-<li>
+<li id="frtib-13">
   <button class="usa-accordion-button"
     aria-expanded="false"
     aria-controls="a13">
@@ -758,7 +758,7 @@ FRTIB is required to publish a SORN anytime it creates, substantially modifies, 
   </div>
 </li>
 <!-- FRTIB-14 -->
-<li>
+<li id="frtib-14">
   <button class="usa-accordion-button"
     aria-expanded="false"
     aria-controls="a14">
@@ -850,7 +850,7 @@ FRTIB is required to publish a SORN anytime it creates, substantially modifies, 
   </div>
 </li>
 <!-- FRTIB-15 -->
-<li>
+<li id="frtib-15">
   <button class="usa-accordion-button"
     aria-expanded="false"
     aria-controls="a15">
@@ -940,7 +940,7 @@ FRTIB is required to publish a SORN anytime it creates, substantially modifies, 
   </div>
 </li>
 <!-- FRTIB-16 -->
-<li>
+<li id="frtib-16">
   <button class="usa-accordion-button"
     aria-expanded="false"
     aria-controls="a16">
@@ -1026,7 +1026,7 @@ FRTIB is required to publish a SORN anytime it creates, substantially modifies, 
   </div>
 </li>
 <!-- FRTIB-17 -->
-<li>
+<li id="frtib-17">
   <button class="usa-accordion-button"
     aria-expanded="false"
     aria-controls="a17">
@@ -1119,7 +1119,7 @@ FRTIB is required to publish a SORN anytime it creates, substantially modifies, 
   </div>
 </li>
 <!-- FRTIB-18 -->
-<li>
+<li id="frtib-18">
   <button class="usa-accordion-button"
     aria-expanded="false"
     aria-controls="a18">
@@ -1212,7 +1212,7 @@ FRTIB is required to publish a SORN anytime it creates, substantially modifies, 
   </div>
 </li>
 <!-- FRTIB-19 -->
-<li>
+<li id="frtib-19">
   <button class="usa-accordion-button"
     aria-expanded="false"
     aria-controls="a19">
@@ -1302,7 +1302,7 @@ FRTIB is required to publish a SORN anytime it creates, substantially modifies, 
   </div>
 </li>
 <!-- FRTIB-20 -->
-<li>
+<li id="frtib-20">
   <button class="usa-accordion-button"
     aria-expanded="false"
     aria-controls="a20">
@@ -1391,7 +1391,7 @@ FRTIB is required to publish a SORN anytime it creates, substantially modifies, 
 
 <ul class="usa-accordion">
 <!-- EEOC/GOVT-1 -->
-<li>
+<li id="frtib-eeoc-govt-1">
   <button class="usa-accordion-button"
     aria-expanded="false"
     aria-controls="b1">
@@ -1408,7 +1408,7 @@ FRTIB is required to publish a SORN anytime it creates, substantially modifies, 
   </div>
 </li>
 <!-- OPM/GOVT-1 -->
-<li>
+<li id="frtib-opm-govt-1">
   <button class="usa-accordion-button"
     aria-expanded="false"
     aria-controls="b2">
@@ -1434,7 +1434,7 @@ FRTIB is required to publish a SORN anytime it creates, substantially modifies, 
   </div>
 </li>
 <!-- OPM/GOVT-2-->
-<li>
+<li id="frtib-opm-govt-2-">
   <button class="usa-accordion-button"
     aria-expanded="false"
     aria-controls="b3">
@@ -1456,7 +1456,7 @@ FRTIB is required to publish a SORN anytime it creates, substantially modifies, 
   </div>
 </li>
 <!-- OPM/GOVT-3 -->
-<li>
+<li id="frtib-opm-govt-3">
   <button class="usa-accordion-button"
     aria-expanded="false"
     aria-controls="b4">
@@ -1477,7 +1477,7 @@ FRTIB is required to publish a SORN anytime it creates, substantially modifies, 
   </div>
 </li>
 <!-- OGE/GOVT-1 -->
-<li>
+<li id="frtib-oge-govt-1">
   <button class="usa-accordion-button"
     aria-expanded="false"
     aria-controls="b5">
@@ -1499,7 +1499,7 @@ FRTIB is required to publish a SORN anytime it creates, substantially modifies, 
   </div>
 </li>
 <!-- OGE/GOVT-2 -->
-<li>
+<li id="frtib-oge-govt-2">
   <button class="usa-accordion-button"
     aria-expanded="false"
     aria-controls="b6">
@@ -1518,7 +1518,7 @@ FRTIB is required to publish a SORN anytime it creates, substantially modifies, 
   </div>
 </li>
 <!-- GSA/GOVT-7 -->
-<li>
+<li id="frtib-gsa-govt-7">
   <button class="usa-accordion-button"
     aria-expanded="false"
     aria-controls="b7">
