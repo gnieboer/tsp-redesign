@@ -43,13 +43,21 @@ var singleFundData = function(fund) {
 }
 
 function getGrowthInception(fund) {
-  Highcharts.setOptions({
-    colors: ['#058DC7', '#FFFFFF', '#ED561B', '#FFFFFF']
-  });
+  var colorIndexFund = 'lf';
+  var colorIndexInfl = 'gray';
+  var colorIndexValues = 'white';
+
+  if (fund == 'G') { colorIndexFund = 'g'; colorIndexInfl = 'gray'; }
+  if (fund == 'F') { colorIndexFund = 'f'; colorIndexInfl = 'gray'; }
+  if (fund == 'C') { colorIndexFund = 'c'; colorIndexInfl = 'gray'; }
+  if (fund == 'S') { colorIndexFund = 's'; colorIndexInfl = 'gray'; }
+  if (fund == 'I') { colorIndexFund = 'i'; colorIndexInfl = 'gray'; }
+
   Highcharts.chart('growthInception', {
     credits: { enabled: false },
     chart: {
-      type: 'line'
+      type: 'line',
+      styledMode: true
     },
     title: {
       text: 'Growth of $100 since Inception'
@@ -57,6 +65,45 @@ function getGrowthInception(fund) {
     data: {
       csvURL: 'https://www.tsp.gov/components/CORS/getFundGrowthInflation.html?fund='+fund
     },
+    series: [{ colorIndex: colorIndexFund }, { colorIndex: colorIndexValues }, { colorIndex: colorIndexInfl }, { colorIndex: colorIndexValues }],
+    yAxis: {
+      labels: {
+        formatter: function() {
+          return '$' + this.value;
+        }
+      },
+      title: { text: '' }
+    },
+    tooltip: {
+      shared: true
+    }
+  });
+}
+
+function getFundIndexAverageAnnualReturns(fund) {
+  var colorIndexFund = 'lf';
+  var colorIndexInfl = 'gray';
+  var colorIndexValues = 'white';
+
+  if (fund == 'G') { colorIndexFund = 'g'; colorIndexInfl = 'gray'; }
+  if (fund == 'F') { colorIndexFund = 'f'; colorIndexInfl = 'gray'; }
+  if (fund == 'C') { colorIndexFund = 'c'; colorIndexInfl = 'gray'; }
+  if (fund == 'S') { colorIndexFund = 's'; colorIndexInfl = 'gray'; }
+  if (fund == 'I') { colorIndexFund = 'i'; colorIndexInfl = 'gray'; }
+
+  Highcharts.chart('growthInception', {
+    credits: { enabled: false },
+    chart: {
+      type: 'line',
+      styledMode: true
+    },
+    title: {
+      text: 'Growth of $100 since Inception'
+    },
+    data: {
+      csvURL: 'https://www.tsp.gov/components/CORS/getFundGrowthInflation.html?fund='+fund
+    },
+    series: [{ colorIndex: colorIndexFund }, { colorIndex: colorIndexValues }, { colorIndex: colorIndexInfl }, { colorIndex: colorIndexValues }],
     yAxis: {
       labels: {
         formatter: function() {

@@ -6,8 +6,28 @@
  * License: www.highcharts.com/license
  */
 
+
+.highcharts-color-g { fill: $color-g-fund; stroke: $color-g-fund; stroke-width: 1px; }
+.highcharts-color-f { fill: $color-f-fund; stroke: $color-f-fund; stroke-width: 1px; }
+.highcharts-color-c { fill: $color-c-fund; stroke: $color-c-fund; stroke-width: 1px; }
+.highcharts-color-s { fill: $color-s-fund; stroke: $color-s-fund; stroke-width: 1px; }
+.highcharts-color-i { fill: $color-i-fund; stroke: $color-i-fund; stroke-width: 1px; }
+.highcharts-color-ig { fill: $color-index-g; stroke: $color-index-g; stroke-width: 1px; }
+.highcharts-color-if { fill: $color-index-f; stroke: $color-index-f; stroke-width: 1px; }
+.highcharts-color-ic { fill: $color-index-c; stroke: $color-index-c; stroke-width: 1px; }
+.highcharts-color-is { fill: $color-index-s; stroke: $color-index-s; stroke-width: 1px; }
+.highcharts-color-ii { fill: $color-index-i; stroke: $color-index-i; stroke-width: 1px; }
+.highcharts-color-lf { fill: $color-l-fund; stroke: $color-l-fund; stroke-width: 1px; }
+.highcharts-color-black { fill: black; stroke: black; stroke-width: 1px; }
+.highcharts-color-white { fill: white; stroke: white; stroke-width: 1px; }
+.highcharts-color-red { fill: red; stroke: red; stroke-width: 1px; }
+.highcharts-color-blue { fill: blue; stroke: blue; stroke-width: 1px; }
+.highcharts-color-gray { fill: gray; stroke: gray; stroke-width: 1px; }
+
 // Colors for data series and points.
 $colors: #7cb5ec #434348 #90ed7d #f7a35c #8085e9 #f15c80 #e4d354 #2b908f #f45b5b #91e8e1 !default;
+//  $color-g-fund $color-f-fund $color-c-fund $color-s-fund $color-i-fund  $l-funds
+//  $color-usabi-fund $color-sp500-fund $color-djusc-fund $color-eafe-fund #000000 #ffffff ; //
 
 // Chart background, point stroke for markers and columns etc
 $background-color: #ffffff !default;
