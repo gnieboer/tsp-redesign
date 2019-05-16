@@ -80,6 +80,7 @@ function getGrowthInception(fund) {
   });
 }
 
+var barChart;
 function getFundIndexAverageAnnualReturns(fund) {
   var colorIndexFund = 'lf';
   var colorIndexInfl = 'gray';
@@ -91,28 +92,43 @@ function getFundIndexAverageAnnualReturns(fund) {
   if (fund == 'S') { colorIndexFund = 's'; colorIndexInfl = 'gray'; }
   if (fund == 'I') { colorIndexFund = 'i'; colorIndexInfl = 'gray'; }
 
-  Highcharts.chart('growthInception', {
+  barChart = Highcharts.chart('annualReturnsColumn', {
     credits: { enabled: false },
     chart: {
-      type: 'line',
+      type: 'column',
       styledMode: true
     },
     title: {
-      text: 'Growth of $100 since Inception'
+      // text: 'Average Rates of Return' + '   <span class="hc-note">(As of December ' + year + ')</span>'
+      text: 'Average Rates of Return'
     },
     data: {
-      csvURL: 'https://www.tsp.gov/components/CORS/getFundGrowthInflation.html?fund='+fund
+      switchRowsAndColumns: true,
+      beforeParse: function (csv) {
+        var data = csv.split('|');
+        setTitle(data[1]);
+        return data[0];
+      },
+      csvURL: 'https://www.tsp.gov/components/CORS/getFundIndexAverageAnnualReturns.html?fund=S'
     },
-    series: [{ colorIndex: colorIndexFund }, { colorIndex: colorIndexValues }, { colorIndex: colorIndexInfl }, { colorIndex: colorIndexValues }],
+    xAxis: {
+          crosshair: true
+    },
     yAxis: {
-      labels: {
-        formatter: function() {
-          return '$' + this.value;
-        }
-      }
+          // min: 0,
+          title: { text: '% return' },
+      labels: { formatter: function() { return this.value + '%'; } }
     },
     tooltip: {
-      shared: true
+          headerFormat: '<strong>{point.key}</strong><table>',
+          pointFormat: '<tr><td style="color:{series.color};padding:0">{series.name}: </td>' +
+              '<td style="padding:0"><b>{point.y:.1f}%</b></td></tr>',
+          footerFormat: '</table>',
+          shared: true,
+          useHTML: true
     }
   });
+}
+function setTitle(year) {
+	barChart.setTitle({text: 'Average Rates of Return' + '   <span class="hc-note">(As of December ' + year + ')</span>'});
 }
