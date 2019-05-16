@@ -54,5 +54,6 @@ scripts:
 bottom-scripts: /assets/js/ajaxFetch.js
 document-ready:
   - singleFundData('I');
+  - getFundIndexAverageAnnualReturns('I');
   - getGrowthInception('I');
 ---

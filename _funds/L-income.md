@@ -60,5 +60,6 @@ scripts:
 bottom-scripts: /assets/js/ajaxFetch.js
 document-ready:
   - singleFundData('Linc');
+  - getFundIndexAverageAnnualReturns('Linc');
   - getGrowthInception('Linc');
 ---
