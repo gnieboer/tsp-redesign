@@ -10,15 +10,16 @@ var singleFundData = function(fund) {
   var serverCall = $.get(siteName + '/' + scriptName);
     serverCall.done(
       function (data) {
-          var values = data.split(", ");
+          var rc = data.split("|");
+          var values = rc[0].split(", ");
           console.log('values length is ', values.length);
-          if (values.length == 8) {
-            $('#aar_caption').html("Average annual returns (as of December "+values[7]+")");
-            $('#aar_ytd').html(values[1]);
-            $('#aar_1yr').html(values[2]);
-            $('#aar_3yr').html(values[3]);
-            $('#aar_5yr').html(values[4]);
-            $('#aar_10yr').html(values[5]);
+          if (values.length == 7) {
+            $('#aar_caption').html("Average annual returns (as of December "+rc[1]+")");
+            $('#aar_ytd').html(values[1]+'%');
+            $('#aar_1yr').html(values[2]+'%');
+            $('#aar_3yr').html(values[3]+'%');
+            $('#aar_5yr').html(values[4]+'%');
+            $('#aar_10yr').html(values[5]+'%');
             // $('#aar_incep').html(values[6]);
           }
           console.log(name + ': ' + data);
@@ -82,15 +83,14 @@ function getGrowthInception(fund) {
 
 var barChart;
 function getFundIndexAverageAnnualReturns(fund) {
-  var colorIndexFund = 'lf';
-  var colorIndexInfl = 'gray';
-  var colorIndexValues = 'white';
+  var colorFund = 'lf';
+  var colorIndex = 'gray';
 
-  if (fund == 'G') { colorIndexFund = 'g'; colorIndexInfl = 'gray'; }
-  if (fund == 'F') { colorIndexFund = 'f'; colorIndexInfl = 'gray'; }
-  if (fund == 'C') { colorIndexFund = 'c'; colorIndexInfl = 'gray'; }
-  if (fund == 'S') { colorIndexFund = 's'; colorIndexInfl = 'gray'; }
-  if (fund == 'I') { colorIndexFund = 'i'; colorIndexInfl = 'gray'; }
+  if (fund == 'G') { colorFund = 'g'; colorIndex = 'ig'; }
+  if (fund == 'F') { colorFund = 'f'; colorIndex = 'if'; }
+  if (fund == 'C') { colorFund = 'c'; colorIndex = 'ic'; }
+  if (fund == 'S') { colorFund = 's'; colorIndex = 'is'; }
+  if (fund == 'I') { colorFund = 'i'; colorIndex = 'ii'; }
 
   barChart = Highcharts.chart('annualReturnsColumn', {
     credits: { enabled: false },
@@ -109,8 +109,9 @@ function getFundIndexAverageAnnualReturns(fund) {
         setTitle(data[1]);
         return data[0];
       },
-      csvURL: 'https://www.tsp.gov/components/CORS/getFundIndexAverageAnnualReturns.html?fund=S'
+      csvURL: 'https://www.tsp.gov/components/CORS/getFundIndexAverageAnnualReturns.html?fund='+fund
     },
+    series: [{ colorIndex: colorFund }, { colorIndex: colorIndex }],
     xAxis: {
           crosshair: true
     },
