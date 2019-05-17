@@ -29,22 +29,14 @@ Here are some things you can expect while you’re in nonpay status:
 
 ## What changes?
 
-### All accounts
-* You will not be able to contribute because your employee contributions are made through payroll deductions.
-* You will not be eligible to request a new TSP loan.
+While you are in nonpay status:
 
-### Uniformed services accounts
++ You will not be able to contribute to the TSP because your employee contributions must be made through payroll deductions.
++ You are not eligible to request a new TSP loan.
++ If you are a FERS or BRS participant, you will not receive Agency/Service Matching Contributions (which are based on your employee contributions) or Agency/Service Automatic (1%) Contributions (which are calculated on basic pay earned each pay period). However, please note the following:
++ If you are a civilian employee in nonpay status to perform military service, you may make contributions to your uniformed services account from your uniformed services pay. You will not receive agency contributions in your uniformed services account, but when you return to civilian pay status you may be entitled to make up TSP employee contributions to your civilian account and, if you're a FERS employee, receive restored agency contributions. If you are also a BRS participant, you will receive Service Automatic (1%) Contributions and, if eligible, Service Matching Contributions. Your reclaimed agency contributions to your civilian account will be reduced accordingly. For more information, read the fact sheet [TSP Benefits That Apply to Members of the Military Who Return to Federal Civilian Service](https://www.tsp.gov/PDF/formspubs/tspfs08.pdf).
 
-* If you're a civilian employee in non-pay status to perform military service, you may make contributions to your uniformed services account from your uniformed services pay.
-* You will not receive Agency Contributions in your uniformed services account, but when you return to civilian pay status, you may be entitled to make up TSP contributions to your civilian account (and receive restored Agency Contributions, if you are a FERS employee). If you're a Blended Retirement System (BRS) participant, you will receive Service Automatic (1%) Contributions and, if eligible, Service Matching Contributions. Your reclaimed agency contributions to your civilian account will be reduced accordingly.
 
-For more information, read the fact sheet [TSP Benefits That Apply to Members of the Military Who Return to Federal Civilian Service](https://www.tsp.gov/PDF/formspubs/tspfs08.pdf).
-
-### FERS employee accounts
-
-* You will not receive <span data-term="Agency Matching Contributions" class="js-glossary-toggle term term-end">Agency Matching Contributions</span> (which are based on your employee contributions).
-
-* You will not receive <span data-term="Agency Automatic (1%) Contributions" class="js-glossary-toggle term term-end">Agency Automatic (1%) Contributions</span>, which are calculated on basic pay earned each pay period.
 
 ## What are the effects of non-pay status on my contributions and loans?
 
