@@ -10,15 +10,16 @@ var singleFundData = function(fund) {
   var serverCall = $.get(siteName + '/' + scriptName);
     serverCall.done(
       function (data) {
-          var values = data.split(", ");
+          var rc = data.split("|");
+          var values = rc[0].split(", ");
           console.log('values length is ', values.length);
-          if (values.length == 8) {
-            $('#aar_caption').html("Average annual returns (as of December "+values[7]+")");
-            $('#aar_ytd').html(values[1]);
-            $('#aar_1yr').html(values[2]);
-            $('#aar_3yr').html(values[3]);
-            $('#aar_5yr').html(values[4]);
-            $('#aar_10yr').html(values[5]);
+          if (values.length == 7) {
+            $('#aar_caption').html("Average annual returns (as of December "+rc[1]+")");
+            $('#aar_ytd').html(values[1]+'%');
+            $('#aar_1yr').html(values[2]+'%');
+            $('#aar_3yr').html(values[3]+'%');
+            $('#aar_5yr').html(values[4]+'%');
+            $('#aar_10yr').html(values[5]+'%');
             // $('#aar_incep').html(values[6]);
           }
           console.log(name + ': ' + data);
@@ -43,13 +44,21 @@ var singleFundData = function(fund) {
 }
 
 function getGrowthInception(fund) {
-  Highcharts.setOptions({
-    colors: ['#058DC7', '#FFFFFF', '#ED561B', '#FFFFFF']
-  });
+  var colorIndexFund = 'lf';
+  var colorIndexInfl = 'gray';
+  var colorIndexValues = 'white';
+
+  if (fund == 'G') { colorIndexFund = 'g'; colorIndexInfl = 'gray'; }
+  if (fund == 'F') { colorIndexFund = 'f'; colorIndexInfl = 'gray'; }
+  if (fund == 'C') { colorIndexFund = 'c'; colorIndexInfl = 'gray'; }
+  if (fund == 'S') { colorIndexFund = 's'; colorIndexInfl = 'gray'; }
+  if (fund == 'I') { colorIndexFund = 'i'; colorIndexInfl = 'gray'; }
+
   Highcharts.chart('growthInception', {
     credits: { enabled: false },
     chart: {
-      type: 'line'
+      type: 'line',
+      styledMode: true
     },
     title: {
       text: 'Growth of $100 since Inception'
@@ -57,15 +66,70 @@ function getGrowthInception(fund) {
     data: {
       csvURL: 'https://www.tsp.gov/components/CORS/getFundGrowthInflation.html?fund='+fund
     },
+    series: [{ colorIndex: colorIndexFund }, { colorIndex: colorIndexValues }, { colorIndex: colorIndexInfl }, { colorIndex: colorIndexValues }],
     yAxis: {
       labels: {
         formatter: function() {
           return '$' + this.value;
         }
-      }
+      },
+      title: { text: '' }
     },
     tooltip: {
       shared: true
     }
   });
+}
+
+var barChart;
+function getFundIndexAverageAnnualReturns(fund) {
+  var colorFund = 'lf';
+  var colorIndex = 'gray';
+
+  if (fund == 'G') { colorFund = 'g'; colorIndex = 'ig'; }
+  if (fund == 'F') { colorFund = 'f'; colorIndex = 'if'; }
+  if (fund == 'C') { colorFund = 'c'; colorIndex = 'ic'; }
+  if (fund == 'S') { colorFund = 's'; colorIndex = 'is'; }
+  if (fund == 'I') { colorFund = 'i'; colorIndex = 'ii'; }
+
+  barChart = Highcharts.chart('annualReturnsColumn', {
+    credits: { enabled: false },
+    chart: {
+      type: 'column',
+      styledMode: true
+    },
+    title: {
+      // text: 'Average Rates of Return' + '   <span class="hc-note">(As of December ' + year + ')</span>'
+      text: 'Average Rates of Return'
+    },
+    data: {
+      switchRowsAndColumns: true,
+      beforeParse: function (csv) {
+        var data = csv.split('|');
+        setTitle(data[1]);
+        return data[0];
+      },
+      csvURL: 'https://www.tsp.gov/components/CORS/getFundIndexAverageAnnualReturns.html?fund='+fund
+    },
+    series: [{ colorIndex: colorFund }, { colorIndex: colorIndex }],
+    xAxis: {
+          crosshair: true
+    },
+    yAxis: {
+          // min: 0,
+          title: { text: '% return' },
+      labels: { formatter: function() { return this.value + '%'; } }
+    },
+    tooltip: {
+          headerFormat: '<strong>{point.key}</strong><table>',
+          pointFormat: '<tr><td style="color:{series.color};padding:0">{series.name}: </td>' +
+              '<td style="padding:0"><b>{point.y:.1f}%</b></td></tr>',
+          footerFormat: '</table>',
+          shared: true,
+          useHTML: true
+    }
+  });
+}
+function setTitle(year) {
+	barChart.setTitle({text: 'Average Rates of Return' + '   <span class="hc-note">(As of December ' + year + ')</span>'});
 }
