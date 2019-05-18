@@ -48,24 +48,39 @@ money on the table. Are you contributing enough to get at least the full match f
 </div>
 <div class="usa-grid-full">
   <div class="usa-width-one-third">
-  <i class="material-icons md-144">person</i>
-  <p><label for="your-age">Age</label>
-  <input id="your-age" name="retire-age" type="number"></p></div>
+    <i class="material-icons md-144">person</i>
+    <div id="your-age-input-error" class="">
+        <label id="your-age-label" class="" for="your-age">Age</label>
+        <span id="your-age-error-message" class="" role="alert"></span>
+        <input id="your-age" name="your-age" type="number"
+          onChange="ageGood(0);" onBlur="ageGood(0);" aria-labeledby="your-age-label" aria-describedby="">
+    </div>
+  </div>
   <div class="usa-width-one-third">
-  <i class="material-icons md-144">attach_money</i>
-  <p><label for="your-salary">Salary</label>
-  <input id="your-salary" name="salary" type="text"></p></div>
+    <i class="material-icons md-144">attach_money</i>
+    <div id="your-salary-input-error" class="">
+        <label id="your-salary-label" class="" for="your-salary">Salary</label>
+        <span id="your-salary-error-message" class="" role="alert"></span>
+        <input id="your-salary" name="your-salary" type="number"
+          onChange="salaryGood(0);" onBlur="salaryGood(0);" aria-labeledby="your-salary-label" aria-describedby="">
+    </div>
+  </div>
   <div class="usa-width-one-third">
-  <i class="material-icons md-144">date_range</i>
-  <p>
-  <label for="pay-frequency">Pay frequency</label>
-    <select id="pay-frequency" name="frequency" type="text">
-       <option value="Select">Select Your Pay Schedule</option>
-       <option value="Biweekly">Biweekly (every 2 weeks, 26 times a year)</option>
-       <option value="Weekly">Weekly (52 times a year)</option>
-       <option value="Semi-monthly">Semi-monthly (twice a month, 24 times a year)</option>
-       <option value="Monthly">Monthly (12 times a year).</option>
-    </select></p></div>
+    <i class="material-icons md-144">date_range</i>
+    <div id="pay-frequency-input-error" class="">
+        <label id="pay-frequency-label" class="" for="pay-frequency">Pay frequency</label>
+        <span id="pay-frequency-error-message" class="" role="alert"></span>
+        <select id="pay-frequency" name="pay-frequency" type="text"
+            onChange="frequencyGood(0);" onBlur="frequencyGood(0);"
+            aria-labeledby="pay-frequency-label" aria-describedby="">
+           <option value="Select">Select Your Pay Schedule</option>
+           <option value="Biweekly">Biweekly (every 2 weeks, 26 times a year)</option>
+           <option value="Weekly">Weekly (52 times a year)</option>
+           <option value="Semi-monthly">Semi-monthly (twice a month, 24 times a year)</option>
+           <option value="Monthly">Monthly (12 times a year).</option>
+        </select>
+    </div>
+  </div>
 </div>
 <div class="usa-grid-full">
   <div class="usa-width-one-whole"><button class="usa-button" onClick="calculate(1);">Customize</button></div>
@@ -122,13 +137,14 @@ money on the table. Are you contributing enough to get at least the full match f
 <!-- RECALCULATE -->
 <div class="usa-grid-full">
   <div class="usa-width-one-whole recalculate">
-  <p>Assumes a 3% rate of return, but you can make your own assumptions.</p>
-  <label for="your-rate-of-return">Rate of return</label>
-    <span>
-      <input id="your-rate-of-return" name="return-rate" type="number" value="3.0">
-      <span class="percent">%</span>
-      <button class="usa-button" onClick="calculate(1);">Recalculate</button>
-    </span>
+    <p>Assumes a 6% annual rate of return.</p>
+    <div id="your-rate-of-return-input-error" class="">
+        <label id="your-rate-of-return-label" class="" for="your-rate-of-return">Rate of return</label>
+        <span id="your-rate-of-return-error-message" class="" role="alert"></span>
+        <input id="your-rate-of-return" name="your-rate-of-return" type="number" value="3.0"
+            onChange="rateGood(0);" onBlur="rateGood(0);" aria-labeledby="your-rate-of-return-label" aria-describedby=""><span class="percent">%</span>
+            <button class="usa-button" onClick="calculate(1);">Recalculate</button>
+    </div>
   </div>
 </div>
 
@@ -145,4 +161,4 @@ money on the table. Are you contributing enough to get at least the full match f
 <!-- ![How to maximize your 5% matching contributions](/assets/img/infographs/maximize-your-savings.png) -->
 
 ## Am I eligible for matching?
-Only employees covered by the <span data-term="Federal Employees' Retirement System (FERS)" class="js-glossary-toggle term term-end">Federal Employees Retirement System</span> (for civilians) and the <span data-term="Blended Retirement System (BRS)" class="js-glossary-toggle term term-end">Blended Retirement System </span> (for uniformed services) are eligible for matching. If you are brand new to federal or uniformed service, you are covered by one of these systems.
+Only employees covered by the <span data-term="Federal Employees' Retirement System (FERS)" class="js-glossary-toggle term term-end">Federal Employees Retirement System</span> (for civilians) and the <span data-term="Blended Retirement System (BRS)" class="js-glossary-toggle term term-end">Blended Retirement System </span> (for uniformed services) are eligible for matching. If you're brand new to federal or uniformed service, you are covered by one of these systems.
