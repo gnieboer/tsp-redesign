@@ -17,12 +17,12 @@ questions:
   - question: How can I use the G Fund in my TSP?
     answer: Consider investing in the G Fund if you would like to have all or a portion of your TSP account completely protected from loss. If you choose to invest in the G Fund, you are placing a higher priority on the stability and preservation of your money than on the opportunity to potentially achieve greater long-term growth in your account through investment in the other TSP funds.
 avg_annual_returns:
-    ytd: 12.89%
-    one_yr: 13.89%
-    three_yr: 14.89%
-    five_yr: 15.89%
-    ten_yr: 16.89%
-    inception:
+    ytd: "-"
+    one_yr: "-"
+    three_yr: "-"
+    five_yr: "-"
+    ten_yr: "-"
+    inception: "-"
 summary_details:
     assets: $67.6 billion
     admin_expense: $0.032/$1,000 account balance. 0.032% (3.2 basis points)

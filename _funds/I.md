@@ -17,12 +17,12 @@ questions:
   - question: How can I use the I Fund in my TSP?
     answer: The I Fund can be useful in a portfolio that also contains stock funds that track other indexes such as the C Fund and the S Fund. By investing in all segments of the stock market (as opposed to just one), you reduce your exposure to market risk. The I Fund can also be useful in a portfolio that contains bonds. A retirement portfolio that contains a bond fund like the F Fund, along with other stock funds, like the C and S Funds, will tend to be less volatile than one that contains stock funds alone.
 avg_annual_returns:
-    ytd: 12.89%
-    one_yr: 13.89%
-    three_yr: 14.89%
-    five_yr: 15.89%
-    ten_yr: 16.89%
-    inception:
+    ytd: "-"
+    one_yr: "-"
+    three_yr: "-"
+    five_yr: "-"
+    ten_yr: "-"
+    inception: "-"
 summary_details:
     assets: $67.6 billion
     admin_expense: $0.032/$1,000 account balance. 0.032% (3.2 basis points)

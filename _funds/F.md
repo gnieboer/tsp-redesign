@@ -17,12 +17,12 @@ questions:
   - question: How can I use the F Fund in my TSP?
     answer: In periods of falling interest rates, the F Fund will experience gains from the resulting rise in bond prices. So in the long run, you may expect F Fund returns to exceed those of the G Fund; however, you should also expect greater price volatility (up and down movements). A retirement portfolio that contains stock funds, like the C, S, and I Funds, along with the F Fund, will tend to be less volatile than one that contains stock funds alone.
 avg_annual_returns:
-    ytd: 12.89%
-    one_yr: 13.89%
-    three_yr: 14.89%
-    five_yr: 15.89%
-    ten_yr: 16.89%
-    inception:
+    ytd: "-"
+    one_yr: "-"
+    three_yr: "-"
+    five_yr: "-"
+    ten_yr: "-"
+    inception: "-"
 summary_details:
     assets: $67.6 billion
     admin_expense: $0.032/$1,000 account balance. 0.032% (3.2 basis points)
