@@ -3,9 +3,10 @@ permalink: /funds-lifecycle/l-income/
 layout: fund-details
 title: L Income
 sidenav: fund-options
-Fund_letter: L
+Fund_type: L
+Fund_name: L Income
 Fund_order: 7
-Fund_subtitle: L income
+Fund_subtitle:
 Fund_objective: The L Income Fund’s investment objective is to achieve a low level of growth with a high emphasis on preservation of assets. Unlike the other four L Funds, the L Income Fund's asset allocation does not change quarterly. However, like the other funds, it is rebalanced daily to maintain its target investment mix.
 questions:
   - question: Why should I invest in the L Income Fund?
@@ -24,10 +25,7 @@ avg_annual_returns:
 summary_details:
   assets: $67.6 billion
   admin_expense: $0.033/$1,000 account balance 0.033% (3.3 basis points)
-  other_expense:
-    - 0.003/$1,000 account balance 0.003% (0.3 basis points)
-    - 0.003/$1,000 account balance 0.003% (0.3 basis points)
-    - 0.003/$1,000 account balance 0.003% (0.3 basis points)
+  other_expense: $0.003/$1,000 account balance 0.003% (0.3 basis points)
   benchmark_index: Dow Jones U.S. Completion TSM Index | www.djindexes.com
   asset_manager: BlackRock Institutional Trust Company, N.A
 top_ten_holdings:

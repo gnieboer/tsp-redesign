@@ -3,9 +3,9 @@ permalink: /funds-individual/i-fund/
 layout: fund-details
 title: I fund
 sidenav: fund-options
-Fund_letter: I
+Fund_type: Index
+Fund_name: I Fund
 Fund_order: 5
-subfund_name:
 Fund_subtitle: International Stock Index Investment Fund
 Fund_objective: The I Fund's investment objective is to match the performance of the MSCI EAFE (Europe, Australasia, Far East) Index.
 Fund_objective_short: To match the performance of the MSCI EAFE (Europe, Australasia, Far East) Index.
