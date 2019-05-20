@@ -9,36 +9,38 @@ function checkYearBorn(doCalc) {
 }
 
 function pickBestFund(born) {
-  if (born >= 1982) { return [2040, 2050, '']; }
-  if (born >= 1972) { return [2030, 2040, 2050]; }
-  if (born >= 1962) { return [2020, 2030, 2040]; }
-  if (born >= 1956) { return ['Income', 2020, 2030]; }
-  return ['', 'Income', 2020];  // oldest choice
-  return true;
+  // return content name for three columns and which column to highlight
+  if (born >= 1982) { return [2030, 2040, 2050, 2050, 'three']; }
+  if (born >= 1972) { return [2030, 2040, 2050, 2040, 'two']; }
+  if (born >= 1962) { return [2020, 2030, 2040, 2030, 'two']; }
+  if (born >= 1956) { return ['Income', 2020, 2030, 2020, 'two']; }
+  return ['Income', 2020, 2030, 'Income', 'one'];  // oldest choice
 }
 
 function showChoice(born) {
   // assume oldest choice
   var fundArray = pickBestFund(born);
-  var fundBefore = fundArray[0];
-  var fund = fundArray[1];
-  var fundAfter = fundArray[2];
-
-  $('#L'+'Income'+'outer').hide();
-  $('#L'+'2020'+'outer').hide();
-  $('#L'+'2030'+'outer').hide();
-  $('#L'+'2040'+'outer').hide();
-  $('#L'+'2050'+'outer').hide();
+  var fundOne = fundArray[0];
+  var fundTwo = fundArray[1];
+  var fundThree = fundArray[2];
+  var fund = fundArray[3];
+  var success = fundArray[4];
 
   // show best 3 choices
-  if (fundBefore != '') { $('#L'+fundBefore+'outer').show(); }
-  $('#L'+fund+'outer').show();
-  if (fundAfter != '') { $('#L'+fundAfter+'outer').show(); }
+  $('#column-one-inner').html($('#L'+fundOne+'inner').html());
+  $('#column-two-inner').html($('#L'+fundTwo+'inner').html());
+  $('#column-three-inner').html($('#L'+fundThree+'inner').html());
   bestChoice(fund);
 
   // highlight best bestChoice
-  $('#L'+fund+'outer').addClass('success');
-  $('#L'+fund+'inner').addClass('success');
+
+  var columns = ['one', 'two', 'three'];
+  columns.forEach(function(c) {
+    $('#column-'+ c +'-outer').removeClass('success');
+    $('#column-'+ c +'-inner').removeClass('success');
+  });
+  $('#column-'+success+'-outer').addClass('success');
+  $('#column-'+success+'-inner').addClass('success');
   $('#review-funds').show();
   return true;
 }
