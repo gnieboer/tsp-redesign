@@ -3,9 +3,9 @@ permalink: /funds-individual/c-fund/
 layout: fund-details
 title: C fund
 sidenav: fund-options
-Fund_letter: C
+Fund_type: Index
+Fund_name: C Fund
 Fund_order: 3
-subfund_name:
 Fund_subtitle: Common Stock Index Investment Fund
 Fund_objective: The C Fund's investment objective is to match the performance of the Standard and Poor's 500 (S&P 500) Index, a broad market index made up of stocks of 500 large to medium-sized U.S. companies.
 questions:

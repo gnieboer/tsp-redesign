@@ -3,10 +3,9 @@ permalink: /funds-individual/g-fund/
 layout: fund-details
 title: G fund
 sidenav: fund-options
-Fund_letter: G
+Fund_type: Index
+Fund_name: G Fund
 Fund_order: 1
-Fund_debug: 1
-subfund_name:
 Fund_subtitle: Government Securities Investment Fund
 Fund_objective: The G Fund's investment objective is to produce a rate of return that is higher than inflation while avoiding exposure to credit (default) risk and market price fluctuations.
 questions:

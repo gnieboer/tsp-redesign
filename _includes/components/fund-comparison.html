@@ -1,11 +1,29 @@
 {% assign sorted = site.funds | where: "Fund_debug", "1" | sort: 'Fund_order' %}
 
 {% if include.lifecycle %}
-  {% assign sorted = site.funds | where: "Fund_letter", "L" | sort: 'Fund_order' %}
+  {% assign sorted = site.funds | where: "Fund_type", "L" | sort: 'Fund_order' %}
 {% else %}
-  {% assign sorted = site.funds | where_exp:"fund", "fund.Fund_letter != 'L'" | sort: 'Fund_order' %}
+  {% assign sorted = site.funds | where_exp:"fund", "fund.Fund_type != 'L'" | sort: 'Fund_order' %}
 {% endif %}
 
+
+<fieldset class="usa-fieldset-inputs usa-sans comparison">
+  <legend>Compare up to three funds</legend>
+  <ul id="fund-comparison" class="usa-unstyled-list flex space-evenly">
+    {% for fund in sorted %}
+    <li>
+      <input type="checkbox" name="fundCB" id="compare-show-col{{ forloop.index }}" onClick="toggleColumn(this, 'col{{ forloop.index }}');">
+      <label for="compare-show-col{{ forloop.index }}">{{ fund.Fund_name }}</label>
+    </li>
+    {% endfor %}
+<!--
+    <li>
+      <input id="truth" type="checkbox" name="historical-figures-1" value="truth" checked>
+      <label for="truth">G fund</label>
+    </li>
+    -->
+  </ul>
+</fieldset>
 
 
 <div class="fund-comparison-tool">
@@ -15,10 +33,10 @@
         <tr>
             <td></td>
       {% for fund in sorted %}
-      <th scope="col">
-      <div class="flex-item fund-item fund-item-inactive visible" id="{{ fund.Fund_letter }}-fund">
+      <th scope="col" class="hide col{{ forloop.index }}">
+      <div class="flex-item fund-item fund-item-inactive visible" id="{{ fund.Fund_name | downcase | replace: " ", "-" }}">
       <div class="fund-header">
-      <span class="{{ fund.Fund_letter }}-fund">{{ fund.Fund_letter }} Fund</span>
+      <span class="{{ fund.Fund_name | downcase | replace: " ", "-" }}">{{ fund.Fund_name }}</span>
       {{ fund.Fund_subtitle }}
       </div>
       </div>
@@ -30,7 +48,7 @@
       <tr>
       <th scope="row">Objective</th>
       {% for fund in sorted %}
-      <td class="fund-content">
+      <td class="fund-content hide col{{ forloop.index }}">
 
       <p>{{ fund.Fund_objective_short }}</p>
 
@@ -43,44 +61,68 @@
           Return<br /><span>Year-to-date</span>
           </th>
       {% for fund in sorted %}
-        <td class="fund-content">
-          <p class="numeric">{{ fund.avg_annual_returns.ytd }}</p>
+        <td class="fund-content  hide col{{ forloop.index }}">
+          <p id='ret-YTD-{{ fund.Fund_name | downcase | replace: " ", "-" }}' class="numeric rowYTD">{{ fund.avg_annual_returns.ytd }}</p>
         </td>
       {% endfor %}
       </tr>
         <!-- Return 1-year -->
         <tr>
           <th scope="row">
-            <input type="checkbox" id="one-year-show-{{ fund.Fund_letter | downcase }}-fund" />
-            <label for="one-year-show-{{ fund.Fund_letter | downcase }}-fund">1-year</label>
+            <input type="checkbox" id="one-year-show" onClick="toggleRow(this, 'row1YR');" />
+            <label for="one-year-show">1-year</label>
           </th>
         {% for fund in sorted %}
-          <td class="fund-content">
-            {{ fund.avg_annual_returns.one_yr }}
+          <td class="fund-content hide col{{ forloop.index }}">
+            <p id='ret-1YR-{{ fund.Fund_name | downcase | replace: " ", "-" }}' class="numeric row1YR hide">{{ fund.avg_annual_returns.one_yr }}</p>
+          </td>
+        {% endfor %}
+        </tr>
+        <!-- Return 3-year -->
+        <tr>
+          <th scope="row">
+            <input type="checkbox" id="three-year-show" onClick="toggleRow(this, 'row3YR');" />
+            <label for="three-year-show">3-year</label>
+          </th>
+        {% for fund in sorted %}
+          <td class="fund-content hide col{{ forloop.index }}">
+            <p id='ret-3YR-{{ fund.Fund_name | downcase | replace: " ", "-" }}' class="numeric row3YR hide">{{ fund.avg_annual_returns.three_yr }}</p>
           </td>
         {% endfor %}
         </tr>
         <!-- Return 5-year -->
         <tr>
           <th scope="row">
-            <input type="checkbox" id="five-year-show-{{ fund.Fund_letter | downcase }}-fund" />
-            <label for="five-year-show-{{ fund.Fund_letter | downcase }}-fund">5-year</label>
+            <input type="checkbox" id="five-year-show" onClick="toggleRow(this, 'row5YR');" />
+            <label for="five-year-show">5-year</label>
           </th>
         {% for fund in sorted %}
-          <td class="fund-content">
-            {{ fund.avg_annual_returns.five_yr }}
+          <td class="fund-content hide col{{ forloop.index }}">
+            <p id='ret-5YR-{{ fund.Fund_name | downcase | replace: " ", "-" }}' class="numeric row5YR hide">{{ fund.avg_annual_returns.five_yr }}</p>
           </td>
         {% endfor %}
         </tr>
         <!-- Return 10-year -->
         <tr>
           <th scope="row">
-            <input type="checkbox" id="ten-year-show-{{ fund.Fund_letter | downcase }}-fund" />
-            <label for="ten-year-show-{{ fund.Fund_letter | downcase }}-fund">10-year</label>
+            <input type="checkbox" id="ten-year-show" onClick="toggleRow(this, 'row10YR');" />
+            <label for="ten-year-show">10-year</label>
           </th>
         {% for fund in sorted %}
-          <td class="fund-content">
-            {{ fund.avg_annual_returns.ten_yr }}
+          <td class="fund-content hide col{{ forloop.index }}">
+            <p id='ret-10YR-{{ fund.Fund_name | downcase | replace: " ", "-" }}' class="numeric row10YR hide">{{ fund.avg_annual_returns.ten_yr }}</p>
+          </td>
+        {% endfor %}
+        </tr>
+        <!-- Return Inception -->
+        <tr>
+          <th scope="row">
+            <input type="checkbox" id="life-show" onClick="toggleRow(this, 'rowLife');" />
+            <label for="life-show">Life</label>
+          </th>
+        {% for fund in sorted %}
+          <td class="fund-content hide col{{ forloop.index }}">
+            <p id='ret-Life-{{ fund.Fund_name | downcase | replace: " ", "-" }}' class="numeric rowLife hide">{{ fund.avg_annual_returns.inception }}</p>
           </td>
         {% endfor %}
         </tr>
@@ -90,7 +132,7 @@
           Risk
           </th>
       {% for fund in sorted %}
-        <td class="fund-content">
+        <td class="fund-content hide col{{ forloop.index }}">
           <ul class="flex justify-center {{ fund.risk_level }}-risk">
             <li><i class="fas fa-circle"></i></li>
             <li><i class="fas fa-circle"></i></li>
@@ -108,7 +150,7 @@
           Expense
           </th>
       {% for fund in sorted %}
-        <td class="fund-content">
+        <td class="fund-content hide col{{ forloop.index }}">
           <p class="numeric">{{ fund.summary_details.other_expense }}</p>
         </td>
       {% endfor %}
@@ -119,7 +161,7 @@
         <td>
           </td>
       {% for fund in sorted %}
-        <td class="fund-content">
+        <td class="fund-content hide col{{ forloop.index }}">
           <p><a href="{{ fund.permalink }}">Learn more</a></p>
         </td>
       {% endfor %}

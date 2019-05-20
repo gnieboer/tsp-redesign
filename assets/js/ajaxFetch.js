@@ -22,7 +22,7 @@ var singleFundData = function(fund) {
             $('#aar_10yr').html(values[5]+'%');
             // $('#aar_incep').html(values[6]);
           }
-          console.log(name + ': ' + data);
+          // console.log(name + ': ' + data);
       }
     );
     serverCall.fail(
@@ -41,6 +41,54 @@ var singleFundData = function(fund) {
 //      function (jqXHR, textStatus) {
 //      }
 //    );
+}
+
+// translate server fund names to names used on fund comparison page
+function mapFundName (fund) {
+  if (fund == 'Linc') { return 'l-income'; }
+  if (fund.substring(0,1) == 'L') { return 'l-' + fund.substring(1,5); }
+  return fund.toLowerCase() + '-fund';
+}
+
+var groupFundAnnualReturns = function(setName) {
+  // fund comparison data
+  var scriptName = '';
+  if (setName == 'Index') { scriptName = 'getIndexAverageAnnualReturns.html'; }
+  if (setName == 'Lfunds') { scriptName = 'getLfundsAverageAnnualReturns.html'; }
+  if (scriptName == '') { return; }
+
+  var serverCall = $.get(siteName + '/' + scriptName);
+    serverCall.done(
+      function (data) {
+          var rc = data.split("|"); // strip trailing Year
+          var lines = rc[0].split("\n"); // break into rows
+          for (let i = 0; i < lines.length; i++) {
+            if (lines[i].trim() == '') { continue; }
+            var values = lines[i].split(', ');
+            var fundName = mapFundName(values[0]);
+            console.log(i, fundName, lines[i]);
+            $('#ret-YTD-'+fundName).html(values[1]+'%');
+            $('#ret-1YR-'+fundName).html(values[2]+'%');
+            $('#ret-3YR-'+fundName).html(values[3]+'%');
+            $('#ret-5YR-'+fundName).html(values[4]+'%');
+            $('#ret-10YR-'+fundName).html(values[5]+'%');
+            $('#ret-Life-'+fundName).html(values[6]+'%');
+          }
+          // console.log(name + ': ' + data);
+      }
+    );
+    serverCall.fail(
+      function (jqXHR, textStatus, errorThrown) {
+          var errMsg = textStatus + ': ' + errorThrown;
+          // $('#aar_caption').html("Average annual returns (as of December "+values[7]+")");
+          $('#aar_ytd').html('unavailable');
+          $('#aar_1yr').html('unavailable');
+          $('#aar_3yr').html('unavailable');
+          $('#aar_5yr').html('unavailable');
+          $('#aar_10yr').html('unavailable');
+          // $('#aar_incep').html(values[6]);
+      }
+    );
 }
 
 function getGrowthInception(fund) {

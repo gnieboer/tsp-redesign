@@ -3,9 +3,9 @@ permalink: /funds-individual/f-fund/
 layout: fund-details
 title: F fund
 sidenav: fund-options
-Fund_letter: F
+Fund_type: Index
+Fund_name: F Fund
 Fund_order: 2
-subfund_name:
 Fund_subtitle: Fixed Income Index Investment Fund
 Fund_objective: The F Fund's investment objective is to match the performance of the Bloomberg Barclays U.S. Aggregate Bond Index, a broad index representing the U.S. bond market.
 Fund_objective_short: To match the performance of the Bloomberg Barclays U.S. Aggregate Bond Index.
