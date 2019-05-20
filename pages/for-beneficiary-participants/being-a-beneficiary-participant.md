@@ -16,7 +16,7 @@ permalink: /for-beneficiary-participants/being-a-beneficiary-participant/
 - Tax professional
 - Estate planner
 {:.check }
-f
+
 If you’re the spouse beneficiary of a deceased participant's TSP account and your share of the balance is $200 or more, we will establish a beneficiary participant account (BPA) in your name.
 
 <div class="usa-alert  usa-alert-error ">
