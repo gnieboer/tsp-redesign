@@ -27,13 +27,27 @@ function showChoice(born) {
   var success = fundArray[4];
 
   // show best 3 choices
-  $('#column-one-inner').html($('#L'+fundOne+'inner').html());
-  $('#column-two-inner').html($('#L'+fundTwo+'inner').html());
-  $('#column-three-inner').html($('#L'+fundThree+'inner').html());
+  $('#column-one-inner').html($('#L'+fundOne+'inner').html().replace('FUNDNAME', 'One'));
+  $('#column-two-inner').html($('#L'+fundTwo+'inner').html().replace('FUNDNAME', 'Two'));
+  $('#column-three-inner').html($('#L'+fundThree+'inner').html().replace('FUNDNAME', 'Three'));
   bestChoice(fund);
 
-  // highlight best bestChoice
+  // add chart to each box
+  var dt = new Date();
+  var quarter = Math.floor(dt.getMonth() / 3) + 1;
+  var idx = dt.getFullYear() + '-' + quarter;
 
+  var glidePath = getLFundData(fundOne);
+  var data = buildHighchartData(glidePath[idx]);
+  var chartOne = smallLifeCyclePie(fundOne, 'pie-One', data);
+  glidePath = getLFundData(fundTwo);
+  data = buildHighchartData(glidePath[idx]);
+  var chartTwo = smallLifeCyclePie(fundTwo, 'pie-Two', data);
+  glidePath = getLFundData(fundThree);
+  data = buildHighchartData(glidePath[idx]);
+  var chartThree = smallLifeCyclePie(fundThree, 'pie-Three', data);
+
+  // highlight best bestChoice
   var columns = ['one', 'two', 'three'];
   columns.forEach(function(c) {
     $('#column-'+ c +'-outer').removeClass('success');
@@ -42,13 +56,14 @@ function showChoice(born) {
   $('#column-'+success+'-outer').addClass('success');
   $('#column-'+success+'-inner').addClass('success');
   $('#review-funds').show();
+
   return true;
 }
 
 function bestChoice(fund) {
   var str = 'Based on the year you were born L ' + fund + ' is a good choice for you because you have time.';
   $('#best-choice').html(str);
-  console.log(str);
+  // console.log(str);
   return true;
 }
 
