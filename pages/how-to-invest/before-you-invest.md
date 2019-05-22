@@ -7,7 +7,10 @@ scripts:
 scripts:
   - /assets/js/jquery.min.js
   - /assets/js/jquery.numeric.js
+  - /assets/js/highcharts/highcharts.js
+  - /assets/js/highcharts/data.js
   - /assets/js/calculator/calculator.js
+  - /assets/js/calculator/lifecycle.js
   - /assets/js/calculator/before-you-invest.js
 permalink: /how-to-invest/before-you-invest/
 ---
