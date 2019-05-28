@@ -1,8 +1,9 @@
 function checkYearBorn(doCalc) {
-  if ($('#your-age').val() == '') { return false; }
+  if (getPosInteger('year-born', 0) == 0) { return false; }
+  $('#review-funds').hide();
   var born = getPosInteger('year-born', 0);
-  if (born < 1900) { showError('year-born', ''); return false; }
-  if (born > 2050) { showError('year-born', ''); return false; }
+  if (born < 1900) { showError('year-born', 'Year born should be at least 1900.'); return false; }
+  if (born > 2030) { showError('year-born', 'Year born should be less than 2030.'); return false; }
   clearError('year-born');
   if (doCalc) { return showChoice(born); }
   return true;

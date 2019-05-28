@@ -29,6 +29,25 @@
   border: 1px solid black;
 }
 
+.before-invest-tooltip {
+  .legend-title {
+    display: inline-block;
+    width: 105px;
+    text-align: center;
+    margin-bottom: 3px;
+  }
+  .legend-left {
+    display: inline-block;
+    width: 50px;
+    text-align: right;
+  }
+  .legend-right {
+    display: inline-block;
+    text-align: right;
+    width: 55px;
+  }
+}
+
 .g-fund-color {
   color: $color-g-fund;
 }

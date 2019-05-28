@@ -24,8 +24,12 @@ Consider the following when you plan your retirement strategy.
 
 <div class="before-you-invest-tool step1" id="enter-birthdate">
   <h3 class="step-title"><span>1.</span> First, let's see how many years you have to invest. Time impacts your ability to save for retirement.</h3>
-  <label for="year-born">What year were you born?</label>
-  <input id="year-born" name="year-born" type="text" class="positiveinteger">
+  <div id="year-born-input-error" class="">
+      <label id="year-born-label" class="" for="year-born">What year were you born?</label>
+      <span id="year-born-error-message" class="" role="alert"></span>
+      <input id="year-born" name="year-born" type="text" class="positiveinteger"
+        onChange="checkYearBorn(0);" onBlur="checkYearBorn(0);" aria-labeledby="year-born-label" aria-describedby="">
+  </div>
 </div>
 <p><button onclick="checkYearBorn(1);" class="usa-btn-primary">Find my funds</button></p>
 
