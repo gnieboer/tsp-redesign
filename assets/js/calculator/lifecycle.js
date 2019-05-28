@@ -660,18 +660,20 @@ return allocation; // unchanged after this
 
 function buildHighchartData(data) {
   if (data) {
+    // data is decimals to 1.00
+    var mult = 100.0;
     return [{
               name: data[0], y: 0, colorIndex: 'black'
             }, {
-              name: 'G Fund', y: data[1], colorIndex: 'g'
+              name: 'G Fund', y: data[1]*mult, colorIndex: 'g'
             }, {
-              name: 'F Fund', y: data[2], colorIndex: 'f'
+              name: 'F Fund', y: data[2]*mult, colorIndex: 'f'
             }, {
-              name: 'C Fund', y: data[3], colorIndex: 'c'
+              name: 'C Fund', y: data[3]*mult, colorIndex: 'c'
             }, {
-              name: 'S Fund', y: data[4], colorIndex: 's'
+              name: 'S Fund', y: data[4]*mult, colorIndex: 's'
             }, {
-              name: 'I Fund', y: data[5], colorIndex: 'i'
+              name: 'I Fund', y: data[5]*mult, colorIndex: 'i'
             }];
   }
   return null;
@@ -696,10 +698,12 @@ function smallLifeCyclePie(fund, divID, startingData) {
           },
           tooltip: {
             formatter: function () {
-                var rc = '<div style="text-align: right"><strong>'+this.series.points[0].name+'</strong><br>';
+                var rc = '<div class="before-invest-tooltip">'
+                        + '<span class="legend-title"><strong>'+this.series.points[0].name+'</strong></span><br>';
                 for (i = 1; i <= 5; i++) {
-                  rc += '<span class="'+this.series.points[i].colorIndex+'-fund-color">'
-                        + this.series.points[i].name + '     ' + this.series.points[i].y.toFixed(2)
+                  rc += '<span class="'+this.series.points[i].colorIndex+'-fund-color legend-left">'
+                        + this.series.points[i].name + '</span>'
+                        + '<span class="legend-right">' + this.series.points[i].y.toFixed(2)
                         + '%</span><br>';
                 }
                 rc += '</div>';
