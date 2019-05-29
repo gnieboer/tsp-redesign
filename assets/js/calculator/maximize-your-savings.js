@@ -10,7 +10,7 @@ function salaryGood(forSubmit) {
   if ($('#your-salary').val() == '' && forSubmit) { showError('your-salary', 'Enter Salary.'); return false; }
   var salary = getPosInteger('your-salary', 0);
   if (salary < 1000) { showError('your-salary', 'Salary must be at least $1000'); return false; }
-  if (salary > 100000) { showError('your-salary', 'Salary cannot exceed $100,000'); return false; }
+  if (salary > 400000) { showError('your-salary', 'Salary cannot exceed $400,000'); return false; }
   return clearError('your-salary');
 }
 
