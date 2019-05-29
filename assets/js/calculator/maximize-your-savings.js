@@ -22,7 +22,7 @@ function frequencyGood(forSubmit) {
 }
 
 function rateGood(forSubmit) {
-  if ($('#your-rate-of-return').val() == '') { return 3.0; }
+  if ($('#your-rate-of-return').val() == '') { return 6.0; }
   var rate = getPosFloat('your-rate-of-return', 0);
   if (rate < 0.0) { showError('your-rate-of-return', 'Rate must be more than 0.0%.'); return false; }
   if (rate > 12.0) { showError('your-rate-of-return', 'Rate cannot exceed 12.0%.'); return false; }
