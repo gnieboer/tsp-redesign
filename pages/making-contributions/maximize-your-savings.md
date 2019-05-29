@@ -141,7 +141,7 @@ money on the table. Are you contributing enough to get at least the full match f
     <div id="your-rate-of-return-input-error" class="">
         <label id="your-rate-of-return-label" class="" for="your-rate-of-return">Rate of return</label>
         <span id="your-rate-of-return-error-message" class="" role="alert"></span>
-        <input id="your-rate-of-return" name="your-rate-of-return" type="number" value="3.0"
+        <input id="your-rate-of-return" name="your-rate-of-return" type="number" value="6.0"
             onChange="rateGood(0);" onBlur="rateGood(0);" aria-labeledby="your-rate-of-return-label" aria-describedby=""><span class="percent">%</span>
             <button class="usa-button" onClick="calculate(1);">Recalculate</button>
     </div>
