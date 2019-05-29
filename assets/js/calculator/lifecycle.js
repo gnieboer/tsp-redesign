@@ -711,7 +711,7 @@ function smallLifeCyclePie(fund, divID, startingData) {
             },
             shared: true,
             useHTML: true,
-            positioner: function () { return { x: 0, y: 77 }; }
+            positioner: function () { return { x: 0, y: 75 }; }
           },
           plotOptions: {
               series: { states: { hover: { enabled: false } } },
