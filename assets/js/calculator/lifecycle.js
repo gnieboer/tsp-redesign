@@ -7,12 +7,33 @@ var L2030Data = undefined;
 var L2020Data = undefined;
 var LincomeData = undefined;
 
+// get the current year-quarter index string for use in highcharts functions
+function getIdx() {
+  var dt = new Date();
+  var quarter = Math.floor(dt.getMonth() / 3) + 1;
+  var idx = dt.getFullYear() + '-' + quarter;
+  return idx;
+}
+function getCurrentQuarter() {
+  var qtrName = ['January', 'April', 'July', 'October'];
+  var dt = new Date();
+  var quarter = Math.floor(dt.getMonth() / 3) + 1;
+  var idx = qtrName[quarter] + ' ' + dt.getFullYear();
+  return idx;
+}
+
 function getLFundData(fund) {
   if (fund == '2050') { return getL2050Data(); }
+  if (fund == 'L2050') { return getL2050Data(); }
   if (fund == '2040') { return getL2040Data(); }
+  if (fund == 'L2040') { return getL2040Data(); }
   if (fund == '2030') { return getL2030Data(); }
+  if (fund == 'L2030') { return getL2030Data(); }
   if (fund == '2020') { return getL2020Data(); }
+  if (fund == 'L2020') { return getL2020Data(); }
   if (fund == 'Income') { return getLincomeData(); }
+  if (fund == 'LIncome') { return getLincomeData(); }
+  if (fund == 'Linc') { return getLincomeData(); }
   console.log('I dont know fund: ' + fund);
   return undefined;
 }
@@ -512,7 +533,7 @@ function getL2020Data() {
   allocation['2020-1'] = ['January 2020', 0.6958, 0.0599, 0.1266, 0.0322, 0.0855];
   allocation['2020-2'] = ['April 2020', 0.7087, 0.0592, 0.1204, 0.0304, 0.0813];
   allocation['2020-3'] = ['July 2020', 0.7215, 0.0585, 0.1144, 0.0286, 0.0770];
-  allocation['min'] = '2020-3';
+  allocation['max'] = '2020-3';
 
   return allocation;
 }
@@ -564,7 +585,7 @@ function getLincomeData() {
   allocation['2028-1'] = ['January 2028', 0.6521, 0.0529, 0.1533, 0.0384, 0.1033];
   allocation['2028-2'] = ['April 2028', 0.6498, 0.0527, 0.1547, 0.0387, 0.1041];
   allocation['2028-3'] = ['July 2028', 0.6475, 0.0525, 0.1560, 0.0390, 0.1050];
-allocation['min'] = '2028-3';
+allocation['max'] = '2028-3';
 return allocation; // unchanged after this
   allocation['2028-4'] = ['October 2028', 0.6475, 0.0525, 0.1560, 0.0390, 0.1050];
   allocation['2029-1'] = ['January 2029', 0.6475, 0.0525, 0.1560, 0.0390, 0.1050];
@@ -654,6 +675,7 @@ return allocation; // unchanged after this
   allocation['2050-1'] = ['January 2050', 0.6475, 0.0525, 0.1560, 0.0390, 0.1050];
   allocation['2050-2'] = ['April 2050', 0.6475, 0.0525, 0.1560, 0.0390, 0.1050];
   allocation['2050-3'] = ['July 2050', 0.6475, 0.0525, 0.1560, 0.0390, 0.1050];
+  allocation['max'] = '2050-3';
 
   return allocation;
 }
@@ -711,7 +733,7 @@ function smallLifeCyclePie(fund, divID, startingData) {
             },
             shared: true,
             useHTML: true,
-            positioner: function () { return { x: 0, y: 75 }; }
+            positioner: function () { return { x: 0, y: 70 }; }
           },
           plotOptions: {
               series: { states: { hover: { enabled: false } } },
@@ -732,5 +754,122 @@ function smallLifeCyclePie(fund, divID, startingData) {
 
     return myChart;
   }
+  return null;
+}
+
+// convert to hc data structure
+function stackedAreaData(fund) {
+  var mult = 100.0;  // data sums to 1 not 100%
+  var fundData = getLFundData(fund);
+  var startIdx = fundData['min'].split('-');
+  var endIdx = fundData['max'].split('-');
+  var yearStart = startIdx[0];
+  var yearEnd = endIdx[0];
+  var quarterStart = startIdx[1];
+  var quarterEnd = endIdx[1];
+  var lastIdx = yearEnd + '-' + quarterEnd;
+  var y = yearStart;
+  var q = quarterStart;
+  var yearQ = [];
+  var G = [];
+  var F = [];
+  var C = [];
+  var S = [];
+  var I = [];
+  var idx = y + '-' + q;
+  for (; y <= yearEnd; y++) {
+    for (; q <= 4; q++) {
+      idx = y + '-' + q;
+      // console.log(idx, fundData[idx]);
+      // for (var i = 1; i <= 5; i++) { fundData[idx][i] *= mult; }
+      yearQ.push(fundData[idx][0]);
+      G.push(fundData[idx][1]*mult);
+      F.push(fundData[idx][2]*mult);
+      C.push(fundData[idx][3]*mult);
+      S.push(fundData[idx][4]*mult);
+      I.push(fundData[idx][5]*mult);
+      if (idx == lastIdx) { break; }
+    }
+    q = 1;
+  }
+
+  var stackedData = [yearQ, G, F, C, S, I];
+  // console.log(stackedData);
+
+  return stackedData;
+}
+
+// return chart object
+function LfundStackedArea(fund, divID) {
+
+  var stackedData = stackedAreaData(fund);
+  if (stackedData) {
+    var curIdx = getCurrentQuarter();
+    var Xpos = stackedData[0].indexOf(curIdx) - 1;
+    console.log(curIdx, Xpos, stackedData[0][20]);
+
+    var myChart = Highcharts.chart(divID, {
+            credits: { enabled: false },
+            chart: {
+            type: 'area',
+            styledMode: true
+        },
+        title: null,
+        // title: { text: 'Fund Allocation' },
+        // subtitle: { text: fund },
+        xAxis: {
+            // categories: ['1750', '1800', '1850', '1900', '1950', '1999', '2050'],
+            // tickmarkPlacement: 'on',
+            title: { enabled: false },
+            categories: stackedData[0],
+            tickInterval: 16,
+            plotLines: [{ value: Xpos }]
+        },
+        yAxis: {
+            title: { text: 'Portfolio allocation' },
+            // reversed: true,
+            min: 0, max: 100,
+            labels: { formatter: function () { return this.value + '%'; } }
+        },
+        tooltip: {
+            // split: true,
+            // valueSuffix: ' millions'
+            formatter: function () {
+                var rc = '<div class="l-fund-tooltip">'
+                        + '<span class="legend-title"><strong>'+this.points[0].x+'</strong></span><br>';
+                for (i = 0; i < 5; i++) {
+                  rc += '<span class="'+this.points[i].colorIndex+'-fund-color legend-left">'
+                        + this.points[i].series.name + ' Fund</span>'
+                        + '<span class="legend-right">' + this.points[i].y.toFixed(2)
+                        + '%</span><br>';
+                }
+                rc += '</div>';
+                return rc;
+            },
+            crosshairs: [true, true],
+            useHTML: true,
+            shared: true
+        },
+        plotOptions: {
+            area: {
+                stacking: 'normal',
+                // marker: { lineWidth: 1, lineColor: '#666666' },
+                marker: { enabled: false },
+                lineColor: '#666666',
+                lineWidth: 1
+            },
+            series: { marker: { enabled: false } }
+        },
+        series: [
+          { name: 'G', colorIndex: 'g', data: stackedData[1]},
+          { name: 'F', colorIndex: 'f', data: stackedData[2]},
+          { name: 'C', colorIndex: 'c', data: stackedData[3]},
+          { name: 'S', colorIndex: 's', data: stackedData[4]},
+          { name: 'I', colorIndex: 'i', data: stackedData[5]}
+          ]
+    });
+    return myChart;
+  }
+
   return null;
 }
