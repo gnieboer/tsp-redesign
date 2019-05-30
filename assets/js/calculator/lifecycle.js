@@ -806,7 +806,6 @@ function LfundStackedArea(fund, divID) {
   if (stackedData) {
     var curIdx = getCurrentQuarter();
     var Xpos = stackedData[0].indexOf(curIdx) - 1;
-    console.log(curIdx, Xpos, stackedData[0][20]);
 
     var myChart = Highcharts.chart(divID, {
             credits: { enabled: false },
