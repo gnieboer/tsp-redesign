@@ -34,9 +34,7 @@ function showChoice(born) {
   bestChoice(fund);
 
   // add chart to each box
-  var dt = new Date();
-  var quarter = Math.floor(dt.getMonth() / 3) + 1;
-  var idx = dt.getFullYear() + '-' + quarter;
+  var idx = getIdx();
 
   var glidePath = getLFundData(fundOne);
   var data = buildHighchartData(glidePath[idx]);

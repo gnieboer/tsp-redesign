@@ -12,7 +12,7 @@ var singleFundData = function(fund) {
       function (data) {
           var rc = data.split("|");
           var values = rc[0].split(", ");
-          console.log('values length is ', values.length);
+          // console.log('values length is ', values.length);
           if (values.length == 7) {
             $('#aar_caption').html("Average annual returns (as of December "+rc[1]+")");
             $('#aar_ytd').html(values[1]+'%');

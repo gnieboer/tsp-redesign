@@ -134,11 +134,20 @@ main:
       Composition
     </button>
         <div id="a3" class="usa-accordion-content">
-        <div class="usa-grid-full">
-          <div class="usa-width-one-whole">
-            <h3>Charts and graphs 2</h3>
+{% if page.Fund_type == 'L' %}
+          <div class="usa-grid-full">
+            <div class="usa-width-one-whole">
+              <h3>{{ page.Fund_name }} Allocation</h3>
+              <div id="LfundStackedArea" class="hc-lfund-stacked-area"></div>
+            </div>
           </div>
-        </div>
+{% else %}
+          <div class="usa-grid-full">
+            <div class="usa-width-one-whole">
+              <h3>Portfolio Weight</h3>
+            </div>
+          </div>
+{% endif %}
         </div>
     </li>
     <li>

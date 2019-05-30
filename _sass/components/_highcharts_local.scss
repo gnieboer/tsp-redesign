@@ -10,6 +10,23 @@
   margin: 0 auto;
 }
 
+.hc-lfund-stacked-area {
+  min-width: 310px;
+  height: 400px;
+  margin: 0 auto;
+  .highcharts-crosshair-category {
+      stroke-width: 5px;
+      stroke: $neutral-color-100;
+      stroke-opacity: 1.00;
+  }
+  .highcharts-plot-line {
+      fill: none;
+      stroke: $neutral-color-100;
+      stroke-width: 2px;
+  }
+
+}
+
 .hc-note {
   font-size: 70%;
   color: gray;
@@ -29,7 +46,7 @@
   border: 1px solid black;
 }
 
-.before-invest-tooltip {
+.before-invest-tooltip, .l-fund-tooltip {
   .legend-title {
     display: inline-block;
     width: 105px;

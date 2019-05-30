@@ -55,9 +55,11 @@ scripts:
     - /assets/js/jquery.min.js
     - /assets/js/highcharts/highcharts.js
     - /assets/js/highcharts/data.js
+    - /assets/js/calculator/lifecycle.js
 bottom-scripts: /assets/js/ajaxFetch.js
 document-ready:
   - singleFundData('Linc');
   - getFundIndexAverageAnnualReturns('Linc');
   - getGrowthInception('Linc');
+  - LfundStackedArea('Income', 'LfundStackedArea');
 ---
