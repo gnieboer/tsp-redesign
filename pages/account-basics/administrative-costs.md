@@ -5,8 +5,12 @@ permalink: /account-basics/administrative-costs/
 sidenav: manage-your-plan
 styles:
 scripts:
-- /assets/js/jquery.min.js
-- /assets/js/responsive-comparison-table.js
+  - /assets/js/jquery.min.js
+  - /assets/js/responsive-comparison-table.js
+bottom-scripts: /assets/js/ajaxFetch.js
+document-ready:
+  - groupFundAnnualReturns('Lfunds');
+  - groupFundAnnualReturns('Index');
 ---
 
 # Administrative costs
@@ -29,206 +33,142 @@ Expense ratios may also be expressed in basis points. One basis point is 1/100th
 
 <!-- DIRTY Responsive pricing table HTML -->
 
+
 <section class="comparison" markdown="1">
 
 ## Lifecycle funds
+{% assign sorted = site.funds | where: "Fund_type", "L" | sort: 'Fund_order' | reverse %}
+{% assign rowString = "YTD|Year-to-date, 1YR|1-year, 3YR|3-year, 5YR|5-year, 10YR|10-year, Life|Life" %}
+{% assign rows = rowString | split: ', ' %}
 
 <ul class="funds">
+{% for fund in sorted %}
   <li>
-    <button>L 2050</button>
+    <button{% if forloop.index == 3 %} class="active"{% endif %}>{{ fund.Fund_name }}</button>
   </li>
-  <li>
-    <button>L 2040</button>
-  </li>
-  <li class="active">
-    <button>L 2030</button>
-  </li>
-  <li>
-    <button>L 2020</button>
-  </li>
-  <li>
-    <button>L Income</button>
-  </li>
-  </ul>
+{% endfor %}
+</ul>
 
 <table>
   <thead>
     <tr>
       <th class="hide"></th>
-      <th class="bg-blue">L 2050</th>
-      <th class="bg-blue">L 2040</th>
-      <th class="bg-blue default">L 2030</th>
-      <th class="bg-blue">L 2020</th>
-      <th class="bg-blue">L Income</th>
+      {% for fund in sorted %}
+        <th class="bg-blue{% if forloop.index == 3 %} default{% endif %}">{{ fund.Fund_name }}</th>
+      {% endfor %}
     </tr>
   </thead>
   <tbody>
 
     <tr>
-      <td colspan="6" class="sep">Rates of Return as of M/D/YYYY</td>
+      <td colspan="6" class="sep">Rates of Return <span id="l-fund-as-of">as of M/D/YYYY</span></td>
     </tr>
+{% for r in rows %}
+{% assign c = r | split: '|' %}
     <tr>
-      <td>Year-to-date</td>
-      <td>6.67%</td>
-      <td>5.86%</td>
-      <td class="default">4.92%</td>
-      <td>2.53%</td>
-      <td>1.83%</td>
+      <td>{{ c[1] }}</td>
+      {% for fund in sorted %}
+        <td{% if forloop.index == 3 %} class="default"{% endif %} id='ret-{{c[0]}}-{{ fund.Fund_name | downcase | replace: " ", "-" }}'>-</td>
+      {% endfor %}
     </tr>
-    <tr>
-      <td>1-year</td>
-      <td>-3.74</td>
-      <td>-2.87%</td>
-      <td class="default">1.89%</td>
-      <td>0.32%</td>
-      <td>1.44%</td>
-    </tr>
-    <tr>
-      <td>3-year</td>
-      <td>10.80%</td>
-      <td>9.82%</td>
-      <td class="default">8.76%</td>
-      <td>6.70%</td>
-      <td>4.42%</td>
-    </tr>
-    <tr>
-      <td>5-year</td>
-      <td>7.28%</td>
-      <td>6.81%</td>
-      <td class="default">6.23%</td>
-      <td>5.07%</td>
-      <td>3.67%</td>
-    </tr>
+{% endfor %}
     <tr>
       <td colspan="6" class="sep">YYYY Administrative Expenses</td>
     </tr>
     <tr>
       <td>Gross</td>
-      <td>.052%</td>
-      <td>.052%</td>
-      <td class="default">.052%</td>
-      <td>.052%</td>
-      <td>.051%</td>
+      <td>{{ site.data.funds.L_2050_gross}}</td>
+      <td>{{ site.data.funds.L_2040_gross}}</td>
+      <td class="default">{{ site.data.funds.L_2030_gross}}</td>
+      <td>{{ site.data.funds.L_2020_gross}}</td>
+      <td>{{ site.data.funds.L_Income_gross}}</td>
     </tr>
     <tr>
       <td>Net<sup>1</sup></td>
-      <td>.040%</td>
-      <td>.040%</td>
-      <td class="default">0.40%</td>
-      <td>.040%</td>
-      <td>.040%</td>
+      <td>{{ site.data.funds.L_2050_net}}</td>
+      <td>{{ site.data.funds.L_2040_net}}</td>
+      <td class="default">{{ site.data.funds.L_2030_net}}</td>
+      <td>{{ site.data.funds.L_2020_net}}</td>
+      <td>{{ site.data.funds.L_Income_net}}</td>
     </tr>
     <tr>
       <td colspan="6" class="sep">YYYY Other Expenses<sup>2</sup></td>
     </tr>
     <tr>
       <td></td>
-      <td>.007%</td>
-      <td>.006%</td>
-      <td class="default">.005%</td>
-      <td>.003%</td>
-      <td>.002%</td>
+      <td>{{ site.data.funds.L_2050_other}}</td>
+      <td>{{ site.data.funds.L_2040_other}}</td>
+      <td class="default">{{ site.data.funds.L_2030_other}}</td>
+      <td>{{ site.data.funds.L_2020_other}}</td>
+      <td>{{ site.data.funds.L_Income_other}}</td>
     </tr>
 
   </tbody>
 </table>
 
 ## Individual funds
+{% assign sorted = site.funds | where_exp:"fund", "fund.Fund_type != 'L'" | sort: 'Fund_order' %}
 
-  <ul class="funds">
-  <li class="active">
-    <button>G Fund</button>
-  </li>
+<ul class="funds">
+{% for fund in sorted %}
   <li>
-    <button>F Fund</button>
+    <button{% if forloop.index == 3 %} class="active"{% endif %}>{{ fund.Fund_name }}</button>
   </li>
-  <li>
-    <button>C Fund</button>
-  </li>
-  <li>
-    <button>S Fund</button>
-  </li>
-  <li>
-    <button>I Fund</button>
-  </li>
-</ul>  
+{% endfor %}
+</ul>
 
 <table>
   <thead>
     <tr>
       <th class="hide"></th>
-      <th class="bg-blue default">G Fund</th>
-      <th class="bg-blue">F Fund</th>
-      <th class="bg-blue">C Fund</th>
-      <th class="bg-blue">S Fund</th>
-      <th class="bg-blue">I Fund</th>
+      {% for fund in sorted %}
+        <th class="bg-blue{% if forloop.index == 3 %} default{% endif %}">{{ fund.Fund_name }}</th>
+      {% endfor %}
     </tr>
   </thead>
   <tbody>
+
     <tr>
-      <td colspan="6" class="sep">Rates of Return as of M/D/YYYY</td>
+      <td colspan="6" class="sep">Rates of Return <span id="index-as-of">as of M/D/YYYY</span></td>
     </tr>
-    <tr>
-      <td>Year-to-date</td>
-      <td class="default">0.23%</td>
-      <td>1.07%</td>
-      <td>8.01%</td>
-      <td>11.64%</td>
-      <td>6.60%</td>
-    </tr>
-    <tr>
-      <td>1-year</td>
-      <td class="default">2.94</td>
-      <td>2.39</td>
-      <td>-2.34</td>
-      <td>-1.98</td>
-      <td>-12.11</td>
-    </tr>
-    <tr>
-      <td>3-year</td>
-      <td class="default">2.37</td>
-      <td>2.14</td>
-      <td>14.02</td>
-      <td>15.14</td>
-      <td>7.78</td>
-    </tr>
-    <tr>
-      <td>5-year</td>
-      <td class="default">2.29</td>
-      <td>2.78</td>
-      <td>10.99</td>
-      <td>8.25</td>
-      <td>3.03</td>
-    </tr>
+    {% for r in rows %}
+    {% assign c = r | split: '|' %}
+        <tr>
+          <td>{{ c[1] }}</td>
+          {% for fund in sorted %}
+            <td{% if forloop.index == 3 %} class="default"{% endif %} id='ret-{{c[0]}}-{{ fund.Fund_name | downcase | replace: " ", "-" }}'>-</td>
+          {% endfor %}
+        </tr>
+    {% endfor %}
     <tr>
       <td colspan="6" class="sep">YYYY Administrative Expenses</td>
     </tr>
     <tr>
       <td>Gross</td>
-      <td class="default">.051%</td>
-      <td>.052%</td>
-      <td>.052%</td>
-      <td>.052%</td>
-      <td>.052%</td>
+      <td>{{ site.data.funds.G_Fund.gross}}</td>
+      <td>{{ site.data.funds.F_Fund.gross}}</td>
+      <td class="default">{{ site.data.funds.C_Fund.gross}}</td>
+      <td>{{ site.data.funds.S_Fund.gross}}</td>
+      <td>{{ site.data.funds.I_Fund.gross}}</td>
     </tr>
     <tr>
       <td>Net<sup>1</sup></td>
-      <td class="default">.040%</td>
-      <td>.041%</td>
-      <td>.041%</td>
-      <td>.040%</td>
-      <td>.041%</td>
+      <td>{{ site.data.funds.G_Fund.net}}</td>
+      <td>{{ site.data.funds.F_Fund.net}}</td>
+      <td class="default">{{ site.data.funds.C_Fund.net}}</td>
+      <td>{{ site.data.funds.S_Fund.net}}</td>
+      <td>{{ site.data.funds.I_Fund.net}}</td>
     </tr>
     <tr>
       <td colspan="6" class="sep">YYYY Other Expenses<sup>2</sup></td>
     </tr>
     <tr>
       <td></td>
-      <td class="default">.000%</td>
-      <td>.016%</td>
-      <td>.001%</td>
-      <td>.021%</td>
-      <td>.010%</td>
+      <td>{{ site.data.funds.G_Fund.other}}</td>
+      <td>{{ site.data.funds.F_Fund.other}}</td>
+      <td class="default">{{ site.data.funds.C_Fund.other}}</td>
+      <td>{{ site.data.funds.S_Fund.other}}</td>
+      <td>{{ site.data.funds.I_Fund.other}}</td>
     </tr>
   </tbody>
 </table>

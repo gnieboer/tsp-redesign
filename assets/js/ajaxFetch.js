@@ -74,6 +74,9 @@ var groupFundAnnualReturns = function(setName) {
             $('#ret-10YR-'+fundName).html(values[5]+'%');
             $('#ret-Life-'+fundName).html(values[6]+'%');
           }
+          console.log(rc[1], setName);
+          if (setName == 'Index') { $('#index-as-of').html(' as of ' + rc[2]); }
+          if (setName == 'Lfunds') { $('#l-fund-as-of').html(' as of ' + rc[2]); }
           // console.log(name + ': ' + data);
       }
     );
