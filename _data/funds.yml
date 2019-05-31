@@ -1,0 +1,42 @@
+# Administrative Expenses for all funds
+#G_Fund:
+#  gross:  .051%
+#  net:    .040%
+#  other:  .000%
+G_Fund: { gross: .051%, net: .040%, other: .000% }
+F_Fund:
+  gross:  .052%
+  net:    .041%
+  other:  .016%
+C_Fund:
+  gross:  .052%
+  net:    .041%
+  other:  .001%
+S_Fund:
+  gross:  .052%
+  net:    .040%
+  other:  .021%
+I_Fund:
+  gross:  .052%
+  net:    .041%
+  other:  .010%
+
+L_Income_gross:  .051%
+L_Income_net:    .040%
+L_Income_other:  .002%
+
+L_2020_gross:  .052%
+L_2020_net:    .040%
+L_2020_other:  .003%
+
+L_2030_gross:  .052%
+L_2030_net:    .040%
+L_2030_other:  .005%
+
+L_2040_gross:  .052%
+L_2040_net:    .040%
+L_2040_other:  .006%
+
+L_2050_gross:  .052%
+L_2050_net:    .040%
+L_2050_other:  .007%
