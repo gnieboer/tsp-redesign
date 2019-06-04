@@ -1,11 +1,35 @@
 
-.usa-layout-docs-sidenav {
-  // display: none;
+aside.usa-width-one-fourth {
+  display: none;
+}
+@media screen and (min-width: $medium-screen) {
+  aside.usa-width-one-fourth {
+      width: 32%;
+    }
 }
 
 @media screen and (min-width: $large-screen) {
-  .usa-layout-docs-sidenav {
+  aside.usa-width-one-fourth {
     // display: block;
-    // width: 21%;
+    width: 30%;
+    display: block;
+    float: left;
+    margin-bottom: 525px;
+    margin-top: 50px;
+    padding-right: 1rem;
+    padding-left: 0;
+    overflow-y: auto;
+    top: 5rem;
+    // border: 1px solid red;
+    // width: auto;
+  }
+  .usa-layout-docs {
+    flex-direction: row;
+  }
+}
+
+@media screen and (min-width: $desktop-screen) {
+  aside.usa-width-one-fourth {
+  width: 23%;
   }
 }
