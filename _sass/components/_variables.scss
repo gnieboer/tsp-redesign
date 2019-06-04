@@ -56,6 +56,7 @@ $color-index-i: lighten($color-i-fund, 40%); // MSCI EAFE
 $small-screen:  481px;
 $medium-screen: 600px;
 $large-screen:  951px;
+$desktop-screen:  1201px;
 
 $light: 300;
 $medium: 600;
@@ -64,3 +65,23 @@ $black: 900;
 
 
 $fa-font-path:        "../webfonts";
+
+// TOP NAV MOBILE
+
+// $top-nav-dropdown-bg: transparent;
+// $top-nav-dropdown-link: blue;
+// $top-nav-dropdown-link-hover-bg: transparent;
+//
+// $top-nav-link: #212121;
+// $top-nav-link-active: $color-blue-darker;
+// $top-nav-link-hover: blue;
+// $top-nav-link-current: #0071bc;
+//
+// $usa-button-color: white;
+
+// .usa-sidenav-list a.usa-current {
+//     border-left: 0.4rem solid #0071bc;
+//     color: #0071bc;
+//     font-weight: 700;
+//     padding-left: 1.1rem;
+// }
