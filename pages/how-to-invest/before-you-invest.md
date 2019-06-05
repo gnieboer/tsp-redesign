@@ -85,7 +85,7 @@ Consider the following when you plan your retirement strategy.
     <section class="results-summary">
     <div class="usa-grid">
      <div class="usa-width-one-whole">
-       <p id="best-choice" class="usa-alert-text usa-font-lead">Based on the year you were born L XXXX is a good choice for you because you have time.</p>
+       <p id="best-choice" class="usa-alert-text usa-font-lead">Based on the year you were born, L XXXX is a good choice for you because you have time.</p>
      </div>
     </div>
     </section>
