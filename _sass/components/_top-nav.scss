@@ -1,3 +1,4 @@
+
 .usa-header {
   .usa-nav {
     @if variable-exists(top-nav-bg) {
@@ -21,16 +22,14 @@
           color: $top-nav-link;
         }
       }
-
       &[aria-expanded=true] {
-        &:hover span,
-        span {
-          @if variable-exists(top-nav-link-active) {
-            color: $top-nav-link-active;
-          }
+        span,
+        &:hover span {
+        @if variable-exists(top-nav-link-active) {
+          color: $top-nav-link-active;
         }
       }
-
+    }
       &:hover {
         @if variable-exists(top-nav-link-hover) {
           color: $top-nav-link-hover;
@@ -60,9 +59,9 @@
     }
   }
 
-  .usa-nav-submenu,
   button[aria-expanded=true],
-  button[aria-expanded=true]:hover {
+  button[aria-expanded=true]:hover,
+  .usa-nav-submenu {
     @if variable-exists(top-nav-dropdown-bg) {
       background-color: $top-nav-dropdown-bg;
     }
