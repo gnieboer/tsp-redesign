@@ -87,12 +87,10 @@ main:
                 {{ page.summary_details.assets }}
               </p>
               <p><b>Net admin expense</b><br>
-                {{ page.summary_details.admin_expense }}
+                {% include components/expense_string.html value=page.summary_details.net_expense %}
               </p>
               <p><b>Other expense</b><br>
-                {% for item in page.summary_details.other_expense %}
-                  {{ item }}<br>
-                {% endfor %}
+                {% include components/expense_string.html value=page.summary_details.other_expense %}
               </p>
                 <p><b>Benchmark index</b><br>
                   {{ page.summary_details.benchmark_index }}
@@ -159,18 +157,14 @@ main:
             <div class="usa-width-one-half">
               <h3>Fees <span class="as-of-date">As of 12/31/{{ 'now' | date: "%Y" | minus: 1 }}</span></h3>
               <p><b>Net admin expense<sup>*</sup></b><br>
-                {{ page.summary_details.admin_expense }}
+                {% include components/expense_string.html value=page.summary_details.net_expense %}
               </p>
               <p><b>Other expense<sup>**</sup></b><br></p>
-                {% for item in page.summary_details.other_expense %}
-                  {{ item }}<br>
-                {% endfor %}
-
-
+                {% include components/expense_string.html value=page.summary_details.other_expense %}
               <p>
-                <sup>*</sup>An expense ratio of .032% translates to 3.2 basis points or $0.32 per $1,000 acount balance.
+                <sup>*</sup>{% include components/expense_string.html value=page.summary_details.net_expense explain=true %}
               </p>
-              <p><sup>*</sup>Fees associated with securities lending are not included in 2017 administrative expenses.
+              <p><sup>**</sup>Fees associated with securities lending are not included in 2017 administrative expenses.
                 Consistent with standard practice in the industry, they are charged in addition to administrative expenses. The other expenses
                 represent fees paid to the investment manager for administering securities lending programs. Income earned from these programs improved the returns of
                 the fund.

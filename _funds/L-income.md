@@ -25,7 +25,9 @@ avg_annual_returns:
 summary_details:
   assets: $67.6 billion
   admin_expense: $0.033/$1,000 account balance 0.033% (3.3 basis points)
-  other_expense: $0.003/$1,000 account balance 0.003% (0.3 basis points)
+  gross_expense:  .051
+  net_expense:    .040
+  other_expense:  .002
   benchmark_index: Dow Jones U.S. Completion TSM Index | www.djindexes.com
   asset_manager: BlackRock Institutional Trust Company, N.A
 top_ten_holdings:

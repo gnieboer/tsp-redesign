@@ -1,0 +1,14 @@
+{% comment %}
+Set sorted to a list of lifecycle or individual funds.
+{% endcomment %}
+{% assign funds = include.funds | downcase | default: 'lifecycle' %}
+{% assign reverse = include.reverse | default: false %}
+{% assign sorted = site.funds | where: "Fund_debug", "1" | sort: 'Fund_order' %}
+{% if funds == 'lifecycle' %}
+  {% assign sorted = site.funds | where: "Fund_type", "L" | sort: 'Fund_order' %}
+{% else %}
+  {% assign sorted = site.funds | where_exp:"fund", "fund.Fund_type != 'L'" | sort: 'Fund_order' %}
+{% endif %}
+{% if reverse %}
+  {% assign sorted = sorted | reverse %}
+{% endif %}
