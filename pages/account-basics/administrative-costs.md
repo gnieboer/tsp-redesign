@@ -37,7 +37,7 @@ Expense ratios may also be expressed in basis points. One basis point is 1/100th
 <section class="comparison" markdown="1">
 
 ## Lifecycle funds
-{% assign sorted = site.funds | where: "Fund_type", "L" | sort: 'Fund_order' | reverse %}
+{% include components/get_sorted_fund_list funds='lifecycle' reverse=true %}
 {% assign rowString = "YTD|Year-to-date, 1YR|1-year, 3YR|3-year, 5YR|5-year, 10YR|10-year, Life|Life" %}
 {% assign rows = rowString | split: ', ' %}
 
@@ -77,37 +77,37 @@ Expense ratios may also be expressed in basis points. One basis point is 1/100th
     </tr>
     <tr>
       <td>Gross</td>
-      <td>{{ site.data.funds.L_2050_gross}}</td>
-      <td>{{ site.data.funds.L_2040_gross}}</td>
-      <td class="default">{{ site.data.funds.L_2030_gross}}</td>
-      <td>{{ site.data.funds.L_2020_gross}}</td>
-      <td>{{ site.data.funds.L_Income_gross}}</td>
+      {% for fund in sorted %}
+        <td{% if forloop.index == 3 %} class="default"{% endif %}>
+         {% include components/expense_string.html value=fund.summary_details.gross_expense percentOnly=true %}
+        </td>
+      {% endfor %}
     </tr>
     <tr>
       <td>Net<sup>1</sup></td>
-      <td>{{ site.data.funds.L_2050_net}}</td>
-      <td>{{ site.data.funds.L_2040_net}}</td>
-      <td class="default">{{ site.data.funds.L_2030_net}}</td>
-      <td>{{ site.data.funds.L_2020_net}}</td>
-      <td>{{ site.data.funds.L_Income_net}}</td>
+      {% for fund in sorted %}
+        <td{% if forloop.index == 3 %} class="default"{% endif %}>
+         {% include components/expense_string.html value=fund.summary_details.net_expense percentOnly=true %}
+        </td>
+      {% endfor %}
     </tr>
     <tr>
       <td colspan="6" class="sep">YYYY Other Expenses<sup>2</sup></td>
     </tr>
     <tr>
       <td></td>
-      <td>{{ site.data.funds.L_2050_other}}</td>
-      <td>{{ site.data.funds.L_2040_other}}</td>
-      <td class="default">{{ site.data.funds.L_2030_other}}</td>
-      <td>{{ site.data.funds.L_2020_other}}</td>
-      <td>{{ site.data.funds.L_Income_other}}</td>
+      {% for fund in sorted %}
+        <td{% if forloop.index == 3 %} class="default"{% endif %}>
+         {% include components/expense_string.html value=fund.summary_details.other_expense percentOnly=true %}
+        </td>
+      {% endfor %}
     </tr>
 
   </tbody>
 </table>
 
 ## Individual funds
-{% assign sorted = site.funds | where_exp:"fund", "fund.Fund_type != 'L'" | sort: 'Fund_order' %}
+{% include components/get_sorted_fund_list funds='Individual' reverse=false %}
 
 <ul class="funds">
 {% for fund in sorted %}
@@ -145,30 +145,30 @@ Expense ratios may also be expressed in basis points. One basis point is 1/100th
     </tr>
     <tr>
       <td>Gross</td>
-      <td>{{ site.data.funds.G_Fund.gross}}</td>
-      <td>{{ site.data.funds.F_Fund.gross}}</td>
-      <td class="default">{{ site.data.funds.C_Fund.gross}}</td>
-      <td>{{ site.data.funds.S_Fund.gross}}</td>
-      <td>{{ site.data.funds.I_Fund.gross}}</td>
+      {% for fund in sorted %}
+        <td{% if forloop.index == 3 %} class="default"{% endif %}>
+         {% include components/expense_string.html value=fund.summary_details.gross_expense percentOnly=true %}
+        </td>
+      {% endfor %}
     </tr>
     <tr>
       <td>Net<sup>1</sup></td>
-      <td>{{ site.data.funds.G_Fund.net}}</td>
-      <td>{{ site.data.funds.F_Fund.net}}</td>
-      <td class="default">{{ site.data.funds.C_Fund.net}}</td>
-      <td>{{ site.data.funds.S_Fund.net}}</td>
-      <td>{{ site.data.funds.I_Fund.net}}</td>
+      {% for fund in sorted %}
+        <td{% if forloop.index == 3 %} class="default"{% endif %}>
+         {% include components/expense_string.html value=fund.summary_details.net_expense percentOnly=true %}
+        </td>
+      {% endfor %}
     </tr>
     <tr>
       <td colspan="6" class="sep">YYYY Other Expenses<sup>2</sup></td>
     </tr>
     <tr>
       <td></td>
-      <td>{{ site.data.funds.G_Fund.other}}</td>
-      <td>{{ site.data.funds.F_Fund.other}}</td>
-      <td class="default">{{ site.data.funds.C_Fund.other}}</td>
-      <td>{{ site.data.funds.S_Fund.other}}</td>
-      <td>{{ site.data.funds.I_Fund.other}}</td>
+      {% for fund in sorted %}
+        <td{% if forloop.index == 3 %} class="default"{% endif %}>
+         {% include components/expense_string.html value=fund.summary_details.other_expense percentOnly=true %}
+        </td>
+      {% endfor %}
     </tr>
   </tbody>
 </table>

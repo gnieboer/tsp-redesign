@@ -21,4 +21,4 @@ document-ready:
 We have a selection of individual funds that offer broad market diversification. You can choose to have your retirement dollars invested in everything from a short-term U.S. Treasury security to index funds made of domestic and
 international stocks.
 
-{% include components/fund-comparison.html %}
+{% include components/fund-comparison.html  funds='Individual' %}
