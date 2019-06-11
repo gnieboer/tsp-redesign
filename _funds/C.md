@@ -24,7 +24,6 @@ avg_annual_returns:
     inception: "-"
 summary_details:
     assets: $67.6 billion
-    admin_expense: $0.032/$1,000 account balance. 0.032% (3.2 basis points)
     gross_expense:  .052
     net_expense:    .041
     other_expense:  .001
