@@ -31,10 +31,11 @@ $color-aqua-lightest: lighten($color-aqua-light, 10%);
 
 $color-silver: #f1f1f1;
 $color-gray: #7d7c7c;
-$color-gray-dark: darken($color-gray, 5%);
-$color-gray-darkest: darken($color-gray, 10%);
-$color-gray-light: #aeb0b5;
-$color-gray-lightest: lighten($color-gray-light, 10%);
+$color-gray-dark: darken($color-gray,15%);
+$color-gray-darkest: darken($color-gray,30%);
+$color-gray-light: lighten($color-gray,15%);
+$color-gray-lighter: lighten($color-gray,30%);
+$color-gray-lightest: lighten($color-gray,45%);
 
 // Fund colors
 $color-g-fund: #dd5900;

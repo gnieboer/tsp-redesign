@@ -3,6 +3,7 @@
 .as-of-date {
   color: #999;
   font-size: 1.5rem;
+  padding-left: 1rem;
 }
 .fund-details-header {
   border-bottom: 2px solid #B5B3B3;
@@ -72,76 +73,99 @@ h2, h3, h4, h5, h6 {
 
 @media screen and (min-width: 992px) {
 
-.usa-tabs {
-  width: auto;
-  h2, h3, h4  {
-    font-family: $font-sans;
-    font-weight: $font-normal;
-  }
-  > li {
-    display:inline;
+  section#fund-tabs {
+  .usa-tabs {
     width: auto;
-    background-color: transparent;
-    margin-right: 1rem;
-  }
-  .usa-accordion-button {
-    width: auto;
-    display:inline-block;
-    clear:both;
-    color: #afafaf;
-    background-color: $color-white;
-    background-image: none;
-    font-weight: normal;
-    padding-right: 2rem;
-    border: none;
-    border-bottom-color: transparent;
-    &[aria-expanded="true"] {
+    h2, h3, h4  {
+      font-family: $font-sans;
+      font-weight: $medium;
+    }
+    > li {
+      display:inline;
+      width: auto;
+      background-color: transparent;
+      margin-right: 1rem;
+    }
+    .usa-accordion-button {
+      width: auto;
+      display:inline-block;
+      clear:both;
+      color: $color-gray-light;
       background-color: $color-white;
-      color: $color-base;
-      font-weight: $font-bold;
-      line-height: 3rem;
-      &:after {
-        content: '';
-        border-bottom: 4px solid $color-primary-alt;
-        display: block;
-      }
-    }
-  }
-  .usa-accordion-content {
-    float:left;
-    clear:both;
-    width: 100%;
-    border-top: none;
-    background-color: $color-gray-lightest;
-    .usa-grid-full {
-      display: flex;
-      > div {
+      background-image: none;
+      font-weight: normal;
+      padding-right: 2rem;
+      border: none;
+      border-bottom-color: transparent;
+      &[aria-expanded="true"] {
         background-color: $color-white;
-        padding: 2rem;
+        color: $color-base;
+        font-weight: $font-bold;
+        line-height: 3rem;
+        &:after {
+          content: '';
+          border-bottom: 4px solid $color-primary-alt;
+          display: block;
+        }
       }
     }
-    &[aria-hidden="false"] {
+    .usa-accordion-content {
+      float:left;
+      clear:both;
+      width: 100%;
+      border-top: none;
       background-color: $color-gray-lightest;
+      padding: 1.2rem 1rem;
+      .usa-grid-full {
+        display: flex;
+        > div {
+          background-color: $color-white;
+          padding: 2rem;
+        }
+      }
+      &[aria-hidden="false"] {
+        background-color: $color-gray-lightest;
 
+      }
+      table {
+        width: 100%;
+        font-size: 1.5rem;
+        th, td {
+          border-style: dotted;
+        }
+        th {
+          &:first-child {
+            width: 50%;
+          }
+          &:nth-last-child(-n+2) {
+            text-align: center;
+          }
+        }
+        td {
+          &:nth-last-child(-n+2) {
+            text-align: center;
+          }
+        }
+      }
     }
   }
-}
-}
+  }
 
-.fund-summary-top-ten {
-  ol {
-    list-style: none;
-    padding: 0;
+  .fund-summary-top-ten {
+    ol {
+      list-style: none;
+      padding: 0;
+    }
+    .holdings-abbr {
+      color: $color-primary;
+      font-weight: 800;
+      display: inline-block;
+      margin-right: 2rem;
+      width: 4rem;
+    }
+    li {
+      border-bottom: 1px solid #dfdfdf;
+      padding: .25rem 0 1rem;
+    }
   }
-  .holdings-abbr {
-    color: $color-primary;
-    font-weight: 800;
-    display: inline-block;
-    margin-right: 2rem;
-    width: 4rem;
-  }
-  li {
-    border-bottom: 1px solid #dfdfdf;
-    padding: .25rem 0 1rem;
-  }
-}
+} // end section#fund-tabs

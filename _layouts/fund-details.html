@@ -74,9 +74,10 @@ main:
 
 </div>
 
+<section id="fund-tabs">
 <ul class="usa-accordion usa-tabs">
     <li>
-        <button class="usa-accordion-button" aria-expanded="true" aria-controls="a1">
+        <button class="usa-accordion-button" aria-expanded="false" aria-controls="a1">
           Summary
     </button>
         <div id="a1" class="usa-accordion-content">
@@ -128,7 +129,7 @@ main:
         </div>
     </li>
     <li>
-        <button class="usa-accordion-button" aria-expanded="false" aria-controls="a3">
+        <button class="usa-accordion-button" aria-expanded="true" aria-controls="a3">
       Composition
     </button>
         <div id="a3" class="usa-accordion-content">
@@ -142,7 +143,28 @@ main:
 {% else %}
           <div class="usa-grid-full">
             <div class="usa-width-one-whole">
-              <h3>Portfolio Weight</h3>
+              <h3>Portfolio Weight <span class="as-of-date">As of 12/31/{{ 'now' | date: "%Y" | minus: 1 }}</span></h3>
+              <table class="usa-table-borderless">
+                <thead>
+                  <tr>
+                    <th scope="col">Sector</th>
+                    <th scope="col">Portfolio Weight</th>
+                    <th scope="col">Portfolio Percentage</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">Information Technology</th>
+                    <td>18.3%</td>
+                    <td><i class="fas fa-chart-pie"></i></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Financials</th>
+                    <td>16.9%</td>
+                    <td><i class="fas fa-chart-pie"></i></td>
+                  </tr>
+               </tbody>
+</table>
             </div>
           </div>
 {% endif %}
@@ -178,6 +200,7 @@ main:
         </div>
     </li>
 </ul>
+</section>
 
 {{ page.content }}
 
