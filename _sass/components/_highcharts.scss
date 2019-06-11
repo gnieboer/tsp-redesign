@@ -51,7 +51,7 @@ $highlight-color-20: #ccd6eb !default; // Ticks and axis line.
 $highlight-color-10: #e6ebf5 !default; // Pressed button, color axis min color.
 
 // Fonts
-$font-family: "Lucida Grande", "Lucida Sans Unicode", Arial, Helvetica, sans-serif !default;
+$font-family: $sans !default;
 $title-font-size: 1.5em !default;
 $subtitle-font-size: 1em !default;
 $legend-font-size: 1em !default;
@@ -152,7 +152,7 @@ $indicator-negative-line: #F21313;
 /* Titles */
 .highcharts-title {
     fill: $neutral-color-80;
-    font-size: $title-font-size;
+    font-size: 2.5rem;
 }
 .highcharts-subtitle {
     fill: $neutral-color-60;
