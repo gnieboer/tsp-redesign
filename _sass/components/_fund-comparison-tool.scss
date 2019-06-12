@@ -1,9 +1,14 @@
 .fund-comparison-tool {
+  table {
+    width: 100%;
+    table-layout: fixed;
+  }
   thead th, td {
     background-color: inherit;
     border-top: none;
     &:first-child {
       border-left: none;
+      width: auto;
     }
   }
   th {
