@@ -41,20 +41,20 @@ Expense ratios may also be expressed in basis points. One basis point is 1/100th
 {% assign rowString = "YTD|Year-to-date, 1YR|1-year, 3YR|3-year, 5YR|5-year, 10YR|10-year, Life|Life" %}
 {% assign rows = rowString | split: ', ' %}
 
-<ul class="funds">
+<ul class="funds-lifecycle">
 {% for fund in sorted %}
-  <li>
-    <button{% if forloop.index == 3 %} class="active"{% endif %}>{{ fund.Fund_name }}</button>
+  <li{% if forloop.index == 3 %} class="active"{% endif %}>
+    <button>{{ fund.Fund_name }}</button>
   </li>
 {% endfor %}
 </ul>
 
-<table>
+<table class="l">
   <thead>
     <tr>
       <th class="hide"></th>
       {% for fund in sorted %}
-        <th class="bg-blue{% if forloop.index == 3 %} default{% endif %}">{{ fund.Fund_name }}</th>
+        <th class="{% if forloop.index == 3 %} default{% endif %}">{{ fund.Fund_name }}</th>
       {% endfor %}
     </tr>
   </thead>
@@ -109,15 +109,15 @@ Expense ratios may also be expressed in basis points. One basis point is 1/100th
 ## Individual funds
 {% include components/get_sorted_fund_list funds='Individual' reverse=false %}
 
-<ul class="funds">
+<ul class="funds-individual">
 {% for fund in sorted %}
-  <li>
-    <button{% if forloop.index == 3 %} class="active"{% endif %}>{{ fund.Fund_name }}</button>
+  <li{% if forloop.index == 3 %} class="active"{% endif %}>
+    <button>{{ fund.Fund_name }}</button>
   </li>
 {% endfor %}
 </ul>
 
-<table>
+<table class="i">
   <thead>
     <tr>
       <th class="hide"></th>
