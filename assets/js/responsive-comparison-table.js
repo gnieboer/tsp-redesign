@@ -1,10 +1,19 @@
 // Responsive comparison table JS
 
-$( "ul.funds" ).on( "click", "li", function() {
+$( "ul.funds-lifecycle" ).on( "click", "li", function() {
   var pos = $(this).index()+2;
-  $("tr").find('td:not(:eq(0))').hide();
-  $('td:nth-child('+pos+')').css('display','table-cell');
-  $("tr").find('th:not(:eq(0))').hide();
+  $("table.l tr").find('td:not(:eq(0))').hide();
+  $('table.l td:nth-child('+pos+')').css('display','table-cell');
+  $("table.l tr").find('th:not(:eq(0))').hide();
+  $('li').removeClass('active');
+  $(this).addClass('active');
+});
+
+$( "ul.funds-individual" ).on( "click", "li", function() {
+  var pos = $(this).index()+2;
+  $("table.i tr").find('td:not(:eq(0))').hide();
+  $('table.i td:nth-child('+pos+')').css('display','table-cell');
+  $("table.i tr").find('th:not(:eq(0))').hide();
   $('li').removeClass('active');
   $(this).addClass('active');
 });
