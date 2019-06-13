@@ -2,6 +2,11 @@
 layout: default
 main:
   class: usa-grid usa-section usa-content usa-layout-docs fund-details
+scripts:
+  - /assets/js/jquery.min.js
+  - /assets/js/highcharts/highcharts.js
+  - /assets/js/highcharts/exporting.js
+  - /assets/js/highcharts/data.js
 ---
 {% assign sidenav = site.data.navigation[page.sidenav] | default: page.sidenav %}
 {% if sidenav %}
@@ -123,6 +128,7 @@ main:
             <div class="usa-width-one-whole">
               <h3>Charts and graphs</h3>
               <div id="annualReturnsColumn" class="hc-annual-returns-bar"></div>
+              <div id="annualReturnsTable" class="hc-annual-returns-table"></div>
               <div id="growthInception" class="hc-growth-inception"></div>
             </div>
           </div>

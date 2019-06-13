@@ -149,8 +149,10 @@ function getFundIndexAverageAnnualReturns(fund) {
       type: 'column',
       styledMode: true
     },
+    legend: { enabled: false },
     title: {
       // text: 'Average Rates of Return' + '   <span class="hc-note">(As of December ' + year + ')</span>'
+      align: 'left',
       text: 'Average Rates of Return'
     },
     data: {
@@ -158,11 +160,13 @@ function getFundIndexAverageAnnualReturns(fund) {
       beforeParse: function (csv) {
         var data = csv.split('|');
         setTitle(data[1]);
+        buildReturnsTable(data[0]);
         return data[0];
       },
       csvURL: 'https://www.tsp.gov/components/CORS/getFundIndexAverageAnnualReturns.html?fund='+fund
     },
     series: [{ colorIndex: colorFund }, { colorIndex: colorIndex }],
+    // exporting: { showTable: true },
     xAxis: {
           crosshair: true
     },
@@ -172,10 +176,18 @@ function getFundIndexAverageAnnualReturns(fund) {
       labels: { formatter: function() { return this.value + '%'; } }
     },
     tooltip: {
-          headerFormat: '<strong>{point.key}</strong><table>',
-          pointFormat: '<tr><td style="color:{series.color};padding:0">{series.name}: </td>' +
-              '<td style="padding:0"><b>{point.y:.1f}%</b></td></tr>',
-          footerFormat: '</table>',
+//          headerFormat: '<strong>{point.key}</strong><table>',
+//          pointFormat: '<tr><td style="color:{series.color};padding:0">{series.name}: </td>' +
+//              '<td style="padding:0"><b>{point.y:.1f}%</b></td></tr>',
+//          footerFormat: '</table>',
+          formatter: function () {
+            // console.log(this);
+            returnsTableActive(this.x+1);
+            return this.points.reduce(function (s, point) {
+                return s + '<br/>' + point.series.name + ': ' +
+                    point.y + 'm';
+            }, '<b>' + this.points[0].key + '</b>');
+          },
           shared: true,
           useHTML: true
     }
@@ -183,4 +195,41 @@ function getFundIndexAverageAnnualReturns(fund) {
 }
 function setTitle(year) {
 	barChart.setTitle({text: 'Average Rates of Return' + '   <span class="hc-note">(As of December ' + year + ')</span>'});
+}
+function buildReturnsTable(arr) {
+  var headName = { YTD: 'YTD', '1-yr': '1&nbsp;Yrs', '3-yr': '3&nbsp;Yrs', '5-yr': '5&nbsp;Yrs', '10-yr': '10&nbsp;Yrs', Inception: 'Life'};
+  var i, j;
+  var table = '<table>';
+  var lines = arr.split("\n");
+  var cellClass = 'even';
+  // header
+  var col = lines[0].trim().split(',');
+  table += '<tr><th></th>';
+  cellClass = 'even';
+  for (i = 1; i < col.length; i++) {
+    table += '<th class="' + cellClass + ' col' + i + '">'+headName[col[i].trim()]+'</th>';
+    if (cellClass == 'even') { cellClass = 'odd'; } else { cellClass = 'even'; }
+  }
+  table += "</tr>\n";
+  for (j=1; j < lines.length; j++) {
+    if (lines[j].trim() == '') { continue; }
+    col = lines[j].split(',');
+    table += '<tr>';
+    cellClass = 'odd';
+    for (i = 0; i < col.length; i++) {
+      table += '<td class="' + cellClass + ' col' + i + '">'+col[i].trim()+'</td>';
+      if (cellClass == 'even') { cellClass = 'odd'; } else { cellClass = 'even'; }
+    }
+    table += "</tr>\n";
+  }
+
+ table += "\n</table>"
+ console.log(arr + "\n" + table);
+ $('#annualReturnsTable').html(table);
+}
+function returnsTableActive(idx) {
+    for (var i = 0; i < 8; i++) {
+      $('.col'+i).removeClass('active');
+    }
+    $('.col'+idx).addClass('active');
 }

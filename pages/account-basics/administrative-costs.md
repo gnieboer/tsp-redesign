@@ -73,7 +73,7 @@ Expense ratios may also be expressed in basis points. One basis point is 1/100th
     </tr>
 {% endfor %}
     <tr>
-      <td colspan="6" class="sep">YYYY Administrative Expenses</td>
+      <td colspan="6" class="sep">{{ sorted.first.summary_details.as_of_year }} Administrative Expenses</td>
     </tr>
     <tr>
       <td>Gross</td>
@@ -92,7 +92,7 @@ Expense ratios may also be expressed in basis points. One basis point is 1/100th
       {% endfor %}
     </tr>
     <tr>
-      <td colspan="6" class="sep">YYYY Other Expenses<sup>2</sup></td>
+      <td colspan="6" class="sep">{{ sorted.first.summary_details.as_of_year }} Other Expenses<sup>2</sup></td>
     </tr>
     <tr>
       <td></td>
@@ -141,7 +141,7 @@ Expense ratios may also be expressed in basis points. One basis point is 1/100th
         </tr>
     {% endfor %}
     <tr>
-      <td colspan="6" class="sep">YYYY Administrative Expenses</td>
+      <td colspan="6" class="sep">{{ sorted.first.summary_details.as_of_year }} Administrative Expenses</td>
     </tr>
     <tr>
       <td>Gross</td>
@@ -160,7 +160,7 @@ Expense ratios may also be expressed in basis points. One basis point is 1/100th
       {% endfor %}
     </tr>
     <tr>
-      <td colspan="6" class="sep">YYYY Other Expenses<sup>2</sup></td>
+      <td colspan="6" class="sep">{{ sorted.first.summary_details.as_of_year }} Other Expenses<sup>2</sup></td>
     </tr>
     <tr>
       <td></td>

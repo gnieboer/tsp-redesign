@@ -25,6 +25,7 @@ avg_annual_returns:
     inception: "-"
 summary_details:
     assets: $67.6 billion
+    as_of_year: 2018
     gross_expense:  .052
     net_expense:    .040
     other_expense:  .021
@@ -69,9 +70,6 @@ risk_level: low
 rewards: |
   While investment in the C Fund carries risk, it also offers the opportunity to experience gains from equity ownership of large and mid-sized U.S. company stocks.
 scripts:
-    - /assets/js/jquery.min.js
-    - /assets/js/highcharts/highcharts.js
-    - /assets/js/highcharts/data.js
 bottom-scripts: /assets/js/ajaxFetch.js
 document-ready:
   - singleFundData('S');
