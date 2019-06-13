@@ -24,6 +24,7 @@ avg_annual_returns:
   inception: "-"
 summary_details:
   assets: $67.6 billion
+  as_of_year: 2018
   gross_expense:  .051
   net_expense:    .040
   other_expense:  .002
@@ -53,10 +54,7 @@ subfunds:
   - name: L2040
   - name: L2040
 scripts:
-    - /assets/js/jquery.min.js
-    - /assets/js/highcharts/highcharts.js
-    - /assets/js/highcharts/data.js
-    - /assets/js/calculator/lifecycle.js
+  - /assets/js/calculator/lifecycle.js
 bottom-scripts: /assets/js/ajaxFetch.js
 document-ready:
   - singleFundData('Linc');

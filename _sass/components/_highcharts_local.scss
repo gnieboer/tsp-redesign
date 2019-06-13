@@ -9,6 +9,11 @@
   height: 400px;
   margin: 0 auto;
 }
+.hc-annual-returns-table {
+  .even { background-color: #f2f2f2; }
+  .odd { }
+  .active { font-weight: bold; }
+}
 
 .hc-lfund-stacked-area {
   min-width: 310px;

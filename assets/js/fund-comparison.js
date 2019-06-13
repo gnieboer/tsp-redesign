@@ -1,9 +1,11 @@
 // show/hide all the cells of the supplied class
 function toggleCells(cb, className) {
   if (cb.checked) {
-    $('.'+className).show();
+    // $('.'+className).show();
+    $('.'+className).removeClass('hide');
   }  else {
-    $('.'+className).hide();
+    // $('.'+className).hide();
+    $('.'+className).addClass('hide');
   }
   return true;
 }
