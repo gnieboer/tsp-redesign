@@ -757,6 +757,48 @@ function smallLifeCyclePie(fund, divID, startingData) {
   return null;
 }
 
+
+// return chart object
+function compositionPie(divID, percentage) {
+
+  if (percentage) {
+    var percentData = [percentage, 100 - percentage];
+    var myChart = Highcharts.chart(divID, {
+          credits: { enabled: false },
+          chart: {
+              type: 'pie',
+              backgroundColor: 'transparent',
+              plotBackgroundColor: null,
+              plotBorderWidth: 1, // null,
+              plotShadow: false,
+              styledMode: true
+          },
+          navigation: { buttonOptions: { enabled: false }},
+          title: { text: null },
+          tooltip: { enabled: false },
+          plotOptions: {
+              series: { states: { hover: { enabled: false } } },
+              pie: {
+                  size: 30,
+                  allowPointSelect: false,
+                  // cursor: 'pointer',
+                  dataLabels: {
+                      enabled: false,
+                  },
+  		              showInLegend: false
+              }
+          },
+          series: [{
+              startAngle: 0,
+              data: percentData
+          }]
+      });
+
+    return myChart;
+  }
+  return null;
+}
+
 // convert to hc data structure
 function stackedAreaData(fund) {
   var mult = 100.0;  // data sums to 1 not 100%

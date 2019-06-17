@@ -8,6 +8,7 @@ scripts:
   - /assets/js/highcharts/exporting.js
   - /assets/js/highcharts/export-data.js
   - /assets/js/highcharts/data.js
+  - /assets/js/calculator/lifecycle.js
 ---
 {% assign sidenav = site.data.navigation[page.sidenav] | default: page.sidenav %}
 {% if sidenav %}
@@ -140,41 +141,7 @@ scripts:
       Composition
     </button>
         <div id="a3" class="usa-accordion-content">
-{% if page.Fund_type == 'L' %}
-          <div class="usa-grid-full">
-            <div class="usa-width-one-whole">
-              <h3>{{ page.Fund_name }} Allocation</h3>
-              <div id="LfundStackedArea" class="hc-lfund-stacked-area"></div>
-            </div>
-          </div>
-{% else %}
-          <div class="usa-grid-full">
-            <div class="usa-width-one-whole">
-              <h3>Portfolio Weight <span class="as-of-date">As of 12/31/{{ 'now' | date: "%Y" | minus: 1 }}</span></h3>
-              <table class="usa-table-borderless">
-                <thead>
-                  <tr>
-                    <th scope="col">Sector</th>
-                    <th scope="col">Portfolio Weight</th>
-                    <th scope="col">Portfolio Percentage</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <th scope="row">Information Technology</th>
-                    <td>18.3%</td>
-                    <td><i class="fas fa-chart-pie"></i></td>
-                  </tr>
-                  <tr>
-                    <th scope="row">Financials</th>
-                    <td>16.9%</td>
-                    <td><i class="fas fa-chart-pie"></i></td>
-                  </tr>
-               </tbody>
-</table>
-            </div>
-          </div>
-{% endif %}
+{% include components/fund-composition.html %}
         </div>
     </li>
     <li>
