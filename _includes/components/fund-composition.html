@@ -1,0 +1,123 @@
+{% if page.Fund_type == 'L' %}
+          <div class="usa-grid-full">
+            <div class="usa-width-one-whole">
+              <h3>{{ page.Fund_name }} Allocation</h3>
+              <div id="LfundStackedArea" class="hc-lfund-stacked-area"></div>
+            </div>
+          </div>
+{% endif %}
+{% if page.Fund_type != 'L' %}
+
+{% if page.composition %}
+          <div class="usa-grid-full">
+            <div class="usa-width-one-whole">
+              <h3>Portfolio Weight <span class="as-of-date">As of 12/31/{{ 'now' | date: "%Y" | minus: 1 }}</span></h3>
+              <table class="usa-table-borderless">
+                <thead>
+                  <tr>
+                    <th scope="col">Sector</th>
+                    <th scope="col">Portfolio Weight</th>
+                    <th scope="col">Portfolio Percentage</th>
+                  </tr>
+                </thead>
+                <tbody>
+{% assign total = 0.0 %}
+{% for item in page.composition %}
+  {% assign total = total | plus: item[1]] %}
+                <tr>
+                  <th scope="row">{{ item[0]] }}</th>
+                  <td>{{ item[1]] }}%</td>
+                  <td><div id="composition-pie-{{forloop.index}}" class="hc-composition-pie"><div></td>
+                </tr>
+{% endfor %}
+                <tr>
+                  <th scope="row">Total</th>
+                  <td>{{ total }}%</td>
+                  <td><div id="composition-pie-0" class="hc-composition-pie"><div></td>
+                </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+{% endif %}
+
+{% if page.country_composition %}
+      <div class="usa-grid-full">
+        <div class="usa-width-one-whole">
+          <table class="usa-table-borderless">
+            <thead>
+              <tr>
+                <th scope="col">Country</th>
+                <td scope="col">Percent of Holding</td>
+                <td scope="col">Portfolio Percentage</td>
+                <td scope="col">Number of Companies</td>
+              </tr>
+            </thead>
+            <tbody>
+{% assign totalPH = 0.0 %}
+{% assign totalNC = 0 %}
+{% for item in page.country_composition %}
+  {% assign subIndex = forloop.index %}
+              <tr>
+                <th scope="row"><b>{{item.name}}</b></th>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+  {% assign subtotalPH = 0.0 %}
+  {% assign subtotalNC = 0 %}
+  {% for subitem in item.countries %}
+  {% assign subtotalPH = subtotalPH | plus: subitem[1] %}
+  {% assign subtotalNC = subtotalNC | plus: subitem[2] %}
+              <tr>
+                <th scope="row">{{subitem[0]}}</th>
+                <td>{{subitem[1]}}</td>
+                <td><div id="composition-pie-{{subIndex}}-{{forloop.index}}" class="hc-composition-pie"><div></td>
+                <td>{{subitem[2]}}</td>
+              </tr>
+  {% endfor %}
+  {% assign totalPH = totalPH | plus: subtotalPH %}
+  {% assign totalNC = totalNC | plus: subtotalNC %}
+              <tr>
+                <th scope="row"><b>Total {{item.name}}</b></th>
+                <th>{{subtotalPH}}</th>
+                <th><div id="composition-pie-0-{{forloop.index}}" class="hc-composition-pie"><div></th>
+                <th>{{subtotalNC}}</th>
+              </tr>
+{% endfor %}
+              <tr>
+                <th scope="row"><b>Grand Total</b></th>
+                <th>{{totalPH}}</th>
+                <th><div id="composition-pie-0-0" class="hc-composition-pie"><div></th>
+                <th>{{totalNC}}</th>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+{% else %}
+<p>Put something here about this fund being 100% US investment.</p>
+{% endif %}
+
+{% endif %}
+
+<script>
+function doCompositionPies() {
+{% for item in page.composition %}
+  compositionPie('composition-pie-{{forloop.index}}', {{ item[1] }});
+{% endfor %}
+  compositionPie('composition-pie-0', {{ total }});
+
+{% for item in page.country_composition %}
+  {% assign subIndex = forloop.index %}
+  {% assign subtotalPH = 0.0 %}
+  {% for subitem in item.countries %}
+  {% assign subtotalPH = subtotalPH | plus: subitem[1] %}
+  compositionPie('composition-pie-{{subIndex}}-{{forloop.index}}', {{ subitem[1] }});
+  {% endfor %}
+  {% assign totalPH = totalPH | plus: subtotalPH %}
+  compositionPie('composition-pie-0-{{forloop.index}}', {{ subtotalPH }});
+{% endfor %}
+  compositionPie('composition-pie-0-0', {{ totalPH }});
+}
+</script>

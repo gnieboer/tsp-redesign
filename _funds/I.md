@@ -31,6 +31,32 @@ summary_details:
     other_expense:  .010
     benchmark_index: Dow Jones U.S. Completion TSM Index | www.djindexes.com
     asset_manager: BlackRock Institutional Trust Company, N.A
+country_composition:
+  - name: Europe
+    countries:
+      - [Austria, 0.2, 6]
+      - [Belgium, 1.0, 10]
+      - [Denmark, 1.8, 17]
+      - [Finland, 1.0, 12]
+      - [France, 11.1, 79]
+      - [Germany, 8.8, 64]
+      - [Ireland, 0.5, 8]
+      - [Italy, 2.3, 23]
+      - [Netherlands, 3.4, 19]
+      - [Norway, 0.7, 10]
+      - [Portugal, 0.2, 3]
+      - [Spain, 3.1, 22]
+      - [Sweden, 2.7, 32]
+      - [Switzerland, 8.7, 38]
+      - [United Kingdom, 16.9, 96]
+  - name: Australasia/Far East
+    countries:
+      - [Australia, 6.9, 69]
+      - [Hong Kong, 3.9, 47]
+      - [Israel, 0.5, 11]
+      - [Japan, 24.6, 322]
+      - [New Zealand, 0.2, 7]
+      - [Singapore, 1.4, 25]
 top_ten_holdings:
   - name: Tesla Motors Inc.
     abbr: TSLA
@@ -55,4 +81,5 @@ document-ready:
   - singleFundData('I');
   - getFundIndexAverageAnnualReturns('I');
   - getGrowthInception('I');
+  - doCompositionPies();
 ---

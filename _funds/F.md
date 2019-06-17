@@ -31,6 +31,10 @@ summary_details:
     other_expense:  .016
     benchmark_index: Dow Jones U.S. Completion TSM Index | www.djindexes.com
     asset_manager: BlackRock Institutional Trust Company, N.A
+composition:
+  - [Government/Government-Related, 38.7]
+  - [Asset-Backed Securities, 30.7]
+  - [Credit, 30.6]
 top_ten_holdings:
   - name: Tesla Motors Inc.
     abbr: TSLA
@@ -55,4 +59,5 @@ document-ready:
   - singleFundData('F');
   - getFundIndexAverageAnnualReturns('F');
   - getGrowthInception('F');
+  - doCompositionPies();
 ---
