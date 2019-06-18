@@ -21,8 +21,26 @@
   .even { background-color: #f2f2f2; }
   .odd { }
   .active { font-weight: bold; }
+  .rate-of-return-bar {
+    &:before {
+      font-family: "Font Awesome 5 Pro";
+      content: "\f0c8";
+      font-weight: 900;
+      padding-right: .6rem;
+      font-size: inherit;
+      width: 50%;
+     }
+   }
 }
+.spann {
+  &:before {
+    content: "<span ";
+   }
+  &:after {
+    content: "</span>";
+  }
 
+}
 .hc-lfund-stacked-area {
   min-width: 310px;
   height: 400px;

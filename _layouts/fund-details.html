@@ -122,22 +122,63 @@ scripts:
         </div>
     </li>
     <li>
-        <button class="usa-accordion-button" aria-expanded="false" aria-controls="a2">
+        <button class="usa-accordion-button" aria-expanded="true" aria-controls="a2">
       Performance &amp; risks
     </button>
         <div id="a2" class="usa-accordion-content">
           <div class="usa-grid-full">
             <div class="usa-width-one-whole">
-              <h3>Charts and graphs</h3>
               <div id="annualReturnsColumn" class="hc-annual-returns-bar"></div>
               <div id="annualReturnsTable" class="hc-annual-returns-table"></div>
+              <!-- Returns table code -->
+              <section>
+                <p>
+                  <em>See</em> div id="annualReturnsTableX" on line 136
+                  <ul>
+                    <li>
+                      <code class="spann">class="rate-of-return-bar [fund]-fund"></code> before Fund name value.
+                      </li>
+                      <li>
+                      <code>< span class="rate-of-return-bar index-[fund]">< /span></code> before Index name.
+                        </li>
+                    <li>
+                      All .class names and styles have been added to <code>/_sass/components/<strong>_highcharts_local.scss</strong></code>
+                      </li>
+                      <li>
+                        Delete class .spann from <code>/_sass/components/<strong>_highcharts_local.scss</strong></code>
+                        </li>
+                    </ul>
+                  </p>
+                <div id="annualReturnsTableX" class="hc-annual-returns-table">
+   <table>
+     <tbody>
+       <tr>
+         <th></th>
+         <th class="even col1 active">YTD</th><th class="odd col2">1&nbsp;Yrs</th>
+         <th class="even col3">3&nbsp;Yrs</th><th class="odd col4">5&nbsp;Yrs</th>
+         <th class="even col5">10&nbsp;Yrs</th><th class="odd col6">Life</th>
+       </tr>
+<tr>
+  <td class="odd col0"><span class="rate-of-return-bar f-fund"></span>F</td>
+  <td class="even col1 active">4.79</td>
+  <td class="odd col2">0.15</td>
+  <td class="even col3">2.28</td>
+  <td class="odd col4">2.88</td>
+  <td class="even col5">3.73</td><td class="odd col6">6.04</td>
+</tr>
+       <tr><td class="odd col0"><span class="rate-of-return-bar index-f"></span>LBA</td><td class="even col1 active">4.80</td><td class="odd col2">0.01</td><td class="even col3">2.06</td><td class="odd col4">2.52</td><td class="even col5">3.48</td><td class="odd col6">6.05</td></tr>
+
+</tbody></table>
+
+              </div>
+                </section>
               <div id="growthInception" class="hc-growth-inception"></div>
             </div>
           </div>
         </div>
     </li>
     <li>
-        <button class="usa-accordion-button" aria-expanded="true" aria-controls="a3">
+        <button class="usa-accordion-button" aria-expanded="false" aria-controls="a3">
       Composition
     </button>
         <div id="a3" class="usa-accordion-content">
