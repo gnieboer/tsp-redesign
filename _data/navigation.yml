@@ -163,8 +163,6 @@ fund-options:
         href: /funds-individual/s-fund/
       - text: I Fund
         href: /funds-individual/i-fund/
-      - text: Z Fund
-        href: /funds-individual/z-fund/
   - text: Fund performance
     href: /fund-performance/
     subnav:

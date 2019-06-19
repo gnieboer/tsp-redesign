@@ -723,7 +723,7 @@ function smallLifeCyclePie(fund, divID, startingData) {
                 var rc = '<div class="before-invest-tooltip">'
                         + '<span class="legend-title"><strong>'+this.series.points[0].name+'</strong></span><br>';
                 for (i = 1; i <= 5; i++) {
-                  rc += '<span class="'+this.series.points[i].colorIndex+'-fund-color legend-left">'
+                  rc += '<span class="'+this.series.points[i].colorIndex+'-fund legend-left">'
                         + this.series.points[i].name + '</span>'
                         + '<span class="legend-right">' + this.series.points[i].y.toFixed(2)
                         + '%</span><br>';
@@ -879,7 +879,7 @@ function LfundStackedArea(fund, divID) {
                 var rc = '<div class="l-fund-tooltip">'
                         + '<span class="legend-title"><strong>'+this.points[0].x+'</strong></span><br>';
                 for (i = 0; i < 5; i++) {
-                  rc += '<span class="'+this.points[i].colorIndex+'-fund-color legend-left">'
+                  rc += '<span class="'+this.points[i].colorIndex+'-fund legend-left">'
                         + this.points[i].series.name + ' Fund</span>'
                         + '<span class="legend-right">' + this.points[i].y.toFixed(2)
                         + '%</span><br>';
