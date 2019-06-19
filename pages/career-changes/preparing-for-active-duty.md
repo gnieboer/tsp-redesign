@@ -47,7 +47,7 @@ Confirm how much you have contributed to your employer's defined contribution pl
 
 + Make sure we have your current mailing address. If necessary, ask your agency and/or your service to correct or change your mailing address for your TSP account.
 + Be sure you have your TSP account number (or user ID), web password, and ThriftLine PIN. If you have lost or forgotten these numbers, you may request your account number be mailed to you.
-+ Acquaint yourself with TSP [contribution limits](/making-contributions/contribution-limits/).
++ Acquaint yourself with TSP [contribution limits]({{ site.baseurl }}/making-contributions/contribution-limits/).
 
 ### Give a power of attorney
 
@@ -55,7 +55,7 @@ Before you go on active duty, you can designate a power of attorney—an individ
 
 ### Review beneficiaries
 
-If you’d like your TSP account paid out in the [statutory order of precedence](/planning-for-life-events/beneficiary-basics/) in the event of your death, it is **not** necessary to designate beneficiaries.
+If you’d like your TSP account paid out in the [statutory order of precedence]({{ site.baseurl }}/planning-for-life-events/beneficiary-basics/) in the event of your death, it is **not** necessary to designate beneficiaries.
 
 If you have designated beneficiaries on file with us, review, update, or change information, if necessary. We do not accept any other types of designations (such as wills).
 <!-- CONTENT END -->

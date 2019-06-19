@@ -12,5 +12,5 @@ The Office of Management and Budget (OMB) requires that each Government agency d
 
 If you would like to contact FRTIB’s Privacy Office, or if you would like to submit a privacy complaint, please email us at [privacy@tsp.gov](mailto:privacy@tsp.gov).
 
-Additionally, we have developed instructions for submitting a [Privacy Act request](/contact-privacy/submit-privacy-act-request/) if you wish to access or correct records that FRTIB maintains about you.
+Additionally, we have developed instructions for submitting a [Privacy Act request]({{ site.baseurl }}/contact-privacy/submit-privacy-act-request/) if you wish to access or correct records that FRTIB maintains about you.
 <!-- CONTENT END -->

@@ -158,7 +158,7 @@ money on the table. Are you contributing enough to get at least the full match f
 </div>
 </section> <!-- // end #free-money-honey -->
 
-<!-- ![How to maximize your 5% matching contributions](/assets/img/infographs/maximize-your-savings.png) -->
+<!-- ![How to maximize your 5% matching contributions]({{ site.baseurl }}/assets/img/infographs/maximize-your-savings.png) -->
 
 ## Am I eligible for matching?
 Only employees covered by the <span data-term="Federal Employees' Retirement System (FERS)" class="js-glossary-toggle term term-end">Federal Employees Retirement System</span> (for civilians) and the <span data-term="Blended Retirement System (BRS)" class="js-glossary-toggle term term-end">Blended Retirement System </span> (for uniformed services) are eligible for matching. If you're brand new to federal or uniformed service, you are covered by one of these systems.
