@@ -112,6 +112,7 @@ function getGrowthInception(fund) {
       styledMode: true
     },
     title: {
+      align: 'left',
       text: 'Growth of $100 since Inception'
     },
     data: {
@@ -172,7 +173,7 @@ function getFundIndexAverageAnnualReturns(fund) {
     },
     yAxis: {
           // min: 0,
-          title: { text: '% return' },
+          title: { text: undefined },
       labels: { formatter: function() { return this.value + '%'; } }
     },
     tooltip: {
@@ -216,7 +217,18 @@ function buildReturnsTable(arr) {
     col = lines[j].split(',');
     table += '<tr>';
     cellClass = 'odd';
-    for (i = 0; i < col.length; i++) {
+    var fund = col[0].trim().toLowerCase();
+    var fundColor = fund + '-fund';
+    if (fund == 'linc') {
+      fund = 'l-income';
+      fundColor = fund + '-fund';
+      if (j > 1) { fundColor = 'l-income-compare'; }
+    }
+    table += '<td class="' + cellClass + ' col' + '0' + '">'
+        +'<span class="rate-of-return-bar '+fundColor+'"></span>'
+        + fund.toUpperCase()+'</td>';
+    if (cellClass == 'even') { cellClass = 'odd'; } else { cellClass = 'even'; }
+    for (i = 1; i < col.length; i++) {
       table += '<td class="' + cellClass + ' col' + i + '">'+col[i].trim()+'</td>';
       if (cellClass == 'even') { cellClass = 'odd'; } else { cellClass = 'even'; }
     }
@@ -224,7 +236,7 @@ function buildReturnsTable(arr) {
   }
 
  table += "\n</table>"
- console.log(arr + "\n" + table);
+ // console.log(arr + "\n" + table);
  $('#annualReturnsTable').html(table);
 }
 function returnsTableActive(idx) {
