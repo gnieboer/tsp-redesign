@@ -25,7 +25,7 @@
         <span class="usa-banner-button-text"></span>
       </button>
           <div class="usa-banner-guidance-gov usa-width-one-whole">
-            <img class="usa-banner-icon usa-media_block-img" src="{{ page.alert.icon | default: '/assets/img/icons/alert-circle-white.svg' }}" alt="Alert">
+            <img class="usa-banner-icon usa-media_block-img" src="{{ page.alert.icon | default: '{{ site.baseurl }}/assets/img/icons/alert-circle-white.svg' }}" alt="Alert">
             <div class="usa-media_block-body">
               <h2>{{ page.alert.title | default: 'No title specified' }}</h2>
               {% if page.alert.subtitle %}<strong>{{ page.alert.subtitle }}</strong><br>{% endif %}
