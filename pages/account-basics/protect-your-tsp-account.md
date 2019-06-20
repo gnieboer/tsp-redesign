@@ -24,7 +24,7 @@ As a TSP participant, you should know how to protect your account against variou
 </div>  
 </div>
 
-If you’re unsure whether correspondence or telephone calls claiming to be from the TSP are authentic, **DO NOT** provide any personal or financial information. [Contact us](/contact/) directly if you have questions or if you need to report any suspicious activity involving your TSP account.
+If you’re unsure whether correspondence or telephone calls claiming to be from the TSP are authentic, **DO NOT** provide any personal or financial information. [Contact us]({{ site.baseurl }}/contact/) directly if you have questions or if you need to report any suspicious activity involving your TSP account.
 
 ## More way to protect your TSP account:
 

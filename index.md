@@ -67,19 +67,19 @@ Whether you're new to the federal government or preparing to retire, we're here 
 <!-- NEW TO THE TSP? -->
 <div class="usa-width-one-third" markdown="1">
 
-[Get started](/account-basics/)
+[Get started]({{ site.baseurl }}/account-basics/)
 </div>
 
 <!-- EVERYTHING YOU NEED -->
 <div class="usa-width-one-third" markdown="1">
 
-[Learn more](/how-to-invest/)
+[Learn more]({{ site.baseurl }}/how-to-invest/)
 
 </div>
 <!-- WE'LL BE WITH YOU -->
 <div class="usa-width-one-third" markdown="1">
 
-[Learn more](/planning-for-life-events/)
+[Learn more]({{ site.baseurl }}/planning-for-life-events/)
 
 </div>
 
@@ -90,16 +90,16 @@ Whether you're new to the federal government or preparing to retire, we're here 
 <section class="quick-links homepage">
 <div class="usa-grid">
 <div class="usa-width-one-fourth" markdown="1">
-[Fund performance](/fund-performance/)
+[Fund performance]({{ site.baseurl }}/fund-performance/)
 </div>
 <div class="usa-width-one-fourth" markdown="1">
-[Forms and publications](/forms/)
+[Forms and publications]({{ site.baseurl }}/forms/)
 </div>
 <div class="usa-width-one-fourth" markdown="1">
-[Contribution limits](/making-contributions/contribution-limits/)
+[Contribution limits]({{ site.baseurl }}/making-contributions/contribution-limits/)
 </div>
 <div class="usa-width-one-fourth" markdown="1">
-[Calculators](/calculators/)
+[Calculators]({{ site.baseurl }}/calculators/)
 </div>
 </div>
 </section>
@@ -136,7 +136,7 @@ Lifecycle funds
 
   Consider if you were born 1983 or later, or plan to need your TSP savings in 2045 or later.
 
-  [Learn more](/funds-lifecycle/l-2050/){:.learn-more}
+  [Learn more]({{ site.baseurl }}/funds-lifecycle/l-2050/){:.learn-more}
 
   </div>
   </li>
@@ -151,7 +151,7 @@ Lifecycle funds
 
   Consider if you were born 1973 – 1982, or plan to need your TSP savings between 2035 and 2044.
 
-  [Learn more](/funds-lifecycle/l-2040/){:.learn-more}
+  [Learn more]({{ site.baseurl }}/funds-lifecycle/l-2040/){:.learn-more}
 
   </div>
   </li>
@@ -165,7 +165,7 @@ Lifecycle funds
 
   Consider if you were born 1963 – 1972, or plan to need your TSP savings between 2025 and 2034.
 
-  [Learn more](/funds-lifecycle/l-2030/){:.learn-more}
+  [Learn more]({{ site.baseurl }}/funds-lifecycle/l-2030/){:.learn-more}
 
   </div>
   </li>
@@ -180,7 +180,7 @@ Lifecycle funds
 
   Consider if you were born 1954 – 1962, or plan to need your TSP savings between 2018 and 2024.
 
-  [Learn more](/funds-lifecycle/l-2020/){:.learn-more}
+  [Learn more]({{ site.baseurl }}/funds-lifecycle/l-2020/){:.learn-more}
 
   </div>
   </li>
@@ -194,7 +194,7 @@ Lifecycle funds
 
   Consider if you were born before 1954, or are using your TSP savings or expect to in the next year.
 
-  [Learn more](/funds-lifecycle/l-income/){:.learn-more}
+  [Learn more]({{ site.baseurl }}/funds-lifecycle/l-income/){:.learn-more}
 
   </div>
   </li>
@@ -223,7 +223,7 @@ Lifecycle funds
 
   A fund containing government securities that are specially issued to the TSP.
 
-  [Learn more](/funds-individual/g-fund/){:.learn-more}
+  [Learn more]({{ site.baseurl }}/funds-individual/g-fund/){:.learn-more}
 
   </div>
   </li>
@@ -238,7 +238,7 @@ Lifecycle funds
 
   A fund containing government, corporate, and asset-backed bonds.
 
-  [Learn more](/funds-individual/f-fund/){:.learn-more}
+  [Learn more]({{ site.baseurl }}/funds-individual/f-fund/){:.learn-more}
 
   </div>
   </li>
@@ -252,7 +252,7 @@ Lifecycle funds
 
   A fund containing stocks of large and medium-sized U.S. companies.
 
-  [Learn more](/funds-individual/c-fund/){:.learn-more}
+  [Learn more]({{ site.baseurl }}/funds-individual/c-fund/){:.learn-more}
 
   </div>
   </li>
@@ -267,7 +267,7 @@ Lifecycle funds
 
   A fund containing stocks of small to medium-sized U.S. companies.
 
-  [Learn more](/funds-individual/s-fund/){:.learn-more}
+  [Learn more]({{ site.baseurl }}/funds-individual/s-fund/){:.learn-more}
 
   </div>
   </li>
@@ -281,7 +281,7 @@ Lifecycle funds
 
   A fund containing international stocks from more than 20 developed countries.
 
-  [Learn more](/funds-individual/i-fund/){:.learn-more}
+  [Learn more]({{ site.baseurl }}/funds-individual/i-fund/){:.learn-more}
 
   </div>
   </li>
@@ -302,7 +302,7 @@ Lifecycle funds
 
 Being confident about your retirement plans makes it easier to deal with uncertain times in the market.
 
-[Learn more](/how-to-invest/before-you-invest/)
+[Learn more]({{ site.baseurl }}/how-to-invest/before-you-invest/)
 <!-- maybe link to BYI tool or Stick to Your Plan language that I just discovered doesn't, but should and will eventually exist. -->
 </div>
 </div>
@@ -317,7 +317,7 @@ Being confident about your retirement plans makes it easier to deal with uncerta
 <!-- Transfers money to TSP -->
 <div class="usa-width-one-third" markdown="1">
 
-### [Transfer money to TSP](/account-basics/move-money-into-tsp/)
+### [Transfer money to TSP]({{ site.baseurl }}/account-basics/move-money-into-tsp/)
 
 <img src="{{ site.baseurl }}/assets/img/icons/money.svg" alt="">
 </div>
@@ -325,7 +325,7 @@ Being confident about your retirement plans makes it easier to deal with uncerta
 <!-- Change in family status -->
 <div class="usa-width-one-third" markdown="1">
 
-### [Change in family status](/planning-for-life-events/changes-in-your-family-status/)
+### [Change in family status]({{ site.baseurl }}/planning-for-life-events/changes-in-your-family-status/)
 
 <img src="{{ site.baseurl }}/assets/img/icons/family_blue.svg" alt="">
 </div>
@@ -333,7 +333,7 @@ Being confident about your retirement plans makes it easier to deal with uncerta
 <!-- Update your information -->
 <div class="usa-width-one-third" markdown="1">
 
-### [Update your information](/account-basics/update-personal-information/)
+### [Update your information]({{ site.baseurl }}/account-basics/update-personal-information/)
 
 <img src="{{ site.baseurl }}/assets/img/icons/individual_blue.svg" alt="" class="team">
 </div>
@@ -352,7 +352,7 @@ To save you time and give you the best<br />
 experience, we’ve prepared answers to the questions<br />
 our participants and beneficiaries ask most often.
 
-[Read our frequently asked questions](/faq/)
+[Read our frequently asked questions]({{ site.baseurl }}/faq/)
 </div>
 </div>
 </section>

@@ -18,13 +18,13 @@ If you've been rehired by the federal government, there are a few things you nee
 
 If you’re a rehired FERS or CSRS employee who’s had a break in service of **31 or more full calendar days**, regardless of whether you were enrolled prior to your break, your agency will automatically enroll you in the TSP. Each pay period, 3% of your basic pay will be deducted from your paycheck and deposited in your TSP account, unless you elect to contribute immediately upon rehire.
 
-You can [change or stop your contributions](/making-contributions/start-change-stop-contributions/) at any time after you are rehired. If you’re a FERS employee, your [Agency/Service Automatic (1%)](https://www.tsp.gov/PlanParticipation/EligibilityAndContributions/typesOfContributions.html#agencyServiceAutomatic) and [Agency/Service Matching Contributions](https://www.tsp.gov/PlanParticipation/EligibilityAndContributions/typesOfContributions.html#agencyServiceMatching) (if you are contributing your own money) will also begin immediately.
+You can [change or stop your contributions]({{ site.baseurl }}/making-contributions/start-change-stop-contributions/) at any time after you are rehired. If you’re a FERS employee, your [Agency/Service Automatic (1%)](https://www.tsp.gov/PlanParticipation/EligibilityAndContributions/typesOfContributions.html#agencyServiceAutomatic) and [Agency/Service Matching Contributions](https://www.tsp.gov/PlanParticipation/EligibilityAndContributions/typesOfContributions.html#agencyServiceMatching) (if you are contributing your own money) will also begin immediately.
 
 If you’re a rehired FERS or CSRS employee who’s had a break in service of less than 31 full calendar days and you were previously contributing to the TSP, your employee contributions and your agency contributions (for FERS) will resume upon rehire. If you weren’t contributing previously, you can begin at any time. Visit Start, change, or stop contributions((/making-contributions/start-change-stop-contributions/), to learn how. 
 
 ## Uniformed Services
 
-If you’re reentering the uniformed services after a break of **more than 30 days and you were a BRS member prior to your break**, your service will automatically enroll you in the TSP. Each pay period, 3% of your basic pay will be deducted from your paycheck and deposited in your TSP account, unless you elect to contribute immediately upon rehire. You can change or stop your contributions at any time after you are rehired. Visit [Start, change, or stop contributions](/making-contributions/start-change-stop-contributions/), to learn how. Your Service Automatic (1%) and, if you are eligible for them, Service Matching Contributions will also begin immediately.
+If you’re reentering the uniformed services after a break of **more than 30 days and you were a BRS member prior to your break**, your service will automatically enroll you in the TSP. Each pay period, 3% of your basic pay will be deducted from your paycheck and deposited in your TSP account, unless you elect to contribute immediately upon rehire. You can change or stop your contributions at any time after you are rehired. Visit [Start, change, or stop contributions]({{ site.baseurl }}/making-contributions/start-change-stop-contributions/), to learn how. Your Service Automatic (1%) and, if you are eligible for them, Service Matching Contributions will also begin immediately.
 
 If you’re reentering the uniformed services after a break of **more than 30 days and you were not a BRS member prior to your break**, you will not be automatically enrolled. You can start a TSP account or resume contributing to your existing TSP account at any time after you are rehired. To learn how, visit Start, change, or stop contributions(/making-contributions/start-change-stop-contributions/).
 
@@ -42,7 +42,7 @@ If you’re a FERS, CSRS, or BRS participant who was rehired after a break in se
 
 BRS members, note that the above rules apply only to members reentering the service. Those who are automatically re-enrolled because they stop contributing to their TSP accounts are not eligible for refunds.
 
-A refund of your automatic employee contributions **will not stop** your agency from deducting future contributions from your pay each pay period. If you also want to stop your automatic contributions, you must make a contribution election. For more information, visit [Start, change, or stop contributions](/making-contributions/start-change-stop-contributions/).
+A refund of your automatic employee contributions **will not stop** your agency from deducting future contributions from your pay each pay period. If you also want to stop your automatic contributions, you must make a contribution election. For more information, visit [Start, change, or stop contributions]({{ site.baseurl }}/making-contributions/start-change-stop-contributions/).
 
 ## Loans
 

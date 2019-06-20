@@ -31,7 +31,7 @@ Once you leave the federal government, you’ll no longer be able to make employ
 
 As you prepare to leave federal service, here are four important things you must do:
 
-- Make sure the TSP has your [current address](/account-basics/update-personal-information/) at all times.
+- Make sure the TSP has your [current address]({{ site.baseurl }}/account-basics/update-personal-information/) at all times.
 - If you have any TSP loans, pay them off within 90 days of your separation.
 - Read _[Withdrawing Your TSP Account After Leaving Federal Service](javascript:void(0))_ to fully understand your options.
 - Read the tax notice "[Important Tax Information About Payments From Your TSP Account](javascript:void(0))."
@@ -52,7 +52,7 @@ Once you leave the uniformed services, you’ll no longer be able to make contri
 
 As you prepare to separate from service, here are some important things you must do:
  
-- Make sure we have your [current address](/account-basics/update-personal-information/) at all times. While you’re an active duty service member, you can update your address through the MyPay website. Just make sure that you log in and go to the TSP section to change your TSP address. If you change it in the “Correspondence Address” section of myPay, it will not change your TSP address.
+- Make sure we have your [current address]({{ site.baseurl }}/account-basics/update-personal-information/) at all times. While you’re an active duty service member, you can update your address through the MyPay website. Just make sure that you log in and go to the TSP section to change your TSP address. If you change it in the “Correspondence Address” section of myPay, it will not change your TSP address.
 - If you have any TSP loans, pay them off within 90 days of your separation.
 - Read _[Withdrawing Your TSP Account After Leaving Federal Service](javascript:void(0))_ to fully understand your options.
 - Read the tax notice "[Important Tax Information About Payments From Your TSP Account](javascript:void(0))."
