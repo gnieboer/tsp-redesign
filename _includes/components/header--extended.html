@@ -26,7 +26,7 @@
       </button>
           <div class="usa-banner-guidance-gov usa-width-one-whole">
             <!-- <img class="usa-banner-icon usa-media_block-img" src="{{ page.alert.icon | default: '{{ site.baseurl }}/assets/img/icons/alert-circle-white.svg' }}" alt="Alert"> -->
-            <img class="usa-banner-icon usa-media_block-img" src="{% if page.alert.icon %}{{ page.alert.icon }}{% else %}{{ site.baseurl }}/assets/img/icons/alert-circle-white.svg{% endif %}" alt="Alert">
+            <img class="usa-banner-icon usa-media_block-img" src="{% if page.alert.icon %}{{ site.baseurl }}{{ page.alert.icon }}{% else %}{{ site.baseurl }}/assets/img/icons/alert-circle-white.svg{% endif %}" alt="Alert">
 
 
 
