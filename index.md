@@ -7,7 +7,7 @@ scripts:
 
 alert:
   show-alert: true
-  icon: /assets/img/icons/alert-circle-white.svg
+  icon:
   title: Scheduled Outage
   subtitle:
   body:
