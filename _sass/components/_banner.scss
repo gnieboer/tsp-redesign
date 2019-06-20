@@ -23,7 +23,7 @@
     float: right;
   }
   .usa-banner-button[aria-expanded=true]::after, .usa-banner-button[aria-expanded=true]:hover::after, .usa-banner-button[aria-expanded=false]::after, .usa-banner-button[aria-expanded=false]:hover::after {
-      background-image: url(/assets/img/icons/x-circle-white.svg);
+      background-image: url($baseurl + '/assets/img/icons/x-circle-white.svg');
       background-size: 100%;
       content: '';
       display: inline-block;

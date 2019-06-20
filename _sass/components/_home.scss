@@ -14,7 +14,8 @@ a.learn-more, .usa-learn-more a {
     content: '';
     position: relative;
     display: inline-block;
-    background: url(/assets/img/icons/arrow_sw.svg) no-repeat;
+    // background: url($baseurl + '/assets/img/icons/arrow_sw.svg') no-repeat;
+    background: url($baseurl + '/assets/img/icons/arrow_sw.svg') no-repeat;
     transform: rotate(180deg);
     width: 1.8rem;
     height: 2.8rem;
@@ -99,7 +100,7 @@ a.learn-more, .usa-learn-more a {
 
 // SECTION: KNOW YOURSELF AS AN INVESTOR
 .section-investor {
-  background-image: url('/assets/img/photo/Woman_holding_coffee.jpg');
+  background-image: url($baseurl + '/assets/img/photo/Woman_holding_coffee.jpg');
   background-size: cover;
   padding: 22rem 0;
   h2 {
@@ -159,7 +160,7 @@ a.learn-more, .usa-learn-more a {
 
 // SECTION: FIND THE ANSWERS AT YOUR FINGERTIPS
 .section-find-answers {
-  background-image: url('/assets/img/photo/Woman_FeatherEdge.png');
+  background-image: url($baseurl + '/assets/img/photo/Woman_FeatherEdge.png');
   background-size: cover;
   padding: 4rem 0 38rem 0;
   color: #323a45;
@@ -183,7 +184,7 @@ a.learn-more, .usa-learn-more a {
       content: '';
       position: absolute;
       display: inline-block;
-      background: url("/assets/img/icons/arrow_sw.svg") no-repeat;
+      background: url($baseurl + "/assets/img/icons/arrow_sw.svg") no-repeat;
       transform: rotate(180deg);
       width: 2rem;
       height: 3.7rem;
