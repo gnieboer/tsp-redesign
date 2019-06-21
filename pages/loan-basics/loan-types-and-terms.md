@@ -20,24 +20,24 @@ The current loan interest rate on new loans is 2.5%, which is the current G Fund
 
 ## How a TSP loan works
 When you take a loan, you borrow from your contributions to your TSP account. Your loan amount can’t exceed the amount of your own contributions and earnings from those contributions. Also, you cannot borrow from contributions or earnings you get from your agency or service.
- 
+
 If you meet the loan eligibility rules and your loan request is approved, the loan amount is removed from your TSP account. You must repay your loan with interest. Generally, loans are repaid through payroll deductions. Your repayments restore the amount of your loan, plus interest, to your account. For additional information, visit [Repaying your loan](repaying-your-loan.md).
 
 ## Loan types and terms
 We allow two types of loans:
 
 **General Purpose** | **Residential**    
------------------ | ----------------- 
-![check](tsp-redesign/assets/img/check.svg "Check mark") May be used for any purpose | ![check](tsp-redesign/assets/img/check.svg "Check mark") May only be used for the purchase or construction of a primary residence
-![check](tsp-redesign/assets/img/check.svg "Check mark") Requires no documentation | ![check](tsp-redesign/assets/img/check.svg "Check mark") Requires documentation
-![check](tsp-redesign/assets/img/check.svg "Check mark") Has a repayment term of 1 to 5 years | ![check](tsp-redesign/assets/img/check.svg "Check mark") Has a repayment term of 1 to 5 years
+----------------- | -----------------
+![check]({{ site.baseurl }}/assets/img/icons/check-circle-green.svg "Check mark") May be used for any purpose | ![check]({{ site.baseurl }}/assets/img/icons/check-circle-green.svg "Check mark") May only be used for the purchase or construction of a primary residence
+![check]({{ site.baseurl }}/assets/img/icons/check-circle-green.svg "Check mark") Requires no documentation | ![check]({{ site.baseurl }}/assets/img/icons/check-circle-green.svg "Check mark") Requires documentation
+![check]({{ site.baseurl }}/assets/img/icons/check-circle-green.svg "Check mark") Has a repayment term of 1 to 5 years | ![check]({{ site.baseurl }}/assets/img/icons/check-circle-green.svg "Check mark") Has a repayment term of 1 to 5 years
 
 For details, visit [Residential Loan Documentation](#).
 
-![alert](tsp-redesign/assets/img/alert-circle.svg "alert circle") Your loan payments must start within 60 days of your loan being sent.
+![alert]({{ site.baseurl }}/assets/img/icons/alert-circle-red.svg "alert circle") Your loan payments must start within 60 days of your loan being sent.
 
 ### Loan eligibility
- 
+
 **To be eligible for a loan, you:**
 + must be an active federal employee or a member of the uniformed services.
 + must be in pay status because repayments are set up as payroll deductions.
@@ -58,16 +58,16 @@ You can only use a residential loan for purchasing or constructing a primary res
 + Boat
 + Mobile home
 + Recreational vehicle
- 
+
 **You cannot use a residential loan for**
 
-+ ![x_red](tsp-redesign/assets/img/x_red.svg "red x") refinancing or prepaying your existing mortgage
-+ ![x_red](tsp-redesign/assets/img/x_red.svg "red x") construction of an addition to your existing residence
-+ ![x_red](tsp-redesign/assets/img/x_red.svg "red x") renovations to your existing residence
-+ ![x_red](tsp-redesign/assets/img/x_red.svg "red x") buying out another person's share in the your current residence 
-+ ![x_red](tsp-redesign/assets/img/x_red.svg "red x") purchasing land only
- 
-![alert](tsp-redesign/assets/img/alert-circle.svg "alert circle") Your primary residence must be purchased in whole or in part by you, or your spouse.
++ ![x_red]({{ site.baseurl }}/assets/img/icons/x-circle-red.svg "red x") refinancing or prepaying your existing mortgage
++ ![x_red]({{ site.baseurl }}/assets/img/icons/x-circle-red.svg "red x") construction of an addition to your existing residence
++ ![x_red]({{ site.baseurl }}/assets/img/icons/x-circle-red.svg "red x") renovations to your existing residence
++ ![x_red]({{ site.baseurl }}/assets/img/icons/x-circle-red.svg "red x") buying out another person's share in the your current residence
++ ![x_red]({{ site.baseurl }}/assets/img/icons/x-circle-red.svg "red x") purchasing land only
+
+![alert]({{ site.baseurl }}/assets/img/icons/alert-circle-red.svg "alert circle") Your primary residence must be purchased in whole or in part by you, or your spouse.
 
 ## Borrowing limits
 ### Minimum loan amount
@@ -78,27 +78,27 @@ The maximum amount you can borrow is the smallest of the following:
 
 + Your own contributions and earnings on those contributions in the TSP account you'd like to borrow from, not including any outstanding loan balance;
 + 50% of your [vested account balance](#) (including any outstanding loan balance) or $10,000, whichever is greater, minus any outstanding loan balance (see note below); or
-+ $50,000 minus your highest outstanding loan balance, if any, during the last 12 months (see note below). 
++ $50,000 minus your highest outstanding loan balance, if any, during the last 12 months (see note below).
 
-Note: If you have both a civilian account and a uniformed services account, the combined account balances and outstanding loan amounts will be used to calculate the maximum loan amount. 
-
-TSP account balances are recalculated at the end of each business day based on daily share prices. As a result, the maximum loan amount may change on a daily basis.
+Note: If you have both a civilian account and a uniformed services account, the combined account balances and outstanding loan amounts will be used to calculate the maximum loan amount.
 
 TSP account balances are recalculated at the end of each business day based on daily share prices. As a result, the maximum loan amount may change on a daily basis.
 
-To find out more about the maximum amount available for a loan, use the calculator, [ _Estimate Loan Payments_](#) , or [contact us](#).
+TSP account balances are recalculated at the end of each business day based on daily share prices. As a result, the maximum loan amount may change on a daily basis.
+
+To find out more about the maximum amount available for a loan, use the calculator, [ _Estimate Loan Payments_](#) , or [contact us](/contact/).
 
 ## Loan costs
 
 ### Direct costs
 
 **Loan Fee** We charge a loan fee of $50 for administrative expenses. This fee is deducted from your loan proceeds. For example, if you request a loan for $1,000, the amount paid to you will be $950.
- 
+
 **Interest** The interest rate on your loan is the G Fund rate at the time your loan application is processed. This rate is fixed for the life of the loan. Although loan interest is not tax-deductible, all of the interest goes back into your TSP account.
 
 ### Indirect costs
 
 When you take a loan, you sacrifice the earnings that might have accrued on the borrowed money, had it remained in your TSP account.
- 
+
 Although you pay the loan amount back to your account with interest, the amount of interest paid may be less than what you might have earned if the money had remained in your TSP account.
 For information on all costs associated with a loan, review the booklet, [_Loans_](#).
