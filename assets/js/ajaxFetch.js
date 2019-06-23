@@ -136,7 +136,7 @@ function getGrowthInception(fund) {
 var barChart;
 function getFundIndexAverageAnnualReturns(fund) {
   var colorFund = 'lf';
-  var colorIndex = 'gray';
+  var colorIndex = 'il';
 
   if (fund == 'G') { colorFund = 'g'; colorIndex = 'ig'; }
   if (fund == 'F') { colorFund = 'f'; colorIndex = 'if'; }
@@ -197,6 +197,33 @@ function getFundIndexAverageAnnualReturns(fund) {
 function setTitle(year) {
 	barChart.setTitle({text: 'Average Rates of Return' + '   <span class="hc-note">(As of December ' + year + ')</span>'});
 }
+function mapServerFundName (f) {
+  var fund = f.trim().toUpperCase();
+  if (fund == 'G') { return 'G Fund'; }
+  if (fund == 'F') { return 'F Fund'; }
+  if (fund == 'C') { return 'C Fund'; }
+  if (fund == 'S') { return 'S Fund'; }
+  if (fund == 'I') { return 'I Fund'; }
+
+  if (fund == 'LINC') { return 'L Income'; }
+  if (fund == 'L2020') { return 'L 2020'; }
+  if (fund == 'L2025') { return 'L 2025'; }
+  if (fund == 'L2030') { return 'L 2030'; }
+  if (fund == 'L2035') { return 'L 2035'; }
+  if (fund == 'L2040') { return 'L 2040'; }
+  if (fund == 'L2045') { return 'L 2045'; }
+  if (fund == 'L2050') { return 'L 2050'; }
+  if (fund == 'L2055') { return 'L 2055'; }
+  if (fund == 'L2060') { return 'L 2060'; }
+  if (fund == 'L2065') { return 'L 2065'; }
+
+  // if (fund == '') { return ''; } // G
+  if (fund == 'LBA') { return 'U.S. Agg. Bond Index'; } // F
+  if (fund == 'SP500') { return 'S&P 500 Index'; } // C
+  if (fund == 'W4500') { return 'DJ U.S. Completion TSM Index'; } // S
+  if (fund == 'EAFE') { return 'EAFE Index'; } // I
+  return '** ' + fund + '**';
+}
 function buildReturnsTable(arr) {
   var headName = { YTD: 'YTD', '1-yr': '1&nbsp;Yrs', '3-yr': '3&nbsp;Yrs', '5-yr': '5&nbsp;Yrs', '10-yr': '10&nbsp;Yrs', Inception: 'Life'};
   var i, j;
@@ -217,19 +244,21 @@ function buildReturnsTable(arr) {
     col = lines[j].split(',');
     table += '<tr>';
     cellClass = 'odd';
+    var fundName = mapServerFundName(col[0].trim());
+    console.log('fund is ' + col[0].trim());
     var fund = col[0].trim().toLowerCase();
     var fundColor = fund + '-fund';
     if (fund == 'linc') {
       fund = 'l-income';
       fundColor = fund + '-fund';
-      if (j > 1) { fundColor = 'l-income-compare'; }
+      if (j > 1) { fundColor = 'l-income-index'; }
     }
     table += '<td class="' + cellClass + ' col' + '0' + '">'
         +'<span class="rate-of-return-bar '+fundColor+'"></span>'
-        + fund.toUpperCase()+'</td>';
+        + fundName +'</td>';
     if (cellClass == 'even') { cellClass = 'odd'; } else { cellClass = 'even'; }
     for (i = 1; i < col.length; i++) {
-      table += '<td class="' + cellClass + ' col' + i + '">'+col[i].trim()+'</td>';
+      table += '<td class="' + cellClass + ' col' + i + '">'+col[i].trim()+'%</td>';
       if (cellClass == 'even') { cellClass = 'odd'; } else { cellClass = 'even'; }
     }
     table += "</tr>\n";
@@ -245,3 +274,39 @@ function returnsTableActive(idx) {
     }
     $('.col'+idx).addClass('active');
 }
+
+function columnSort(ascending, columnClassName, tableId, tailLength) {
+    var tbody = document.getElementById(tableId).getElementsByTagName(
+            "tbody")[0];
+    var rows = tbody.getElementsByTagName("tr");
+
+    var unsorted = true;
+
+    while (unsorted) {
+        unsorted = false;
+
+        for (var r = 0; r < rows.length - 1 - tailLength; r++) {
+            var row = rows[r];
+            var nextRow = rows[r + 1];
+
+            var value = row.getElementsByClassName(columnClassName)[0].innerHTML;
+            var nextValue = nextRow.getElementsByClassName(columnClassName)[0].innerHTML;
+
+            value = value.replace(',', '.'); // in case a comma is used in float number
+            nextValue = nextValue.replace(',', '.');
+            value = value.replace('%', ''); // in case a comma is used in float number
+            nextValue = nextValue.replace('%', '');
+
+            if (!isNaN(value)) {
+                value = parseFloat(value);
+                nextValue = parseFloat(nextValue);
+            }
+
+            if (ascending ? value > nextValue : value < nextValue) {
+                tbody.insertBefore(nextRow, row);
+                unsorted = true;
+            }
+            // console.log(value, nextValue, unsorted);
+        }
+    }
+};

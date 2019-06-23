@@ -11,12 +11,22 @@
 {% if page.composition %}
           <div class="usa-grid-full">
             <div class="usa-width-one-whole">
-              <h3>Portfolio Weight <span class="as-of-date">As of 12/31/{{ 'now' | date: "%Y" | minus: 1 }}</span></h3>
-              <table class="usa-table-borderless">
+              <h3>Portfolio Weight
+                {% if page.composition-update %}<span class="as-of-date">As of {{ page.composition-update }}</span>{% endif %}
+              </h3>
+              <table class="usa-table-borderless" id="sector-composition">
                 <thead>
                   <tr>
-                    <th scope="col">Sector</th>
-                    <th scope="col">Portfolio Weight</th>
+                    <th scope="col" class="sortSector">
+                      <a href="javascript:columnSort(false, 'sortSector', 'sector-composition', 1);">^</a>
+                      Sector
+                      <a href="javascript:columnSort(true, 'sortSector', 'sector-composition', 1);">v</a>
+                    </th>
+                    <th scope="col" class="sortWeight">
+                      <a href="javascript:columnSort(false, 'sortWeight', 'sector-composition', 1);">^</a>
+                      Portfolio Weight*
+                      <a href="javascript:columnSort(true, 'sortWeight', 'sector-composition', 1);">v</a>
+                    </th>
                     <th scope="col">Portfolio Percentage</th>
                   </tr>
                 </thead>
@@ -25,76 +35,77 @@
 {% for item in page.composition %}
   {% assign total = total | plus: item[1]] %}
                 <tr>
-                  <th scope="row">{{ item[0]] }}</th>
-                  <td>{{ item[1]] }}%</td>
+                  <th scope="row" class="sortSector">{{ item[0]] }}</th>
+                  <td class="sortWeight">{{ item[1]] }}%</td>
                   <td><div id="composition-pie-{{forloop.index}}" class="hc-composition-pie"><div></td>
                 </tr>
 {% endfor %}
                 <tr>
-                  <th scope="row">Total</th>
-                  <td>{{ total }}%</td>
-                  <td><div id="composition-pie-0" class="hc-composition-pie"><div></td>
+                  <th scope="row"><b>Total</b></th>
+                  <td><b>{{ total }}%</b></td>
+                  <td><!-- <div id="composition-pie-0" class="hc-composition-pie"><div> --></td>
                 </tr>
                 </tbody>
               </table>
             </div>
           </div>
+          {% if page.composition.size > 1 %}
+          <p>* Due to rounding, numbers may not add up to exactly 100%.</p>
+          {% endif %}
 {% endif %}
 
 {% if page.country_composition %}
       <div class="usa-grid-full">
         <div class="usa-width-one-whole">
-          <table class="usa-table-borderless">
+          <h3>Portfolio Weight
+            {% if page.composition-update %}<span class="as-of-date">As of {{ page.composition-update }}</span>{% endif %}
+          </h3>
+          <table class="usa-table-borderless" id="country-composition">
             <thead>
               <tr>
-                <th scope="col">Country</th>
-                <td scope="col">Percent of Holding</td>
-                <td scope="col">Portfolio Percentage</td>
-                <td scope="col">Number of Companies</td>
+                <th scope="col" class="sortCountry">
+                  <a href="javascript:columnSort(false, 'sortCountry', 'country-composition', 1);">^</a>
+                  Country
+                  <a href="javascript:columnSort(true, 'sortCountry', 'country-composition', 1);">v</a>
+                </th>
+                <th scope="col" class="sortHoldings">
+                  <a href="javascript:columnSort(false, 'sortHoldings', 'country-composition', 1);">^</a>
+                  Percent of Holdings*
+                  <a href="javascript:columnSort(true, 'sortHoldings', 'country-composition', 1);">v</a>
+                </th>
+                <th scope="col">Portfolio Percentage</th>
+                <th scope="col" class="sortCount">
+                  <a href="javascript:columnSort(false, 'sortCount', 'country-composition', 1);">^</a>
+                  Number of Companies
+                  <a href="javascript:columnSort(true, 'sortCount', 'country-composition', 1);">v</a>
+                </th>
               </tr>
             </thead>
             <tbody>
 {% assign totalPH = 0.0 %}
 {% assign totalNC = 0 %}
-{% for item in page.country_composition %}
-  {% assign subIndex = forloop.index %}
+  {% for item in page.country_composition %}
+  {% assign totalPH = totalPH | plus: item[1] %}
+  {% assign totalNC = totalNC | plus: item[2] %}
               <tr>
-                <th scope="row"><b>{{item.name}}</b></th>
-                <td></td>
-                <td></td>
-                <td></td>
-              </tr>
-  {% assign subtotalPH = 0.0 %}
-  {% assign subtotalNC = 0 %}
-  {% for subitem in item.countries %}
-  {% assign subtotalPH = subtotalPH | plus: subitem[1] %}
-  {% assign subtotalNC = subtotalNC | plus: subitem[2] %}
-              <tr>
-                <th scope="row">{{subitem[0]}}</th>
-                <td>{{subitem[1]}}%</td>
-                <td><div id="composition-pie-{{subIndex}}-{{forloop.index}}" class="hc-composition-pie"><div></td>
-                <td>{{subitem[2]}}</td>
+                <td scope="row" class="sortCountry">{{item[0]}}</td>
+                <td class="sortHoldings">{{item[1]}}%</td>
+                <td><div id="composition-pie-0-{{forloop.index}}" class="hc-composition-pie"><div></td>
+                <td class="sortCount">{{item[2]}}</td>
               </tr>
   {% endfor %}
-  {% assign totalPH = totalPH | plus: subtotalPH %}
-  {% assign totalNC = totalNC | plus: subtotalNC %}
               <tr>
-                <th scope="row"><b>Total {{item.name}}</b></th>
-                <th>{{subtotalPH}}%</th>
-                <th><div id="composition-pie-0-{{forloop.index}}" class="hc-composition-pie"><div></th>
-                <th>{{subtotalNC}}</th>
-              </tr>
-{% endfor %}
-              <tr>
-                <th scope="row"><b>Grand Total</b></th>
-                <th>{{totalPH}}%</th>
-                <th><div id="composition-pie-0-0" class="hc-composition-pie"><div></th>
-                <th>{{totalNC}}</th>
+                <th scope="row"><b>Total</b></th>
+                <th><b>{{totalPH}}%</b></th>
+                <th><!-- <div id="composition-pie-0-0" class="hc-composition-pie"><div> --></th>
+                <th><b>{{totalNC}}</b></th>
               </tr>
             </tbody>
           </table>
         </div>
       </div>
+      <p> Source: BlackRock
+        <br>* Due to rounding, numbers may not add up to exactly 100%.</p>
 {% else %}
 <p>Put something here about this fund being 100% US investment.</p>
 {% endif %}
@@ -106,18 +117,13 @@ function doCompositionPies() {
 {% for item in page.composition %}
   compositionPie('composition-pie-{{forloop.index}}', {{ item[1] }});
 {% endfor %}
-  compositionPie('composition-pie-0', {{ total }});
+  // compositionPie('composition-pie-0', {{ total }});
 
-{% for item in page.country_composition %}
-  {% assign subIndex = forloop.index %}
-  {% assign subtotalPH = 0.0 %}
-  {% for subitem in item.countries %}
-  {% assign subtotalPH = subtotalPH | plus: subitem[1] %}
-  compositionPie('composition-pie-{{subIndex}}-{{forloop.index}}', {{ subitem[1] }});
+  {% assign totalPH = 0.0 %}
+  {% for item in page.country_composition %}
+  {% assign totalPH = totalPH | plus: item[1] %}
+  compositionPie('composition-pie-0-{{forloop.index}}', {{ item[1] }});
   {% endfor %}
-  {% assign totalPH = totalPH | plus: subtotalPH %}
-  compositionPie('composition-pie-0-{{forloop.index}}', {{ subtotalPH }});
-{% endfor %}
-  compositionPie('composition-pie-0-0', {{ totalPH }});
+  // compositionPie('composition-pie-0-0', {{ totalPH }});
 }
 </script>

@@ -31,6 +31,7 @@ summary_details:
     other_expense:  .016
     benchmark_index: Dow Jones U.S. Completion TSM Index | www.djindexes.com
     asset_manager: BlackRock Institutional Trust Company, N.A
+xcomposition-update: December 31, 2018
 composition:
   - [Government/Government-Related, 38.7]
   - [Asset-Backed Securities, 30.7]

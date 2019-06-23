@@ -19,9 +19,6 @@
 .l-income, .l-income-fund {
   color: $color-l-fund;
 }
-.l-income-compare {
-  color: gray;
-}
 .l-2020, .l2020-fund {
   color: $color-l-fund;
 }
@@ -39,3 +36,4 @@
 .index-c, .sp500-fund { color: $color-index-c } // S&P 500
 .index-s, .w4500-fund { color: $color-index-s } // Dow Jones
 .index-i, .eafe-fund { color: $color-index-i } // MSCI EAFE
+.index-l, .l-income-index { color: $color-index-l } // MSCI EAFE
