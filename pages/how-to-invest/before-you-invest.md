@@ -38,7 +38,7 @@ Consider the following when you plan your retirement strategy.
 
 <div class="before-you-invest-tool">
   <div class="step2" id="review-funds">
-    <h3 class="step-title"><span>2.</span> Great! Now review the funds ideally suited for your time horizon</h3>
+    <h3 class="step-title"><span>2.</span> Great! Now review the Lifecycle (L) Funds ideally suited for your time horizon.</h3>
     <div class="usa-grid-full">
       <div id="column-one-outer" class="usa-width-one-third">
         <div id="column-one-inner" class="usa-alert">
