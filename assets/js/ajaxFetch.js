@@ -224,6 +224,34 @@ function mapServerFundName (f) {
   if (fund == 'EAFE') { return 'EAFE Index'; } // I
   return '** ' + fund + '**';
 }
+function mapServerFundClassName (f) {
+  var fund = f.trim().toUpperCase();
+  if (fund == 'G') { return 'g-fund'; }
+  if (fund == 'F') { return 'f-fund'; }
+  if (fund == 'C') { return 'c-fund'; }
+  if (fund == 'S') { return 's-fund'; }
+  if (fund == 'I') { return 'i-fund'; }
+
+  if (fund == 'LINC') { return 'l-income'; }
+  if (fund == 'LINCX') { return 'index-l'; }
+  if (fund == 'L2020') { return 'l-2020'; }
+  if (fund == 'L2025') { return 'l-2025'; }
+  if (fund == 'L2030') { return 'l-2030'; }
+  if (fund == 'L2035') { return 'l-2035'; }
+  if (fund == 'L2040') { return 'l-2040'; }
+  if (fund == 'L2045') { return 'l-2045'; }
+  if (fund == 'L2050') { return 'l-2050'; }
+  if (fund == 'L2055') { return 'l-2055'; }
+  if (fund == 'L2060') { return 'l-2060'; }
+  if (fund == 'L2065') { return 'l-2065'; }
+
+  // if (fund == '') { return ''; } // G
+  if (fund == 'LBA') { return 'index-f'; } // F
+  if (fund == 'SP500') { return 'index-c'; } // C
+  if (fund == 'W4500') { return 'index-s'; } // S
+  if (fund == 'EAFE') { return 'index-i'; } // I
+  return '** ' + fund + '**';
+}
 function buildReturnsTable(arr) {
   var headName = { YTD: 'YTD', '1-yr': '1&nbsp;Yrs', '3-yr': '3&nbsp;Yrs', '5-yr': '5&nbsp;Yrs', '10-yr': '10&nbsp;Yrs', Inception: 'Life'};
   var i, j;
@@ -247,12 +275,8 @@ function buildReturnsTable(arr) {
     var fundName = mapServerFundName(col[0].trim());
     console.log('fund is ' + col[0].trim());
     var fund = col[0].trim().toLowerCase();
-    var fundColor = fund + '-fund';
-    if (fund == 'linc') {
-      fund = 'l-income';
-      fundColor = fund + '-fund';
-      if (j > 1) { fundColor = 'l-income-index'; }
-    }
+    var fundColor = mapServerFundClassName(fund);
+    if ((fund == 'linc') && (j > 1)) { fundColor = mapServerFundClassName('lincx'); }
     table += '<td class="' + cellClass + ' col' + '0' + '">'
         +'<span class="rate-of-return-bar '+fundColor+'"></span>'
         + fundName +'</td>';

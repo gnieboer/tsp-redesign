@@ -5,9 +5,11 @@
   // border-style: solid;
   // border-width: 1px;
   .highcharts-pie-series .highcharts-point {
-  	stroke: #EDE;
+  	// stroke: #EDE;
   	stroke-width: 0px;
   }
+  .highcharts-color-0 { fill: #1E90FF; stroke: #1E90FF; }
+  .highcharts-color-1 { fill: #C0C0C0; stroke: #C0C0C0; }
 }
 
 .hc-growth-inception {
