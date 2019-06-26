@@ -10,6 +10,8 @@
 
 <style>
   .sortableColumn {
+    background-image: url("/assets/img/icons/x-circle-red.svg");
+    background-repeat: no-repeat;
     -webkit-transition: background-color, .2s, box-shadow, .2s, color, .2s;
     -moz-transition: background-color, .2s, box-shadow, .2s, color, .2s;
     transition: background-color, .5s, box-shadow, .2s, color, .2s;
@@ -37,7 +39,7 @@
 
 {% if page.composition %}
           {% assign sortable = '' %}
-          {% if page.composition.size > 1 %}{% assign sortable = 'sortableColumn sort-column-asc' %}{% endif %}
+          {% if page.composition.size > 1 %}{% assign sortable = 'sortableColumn' %}{% endif %}
           <div class="usa-grid-full">
             <div class="usa-width-one-whole">
               <h3>Portfolio Weight
@@ -78,6 +80,8 @@
 {% endif %}
 
 {% if page.country_composition %}
+      {% assign sortable = '' %}
+      {% if page.country_composition.size > 1 %}{% assign sortable = 'sortableColumn' %}{% endif %}
       <div class="usa-grid-full">
         <div class="usa-width-one-whole">
           <h3>Portfolio Weight
@@ -86,10 +90,10 @@
           <table class="usa-table-borderless" id="country-composition">
             <thead>
               <tr>
-                <th scope="col" id="sortCountry" class="sortableColumn sort-column-asc">Country</th>
-                <th scope="col" id="sortHoldings" class="sortableColumn sort-column-asc">Percent of Holdings*</th>
+                <th scope="col" id="sortCountry" class="{{ sortable }}">Country</th>
+                <th scope="col" id="sortHoldings" class="{{ sortable }}">Percent of Holdings*</th>
                 <th scope="col">Portfolio Percentage</th>
-                <th scope="col" id="sortCount" class="sortableColumn sort-column-asc">Number of Companies</th>
+                <th scope="col" id="sortCount" class="{{ sortable }}">Number of Companies</th>
               </tr>
             </thead>
             <tbody>
@@ -139,6 +143,22 @@ function doCompositionPies() {
 }
 
 function toggleSort(me) {
+  var myId = me.id;
+  var tableId = 'sector-composition';
+  var isSortedAsc = $('#'+myId).hasClass('sort-column-asc');
+  $('.sortableColumn').removeClass('sort-column-asc');
+  $('.sortableColumn').removeClass('sort-column-desc');
+  if (isSortedAsc) {
+    columnSort(false, myId, me.closest('table').id, 0, 1);
+    $('#'+myId).addClass('sort-column-desc');
+  } else {
+    columnSort(true, myId, me.closest('table').id, 0, 1);
+    $('#'+myId).addClass('sort-column-asc');
+  }
+  return false;
+}
+
+function toggleSort1(me) {  // first version, 2 states
   var myId = me.id;
   var tableId = 'sector-composition';
   if ($('#'+myId).hasClass('sort-column-asc')) {
