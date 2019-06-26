@@ -13,14 +13,14 @@ Once your withdrawal request is processed, you cannot return your withdrawal or 
 
 ## Changing your monthly payment amount
 
-Use the Change in Monthly Payment Amount form, [*Form TSP-73,*](https://www.tsp.gov/PDF/formspubs/tsp-73.pdf) to do any of the following:
+Use Form TSP-73, *Change in Monthly Payment Amount* (https://www.tsp.gov/PDF/formspubs/tsp-73.pdf), to do any of the following:
 
 + Change the monthly dollar amount you are receiving. You may do this once a year. Your request will become effective the following January; or
 + Change your TSP-computed payments (based on life expectancy) to a specific dollar amount. You may only do this once. Your request will become effective the following January.
 
 ## Managing your monthly payments
 
-Use the Monthly Payments Maintenance form, [*Form TSP-78,*](https://www.tsp.gov/PDF/formspubs/tsp-78.pdf) to make the following changes immediately:
+Use Form TSP-78, *Monthly Payments Maintenance*(https://www.tsp.gov/PDF/formspubs/tsp-78.pdf), to make the following changes immediately:
 
 + Start the direct deposit of your payments.
 + Change the financial institution or the checking or savings account that is receiving your monthly payments.
