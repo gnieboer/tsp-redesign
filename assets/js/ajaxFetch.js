@@ -298,8 +298,7 @@ function returnsTableActive(idx) {
     }
     $('.col'+idx).addClass('active');
 }
-
-function columnSort(ascending, columnClassName, tableId, tailLength) {
+function columnSort(ascending, columnClassName, tableId, headLength, tailLength) {
     var tbody = document.getElementById(tableId).getElementsByTagName(
             "tbody")[0];
     var rows = tbody.getElementsByTagName("tr");
@@ -309,7 +308,7 @@ function columnSort(ascending, columnClassName, tableId, tailLength) {
     while (unsorted) {
         unsorted = false;
 
-        for (var r = 0; r < rows.length - 1 - tailLength; r++) {
+        for (var r = 0 + headLength; r < rows.length - 1 - tailLength; r++) {
             var row = rows[r];
             var nextRow = rows[r + 1];
 

@@ -58,4 +58,5 @@ document-ready:
   - getFundIndexAverageAnnualReturns('G');
   - getGrowthInception('G');
   - doCompositionPies();
+  - $('.sortableColumn').click(function(e) { toggleSort(this); });
 ---

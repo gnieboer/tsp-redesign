@@ -8,7 +8,36 @@
 {% endif %}
 {% if page.Fund_type != 'L' %}
 
+<style>
+  .sortableColumn {
+    -webkit-transition: background-color, .2s, box-shadow, .2s, color, .2s;
+    -moz-transition: background-color, .2s, box-shadow, .2s, color, .2s;
+    transition: background-color, .5s, box-shadow, .2s, color, .2s;
+    // background-size: .7em;
+    background-size: 1.2em;
+    background-position: 0% 50%;
+    background-color: transparent;
+    box-shadow: 0 0 0 4px transparent;
+    border-bottom: none;
+    cursor: pointer;
+    margin-left: 2px;
+    padding-left: 1.3em !important;
+    text-decoration: none;
+    }
+    .sort-column-asc {
+      background-image: url("/assets/img/icons/arrow-down-circle.svg");
+      background-repeat: no-repeat;
+    }
+    .sort-column-desc {
+      background-image: url("/assets/img/icons/arrow-up-circle.svg");
+      background-repeat: no-repeat;
+    }
+</style>
+
+
 {% if page.composition %}
+          {% assign sortable = '' %}
+          {% if page.composition.size > 1 %}{% assign sortable = 'sortableColumn sort-column-asc' %}{% endif %}
           <div class="usa-grid-full">
             <div class="usa-width-one-whole">
               <h3>Portfolio Weight
@@ -17,16 +46,8 @@
               <table class="usa-table-borderless" id="sector-composition">
                 <thead>
                   <tr>
-                    <th scope="col" class="sortSector">
-                      <a href="javascript:columnSort(false, 'sortSector', 'sector-composition', 1);">^</a>
-                      Sector
-                      <a href="javascript:columnSort(true, 'sortSector', 'sector-composition', 1);">v</a>
-                    </th>
-                    <th scope="col" class="sortWeight">
-                      <a href="javascript:columnSort(false, 'sortWeight', 'sector-composition', 1);">^</a>
-                      Portfolio Weight*
-                      <a href="javascript:columnSort(true, 'sortWeight', 'sector-composition', 1);">v</a>
-                    </th>
+                    <th scope="col" id="sortSector" class="{{ sortable }}">Sector</th>
+                    <th scope="col" id="sortWeight" class="{{ sortable }}">Portfolio Weight*</th>
                     <th scope="col">Portfolio Percentage</th>
                   </tr>
                 </thead>
@@ -40,11 +61,13 @@
                   <td><div id="composition-pie-{{forloop.index}}" class="hc-composition-pie"><div></td>
                 </tr>
 {% endfor %}
+                {% if page.composition.size > 1 %}
                 <tr>
                   <th scope="row"><b>Total</b></th>
                   <td><b>{{ total }}%</b></td>
                   <td><!-- <div id="composition-pie-0" class="hc-composition-pie"><div> --></td>
                 </tr>
+                {% endif %}
                 </tbody>
               </table>
             </div>
@@ -63,22 +86,10 @@
           <table class="usa-table-borderless" id="country-composition">
             <thead>
               <tr>
-                <th scope="col" class="sortCountry">
-                  <a href="javascript:columnSort(false, 'sortCountry', 'country-composition', 1);">^</a>
-                  Country
-                  <a href="javascript:columnSort(true, 'sortCountry', 'country-composition', 1);">v</a>
-                </th>
-                <th scope="col" class="sortHoldings">
-                  <a href="javascript:columnSort(false, 'sortHoldings', 'country-composition', 1);">^</a>
-                  Percent of Holdings*
-                  <a href="javascript:columnSort(true, 'sortHoldings', 'country-composition', 1);">v</a>
-                </th>
+                <th scope="col" id="sortCountry" class="sortableColumn sort-column-asc">Country</th>
+                <th scope="col" id="sortHoldings" class="sortableColumn sort-column-asc">Percent of Holdings*</th>
                 <th scope="col">Portfolio Percentage</th>
-                <th scope="col" class="sortCount">
-                  <a href="javascript:columnSort(false, 'sortCount', 'country-composition', 1);">^</a>
-                  Number of Companies
-                  <a href="javascript:columnSort(true, 'sortCount', 'country-composition', 1);">v</a>
-                </th>
+                <th scope="col" id="sortCount" class="sortableColumn sort-column-asc">Number of Companies</th>
               </tr>
             </thead>
             <tbody>
@@ -125,5 +136,20 @@ function doCompositionPies() {
   compositionPie('composition-pie-0-{{forloop.index}}', {{ item[1] }});
   {% endfor %}
   // compositionPie('composition-pie-0-0', {{ totalPH }});
+}
+
+function toggleSort(me) {
+  var myId = me.id;
+  var tableId = 'sector-composition';
+  if ($('#'+myId).hasClass('sort-column-asc')) {
+    columnSort(true, myId, me.closest('table').id, 0, 1);
+    $('#'+myId).removeClass('sort-column-asc');
+    $('#'+myId).addClass('sort-column-desc');
+  } else {
+    columnSort(false, myId, me.closest('table').id, 0, 1);
+    $('#'+myId).removeClass('sort-column-desc');
+    $('#'+myId).addClass('sort-column-asc');
+  }
+  return false;
 }
 </script>
