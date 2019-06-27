@@ -171,7 +171,7 @@ var glossaryTerms = [
   {
     term: 'EAFE',
     definition: 'The EAFE Index, published by MSCI, is an index of the equity markets of the developed world outside of the United States and Canada. It is the most widely used international stock index.'
-  }
+  },
   {
     term: 'Elective Deferral Limit',
     definition:

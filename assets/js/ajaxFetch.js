@@ -218,11 +218,19 @@ function mapServerFundName (f) {
   if (fund == 'L2065') { return 'L 2065'; }
 
   // if (fund == '') { return ''; } // G
-  if (fund == 'LBA') { return 'U.S. Agg. Bond Index'; } // F
-  if (fund == 'SP500') { return 'S&P 500 Index'; } // C
-  if (fund == 'W4500') { return 'DJ U.S. Completion TSM Index'; } // S
-  if (fund == 'EAFE') { return 'EAFE Index'; } // I
+  if (fund == 'LBA') { return glossaryTermString(fund); } // F
+  if (fund == 'SP500') { return glossaryTermString(fund); } // C
+  if (fund == 'W4500') { return glossaryTermString(fund); } // S
+  if (fund == 'EAFE') { return glossaryTermString(fund); } // I
   return '** ' + fund + '**';
+}
+function glossaryTermString(fund) {
+  var term = 'undefined';
+  if (fund == 'LBA') { term = 'U.S. Aggregate Index'; } // F
+  if (fund == 'SP500') { term = 'S&P 500'; } // C
+  if (fund == 'W4500') { term = 'Dow Jones'; } // S
+  if (fund == 'EAFE') { term = 'EAFE'; } // I
+  return '<span data-term="'+term+'" class="js-glossary-toggle term term-end">'+term+'</span>';
 }
 function mapServerFundClassName (f) {
   var fund = f.trim().toUpperCase();
