@@ -299,6 +299,7 @@ function buildReturnsTable(arr) {
  table += "\n</table>"
  // console.log(arr + "\n" + table);
  $('#annualReturnsTable').html(table);
+ initGlossary();
 }
 function returnsTableActive(idx) {
     for (var i = 0; i < 8; i++) {
