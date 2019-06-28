@@ -3,7 +3,7 @@ layout: page
 title:  Before you invest
 styles:
 sidenav: fund-options
-scripts:
+Fund_type: L
 scripts:
   - /assets/js/jquery.min.js
   - /assets/js/jquery.numeric.js
@@ -86,7 +86,12 @@ Consider the following when you plan your retirement strategy.
     <section class="results-summary">
     <div class="usa-grid">
      <div class="usa-width-one-whole">
-       <p id="best-choice" class="usa-alert-text usa-font-lead">Based on the year you were born, L XXXX is a good choice for you because you have time.</p>
+      {% include components/get_sorted_fund_list funds=include.funds %}
+      {% for fund in sorted %}
+        <p id="best-choice-{{ fund.Fund_name | downcase | replace: " ", "-" }}" class="usa-alert-text usa-font-lead best-choice ">
+          {{ fund.Fund_recommendation }}
+        </p>
+      {% endfor %}
      </div>
     </div>
     </section>

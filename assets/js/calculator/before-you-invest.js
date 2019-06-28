@@ -66,6 +66,10 @@ function showChoice(born) {
 }
 
 function bestChoice(fund) {
+  var bc = '#best-choice-l-'+fund;
+  $('.best-choice').hide();
+  $(bc.toLowerCase()).show();
+  return true;
   var str = 'Based on the year you were born L ' + fund + ' is a good choice for you because you have time.';
   $('#best-choice').html(str);
   // console.log(str);
