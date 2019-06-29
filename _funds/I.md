@@ -23,6 +23,7 @@ avg_annual_returns:
     five_yr: "-"
     ten_yr: "-"
     inception: "-"
+summary_update: 12/31/2018
 summary_details:
     assets: $67.6 billion
     as_of_year: 2018
@@ -31,7 +32,7 @@ summary_details:
     other_expense:  .010
     benchmark_index: Dow Jones U.S. Completion TSM Index | www.djindexes.com
     asset_manager: BlackRock Institutional Trust Company, N.A
-composition-update: December 31, 2018
+composition_update: December 31, 2018
 country_composition:
     - [Austria, 0.2, 6]
     - [Belgium, 1.0, 10]
@@ -54,6 +55,7 @@ country_composition:
     - [Japan, 24.6, 322]
     - [New Zealand, 0.2, 7]
     - [Singapore, 1.4, 25]
+top_ten_update: 12/31/2018
 top_ten_holdings:
   - name: Tesla Motors Inc.
     abbr: TSLA
