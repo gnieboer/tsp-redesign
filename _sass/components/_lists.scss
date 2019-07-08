@@ -12,13 +12,35 @@
   list-style-type: lower-roman;
 }
 
-ul.check {
+ul.check, ul.cross, ul.alert {
   list-style-type: none;
   padding: 0;
   margin: 0;
   li {
-    background: url('/assets/img/icons/check-circle-green.svg') no-repeat left top;
-    padding-left: 40px;
+    background: url($baseurl + '/assets/img/icons/check-circle-green.svg') no-repeat left top;
+    padding-left: 3.8rem;
     margin-bottom: 1.3rem;
+    &:after {
+      content: attr(alt);
+    }
   }
+}
+
+ul.cross {
+  li {
+    background: url($baseurl + '/assets/img/icons/x-circle-red.svg') no-repeat left top;
+  }
+}
+ul.alert {
+  li {
+    background: url($baseurl + '/assets/img/icons/alert-circle-red.svg') no-repeat left top;
+  }
+}
+ul.cross-img {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  // li {
+  //   background: url($baseurl + '/assets/img/icons/x-circle-red.svg') no-repeat left top;
+  // }
 }

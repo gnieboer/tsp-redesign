@@ -26,9 +26,10 @@ If you meet the loan eligibility rules and your loan request is approved, the lo
 ## Loan types and terms
 We allow two types of loans:
 
+{:.two-columns}
 **General Purpose** | **Residential**    
 ----------------- | -----------------
-![check]({{ site.baseurl }}/assets/img/icons/check-circle-green.svg "Check mark") May be used for any purpose | ![check]({{ site.baseurl }}/assets/img/icons/check-circle-green.svg "Check mark") May only be used for the purchase or construction of a primary residence
+![check]({{ site.baseurl }}/assets/img/icons/check-circle-green.svg "Check mark") May be used for any purpose | ![check]({{ site.baseurl }}/assets/img/icons/check-circle-green.svg "Check mark") May only be used for the purchase or construction of a primary residence  |  
 ![check]({{ site.baseurl }}/assets/img/icons/check-circle-green.svg "Check mark") Requires no documentation | ![check]({{ site.baseurl }}/assets/img/icons/check-circle-green.svg "Check mark") Requires documentation
 ![check]({{ site.baseurl }}/assets/img/icons/check-circle-green.svg "Check mark") Has a repayment term of 1 to 5 years | ![check]({{ site.baseurl }}/assets/img/icons/check-circle-green.svg "Check mark") Has a repayment term of 1 to 5 years
 
@@ -61,6 +62,21 @@ You can only use a residential loan for purchasing or constructing a primary res
 
 **You cannot use a residential loan for**
 
+{:.cross}
++ refinancing or prepaying your existing mortgage
++ construction of an addition to your existing residence
++ renovations to your existing residence
++ buying out another person's share in the your current residence
++ purchasing land only
+
+{:.check}
++ refinancing or prepaying your existing mortgage. refinancing or prepaying your existing mortgage. refinancing or prepaying your existing mortgage.
++ construction of an addition to your existing residence
++ renovations to your existing residence
++ buying out another person's share in the your current residence
++ purchasing land only
+
+{:.cross-img}
 + ![x_red]({{ site.baseurl }}/assets/img/icons/x-circle-red.svg "red x") refinancing or prepaying your existing mortgage
 + ![x_red]({{ site.baseurl }}/assets/img/icons/x-circle-red.svg "red x") construction of an addition to your existing residence
 + ![x_red]({{ site.baseurl }}/assets/img/icons/x-circle-red.svg "red x") renovations to your existing residence
