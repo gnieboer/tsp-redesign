@@ -15,31 +15,51 @@ When it comes to reaching your retirement goals, it’s important that you
 maximize your savings. You can start by making sure you’re not leaving free
 money on the table. Are you contributing enough to get at least the full match from your agency or service?
 
-
-
-<!-- HOW CALCULATED -->
+<!-- HOW WE CALCULATE THE MATCH -->
 <section id="maximize">
-<div class="usa-grid-full">
-  <div class="usa-width-one-whole silver"><h2>Here's how we calculate the 5% match.</h2></div>
-</div>
-<div class="usa-grid-full calculate">
-  <div class="usa-width-one-third gradient-1">
-    <i class="material-icons md-120">attach_money</i>
-    <h3>3%</h3>
-    <p>3% of your basic pay is deposited into the traditional balance of your TSP account each pay period.</p></div>
-  <div class="usa-width-one-third gradient-2">
-    <i class="material-icons md-120">account_balance</i><h3>3%</h3>
-    <p>Next, your agency/service matches your 3% contribution dollar-for-dollar.</p></div>
-  <div class="usa-width-one-third gradient-3">
-    <i class="material-icons md-120">attach_money</i><h3>2%</h3>
-    <p>The next 2% will be matched at 50&#162; on the dollar.</p></div>
-</div>
-
-<div class="usa-grid-full">
-  <div class="usa-width-one-whole ">
-  <div class="match silver">Combined with the Agency/Service Automatic (1%) Contributions, Matching Contributions can add as much as 5% free money to your TSP account.</div></div>
-</div>
-</section> <!-- // end #maximize -->
+<table class="usa-table-borderless calculate-match">
+  <caption>Here's how we calculate the 5% match.</caption>
+  <thead class="sticky">
+    <tr>
+      <th scope="col"><i class="fal fa-user-circle"></i>You</th>
+      <th scope="col"><i class="fal fa-university"></i>Your agency</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>contribute<br>
+      <span class="percent">3%</span><br>
+      of your basic pay each pay period.</td>
+      <td>matches your<br>
+      <span class="percent">3%</span><br>
+      dollar-for-dollar.</td>
+    </tr>
+    <tr>
+      <td>contribute an additional<br>
+      <span class="percent">2%</span></td>
+      <td>matches 50&cent; on the dollar.<br>
+      <span class="percent">1%</span></td>
+    </tr>
+    <tr>
+      <td class="contribute">
+      <i class="fas fa-donate"></i><i class="fas fa-donate"></i><br>
+      <i class="fas fa-donate"></i><i class="fas fa-donate"></i><i class="fas fa-donate"></i>
+      </td>
+      <td>automatically contributes<br>
+      <span class="percent">1%</span><br>
+      of your basic pay.</td>
+    </tr>
+    <tr class="total-contributions">
+      <td>
+        <div class="match silver">Your contributions<br><span class="percent">5%</span></div>
+      </td>
+      <td>
+        <div class="match silver">Agency/service "free" money<br><span class="percent">5%</span></div>
+      </td>
+    </tr>
+  </tbody>
+</table>
+</section><!-- // end #maximize -->
 
 <!-- CUSTOMIZE YOUR SAVINGS -->
 <section id="customize">
@@ -47,118 +67,137 @@ money on the table. Are you contributing enough to get at least the full match f
   <div class="usa-width-one-whole blue-medium"><h2>Customize your savings</h2></div>
 </div>
 <div class="usa-grid-full">
+<fieldset>
+  <!-- Age -->
   <div class="usa-width-one-third">
-    <i class="material-icons md-144">person</i>
+    <span class="form-field-icon"><i class="far fa-user-clock"></i></span>
     <div id="your-age-input-error" class="">
         <label id="your-age-label" class="" for="your-age">Age</label>
         <span id="your-age-error-message" class="" role="alert"></span>
-        <input id="your-age" name="your-age" type="number"
+        <input value="50" id="your-age" name="your-age" type="number" class="border-bottom"
           onChange="ageGood(0);" onBlur="ageGood(0);" aria-labeledby="your-age-label" aria-describedby="">
     </div>
   </div>
+  <!-- Salary -->
   <div class="usa-width-one-third">
-    <i class="material-icons md-144">attach_money</i>
+    <span class="form-field-icon"><i class="far fa-money-check-alt"></i></span>
     <div id="your-salary-input-error" class="">
         <label id="your-salary-label" class="" for="your-salary">Salary</label>
         <span id="your-salary-error-message" class="" role="alert"></span>
-        <input id="your-salary" name="your-salary" type="number"
+        <input value="100000" id="your-salary" name="your-salary" type="number" class="border-bottom"
           onChange="salaryGood(0);" onBlur="salaryGood(0);" aria-labeledby="your-salary-label" aria-describedby="">
     </div>
   </div>
+  <!-- Pay frequency -->
   <div class="usa-width-one-third">
-    <i class="material-icons md-144">date_range</i>
+    <span class="form-field-icon"><i class="far fa-calendar-day"></i></span>
     <div id="pay-frequency-input-error" class="">
         <label id="pay-frequency-label" class="" for="pay-frequency">Pay frequency</label>
         <span id="pay-frequency-error-message" class="" role="alert"></span>
-        <select id="pay-frequency" name="pay-frequency" type="text"
+        <select id="pay-frequency" name="pay-frequency" type="text" class="border-bottom"
             onChange="frequencyGood(0);" onBlur="frequencyGood(0);"
             aria-labeledby="pay-frequency-label" aria-describedby="">
-           <option value="Select">Select Your Pay Schedule</option>
-           <option value="Biweekly">Biweekly (every 2 weeks, 26 times a year)</option>
+           <option value="Select"></option>
+           <option value="Biweekly" selected>Biweekly (every 2 weeks, 26 times a year)</option>
            <option value="Weekly">Weekly (52 times a year)</option>
            <option value="Semi-monthly">Semi-monthly (twice a month, 24 times a year)</option>
            <option value="Monthly">Monthly (12 times a year).</option>
         </select>
     </div>
   </div>
+  </fieldset>
 </div>
+<!-- button -->
 <div class="usa-grid-full">
-  <div class="usa-width-one-whole"><button class="usa-button" onClick="calculate(1);">Customize</button></div>
+  <div class="usa-width-one-whole">
+    <button class="usa-button" onClick="calculate(1);">Customize</button>
+  </div>
 </div>
-</section> <!-- // end #customize -->
+</section><!-- // end #customize -->
 
-<!-- HERE'S HOW MUCH YOU SAVED -->
+<!-- HOW MUCH YOU SAVED -->
 <section id="how-much-you-saved">
-<div class="usa-grid-full">
-  <div class="usa-width-one-whole blue-medium"><h2>Here's how much you saved</h2></div>
-</div>
-<!-- CONTRIBUTION AMOUNTS % -->
-<div class="usa-grid-full">
- <div class="usa-width-one-third silver"><h3>Your 5% contribution</h3></div>
- <div class="usa-width-one-third silver"><h3>Your 8% contribution</h3></div>
- <div class="usa-width-one-third silver"><h3>Your 10% contribution</h3></div>
-</div>
-<div class="usa-grid-full value">
- <div class="usa-width-one-third " id="contrib1">$0.00</div>
- <div class="usa-width-one-third " id="contrib2">$0.00</div>
- <div class="usa-width-one-third " id="contrib3">$0.00</div>
-</div>
+<table class="usa-table-borderless calculate-match">
+  <caption><div>Here's how much you saved</div></caption>
+  <thead>
+    <tr>
+      <th scope="col">Your <br><span>5%</span><br> contribution</th>
+      <th scope="col">Your <br><span>8%</span><br> contribution</th>
+      <th scope="col">Your <br><span>10%</span><br> contribution</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td id="contrib1">$0.00</td>
+      <td id="contrib2">$0.00</td>
+      <td id="contrib3">$0.00</td>
+    </tr>
+    <!-- 1% Agency/service contribution -->
+    <tr class="silver">
+      <td colspan="3"><h3>+ 1% Agency/Service Contribution</h3></td>
+    </tr>
+    <tr>
+      <td colspan="3" id="agencyContrib">$0.00</td>
+    </tr>
+    <!-- 4% Agency/Service Match -->
+    <tr class="silver">
+      <td colspan="3"><h3>+ 4% Agency/Service Match</h3></td>
+    </tr>
+    <tr>
+      <td colspan="3" id="agencyMatch">$0.00</td>
+    </tr>
 
-<!-- 1% AGENCY/SERVICE CONTRIBUTION -->
-<div class="usa-grid-full">
-  <div class="usa-width-one-whole silver"><h3>1% Agency/Service Contribution</h3></div>
-</div>
-<div class="usa-grid-full value">
-  <div class="usa-width-one-whole " id="agencyContrib">$0.00</div>
-</div>
+    <!-- Balance at age -->
+    {% assign ages = "62, 67, 72" | split: ", " %}
+    {% for age in ages %}
+      <!-- BALANCE AGE {{ age }} -->
+      <tr class="silver">
+      <td colspan="3"><h3>Balance at {{ age }}</h3></td>
+      </tr>
+      <tr class="value">
+        <td class="" id="balance-1-{{ age }}">$0.00</td>
+        <td class="" id="balance-2-{{ age }}">$0.00</td>
+        <td class="" id="balance-3-{{ age }}">$0.00</td>
+      </tr>
+    {% endfor %}
+  </tbody>
+</table>
 
-<!-- 4% AGENCY/SERVICE CONTRIBUTION -->
-<div class="usa-grid-full">
-  <div class="usa-width-one-whole silver"><h3>4% Agency/Service Match</h3></div>
-</div>
-<div class="usa-grid-full value">
-  <div class="usa-width-one-whole " id="agencyMatch">$0.00</div>
-</div>
-
-<!-- BALANCE blocks for AGEs -->
-{% assign ages = "62, 67, 72" | split: ", " %}
-{% for age in ages %}
-  <!-- BALANCE AGE {{ age }} -->
-  <div class="usa-grid-full">
-    <div class="usa-width-one-whole silver"><h3>Balance at {{ age }}</h3></div>
-  </div>
-  <div class="usa-grid-full value">
-   <div class="usa-width-one-third" id="balance-1-{{ age }}">$0.00</div>
-   <div class="usa-width-one-third" id="balance-2-{{ age }}">$0.00</div>
-   <div class="usa-width-one-third" id="balance-3-{{ age }}">$0.00</div>
-  </div>
-{% endfor %}
-
-<!-- RECALCULATE -->
+<!-- Recalculate -->
 <div class="usa-grid-full">
   <div class="usa-width-one-whole recalculate">
-    <p>Assumes a 6% annual rate of return.</p>
+  <!-- <p class="assumes-rate-of-return">Assumes a 6% annual rate of return.</p> -->
     <div id="your-rate-of-return-input-error" class="">
-        <label id="your-rate-of-return-label" class="" for="your-rate-of-return">Rate of return</label>
-        <span id="your-rate-of-return-error-message" class="" role="alert"></span>
-        <input id="your-rate-of-return" name="your-rate-of-return" type="number" value="6.0"
-            onChange="rateGood(0);" onBlur="rateGood(0);" aria-labeledby="your-rate-of-return-label" aria-describedby=""><span class="percent">%</span>
-            <button class="usa-button" onClick="calculate(1);">Recalculate</button>
-    </div>
-  </div>
-</div>
+      <label id="your-rate-of-return-label" class="" for="your-rate-of-return">Assumed rate of return (%)</label>
+      <span id="your-rate-of-return-error-message" class="" role="alert"></span>
 
-</section> <!-- // end #how-much-you-saved -->
+      <div class="input-wrapper">
+
+      <input id="your-rate-of-return" name="your-rate-of-return" type="number" value="6.0" class="border-bottom"
+              onChange="rateGood(0);" onBlur="rateGood(0);" aria-labeledby="your-rate-of-return-label" aria-describedby="">
+      <span class="percent">%</span><br>
+      <button class="usa-button" onClick="calculate(1);">Recalculate</button>
+
+      </div>
+
+    </div>
+  </div><!-- // end .usa-width-one-whole .recalculate -->
+</div><!-- // end .usa-grid-full -->
+</section>
+<!-- // end #how-much-you-saved -->
 
 <!-- DON'T LEAVE FREE MONEY ON THE TABLE -->
-<section id="free-money-honey">
+<section id="free-money">
 <div class="usa-grid-full">
-  <div class="usa-width-one-whole "><i class="material-icons md-48">attach_money</i></div>
-  <div class="usa-width-one-whole ">Don't leave free money on the table!</div>
+  <div class="usa-width-one-whole ">
+  <span class="icon-free-money">
+  <i class="far fa-dollar-sign"></i></span><br>
+  Don't leave free money on the table!
+  </div>
 </div>
-</section> <!-- // end #free-money-honey -->
-
-<!-- ![How to maximize your 5% matching contributions]({{ site.baseurl }}/assets/img/infographs/maximize-your-savings.png) -->
+</section>
+<!-- // end #free-money -->
 
 ## Am I eligible for matching?
+
 Only employees covered by the <span data-term="Federal Employees' Retirement System (FERS)" class="js-glossary-toggle term term-end">Federal Employees Retirement System</span> (for civilians) and the <span data-term="Blended Retirement System (BRS)" class="js-glossary-toggle term term-end">Blended Retirement System </span> (for uniformed services) are eligible for matching. If you're brand new to federal or uniformed service, you are covered by one of these systems.
