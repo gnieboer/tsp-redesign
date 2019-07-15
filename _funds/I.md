@@ -57,10 +57,26 @@ country_composition:
     - [Singapore, 1.4, 25]
 top_ten_update: 12/31/2018
 top_ten_holdings:
-  - name: Tesla Motors Inc.
-    abbr: TSLA
-  - name: Las Vegas Sands Corp.
-    abbr: LVS
+  - name: Nestl&eacute; S.A.
+    abbr: NSRGF
+  - name: Toyota Motor Corporation
+    abbr: TOYOF
+  - name: Novartis AG
+    abbr: NVSEF
+  - name: Total S.A.
+    abbr: TTFNF
+  - name: Roche Holding
+    abbr: RHHBF
+  - name: BP PLC
+    abbr: BPAQF
+  - name: HSBC Holdings PLC
+    abbr: HBCYF
+  - name: Royal Dutch Shell PLC Class B
+    abbr: RYDBF
+  - name: Royal Dutch Shell PLC
+    abbr: RYDAF
+  - name: Air Group Ltd.
+    abbr: AAR
 additional_info: |
   By law, the I Fund must be invested in a portfolio designed to track the performance of an index of common stocks representing international stock markets outside of the United States. The Federal Retirement Thrift Investment Board has chosen as its benchmark the MSCI EAFE (Europe, Australasia, Far East) Index, which tracks the overall performance of the major companies and industries in the European, Australian, and Asian stock markets.
 
