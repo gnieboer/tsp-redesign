@@ -95,33 +95,31 @@
 }
 
 .before-invest-tooltip, .l-fund-tooltip, .growth-100-tooltip, .rates-of-return-tooltip {
-  .legend-title {
+  // background-color: black;
+  // color: white;
+  .tooltip-title {
     display: inline-block;
-    width: 105px;
+    width: 100%;
     text-align: center;
     margin-bottom: 3px;
   }
-  .legend-left {
-    display: inline-block;
-    width: 50px;
-    text-align: right;
+  .tooltip-row-group {
+    display: table-row-group;
   }
-  .legend-right {
-    display: inline-block;
+  .tooltip-row {
+    display: table-row;
+  }
+  .tooltip-left {
+    display: table-cell;
+    padding-right: 3px;
+    text-align: left;
+  }
+  .tooltip-right {
+    display: table-cell;
     text-align: right;
-    width: 55px;
   }
 }
-
 .rates-of-return-tooltip {
-  .legend-left {
-    width: 90px;
-    text-align: left;
-  }
-}
-.growth-100-tooltip {
-  .legend-left {
-    width: 30px;
-    text-align: left;
-  }
+  background-color: black;
+  color: white;
 }

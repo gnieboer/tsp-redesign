@@ -61,16 +61,25 @@ function tooltipDiv (divClass, block) {
     + block + '</div>';
 }
 function tooltipHeader(val) {
-  return '<span class="legend-title"><strong>'+ val +'</strong></span><br>';
+  return '<div class="tooltip-title"><strong>'+ val +'</strong>' + "</div>\n";
+}
+function tooltipRowGroup(group) {
+  return  '<div class="tooltip-row-group">' + group + "</div>\n";
 }
 function tooltipLegendRow(legendColor, lClass, left, rClass, right) {
-  return  '<span class="tooltip-bar '+legendColor+'"></span>'
-        + tooltipRow(lClass, left, rClass, right);
+  return  '<div class="tooltip-row">'
+        + '<div class="tooltip-bar '+legendColor+'"></div>'
+        + tooltipLeftRight(lClass, left, rClass, right)
+        + "</div>\n";
 }
 function tooltipRow(lClass, left, rClass, right) {
-  return  '<span class="'+lClass+' legend-left">'  + left  + '</span>'
-        + '<span class="'+rClass+' legend-right">' + right + '</span>'
-        + '<br>';
+  return  '<div class="tooltip-row">'
+        + tooltipLeftRight(lClass, left, rClass, right)
+        + "</div>\n";
+}
+function tooltipLeftRight(lClass, left, rClass, right) {
+  return  '<div class="'+lClass+' tooltip-left">'  + left  + '</div>'
+        + '<div class="'+rClass+' tooltip-right">' + right + '</div>';
 }
 
 var groupFundAnnualReturns = function(setName) {
@@ -117,19 +126,18 @@ var groupFundAnnualReturns = function(setName) {
     );
 }
 
-// function tooltipDiv (class, block) {
-// function tooltipHeader(val) {
-// function tooltipLegendRow(legendColor, lClass, left, rClass, right) {
-// function tooltipRow(lClass, left, rClass, right) {
 function growth100Tooltip(me) {
   // console.log(me);
   var rc = tooltipHeader(getMonthYearName(me.x+1000000000));
+  rc = '';
   var points = me.points;
   for (var i = 0; i < points.length; i++) {
     var lColor = mapServerFundClassName(points[i].series.colorIndex);
     var lName = mapServerFundName(points[i].series.name,0);
     rc += tooltipLegendRow(lColor, lColor, lName, '', '$' + points[i].y.toFixed(2));
   }
+  rc = tooltipRowGroup(rc);
+  rc = tooltipHeader(getMonthYearName(me.x+1000000000))+rc;
   rc = tooltipDiv('growth-100-tooltip', rc);
   // console.log(rc);
   return rc;
@@ -181,25 +189,18 @@ var barChart;
 function barChartTooltip(me) {
   // console.log(me);
   returnsTableActive(me.x+1);
-  var rc = tooltipHeader(me.points[0].key);
+  var rc = '';
   var points = me.points;
   for (var i = 0; i < points.length; i++) {
     var lColor = mapServerFundClassName(points[i].series.colorIndex);
     var lName = mapServerFundName(points[i].series.name,0);
     rc += tooltipLegendRow(lColor, lColor, lName, '', points[i].y.toFixed(2)+'%');
   }
+  rc = tooltipRowGroup(rc);
+  rc = tooltipHeader(me.points[0].key) + rc;
   rc = tooltipDiv('rates-of-return-tooltip', rc);
   // console.log(rc);
   return rc;
-}
-function barChartTooltipOld(me) {
-  // console.log(me);
-  returnsTableActive(me.x+1);
-  return me.points.reduce(function (s, point) {
-      return s + '<br/>' + '<span class="'+ point.series.colorIndex+'-fund legend-left">'
-        + point.series.name + ': ' +
-          point.y + '%' + '</span>';
-  }, '<b>' + me.points[0].key + '</b>');
 }
 function getFundIndexAverageAnnualReturns(fund) {
   var colorFund = 'lf';
