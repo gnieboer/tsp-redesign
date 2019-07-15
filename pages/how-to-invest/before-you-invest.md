@@ -83,6 +83,7 @@ Consider the following when you plan your retirement strategy.
     </div>
 
     <!-- Best L Fund explained -->
+    <!-- Edit "Fund_recommendation" in front matter of /_funds/ -->
     <section class="results-summary">
     <div class="usa-grid">
      <div class="usa-width-one-whole">

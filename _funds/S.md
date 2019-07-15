@@ -51,6 +51,22 @@ top_ten_holdings:
     abbr: TSLA
   - name: Las Vegas Sands Corp.
     abbr: LVS
+  - name: ServiceNow, Inc.
+    abbr: NOW
+  - name: Palo Alto Networks, Inc.
+    abbr: PANW
+  - name: Workday, Inc. Class A
+    abbr: WDAY
+  - name: Square, Inc. Class A
+    abbr: SQ
+  - name: Worldplay, Inc. Class A
+    abbr: AOWDF
+  - name: Splunk, Inc.
+    abbr: SPLK
+  - name: T-Mobile US, Inc.
+    abbr: TMUS
+  - name: BioMarin Pharmaceuticals, Inc.
+    abbr: BMRN
 additional_info: |
   The S Fund is invested in a separate account
   that is managed by BlackRock Institutional
