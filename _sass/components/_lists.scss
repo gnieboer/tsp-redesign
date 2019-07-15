@@ -1,4 +1,3 @@
-
 .Alpha {
   list-style-type: upper-alpha;
 }
@@ -12,17 +11,15 @@
   list-style-type: lower-roman;
 }
 
+// Background image list
 ul.check, ul.cross, ul.alert {
   list-style-type: none;
   padding: 0;
-  margin: 0;
+  margin-bottom: 3rem;
   li {
     background: url($baseurl + '/assets/img/icons/check-circle-green.svg') no-repeat left top;
-    padding-left: 3.8rem;
+    padding-left: 3.5rem;
     margin-bottom: 1.3rem;
-    &:after {
-      content: attr(alt);
-    }
   }
 }
 
@@ -36,11 +33,16 @@ ul.alert {
     background: url($baseurl + '/assets/img/icons/alert-circle-red.svg') no-repeat left top;
   }
 }
-ul.cross-img {
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-  // li {
-  //   background: url($baseurl + '/assets/img/icons/x-circle-red.svg') no-repeat left top;
-  // }
+
+// Inline image list
+.icon-wrap { /* Parent div */
+  img {
+    float: left;
+    margin-right: .75rem;
+  }
+  p {
+    margin-top: 0;
+    margin-bottom: 1.3rem;
+    overflow: hidden; /* this is what keep the <p> from wrapping */
+  }
 }
