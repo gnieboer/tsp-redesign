@@ -23,6 +23,7 @@ avg_annual_returns:
     five_yr: "-"
     ten_yr: "-"
     inception: "-"
+summary_update: 12/31/2018
 summary_details:
     assets: $67.6 billion
     as_of_year: 2018
@@ -31,37 +32,51 @@ summary_details:
     other_expense:  .010
     benchmark_index: Dow Jones U.S. Completion TSM Index | www.djindexes.com
     asset_manager: BlackRock Institutional Trust Company, N.A
+composition_update: December 31, 2018
 country_composition:
-  - name: Europe
-    countries:
-      - [Austria, 0.2, 6]
-      - [Belgium, 1.0, 10]
-      - [Denmark, 1.8, 17]
-      - [Finland, 1.0, 12]
-      - [France, 11.1, 79]
-      - [Germany, 8.8, 64]
-      - [Ireland, 0.5, 8]
-      - [Italy, 2.3, 23]
-      - [Netherlands, 3.4, 19]
-      - [Norway, 0.7, 10]
-      - [Portugal, 0.2, 3]
-      - [Spain, 3.1, 22]
-      - [Sweden, 2.7, 32]
-      - [Switzerland, 8.7, 38]
-      - [United Kingdom, 16.9, 96]
-  - name: Australasia/Far East
-    countries:
-      - [Australia, 6.9, 69]
-      - [Hong Kong, 3.9, 47]
-      - [Israel, 0.5, 11]
-      - [Japan, 24.6, 322]
-      - [New Zealand, 0.2, 7]
-      - [Singapore, 1.4, 25]
+    - [Austria, 0.2, 6]
+    - [Belgium, 1.0, 10]
+    - [Denmark, 1.8, 17]
+    - [Finland, 1.0, 12]
+    - [France, 11.1, 79]
+    - [Germany, 8.8, 64]
+    - [Ireland, 0.5, 8]
+    - [Italy, 2.3, 23]
+    - [Netherlands, 3.4, 19]
+    - [Norway, 0.7, 10]
+    - [Portugal, 0.2, 3]
+    - [Spain, 3.1, 22]
+    - [Sweden, 2.7, 32]
+    - [Switzerland, 8.7, 38]
+    - [United Kingdom, 16.9, 96]
+    - [Australia, 6.9, 69]
+    - [Hong Kong, 3.9, 47]
+    - [Israel, 0.5, 11]
+    - [Japan, 24.6, 322]
+    - [New Zealand, 0.2, 7]
+    - [Singapore, 1.4, 25]
+top_ten_update: 12/31/2018
 top_ten_holdings:
-  - name: Tesla Motors Inc.
-    abbr: TSLA
-  - name: Las Vegas Sands Corp.
-    abbr: LVS
+  - name: Nestl&eacute; S.A.
+    abbr: NSRGF
+  - name: Toyota Motor Corporation
+    abbr: TOYOF
+  - name: Novartis AG
+    abbr: NVSEF
+  - name: Total S.A.
+    abbr: TTFNF
+  - name: Roche Holding
+    abbr: RHHBF
+  - name: BP PLC
+    abbr: BPAQF
+  - name: HSBC Holdings PLC
+    abbr: HBCYF
+  - name: Royal Dutch Shell PLC Class B
+    abbr: RYDBF
+  - name: Royal Dutch Shell PLC
+    abbr: RYDAF
+  - name: Air Group Ltd.
+    abbr: AAR
 additional_info: |
   By law, the I Fund must be invested in a portfolio designed to track the performance of an index of common stocks representing international stock markets outside of the United States. The Federal Retirement Thrift Investment Board has chosen as its benchmark the MSCI EAFE (Europe, Australasia, Far East) Index, which tracks the overall performance of the major companies and industries in the European, Australian, and Asian stock markets.
 
@@ -82,4 +97,5 @@ document-ready:
   - getFundIndexAverageAnnualReturns('I');
   - getGrowthInception('I');
   - doCompositionPies();
+  - $('.sortableColumn').click(function(e) { toggleSort(this); });
 ---

@@ -3,7 +3,7 @@ layout: page
 title:  Before you invest
 styles:
 sidenav: fund-options
-scripts:
+Fund_type: L
 scripts:
   - /assets/js/jquery.min.js
   - /assets/js/jquery.numeric.js
@@ -21,15 +21,16 @@ Consider the following when you plan your retirement strategy.
 {: .usa-font-lead }
 
 <!-- STEP 1 -->
-
 <div class="before-you-invest-tool step1" id="enter-birthdate">
   <h3 class="step-title"><span>1.</span> First, let's see how many years you have to invest. Time impacts your ability to save for retirement.</h3>
+  <section class="step-1">
   <div id="year-born-input-error" class="">
       <label id="year-born-label" class="" for="year-born">What year were you born?</label>
       <span id="year-born-error-message" class="" role="alert"></span>
-      <input id="year-born" name="year-born" type="text" class="positiveinteger"
+      <input id="year-born" name="year-born" type="text" class="positiveinteger border-bottom"
         onChange="checkYearBorn(0);" onBlur="checkYearBorn(0);" aria-labeledby="year-born-label" aria-describedby="">
   </div>
+  </section>
 </div>
 <p><button onclick="checkYearBorn(1);" class="usa-btn-primary">Find my funds</button></p>
 
@@ -37,7 +38,7 @@ Consider the following when you plan your retirement strategy.
 
 <div class="before-you-invest-tool">
   <div class="step2" id="review-funds">
-    <h3 class="step-title"><span>2.</span> Great! Now review the funds ideally suited for your time horizon</h3>
+    <h3 class="step-title"><span>2.</span> Great! Now review the Lifecycle (L) Funds ideally suited for your time horizon.</h3>
     <div class="usa-grid-full">
       <div id="column-one-outer" class="usa-width-one-third">
         <div id="column-one-inner" class="usa-alert">
@@ -82,10 +83,16 @@ Consider the following when you plan your retirement strategy.
     </div>
 
     <!-- Best L Fund explained -->
+    <!-- Edit "Fund_recommendation" in front matter of /_funds/ -->
     <section class="results-summary">
     <div class="usa-grid">
      <div class="usa-width-one-whole">
-       <p id="best-choice" class="usa-alert-text usa-font-lead">Based on the year you were born, L XXXX is a good choice for you because you have time.</p>
+      {% include components/get_sorted_fund_list funds=include.funds %}
+      {% for fund in sorted %}
+        <p id="best-choice-{{ fund.Fund_name | downcase | replace: " ", "-" }}" class="usa-alert-text usa-font-lead best-choice ">
+          {{ fund.Fund_recommendation }}
+        </p>
+      {% endfor %}
      </div>
     </div>
     </section>

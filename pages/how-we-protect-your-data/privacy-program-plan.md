@@ -12,7 +12,7 @@ permalink: /how-we-protect-your-data/privacy-program-plan/
 ---
 # FRTIB’s Privacy Program Plan
 
-FRTIB’s [Privacy Program Plan](/privacy-plan/) includes:
+FRTIB’s [Privacy Program Plan]({{ site.baseurl }}/privacy-plan/) includes:
 
 - A description of the structure of FRTIB’s privacy program;
 - The resources dedicated to FRTIB’s privacy program;

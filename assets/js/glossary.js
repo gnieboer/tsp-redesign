@@ -165,6 +165,14 @@ var glossaryTerms = [
     definition: 'To pay out money, as from the TSP.'
   },
   {
+    term: 'Dow Jones',
+    definition: 'The Dow Jones U.S. Completion Total Stock Market Index is an index of all actively traded U.S. common stocks that are not included in the S&P 500. The index is designed to be the broadest measure of the non-S&P 500 domestic stock markets.'
+  },
+  {
+    term: 'EAFE',
+    definition: 'The EAFE Index, published by MSCI, is an index of the equity markets of the developed world outside of the United States and Canada. It is the most widely used international stock index.'
+  },
+  {
     term: 'Elective Deferral Limit',
     definition:
       'An annual dollar limit, established under the Internal Revenue Code (IRC), that limits the tax-deferred contributions and Roth TSP contributions a participant can elect to make to employer-sponsored plans like the TSP. The limit can change each year.'
@@ -384,6 +392,11 @@ var glossaryTerms = [
       "See &ldquo;<a class='glossaryTerm' href='glossary.html?term=Qualified'>Qualified Earnings</a>.&rdquo;"
   },
   {
+    term: 'S&P 500',
+    definition:
+      'The S&P 500 is an index of 500 large to medium-sized U.S. companies that are traded in the U.S. stock market. The index was designed by Standard & Poor’s Corporation (S&P) to provide a representative measure of the U.S. stock market’s performance. The S&P 500 is considered a “big company” index.'
+  },
+  {
     term: 'Section 415(c) Limit',
     definition:
       'An annual dollar limit, established under Internal Revenue Code (IRC) section 415(c), that limits the amount of money that can be contributed by a participant or on behalf of a participant to employer-sponsored plans like the TSP (includes all employee and agency contributions).'
@@ -472,6 +485,11 @@ var glossaryTerms = [
     term: 'Uniformed Services',
     definition:
       'Uniformed members of the Army, Navy, Air Force, Marine Corps, Coast Guard, Public Health Service, and the National Oceanic and Atmospheric Administration serving on active duty, and members of the Ready Reserve or National Guard of those services in any pay status.'
+  },
+  {
+    term: 'U.S. Aggregate Index',
+    definition:
+      'The U.S. Aggregate Index consists of high-quality fixed-income securities with maturities of more than one year. The index is comprised of Treasury and Agency bonds, asset-backed securities, and corporate and non-corporate bonds.'
   },
   {
     term: 'User ID',

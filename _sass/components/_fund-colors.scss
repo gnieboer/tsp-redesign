@@ -16,26 +16,26 @@
   color: $color-i-fund;
 }
 .l-fund { color: $color-l-fund; }
-.l-income, .l-income-fund {
+.l-income {
   color: $color-l-fund;
 }
-.l-income-compare {
-  color: gray;
-}
-.l-2020, .l2020-fund {
+.l-2020 {
   color: $color-l-fund;
 }
-.l-2030, .l2030-fund {
+.l-2030 {
   color: $color-l-fund;
 }
-.l-2040, .l2040-fund {
+.l-2040 {
   color: $color-l-fund;
 }
-.l-2050, .l2050-fund {
+.l-2050 {
   color: $color-l-fund;
 }
 .index-g { color: $color-index-g } // 90-day T-Bill Rate
-.index-f, .lba-fund { color: $color-index-f } // Bloomberg Barclays U.S. Aggregate Bond Index}
-.index-c, .sp500-fund { color: $color-index-c } // S&P 500
-.index-s, .w4500-fund { color: $color-index-s } // Dow Jones
-.index-i, .eafe-fund { color: $color-index-i } // MSCI EAFE
+.index-f { color: $color-index-f } // Bloomberg Barclays U.S. Aggregate Bond Index}
+.index-c { color: $color-index-c } // S&P 500
+.index-s { color: $color-index-s } // Dow Jones
+.index-i { color: $color-index-i } // MSCI EAFE
+.index-l { color: $color-index-l } // MSCI EAFE
+
+.inflation-color { color: gray } // MSCI EAFE

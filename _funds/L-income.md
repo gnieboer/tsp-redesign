@@ -8,6 +8,7 @@ Fund_name: L Income
 Fund_order: 7
 Fund_subtitle:
 Fund_objective: The L Income Fund’s investment objective is to achieve a low level of growth with a high emphasis on preservation of assets. Unlike the other four L Funds, the L Income Fund's asset allocation does not change quarterly. However, like the other funds, it is rebalanced daily to maintain its target investment mix.
+Fund_recommendation: Based on the year you were born, the L Income Fund may be a good choice for you because it provides the most conservative investment mix, while still offering you some diversification.
 questions:
   - question: Why should I invest in the L Income Fund?
     answer: You should consider investing in the L Income Fund if you are currently withdrawing money from your TSP account in monthly payments or you plan to begin withdrawing money before 2019.
@@ -22,6 +23,7 @@ avg_annual_returns:
   five_yr: "-"
   ten_yr: "-"
   inception: "-"
+summary_update: 12/31/2018
 summary_details:
   assets: $67.6 billion
   as_of_year: 2018
@@ -30,6 +32,7 @@ summary_details:
   other_expense:  .002
   benchmark_index: Dow Jones U.S. Completion TSM Index | www.djindexes.com
   asset_manager: BlackRock Institutional Trust Company, N.A
+top_ten_update: 12/31/2018
 top_ten_holdings:
   - name: Tesla Motors Inc.
     abbr: TSLA

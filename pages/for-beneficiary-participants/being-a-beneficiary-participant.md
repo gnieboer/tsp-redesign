@@ -31,7 +31,7 @@ As a beneficiary participant, you’ll enjoy many of the same TSP benefits as em
 
 - Low administrative expenses that can increase your savings potential
 - Tax-deferred growth of earnings on traditional and Roth contributions
-- Easy-to-understand [investment options](/how-to-invest/)
+- Easy-to-understand [investment options]({{ site.baseurl }}/how-to-invest/)
 - Staying in the TSP and choosing from several withdrawal options
 
 <div class="usa-alert  usa-alert-solid">
@@ -129,7 +129,7 @@ money.
 
 ## Learn two approaches to investing the money in your beneficiary participant account.  
 
-When your beneficiary participant account is first established, the entire balance is invested in the [Lifecycle (L) Fund](/pages/funds-lifecycle/) targeted most closely to the year you turn 63 (or the L Income Fund if you’re age 62 or older). This investment remains in place unless you make an [interfund transfer](/how-to-invest/change-your-investments/).
+When your beneficiary participant account is first established, the entire balance is invested in the [Lifecycle (L) Fund]({{ site.baseurl }}/pages/funds-lifecycle/) targeted most closely to the year you turn 63 (or the L Income Fund if you’re age 62 or older). This investment remains in place unless you make an [interfund transfer]({{ site.baseurl }}/how-to-invest/change-your-investments/).
 
 **The L Funds** &#8212; These are "lifecycle" funds that are invested according to a professionally designed mix of stocks, bonds, and Government securities. You select your L Fund based on your "time horizon," the future date at which you plan to start withdrawing your money. Depending on your plans, this may be right away or some time in the future.
 
@@ -157,7 +157,7 @@ Choosing how to invest your account is completely up to you. You may invest in a
 
 ## Learn how to move the money in your Beneficiary Participant Account among the TSP investment funds.
 
-An [interfund transfer](/how-to-invest/change-your-investments/) (IFT) allows you to change the way money already in your account is invested. When you make an IFT, you choose the new percentage you want invested in each of our fund options. You cannot move specific dollar amounts or specific types of money (from traditional, tax-exempt and Roth balances) in your account.
+An [interfund transfer]({{ site.baseurl }}/how-to-invest/change-your-investments/) (IFT) allows you to change the way money already in your account is invested. When you make an IFT, you choose the new percentage you want invested in each of our fund options. You cannot move specific dollar amounts or specific types of money (from traditional, tax-exempt and Roth balances) in your account.
 
 You are allowed two IFTs in a calendar month. After that, you can only move money into the G Fund.
 

@@ -7,6 +7,7 @@ $h6-font-size: 1.3rem;
 
 $sans: "Source Sans Pro";
 $serif: "Merriweather";
+$font-awesome: "Font Awesome 5 Pro";
 
 $spacing-x-small: 0.5rem;
 $spacing-small: 1rem;
@@ -53,6 +54,7 @@ $color-index-f: lighten($color-f-fund, 40%); // Bloomberg Barclays U.S. Aggregat
 $color-index-c: lighten($color-c-fund, 40%); // S&P 500
 $color-index-s: lighten($color-s-fund, 40%); // Dow Jones
 $color-index-i: lighten($color-i-fund, 40%); // MSCI EAFE
+$color-index-l: lighten($color-l-fund, 40%); // L-income for "Avg Returns"
 
 $small-screen:  481px;
 $medium-screen: 600px;

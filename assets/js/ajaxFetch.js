@@ -50,6 +50,29 @@ function mapFundName (fund) {
   return fund.toLowerCase() + '-fund';
 }
 
+function getMonthYearName (val) {
+  var monthNames = ["January", "February", "March", "April", "May","June","July", "August", "September", "October", "November","December"];
+  var theDate = new Date(val);
+  return monthNames[theDate.getMonth()] + ' ' + theDate.getFullYear();
+}
+
+function tooltipDiv (divClass, block) {
+  return '<div class="' + divClass + '">'
+    + block + '</div>';
+}
+function tooltipHeader(val) {
+  return '<span class="legend-title"><strong>'+ val +'</strong></span><br>';
+}
+function tooltipLegendRow(legendColor, lClass, left, rClass, right) {
+  return  '<span class="tooltip-bar '+legendColor+'"></span>'
+        + tooltipRow(lClass, left, rClass, right);
+}
+function tooltipRow(lClass, left, rClass, right) {
+  return  '<span class="'+lClass+' legend-left">'  + left  + '</span>'
+        + '<span class="'+rClass+' legend-right">' + right + '</span>'
+        + '<br>';
+}
+
 var groupFundAnnualReturns = function(setName) {
   // fund comparison data
   var scriptName = '';
@@ -94,6 +117,23 @@ var groupFundAnnualReturns = function(setName) {
     );
 }
 
+// function tooltipDiv (class, block) {
+// function tooltipHeader(val) {
+// function tooltipLegendRow(legendColor, lClass, left, rClass, right) {
+// function tooltipRow(lClass, left, rClass, right) {
+function growth100Tooltip(me) {
+  // console.log(me);
+  var rc = tooltipHeader(getMonthYearName(me.x+1000000000));
+  var points = me.points;
+  for (var i = 0; i < points.length; i++) {
+    var lColor = mapServerFundClassName(points[i].series.colorIndex);
+    var lName = mapServerFundName(points[i].series.name,0);
+    rc += tooltipLegendRow(lColor, lColor, lName, '', '$' + points[i].y.toFixed(2));
+  }
+  rc = tooltipDiv('growth-100-tooltip', rc);
+  // console.log(rc);
+  return rc;
+}
 function getGrowthInception(fund) {
   var colorIndexFund = 'lf';
   var colorIndexInfl = 'gray';
@@ -128,15 +168,42 @@ function getGrowthInception(fund) {
       title: { text: '' }
     },
     tooltip: {
-      shared: true
+      formatter: function () {
+        return growth100Tooltip(this);
+      },
+      shared: true,
+      useHTML: true
     }
   });
 }
 
 var barChart;
+function barChartTooltip(me) {
+  // console.log(me);
+  returnsTableActive(me.x+1);
+  var rc = tooltipHeader(me.points[0].key);
+  var points = me.points;
+  for (var i = 0; i < points.length; i++) {
+    var lColor = mapServerFundClassName(points[i].series.colorIndex);
+    var lName = mapServerFundName(points[i].series.name,0);
+    rc += tooltipLegendRow(lColor, lColor, lName, '', points[i].y.toFixed(2)+'%');
+  }
+  rc = tooltipDiv('rates-of-return-tooltip', rc);
+  // console.log(rc);
+  return rc;
+}
+function barChartTooltipOld(me) {
+  // console.log(me);
+  returnsTableActive(me.x+1);
+  return me.points.reduce(function (s, point) {
+      return s + '<br/>' + '<span class="'+ point.series.colorIndex+'-fund legend-left">'
+        + point.series.name + ': ' +
+          point.y + '%' + '</span>';
+  }, '<b>' + me.points[0].key + '</b>');
+}
 function getFundIndexAverageAnnualReturns(fund) {
   var colorFund = 'lf';
-  var colorIndex = 'gray';
+  var colorIndex = 'il';
 
   if (fund == 'G') { colorFund = 'g'; colorIndex = 'ig'; }
   if (fund == 'F') { colorFund = 'f'; colorIndex = 'if'; }
@@ -182,12 +249,7 @@ function getFundIndexAverageAnnualReturns(fund) {
 //              '<td style="padding:0"><b>{point.y:.1f}%</b></td></tr>',
 //          footerFormat: '</table>',
           formatter: function () {
-            // console.log(this);
-            returnsTableActive(this.x+1);
-            return this.points.reduce(function (s, point) {
-                return s + '<br/>' + point.series.name + ': ' +
-                    point.y + 'm';
-            }, '<b>' + this.points[0].key + '</b>');
+            return barChartTooltip(this);
           },
           shared: true,
           useHTML: true
@@ -196,6 +258,79 @@ function getFundIndexAverageAnnualReturns(fund) {
 }
 function setTitle(year) {
 	barChart.setTitle({text: 'Average Rates of Return' + '   <span class="hc-note">(As of December ' + year + ')</span>'});
+}
+function mapServerFundName (f, glossaryFlag) {
+  var fund = f.trim().toUpperCase();
+  if (fund == 'G') { return 'G Fund'; }
+  if (fund == 'F') { return 'F Fund'; }
+  if (fund == 'C') { return 'C Fund'; }
+  if (fund == 'S') { return 'S Fund'; }
+  if (fund == 'I') { return 'I Fund'; }
+
+  if (fund == 'LINC') { return 'L Income'; }
+  if (fund == 'L2020') { return 'L 2020'; }
+  if (fund == 'L2025') { return 'L 2025'; }
+  if (fund == 'L2030') { return 'L 2030'; }
+  if (fund == 'L2035') { return 'L 2035'; }
+  if (fund == 'L2040') { return 'L 2040'; }
+  if (fund == 'L2045') { return 'L 2045'; }
+  if (fund == 'L2050') { return 'L 2050'; }
+  if (fund == 'L2055') { return 'L 2055'; }
+  if (fund == 'L2060') { return 'L 2060'; }
+  if (fund == 'L2065') { return 'L 2065'; }
+  if (fund == 'INFLATION') { return 'Inflation'; } // I
+
+  // if (fund == '') { return ''; } // G
+  if (fund == 'LBA') { return glossaryTermString(fund, glossaryFlag); } // F
+  if (fund == 'SP500') { return glossaryTermString(fund, glossaryFlag); } // C
+  if (fund == 'W4500') { return glossaryTermString(fund, glossaryFlag); } // S
+  if (fund == 'EAFE') { return glossaryTermString(fund, glossaryFlag); } // I
+  return '** ' + fund + ' **';
+}
+function glossaryTermString(fund, glossaryFlag) {
+  var term = 'undefined';
+  if (fund == 'LBA') { term = 'U.S. Aggregate Index'; } // F
+  if (fund == 'SP500') { term = 'S&P 500'; } // C
+  if (fund == 'W4500') { term = 'Dow Jones'; } // S
+  if (fund == 'EAFE') { term = 'EAFE'; } // I
+  if (glossaryFlag == 0) { return term; }
+  return '<span data-term="'+term+'" class="js-glossary-toggle term term-end">'+term+'</span>';
+}
+function mapServerFundClassName (f) {
+  var fund = f.trim().toUpperCase();
+  if (fund == 'G') { return 'g-fund'; }
+  if (fund == 'F') { return 'f-fund'; }
+  if (fund == 'C') { return 'c-fund'; }
+  if (fund == 'S') { return 's-fund'; }
+  if (fund == 'I') { return 'i-fund'; }
+  if (fund == 'LF') { return 'l-fund'; }
+
+  if (fund == 'LINC') { return 'l-income'; }
+  if (fund == 'LINCX') { return 'index-l'; }
+  if (fund == 'L2020') { return 'l-2020'; }
+  if (fund == 'L2025') { return 'l-2025'; }
+  if (fund == 'L2030') { return 'l-2030'; }
+  if (fund == 'L2035') { return 'l-2035'; }
+  if (fund == 'L2040') { return 'l-2040'; }
+  if (fund == 'L2045') { return 'l-2045'; }
+  if (fund == 'L2050') { return 'l-2050'; }
+  if (fund == 'L2055') { return 'l-2055'; }
+  if (fund == 'L2060') { return 'l-2060'; }
+  if (fund == 'L2065') { return 'l-2065'; }
+
+  // if (fund == '') { return ''; } // G
+  if (fund == 'LBA') { return 'index-f'; } // F
+  if (fund == 'IF') { return 'index-f'; } // F
+  if (fund == 'SP500') { return 'index-c'; } // C
+  if (fund == 'IC') { return 'index-c'; } // C
+  if (fund == 'W4500') { return 'index-s'; } // S
+  if (fund == 'IS') { return 'index-s'; } // S
+  if (fund == 'EAFE') { return 'index-i'; } // I
+  if (fund == 'II') { return 'index-i'; } // I
+  if (fund == 'IL') { return 'index-l'; } // I
+
+  if (fund == 'GRAY') { return 'inflation-color'; } // I
+  return '** ' + fund + ' **';
 }
 function buildReturnsTable(arr) {
   var headName = { YTD: 'YTD', '1-yr': '1&nbsp;Yrs', '3-yr': '3&nbsp;Yrs', '5-yr': '5&nbsp;Yrs', '10-yr': '10&nbsp;Yrs', Inception: 'Life'};
@@ -217,19 +352,17 @@ function buildReturnsTable(arr) {
     col = lines[j].split(',');
     table += '<tr>';
     cellClass = 'odd';
+    var fundName = mapServerFundName(col[0].trim(),1);
+    // console.log('fund is ' + col[0].trim());
     var fund = col[0].trim().toLowerCase();
-    var fundColor = fund + '-fund';
-    if (fund == 'linc') {
-      fund = 'l-income';
-      fundColor = fund + '-fund';
-      if (j > 1) { fundColor = 'l-income-compare'; }
-    }
+    var fundColor = mapServerFundClassName(fund);
+    if ((fund == 'linc') && (j > 1)) { fundColor = mapServerFundClassName('lincx'); }
     table += '<td class="' + cellClass + ' col' + '0' + '">'
         +'<span class="rate-of-return-bar '+fundColor+'"></span>'
-        + fund.toUpperCase()+'</td>';
+        + fundName +'</td>';
     if (cellClass == 'even') { cellClass = 'odd'; } else { cellClass = 'even'; }
     for (i = 1; i < col.length; i++) {
-      table += '<td class="' + cellClass + ' col' + i + '">'+col[i].trim()+'</td>';
+      table += '<td class="' + cellClass + ' col' + i + '">'+col[i].trim()+'%</td>';
       if (cellClass == 'even') { cellClass = 'odd'; } else { cellClass = 'even'; }
     }
     table += "</tr>\n";
@@ -238,6 +371,7 @@ function buildReturnsTable(arr) {
  table += "\n</table>"
  // console.log(arr + "\n" + table);
  $('#annualReturnsTable').html(table);
+ initGlossary();
 }
 function returnsTableActive(idx) {
     for (var i = 0; i < 8; i++) {
@@ -245,3 +379,38 @@ function returnsTableActive(idx) {
     }
     $('.col'+idx).addClass('active');
 }
+function columnSort(ascending, columnClassName, tableId, headLength, tailLength) {
+    var tbody = document.getElementById(tableId).getElementsByTagName(
+            "tbody")[0];
+    var rows = tbody.getElementsByTagName("tr");
+
+    var unsorted = true;
+
+    while (unsorted) {
+        unsorted = false;
+
+        for (var r = 0 + headLength; r < rows.length - 1 - tailLength; r++) {
+            var row = rows[r];
+            var nextRow = rows[r + 1];
+
+            var value = row.getElementsByClassName(columnClassName)[0].innerHTML;
+            var nextValue = nextRow.getElementsByClassName(columnClassName)[0].innerHTML;
+
+            value = value.replace(',', '.'); // in case a comma is used in float number
+            nextValue = nextValue.replace(',', '.');
+            value = value.replace('%', ''); // in case a comma is used in float number
+            nextValue = nextValue.replace('%', '');
+
+            if (!isNaN(value)) {
+                value = parseFloat(value);
+                nextValue = parseFloat(nextValue);
+            }
+
+            if (ascending ? value > nextValue : value < nextValue) {
+                tbody.insertBefore(nextRow, row);
+                unsorted = true;
+            }
+            // console.log(value, nextValue, unsorted);
+        }
+    }
+};

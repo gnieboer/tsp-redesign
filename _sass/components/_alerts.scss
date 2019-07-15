@@ -21,13 +21,13 @@ background-size: 4rem;
 
 .usa-alert-success {
   border-top-color: #2e8540;
-  background-image: url('/assets/img/icons/check-circle-green.svg');
+  background-image: url($baseurl + '/assets/img/icons/check-circle-green.svg');
   .usa-alert-body {
     padding-left: 5rem;
   }
 }
 .usa-alert-info {
-  background-image: url('/assets/img/icons/info.svg');
+  background-image: url($baseurl + '/assets/img/icons/info.svg');
   border-top-color: #323A45;
   .usa-alert-body {
     padding-left: 5rem;
@@ -35,7 +35,7 @@ background-size: 4rem;
 }
 .usa-alert-error {
   border-top-color: #e31c3d;
-  background-image: url('/assets/img/icons/x-circle-red.svg');
+  background-image: url($baseurl + '/assets/img/icons/x-circle-red.svg');
   .usa-alert-body {
     padding-left: 5rem;
   }

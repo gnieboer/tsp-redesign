@@ -26,7 +26,7 @@ scripts:
   </p>
 </div>
 <div class="usa-width-one-fourth">
-  <a href="/fund-basics/fund-comparison/" class="usa-button compare-funds-button">Compare funds</a>
+  <a href="../" class="usa-button compare-funds-button">Compare funds</a>
 </div>
 </div>
 <div class="usa-section fund-questions">
@@ -56,7 +56,6 @@ scripts:
 
 <div class="usa-section">
 <h2>Performance</h2>
-<p class="as-of-date">As of 12/31/{{ 'now' | date: "%Y" | minus: 1 }}</p>
 <table class="usa-table-borderless avg-annual-returns">
   <caption id="aar_caption">Average annual returns</caption>
   <thead>
@@ -90,7 +89,7 @@ scripts:
         <div id="a1" class="usa-accordion-content">
           <div class="usa-grid-full">
             <div class="usa-width-one-half fund-summary-details">
-              <h3>Details <span class="as-of-date">As of 12/31/{{ 'now' | date: "%Y" | minus: 1 }}</span></h3>
+              <h3>Details {% if page.summary_update %}<span class="as-of-date">As of {{ page.summary_update }}</span>{% endif %}</h3>
                 <p><b>Assets</b><br>
                 {{ page.summary_details.assets }}
               </p>
@@ -108,7 +107,7 @@ scripts:
               </p>
             </div>
             <div class="usa-width-one-half fund-summary-top-ten">
-              <h3>Top ten holdings <span class="as-of-date">As of 12/31/{{ 'now' | date: "%Y" | minus: 1 }}</span></h3>
+              <h3>Top ten holdings {% if page.top_ten_update %}<span class="as-of-date">As of {{ page.top_ten_update }}</span>{% endif %}</h3>
               <ol>
               {% for item in page.top_ten_holdings %}
               <li>
@@ -150,7 +149,7 @@ scripts:
         <div id="a4" class="usa-accordion-content">
           <div class="usa-grid-full">
             <div class="usa-width-one-half">
-              <h3>Fees <span class="as-of-date">As of 12/31/{{ 'now' | date: "%Y" | minus: 1 }}</span></h3>
+              <h3>Fees {% if page.summary_update %}<span class="as-of-date">As of {{ page.summary_update }}</span>{% endif %}</h3>
               <p><b>Net admin expense<sup>*</sup></b><br>
                 {% include components/expense_string.html value=page.summary_details.net_expense %}
               </p>
