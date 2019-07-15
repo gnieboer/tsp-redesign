@@ -1,0 +1,10 @@
+table {
+  th {
+    &:first-child {
+      width: 50%;
+    }
+  }
+  td {
+    vertical-align: text-top;
+  }
+}

@@ -26,15 +26,39 @@ If you meet the loan eligibility rules and your loan request is approved, the lo
 ## Loan types and terms
 We allow two types of loans:
 
-**General Purpose** | **Residential**    
------------------ | -----------------
-![check]({{ site.baseurl }}/assets/img/icons/check-circle-green.svg "Check mark") May be used for any purpose | ![check]({{ site.baseurl }}/assets/img/icons/check-circle-green.svg "Check mark") May only be used for the purchase or construction of a primary residence
-![check]({{ site.baseurl }}/assets/img/icons/check-circle-green.svg "Check mark") Requires no documentation | ![check]({{ site.baseurl }}/assets/img/icons/check-circle-green.svg "Check mark") Requires documentation
-![check]({{ site.baseurl }}/assets/img/icons/check-circle-green.svg "Check mark") Has a repayment term of 1 to 5 years | ![check]({{ site.baseurl }}/assets/img/icons/check-circle-green.svg "Check mark") Has a repayment term of 1 to 5 years
+<table class="icon-wrap">
+  <thead>
+    <tr>
+      <th scope="col">General Purpose</th>
+      <th scope="col">Residential</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><img src="{{ site.baseurl }}/assets/img/icons/check-circle-green.svg" alt="Check mark">
+      <p>May be used for any purpose</p></td>
+      <td><img src="{{ site.baseurl }}/assets/img/icons/check-circle-green.svg" alt="Check mark">
+      <p>May only be used for the purchase or construction of a primary residence</p></td>
+    </tr>
+    <tr>
+      <td><img src="{{ site.baseurl }}/assets/img/icons/check-circle-green.svg" alt="Check mark">
+      <p>Requires no documentation</p></td>
+      <td><img src="{{ site.baseurl }}/assets/img/icons/check-circle-green.svg" alt="Check mark">
+      <p>Requires no documentation</p></td>
+    </tr>
+    <tr>
+      <td><img src="{{ site.baseurl }}/assets/img/icons/check-circle-green.svg" alt="Check mark">
+      <p>Has a repayment term of 1 to 5 years</p></td>
+      <td><img src="{{ site.baseurl }}/assets/img/icons/check-circle-green.svg" alt="Check mark">
+      <p>Has a repayment term of 1 to 5 years</p></td>
+    </tr>
+  </tbody>
+</table>
 
 For details, visit [Residential Loan Documentation](#).
 
-![alert]({{ site.baseurl }}/assets/img/icons/alert-circle-red.svg "alert circle") Your loan payments must start within 60 days of your loan being sent.
+{:.alert}
++ Your loan payments must start within 60 days of your loan being sent.
 
 ### Loan eligibility
 
@@ -51,6 +75,8 @@ For details, visit [Residential Loan Documentation](#).
 Residential loans have specific rules in addition to the general eligibility rules:
 
 You can only use a residential loan for purchasing or constructing a primary residence, which may include any of the following:
+
+{:.check}
 + House
 + Townhouse
 + Condominium
@@ -61,13 +87,18 @@ You can only use a residential loan for purchasing or constructing a primary res
 
 **You cannot use a residential loan for**
 
-+ ![x_red]({{ site.baseurl }}/assets/img/icons/x-circle-red.svg "red x") refinancing or prepaying your existing mortgage
-+ ![x_red]({{ site.baseurl }}/assets/img/icons/x-circle-red.svg "red x") construction of an addition to your existing residence
-+ ![x_red]({{ site.baseurl }}/assets/img/icons/x-circle-red.svg "red x") renovations to your existing residence
-+ ![x_red]({{ site.baseurl }}/assets/img/icons/x-circle-red.svg "red x") buying out another person's share in the your current residence
-+ ![x_red]({{ site.baseurl }}/assets/img/icons/x-circle-red.svg "red x") purchasing land only
+{:.cross}
++ refinancing or prepaying your existing mortgage
++ construction of an addition to your existing residence
++ renovations to your existing residence
++ buying out another person's share in the your current residence
++ purchasing land only
 
-![alert]({{ site.baseurl }}/assets/img/icons/alert-circle-red.svg "alert circle") Your primary residence must be purchased in whole or in part by you, or your spouse.
+<p></p>
+
+{:.alert}
++ Your primary residence must be purchased in whole or in part by you, or your spouse.
+
 
 ## Borrowing limits
 ### Minimum loan amount
