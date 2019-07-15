@@ -50,6 +50,29 @@ function mapFundName (fund) {
   return fund.toLowerCase() + '-fund';
 }
 
+function getMonthYearName (val) {
+  var monthNames = ["January", "February", "March", "April", "May","June","July", "August", "September", "October", "November","December"];
+  var theDate = new Date(val);
+  return monthNames[theDate.getMonth()] + ' ' + theDate.getFullYear();
+}
+
+function tooltipDiv (divClass, block) {
+  return '<div class="' + divClass + '">'
+    + block + '</div>';
+}
+function tooltipHeader(val) {
+  return '<span class="legend-title"><strong>'+ val +'</strong></span><br>';
+}
+function tooltipLegendRow(legendColor, lClass, left, rClass, right) {
+  return  '<span class="tooltip-bar '+legendColor+'"></span>'
+        + tooltipRow(lClass, left, rClass, right);
+}
+function tooltipRow(lClass, left, rClass, right) {
+  return  '<span class="'+lClass+' legend-left">'  + left  + '</span>'
+        + '<span class="'+rClass+' legend-right">' + right + '</span>'
+        + '<br>';
+}
+
 var groupFundAnnualReturns = function(setName) {
   // fund comparison data
   var scriptName = '';
@@ -94,6 +117,23 @@ var groupFundAnnualReturns = function(setName) {
     );
 }
 
+// function tooltipDiv (class, block) {
+// function tooltipHeader(val) {
+// function tooltipLegendRow(legendColor, lClass, left, rClass, right) {
+// function tooltipRow(lClass, left, rClass, right) {
+function growth100Tooltip(me) {
+  // console.log(me);
+  var rc = tooltipHeader(getMonthYearName(me.x+1000000000));
+  var points = me.points;
+  for (var i = 0; i < points.length; i++) {
+    var lColor = mapServerFundClassName(points[i].series.colorIndex);
+    var lName = mapServerFundName(points[i].series.name,0);
+    rc += tooltipLegendRow(lColor, lColor, lName, '', '$' + points[i].y.toFixed(2));
+  }
+  rc = tooltipDiv('growth-100-tooltip', rc);
+  // console.log(rc);
+  return rc;
+}
 function getGrowthInception(fund) {
   var colorIndexFund = 'lf';
   var colorIndexInfl = 'gray';
@@ -128,12 +168,39 @@ function getGrowthInception(fund) {
       title: { text: '' }
     },
     tooltip: {
-      shared: true
+      formatter: function () {
+        return growth100Tooltip(this);
+      },
+      shared: true,
+      useHTML: true
     }
   });
 }
 
 var barChart;
+function barChartTooltip(me) {
+  // console.log(me);
+  returnsTableActive(me.x+1);
+  var rc = tooltipHeader(me.points[0].key);
+  var points = me.points;
+  for (var i = 0; i < points.length; i++) {
+    var lColor = mapServerFundClassName(points[i].series.colorIndex);
+    var lName = mapServerFundName(points[i].series.name,0);
+    rc += tooltipLegendRow(lColor, lColor, lName, '', points[i].y.toFixed(2)+'%');
+  }
+  rc = tooltipDiv('rates-of-return-tooltip', rc);
+  // console.log(rc);
+  return rc;
+}
+function barChartTooltipOld(me) {
+  // console.log(me);
+  returnsTableActive(me.x+1);
+  return me.points.reduce(function (s, point) {
+      return s + '<br/>' + '<span class="'+ point.series.colorIndex+'-fund legend-left">'
+        + point.series.name + ': ' +
+          point.y + '%' + '</span>';
+  }, '<b>' + me.points[0].key + '</b>');
+}
 function getFundIndexAverageAnnualReturns(fund) {
   var colorFund = 'lf';
   var colorIndex = 'il';
@@ -182,12 +249,7 @@ function getFundIndexAverageAnnualReturns(fund) {
 //              '<td style="padding:0"><b>{point.y:.1f}%</b></td></tr>',
 //          footerFormat: '</table>',
           formatter: function () {
-            // console.log(this);
-            returnsTableActive(this.x+1);
-            return this.points.reduce(function (s, point) {
-                return s + '<br/>' + point.series.name + ': ' +
-                    point.y + 'm';
-            }, '<b>' + this.points[0].key + '</b>');
+            return barChartTooltip(this);
           },
           shared: true,
           useHTML: true
@@ -197,7 +259,7 @@ function getFundIndexAverageAnnualReturns(fund) {
 function setTitle(year) {
 	barChart.setTitle({text: 'Average Rates of Return' + '   <span class="hc-note">(As of December ' + year + ')</span>'});
 }
-function mapServerFundName (f) {
+function mapServerFundName (f, glossaryFlag) {
   var fund = f.trim().toUpperCase();
   if (fund == 'G') { return 'G Fund'; }
   if (fund == 'F') { return 'F Fund'; }
@@ -216,20 +278,22 @@ function mapServerFundName (f) {
   if (fund == 'L2055') { return 'L 2055'; }
   if (fund == 'L2060') { return 'L 2060'; }
   if (fund == 'L2065') { return 'L 2065'; }
+  if (fund == 'INFLATION') { return 'Inflation'; } // I
 
   // if (fund == '') { return ''; } // G
-  if (fund == 'LBA') { return glossaryTermString(fund); } // F
-  if (fund == 'SP500') { return glossaryTermString(fund); } // C
-  if (fund == 'W4500') { return glossaryTermString(fund); } // S
-  if (fund == 'EAFE') { return glossaryTermString(fund); } // I
-  return '** ' + fund + '**';
+  if (fund == 'LBA') { return glossaryTermString(fund, glossaryFlag); } // F
+  if (fund == 'SP500') { return glossaryTermString(fund, glossaryFlag); } // C
+  if (fund == 'W4500') { return glossaryTermString(fund, glossaryFlag); } // S
+  if (fund == 'EAFE') { return glossaryTermString(fund, glossaryFlag); } // I
+  return '** ' + fund + ' **';
 }
-function glossaryTermString(fund) {
+function glossaryTermString(fund, glossaryFlag) {
   var term = 'undefined';
   if (fund == 'LBA') { term = 'U.S. Aggregate Index'; } // F
   if (fund == 'SP500') { term = 'S&P 500'; } // C
   if (fund == 'W4500') { term = 'Dow Jones'; } // S
   if (fund == 'EAFE') { term = 'EAFE'; } // I
+  if (glossaryFlag == 0) { return term; }
   return '<span data-term="'+term+'" class="js-glossary-toggle term term-end">'+term+'</span>';
 }
 function mapServerFundClassName (f) {
@@ -239,6 +303,7 @@ function mapServerFundClassName (f) {
   if (fund == 'C') { return 'c-fund'; }
   if (fund == 'S') { return 's-fund'; }
   if (fund == 'I') { return 'i-fund'; }
+  if (fund == 'LF') { return 'l-fund'; }
 
   if (fund == 'LINC') { return 'l-income'; }
   if (fund == 'LINCX') { return 'index-l'; }
@@ -255,10 +320,17 @@ function mapServerFundClassName (f) {
 
   // if (fund == '') { return ''; } // G
   if (fund == 'LBA') { return 'index-f'; } // F
+  if (fund == 'IF') { return 'index-f'; } // F
   if (fund == 'SP500') { return 'index-c'; } // C
+  if (fund == 'IC') { return 'index-c'; } // C
   if (fund == 'W4500') { return 'index-s'; } // S
+  if (fund == 'IS') { return 'index-s'; } // S
   if (fund == 'EAFE') { return 'index-i'; } // I
-  return '** ' + fund + '**';
+  if (fund == 'II') { return 'index-i'; } // I
+  if (fund == 'IL') { return 'index-l'; } // I
+
+  if (fund == 'GRAY') { return 'inflation-color'; } // I
+  return '** ' + fund + ' **';
 }
 function buildReturnsTable(arr) {
   var headName = { YTD: 'YTD', '1-yr': '1&nbsp;Yrs', '3-yr': '3&nbsp;Yrs', '5-yr': '5&nbsp;Yrs', '10-yr': '10&nbsp;Yrs', Inception: 'Life'};
@@ -280,8 +352,8 @@ function buildReturnsTable(arr) {
     col = lines[j].split(',');
     table += '<tr>';
     cellClass = 'odd';
-    var fundName = mapServerFundName(col[0].trim());
-    console.log('fund is ' + col[0].trim());
+    var fundName = mapServerFundName(col[0].trim(),1);
+    // console.log('fund is ' + col[0].trim());
     var fund = col[0].trim().toLowerCase();
     var fundColor = mapServerFundClassName(fund);
     if ((fund == 'linc') && (j > 1)) { fundColor = mapServerFundClassName('lincx'); }
