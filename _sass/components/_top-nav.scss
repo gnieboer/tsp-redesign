@@ -78,3 +78,28 @@
     }
   }
 }
+
+  @media only screen and (max-width: $medium-screen) {
+    .usa-header {
+      button[aria-expanded=true],
+      button[aria-expanded=true]:hover,
+      .usa-nav-submenu {
+      @if variable-exists(top-nav-dropdown-bg) {
+        background-color: #fff;
+        color: $top-nav-link;
+      }
+    }
+    .usa-nav-primary {
+      .usa-nav-link {
+        &[aria-expanded="true"] {
+          span {
+            color: $top-nav-link;
+            &:hover {
+              color: $top-nav-link;
+            }
+          }
+        }
+      }
+    }
+  }
+}

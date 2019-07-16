@@ -1,11 +1,68 @@
+// Mobile first
+// .usa-layout-docs-sidenav {
+//     order: 1;
+//   }
+aside {
+  .usa-accordion-content {
+    padding-top: 0;
+  }
 
-.usa-layout-docs-sidenav {
-  // display: none;
+  button.usa-accordion-button {
+    display: none;
+  }
 }
 
-@media screen and (min-width: $large-screen) {
-  .usa-layout-docs-sidenav {
-    // display: block;
-    // width: 21%;
+@media (max-width: #{$medium-screen}) {
+  aside {
+    &.usa-width-one-fourth {
+      width: auto;
+    }
+
+    &.usa-layout-docs-sidenav {
+      order: 1;
+      padding-bottom: 2.4rem;
+    }
+
+    &.sticky {
+      position: relative;
+    }
+
+    button.usa-accordion-button {
+      display: block;
+      background-color: $color-primary;
+      color: white;
+      padding: 1.5rem 2rem;
+
+      &:hover {
+        background-color: $color-primary;
+      }
+
+      &[aria-expanded="false"],
+      &[aria-expanded="true"] {
+        background-color: $color-primary;
+        color: white;
+        background-image: none;
+
+        &:after {
+          font-family: $font-awesome;
+          content: "\f067";
+          float: right;
+        }
+      }
+
+      &[aria-expanded="true"] {
+        &:after {
+          content: "\f068";
+        }
+      }
+    }
+
+    .usa-accordion-content {
+      padding: 1.5rem 2rem;
+    }
+
+    .usa-sidenav-list {
+      border-top: none;
+    }
   }
 }

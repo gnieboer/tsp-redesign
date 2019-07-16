@@ -23,6 +23,9 @@ $color-blue-lightest: lighten($color-blue-light, 10%);
 
 $color-blue-medium: #116C97;
 
+$color-primary: #046b99;
+$color-primary-darker: #323a45;
+$color-base: #222223;
 
 $color-aqua: #00B5E2;
 $color-aqua-dark: darken($color-aqua, 5%);
@@ -57,7 +60,7 @@ $color-index-i: lighten($color-i-fund, 40%); // MSCI EAFE
 $color-index-l: lighten($color-l-fund, 40%); // L-income for "Avg Returns"
 
 $small-screen:  481px;
-$medium-screen: 600px;
+$medium-screen: 700px;
 $large-screen:  951px;
 
 $light: 300;
