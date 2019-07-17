@@ -8,7 +8,7 @@ Fund_name: I Fund
 Fund_order: 5
 Fund_subtitle: International Stock Index Investment Fund
 Fund_objective: The I Fund's investment objective is to match the performance of the MSCI EAFE (Europe, Australasia, Far East) Index.
-Fund_objective_short: To match the performance of the MSCI EAFE (Europe, Australasia, Far East) Index.
+Fund_objective_short: Match the performance of the MSCI EAFE (Europe, Australasia, Far East) Index.
 questions:
   - question: Why should I invest in the I Fund?
     answer: Investment in the I Fund offers the opportunity to experience gains from equity ownership of non-U.S. companies. Because it represents the stocks of companies in many developed countries (excluding the U.S.), it is an excellent way to diversify the stock portion of your TSP allocation.

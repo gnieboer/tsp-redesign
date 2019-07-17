@@ -8,7 +8,7 @@ Fund_name: F Fund
 Fund_order: 2
 Fund_subtitle: Fixed Income Index Investment Fund
 Fund_objective: The F Fund's investment objective is to match the performance of the Bloomberg Barclays U.S. Aggregate Bond Index, a broad index representing the U.S. bond market.
-Fund_objective_short: To match the performance of the Bloomberg Barclays U.S. Aggregate Bond Index.
+Fund_objective_short: Match the performance of the Bloomberg Barclays U.S. Aggregate Bond Index.
 questions:
   - question: Why should I invest in the F Fund?
     answer: F Fund investors are rewarded with the opportunity to earn higher rates of return over the long term than they would from investments in short-term securities such as the G Fund. The overall risk is relatively low in comparison to certain other fixed income investments in the market because the F Fund includes only investment-grade securities.

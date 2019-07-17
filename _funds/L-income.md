@@ -8,6 +8,7 @@ Fund_name: L Income
 Fund_order: 7
 Fund_subtitle:
 Fund_objective: The L Income Fund’s investment objective is to achieve a low level of growth with a high emphasis on preservation of assets. Unlike the other four L Funds, the L Income Fund's asset allocation does not change quarterly. However, like the other funds, it is rebalanced daily to maintain its target investment mix.
+Fund_objective_short: For participants who are currently withdrawing their TSP accounts in monthly payments or who plan to begin withdrawing before 2020.
 Fund_recommendation: Based on the year you were born, the L Income Fund may be a good choice for you because it provides the most conservative investment mix, while still offering you some diversification.
 questions:
   - question: Why should I invest in the L Income Fund?
@@ -41,7 +42,7 @@ top_ten_holdings:
 additional_info: |
   The L Income Fund is designed to produce current income if you are already receiving money from your TSP account through monthly payments or if you plan to withdraw or to begin withdrawing from your account before 2019. The asset allocations are based on the investment consultant’s assumptions regarding future investment returns, inflation, economic growth, and interest rates. We review these assumptions at least annually to determine whether changes to the allocations are warranted.
 
-  Remember, however, that expected risk and return are based on assumptions about future economic conditions and investment performance. There is no guaranteed rate of return for any period, either short-term or long-term. For the fund’s historical returns, visit [Share Price History](). Past performance does not guarantee future results.
+  Remember, however, that expected risk and return are based on assumptions about future economic conditions and investment performance. There is no guaranteed rate of return for any period, either short-term or long-term. For the fund’s historical returns, visit [Share Price History](/fund-performance/share-price-history/). Past performance does not guarantee future results.
 risks: |
   When you invest in the L Funds, you are subject to the investment risks associated with the G, F, C, S, and I funds. Your account is not guaranteed against loss. The L Funds can have periods of gain and loss, just as the individual TSP funds do.
 rewards: |

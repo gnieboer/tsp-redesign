@@ -95,7 +95,7 @@ scripts:
 <section id="fund-tabs">
 <ul class="usa-accordion usa-tabs">
     <li>
-        <button class="usa-accordion-button" aria-expanded="false" aria-controls="a1">
+        <button class="usa-accordion-button" aria-expanded="true" aria-controls="a1">
           Summary
     </button>
         <div id="a1" class="usa-accordion-content">
@@ -133,7 +133,7 @@ scripts:
         </div>
     </li>
     <li>
-        <button class="usa-accordion-button" aria-expanded="true" aria-controls="a2">
+        <button class="usa-accordion-button" aria-expanded="false" aria-controls="a2">
       Performance &amp; risks
     </button>
         <div id="a2" class="usa-accordion-content">
@@ -165,16 +165,13 @@ scripts:
               <p><b>Net admin expense<sup>*</sup></b><br>
                 {% include components/expense_string.html value=page.summary_details.net_expense %}
               </p>
-              <p><b>Other expense<sup>**</sup></b><br></p>
+              <p><b>Other expense<sup>**</sup></b><br>
                 {% include components/expense_string.html value=page.summary_details.other_expense %}
+              </p>
               <p>
                 <sup>*</sup>{% include components/expense_string.html value=page.summary_details.net_expense explain=true %}
               </p>
-              <p><sup>**</sup>Fees associated with securities lending are not included in 2017 administrative expenses.
-                Consistent with standard practice in the industry, they are charged in addition to administrative expenses. The other expenses
-                represent fees paid to the investment manager for administering securities lending programs. Income earned from these programs improved the returns of
-                the fund.
-              </p>
+              <p><sup>**</sup>Fees paid to the investment manager.</p>
             </div>
             <div class="usa-width-one-half">
               <h3>Additional information </h3>

@@ -51,7 +51,7 @@
                 <thead>
                   <tr>
                     <th scope="col" id="sortSector" class="{{ sortable }}">Sector</th>
-                    <th scope="col" id="sortWeight" class="{{ sortable }}">Portfolio Weight*</th>
+                    <th scope="col" id="sortWeight" class="{{ sortable }}">Portfolio Weight<sup>1</sup></th>
                     <th scope="col">Portfolio Percentage</th>
                   </tr>
                 </thead>
@@ -124,7 +124,10 @@
       <p> Source: BlackRock
         <br>* Due to rounding, numbers may not add up to exactly 100%.</p>
 {% else %}
-<p>Put something here about this fund being 100% US investment.</p>
+<ol id="footnotes">
+  <li>By law, the G Fund must be invested in nonmarketable U.S. Treasury securities specially issued to the TSP.
+    </li>
+  </ol>
 {% endif %}
 
 {% endif %}
