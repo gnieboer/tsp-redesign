@@ -11,11 +11,11 @@ Fund_objective: The L Income Fund’s investment objective is to achieve a low l
 Fund_recommendation: Based on the year you were born, the L Income Fund may be a good choice for you because it provides the most conservative investment mix, while still offering you some diversification.
 questions:
   - question: Why should I invest in the L Income Fund?
-    answer: You should consider investing in the L Income Fund if you are currently withdrawing money from your TSP account in monthly payments or you plan to begin withdrawing money before 2019.
+    answer: You should consider investing in the L Income Fund if you are currently withdrawing money from your TSP account in monthly payments or you plan to begin withdrawing money before 2020.
   - question: Am I ok with market and inflation risk?
-    answer: When you invest in the L Income Fund, you are subject to the investment risks associated with the G, F, C, S, and I funds. This means that the L Income Fund can have periods of gain and loss, just as the individual TSP funds do.
+    answer: The L Income Fund can have periods of gain and loss, just as the individual TSP funds do. However, the L Income Fund is the most conservative of the L Funds. It focuses on money preservation while providing a small exposure to the riskier funds (C, S, and I Funds), in order to reduce inflation's effect on your purchasing power. 
   - question: How can I use the L Income Fund in my TSP Account?
-    answer: The S Fund can be useful in a portfolio that also contains stock funds that track other indexes. The C, S, and I Funds, for example, track different segments of the overall stock market without overlapping. By investing in all segments of the stock market (as opposed to just one), you reduce your exposure to market risk.
+    answer: Your investment in the L Income Fund is designed to produce current income for you if you plan to start withdrawing from your account in the near future or are already receiving monthly payments from your account.  
 avg_annual_returns:
   ytd: "-"
   one_yr: "-"
@@ -25,7 +25,7 @@ avg_annual_returns:
   inception: "-"
 summary_update: 12/31/2018
 summary_details:
-  assets: $67.6 billion
+  assets: $109.3 billion
   as_of_year: 2018
   gross_expense:  .051
   net_expense:    .040
