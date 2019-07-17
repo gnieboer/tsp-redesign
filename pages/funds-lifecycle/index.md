@@ -26,6 +26,6 @@ As your retirement date approaches, the investment mix of each L Fund becomes mo
 
 #### Risks
 
-When you invest in the L Funds, you are subject to the investment risks associated with the G, F, C, S, and I funds. This means that the L Funds can have periods of gain and loss, just as the individual TSP funds do.
+When you invest in the L Funds, you are subject to the investment risks associated with the G, F, C, S, and I funds. This means that the L Funds can have periods of gain and loss, just as the individual TSP funds do. Test.  
 
 {% include components/fund-comparison.html funds='lifecycle' %}
