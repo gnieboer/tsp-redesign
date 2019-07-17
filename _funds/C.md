@@ -8,6 +8,7 @@ Fund_name: C Fund
 Fund_order: 3
 Fund_subtitle: Common Stock Index Investment Fund
 Fund_objective: The C Fund's investment objective is to match the performance of the Standard and Poor's 500 (S&P 500) Index, a broad market index made up of stocks of 500 large to medium-sized U.S. companies.
+Fund_objective_short: Match the performance of the Standard and Poor's 500 (S&P 500) Index.
 questions:
   - question: Why should I invest in the C Fund?
     answer: Investment in the C Fund offers the opportunity to experience gains from equity ownership of large and mid-sized U.S. company stocks.
@@ -46,10 +47,26 @@ composition:
   - [Utilities, 3.3]
 top_ten_update: 12/31/2018
 top_ten_holdings:
-  - name: Tesla Motors Inc.
-    abbr: TSLA
-  - name: Las Vegas Sands Corp.
-    abbr: LVS
+  - name: Microsoft Corporation
+    abbr: MSFT
+  - name: JPMorgan Chase & Company
+    abbr: JPM
+  - name: Apple, Inc.
+    abbr: AAPL
+  - name: Alphabet, Inc. Class C
+    abbr: GOOG
+  - name: Amazon.com, Inc.
+    abbr: AMZN
+  - name: Facebook, Inc. Class A
+    abbr: FB
+  - name: Berkshire Hathaway, Inc. Class B
+    abbr: BRK.B
+  - name: Alphabet, Inc. Class A
+    abbr: GOOGL
+  - name: Johnson & Johnson
+    abbr: JNJ
+  - name: ExxonMobil Corporation
+    abbr: XOM
 additional_info: |
   By law, the C Fund must be invested in a portfolio designed to replicate the performance of an index of stocks representing the U.S. stock markets. The Federal Retirement Thrift Investment Board has chosen as its benchmark the Standard & Poor’s 500 Stock Index, which tracks the performance of major U.S. companies and industries.
 

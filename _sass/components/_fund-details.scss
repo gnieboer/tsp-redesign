@@ -1,3 +1,8 @@
+section#fund-tabs {
+  #footnotes {
+    border-top: none;
+  }
+}
 .fund-details {
   .as-of-date {
     color: #999;
@@ -90,6 +95,9 @@
 
 @media screen and (min-width: 992px) {
   section#fund-tabs {
+    #footnotes {
+      border-top: none;
+    }
     .usa-tabs {
       width: auto;
 
