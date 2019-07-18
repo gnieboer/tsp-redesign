@@ -14,7 +14,7 @@ questions:
   - question: Why should I invest in the L Income Fund?
     answer: You should consider investing in the L Income Fund if you are currently withdrawing money from your TSP account in monthly payments or you plan to begin withdrawing money before 2020.
   - question: Am I ok with market and inflation risk?
-    answer: The L Income Fund can have periods of gain and loss, just as the individual TSP funds do. However, the L Income Fund is the most conservative of the L Funds. It focuses on money preservation while providing a small exposure to the riskier funds (C, S, and I Funds), in order to reduce inflation's effect on your purchasing power. 
+    answer: The L Income Fund can have periods of gain and loss, just as the individual TSP funds do. However, the L Income Fund is the most conservative of the L Funds. It focuses on money preservation while providing a small exposure to the riskier funds (C, S, and I Funds), in order to reduce inflation's effect on your purchasing power.
   - question: How can I use the L Income Fund in my TSP Account?
     answer: Your investment in the L Income Fund is designed to produce current income for you if you plan to start withdrawing from your account in the near future or are already receiving monthly payments from your account.  
 avg_annual_returns:
@@ -23,7 +23,7 @@ avg_annual_returns:
   three_yr: "-"
   five_yr: "-"
   ten_yr: "-"
-  inception: "-"
+  lifetime: "-"
 summary_update: 12/31/2018
 summary_details:
   assets: $109.3 billion
@@ -63,6 +63,6 @@ bottom-scripts: /assets/js/ajaxFetch.js
 document-ready:
   - singleFundData('Linc');
   - getFundIndexAverageAnnualReturns('Linc');
-  - getGrowthInception('Linc');
+  - getGrowthLifetime('Linc');
   - LfundStackedArea('Income', 'LfundStackedArea');
 ---

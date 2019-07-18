@@ -107,7 +107,7 @@
           </td>
         {% endfor %}
         </tr>
-        <!-- Return Inception -->
+        <!-- Return Lifetime -->
         <tr class="returns-by-year">
           <th scope="row">
             <input type="checkbox" id="life-show" onClick="toggleRow(this, 'rowLife');" />
@@ -115,7 +115,7 @@
           </th>
         {% for fund in sorted %}
           <td class="fund-content hide col{{ forloop.index }}">
-            <p id='ret-Life-{{ fund.Fund_name | downcase | replace: " ", "-" }}' class="numeric rowLife hide">{{ fund.avg_annual_returns.inception }}</p>
+            <p id='ret-Life-{{ fund.Fund_name | downcase | replace: " ", "-" }}' class="numeric rowLife hide">{{ fund.avg_annual_returns.lifetime }}</p>
           </td>
         {% endfor %}
         </tr>

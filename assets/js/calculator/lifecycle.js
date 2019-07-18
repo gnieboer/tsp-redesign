@@ -701,6 +701,20 @@ function buildHighchartData(data) {
   return null;
 }
 
+function lifeCyclePieTooltip(me) {
+  // console.log(me);
+  var rc = '';
+  var points = me.series.points;
+  for (i = 1; i < points.length; i++) {
+    var lColor = mapServerFundClassName(points[i].colorIndex);
+    var lName = points[i].name; // mapServerFundName(points[i].name,0);
+    rc += tooltipLegendRow(lColor, lColor, lName, '', points[i].y.toFixed(2)+'%');
+    // rc += tooltipRow(lColor, lName, '', points[i].y.toFixed(2)+'%');
+  }
+  rc = tooltipHeader(points[0].name) + rc;
+  rc = tooltipDiv('before-invest-tooltip', rc);
+  return rc;
+}
 // return chart object
 function smallLifeCyclePie(fund, divID, startingData) {
 
@@ -720,20 +734,11 @@ function smallLifeCyclePie(fund, divID, startingData) {
           },
           tooltip: {
             formatter: function () {
-                var rc = '<div class="before-invest-tooltip">'
-                        + '<span class="tooltip-title"><strong>'+this.series.points[0].name+'</strong></span><br>';
-                for (i = 1; i <= 5; i++) {
-                  rc += '<span class="'+this.series.points[i].colorIndex+'-fund tooltip-left">'
-                        + this.series.points[i].name + '</span>'
-                        + '<span class="tooltip-right">' + this.series.points[i].y.toFixed(2)
-                        + '%</span><br>';
-                }
-                rc += '</div>';
-                return rc;
+              return lifeCyclePieTooltip(this);
             },
             shared: true,
             useHTML: true,
-            positioner: function () { return { x: 0, y: 70 }; }
+            positioner: function () { return { x: 0, y: 30 }; }
           },
           plotOptions: {
               series: { states: { hover: { enabled: false } } },
@@ -841,6 +846,19 @@ function stackedAreaData(fund) {
   return stackedData;
 }
 
+function lifeCycleStackedTooltip(me) {
+  // console.log(me);
+  var rc = '';
+  var points = me.points;
+  for (i = 0; i < points.length; i++) {
+    var lColor = mapServerFundClassName(points[i].colorIndex);
+    var lName = points[i].series.name; // mapServerFundName(points[i].series.name,0);
+    rc += tooltipLegendRow(lColor, lColor, lName, '', points[i].y.toFixed(2)+'%');
+  }
+  rc = tooltipHeader(points[0].x) + rc;
+  rc = tooltipDiv('l-fund-tooltip', rc);
+  return rc;
+}
 // return chart object
 function LfundStackedArea(fund, divID) {
 
@@ -876,16 +894,7 @@ function LfundStackedArea(fund, divID) {
             // split: true,
             // valueSuffix: ' millions'
             formatter: function () {
-                var rc = '<div class="l-fund-tooltip">'
-                        + '<span class="tooltip-title"><strong>'+this.points[0].x+'</strong></span><br>';
-                for (i = 0; i < 5; i++) {
-                  rc += '<span class="'+this.points[i].colorIndex+'-fund tooltip-left">'
-                        + this.points[i].series.name + ' Fund</span>'
-                        + '<span class="tooltip-right">' + this.points[i].y.toFixed(2)
-                        + '%</span><br>';
-                }
-                rc += '</div>';
-                return rc;
+              return lifeCycleStackedTooltip(this);
             },
             crosshairs: [true, true],
             useHTML: true,
@@ -902,11 +911,11 @@ function LfundStackedArea(fund, divID) {
             series: { marker: { enabled: false } }
         },
         series: [
-          { name: 'G', colorIndex: 'g', data: stackedData[1]},
-          { name: 'F', colorIndex: 'f', data: stackedData[2]},
-          { name: 'C', colorIndex: 'c', data: stackedData[3]},
-          { name: 'S', colorIndex: 's', data: stackedData[4]},
-          { name: 'I', colorIndex: 'i', data: stackedData[5]}
+          { name: 'G Fund', colorIndex: 'g', data: stackedData[1]},
+          { name: 'F Fund', colorIndex: 'f', data: stackedData[2]},
+          { name: 'C Fund', colorIndex: 'c', data: stackedData[3]},
+          { name: 'S Fund', colorIndex: 's', data: stackedData[4]},
+          { name: 'I Fund', colorIndex: 'i', data: stackedData[5]}
           ]
     });
     return myChart;

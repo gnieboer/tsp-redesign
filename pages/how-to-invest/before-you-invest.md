@@ -10,6 +10,7 @@ scripts:
   - /assets/js/highcharts/highcharts.js
   - /assets/js/highcharts/data.js
   - /assets/js/calculator/calculator.js
+  - /assets/js/ajaxFetch.js
   - /assets/js/calculator/lifecycle.js
   - /assets/js/calculator/before-you-invest.js
 permalink: /how-to-invest/before-you-invest/

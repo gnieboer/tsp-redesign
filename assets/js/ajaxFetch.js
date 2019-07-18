@@ -142,7 +142,7 @@ function growth100Tooltip(me) {
   // console.log(rc);
   return rc;
 }
-function getGrowthInception(fund) {
+function getGrowthLifetime(fund) {
   var colorIndexFund = 'lf';
   var colorIndexInfl = 'gray';
   var colorIndexValues = 'white';
@@ -153,7 +153,7 @@ function getGrowthInception(fund) {
   if (fund == 'S') { colorIndexFund = 's'; colorIndexInfl = 'gray'; }
   if (fund == 'I') { colorIndexFund = 'i'; colorIndexInfl = 'gray'; }
 
-  Highcharts.chart('growthInception', {
+  Highcharts.chart('growthLifetime', {
     credits: { enabled: false },
     chart: {
       type: 'line',
@@ -194,7 +194,8 @@ function barChartTooltip(me) {
   for (var i = 0; i < points.length; i++) {
     var lColor = mapServerFundClassName(points[i].series.colorIndex);
     var lName = mapServerFundName(points[i].series.name,0);
-    rc += tooltipLegendRow(lColor, lColor, lName, '', points[i].y.toFixed(2)+'%');
+    // rc += tooltipLegendRow(lColor, lColor, lName, '', points[i].y.toFixed(2)+'%');
+    rc += tooltipLegendRow(lColor, '', lName, '', points[i].y.toFixed(2)+'%');
   }
   rc = tooltipRowGroup(rc);
   rc = tooltipHeader(me.points[0].key) + rc;
@@ -334,7 +335,7 @@ function mapServerFundClassName (f) {
   return '** ' + fund + ' **';
 }
 function buildReturnsTable(arr) {
-  var headName = { YTD: 'YTD', '1-yr': '1&nbsp;Yrs', '3-yr': '3&nbsp;Yrs', '5-yr': '5&nbsp;Yrs', '10-yr': '10&nbsp;Yrs', Inception: 'Life'};
+  var headName = { YTD: 'YTD', '1-yr': '1&nbsp;Yrs', '3-yr': '3&nbsp;Yrs', '5-yr': '5&nbsp;Yrs', '10-yr': '10&nbsp;Yrs', Lifetime: 'Lifetime'};
   var i, j;
   var table = '<table>';
   var lines = arr.split("\n");

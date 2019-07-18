@@ -22,7 +22,7 @@ avg_annual_returns:
     three_yr: "-"
     five_yr: "-"
     ten_yr: "-"
-    inception: "-"
+    lifetime: "-"
 summary_update: 12/31/2018
 summary_details:
     assets: $67.6 billion
@@ -59,7 +59,7 @@ bottom-scripts: /assets/js/ajaxFetch.js
 document-ready:
   - singleFundData('G');
   - getFundIndexAverageAnnualReturns('G');
-  - getGrowthInception('G');
+  - getGrowthLifetime('G');
   - doCompositionPies();
   - $('.sortableColumn').click(function(e) { toggleSort(this); });
 ---

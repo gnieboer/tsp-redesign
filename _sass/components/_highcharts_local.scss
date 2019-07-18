@@ -12,7 +12,7 @@
   .highcharts-color-1 { fill: $color-gray-lighter; stroke: $color-gray-lighter; }
 }
 
-.hc-growth-inception {
+.hc-growth-lifetime {
   min-width: 310px;
   height: 400px;
   margin: 0 auto;
@@ -111,15 +111,16 @@
   }
   .tooltip-left {
     display: table-cell;
-    padding-right: 3px;
+    padding-right: 2px;
     text-align: left;
   }
   .tooltip-right {
     display: table-cell;
+    padding-left: 2px;
     text-align: right;
   }
 }
 .rates-of-return-tooltip {
-  background-color: black;
-  color: white;
+  // background-color: black;
+  // color: white;
 }
