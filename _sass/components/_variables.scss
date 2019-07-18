@@ -60,8 +60,9 @@ $color-index-i: lighten($color-i-fund, 40%); // MSCI EAFE
 $color-index-l: lighten($color-l-fund, 40%); // L-income for "Avg Returns"
 
 $small-screen:  481px;
-$medium-screen: 700px;
+$medium-screen: 600px;
 $large-screen:  951px;
+$desktop-screen:  1201px;
 
 $light: 300;
 $medium: 600;

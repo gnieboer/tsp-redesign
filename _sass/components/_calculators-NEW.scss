@@ -71,7 +71,7 @@ div.deco-box > div.usa-grid.results:nth-of-type(odd) {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    .usa-width-one-whole ul.deco-box-inner {
+    .usa-width-one-whole, ul.deco-box-inner {
       list-style: none;
       display: inline-flex;
       min-width: 50%;
