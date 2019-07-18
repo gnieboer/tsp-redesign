@@ -133,7 +133,8 @@ function growth100Tooltip(me) {
   var points = me.points;
   for (var i = 0; i < points.length; i++) {
     var lColor = mapServerFundClassName(points[i].series.colorIndex);
-    var lName = mapServerFundName(points[i].series.name,0);
+    var name = points[i].series.name.split("$");
+    var lName = mapServerFundName(name[0],0);
     rc += tooltipLegendRow(lColor, lColor, lName, '', '$' + points[i].y.toFixed(2));
   }
   rc = tooltipRowGroup(rc);
@@ -164,9 +165,10 @@ function getGrowthLifetime(fund) {
       text: 'Growth of $100 since Inception'
     },
     data: {
-      csvURL: 'https://www.tsp.gov/components/CORS/getFundGrowthInflation.html?fund='+fund
+      csvURL: 'https://www.tsp.gov/components/CORS/getFundGrowthInflation2.html?fund='+fund
     },
-    series: [{ colorIndex: colorIndexFund }, { colorIndex: colorIndexValues }, { colorIndex: colorIndexInfl }, { colorIndex: colorIndexValues }],
+    // series: [{ colorIndex: colorIndexFund }, { colorIndex: colorIndexValues }, { colorIndex: colorIndexInfl }, { colorIndex: colorIndexValues }],
+    series: [{ colorIndex: colorIndexFund }, { colorIndex: colorIndexInfl }],
     yAxis: {
       labels: {
         formatter: function() {
