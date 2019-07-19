@@ -62,6 +62,7 @@ scripts:
 bottom-scripts: /assets/js/ajaxFetch.js
 document-ready:
   - singleFundData('Linc');
+  - fundDetailsSummaryPie('Linc');
   - getFundIndexAverageAnnualReturns('Linc');
   - getGrowthLifetime('Linc');
   - LfundStackedArea('Income', 'LfundStackedArea');

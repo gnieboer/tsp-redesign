@@ -932,7 +932,7 @@ function fundDetailsSummaryPie(fund) {
   var glidePath = getLFundData(fund);
   var data = buildHighchartData(glidePath[idx]);
   var chartOne = smallLifeCyclePie(fund, 'pie-lfund', data);
-  // chartOne.tooltip.options.enabled = false;
+  chartOne.tooltip.options.enabled = false;
 
   var rc = '';
   var points = chartOne.series[0].points;
@@ -947,5 +947,5 @@ function fundDetailsSummaryPie(fund) {
   rc = tooltipDiv('hc-summary-tooltip', rc);
   $('#pie-tooltip').html(rc);
   console.log('rc: '+rc)
-  console.log(points);
+  // console.log(points);
 }
