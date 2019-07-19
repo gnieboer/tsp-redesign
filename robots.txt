@@ -1,0 +1,5 @@
+User-agent: usasearch
+Allow: /pages
+
+User-agent: *
+Disallow: /
