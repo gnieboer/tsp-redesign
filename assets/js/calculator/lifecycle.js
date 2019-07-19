@@ -711,6 +711,7 @@ function lifeCyclePieTooltip(me) {
     rc += tooltipLegendRow(lColor, lColor, lName, '', points[i].y.toFixed(2)+'%');
     // rc += tooltipRow(lColor, lName, '', points[i].y.toFixed(2)+'%');
   }
+  rc = tooltipRowGroup(rc);
   rc = tooltipHeader(points[0].name) + rc;
   rc = tooltipDiv('before-invest-tooltip', rc);
   return rc;
@@ -855,6 +856,7 @@ function lifeCycleStackedTooltip(me) {
     var lName = points[i].series.name; // mapServerFundName(points[i].series.name,0);
     rc += tooltipLegendRow(lColor, lColor, lName, '', points[i].y.toFixed(2)+'%');
   }
+  rc = tooltipRowGroup(rc);
   rc = tooltipHeader(points[0].x) + rc;
   rc = tooltipDiv('l-fund-tooltip', rc);
   return rc;
@@ -922,4 +924,28 @@ function LfundStackedArea(fund, divID) {
   }
 
   return null;
+}
+
+function fundDetailsSummaryPie(fund) {
+  var idx = getIdx();
+
+  var glidePath = getLFundData(fund);
+  var data = buildHighchartData(glidePath[idx]);
+  var chartOne = smallLifeCyclePie(fund, 'pie-lfund', data);
+  // chartOne.tooltip.options.enabled = false;
+
+  var rc = '';
+  var points = chartOne.series[0].points;
+  for (i = 1; i < points.length; i++) {
+    var lColor = mapServerFundClassName(points[i].colorIndex);
+    var lName = points[i].name; // mapServerFundName(points[i].name,0);
+    rc += tooltipLegendRow(lColor, lColor, lName, '', points[i].y.toFixed(2)+'%');
+    // rc += tooltipRow(lColor, lName, '', points[i].y.toFixed(2)+'%');
+  }
+  rc = tooltipRowGroup(rc);
+  rc = tooltipHeader(points[0].name) + rc;
+  rc = tooltipDiv('hc-summary-tooltip', rc);
+  $('#pie-tooltip').html(rc);
+  console.log('rc: '+rc)
+  console.log(points);
 }
