@@ -5,78 +5,94 @@ main {
     display: flex;
     flex-direction: column;
   }
-}
-aside {
-  &.usa-width-one-fourth {
+
+  aside {
     width: 100%;
-  }
 
-  &.usa-layout-docs-sidenav {
-    order: 1;
-    padding-top: 0;
-    padding-bottom: 2.4rem;
-  }
-
-  &.sticky {
-    position: relative;
-  }
-
-  button.usa-accordion-button {
-    display: block;
-    background-color: $color-primary;
-    color: white;
-    padding: 1.5rem 2rem;
-
-    &:hover {
-      background-color: $color-primary;
+    &.usa-width-one-fourth {
+      width: auto;
     }
 
-    &[aria-expanded="false"],
-    &[aria-expanded="true"] {
+    &.usa-layout-docs-sidenav {
+      order: 1;
+      padding-top: 0;
+      padding-bottom: 2.4rem;
+    }
+
+    &.sticky {
+      position: relative;
+    }
+
+    button.usa-accordion-button {
+      display: block;
       background-color: $color-primary;
       color: white;
-      background-image: none;
+      padding: 1.5rem 2rem;
 
-      &:after {
-        font-family: $font-awesome;
-        content: "\f067";
-        float: right;
+      &:hover {
+        background-color: $color-primary;
+      }
+
+      &[aria-expanded="false"],
+      &[aria-expanded="true"] {
+        background-color: $color-primary;
+        color: white;
+        background-image: none;
+
+        &:after {
+          font-family: $font-awesome;
+          content: "\f067";
+          float: right;
+        }
+      }
+
+      &[aria-expanded="true"] {
+        &:after {
+          content: "\f068";
+        }
       }
     }
 
-    &[aria-expanded="true"] {
-      &:after {
-        content: "\f068";
-      }
+    .usa-accordion-content {
+      padding: 1.5rem 2rem;
     }
-  }
 
-  .usa-accordion-content {
-    padding: 1.5rem 2rem;
-  }
-
-  .usa-sidenav-list {
-    border-top: none;
-  }
-}
-
+    .usa-sidenav-list {
+      border-top: none;
+    }
+  }// aside
+}// main
 
 @media (min-width: #{$large-screen}) {
   main {
+    aside {
+      &.usa-width-one-fourth {
+        width: 47%;
+      }
+
+      .usa-accordion-content {
+        padding-top: 0;
+      }
+
+      button.usa-accordion-button {
+        display: none;
+      }
+    }//aside
+
     &.usa-layout-docs {
       display: flex;
       flex-direction: row;
     }
-  }
-  aside {
-    &.usa-width-one-fourth {
-      width: initial;
-    }
-    .usa-accordion-content {
-      padding-top: 0;
-    }
-    button.usa-accordion-button {
-      display: none;
-    }
-  }
+  }// main
 }
+
+@media (min-width: #{$desktop-screen}) {
+  main {
+    aside {
+      &.usa-width-one-fourth {
+        margin-right: 4%;
+        width: 25%;
+      }
+    }//aside
+  }// main
+}//@media
