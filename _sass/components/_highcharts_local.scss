@@ -80,14 +80,14 @@
   width: 250px;
   height: 250px;
   margin: 0 auto;
-  border: 1px dashed red;
+  // border: 1px dashed red;
 }
 .hc-summary-tooltip {
   width: 140px;
   // height: 100px;
   // margin: 0 auto;
   text-align: center;
-  border: 1px dashed red;
+  // border: 1px dashed red;
 }
 
 .hc-debug-pie-box {
@@ -134,7 +134,8 @@
     text-align: right;
   }
 }
-.rates-of-return-tooltip {
-  // background-color: black;
-  // color: white;
+.l-fund-summary-tooltip {
+  margin: auto;
+  width: 140px;
+  // border: 1px dashed red;
 }
