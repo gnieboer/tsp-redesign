@@ -51,7 +51,10 @@
                 <thead>
                   <tr>
                     <th scope="col" id="sortSector" class="{{ sortable }}">Sector</th>
-                    <th scope="col" id="sortWeight" class="{{ sortable }}">Portfolio Weight<sup>1</sup></th>
+                    <th scope="col" id="sortWeight" class="{{ sortable }}">
+                      Portfolio Weight
+                      {% if page.Fund_name == 'G Fund' %}<sup>1</sup>{% endif %}
+                    </th>
                     <th scope="col">Portfolio Percentage</th>
                   </tr>
                 </thead>
@@ -67,18 +70,30 @@
 {% endfor %}
                 {% if page.composition.size > 1 %}
                 <tr>
-                  <th scope="row"><b>Total</b></th>
+                  <th scope="row">
+                    <b>Total</b>
+                    <sup>1</sup>
+                  </th>
                   <td><b>{{ total }}%</b></td>
                   <td><!-- <div id="composition-pie-0" class="hc-composition-pie"><div> --></td>
                 </tr>
                 {% endif %}
                 </tbody>
               </table>
+{% if page.Fund_name == 'G Fund' %}
+              <ol id="footnotes">
+                <li>By law, the G Fund must be invested in nonmarketable U.S. Treasury securities specially issued to the TSP.
+                  </li>
+                </ol>
+{% else %}
+              {% if page.composition.size > 1 %}
+              <ol id="footnotes">
+                <li>Due to rounding, numbers may not add up to exactly 100%.</li>
+              </ol>
+              {% endif %}
+{% endif %}
             </div>
           </div>
-          {% if page.composition.size > 1 %}
-          <p>* Due to rounding, numbers may not add up to exactly 100%.</p>
-          {% endif %}
 {% endif %}
 
 {% if page.country_composition %}
@@ -112,22 +127,21 @@
               </tr>
   {% endfor %}
               <tr>
-                <th scope="row"><b>Total</b></th>
+                <th scope="row">
+                  <b>Total</b>
+                  <sup>1</sup>
+                </th>
                 <th><b>{{totalPH}}%</b></th>
                 <th><!-- <div id="composition-pie-0-0" class="hc-composition-pie"><div> --></th>
                 <th><b>{{totalNC}}</b></th>
               </tr>
             </tbody>
           </table>
+          <ol id="footnotes">
+            <li>Due to rounding, numbers may not add up to exactly 100%.</li>
+          </ol>
         </div>
       </div>
-      <p> Source: BlackRock
-        <br>* Due to rounding, numbers may not add up to exactly 100%.</p>
-{% else %}
-<ol id="footnotes">
-  <li>By law, the G Fund must be invested in nonmarketable U.S. Treasury securities specially issued to the TSP.
-    </li>
-  </ol>
 {% endif %}
 
 {% endif %}
