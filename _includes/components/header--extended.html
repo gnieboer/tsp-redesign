@@ -16,7 +16,7 @@
 
 {% if page.alert.show-alert == true %}
 <section onclick="myFunction()" id="hp-news" class="usa-banner" mardown="1">
-<div class="usa-accordion">
+  <div class="usa-accordion">
     <header class="usa-banner-header">
       <div class="usa-grid usa-banner-inner">
     </header>
@@ -24,19 +24,19 @@
       <button class="usa-accordion-button usa-banner-button" aria-expanded="true" aria-controls="gov-banner">
         <span class="usa-banner-button-text"></span>
       </button>
-          <div class="usa-banner-guidance-gov usa-width-one-whole">
-            <img class="usa-banner-icon usa-media_block-img" src="{% if page.alert.icon %}{{ site.baseurl }}{{ page.alert.icon }}{% else %}{{ site.baseurl }}/assets/img/icons/alert-circle-white.svg{% endif %}" alt="Alert">
+      <div class="usa-banner-guidance-gov usa-width-one-whole">
+        <img class="usa-banner-icon usa-media_block-img" src="{% if page.alert.icon %}{{ site.baseurl }}{{ page.alert.icon }}{% else %}{{ site.baseurl }}/assets/img/icons/alert-circle-white.svg{% endif %}" alt="Alert">
 
 
 
-            <div class="usa-media_block-body">
-              <h2>{{ page.alert.title | default: 'No title specified' }}</h2>
-              {% if page.alert.subtitle %}<strong>{{ page.alert.subtitle }}</strong><br>{% endif %}
-              <p>{{ page.alert.body | default: 'No body specified' }}</p>
-            </div>
-          </div>
+        <div class="usa-media_block-body">
+          <h2>{{ page.alert.title | default: 'No title specified' }}</h2>
+          {% if page.alert.subtitle %}<strong>{{ page.alert.subtitle }}</strong><br>{% endif %}
+          <p>{{ page.alert.body | default: 'No body specified' }}</p>
+        </div>
+      </div>
     </div>
-</div>
+  </div>
 </section>
 {% endif %}
 {% if header %}
@@ -62,9 +62,9 @@
         {% for _section in primary_links %}
         <li>
           {% if _section.links %}
-            {% assign section_links = site.data.navigation[_section.links] | default: _section.links %}
-            {% assign _section_id = _section.id %}
-            {% unless _section_id %}{% assign _section_id = 'nav-' | append: forloop.index %}{% endunless %}
+          {% assign section_links = site.data.navigation[_section.links] | default: _section.links %}
+          {% assign _section_id = _section.id %}
+          {% unless _section_id %}{% assign _section_id = 'nav-' | append: forloop.index %}{% endunless %}
           <button class="usa-accordion-button usa-nav-link" aria-expanded="false" aria-controls="{{ _section_id }}">
             <span>{{ _section.text }}</span>
           </button>
@@ -87,21 +87,21 @@
 
       {% assign _secondary = header.secondary %}
       {% if _secondary %}
-        <div class="usa-nav-secondary">
-        {% if site.search_site_handle  %}
-          <form accept-charset="UTF-8" action="https://search.usa.gov/search" id="search_form" method="get" class="usa-search usa-search-small js-search-form usa-sr-only">
-            <div style="margin:0;padding:0;display:inline">
-              <input name="utf8" type="hidden" value="&#x2713;" />
-            </div>
-            <input id="affiliate" name="affiliate" type="hidden" value="{{ site.search_site_handle }}" />
-            <div role="search">
-              <label for="query" class="usa-sr-only">Enter Search Term(s):</label>
-              <input autocomplete="off" class="usagov-search-autocomplete" id="query" name="query" type="search" />
-              <button type="submit" name="commit">
-                <span class="usa-sr-only">Search</span>
-              </button>
-            </div>
-          </form>
+      <div class="usa-nav-secondary">
+        {% if site.search_site_handle %}
+        <form id="search_form" action="https://search.usa.gov/search" accept-charset="UTF-8" method="get" class="usa-search usa-search-small js-search-form usa-sr-only">
+          <div style="margin:0;padding:0;display:inline">
+            <input name="utf8" type="hidden" value="&#x2713;" />
+          </div>
+          <input id="affiliate" name="affiliate" type="hidden" value="{{ site.search_site_handle }}" />
+          <div role="search">
+            <label for="query" class="usa-sr-only">Enter Search Term(s):</label>
+            <input type="search" name="query" id="query" autocomplete="off" class="usagov-search-autocomplete" />
+            <button type="submit" name="commit" value="Search">
+              <span class="usa-sr-only">Search</span>
+            </button>
+          </div>
+        </form>
         {% endif %}
         <ul class="usa-unstyled-list usa-nav-secondary-links">
           {% if site.search_site_handle %}
@@ -116,8 +116,8 @@
           </li>
           {% endfor %}
         </ul>
-    </div>
-    {% endif %}
+      </div>
+      {% endif %}
   </nav>
 </header>
 <div class="usa-overlay"></div>

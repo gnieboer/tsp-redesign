@@ -10,7 +10,7 @@ theme: uswds-jekyll
 # https://search.usa.gov/signup
 # Your search_site_handle value is from the search.gov settings page.
 
-search_site_handle: searchgov-site-handle
+search_site_handle: beta.tsp
 
 
 # Configuration for Google Analytics, add your UA code here:
@@ -27,6 +27,7 @@ scripts:
   - /assets/js/vendor/glossary.min.js
   - /assets/js/glossary.js
   - /assets/js/dialog.js
+  - /assets/js/usa-search.js
 
 # Compress Sass
 # sass:
