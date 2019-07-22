@@ -9,6 +9,7 @@
   form_topics:
     - Contributions
     - Investments
+    - All
 - form_number: TSP-1-C
   form_url: tsp-1-c.pdf
   form_name: TSP-1-C, Catch-Up Contribution Election
@@ -20,6 +21,7 @@
   form_topics:
     - Contributions
     - Investments
+    - All
 - form_number: TSP-3
   form_url: tsp-3.pdf
   form_name: TSP-3, Designation of Beneficiary
@@ -31,6 +33,7 @@
   form_topics:
     - Beneficiary Participants
     - Death Benefits
+    - All
 - form_number: TSP-9
   form_url: tsp-9.pdf
   form_name: TSP-9, Change in Address for Separated Participant
@@ -42,3 +45,4 @@
   form_topics:
     - Address/Name Change
     - Legal Documents
+    - All

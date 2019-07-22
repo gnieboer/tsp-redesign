@@ -35,33 +35,42 @@ permalink: /forms/dav/
 </div>
 </section> <!-- // end #search-forms -->
 
-
+<section id="popular-forms" markdown="1">
+{% assign cnt = 0 %}
 <div id="select-forms-0" class="select-forms-div" markdown="1">
 # All Forms
-  <ul class="forms-list">
+<div class="usa-grid-full">
 {% for form in site.data.forms %}
-  <!-- <a href="/forms/{{ form.form_url }}" class="form-name">{{ form.form_name }}</a>
-    <span class="form-date">{{ form.form_date }}</span> -->
+  {% assign cnt = cnt | plus: 1 %}
   {% include forms/form.html %}
-
+  {% assign mod = cnt | modulo: 2 %}
+{% if mod == 0 %}
+</div>
+<div class="usa-grid-full">  
+{% endif %}
 {% endfor %}
-  </ul>
+</div>
 </div>
 
 {% for topics in site.data.forms_topics %}
+{% assign cnt = 0 %}
 <div id="select-forms-{{forloop.index}}"  class="select-forms-div hide" markdown="1">
 # {{ topics }} Forms
-  <ul class="forms-list">
+<div class="usa-grid-full">
 {% for form in site.data.forms %}
 {% for form_topic in form.form_topics %}
 {% if form_topic == topics %}
-  <!-- <a href="/forms/{{ form.form_url }}" class="form-name">{{ form.form_name }}</a>
-    <span class="form-date">{{ form.form_date }}</span> -->
+  {% assign cnt = cnt | plus: 1 %}
   {% include forms/form.html %}
-
+  {% assign mod = cnt | modulo: 2 %}
+{% if mod == 0 %}
+</div>
+<div class="usa-grid-full">  
+{% endif %}
 {% endif %}
 {% endfor %}
 {% endfor %}
-  </ul>
+</div>
 </div>
 {% endfor %}
+</section>

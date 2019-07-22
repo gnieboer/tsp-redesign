@@ -1,0 +1,17 @@
+<li>
+  <a href="/forms/{{ form.form_url }}" class="form-name">
+    {{ form.form_name }}
+  </a> <span class="form-date">{{ form.form_date }}</span>
+  <span class="form-info">{{ form.form_info }}</span>
+  <span class="form-pages">{{ form.form_pages }} pages</span>
+  <span class="form-printed-date">Last printed {{ form.form_date }}</span>
+  <p class="form-categories">
+  {% for item in form.form_categories %}
+    <span class="form-category">{{ item }}</span>
+  {% endfor %}
+  </p>
+  <p class="form-topics">Form topics
+    {% for item in form.form_topics %}
+      <span class="form-topic">{{ item }}</span>
+    {% endfor %}</p>
+</li>
