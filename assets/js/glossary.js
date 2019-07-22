@@ -487,6 +487,11 @@ var glossaryTerms = [
       'Uniformed members of the Army, Navy, Air Force, Marine Corps, Coast Guard, Public Health Service, and the National Oceanic and Atmospheric Administration serving on active duty, and members of the Ready Reserve or National Guard of those services in any pay status.'
   },
   {
+    term: 'U.S. 3 Month Treasury Bill',
+    definition:
+      'The U.S. 3 Month Treasury Bill is a short-term U.S. Government security with a constant maturity period of 3 months.'
+  },
+  {
     term: 'U.S. Aggregate Index',
     definition:
       'The U.S. Aggregate Index consists of high-quality fixed-income securities with maturities of more than one year. The index is comprised of Treasury and Agency bonds, asset-backed securities, and corporate and non-corporate bonds.'

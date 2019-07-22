@@ -284,7 +284,7 @@ function mapServerFundName (f, glossaryFlag) {
   if (fund == 'L2065') { return 'L 2065'; }
   if (fund == 'INFLATION') { return 'Inflation'; } // I
 
-  // if (fund == '') { return ''; } // G
+  if (fund == 'TBILL') { return glossaryTermString(fund, glossaryFlag); } // F
   if (fund == 'LBA') { return glossaryTermString(fund, glossaryFlag); } // F
   if (fund == 'SP500') { return glossaryTermString(fund, glossaryFlag); } // C
   if (fund == 'W4500') { return glossaryTermString(fund, glossaryFlag); } // S
@@ -293,12 +293,15 @@ function mapServerFundName (f, glossaryFlag) {
 }
 function glossaryTermString(fund, glossaryFlag) {
   var term = 'undefined';
+  if (fund == 'TBILL') { term = 'U.S. 3 Month Treasury Bill'; } // G
   if (fund == 'LBA') { term = 'U.S. Aggregate Index'; } // F
   if (fund == 'SP500') { term = 'S&P 500'; } // C
   if (fund == 'W4500') { term = 'Dow Jones'; } // S
   if (fund == 'EAFE') { term = 'EAFE'; } // I
   if (glossaryFlag == 0) { return term; }
-  return '<span data-term="'+term+'" class="js-glossary-toggle term term-end">'+term+'</span>';
+  return term;  // disable this for now
+  return '<span data-term="'+term+'" class="js-glossary-toggle term term-end">'
+        +term+'</span>';
 }
 function mapServerFundClassName (f) {
   var fund = f.trim().toUpperCase();
@@ -322,7 +325,8 @@ function mapServerFundClassName (f) {
   if (fund == 'L2060') { return 'l-2060'; }
   if (fund == 'L2065') { return 'l-2065'; }
 
-  // if (fund == '') { return ''; } // G
+  if (fund == 'TBILL') { return 'index-g'; } // G
+  if (fund == 'IG') { return 'index-g'; } // G
   if (fund == 'LBA') { return 'index-f'; } // F
   if (fund == 'IF') { return 'index-f'; } // F
   if (fund == 'SP500') { return 'index-c'; } // C
@@ -375,7 +379,7 @@ function buildReturnsTable(arr) {
  table += "\n</table>"
  // console.log(arr + "\n" + table);
  $('#annualReturnsTable').html(table);
- initGlossary();
+//  initGlossary();
 }
 function returnsTableActive(idx) {
     for (var i = 0; i < 8; i++) {
