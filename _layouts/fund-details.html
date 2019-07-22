@@ -127,6 +127,9 @@ scripts:
               <div id="pie-tooltip" class="l-fund-summary-tooltip"></div>
 {% else %}
               <h3>Top ten holdings {% if page.top_ten_update %}<span class="as-of-date">As of {{ page.top_ten_update }}</span>{% endif %}</h3>
+              {% if page.top_ten_text %}
+              {{ page.top_ten_text }}
+              {% else %}
               <ol>
               {% for item in page.top_ten_holdings %}
               <li>
@@ -135,6 +138,7 @@ scripts:
               </li>
               {% endfor %}
             </ol>
+            {% endif %}
 {% endif %}
             </div>
           </div>

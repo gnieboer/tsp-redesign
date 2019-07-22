@@ -39,10 +39,16 @@ composition:
   - [Credit, 30.6]
 top_ten_update: 12/31/2018
 top_ten_holdings:
-  - name: Tesla Motors Inc.
-    abbr: TSLA
-  - name: Las Vegas Sands Corp.
-    abbr: LVS
+  - namex: ignored because of top_ten_text
+    abbrx: XXXX
+top_ten_text: |
+  <p>The F Fund tracks the Bloomberg Barclays U.S. Aggregate Bond Index,
+  a broadly diversified index of the U.S. bond market.</p>
+
+  <p>On December 31, 2018, the index included 10,252 notes and bonds.</p>
+
+  <p>Because the U.S. Aggregate contains such a large number of securities,
+  it is not feasible for the F Fund to invest in each security in the index.</p>
 additional_info: |
   By law, the F Fund must be invested in fixed-income securities. The Federal Retirement Thrift Investment Board has chosen to invest the F Fund in an index fund that tracks the Bloomberg Barclays U.S. Aggregate Bond Index, a broadly diversified index of the U.S. bond market.
 
