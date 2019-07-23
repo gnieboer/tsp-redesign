@@ -2,6 +2,11 @@
 
 var glossaryTerms = [
   {
+    term: '3-Month T-Bill',
+    definition:
+      'The 3-Month T-Bill is a short-term U.S. Government security with a constant maturity period of 3 months.'
+  },
+  {
     term: 'Account Access',
     definition:
       "See <a class='glossaryTerm' href='glossary.html?term=MyAccount'>My Account</a>."
@@ -485,11 +490,6 @@ var glossaryTerms = [
     term: 'Uniformed Services',
     definition:
       'Uniformed members of the Army, Navy, Air Force, Marine Corps, Coast Guard, Public Health Service, and the National Oceanic and Atmospheric Administration serving on active duty, and members of the Ready Reserve or National Guard of those services in any pay status.'
-  },
-  {
-    term: 'U.S. 3 Month Treasury Bill',
-    definition:
-      'The U.S. 3 Month Treasury Bill is a short-term U.S. Government security with a constant maturity period of 3 months.'
   },
   {
     term: 'U.S. Aggregate Index',

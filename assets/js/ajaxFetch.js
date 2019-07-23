@@ -293,7 +293,7 @@ function mapServerFundName (f, glossaryFlag) {
 }
 function glossaryTermString(fund, glossaryFlag) {
   var term = 'undefined';
-  if (fund == 'TBILL') { term = 'U.S. 3 Month Treasury Bill'; } // G
+  if (fund == 'TBILL') { term = '3-Month T-Bill'; } // G
   if (fund == 'LBA') { term = 'U.S. Aggregate Index'; } // F
   if (fund == 'SP500') { term = 'S&P 500'; } // C
   if (fund == 'W4500') { term = 'Dow Jones'; } // S
