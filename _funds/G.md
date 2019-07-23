@@ -25,7 +25,7 @@ avg_annual_returns:
     lifetime: "-"
 summary_update: 12/31/2018
 summary_details:
-    assets: $67.6 billion
+    assets: $230.3 billion
     as_of_year: 2018
     gross_expense:  .051
     net_expense:    .040
