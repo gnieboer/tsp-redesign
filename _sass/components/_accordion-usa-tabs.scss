@@ -1,0 +1,48 @@
+
+.usa-tabs {
+  width: 100%;
+  li {
+    display:block;
+
+  }
+  .usa-accordion-button {
+    width: auto;
+    display:block;
+  }
+}
+
+@media only screen and (min-width: $large-screen) {
+
+// from codepen
+.usa-tabs {
+  width: auto;
+  li {
+    display:inline;
+    width: auto;
+    background-color: transparent;
+    margin-right: 1rem;
+  }
+  .usa-accordion-button {
+    width: auto;
+    display:inline-block;
+    clear:both;
+    background-image: none;
+    // padding-right: 2rem;
+    border: 2px solid $color-gray-lightest;
+    border-bottom-color: transparent;
+    &[aria-expanded="true"] {
+      background-color: $color-white;
+    }
+  }
+  .usa-accordion-content {
+    float:left;
+    clear:both;
+    width: 100%;
+    border-top: 2px solid $color-gray-lightest;
+    &[aria-hidden="false"] {
+      background-color: #fff;
+      margin-top: -2px;
+    }
+  }
+}
+}
