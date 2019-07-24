@@ -31,7 +31,7 @@ summary_details:
     net_expense:    .040
     other_expense:  .000
     benchmark_index: Dow Jones U.S. Completion TSM Index | www.djindexes.com
-    asset_manager: BlackRock Institutional Trust Company, N.A
+    asset_manager: Not applicable
 composition_update: December 31, 2018
 composition:
   - [Short-term U.S. Treasury securities, 100.0]

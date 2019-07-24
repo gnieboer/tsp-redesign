@@ -4,7 +4,7 @@ var glossaryTerms = [
   {
     term: '3-Month T-Bill',
     definition:
-      'The 3-Month T-Bill is a short-term U.S. Government security with a constant maturity period of 3 months.'
+      'The 3-Month T-Bill is a short-term U.S. Government security with a maturity period of 3 months. The 3-Month T-Bill rate is not the benchmark for the G Fund; it is presented only as a reference point for yields on short-term securities.'
   },
   {
     term: 'Account Access',
