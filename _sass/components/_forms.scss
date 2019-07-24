@@ -79,6 +79,13 @@ h2.results {
     }
   }
 }
+.see-less {
+  span {
+    &::before {
+    content: "\f056";
+    }
+  }
+}
 
 section#search-forms {
   // width: 40%;
