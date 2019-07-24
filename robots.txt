@@ -1,5 +1,8 @@
 User-agent: usasearch
-Allow: /pages
+Crawl-delay: 2
+Allow: /
+Disallow: /assets/
+Disallow: /styleguide/
 
 User-agent: *
 Disallow: /

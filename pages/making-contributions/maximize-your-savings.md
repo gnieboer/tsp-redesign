@@ -74,7 +74,7 @@ money on the table. Are you contributing enough to get at least the full match f
     <div id="your-age-input-error" class="">
         <label id="your-age-label" class="" for="your-age">Age</label>
         <span id="your-age-error-message" class="" role="alert"></span>
-        <input value="50" id="your-age" name="your-age" type="number" class="border-bottom"
+        <input value="" id="your-age" name="your-age" type="number" class="border-bottom"
           onChange="ageGood(0);" onBlur="ageGood(0);" aria-labeledby="your-age-label" aria-describedby="">
     </div>
   </div>
@@ -84,7 +84,7 @@ money on the table. Are you contributing enough to get at least the full match f
     <div id="your-salary-input-error" class="">
         <label id="your-salary-label" class="" for="your-salary">Salary</label>
         <span id="your-salary-error-message" class="" role="alert"></span>
-        <input value="100000" id="your-salary" name="your-salary" type="number" class="border-bottom"
+        <input value="" id="your-salary" name="your-salary" type="number" class="border-bottom"
           onChange="salaryGood(0);" onBlur="salaryGood(0);" aria-labeledby="your-salary-label" aria-describedby="">
     </div>
   </div>
