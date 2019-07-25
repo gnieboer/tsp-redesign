@@ -8,41 +8,11 @@
 {% endif %}
 {% if page.Fund_type != 'L' %}
 
-<style>
-  .sortableColumn {
-    background-image: url("/assets/img/icons/x-circle-red.svg");
-    background-repeat: no-repeat;
-    -webkit-transition: background-color, .2s, box-shadow, .2s, color, .2s;
-    -moz-transition: background-color, .2s, box-shadow, .2s, color, .2s;
-    transition: background-color, .5s, box-shadow, .2s, color, .2s;
-    // background-size: .7em;
-    background-size: 1.2em;
-    background-position: 0% 50%;
-    background-color: transparent;
-    box-shadow: 0 0 0 4px transparent;
-    border-bottom: none;
-    cursor: pointer;
-    margin-left: 2px;
-    padding-left: 1.3em !important;
-    text-decoration: none;
-    }
-    .sort-column-asc {
-      background-image: url("/assets/img/icons/arrow-down-circle.svg");
-      background-repeat: no-repeat;
-      color: #339933;
-    }
-    .sort-column-desc {
-      background-image: url("/assets/img/icons/arrow-up-circle.svg");
-      background-repeat: no-repeat;
-      color: #333399;
-    }
-</style>
-
-
 {% if page.composition %}
           {% assign sortable = '' %}
           {% if page.composition.size > 1 %}{% assign sortable = 'sortableColumn' %}{% endif %}
-          <div class="usa-grid-full">
+          <section class="fund-tab-composition">
+            <div class="usa-grid-full">
             <div class="usa-width-one-whole">
               <h3>Portfolio Weight
                 {% if page.composition_update %}<span class="as-of-date">As of {{ page.composition_update }}</span>{% endif %}
@@ -92,8 +62,9 @@
               </ol>
               {% endif %}
 {% endif %}
-            </div>
-          </div>
+            </div> <!-- end div.usa-width-one-whole -->
+          </div> <!-- end div.usa-grid-full -->
+          </section>
 {% endif %}
 
 {% if page.country_composition %}
