@@ -20,9 +20,9 @@ permalink: /forms/dav/
       <label class="usa-sr-only" for="select-forms-topic">Search small</label>
         <select id="select-forms-topic" type="search" name="select-forms-topic" onchange="selectFormsTopic();">
           <option value='0'>Select</option>
-          {% for topics in site.data.forms_topics %}
-          <option value='{{ forloop.index }}'>{{ topics }}</option>
-          <!-- <option value='{{ topics }}'>{{ topics }}</option> -->
+          {% for topic in site.data.forms_topics %}
+          <option value='{{ forloop.index }}'>{{ topic }}</option>
+          <!-- <option value='{{ topic }}'>{{ topic }}</option> -->
           {% endfor %}
         </select>
       <button type="submit" onClick="return false;">
@@ -35,7 +35,7 @@ permalink: /forms/dav/
 </div>
 </section> <!-- // end #search-forms -->
 
-{% assign showTotal = 2 %}
+{% assign showTotal = 4 %}
 {% assign startAccordion = showTotal %}
 <section id="popular-forms" markdown="1">
 {% assign cnt = 0 %}
@@ -63,12 +63,13 @@ permalink: /forms/dav/
 {% endif %}
 </div>
 
-{% for topics in site.data.forms_topics %}
+{% for topic in site.data.forms_topics %}
+{% assign topicID = forloop.index %}
 {% comment %}count number of forms for accordion{% endcomment %}
 {% assign cnt = 0 %}
 {% for form in site.data.forms %}
 {% for form_topic in form.form_topics %}
-{% if form_topic == topics %}
+{% if form_topic == topic %}
   {% assign cnt = cnt | plus: 1 %}
 {% endif %}
 {% endfor %}
@@ -76,22 +77,22 @@ permalink: /forms/dav/
 {% assign startAccordion = cnt | plus: 1 %}
 {% if cnt > showTotal %}{% assign startAccordion = showTotal %}{% endif %}
 {% assign cnt = 0 %}
-<div id="select-forms-{{forloop.index}}"  class="select-forms-div hide" markdown="1">
-# {{ topics }} Forms
+<div id="select-forms-{{ topicID }}"  class="select-forms-div hide" markdown="1">
+# {{ topic }} Forms
 <div class="usa-grid-full">
 {% for form in site.data.forms %}
 {% for form_topic in form.form_topics %}
-{% if form_topic == topics %}
+{% if form_topic == topic %}
   {% assign cnt = cnt | plus: 1 %}
   {% include forms/form.html %}
   {% assign mod = cnt | modulo: 2 %}
 {% if mod == 0 %}
 </div>
 {% if cnt == startAccordion %}
-<div id="more-forms-{{forloop.index}}" class="see-more" onClick="showMoreForms('forms', {{forloop.index}});">
+<div id="more-forms-{{ topicID }}" class="see-more" onClick="showMoreForms('forms', {{ topicID }});">
   <span>see more forms</span>
 </div>
-<div id="more-forms-content-{{forloop.index}}" class="hide">
+<div id="more-forms-content-{{ topicID }}" class="hide">
 {% endif %}
 <div class="usa-grid-full">  
 {% endif %}
@@ -106,7 +107,6 @@ permalink: /forms/dav/
 {% endfor %}
 </section>
 
-<hr>
 
 {% assign startAccordion = showTotal %}
 <section id="popular-resources" markdown="1">
@@ -135,12 +135,13 @@ permalink: /forms/dav/
 {% endif %}
 </div>
 
-{% for topics in site.data.forms_topics %}
+{% for topic in site.data.forms_topics %}
+{% assign topicID = forloop.index %}
 {% comment %}count number of resources for accordion{% endcomment %}
 {% assign cnt = 0 %}
 {% for resource in site.data.publications %}
-{% for form_topic in resource.form_topics %}
-{% if form_topic == topics %}
+{% for form_topic in resource.publication_topics %}
+{% if form_topic == topic %}
   {% assign cnt = cnt | plus: 1 %}
 {% endif %}
 {% endfor %}
@@ -148,22 +149,22 @@ permalink: /forms/dav/
 {% assign startAccordion = cnt | plus: 1 %}
 {% if cnt > showTotal %}{% assign startAccordion = showTotal %}{% endif %}
 {% assign cnt = 0 %}
-<div id="select-resources-{{forloop.index}}"  class="select-resources-div hide" markdown="1">
-# {{ topics }} Resources
+<div id="select-resources-{{ topicID }}"  class="select-resources-div hide" markdown="1">
+# {{ topic }} Resources
 <div class="usa-grid-full">
-{% for resource in site.data.resources %}
-{% for form_topic in resource.form_topics %}
-{% if form_topic == topics %}
+{% for resource in site.data.publications %}
+{% for form_topic in resource.publication_topics %}
+{% if form_topic == topic %}
   {% assign cnt = cnt | plus: 1 %}
   {% include forms/resource.html %}
   {% assign mod = cnt | modulo: 2 %}
 {% if mod == 0 %}
 </div>
 {% if cnt == startAccordion %}
-<div id="more-resources-{{forloop.index}}" class="see-more" onClick="showMoreForms('resources', {{forloop.index}});">
+<div id="more-resources-{{ topicID }}" class="see-more" onClick="showMoreForms('resources', {{ topicID }});">
   <span>see more resources</span>
 </div>
-<div id="more-resources-content-{{forloop.index}}" class="hide">
+<div id="more-resources-content-{{ topicID }}" class="hide">
 {% endif %}
 <div class="usa-grid-full">  
 {% endif %}
