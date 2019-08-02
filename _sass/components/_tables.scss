@@ -5,3 +5,176 @@
     }
   }
 }
+
+// "STICKY" LEFT-COLUMN HEADER: Share price history
+.table-side-scroll { // parent container
+  position: relative;
+  width: 100%;
+  z-index: 1;
+  margin: 0 auto;
+  overflow: auto;
+  margin-top: 3rem;
+
+  table {
+  width: 100%;
+  min-width: 1280px;
+  margin: auto;
+  border-collapse: separate;
+  border-spacing: 0;
+
+    th, td {
+      // padding: 5px 10px;
+      border-top: none;
+      border-right: 1px solid #ddd;
+      border-bottom: 1px solid #ddd;
+      border-left: none;
+      vertical-align: top;
+    }
+    td {
+      text-align: right;
+      background: #fff;
+    }
+
+    th {
+      background: #F5F5F5;
+      &:first-child {
+      position: -webkit-sticky;
+      position: sticky;
+      left: 0;
+      z-index: 2;
+      }
+    }
+    thead {
+      // tr {
+      // position: -webkit-sticky;
+      // position: sticky;
+      // top: 0;
+      // }
+      th {
+        border-top: 3px solid #ddd;
+        position: -webkit-sticky;
+        position: sticky;
+        top: 0;
+        text-align: center;
+        &:first-child {
+          z-index: 5;
+          // background: #333;
+          text-align: left;
+          border-top: 3px solid #ddd;
+        }
+        &.border-g-fund {
+          border-top: $border-g;
+        }
+        &.border-f-fund {
+          border-top: $border-f;
+        }
+        &.border-c-fund {
+          border-top: $border-c;
+        }
+        &.border-s-fund {
+          border-top: $border-s;
+        }
+        &.border-i-fund {
+          border-top: $border-i;
+        }
+        &.border-l-fund {
+          border-top: $border-l;
+        }
+      }
+    } // end thead
+  } // end table
+} // end div.table-side-scroll
+
+// RESPONSIVE COMPARISON: Administrative costs
+// Dependencies: /assets/js/jquery.min.js, responsive-comparison-table.js
+section.comparison {
+ul {
+  display:flex;
+  top:0px;
+  z-index:10;
+  padding-bottom:14px;
+  padding-left: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  max-width: 100% !important;
+}
+li {
+  list-style:none;
+  flex:1;
+  margin-bottom: 0;
+}
+li:last-child {
+  border-right:1px solid #DDD;
+}
+button {
+  width:100%;
+  border: 1px solid #DDD;
+  border-right:0;
+  border-top:0;
+  padding: 10px;
+  margin: 0 0;
+  background:#FFF;
+  font-size:14px;
+  font-weight:bold;
+  height:60px;
+  color:#999
+}
+li button {
+  background:#F5F5F5;
+  color:#000;
+  border-top:3px solid #0097CF;
+}
+li.active button {
+  border-top:3px solid #A32362;
+}
+table { border-collapse:collapse; table-layout:fixed; width:100%; margin-top: 0;}
+th { background:#F5F5F5; display:none; }
+td, th {
+  height:53px
+}
+td,th { border:1px solid #DDD; padding:10px; empty-cells:show; }
+td,th {
+  text-align:left;
+}
+th { border-top: 3px solid #0097CF; }
+td+td, th+th {
+  text-align:center;
+  display:none;
+}
+td.default {
+  display:table-cell;
+}
+.bg-purple {
+border-top:3px solid #A32362;
+}
+
+
+.sep {
+  background:#F5F5F5;
+  font-weight:bold;
+}
+.txt-l { font-size:28px; font-weight:bold; }
+.txt-top { position:relative; top:-9px; left:-2px; }
+.tick { font-size:18px; color:#2CA01C; }
+.hide {
+  border:0;
+  background:none;
+}
+
+@media (min-width: $medium-screen) {
+  ul {
+    display:none;
+  }
+  td,th {
+    display:table-cell !important;
+  }
+  td,th {
+    width: 24rem;
+
+  }
+  td+td, th+th {
+    width: auto;
+  }
+}
+
+} // end .comparison
