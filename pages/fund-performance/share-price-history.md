@@ -4,6 +4,7 @@ layout: page
 permalink: /fund-performance/share-price-history/
 sidenav: fund-options
 styles:
+  - /assets/css/flatpickr.min.css
 scripts:
   - /assets/js/flatpickr/flatpickr.js
   - /assets/js/flatpickr/date-range.js
@@ -16,7 +17,7 @@ To understand how the TSP calculates rates of return for any given period of tim
 <fieldset>
 <label>
   <div>Show share price history between the following dates</div>
-  <input placeholder="Start and end dates..." class="date" />
+  <input placeholder="Start and end dates..." class="date-range" />
 </label>
 <button class="usa-button">Retrieve share prices</button>
 <button class="usa-button-secondary">Download share prices <i class="fal fa-arrow-alt-to-bottom"></i></button>
