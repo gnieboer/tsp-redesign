@@ -1,10 +1,20 @@
+{% assign pubtype = resource.publication_type[0] %}
+{% assign icon = "fa-file-alt redbg" %}
+{% if pubtype ==  "Annuity" %}         {% assign icon = "fa-chart-line" %}           {% endif %}
+{% if pubtype ==  "Booklet" %}         {% assign icon = "fa-book" %}                 {% endif %}
+{% if pubtype ==  "Fact Sheet" %}      {% assign icon = "fa-file-check" %}           {% endif %}
+{% if pubtype ==  "Leaflet" %}         {% assign icon = "fa-sticky-note" %}          {% endif %}
+{% if pubtype ==  "Legal Document" %}  {% assign icon = "fa-balance-scale" %}        {% endif %}
+{% if pubtype ==  "Tax Notice" %}      {% assign icon = "fa-envelope-open-dollar" %} {% endif %}
+
 <div class="usa-width-one-half">
     <div class="item-frame">
       <div class="top">
-      <i class="fas fa-book"></i>
+      <i class="fas {{ icon }}"></i>
       </div>
       <div class="resource-title">
-      <p>{{ resource.publication_name }}</p>
+        <p>{{ resource.publication_name }}</p>
+        <p><small>{{ resource.publication_type }}</small></p>
       </div>
     </div> <!-- end .item-frame -->
   </div> <!-- end .usa-width-one-half -->

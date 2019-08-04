@@ -1,6 +1,13 @@
+{% assign formAud = form.form_audience[0] %}
+{% assign audClass = "redbg" %}
+{% if formAud ==  "Civilian" %}                 {% assign audClass = "formCivilian" %}   {% endif %}
+{% if formAud ==  "Uniformed Services" %}       {% assign audClass = "formUniformed" %}  {% endif %}
+{% if formAud ==  "Both" %}                     {% assign audClass = "formBoth" %}       {% endif %}
+{% if formAud ==  "Beneficiary Participant" %}  {% assign audClass = "formBPA" %}        {% endif %}
+
 <div class="usa-width-one-half">
   <div class="item-frame">
-    <div class="top">
+    <div class="top {{ audClass }}">
     <p class="form-title">{{ form.form_name}}</p>
     <p class="form-number">
       <a href="/forms/{{ form.form_url }}" class="form-name">

@@ -4,7 +4,7 @@
   form_info: Use this form to start, stop, or change the amount of your contributions to the Thrift Savings Plan (TSP). Return the completed form to your personnel or benefits office.
   form_date: 9/2015
   form_pages: 2
-  form_categories:
+  form_audience:
   -  Civilian
   form_topics:
   -  Investments
@@ -15,7 +15,7 @@
   form_info: Use this form to start, stop, or change the amount of your contributions to the Thrift Savings Plan (TSP). Return the completed form to your personnel or benefits office.
   form_date: 1/2018
   form_pages: 4
-  form_categories:
+  form_audience:
   -  Uniformed Services
   form_topics:
   -  Investments
@@ -26,7 +26,7 @@
   form_info: For participants age 50 or older to start, stop, or change "catch-up" contributions to the TSP.
   form_date: 1/2015
   form_pages: 2
-  form_categories:
+  form_audience:
   -  Civilian
   form_topics:
   -  Investments
@@ -37,7 +37,7 @@
   form_info: For participants age 50 or older to start, stop, or change "catch-up" contributions to the TSP.
   form_date: 1/2018
   form_pages: 2
-  form_categories:
+  form_audience:
   -  Uniformed Services
   form_topics:
   -  Contributions
@@ -48,7 +48,7 @@
   form_info: Name a person or persons to receive your account balance after your death. Civilians, uniformed service members, and beneficiary participants can use this form.
   form_date: 10/2013
   form_pages: 8
-  form_categories:
+  form_audience:
   -  Both
   form_topics:
   -  Death Benefits
@@ -59,7 +59,7 @@
   form_info: Name a person or persons to receive your account balance after your death. Civilians, uniformed service members, and beneficiary participants can use this form.
   form_date: 10/2013
   form_pages: 8
-  form_categories:
+  form_audience:
   -  Both
   form_topics:
   -  Death Benefits
@@ -70,7 +70,7 @@
   form_info: Use this form to change your TSP account address if you are separated from Federal service. If you are separated, you may also request a change of address online using My Account. You will need to enter your TSP account number and your Web password to make this change.
   form_date: 6/2008
   form_pages: 2
-  form_categories:
+  form_audience:
   -  Both
   form_topics:
   -  Address/Name Change
@@ -80,7 +80,7 @@
   form_info: Use this form to change your TSP account address if you are separated from Federal service. If you are separated, you may also request a change of address online using My Account. You will need to enter your TSP account number and your Web password to make this change.
   form_date: 6/2008
   form_pages: 2
-  form_categories:
+  form_audience:
   -  Both
   form_topics:
   -  Address/Name Change
@@ -90,7 +90,7 @@
   form_info: Use this form to change your name for your TSP account if you are no longer employed as a Federal civilian employee or you are no longer a member of the uniformed services. You will need to provide documentation to the TSP.
   form_date: 6/2010
   form_pages: 2
-  form_categories:
+  form_audience:
   -  Both
   form_topics:
   -  Address/Name Change
@@ -100,7 +100,7 @@
   form_info: Use this form to change your name for your TSP account if you are no longer employed as a Federal civilian employee or you are no longer a member of the uniformed services. You will need to provide documentation to the TSP.
   form_date: 6/2010
   form_pages: 2
-  form_categories:
+  form_audience:
   -  Both
   form_topics:
   -  Address/Name Change
@@ -110,7 +110,7 @@
   form_info: Request a waiver of the spouse signature requirements for loans and withdrawals.
   form_date: 1/2011
   form_pages: 2
-  form_categories:
+  form_audience:
   -  Civilian
   form_topics:
   -  Loans
@@ -122,7 +122,7 @@
   form_info: Request a waiver of the spouse signature requirements for loans and withdrawals.
   form_date: 1/2011
   form_pages: 2
-  form_categories:
+  form_audience:
   -  Uniformed Services
   form_topics:
   -  Withdrawals
@@ -134,7 +134,7 @@
   form_info: Use this form to provide information about potential beneficiaries of a deceased participant's Thrift Savings Plan (TSP) account.
   form_date: 3/2015
   form_pages: 9
-  form_categories:
+  form_audience:
   -  Both
   form_topics:
   -  Death Benefits
@@ -144,7 +144,7 @@
   form_info: Use this form to provide information about potential beneficiaries of a deceased participant's Thrift Savings Plan (TSP) account.
   form_date: 3/2015
   form_pages: 9
-  form_categories:
+  form_audience:
   -  Both
   form_topics:
   -  Death Benefits
@@ -154,7 +154,7 @@
   form_info: Request a general purpose or residential TSP loan. Civilians and uniformed service members can use this form.
   form_date: 4/2012
   form_pages: 2
-  form_categories:
+  form_audience:
   -  Both
   form_topics:
   -  Loans
@@ -164,7 +164,7 @@
   form_info: Request a general purpose or residential TSP loan. Civilians and uniformed service members can use this form.
   form_date: 4/2012
   form_pages: 2
-  form_categories:
+  form_audience:
   -  Both
   form_topics:
   -  Loans
@@ -174,7 +174,7 @@
   form_info: Request a refund of the contributions to your TSP account (and their earnings) that were deducted from your pay due to automatic enrollment. The TSP must receive this form no later than 90 days from the date of your first contribution.
   form_date: 1/2018
   form_pages: 4
-  form_categories:
+  form_audience:
   -  Civilian
   form_topics:
   -  Contributions
@@ -185,7 +185,7 @@
   form_info: For use by participants who would like to make loan payments in addition to payments made through payroll deductions.
   form_date: Local Reproduction
   form_pages: 1
-  form_categories:
+  form_audience:
   -  Both
   form_topics:
   -  Loans
@@ -195,7 +195,7 @@
   form_info: For use by participants who would like to make loan payments in addition to payments made through payroll deductions.
   form_date: Local Reproduction
   form_pages: 1
-  form_categories:
+  form_audience:
   -  Both
   form_topics:
   -  Loans
@@ -205,7 +205,7 @@
   form_info: Agency representatives should use this form to notify the TSP record keeper when a participant who has a TSP loan is placed in an approved nonpay status, or to notify the TSP record keeper when a participant who entered nonpay status returns to pay status.
   form_date: Local Reproduction
   form_pages: 2
-  form_categories:
+  form_audience:
   -  Both
   form_topics:
   -  Loans
@@ -215,7 +215,7 @@
   form_info: Agency representatives should use this form to notify the TSP record keeper when a participant who has a TSP loan is placed in an approved nonpay status, or to notify the TSP record keeper when a participant who entered nonpay status returns to pay status.
   form_date: Local Reproduction
   form_pages: 2
-  form_categories:
+  form_audience:
   -  Both
   form_topics:
   -  Loans
@@ -225,7 +225,7 @@
   form_info: Request to have an amount transferred or rolled over into the TSP from an IRA or other eligible plan.
   form_date: 10/2012
   form_pages: 4
-  form_categories:
+  form_audience:
   -  Both
   form_topics:
   -  Transfers and Rollovers
@@ -235,7 +235,7 @@
   form_info: Request to have an amount transferred or rolled over into the TSP from an IRA or other eligible plan.
   form_date: 10/2012
   form_pages: 4
-  form_categories:
+  form_audience:
   -  Both
   form_topics:
   -  Transfers and Rollovers
@@ -245,7 +245,7 @@
   form_info: Request a transfer of Roth money from an applicable retirement plan into the Roth balance of your Thrift Savings Plan (TSP) account.
   form_date: 10/2012
   form_pages: 4
-  form_categories:
+  form_audience:
   -  Both
   form_topics:
   -  Transfers and Rollovers
@@ -255,7 +255,7 @@
   form_info: Request a transfer of Roth money from an applicable retirement plan into the Roth balance of your Thrift Savings Plan (TSP) account.
   form_date: 10/2012
   form_pages: 4
-  form_categories:
+  form_audience:
   -  Both
   form_topics:
   -  Transfers and Rollovers
@@ -265,7 +265,7 @@
   form_info: If you have both a civilian and a uniformed services TSP account, use this form to combine your accounts after separating from either Federal civilian employment or from the uniformed services.
   form_date: 4/2012
   form_pages: 2
-  form_categories:
+  form_audience:
   -  Both
   form_topics:
   -  General Information
@@ -275,7 +275,7 @@
   form_info: If you have both a civilian and a uniformed services TSP account, use this form to combine your accounts after separating from either Federal civilian employment or from the uniformed services.
   form_date: 4/2012
   form_pages: 2
-  form_categories:
+  form_audience:
   -  Both
   form_topics:
   -  General Information
@@ -285,7 +285,7 @@
   form_info: Request an immediate withdrawal of your entire vested account balance, to be paid after your agency confirms your separation from Federal service.
   form_date: 1/2018
   form_pages: 16
-  form_categories:
+  form_audience:
   -  Both
   form_topics:
   -  Withdrawals
@@ -296,7 +296,7 @@
   form_info: Request an immediate withdrawal of your entire vested account balance, to be paid after your agency confirms your separation from Federal service.
   form_date: 1/2018
   form_pages: 16
-  form_categories:
+  form_audience:
   -  Both
   form_topics:
   -  Withdrawals
@@ -307,7 +307,7 @@
   form_info: This form is only for participants who are age 70½ or older, who failed to make a withdrawal by the mandatory deadline, and whose accounts have been abandoned and forfeited to the TSP.
   form_date: 1/2018
   form_pages: 16
-  form_categories:
+  form_audience:
   -  Both
   form_topics:
   -  Withdrawals
@@ -317,7 +317,7 @@
   form_info: This form is only for participants who are age 70½ or older, who failed to make a withdrawal by the mandatory deadline, and whose accounts have been abandoned and forfeited to the TSP.
   form_date: 1/2018
   form_pages: 16
-  form_categories:
+  form_audience:
   -  Both
   form_topics:
   -  Withdrawals
@@ -327,7 +327,7 @@
   form_info: Use this form if you are receiving TSP monthly payments and you want to change the payment amount.
   form_date: 8/2013
   form_pages: 2
-  form_categories:
+  form_audience:
   -  Both
   form_topics:
   -  Withdrawals
@@ -338,7 +338,7 @@
   form_info: Use this form if you are receiving TSP monthly payments and you want to change the payment amount.
   form_date: 8/2013
   form_pages: 2
-  form_categories:
+  form_audience:
   -  Both
   form_topics:
   -  Withdrawals
@@ -349,7 +349,7 @@
   form_info: Participants who are age 59½ or older and still employed by the Federal Government can use this form to request a withdrawal from their TSP accounts.
   form_date: 2/2015
   form_pages: 12
-  form_categories:
+  form_audience:
   -  Both
   form_topics:
   -  Withdrawals
@@ -359,7 +359,7 @@
   form_info: Participants who are age 59½ or older and still employed by the Federal Government can use this form to request a withdrawal from their TSP accounts.
   form_date: 2/2015
   form_pages: 12
-  form_categories:
+  form_audience:
   -  Both
   form_topics:
   -  Withdrawals
@@ -369,7 +369,7 @@
   form_info: Use this form to request a financial hardship withdrawal while still employed.
   form_date: 1/2018
   form_pages: 8
-  form_categories:
+  form_audience:
   -  Both
   form_topics:
   -  Withdrawals
@@ -379,7 +379,7 @@
   form_info: Use this form to request a financial hardship withdrawal while still employed.
   form_date: 1/2018
   form_pages: 8
-  form_categories:
+  form_audience:
   -  Both
   form_topics:
   -  Withdrawals
@@ -389,7 +389,7 @@
   form_info: Participants who are separated from Federal service can use this form to request a one-time partial withdrawal of $1,000 or more from their TSP accounts.
   form_date: 1/2018
   form_pages: 12
-  form_categories:
+  form_audience:
   -  Both
   form_topics:
   -  Withdrawals
@@ -400,7 +400,7 @@
   form_info: Participants who are separated from Federal service can use this form to request a one-time partial withdrawal of $1,000 or more from their TSP accounts.
   form_date: 1/2018
   form_pages: 12
-  form_categories:
+  form_audience:
   -  Both
   form_topics:
   -  Withdrawals
@@ -411,7 +411,7 @@
   form_info: Use this form to make certain changes in the way your TSP monthly payments are handled.
   form_date: 10/2012
   form_pages: 8
-  form_categories:
+  form_audience:
   -  Both
   form_topics:
   -  Transfers and Rollovers
@@ -423,7 +423,7 @@
   form_info: Use this form to make certain changes in the way your TSP monthly payments are handled.
   form_date: 10/2012
   form_pages: 8
-  form_categories:
+  form_audience:
   -  Both
   form_topics:
   -  Transfers and Rollovers
@@ -435,7 +435,7 @@
   form_info: Use this form if you are receiving TSP monthly payments and want a final single payment from your TSP account.
   form_date: 10/2012
   form_pages: 8
-  form_categories:
+  form_audience:
   -  Both
   form_topics:
   -  Withdrawals
@@ -447,7 +447,7 @@
   form_info: Use this form if you are receiving TSP monthly payments and want a final single payment from your TSP account.
   form_date: 10/2012
   form_pages: 8
-  form_categories:
+  form_audience:
   -  Both
   form_topics:
   -  Withdrawals
@@ -459,7 +459,7 @@
   form_info: This form is only for beneficiary participants. Use this form to request a partial or full withdrawal from your TSP beneficiary participant account.
   form_date: 11/2015
   form_pages: 12
-  form_categories:
+  form_audience:
   -  Beneficiary Participant
   form_topics:
   -  Beneficiary Participants
@@ -471,7 +471,7 @@
   form_info: This TSP Retirement Benefits Court Order Division Package contains all of the forms you will need to divide a Thrift Savings Plan (TSP) account pursuant to a divorce, annulment, or legal separation.
   form_date: 4/2018
   form_pages: 15
-  form_categories:
+  form_audience:
   -  Both
   form_topics:
   -  Legal Documents
@@ -481,7 +481,7 @@
   form_info: This TSP Retirement Benefits Court Order Division Package contains all of the forms you will need to divide a Thrift Savings Plan (TSP) account pursuant to a divorce, annulment, or legal separation.
   form_date: 4/2018
   form_pages: 15
-  form_categories:
+  form_audience:
   -  Both
   form_topics:
   -  Legal Documents
@@ -491,7 +491,7 @@
   form_info: Use this form to authorize a Retirement Benefits Specialist (RBS) to act on your behalf regarding the submission of a retirement benefits court order (RBCO) related to a Thrift Savings Plan (TSP) account.
   form_date: 4/2018
   form_pages: 3
-  form_categories:
+  form_audience:
   -  Both
   form_topics:
   -  Legal Documents
@@ -501,7 +501,7 @@
   form_info: Use this form to authorize a Retirement Benefits Specialist (RBS) to act on your behalf regarding the submission of a retirement benefits court order (RBCO) related to a Thrift Savings Plan (TSP) account.
   form_date: 4/2018
   form_pages: 3
-  form_categories:
+  form_audience:
   -  Both
   form_topics:
   -  Legal Documents
@@ -511,7 +511,7 @@
   form_info: Use this form to obtain TSP account balances and transaction history for the purpose of drafting a valid retirement benefits court order.
   form_date: 4/2018
   form_pages: 2
-  form_categories:
+  form_audience:
   -  Both
   form_topics:
   -  Legal Documents
@@ -521,7 +521,7 @@
   form_info: Use this form to obtain TSP account balances and transaction history for the purpose of drafting a valid retirement benefits court order.
   form_date: 4/2018
   form_pages: 2
-  form_categories:
+  form_audience:
   -  Both
   form_topics:
   -  Legal Documents
@@ -531,7 +531,7 @@
   form_info: Use IRS Form W-4P to request a change to the default tax withholding for a withdrawal.
   form_date: Local Reproduction
   form_pages: 4
-  form_categories:
+  form_audience:
   -  Both
   form_topics:
   -  Withdrawals
@@ -541,7 +541,7 @@
   form_info: Use IRS Form W-4P to request a change to the default tax withholding for a withdrawal.
   form_date: Local Reproduction
   form_pages: 4
-  form_categories:
+  form_audience:
   -  Both
   form_topics:
   -  Withdrawals

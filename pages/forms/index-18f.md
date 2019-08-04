@@ -19,7 +19,7 @@ permalink: /forms/forms/
     <span class="form-pages">{{ form.form_pages }} pages</span>
     <span class="form-printed-date">Last printed {{ form.form_date }}</span>
     <p class="form-categories">
-    {% for item in form.form_categories %}
+    {% for item in form.form_audience %}
       <span class="form-category">{{ item }}</span>
     {% endfor %}
     </p>
@@ -43,7 +43,7 @@ permalink: /forms/forms/
     <span class="pub-pages">{{ publication.publication_pages }} pages</span>
     <span class="pub-printed-date">Last printed {{ publication.publication_date }}</span>
     <p class="pub-categories">
-    {% for item in publication.publication_categories %}
+    {% for item in publication.publication_type %}
       <span class="pub-category">{{ item }}</span>
     {% endfor %}
     </p>

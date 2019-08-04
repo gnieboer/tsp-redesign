@@ -3,7 +3,7 @@
   publication_info: Explains the annual IRS elective deferral limit. It also explains the effect of contributing to more than one plan if the IRS limit is exceeded.
   publication_date: 11/2014
   publication_pages: 5 pages
-  publication_categories:
+  publication_type:
   - Fact Sheet
   publication_topics:
   - Contributions
@@ -12,7 +12,7 @@
   publication_info: Use these monthly annuity factors with the annuity worksheet to estimate your monthly annuity payment.
   publication_date: 7/2014
   publication_pages: 1 page
-  publication_categories:
+  publication_type:
   - Annuity
   publication_topics:
   - Withdrawals
@@ -21,7 +21,7 @@
   publication_info: Use these monthly annuity factors with the annuity worksheet to estimate your monthly annuity payment.
   publication_date: 7/2014
   publication_pages: 1 page
-  publication_categories:
+  publication_type:
   - Annuity
   publication_topics:
   - Withdrawals
@@ -30,7 +30,7 @@
   publication_info: Estimate the amount of your monthly annuity payment using this worksheet.
   publication_date: 4/2006
   publication_pages: 2 pages
-  publication_categories:
+  publication_type:
   - Annuity
   publication_topics:
   - Withdrawals
@@ -39,7 +39,7 @@
   publication_info: Explains the Federal Retirement Thrift Investment Board's view toward authenticating documents for use in court proceedings.
   publication_date: 3/2008
   publication_pages: 1 page
-  publication_categories:
+  publication_type:
   - Fact Sheet
   publication_topics:
   - Legal Documents
@@ -48,7 +48,7 @@
   publication_info: Explains how a bankruptcy petition filed before October 17, 2005, affects a Thrift Savings Plan (TSP) account, loan, or in-service withdrawal.
   publication_date: 5/2012
   publication_pages: 2 pages
-  publication_categories:
+  publication_type:
   - Fact Sheet
   publication_topics:
   - Legal Documents
@@ -59,7 +59,7 @@
   publication_info: Explains how a bankruptcy petition filed on or after October 17, 2005, will affect a Thrift Savings Plan (TSP) account, loan, or in-service withdrawal.
   publication_date: 8/2014
   publication_pages: 2 pages
-  publication_categories:
+  publication_type:
   - Fact Sheet
   publication_topics:
   - Legal Documents
@@ -70,7 +70,7 @@
   publication_info: Comprehensive booklet explaining the TSP benefits and features that are specific to beneficiary participants.
   publication_date: 1/2018
   publication_pages: 23 pages
-  publication_categories:
+  publication_type:
   - Booklet
   publication_topics:
   - Beneficiary Participants
@@ -79,7 +79,7 @@
   publication_info: Explains to military members the advantages of investing in the TSP.
   publication_date: 1/2018
   publication_pages: 4 pages
-  publication_categories:
+  publication_type:
   - Leaflet
   publication_topics:
   - General Information
@@ -88,7 +88,7 @@
   publication_info: Explains the legislation that allows members of the uniformed services to make up contributions when they return to Federal civilian service.
   publication_date: 1/2018
   publication_pages: 5 pages
-  publication_categories:
+  publication_type:
   - Fact Sheet
   publication_topics:
   - Withdrawals
@@ -99,7 +99,7 @@
   publication_info: Explains how you can follow the performance of the G, F, C, S, I and L Funds by obtaining the daily share prices from this website or the ThriftLine. To calculate rates of return for any given period of time or to determine compound annual returns, follow the instructions in this Fact Sheet.
   publication_date: 1/2006
   publication_pages: 2 pages
-  publication_categories:
+  publication_type:
   - Fact Sheet
   publication_topics:
   - Investments
@@ -108,7 +108,7 @@
   publication_info: Explains catch-up contribution rules for participants who are age 50 or older.
   publication_date: 11/2013
   publication_pages: 2 pages
-  publication_categories:
+  publication_type:
   - Fact Sheet
   publication_topics:
   - Contributions
@@ -117,7 +117,7 @@
   publication_info: Provides a sample of language that the TSP will honor when receiving a court order that assigns a participant's account to another party.
   publication_date: 6/2008
   publication_pages: 2 pages
-  publication_categories:
+  publication_type:
   - Legal Document
   publication_topics:
   - Legal Documents
@@ -126,7 +126,7 @@
   publication_info: For a participant and his or her attorney.  This booklet explains actions the TSP must take if a court order is received and how court orders affect a participant's account.
   publication_date: 9/2014
   publication_pages: 31 pages
-  publication_categories:
+  publication_type:
   - Booklet
   publication_topics:
   - Legal Documents
@@ -135,7 +135,7 @@
   publication_info: A compact guide that provides information about the distribution of your account after your death.
   publication_date: 1/2018
   publication_pages: 19 pages
-  publication_categories:
+  publication_type:
   - Booklet
   publication_topics:
   - Death Benefits
@@ -144,7 +144,7 @@
   publication_info: For separated participants — explains the benefits of keeping your money in the TSP.
   publication_date: 5/2014
   publication_pages: 3 pages
-  publication_categories:
+  publication_type:
   - Leaflet
   publication_topics:
   - General Information
@@ -155,7 +155,7 @@
   publication_info: Provides investment information about each of the TSP funds, historical returns, etc.
   publication_date: 3/2015
   publication_pages: 15 pages
-  publication_categories:
+  publication_type:
   - Booklet
   publication_topics:
   - Investments
@@ -164,7 +164,7 @@
   publication_info: For active participants age 59 and over — explains how the TSP's straightforward choices, affordability, and convenience are preferable to other financial institutions that might try to pull you away from the TSP.
   publication_date: 12/2013
   publication_pages: 2 pages
-  publication_categories:
+  publication_type:
   - Leaflet
   publication_topics:
   - Withdrawals
@@ -176,7 +176,7 @@
   publication_info: For young military participants—explains how TSP savings can grow over time.
   publication_date: 2/2015
   publication_pages: 4 pages
-  publication_categories:
+  publication_type:
   - Leaflet
   publication_topics:
   - Contributions
@@ -186,7 +186,7 @@
   publication_info: Explains the information that is shown on the annual participant statement.
   publication_date: 2/2015
   publication_pages: 2 pages
-  publication_categories:
+  publication_type:
   - Leaflet
   publication_topics:
   - General Information
@@ -196,7 +196,7 @@
   publication_info: Explains the information that is shown on the annual participant statement that beneficiary participants receive.
   publication_date: 2/2015
   publication_pages: 2 pages
-  publication_categories:
+  publication_type:
   - Leaflet
   publication_topics:
   - Beneficiary Participants
@@ -205,7 +205,7 @@
   publication_info: Explains the information that is shown on the quarterly participant statement.
   publication_date: 9/2015
   publication_pages: 2 pages
-  publication_categories:
+  publication_type:
   - Leaflet
   publication_topics:
   - General Information
@@ -215,7 +215,7 @@
   publication_info: Explains the information that is shown on the quarterly participant statement that beneficiary participants receive.
   publication_date: 4/2015
   publication_pages: 2 pages
-  publication_categories:
+  publication_type:
   - Leaflet
   publication_topics:
   - Beneficiary Participants
@@ -224,7 +224,7 @@
   publication_info: Booklet about the TSP in-service withdrawal program, the two types of in-service withdrawals, and the rules that apply to each.
   publication_date: 1/2018
   publication_pages: 21 pages
-  publication_categories:
+  publication_type:
   - Booklet
   publication_topics:
   - Withdrawals
@@ -233,7 +233,7 @@
   publication_info: Explains how an Internal Revenue Service (IRS) tax levy or criminal restitution order will affect a Thrift Savings Plan (TSP) account.
   publication_date: 8/2014
   publication_pages: 3 pages
-  publication_categories:
+  publication_type:
   - Fact Sheet
   publication_topics:
   - Legal Documents
@@ -242,7 +242,7 @@
   publication_info: Explains the benefits of transferring eligible money into the TSP.
   publication_date: 2/2015
   publication_pages: 4 pages
-  publication_categories:
+  publication_type:
   - Leaflet
   publication_topics:
   - Contributions
@@ -252,7 +252,7 @@
   publication_info: Provides general information on a participant's options with respect to an IRA when he or she also participates in the TSP.
   publication_date: 5/2012
   publication_pages: 1 page
-  publication_categories:
+  publication_type:
   - Booklet
   publication_topics:
   - Transfers and Rollovers
@@ -261,7 +261,7 @@
   publication_info: Booklet about the TSP loan program, the two types of loans that are available, and the rules that apply.
   publication_date: 1/2018
   publication_pages: 28 pages
-  publication_categories:
+  publication_type:
   - Booklet
   publication_topics:
   - Loans
@@ -270,7 +270,7 @@
   publication_info: A compact guide for civilian and uniformed services members that provides information about the TSP and how to manage your account.
   publication_date: 1/2018
   publication_pages: 28 pages
-  publication_categories:
+  publication_type:
   - Booklet
   publication_topics:
   - General Information
@@ -279,7 +279,7 @@
   publication_info: A compact guide for beneficiary participants that provides information about the TSP and how to manage your account.
   publication_date: 9/2015
   publication_pages: 23 pages
-  publication_categories:
+  publication_type:
   - Booklet
   publication_topics:
   - General Information
@@ -289,7 +289,7 @@
   publication_info: Comprehensive booklet explaining the TSP benefits and features that are specific to beneficiary participants.
   publication_date: 1/2018
   publication_pages: 28 pages
-  publication_categories:
+  publication_type:
   - Booklet
   publication_topics:
   - General Information
@@ -298,7 +298,7 @@
   publication_info: For FERS participants, addresses the benefits of making contributions to the TSP and how participants can get matching contributions by making their own contributions to the TSP.
   publication_date: 9/2006
   publication_pages: 4 pages
-  publication_categories:
+  publication_type:
   - Leaflet
   publication_topics:
   - Contributions
@@ -308,7 +308,7 @@
   publication_info: Provides information for participants who go on leave without pay, the steps they need to take regarding their TSP account, and what happens to a TSP loan when a participant goes into nonpay status.
   publication_date: 1/2018
   publication_pages: 6 pages
-  publication_categories:
+  publication_type:
   - Fact Sheet
   publication_topics:
   - Loans
@@ -317,7 +317,7 @@
   publication_info: This form can be used when a participant needs a Power of Attorney for his or her TSP account.
   publication_date: 3/2011
   publication_pages: 1 page
-  publication_categories:
+  publication_type:
   - Legal Document
   publication_topics:
   - Legal Documents
@@ -326,7 +326,7 @@
   publication_info: Provides a sample of language that the TSP will honor when receiving a legal process for the enforcement of payments of a participant's child support or alimony obligation.
   publication_date: 6/2008
   publication_pages: 1 page
-  publication_categories:
+  publication_type:
   - Booklet
   publication_topics:
   - Legal Documents
@@ -335,7 +335,7 @@
   publication_info: Explains in detail the Internal Revenue Code (IRC) required minimum distribution rules for beneficiary participants.
   publication_date: 9/2014
   publication_pages: 8 pages
-  publication_categories:
+  publication_type:
   - Tax Notice
   publication_topics:
   - Withdrawals
@@ -345,7 +345,7 @@
   publication_info: Explains in detail the TSP’s withdrawal deadline and the Internal Revenue Code (IRC) required minimum distribution rules for participants who are age 70½ or older and separated from service.
   publication_date: 1/2018
   publication_pages: 8 pages
-  publication_categories:
+  publication_type:
   - Tax Notice
   publication_topics:
   - Withdrawals
@@ -354,7 +354,7 @@
   publication_info: Explains how you can benefit financially by starting to contribute early.
   publication_date: 9/2006
   publication_pages: 3 pages
-  publication_categories:
+  publication_type:
   - Leaflet
   publication_topics:
   - Contributions
@@ -363,7 +363,7 @@
   publication_info: Thinking about moving your TSP savings to another plan? Ask the provider these questions first.
   publication_date: 11/2014
   publication_pages: 2 pages
-  publication_categories:
+  publication_type:
   - Leaflet
   publication_topics:
   - Withdrawals
@@ -372,7 +372,7 @@
   publication_info: Provides answers to questions about the impact of a furlough on contributions as well as alternatives for accessing TSP funds in the event of significant financial impact resulting from a furlough.
   publication_date: 5/2013
   publication_pages: 2 pages
-  publication_categories:
+  publication_type:
   - Fact Sheet
   publication_topics:
   - General Information
@@ -381,7 +381,7 @@
   publication_info: Explains share price calculation, how shares are purchased, and dollar cost averaging.
   publication_date: 1/2018
   publication_pages: 2 pages
-  publication_categories:
+  publication_type:
   - Fact Sheet
   publication_topics:
   - Contributions
@@ -390,7 +390,7 @@
   publication_info: Comprehensive booklet explaining the TSP, its features, benefits, and generally how it works.
   publication_date: 1/2018
   publication_pages: 36 pages
-  publication_categories:
+  publication_type:
   - Booklet
   publication_topics:
   - General Information
@@ -399,7 +399,7 @@
   publication_info: Summary of the results of the 2008 TSP participant survey.  The 77-page complete report is also available.
   publication_date: 1/2009
   publication_pages: 2 pages
-  publication_categories:
+  publication_type:
   - Leaflet
   publication_topics:
   - General Information
@@ -408,7 +408,7 @@
   publication_info: "For active FERS participants younger than 45, this leaflet emphasizes the importance of saving early for retirement:  Contribute at least 5%. Choose from 5 core and 5 Lifecycle funds.  Make changes in 5 minutes."
   publication_date: 4/2014
   publication_pages: 4 pages
-  publication_categories:
+  publication_type:
   - Leaflet
   publication_topics:
   - Contributions
@@ -417,7 +417,7 @@
   publication_info: Provides tax information to beneficiaries about death benefit payments from the TSP.
   publication_date: 10/2015
   publication_pages: 2 pages
-  publication_categories:
+  publication_type:
   - Tax Notice
   publication_topics:
   - Death Benefits
@@ -426,7 +426,7 @@
   publication_info: Tax information for participants who are withdrawing their account in a series of monthly payments.
   publication_date: 10/2012
   publication_pages: 2 pages
-  publication_categories:
+  publication_type:
   - Tax Notice
   publication_topics:
   - Withdrawals
@@ -435,7 +435,7 @@
   publication_info: Provides tax information about the various disbursements civilian, uniformed services, and beneficiary participants can make from the TSP.
   publication_date: 1/2018
   publication_pages: 8 pages
-  publication_categories:
+  publication_type:
   - Tax Notice
   publication_topics:
   - Loans
@@ -446,7 +446,7 @@
   publication_info: Tax information about payments made under qualifying orders.
   publication_date: 1/2015
   publication_pages: 4 pages
-  publication_categories:
+  publication_type:
   - Tax Notice
   publication_topics:
   - Contributions
@@ -456,7 +456,7 @@
   publication_info: A summary of special tax withholding rules that apply to Thrift Savings Plan (TSP) payments made to nonresident aliens.
   publication_date: 5/2012
   publication_pages: 4 pages
-  publication_categories:
+  publication_type:
   - Tax Notice
   publication_topics:
   - Death Benefits
@@ -466,7 +466,7 @@
   publication_info: Should you branch out from the G Fund? Don’t know where to start? These key questions will help you decide whether to change how your money is invested.
   publication_date: 8/2014
   publication_pages: 2 pages
-  publication_categories:
+  publication_type:
   - Leaflet
   publication_topics:
   - Contributions
@@ -476,7 +476,7 @@
   publication_info: This leaflet notifies separated participants nearing age 70½ that the deadline to start receiving payments from their TSP accounts is approaching. It provides dates by which they should make their payment request.
   publication_date: 10/2015
   publication_pages: 6 pages
-  publication_categories:
+  publication_type:
   - Leaflet
   publication_topics:
   - Withdrawals
@@ -485,7 +485,7 @@
   publication_info: Information about moving money from the Thrift Savings Plan (TSP) to eligible retirement plans. This fact sheet is provided for use by a plan administrator of a traditional IRA or eligible employer plan to complete the transfer of a TSP participant's account.
   publication_date: 1/2018
   publication_pages: 2 pages
-  publication_categories:
+  publication_type:
   - Fact Sheet
   publication_topics:
   - Transfers and Rollovers
@@ -494,7 +494,7 @@
   publication_info: Summarizes each of our investment options, including strategy and risks.
   publication_date: 9/2015
   publication_pages: 2 pages
-  publication_categories:
+  publication_type:
   - Fact Sheet
   publication_topics:
   - Investments
@@ -504,7 +504,7 @@
   publication_info: Shows the website and ThriftLine functions in a simple format.
   publication_date: 7/2010
   publication_pages: 2 pages
-  publication_categories:
+  publication_type:
   - Leaflet
   publication_topics:
   - General Information
@@ -513,7 +513,7 @@
   publication_info: For active FERS participants not contributing their own money to their accounts, this leaflet emphasizes the importance of contributing to receive the full agency match, the benefit of tax-deferred savings, and demonstrates how starting early can build a sizeable account over time.
   publication_date: 11/2009
   publication_pages: 5 pages
-  publication_categories:
+  publication_type:
   - Leaflet
   publication_topics:
   - Contributions
@@ -522,7 +522,7 @@
   publication_info: Brief overview of the TSP withdrawal options and what a participant needs to do to get a withdrawal after leaving Federal service.
   publication_date: 4/2013
   publication_pages: 3 pages
-  publication_categories:
+  publication_type:
   - Leaflet
   publication_topics:
   - Withdrawals
@@ -531,7 +531,7 @@
   publication_info: Booklet about participant's options for withdrawing his or her TSP account after leaving service.
   publication_date: 1/2018
   publication_pages: 22 pages
-  publication_categories:
+  publication_type:
   - Booklet
   publication_topics:
   - Withdrawals
@@ -540,7 +540,7 @@
   publication_info: Every pay period that you miss contributing to your TSP account, you are letting FREE MONEY go up in flames in the form of Agency matching contributions, which is your due as a Federal Employees’ Retirement System (FERS) employee.
   publication_date: 10/2010
   publication_pages: 2 pages
-  publication_categories:
+  publication_type:
   - Leaflet
   publication_topics:
   - Contributions
@@ -549,7 +549,7 @@
   publication_info: For uniformed services participants — explains what the TSP is, what the TSP isn't, and how you can access your TSP account.
   publication_date: 12/2013
   publication_pages: 2 pages
-  publication_categories:
+  publication_type:
   - Leaflet
   publication_topics:
   - Contributions
