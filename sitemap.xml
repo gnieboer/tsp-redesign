@@ -7,7 +7,7 @@
   <url>
     <loc>{{ post.url | prepend: site_url }}</loc>
     {% if post.last_modified_at %}
-    <lastmod>{{ post.last_modified_at | date_to_xmlschema }}</lastmod>
+    <lastmod>{{ post.last_modified_at | date: '%A, %B %d, %Y (%I:%M %P)' }}</lastmod>
     {% else %}
     <lastmod>{{ post.date | date_to_xmlschema }}</lastmod>
     {% endif %}
@@ -17,7 +17,7 @@
   <url>
     <loc>{{ page.url | replace:'/index.html','/' | prepend: site_url }}</loc>
     {% if page.last_modified_at %}
-    <lastmod>{{ page.last_modified_at | date_to_xmlschema }}</lastmod>
+    <lastmod>{{ page.last_modified_at | date: '%A, %B %d, %Y (%I:%M %P)' }}</lastmod>
     {% endif %}
   </url>
   {% endunless %}{% endfor %}
@@ -26,7 +26,7 @@
   <url>
     <loc>{{ doc.url | replace:'/index.html','/' | prepend: site_url }}</loc>
     {% if doc.last_modified_at %}
-    <lastmod>{{ doc.last_modified_at | date_to_xmlschema }}</lastmod>
+    <lastmod>{{ doc.last_modified_at | date: '%A, %B %d, %Y (%I:%M %P)' }}</lastmod>
     {% endif %}
   </url>
   {% endunless %}{% endfor %}
@@ -34,7 +34,7 @@
   {% for file in site.html_files %}
   <url>
     <loc>{{ file.path | prepend: site_url }}</loc>
-    <lastmod>{{ file.modified_time | date_to_xmlschema }}</lastmod>
+    <lastmod>{{ file.modified_time | date: '%A, %B %d, %Y (%I:%M %P)' }}</lastmod>
   </url>
   {% endfor %}
 </urlset>
