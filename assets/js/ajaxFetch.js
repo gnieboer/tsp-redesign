@@ -422,3 +422,16 @@ function columnSort(ascending, columnClassName, tableId, headLength, tailLength)
         }
     }
 };
+
+// make call to get shareprices
+function doSharePriceDownload(startdate, enddate, format, funds) {
+  var url = siteName + 'getSharePrices.html?';
+  url += 'startdate='+startdate;
+  url += '&enddate='+enddate;
+  funds.forEach(function(fund) { url += '&'+fund+'=1'; });
+  url += '&format='+format+'&download=1';
+  //console.log(url);
+  //window.location.href = url;
+  window.open(url, '_blank');
+  return false;
+}
