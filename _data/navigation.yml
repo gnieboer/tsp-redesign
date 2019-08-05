@@ -44,6 +44,14 @@ primary:
       href: /career-changes/
     - text: For beneficiary participants
       href: /for-beneficiary-participants/
+  - text: Fund performance
+    links:
+    - text: Rates of returns
+      href: /fund-performance/rates-of-returns/
+    - text: Share price history
+      href: /fund-performance/share-price-history-one-whole/
+    - text: Share price calculation
+      href: /fund-performance/share-price-calculation/
 
 
 secondary:

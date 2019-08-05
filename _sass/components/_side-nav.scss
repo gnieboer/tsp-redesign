@@ -60,9 +60,18 @@ main {
     .usa-sidenav-list {
       border-top: none;
     }
-  }// aside
-}// main
-
+  }
+  // aside
+}
+// main
+@media (min-width: #{$small-screen}) {
+  main {
+    &.sticky {
+      position: relative;
+      align-self: stretch;
+    }
+  }
+}
 @media (min-width: #{$large-screen}) {
   main {
     aside {
@@ -77,15 +86,21 @@ main {
       button.usa-accordion-button {
         display: none;
       }
-    }//aside
+
+      &.sticky {
+        position: sticky;
+        align-self: flex-start; // To "stick" within flex-box
+      }
+    }
+    //aside
 
     &.usa-layout-docs {
       display: flex;
       flex-direction: row;
     }
-  }// main
+  }
+  // main
 }
-
 @media (min-width: #{$desktop-screen}) {
   main {
     aside {
@@ -93,6 +108,14 @@ main {
         margin-right: 4%;
         width: 25%;
       }
-    }//aside
-  }// main
-}//@media
+
+      &.sticky {
+        position: sticky;
+        align-self: flex-start; // To "stick" within flex-box
+      }
+    }
+    //aside
+  }
+  // main
+}
+//@media
