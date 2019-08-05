@@ -1,8 +1,8 @@
 var fundDates = flatpickr("#fundDates", {
   mode: "range",
-  // altInput: true,
-  // altFormat: "F j, Y",
-  // dateFormat: "Y-m-d",
+  altInput: true,
+  altFormat: "F j, Y",
+  dateFormat: "Y-m-d",
   defaultDate: [new Date().fp_incr(-30), "today"],
   minDate: "06/02/2003",
   maxDate: "today",

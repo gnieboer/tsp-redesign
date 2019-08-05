@@ -41,7 +41,7 @@ permalink: /forms/
 {% assign cnt = 0 %}
 <div id="select-forms-0" class="select-forms-div" markdown="1">
 <h2 class="most-popular" id="most-popular-forms">Most popular forms</h2>
-# All Forms
+<!-- # All Forms  -->
 <div class="usa-grid-full">
 {% for form in site.data.forms %}
   {% assign cnt = cnt | plus: 1 %}
@@ -91,7 +91,7 @@ permalink: /forms/
   and <strong>{{resCnt}}</strong> resources about <strong>{{ topic }}</strong>
 </h2>
 {% if formCnt > 0 %}
-# {{ topic }} Forms
+<!-- # {{ topic }} Forms  -->
 {% endif %}
 {% assign cnt = 0 %}
 <div class="usa-grid-full">
@@ -127,7 +127,8 @@ permalink: /forms/
 <section id="popular-resources" markdown="1">
 {% assign cnt = 0 %}
 <div id="select-resources-0" class="select-resources-div" markdown="1">
-# All Resources
+<h2 class="most-popular" id="most-popular-resources">Most popular resources</h2>
+<!-- # All Resources -->
 <div class="usa-grid-full">
 {% for resource in site.data.publications %}
   {% assign cnt = cnt | plus: 1 %}
@@ -166,7 +167,8 @@ permalink: /forms/
 {% assign cnt = 0 %}
 <div id="select-resources-{{ topicID }}"  class="select-resources-div hide" markdown="1">
 {% if resCnt > 0 %}
-# {{ topic }} Resources
+<h2 class="most-popular" id="{{topic}}-resources">{{topic}} resources</h2>
+<!-- # {{ topic }} Resources  -->
 {% endif %}
 <div class="usa-grid-full">
 {% for resource in site.data.publications %}

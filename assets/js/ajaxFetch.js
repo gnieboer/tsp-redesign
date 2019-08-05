@@ -431,7 +431,7 @@ function doSharePriceDownload(startdate, enddate, format, funds) {
   funds.forEach(function(fund) { url += '&'+fund+'=1'; });
   url += '&format='+format+'&download=1';
   //console.log(url);
-  //window.location.href = url;
-  window.open(url, '_blank');
+  window.location.href = url;
+  //window.open(url, '_blank');
   return false;
 }

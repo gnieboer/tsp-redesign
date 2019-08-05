@@ -1,11 +1,11 @@
-{% assign pubtype = resource.publication_type[0] %}
+{% assign publicationType = resource.publication_type[0] %}
 {% assign icon = "fa-file-alt redbg" %}
-{% if pubtype ==  "Annuity" %}         {% assign icon = "fa-chart-line" %}           {% endif %}
-{% if pubtype ==  "Booklet" %}         {% assign icon = "fa-book" %}                 {% endif %}
-{% if pubtype ==  "Fact Sheet" %}      {% assign icon = "fa-file-check" %}           {% endif %}
-{% if pubtype ==  "Leaflet" %}         {% assign icon = "fa-sticky-note" %}          {% endif %}
-{% if pubtype ==  "Legal Document" %}  {% assign icon = "fa-balance-scale" %}        {% endif %}
-{% if pubtype ==  "Tax Notice" %}      {% assign icon = "fa-envelope-open-dollar" %} {% endif %}
+{% if publicationType ==  "Annuity" %}         {% assign icon = "fa-chart-line" %}           {% endif %}
+{% if publicationType ==  "Booklet" %}         {% assign icon = "fa-book" %}                 {% endif %}
+{% if publicationType ==  "Fact Sheet" %}      {% assign icon = "fa-file-check" %}           {% endif %}
+{% if publicationType ==  "Leaflet" %}         {% assign icon = "fa-sticky-note" %}          {% endif %}
+{% if publicationType ==  "Legal Document" %}  {% assign icon = "fa-balance-scale" %}        {% endif %}
+{% if publicationType ==  "Tax Notice" %}      {% assign icon = "fa-envelope-open-dollar" %} {% endif %}
 
 <div class="usa-width-one-half">
     <div class="item-frame">
