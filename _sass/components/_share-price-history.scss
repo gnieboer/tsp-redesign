@@ -1,3 +1,4 @@
+
 form.share-price-date-range {
   input.date-range {
     width: 94%;
@@ -6,5 +7,33 @@ form.share-price-date-range {
 
 // "STICKY" LEFT-COLUMN HEADER: Share price history
 section.share-price-table {
-    margin-top: 3rem;
+    .table-view {
+      padding: 0;
+      margin: 0;
+      text-align: right;
+    }
 } // end .share-price-table
+
+.share-price-history-controls {
+  display: flex;
+  align-items: flex-end;
+  .usa-width-one-half {
+    border: 1px solid blue;
+    &.expand {
+      display: block;
+      border: 1px solid red;
+      text-align: right;
+    }
+  }
+}
+
+@media only screen and (max-width: #{$large-screen}) {
+  section.share-price-table {
+      .table-view {
+        margin-top: 3rem;
+        button {
+          display: none;
+        }
+      }
+    }
+}

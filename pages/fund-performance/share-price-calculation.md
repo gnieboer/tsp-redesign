@@ -2,7 +2,6 @@
 title: Share price calculation
 layout: page
 permalink: /fund-performance/share-price-calculation/
-sidenav: fund-options
 styles:
 scripts:
 ---
