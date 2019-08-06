@@ -38,7 +38,7 @@ function downloadSharePrices() {
   var startdate = toYYYYMMDD(sDate);
   var enddate = toYYYYMMDD(eDate);
   var format = 'CSV';
-  var funds = ['Lfunds', 'S'];
+  var funds = ['Lfunds', 'InvFunds'];
 
   doSharePriceDownload(startdate, enddate, format, funds);
   return false;
