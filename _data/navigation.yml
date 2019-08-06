@@ -24,8 +24,14 @@ primary:
       href: /funds-lifecycle/
     - text: Individual funds
       href: /funds-individual/
-    - text: Fund performance
-      href: /fund-performance/
+  - text: Fund performance
+    links:
+    - text: Rates of returns
+      href: /fund-performance/rates-of-returns/
+    - text: Share price history
+      href: /fund-performance/share-price-history/
+    - text: Share price calculation
+      href: /fund-performance/share-price-calculation/
   - text: Use your savings
     links:
     - text: Loan basics
@@ -44,15 +50,6 @@ primary:
       href: /career-changes/
     - text: For beneficiary participants
       href: /for-beneficiary-participants/
-  - text: Fund performance
-    links:
-    - text: Rates of returns
-      href: /fund-performance/rates-of-returns/
-    - text: Share price history
-      href: /fund-performance/share-price-history-one-whole/
-    - text: Share price calculation
-      href: /fund-performance/share-price-calculation/
-
 
 secondary:
   - text: About us
@@ -173,13 +170,6 @@ fund-options:
         href: /funds-individual/i-fund/
   - text: Fund performance
     href: /fund-performance/
-    subnav:
-      - text: Rates of returns
-        href: /fund-performance/rates-of-returns/
-      - text: Share price history
-        href: /fund-performance/share-price-history/
-      - text: Share price calculation
-        href: /fund-performance/share-price-calculation/
 
 use-your-savings:
   - text: Loan basics
