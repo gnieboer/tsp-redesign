@@ -423,15 +423,36 @@ function columnSort(ascending, columnClassName, tableId, headLength, tailLength)
     }
 };
 
+function sharePriceDownloadString(startdate, enddate, funds) {
+  var str = siteName + 'getSharePrices.html?';
+  str += 'startdate='+startdate;
+  str += '&enddate='+enddate;
+  funds.forEach(function(fund) { str += '&'+fund+'=1'; });
+  return str;
+}
+
 // make call to get shareprices
 function doSharePriceDownload(startdate, enddate, format, funds) {
-  var url = siteName + 'getSharePrices.html?';
-  url += 'startdate='+startdate;
-  url += '&enddate='+enddate;
-  funds.forEach(function(fund) { url += '&'+fund+'=1'; });
+  var url = sharePriceDownloadString(startdate, enddate, funds);
   url += '&format='+format+'&download=1';
   //console.log(url);
   window.location.href = url;
   //window.open(url, '_blank');
   return false;
+}
+
+var doAjaxRetrieve = function(divName, url) {
+  $('#'+divName).html('Calling server for data...');
+  var serverCall = $.get(url);
+  serverCall.done(
+    function (data) {
+        $('#'+divName).html(data);
+    }
+  );
+  serverCall.fail(
+    function (jqXHR, textStatus, errorThrown) {
+        var errMsg = textStatus + ': ' + errorThrown;
+        $('#'+divName).html('Internet connection failed.  Try again later.');
+    }
+  );
 }

@@ -16,17 +16,21 @@ function toYYYYMMDD(d) {
 }
 
 function getSharePrices() {
-console.log('getSharePrices');
   // var fundDates = document.querySelector("#fundDates")._flatpickr;
   var sDate = fundDates.selectedDates[0];
   var eDate = fundDates.selectedDates[1];
   if ((sDate == null) || (eDate == null)) { console.log('ignore'); return false; }
-  console.log(toYYYYMMDD(sDate), toYYYYMMDD(eDate));
+  var startdate = toYYYYMMDD(sDate);
+  var enddate = toYYYYMMDD(eDate);
+  var funds = ['Lfunds', 'InvFunds'];
+  var url = sharePriceDownloadString(startdate, enddate, funds);
+  url += '&download=0';
+  console.log(url);
+  doAjaxRetrieve('dynamic-share-price-table', url);
   return false;
 }
 
 function downloadSharePrices() {
-console.log('downloadSharePrices');
   // var fundDates = document.querySelector("#fundDates")._flatpickr;
   var sDate = fundDates.selectedDates[0];
   var eDate = fundDates.selectedDates[1];
