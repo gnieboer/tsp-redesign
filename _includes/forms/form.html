@@ -7,7 +7,11 @@
 
 <div class="usa-width-one-half">
   <div class="item-frame">
+
     <div class="top {{ audienceClass }}">
+      {% if formAudience ==  "Uniformed Services" %}
+        <i class="fas fa-star-half-alt" aria-label="Form is for use by Uniformed Services members only" alt="Military star" title="Form is for use by Uniformed Services members only"></i>
+      {% endif %}
     <p class="form-title">{{ form.form_name}}</p>
     <p class="form-number">
       <a href="/forms/{{ form.form_url }}" class="form-name">
