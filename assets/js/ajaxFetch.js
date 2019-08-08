@@ -456,3 +456,131 @@ var doAjaxRetrieve = function(divName, url) {
     }
   );
 }
+
+function annualReturnsAllTooltip(me) {
+  // console.log(me);
+  var rc = tooltipHeader(getMonthYearName(me.x+1000000000));
+  rc = '';
+  var points = me.points;
+  for (var i = 0; i < points.length; i++) {
+    var lColor = mapServerFundClassName(points[i].series.colorIndex);
+    var name = points[i].series.name.split("$");
+    var lName = mapServerFundName(name[0],0);
+    rc += tooltipLegendRow(lColor, lColor, lName, '', points[i].y.toFixed(2)+'%');
+  }
+  rc = tooltipRowGroup(rc);
+  rc = tooltipHeader(getMonthYearName(me.x+1000000000))+rc;
+  rc = tooltipDiv('growth-100-tooltip', rc);
+  // console.log(rc);
+  return rc;
+}
+function getSeriesID(name, chart) {
+  var chart = $('#'+chart).highcharts();
+  if (chart == null) { return; }
+  var series = chart.series;
+  for (var i = 0; i < series.length; i++) {
+    if (series[i].name == name) { return i; }
+  }
+  return -1;
+}
+
+function legendItemClicked(name, idx) {
+  var chart = $('#annualReturnsAll').highcharts();
+  console.log(chart);
+  if (chart == null) { return; }
+  var series = chart.series;
+  if (series[idx].visible) {
+    series[idx].hide();
+    $('.ar-col'+idx).hide();
+  } else {
+    series[idx].show();
+    $('.ar-col'+idx).show();
+  }
+  console.log('name ' + name);
+}
+function getAnnualReturnsAll() {
+
+  Highcharts.chart('annualReturnsAll', {
+    credits: { enabled: false },
+    chart: {
+      type: 'line',
+      styledMode: true
+    },
+    title: {
+      align: 'left',
+      text: 'Annual Returns'
+    },
+    legend: { align: 'right', verticalAlign: 'top', layout: 'vertical', x: 0, y: 100 },
+    data: {
+      beforeParse: function (csv) {
+        buildAnnualReturnsAllTable(csv);
+        return csv;
+      },
+      csvURL: 'https://www.tsp.gov/components/CORS/getAnnualReturns.html?Lfunds=1&IndexFunds=1&InvFunds=1'
+    },
+    plotOptions: {
+      series: { events: {
+        legendItemClick: function(e) {
+          var name = e.target.name;
+          var i = e.target.index;
+          legendItemClicked(name, i);
+          return false;
+        }
+      }}
+    },
+    // series: [{ colorIndex: colorIndexFund }, { colorIndex: colorIndexValues }, { colorIndex: colorIndexInfl }, { colorIndex: colorIndexValues }],
+    // series: [{ colorIndex: colorIndexFund }, { colorIndex: colorIndexInfl }],
+    series: [{ colorIndex: 'lf' }, { colorIndex: 'lf' }, { colorIndex: 'lf' }, { colorIndex: 'lf' }, { colorIndex: 'lf' },
+      { colorIndex: 'g' },
+      { colorIndex: 'f' }, { colorIndex: 'if' },
+      { colorIndex: 'c' }, { colorIndex: 'ic' },
+      { colorIndex: 's' }, { colorIndex: 'is' },
+      { colorIndex: 'i' }, { colorIndex: 'ii' }
+    ],
+    yAxis: {
+      labels: {
+        formatter: function() {
+          return this.value + '%';
+        }
+      },
+      title: { text: '' }
+    },
+    tooltip: {
+      formatter: function () {
+        return annualReturnsAllTooltip(this);
+      },
+      shared: true,
+      useHTML: true
+    }
+  });
+}
+function buildAnnualReturnsAllTable(arr) {
+  var headName = { YTD: 'YTD', '1-yr': '1&nbsp;Yrs', '3-yr': '3&nbsp;Yrs', '5-yr': '5&nbsp;Yrs', '10-yr': '10&nbsp;Yrs', Lifetime: 'Lifetime'};
+  var i, j;
+  var table = "<table>\n";
+  var lines = arr.split("\n");
+  table += "  <thead>\n";
+  table += "    <tr>\n";
+  var col = lines[0].trim().split(',');
+  for (i = 0; i < col.length; i++) {
+    var border = 'border-'+col[i].trim().substring(0,1).toLowerCase()+'-fund';
+    table += '      <th scope="col" class="'+border+' ar-col'+(i-1)+'">'+col[i].trim()+'</th>';
+  }
+  table += "    </tr>\n";
+  table += "  </thead>\n";
+  table += "  <tbody>\n";
+  for (j=1; j < lines.length; j++) {
+    if (lines[j].trim() == '') { continue; }
+    col = lines[j].split(',');
+    table += '<tr>';
+    table += '      <th>'+col[0].trim()+'</th>';
+    for (i = 1; i < col.length; i++) {
+      table += '      <td class="ar-col'+(i-1)+'">'+col[i].trim()+'%</td>';
+    }
+    table += '</tr>';
+  }
+  table += "  </tbody>\n";
+  table += "</table>\n";
+
+  $('#annualReturnsAllTable').html(table);
+}

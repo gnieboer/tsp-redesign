@@ -1,8 +1,9 @@
 ---
 title: Rates of returns
 layout: page
-permalink: /fund-performance/rates-of-returns/
+permalink: /fund-performance/rates-of-returns-dav/
 styles:
+sidenav: fund-options
 scripts:
   - /assets/js/jquery.min.js
   - /assets/js/jquery.numeric.js
