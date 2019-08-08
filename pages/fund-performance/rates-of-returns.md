@@ -25,14 +25,11 @@ document-ready:
     <!-- This button should toggleClass .usa-grid-full from div#data-table -->
   <div id="dynamic-share-price-table" class="table-side-scroll">
   </div>
+
+  <div id="annualReturnsAll" class="hc-annual-returns-all"></div>
+  <div id="annualReturnsAllTable" class="table-side-scroll"></div>
+
   </section>
 
 </div> <!-- END div.usa-width-one-whole -->
 </div> <!-- END div.usa-grid-full -->
-
-<div class="usa-grid-full usa-layout-docs-main_content">
-  <div class="usa-width-one-whole">
-    <div id="annualReturnsAll" class="hc-annual-returns-all"></div>
-    <div id="annualReturnsAllTable" class="table-side-scroll"></div>
-  </div>
-</div>

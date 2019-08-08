@@ -452,7 +452,10 @@ var doAjaxRetrieve = function(divName, url) {
   serverCall.fail(
     function (jqXHR, textStatus, errorThrown) {
         var errMsg = textStatus + ': ' + errorThrown;
-        $('#'+divName).html('Internet connection failed.  Try again later.');
+        var userMsg = "<p>Hmmm, something isn’t working. Please try again in a few minutes."
+          + " If the problem persists you can call the ThriftLine for assistance at "
+          + "<span class='nobr'>1-877-968-3778</span>.</p>";
+        $('#'+divName).html(userMsg);
     }
   );
 }
