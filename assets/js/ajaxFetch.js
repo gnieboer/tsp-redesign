@@ -487,9 +487,13 @@ function getSeriesID(name, chart) {
   return -1;
 }
 
-function legendItemClicked(name, idx) {
-  var chart = $('#annualReturnsAll').highcharts();
-  console.log(chart);
+function chartResize(chartName) {
+  setInterval(function() { $('#'+chartName).highcharts().reflow(); }, 50);
+  return false;
+}
+
+function legendItemClicked(chartName, idx) {
+  var chart = $('#'+chartName).highcharts();
   if (chart == null) { return; }
   var series = chart.series;
   if (series[idx].visible) {
@@ -499,21 +503,19 @@ function legendItemClicked(name, idx) {
     series[idx].show();
     $('.ar-col'+idx).show();
   }
-  console.log('name ' + name);
 }
-function getAnnualReturnsAll() {
-
-  Highcharts.chart('annualReturnsAll', {
+function getAnnualReturnsAll(chartName) {
+  Highcharts.chart(chartName, {
     credits: { enabled: false },
     chart: {
       type: 'line',
-      styledMode: true
+      styledMode: true,
+      // events: { load: function(e) { setInterval(function() { $('#annualReturnsAll').highcharts().reflow(); }, 500); } }
     },
     title: {
       align: 'left',
       text: 'Annual Returns'
     },
-    legend: { align: 'right', verticalAlign: 'top', layout: 'vertical', x: 0, y: 100 },
     data: {
       beforeParse: function (csv) {
         buildAnnualReturnsAllTable(csv);
@@ -524,12 +526,21 @@ function getAnnualReturnsAll() {
     plotOptions: {
       series: { events: {
         legendItemClick: function(e) {
-          var name = e.target.name;
           var i = e.target.index;
-          legendItemClicked(name, i);
+          legendItemClicked(chartName, i);
           return false;
         }
       }}
+    },
+    responsive: {
+      rules: [{
+        condition: {
+          minWidth: 500
+        },
+        chartOptions: {
+          legend: { align: 'right', verticalAlign: 'top', layout: 'vertical', x: 0, y: 100 },
+        }
+      }]
     },
     // series: [{ colorIndex: colorIndexFund }, { colorIndex: colorIndexValues }, { colorIndex: colorIndexInfl }, { colorIndex: colorIndexValues }],
     // series: [{ colorIndex: colorIndexFund }, { colorIndex: colorIndexInfl }],
@@ -572,7 +583,7 @@ function buildAnnualReturnsAllTable(arr) {
   table += "    </tr>\n";
   table += "  </thead>\n";
   table += "  <tbody>\n";
-  for (j=1; j < lines.length; j++) {
+  for (j=lines.length-1; j > 0; j--) {
     if (lines[j].trim() == '') { continue; }
     col = lines[j].split(',');
     table += '<tr>';
