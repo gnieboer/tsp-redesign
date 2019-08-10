@@ -29,15 +29,16 @@ To understand how the TSP calculates rates of return for any given period of tim
 </fieldset>
 </form>
 
-<div id="data-table" class="usa-grid-full usa-layout-docs-main_content">
+{% assign chartName = 'dynamic-share-price' %}
+<div id="{{chartName}}-div" class="usa-grid-full usa-layout-docs-main_content">
 <div class="usa-width-one-whole" markdown="1">
   <section class="share-price-table">
-  <div class="table-view">
-  <button class="usa-button-secondary" onClick="alert('This button should toggleClass .usa-grid-full from div#data-table. Toggle button text to read Collapse table and change icon to <i class=far fa-compress-wide></i>');">
-    Expand table <i class="fal fa-expand-wide"></i></button></div>
-    <!-- This button should toggleClass .usa-grid-full from div#data-table -->
-  <div id="dynamic-share-price-table" class="table-side-scroll">
-  </div>
+    <div class="table-view">
+      <button id="{{chartName}}-button" class="usa-button-secondary"
+        onClick="toggleTable('{{chartName}}');">
+        Expand table <i class="fal fa-expand-wide"></i></button>
+    </div>
+    <div id="{{chartName}}-table" class="table-side-scroll"></div>
   </section>
 
 </div> <!-- END div.usa-width-one-whole -->

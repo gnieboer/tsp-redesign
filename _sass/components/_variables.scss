@@ -49,14 +49,6 @@ $color-s-fund: #00a3dd;
 $color-i-fund: #5b027a;
 $color-l-fund: #ffc600;
 
-// Fund performance table header <th> flair
-$border-g: 3px solid $color-g-fund;
-$border-f: 3px solid $color-f-fund;
-$border-c: 3px solid $color-c-fund;
-$border-s: 3px solid $color-s-fund;
-$border-i: 3px solid $color-i-fund;
-$border-l: 3px solid $color-l-fund;
-
 // inflation = $color-gray
 
 // Fund index colors
@@ -66,6 +58,19 @@ $color-index-c: lighten($color-c-fund, 40%); // S&P 500
 $color-index-s: lighten($color-s-fund, 40%); // Dow Jones
 $color-index-i: lighten($color-i-fund, 40%); // MSCI EAFE
 $color-index-l: lighten($color-l-fund, 40%); // L-income for "Avg Returns"
+
+// Fund performance table header <th> flair
+$border-g: 3px solid $color-g-fund;
+$border-index-g: 3px solid $color-index-g;
+$border-f: 3px solid $color-f-fund;
+$border-index-f: 3px solid $color-index-f;
+$border-c: 3px solid $color-c-fund;
+$border-index-c: 3px solid $color-index-c;
+$border-s: 3px solid $color-s-fund;
+$border-index-s: 3px solid $color-index-s;
+$border-i: 3px solid $color-i-fund;
+$border-index-i: 3px solid $color-index-i;
+$border-l: 3px solid $color-l-fund;
 
 $small-screen:  481px;
 $medium-screen: 600px;

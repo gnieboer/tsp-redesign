@@ -25,7 +25,7 @@ function getSharePrices() {
   var funds = ['Lfunds', 'InvFunds'];
   var url = sharePriceDownloadString(startdate, enddate, funds);
   url += '&download=0';
-  console.log(url);
+  // console.log(url);
   doAjaxRetrieve('dynamic-share-price-table', url);
   return false;
 }
