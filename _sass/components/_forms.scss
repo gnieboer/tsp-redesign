@@ -57,16 +57,23 @@ h2.results {
   background-color: red;
 }
 .form-civilian {
-  background-color: #ffffcc;
+  background-color: none;
 }
 .form-uniformed {
-  background-color: #ccffff;
+  background-color: none;
+  i {
+    position: absolute;
+    color: $color-gray-dark;
+    font-size: 2.5rem;
+    top: 5px;
+    right: 5px;
+  }
 }
 .form-both {
-  background-color: #ccffcc;
+  background-color: none;
 }
 .form-bpa {
-  background-color: #ffccff;
+  background-color: none;
 }
 
 .see-more {
@@ -105,17 +112,10 @@ h2.results {
 
 section#search-forms {
   // width: 40%;
-  @media screen and (min-width: 481px) {
-    .usa-search [type=submit], .usa-search .usa-search-submit {
-    background-image: none;
-    background-image: url(/assets/uswds/img/search.png);
-    background-image: url(/assets/uswds/img/search.svg);
-    width: 6.6rem;
-    }
-  }
   padding-bottom: 5rem;
   margin-bottom: 0;
 }
+
 
 section#returned-forms, section#popular-forms {
   border-top: 1px solid #e3e3e3;
@@ -125,6 +125,7 @@ section#returned-forms, section#popular-forms {
   .item-frame {
     border: 1px solid #ebebeb;
     margin-right: 9rem;
+    position: relative;
     .top {
       padding: 2.4rem 5.6rem 2.4rem 1.4rem;
       min-height: 17rem;
@@ -139,6 +140,10 @@ section#returned-forms, section#popular-forms {
     font-size: 3.2rem;
     font-weight: $medium;
     line-height: 4rem;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
     // max-width:30rem;
     // word-wrap:break-word;
   }
@@ -157,6 +162,7 @@ section#returned-forms, section#popular-forms {
     padding: 2.3rem 1.4rem 3.4rem 1.4rem;
     color: white;
     min-height: 25rem;
+    transition: 0.6s;
     p {
       font-weight: 400;
       font-size: 2.2rem;
@@ -168,6 +174,9 @@ section#returned-forms, section#popular-forms {
         line-height: 3.6rem;
         margin-bottom: 1rem;
       }
+    }
+    &:hover {
+      background-color: $color-primary;
     }
   }
 } // end #returned-forms
@@ -192,12 +201,14 @@ section#returned-resources, section#popular-resources {
     margin-left: 2rem;
     .top {
       padding: 2rem 4rem;
-      background-color: $color-aqua;
+      background-color: $color-primary;
       color: #fff;
       display: inherit;
       justify-content: center;
       align-items: center;
       font-size: 6rem;
+      max-width: 12rem;
+      min-height: 12rem;
       i {
         color: #fff;
       }
@@ -214,5 +225,43 @@ section#returned-resources, section#popular-resources {
     padding-left: 1.2rem;
     // max-width:30rem;
     // word-wrap:break-word;
+    p {
+      display: -webkit-box;
+      -webkit-line-clamp: 3;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+    }
   }
 } // end #returned-resources
+
+
+
+
+@media screen and (max-width: $medium-screen) {
+    section#returned-forms, section#popular-forms {
+      div.usa-grid-full + div.usa-grid-full {
+        margin-top: 3rem;
+      }
+      .item-frame {
+        margin: 6% 0;
+      }
+    } // end #returned-forms, #popular-forms
+} // end media $medium-screen
+
+@media screen and (min-width: $small-screen) {
+  section#search-forms {
+    .usa-search [type=submit], .usa-search .usa-search-submit {
+      background-image: none;
+      background-image: url(/assets/uswds/img/search.png);
+      background-image: url(/assets/uswds/img/search.svg);
+      width: 6.6rem;
+      }
+    } // end #search-forms
+    section#returned-forms, section#popular-forms {
+      div.usa-grid-full + div.usa-grid-full {
+      }
+      .item-frame {
+        margin: 6% 6%;
+      }
+    } // end #returned-forms, #popular-forms
+} // end media $small-screen

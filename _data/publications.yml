@@ -1,4 +1,4 @@
-- publication_url: oc91-13.pdf
+- publication_url: tspfs07.pdf
   publication_name: Annual Limit on Elective Deferrals
   publication_info: Explains the annual IRS elective deferral limit. It also explains the effect of contributing to more than one plan if the IRS limit is exceeded.
   publication_date: 11/2014
@@ -43,10 +43,10 @@
   - Fact Sheet
   publication_topics:
   - Legal Documents
-- publication_url: oc95-10-a.pdf
-  publication_name: Bankruptcy Information Petitions filed before October 17, 2005
-  publication_info: Explains how a bankruptcy petition filed before October 17, 2005, affects a Thrift Savings Plan (TSP) account, loan, or in-service withdrawal.
-  publication_date: 5/2012
+- publication_url: tspfs9.pdf
+  publication_name: Bankruptcy Information
+  publication_info: Explains how a bankruptcy will affect a Thrift Savings Plan (TSP) account, loan, or in-service withdrawal.
+  publication_date: Local reproduction
   publication_pages: 2 pages
   publication_type:
   - Fact Sheet
@@ -54,17 +54,6 @@
   - Legal Documents
   - Loans
   - Withdrawals
-- publication_url: oc95-10-b.pdf
-  publication_name: "Bankruptcy Information: Petitions filed on or after October 17, 2005"
-  publication_info: Explains how a bankruptcy petition filed on or after October 17, 2005, will affect a Thrift Savings Plan (TSP) account, loan, or in-service withdrawal.
-  publication_date: 8/2014
-  publication_pages: 2 pages
-  publication_type:
-  - Fact Sheet
-  publication_topics:
-  - Legal Documents
-  - Withdrawals
-  - Loans
 - publication_url: tspbk33.pdf
   publication_name: "Your TSP Account: A Guide for Beneficiary Participants"
   publication_info: Comprehensive booklet explaining the TSP benefits and features that are specific to beneficiary participants.
@@ -237,6 +226,8 @@
   - Fact Sheet
   publication_topics:
   - Legal Documents
+  - Taxes
+  - Tax Information
 - publication_url: tsplf35.pdf
   publication_name: Investments All Over the Map?
   publication_info: Explains the benefits of transferring eligible money into the TSP.
@@ -338,8 +329,9 @@
   publication_type:
   - Tax Notice
   publication_topics:
-  - Withdrawals
   - Beneficiary Participants
+  - Tax Information
+  - Withdrawals
 - publication_url: tsp-775.pdf
   publication_name: Required Minimum Distributions
   publication_info: Explains in detail the TSP’s withdrawal deadline and the Internal Revenue Code (IRC) required minimum distribution rules for participants who are age 70½ or older and separated from service.
@@ -348,6 +340,7 @@
   publication_type:
   - Tax Notice
   publication_topics:
+  - Tax Information
   - Withdrawals
 - publication_url: tsplf01.pdf
   publication_name: Right Track
@@ -429,6 +422,7 @@
   publication_type:
   - Tax Notice
   publication_topics:
+  - Tax Information
   - Withdrawals
 - publication_url: tsp-536.pdf
   publication_name: "Tax Information: Payments From Your TSP Account"
@@ -439,6 +433,7 @@
   - Tax Notice
   publication_topics:
   - Loans
+  - Tax Information
   - Transfers and Rollovers
   - Withdrawals
 - publication_url: tsp-582.pdf
