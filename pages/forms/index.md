@@ -50,9 +50,6 @@ permalink: /forms/
 {% if mod == 0 %}
 </div>
 {% if cnt == startAccordion %}
-<div id="more-forms-0" class="see-more" onClick="showMoreForms('forms', 0);">
-  <span>see more forms</span>
-</div>
 <div id="more-forms-content-0" class="hide">
 {% endif %}
 <div class="usa-grid-full">  
@@ -62,6 +59,9 @@ permalink: /forms/
 {% if cnt >= startAccordion %}
 </div>
 {% endif %}
+<div id="more-forms-0" class="see-more" onClick="showMoreForms('forms', 0);">
+  <span>see more forms</span>
+</div>
 </div>
 
 {% for topic in site.data.forms_topics %}
@@ -104,9 +104,6 @@ permalink: /forms/
 {% if mod == 0 %}
 </div>
 {% if cnt == startAccordion %}
-<div id="more-forms-{{ topicID }}" class="see-more" onClick="showMoreForms('forms', {{ topicID }});">
-  <span>see more forms</span>
-</div>
 <div id="more-forms-content-{{ topicID }}" class="hide">
 {% endif %}
 <div class="usa-grid-full">  
@@ -116,6 +113,11 @@ permalink: /forms/
 {% endfor %}
 </div>
 {% if cnt >= startAccordion %}
+</div>
+{% endif %}
+{% if formCnt > showTotal %}
+<div id="more-forms-{{ topicID }}" class="see-more" onClick="showMoreForms('forms', {{ topicID }});">
+  <span>see more forms</span>
 </div>
 {% endif %}
 </div>
@@ -137,9 +139,7 @@ permalink: /forms/
 {% if mod == 0 %}
 </div>
 {% if cnt == startAccordion %}
-<div id="more-resources-0" class="see-more" onClick="showMoreForms('resources', 0);">
-  <span>see more resources</span>
-</div>
+<br>
 <div id="more-resources-content-0" class="hide">
 {% endif %}
 <div class="usa-grid-full">  
@@ -149,6 +149,9 @@ permalink: /forms/
 {% if cnt >= startAccordion %}
 </div>
 {% endif %}
+<div id="more-resources-0" class="see-more" onClick="showMoreForms('resources', 0);">
+  <span>see more resources</span>
+</div>
 </div>
 
 {% for topic in site.data.forms_topics %}
@@ -180,10 +183,8 @@ permalink: /forms/
 {% if mod == 0 %}
 </div>
 {% if cnt == startAccordion %}
-<div id="more-resources-{{ topicID }}" class="see-more" onClick="showMoreForms('resources', {{ topicID }});">
-  <span>see more resources</span>
-</div>
-<div id="more-resources-content-{{ topicID }}" class="hide">
+<br>
+<div id="more-resources-content-{{ topicID }}" class="select-resources-div hide">
 {% endif %}
 <div class="usa-grid-full">  
 {% endif %}
@@ -192,6 +193,11 @@ permalink: /forms/
 {% endfor %}
 </div>
 {% if cnt >= startAccordion %}
+</div>
+{% endif %}
+{% if resCnt > showTotal %}
+<div id="more-resources-{{ topicID }}" class="see-more" onClick="showMoreForms('resources', {{ topicID }});">
+  <span>see more resources</span>
 </div>
 {% endif %}
 </div>
