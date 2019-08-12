@@ -14,6 +14,9 @@
   margin: 0 auto;
   overflow: auto;
 
+  .empty-table-cells {
+    background-color: $color-gray-lightest;
+  }
   table {
   width: 100%;
   min-width: 1280px;

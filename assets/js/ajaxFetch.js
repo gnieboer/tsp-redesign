@@ -469,7 +469,8 @@ function annualReturnsAllTooltip(me) {
     var lColor = mapServerFundClassName(points[i].series.colorIndex);
     var name = points[i].series.name.split("$");
     var lName = name[0]; mapServerFundName(name[0],0);
-    rc += tooltipLegendRow(lColor, lColor+' outline', lName, '', points[i].y.toFixed(2)+'%');
+    // rc += tooltipLegendRow(lColor, lColor+' outline', lName, '', points[i].y.toFixed(2)+'%');
+    rc += tooltipLegendRow(lColor, '', lName, '', points[i].y.toFixed(2)+'%');
   }
   rc = tooltipRowGroup(rc);
   rc = tooltipHeader(getMonthYearName(me.x+1000000000))+rc;
@@ -529,22 +530,23 @@ function chartResize(chartName) {
 }
 
 function legendItemClickedPairs(chartName, idx) {
-console.log('licp: '+chartName+', '+idx);
   var chart = $('#'+chartName).highcharts();
   if (chart == null) { return; }
   var series = chart.series;
+  // individual fund clicks buddy
   var name = series[idx].name;
   if ((name == 'F Fund') || (name == 'C Fund') || (name == 'S Fund') || (name == 'I Fund')) {
     // I clicked on an individual fund with an index
+    if ((series[idx].visible) && (series[idx+1].visible)) { legendItemClicked(chartName, idx+1); }
     legendItemClicked(chartName, idx);
-    legendItemClicked(chartName, idx+1);
     return false;
   }
+  // index fund clicks buddy
   if (idx > 0) {
     var name = series[idx-1].name;
     if ((name == 'F Fund') || (name == 'C Fund') || (name == 'S Fund') || (name == 'I Fund')) {
       // I clicked on an index fund
-      legendItemClicked(chartName, idx-1);
+      if ((!series[idx].visible) && (!series[idx-1].visible)) { legendItemClicked(chartName, idx-1); }
       legendItemClicked(chartName, idx);
       return false;
     }
@@ -675,7 +677,11 @@ function buildAnnualReturnsAllTable(arr) {
     table += '<tr>';
     table += '      <th>'+col[0].trim()+'</th>';
     for (i = 1; i < col.length; i++) {
-      table += '      <td class="ar-col'+(i-1)+'">'+col[i].trim()+'%</td>';
+      if (col[i].trim() == '') {
+        table += '      <td class="empty-table-cells ar-col'+(i-1)+'"></td>';
+      }else {
+        table += '      <td class="ar-col'+(i-1)+'">'+col[i].trim()+'%</td>';
+      }
     }
     table += '</tr>';
   }
@@ -695,5 +701,6 @@ function toggleTable(table) {
     $('#'+table+'-div').addClass('usa-grid-full');
     document.getElementById(table+'-button').innerHTML = "Expand table <i class='fal fa-expand-wide'></i>";
   }
+  // window.redraw();
   return false;
 }
