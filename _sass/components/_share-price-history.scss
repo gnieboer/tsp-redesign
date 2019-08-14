@@ -11,6 +11,15 @@ section.share-price-table {
       padding: 0;
       margin: 0;
       text-align: right;
+      max-width: 100%;
+    }
+    &.full-width {
+      width: 100vw;
+      position: absolute;
+      left: 50%;
+      right: 50%;
+      margin-left: -50vw;
+      margin-right: -50vw;
     }
 } // end .share-price-table
 

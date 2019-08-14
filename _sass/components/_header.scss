@@ -59,6 +59,15 @@
     }
   }
 
+  .usa-nav-secondary .usa-search {
+    margin-top: 0;
+  }
+  input[type=search] {
+    transition: width 0.4s ease-in-out;
+}
+  input[type=text]:focus {
+    width: 100%;
+  }
   // .usa-nav-secondary-links > li:last-child > a {
   //   border-radius: $border-radius;
   //   color: $color-white;
@@ -78,4 +87,4 @@
   //   }
   // }
 
-}
+} // end @media $large-screen

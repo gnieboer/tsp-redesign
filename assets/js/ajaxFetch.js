@@ -693,13 +693,25 @@ function buildAnnualReturnsAllTable(arr) {
 }
 
 // funtion to toggle big table views
+// function toggleTable(table) {
+//   if ($('#'+table+'-div').hasClass('usa-grid-full')) {
+//     $('#'+table+'-div').removeClass('usa-grid-full');
+//     document.getElementById(table+'-button').innerHTML = "Collapse table <i class='fal fa-compress-wide'></i>";
+//   } else {
+//     $('#'+table+'-div').addClass('usa-grid-full');
+//     document.getElementById(table+'-button').innerHTML = "Expand table <i class='fal fa-expand-wide'></i>";
+//   }
+//   // window.redraw();
+//   return false;
+// }
+
 function toggleTable(table) {
-  if ($('#'+table+'-div').hasClass('usa-grid-full')) {
-    $('#'+table+'-div').removeClass('usa-grid-full');
-    document.getElementById(table+'-button').innerHTML = "Collapse table <i class='fal fa-compress-wide'></i>";
-  } else {
-    $('#'+table+'-div').addClass('usa-grid-full');
+  if ($("section").hasClass('full-width')) {
+    $("section").removeClass('full-width');
     document.getElementById(table+'-button').innerHTML = "Expand table <i class='fal fa-expand-wide'></i>";
+  } else {
+    $("section").addClass('full-width');
+    document.getElementById(table+'-button').innerHTML = "Collapse table <i class='fal fa-compress-wide'></i>";
   }
   // window.redraw();
   return false;
