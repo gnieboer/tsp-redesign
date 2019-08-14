@@ -600,6 +600,7 @@ function getAnnualReturnsAll(chartName) {
         legendItemClick: function(e) {
           var i = e.target.index;
           legendItemClickedPairs(chartName, i);
+          // this.xAxis.setExtremes();
           return false;
         }
       }}
@@ -691,19 +692,6 @@ function buildAnnualReturnsAllTable(arr) {
   $('#annualReturnsAll-table').html(table);
   return lines.join("\n");
 }
-
-// funtion to toggle big table views
-// function toggleTable(table) {
-//   if ($('#'+table+'-div').hasClass('usa-grid-full')) {
-//     $('#'+table+'-div').removeClass('usa-grid-full');
-//     document.getElementById(table+'-button').innerHTML = "Collapse table <i class='fal fa-compress-wide'></i>";
-//   } else {
-//     $('#'+table+'-div').addClass('usa-grid-full');
-//     document.getElementById(table+'-button').innerHTML = "Expand table <i class='fal fa-expand-wide'></i>";
-//   }
-//   // window.redraw();
-//   return false;
-// }
 
 function toggleTable(chartName) {
   if ($('#'+chartName+'-section').hasClass('full-width')) {
