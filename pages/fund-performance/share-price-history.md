@@ -32,7 +32,7 @@ To understand how the TSP calculates rates of return for any given period of tim
 {% assign chartName = 'dynamic-share-price' %}
 <div id="{{chartName}}-div" class="usa-grid-full usa-layout-docs-main_content">
 <div class="usa-width-one-whole" markdown="1">
-  <section class="share-price-table">
+  <section id="{{chartName}}-section" class="share-price-table">
     <div class="table-view">
       <button id="{{chartName}}-button" class="usa-button-secondary"
         onClick="toggleTable('{{chartName}}');">

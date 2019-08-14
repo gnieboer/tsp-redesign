@@ -57,7 +57,7 @@ document-ready:
 
 <div id="{{chartName}}-div" class="usa-grid-full usa-layout-docs-main_content">
 <div class="usa-width-one-whole" markdown="1">
-  <section class="rates-of-returns">
+  <section id="{{chartName}}-section" class="rates-of-returns">
     <div id="{{ chartName }}" class="hc-annual-returns-all"></div>
     <div class="table-view">
       <button id="{{chartName}}-button" class="usa-button-secondary"

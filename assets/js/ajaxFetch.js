@@ -705,13 +705,13 @@ function buildAnnualReturnsAllTable(arr) {
 //   return false;
 // }
 
-function toggleTable(table) {
-  if ($("section").hasClass('full-width')) {
-    $("section").removeClass('full-width');
-    document.getElementById(table+'-button').innerHTML = "Expand table <i class='fal fa-expand-wide'></i>";
+function toggleTable(chartName) {
+  if ($('#'+chartName+'-section').hasClass('full-width')) {
+    $('#'+chartName+'-section').removeClass('full-width');
+    document.getElementById(chartName+'-button').innerHTML = "Expand table <i class='fal fa-expand-wide'></i>";
   } else {
-    $("section").addClass('full-width');
-    document.getElementById(table+'-button').innerHTML = "Collapse table <i class='fal fa-compress-wide'></i>";
+    $('#'+chartName+'-section').addClass('full-width');
+    document.getElementById(chartName+'-button').innerHTML = "Collapse table <i class='fal fa-compress-wide'></i>";
   }
   // window.redraw();
   return false;
