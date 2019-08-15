@@ -657,7 +657,7 @@ function borderClass(fund) {
 function buildAnnualReturnsAllTable(arr) {
   var headName = { YTD: 'YTD', '1-yr': '1&nbsp;Yrs', '3-yr': '3&nbsp;Yrs', '5-yr': '5&nbsp;Yrs', '10-yr': '10&nbsp;Yrs', Lifetime: 'Lifetime'};
   var i, j;
-  var table = "<table>\n<span>hello</sapan>";
+  var table = "<table>\n";
   var lines = arr.split("\n");
   table += "  <thead>\n";
   table += "    <tr>\n";
