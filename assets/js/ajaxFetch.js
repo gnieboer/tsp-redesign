@@ -657,7 +657,7 @@ function borderClass(fund) {
 function buildAnnualReturnsAllTable(arr) {
   var headName = { YTD: 'YTD', '1-yr': '1&nbsp;Yrs', '3-yr': '3&nbsp;Yrs', '5-yr': '5&nbsp;Yrs', '10-yr': '10&nbsp;Yrs', Lifetime: 'Lifetime'};
   var i, j;
-  var table = "<table>\n";
+  var table = "<table>\n<span>hello</sapan>";
   var lines = arr.split("\n");
   table += "  <thead>\n";
   table += "    <tr>\n";
@@ -678,7 +678,7 @@ function buildAnnualReturnsAllTable(arr) {
     table += '      <th>'+col[0].trim()+'</th>';
     for (i = 1; i < col.length; i++) {
       if (col[i].trim() == '') {
-        table += '      <td class="empty-table-cells ar-col'+(i-1)+'"></td>';
+        table += '      <td class="empty-table-cell ar-col'+(i-1)+'"></td>';
       }else {
         table += '      <td class="ar-col'+(i-1)+'">'+col[i].trim()+'%</td>';
       }
