@@ -679,7 +679,7 @@ function buildAnnualReturnsAllTable(arr) {
     table += '      <th>'+col[0].trim()+'</th>';
     for (i = 1; i < col.length; i++) {
       if (col[i].trim() == '') {
-        table += '      <td class="empty-table-cells ar-col'+(i-1)+'"></td>';
+        table += '      <td class="empty-table-cell ar-col'+(i-1)+'"></td>';
       }else {
         table += '      <td class="ar-col'+(i-1)+'">'+col[i].trim()+'%</td>';
       }
