@@ -5,6 +5,16 @@
     }
   }
 }
+
+// EXPAND/COLLAPSE TABLE button
+@media only screen and (max-width: #{$large-screen}) {
+  .table-view {
+    margin-top: 3rem;
+    button {
+      display: none;
+    }
+  }
+}
 // FULL WIDTH TABLES (applied to parent container)
 .full-width {
   width: 100vw;
