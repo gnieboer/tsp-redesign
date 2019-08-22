@@ -50,6 +50,11 @@ function mapFundName (fund) {
   return fund.toLowerCase() + '-fund';
 }
 
+function getMonthName (val) {
+  var monthNames = ["January", "February", "March", "April", "May","June","July", "August", "September", "October", "November","December"];
+  return monthNames[val % 12];
+}
+
 function getMonthYearName (val) {
   var monthNames = ["January", "February", "March", "April", "May","June","July", "August", "September", "October", "November","December"];
   var theDate = new Date(val);
@@ -460,8 +465,7 @@ var doAjaxRetrieve = function(divName, url) {
   );
 }
 
-function annualReturnsAllTooltip(me) {
-  // console.log(me);
+function returnsAllTooltip(me) {
   var rc = tooltipHeader(getMonthYearName(me.x+1000000000));
   rc = '';
   var points = me.points;
@@ -473,6 +477,25 @@ function annualReturnsAllTooltip(me) {
     rc += tooltipLegendRow(lColor, '', lName, '', points[i].y.toFixed(2)+'%');
   }
   rc = tooltipRowGroup(rc);
+  return rc;
+}
+function annualReturnsAllTooltip(me) {
+  // console.log(me);
+  var rc = returnsAllTooltip(me);
+  // rc = tooltipHeader(getMonthYearName(me.x+1000000000))+rc;
+  var title = 'Annual Returns ';
+  if ((me.x + 1) > me.points[0].series.xAxis.max) { title = 'YTD Returns '}
+  rc = tooltipHeader(title+me.x)+rc;
+  rc = tooltipDiv('growth-100-tooltip', rc);
+  // console.log(rc);
+  return rc;
+}
+function monthlyReturnsAllTooltip(me) {
+  // console.log(me);
+  var rc = returnsAllTooltip(me);
+  // rc = tooltipHeader(getMonthYearName(me.x+1000000000))+rc;
+  var title = 'Monthly Returns ';
+  if ((me.x + 1) > me.points[0].series.xAxis.max) { title = 'YTD Returns '}
   rc = tooltipHeader(getMonthYearName(me.x+1000000000))+rc;
   rc = tooltipDiv('growth-100-tooltip', rc);
   // console.log(rc);
@@ -555,19 +578,24 @@ function legendItemClickedPairs(chartName, idx) {
   legendItemClicked(chartName, idx);
 }
 function legendItemClicked(chartName, idx) {
+  chartName = chartName.replace('-monthly', '');
 console.log('lic: '+chartName+', '+idx);
   if (idx < 0) { return; }
   var chart = $('#'+chartName).highcharts();
+  var chart2 = $('#'+chartName+'-monthly').highcharts();
   if (chart == null) { return; }
   var series = chart.series;
+  var series2 = chart2.series;
   if (series[idx].visible) {
     series[idx].hide();
+    series2[idx].hide();
     $('.ar-col'+idx).hide();
     if (series[idx].name.includes('&') != true) {
       $('#'+(series[idx].name.replace(' ', '___'))).prop('checked', false);
     }
   } else {
     series[idx].show();
+    series2[idx].show();
     $('.ar-col'+idx).show();
     if (series[idx].name.includes('&') != true) {
       $('#'+(series[idx].name.replace(' ', '___'))).prop('checked', true);
@@ -590,10 +618,13 @@ function getAnnualReturnsAll(chartName) {
     },
     data: {
       beforeParse: function (csv) {
-        csv = buildAnnualReturnsAllTable(csv);
-        return csv;
+        var values = buildMonthlyReturnsAllTable(csv);
+        // console.log('monthly: ', values[1]);
+        // console.log('yearly: ', values[0]);
+        getMonthlyReturnsAll(chartName+'-monthly', values[1]);
+        return values[0];
       },
-      csvURL: 'https://www.tsp.gov/components/CORS/getAnnualReturns.html?Lfunds=1&IndexFunds=1&InvFunds=1'
+      csvURL: 'https://www.tsp.gov/components/CORS/getMonthlyReturnsSummary.html?Lfunds=1&IndexFunds=1&InvFunds=1'
     },
     plotOptions: {
       series: { events: {
@@ -639,6 +670,71 @@ function getAnnualReturnsAll(chartName) {
     tooltip: {
       formatter: function () {
         return annualReturnsAllTooltip(this);
+      },
+      shared: true,
+      useHTML: true
+    }
+  });
+}
+function getMonthlyReturnsAll(chartName, monthData) {
+  // monthData = [100, 200, 300, 400];
+  console.log(monthData);
+  console.log('in getMonthlyReturnsAll');
+  Highcharts.chart(chartName, {
+    credits: { enabled: false },
+    chart: {
+      type: 'line',
+      styledMode: true,
+      // events: { load: function(e) { setInterval(function() { $('#annualReturnsAll').highcharts().reflow(); }, 500); } }
+    },
+    title: {
+      align: 'left',
+      text: 'Monthly Returns'
+    },
+    data: { csv: monthData },
+    plotOptions: {
+      series: { events: {
+        legendItemClick: function(e) {
+          var i = e.target.index;
+          legendItemClickedPairs(chartName, i);
+          // this.xAxis.setExtremes();
+          return false;
+        }
+      }}
+    },
+    responsive: {
+      rules: [{
+        condition: {
+          minWidth: 500
+        },
+        chartOptions: {
+          legend: {
+            // labelFormatter: function() { return mapServerFundName (this.name, 0); },
+            align: 'right', verticalAlign: 'top',
+            layout: 'vertical', x: 0, y: 100
+          },
+        }
+      }]
+    },
+    series: [{ colorIndex: 'lf' }, { colorIndex: 'lf' }, { colorIndex: 'lf' }, { colorIndex: 'lf' }, { colorIndex: 'lf' },
+      { colorIndex: 'g' },
+      { colorIndex: 'f' }, { colorIndex: 'if' },
+      { colorIndex: 'c' }, { colorIndex: 'ic' },
+      { colorIndex: 's' }, { colorIndex: 'is' },
+      { colorIndex: 'i' }, { colorIndex: 'ii' }
+    ],
+    // series: [{ data: monthData }],
+    yAxis: {
+      labels: {
+        formatter: function() {
+          return this.value + '%';
+        }
+      },
+      title: { text: '' }
+    },
+    tooltip: {
+      formatter: function () {
+        return monthlyReturnsAllTooltip(this);
       },
       shared: true,
       useHTML: true
@@ -693,7 +789,7 @@ function buildAnnualReturnsAllTable(arr) {
   return lines.join("\n");
 }
 
-function toggleTable(chartName) {
+function toggleTableWidth(chartName) {
   if ($('#'+chartName+'-section').hasClass('full-width')) {
     $('#'+chartName+'-section').removeClass('full-width');
     document.getElementById(chartName+'-button').innerHTML = "Expand table <i class='fal fa-expand-wide'></i>";
@@ -703,4 +799,107 @@ function toggleTable(chartName) {
   }
   // window.redraw();
   return false;
+}
+
+function toggleTableMonths(rowID) {
+  if ($('#'+rowID+'_label').hasClass('bounce')) {
+    $('#'+rowID+'_label').removeClass('bounce');
+    $('#'+rowID+'_months').addClass('hide');
+  } else {
+    $('#'+rowID+'_label').addClass('bounce');
+    $('#'+rowID+'_months').removeClass('hide');
+  }
+  // window.redraw();
+  return false;
+}
+
+function toggleChart(chartName) {
+  if ($('#'+chartName+'-cb').hasClass('bounce')) {
+    $('#'+chartName+'-cb').removeClass('bounce');
+    $('#'+chartName+'').removeClass('hide');
+  } else {
+    $('#'+chartName+'-cb').addClass('bounce');
+    $('#'+chartName+'').addClass('hide');
+  }
+  // window.redraw();
+  return false;
+}
+
+// for monthly and annual returns results
+function buildMonthlyReturnsAllTable(arr) {
+  var headName = { YTD: 'YTD', '1-yr': '1&nbsp;Yrs', '3-yr': '3&nbsp;Yrs', '5-yr': '5&nbsp;Yrs', '10-yr': '10&nbsp;Yrs', Lifetime: 'Lifetime'};
+  var i, j;
+  var table = "<table>\n";
+  var lines = arr.split("\n");
+  var yearLines = [];
+  var monthLines = [];
+  var lastLineType = 'x';
+  var tBodyClose = '';
+  var rowID = 'x';
+  var monthName = '';
+  table += "  <thead>\n";
+  table += "    <tr>\n";
+  var col = lines[0].trim().split(',');
+  // first argument indicates type of line and is not data
+  var lineType = col[0]; col.shift();
+  for (i = 0; i < col.length; i++) {
+    if (i != 0) { col[i] = mapServerFundName (col[i], 0); }
+    var border = borderClass(col[i]);
+    table += '      <th scope="col" class="'+border+' ar-col'+(i-1)+'">'+col[i].trim()+'</th>';
+  }
+  table += "    </tr>\n";
+  table += "  </thead>\n";
+  lines[0] = col.join(',');
+  yearLines.push(lines[0]);
+  monthLines.push(lines[0].replace('Year', 'Month'));
+  table += "  <tbody>\n";
+  var YTD = ' YTD';
+  for (j=lines.length-1; j > 0; j--) {
+    if (lines[j].trim() == '') { continue; }
+    col = lines[j].split(',');
+    lineType = col[0]; col.shift();
+    if (lineType == 'm') {
+      monthName = getMonthName(parseInt(col[0].substr(4, 2))-1);
+      col[0] = monthName + ' ' + parseInt(col[0].substr(0, 4));
+      // col[0] = getMonthName(parseInt(col[0].substr(4, 2))-1);
+      // col[0] = col[0].substr(0,6);
+    } else {
+      col[0] = col[0].substr(0,4);
+    }
+    lines[j] = col.join(',');
+    if (lineType == 'm') { monthLines.push(lines[j]);  col[0] = monthName; }
+      else { yearLines.push(lines[j]); }
+    if (lineType != lastLineType) {
+      // new tbody section
+      table += tBodyClose;
+      if (lineType == 'y') {
+        rowID = col[0];  // year from above
+        var myID = 'year_'+rowID;
+        table += "  <tbody class='annual-returns'>\n";
+        col[0] = "    <label id='"+myID+"_label' for='"+myID+"'>"+col[0]+YTD+"</label>\n";
+        col[0] += "    <input type='checkbox' id='"+myID+"' onClick='toggleTableMonths(\""+myID+"\")' data-toggle='toggle'>\n";
+        YTD='';
+      } else {
+        table += "  <tbody id='year_"+rowID+"_months' class='monthly-returns hide'>\n";
+      }
+      tBodyClose = "  </tbody>\n";
+      lastLineType = lineType;
+    }
+    table += '<tr>';
+    table += '      <th scope="row">'+col[0].trim()+'</th>';
+    for (i = 1; i < col.length; i++) {
+      if (col[i].trim() == '') {
+        table += '      <td class="empty-table-cell ar-col'+(i-1)+'"></td>';
+      }else {
+        table += '      <td class="ar-col'+(i-1)+'">'+col[i].trim()+'%</td>';
+      }
+    }
+    table += '</tr>';
+  }
+  table += "  </tbody>\n";
+  table += "</table>\n";
+
+  $('#annualReturnsAll-table').html(table);
+  // return lines.join("\n");
+  return [yearLines.join("\n"), monthLines.join("\n")];
 }

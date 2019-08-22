@@ -100,7 +100,7 @@ document-ready:
 <fieldset class="usa-fieldset-inputs usa-sans individual-funds">
   <legend>Individual funds</legend>
 
-  {% include components/get_sorted_fund_list funds='index' %}
+  {% include components/get_sorted_fund_list funds='Individual' %}
   <ul class="usa-unstyled-list">
   <!-- <ul class="usa-unstyled-list flex space-evenly"> -->
     {% for fund in sorted %}    

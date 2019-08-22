@@ -41,7 +41,7 @@ To understand how the TSP calculates rates of return for any given period of tim
 <fieldset class="usa-fieldset-inputs usa-sans individual-funds">
   <legend>Individual funds</legend>
 
-  {% include components/get_sorted_fund_list funds='index' %}
+  {% include components/get_sorted_fund_list funds='Individual' %}
   <ul class="usa-unstyled-list">
     {% for fund in sorted %}    
     <li>
@@ -83,7 +83,7 @@ To understand how the TSP calculates rates of return for any given period of tim
   <section id="{{chartName}}-section" class="share-price-table">
     <div class="table-view">
       <button id="{{chartName}}-button" class="usa-button-secondary"
-        onClick="toggleTable('{{chartName}}');">
+        onClick="toggleTableWidth('{{chartName}}');">
         Expand table <i class="fal fa-expand-wide"></i></button>
     </div>
     <div id="{{chartName}}-table" class="table-side-scroll"></div>

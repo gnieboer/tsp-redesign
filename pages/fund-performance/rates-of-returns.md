@@ -43,7 +43,7 @@ document-ready:
   <fieldset class="usa-fieldset-inputs usa-sans individual-funds">
     <legend>Individual funds</legend>
 
-    {% include components/get_sorted_fund_list funds='index' %}
+    {% include components/get_sorted_fund_list funds='Individual' %}
     <ul class="usa-unstyled-list">
     <!-- <ul class="usa-unstyled-list flex space-evenly"> -->
       {% for fund in sorted %}    
@@ -68,10 +68,18 @@ document-ready:
 <div id="{{chartName}}-div" class="usa-grid-full usa-layout-docs-main_content">
 <div class="usa-width-one-whole" markdown="1">
   <section id="{{chartName}}-section" class="rates-of-returns">
+
+    <label id="{{ chartName }}-label" for="{{ chartName }}-cb" class="accordion-label">Annual Returns</label>
+    <input type="checkbox" id="{{ chartName }}-cb" onClick="toggleChart('{{ chartName }}');">
     <div id="{{ chartName }}" class="hc-annual-returns-all"></div>
+
+    <label id="{{ chartName }}-monthly-label" for="{{ chartName }}-monthly-cb">Monthly Returns</label>
+    <input type="checkbox" id="{{ chartName }}-monthly-cb" onClick="toggleChart('{{ chartName }}-monthly');">
+    <div id="{{ chartName }}-monthly" class="hc-annual-returns-all">Monthly Returns</div>
+
     <div class="table-view">
       <button id="{{chartName}}-button" class="usa-button-secondary"
-        onClick="toggleTable('{{chartName}}');">
+        onClick="toggleTableWidth('{{chartName}}');">
         Expand table <i class="fal fa-expand-wide"></i></button>
     </div>
     <div id="{{chartName}}-table" class="table-side-scroll"></div>
