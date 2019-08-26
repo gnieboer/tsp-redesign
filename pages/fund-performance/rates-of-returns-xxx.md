@@ -1,7 +1,7 @@
 ---
 title: Rates of returns
 layout: page
-permalink: /fund-performance/rates-of-returns/
+permalink: /fund-performance/rates-of-returns-xxx/
 styles:
 scripts:
   - /assets/js/jquery.min.js
@@ -69,16 +69,13 @@ document-ready:
 <div class="usa-width-one-whole" markdown="1">
   <section id="{{chartName}}-section" class="rates-of-returns">
 
-    <ul class="usa-accordion">
-      <li>
-        <button class="usa-accordion-button" aria-expanded="true" aria-controls="{{ chartName }}">Annual Returns</button>
-        <div id="{{ chartName }}" class="hc-annual-returns-all" aria-hidden="true"></div>
-      </li>
-      <li>
-        <button class="usa-accordion-button" aria-expanded="true" aria-controls="{{ chartName }}-monthly">Monthly Returns</button>
-        <div id="{{ chartName }}-monthly" class="hc-annual-returns-all" aria-hidden="true"></div>
-      </li>
-    </ul>
+    <label id="{{ chartName }}-label" for="{{ chartName }}-cb" class="accordion-label">Annual Returns</label>
+    <input type="checkbox" id="{{ chartName }}-cb" onClick="toggleChart('{{ chartName }}');">
+    <div id="{{ chartName }}" class="hc-annual-returns-all"></div>
+
+    <label id="{{ chartName }}-monthly-label" for="{{ chartName }}-monthly-cb">Monthly Returns</label>
+    <input type="checkbox" id="{{ chartName }}-monthly-cb" onClick="toggleChart('{{ chartName }}-monthly');">
+    <div id="{{ chartName }}-monthly" class="hc-annual-returns-all">Monthly Returns</div>
 
     <div class="table-view">
       <button id="{{chartName}}-button" class="usa-button-secondary"
