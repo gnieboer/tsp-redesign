@@ -1,15 +1,63 @@
 // CALCULATOR PANEL
 .calculator-panel {
+  border: none;
   h4 {
-    font-family: $font-sans;
+    font-family: $sans;
+  }
+  select {
+    width: auto;
+  }
+  button {
+    &.start {
+      margin-left: 3rem;
+    }
+  }
+  .usa-grid {
+    padding: 0;
+    &.results {
+      &:nth-of-type(odd) {
+      background-color: #f1f1f1;
+      }
+    }
+    div {
+      padding: 3rem 1.8rem;
+    }
+    input, select {
+      float: right;
+      text-align: right;
+    }
   }
 }
-.calculator-panel .float-right{
-  input, select, span {
-    float: right;
-    text-align: right;
+
+// PROGRESS BAR
+.usa-content {
+  ol {
+    &:not(.usa-accordion):not(.usa-accordion-bordered) {
+      &.progstep,
+      &.progtrckr {
+      max-width: none;
+      }
+    }
   }
 }
+
+// ZEBRA STRIPING
+div.results-frame {
+  border: 1px solid #aeb0b5;
+  // border: 1px solid $variable?;
+  .usa-grid {
+    div {
+    padding: 3rem 1.8rem;
+    }
+  }
+  > div.usa-grid.results {
+    &:nth-of-type(odd) {
+    background-color: #f1f1f1;
+    // background-color: $color-silver;
+    }
+  }
+}
+
 
 // GRID
 // .usa-grid .calculator {
@@ -43,11 +91,11 @@
     border-right: .2rem dotted #aeb0b5;
   }
 }
-  // zebra striping
-
-div.deco-box > div.usa-grid.results:nth-of-type(odd) {
-    background-color: $color-silver;
-}
+//   // zebra striping
+//
+// div.deco-box > div.usa-grid.results:nth-of-type(odd) {
+//     background-color: $color-silver;
+// }
 
 // BUTTON NAV
 
