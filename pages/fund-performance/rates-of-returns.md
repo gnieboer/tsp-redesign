@@ -72,11 +72,13 @@ document-ready:
     <ul class="usa-accordion">
       <li>
         <button class="usa-accordion-button" aria-expanded="true" aria-controls="{{ chartName }}">Annual Returns</button>
-        <div id="{{ chartName }}" class="hc-annual-returns-all" aria-hidden="true"></div>
+        <div id="{{ chartName }}" class="usa-accordion-content hc-annual-returns-all" aria-hidden="false"></div>
       </li>
+    </ul>
+    <ul class="usa-accordion">
       <li>
         <button class="usa-accordion-button" aria-expanded="true" aria-controls="{{ chartName }}-monthly">Monthly Returns</button>
-        <div id="{{ chartName }}-monthly" class="hc-annual-returns-all" aria-hidden="true"></div>
+        <div id="{{ chartName }}-monthly" class="usa-accordion-content hc-annual-returns-all" aria-hidden="false"></div>
       </li>
     </ul>
 
