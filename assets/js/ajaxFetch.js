@@ -520,90 +520,8 @@ function checkAnnualReturnsGroup() {
   idv.forEach(function(id) { flag &= $('#'+id).prop('checked'); });
   $('#InvFunds').prop('checked', flag);
 }
-function toggleFund(chartName, name) {
-  if (name == 'Lfunds') {
-    // do L group
-    var val = $('#Lfunds').prop('checked');  // get its new value
-    if ($('#L___Income').prop('checked') != val) { $('#L___Income').click(); }
-    if ($('#L___2020').prop('checked') != val) { $('#L___2020').click(); }
-    if ($('#L___2030').prop('checked') != val) { $('#L___2030').click(); }
-    if ($('#L___2040').prop('checked') != val) { $('#L___2040').click(); }
-    if ($('#L___2050').prop('checked') != val) { $('#L___2050').click(); }
-    return false;
-  }
-  if (name == 'InvFunds') {
-    // do individual group
-    var val = $('#InvFunds').prop('checked');  // get its new value
-    if ($('#G___Fund').prop('checked') != val) { $('#G___Fund').click(); }
-    if ($('#F___Fund').prop('checked') != val) { $('#F___Fund').click(); }
-    if ($('#C___Fund').prop('checked') != val) { $('#C___Fund').click(); }
-    if ($('#S___Fund').prop('checked') != val) { $('#S___Fund').click(); }
-    if ($('#I___Fund').prop('checked') != val) { $('#I___Fund').click(); }
-    return false;
-  }
-  // if (name.charAt(0) == 'L') { $('#Lfunds').prop('checked', false); }
-  legendItemClickedPairs(chartName, getSeriesID(name.replace('___', ' '), chartName));
-  // turn group back on?
-  checkAnnualReturnsGroup();
-  return false;
-}
 function chartResize(chartName) {
   setInterval(function() { $('#'+chartName).highcharts().reflow(); }, 50);
-  return false;
-}
-
-function legendItemClickedPairs(chartName, idx) {
-  var chart = $('#'+chartName).highcharts();
-  if (chart == null) { return; }
-  var series = chart.series;
-  // individual fund clicks buddy
-  var name = series[idx].name;
-  if ((name == 'F Fund') || (name == 'C Fund') || (name == 'S Fund') || (name == 'I Fund')) {
-    // I clicked on an individual fund with an index
-    if ((series[idx].visible) && (series[idx+1].visible)) { legendItemClicked(chartName, idx+1); }
-    legendItemClicked(chartName, idx);
-    return false;
-  }
-  // index fund clicks buddy
-  if (idx > 0) {
-    var name = series[idx-1].name;
-    if ((name == 'F Fund') || (name == 'C Fund') || (name == 'S Fund') || (name == 'I Fund')) {
-      // I clicked on an index fund
-      if ((!series[idx].visible) && (!series[idx-1].visible)) { legendItemClicked(chartName, idx-1); }
-      legendItemClicked(chartName, idx);
-      return false;
-    }
-  }
-  // I clicked on a fund with no index
-  legendItemClicked(chartName, idx);
-}
-function legendItemClicked(chartName, idx) {
-  chartName = chartName.replace('-monthly', '');
-  // console.log('lic: '+chartName+', '+idx);
-  if (idx < 0) { return; }
-  var chart = $('#'+chartName).highcharts();
-  var chart2 = $('#'+chartName+'-monthly').highcharts();
-  if (chart == null) { return; }
-  deleteEmptyPoints(chartName, chart);
-  deleteEmptyPoints(chartName+'-monthly', chart2);
-  var series = chart.series;
-  var series2 = chart2.series;
-  if (series[idx].visible) {
-    series[idx].hide();
-    series2[idx].hide();
-    $('.col'+idx).hide();
-    if (series[idx].name.includes('&') != true) {
-      $('#'+(series[idx].name.replace(' ', '___'))).prop('checked', false);
-    }
-  } else {
-    series[idx].show();
-    series2[idx].show();
-    $('.col'+idx).show();
-    if (series[idx].name.includes('&') != true) {
-      $('#'+(series[idx].name.replace(' ', '___'))).prop('checked', true);
-    }
-  }
-  checkAnnualReturnsGroup();
   return false;
 }
 
@@ -792,8 +710,73 @@ function borderClass(fund) {
   if (fund.substring(0,4) == 'EAFE') { return 'border-index-i'; }
   return 'border-'+fund;
 }
+
+
+// for monthly and annual returns results
+function buildMonthlyReturnsAllTableNew(arr) {
+  var i, j;
+  var lines = arr.split("\n");
+  var yearLines = [];
+  var monthLines = [];
+  var lastLineType = 'x';
+
+  var header = lines[0].trim().split(',');
+
+  // first argument indicates type of line and is not data
+  var lineType = col[0]; col.shift();
+  var yearHead = lines[0];
+  var monthHead = lines[0].replace('Year', 'Month');
+
+  var YTD = ' YTD';
+  for (j=lines.length-1; j > 0; j--) {
+  // for (j=1; j < lines.length-1; j++) {
+    if (lines[j].trim() == '') { continue; }
+    col = lines[j].split(',');
+    lineType = col[0]; col.shift();
+    if (lineType == 'm') {
+    } else {
+    }
+    lines[j] = col.join(',');
+    if (lineType == 'm') { monthLines.push(lines[j]);  col[0] = monthName; }
+      else { yearLines.push(lines[j]); }
+    if (lineType != lastLineType) {
+      // new tbody section
+      table += tBodyClose;
+      if (lineType == 'y') {
+        rowID = col[0];  // year from above
+        var myID = 'year_'+rowID;
+        table += "  <tbody class='annual-returns'>\n";
+        col[0] = "    <label id='"+myID+"_label' for='"+myID+"'>"+col[0]+YTD+"</label>\n";
+        col[0] += "    <input type='checkbox' id='"+myID+"' onClick='toggleTableMonths(\""+myID+"\")' data-toggle='toggle'>\n";
+        YTD='';
+      } else {
+        table += "  <tbody id='year_"+rowID+"_months' class='monthly-returns hide'>\n";
+      }
+      tBodyClose = "  </tbody>\n";
+      lastLineType = lineType;
+    }
+    table += '<tr>';
+    table += '      <th scope="row">'+col[0].trim()+'</th>';
+    for (i = 1; i < col.length; i++) {
+      if (col[i].trim() == '') {
+        table += '      <td class="empty-table-cell col'+(i-1)+'"></td>';
+      }else {
+        table += '      <td class="col'+(i-1)+'">'+col[i].trim()+'%</td>';
+      }
+    }
+    table += '</tr>';
+  }
+  table += "  </tbody>\n";
+  table = sideScrollTable('  ', 'rates-of-returns', '', table, true);
+
+  $('#annualReturnsAll-table').html(table);
+  // return lines.join("\n");
+  yearLines.reverse(); monthLines.reverse();
+  yearLines.unshift(yearHead); monthLines.unshift(monthHead);
+  return [yearLines.join("\n"), monthLines.join("\n")];
+}
+
 function buildAnnualReturnsAllTable(arr) {
-  var headName = { YTD: 'YTD', '1-yr': '1&nbsp;Yrs', '3-yr': '3&nbsp;Yrs', '5-yr': '5&nbsp;Yrs', '10-yr': '10&nbsp;Yrs', Lifetime: 'Lifetime'};
   var i, j;
   var table = "<table>\n";
   var lines = arr.split("\n");
@@ -868,7 +851,6 @@ function toggleChart(chartName) {
 
 // for monthly and annual returns results
 function buildMonthlyReturnsAllTable(arr) {
-  var headName = { YTD: 'YTD', '1-yr': '1&nbsp;Yrs', '3-yr': '3&nbsp;Yrs', '5-yr': '5&nbsp;Yrs', '10-yr': '10&nbsp;Yrs', Lifetime: 'Lifetime'};
   var i, j;
   var table = "";
   var lines = arr.split("\n");
