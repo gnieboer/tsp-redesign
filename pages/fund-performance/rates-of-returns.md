@@ -15,16 +15,15 @@ bottom-scripts:
 document-ready:
   - getAnnualReturnsAll('annualReturnsAll');
   - chartResize('annualReturnsAll');
+  - indexFundSync('annualReturnsAll');
 ---
 {% assign chartName = 'annualReturnsAll' %}
 # Rates of returns
-
 {% include fund-checkboxes.html Lfunds=1 InvFunds=1 Index=1 chartName=chartName %}
 
 <div id="{{chartName}}-div" class="usa-grid-full usa-layout-docs-main_content">
 <div class="usa-width-one-whole" markdown="1">
-  <section id="{{chartName}}-section" class="rates-of-returns">
-
+  <section id="{{chartName}}-section" class="rates-of-return-table">
     <ul class="usa-accordion">
       <li>
         <button class="usa-accordion-button" aria-expanded="true" aria-controls="{{ chartName }}">Annual Returns</button>

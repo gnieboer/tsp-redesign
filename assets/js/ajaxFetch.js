@@ -537,12 +537,11 @@ function parseEmptyData(columns) {
   return newColumns;
 }
 var deletedAlready = {};
-function deleteEmptyPoints(chartName, me) {
-  // console.log(me);
+function deleteEmptyPoints(chartName) {
+  var chart = $('#'+chartName).highcharts();
+  // console.log(chart);
   if (chartName in deletedAlready) { return; }  // been there, done that already
-  //deletedAlready[chartName] = 1;
-  //console.log('delete called on '+chartName);
-  var series = me.series;
+  var series = chart.series;
   for (var s = 0; s < series.length; s++) {
     // console.log('series '+s+'  '+series[s].points);
     // console.log(series[s].data);
@@ -556,6 +555,7 @@ function deleteEmptyPoints(chartName, me) {
   }
   // series[x].data[y].remove(true);
 }
+
 function getAnnualReturnsAll(chartName) {
   var me = Highcharts.chart(chartName, {
     credits: { enabled: false },
@@ -712,70 +712,6 @@ function borderClass(fund) {
 }
 
 
-// for monthly and annual returns results
-function buildMonthlyReturnsAllTableNew(arr) {
-  var i, j;
-  var lines = arr.split("\n");
-  var yearLines = [];
-  var monthLines = [];
-  var lastLineType = 'x';
-
-  var header = lines[0].trim().split(',');
-
-  // first argument indicates type of line and is not data
-  var lineType = col[0]; col.shift();
-  var yearHead = lines[0];
-  var monthHead = lines[0].replace('Year', 'Month');
-
-  var YTD = ' YTD';
-  for (j=lines.length-1; j > 0; j--) {
-  // for (j=1; j < lines.length-1; j++) {
-    if (lines[j].trim() == '') { continue; }
-    col = lines[j].split(',');
-    lineType = col[0]; col.shift();
-    if (lineType == 'm') {
-    } else {
-    }
-    lines[j] = col.join(',');
-    if (lineType == 'm') { monthLines.push(lines[j]);  col[0] = monthName; }
-      else { yearLines.push(lines[j]); }
-    if (lineType != lastLineType) {
-      // new tbody section
-      table += tBodyClose;
-      if (lineType == 'y') {
-        rowID = col[0];  // year from above
-        var myID = 'year_'+rowID;
-        table += "  <tbody class='annual-returns'>\n";
-        col[0] = "    <label id='"+myID+"_label' for='"+myID+"'>"+col[0]+YTD+"</label>\n";
-        col[0] += "    <input type='checkbox' id='"+myID+"' onClick='toggleTableMonths(\""+myID+"\")' data-toggle='toggle'>\n";
-        YTD='';
-      } else {
-        table += "  <tbody id='year_"+rowID+"_months' class='monthly-returns hide'>\n";
-      }
-      tBodyClose = "  </tbody>\n";
-      lastLineType = lineType;
-    }
-    table += '<tr>';
-    table += '      <th scope="row">'+col[0].trim()+'</th>';
-    for (i = 1; i < col.length; i++) {
-      if (col[i].trim() == '') {
-        table += '      <td class="empty-table-cell col'+(i-1)+'"></td>';
-      }else {
-        table += '      <td class="col'+(i-1)+'">'+col[i].trim()+'%</td>';
-      }
-    }
-    table += '</tr>';
-  }
-  table += "  </tbody>\n";
-  table = sideScrollTable('  ', 'rates-of-returns', '', table, true);
-
-  $('#annualReturnsAll-table').html(table);
-  // return lines.join("\n");
-  yearLines.reverse(); monthLines.reverse();
-  yearLines.unshift(yearHead); monthLines.unshift(monthHead);
-  return [yearLines.join("\n"), monthLines.join("\n")];
-}
-
 function buildAnnualReturnsAllTable(arr) {
   var i, j;
   var table = "<table>\n";
@@ -923,7 +859,8 @@ function buildMonthlyReturnsAllTable(arr) {
     table += '</tr>';
   }
   table += "  </tbody>\n";
-  table = sideScrollTable('  ', 'rates-of-returns', '', table, true);
+  // table = "<table><body><tr><td>asdfasfafsa</td></tr></body></table>\n";
+  table = sideScrollTable('  ', 'rates-of-return-table', '', table, true);
 
   $('#annualReturnsAll-table').html(table);
   // return lines.join("\n");

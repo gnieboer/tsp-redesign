@@ -1,4 +1,22 @@
+function hideSeriesFromView(series, idx, show) {
+  if (idx < 0) { return false; }
+  if (idx >= series.length) { return false; }
+  series[idx].update({ showInLegend: show }, true, false);
+}
+function indexFundSync(chartName) {
+  var val = $('#Index').prop('checked');  // get its new value
+  var chart = $('#'+chartName).highcharts();
+  if (chart == null) { return false; }
+  var series = chart.series;
+  hideSeriesFromView(series, 7, val);
+  hideSeriesFromView(series, 9, val);
+  hideSeriesFromView(series, 11, val);
+  hideSeriesFromView(series, 13, val);
+  return false;
+}
+
 function toggleFund(chartName, name) {
+  if (name == 'Index') { indexFundSync(chartName); return false; }
   if (name == 'Lfunds') {
     // do L group
     var val = $('#Lfunds').prop('checked');  // get its new value
@@ -26,8 +44,8 @@ function toggleFund(chartName, name) {
   return false;
 }
 
-
 function legendItemClickedPairs(chartName, idx) {
+  if (idx < 0) { return; }
   var chart = $('#'+chartName).highcharts();
   if (chart == null) { return; }
   var series = chart.series;
@@ -53,14 +71,14 @@ function legendItemClickedPairs(chartName, idx) {
   legendItemClicked(chartName, idx);
 }
 function legendItemClicked(chartName, idx) {
+  if (idx < 0) { return; }
   chartName = chartName.replace('-monthly', '');
   // console.log('lic: '+chartName+', '+idx);
-  if (idx < 0) { return; }
   var chart = $('#'+chartName).highcharts();
   var chart2 = $('#'+chartName+'-monthly').highcharts();
   if (chart == null) { return; }
-  deleteEmptyPoints(chartName, chart);
-  deleteEmptyPoints(chartName+'-monthly', chart2);
+  deleteEmptyPoints(chartName);
+  deleteEmptyPoints(chartName+'-monthly');
   var series = chart.series;
   var series2 = chart2.series;
   if (series[idx].visible) {
