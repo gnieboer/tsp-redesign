@@ -224,27 +224,6 @@
     button {
       line-height: 1;
     }
-    // Form error handling
-    .usa-input-error {
-      border-left: none;
-      margin-top: 3rem;
-      padding-bottom: 0.8rem;
-      padding-left: 1.5rem;
-      padding-top: 0.8rem;
-      position: relative;
-      right: 1.9rem;
-      input {
-        border: 2px solid #cd2026;
-      }
-      &:after {
-        font-family: $font-awesome;
-        content: "\f06a";
-        color: #cd2026;
-      }
-    }
-    .usa-input-error-label {
-      font-weight: inherit;
-    }
   }
 
   #maximize {
@@ -293,17 +272,12 @@
         color: $color-blue-medium;
       }
     }
-
-    .border-bottom {
-      // Form appearance and errors
+    input, select {
       width: 60%;
       display: inline-block;
-      border: none;
-      border-bottom: 2px solid #dfdfdf;
       text-align: center;
     }
-
-    select.border-bottom {
+    select {
       width: 80%;
     }
   }// end #customize
