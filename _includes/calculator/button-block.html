@@ -15,7 +15,7 @@ Generates a list of buttons.  The box around them and the ul should be done by t
 {% assign bonusButton1 = include.bonusButton1 | default: 0 %}
 {% assign bonusButton2 = include.bonusButton2 | default: 0 %}
 
-<ul id="button-bar" class="buttonNav flexRow flexEnd">
+<ul class="navigation-buttons">
 {% if showPDF != 0 %}
 <input type="submit" name="PDF" value="Show Blank PDF">
 {% include calculator/button.html text='Download' title='Blank PDF form opens in a new window.'

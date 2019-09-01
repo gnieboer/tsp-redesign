@@ -1,3 +1,60 @@
+// NUMBER FORMAT SYMBOLS ($, %)
+  span[data-format] {
+      position: relative;
+      display: inline-flex;
+      width: 100%;
+      max-width: 46rem;
+      &:before,
+      &:after {
+        color: #6f707b;
+        pointer-events: none;
+        position: absolute;
+        padding: 1rem 0.7em;
+        margin: 0.2em 0;
+      }
+      &.input-symbol-left {
+        &:before {
+          content: attr(data-format);
+          left: 0;
+        }
+        input {
+          padding-left: 3rem;
+        }
+      }
+      &.input-symbol-right {
+        &:before {
+          content: attr(data-format);
+          right: 0;
+        }
+        input {
+          padding-right: 3rem;
+        }
+      }
+  } // end span[data-format]
+
+// ERROR HANDLING
+
+input {
+  &.border-bottom { // non-calculator forms
+    border: none;
+    border-bottom: 2px solid #dfdfdf;
+  }
+  &:focus {
+    border-bottom: 3px solid $color-primary;
+  }
+}
+
+div.usa-input-error {
+  input {
+    border: 3px solid $color-error;
+    // &:focus {
+    //   border: 3px solid $color-error;
+    // }
+  }
+}
+
+// FORMS & RESOURCES
+
 input {
   .border-bottom {
   width: auto;
@@ -115,7 +172,6 @@ section#search-forms {
   padding-bottom: 5rem;
   margin-bottom: 0;
 }
-
 
 section#returned-forms, section#popular-forms {
   border-top: 1px solid #e3e3e3;
