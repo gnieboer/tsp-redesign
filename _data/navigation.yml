@@ -130,7 +130,7 @@ news-and-resources:
   - text: Videos & resources
     href: /videos-and-resources/
   - text: Forms & publications
-    href: "javascript:void(0);"
+    href: /forms/
   - text: Calculators
     href: /calculators/
 
