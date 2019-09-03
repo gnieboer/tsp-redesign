@@ -878,7 +878,7 @@ function sideScrollTable(prefix, xclass, id, tableContent, nl) {
   if (xclass != '') { myClass = ' class="'+xclass+'"'; }
   if (id != '') { myID = ' id="'+id+'"'; }
   var rc =  prefix + '<table' + myID + myClass + '>' + myNL;
-  rc += prefix + '  <colgroup><col class=“column-width”></colgroup>' + myNL;
+  rc += prefix + '  <colgroup><col class="column-width"></colgroup>' + myNL;
   rc += tableContent;
   rc += prefix + '</table>' + myNL;
   return rc;

@@ -17,12 +17,14 @@
 }
 // FULL WIDTH TABLES (applied to parent container)
 .full-width {
-  width: 100vw;
-  position: absolute;
-  left: 50%;
-  right: 50%;
+  width: 98vw;
+  position: relative;
+  left: 60%;
   margin-left: -50vw;
   margin-right: -50vw;
+  &.share-price-table {
+    left: 80%;
+  }
 }
 
 section {
@@ -39,7 +41,7 @@ section {
   }
   &.rates-of-return-table { // Width for "sticky" left-column header
     .column-width {
-      width: 14rem;
+      width: 16rem;
     }
   }
 } // end section
@@ -97,6 +99,7 @@ section {
         position: sticky;
         top: 0;
         text-align: center;
+        width: 15rem;
         &:first-child {
           position: sticky;
           z-index: 5;
@@ -150,11 +153,16 @@ section {
        label {
          display: block;
          margin-top: 0;
-         &:after {
-           content: " \002B";
+         &:after,
+         &.bounce:after {
+           font-family: $font-awesome;
+           font-weight: $light;
+           padding-left: 1em;
+           font-size: 0.9em;
+           content: "\f055";
          }
          &.bounce:after {
-           content: " \002D";
+           content: "\f056";
          }
        }
      } // end .annual-returns
