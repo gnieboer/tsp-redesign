@@ -1,28 +1,23 @@
 ---
 title: Share price history
 layout: page
-permalink: /fund-performance/share-price-history/
+permalink: /fund-performance/share-price-history-old/
 #sidenav: fund-options
 scripts:
   - /assets/js/flatpickr/flatpickr.js
   - /assets/js/flatpickr/date-range.js
   - /assets/js/jquery.min.js
-  - /assets/js/jquery.numeric.js
-  - /assets/js/highcharts/highcharts.js
-  - /assets/js/highcharts/data.js
-  - /assets/js/calculator/calculator.js
   - /assets/js/ajaxFetch.js
-  - /assets/js/side-scroll-funds.js
   - /assets/js/share-price-history.js
 document-ready:
-  - getSharePricesRaw('dynamic-share-price');
+  - getSharePrices();
 ---
-{% assign chartName = 'dynamic-share-price' %}
 
 # Share price history
 
 To understand how the TSP calculates rates of return for any given period of time and determines compound annual returns, read the Fact Sheet [_Calculating Periodic Returns and Compound Annual Returns_](/publications/oc05-16w.pdf).
 
+{% assign chartName = 'dynamic-share-price' %}
 {% include fund-checkboxes.html Lfunds=1 InvFunds=1 Index=0 chartName=chartName %}
 
 <section class="date-range">
@@ -32,7 +27,7 @@ To understand how the TSP calculates rates of return for any given period of tim
   <div>Show share price history between the following dates</div>
   <input id="fundDates" placeholder="Start and end dates..." class="date-range" />
 </label>
-<button class="usa-button" onClick="getSharePricesRaw('{{chartName}}');">Retrieve share prices</button>
+<button class="usa-button" onClick='getSharePrices();'>Retrieve share prices</button>
 <button class="usa-button-secondary" onClick='downloadSharePrices();'>
   Download share prices <i class="fal fa-arrow-alt-to-bottom"></i></button>
 </fieldset>
@@ -42,12 +37,6 @@ To understand how the TSP calculates rates of return for any given period of tim
 <div id="{{chartName}}-div" class="usa-grid-full usa-layout-docs-main_content">
 <div class="usa-width-one-whole" markdown="1">
   <section id="{{chartName}}-section" class="share-price-table">
-    <ul class="usa-accordion">
-      <li>
-        <button class="usa-accordion-button" aria-expanded="true" aria-controls="{{ chartName }}">Annual Returns</button>
-        <div id="{{ chartName }}" class="usa-accordion-content hc-share-price-chart" aria-hidden="false"></div>
-      </li>
-    </ul>
     <div class="table-view">
       <button id="{{chartName}}-button" class="usa-button-secondary"
         onClick="toggleTableWidth('{{chartName}}');">

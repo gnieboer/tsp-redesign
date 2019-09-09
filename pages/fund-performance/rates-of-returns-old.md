@@ -1,7 +1,7 @@
 ---
 title: Rates of returns
 layout: page
-permalink: /fund-performance/rates-of-returns/
+permalink: /fund-performance/rates-of-returns-old/
 styles:
 scripts:
   - /assets/js/jquery.min.js
@@ -14,13 +14,11 @@ scripts:
   - /assets/js/rates-of-returns.js
 bottom-scripts:
 document-ready:
-  - getRatesOfReturn('rates-of-return');
-  # - chartResize('rates-of-return-annual');
-  # - chartResize('rates-of-return-monthly');
-  - indexFundSync('rates-of-return-annual', true);
-  - indexFundSync('rates-of-return-monthly', true);
+  - getAnnualReturnsAll('annualReturnsAll');
+  - chartResize('annualReturnsAll');
+  - indexFundSync('annualReturnsAll', true);
 ---
-{% assign chartName = 'rates-of-return' %}
+{% assign chartName = 'annualReturnsAll' %}
 # Rates of returns
 {% include fund-checkboxes.html Lfunds=1 InvFunds=1 Index=1 chartName=chartName %}
 
@@ -29,8 +27,8 @@ document-ready:
   <section id="{{chartName}}-section" class="rates-of-return-table">
     <ul class="usa-accordion">
       <li>
-        <button class="usa-accordion-button" aria-expanded="true" aria-controls="{{ chartName }}-annual">Annual Returns</button>
-        <div id="{{ chartName }}-annual" class="usa-accordion-content hc-annual-returns-all" aria-hidden="false"></div>
+        <button class="usa-accordion-button" aria-expanded="true" aria-controls="{{ chartName }}">Annual Returns</button>
+        <div id="{{ chartName }}" class="usa-accordion-content hc-annual-returns-all" aria-hidden="false"></div>
       </li>
     </ul>
     <ul class="usa-accordion">
