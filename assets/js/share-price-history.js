@@ -15,21 +15,6 @@ function toYYYYMMDD(d) {
     return yyyy + mm + dd;
 }
 
-function getSharePrices() {
-  // var fundDates = document.querySelector("#fundDates")._flatpickr;
-  var sDate = fundDates.selectedDates[0];
-  var eDate = fundDates.selectedDates[1];
-  if ((sDate == null) || (eDate == null)) { console.log('ignore'); return false; }
-  var startdate = toYYYYMMDD(sDate);
-  var enddate = toYYYYMMDD(eDate);
-  var funds = ['Lfunds', 'InvFunds'];
-  var url = sharePriceDownloadString(startdate, enddate, funds);
-  url += '&download=0';
-  // console.log(url);
-  doAjaxRetrieve('dynamic-share-price-table', url);
-  return false;
-}
-
 function downloadSharePrices() {
   // var fundDates = document.querySelector("#fundDates")._flatpickr;
   var sDate = fundDates.selectedDates[0];
@@ -43,55 +28,103 @@ function downloadSharePrices() {
   doSharePriceDownload(startdate, enddate, format, funds);
   return false;
 }
-function checkBoxColumnID(cb) {
-  var names = ['empty', 'L___Income', 'L___2020', 'L___2030', 'L___2040', 'L___2050',
-              'G___Fund', 'F___Fund', 'C___Fund', 'S___Fund', 'I___Fund'];
-  //            'G___Fund', 'F___Fund', 'i', 'C___Fund', 'i', 'S___Fund', 'i', 'I___Fund'];
-  return names.indexOf(cb);
-}
-function syncTableColumn(idx,name) {
-  if ($('#'+name).prop('checked')) {
-    $('.col'+idx).show();
-  } else {
-    $('.col'+idx).hide();
-  }
-}
-function setTableColumn(name,val) {
-  var idx = checkBoxColumnID(name);
-  if (val) { $('#'+name).prop('checked', true); } else { $('#'+name).prop('checked', false); }
-  syncTableColumn(idx,name);
-}
-function toggleFund(chartName, name) {
-  // console.log(name);
-  if (name == 'Lfunds') {
-    // do L group
-    var val = $('#Lfunds').prop('checked');  // get its new value
-    console.log('val '+val)
-    setTableColumn('L___Income',val);
-    setTableColumn('L___2020',val);
-    setTableColumn('L___2030',val);
-    setTableColumn('L___2040',val);
-    setTableColumn('L___2050',val);
-    return false;
-  }
-  if (name == 'InvFunds') {
-    var val = $('#InvFunds').prop('checked');  // get its new value
-    setTableColumn('G___Fund',val);
-    setTableColumn('F___Fund',val);
-    setTableColumn('C___Fund',val);
-    setTableColumn('S___Fund',val);
-    setTableColumn('I___Fund',val);
-    return false;
-  }
-  if (name == 'Index') {
-    syncTableColumn(8, 'Index');
-    syncTableColumn(10, 'Index');
-    syncTableColumn(12, 'Index');
-    syncTableColumn(14, 'Index');
-    return false;
-  }
-  var idx = checkBoxColumnID(name);
-  syncTableColumn(idx, name);
-  checkAnnualReturnsGroup();
+
+function getSharePricesRaw(chart) {
+  // var fundDates = document.querySelector("#fundDates")._flatpickr;
+  var sDate = fundDates.selectedDates[0];
+  var eDate = fundDates.selectedDates[1];
+  if ((sDate == null) || (eDate == null)) { console.log('ignore'); return false; }
+  var startdate = toYYYYMMDD(sDate);
+  var enddate = toYYYYMMDD(eDate);
+  var funds = ['Lfunds', 'InvFunds'];
+  var url = sharePriceDownloadString('getSharePricesRaw.html', startdate, enddate, funds);
+  url += '&download=0';
+  // console.log(url);
+  doAjaxRetrieveRaw(chart, url);
   return false;
+}
+
+// prep no longer needed, server sends in hc format
+function prepDataforHighchart(data) {
+  var lines = data.split("\n");
+  var header = lines.shift();
+  var col = header.split(",");
+  for (var i = 1; i < col.length; i++) { col[i] = mapServerFundName(col[i], false); }
+  lines.reverse();
+  lines[0] = col.join(",");
+  return lines.join("\n");
+  lines.shift();
+  lines.reverse();
+  lines.unshift(col.join(","));
+  // lines[0] = col.join(",");
+  data = lines.join("\n");
+}
+function buildSideScrollTableSH(chartName, data) {
+  var i, j, colClass, row;
+  var lines = data.split("\n");
+  // prep header row
+  var header = lines.shift();
+  var col = header.split(",");
+  var headerHTML = sideScrollTH('', 'col', '', col[0], false);  // column 0 is date
+  for (i = 1; i < col.length; i++) {
+    colClass = borderClass(col[i])+' col'+i;
+    headerHTML = headerHTML + sideScrollTH('', 'col', colClass, col[i], false);
+  }
+  headerHTML = sideScrollWrapper('', 'tr', '', '', headerHTML, false);
+  headerHTML = sideScrollWrapper('  ', 'thead', '', '', headerHTML, true);
+  // console.log(headerHTML);
+
+  // loop on each row, body groups
+  var bodyHTML = '';
+  // highcharts likes low to high, we want table high to low
+  for (j = lines.length-1; j > 0; j--) {
+    if (lines[j].trim() == '') { continue; }
+    row = '';
+    var col = lines[j].split(",");
+    var row = sideScrollTH('', '', '', col[0], false);  // column 0 is date
+    for (i = 1; i < col.length; i++) {
+      colClass = 'col'+i;
+      row = row + sideScrollWrapper('', 'td', '', colClass, col[i].trim(), false);
+    }
+    bodyHTML += sideScrollWrapper('    ', 'tr', '', '', row, true);
+  }
+  bodyHTML = sideScrollWrapper('  ', 'tbody', '', '', bodyHTML, true);
+
+  // wrap in table
+  var table = sideScrollTable('', chartName+'-table', '', headerHTML+bodyHTML, true);
+  // console.log(table);
+  return table;
+}
+var doAjaxRetrieveRaw = function(divName, url) {
+  $('#'+divName).html('Calling server for data...');
+  var serverCall = $.get(url);
+  serverCall.done(
+    function (data) {
+      fundHighchart(divName, data, 'Share Prices', false);
+      $('#'+divName+'-table').html(buildSideScrollTableSH(divName, data));
+      syncCheckboxes(divName);
+      chartResize(divName);
+    }
+  );
+  serverCall.fail(
+    function (jqXHR, textStatus, errorThrown) {
+        var errMsg = textStatus + ': ' + errorThrown;
+        var userMsg = somethingNotWorking();
+        $('#'+divName).html(userMsg);
+    }
+  );
+}
+
+function fundYvalueFormat(value) {
+  return value.toFixed(2);
+}
+
+function fundTooltip(me, chartName) {
+  // console.log(chartName)
+  // console.log(me);
+  var rc = fundTooltipBody(me);
+  rc = tooltipHeader(Highcharts.dateFormat('%b %d, %Y', me.x))+rc;
+  rc = tooltipDiv(chartName+'-tooltip', rc);
+  // console.log(rc);
+  return rc;
 }

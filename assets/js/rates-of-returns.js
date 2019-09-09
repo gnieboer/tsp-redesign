@@ -1,60 +1,182 @@
-function hideSeriesFromView(series, idx, show) {
-  if (idx < 0) { return false; }
-  if (idx >= series.length) { return false; }
-  series[idx].update({ showInLegend: show }, true, false);
-}
-function indexFundSync(chartName) {
-  var val = $('#Index').prop('checked');  // get its new value
-  var chart = $('#'+chartName).highcharts();
-  if (chart == null) { return false; }
-  var series = chart.series;
-  hideSeriesFromView(series, 7, val);
-  hideSeriesFromView(series, 9, val);
-  hideSeriesFromView(series, 11, val);
-  hideSeriesFromView(series, 13, val);
+
+function getRatesOfReturn(chart) {
+  var funds = ['Lfunds', 'InvFunds', 'IndexFunds'];
+  var url = fundDownloadString('getMonthlyReturnsSummary.html', '', funds);
+  console.log(url);
+  doAjaxRetrieveRoR(chart, url);
   return false;
 }
 
-function toggleFund(chartName, name) {
-  if (name == 'Index') { indexFundSync(chartName); return false; }
-  if (name == 'Lfunds') {
-    // do L group
-    var val = $('#Lfunds').prop('checked');  // get its new value
-    if ($('#L___Income').prop('checked') != val) { $('#L___Income').click(); }
-    if ($('#L___2020').prop('checked') != val) { $('#L___2020').click(); }
-    if ($('#L___2030').prop('checked') != val) { $('#L___2030').click(); }
-    if ($('#L___2040').prop('checked') != val) { $('#L___2040').click(); }
-    if ($('#L___2050').prop('checked') != val) { $('#L___2050').click(); }
-    return false;
+var doAjaxRetrieveRoR = function(divName, url) {
+  $('#'+divName).html('Calling server for data...');
+  var serverCall = $.get(url);
+  serverCall.done(
+    function (data) {
+      // fix columns server side
+      console.log('dav, fix column names server side in rates of return');
+      var lines = data.split("\n");
+      var col = lines[0].split(",");
+      for(var i = col.length-1; i > 1; i--) { col[i] = mapServerFundName(col[i]); }
+      lines[0] = col.join(",");
+      data = lines.join("\n");
+      // fundHighchart(divName+'-annual', data, 'Annual Returns', false);
+      // fundHighchart(divName+'-monthly', data, 'Monthly Returns', false);
+      // buildSideScrollTableRoR will split data rows and call highcharts
+      $('#'+divName+'-table').html(buildSideScrollTableRoR(divName, data));
+      syncCheckboxes(divName+'-annual');
+      syncCheckboxes(divName+'-monthly');
+      chartResize(divName+'-annual');
+      chartResize(divName+'-monthly');
+    }
+  );
+  serverCall.fail(
+    function (jqXHR, textStatus, errorThrown) {
+        var errMsg = textStatus + ': ' + errorThrown;
+        var userMsg = somethingNotWorking();
+        $('#'+divName).html(userMsg);
+    }
+  );
+}
+
+function buildSideScrollTableRoR(chartName, data) {
+  var i, j, colClass, row;
+  var lines = data.split("\n");
+  // prep header row
+  var header = lines.shift();
+  var col = header.split(",");
+  var lineType = col.shift(); // ignore header[0] (type)
+  header = col.join(",");
+  var annualData = [];
+  var monthlyData = [];
+  var headerHTML = sideScrollTH('', 'col', '', col[0], false);  // column 0 is date
+  for (i = 1; i < col.length; i++) {
+    colClass = borderClass(col[i])+' col'+i;
+    headerHTML = headerHTML + sideScrollTH('', 'col', colClass, col[i], false);
   }
-  if (name == 'InvFunds') {
-    // do individual group
-    var val = $('#InvFunds').prop('checked');  // get its new value
-    if ($('#G___Fund').prop('checked') != val) { $('#G___Fund').click(); }
-    if ($('#F___Fund').prop('checked') != val) { $('#F___Fund').click(); }
-    if ($('#C___Fund').prop('checked') != val) { $('#C___Fund').click(); }
-    if ($('#S___Fund').prop('checked') != val) { $('#S___Fund').click(); }
-    if ($('#I___Fund').prop('checked') != val) { $('#I___Fund').click(); }
-    return false;
+  headerHTML = sideScrollWrapper('', 'tr', '', '', headerHTML, false);
+  headerHTML = sideScrollWrapper('  ', 'thead', '', '', headerHTML, true);
+  // console.log(headerHTML);
+
+  // loop on each row, body groups
+  var bodyHTML = '';
+  var lastLineType = '';
+  var monthName = '';
+  var yearName = '';
+  var tmpRows = "";
+  var row;
+  var YTD = " YTD";
+  var val;
+  // highcharts likes low to high, we want table high to low
+  for (j = lines.length-1; j > 0; j--) {
+    if (lines[j].trim() == '') { continue; }
+    row = '';
+    var col = lines[j].split(",");
+    lineType = col.shift();
+    val = '';
+
+    if (lineType != lastLineType) {
+      if (tmpRows != '') {
+        var xClass = 'annual-returns';
+        if (lastLineType == 'm') {
+          xClass = 'monthly-returns hide';
+          val = 'year_'+yearName+'_months';
+        }
+        // yearName from previous loop
+        bodyHTML += sideScrollWrapper('  ', 'tbody', val, xClass, tmpRows, true);
+      }
+      tmpRows = '';
+      lastLineType = lineType;
+    }
+    yearName = col[0].substr(0,4);
+    if (lineType == 'm') {
+      monthName = getMonthName(parseInt(col[0].substr(4, 2))-1);
+      val = monthName; //  + ' ' + yearName;
+      col[0] = monthName + ' ' + yearName;
+      monthlyData.unshift(col.join(","));
+      row = sideScrollTH('', '', '', val, false);
+    } else {
+      var id = "year_"+yearName;
+      val = '<label id="'+id+'_label" for="'+id+'">'+yearName+YTD+'</label>';
+      val += '<input type="checkbox" id="'+id+'" onClick="toggleTableMonths(\''+id+'\')">';
+      col[0] = yearName;
+      annualData.unshift(col.join(","));
+      row = sideScrollTH('', '', '', val, false);
+      YTD = '';
+    }
+    for (i = 1; i < col.length; i++) {
+      colClass = 'col'+i;
+      val = col[i].trim()+'%';
+      if (col[i].trim() == '') {
+        colClass = "empty-table-cell "+colClass;
+        val = '';
+      }
+      row = row + sideScrollWrapper('', 'td', '', colClass, val, false);
+    }
+    tmpRows += sideScrollWrapper('    ', 'tr', '', '', row, true);
   }
-  // if (name.charAt(0) == 'L') { $('#Lfunds').prop('checked', false); }
-  legendItemClickedPairs(chartName, getSeriesID(name.replace('___', ' '), chartName));
-  // turn group back on?
-  checkAnnualReturnsGroup();
+  // bodyHTML = sideScrollWrapper('  ', 'tbody', '', '', bodyHTML, true);
+
+  // wrap in table
+  var table = sideScrollTable('', chartName+'-table', '', headerHTML+bodyHTML, true);
+  // console.log(headerHTML+bodyHTML);
+  // console.log(table);
+  annualData.unshift(header);
+  monthlyData.unshift(header);
+  fundHighchart(chartName+'-annual', annualData.join("\n"), 'Annual Returns', true);
+  fundHighchart(chartName+'-monthly', monthlyData.join("\n"), 'Monthly Returns', true);
+  return table;
+}
+
+function toggleTableMonths(rowID) {
+  if ($('#'+rowID+'_label').hasClass('bounce')) {
+    $('#'+rowID+'_label').removeClass('bounce');
+    $('#'+rowID+'_months').addClass('hide');
+  } else {
+    $('#'+rowID+'_label').addClass('bounce');
+    $('#'+rowID+'_months').removeClass('hide');
+  }
+  // window.redraw();
   return false;
 }
 
-function legendItemClickedPairs(chartName, idx) {
+function fundYvalueFormat(value) {
+  return value.toFixed(2)+'%';
+}
+
+function fundCheckboxClick(chartName, cbName) {
+  // console.log('fundCheckboxClick', chartName, cbName);
+  deleteEmptyPoints(chartName+'-annual');
+  deleteEmptyPoints(chartName+'-monthly');
+  fundCheckboxClickAction(chartName+"-monthly", cbName);
+  fundCheckboxClickAction(chartName+"-annual", cbName);
+  return false;
+}
+
+function fundHighchartClick(chartName, idx, name, vis) {
+  var otherChart;
+  if (chartName.substr(-6, 6) == 'annual') {
+    otherChart = chartName.replace('-annual', '-monthly');
+  } else {
+    otherChart = chartName.replace('-monthly', '-annual');
+  }
+  deleteEmptyPoints(chartName);
+  deleteEmptyPoints(otherChart);
+  fundHighchartClickBuddy(chartName, idx, name, vis);
+  fundHighchartClickBuddy(otherChart, idx, name, vis);
+  return false;
+}
+
+// handle connected index funds
+function fundHighchartClickBuddy(chartName, idx, fundName, vis) {
   if (idx < 0) { return; }
   var chart = $('#'+chartName).highcharts();
   if (chart == null) { return; }
   var series = chart.series;
-  // individual fund clicks buddy
   var name = series[idx].name;
   if ((name == 'F Fund') || (name == 'C Fund') || (name == 'S Fund') || (name == 'I Fund')) {
     // I clicked on an individual fund with an index
-    if ((series[idx].visible) && (series[idx+1].visible)) { legendItemClicked(chartName, idx+1); }
-    legendItemClicked(chartName, idx);
+    if ((series[idx].visible) && (series[idx+1].visible)) { fundHighchartClickAction(chartName, idx+1, series[idx+1].name, vis); }
+    fundHighchartClickAction(chartName, idx, name, vis);
     return false;
   }
   // index fund clicks buddy
@@ -62,40 +184,26 @@ function legendItemClickedPairs(chartName, idx) {
     var name = series[idx-1].name;
     if ((name == 'F Fund') || (name == 'C Fund') || (name == 'S Fund') || (name == 'I Fund')) {
       // I clicked on an index fund
-      if ((!series[idx].visible) && (!series[idx-1].visible)) { legendItemClicked(chartName, idx-1); }
-      legendItemClicked(chartName, idx);
+      if ((!series[idx].visible) && (!series[idx-1].visible)) { fundHighchartClickAction(chartName, idx-1, name, vis); }
+      fundHighchartClickAction(chartName, idx, series[idx].name, vis);
       return false;
     }
   }
-  // I clicked on a fund with no index
-  legendItemClicked(chartName, idx);
-}
-function legendItemClicked(chartName, idx) {
-  if (idx < 0) { return; }
-  chartName = chartName.replace('-monthly', '');
-  // console.log('lic: '+chartName+', '+idx);
-  var chart = $('#'+chartName).highcharts();
-  var chart2 = $('#'+chartName+'-monthly').highcharts();
-  if (chart == null) { return; }
-  deleteEmptyPoints(chartName);
-  deleteEmptyPoints(chartName+'-monthly');
-  var series = chart.series;
-  var series2 = chart2.series;
-  if (series[idx].visible) {
-    series[idx].hide();
-    series2[idx].hide();
-    $('.col'+idx).hide();
-    if (series[idx].name.includes('&') != true) {
-      $('#'+(series[idx].name.replace(' ', '___'))).prop('checked', false);
-    }
-  } else {
-    series[idx].show();
-    series2[idx].show();
-    $('.col'+idx).show();
-    if (series[idx].name.includes('&') != true) {
-      $('#'+(series[idx].name.replace(' ', '___'))).prop('checked', true);
-    }
-  }
-  checkAnnualReturnsGroup();
+  fundHighchartClickAction(chartName, idx, fundName, vis);
   return false;
+}
+
+function fundTooltip(me, chartName) {
+  // console.log(me);
+  var rc = fundTooltipBody(me);
+  var tipTitle = getMonthYearName(me.x+1000000000);
+  if (chartName.includes('-annual')) {
+    tipTitle = 'Annual Returns ';
+    if ((me.x + 1) > me.points[0].series.xAxis.max) { tipTitle = 'YTD Returns '}
+    tipTitle += me.x;
+  }
+  rc = tooltipHeader(tipTitle)+rc;
+  rc = tooltipDiv('growth-100-tooltip', rc);
+  // console.log(rc);
+  return rc;
 }

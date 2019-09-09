@@ -17,6 +17,8 @@
   height: 400px;
   margin: 0 auto;
 }
+.hc-share-price-chart {
+}
 .hc-annual-returns-all {
   // height: auto;
   // display: block;
@@ -112,7 +114,8 @@
    }
 }
 
-.before-invest-tooltip, .l-fund-tooltip, .growth-100-tooltip, .rates-of-return-tooltip, .l-fund-summary-tooltip {
+.before-invest-tooltip, .l-fund-tooltip, .growth-100-tooltip, .rates-of-return-tooltip,
+  .l-fund-summary-tooltip, .dynamic-share-price-tooltip {
   // background-color: black;
   // color: white;
   .tooltip-title {

@@ -2,6 +2,12 @@
   All the ajax calls to the data source.
 */
 
+function somethingNotWorking() {
+  return ""
+    + "<p>Hmmm, something isn’t working. Please try again in a few minutes."
+    + " If the problem persists you can call the ThriftLine for assistance at "
+    + "<span class='nobr'>1-877-968-3778</span>.</p>";
+}
 var siteName = "https://www.tsp.gov/components/CORS/";
 
 var singleFundData = function(fund) {
@@ -309,7 +315,8 @@ function glossaryTermString(fund, glossaryFlag) {
         +term+'</span>';
 }
 function mapServerFundClassName (f) {
-  var fund = f.trim().toUpperCase();
+  try { var fund = f.trim().toUpperCase(); } catch(e) { return ""; }
+  // var fund = f.trim().toUpperCase();
   if (fund == 'G') { return 'g-fund'; }
   if (fund == 'F') { return 'f-fund'; }
   if (fund == 'C') { return 'c-fund'; }
@@ -428,17 +435,23 @@ function columnSort(ascending, columnClassName, tableId, headLength, tailLength)
     }
 };
 
-function sharePriceDownloadString(startdate, enddate, funds) {
-  var str = siteName + 'getSharePrices.html?';
-  str += 'startdate='+startdate;
-  str += '&enddate='+enddate;
+function fundDownloadString(scriptName, extra, funds) {
+  var str = siteName + scriptName + '?';
+  str += extra;
   funds.forEach(function(fund) { str += '&'+fund+'=1'; });
   return str;
 }
 
+function sharePriceDownloadString(scriptName, startdate, enddate, funds) {
+  var extra = '';
+  extra += 'startdate='+startdate;
+  extra += '&enddate='+enddate;
+  return fundDownloadString(scriptName, extra, funds);
+}
+
 // make call to get shareprices
 function doSharePriceDownload(startdate, enddate, format, funds) {
-  var url = sharePriceDownloadString(startdate, enddate, funds);
+  var url = sharePriceDownloadString('getSharePrices.html', startdate, enddate, funds);
   url += '&format='+format+'&download=1';
   //console.log(url);
   window.location.href = url;
@@ -457,9 +470,7 @@ var doAjaxRetrieve = function(divName, url) {
   serverCall.fail(
     function (jqXHR, textStatus, errorThrown) {
         var errMsg = textStatus + ': ' + errorThrown;
-        var userMsg = "<p>Hmmm, something isn’t working. Please try again in a few minutes."
-          + " If the problem persists you can call the ThriftLine for assistance at "
-          + "<span class='nobr'>1-877-968-3778</span>.</p>";
+        var userMsg = somethingNotWorking();
         $('#'+divName).html(userMsg);
     }
   );
@@ -521,7 +532,7 @@ function checkAnnualReturnsGroup() {
   $('#InvFunds').prop('checked', flag);
 }
 function chartResize(chartName) {
-  setInterval(function() { $('#'+chartName).highcharts().reflow(); }, 50);
+  setInterval(function() { $('#'+chartName).highcharts().reflow(); }, 100);
   return false;
 }
 
@@ -536,11 +547,14 @@ function parseEmptyData(columns) {
   })
   return newColumns;
 }
+
+
 var deletedAlready = {};
 function deleteEmptyPoints(chartName) {
   var chart = $('#'+chartName).highcharts();
+  if (chart == null) { return; }
   // console.log(chart);
-  if (chartName in deletedAlready) { return; }  // been there, done that already
+  if (deletedAlready[chartName]) { return; }  // been there, done that already
   var series = chart.series;
   for (var s = 0; s < series.length; s++) {
     // console.log('series '+s+'  '+series[s].points);
@@ -554,350 +568,6 @@ function deleteEmptyPoints(chartName) {
     }
   }
   // series[x].data[y].remove(true);
-}
-
-function getAnnualReturnsAll(chartName) {
-  var me = Highcharts.chart(chartName, {
-    credits: { enabled: false },
-    chart: {
-      type: 'line',
-      styledMode: true,
-      // events: { load: function(e) { setInterval(function() { $('#annualReturnsAll').highcharts().reflow(); }, 500); } }
-      // events: { load: function() { deleteEmptyPoints(chartName, this); }}
-    },
-    title: {
-      align: 'left',
-      text: 'Annual Returns'
-    },
-    data: {
-      beforeParse: function (csv) {
-        var values = buildMonthlyReturnsAllTable(csv);
-        // console.log('monthly: ', values[1]);
-        // console.log('yearly: ', values[0]);
-        getMonthlyReturnsAll(chartName+'-monthly', values[1]);
-        return values[0];
-      },
-      csvURL: 'https://www.tsp.gov/components/CORS/getMonthlyReturnsSummary.html?Lfunds=1&IndexFunds=1&InvFunds=1'
-    },
-    plotOptions: {
-      series: { events: {
-        legendItemClick: function(e) {
-          var i = e.target.index;
-          legendItemClickedPairs(chartName, i);
-          // this.xAxis.setExtremes();
-          return false;
-        }
-      }}
-    },
-    responsive: {
-      rules: [{
-        condition: {
-          minWidth: 500
-        },
-        chartOptions: {
-          legend: {
-            // labelFormatter: function() { return mapServerFundName (this.name, 0); },
-            align: 'right', verticalAlign: 'top',
-            layout: 'vertical', x: 0, y: 100
-          },
-        }
-      }]
-    },
-    // series: [{ colorIndex: colorIndexFund }, { colorIndex: colorIndexValues }, { colorIndex: colorIndexInfl }, { colorIndex: colorIndexValues }],
-    // series: [{ colorIndex: colorIndexFund }, { colorIndex: colorIndexInfl }],
-    series: [{ colorIndex: 'lf' }, { colorIndex: 'lf' }, { colorIndex: 'lf' }, { colorIndex: 'lf' }, { colorIndex: 'lf' },
-      { colorIndex: 'g' },
-      { colorIndex: 'f' }, { colorIndex: 'if' },
-      { colorIndex: 'c' }, { colorIndex: 'ic' },
-      { colorIndex: 's' }, { colorIndex: 'is' },
-      { colorIndex: 'i' }, { colorIndex: 'ii' }
-    ],
-    yAxis: {
-      labels: {
-        formatter: function() {
-          return this.value + '%';
-        }
-      },
-      title: { text: '' }
-    },
-    tooltip: {
-      formatter: function () {
-        return annualReturnsAllTooltip(this);
-      },
-      shared: true,
-      useHTML: true
-    }
-  });
-  // deleteEmptyPoints(chartName, me);
-}
-function getMonthlyReturnsAll(chartName, monthData) {
-  // monthData = [100, 200, 300, 400];
-  //console.log(monthData);
-  //console.log('in getMonthlyReturnsAll');
-  Highcharts.chart(chartName, {
-    credits: { enabled: false },
-    chart: {
-      type: 'line',
-      styledMode: true,
-      // events: { load: function(e) { setInterval(function() { $('#annualReturnsAll').highcharts().reflow(); }, 500); } }
-      // events: { load: function() { deleteEmptyPoints(chartName, this); }}
-      // events: { render: function() { deleteEmptyPoints(chartName, this); }}
-    },
-    title: {
-      align: 'left',
-      text: 'Monthly Returns'
-    },
-    data: {
-            csv: monthData,
-            // parsed: function(columns) { this.columns = parseEmptyData(columns); }
-          },
-    plotOptions: {
-      series: { events: {
-        legendItemClick: function(e) {
-          var i = e.target.index;
-          legendItemClickedPairs(chartName, i);
-          // this.xAxis.setExtremes();
-          return false;
-        }
-      }}
-    },
-    responsive: {
-      rules: [{
-        condition: {
-          minWidth: 500
-        },
-        chartOptions: {
-          legend: {
-            // labelFormatter: function() { return mapServerFundName (this.name, 0); },
-            align: 'right', verticalAlign: 'top',
-            layout: 'vertical', x: 0, y: 100
-          },
-        }
-      }]
-    },
-    series: [{ colorIndex: 'lf' }, { colorIndex: 'lf' }, { colorIndex: 'lf' }, { colorIndex: 'lf' }, { colorIndex: 'lf' },
-      { colorIndex: 'g' },
-      { colorIndex: 'f' }, { colorIndex: 'if' },
-      { colorIndex: 'c' }, { colorIndex: 'ic' },
-      { colorIndex: 's' }, { colorIndex: 'is' },
-      { colorIndex: 'i' }, { colorIndex: 'ii' }
-    ],
-    // series: [{ data: monthData }],
-    yAxis: {
-      labels: {
-        formatter: function() {
-          return this.value + '%';
-        }
-      },
-      title: { text: '' }
-    },
-    tooltip: {
-      formatter: function () {
-        return monthlyReturnsAllTooltip(this);
-      },
-      shared: true,
-      useHTML: true
-    }
-  });
-}
-function borderClass(fund) {
-  if (fund.trim().substring(0,1).toLowerCase() == 'l') { return 'border-l-fund'; }
-  if (fund.slice(-4).toLowerCase() == 'fund') { return 'border-'+fund.trim().substring(0,1).toLowerCase()+'-fund'; }
-  // its an index fund
-  if (fund.substring(0,4) == 'U.S.') { return 'border-index-f'; }
-  if (fund.substring(0,4) == 'S&P ') { return 'border-index-c'; }
-  if (fund.substring(0,4) == 'Dow ') { return 'border-index-s'; }
-  if (fund.substring(0,4) == 'EAFE') { return 'border-index-i'; }
-  return 'border-'+fund;
-}
-
-
-function buildAnnualReturnsAllTable(arr) {
-  var i, j;
-  var table = "<table>\n";
-  var lines = arr.split("\n");
-  table += "  <thead>\n";
-  table += "    <tr>\n";
-  var col = lines[0].trim().split(',');
-  for (i = 0; i < col.length; i++) {
-    if (i != 0) { col[i] = mapServerFundName (col[i], 0); }
-    var border = borderClass(col[i]);
-    table += '      <th scope="col" class="'+border+' col'+(i-1)+'">'+col[i].trim()+'</th>';
-  }
-  lines[0] = col.join(',');
-  table += "    </tr>\n";
-  table += "  </thead>\n";
-  table += "  <tbody>\n";
-  for (j=lines.length-1; j > 0; j--) {
-    if (lines[j].trim() == '') { continue; }
-    col = lines[j].split(',');
-    table += '<tr>';
-    table += '      <th>'+col[0].trim()+'</th>';
-    for (i = 1; i < col.length; i++) {
-      if (col[i].trim() == '') {
-        table += '      <td class="empty-table-cell col'+(i-1)+'"></td>';
-      }else {
-        table += '      <td class="col'+(i-1)+'">'+col[i].trim()+'%</td>';
-      }
-    }
-    table += '</tr>';
-  }
-  table += "  </tbody>\n";
-  table += "</table>\n";
-
-  $('#annualReturnsAll-table').html(table);
-  return lines.join("\n");
-}
-
-function toggleTableWidth(chartName) {
-  if ($('#'+chartName+'-section').hasClass('full-width')) {
-    $('#'+chartName+'-section').removeClass('full-width');
-    document.getElementById(chartName+'-button').innerHTML = "Expand table <i class='fal fa-expand-wide'></i>";
-  } else {
-    $('#'+chartName+'-section').addClass('full-width');
-    document.getElementById(chartName+'-button').innerHTML = "Collapse table <i class='fal fa-compress-wide'></i>";
-  }
-  // window.redraw();
-  return false;
-}
-
-function toggleTableMonths(rowID) {
-  if ($('#'+rowID+'_label').hasClass('bounce')) {
-    $('#'+rowID+'_label').removeClass('bounce');
-    $('#'+rowID+'_months').addClass('hide');
-  } else {
-    $('#'+rowID+'_label').addClass('bounce');
-    $('#'+rowID+'_months').removeClass('hide');
-  }
-  // window.redraw();
-  return false;
-}
-
-function toggleChart(chartName) {
-  if ($('#'+chartName+'-cb').hasClass('bounce')) {
-    $('#'+chartName+'-cb').removeClass('bounce');
-    $('#'+chartName+'').removeClass('hide');
-  } else {
-    $('#'+chartName+'-cb').addClass('bounce');
-    $('#'+chartName+'').addClass('hide');
-  }
-  // window.redraw();
-  return false;
-}
-
-// for monthly and annual returns results
-function buildMonthlyReturnsAllTable(arr) {
-  var i, j;
-  var table = "";
-  var lines = arr.split("\n");
-  var yearLines = [];
-  var monthLines = [];
-  var lastLineType = 'x';
-  var tBodyClose = '';
-  var rowID = 'x';
-  var monthName = '';
-  table += "  <thead>\n";
-  table += "    <tr>\n";
-  var col = lines[0].trim().split(',');
-  // first argument indicates type of line and is not data
-  var lineType = col[0]; col.shift();
-  for (i = 0; i < col.length; i++) {
-    if (i != 0) { col[i] = mapServerFundName (col[i], 0); }
-    var border = borderClass(col[i]);
-    table += '      <th scope="col" class="'+border+' col'+(i-1)+'">'+col[i].trim()+'</th>';
-  }
-  table += "    </tr>\n";
-  table += "  </thead>\n";
-  lines[0] = col.join(',');
-  // yearLines.push(lines[0]);
-  // monthLines.push(lines[0].replace('Year', 'Month'));
-  var yearHead = lines[0];
-  var monthHead = lines[0].replace('Year', 'Month');
-  table += "  <tbody>\n";
-  var YTD = ' YTD';
-  for (j=lines.length-1; j > 0; j--) {
-  // for (j=1; j < lines.length-1; j++) {
-    if (lines[j].trim() == '') { continue; }
-    col = lines[j].split(',');
-    lineType = col[0]; col.shift();
-    if (lineType == 'm') {
-      monthName = getMonthName(parseInt(col[0].substr(4, 2))-1);
-      col[0] = monthName + ' ' + parseInt(col[0].substr(0, 4));
-      // col[0] = getMonthName(parseInt(col[0].substr(4, 2))-1);
-      // col[0] = col[0].substr(0,6);
-    } else {
-      col[0] = col[0].substr(0,4);
-    }
-    lines[j] = col.join(',');
-    if (lineType == 'm') { monthLines.push(lines[j]);  col[0] = monthName; }
-      else { yearLines.push(lines[j]); }
-    if (lineType != lastLineType) {
-      // new tbody section
-      table += tBodyClose;
-      if (lineType == 'y') {
-        rowID = col[0];  // year from above
-        var myID = 'year_'+rowID;
-        table += "  <tbody class='annual-returns'>\n";
-        col[0] = "    <label id='"+myID+"_label' for='"+myID+"'>"+col[0]+YTD+"</label>\n";
-        col[0] += "    <input type='checkbox' id='"+myID+"' onClick='toggleTableMonths(\""+myID+"\")' data-toggle='toggle'>\n";
-        YTD='';
-      } else {
-        table += "  <tbody id='year_"+rowID+"_months' class='monthly-returns hide'>\n";
-      }
-      tBodyClose = "  </tbody>\n";
-      lastLineType = lineType;
-    }
-    table += '<tr>';
-    table += '      <th scope="row">'+col[0].trim()+'</th>';
-    for (i = 1; i < col.length; i++) {
-      if (col[i].trim() == '') {
-        table += '      <td class="empty-table-cell col'+(i-1)+'"></td>';
-      }else {
-        table += '      <td class="col'+(i-1)+'">'+col[i].trim()+'%</td>';
-      }
-    }
-    table += '</tr>';
-  }
-  table += "  </tbody>\n";
-  // table = "<table><body><tr><td>asdfasfafsa</td></tr></body></table>\n";
-  table = sideScrollTable('  ', 'rates-of-return-table', '', table, true);
-
-  $('#annualReturnsAll-table').html(table);
-  // return lines.join("\n");
-  yearLines.reverse(); monthLines.reverse();
-  yearLines.unshift(yearHead); monthLines.unshift(monthHead);
-  return [yearLines.join("\n"), monthLines.join("\n")];
-}
-
-// table-side-scroll building function
-function sideScrollTable(prefix, xclass, id, tableContent, nl) {
-  var myClass = '';
-  var myID = '';
-  var myNL = '';
-  if (nl) { myNL = "\n";}
-  if (xclass != '') { myClass = ' class="'+xclass+'"'; }
-  if (id != '') { myID = ' id="'+id+'"'; }
-  var rc =  prefix + '<table' + myID + myClass + '>' + myNL;
-  rc += prefix + '  <colgroup><col class="column-width"></colgroup>' + myNL;
-  rc += tableContent;
-  rc += prefix + '</table>' + myNL;
-  return rc;
-}
-function sideScrollTH(prefix, scope, xclass, txt, nl) {
-  var myClass = '';
-  if (xclass != '') { myClass = ' class="'+xclass+'"'; }
-  var rc = prefix + '<th scope="'+scope+'"' + myClass + '>' + txt + '</th>';
-  if (nl) rc += "\n";
-}
-// tbody, tr, thead
-function sideScrollWrapper(prefix, tag, id, xclass, content, nl) {
-  var myID = '';
-  var myID = '';
-  var myClass = '';
-  if (nl) { myNL = "\n";}
-  if (xclass != '') { myClass = ' class="'+xclass+'"'; }
-  if (id != '') { myID = ' id="'+id+'"'; }
-  return    prefix + '  <'+tag+'>' + "\n"
-          + coontent
-          + prefix + '  </'+tag+'>' + "\n"
+  chart.redraw();
+  // deletedAlready[chartName] = 1;
 }
