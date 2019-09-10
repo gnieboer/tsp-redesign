@@ -1,0 +1,13 @@
+// TWITTER FEED OVERRIDES
+
+section {
+  &.twitter-feed {
+    p {
+      &:first-child {
+        max-width: 100%;
+      }
+    }
+  }
+  // end &.twitter-feed
+}
+// end section
