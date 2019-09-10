@@ -50,6 +50,18 @@ primary:
       href: /career-changes/
     - text: For beneficiary participants
       href: /for-beneficiary-participants/
+  # - text: News
+  #   links:
+  #   - text: Plan News
+  #     href: /news-and-resources/
+  #   - text: FAQs
+  #     href: /faq/
+  #   - text: Videos & resources
+  #     href: /videos-and-resources/
+  #   - text: Forms & publications
+  #     href: /forms/
+  #   - text: Calculators
+  #     href: /calculators/
 
 secondary:
   - text: About us
@@ -116,9 +128,11 @@ manage-your-plan:
         href: /making-contributions/automatic-enrollment-refunds/
 
 news-and-resources:
-  - text: Plan News
+  - text: News and resources
     href: /news-and-resources/
     subnav:
+      - text: Plan News
+        href: /news-and-resources/plan-news/
       - text: Highlights
         href: /news-and-resources/highlights/
       - text: Government matters

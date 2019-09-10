@@ -1,13 +1,210 @@
-// TWITTER FEED OVERRIDES
-
-section {
-  &.twitter-feed {
-    p {
-      &:first-child {
-        max-width: 100%;
-      }
+// NEXT OUTAGE
+.usa-content {
+  .next-outage {
+    text-align: center;
+    ul {
+     &:not(.usa-accordion) {
+       list-style: none;
+       padding-left: 0;
+       max-width: none;
+       margin: 3rem 0 4rem 0;
+     }
+     li {
+       margin-bottom: 0;
+     }
     }
   }
-  // end &.twitter-feed
 }
-// end section
+
+section {
+  &.key-rates,
+  &.latest-news,
+  &.popular-videos,
+  &.popular-forms-calculators,
+  &.top-5-faq {
+  h2, h3 {
+    font-family: $sans;
+    font-weight: 600;
+    }
+  }
+// KEY RATES
+
+  &.key-rates {
+    .usa-grid {
+      padding-left: 0;
+      padding-right: 0;
+
+      .usa-width-one-third {
+        border: 1px solid $color-gray-lighter;
+        text-align: center;
+        font-size: inherit;
+        min-height: 20rem;
+        padding-top: 5rem;
+
+        div {
+          font-size: 4rem;
+          font-weight: 600;
+          color: $color-primary;
+        }
+
+        ul {
+          &.usa-accordion {
+            & > li {
+              background-color: inherit;
+              margin-bottom: 0;
+
+              button {
+                &.usa-accordion-button {
+                  font-weight: 400;
+                  background-image: none;
+                  padding: 0;
+                  text-align: center;
+                  background-color: inherit;
+                  transition: all .35s ease-in-out;
+                  &:after {
+                    display: inline-block;
+                    font-family: $font-awesome;
+                    content: "\f107";
+                    transition: inherit;
+                  }
+
+                  &[aria-expanded=true] {
+                    &:after {
+                      display: inline-block;
+                      transform: rotate(180deg);
+                      transition: inherit;
+                    }
+                  }
+                }
+              } // end button
+              .usa-accordion-content {
+                padding: 1.5rem 0.5rem;
+                p {
+                  font-weight: 400;
+                  font-size: 1.7rem;
+                  color: #222223;
+                  line-height: .8;
+                  font-size: 1.6rem;
+                  span {
+                    font-weight: bold;
+                  }
+                }
+                &[aria-hidden=true] {
+                    visibility: hidden;
+                    opacity: 0;
+                    // transition: visibility 1s, opacity 0.5s linear;
+                    // transition-delay: .35s;
+                    display: block;
+                }
+                &[aria-hidden=false] {
+                  // transition-property: all;
+                  // transition-duration: 1s;
+                  // transition-timing-function: linear;
+                  // transition-delay: .35s;
+                    visibility: visible;
+                    opacity: 1;
+                    transition: visibility 1s, opacity 0.5s linear;
+                    transition-delay: .35s;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
+}
+
+// LATEST NEWS & POPULAR VIDEOS
+
+  &.latest-news,
+  &.popular-videos {
+    span {
+      // border: 1px solid red;
+    }
+    div {
+      &.video-wrapper {
+        position: relative;
+      	padding-bottom: 56.25%; /* 16:9 */
+      	padding-top: 25px;
+      	height: 0;
+        iframe {
+          position: absolute;
+        	top: 0;
+        	left: 0;
+        	width: 100%;
+        	height: 100%;
+        }
+      }
+      &.video-description {
+        background-color: #fff;
+        margin-bottom: 2rem;
+      }
+      &.header-line {
+        // border: 1px solid blue;
+        justify-content: space-between;
+        align-items: baseline;
+      }
+    }
+    .usa-grid {
+      background-color: $color-gray-lightest;
+      padding: 1.8rem 3rem;
+    }
+    .post-and-share {
+      align-items: center;
+      span {
+        font-weight: 700;
+        }
+      button,
+      .tooltip > button {
+        background-color: inherit;
+        border: none;
+        // border: 1px solid pink;
+        margin: 0;
+        color: inherit;
+        padding: 0 1.2rem;
+        }
+      } // end .post-and-share
+  } // end .latest-news, .popular-videos
+
+
+// POPULAR FORMS & CALCULATORS
+
+  &.popular-forms-calculators {
+    .usa-width-one-half {
+      margin-right: .5%;
+    }
+    p {
+      text-align: center;
+      background-color: $color-blue-light;
+      color: #fff;
+      line-height: 1.3;
+      padding: 1.2rem 0;
+    }
+    ul {
+      list-style: none;
+      li {
+        &:before {
+          font-family: $font-awesome;
+          margin-left: -2rem;
+          margin-right: 1rem;
+          content: "\f040";
+          font-weight: 700;
+          color: $color-blue-light;
+        }
+      }
+      &.calculators-list {
+        li {
+          &:before {
+            content: "\f1ec";
+            font-weight: 400;
+          }
+        }
+      }
+    } // end ul
+    .usa-grid {
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
+} // end section
