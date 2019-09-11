@@ -84,7 +84,7 @@ function buildSideScrollTableSH(chartName, data) {
     var row = sideScrollTH('', '', '', col[0], false);  // column 0 is date
     for (i = 1; i < col.length; i++) {
       colClass = 'col'+i;
-      row = row + sideScrollWrapper('', 'td', '', colClass, col[i].trim(), false);
+      row = row + sideScrollWrapper('', 'td', '', colClass, fundYvalueFormat(parseFloat(col[i].trim())), false);
     }
     bodyHTML += sideScrollWrapper('    ', 'tr', '', '', row, true);
   }
@@ -100,7 +100,7 @@ var doAjaxRetrieveRaw = function(divName, url) {
   var serverCall = $.get(url);
   serverCall.done(
     function (data) {
-      fundHighchart(divName, data, 'Share Prices', false);
+      var chart = fundHighchart(divName, data, '', false);
       $('#'+divName+'-table').html(buildSideScrollTableSH(divName, data));
       syncCheckboxes(divName);
       chartResize(divName);
@@ -116,7 +116,7 @@ var doAjaxRetrieveRaw = function(divName, url) {
 }
 
 function fundYvalueFormat(value) {
-  return value.toFixed(2);
+  return value.toFixed(4);
 }
 
 function fundTooltip(me, chartName) {

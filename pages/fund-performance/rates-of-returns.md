@@ -7,6 +7,7 @@ scripts:
   - /assets/js/jquery.min.js
   - /assets/js/jquery.numeric.js
   - /assets/js/highcharts/highcharts.js
+  - /assets/js/highcharts/exporting.js
   - /assets/js/highcharts/data.js
   - /assets/js/calculator/calculator.js
   - /assets/js/ajaxFetch.js
