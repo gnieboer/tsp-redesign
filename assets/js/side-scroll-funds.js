@@ -98,10 +98,24 @@ function indexFundSync(chartName, doTableColumn) {
   if (chart == null) { return false; }
   var series = chart.series;
   highchartsSeriesToggle(series, 7, val, doTableColumn);
+  if (val) fundHighchartClickAction(chartName, 7, '&', series[6].visible);
   highchartsSeriesToggle(series, 9, val, doTableColumn);
+  if (val) fundHighchartClickAction(chartName, 9, '&', series[8].visible);
   highchartsSeriesToggle(series, 11, val, doTableColumn);
+  if (val) fundHighchartClickAction(chartName, 11, '&', series[10].visible);
   highchartsSeriesToggle(series, 13, val, doTableColumn);
+  if (val) fundHighchartClickAction(chartName, 13, '&', series[12].visible);
   chart.redraw();
+  return false;
+}
+
+// show/hide idx series from highchart display
+function highchartsSeriesToggle(series, idx, show, doTableColumn) {
+  if (idx < 0) { return false; }
+  if (idx >= series.length) { return false; }
+  series[idx].update({ showInLegend: show }, true, false);
+  if (!show) { series[idx].setVisible(show, false); }
+  if (doTableColumn) { syncTableColumn(idx+1, show); }
   return false;
 }
 
@@ -121,7 +135,6 @@ function syncCheckboxes(chartName) {
   syncFundCheckboxGroups();
   return false;
 }
-
 
 // map cb name to index in fund list
 function checkBoxColumnID(cbName, indexFundsFlag) {
@@ -143,8 +156,8 @@ function syncFundCheckboxGroups() {
   $('#InvFunds').prop('checked', flag);
 }
 
-function getSeriesID(name, chart) {
-  var chart = $('#'+chart).highcharts();
+function getSeriesID(name, chartName) {
+  var chart = $('#'+chartName).highcharts();
   if (chart == null) { return; }
   var series = chart.series;
   for (var i = 0; i < series.length; i++) {
@@ -162,17 +175,6 @@ function borderClass(fund) {
   if (fund.substring(0,4) == 'Dow ') { return 'border-index-s'; }
   if (fund.substring(0,4) == 'EAFE') { return 'border-index-i'; }
   return 'border-'+fund;
-}
-
-
-// show/hide idx series from highchart display
-function highchartsSeriesToggle(series, idx, show, doTableColumn) {
-  if (idx < 0) { return false; }
-  if (idx >= series.length) { return false; }
-  series[idx].update({ showInLegend: show }, true, false);
-  if (!show) { series[idx].setVisible(show, false); }
-  if (doTableColumn) { syncTableColumn(idx+1, show); }
-  return false;
 }
 
 function setSeriesVisibility(chart, idx, val) {
@@ -206,7 +208,7 @@ function fundHighchart(chartName, csvData, title, indexFundsFlag) {
     { colorIndex: 's' }, { colorIndex: 'is' }, { colorIndex: 'i' }, { colorIndex: 'ii' }];
     var series10 = [{ colorIndex: 'lf' }, { colorIndex: 'lf' }, { colorIndex: 'lf' }, { colorIndex: 'lf' }, { colorIndex: 'lf' },
       { colorIndex: 'g' }, { colorIndex: 'f' }, { colorIndex: 'c' }, { colorIndex: 's' }, { colorIndex: 'i' }];
-  Highcharts.chart(chartName, {
+  return Highcharts.chart(chartName, {
     credits: { enabled: false },
     chart: {
       type: 'line',
@@ -242,6 +244,8 @@ function fundHighchart(chartName, csvData, title, indexFundsFlag) {
     },
     series: indexFundsFlag ? series14 : series10,
     // series: [{ data: monthData }],
+    exporting: { enabled: true },
+    //       chart.options.exporting.enabled = false;
     yAxis: {
       labels: {
         formatter: function() {

@@ -2,7 +2,7 @@
 function getRatesOfReturn(chart) {
   var funds = ['Lfunds', 'InvFunds', 'IndexFunds'];
   var url = fundDownloadString('getMonthlyReturnsSummary.html', '', funds);
-  console.log(url);
+  // console.log(url);
   doAjaxRetrieveRoR(chart, url);
   return false;
 }
@@ -13,10 +13,9 @@ var doAjaxRetrieveRoR = function(divName, url) {
   serverCall.done(
     function (data) {
       // fix columns server side
-      console.log('dav, fix column names server side in rates of return');
       var lines = data.split("\n");
       var col = lines[0].split(",");
-      for(var i = col.length-1; i > 1; i--) { col[i] = mapServerFundName(col[i]); }
+      // for(var i = col.length-1; i > 1; i--) { col[i] = mapServerFundName(col[i]); }
       lines[0] = col.join(",");
       data = lines.join("\n");
       // fundHighchart(divName+'-annual', data, 'Annual Returns', false);
@@ -105,7 +104,7 @@ function buildSideScrollTableRoR(chartName, data) {
     }
     for (i = 1; i < col.length; i++) {
       colClass = 'col'+i;
-      val = col[i].trim()+'%';
+      val = fundYvalueFormat(parseFloat(col[i].trim()));
       if (col[i].trim() == '') {
         colClass = "empty-table-cell "+colClass;
         val = '';
@@ -122,8 +121,8 @@ function buildSideScrollTableRoR(chartName, data) {
   // console.log(table);
   annualData.unshift(header);
   monthlyData.unshift(header);
-  fundHighchart(chartName+'-annual', annualData.join("\n"), 'Annual Returns', true);
-  fundHighchart(chartName+'-monthly', monthlyData.join("\n"), 'Monthly Returns', true);
+  fundHighchart(chartName+'-annual', annualData.join("\n"), '', true);
+  fundHighchart(chartName+'-monthly', monthlyData.join("\n"), '', true);
   return table;
 }
 
@@ -203,7 +202,7 @@ function fundTooltip(me, chartName) {
     tipTitle += me.x;
   }
   rc = tooltipHeader(tipTitle)+rc;
-  rc = tooltipDiv('growth-100-tooltip', rc);
+  rc = tooltipDiv('rates-of-return'+'-tooltip', rc);
   // console.log(rc);
   return rc;
 }

@@ -9,6 +9,7 @@ scripts:
   - /assets/js/jquery.min.js
   - /assets/js/jquery.numeric.js
   - /assets/js/highcharts/highcharts.js
+  - /assets/js/highcharts/exporting.js
   - /assets/js/highcharts/data.js
   - /assets/js/calculator/calculator.js
   - /assets/js/ajaxFetch.js
@@ -44,7 +45,7 @@ To understand how the TSP calculates rates of return for any given period of tim
   <section id="{{chartName}}-section" class="share-price-table">
     <ul class="usa-accordion">
       <li>
-        <button class="usa-accordion-button" aria-expanded="true" aria-controls="{{ chartName }}">Annual Returns</button>
+        <button class="usa-accordion-button" aria-expanded="true" aria-controls="{{ chartName }}">Share Prices</button>
         <div id="{{ chartName }}" class="usa-accordion-content hc-share-price-chart" aria-hidden="false"></div>
       </li>
     </ul>
