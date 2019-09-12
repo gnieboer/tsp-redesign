@@ -42,7 +42,7 @@ scripts:
     {% assign hide = 0 %}
     {% for panelName in panelNames %}
       {% assign panelID = forloop.index %}
-      {% assign panelMD = 'panel' | append: panelID | append: '.md' %}
+      {% assign panelMD = 'panel-' | append: panelID | append: '.md' %}
       {% capture panelHTML %}{% include_relative {{ panelMD }} panelID=panelID hide=hide %}{% endcapture %}
       {{ panelHTML | markdownify }}
       {% assign hide = 1 %}

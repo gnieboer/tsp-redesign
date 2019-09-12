@@ -5,7 +5,7 @@ Elective Contributions panel (2) for How Much Can I Contribute?.
 {% assign hide = 'display: block;' %}
 {% if include.hide == 1 %} {% assign hide = 'display: none;' %} {% endif %}
 
-<div id="panel{{ panelID }}" class="calculator-panel" style="{{ hide }}"  markdown="1">
+<div id="panel-{{ panelID }}" class="calculator-panel" style="{{ hide }}"  markdown="1">
 
 <div class="deco-box">
 <!-- A -->

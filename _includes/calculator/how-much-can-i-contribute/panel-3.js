@@ -2,7 +2,7 @@
 This is the javascript specific to panel 3.
 {% endcomment %}
 {% assign panelID = include.panelID | default: 3 %}
-{% assign panelName = include.panelName | default: 'panel' | append: panelID %}
+{% assign panelName = include.panelName | default: 'panel-' | append: panelID %}
 <script type="text/javascript">
 <!--
 panelNames['{{ panelName}}'] = {{ panelID }};
