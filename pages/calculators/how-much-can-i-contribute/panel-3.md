@@ -6,7 +6,7 @@ Elective Deferral Limits panel (3) for How Much Can I Contribute?.
 {% assign gridClass2 = include.gridClass2 | default: 'results' %}
 {% if include.hide == 1 %} {% assign hide = 'display: none;' %} {% endif %}
 
-<div id="panel{{ panelID }}" class="calculator-panel" style="{{ hide }}" markdown="1">
+<div id="panel-{{ panelID }}" class="calculator-panel" style="{{ hide }}" markdown="1">
 
 **A summary of your computations based on the data you entered is shown below.**
 

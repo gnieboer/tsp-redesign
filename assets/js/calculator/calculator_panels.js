@@ -133,9 +133,9 @@ function showPanel(num) {
   // console.log('show panel ' + num);
   for (var i=1; i<=maxPanels; i++) {
     if (i == num) {
-      $('#panel'+i).show();
+      $('#panel-'+i).show();
     } else {
-      $('#panel'+i).hide();
+      $('#panel-'+i).hide();
     }
   }
   if (lastPanel >= 0) {

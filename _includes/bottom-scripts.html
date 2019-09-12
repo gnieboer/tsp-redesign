@@ -21,7 +21,7 @@ Autoloads calculator panel js files.
   {% assign maxPanels = panelNames | size %}
   {% for panelName in panelNames %}
     {% assign panelID = forloop.index %}
-    {% assign panelJS = calcPath | append: 'panel' | append: panelID | append: '.js' %}
+    {% assign panelJS = calcPath | append: 'panel-' | append: panelID | append: '.js' %}
     {% include {{ panelJS }} panelID=panelID panelName=panelName %}
   {% endfor %}
   {% include {{ indexJS }}  maxPanels=maxPanels %}
