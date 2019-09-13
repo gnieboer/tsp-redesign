@@ -8,7 +8,7 @@ permalink: /account-basics/update-your-address/
 ---
 # Update your address
 
-How you change your address with us depends on whether or not you still work for the federal government.
+Keeping your addresss up to date with us is important. How you change your address with us depends on whether or not you still work for the federal government.
 
 **If you’re currently a federal employee**, report your correct address to your agency. We can’t accept address changes directly from you.
 
