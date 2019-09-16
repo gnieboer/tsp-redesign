@@ -16,19 +16,18 @@ Each year the IRS determines the maximum amount you can contribute to tax-deferr
 
 <div class="dotted-line"></div>
 
-Choose the year you would like to review, then press Start.
+<fieldset>
+{% include calculator/div-panel-form-field.html
+  fieldID="panel-1.1" id="review-year"
+  inputClass="" inputType="no-select"
+  value="2019" min="2018" max="2019"
+  prompt="Choose the year you would like to review, then press Start."
+  explanation=""
+%}
+</fieldset>
 
-<form class="usa-form flex">
-<label for="options" class="sr-only">Calendar year</label>
-<select name="options" id="options">
-  <option value>- Select -</option>
-  <option value="2018">2018</option>
-  <option value="2019" selected="">2019</option>
-</select>
 {% capture click %}processPanel({{ panelID }}, 0, {{ panelID | plus: 1}}, 0); return false;{% endcapture %}
 {% include calculator/button.html text='Start' onClick=click xtraClass2='primary' %}
-</form>
-
 
 {% capture myNote %}
 This calculator is especially important for FERS employees and members of the

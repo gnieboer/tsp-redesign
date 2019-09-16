@@ -14,6 +14,8 @@ panelEnter[{{ panelID }}] = function(panel) {
     return true;
 }
 panelExit[{{ panelID }}] = function(panel) {
+    var yearChoosen = $('#review-year').val();
+    $('.year-choosen').html(yearChoosen);
     return true;
 }
 

@@ -21,23 +21,23 @@ Elective Deferral Limits panel (3) for How Much Can I Contribute?.
 %}
 
 
-<div class="deco-box">
-
-{% include calculator/inputRow.html inputType="value" id="contributionYear" right="2000"
-  left="Contribution year" %}
-{% include calculator/inputRow.html inputType="value" id="deferralLimit" right="2000"
-  left="IRS Elective Deferral Limit for <span id='yearE'>YYYY</span>" %}
-{% include calculator/inputRow.html inputType="value" id="totalContributed" right="2000"
+<div class="results-grid-frame">
+{% include calculator/resultsRow.html left="Contribution year"
+                                      rightID="contribution-year" right="<span class='year-choosen'>YYYY</span>" %}
+{% include calculator/resultsRow.html rightID="deferral-limit" right=""
+  left="IRS Elective Deferral Limit for <span class='year-choosen'>YYYY</span>" %}
+{% include calculator/resultsRow.html rightID="total-contributed" right=""
   left="How much you will have contributed before your new amount is effective" %}
-{% include calculator/inputRow.html inputType="value" id="amountAvailable" right="2000"
+{% include calculator/resultsRow.html rightID="amount-available" right=""
   left="Amount you can still contribute this year" %}
-{% include calculator/inputRow.html inputType="value" id="paymentsRemaining" right="2000"
-  left="Number of salary payments remaining in <span id='yearF'>YYYY</span>" %}
+{% include calculator/resultsRow.html rightID="payments-remaining" right=""
+  left="Number of salary payments remaining in <span class='year-choosen'>YYYY</span>" %}
 
 {% capture newAmountTextBlock %}
 
 <strong>Here’s the new amount you can contribute each remaining pay period if you
-want to maximize your contributions for <span id='yearG'>YYYY</span></strong> (rounded down to the nearest dollar).
+want to maximize your contributions for <span class='year-choosen'>YYYY</span></strong>
+(rounded down to the nearest dollar).
 
 <p>To change how much you contribute, log into your payroll system and select the Thrift Savings Plan option. Common payroll systems include <a class="externalLink" href="/other/exit/exit_tsp_website.html?urlIdx= 6"
   title="myPay website opens in a new window.">myPay</a>, EBIS,
@@ -51,10 +51,9 @@ and <a class="externalLink" href="/other/exit/exit_tsp_website.html?urlIdx=47"
   title="Direct Access website opens in a new window.">Direct Access</a>.</p>
 
 {% endcapture %}
-{% include calculator/inputRow.html inputType="value" id="newContribution" right="2000"
-  left=newAmountTextBlock %}
+{% include calculator/resultsRow.html rightID="new-contribution" right="" left=newAmountTextBlock %}
 
-</div>
+  </div>
 
 {% include calculator/button-block.html panelID=panelID revise=2 %}
 

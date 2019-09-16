@@ -22,62 +22,56 @@ panelExit[{{ panelID }}] = function(panel) {
 }
 
 function setYearValues() {
-  var planYear = $('#planYear').val();
-  $('#yearA').html(planYear);
-  $('#yearB').html(planYear);
-  $('#contributionYear').html(planYear);
-  $('#yearD').html(planYear);
-  $('#yearE').html(planYear);
-  $('#yearF').html(planYear);
-  $('#yearG').html(planYear);
+  var yearChoosen = $('#review-year').val();
+  $('.year-choosen').html(yearChoosen);
 }
 
-function totalMadeGood(contributionLimit, planYear, forceValue) {
+function ytdContGood(contributionLimit, reviewYear, forceValue) {
   var def = 0;
   if (forceValue) { def = -1; }
-  var totalMade = getPosInteger('totalMade', def);
+  var ytdCont = getPosInteger('ytd-cont', def);
 
-  if (totalMade < 0) {
-    return showError('totalMade', "Please enter the amount that you have contributed so far this year.");
+  if (ytdCont < 0) {
+    return showError('ytd-cont', "Please enter the amount that you have contributed so far this year.");
   }
-  if (totalMade > contributionLimit) {
-    return showError('totalMade', "The amount you entered exceeds " + CurrencyFormatted(contributionLimit, 'no_cent')
-        + ", the IRS elective deferral limit for " + planYear + ".");
+  if (ytdCont > contributionLimit) {
+    return showError('ytd-cont', "The amount you entered exceeds " + CurrencyFormatted(contributionLimit, 'no_cent')
+        + ", the IRS elective deferral limit for " + reviewYear + ".");
   }
 
-  return clearError('totalMade');
+  return clearError('ytd-cont');
 }
 
-function additionalAmountGood(contributionLimit, planYear, forceValue) {
+function estContGood(contributionLimit, reviewYear, forceValue) {
   var def = 0;
   if (forceValue) { def = -1; }
-  var additionalAmount = getPosInteger('additionalAmount', def);
+  var estCont = getPosInteger('est-cont', def);
 
-  if (additionalAmount < 0) {
-    return showError('additionalAmount', "Please enter the additional amount you expect to contribute before your new election takes effect.");
+  if (estCont < 0) {
+    return showError('est-cont', "Please enter the additional amount you expect to contribute before your new election takes effect.");
   }
-  if (additionalAmount > contributionLimit) {
-    return showError('additionalAmount', "The amount you entered exceeds " + CurrencyFormatted(contributionLimit, 'no_cent')
-        + ", the IRS elective deferral limit for " + planYear + ".");
+  if (estCont > contributionLimit) {
+    return showError('est-cont', "The amount you entered exceeds " + CurrencyFormatted(contributionLimit, 'no_cent')
+        + ", the IRS elective deferral limit for " + reviewYear + ".");
   }
 
-  return clearError('additionalAmount');
+  return clearError('est-cont');
 }
 
 function totalContributionGood(forceTotal, forceAdditional) {
-  var totalMade = getPosInteger('totalMade', 0);
-  var additionalAmount = getPosInteger('additionalAmount', 0);
-  var planYear = getPosInteger('planYear', 2019);
-  var contributionLimit = getContributionLimit(planYear);
+  var ytdCont = getPosInteger('ytd-cont', 0);
+  var estCont = getPosInteger('est-cont', 0);
+  var reviewYear = getPosInteger('review-year', 2019);
+  var contributionLimit = getContributionLimit(reviewYear);
 
-  var rc = totalMadeGood(contributionLimit, planYear, forceTotal) & additionalAmountGood(contributionLimit, planYear, forceAdditional);
+  var rc = ytdContGood(contributionLimit, reviewYear, forceTotal) & estContGood(contributionLimit, reviewYear, forceAdditional);
 
   if (rc) {
-    if ((totalMade + additionalAmount) > contributionLimit) {
+    if ((ytdCont + estCont) > contributionLimit) {
       var msg = "The combined total of Items A and B cannot exceed " + CurrencyFormatted(contributionLimit, 'no_cent')
-        + ", the IRS elective deferral limit for " + planYear + ".";
-      showError('totalMade', msg);
-      return showError('additionalAmount', msg);
+        + ", the IRS elective deferral limit for " + reviewYear + ".";
+      showError('ytd-cont', msg);
+      return showError('est-cont', msg);
     }
   }
 
