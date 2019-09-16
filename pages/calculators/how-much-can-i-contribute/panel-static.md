@@ -36,10 +36,10 @@ panel-names:
   <fieldset>
   <div class="panel-form-field" >
   <div class="usa-input-error">
-  <label class="usa-input-error-label" for="ytd_cont" aria-details="panel-2.1">What is the total dollar amount you've already contributed to the TSP in <span id="yearA"><< YEAR >></span>?</label>
-  <span class="usa-input-error-message" id="ytd_cont-error-message" role="alert">Helpful error message</span>
+  <label class="usa-input-error-label" for="ytd-cont" aria-details="panel-2.1">What is the total dollar amount you've already contributed to the TSP in <span id="yearA"><< YEAR >></span>?</label>
+  <span class="usa-input-error-message" id="ytd-cont-error-message" role="alert">Helpful error message</span>
   <span data-format="$" class="input-symbol-left">
-  <input id="totalMade" name="ytd_cont" class="format-left" value="0" type="number" maxlength="8" onblur="totalContributionGood(true, false);" onchange="totalContributionGood(true, false);" /></span>
+  <input id="ytd-cont" name="ytd-cont" class="format-left" value="0" type="number" maxlength="8" onblur="totalContributionGood(true, false);" onchange="totalContributionGood(true, false);" /></span>
   </div>
   <ul class="usa-accordion">
   <li>
@@ -79,7 +79,7 @@ panel-names:
 
   <div class="panel-form-field" >
   <label for="rmn_pmts" aria-details="panel-2.3" >Select the remaining number of salary payments you will receive in <span id="yearD"><< YEAR >></span> after your new amount takes effect:</label>
-  <select class="" id="numberPayment" name="rmn_pmts">
+  <select class="" id="remaining-payments" name="remaining-payments">
   <option value="1">1</option>
   <option value="2">2</option>
   <option value="3">3</option>
@@ -155,7 +155,7 @@ panel-names:
   <button class="usa-button " href="javascript:void(0);" title="" onclick="processPanel(2, 0, 3, 0); return false;">Show Results</button>
   </span>
   </ul>
-  <div class="tspError pe-error" id="tspErrortotalMade" style="display: block; text-align: right;"></div>
+  <div class="tspError pe-error" id="tspErrorytd-cont" style="display: block; text-align: right;"></div>
 
 </section> <!-- end section#panel-2 -->
 

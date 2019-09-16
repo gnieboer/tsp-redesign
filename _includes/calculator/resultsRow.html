@@ -1,0 +1,15 @@
+{% comment %}
+Simple results grid, left 2/3 and right 1/3.
+{% endcomment %}
+{% assign left = include.left | default: 'Left Text' %}
+{% assign right = include.right | default: '' %}
+{% assign rightID = include.rightID | default: '' %}
+{% if rightID != '' %}
+{% assign rightID = 'id="' | append: rightID | append: '"' %}
+{% endif %}
+<div class="usa-grid results">
+  <div class="usa-width-two-thirds ">{{left}}</div>
+  <div class="usa-width-one-third ">
+  <span {{rightID}}>{{right}}</span>
+  </div>
+</div>
