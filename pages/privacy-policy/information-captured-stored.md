@@ -13,7 +13,7 @@ permalink: /privacy-policy/information-captured-stored/
 ---
 # Information automatically captured and stored
 
-## Public Website Access
+## Public website access
 
 The public components of the FRTIB and TSP websites do not collect any personal information about you. When you browse, read pages, or download information on the FRTIB or TSP website, we automatically gather and store certain technical (non-personal) information about your visit. This information is only used to help make the sites more effective and user-friendly.
 
