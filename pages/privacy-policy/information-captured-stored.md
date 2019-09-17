@@ -32,7 +32,7 @@ In addition, this website uses Google Analytics. Please refer to the following p
 - [Opt out of Google Analytics Cookies](https://tools.google.com/dlpage/gaoptout?hl=en){:target="\_blank"}
 
 
-## TSP Account Access
+## TSP account access
 If you choose to access your account in the secure section of the TSP website (tsp.gov), we do request your account number (or user ID) and web password in order to identify your account. When you provide your account information, you are consenting to the electronic transmission of the personal financial information you have requested. Your consent is effective during the entire time you are accessing your TSP account through the website.
 
 We only share information you give us with other government agencies if your transaction relates to another agency, or as otherwise required by law. Read the warning on the login page.
