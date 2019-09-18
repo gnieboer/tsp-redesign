@@ -97,8 +97,8 @@ manage-your-plan:
   - text: Account basics
     href: /account-basics/
     subnav:
-      - text: Your account number
-        href: /account-basics/your-account-number/
+      - text: Access your account
+        href: /account-basics/access-your-account/
       - text: How the TSP fits into your retirement
         href: /account-basics/how-tsp-fits/
       - text: Move money into the TSP

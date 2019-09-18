@@ -4,10 +4,10 @@ title: Account basics
 sidenav: manage-your-plan
 styles:
 scripts:
-permalink: /account-basics/your-account-number/
+permalink: /account-basics/access-your-account/
 ---
 
-# Your account number
+# Access your account
 
 
 ## How to gain access to My Account
