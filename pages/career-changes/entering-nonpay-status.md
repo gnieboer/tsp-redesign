@@ -38,7 +38,7 @@ While you are in nonpay status:
 
 
 
-## What are the effects of non-pay status on my contributions and loans?
+## What are the effects of nonpay status on my contributions and loans?
 
 * If you make employee contributions based on a **percentage** of your basic pay and your income decreases during the pay period, your contributions would automatically decrease by an equal percentage. However, if you make contributions based on a **dollar amount**, that amount would not automatically decrease with the reduction in pay.
 * If you don’t earn enough per pay period for your agency to deduct the required loan payment from your pay because of a furlough, you would be responsible for ensuring your TSP loan payments are up to date.
