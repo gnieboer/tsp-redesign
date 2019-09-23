@@ -75,6 +75,8 @@ function totalContributionGood(forceTotal, forceAdditional) {
     }
   }
 
+  $('#ytd-cont').attr("max", contributionLimit);
+  $('#est-cont').attr("max", contributionLimit);
   return rc;
 }
 

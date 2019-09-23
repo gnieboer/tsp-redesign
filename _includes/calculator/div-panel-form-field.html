@@ -21,13 +21,17 @@ This script produces an input area for calculator panels.
 {% assign onBlur = 'onBlur="' | append: onBlur | append: '" onChange="' | append: onBlur | append: '"' %}
 {% endif %}
 <div class="panel-form-field" >
-  <div id="{{id}}-div" class="xusa-input-error">
-    <label class="usa-input-error-label" id="{{id}}-label" for="{{id}}" aria-details="{{fieldID}}">{{prompt}}</label>
+  <div id="{{id}}-div" class="">
+    <label class="" id="{{id}}-label" for="{{id}}" aria-details="{{fieldID}}">{{prompt}}</label>
     <span class="usa-input-error-message" id="{{id}}-error-message" role="alert"></span>
     {% if dataFormat %}<span data-format="{{dataFormat}}" class="input-symbol-left">{%endif%}
     {% if inputType == 'number' %}
       <input id="{{id}}" name="{{name}}" class="{{inputClass}}" type="number" {{onBlur}}
         value="{{value}}" min="{{min}}" max="{{max}}" step="{{step}}" placeholder="{{placeholder}}" />
+    {% endif %}
+    {% if inputType == 'text' %}
+      <input id="{{id}}" name="{{name}}" class="{{inputClass}}" type="text" {{onBlur}}
+        value="{{value}}" maxLength="{{maxLength}}" placeholder="{{placeholder}}" />
     {% endif %}
     {% if inputType == 'no-select' or inputType == 'select' %}
     <select class="{{inputClass}}" id="{{id}}" name="{{name}}">
