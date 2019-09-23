@@ -19,6 +19,22 @@ panelExit[{{ panelID }}] = function(panel) {
     return true;
 }
 
+function buildDropdown(selectedValue) {
+  var dd = $('#review-year');
+  var selected = '';
+  dd.empty();
+  for (var i = taxMinYear; i <= taxMaxYear; i++) {  // limits from js tax file
+    if (i == selectedValue) { selected = ' selected=selected'; } else { selected = ''; }
+    dd.append('<option'+selected+' value="'+i+'">'+i+'</option>');
+  }
+  // dd.val(selectedValue);
+  return true;
+}
+function setDropdownDefault() {
+  var defaultYear = determineActingYear();
+  buildDropdown(defaultYear);
+}
+
 // getContributionLimit moved to javascriptTaxTable.js
 
 $(document ).ready(function() {
