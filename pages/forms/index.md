@@ -16,6 +16,7 @@ permalink: /forms/
 <div class="usa-grid-full">
   <div class="usa-width-one-half">
     <div role="search">
+
     <form class="usa-search usa-search-big">
       <label class="usa-sr-only" for="select-forms-topic">Search small</label>
         <select id="select-forms-topic" type="search" name="select-forms-topic" onchange="selectFormsTopic();">
@@ -29,6 +30,17 @@ permalink: /forms/
         <span class="usa-sr-only">Search</span>
       </button>
     </form>
+
+    <form accept-charset="UTF-8" action="https://search.usa.gov/search/forms-pubs/" id="search_form" method="get">
+    <div style="margin:0;padding:0;display:inline">
+    <input type="hidden" name="dc" value="8657">
+    <input name="utf8" type="hidden" value="&#x2713;" /></div>
+    <input id="affiliate" name="affiliate" type="hidden" value="beta.tsp" />
+    <label for="query">Enter Search Term(s):</label>
+    <input autocomplete="off" class="usagov-search-autocomplete" id="query" name="query" type="text" />
+    <input name="commit" type="submit" value="Search" />
+    </form>
+
     </div>
   </div>
   <div class="usa-width-one-half"></div>

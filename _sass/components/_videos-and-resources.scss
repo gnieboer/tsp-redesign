@@ -1,13 +1,31 @@
-// TWITTER FEED OVERRIDES
 
+div#social,
+.feeds {
+  padding-left: 0;
+  padding-right: 0;
+}
 section {
-  &.twitter-feed {
-    p {
-      &:first-child {
-        max-width: 100%;
+  &.facebook-feed {
+    text-align: center;
+  }
+}
+
+div#videos {
+  background-color: $color-gray-lightest;
+}
+@media only screen and (min-width: $large-screen) {
+  .usa-tabs {
+    &.social-media {
+      .usa-accordion-button {
+        background-color: #e0f2f9;
+        color: $color-primary-darker;
+        font-weight: 400;
+        &[aria-expanded="true"] {
+          background-color: $color-primary-darker;
+          color: #fff;
+          font-weight: 400;
+        }
       }
     }
   }
-  // end &.twitter-feed
 }
-// end section
