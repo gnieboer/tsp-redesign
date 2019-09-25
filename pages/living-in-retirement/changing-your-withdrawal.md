@@ -7,31 +7,29 @@ scripts:
 permalink: /living-in-retirement/changing-your-withdrawal/
 ---
 
-# Changing your withdrawal
+# Changing your withdrawal request
 
-Once your withdrawal request is processed, you cannot return your withdrawal or change your withdrawal options. However, if you’ve chosen to receive part or all of your account in a series of monthly payments, you can change and manage those payments.
+Once your withdrawal request is processed, you cannot return your withdrawal or change your withdrawal options. However, if you have chosen to withdraw money from your account through TSP installment payments, you can make the following changes at any time:
++ stop payments
++ change the source of payments (traditional, Roth, or both)
++ start, stop, or change direct deposit of your payments
++ change your federal tax withholding
+ 
+If your current payments are of a fixed dollar amount that you chose when you set them up, you can also make these changes:
+ 
++ change the dollar amount of your payments
++ change the frequency of your payments (monthly, quarterly, or annual)
++ start transferring your payments to an IRA or eligible employer plan **(only if payments are expected to last less than 10 years)**
++ change or stop transfers (if currently transferring)
+ 
+**Important:** Note that changing the amount or frequency of your payments is not valid for payments based on life expectancy. So we will change your payments to fixed-dollar-amount payments if you request such a change. **You cannot change from payments of a fixed dollar amount to payments based on life expectancy, so this change will be permanent.**
 
-## Changing your monthly payment amount
 
-Use Form TSP-73, [*Change in Monthly Payment Amount*](https://www.tsp.gov/PDF/formspubs/tsp-73.pdf), to do any of the following:
+# Making changes to your TSP installment payments
 
-+ Change the monthly dollar amount you are receiving. You may do this once a year. Your request will become effective the following January; or
-+ Change your TSP-computed payments (based on life expectancy) to a specific dollar amount. You may only do this once. Your request will become effective the following January.
+To make any of the allowable changes described above, use the online tool that you will find in My Account at tsp.gov by clicking “Withdrawals and Changes to Installment Payments.” When you’ve completed your online request, you’ll be asked to submit it online if possible. If your signature or your spouse’s signature is required or you’re starting or making changes to transfers, you won’t be able to complete the process entirely online. You’ll be given a summary of your request, which you—and your spouse or financial institution if necessary—will need to sign, have notarized, and then mail or fax to us. When we receive these properly completed pages, we’ll be able to complete the transaction you began online.
 
-## Managing your monthly payments
+Be sure to carefully read the TSP tax notice, [*"Tax Information for TSP Participants Receiving Installment Payments*](https://www.tsp.gov/PDF/formspubs/tsp-780.pdf)." It outlines the rules for changing your monthly payments and details the tax implications associated with each monthly payment option. 
 
-Use Form TSP-78, [*Monthly Payments Maintenance*](https://www.tsp.gov/PDF/formspubs/tsp-78.pdf), to make the following changes immediately:
+If you're currently receiving installment paymens and want to choose a different amount, use our [TSP Installment Payment Calculator](https://www.tsp.gov/PlanningTools/Calculators/installmentPayCalc.html) to estimate how many payments you will receive and how long they will last. 
 
-+ Start the direct deposit of your payments.
-+ Change the financial institution or the checking or savings account that is receiving your monthly payments.
-+ Stop direct deposit and have your monthly payment sent to you in the mail.
-+ Change the standard federal tax withholding for your monthly payments.
-+ Begin or stop transferring monthly payments to your IRA or eligible employer plan.
-+ Change the portion of each monthly payment that is transferred to your IRA or eligible employer plan.
-+ Change the IRA or eligible employer plan to which your payments are sent.
-
-If you’ve chosen an annuity, you cannot change either the annuity option or your choice of joint annuitant after we’ve purchased the annuity for you. For more information about annuities, be sure to read [*Withdrawing Your TSP Account After Leaving Federal Service*](https://www.tsp.gov/PDF/formspubs/tspbk02.pdf).
-
-## Requesting a final single payment
-
-Use Form TSP-79, [*Change From Monthly Payments to Final Payment*](https://www.tsp.gov/PDF/formspubs/tsp-79.pdf), if you are receiving monthly payments and you want to request a final single payment from your TSP account. Your request for a final single payment will close your TSP account, which cannot be reversed.
