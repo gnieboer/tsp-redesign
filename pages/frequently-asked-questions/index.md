@@ -9,6 +9,6 @@ permalink: /faq/
 
 # Frequently asked questions
 
-{% include faq.html %}
+{% include faq-list.html %}
 
 <!-- CONTENT END -->

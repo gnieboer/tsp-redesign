@@ -135,5 +135,5 @@ Popular calculators
 
 ## Top 5 FAQs
 
-{% include faq.html %}
+{% include faq-list.html maxFAQs=5 %}
 </section>
