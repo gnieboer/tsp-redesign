@@ -1,0 +1,18 @@
+{% comment %}
+HTML block for one faq item accordion.
+{% endcomment %}
+
+{% assign faq_id = include.faq_id | default: 'faqX' %}
+{% assign faq_name = include.faq_name | default: 'faq_name' %}
+{% assign faq_question = include.faq_question | default: 'FAQ Question' %}
+{% assign faq_body = include.faq_body | default: 'faq_body' %}
+<!-- {{faq_name}} -->
+<a name="{{faq_name}}"></a>
+<li>
+<button class="usa-accordion-button" aria-expanded="false" aria-controls="{{faq_id}}">
+{{faq_question}}
+</button>
+<div id="{{faq_id}}" class="usa-accordion-content" markdown="1">
+{{faq_body}}
+</div>
+</li>
