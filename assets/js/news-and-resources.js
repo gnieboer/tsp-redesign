@@ -4,7 +4,6 @@ function setTaxData() {
   var today = new Date();
   year = today.getFullYear();
   // year = determineActingYear();
-  console.log('getting values for year '+ year);
   var taxList = getTaxValues(year);
   $('#tax-year').html(taxList[0]);
   $('#contribution-limit').html(CurrencyFormatted(taxList[1], 'no_cent'));
@@ -23,24 +22,24 @@ function onSuccess(divName, data) {
   $('#'+divName).html(data);
 }
 function onFail(divName, textStatus, errorThrown) {
-  $('#'+divName).html('failed');
+  $('#'+divName).html('unavailable');
 }
 // get loan rate and annuity rate
 function getLoanAndAnnuityRate() {
-  $('#loan-rate').html('fetching...');
-  $('#annuity-rate').html('fetching...');
+  $('#loan-rate').html('...');
+  $('#annuity-rate').html('...');
   var url = getDownloadString('getCurrentLoanInterestAndAnnuityRate.html', '');
   doAjaxRetrieveCallback('both', url, onSuccess, onFail);
 }
 // get loan rate
 function getLoanRate() {
-  $('#loan-rate').html('fetching...');
+  $('#loan-rate').html('...');
   var url = getDownloadString('getCurrentLoanInterestRate.html', '');
   doAjaxRetrieveCallback('loan-rate', url, onSuccess, onFail);
 }
 // get annuity rate
 function getAnnuityRate() {
-  $('#annuity-rate').html('fetching...');
+  $('#annuity-rate').html('...');
   var url = getDownloadString('getCurrentAnnuityRate.html', '');
   doAjaxRetrieveCallback('annuity-rate', url, onSuccess, onFail);
 }

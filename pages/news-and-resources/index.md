@@ -31,8 +31,8 @@ document-ready:
 <section class="key-rates">
   <div class="usa-grid">
   <div class="usa-width-one-third">
-    <div id="contribution-limit">$19,000</div>
-    <div id="tax-year" class="hide">2019</div>
+    <div id="contribution-limit">Unavailable</div>
+    <div id="tax-year" class="hide">Unavailable</div>
     <ul class="usa-accordion">
     <li>
       <button class="usa-accordion-button"
@@ -41,9 +41,9 @@ document-ready:
         Annual Elective Deferral
       </button>
       <div id="a1" class="usa-accordion-content">
-        <p><span id="catchup-limit">$6,000</span> Catch-up contribution</p>
-        <p class="hide"><span id="withholding-allowance">$4,200</span> Withholding Allowance</p>
-        <p><span id="annual-addition">$56,000</span> Annual addition</p>
+        <p><span id="catchup-limit">Unavailable</span> Catch-up contribution</p>
+        <p class="hide"><span id="withholding-allowance">Unavailable</span> Withholding Allowance</p>
+        <p><span id="annual-addition">Unavailable</span> Annual addition</p>
       </div>
     </li>
     </ul>
