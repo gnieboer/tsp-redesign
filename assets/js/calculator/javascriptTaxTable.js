@@ -8,8 +8,10 @@ var taxMaxYear = 2019;
 var IRC_acting_year = taxMaxYear;
 
 var taxValues = {
-    2019: { contribution_limit: 19000.00, catchup_limit: 6000.00, withholding_allowance: 4200.00 },
-    2018: { contribution_limit: 18500.00, catchup_limit: 6000.00, withholding_allowance: 4150.00 }
+    2019: { contribution_limit: 19000.00, catchup_limit: 6000.00,
+      withholding_allowance: 4200.00, annual_addition: 56000 },
+    2018: { contribution_limit: 18500.00, catchup_limit: 6000.00,
+      withholding_allowance: 4150.00, annual_addition: 56000 }
 }
 
 // IRS Pub. 15, Table 7(a) SINGLE person, ANNUAL Payroll Period
@@ -29,6 +31,7 @@ var IRC_acting_year = acting_year;
 var IRC_contribution_limit = taxValues[acting_year]['contribution_limit'];
 var IRC_catchup_contribution_limit = taxValues[acting_year]['catchup_limit'];
 var withholding_allowance_rate = taxValues[acting_year]['withholding_allowance'];
+var annual_addition = taxValues[acting_year]['annual_addition'];
 // console.log(IRC_limit_year, IRC_acting_year, IRC_contribution_limit, IRC_catchup_contribution_limit, withholding_allowance_rate);
 
 function determineActingYear() {
@@ -49,6 +52,19 @@ function getContributionLimit(year) {
   if (year < taxMinYear) return taxValues[taxMinYear]['contribution_limit'];
   if (year > taxMaxYear) return taxValues[taxMaxYear]['contribution_limit'];
   return taxValues[year]['contribution_limit'];
+}
+
+function getTaxValues(yearIn) {
+  var year = yearIn;
+  if (year < taxMinYear) { year = taxMinYear; }
+  if (year > taxMaxYear) { year = taxMaxYear; }
+  return [
+    year,
+    taxValues[year]['contribution_limit'],
+    taxValues[year]['catchup_limit'],
+    taxValues[year]['withholding_allowance'],
+    taxValues[year]['annual_addition'],
+  ];
 }
 
 // Calculate annual income tax for a S (single) or MS (married filing single) person
