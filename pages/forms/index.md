@@ -6,49 +6,67 @@ sidenav:
 scripts:
   - /assets/js/jquery.min.js
   - /assets/js/forms.js
+  - /assets/js/search-collection.js
 permalink: /forms/
 ---
 
 # Help me find forms <br>and resources about {#forms}
 
 <!-- SEARCH FORMS -->
-<section id="search-forms">
+
 <div class="usa-grid-full">
-  <div class="usa-width-one-half">
-    <div role="search">
+  <div class="usa-width-one-whole">
+<section class="search-forms">
+<div role="search" class="flex">
 
-    <form class="usa-search usa-search-big">
-      <label class="usa-sr-only" for="select-forms-topic">Search small</label>
-        <select id="select-forms-topic" type="search" name="select-forms-topic" onchange="selectFormsTopic();">
-          <option value='0'>Select</option>
-          {% for topic in site.data.forms_topics %}
-          <option value='{{ forloop.index }}'>{{ topic }}</option>
-          <!-- <option value='{{ topic }}'>{{ topic }}</option> -->
-          {% endfor %}
-        </select>
-      <button type="submit" onClick="return false;">
-        <span class="usa-sr-only">Search</span>
-      </button>
-    </form>
+<!-- <div class="usa-search usa-search-big flex">
+<label class="usa-sr-only" for="select-forms-topic">Search small</label>
+<select id="select-forms-topic" type="search" name="select-forms-topic" onchange="selectFormsTopic();">
+    <option value='0'>Select</option>
+    {% for topic in site.data.forms_topics %}
+    <option value='{{ forloop.index }}'>{{ topic }}</option>
+    {% endfor %}
+  </select>
+  <button type="submit" onclick="return false;">
+    <span class="usa-sr-only">Search</span>
+  </button>
+  </div> -->
 
-    <form accept-charset="UTF-8" action="https://search.usa.gov/search/forms-pubs/" id="search_form" method="get">
-    <div style="margin:0;padding:0;display:inline">
-    <input type="hidden" name="dc" value="8657">
-    <input name="utf8" type="hidden" value="&#x2713;" /></div>
-    <input id="affiliate" name="affiliate" type="hidden" value="beta.tsp" />
-    <label for="query">Enter Search Term(s):</label>
-    <input autocomplete="off" class="usagov-search-autocomplete" id="query" name="query" type="text" />
-    <input name="commit" type="submit" value="Search" />
-    </form>
+  <form class="usa-search usa-search-big flex">
+    <label class="usa-sr-only" for="select-forms-topic">Search small</label>
+    <select id="select-forms-topic" type="search" name="select-forms-topic" onchange="selectFormsTopic();">
+        <option value='0'>Select</option>
+        {% for topic in site.data.forms_topics %}
+        <option value='{{ forloop.index }}'>{{ topic }}</option>
+        {% endfor %}
+      </select>
 
-    </div>
+  </form>
+  <form class="usa-search usa-search-big flex">
+  <button id="search-option" type="submit" onclick="myFunction(); return false;">
+          <span class="usa-sr-only">Search</span>
+        </button>
+        </form>
+  <form accept-charset="UTF-8" action="https://search.usa.gov/search/docs" id="search_form_8657" method="get" class="usa-search usa-search-big flex usa-sr-only">
+  <div style="margin:0;padding:0;display:inline">
+  <input type="hidden" name="dc" value="8657">
+  <input type="hidden" name="utf8" value="&#x2713;" /></div>
+  <input id="affiliate" type="hidden" name="affiliate" value="beta.tsp">
+  <label for="query" class="usa-sr-only">Enter Search Term(s):</label>
+  <input autocomplete="off" class="usagov-search-autocomplete ui-autocomplete-input" id="query_8657" name="query" type="text" onfocusout="myFunction2()">
+  <button name="commit" type="submit" value="Search">
+    <span class="usa-sr-only">Search</span>
+  </button>
+  </form>
+
   </div>
-  <div class="usa-width-one-half"></div>
+    </section> <!-- // end section.search-forms -->
+  </div>
 </div>
-</section> <!-- // end #search-forms -->
 
 {% assign showTotal = 4 %}
 {% assign startAccordion = showTotal %}
+
 <section id="popular-forms" markdown="1">
 {% assign cnt = 0 %}
 <div id="select-forms-0" class="select-forms-div" markdown="1">
@@ -97,6 +115,7 @@ permalink: /forms/
 {% endfor %}
 {% assign startAccordion = formCnt | plus: 1 %}
 {% if formCnt > showTotal %}{% assign startAccordion = showTotal %}{% endif %}
+
 <div id="select-forms-{{ topicID }}"  class="select-forms-div hide" markdown="1">
 <h2 class="results">
   We found <strong>{{formCnt}}</strong> forms
@@ -136,8 +155,8 @@ permalink: /forms/
 {% endfor %}
 </section>
 
-
 {% assign startAccordion = showTotal %}
+
 <section id="popular-resources" markdown="1">
 {% assign cnt = 0 %}
 <div id="select-resources-0" class="select-resources-div" markdown="1">
@@ -180,6 +199,7 @@ permalink: /forms/
 {% assign startAccordion = resCnt | plus: 1 %}
 {% if resCnt > showTotal %}{% assign startAccordion = showTotal %}{% endif %}
 {% assign cnt = 0 %}
+
 <div id="select-resources-{{ topicID }}"  class="select-resources-div hide" markdown="1">
 {% if resCnt > 0 %}
 <h2 class="most-popular" id="{{topic}}-resources">{{topic}} resources</h2>
