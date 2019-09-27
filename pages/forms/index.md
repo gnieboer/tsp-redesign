@@ -6,60 +6,39 @@ sidenav:
 scripts:
   - /assets/js/jquery.min.js
   - /assets/js/forms.js
-  - /assets/js/search-collection.js
 permalink: /forms/
 ---
 
-# Help me find forms <br>and resources about {#forms}
+# Help me find forms and resources about {#forms}
 
 <!-- SEARCH FORMS -->
 
 <div class="usa-grid-full">
   <div class="usa-width-one-whole">
-<section class="search-forms">
-<div role="search" class="flex">
-
-<!-- <div class="usa-search usa-search-big flex">
-<label class="usa-sr-only" for="select-forms-topic">Search small</label>
-<select id="select-forms-topic" type="search" name="select-forms-topic" onchange="selectFormsTopic();">
-    <option value='0'>Select</option>
-    {% for topic in site.data.forms_topics %}
-    <option value='{{ forloop.index }}'>{{ topic }}</option>
-    {% endfor %}
-  </select>
-  <button type="submit" onclick="return false;">
-    <span class="usa-sr-only">Search</span>
-  </button>
-  </div> -->
-
-  <form class="usa-search usa-search-big flex">
-    <label class="usa-sr-only" for="select-forms-topic">Search small</label>
-    <select id="select-forms-topic" type="search" name="select-forms-topic" onchange="selectFormsTopic();">
-        <option value='0'>Select</option>
-        {% for topic in site.data.forms_topics %}
-        <option value='{{ forloop.index }}'>{{ topic }}</option>
-        {% endfor %}
-      </select>
-
-  </form>
-  <form class="usa-search usa-search-big flex">
-  <button id="search-option" type="submit" onclick="myFunction(); return false;">
-          <span class="usa-sr-only">Search</span>
-        </button>
+    <section class="search-forms">
+      <div role="search" class="search-container">
+        <!-- Topic drop-down list -->
+        <form class="usa-search usa-search-big select">
+          <label class="usa-sr-only" for="select-forms-topic">Search by topic</label>
+          <select id="select-forms-topic" name="select-forms-topic" onchange="selectFormsTopic();">
+              <option value='0'>Search by topic</option>
+              {% for topic in site.data.forms_topics %}
+              <option value='{{ forloop.index }}'>{{ topic }}</option>
+              {% endfor %}
+            </select>
         </form>
-  <form accept-charset="UTF-8" action="https://search.usa.gov/search/docs" id="search_form_8657" method="get" class="usa-search usa-search-big flex usa-sr-only">
-  <div style="margin:0;padding:0;display:inline">
-  <input type="hidden" name="dc" value="8657">
-  <input type="hidden" name="utf8" value="&#x2713;" /></div>
-  <input id="affiliate" type="hidden" name="affiliate" value="beta.tsp">
-  <label for="query" class="usa-sr-only">Enter Search Term(s):</label>
-  <input autocomplete="off" class="usagov-search-autocomplete ui-autocomplete-input" id="query_8657" name="query" type="text" onfocusout="myFunction2()">
-  <button name="commit" type="submit" value="Search">
-    <span class="usa-sr-only">Search</span>
-  </button>
-  </form>
 
-  </div>
+      <!-- Animated search bar -->
+        <form accept-charset="UTF-8" action="https://search.usa.gov/search/docs" id="search_form_8657" method="get" class="animated-search">
+          <div style="margin:0;padding:0;display:inline">
+          <input type="hidden" name="dc" value="8657">
+          <input type="hidden" name="utf8" value="&#x2713;" /></div>
+          <input type="hidden" name="affiliate" value="beta.tsp" id="affiliate" >
+          <label for="query" class="usa-sr-only">Enter form name or number</label>
+          <!-- Search input field -->
+          <input type="text" name="query" id="query_8657" autocomplete="off" placeholder="Enter form name or number">
+        </form>
+      </div>
     </section> <!-- // end section.search-forms -->
   </div>
 </div>
