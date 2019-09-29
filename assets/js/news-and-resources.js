@@ -22,6 +22,11 @@ function onSuccess(divName, data) {
   $('#'+divName).html(data);
 }
 function onFail(divName, textStatus, errorThrown) {
+  if (divName == 'both') {
+    $('#loan-rate').html('unavailable');
+    $('#annuity-rate').html('unavailable');
+    return true;
+  }
   $('#'+divName).html('unavailable');
 }
 // get loan rate and annuity rate
