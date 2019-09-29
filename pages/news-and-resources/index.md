@@ -7,7 +7,16 @@ scripts:
   - /assets/js/copy-to-clipboard.js
   - /assets/js/jquery.min.js
   - /assets/js/share-modal.js
+  - /assets/js/ajaxFetch.js
+  - /assets/js/calculator/calculator.js
+  - /assets/js/calculator/javascriptTaxTable.js
+  - /assets/js/news-and-resources.js
 permalink: /news-and-resources/
+document-ready:
+  - setTaxData();
+  - // getLoanRate();
+  - // getAnnuityRate();
+  - getLoanAndAnnuityRate();
 ---
 
 # News and resources
@@ -21,7 +30,9 @@ permalink: /news-and-resources/
 
 <section class="key-rates">
   <div class="usa-grid">
-  <div class="usa-width-one-third"><div>$19,000</div>
+  <div class="usa-width-one-third">
+    <div id="contribution-limit">Unavailable</div>
+    <div id="tax-year" class="hide">Unavailable</div>
     <ul class="usa-accordion">
     <li>
       <button class="usa-accordion-button"
@@ -30,15 +41,16 @@ permalink: /news-and-resources/
         Annual Elective Deferral
       </button>
       <div id="a1" class="usa-accordion-content">
-        <p><span>$6,000</span> Catch-up contribution</p>
-        <p><span>$56,000</span> Annual addition</p>
+        <p><span id="catchup-limit">Unavailable</span> Catch-up contribution</p>
+        <p class="hide"><span id="withholding-allowance">Unavailable</span> Withholding Allowance</p>
+        <p><span id="annual-addition">Unavailable</span> Annual addition</p>
       </div>
     </li>
     </ul>
   </div>
 
-  <div class="usa-width-one-third"><div>2.500%</div>Loan rate</div>
-  <div class="usa-width-one-third"><div>2.625%</div>Annuity rate</div>
+  <div class="usa-width-one-third"><div id="loan-rate">--%</div>Loan rate</div>
+  <div class="usa-width-one-third"><div id="annuity-rate">--%</div>Annuity rate</div>
   </div>
 </section>
 

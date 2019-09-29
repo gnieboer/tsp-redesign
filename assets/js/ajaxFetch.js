@@ -435,6 +435,12 @@ function columnSort(ascending, columnClassName, tableId, headLength, tailLength)
     }
 };
 
+function getDownloadString(scriptName, extra) {
+  var str = siteName + scriptName;
+  if (extra != '') { str += '?' + extra; }
+  return str;
+}
+
 function fundDownloadString(scriptName, extra, funds) {
   var str = siteName + scriptName + '?';
   str += extra;
@@ -472,6 +478,25 @@ var doAjaxRetrieve = function(divName, url) {
         var errMsg = textStatus + ': ' + errorThrown;
         var userMsg = somethingNotWorking();
         $('#'+divName).html(userMsg);
+    }
+  );
+}
+
+var doAjaxRetrieveCallback = function(divName, url, success, fail) {
+  $('#'+divName).html('Calling server for data...');
+  var serverCall = $.get(url);
+  serverCall.done(
+    function (data) {
+        success(divName, data);
+        // $('#'+divName).html(data);
+    }
+  );
+  serverCall.fail(
+    function (jqXHR, textStatus, errorThrown) {
+        // var errMsg = textStatus + ': ' + errorThrown;
+        // var userMsg = somethingNotWorking();
+        // $('#'+divName).html(userMsg);
+        fail(divName, textStatus, errorThrown);
     }
   );
 }
