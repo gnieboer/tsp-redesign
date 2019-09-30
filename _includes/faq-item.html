@@ -9,7 +9,7 @@ HTML block for one faq item accordion.
 <!-- {{faq_name}} -->
 <a name="{{faq_name}}"></a>
 <li>
-<button class="usa-accordion-button" aria-expanded="false" aria-controls="{{faq_id}}">
+<button id="{{faq_name}}-button" class="usa-accordion-button" aria-expanded="false" aria-controls="{{faq_id}}">
 {{faq_question}}
 </button>
 <div id="{{faq_id}}" class="usa-accordion-content" markdown="1">
