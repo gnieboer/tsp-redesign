@@ -1,4 +1,5 @@
 // get anchor from query string
+// used in faqs
 function openAnchor() {
   var anchor = location.hash.slice(1);
   anchor = anchor.replace(/([^a-z0-9A-Z]+)/g, '-');
