@@ -2,7 +2,7 @@
   Ajax call for search using usa search.
 */
 
-var siteName = "https://search.usa.gov/api/v2/search";
+var siteName = "https://search.usa.gov/api/v2/search/i14y";
 var affiliate = "beta.tsp";
 // var accessKey = "9gcFHn4xSylFEK4QUpxR9y50_MJOy3LBi0bh4hIZ7Ew="; // dav
 // var accessKey = "1XBegCSAeuxyTJpE-19b0RvpUboHO40rk0dwtk0QNnM="; // tsp
