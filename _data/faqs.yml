@@ -11,13 +11,13 @@
     **If you’re no longer a federal employee or uniformed services member**, visit [My Account: Profile Settings](https://www.tsp.gov/tsp/profileSettings.do?subaction=view&amp;_name=profile) to change the address. Or while you’re logged in, use our Change in Address for Separated Participants, Form TSP-9, and fax or mail it to us.
 
     To change or validate your contact information such as your phone number or email address, visit [My Account: Profile Settings](https://www.tsp.gov/tsp/profileSettings.do?subaction=view&amp;_name=profile).
-- faq_name: alter-contribution
+- faq_name: change-contribution
   faq_question: How do I start, change, or stop my contributions to the TSP?
   faq_body: |
     In most cases, you’ll use your agency’s or service’s electronic payroll system to start, change, or stop your TSP contributions. For example, civilian payroll systems include Employee Express, myPay, EBIS, LiteBlue, or NFC EPP. Uniformed services can use myPay (Army, Air Force, Navy, Marine Corps) or Direct Access (Coast Guard and NOAA Corps).
 
     If your agency or service accepts the paper form, download and complete the Form TSP-1, [_Election Form_]({{ site.baseurl }}/forms/tsp-1.pdf) (or [Form TSP-U-1]({{ site.baseurl }}/forms/tsp-u-1.pdf) for uniformed services members), or call the ThriftLine at 1-877-968-3778 and choose option 3 to have it mailed to you.
-- faq_name: when-catch-up
+- faq_name: catch-up-contributions
   faq_question: When can I begin making catch-up contributions?
   faq_body: |
     Starting in the year you turn 50, you may be eligible to make catch-up contributions to your TSP account in addition to your regular employee contributions.
@@ -52,12 +52,12 @@
   faq_body: |
 
     You can check My Account or call the ThriftLine to find out the status of your withdrawal request, including whether the payment has been made. We’ll also notify you after your payment has been disbursed.  It generally takes between 7 to 10 business days to process your request once you’ve properly completed and submitted it. We disburse withdrawals each business day.
-- faq_name: form-1099-R
+- faq_name: form-1099-r
   faq_question: When will Form 1099-R be available and where can I find it on the website?
   faq_body: |
 
     For participants who received a withdrawal or other taxable distribution during the calendar year, 1099-Rs are mailed by January 31 each year, and electronic versions are available online the first week of February in [My Account: Statements](https://www.tsp.gov/tsp/quarterlyStmt.do?subaction=view&amp;_name=stmts).
-- faq_name: fraud-protection
+- faq_name: protect-against-fraud
   faq_question: How do I protect my account against fraud?
   faq_body: |
 
@@ -80,13 +80,13 @@
 
     Be aware that you’re responsible for the repayment of your loan regardless of whether your agency or service misses a payment. Additional information is available under [Repaying Your Loan]({{ site.baseurl }}/loan-basics/repaying-your-loan/).
 
-- faq_name: balance-after-leaving-service
+- faq_name: leaving-federal-service
   faq_question: Can I leave my money in my TSP account when I leave federal service?
   faq_body: |
 
     Yes, you can leave your entire account balance in the TSP when you leave federal service if the balance is $200 or more.  You can continue to enjoy tax-deferred earnings and low administrative expenses. Once you separate, you will no longer be able to make employee contributions. However, you can [transfer money]({{ site.baseurl }}/account-basics/move-money-into-tsp/) into your TSP account from IRAs (although not from Roth IRAs) and eligible employer plans. Your account will continue to accrue earnings, and you can continue to change the way your money is invested in the TSP investment funds by making <span data-term="Interfund Transfer (IFT)" class="js-glossary-toggle term term-end" title="Click to define" tabindex="0">interfund transfers</span>.
 
-- faq_name: change-allocation
+- faq_name: contribution-allocation
   faq_question: How do I change how my money is invested?
   faq_body: |
     To change which fund(s) you invest in, there are two transactions you can make:
@@ -97,7 +97,7 @@
 
     You may request a [contribution allocation](https://www.tsp.gov/tsp/contribAlloc.do?subaction=view&_name=cae) or an [IFT](https://www.tsp.gov/tsp/fundTransfer.do?subaction=view&_name=ift) by visiting the Online Transactions section of My Account. You can also call the ThriftLine at 1-877-968-3778 and follow the automated prompts.
 
-- faq_name: change-beneficiaries
+- faq_name: beneficiaries
   faq_question: How do I designate or change my beneficiaries?
   faq_body: |
 
