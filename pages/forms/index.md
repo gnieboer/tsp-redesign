@@ -5,6 +5,8 @@ styles:
 sidenav:
 scripts:
   - /assets/js/jquery.min.js
+  - /assets/js/ajaxFetch.js
+  - /assets/js/ajax-usa-search-gov.js
   - /assets/js/forms.js
 permalink: /forms/
 ---

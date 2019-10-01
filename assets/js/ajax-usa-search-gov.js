@@ -8,16 +8,22 @@ var affiliate = "beta.tsp";
 // var accessKey = "1XBegCSAeuxyTJpE-19b0RvpUboHO40rk0dwtk0QNnM="; // tsp
 var accessKey = "sVO7chy_W4g9AMmHj90csL3Oyn6z7JKRs1Pb8BxCJ9Y="; // beta.tsp
 
-var doUSAsearch = function(divName, url) {
+var doUSAsearch = function(divName, url, resultsFormat) {
   $('#'+divName).html('Calling server for data...');
   var serverCall = $.get(url);
   serverCall.done(
     function (json) {
       // var data = JSON.parse(json);
       // var data = JSON.stringify(json);
-      var data = syntaxHighlight(json);
-      data = '<pre>'+data+'</pre>';
-      $('#'+divName).html(data);
+      if (resultsFormat) {
+        // send json results to callback function
+        resultsFormat(divName, json);
+      } else {
+        // pretty print json, stick in div
+        var data = syntaxHighlight(json);
+        data = '<pre>'+data+'</pre>';
+        $('#'+divName).html(data);
+      }
     }
   );
   serverCall.fail(
@@ -29,7 +35,8 @@ var doUSAsearch = function(divName, url) {
   );
 }
 
-function search(queryBox, resultDiv) {
+function search(queryBox, resultDiv, collectionID, resultsFormat) {
+  console.log('search('+queryBox+',"'+resultDiv+'",'+collectionID+','+resultsFormat+')');
   var terms = $('#'+queryBox).val();
   if (terms == '') { console.log('no search'); return false; }
   terms = encodeURIComponent(terms);
@@ -38,14 +45,17 @@ function search(queryBox, resultDiv) {
           + '?affiliate=' + affiliate
           + '&access_key=' + accessKey
           + '&query=' + terms;
-  // console.log('searching |'+url+'|');
+  if (collectionID) {
+    url += "&dc=" + collectionID;
+  }
+  console.log('searching |'+url+'|');
   // build url
   // doUSAsearch(resultDiv, "https://search.usa.gov/api/v2/search?affiliate=tspgov&access_key=9gcFHn4xSylFEK4QUpxR9y50_MJOy3LBi0bh4hIZ7Ew=
-  doUSAsearch(resultDiv, url);
+  doUSAsearch(resultDiv, url, resultsFormat);
 }
 
 function doSearch() {
-  search('search-box', 'search-results');
+  search('search-box', 'search-results', 0, 0);
   return false;
 }
 

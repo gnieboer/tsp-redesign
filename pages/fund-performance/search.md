@@ -33,3 +33,22 @@ document-ready:
 <div id='search-results'></div>
 <hr>
 <div>
+
+<div class="usa-grid-full">
+  <div class="usa-width-one-whole">
+    <section class="search-forms">
+
+empty
+<br>
+{% include animated-search-bar.html %}
+
+<br>
+
+8657
+<br>
+{% include animated-search-bar.html search_label="Search 8657: " collectionID="8657"
+    autocomplete='off' placeholder="Enter terms for 8657" %}
+
+    </section>
+  </div>
+</div>

@@ -9,7 +9,7 @@ function selectFormsSearchResult(queryBox) {
 }
 
 function inlineSearch(queryBox, resultDiv) {
-  search(queryBox, resultDiv);
+  search(queryBox, resultDiv, 0, 0);
   selectFormsSearchResult(queryBox);
 }
 
