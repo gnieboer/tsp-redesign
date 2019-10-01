@@ -39,7 +39,7 @@
   {% endfor %}
   <!-- PDF files here -->
   {% for file in site.static_files %}{% unless file.extname != ".pdf" %}
-  <url> {{file.extname}}
+  <url>
     <loc>{{ file.path | prepend: site_url }}</loc>
     <lastmod>{{ file.modified_time | date: '%A, %B %d, %Y (%I:%M %P)' }}</lastmod>
   </url>{% endunless %}{% endfor %}
