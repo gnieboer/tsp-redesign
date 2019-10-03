@@ -3,6 +3,7 @@ Creates one copy of the magnifying glass that opens to an input box when clicked
 It does a search using the input box when the user changes content.
 {% endcomment %}
 
+{% assign IDprefix = include.IDprefix | default: 'query_' %}
 {% assign search_label = include.search_label | default: '' %}
 {% assign collectionID = include.collectionID | default: 0 %}
 {% assign autocomplete = include.autocomplete | default: 'off' %}
@@ -13,10 +14,10 @@ It does a search using the input box when the user changes content.
 <!-- search {{collectionID}} -->
 <form accept-charset="UTF-8" id="search_form_8657" method="get" class="animated-search" onSubmit="return false;">
   <div style="margin:0;padding:0;display:inline">
-  {% if search_label %}<label for="query" class="usa-sr-only">{{search_label}}</label>{% endif %}
+  {% if search_label != '' %}<label for="{{IDprefix}}{{collectionID}}" class="xusa-sr-only">{{search_label}}</label>{% endif %}
   <!-- Search input field -->
-  <input type="text" name="query_{{collectionID}}" id="query_{{collectionID}}"
+  <input type="text" name="{{IDprefix}}{{collectionID}}" id="{{IDprefix}}{{collectionID}}"
     autocomplete="{{autocomplete}}"  placeholder="{{placeholder}}"
-    onChange="{{searchFunction}}('query_{{collectionID}}', '{{resultsDiv}}', '{{collectionID}}', {{resultsFormat}});">
+    onChange="{{searchFunction}}('{{IDprefix}}{{collectionID}}', '{{resultsDiv}}', '{{collectionID}}', {{resultsFormat}});">
   </div>
 </form>
