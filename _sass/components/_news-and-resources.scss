@@ -16,9 +16,20 @@
   }
 }
 
+h1#news-and-resources,
+h1#plan-news
+ {
+  font-family: $sans;
+  font-weight: 600;
+  text-align: center;
+  margin-top: 0.67em;
+  line-height: 0;
+}
 section {
   &.key-rates,
   &.latest-news,
+  &.plan-news,
+  &.plan-news-archive,
   &.popular-videos,
   &.popular-forms-calculators,
   &.top-5-faq {
@@ -118,6 +129,8 @@ section {
 // LATEST NEWS & POPULAR VIDEOS
 
   &.latest-news,
+  &.plan-news,
+  &.plan-news-archive,
   &.popular-videos {
     span {
       // border: 1px solid red;
@@ -138,6 +151,7 @@ section {
       padding: 1.8rem 3rem;
     }
     .post-and-share {
+      color: $color-primary;
       align-items: center;
       span {
         font-weight: 700;
