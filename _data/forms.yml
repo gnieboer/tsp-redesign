@@ -62,7 +62,7 @@
   form_audience:
   -  Both
   form_topics:
-  -  Address/Name Change
+  -  General information
 - form_number: TSP-15
   form_url: tsp-15.pdf
   form_name: Change in Name for Separated Participants
@@ -72,7 +72,7 @@
   form_audience:
   -  Both
   form_topics:
-  -  Address/Name Change
+  -  General information
 - form_number: TSP-16
   form_url: tsp-16.pdf
   form_name: Exception to Spousal Requirements
@@ -177,7 +177,7 @@
   form_audience:
   -  Both
   form_topics:
-  -  General Information
+  -  General information
 - form_number: TSP-70
   form_url: tsp-70.pdf
   form_name: Request for Full Withdrawal
