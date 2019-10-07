@@ -12,11 +12,9 @@ permalink: /news-and-resources/plan-news/
 # Plan news
 {:#plan-news}
 
+{% include next-outage.html %}
+
 <section class="plan-news" markdown="1">
-<div class="next-outage" markdown="1">
-- <i class="fas fa-power-off"></i> **Next outage:** April 25, 2019
-- 12 a.m. – 7 p.m., eastern time
-</div>
 <div class="flex header-line" markdown="1">
 ## September 2019 news and announcements
 <!-- Animated search bar -->

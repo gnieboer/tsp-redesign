@@ -21,12 +21,7 @@ document-ready:
 
 # News and resources
 
-<div class="next-outage" markdown="1">
-
-- <i class="fas fa-power-off"></i> **Next outage:** April 25, 2019
-- 12 a.m. – 7 p.m., eastern time
-
-</div>
+{% include next-outage.html %}
 
 <section class="key-rates">
   <div class="usa-grid">
