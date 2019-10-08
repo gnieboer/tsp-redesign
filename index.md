@@ -27,7 +27,7 @@ hero:
 <!-- NEW TO THE TSP? -->
 
 <div class="usa-width-one-third column" markdown="1">
-<div class="container" markdown="1">
+<div markdown="1">
   <div class="icon">
   <img src="{{ site.baseurl }}/assets/img/icons/sun.svg" alt="">
   </div>
@@ -45,7 +45,7 @@ You can setup your account, rollover a 401(k), and so much more.
 <!-- EVERYTHING YOU NEED -->
 
 <div class="usa-width-one-third" markdown="1">
-<div class="container" markdown="1">
+<div markdown="1">
   <div class="icon">
   <img src="{{ site.baseurl }}/assets/img/icons/graph_up.svg" alt="">
   </div>
@@ -61,7 +61,7 @@ We’ll help you understand each fund—their risks, rewards, and performance.
 </div>
 <!-- WE'LL BE WITH YOU -->
 <div class="usa-width-one-third" markdown="1">
-<div class="container" markdown="1">
+<div markdown="1">
   <div class="icon">
   <img src="{{ site.baseurl }}/assets/img/icons/team_blue.svg" alt="" class="team">
   </div>

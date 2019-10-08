@@ -65,7 +65,6 @@ section {
     }
     .usa-width-one-third {
       padding: 4rem 1.5rem;
-      outline: 1px solid red;
       display: flex;
       flex-direction: column;
       justify-content: space-between;
@@ -77,13 +76,12 @@ section {
       //   justify-content: space-between;
       // }
       div.container {
-        outline: 1px solid green;
+
       }
       div.icon {
         height: 16rem;
         display: flex;
         align-items: center;
-        outline: 1px solid blue;
 
         img {
           height: 14rem;
