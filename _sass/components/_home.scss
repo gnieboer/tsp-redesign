@@ -6,7 +6,7 @@
 }
 
 .usa-learn-more a,
-a.learn-more {
+.home-getting-started a {
   font-family: $font-sans;
   font-size: 2.6rem;
   color: #046b99;
@@ -52,45 +52,71 @@ a.learn-more {
 }
 // New homepage styles
 // SECTION 1
+section {
 
-.home-getting-started {
-  h2 {
-    color: #046b99;
-    font-size: 2.5rem;
-  }
-
-  .usa-width-one-third {
-    padding: 4rem 1.5rem 0;
-
-    div:nth-of-type(1) {
-      height: 16rem;
+  &.home-getting-started {
+    h2 {
+      color: #046b99;
+      font-size: 2.5rem;
+    }
+    .usa-grid {
       display: flex;
-      align-items: center;
-      margin-bottom: 3rem;
+      align-items: stretch;
+    }
+    .usa-width-one-third {
+      padding: 4rem 1.5rem;
+      outline: 1px solid red;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      // min-height: 52rem;
 
-      img {
-        height: 14rem;
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
+      // &.column {
+      //   display: flex;
+      //   flex-direction: column;
+      //   justify-content: space-between;
+      // }
+      div.container {
+        outline: 1px solid green;
       }
+      div.icon {
+        height: 16rem;
+        display: flex;
+        align-items: center;
+        outline: 1px solid blue;
 
-      img.team {
-        height: 12rem;
+        img {
+          height: 14rem;
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+        }
+
+        img.team {
+          height: 12rem;
+        }
+      }
+    }
+
+    .usa-learn-more {
+      padding: 0 1.5rem 4rem;
+    }
+
+    p {
+      font-size: $h3-font-size;
+      color: #000;
+    }
+  }
+}
+@media only screen and (max-width: $medium-screen) {
+  section {
+    &.home-getting-started {
+      .usa-grid {
+        display: block;
       }
     }
   }
-
-  .usa-learn-more {
-    padding: 0 1.5rem 4rem;
-  }
-
-  p {
-    font-size: $h3-font-size;
-    color: #000;
-  }
 }
-
 // SECTION: OUR FUNDS
 #home-our-funds {
   background-color: #f1f1f1;
@@ -156,6 +182,7 @@ a.learn-more {
     }
   }
 }
+
 @media only screen and (min-width: $large-screen) {
 #home-our-funds {
   background-color: #f1f1f1;
@@ -258,6 +285,7 @@ a.learn-more {
 .section-investor {
   background-image: url($baseurl + '/assets/img/photo/Woman_holding_coffee.jpg');
   background-size: cover;
+  background-position: center;
   padding: 22rem 0;
 
   h2 {
@@ -430,5 +458,11 @@ a.learn-more {
   li:first-of-type {
     font-family: $font-serif;
     font-weight: bold;
+  }
+}
+@media only screen and (max-width: $large-screen) {
+
+  .section-investor {
+    padding: 5rem 0;
   }
 }

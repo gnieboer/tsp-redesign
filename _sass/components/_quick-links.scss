@@ -1,38 +1,96 @@
 // SECTION: QUICK LINKS
-  .quick-links {
+section.quick-links {
+  margin: 0;
+  padding: 0;
+  &.homepage {
+    margin-bottom: none;
     background-color: #046b99;
     margin-bottom: 4rem;
-    .usa-grid {
-      display: flex;
-      justify-content: space-evenly;
-      padding:0;
-    }
+
     .usa-width-one-fourth {
       border-right: 4px solid $color-white;
       font-size: 2rem;
       margin:0;
-      width: 25%;
-      padding: 1rem 0;
+      padding: 2rem 0;
+
+      p {
+        margin: 0;
+      }
+
       &:first-child {
-        border-left: none; // homepage full-width
+        border-left: 4px solid $color-white; // homepage full-width
+      }
+
+      a {
+        padding: 3rem 0 ;
+        display:block;
+        color: #fff;
+        text-decoration: none;
+        text-align: center;
+        font-size: 2rem;
       }
     }
-    a {
-      padding: 3rem 0 ;
-      display:block;
-      color: #fff;
-      text-decoration: none;
-      text-align: center;
-      font-size: 2rem;
+  } // end &.homepage
+} // end section.quick-links
+@media only screen and (max-width: $desktop-screen) {
+  section.quick-links {
+    &.homepage {
+      .usa-grid {
+        padding-left: 0;
+        padding-right: 0;
+      }
+      .usa-width-one-fourth {
+        // border-bottom: 4px solid $color-white;
+        width: 50%;
+        &:nth-child(even) {
+          border-right: none;
+        }
+        &:nth-child(-n+2) {
+          border-bottom: 4px solid $color-white;
+        }
+        &:first-child {
+          border-left: none; // homepage full-width
+        }
+      }
     }
   }
-// HOMEPAGE
-  .quick-links.homepage {
-    margin-bottom: none;
-    .usa-width-one-fourth:first-child {
-      border-left: 4px solid $color-white; // homepage full-width
+}
+@media only screen and (max-width: $medium-screen) {
+  section.quick-links {
+    &.homepage {
+      .usa-grid {
+        padding-left: 0;
+        padding-right: 0;
+        border: 4px solid $color-white;
+      }
+      .usa-width-one-fourth {
+        width: 100%;
+        border-bottom: 4px solid $color-white;
+        &:nth-child(odd) {
+          border-right: none;
+        }
+        &:last-child {
+          border-bottom: none;
+        }
+
+        // border-right: none;
+        // &:nth-child(odd) {
+        //   border-right: none;
+        // }
+        // &:last-child {
+        //   border-bottom: none; // homepage full-width
+        // }
       }
     }
+  }
+}
+// HOMEPAGE
+  // .quick-links.homepage {
+  //   margin-bottom: none;
+  //   .usa-width-one-fourth:first-child {
+  //     border-left: 4px solid $color-white; // homepage full-width
+  //     }
+  //   }
 
 // GLOSSARY QUICK LINKS
 
@@ -45,7 +103,7 @@
     color: $color-white;
     border-bottom: 1px dashed $color-white;
     margin: 3rem auto;
-    background-image: url('/assets/img/icons/glossary-white.svg');
+    background-image: url($baseurl + '/assets/img/icons/glossary-white.svg');
     background-size: 1.6rem;
   }
 }
