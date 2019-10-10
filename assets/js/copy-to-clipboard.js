@@ -1,11 +1,23 @@
-function copyToClipboard(element) {
+// added by Dav to include posted text
+function copyPlanNewsToClipboard(element) {
   var $temp = $("<input>");
   $("body").append($temp);
-  $temp.val($(element).text()).select();
+  $temp.val($('#'+element).text() + ' ' + $('#'+element+'_posted').text()).select();
   document.execCommand("copy");
   // $temp.remove();
 
-  var tooltip = document.getElementById("myTooltip");
+  var tooltip = document.getElementById("myTooltip_"+element);
+  tooltip.innerHTML = "Copied!";
+}
+
+function copyToClipboard(element) {
+  var $temp = $("<input>");
+  $("body").append($temp);
+  $temp.val($('#'+element).text()).select();
+  document.execCommand("copy");
+  // $temp.remove();
+
+  var tooltip = document.getElementById("myTooltip_"+element);
   tooltip.innerHTML = "Copied!";
 }
 
@@ -13,19 +25,19 @@ function copyToClipboard(element) {
 
 
 // Adapting the tooltip functionality for use with the function above.
-function myFunction() {
-  var copyText = document.getElementById("myInput");
+function myFunction(element) {
+  var copyText = document.getElementById("myInput_"+element);
   copyText.select();
   copyText.setSelectionRange(0, 99999);
   document.execCommand("copy");
 
-  var tooltip = document.getElementById("myTooltip");
+  var tooltip = document.getElementById("myTooltip_"+element);
   tooltip.innerHTML = "Copied: " + copyText.value;
 }
 
 // Using outFunc() with copyToClipboard(element)
-function outFunc() {
-  var tooltip = document.getElementById("myTooltip");
+function outFunc(element) {
+  var tooltip = document.getElementById("myTooltip_"+element);
   tooltip.innerHTML = "Copy to clipboard";
 }
 

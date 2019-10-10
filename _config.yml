@@ -46,11 +46,14 @@ exclude:
 keep_files:
   - styleguide
 
+# output: true will copy the collection into _site
 collections:
   funds:
     output: true
   forms:
     output: true
+  plan_news:
+    output: false
   publications:
     output: true
   newsletters:
