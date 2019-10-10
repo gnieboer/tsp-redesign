@@ -51,8 +51,8 @@
   form_audience:
   -  Both
   form_topics:
-  -  Death Benefits
-  -  Beneficiary Participants
+  -  Death benefits
+  -  Beneficiary participants
 - form_number: TSP-9
   form_url: tsp-9.pdf
   form_name: Change in Address for Separated Participant
@@ -83,7 +83,7 @@
   -  Civilian
   form_topics:
   -  Loans
-  -  Legal Documents
+  -  Legal documents
   -  Withdrawals
 - form_number: TSP-U-16
   form_url: tsp-u-16.pdf
@@ -95,7 +95,7 @@
   -  Uniformed Services
   form_topics:
   -  Withdrawals
-  -  Legal Documents
+  -  Legal documents
   -  Loans
 - form_number: TSP-17
   form_url: tsp-17.pdf
@@ -106,7 +106,7 @@
   form_audience:
   -  Both
   form_topics:
-  -  Death Benefits
+  -  Death benefits
 - form_number: TSP-20
   form_url: tsp-20.pdf
   form_name: Loan Application
@@ -157,7 +157,7 @@
   form_audience:
   -  Both
   form_topics:
-  -  Transfers and Rollovers
+  -  Transfers and rollovers
 - form_number: TSP-60-R
   form_url: tsp-60-r.pdf
   form_name: Request for a Roth Transfer Into the TSP
@@ -167,7 +167,7 @@
   form_audience:
   -  Both
   form_topics:
-  -  Transfers and Rollovers
+  -  Transfers and rollovers
 - form_number: TSP-65
   form_url: tsp-65.pdf
   form_name: Request to Combine Civilian and Uniformed Services TSP Accounts
@@ -188,7 +188,7 @@
   -  Both
   form_topics:
   -  Withdrawals
-  -  Transfers and Rollovers
+  -  Transfers and rollovers
 - form_number: TSP-70-A
   form_url: tsp-70-a.pdf
   form_name: Late Request for Full Withdrawal
@@ -209,7 +209,7 @@
   -  Both
   form_topics:
   -  Withdrawals
-  -  Beneficiary Participants
+  -  Beneficiary participants
 - form_number: TSP-75
   form_url: tsp-75.pdf
   form_name: Age-Based In-Service Withdrawal Request
@@ -240,7 +240,7 @@
   -  Both
   form_topics:
   -  Withdrawals
-  -  Transfers and Rollovers
+  -  Transfers and rollovers
 - form_number: TSP-78
   form_url: tsp-78.pdf
   form_name: Monthly Payments Maintenance
@@ -250,9 +250,9 @@
   form_audience:
   -  Both
   form_topics:
-  -  Transfers and Rollovers
+  -  Transfers and rollovers
   -  Withdrawals
-  -  Beneficiary Participants
+  -  Beneficiary participants
 - form_number: TSP-79
   form_url: tsp-79.pdf
   form_name: Change From Monthly Payments to Final Payment
@@ -263,8 +263,8 @@
   -  Both
   form_topics:
   -  Withdrawals
-  -  Transfers and Rollovers
-  -  Beneficiary Participants
+  -  Transfers and rollovers
+  -  Beneficiary participants
 - form_number: TSP-90
   form_url: tsp-90.pdf
   form_name: Withdrawal Request for Beneficiary Participants
@@ -276,7 +276,7 @@
   form_topics:
   -  Beneficiary Participants
   -  Withdrawals
-  -  Transfers and Rollovers
+  -  Transfers and rollovers
 - form_number: TSP-92
   form_url: tsp-92.pdf
   form_name: TSP Retirement Benefits Court Order Division Package
@@ -286,7 +286,7 @@
   form_audience:
   -  Both
   form_topics:
-  -  Legal Documents
+  -  Legal documents
 - form_number: TSP-92B
   form_url: tsp-92b.pdf
   form_name: Retirement Benefits Specialist Authorization Form
@@ -296,7 +296,7 @@
   form_audience:
   -  Both
   form_topics:
-  -  Legal Documents
+  -  Legal documents
 - form_number: TSP-92D
   form_url: tsp-92d.pdf
   form_name: Request for Participant Account Information
@@ -306,7 +306,7 @@
   form_audience:
   -  Both
   form_topics:
-  -  Legal Documents
+  -  Legal documents
 - form_number: W-4P
   form_url: w-4p-irswithholding.html
   form_name: Withholding Certificate for Pension or Annuity Payments
@@ -317,4 +317,4 @@
   -  Both
   form_topics:
   -  Withdrawals
-  - Tax Information
+  - Tax information

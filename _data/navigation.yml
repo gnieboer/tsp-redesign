@@ -27,7 +27,7 @@ primary:
   - text: Fund performance
     links:
     - text: Rates of returns
-      href: /fund-performance/rates-of-returns/
+      href: /fund-performance/
     - text: Share price history
       href: /fund-performance/share-price-history/
     - text: Share price calculation
@@ -231,7 +231,7 @@ use-your-savings:
 
 fund-performance:
   - text: Rates of returns
-    href: /fund-performance/rates-of-returns/
+    href: /fund-performance/
   - text: Share price history
     href: /fund-performance/share-price-history/
   - text: Share price calculation
