@@ -84,7 +84,7 @@ Whether you're new to the federal government or preparing to retire, we're here 
 <section class="quick-links homepage">
 <div class="usa-grid">
 <div class="usa-width-one-fourth" markdown="1">
-[Fund performance]({{ site.baseurl }}/fund-performance/rates-of-returns/)
+[Fund performance]({{ site.baseurl }}/fund-performance/)
 </div>
 <div class="usa-width-one-fourth" markdown="1">
 [Forms and publications]({{ site.baseurl }}/forms/)

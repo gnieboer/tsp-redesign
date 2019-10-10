@@ -4,6 +4,7 @@ title: Plan news
 sidenav: news-and-resources
 styles:
 scripts:
+  - /assets/js/copy-to-clipboard.js
   - /assets/js/jquery.min.js
   - /assets/js/plan-news.js
 permalink: /news-and-resources/plan-news/
@@ -30,15 +31,17 @@ permalink: /news-and-resources/plan-news/
 </div>
 
 <div class="usa-grid">
-<div class="usa-width-one-whole" markdown="1">
+<div class="usa-width-one-whole" markdown="1" id="pn-2019-09-26">
 **New TSP Podcast &#8212; We’re happy to announce our new podcast, The Real TSP! Hosted by TSP educators, each episode provides an in-depth look into your retirement investment plan and answers questions you care about the most.** Whether you’re brand new to the government, well into your retirement years, or serving our country in the U.S. or abroad, this podcast has something for you. Find our podcasts at [youtube.com/tsp4gov](https://www.youtube.com/user/TSP4gov/feed?activity_view=1).
+<!-- {:#pn-2019-09-26} -->
+
 <div class="flex post-and-share">
   <span class="post-date" >Posted: September 26, 2019</span>
   <!-- Trigger/Open The Modal -->
   <button class="share" id="myBtn"><i class="fas fa-share-alt"></i><span class="sr-only">Share</span></button>
 
   <div class="tooltip">
-  <button class="copy" onclick="copyToClipboard('#p1')" onmouseout="outFunc()">
+  <button class="copy" onclick="copyToClipboard('#pn-2019-09-26')" onmouseout="outFunc()">
   <span class="tooltiptext" id="myTooltip">Copy to clipboard</span>
   <i class="far fa-copy"></i><span class="sr-only">Copy to clipboard</span></button>
   </div>
@@ -55,7 +58,7 @@ permalink: /news-and-resources/plan-news/
 </div>
 
 <div class="usa-grid">
-<div class="usa-width-one-whole" markdown="1">
+<div class="usa-width-one-whole" markdown="1" id="pn-2019-09-15">
 **New withdrawal options now available &#8212; We’re pleased to announce that all participants now have more options when seeking to withdraw retirement savings from their TSP accounts.**
 
 For a detailed summary of the new withdrawal options, read our updated fact sheet, [_Questions and Answers about Changes to TSP Withdrawal Options_](/publications/tspfs10.pdf).
@@ -71,7 +74,7 @@ For information about post-separation withdrawals, visit the “Withdrawals Afte
     <!-- Trigger/Open The Modal -->
     <button class="share" id="myBtn"><i class="fas fa-share-alt"></i><span class="sr-only">Share</span></button>
     <div class="tooltip">
-    <button class="copy" onclick="copyToClipboard('#p1')" onmouseout="outFunc()">
+    <button class="copy" onclick="copyToClipboard('#pn-2019-09-15')" onmouseout="outFunc()">
     <span class="tooltiptext" id="myTooltip">Copy to clipboard</span>
     <i class="far fa-copy"></i><span class="sr-only">Copy to clipboard</span></button>
     </div>
@@ -93,13 +96,14 @@ For information about post-separation withdrawals, visit the “Withdrawals Afte
 <div class="usa-width-one-whole" markdown="1">
 
 **Stick to Your Plan — The stock and bond markets can change rapidly.** By the time you react to the situation, the market may be moving in the opposite direction, and you could miss out on significant gains. Remember that investing for retirement is for the long-term. Try not to let short-term market movements steer you off course. To learn more, visit [Investment Strategy: Stick to Your Plan](javascript:void(0)).
+{:#pn-2019-08-06}
 
   <div class="flex post-and-share">
     <span class="post-date" >Posted: August 6, 2019</span>
     <!-- Trigger/Open The Modal -->
     <button class="share" id="myBtn"><i class="fas fa-share-alt"></i><span class="sr-only">Share</span></button>
     <div class="tooltip">
-    <button class="copy" onclick="copyToClipboard('#p1')" onmouseout="outFunc()">
+    <button class="copy" onclick="copyToClipboard('#pn-2019-08-06')" onmouseout="outFunc()">
     <span class="tooltiptext" id="myTooltip">Copy to clipboard</span>
     <i class="far fa-copy"></i><span class="sr-only">Copy to clipboard</span></button>
     </div>
@@ -245,4 +249,15 @@ Etc.
 </div>
 </li>
 </ul>
+
+<div id="myModal" class="modal">
+<!-- Modal content -->
+<div class="modal-content">
+<span class="close">&times;</span>
+{% include share-bar.html  %}
+</div>
+</div>
+</div>
+</div>
+
 </section>

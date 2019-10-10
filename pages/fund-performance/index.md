@@ -1,7 +1,7 @@
 ---
 title: Rates of returns
 layout: page
-permalink: /fund-performance/rates-of-returns/
+permalink: /fund-performance/
 styles:
 scripts:
   - /assets/js/jquery.min.js
