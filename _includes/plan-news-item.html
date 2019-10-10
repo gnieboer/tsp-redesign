@@ -1,0 +1,47 @@
+{% comment %}
+HTML block for one faq item accordion.
+{% endcomment %}
+{% assign entry = include.entry %}
+{% assign plan_news_name = entry.name | default: 'anchor' %}
+{% assign plan_news_posted = entry.path | split: '/' | last | truncate: 10, '' | default: '--' %}
+{% assign showHeader = include.showHeader | default: 1 %}
+{% assign searchBar = include.searchBar | default: 0 %}
+<a name="{{plan_news_name}}"></a>
+{% if showHeader != 0 %}
+<div class="flex header-line" markdown="1">
+## {{plan_news_posted | date: '%B %Y'}} news and announcements
+{% if searchBar != 0 %}
+<!-- Animated search bar -->
+<form accept-charset="UTF-8" action="https://search.usa.gov/search/docs" id="search_form_8657" method="get" class="animated-search">
+<div style="margin:0;padding:0;display:inline">
+<input type="hidden" name="dc" value="8657">
+<input type="hidden" name="utf8" value="&#x2713;" /></div>
+<input type="hidden" name="affiliate" value="beta.tsp" id="affiliate" >
+<label for="query" class="usa-sr-only">Enter search term(s)</label>
+<!-- Search input field -->
+<input type="text" name="query" id="query_8657" autocomplete="off" placeholder="Enter search term(s)">
+</form>
+{% endif %}
+</div>
+{% endif %}
+
+<div class="usa-grid">
+<div class="usa-width-one-whole" markdown="1">
+<div id="{{plan_news_name}}">{{entry.content}}</div>
+<div class="flex post-and-share">
+  <span id="{{plan_news_name}}_posted" class="post-date" >Posted: {{plan_news_posted | date: '%B %d, %Y'}}</span>
+  <!-- Trigger/Open The Modal -->
+  <button class="share" id="myBtn">
+    <i class="fas fa-share-alt"></i><span class="sr-only">Share</span>
+  </button>
+  {% include copy-to-clipboard.html element=plan_news_name function='copyPlanNewsToClipboard' %}
+  <div id="myModal" class="modal">
+    <!-- Modal content -->
+    <div class="modal-content">
+    <span class="close">&times;</span>
+    {% include share-bar.html  %}
+    </div>
+  </div>
+</div>
+</div>
+</div>
