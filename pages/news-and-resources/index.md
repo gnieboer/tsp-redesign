@@ -6,6 +6,7 @@ styles:
 scripts:
   - /assets/js/copy-to-clipboard.js
   - /assets/js/jquery.min.js
+  - /assets/js/bootstrap.min.js
   - /assets/js/share-modal.js
   - /assets/js/ajaxFetch.js
   - /assets/js/calculator/calculator.js
@@ -21,12 +22,7 @@ document-ready:
 
 # News and resources
 
-<div class="next-outage" markdown="1">
-
-- <i class="fas fa-power-off"></i> **Next outage:** April 25, 2019
-- 12 a.m. – 7 p.m., eastern time
-
-</div>
+{% include next-outage.html %}
 
 <section class="key-rates">
   <div class="usa-grid">
@@ -67,8 +63,9 @@ document-ready:
 
 <div class="flex post-and-share">
   <span class="post-date" >Posted: November 29, 2018</span>
-  <!-- Trigger/Open The Modal -->
-  <button class="share" id="myBtn"><i class="fas fa-share-alt"></i><span class="sr-only">Share</span></button>
+  <!-- Share Modal -->
+  <button type="button" class="share" data-toggle="modal" data-target="#shareModal"><i class="fas fa-share-alt"></i><span class="sr-only">Share</span></button>
+  <!-- Copy to clipboard -->
   <div class="tooltip">
   <button class="copy" onclick="copyToClipboard('#p1')" onmouseout="outFunc()">
   <span class="tooltiptext" id="myTooltip">Copy to clipboard</span>
@@ -80,16 +77,12 @@ document-ready:
 
 
 
-  <!-- The Modal -->
-  <div id="myModal" class="modal">
-  <!-- Modal content -->
-  <div class="modal-content">
-  <span class="close">&times;</span>
+
   {% include share-bar.html  %}
-  </div>
-  </div>
+
 </div>
 </div>
+
 </section>
 
 <section class="popular-videos" markdown="1">

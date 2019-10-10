@@ -26,10 +26,11 @@ hero:
 
 <!-- NEW TO THE TSP? -->
 
-<div class="usa-width-one-third" markdown="1">
-<div>
-<img src="{{ site.baseurl }}/assets/img/icons/sun.svg" alt="">
-</div>
+<div class="usa-width-one-third column" markdown="1">
+<div markdown="1">
+  <div class="icon">
+  <img src="{{ site.baseurl }}/assets/img/icons/sun.svg" alt="">
+  </div>
 
 ## New to the TSP? Let’s start with the basics
 
@@ -37,23 +38,33 @@ You can setup your account, rollover a 401(k), and so much more.
 
 </div>
 
+[Get started](<{{ site.baseurl }}/account-basics/>)
+
+</div>
+
 <!-- EVERYTHING YOU NEED -->
 
 <div class="usa-width-one-third" markdown="1">
-<div class="">
-<img src="{{ site.baseurl }}/assets/img/icons/graph_up.svg" alt="">
-</div>
+<div markdown="1">
+  <div class="icon">
+  <img src="{{ site.baseurl }}/assets/img/icons/graph_up.svg" alt="">
+  </div>
 
 ## Everything you need to know about our funds
 
 We’ll help you understand each fund—their risks, rewards, and performance.
 
 </div>
+
+[Learn more](<{{ site.baseurl }}/how-to-invest/>)
+
+</div>
 <!-- WE'LL BE WITH YOU -->
 <div class="usa-width-one-third" markdown="1">
-<div>
-<img src="{{ site.baseurl }}/assets/img/icons/team_blue.svg" alt="" class="team">
-</div>
+<div markdown="1">
+  <div class="icon">
+  <img src="{{ site.baseurl }}/assets/img/icons/team_blue.svg" alt="" class="team">
+  </div>
 
 ## We’ll be with you every step of the way
 
@@ -61,31 +72,9 @@ Whether you're new to the federal government or preparing to retire, we're here 
 
 </div>
 
+[Learn more](<{{ site.baseurl }}/planning-for-life-events/>)
+
 </div>
-<!-- LEARN MORE -->
-<div class="usa-grid usa-learn-more">
-
-  <!-- NEW TO THE TSP? -->
-
-  <div class="usa-width-one-third" markdown="1">
-
-  [Get started](<{{ site.baseurl }}/account-basics/>)
-
-  </div>
-
-  <!-- EVERYTHING YOU NEED -->
-
-  <div class="usa-width-one-third" markdown="1">
-
-  [Learn more](<{{ site.baseurl }}/how-to-invest/>)
-
-  </div>
-  <!-- WE'LL BE WITH YOU -->
-  <div class="usa-width-one-third" markdown="1">
-
-  [Learn more](<{{ site.baseurl }}/planning-for-life-events/>)
-
-  </div>
 
 </div>
 </section>
@@ -126,7 +115,7 @@ Lifecycle funds
 </button>
 <div id="lifecycle" class="usa-accordion-content" markdown="1">
 
-The [Lifecycle (L)](/funds-lifecycle/) Funds are made of each of the individual funds below. If you’re an experienced investor, you can customize your asset allocation with our 5 individual funds and invest in everything from short-term government securities to domestic and international stocks.
+The [Lifecycle (L)]({{ site.baseurl }}/funds-lifecycle/) Funds are made of each of the individual funds below. If you’re an experienced investor, you can customize your asset allocation with our 5 individual funds and invest in everything from short-term government securities to domestic and international stocks.
 
 <ul class="usa-accordion lifecycle-funds">
 <li>
