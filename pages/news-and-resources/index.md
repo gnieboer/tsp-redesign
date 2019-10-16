@@ -68,7 +68,7 @@ document-ready:
   <!-- Copy to clipboard -->
   <div class="tooltip">
   <button class="copy" onclick="copyToClipboard('#p1')" onmouseout="outFunc()">
-  <span class="tooltiptext" id="myTooltip">Copy to clipboard</span>
+  <span class="tooltiptext" id="tooltip">Copy to clipboard</span>
   <i class="far fa-copy"></i><span class="sr-only">Copy to clipboard</span></button>
   </div>
 

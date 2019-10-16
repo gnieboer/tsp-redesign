@@ -1,0 +1,45 @@
+---
+layout: default
+main:
+  class: usa-grid usa-section usa-content usa-layout-docs
+scripts:
+  - /assets/js/copy-to-clipboard.js
+  - /assets/js/jquery.min.js
+---
+{% assign sidenav = site.data.navigation[page.sidenav] | default: page.sidenav %}
+{% if sidenav %}
+
+<aside class="usa-width-one-fourth usa-layout-docs-sidenav sticky">
+  <ul class="usa-accordion">
+    <li>
+      <button class="usa-accordion-button"
+        aria-expanded="true"
+        aria-controls="sidenav-mobile">
+        More in this section
+      </button>
+      <div id="sidenav-mobile" class="usa-accordion-content">
+        {% include sidenav.html links=sidenav fake='/news-and-resources/plan-news/' %}
+      </div>
+    </li>
+  </ul>
+</aside>
+
+{% capture myTitle %}
+## {{ page.title }}
+{% endcapture %}
+<div class="usa-width-three-fourths usa-layout-docs-main_content">
+  {{ myTitle | markdownify }}
+
+  <section class="plan-news-archive" markdown="1">
+  {% include plan-news-item.html entry=page showHeader=0 searchBar=0 %}
+  </section>
+</div>
+{% else %}
+<div class="usa-layout-docs-main_content">
+  {{ myTitle | markdownify }}
+
+  <section class="plan-news-archive" markdown="1">
+  {% include plan-news-item.html entry=page showHeader=0 searchBar=0 %}
+  </section>
+</div>
+{% endif %}

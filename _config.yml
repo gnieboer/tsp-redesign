@@ -53,8 +53,16 @@ collections:
   forms:
     output: true
   plan_news:
-    output: false
+    output: true
   publications:
     output: true
   newsletters:
     output: true
+
+defaults:
+  -
+    scope:
+      path: "_plan_news"
+    values:
+      layout: page-plan-news
+      sidenav: news-and-resources

@@ -2,6 +2,7 @@
 {% assign plan_news_list = site.plan_news | sort: 'path' | reverse %}
 {% assign topitems = "" | split: ',' %}
 {% assign archive = "" | split: ',' %}
+{% assign showMoreCnt = 4 %}
 {% for item in plan_news_list %}{% unless item.path contains '/_hidden/' %}
 {% assign folder = item.path | split: '/' | shift | pop | join: '/' %}
 {% if folder == '' %}
@@ -19,7 +20,12 @@
 {% if itemSize > 0 %}
 <section class="plan-news" markdown="1">
 {% assign lastHeader = '' %}
+{% assign cnt = 0 %}
 {% for item in topitems %}
+{% assign cnt = forloop.index %}
+{% if cnt == showMoreCnt %}
+<div id="more-items-content-plan-news" class="hide">
+{% endif %}
   {% assign showHeader = 1 %}
   {% assign newHeader = item.path | split: '/' | last | truncate: 7, "" %}
   {% if newHeader == lastHeader %}{% assign showHeader = 0 %}{% endif %}
@@ -27,9 +33,12 @@
   {% include plan-news-item.html entry=item showHeader=showHeader searchBar=searchBar %}
   {% assign searchBar = 0 %}
 {% endfor %}
-<div class="see-more">
-  <span onclick="show()">See more</span><i id="see-more-a" class="far fa-angle-up rotate"></i>
+{% if cnt >= showMoreCnt %}
 </div>
+<div id="more-items-plan-news" class="see-more" onClick="showMoreForms('items', 'plan-news');">
+  <span>see more items</span>
+</div>
+{% endif %}
 </section>
 {% endif %}
 

@@ -41,7 +41,7 @@ permalink: /news-and-resources/plan-news-old/
 
   <div class="tooltip">
   <button class="copy" onclick="copyToClipboard('#p1')" onmouseout="outFunc()">
-  <span class="tooltiptext" id="myTooltip">Copy to clipboard</span>
+  <span class="tooltiptext" id="tooltip">Copy to clipboard</span>
   <i class="far fa-copy"></i><span class="sr-only">Copy to clipboard</span></button>
   </div>
 
@@ -74,7 +74,7 @@ For information about post-separation withdrawals, visit the “Withdrawals Afte
     <button class="share" id="myBtn"><i class="fas fa-share-alt"></i><span class="sr-only">Share</span></button>
     <div class="tooltip">
     <button class="copy" onclick="copyToClipboard('#p1')" onmouseout="outFunc()">
-    <span class="tooltiptext" id="myTooltip">Copy to clipboard</span>
+    <span class="tooltiptext" id="tooltip">Copy to clipboard</span>
     <i class="far fa-copy"></i><span class="sr-only">Copy to clipboard</span></button>
     </div>
     <!-- The Modal -->
@@ -102,7 +102,7 @@ For information about post-separation withdrawals, visit the “Withdrawals Afte
     <button class="share" id="myBtn"><i class="fas fa-share-alt"></i><span class="sr-only">Share</span></button>
     <div class="tooltip">
     <button class="copy" onclick="copyToClipboard('#p1')" onmouseout="outFunc()">
-    <span class="tooltiptext" id="myTooltip">Copy to clipboard</span>
+    <span class="tooltiptext" id="tooltip">Copy to clipboard</span>
     <i class="far fa-copy"></i><span class="sr-only">Copy to clipboard</span></button>
     </div>
   </div>
@@ -148,7 +148,7 @@ aria-controls="year-2018">
     <button class="share" id="myBtn"><i class="fas fa-share-alt"></i><span class="sr-only">Share</span></button>
     <div class="tooltip">
     <button class="copy" onclick="copyToClipboard('#p1')" onmouseout="outFunc()">
-    <span class="tooltiptext" id="myTooltip">Copy to clipboard</span>
+    <span class="tooltiptext" id="tooltip">Copy to clipboard</span>
     <i class="far fa-copy"></i><span class="sr-only">Copy to clipboard</span></button>
     </div>
   </div>
@@ -173,7 +173,7 @@ aria-controls="year-2018">
     <button class="share" id="myBtn"><i class="fas fa-share-alt"></i><span class="sr-only">Share</span></button>
     <div class="tooltip">
     <button class="copy" onclick="copyToClipboard('#p1')" onmouseout="outFunc()">
-    <span class="tooltiptext" id="myTooltip">Copy to clipboard</span>
+    <span class="tooltiptext" id="tooltip">Copy to clipboard</span>
     <i class="far fa-copy"></i><span class="sr-only">Copy to clipboard</span></button>
     </div>
   </div>
@@ -200,7 +200,7 @@ aria-controls="year-2018">
     <button class="share" id="myBtn"><i class="fas fa-share-alt"></i><span class="sr-only">Share</span></button>
     <div class="tooltip">
     <button class="copy" onclick="copyToClipboard('#p1')" onmouseout="outFunc()">
-    <span class="tooltiptext" id="myTooltip">Copy to clipboard</span>
+    <span class="tooltiptext" id="tooltip">Copy to clipboard</span>
     <i class="far fa-copy"></i><span class="sr-only">Copy to clipboard</span></button>
     </div>
   </div>
