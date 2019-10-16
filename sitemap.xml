@@ -45,7 +45,7 @@
   </url>{% endunless %}{% endfor %}
   <!-- plan news -->{% assign plan_news_list = site.plan_news | sort: 'path' %}{% for item in plan_news_list %}{% unless item.path contains '/_hidden/' %}
   <url>
-    <loc>{{ item.permalink | prepend: site_url }}</loc>
+    <loc>{{ item.permalink | prepend: site_url }}.html</loc>
     <lastmod>{{ item.path | date: '%A, %B %d, %Y (%I:%M %P)' }}</lastmod>
   </url>{% endunless %}{% endfor %}
 </urlset>
