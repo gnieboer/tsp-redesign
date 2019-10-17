@@ -1,30 +1,111 @@
 
-div#social,
-.feeds {
-  padding-left: 0;
-  padding-right: 0;
-}
-section {
-  &.facebook-feed {
-    text-align: center;
+section.videos-and-resources {
+  .wrapper {
+    text-align: right;
+  }
+  .usa-accordion-button {
+    width: 100%;
+  }
+  div {
+    &.social {
+      .feeds {
+        padding-left: 0;
+        padding-right: 0;
+      }
+    }
+    &.videos {
+      background-color: $color-gray-lightest;
+      .usa-grid {
+        // outline: 1px solid green;
+        padding-left: 0;
+        padding-right: 0;
+        margin-top: 2rem;
+      }
+    }
+    &.search-videos,
+    &.video-details {
+      text-align: left;
+      .usa-accordion-button {
+        background-color: inherit;
+        color: inherit;
+        font-weight: 400;
+        border: none;
+        padding: 1.5rem .2rem 1.5rem 2rem;
+        width: auto;
+        line-height: 3rem;
+        &[aria-expanded="true"] {
+          background-color: inherit;
+          color: inherit;
+          font-weight: $bold;
+          &:after {
+            content: '';
+            border-bottom: 4px solid #02bfe7;
+            display: block;
+          }
+        }
+      }
+    }
+    &.search-videos {
+      // outline: 1px solid red;
+      border-radius: 0.5rem;
+      background-color: #afb0b5;
+      color: #fff;
+      padding: 1.5rem 1 rem;
+    }
+    &.video-details {
+      border: 1px solid $color-gray-lighter;
+      border-radius: .5rem;
+      overflow: hidden;
+      .usa-accordion-content {
+        padding: 3rem 2rem;
+      }
+      .overview {
+        p {
+          &:last-of-type { // not last-child because ul is the last child of .overview
+            margin-bottom: .2rem;
+          }
+
+          &.release-date {
+            font-weight: $bold;
+            font-size: 1.4rem;
+          }
+        }
+        ul.categories {
+          display: block;
+          list-style-type: disc;
+          padding-left: 2rem;
+          li {
+            display: list-item;
+          }
+        }
+      } // end .overview
+      .download {
+        i {
+          padding-left: 0.5rem;
+        }
+      }
+    }
+  }
+  section {
+    &.facebook-feed {
+      text-align: center;
+    }
   }
 }
 
-div#videos {
-  background-color: $color-gray-lightest;
-}
 @media only screen and (min-width: $large-screen) {
-  .usa-tabs {
-    &.social-media {
-      .usa-accordion-button {
-        background-color: #e0f2f9;
-        color: $color-primary-darker;
+  section.videos-and-resources {
+    .usa-accordion-button {
+      background-color: #e0f2f9;
+      color: $color-primary-darker;
+      font-weight: 400;
+      border: none;
+      padding: 1.5rem 3.6rem;
+      width: auto;
+      &[aria-expanded="true"] {
+        background-color: $color-primary-darker;
+        color: #fff;
         font-weight: 400;
-        &[aria-expanded="true"] {
-          background-color: $color-primary-darker;
-          color: #fff;
-          font-weight: 400;
-        }
       }
     }
   }
