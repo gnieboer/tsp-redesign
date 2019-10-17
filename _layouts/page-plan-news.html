@@ -7,8 +7,10 @@ scripts:
   - /assets/js/jquery.min.js
 ---
 {% assign sidenav = site.data.navigation[page.sidenav] | default: page.sidenav %}
+{% assign xtra_class = '' %}
 {% if sidenav %}
 
+{% assign xtra_class = 'usa-width-three-fourths' %}
 <aside class="usa-width-one-fourth usa-layout-docs-sidenav sticky">
   <ul class="usa-accordion">
     <li>
@@ -18,28 +20,22 @@ scripts:
         More in this section
       </button>
       <div id="sidenav-mobile" class="usa-accordion-content">
-        {% include sidenav.html links=sidenav fake='/news-and-resources/plan-news/' %}
+        {% include sidenav.html links=sidenav fake='/news-and-resources/plan-news-fake/' %}
       </div>
     </li>
   </ul>
 </aside>
-
-{% capture myTitle %}
-## {{ page.title }}
-{% endcapture %}
-<div class="usa-width-three-fourths usa-layout-docs-main_content">
-  {{ myTitle | markdownify }}
-
-  <section class="plan-news-archive" markdown="1">
-  {% include plan-news-item.html entry=page showHeader=0 searchBar=0 %}
-  </section>
-</div>
-{% else %}
-<div class="usa-layout-docs-main_content">
-  {{ myTitle | markdownify }}
-
-  <section class="plan-news-archive" markdown="1">
-  {% include plan-news-item.html entry=page showHeader=0 searchBar=0 %}
-  </section>
-</div>
 {% endif %}
+
+{% capture top_of_page %}
+# Plan news
+{:#plan-news}
+
+{% include next-outage.html %}
+{% endcapture %}
+<div class="{{xtra_class}} usa-layout-docs-main_content" markdown="1">
+  {{ top_of_page | markdownify }}
+  <section class="plan-news-archive">
+  {% include plan-news-item.html entry=page showHeader=0 searchBar=0 %}
+  </section>
+</div>
