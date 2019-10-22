@@ -39,7 +39,7 @@ Videos
 <input type="hidden" name="affiliate" value="beta.tsp" id="affiliate" >
 <label for="query" class="usa-sr-only">Search videos</label>
 <!-- Search input field -->
-<input type="text" name="query" id="qu  ery_8657" autocomplete="off" placeholder="Search videos &#xf002;">
+<input type="text" name="query" id="query_8657" autocomplete="off" placeholder="&#xf002; Search videos">
 </form>
 
 - [Your TSP Investment Options: The Lifecycle Funds]("javascript:void(0)")
