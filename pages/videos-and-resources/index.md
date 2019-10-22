@@ -42,10 +42,10 @@ Videos
 <input type="text" name="query" id="query_8657" autocomplete="off" placeholder="&#xf002; Search videos">
 </form>
 
-- [Your TSP Investment Options: The Lifecycle Funds]("javascript:void(0)")
-- [Welcome to the TSP! Here’s What You Need to Know]("javascript:void(0)")
-- [How the TSP Fits into FERS]("javascript:void(0)")
-- [The Cost of Taking a TSP Loan]("javascript:void(0)")
+- [Your TSP Investment Options: The Lifecycle Funds](javascript:void(0))
+- [Welcome to the TSP! Here’s What You Need to Know](javascript:void(0))
+- [How the TSP Fits into FERS](javascript:void(0))
+- [The Cost of Taking a TSP Loan](javascript:void(0))
 {:.video-filter}
 
 </div>
@@ -67,14 +67,14 @@ Videos
   In this video, we'll talk about the professionally designed Lifecycle Funds, also known as the L Funds.
 
   Categories:
-  - [Agency/Service Representatives]("javascript:void(0)")
-  - [Frequently Asked Questions]("javascript:void(0)")
-  - [Investment Options]("javascript:void(0)")
-  - [Now You Know]("javascript:void(0)")
-  - [Participant Stories]("javascript:void(0)")
-  - [Roth TSP]("javascript:void(0)")
-  - [Webinars]("javascript:void(0)")
-  - [Withdrawals]("javascript:void(0)")
+  - [Agency/Service Representatives](javascript:void(0))
+  - [Frequently Asked Questions](javascript:void(0))
+  - [Investment Options](javascript:void(0))
+  - [Now You Know](javascript:void(0))
+  - [Participant Stories](javascript:void(0))
+  - [Roth TSP](javascript:void(0))
+  - [Webinars](javascript:void(0))
+  - [Withdrawals](javascript:void(0))
   {:.categories}
 
   </div>
