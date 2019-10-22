@@ -49,8 +49,73 @@ section.videos-and-resources {
       // outline: 1px solid red;
       border-radius: 0.5rem;
       background-color: #afb0b5;
+      background-color: $color-gray;
       color: #fff;
-      padding: 1.5rem 1 rem;
+      padding: 1.5rem 1rem;
+
+      form {
+        &.animated-search {
+          input[type=text] {
+            // width: 50px;
+            width: 100%;
+            // max-width: 100%;
+            box-sizing: border-box;
+            border-radius: 0.5rem;
+            border-color: #afb0b5;
+            background-color: white;
+            // background-image: url('/assets/uswds/img/search-outline-alt.svg');
+            // background-size: 2rem 2rem;
+            // background-position: 25px 11px;
+            // background-repeat: no-repeat;
+            font-family: $font-sans;
+            font-family: $font-awesome, $font-sans;
+            font-size: inherit;
+            padding: 0 1rem;
+            height: 4.4rem;
+            line-height: 1.3;
+            margin: 0.2em 0;
+            -webkit-transition: width 0.4s ease; /* Safari and Chrome */
+            transition: width 0.4s ease;
+            &::placeholder {
+              // text-align: center;
+              // padding-left: .7rem;
+            }
+          }
+          input[type=text]:focus {
+            width: 100%;
+            border: 2px solid green;
+          }
+        }
+      } // end form
+      .video-filter {
+        list-style-type: none;
+        margin: 1rem 0 0 0.7rem;
+        padding: 0;
+        font-size: 1.4rem;
+        li {
+          border-bottom: 1px solid #fff;
+          display: block;
+          margin-bottom: 0.5em;
+          padding: 1rem 4rem 1rem 0;
+          line-height: 1.5;
+          &:last-child {
+            border-bottom: none;
+          }
+          a {
+            color: inherit;
+            text-decoration: none;
+            &:hover {
+              text-decoration: underline;
+            }
+          }
+        }
+      }
+      // input {
+      //
+      //   &:focus {
+      //     border-bottom: 3px solid #046b99;
+      //   }
+      // }
     }
     &.video-details {
       border: 1px solid $color-gray-lighter;

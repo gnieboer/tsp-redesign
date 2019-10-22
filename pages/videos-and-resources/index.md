@@ -25,9 +25,28 @@ Videos
 <iframe src="https://www.youtube.com/embed/r6rRMcgBNCc?rel=0" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 </div>
-<!-- Video details -->
 <div class="usa-grid">
-<div class="usa-width-one-third search-videos">Search videos</div>
+<!-- Search videos -->
+<div class="usa-width-one-third search-videos" markdown="1">
+<!-- Animated search bar -->
+<form accept-charset="UTF-8" action="https://search.usa.gov/search/docs" id="search_form_8657" method="get" class="animated-search">
+<div style="margin:0;padding:0;display:inline">
+<input type="hidden" name="dc" value="8657">
+<input type="hidden" name="utf8" value="&#x2713;" /></div>
+<input type="hidden" name="affiliate" value="beta.tsp" id="affiliate" >
+<label for="query" class="usa-sr-only">Search videos</label>
+<!-- Search input field -->
+<input type="text" name="query" id="qu  ery_8657" autocomplete="off" placeholder="Search videos &#xf002;">
+</form>
+
+- [Your TSP Investment Options: The Lifecycle Funds]("javascript:void(0)")
+- [Welcome to the TSP! Here’s What You Need to Know]("javascript:void(0)")
+- [How the TSP Fits into FERS]("javascript:void(0)")
+- [The Cost of Taking a TSP Loan]("javascript:void(0)")
+{:.video-filter}
+
+</div>
+
 <div class="usa-width-two-thirds video-details">
   <ul class="usa-accordion usa-tabs">
   <!-- Overview -->
@@ -45,7 +64,14 @@ Videos
   In this video, we'll talk about the professionally designed Lifecycle Funds, also known as the L Funds.
 
   Categories:
-  - Education
+  - [Agency/Service Representatives]("javascript:void(0)")
+  - [Frequently Asked Questions]("javascript:void(0)")
+  - [Investment Options]("javascript:void(0)")
+  - [Now You Know]("javascript:void(0)")
+  - [Participant Stories]("javascript:void(0)")
+  - [Roth TSP]("javascript:void(0)")
+  - [Webinars]("javascript:void(0)")
+  - [Withdrawals]("javascript:void(0)")
   {:.categories}
 
   </div>
@@ -59,7 +85,7 @@ Videos
   </button>
   <div id="transcript" class="usa-accordion-content" markdown="1">
 
-  Your TSP Investment Options:  The Lifecycle Funds
+  Your TSP Investment Options: The Lifecycle Funds
 
   The TSP has a selection of individual and lifecycle funds that let you diversify your retirement savings.  You can choose to invest your TSP dollars in everything from short-term U.S. Treasury securities to index funds comprised of domestic and international stocks.
   In this video, we’ll talk about the professionally designed Lifecycle Funds, also known as the L Funds.
