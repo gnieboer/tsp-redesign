@@ -16,10 +16,16 @@
 {% comment %}Do the top level{% endcomment %}
 {% assign searchBar = 1 %}
 {% assign itemSize = topitems | size %}
+{% assign startTopAccordion = 2 | plus: 1 %}
+{% assign cnt = 0 %}
 {% if itemSize > 0 %}
 <section class="plan-news" markdown="1">
 {% assign lastHeader = '' %}
 {% for item in topitems %}
+  {% assign cnt = cnt | plus: 1 %}
+  {% if cnt == startTopAccordion %}
+  <div id="more-plans-content-a" class="hide">
+  {% endif %}
   {% assign showHeader = 1 %}
   {% assign newHeader = item.path | split: '/' | last | truncate: 7, "" %}
   {% if newHeader == lastHeader %}{% assign showHeader = 0 %}{% endif %}
@@ -27,9 +33,12 @@
   {% include plan-news-item.html entry=item showHeader=showHeader searchBar=searchBar %}
   {% assign searchBar = 0 %}
 {% endfor %}
-<div class="see-more">
-  <span onclick="show()">See more</span><i id="see-more-a" class="far fa-angle-up rotate"></i>
+{% if cnt >= startTopAccordion %}
 </div>
+<div class="see-more">
+  <span onclick="showMorePlans('plans', 'a');">See more</span><i id="more-plans-a" class="far fa-angle-up rotate"></i>
+</div>
+{% endif %}
 </section>
 {% endif %}
 
