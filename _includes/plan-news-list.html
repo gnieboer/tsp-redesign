@@ -2,7 +2,6 @@
 {% assign plan_news_list = site.plan_news | sort: 'path' | reverse %}
 {% assign topitems = "" | split: ',' %}
 {% assign archive = "" | split: ',' %}
-{% assign showMoreCnt = 4 %}
 {% for item in plan_news_list %}{% unless item.path contains '/_hidden/' %}
 {% assign folder = item.path | split: '/' | shift | pop | join: '/' %}
 {% if folder == '' %}
@@ -17,15 +16,16 @@
 {% comment %}Do the top level{% endcomment %}
 {% assign searchBar = 1 %}
 {% assign itemSize = topitems | size %}
+{% assign startTopAccordion = 2 | plus: 1 %}
+{% assign cnt = 0 %}
 {% if itemSize > 0 %}
 <section class="plan-news" markdown="1">
 {% assign lastHeader = '' %}
-{% assign cnt = 0 %}
 {% for item in topitems %}
-{% assign cnt = forloop.index %}
-{% if cnt == showMoreCnt %}
-<div id="more-items-content-plan-news" class="hide">
-{% endif %}
+  {% assign cnt = cnt | plus: 1 %}
+  {% if cnt == startTopAccordion %}
+  <div id="more-plans-content-a" class="hide">
+  {% endif %}
   {% assign showHeader = 1 %}
   {% assign newHeader = item.path | split: '/' | last | truncate: 7, "" %}
   {% if newHeader == lastHeader %}{% assign showHeader = 0 %}{% endif %}
@@ -33,10 +33,10 @@
   {% include plan-news-item.html entry=item showHeader=showHeader searchBar=searchBar %}
   {% assign searchBar = 0 %}
 {% endfor %}
-{% if cnt >= showMoreCnt %}
+{% if cnt >= startTopAccordion %}
 </div>
-<div id="more--plan-news" class="see-more" onClick="showMoreForms('', 'plan-news');">
-  <span>See more</span>
+<div class="see-more">
+  <span onclick="showMorePlans('plans', 'a');">See more</span><i id="more-plans-a" class="far fa-angle-up rotate"></i>
 </div>
 {% endif %}
 </section>
