@@ -8,7 +8,7 @@ scripts:
   - /assets/js/ajaxFetch.js
   - /assets/js/ajax-usa-search-gov.js
   - /assets/js/forms.js
-permalink: /forms/
+permalink: /forms-dav/
 ---
 
 # Help me find forms and resources about {#forms}
@@ -31,18 +31,29 @@ permalink: /forms/
         </form>
 
       <!-- Animated search bar -->
-        <form accept-charset="UTF-8" action="https://search.usa.gov/search/docs" id="search_form_8657" method="get" class="animated-search">
+        <form accept-charset="UTF-8" id="search_form_8657" method="get" class="animated-search" onSubmit="return false;">
           <div style="margin:0;padding:0;display:inline">
           <input type="hidden" name="dc" value="8657">
           <input type="hidden" name="utf8" value="&#x2713;" /></div>
           <input type="hidden" name="affiliate" value="beta.tsp" id="affiliate" >
           <label for="query" class="usa-sr-only">Enter form name or number</label>
           <!-- Search input field -->
-          <input type="text" name="query" id="query_8657" autocomplete="off" placeholder="Enter form name or number">
+          <input type="text" name="query" id="query_8657" autocomplete="off"
+          placeholder="Enter form name or number"
+          onChange="inlineSearch('query_8657', 'search-results');">
         </form>
       </div>
     </section> <!-- // end section.search-forms -->
   </div>
+</div>
+
+<div id="select-forms-SR" class="select-forms-div hide" markdown="1">
+<h2 class="most-popular" id="most-popular-forms-searched">Search Results</h2>
+<div class="usa-grid-full">
+<div id="search-results">
+search results
+</div>
+</div>
 </div>
 
 {% assign showTotal = 4 %}

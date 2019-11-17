@@ -1,4 +1,18 @@
 
+function selectFormsSearchResult(queryBox) {
+  $('.select-forms-div').addClass('hide');
+  $('.select-resources-div').addClass('hide');
+  $('#select-forms-SR').removeClass('hide');
+  $('#select-forms-topic').prop('selectedIndex', 0);
+  $('#'+queryBox).blur();
+  $('#'+queryBox).val('');
+}
+
+function inlineSearch(queryBox, resultDiv) {
+  search(queryBox, resultDiv, 0, 0);
+  selectFormsSearchResult(queryBox);
+}
+
 function selectFormsTopic() {
   var val = document.getElementById("select-forms-topic").value;
   // console.log('selectFormsTopic: |' + val + '|');

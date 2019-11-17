@@ -15,6 +15,7 @@ document-ready:
 
 <div id="panel-{{ panelID }}" class="calculator-panel" style="{{ hide }}" markdown="1">
 
+{% comment %}
 <fieldset>
 {% include calculator/div-panel-form-field.html
   fieldID="panel-1.1" id="search-box"
@@ -28,6 +29,34 @@ document-ready:
 </fieldset>
 
 {% include calculator/button.html text='Search' onClick="doSearch();" xtraClass2='primary' %}
+{% endcomment %}
+
+<div class="usa-grid-full">
+  <div class="usa-width-one-whole">
+    <section class="search-forms">
+
+empty
+<br>
+{% include animated-search-bar.html %}
+
+<br>
+
+8657
+<br>
+{% include animated-search-bar.html search_label="Search 8657: " collectionID="8657"
+    autocomplete='off' placeholder="Enter terms for 8657" %}
+
+
+<br>
+
+8657 #2
+<br>
+{% include animated-search-bar.html search_label="Search 8657 #2: " collectionID="8657"
+    IDprefix="prefix2_" autocomplete='off' placeholder="Enter terms for 8657" %}
+    </section>
+  </div>
+</div>
+
 
 <hr>
 <div id='search-results'></div>
