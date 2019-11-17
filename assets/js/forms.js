@@ -14,10 +14,10 @@ function showMoreForms(type, formNum) {
   if ($('#'+controlDiv).hasClass('see-less')) {
     $('#'+contentDiv).addClass('hide');
     $('#'+controlDiv).removeClass('see-less');
-    $('#'+controlDiv).html("<span>see more "+type+"</span>");
+    $('#'+controlDiv).html("<span>See more "+type+"</span>");
   } else {
     $('#'+contentDiv).removeClass('hide');
     $('#'+controlDiv).addClass('see-less');
-    $('#'+controlDiv).html("<span>see fewer "+type+"</span>");
+    $('#'+controlDiv).html("<span>See fewer "+type+"</span>");
   }
 }

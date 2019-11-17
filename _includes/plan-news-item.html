@@ -2,7 +2,7 @@
 HTML block for one faq item accordion.
 {% endcomment %}
 {% assign entry = include.entry %}
-{% assign plan_news_name = entry.name | default: 'anchor' %}
+{% assign plan_news_name = entry.permalink | split: '/' | last | default: 'anchor' %}
 {% assign plan_news_posted = entry.path | split: '/' | last | truncate: 10, '' | default: '--' %}
 {% assign showHeader = include.showHeader | default: 1 %}
 {% assign searchBar = include.searchBar | default: 0 %}
@@ -27,14 +27,15 @@ HTML block for one faq item accordion.
 
 <div class="usa-grid">
 <div class="usa-width-one-whole" markdown="1">
-<div id="{{plan_news_name}}">{{entry.content}}</div>
+<div id="{{plan_news_name}}-div">{{entry.content}}</div>
 <div class="flex post-and-share">
-  <span id="{{plan_news_name}}_posted" class="post-date" >Posted: {{plan_news_posted | date: '%B %d, %Y'}}</span>
+  <span id="{{plan_news_name}}-posted" class="post-date" >Posted: {{plan_news_posted | date: '%B %d, %Y'}}</span>
   <!-- Trigger/Open The Modal -->
   <button class="share" id="myBtn">
     <i class="fas fa-share-alt"></i><span class="sr-only">Share</span>
   </button>
   {% include copy-to-clipboard.html element=plan_news_name function='copyPlanNewsToClipboard' %}
+  {% if entry.permalink %}<a href="{{entry.permalink}}.html">Entry</a>{% endif %}
   <div id="myModal" class="modal">
     <!-- Modal content -->
     <div class="modal-content">

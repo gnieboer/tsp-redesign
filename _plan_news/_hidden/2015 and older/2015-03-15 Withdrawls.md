@@ -1,5 +1,6 @@
 ---
-name: 2015-withdrawl
+title: COPY Withdrawls
+permalink:: /plan-news/2015-withdrawl
 ---
 **2015 withdrawal options now available &#8212; We’re pleased to announce that all participants now have more options when seeking to withdraw retirement savings from their TSP accounts.**
 

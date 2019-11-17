@@ -1,5 +1,6 @@
 ---
-name: 2019-AWP
+title: New Withdrawal Options
+permalink: /plan-news/2019-AWP
 ---
 **New withdrawal options now available &#8212; We’re pleased to announce that all participants now have more options when seeking to withdraw retirement savings from their TSP accounts.**
 
