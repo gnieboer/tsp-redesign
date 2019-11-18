@@ -1,0 +1,26 @@
+section {
+  &.search-site {
+      padding: 0 14rem;
+      border: 1px solid red;
+
+      h1 {
+        margin-top: 0;
+      }
+
+      input {
+        &[type=search] {
+          width: 100%;
+        }
+      }
+
+    .url {
+      color: #006800;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      height: 1.5em;
+      display: block;
+      word-wrap: break-word;
+    }
+  } // end .search-site
+} // end section
