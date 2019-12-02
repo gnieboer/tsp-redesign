@@ -5,23 +5,12 @@ HTML block for one faq item accordion.
 {% assign plan_news_name = entry.permalink | split: '/' | last | default: 'anchor' %}
 {% assign plan_news_posted = entry.path | split: '/' | last | truncate: 10, '' | default: '--' %}
 {% assign showHeader = include.showHeader | default: 1 %}
-{% assign searchBar = include.searchBar | default: 0 %}
+{% assign addBlockName = include.addBlockName | default: 0 %}
+{% if addBlockName != 0 %}<div id="{{plan_news_name}}-block" class="plan-news-search-block">{% endif %}
 <a name="{{plan_news_name}}"></a>
 {% if showHeader != 0 %}
 <div class="flex header-line" markdown="1">
 ## {{plan_news_posted | date: '%B %Y'}} news and announcements
-{% if searchBar != 0 %}
-<!-- Animated search bar -->
-<form accept-charset="UTF-8" action="https://search.usa.gov/search/docs" id="search_form_8657" method="get" class="animated-search">
-<div style="margin:0;padding:0;display:inline">
-<input type="hidden" name="dc" value="8657">
-<input type="hidden" name="utf8" value="&#x2713;" /></div>
-<input type="hidden" name="affiliate" value="beta.tsp" id="affiliate" >
-<label for="query" class="usa-sr-only">Enter search term(s)</label>
-<!-- Search input field -->
-<input type="text" name="query" id="query_8657" autocomplete="off" placeholder="Enter search term(s)">
-</form>
-{% endif %}
 </div>
 {% endif %}
 
@@ -46,3 +35,4 @@ HTML block for one faq item accordion.
 </div>
 </div>
 </div>
+{% if addBlockName != 0 %}</div>{% endif %}

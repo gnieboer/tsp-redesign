@@ -13,6 +13,8 @@
 {% comment %}topitems is now top plan news, archive is the stuff in accordions below,
             both reverse sorted{% endcomment %}
 
+
+<div id="plan-news-default-div">
 {% comment %}Do the top level{% endcomment %}
 {% assign searchBar = 1 %}
 {% assign itemSize = topitems | size %}
@@ -20,6 +22,7 @@
 {% assign cnt = 0 %}
 {% if itemSize > 0 %}
 <section class="plan-news" markdown="1">
+
 {% assign lastHeader = '' %}
 {% for item in topitems %}
   {% assign cnt = cnt | plus: 1 %}
@@ -80,3 +83,12 @@
 </ul>
 </section>
 {% endif %}
+</div>
+<section id="plan-news-search-results" class="plan-news hide" markdown="1">
+{% for item in topitems %}
+  {% include plan-news-item.html entry=item showHeader=0 addBlockName=1 %}
+{% endfor %}
+{% for item in archive %}
+  {% include plan-news-item.html entry=item showHeader=0 addBlockName=1 %}
+{% endfor %}
+</section>

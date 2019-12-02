@@ -1,0 +1,29 @@
+{% comment %}
+Adds a magnifying glass icon which can be clicked and setups a search box with a callback to the page.
+{% endcomment %}
+{% assign action = include.action | default: 'return: false;' %}
+{% assign onChange = include.onChange | default: 'return: false;' %}
+{% assign searchName = include.searchName | default: 'search_form' %}
+{% assign searchID = 'search-form-' | append: searchName %}
+{% assign searchInput = 'search-input-' | append: searchName %}
+{% assign searchMessage = 'search-message-' | append: searchName %}
+{% assign searchAffiliate = 'search-affiliate-' | append: searchName %}
+{% assign affiliatePlaceholder = include.affiliatePlaceholder | default: 0 %}
+
+<div class="flex header-line" markdown="1">
+<!-- Animated search bar -->
+<form accept-charset="UTF-8" action="{{action}}" id="{{searchID}}" method="get" class="animated-search">
+<div style="margin:0;padding:0;display:inline">
+{% if affiliatePlaceholder > 0 %}
+<select id="{{searchAffiliate}}">
+  <option value="0">forgot to make list</option>
+</select>
+{% endif %}
+<label for="{{searchInput}}" class="usa-sr-only">Enter search term(s)</label>
+<input type="text" name="{{searchInput}}" id="{{searchInput}}"
+    onChange="{{onChange}}" onBlur="{{onChange}}"
+    autocomplete="off" placeholder="Enter search term(s)">
+</div>
+</form>
+</div>
+<div id="{{searchMessage}}"></div>
