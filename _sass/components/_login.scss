@@ -18,7 +18,7 @@
 a.protect::before {
     content: "";
     display: block;
-    background: url("/assets/img/icons/lock.svg") no-repeat;
+    background: url($baseurl + "/assets/img/icons/lock.svg") no-repeat;
     background-size: 2.3rem;
     width: 2.3rem;
     height: 2.7rem;

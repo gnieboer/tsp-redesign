@@ -37,12 +37,12 @@ section#fund-tabs {
       padding: 1.5rem 2rem 1.5rem 5.5rem;
       background-color: $color-white;
       font-size: $h3-font-size;
-      background-image: url("/assets/img/icons/minus-circle.svg");
+      background-image: url($baseurl + "/assets/img/icons/minus-circle.svg");
       color: $color-primary;
       background-size: initial;
 
       &[aria-expanded=false] {
-        background-image: url("/assets/img/icons/plus-circle.svg");
+        background-image: url($baseurl + "/assets/img/icons/plus-circle.svg");
         color: $color-base;
       }
     }

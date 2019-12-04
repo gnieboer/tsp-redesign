@@ -29,6 +29,12 @@
       text-align: right;
     }
   }
+  legend {
+    font-size: inherit;
+    font-weight: inherit;
+    cursor: default;
+    padding-top: 3rem;
+  }
 }
 
 // PROGRESS BAR
@@ -118,22 +124,28 @@ div.results-grid-frame {
   &.results {
   display: flex;
   align-items: center;
-    &:last-child {
-      align-items:flex-start;
-    }
-    .usa-width-two-thirds {
-      border-right: .2rem dotted #aeb0b5;
-    }
+    // &:last-child {
+    //   align-items: stretch;
+    // }
+    // .usa-width-two-thirds {
+    //   border-right: .2rem dotted #aeb0b5;
+    // }
     .usa-width-one-third {
       text-align: right;
+      border-left: .2rem dotted #aeb0b5;
       border-bottom: none;
       font-size: 3rem;
-      line-height: 0;
+      align-self: stretch;
+      // line-height: 0;
       span {
         line-height: inherit;
       }
     }
   }
+}
+
+.disclaimer {
+  color: $color-gray-dark;
 }
 
 @media screen and (max-width: $medium-screen) {

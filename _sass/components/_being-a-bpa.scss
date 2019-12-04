@@ -13,7 +13,7 @@
     color: #dce4ef;
     background-color: #323a45;
     line-height: 2.5rem;
-    background-image: url('/assets/img/icons/plus-tile.svg');
+    background-image: url($baseurl + '/assets/img/icons/plus-tile.svg');
     background-position: right 1rem top;
     background-repeat: no-repeat;
     background-size: 3.2rem;
@@ -52,7 +52,7 @@
   //     margin-top: 0;
   //   }
   //   h2:first-child {
-  //     background-image: url('/assets/img/icons/check-circle-green.svg');
+  //     background-image: url($baseurl + '/assets/img/icons/check-circle-green.svg');
   //     background-repeat: no-repeat;
   //     padding-left: 3rem;
   //     background-position: left center;
