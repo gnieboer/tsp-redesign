@@ -10,6 +10,14 @@ document-ready:
 <div class="usa-width-one-whole">
 
 <section class="search-site">
+
+<div class="collapse navbar-collapse" id="search-filters-and-results-count">
+<h2 class="sr-only">Filters and Result Count</h2>
+<ul class="nav navbar-nav">
+<li id="results-count"><span>118 results</span></li>
+</ul>
+</div>
+
 <h1>Search tsp.gov</h1>
 <div role="search">
   <form class="usa-search usa-search-small">
@@ -254,7 +262,7 @@ Withdrawals may be subject to income <strong>taxes</strong> or other penalties. 
 <em class="current">1</em>
 <a rel="next" class="pagination-numbered-link" href="/search?affiliate=beta.tsp&amp;page=2&amp;query=tax">2</a>
 <a class="pagination-numbered-link" href="/search?affiliate=beta.tsp&amp;page=3&amp;query=tax">3</a>
-<a class="pagination-numbered-link" href="/search?affiliate=beta.tsp&amp;page=4&amp;query=tax">4</a> 
+<a class="pagination-numbered-link" href="/search?affiliate=beta.tsp&amp;page=4&amp;query=tax">4</a>
 <a class="pagination-numbered-link" href="/search?affiliate=beta.tsp&amp;page=5&amp;query=tax">5</a>
 <a class="next_page" rel="next" href="/search?affiliate=beta.tsp&amp;page=2&amp;query=tax">Next&nbsp;»</a>
 </div>

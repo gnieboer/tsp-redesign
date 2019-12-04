@@ -13,6 +13,17 @@ section {
         }
       }
 
+      a,
+      input[type=submit],
+      #clear-button {
+        &:focus {
+          outline: thin dotted;
+          outline: 5px auto -webkit-focus-ring-color;
+          outline-offset: -2px;
+          outline: #fcb117 solid 3px;
+          }
+      }
+
     .url {
       color: #006800;
       overflow: hidden;
