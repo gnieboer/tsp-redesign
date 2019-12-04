@@ -138,7 +138,7 @@
   }
 
   .usa-alert-info {
-    background-image: url("/assets/img/icons/sliders-white.svg");
+    background-image: url($baseurl + "/assets/img/icons/sliders-white.svg");
     background-size: 4rem;
     background-color: $color-primary;
     color: $color-white;

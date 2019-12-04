@@ -24,7 +24,7 @@ This script produces an input area for calculator panels.
   <div id="{{id}}-div" class="">
     <label class="" id="{{id}}-label" for="{{id}}" aria-details="{{fieldID}}">{{prompt}}</label>
     <span class="usa-input-error-message" id="{{id}}-error-message" role="alert"></span>
-    {% if dataFormat %}<span data-format="{{dataFormat}}" class="input-symbol-left">{%endif%}
+    {% if dataFormat != '' %}<span data-format="{{dataFormat}}" class="input-symbol-left">{%endif%}
     {% if inputType == 'number' %}
       <input id="{{id}}" name="{{name}}" class="{{inputClass}}" type="number" {{onBlur}}
         value="{{value}}" min="{{min}}" max="{{max}}" step="{{step}}" placeholder="{{placeholder}}" />
@@ -43,7 +43,7 @@ This script produces an input area for calculator panels.
       {% endfor %}
     </select>
     {% endif %}
-    {% if dataFormat %}</span>{%endif%}
+    {% if dataFormat != '' %}</span>{%endif%}
   </div>
   {% if explanation != '' %}
   <ul class="usa-accordion">

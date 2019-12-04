@@ -48,7 +48,7 @@
             box-sizing: border-box;
             border: 1px solid $color-gray-lighter;
             background-color: white;
-            background-image: url('/assets/uswds/img/search-outline-alt.svg');
+            background-image: url($baseurl + '/assets/uswds/img/search-outline-alt.svg');
             background-size: 2rem 2rem;
             background-position: 25px 11px;
             background-repeat: no-repeat;

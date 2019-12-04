@@ -51,7 +51,7 @@
 }
 
 .button--close--inverse {
-    background-image: url("/assets/img/symbol_close.svg");
+    background-image: url($baseurl + "/assets/img/symbol_close.svg");
     color: #fff;
     background-color: #212121;
     background-repeat: no-repeat;
@@ -134,7 +134,7 @@
 }
 
 .glossary__content button {
-    background-image: url("/assets/img/symbol-accordion-close.svg");
+    background-image: url($baseurl + "/assets/img/symbol-accordion-close.svg");
     background-color: #212121;
     background-repeat: no-repeat;
     background-size: 2rem;
@@ -152,13 +152,13 @@
 }
 
 .glossary__content button[aria-expanded=true] {
-    background-image: url("/assets/img/symbol-accordion-close.svg");
+    background-image: url($baseurl + "/assets/img/symbol-accordion-close.svg");
     background-repeat: no-repeat;
 
 }
 
 .glossary__content button[aria-expanded=false] {
-    background-image: url("/assets/img/symbol-accordion-open.svg");
+    background-image: url($baseurl + "/assets/img/symbol-accordion-open.svg");
     background-repeat: no-repeat;
     border-bottom: 1px solid #fff;
 }
@@ -174,7 +174,7 @@
 }
 
 .term, .term-end {
-  background-image: url("/assets/img/icons/glossary.svg");
+  background-image: url($baseurl + "/assets/img/icons/glossary.svg");
   background-repeat: no-repeat;
   -webkit-transition: background-color, .2s, box-shadow, .2s, color, .2s;
   -moz-transition: background-color, .2s, box-shadow, .2s, color, .2s;
