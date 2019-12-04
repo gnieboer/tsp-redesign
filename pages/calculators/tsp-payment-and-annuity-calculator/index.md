@@ -1,10 +1,10 @@
 ---
 layout: calculator
-title: Retirement income calculator
+title: TSP payment and annuity calculator
 styles:
 sidenav: calculators
 scripts: /assets/js/calculator/javascriptTaxTable.js
-permalink: /calculators/retirement-income-calculator/
+permalink: /calculators/tsp-payment-and-annuity-calculator/
 calculator-name:
 progress-steps:
 panel-names:

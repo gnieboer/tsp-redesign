@@ -76,7 +76,7 @@ calculators:
   - text: Calculators
     href: /calculators/
     subnav:
-      - text: How much should I save? (Ballpark Estimate)
+      - text: How much should I save? (Federal Ballpark E$timate&#174;)
         href: /calculators/how-much-should-i-save/
       - text: How much will my savings grow?
         href: /calculators/how-much-will-my-savings-grow/
@@ -86,10 +86,10 @@ calculators:
         href: /calculators/paycheck-estimator/
       - text: Contribution comparison calculator
         href: /calculators/contribution-comparison-calculator/
-      - text: Retirement income calculator
-        href: /calculators/retirement-income-calculator/
-      - text: TSP monthly payment calculator
-        href: /calculators/tsp-monthly-payment-calculator/
+      - text: TSP payment and annuity calculator
+        href: /calculators/tsp-payment-and-annuity-calculator/
+      - text: TSP installment payment calculator
+        href: /calculators/tsp-installment-payment-calculator/
       - text: Estimate loan payments
         href: /calculators/estimate-loan-payments/
 
