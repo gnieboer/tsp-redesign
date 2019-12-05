@@ -1,6 +1,7 @@
 ---
 layout: calculator
-title: How much should I save? <br>(Federal Ballpark E$timate<sup>&#174;</sup>)
+title: How much should I save? (Federal Ballpark E$timate&#174;)
+title-alternate: How much should I save? <br>(Federal Ballpark E$timate<sup>&#174;</sup>)
 styles:
 sidenav: calculators
 scripts: /assets/js/calculator/javascriptTaxTable.js
