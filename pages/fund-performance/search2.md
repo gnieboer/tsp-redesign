@@ -10,14 +10,13 @@ scripts:
   - /assets/js/ajaxFetch.js
   - /assets/js/ajax-usa-search-gov.js
 document-ready:
-  - buildAffiliateSelect('search-affiliate-s2');
+  - buildAffiliateSelect('s2');
 #  - doSearch();
 ---
 
 <section class="plan-news" markdown="1">
 
-{% include search-bar.html  onChange="doSearch2('search-input-s2', 'search-message-s2',
-    'search-affiliate-s2');" searchName="s2" affiliatePlaceholder=1 %}
+{% include search-bar.html  onChange="doSearch2('s2');" searchName="s2" affiliatePlaceholder=1 %}
 
 </section>
 

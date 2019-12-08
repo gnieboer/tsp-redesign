@@ -5,6 +5,7 @@ styles:
 sidenav:
 scripts:
   - /assets/js/jquery.min.js
+  - /assets/js/ajax-usa-search-gov.js
   - /assets/js/forms.js
 permalink: /forms/
 ---
@@ -27,8 +28,11 @@ permalink: /forms/
               {% endfor %}
             </select>
         </form>
+        [
+        {% include search-bar.html  onChange="searchInline('forms');" searchName="forms" %}
+        ]
 
-      <!-- Animated search bar -->
+      <!-- Animated search bar to search.gov -->
         <form accept-charset="UTF-8" action="https://search.usa.gov/search/docs" id="search_form_8657" method="get" class="animated-search">
           <div style="margin:0;padding:0;display:inline">
           <input type="hidden" name="dc" value="8657">

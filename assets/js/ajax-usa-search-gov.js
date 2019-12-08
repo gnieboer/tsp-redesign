@@ -15,7 +15,7 @@ function affiliateKeys() {
 }
 
 function buildAffiliateSelect(selectName) {
-  var mySelect = document.getElementById(selectName);
+  var mySelect = document.getElementById('search-affiliate-'+selectName);
   var i = 0;
   mySelect.options.length = 0;
   Object.keys(affiliates).forEach(function(key) {
@@ -93,8 +93,11 @@ function doSearch() {
   return false;
 }
 
-function doSearch2(input, results, affiliate) {
-  search2(input, results, affiliate);
+function doSearch2(searchName) {
+  var input = 'search-input-'+searchName;
+  var resultMsg = 'search-message-'+searchName;
+  var affiliate = 'search-affiliate-'+searchName;
+  search2(input, resultMsg, affiliate);
   return false;
 }
 
@@ -121,14 +124,14 @@ function syntaxHighlight(json) {
 
 
 
-var doInlineUSAsearch = function(statusBox, url, callback) {
+var doInlineUSAsearch = function(searchName, statusBox, url, callback) {
   $('#'+statusBox).html('Calling server for data...');
 console.log(url);
   var serverCall = $.get(url);
   serverCall.done(
     function (json) {
       $('#'+statusBox).html('search complete');
-      callback(json);
+      callback(searchName, json);
     }
   );
   serverCall.fail(
@@ -141,10 +144,14 @@ console.log(url);
   );
 }
 
-function inlineUSAsearch(statusBox, searchSite, terms, callback) {
+function inlineUSAsearch(searchName, statusBox, searchSite, terms, callback) {
   if (terms == '') { callback(''); return false; }
   terms = encodeURIComponent(terms);
   console.log('searching: '+terms);
+
+  if ( ! (searchSite in affiliates) ) { console.log('searchSite error'); return; }
+  var affiliate = searchSite;
+  var accessKey = affiliates[affiliate];
   var url = siteName
           + '?affiliate=' + affiliate
           + '&access_key=' + accessKey
@@ -152,5 +159,5 @@ function inlineUSAsearch(statusBox, searchSite, terms, callback) {
   // console.log('searching |'+url+'|');
   // build url
   // doUSAsearch(resultDiv, "https://search.usa.gov/api/v2/search?affiliate=tspgov&access_key=9gcFHn4xSylFEK4QUpxR9y50_MJOy3LBi0bh4hIZ7Ew=
-  doInlineUSAsearch(statusBox, url, callback);
+  doInlineUSAsearch(searchName, statusBox, url, callback);
 }

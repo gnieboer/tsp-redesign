@@ -18,7 +18,7 @@ permalink: /news-and-resources/plan-news/
 {% include next-outage.html %}
 
 <section class="plan-news" markdown="1">
-{% include search-bar.html  onChange="searchPlanNews();" searchName="plan-news" %}
+{% include search-bar.html  onChange="searchInline('plan-news');" searchName="plan-news" %}
 </section>
 
 {% include plan-news-list.html %}
