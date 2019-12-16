@@ -8,8 +8,13 @@
       padding: 2rem;
     }
   }
+  h2,
   h4 {
     font-family: $sans;
+  }
+  h2 {
+    margin: .5em 0;
+    font-size: 2.5rem;
   }
   select {
     // width: auto;
@@ -31,9 +36,10 @@
   }
   legend {
     font-size: inherit;
-    font-weight: inherit;
+    // font-weight: inherit;
     cursor: default;
-    padding-top: 3rem;
+    // padding-top: 3rem;
+    // font-style: $bold;
   }
 }
 
@@ -70,36 +76,38 @@ div.results-grid-frame {
 
 .calculator-panel {
   ul.usa-accordion {
-    max-width: 46rem;
-    li {
-      background-color: transparent;
-      .usa-accordion-button {
+    &.explain-this {
+      max-width: 46rem;
+      li {
         background-color: transparent;
-        background-image: none;
-        font-weight: 400;
-        color: $color-primary;
-        position: relative;
-        line-height: 2rem;
-        padding: 1.5rem 2rem;
-        &:after {
-          font-family: $font-awesome;
-          font-weight: $light;
-          font-size: 2.5rem;
-          content: "\f056";
-          float: right;
-        }
-        &[aria-expanded="false"] {
+        .usa-accordion-button {
+          background-color: transparent;
+          background-image: none;
+          font-weight: 400;
+          color: $color-primary;
+          position: relative;
+          line-height: 2rem;
+          padding: 1.5rem 2rem;
           &:after {
-            content: "\f055";
+            font-family: $font-awesome;
+            font-weight: $light;
+            font-size: 2.5rem;
+            content: "\f056";
+            float: right;
           }
-        }
-        &:hover {
-          background-color: #d6d7d9;
-        }
-      } // end .usa-accordion-button
-      .usa-accordion-content {
-        background-color: transparent;
-      } // end .usa-accordion-content
+          &[aria-expanded="false"] {
+            &:after {
+              content: "\f055";
+            }
+          }
+          &:hover {
+            background-color: #d6d7d9;
+          }
+        } // end .usa-accordion-button
+        .usa-accordion-content {
+          background-color: transparent;
+        } // end .usa-accordion-content
+      }
     }
   }
 } // end .calculator-panel
