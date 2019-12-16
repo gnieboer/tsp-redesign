@@ -3,37 +3,34 @@
 {% else %}
 {% assign pageurl = page.url %}
 {% endif %}
-<div id="shareModal" class="modal fade" role="dialog">
+{% assign modalID = include.modalID | default: '' %}
+{% assign fullURL = site.url | append: '/' | append: pageurl %}
+<div id="shareModal{{modalID}}" class="modal fade" role="dialog">
   <div class="modal-dialog">
 
     <!-- Modal content-->
     <div class="modal-content">
       <div class="post-share-modal modal-body">
-
         <div>
-
-          <a href="https://www.facebook.com/sharer/sharer.php?u={{ site.url }}{{ page.url }}&title={{ page.title }}" class="btn btn-social btn-facebook" target="_blank">
+          <a href="https://www.facebook.com/sharer/sharer.php?u={{ fullURL }}&title={{ page.title }}" class="btn btn-social btn-facebook" target="_blank">
             <span class="fa fa-facebook"></span>Facebook</a>
-          <a href="https://twitter.com/intent/tweet?status={{ page.title }}+at+{{ site.url }}{{ page.url }}" class="btn btn-social btn-twitter" target="_blank">
+          <a href="https://twitter.com/intent/tweet?status={{ page.title }}+at+{{ fullURL }}" class="btn btn-social btn-twitter" target="_blank">
             <span class="fa fa-twitter"></span>Twitter</a>
-          <a href="https://www.linkedin.com/shareArticle?mini=true&url={{ site.url }}{{ pageurl }}&title=&summary=&source=" class="btn btn-social btn-linkedin" target="_blank">
+          <a href="https://www.linkedin.com/shareArticle?mini=true&url={{ fullURL }}&title=&summary=&source=" class="btn btn-social btn-linkedin" target="_blank">
             <span class="fa fa-linkedin"></span>LinkedIn</a>
-          <a href="mailto:?&subject=Blog%20Post:%20{{ page.title }}&body=Check%20out%20this%20amazing%20blog%20post!%20{{ site.url }}{{ page.url }}" class="btn btn-social btn-email" target="_blank">
+          <a href="mailto:?&subject=Blog%20Post:%20{{ page.title }}&body=Check%20out%20this%20amazing%20blog%20post!%20{{ fullURL }}" class="btn btn-social btn-email" target="_blank">
             <span class="fa fa-envelope"></span>Email</a>
-
           <hr>
-
         </div>
         <div>
           <h3>Post Address</h3>
           <p>
             A direct link to this post!
           </p>
-          <input type="text" id="windowurl" />
-          <a href="#" data-copytarget="#windowurl" class="usa-button">Copy</a>
+          <input type="text" id="fullURL{{modalID}}" value="{{fullURL}}"/>
+          <a href="#" onClick="inputToClipboard('fullURL{{modalID}}');" class="usa-button">Copy</a>
         </div>
       </div>
     </div>
-
   </div>
 </div>

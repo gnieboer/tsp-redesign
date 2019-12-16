@@ -4,10 +4,10 @@ title: News and resources
 sidenav: news-and-resources
 styles:
 scripts:
-  - /assets/js/copy-to-clipboard.js
   - /assets/js/jquery.min.js
   - /assets/js/bootstrap.min.js
-  - /assets/js/share-modal.js
+  - /assets/js/copy-to-clipboard.js
+#  - /assets/js/share-modal.js
   - /assets/js/ajaxFetch.js
   - /assets/js/calculator/calculator.js
   - /assets/js/calculator/javascriptTaxTable.js
@@ -58,27 +58,16 @@ document-ready:
 <div class="usa-grid">
 <div class="usa-width-one-whole" markdown="1">
 
-**Changes coming to the Lifecycle (L) Funds** &#8212; We are planning adjustments to the L Funds in an effort to improve your investment outcomes. Effective in January 2019, we will increase exposure to international stocks (the I Fund) from 30% to 35% of the overall stock allocation in all L Funds. The L Income Fund stock allocation (C, S, and I Funds combined) will increase from 20% to 30% over a period of up to 10 years. The L 2030, L 2040, and L 2050 overall stock allocations will hold steady for a period of years before resuming their transitions from stocks to bonds. In addition to improving investment outcomes, this pause will align the L 2030, L 2040, and L 2050 Funds with the L 2060 Fund, which will be introduced in 2020 with an initial stock allocation of 99%. Visit Lifecycle Funds to learn more.<br />
-{:#p1}
-
-<div class="flex post-and-share">
-  <span class="post-date" >Posted: November 29, 2018</span>
-  <!-- Share Modal -->
-  <button type="button" class="share" data-toggle="modal" data-target="#shareModal"><i class="fas fa-share-alt"></i><span class="sr-only">Share</span></button>
-  <!-- Copy to clipboard -->
-  <div class="tooltip">
-  <button class="copy" onclick="copyToClipboard('#p1')" onmouseout="outFunc()">
-  <span class="tooltiptext" id="tooltip">Copy to clipboard</span>
-  <i class="far fa-copy"></i><span class="sr-only">Copy to clipboard</span></button>
-  </div>
-
-
-</div> <!-- end .post-and-share -->
-
-
-
-
-  {% include share-bar.html  %}
+{% include components/get_plan_news_list %}
+{% assign itemlist = topitems | concat: archive %}
+{% for item in itemlist %}
+{% assign latest = item.latest | downcase | default: 'no' %}
+{% if latest == 'y' %}{% assign latest = 'yes' %}{% endif %}
+{% if latest == true %}{% assign latest = 'yes' %}{% endif %}
+{% if latest == 'yes' or latest == true %}
+  {% include plan-news-item.html entry=item showHeader=0 %}
+{% endif %}
+{% endfor %}
 
 </div>
 </div>

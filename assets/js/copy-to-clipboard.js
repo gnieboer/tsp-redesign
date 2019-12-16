@@ -21,6 +21,14 @@ function copyToClipboard(element) {
   tooltip.innerHTML = "Copied!";
 }
 
+function inputToClipboard(element) {
+  var $temp = $("<input>");
+  $("body").append($temp);
+  $temp.val($('#'+element).val()).select();
+  document.execCommand("copy");
+  // $temp.remove();
+}
+
 // ref: https://codepen.io/shaikmaqsood/pen/XmydxJ
 
 // Using outFunc() with copyToClipboard(element)
