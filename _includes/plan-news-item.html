@@ -6,6 +6,7 @@ HTML block for one faq item accordion.
 {% assign plan_news_posted = entry.path | split: '/' | last | truncate: 10, '' | default: '--' %}
 {% assign showHeader = include.showHeader | default: 1 %}
 {% assign searchBar = include.searchBar | default: 0 %}
+{% assign entryHTML = entry.permalink | append: '.html' %}
 
 <a name="{{plan_news_name}}"></a>
 {% if showHeader != 0 %}
@@ -22,8 +23,8 @@ HTML block for one faq item accordion.
   <!-- Share Modal -->
   {% include social-media-share.html modalID=plan_news_name %}
   {% include copy-to-clipboard.html element=plan_news_name function='copyPlanNewsToClipboard' %}
-  {% comment %}{% if entry.permalink %}<a href="{{entry.permalink}}.html">Entry</a>{% endif %}{% endcomment %}
+  {% comment %}{% if entry.permalink %}<a href="{{entryHTML}}">Entry</a>{% endif %}{% endcomment %}
 </div>
-{% include share-bar.html pageurl=entry.permalink modalID=plan_news_name %}
+{% include share-bar.html pageurl=entryHTML modalID=plan_news_name %}
 </div>
 </div>
