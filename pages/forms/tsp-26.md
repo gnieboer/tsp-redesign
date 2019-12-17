@@ -1,22 +1,14 @@
-<!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
-<head>
-<title>TSP: Loan Payment Coupon</title>
-<meta content="text/html; charset=UTF-8" http-equiv="Content-Type"/>
-<meta content="en" name="Language"/>
-<meta content="Loan Payment Coupon" name="description"/>
-<meta content="Loan Coupon,Loan Payment Coupon,TSP Loan Payment Coupon,Thrift Savings Plan Loan Payment Coupon,Loan Payment" name="keywords"/>
+---
+layout: page
+title: Form TSP-26, Loan Payment Coupon
+sidenav:
+styles:
+scripts:
+permalink: /forms/tsp-26/
+---
 
-<script src="../../resources/javascript/coupon.js" type="text/javascript">
-</script>
- 
-<link href="../../resources/css/coupon.css" rel="stylesheet" type="text/css"/>
+# How to contact us
 
-    
-    
-
-</head>
-<body id="fmbdstd" onLoad="return oncoup()">
 <form class="formborder">
 <div class="fmalignstd">
 <table cellpadding="0" cellspacing="0" class="tableborderzero" id="fmctlstd">
@@ -192,5 +184,3 @@
 </table>
 </div>
 </form>
-</body>
-</html>
