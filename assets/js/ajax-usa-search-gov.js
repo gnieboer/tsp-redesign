@@ -2,7 +2,7 @@
   Ajax call for search using usa search.
 */
 
-var siteName = "https://search.usa.gov/api/v2/search/i14y"; 
+var siteName = "https://search.usa.gov/api/v2/search/i14y";
 
 var affiliates = {
   "beta.tsp": "sVO7chy_W4g9AMmHj90csL3Oyn6z7JKRs1Pb8BxCJ9Y=",
@@ -33,7 +33,7 @@ var accessKey = "Rq24ee2O0lnSR6VJmiRiIMDJhNZ_KSVrYzisorSVCr8=";
 
 var doUSAsearch = function(divName, url) {
   $('#'+divName).html('Calling server for data...');
-console.log(url);
+  // console.log(url);
   var serverCall = $.get(url);
   serverCall.done(
     function (json) {
@@ -55,9 +55,12 @@ console.log(url);
 
 function search(queryBox, resultDiv) {
   var terms = $('#'+queryBox).val();
-  if (terms == '') { console.log('no search'); return false; }
+  if (terms == '') {
+    // console.log('no search');
+    return false;
+  }
   terms = encodeURIComponent(terms);
-  console.log('searching: '+terms);
+  // console.log('searching: '+terms);
   var url = siteName
           + '?affiliate=' + affiliate
           + '&access_key=' + accessKey
@@ -71,11 +74,14 @@ function search(queryBox, resultDiv) {
 function search2(queryBox, resultDiv, affiliateSelect) {
   var affiliate = $('#'+affiliateSelect).val();
   if (affiliate in affiliates) {
-    console.log('found it');
+    // console.log('found it');
     var terms = $('#'+queryBox).val();
-    if (terms == '') { console.log('no search'); return false; }
+    if (terms == '') {
+      // console.log('no search');
+      return false;
+    }
     terms = encodeURIComponent(terms);
-    console.log('searching: '+terms);
+    // console.log('searching: '+terms);
     var accessKey = affiliates[affiliate];
     var url = siteName
             + '?affiliate=' + affiliate
@@ -126,7 +132,7 @@ function syntaxHighlight(json) {
 
 var doInlineUSAsearch = function(searchName, statusBox, url, callback) {
   $('#'+statusBox).html('Calling server for data...');
-console.log(url);
+  // console.log(url);
   var serverCall = $.get(url);
   serverCall.done(
     function (json) {
@@ -147,7 +153,7 @@ console.log(url);
 function inlineUSAsearch(searchName, statusBox, searchSite, terms, callback) {
   if (terms == '') { callback(''); return false; }
   terms = encodeURIComponent(terms);
-  console.log('searching: '+terms);
+  // console.log('searching: '+terms);
 
   if ( ! (searchSite in affiliates) ) { console.log('searchSite error'); return; }
   var affiliate = searchSite;

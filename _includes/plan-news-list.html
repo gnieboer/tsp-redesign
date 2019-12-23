@@ -16,7 +16,6 @@
 
 <div id="plan-news-default-div">
 {% comment %}Do the top level{% endcomment %}
-{% assign searchBar = 1 %}
 {% assign itemSize = topitems | size %}
 {% assign startTopAccordion = 2 | plus: 1 %}
 {% assign cnt = 0 %}
@@ -33,8 +32,7 @@
   {% assign newHeader = item.path | split: '/' | last | truncate: 7, "" %}
   {% if newHeader == lastHeader %}{% assign showHeader = 0 %}{% endif %}
   {% assign lastHeader = newHeader %}
-  {% include plan-news-item.html entry=item showHeader=showHeader searchBar=searchBar %}
-  {% assign searchBar = 0 %}
+  {% include plan-news-item.html entry=item showHeader=showHeader %}
 {% endfor %}
 {% if cnt >= startTopAccordion %}
 </div>
@@ -74,8 +72,7 @@
   {% assign newHeader = item.path | split: '/' | last | truncate: 7, "" %}
   {% if newHeader == lastHeader %}{% assign showHeader = 0 %}{% endif %}
   {% assign lastHeader = newHeader %}
-  {% include plan-news-item.html entry=item showHeader=showHeader searchBar=searchBar %}
-  {% assign searchBar = 0 %}
+  {% include plan-news-item.html entry=item showHeader=showHeader %}
   {% endunless %}
 {% endfor %}
 </div>
