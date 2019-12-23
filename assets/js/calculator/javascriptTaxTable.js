@@ -4,7 +4,7 @@ function round_cents(num) {
 }
 
 var taxMinYear = 2018;
-var taxMaxYear = 2019;
+var taxMaxYear = 2020;
 var IRC_acting_year = taxMaxYear;
 
 var taxValues = {
