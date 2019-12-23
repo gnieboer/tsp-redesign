@@ -70,12 +70,13 @@ function hideInline(searchName) {
 // show plans that match, hide ones that document
 // expect array of plan item names
 function showMatches(searchName, items) {
+  hideInline(searchName);
+
   if (items.length <= 0) {
     // console.log('no matches '+searchName);
     $('#search-message-'+searchName).html('no matches');
+    $('#'+searchName+'-search-results').hide();
   }
-
-  hideInline(searchName);
 
   // show winners
   items.forEach(function (item, index) {
