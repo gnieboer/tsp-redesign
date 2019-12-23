@@ -10,6 +10,7 @@ scripts:
 #  - /assets/js/share-modal.js
   - /assets/js/copy-to-clipboard.js
   - /assets/js/plan-news.js
+  - /assets/js/ajax-usa-search-gov.js
 permalink: /news-and-resources/plan-news/
 ---
 
@@ -17,5 +18,9 @@ permalink: /news-and-resources/plan-news/
 {:#plan-news}
 
 {% include next-outage.html %}
+
+<section class="plan-news" markdown="1">
+{% include search-bar.html  onChange="searchInline('plan-news');" searchName="plan-news" %}
+</section>
 
 {% include plan-news-list.html %}

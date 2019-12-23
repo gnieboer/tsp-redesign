@@ -2,29 +2,46 @@
   Ajax call for search using usa search.
 */
 
-var siteName = "https://search.usa.gov/api/v2/search/i14y";
-var affiliate = "beta.tsp";
+var siteName = "https://search.usa.gov/api/v2/search/i14y"; 
+
+var affiliates = {
+  "beta.tsp": "sVO7chy_W4g9AMmHj90csL3Oyn6z7JKRs1Pb8BxCJ9Y=",
+  "beta.tsp.forms": "6HltwZIKfyLoxQKMBODEct4oWEf82aYqOG690gVLWlA=",
+  "beta.tsp.plan-news": "Rq24ee2O0lnSR6VJmiRiIMDJhNZ_KSVrYzisorSVCr8=",
+};
+
+function affiliateKeys() {
+  return Object.keys(affiliates);
+}
+
+function buildAffiliateSelect(selectName) {
+  var mySelect = document.getElementById('search-affiliate-'+selectName);
+  var i = 0;
+  mySelect.options.length = 0;
+  Object.keys(affiliates).forEach(function(key) {
+    mySelect.options[i++] = new Option(key, key);
+  })
+}
+
+// var affiliate = "beta.tsp";
+var affiliate = "beta.tsp.plan-news";
 // var accessKey = "9gcFHn4xSylFEK4QUpxR9y50_MJOy3LBi0bh4hIZ7Ew="; // dav
 // var accessKey = "1XBegCSAeuxyTJpE-19b0RvpUboHO40rk0dwtk0QNnM="; // tsp
 // var accessKey = "sVO7chy_W4g9AMmHj90csL3Oyn6z7JKRs1Pb8BxCJ9Y="; // beta.tsp
-var accessKey = "6HltwZIKfyLoxQKMBODEct4oWEf82aYqOG690gVLWlA=";
+// var accessKey = "6HltwZIKfyLoxQKMBODEct4oWEf82aYqOG690gVLWlA=";
+var accessKey = "Rq24ee2O0lnSR6VJmiRiIMDJhNZ_KSVrYzisorSVCr8=";
 
-var doUSAsearch = function(divName, url, resultsFormat) {
+var doUSAsearch = function(divName, url) {
   $('#'+divName).html('Calling server for data...');
+console.log(url);
   var serverCall = $.get(url);
   serverCall.done(
     function (json) {
       // var data = JSON.parse(json);
       // var data = JSON.stringify(json);
-      if (resultsFormat) {
-        // send json results to callback function
-        resultsFormat(divName, json);
-      } else {
-        // pretty print json, stick in div
-        var data = syntaxHighlight(json);
-        data = '<pre>'+data+'</pre>';
-        $('#'+divName).html(data);
-      }
+      var data = syntaxHighlight(json);
+      data = '<pre>'+data+'</pre>';
+      $('#'+divName).html(data);
     }
   );
   serverCall.fail(
@@ -36,8 +53,7 @@ var doUSAsearch = function(divName, url, resultsFormat) {
   );
 }
 
-function search(queryBox, resultDiv, collectionID, resultsFormat) {
-  console.log('search('+queryBox+',"'+resultDiv+'",'+collectionID+','+resultsFormat+')');
+function search(queryBox, resultDiv) {
   var terms = $('#'+queryBox).val();
   if (terms == '') { console.log('no search'); return false; }
   terms = encodeURIComponent(terms);
@@ -46,17 +62,42 @@ function search(queryBox, resultDiv, collectionID, resultsFormat) {
           + '?affiliate=' + affiliate
           + '&access_key=' + accessKey
           + '&query=' + terms;
-  if (collectionID) {
-    url += "&dc=" + collectionID;
-  }
-  console.log('searching |'+url+'|');
+  // console.log('searching |'+url+'|');
   // build url
   // doUSAsearch(resultDiv, "https://search.usa.gov/api/v2/search?affiliate=tspgov&access_key=9gcFHn4xSylFEK4QUpxR9y50_MJOy3LBi0bh4hIZ7Ew=
-  doUSAsearch(resultDiv, url, resultsFormat);
+  doUSAsearch(resultDiv, url);
+}
+
+function search2(queryBox, resultDiv, affiliateSelect) {
+  var affiliate = $('#'+affiliateSelect).val();
+  if (affiliate in affiliates) {
+    console.log('found it');
+    var terms = $('#'+queryBox).val();
+    if (terms == '') { console.log('no search'); return false; }
+    terms = encodeURIComponent(terms);
+    console.log('searching: '+terms);
+    var accessKey = affiliates[affiliate];
+    var url = siteName
+            + '?affiliate=' + affiliate
+            + '&access_key=' + accessKey
+            + '&query=' + terms;
+    // console.log('searching |'+url+'|');
+    // build url
+    // doUSAsearch(resultDiv, "https://search.usa.gov/api/v2/search?affiliate=tspgov&access_key=9gcFHn4xSylFEK4QUpxR9y50_MJOy3LBi0bh4hIZ7Ew=
+    doUSAsearch(resultDiv, url);
+  }
 }
 
 function doSearch() {
-  search('search-box', 'search-results', 0, 0);
+  search('search-box', 'search-results');
+  return false;
+}
+
+function doSearch2(searchName) {
+  var input = 'search-input-'+searchName;
+  var resultMsg = 'search-message-'+searchName;
+  var affiliate = 'search-affiliate-'+searchName;
+  search2(input, resultMsg, affiliate);
   return false;
 }
 
@@ -79,4 +120,44 @@ function syntaxHighlight(json) {
         }
         return '<span class="' + cls + '">' + match + '</span>';
     });
+}
+
+
+
+var doInlineUSAsearch = function(searchName, statusBox, url, callback) {
+  $('#'+statusBox).html('Calling server for data...');
+console.log(url);
+  var serverCall = $.get(url);
+  serverCall.done(
+    function (json) {
+      $('#'+statusBox).html('search complete');
+      callback(searchName, json);
+    }
+  );
+  serverCall.fail(
+    function (jqXHR, textStatus, errorThrown) {
+        $('#'+statusBox).html('search failed');
+        var errMsg = textStatus + ': ' + errorThrown;
+        var userMsg = somethingNotWorking();
+        $('#'+statusBox).html(userMsg);
+    }
+  );
+}
+
+function inlineUSAsearch(searchName, statusBox, searchSite, terms, callback) {
+  if (terms == '') { callback(''); return false; }
+  terms = encodeURIComponent(terms);
+  console.log('searching: '+terms);
+
+  if ( ! (searchSite in affiliates) ) { console.log('searchSite error'); return; }
+  var affiliate = searchSite;
+  var accessKey = affiliates[affiliate];
+  var url = siteName
+          + '?affiliate=' + affiliate
+          + '&access_key=' + accessKey
+          + '&query=' + terms;
+  // console.log('searching |'+url+'|');
+  // build url
+  // doUSAsearch(resultDiv, "https://search.usa.gov/api/v2/search?affiliate=tspgov&access_key=9gcFHn4xSylFEK4QUpxR9y50_MJOy3LBi0bh4hIZ7Ew=
+  doInlineUSAsearch(searchName, statusBox, url, callback);
 }
