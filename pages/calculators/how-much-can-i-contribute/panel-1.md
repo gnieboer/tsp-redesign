@@ -20,7 +20,7 @@ Each year the IRS determines the maximum amount you can contribute to tax-deferr
 {% include calculator/div-panel-form-field.html
   fieldID="panel-1.1" id="review-year"
   inputClass="" inputType="no-select"
-  value="2019" min="2018" max="2019"
+  value="2019" min="2018" max="2020"
   prompt="Choose the year you would like to review, then press Start."
   explanation=""
 %}

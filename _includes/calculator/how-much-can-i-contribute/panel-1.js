@@ -23,7 +23,7 @@ function buildDropdown(selectedValue) {
   var dd = $('#review-year');
   var selected = '';
   dd.empty();
-  for (var i = taxMinYear; i <= taxMaxYear; i++) {  // limits from js tax file
+  for (var i = taxMaxYear-1; i <= taxMaxYear; i++) {  // limits from js tax file
     if (i == selectedValue) { selected = ' selected=selected'; } else { selected = ''; }
     dd.append('<option'+selected+' value="'+i+'">'+i+'</option>');
   }
@@ -31,7 +31,7 @@ function buildDropdown(selectedValue) {
   return true;
 }
 function setDropdownDefault() {
-  var defaultYear = determineActingYear();
+  var defaultYear = constrainYear(determineActingYear());
   buildDropdown(defaultYear);
 }
 
