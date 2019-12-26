@@ -71,7 +71,13 @@ function constrainYear(year) {
 function determineActingYear() {
   var today = new Date();
   var curYear = String(today.getFullYear());
-  var curDate = curYear + String(today.getMonth()+1).padStart(2, '0') + String(today.getDate()).padStart(2, '0');
+  // padStart broken in IE 11
+  // var curMonth = String(today.getMonth()+1).padStart(2, '0');
+  // var curDay = String(today.getDate()).padStart(2, '0');
+  var curMonth = ('0' + String(today.getMonth()+1)).slice(-2);
+  var curDay = ('0' + String(today.getDate())).slice(-2);
+  var curDate = curYear + curMonth + curDay;
+  console.log('date is '+curDate);
   // early in year, before taxes due, use last year
   var earlyTest = curYear + '0415';
   if (curDate <= earlyTest) return today.getFullYear()-1;
