@@ -77,7 +77,7 @@ function determineActingYear() {
   var curMonth = ('0' + String(today.getMonth()+1)).slice(-2);
   var curDay = ('0' + String(today.getDate())).slice(-2);
   var curDate = curYear + curMonth + curDay;
-  console.log('date is '+curDate);
+  // console.log('date is '+curDate);
   // early in year, before taxes due, use last year
   var earlyTest = curYear + '0415';
   if (curDate <= earlyTest) return today.getFullYear()-1;
