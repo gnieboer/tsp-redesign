@@ -6,7 +6,12 @@ section {
       h1 {
         margin-top: 0;
       }
-
+      h3 {
+        margin: 0;
+        font-weight: normal;
+        line-height: 1.42857143;
+        color: #595959;
+      }
       input {
         &[type=search] {
           width: 100%;
@@ -33,5 +38,20 @@ section {
       display: block;
       word-wrap: break-word;
     }
+    #best-bets {
+      margin-bottom: 12px;
+      border-bottom: 1px solid #e0e0e0;
+      padding-bottom: 4px;
+      background-color: #fff;
+      margin: 0 12px 12px;
+      overflow: hidden;
+    }
   } // end .search-site
 } // end section
+
+@media screen and (max-width: $large-screen) {
+  #best-bets {
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+}

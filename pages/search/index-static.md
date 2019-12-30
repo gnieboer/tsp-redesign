@@ -13,7 +13,7 @@ document-ready:
 
 <div class="collapse navbar-collapse" id="search-filters-and-results-count">
 <h2 class="sr-only">Filters and Result Count</h2>
-<ul class="nav navbar-nav">
+<ul class="nav navbar-nav usa-unstyled-list">
 <li id="results-count"><span>118 results</span></li>
 </ul>
 </div>
@@ -27,6 +27,23 @@ document-ready:
       <span class="usa-sr-only">Search</span>
     </button>
   </form>
+</div>
+
+<!-- BEST BETS -->
+<div class="search collapsible collapsed" id="best-bets">
+<div class="content-block-item content-block-item-header">
+<h3 class="content-heading">
+Recommended
+by
+TSP | Beta
+</h3>
+</div>
+<div class="boosted-content collapsible-item content-block-item result" id="best-bet-1">
+<h4 class="title"><a data-click="{&quot;i&quot;:145858,&quot;p&quot;:1,&quot;s&quot;:&quot;BOOS&quot;}" href="https://beta.tsp.gov/forms/tsp-26.html">Form <strong>TSP</strong>-<strong>26</strong>, Loan Payment Coupon</a></h4>
+<span class="url">https://beta.tsp.gov/forms/tsp-26.html</span>
+<span class="description">For use by participants who would like to make loan payments in addition to payments made through payroll deductions.</span>
+</div>
+
 </div>
 
 <div id="results">
