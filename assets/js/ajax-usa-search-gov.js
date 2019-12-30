@@ -167,3 +167,13 @@ function inlineUSAsearch(searchName, statusBox, searchSite, terms, callback) {
   // doUSAsearch(resultDiv, "https://search.usa.gov/api/v2/search?affiliate=tspgov&access_key=9gcFHn4xSylFEK4QUpxR9y50_MJOy3LBi0bh4hIZ7Ew=
   doInlineUSAsearch(searchName, statusBox, url, callback);
 }
+
+// onChange for search-bar input
+function searchInline(searchName, userCallback) {
+  $('#search-message-'+searchName).html('');
+  var terms = $('#search-input-'+searchName).val();
+  // console.log('terms = ', terms);
+  if (terms == '') { resetInline(searchName); return; }
+
+  inlineUSAsearch(searchName, 'search-message-'+searchName, 'beta.tsp.'+searchName, terms, userCallback);
+}

@@ -4,8 +4,14 @@
 {% if formAudience ==  "Uniformed Services" %}       {% assign audienceClass = "form-uniformed" %}  {% endif %}
 {% if formAudience ==  "Both" %}                     {% assign audienceClass = "form-both" %}       {% endif %}
 {% if formAudience ==  "Beneficiary Participant" %}  {% assign audienceClass = "form-bpa" %}        {% endif %}
-
-<div class="usa-width-one-half">
+{% assign divBlockID = "" %}
+{% assign divBlockClass = "" %}
+{% assign nameDiv = include.nameDiv | default: 0 %}
+{% if nameDiv != 0 %}
+  {% assign divBlockID = "id='" | append: form.form_url | replace: '.', '-' | append: "-block'" %}
+  {% assign divBlockClass = "div-block-class" %}
+{% endif %}
+<div class="usa-width-one-half {{divBlockClass}}" {{divBlockID}}>
   <div class="item-frame">
 
     <div class="top {{ audienceClass }}">

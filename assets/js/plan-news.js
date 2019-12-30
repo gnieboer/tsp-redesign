@@ -21,17 +21,8 @@ function showMorePlans(type, formNum) {
   }
 }
 
-function searchInline(searchName) {
-  $('#search-message-'+searchName).html('');
-  var terms = $('#search-input-'+searchName).val();
-  // console.log('terms = ', terms);
-  if (terms == '') { resetInline(searchName); return; }
-
-  inlineUSAsearch(searchName, 'search-message-'+searchName, 'beta.tsp.'+searchName, terms, searchInlineCallback);
-}
-
-
-function searchInlineCallback(searchName, result) {
+// share-bar callback
+function planNewsCallback(searchName, result) {
   $('#'+'search-message-'+searchName).html('');
   // console.log('in callback searchInlineCallback()');
   // console.log(result);
