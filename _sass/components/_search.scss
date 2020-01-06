@@ -3,7 +3,7 @@ section {
   &.search-filters,
   &.search-results,
   &.pagination {
-    padding: 0 14rem;
+    padding: none;
   }
 
   &.search-filters {
@@ -160,3 +160,13 @@ section {
   } // END &.pagination
 }
 // end section
+@media screen and (min-width: $large-screen) {
+
+  section {
+    &.search-filters,
+    &.search-results,
+    &.pagination {
+      padding: 0 14rem;
+    }
+  }
+}
