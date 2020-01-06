@@ -51,7 +51,7 @@ collections:
   funds:
     output: true
   forms:
-    output: false
+    output: true
   plan_news:
     output: true
   publications:

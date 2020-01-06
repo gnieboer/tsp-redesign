@@ -7,6 +7,7 @@ var siteName = "https://search.usa.gov/api/v2/search/i14y";
 var affiliates = {
   "beta.tsp": "sVO7chy_W4g9AMmHj90csL3Oyn6z7JKRs1Pb8BxCJ9Y=",
   "beta.tsp.forms": "6HltwZIKfyLoxQKMBODEct4oWEf82aYqOG690gVLWlA=",
+  "beta.tsp.forms2": "bIzmIRB2qsM9XFiLyFn5dK8N65QJECR8wWxvzx-UnJY=",
   "beta.tsp.plan-news": "Rq24ee2O0lnSR6VJmiRiIMDJhNZ_KSVrYzisorSVCr8=",
 };
 

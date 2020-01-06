@@ -11,7 +11,7 @@
 {% assign nameDiv = include.nameDiv | default: 0 %}
 {% if nameDiv != 0 %}
   {% assign divBlockID = "id='" | append: resource.publication_url | replace: '.', '-' | append: "-block'" %}
-  {% assign divBlockClass = "div-block-class" %}
+  {% assign divBlockClass = "div-block-class div-resource-class" %}
 {% endif %}
 
 <div class="usa-width-one-half {{divBlockClass}}" {{divBlockID}}>

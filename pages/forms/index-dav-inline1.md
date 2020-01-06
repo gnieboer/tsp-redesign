@@ -8,7 +8,7 @@ scripts:
   - /assets/js/ajaxFetch.js
   - /assets/js/ajax-usa-search-gov.js
   - /assets/js/forms.js
-permalink: /forms/
+permalink: /forms/inline1
 ---
 
 # Help me find forms and resources about {#forms}
@@ -47,7 +47,7 @@ permalink: /forms/
 <div class="usa-grid-full">
 {% for form in site.data.forms %}
   {% assign cnt = cnt | plus: 1 %}
-  {% include forms/form.html nameDiv=1 %}
+  {% include forms/form.html %}
   {% assign mod = cnt | modulo: 2 %}
 {% if mod == 0 %}
 </div>
@@ -126,12 +126,15 @@ permalink: /forms/
 </div>
 {% endfor %}
 
-{% comment %}inline form search results below{% endcomment %}
+{% comment %}inline search copies below{% endcomment %}
 <div id="inline-search-forms" class="hide" markdown="1">
 <!-- DONALD style this (forms) -->
 <span class="see-all"><a href="/forms/">See all</a></span>
-<h2 id="inline-search-forms-message" class="results"></h2>
-<div id='inline-search-forms-results'></div>
+<div class="usa-grid-full">
+{% for form in site.data.forms %}
+  {% include forms/form.html nameDiv=1 %}
+{% endfor %}
+</div>
 </div>
 </section>
 
@@ -145,7 +148,7 @@ permalink: /forms/
 <div class="usa-grid-full">
 {% for resource in site.data.publications %}
   {% assign cnt = cnt | plus: 1 %}
-  {% include forms/resource.html nameDiv=1 %}
+  {% include forms/resource.html %}
   {% assign mod = cnt | modulo: 2 %}
 {% if mod == 0 %}
 </div>
@@ -217,7 +220,11 @@ permalink: /forms/
 
 {% comment %}inline search copies below{% endcomment %}
 <div id="inline-search-resources" class="hide" markdown="1">
-<div id='inline-search-resources-results'></div>
+<div class="usa-grid-full">
+{% for resource in site.data.publications %}
+  {% include forms/resource.html nameDiv=1 %}
+{% endfor %}
+</div>
 </div>
 
 </section>

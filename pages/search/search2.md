@@ -1,7 +1,7 @@
 ---
 title: Search
 layout: page
-permalink: /search/
+permalink: /search2/
 #sidenav: fund-options
 scripts:
   - /assets/js/jquery.min.js
