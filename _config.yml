@@ -19,7 +19,7 @@ search_site_handle: beta.tsp
 google_analytics_ua: UA-33523145-2
 
 # Configuration for DAP, add your agency ID here:
-dap_agency: FRTIB
+dap_agency: FRTIB&pua=ua-33523145-2"
 
 # Build settings
 markdown: kramdown
