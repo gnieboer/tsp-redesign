@@ -14,9 +14,9 @@ theme: uswds-jekyll
 
 search_site_handle: beta.tsp
 
-
 # Configuration for Google Analytics, add your UA code here:
-google_analytics_ua: UA-33523145-2
+# google_analytics_ua: UA-33523145-2
+google_analytics_ua: UA-155812092-1
 
 # Configuration for DAP, add your agency ID here:
 dap_agency: FRTIB&pua=ua-33523145-2"
