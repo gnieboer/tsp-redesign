@@ -11,6 +11,8 @@ var affiliates = {
   "beta.tsp.plan-news": "Rq24ee2O0lnSR6VJmiRiIMDJhNZ_KSVrYzisorSVCr8=",
 };
 
+var default_limit = 10;
+
 function affiliateKeys() {
   return Object.keys(affiliates);
 }
@@ -32,17 +34,38 @@ var affiliate = "beta.tsp.plan-news";
 // var accessKey = "6HltwZIKfyLoxQKMBODEct4oWEf82aYqOG690gVLWlA=";
 var accessKey = "Rq24ee2O0lnSR6VJmiRiIMDJhNZ_KSVrYzisorSVCr8=";
 
-var doUSAsearch = function(divName, url) {
+var doUSAsearch = function(divName, url, getAll, offset, prevResult) {
   $('#'+divName).html('Calling server for data...');
   // console.log(url);
-  var serverCall = $.get(url);
+  var offsetURL = url + '&offset=' + offset;
+  var serverCall = $.get(offsetURL);
   serverCall.done(
     function (json) {
       // var data = JSON.parse(json);
       // var data = JSON.stringify(json);
+      if (prevResult != null) {
+        if (prevResult.web.results != null) {
+          json.web.results = prevResult.web.results.concat(json.web.results);
+        }
+        if (prevResult.text_best_bets != null) {
+          json.text_best_bets = prevResult.text_best_bets.concat(json.text_best_bets);
+        }
+        if (prevResult.graphic_best_bets != null) {
+          json.graphic_best_bets = prevResult.graphic_best_bets.concat(json.graphic_best_bets);
+        }
+      }
+      // console.log(json.web.results.length, json.text_best_bets.length);
+      if (getAll == 1) {
+        if (json.web.next_offset > 0) {
+          doUSAsearch(divName, url, getAll, json.web.next_offset, json);
+          return false;
+        }
+      }
+      // console.log('results size = '+ json.web.results.length);
       var data = syntaxHighlight(json);
       data = '<pre>'+data+'</pre>';
       $('#'+divName).html(data);
+      return true;
     }
   );
   serverCall.fail(
@@ -54,6 +77,17 @@ var doUSAsearch = function(divName, url) {
   );
 }
 
+function buildSearchURL(affiliate, accessKey, limit, offset, query) {
+  var url = siteName
+          + '?affiliate=' + affiliate
+          + '&access_key=' + accessKey
+          + '&limit=' + limit
+          + '&query=' + query;
+  if (offset > 0) { url += '&offset=' + offset; }
+  console.log('searching |'+url+'|');
+  return url;
+}
+
 function search(queryBox, resultDiv) {
   var terms = $('#'+queryBox).val();
   if (terms == '') {
@@ -62,14 +96,8 @@ function search(queryBox, resultDiv) {
   }
   terms = encodeURIComponent(terms);
   // console.log('searching: '+terms);
-  var url = siteName
-          + '?affiliate=' + affiliate
-          + '&access_key=' + accessKey
-          + '&query=' + terms;
-  // console.log('searching |'+url+'|');
-  // build url
-  // doUSAsearch(resultDiv, "https://search.usa.gov/api/v2/search?affiliate=tspgov&access_key=9gcFHn4xSylFEK4QUpxR9y50_MJOy3LBi0bh4hIZ7Ew=
-  doUSAsearch(resultDiv, url);
+  var url = buildSearchURL(affiliate, accessKey, default_limit, 0, terms);
+  doUSAsearch(resultDiv, url, 0, 0, null);
 }
 
 function search2(queryBox, resultDiv, affiliateSelect) {
@@ -84,14 +112,8 @@ function search2(queryBox, resultDiv, affiliateSelect) {
     terms = encodeURIComponent(terms);
     // console.log('searching: '+terms);
     var accessKey = affiliates[affiliate];
-    var url = siteName
-            + '?affiliate=' + affiliate
-            + '&access_key=' + accessKey
-            + '&query=' + terms;
-    // console.log('searching |'+url+'|');
-    // build url
-    // doUSAsearch(resultDiv, "https://search.usa.gov/api/v2/search?affiliate=tspgov&access_key=9gcFHn4xSylFEK4QUpxR9y50_MJOy3LBi0bh4hIZ7Ew=
-    doUSAsearch(resultDiv, url);
+    var url = buildSearchURL(affiliate, accessKey, default_limit, 0, terms);
+    doUSAsearch(resultDiv, url, 1, 0, null);
   }
 }
 
@@ -130,15 +152,34 @@ function syntaxHighlight(json) {
 }
 
 
-
-var doInlineUSAsearch = function(searchName, statusBox, url, callback) {
+var doInlineUSAsearch = function(searchName, statusBox, url, callback, getAll, offset, prevResult) {
   $('#'+statusBox).html('Calling server for data...');
   // console.log(url);
-  var serverCall = $.get(url);
+  var offsetURL = url + '&offset=' + offset;
+  var serverCall = $.get(offsetURL);
   serverCall.done(
     function (json) {
+      if (prevResult != null) {
+        if (prevResult.web.results != null) {
+          json.web.results = prevResult.web.results.concat(json.web.results);
+        }
+        if (prevResult.text_best_bets != null) {
+          json.text_best_bets = prevResult.text_best_bets.concat(json.text_best_bets);
+        }
+        if (prevResult.graphic_best_bets != null) {
+          json.graphic_best_bets = prevResult.graphic_best_bets.concat(json.graphic_best_bets);
+        }
+      }
+      if (getAll == 1) {
+        if (json.web.next_offset > 0) {
+          doInlineUSAsearch(searchName, statusBox, url, callback, getAll, json.web.next_offset, json);
+          return false;
+        }
+      }
+      // console.log(json.web.results, json.text_best_bets);
       $('#'+statusBox).html('search complete');
       callback(searchName, json);
+      return true;
     }
   );
   serverCall.fail(
@@ -159,14 +200,8 @@ function inlineUSAsearch(searchName, statusBox, searchSite, terms, callback) {
   if ( ! (searchSite in affiliates) ) { console.log('searchSite error'); return; }
   var affiliate = searchSite;
   var accessKey = affiliates[affiliate];
-  var url = siteName
-          + '?affiliate=' + affiliate
-          + '&access_key=' + accessKey
-          + '&query=' + terms;
-  // console.log('searching |'+url+'|');
-  // build url
-  // doUSAsearch(resultDiv, "https://search.usa.gov/api/v2/search?affiliate=tspgov&access_key=9gcFHn4xSylFEK4QUpxR9y50_MJOy3LBi0bh4hIZ7Ew=
-  doInlineUSAsearch(searchName, statusBox, url, callback);
+  var url = buildSearchURL(affiliate, accessKey, default_limit, 0, terms);
+  doInlineUSAsearch(searchName, statusBox, url, callback, 1, 0, null, null);
 }
 
 // onChange for search-bar input
