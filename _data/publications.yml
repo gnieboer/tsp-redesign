@@ -43,7 +43,7 @@
   - Fact Sheet
   publication_topics:
   - Legal Documents
-- publication_url: tspfs9.pdf
+- publication_url: tspfs09.pdf
   publication_name: Bankruptcy Information
   publication_info: Explains how a bankruptcy will affect a Thrift Savings Plan (TSP) account, loan, or in-service withdrawal.
   publication_date: Local reproduction
@@ -55,7 +55,7 @@
   - Loans
   - Withdrawals
 - publication_url: tspbk33.pdf
-  publication_name: Your TSP Account':' A Guide for Beneficiary Participants
+  publication_name: "Your TSP Account: A Guide for Beneficiary Participants"
   publication_info: Comprehensive booklet explaining the TSP benefits and features that are specific to beneficiary participants.
   publication_date: 1/2018
   publication_pages: 23 pages
@@ -128,17 +128,6 @@
   - Booklet
   publication_topics:
   - Death Benefits
-- publication_url: tsplf32.pdf
-  publication_name: Don't Move! Stay in the TSP.
-  publication_info: For separated participants — explains the benefits of keeping your money in the TSP.
-  publication_date: 5/2014
-  publication_pages: 3 pages
-  publication_type:
-  - Leaflet
-  publication_topics:
-  - General information
-  - Transfers and Rollovers
-  - Withdrawals
 - publication_url: tsplf14.pdf
   publication_name: TSP Fund Information Sheets
   publication_info: Provides investment information about each of the TSP funds, historical returns, etc.
@@ -239,7 +228,7 @@
   - Contributions
   - Transfers and Rollovers
 - publication_url: oc91-16.pdf
-  publication_name: IRA':' The Thrift Savings Plan and IRAs
+  publication_name: "IRA: The Thrift Savings Plan and IRAs"
   publication_info: Provides general information on a participant's options with respect to an IRA when he or she also participates in the TSP.
   publication_date: 5/2012
   publication_pages: 1 page
@@ -397,7 +386,7 @@
   publication_topics:
   - General information
 - publication_url: tsp-583.pdf
-  publication_name: Tax Information':' Death Benefit Payments
+  publication_name: "Tax Information: Death Benefit Payments"
   publication_info: Provides tax information to beneficiaries about death benefit payments from the TSP.
   publication_date: 10/2015
   publication_pages: 2 pages
@@ -406,7 +395,7 @@
   publication_topics:
   - Death Benefits
 - publication_url: tsp-780.pdf
-  publication_name: Tax Information':' Monthly Payments
+  publication_name: "Tax Information: Monthly Payments"
   publication_info: Tax information for participants who are withdrawing their account in a series of monthly payments.
   publication_date: 10/2012
   publication_pages: 2 pages
@@ -416,7 +405,7 @@
   - Tax Information
   - Withdrawals
 - publication_url: tsp-536.pdf
-  publication_name: Tax Information':' Payments From Your TSP Account
+  publication_name: "Tax Information: Payments From Your TSP Account"
   publication_info: Provides tax information about the various disbursements civilian, uniformed services, and beneficiary participants can make from the TSP.
   publication_date: 1/2018
   publication_pages: 8 pages
@@ -428,7 +417,7 @@
   - Transfers and Rollovers
   - Withdrawals
 - publication_url: tsp-582.pdf
-  publication_name: Tax Information':' Qualifying Orders
+  publication_name: "Tax Information: Qualifying Orders"
   publication_info: Tax information about payments made under qualifying orders.
   publication_date: 1/2015
   publication_pages: 4 pages
@@ -438,7 +427,7 @@
   - Contributions
   - Legal Documents
 - publication_url: tsp-537.pdf
-  publication_name: Tax Information':' Special Tax Withholding Rules for Thrift Savings Plan Payments to Nonresident Aliens
+  publication_name: "Tax Information: Special Tax Withholding Rules for Thrift Savings Plan Payments to Nonresident Aliens"
   publication_info: A summary of special tax withholding rules that apply to Thrift Savings Plan (TSP) payments made to nonresident aliens.
   publication_date: 5/2012
   publication_pages: 4 pages
@@ -457,15 +446,6 @@
   publication_topics:
   - Contributions
   - General information
-- publication_url: tsplf38.pdf
-  publication_name: This is Your Time, how do you want to spend it?
-  publication_info: This leaflet notifies separated participants nearing age 70½ that the deadline to start receiving payments from their TSP accounts is approaching. It provides dates by which they should make their payment request.
-  publication_date: 10/2015
-  publication_pages: 6 pages
-  publication_type:
-  - Leaflet
-  publication_topics:
-  - Withdrawals
 - publication_url: tspfs05.pdf
   publication_name: Transfers From the Thrift Savings Plan to Eligible Retirement Plans
   publication_info: Information about moving money from the Thrift Savings Plan (TSP) to eligible retirement plans. This fact sheet is provided for use by a plan administrator of a traditional IRA or eligible employer plan to complete the transfer of a TSP participant's account.
