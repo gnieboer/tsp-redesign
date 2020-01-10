@@ -56,22 +56,23 @@ function makeBlockofHits (hitList) {
 }
 function getSTRfromURL(url) {
   var parts = url.split(/\//);
-  var str = parts.pop().replace(/\./, '-');
+  var str = parts.pop();
   if (url.slice(-1) == '/') {
     // directory, different parsing
     str = parts[parts.length-1];
   }
-  // console.log(url, str);
   if (str.includes('=')) {
-    console.log('bad '+str);
     var parts = str.split('=');
     str = parts[parts.length-1];
-    console.log('now  '+str);
   }
+  str = str.replace(/\./, '-');
   str = '#' + str+'-block';
   return str;
 }
 function addOneMatchToList(url, formList, resList, foundList) {
+  if (typeof url === 'undefined') { return false; }
+  if (url == '') { return false; }
+  if (url == null) { return false; }
   var str = getSTRfromURL(url);
   if ($(str).length == 0) { console.log('rejecting '+str, url); return false; }
   if ($(str).length > 0) {
@@ -79,8 +80,9 @@ function addOneMatchToList(url, formList, resList, foundList) {
     if (!(str in foundList)) {
       foundList[str] = str;
       if (url.includes('/forms/')) { formList.push(str); return true; }
-      else
-        if (url.includes('/publications/')) { resList.push(str); return true; }
+      if (url.includes('/publications/')) { resList.push(str); return true; }
+      if ($(str).hasClass('div-form-class')) { formList.push(str); return true; }
+      if ($(str).hasClass('div-resource-class')) { resList.push(str); return true; }
     }
     else { console.log( 'ignoring second '+str); }
   }
@@ -90,20 +92,21 @@ function addOneMatchToList(url, formList, resList, foundList) {
 // take a list of hits and add it to the form or resource pile.
 // maintain the order.  use foundList to avoid duplicates
 function addMatchesToList(matches, formList, resList, foundList) {
-  // console.log('matches', matches);
   if (typeof matches === 'undefined') { return false; }
   if (matches.length <= 0) { return false; }
 
   var i = -1;
   var j = -1;
-  if (matches[0].title_url) {
+  if (matches[0].links) {
     for (j = 0; j < matches.length; j++) {
       addOneMatchToList(matches[j].title_url, formList, resList, foundList);
-      for (i = 0; i < matches[j].links.length; i++) {
-        addOneMatchToList(matches[j].links[i].url, formList, resList, foundList);
+      if (matches[j].links) {
+        for (i = 0; i < matches[j].links.length; i++) {
+          addOneMatchToList(matches[j].links[i].url, formList, resList, foundList);
+        }
       }
+      return true;
     }
-    return false;
   }
   for (i = 0; i < matches.length; i++) {
     addOneMatchToList(matches[i].url, formList, resList, foundList);
