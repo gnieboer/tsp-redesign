@@ -1,3 +1,19 @@
+.usa-grid-full {
+  &.search {
+    .usa-width-one-whole {
+      padding: 0 14rem;
+    }
+    // .usa-width-one-sixth {
+    //   border: 1px solid white;
+    // }
+    div {
+      &:empty {
+        border: 1px solid white;
+      }
+    }
+  }
+}
+
 section {
 
   &.search-filters,
@@ -166,7 +182,7 @@ section {
     &.search-filters,
     &.search-results,
     &.pagination {
-      padding: 0 14rem;
+      // padding: 0 14rem;
     }
   }
 }
