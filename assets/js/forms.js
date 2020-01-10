@@ -43,8 +43,9 @@ function makeBlockofHits (hitList) {
     var divBlock = divStart;
     var cnt = 0;
     var rowCnt = 2;
-    for (var i in hitList) {
-      var block = $(i).html();
+    var len = hitList.length;
+    for (var i = 0; i < len; i++) {
+      var block = $(hitList[i]).html();
       block = '<div class="usa-width-one-half">' +block+ '</div>';
       divBlock += "\n" + block + "\n";
       cnt++;
@@ -53,37 +54,83 @@ function makeBlockofHits (hitList) {
     divBlock += divEnd;
     return divBlock;
 }
+function getSTRfromURL(url) {
+  var parts = url.split(/\//);
+  var str = parts.pop();
+  if (url.slice(-1) == '/') {
+    // directory, different parsing
+    str = parts[parts.length-1];
+  }
+  if (str.includes('=')) {
+    var parts = str.split('=');
+    str = parts[parts.length-1];
+  }
+  str = str.replace(/\./, '-');
+  str = '#' + str+'-block';
+  return str;
+}
+function addOneMatchToList(url, formList, resList, foundList) {
+  if (typeof url === 'undefined') { return false; }
+  if (url == '') { return false; }
+  if (url == null) { return false; }
+  var str = getSTRfromURL(url);
+  if ($(str).length == 0) { console.log('rejecting '+str, url); return false; }
+  if ($(str).length > 0) {
+    // console.log(str);
+    if (!(str in foundList)) {
+      foundList[str] = str;
+      if (url.includes('/forms/')) { formList.push(str); return true; }
+      if (url.includes('/publications/')) { resList.push(str); return true; }
+      if ($(str).hasClass('div-form-class')) { formList.push(str); return true; }
+      if ($(str).hasClass('div-resource-class')) { resList.push(str); return true; }
+    }
+    else { console.log( 'ignoring second '+str); }
+  }
+  return false;
+}
 // share-bar callback
-// for this one, we only care about best bets hits
-// and we only care about pdf hits
+// take a list of hits and add it to the form or resource pile.
+// maintain the order.  use foundList to avoid duplicates
+function addMatchesToList(matches, formList, resList, foundList) {
+  if (typeof matches === 'undefined') { return false; }
+  if (matches.length <= 0) { return false; }
+
+  var i = -1;
+  var j = -1;
+  if (matches[0].links) {
+    for (j = 0; j < matches.length; j++) {
+      addOneMatchToList(matches[j].title_url, formList, resList, foundList);
+      if (matches[j].links) {
+        for (i = 0; i < matches[j].links.length; i++) {
+          addOneMatchToList(matches[j].links[i].url, formList, resList, foundList);
+        }
+      }
+      return true;
+    }
+  }
+  for (i = 0; i < matches.length; i++) {
+    addOneMatchToList(matches[i].url, formList, resList, foundList);
+  }
+  return true;
+}
 function formsCallback(searchName, result) {
   $('#'+'search-message-'+searchName).html('');
   // console.log('in callback formsCallback()');
   // console.log(result);
   var jsonBlock = result;
-  var results = jsonBlock.text_best_bets;
-  var hits = results.length;
-  // console.log(searchName, results, hits);
-
   // $('.div-block-class').addClass('hide'); // hide them all
   var formList = [];
   var resList = [];
-  for (var i = 0; i < hits; i++) {
-    var str = results[i].url.split(/\//).pop().replace(/\./, '-');
-    str = '#' + str+'-block';
-    if (results[i].url.includes('form')) { formList[str] = str; }
-    else
-      if (results[i].url.includes('publications')) { resList[str] = str; }
-  }
-  // console.log('form '); for (i in formList) { console.log(i); }
-  // console.log('res '); for (i in resList) { console.log(i); }
+  var foundList = [];
+  addMatchesToList(jsonBlock.text_best_bets, formList, resList, foundList);
+  addMatchesToList(jsonBlock.graphic_best_bets, formList, resList, foundList);
+  addMatchesToList(jsonBlock.web.results, formList, resList, foundList);
 
   $('#inline-search-forms-results').html(makeBlockofHits(formList));
   $('#inline-search-resources-results').html(makeBlockofHits (resList));
   var terms = $('#search-input-'+searchName).val();
-  var message = "We found <strong>" + Object.keys(formList).length + "</strong> forms and <strong>"
-              + Object.keys(resList).length + "</strong> resources about <strong>" + terms + "</strong>.";
-  $("#inline-search-forms-message").html(message);
+  $("#inline-search-forms-message").html(
+    makeFoundMessage(Object.keys(formList).length, Object.keys(resList).length, terms));
 
   // hide topics, show inline searh copy
   $('#inline-search-forms').removeClass('hide');
@@ -91,6 +138,16 @@ function formsCallback(searchName, result) {
   $('.select-forms-div').addClass('hide');
   $('.select-resources-div').addClass('hide');
   return true;
+}
+
+function makeFoundMessage(fCnt, rCnt, terms) {
+  var forms = 'forms';
+  var resources = 'resources';
+  if (fCnt == 1) { forms = 'form'; }
+  if (rCnt == 1) { resources = 'resource'; }
+  var message = "We found <strong>" + fCnt + "</strong> "+ forms+ " and <strong>"
+              + rCnt + "</strong> " + resources + " about <strong>" + terms + "</strong>.";
+  return message;
 }
 
 // reset back to the forms page default
