@@ -8,9 +8,9 @@ document-ready:
 
 <div class="usa-grid-full search">
 
-<div class="usa-width-one-sixth"></div>
+<!-- <div class="usa-width-one-sixth"></div> -->
 
-<div class="usa-width-two-thirds">
+<div class="usa-width-one-whole">
 
   <section class="search-filters">
 
@@ -310,6 +310,6 @@ document-ready:
   </section> <!-- END section.pagination -->
 </div> <!-- END div.usa-width-one-whole -->
 
-<div class="usa-width-one-sixth"></div>
+<!-- <div class="usa-width-one-sixth"></div> -->
 
 </div> <!-- END div.usa-grid-full -->

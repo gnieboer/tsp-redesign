@@ -1,8 +1,8 @@
-section.search-results {
-  &.inline {
-    padding: 0 28rem 0 0;
-  }
-}
+// section.search-results {
+//   &.inline {
+//     padding: 0 28rem 0 0;
+//   }
+// }
 
 
 // SEARCH FORM ELEMENTS
@@ -395,6 +395,17 @@ section#returned-resources, section#popular-resources {
       }
     } // end #returned-forms, #popular-forms
 } // end media min-width: $small-screen
+
+@media screen and (min-width: $large-screen) {
+
+  .usa-grid-full {
+    &.results {
+      .usa-width-one-whole {
+        padding: 0 28rem 0 0;
+      }
+    }
+  }
+}
 
 @media screen and (max-width: $small-screen) {
   section.search-forms {

@@ -58,9 +58,9 @@ permalink: /forms/index-search/
 <h2 id="inline-search-forms-message" class="results">We found <strong>8</strong> forms and resources about <strong>rmd</strong>.</h2>
 
 
-<div class="usa-grid-full">
+<div class="usa-grid-full results">
   <div class="usa-width-one-whole">
-<section class="search-results inline" tabindex="-1">
+<section class="search-results" tabindex="-1">
 
 <!-- BEST BETS -->
 <div class="best-bets">
@@ -165,9 +165,6 @@ IRS- required minimum distributions (<strong>RMDs</strong>).) • If you're a se
 </div> <!-- END div.results -->
 </section> <!-- END section.search-results -->
 
-</div>
-</div>
-
 <!-- Pagination -->
 <section class="pagination">
   <h3 class="sr-only">Pagination</h3>
@@ -181,3 +178,6 @@ IRS- required minimum distributions (<strong>RMDs</strong>).) • If you're a se
     <a class="next-page" rel="next" href="/search?affiliate=beta.tsp&page=2&query=tax">Next</a>
   </div>
 </section> <!-- END section.pagination -->
+
+</div> <!-- END div.usa-width-one-whole -->
+</div>
