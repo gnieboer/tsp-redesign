@@ -25,5 +25,5 @@ We hope your visit was informative and enjoyable.
 <br>
 
 If your browser does not automatically transfer you in a few seconds,
-<span id="offsiteLink"></span>.
+<span id="offsiteLink"></span>.  <!-- DONALD:  this is where the dynamic redirect goes -->
 </div>

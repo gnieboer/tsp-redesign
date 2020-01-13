@@ -1,3 +1,6 @@
+---
+published: false
+---
 {% comment %}
 Introduction panel (1) for How Much Can I Contribute?.
 {% endcomment %}

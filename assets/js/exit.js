@@ -1,6 +1,9 @@
 // define urls
 var urlList = [];
 
+// https://beta.tsp.gov/exit/?idx=##
+// https://beta.tsp.gov/exit/?idx=67
+
 urlList[ 0] = 'http://www.tsp.gov';
 urlList[ 1] = 'http://service.govdelivery.com/service/multi_subscribe.html?code=USTSP&amp;custom_id=1178&amp;origin=http://service.govdelivery.com/demos/ustsp/success.html';
 urlList[ 2] = 'http://service.govdelivery.com/service/multi_subscribe.html?code=USTSP';
@@ -166,8 +169,10 @@ function getURL(idx) {
 
 function updateExitPage() {
   var url = getURL(getIdx());
+  // default text for when URL not in list
   var output = 'link is not available';
   if (url != '') {
+      // build the url redirect here
       output = '<a href="'+url+'">please use this link</a><meta http-equiv="refresh" content="5;URL='+url+'">';
   }
   $('#offsiteLink').html(output);
