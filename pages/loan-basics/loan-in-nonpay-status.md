@@ -15,27 +15,27 @@ permalink: /loan-basics/your-loan-in-nonpay-status/
 # Your loan in a nonpay status
 
 If you’re in an approved [nonpay status](#) and you have provided the proper documentation to us, the Internal Revenue Service (IRS) regulations allow us to suspend loan payments for up to 1 year.  Once you return to [pay status](#), your payroll-deducted loan payments will resume. Your loan will be reamortized automatically when your agency or service notifies us that you have returned to pay status.
-For more information, please refer to the Fact Sheet, *[Effect of Nonpay Status on Your TSP Account]*(https://www.tsp.gov/PDF/formspubs/tspfs04.pdf).
+For more information, please refer to the Fact Sheet, [Effect of Nonpay Status on Your TSP Account](https://www.tsp.gov/PDF/formspubs/tspfs04.pdf).
 
 ## Suspension of loan payments
 If you’re a civilian who goes into nonpay status to perform military service:
 + The suspension of loan payments may continue for the duration of your military service.
 + You cannot repay your civilian loan by making loan deductions from your uniformed services pay.
 + Your loan accrues interest while your payments are suspended.
-+ If you’d like to make payments, you can send a personal check or money order along with the [Loan Payment Coupon](#), _Form TSP-26_, to continue making loan payments. Your payments will be taken into account when the loan is reamortized once you return to pay status.
++ If you’d like to make payments, you can send a personal check or money order along with the [Loan Payment Coupon](#) to continue making loan payments. Your payments will be taken into account when the loan is reamortized once you return to pay status.
 
 If you’re in nonpay status for reasons other than active military service:
 + The maximum period that we can suspend your loan payments is one year.
 + If your nonpay period exceeds one year, your loan will be automatically reamortized and you must make payments from your personal funds to avoid being in default.
 + Your loan accrues interest while your payments are suspended.
-+ If you’d like to make payments, you can send a personal check or money order along with the [Loan Payment Coupon](#), _Form TSP-26_, to continue making loan payments. Your payments will be taken into account when the loan is reamortized once you return to pay status.
++ If you’d like to make payments, you can send a personal check or money order along with the [Loan Payment Coupon](#) to continue making loan payments. Your payments will be taken into account when the loan is reamortized once you return to pay status.
  
 ## Notifying the TSP of your nonpay status
-When you begin your period of nonpay status, you or your agency/service must submit one of the following forms to us:
-+ [Notification to TSP of Nonpay Status](https://www.tsp.gov/PDF/formspubs/tsp-41.pdf), _Form TSP-41_; or
-+ [Notification of Personnel Action](#), _Form SF-50_; or
-+ A letter on agency or service letterhead, signed by an appropriate agency official or your commander or adjutant, that contains your name, date of birth, and Social Security number; the beginning date of the nonpay status; and the signature and title of the agency or service representative providing the information; or
-+ A copy of your military orders.
+When you begin your period of nonpay status, you or your agency or service must submit one of the following forms to us:
++ Form TSP-41, [Notification to TSP of Nonpay Status](https://www.tsp.gov/PDF/formspubs/tsp-41.pdf)
++ Form SF-50, [Notification of Personnel Action](#)
++ A letter on agency or service letterhead, signed by an appropriate agency official or your commander or adjutant, that contains your name, date of birth, and Social Security number; the beginning date of the nonpay status; and the signature and title of the agency or service representative providing the information
++ A copy of your military orders
 ## Returning from nonpay status
 When you return from nonpay status, you must notify us of your date of return. You can use any type of documentation described in the above section. Once your agency or service notifies us of your return, your loan will be reamortized to place it in good standing.
 
