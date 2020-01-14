@@ -54,7 +54,7 @@
   -  Death benefits
   -  Beneficiary participants
 - form_number: TSP-9
-  form_url: tsp-9.pdf
+  form_url: tsp-9.pdf&_form=tsp09
   form_name: Change in Address for Separated Participant
   form_info: Change your TSP account address if you are separated from Federal service. If you are separated, you may also request a change of address online using My Account.
   form_date: 6/2008
@@ -108,7 +108,7 @@
   form_topics:
   -  Death benefits
 - form_number: TSP-20
-  form_url: tsp-20.pdf
+  form_url: tsp-20.pdf&_form=tsp20
   form_name: Loan Application
   form_info: Request a general purpose or residential TSP loan. Civilians and uniformed service members can use this form.
   form_date: 4/2012

@@ -1,0 +1,64 @@
+section.bootstrap-modals-forms {
+
+  button {
+    i {
+      padding-left: .7rem;
+    }
+    &.usa-button {
+      font-weight: $normal;
+      line-height: 1.25;
+      width: auto;
+      max-width: 36ch;
+    }
+    &.close {
+      background-color: transparent;
+      border: 0;
+      -webkit-appearance: none;
+      float: right;
+      font-size: 2.8rem;
+      font-weight: 700;
+      line-height: 1;
+      color: #000;
+      text-shadow: 0 1px 0 #fff;
+      opacity: .5;
+    }
+  }
+
+  .modal-title {
+      margin: 0;
+      font-family: $sans;
+      font-size: 2rem;
+      max-width: 30ch;
+  }
+
+  .modal-body {
+    ul {
+      &.decision {
+        padding: 1rem 0;
+        button {
+          min-width: 7rem;
+        }
+      }
+      &.usa-unstyled-list {
+        > li {
+          &:last-child {
+            margin-bottom: 1rem;
+            line-height: 2.5;
+          }
+        }
+      }
+    }
+  } // END .modal-body
+
+  .modal-footer {
+    .usa-button {
+      background-color: transparent;
+      color: inherit;
+      font-weight: $normal;
+      border: none;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}

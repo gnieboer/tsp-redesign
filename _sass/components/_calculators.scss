@@ -67,7 +67,7 @@ div.results-grid-frame {
   > div.usa-grid.results {
     &:nth-of-type(odd) {
     background-color: #f1f1f1;
-    // background-color: $color-silver;
+    // background-color: $color-gray-lightest;
     }
   }
 }
@@ -213,5 +213,5 @@ div.results-grid-frame {
 //   // zebra striping
 //
 // div.deco-box > div.usa-grid.results:nth-of-type(odd) {
-//     background-color: $color-silver;
+//     background-color: $color-gray-lightest;
 // }
