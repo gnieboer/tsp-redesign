@@ -11,7 +11,7 @@ permalink: /living-in-retirement/making-a-withdrawal/
 
 ## Requesting a withdrawal
 
-Before you request a withdrawal from your TSP savings, be sure to read the booklet [*Withdrawing Your TSP Account After Leaving Federal Service*](https://www.tsp.gov/PDF/formspubs/tspbk02.pdf).
+Before you request a withdrawal from your TSP savings, be sure to read the booklet [Withdrawing Your TSP Account After Leaving Federal Service](https://www.tsp.gov/PDF/formspubs/tspbk02.pdf).
 
 To request a partial withdrawal from your TSP account, log into [My Account: Withdrawals](https://www.tsp.gov/tsp/login.html) and click “Partial Withdrawal.”
 
@@ -41,7 +41,7 @@ Allow several weeks from the time you submit your completed withdrawal request a
 
 The Internal Revenue Code (IRC) requires that you receive a portion of your TSP account beginning in the calendar year when you become age 70½ and are separated from service. The portion is called a Required Minimum Distribution (RMD).
  
-We calculate RMDs based on your account balance and your age using the IRS Uniform Lifetime Table. For detailed information and the tax rules regarding RMDs, see the TSP tax notice [*Important Tax Information About Your TSP Withdrawal and Required Minimum Distributions*](https://www.tsp.gov/PDF/formspubs/tsp-775.pdf).
+We calculate RMDs based on your account balance and your age using the IRS Uniform Lifetime Table. For detailed information and the tax rules regarding RMDs, see the TSP tax notice [Important Tax Information About Your TSP Withdrawal and Required Minimum Distributions](https://www.tsp.gov/PDF/formspubs/tsp-775.pdf).
 
 #### RMD requirements
 
