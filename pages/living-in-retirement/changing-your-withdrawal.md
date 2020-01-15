@@ -27,9 +27,11 @@ If your current payments are of a fixed dollar amount that you chose when you se
 
 # Making changes to your TSP installment payments
 
-To make any of the allowable changes described above, use the online tool that you will find in My Account at tsp.gov by clicking “Withdrawals and Changes to Installment Payments.” When you’ve completed your online request, you’ll be asked to submit it online if possible. If your signature or your spouse’s signature is required or you’re starting or making changes to transfers, you won’t be able to complete the process entirely online. You’ll be given a summary of your request, which you—and your spouse or financial institution if necessary—will need to sign, have notarized, and then mail or fax to us. When we receive these properly completed pages, we’ll be able to complete the transaction you began online.
+To make any of the allowable changes described above, use the online tool that you will find by logging into My Account and clicking “Withdrawals and Changes to Installment Payments.” When you’ve completed your online request, you’ll be asked to submit it online if possible. 
 
-Be sure to carefully read the TSP tax notice, [*"Tax Information for TSP Participants Receiving Installment Payments*](https://www.tsp.gov/PDF/formspubs/tsp-780.pdf)." It outlines the rules for changing your monthly payments and details the tax implications associated with each monthly payment option. 
+If your signature or your spouse’s signature is required or you’re starting or making changes to transfers, you won’t be able to complete the process entirely online. You’ll be given a summary of your request, which you—and your spouse or financial institution if necessary—will need to sign, have notarized, and then mail or fax to us. When we receive these properly completed pages, we’ll be able to complete the transaction you began online.
+
+Be sure to carefully read the TSP tax notice, [Tax Information for TSP Participants Receiving Installment Payments](https://www.tsp.gov/PDF/formspubs/tsp-780.pdf)." It outlines the rules for changing your monthly payments and details the tax implications associated with each monthly payment option. 
 
 If you're currently receiving installment paymens and want to choose a different amount, use our [TSP Installment Payment Calculator](https://www.tsp.gov/PlanningTools/Calculators/installmentPayCalc.html) to estimate how many payments you will receive and how long they will last. 
 
