@@ -11,7 +11,8 @@ permalink: /annuity-basics/annuity-benefits-and-limitations/
 
 Purchasing an annuity means that you pay now to receive monthly payments that last for the rest of your life. We offer the following annuity options through our annuity provider:
 
-Single life annuity or a joint life annuity with your spouse or with someone other than your spouse.
+- Single life annuity
+- Joint life annuity with your spouse or with someone other than your spouse.
 
 <div class="usa-alert usa-alert-info">
 <div class="usa-alert-body" markdown="1">
@@ -38,7 +39,7 @@ The amount of the monthly payment to the survivor - whether the survivor is you 
 
 If you name a joint annuitant other than your spouse who is more than 10 years younger than you, you must choose a joint life annuity with the 50% survivor benefit in most cases.
 
-For more information about joint annuitants, refer to the Life Annuities section of the booklet _[Withdrawing Your TSP Account After Leaving Federal Service](https://www.tsp.gov/PDF/formspubs/tspbk02.pdf)._
+For more information about joint annuitants, refer to the Life Annuities section of the booklet [Withdrawing From Your TSP Account for Separated and Beneficiary Participants](https://www.tsp.gov/PDF/formspubs/tspbk02.pdf).
 
 ## Annuity payment options
 Once you’ve chosen either a single life or a joint life annuity, you must decide whether you want to receive "level" or "increasing" payments.
