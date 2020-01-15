@@ -15,7 +15,7 @@ The life annuity is one of the withdrawal options that are available to you once
 
 The minimum amount with which to purchase an annuity is $3,500. This minimum applies separately to each balance, traditional and Roth.
 
-Be aware that the life annuity is not the same as a TSP installment payment. A TSP installment payment is one of the other withdrawal options that you have as a separated participant. 
+Be aware that an annuity is not the same as a TSP installment payment. A TSP installment payment is one of the other withdrawal options that you have as a separated participant. 
 
 The annuity interest rate index is 2.625% for annuities purchased in May 2019 and 2.625% for annuities purchased in April 2019. 
 
