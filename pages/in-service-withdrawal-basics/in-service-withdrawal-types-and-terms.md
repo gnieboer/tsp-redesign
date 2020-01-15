@@ -70,5 +70,5 @@ When you make a age-based withdrawal, consider the following effects on your TSP
 - You must pay 20% federal income tax on the taxable portion of your age-based withdrawal unless unless you’re able to transfer or roll it over to an IRA or an eligible employer plan. 
 - You will not be eligible to receive a partial withdrawal from the same account after you separate from service.
 
-The Tax Notice [*Important Tax Information About Payments From Your TSP Account*](https://www.tsp.gov/PDF/formspubs/tsp-536.pdf)  provides more information about the tax rules affecting age-based withdrawals..
+The tax notice [Important Tax Information About Payments From Your TSP Account](https://www.tsp.gov/PDF/formspubs/tsp-536.pdf)  provides more information about the tax rules affecting age-based withdrawals..
 
