@@ -16,24 +16,19 @@ permalink: /in-service-withdrawal-basics/making-an-in-service-withdrawal/
 
 ## Applying for a financial hardship withdrawal or an age-based withdrawal
 
-+ To apply for a financial hardship withdrawal, log in to [My Account: Withdrawals](https://www.tsp.gov/tsp/login.html) and click “Financial Hardship In-Service Withdrawal."
-+ To apply for an age-based withdrawal, log in to [My Account: Withdrawals](https://www.tsp.gov/tsp/login.html) and click “Age-Based In-Service Withdrawal.”
++ Begin your Financial Hardship In-Service Withdrawal Request by going to [My Account: Withdrawals](https://www.tsp.gov/tsp/login.html). You can begin and, in some cases, complete your request online. It depends on whether you are required to obtain your spouse's signed consent.
 
-You can submit your request online unless you are required to obtain your spouse's signed consent or you want to receive your money by direct deposit to your bank account.
++ Begin your Age-Based In-Service Withdrawal Request by going to [My Account: Withdrawals](https://www.tsp.gov/tsp/login.html). You can begin and, in some cases, complete your request online. It depends on whether you are required to obtain your spouse's signed consent waiver.l
 
 If you have a pending application for an in-service withdrawal or for a TSP loan at the time we receive your request, it will not be accepted. We allow only one request for an in-service withdrawal or loan at a time.
 
 
-
-
 ## Receiving your in-service withdrawal
 
-We will mail your in-service withdrawal check to the address we have on record, unless you request to have your withdrawal payment electronically deposited into your checking or savings account.
+We disburse withdrawals each business day. You can log into [My Account](https://www.tsp.gov/tsp/login.html) or [call the ThriftLine](https://tsp.gov/contactus) to find out the status of your withdrawal, including whether payment has been made. We will also notify you when the funds have been disbursed. Once your payment has been disbursed, you cannot return it. (See 5 C.F.R. § 1650.17(b).)
 
-+ If you're transferring any portion of your age-based withdrawal, we will mail the check to your IRA or eligible employer plan.
+At your request, we will deposit your withdrawal directly into your checking or savings account via electronic funds transfer (EFT). Otherwise, we will mail your in-service withdrawal check to the address in your TSP account record. If you are transferring your age-based withdrawal to your IRA or eligible employer plan, we'll mail the check to your IRA or plan.
 
-+ If you complete your request online, we cannot deposit your money electronically or transfer any part of your withdrawal to an eligible employer plan.
+You should expect that it will take up to 10 days from the time we receive your properly completed request until the time we send your check.
 
-It will take several weeks from the time we receive your properly completed form until the time we send your check.
 
-To find out the status of your in-service withdrawal, visit [My Account](https://www.tsp.gov/tsp/login.html) or call the ThriftLine at 1-877-968-3778. We will also notify you in writing when your request has been processed.
