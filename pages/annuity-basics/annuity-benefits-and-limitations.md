@@ -16,10 +16,7 @@ Purchasing an annuity means that you pay now to receive monthly payments that la
 
 <div class="usa-alert usa-alert-info">
 <div class="usa-alert-body" markdown="1">
-The TSP annuity is not the same as the annuity you receive as part of your CSRS or FERS retirement package or military retired pay. Nor is it the same as the monthly payment option you may chose as one of the other full withdrawal options.
-{: .usa-alert-text}
-</div>
-</div>
+The TSP annuity is not the same as a TSP installment payment. A TSP installment payment is one of the other withdrawal options that you have as a separated or beneficiary participant.
 
 ## Single life annuity
 A single life annuity provides a monthly amount only to you for as long as you live. It stops paying after your death.
