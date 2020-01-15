@@ -23,7 +23,7 @@
 - form_number: TSP-1-C
   form_url: tsp-1-c.pdf
   form_name: Catch-Up Contribution Election
-  form_info: Start, stop, or change "catch-up" contributions to the TSP. Only for participants age 50 or older.
+  form_info: Start, stop, or change catch-up contributions to the TSP. Only for participants age 50 or older.
   form_date: 1/2015
   form_pages: 2
   form_audience:
@@ -34,7 +34,7 @@
 - form_number: TSP-U-1-C
   form_url: tsp-u-1-c.pdf
   form_name: Catch-Up Contribution Election
-  form_info: Start, stop, or change "catch-up" contributions to the TSP. Only for participants age 50 or older.
+  form_info: Start, stop, or change catch-up contributions to the TSP. Only for participants age 50 or older.
   form_date: 1/2018
   form_pages: 2
   form_audience:
@@ -117,6 +117,16 @@
   -  Both
   form_topics:
   -  Loans
+- form_number: TSP-21-R-CL
+  form_url: tsp-21-r-cl.pdf
+  form_name: Residential Loan Checklist
+  form_info: Complete this checklist and include it with your completed Form TSP-21-R, <i>Loan Agreement</i>, and residential loan documentation to ensure timely processing of your loan.
+  form_date: 8/2017
+  form_pages: 1
+  form_audience:
+  -  Both
+  form_topics:
+  -  Loans
 - form_number: TSP-25
   form_url: tsp-25.pdf
   form_name: Automatic Enrollment Refund Request
@@ -140,7 +150,7 @@
   -  Loans
 - form_number: TSP-41
   form_url: tsp-41.pdf
-  form_name: Notification to TSP of Nonpay Status
+  form_name: Notification to TSP of Nonpay Status (Agency use)
   form_info: Agency representatives can notify the TSP when a participant who has a TSP loan is placed in an approved nonpay status, or when a participant who entered nonpay status returns to pay status.
   form_date: Local Reproduction
   form_pages: 2
@@ -178,38 +188,6 @@
   -  Both
   form_topics:
   -  General information
-- form_number: TSP-70
-  form_url: tsp-70.pdf
-  form_name: Request for Full Withdrawal
-  form_info: Request an immediate withdrawal of your entire vested account balance, to be paid after your agency confirms your separation from Federal service.
-  form_date: 1/2018
-  form_pages: 16
-  form_audience:
-  -  Both
-  form_topics:
-  -  Withdrawals
-  -  Transfers and rollovers
-- form_number: TSP-70-A
-  form_url: tsp-70-a.pdf
-  form_name: Late Request for Full Withdrawal
-  form_info: For participants who are age 70½ or older, who failed to make a withdrawal by the mandatory deadline, and whose accounts have been abandoned and forfeited to the TSP.
-  form_date: 1/2018
-  form_pages: 16
-  form_audience:
-  -  Both
-  form_topics:
-  -  Withdrawals
-- form_number: TSP-73
-  form_url: tsp-73.pdf
-  form_name: Change in Monthly Payment Amount
-  form_info: Change the TSP monthly payment amount you are currently receiving.
-  form_date: 8/2013
-  form_pages: 2
-  form_audience:
-  -  Both
-  form_topics:
-  -  Withdrawals
-  -  Beneficiary participants
 - form_number: TSP-75
   form_url: tsp-75.pdf
   form_name: Age-Based In-Service Withdrawal Request
@@ -230,53 +208,6 @@
   -  Both
   form_topics:
   -  Withdrawals
-- form_number: TSP-77
-  form_url: tsp-77.pdf
-  form_name: Request for Partial Withdrawal When Separated
-  form_info: Request a one-time partial withdrawal of $1,000 or more from your TSP accounts. Applies to participants who are separated from Federal service.
-  form_date: 1/2018
-  form_pages: 12
-  form_audience:
-  -  Both
-  form_topics:
-  -  Withdrawals
-  -  Transfers and rollovers
-- form_number: TSP-78
-  form_url: tsp-78.pdf
-  form_name: Monthly Payments Maintenance
-  form_info: Make certain changes in the way your TSP monthly payments are handled.
-  form_date: 10/2012
-  form_pages: 8
-  form_audience:
-  -  Both
-  form_topics:
-  -  Transfers and rollovers
-  -  Withdrawals
-  -  Beneficiary participants
-- form_number: TSP-79
-  form_url: tsp-79.pdf
-  form_name: Change From Monthly Payments to Final Payment
-  form_info: Stop receiving TSP monthly payments and request a final single payment from your TSP account.
-  form_date: 10/2012
-  form_pages: 8
-  form_audience:
-  -  Both
-  form_topics:
-  -  Withdrawals
-  -  Transfers and rollovers
-  -  Beneficiary participants
-- form_number: TSP-90
-  form_url: tsp-90.pdf
-  form_name: Withdrawal Request for Beneficiary Participants
-  form_info: Request a partial or full withdrawal from your TSP beneficiary participant account. <strong>This form is only for beneficiary participants</strong>.
-  form_date: 11/2015
-  form_pages: 12
-  form_audience:
-  -  Beneficiary Participant
-  form_topics:
-  -  Beneficiary Participants
-  -  Withdrawals
-  -  Transfers and rollovers
 - form_number: TSP-92
   form_url: tsp-92.pdf
   form_name: TSP Retirement Benefits Court Order Division Package
@@ -307,6 +238,27 @@
   -  Both
   form_topics:
   -  Legal documents
+- form_number: TSP-95
+  form_url: https://www.tsp.gov/tsp/addlWithdrawals.do?subaction=wdMenu&_name=wd&_form=tsp95
+  form_name: Changes to Installment Payments
+  form_info: Log in to <a href="https://www.tsp.gov/tsp/addlWithdrawals.do?subaction=wdMenu&_name=wd">My Account</a> and access the online tool to request changes to your existing TSP installment payments.
+  form_date: Local reproduction
+  form_pages: 0
+  form_audience:
+  -  Both
+  form_topics:
+  -  Withdrawals
+- form_number: TSP-99
+  form_url: https://www.tsp.gov/tsp/addlWithdrawals.do?subaction=wdMenu&_name=wd&_form=tsp99
+  form_name: Withdrawal Request for Separated and Beneficiary Participants
+  form_info: Log in to <a href="https://www.tsp.gov/tsp/addlWithdrawals.do?subaction=wdMenu&_name=wd">My Account</a> and access the online tool to request a withdrawal if you are either separated from service or a beneficiary participant.
+  form_date: Local reproduction
+  form_pages: 0
+  form_audience:
+  -  Both
+  form_topics:
+  -  Withdrawals
+  -  Beneficiary participants
 - form_number: W-4P
   form_url: w-4p-irswithholding.html
   form_name: Withholding Certificate for Pension or Annuity Payments
@@ -317,4 +269,4 @@
   -  Both
   form_topics:
   -  Withdrawals
-  - Tax information
+  -  Tax information
