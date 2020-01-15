@@ -9,40 +9,18 @@ permalink: /annuity-basics/purchase-an-annuity/
 
 # Purchase an annuity
 
-## Step one
+The process for purchasing an annuity using money from your TSP account is the same as for starting TSP installment payments or making a single withdrawal. Log into [My Account](https://tsp.gov/login) and click “Withdrawals and Changes to Installment Payments.” Then use the online tool for withdrawals. See the TSP booklet [Withdrawing From Your TSP Account for Separated and Beneficiary Participants](https://www.tsp.gov/PDF/formspubs/tspbk02.pdf).
 
-Before completing the necessary forms to purchase your annuity, you should read the booklet, *[Withdrawing Your TSP Account After Leaving Federal Service](https://www.tsp.gov/PDF/formspubs/tspbk02.pdf).* **Once your request has been processed and the balance is removed from your TSP account, you cannot change or cancel the annuity.**
+**The minimum amount with which to purchase an annuity is $3,500.** This minimum applies separately to each balance, traditional and Roth. That comes into play if you have both traditional and Roth balances and you choose not to have the money for your annuity purchase come solely from one balance or the other. When that happens, we take the money from your two balances “pro rata,” meaning in the proportion they make up of your total account balance. This pro rata distribution, combined with the $3,500 minimum, can create some situations you need to be aware of.
 
-## Step two
+**If you choose to have money for an annuity purchase taken from both your traditional balance and your Roth balance (the default option) the following rules apply:**
 
-If you've determined that an annuity is appropriate for your needs, complete [Request for Full Withdrawal](#), _Form TSP-70_. Be sure to read the form and instructions carefully as they outline specific requirements you must meet in order to avoid any unnecessary delays in processing. There is a $3,500 minimum amount required to purchase an annuity. If you're using only a portion of your account for an annuity, the percentage of your account that you choose must equal $3,500 or more of your vested account balance.
+If you're using your **total account balance** to purchase an annuity and one of the balances is at least $3,500 but the other is not, we will purchase an annuity with the balance that is at least $3,500 and pay the other balance directly to you as a cash payment.
 
-<div class="usa-alert usa-alert-info">
-<div class="usa-alert-body" markdown="1">
-If you have both a traditional balance and a Roth balance in your account, the $3,500 minimum applies to each balance separately. If you meet the minimum for both, we will purchase two identical annuities - one with traditional money and one with Roth.
+If you're using a **portion of your account** to purchase an annuity and **either** of your balances holds less than $3,500, we will reject your request.
 
-{: .usa-alert-text}
-</div>
-</div>
+If the result of the pro rata calculation results in either the Roth portion or the traditional portion of the purchase being less than $3,500, we will proceed as if you do not have the minimum amount.
 
-## Step three
-After we receive all of the information and documentation necessary to purchase your annuity, it will generally take 10-12 business days to process your request and send your funds.
-Your annuity will be purchased from our our competitively chosen annuity provider.
-<div class="usa-alert usa-alert-info">
-<div class="usa-alert-body" markdown="1">
-Once the funds have been disbursed, you cannot cancel your annuity, change your annuity option, or change your joint annuitant.
+**Example:** You have $80,000 in your traditional balance and $20,000 in your Roth balance and you request an annuity purchase of $10,000. We would calculate that the withdrawal used to purchase the annuity must be $8,000 in traditional money and $2,000 in Roth money. Since that's less than $3,500, we would reject your request.
 
-{: .usa-alert-text}
-</div>
-</div>
-
-## Step four
-
-Once the money has left your TSP account, you should direct all communications concerning your annuity to the annuity provider. The provider will send you a package of information and an annuity contract. Your monthly annuity payments will begin approximately one month after the annuity is purchased.
-
-<div class="usa-alert usa-alert-info">
-<div class="usa-alert-body" markdown="1">
-Use our [Retirement Income Calculator](#) to compare the available options and features that might meet your needs.
-{: .usa-alert-text}
-</div>
-</div>
+After we receive all of the information and documentation necessary to purchase your annuity, we will generally process your annuity request and disburse the funds to the annuity provider within 10 business days. **Once youre request has been processed and the balance is removed from your TSP account, you cannot cancel your annuity, change your annuity option, or change your joint annuitant.**
