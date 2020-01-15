@@ -1,7 +1,7 @@
 ---
 layout: page
 
-title: Economic hardship
+title: Financial hardship
 
 styles:
 
@@ -9,10 +9,10 @@ sidenav: use-your-savings
 
 scripts:
 
-permalink: /in-service-withdrawal-basics/economic-hardship/
+permalink: /in-service-withdrawal-basics/financial-hardship/
 ---
 
-# Economic hardship
+# Financial hardship
 
 Having the option of taking an in-service withdrawal from your TSP account can be a lifesaver when you’re facing a financial hardship. But before you do, evaluate your options carefully and know the consequences.
 
