@@ -57,15 +57,6 @@ No earnings on amount of loan until funds are repaid
 - No earnings on amount withdrawn
 </td>
 </tr>
-<tr>
-<th scope="row" markdown="1">**Effect on Matching Contributions (FERS and BRS Only)**</th>
-<td markdown="1">
-None
-</td>
-<td>
-With financial hardship withdrawal, no matching contributions while employee contributions are suspended
-</td>
-</tr>
 </tbody>
 </table>
 
