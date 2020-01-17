@@ -12,18 +12,24 @@ document-ready:
   - updateExitPage();
 ---
 
-##  Exiting TSP website  
+<section class="exit">
 
-<div align="center">
-<img src="{{ site.baseurl }}/assets/img/icons/info.svg" alt="Information"> You are now exiting the TSP website.
-<br>
+<div class="usa-grid-full">
+  <div class="usa-width-one-third center" markdown="1">
+  <img src="{{ site.baseurl }}/assets/img/logos/FRTIBSeal-white.png" alt="TSP logo">
+  </div> <!-- END div.usa-width-one-half -->
 
-Thank you for visiting our website.
-<br>
+  <div class="usa-width-two-thirds" markdown="1">
 
-We hope your visit was informative and enjoyable.
-<br>
 
-If your browser does not automatically transfer you in a few seconds,
-<span id="offsiteLink"></span>.  <!-- DONALD:  this is where the dynamic redirect goes -->
-</div>
+## Leaving tsp.gov <i class="fal fa-sign-out"></i>
+
+Please be aware that the privacy protection provided on the tsp.gov domain (see [Website privacy policy](/privacy-policy/)) may not be available at the external link.  
+
+If your browser does not automatically transfer you in a few seconds, <span id="offsiteLink"></span>.  <!-- DONALD:  this is where the dynamic redirect goes -->
+
+  </div> <!-- END div.usa-width-one-half -->
+
+</div> <!-- END div.usa-grid-full -->
+
+</section>
