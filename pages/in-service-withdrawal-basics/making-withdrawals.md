@@ -18,7 +18,7 @@ permalink: /in-service-withdrawal-basics/making-an-in-service-withdrawal/
 
 + Begin your Financial Hardship In-Service Withdrawal Request by going to [My Account: Withdrawals](https://www.tsp.gov/tsp/login.html). You can begin and, in some cases, complete your request online. It depends on whether you are required to obtain your spouse's signed consent.
 
-+ Begin your Age-Based In-Service Withdrawal Request by going to [My Account: Withdrawals](https://www.tsp.gov/tsp/login.html). You can begin and, in some cases, complete your request online. It depends on whether you are required to obtain your spouse's signed consent waiver.l
++ Begin your Age-Based In-Service Withdrawal Request by going to [My Account: Withdrawals](https://www.tsp.gov/tsp/login.html). You can begin and, in some cases, complete your request online. It depends on whether you are required to obtain your spouse's signed consent waiver.
 
 If you have a pending application for an in-service withdrawal or for a TSP loan at the time we receive your request, it will not be accepted. We allow only one request for an in-service withdrawal or loan at a time.
 
