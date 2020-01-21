@@ -1,15 +1,15 @@
 ---
 layout: page
-title: Changing your withdrawal
+title: Changing your withdrawal request
 styles:
 sidenav: use-your-savings
 scripts:
-permalink: /living-in-retirement/changing-your-withdrawal/
+permalink: /living-in-retirement/changing-your-withdrawal-request/
 ---
 
 # Changing your withdrawal request
 
-Once your withdrawal request is processed, you cannot return your withdrawal or change your withdrawal options. However, if you have chosen to withdraw money from your account through TSP installment payments, you can make the following changes at any time:
+Once your withdrawal request is processed, you cannot return your withdrawal or change your withdrawal options. However, if you've chosen to withdraw money from your account through TSP installment payments, you can make the following changes at any time:
 + stop payments
 + change the source of payments (traditional, Roth, or both)
 + start, stop, or change direct deposit of your payments
