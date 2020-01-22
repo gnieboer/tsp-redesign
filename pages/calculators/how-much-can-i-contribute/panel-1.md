@@ -39,8 +39,7 @@ uniformed services covered by the Blended Retirement System (BRS). If you reach 
 before the end of the year, your contributions and Agency or Service Matching Contributions
 must stop for the remainder of the year. As a result, you will lose some of your Agency or
 Service Matching Contributions.
-For more detailed information, read the Fact Sheet
-<a class="pdfLink" title="File size: 278 KB (opens in a new window)" href="/PDF/formspubs/tspfs07.pdf">Annual Limit on Elective Deferrals</a>.
+For more detailed information, read the Fact Sheet [Annual Limit on Elective Deferrals](/forms/tspfs07.pdf).
 <br><br>
 The dollar amount determined by using this calculator distributes your employee/member
 contributions over the entire year (or remainder of the year), and thus allows you to

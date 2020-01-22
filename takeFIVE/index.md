@@ -176,7 +176,7 @@ document.location = "https://youtu.be/V9fy7oE5Af8";
     			<p class="grey">Fred is 30. If he begins contributing 5% now, he could have about <span class="bold">$365,000*</span> by age 65.
 
 If he waits until age 40 to save the same amount, he’d have about <span class="bold">$180,000_</span> by age 65.
-Wait until his late 40s, and he’d have around <span class="bold">$90,000_</span> by age 65.<br><span class="asterisk">\*Includes matching contributions and assumes a 6% rate of return compounded monthly.</span>
+Wait until his late 40s, and he’d have around <span class="bold">$90,000_</span> by age 65.<br><span class="asterisk">*Includes matching contributions and assumes a 6% rate of return compounded monthly.</span>
 
 </p>
 			</article>
@@ -324,11 +324,11 @@ Wait until his late 40s, and he’d have around <span class="bold">$90,000_</spa
                 	<div id="payrollPopUp">
                     	<p><span>Agency payroll systems</span>
 
-                                                                        <br><a href="http://www.employeeexpress.gov" target="_blank">Employee Express</a><br>
-                                                                        <a href="https://mypay.dfas.mil/mypay.aspx" target="_blank">myPay</a><br>
-                                                                        <a href="https://liteblue.usps.gov/wps/portal/!ut/p/c4/04_SB8K8xLLM9MSSzPy8xBz9CP0os3hnd0cPE3MfAwN_ozADAyM_0-BAg9BgYwNfQ_2CbEdFAHzIONg!/" target="_blank">LiteBlue</a><br>
+                                                                        <br><a href="{{ site.baseurl }}/exit/?idx=7" target="_blank">Employee Express</a><br>
+                                                                        <a href="{{ site.baseurl }}/exit/?idx=6" target="_blank">myPay</a><br>
+                                                                        <a href="{{ site.baseurl }}/exit/?idx=8" target="_blank">LiteBlue</a><br>
                                                                         EBIS<br>
-                                                                        NFC EPP
+                                                                        <a href="{{ site.baseurl }}/exit/?idx=9" target="_blank">NFC EPP</a>
 
 </p></div></span>
                 <!-- END Extra Info -->

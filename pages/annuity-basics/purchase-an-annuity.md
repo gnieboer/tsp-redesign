@@ -9,7 +9,7 @@ permalink: /annuity-basics/purchase-an-annuity/
 
 # Purchase an annuity
 
-The process for purchasing an annuity using money from your TSP account is the same as for starting TSP installment payments or making a single withdrawal. Log into [My Account](https://tsp.gov/login) and click “Withdrawals and Changes to Installment Payments.” Then use the online tool for withdrawals. See the TSP booklet [Withdrawing From Your TSP Account for Separated and Beneficiary Participants](https://www.tsp.gov/PDF/formspubs/tspbk02.pdf).
+The process for purchasing an annuity using money from your TSP account is the same as for starting TSP installment payments or making a single withdrawal. Log into [My Account](https://tsp.gov/login) and click “Withdrawals and Changes to Installment Payments.” Then use the online tool for withdrawals. See the TSP booklet [Withdrawing From Your TSP Account for Separated and Beneficiary Participants](/publications/tspbk02.pdf).
 
 **The minimum amount with which to purchase an annuity is $3,500.** This minimum applies separately to each balance, traditional and Roth. That comes into play if you have both traditional and Roth balances and you choose not to have the money for your annuity purchase come solely from one balance or the other. When that happens, we take the money from your two balances “pro rata,” meaning in the proportion they make up of your total account balance. This pro rata distribution, combined with the $3,500 minimum, can create some situations you need to be aware of.
 

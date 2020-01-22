@@ -18,15 +18,15 @@ Statistics show that people are living longer, healthier lives. It's possible th
 
 ## Staying with the TSP
 
-If your vested account balance is $200 or more when you leave federal service, your TSP account stays right where it is until you need it. You can keep more of what you save thanks to our low costs. Plus, you can change your investment mix and transfer eligible money into your account. 
+If your vested account balance is $200 or more when you leave federal service, your TSP account stays right where it is until you need it. You can keep more of what you save thanks to our low costs. Plus, you can change your investment mix and transfer eligible money into your account.
 
 Each individual’s situation is different and should be considered when making this decision. Our goal is to help provide the tools you need to make the best choice for yourself. These eye-opening videos may make you think twice about moving your money to another retirement plan.
 
-+ [Once You’re Gone, You’re Gone](https://youtu.be/xrH0l-HA58o) 
-+ [Don’t Move](https://youtu.be/Tw-Djekceeo)
-+ [Combine and Save: Transfer into the TSP](https://youtu.be/tfxC3moUEQ0)
++ [Once You’re Gone, You’re Gone]({{ site.baseurl }}/exit/?idx=153)
++ [Don’t Move]({{ site.baseurl }}/exit/?idx=154)
++ [Combine and Save: Transfer into the TSP]({{ site.baseurl }}/exit/?idx=155)
 
-And be sure to check out our other videos at [youtube.com/tsp4gov](youtube.com/tsp4gov) to learn more. 
+And be sure to check out our other videos at [youtube.com/tsp4gov]({{ site.baseurl }}/exit/?idx=152) to learn more.
 
 
 
