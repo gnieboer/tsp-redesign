@@ -36,7 +36,7 @@ The amount of the monthly payment to the survivor - whether the survivor is you 
 
 If you name a joint annuitant other than your spouse who is more than 10 years younger than you, you must choose a joint life annuity with the 50% survivor benefit in most cases.
 
-For more information about joint annuitants, refer to the Life Annuities section of the booklet [Withdrawing From Your TSP Account for Separated and Beneficiary Participants](https://www.tsp.gov/PDF/formspubs/tspbk02.pdf).
+For more information about joint annuitants, refer to the Life Annuities section of the booklet [Withdrawing From Your TSP Account for Separated and Beneficiary Participants](/publications/tspbk02.pdf).
 
 ## Annuity payment options
 Once you’ve chosen either a single life or a joint life annuity, you must decide whether you want to receive "level" or "increasing" payments.
@@ -81,7 +81,7 @@ You can add the ten-year certain feature if you purchase a single life annuity w
 
 ### Spouses' rights
 If you’re married (even if you’re separated from your spouse), spouses' rights apply to annuity purchases.
-If you’re a married FERS or uniformed services participant with a total account balance of more than $3,500 and you are making a full withdrawal of your account, your spouse is entitled by law to a joint life annuity with a 50% survivor benefit, level payments, and no cash refund. If you do not use your entire account balance to purchase this particular type of annuity, your spouse must sign the statement on your withdrawal form that waives his or her right to it. 
+If you’re a married FERS or uniformed services participant with a total account balance of more than $3,500 and you are making a full withdrawal of your account, your spouse is entitled by law to a joint life annuity with a 50% survivor benefit, level payments, and no cash refund. If you do not use your entire account balance to purchase this particular type of annuity, your spouse must sign the statement on your withdrawal form that waives his or her right to it.
 
 ### Rehired employees
 If you're rehired by the federal government after leaving federal service, you will continue to get any TSP annuity payments that you may already be receiving.

@@ -48,11 +48,11 @@ In addition to being covered by an eligible retirement system, you must also be:
     </button>
 <div id="a1" class="usa-accordion-content" markdown="1">
 
-If you’re a FERS employee hired after July 31, 2010, your agency has automatically enrolled you in the TSP and 3% of your basic pay is deducted each pay period and deposited in the traditional balance of your TSP account. You also receive Agency Automatic (1%) Contributions that you're entitled to keep after you meet the [vesting] requirement. 
+If you’re a FERS employee hired after July 31, 2010, your agency has automatically enrolled you in the TSP and 3% of your basic pay is deducted each pay period and deposited in the traditional balance of your TSP account. You also receive Agency Automatic (1%) Contributions that you're entitled to keep after you meet the [vesting] requirement.
 
 If you’re a FERS employee hired before August 1, 2010, you already have a TSP account with accruing Agency Automatic (1%) Contributions. In addition, you can choose to make contributions to your account from your pay and receive Agency Matching Contributions.
 
-To make a contribution election, use your agency’s electronic payroll system (e.g., Employee Express) or complete and submit [Election Form]({{ site.baseurl }}/PDF/forms/tsp-1.pdf), *Form TSP-1*.
+To make a contribution election, use your agency’s electronic payroll system (e.g., [Employee Express]({{ site.baseurl }}/exit/?idx=7)) or complete and submit [Election Form]({{ site.baseurl }}/PDF/forms/tsp-1.pdf), *Form TSP-1*.
 
 </div>
   </li><li>
@@ -63,7 +63,7 @@ To make a contribution election, use your agency’s electronic payroll system (
     </button>
 <div id="a2" class="usa-accordion-content" markdown="1">
 
-If you’re a CSRS employee, your account is established by your agency after you make a contribution election using your agency's electronic payroll system (e.g., Employee Express) or complete and submit [Election Form]({{ site.baseurl }}/PDF/forms/tsp-1.pdf), *Form TSP-1*.
+If you’re a CSRS employee, your account is established by your agency after you make a contribution election using your agency's electronic payroll system (e.g., [Employee Express]({{ site.baseurl }}/exit/?idx=7)) or complete and submit [Election Form]({{ site.baseurl }}/PDF/forms/tsp-1.pdf), *Form TSP-1*.
 
 </div>
   </li><li>
@@ -77,7 +77,7 @@ If you’re a CSRS employee, your account is established by your agency after yo
 Your automatic enrollment in the TSP begins after 60 days of service. At that time your service begins deducting 3% of your basic pay each pay period from your paycheck and deposits it into the traditional balance of your TSP account.
 
 If you served fewer than 12 years as of December 31, 2017, and you chose to join BRS during calendar year 2018, you have a TSP account with accruing Agency/Service Automatic (1%) Contributions. **To start contributing your own money, you have to make a contribution election through your service.** Follow the instructions in [Start, change, or stop contributions]({{ site.baseurl }}/making-contributions/start-change-stop-contributions/).
- 
+
 
 </div>
   </li><li>
@@ -88,7 +88,7 @@ If you served fewer than 12 years as of December 31, 2017, and you chose to join
     </button>
 <div id="a4" class="usa-accordion-content" markdown="1">
 
-If you’re a member of the uniformed services who is not covered by the Blended Retirement System (BRS), your TSP account is established by your service after you make a contribution election using your service's electronic payroll system (e.g., myPay), or complete and submit [Election Form]({{ site.baseurl }}/PDF/forms/tsp-u-1.pdf), *Form TSP-U-1*.
+If you’re a member of the uniformed services who is not covered by the Blended Retirement System (BRS), your TSP account is established by your service after you make a contribution election using your service's electronic payroll system (e.g., [Employee Express]({{ site.baseurl }}/exit/?idx=7){:rel="nofollow"}, EBIS, [LiteBlue]({{ site.baseurl }}/exit/?idx=8){:rel="nofollow"}, [myPay]({{ site.baseurl }}/exit/?idx=6){:rel="nofollow"}, or [NFC EPP]({{ site.baseurl }}/exit/?idx=9){:rel="nofollow"}), or complete and submit [Election Form]({{ site.baseurl }}/PDF/forms/tsp-u-1.pdf), *Form TSP-U-1*.
 
 </div>
   </li><li>

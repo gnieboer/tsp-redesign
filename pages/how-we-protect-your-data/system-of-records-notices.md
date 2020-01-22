@@ -1,4 +1,4 @@
----
+{{ site.baseurl }}/exit/?idx=56---
 layout: page
 title: System of Records Notices (SORNs)
 
@@ -34,7 +34,7 @@ FRTIB is required to publish a SORN anytime it creates, substantially modifies, 
   None  
 
   **Federal Register**
-  [79 Fed. Reg. 21246, 21247 (Apr. 15, 2014)](https://www.federalregister.gov/documents/2014/04/15/2014-08398/privacy-act-of-1974-systems-of-records){:target="\_blank"}
+  [79 Fed. Reg. 21246, 21247 (Apr. 15, 2014)]({{ site.baseurl }}/exit/?idx=52)
 
   **System location**
   These records are located at the office of the entity engaged by the Agency to perform record keeping services for the TSP. The current address for this record keeper is listed at http://www.tsp.gov.
@@ -62,13 +62,13 @@ FRTIB is required to publish a SORN anytime it creates, substantially modifies, 
   3. Court orders; or
   4. Spouses, former spouses, other family members, beneficiaries, legal guardians, and personal representatives (executors, administrators).
   {: .alpha}
-
+{{ site.baseurl }}/exit/?idx=58
 
   **Routine uses of records maintained in the system, including categories of users and purposes of such uses**
   These records and information in these records may be used:
-
-  1. To disclose financial data and addresses to Federal, state, and local governmental tax enforcement agencies so that they may enforce applicable tax laws.
-  2. To disclose to the designated annuity vendor in order to provide TSP participants who have left Federal service with an annuity.
+{{ site.baseurl }}/exit/?idx=62
+  1. To disclos{{ site.baseurl }}/exit/?idx=63 enforce applicable tax laws.
+  2. To disclose{{ site.baseurl }}/exit/?idx=64ity.
   3. To disclose to sponsors of eligible retirement plans for purposes of transferring the funds in the participant's account to an Individual Retirement Arrangement or into another eligible retirement plan.
   4. To disclose to current and former spouses and their attorneys in order to protect spousal rights under FERSA and to receive benefits to which they may be entitled.
   5. When a participant to whom a record pertains dies, to disclose the following types of information to any potential beneficiary: Information in the participant's record which could have been properly disclosed to the participant when living (unless doing so would constitute a clearly unwarranted invasion of privacy) and the name and relationship of any other person who claims the benefits or who is entitled to share the benefits payable.
@@ -162,7 +162,7 @@ FRTIB is required to publish a SORN anytime it creates, substantially modifies, 
     Subsections (c)(3); (d); (e)(1); (e)(4)(G), (H), (I); and (f) of 5 U.S.C. 552a
 
   **Federal Register**
-    [80 Fed. Reg. 43428, 43432 (July 22, 2015)](https://www.federalregister.gov/documents/2015/07/22/2015-17924/privacy-act-of-1974-systems-of-records){:target="\_blank"}
+    [80 Fed. Reg. 43428, 43432 (July 22, 2015)]({{ site.baseurl }}/exit/?idx=53)
 
   **SECURITY CLASSIFICATION:** Most personnel identity verification records are not classified. However, in some cases, records of certain individuals, or portions of some records may be classified in the interest of national security.
 
@@ -277,7 +277,7 @@ FRTIB is required to publish a SORN anytime it creates, substantially modifies, 
   None
 
   **Federal Register**
-  [80 Fed. Reg. 43428, 43433 (July 22, 2015)](https://www.federalregister.gov/documents/2015/07/22/2015-17924/privacy-act-of-1974-systems-of-records){:target="\_blank"}
+  [80 Fed. Reg. 43428, 43433 (July 22, 2015)]({{ site.baseurl }}/exit/?idx=53)
 
   **SECURITY CLASSIFICATION:** None.
 
@@ -385,7 +385,7 @@ FRTIB is required to publish a SORN anytime it creates, substantially modifies, 
   None
 
   **Federal Register**
-  [81 Fed. Reg. 7106, 7109 (Feb. 10, 2016)](https://www.federalregister.gov/documents/2016/02/10/2016-02673/privacy-act-of-1974-systems-of-records){:target="\_blank"}
+  [81 Fed. Reg. 7106, 7109 (Feb. 10, 2016)]({{ site.baseurl }}/exit/?idx=144)
 
   **SECURITY CLASSIFICATION:** None.
 
@@ -481,7 +481,7 @@ FRTIB is required to publish a SORN anytime it creates, substantially modifies, 
   None
 
   **Federal Register**
-  [80 Fed. Reg. 43428, 43434 (July 22, 2015)](https://www.federalregister.gov/documents/2015/07/22/2015-17924/privacy-act-of-1974-systems-of-records){:target="\_blank"}
+  [80 Fed. Reg. 43428, 43434 (July 22, 2015)]({{ site.baseurl }}/exit/?idx=53)
 
   **SECURITY CLASSIFICATION:** None.
 
@@ -590,7 +590,7 @@ FRTIB is required to publish a SORN anytime it creates, substantially modifies, 
   None
 
   **Federal Register**
-  [81 Fed. Reg. 7106, 7110 (Feb. 10, 2016)](https://www.federalregister.gov/documents/2016/02/10/2016-02673/privacy-act-of-1974-systems-of-records){:target="\_blank"}
+  [81 Fed. Reg. 7106, 7110 (Feb. 10, 2016)]({{ site.baseurl }}/exit/?idx=144)
 
   **SECURITY CLASSIFICATION:** None.
 
@@ -688,7 +688,7 @@ FRTIB is required to publish a SORN anytime it creates, substantially modifies, 
 
   **ADDRESSES:**
   You may submit written comments to FRTIB by any one of the following methods:
-  - _Federal [eRulemaking Portal](https://www.regulations.gov){:target="\_blank"}._ Follow the website instructions for submitting comments.
+  - _Federal [eRulemaking Portal]({{ site.baseurl }}/exit/?idx=145)._ Follow the website instructions for submitting comments.
   - _Fax_: (202) 942-1676.
   - _Mail or Hand Delivery:_ Office of General Counsel, Federal Retirement Thrift Investment Board, 77 K Street NE, Suite 1000, Washington, DC 20002.
 
@@ -781,7 +781,7 @@ FRTIB is required to publish a SORN anytime it creates, substantially modifies, 
   Subsections (c)(3); (d); (e)(1); (e)(4)(G), (H), (I); and (f) of 5 U.S.C. 552a
 
   **Federal Register**
-  [80 Fed. Reg. 43428, 43437 (July 22, 2015)](https://www.federalregister.gov/documents/2015/07/22/2015-17924/privacy-act-of-1974-systems-of-records){:target="\_blank"}
+  [80 Fed. Reg. 43428, 43437 (July 22, 2015)]({{ site.baseurl }}/exit/?idx=53)
 
   **SECURITY CLASSIFICATION:** None.
 
@@ -873,7 +873,7 @@ FRTIB is required to publish a SORN anytime it creates, substantially modifies, 
   Subsections (c)(3); (d); (e)(1); (e)(4)(G), (H), (I); and (f) of 5 U.S.C. 552a
 
   **Federal Register**
-  [80 Fed. Reg. 43428, 43438 (July 22, 2015)](https://www.federalregister.gov/documents/2015/07/22/2015-17924/privacy-act-of-1974-systems-of-records){:target="\_blank"}
+  [80 Fed. Reg. 43428, 43438 (July 22, 2015)]({{ site.baseurl }}/exit/?idx=53)
 
   **SECURITY CLASSIFICATION:** None.
 
@@ -963,7 +963,7 @@ FRTIB is required to publish a SORN anytime it creates, substantially modifies, 
   None
 
   **Federal Register**
-  [81 Fed. Reg. 7106, 7112 (Feb. 10, 2016)](https://www.federalregister.gov/documents/2016/02/10/2016-02673/privacy-act-of-1974-systems-of-records){:target="\_blank"}
+  [81 Fed. Reg. 7106, 7112 (Feb. 10, 2016)]({{ site.baseurl }}/exit/?idx=144)
 
   **SECURITY CLASSIFICATION:** None.
 
@@ -1049,7 +1049,7 @@ FRTIB is required to publish a SORN anytime it creates, substantially modifies, 
   None
 
   **Federal Register**
-  [81 Fed. Reg. 7106, 7113 (Feb. 10, 2016)](https://www.federalregister.gov/documents/2016/02/10/2016-02673/privacy-act-of-1974-systems-of-records){:target="\_blank"}
+  [81 Fed. Reg. 7106, 7113 (Feb. 10, 2016)]({{ site.baseurl }}/exit/?idx=144)
 
   **SECURITY CLASSIFICATION:** None.
 
@@ -1142,7 +1142,7 @@ FRTIB is required to publish a SORN anytime it creates, substantially modifies, 
   None
 
   **Federal Register**
-  [81 Fed. Reg. 7106, 7114 (Feb. 10, 2016)](https://www.federalregister.gov/documents/2016/02/10/2016-02673/privacy-act-of-1974-systems-of-records){:target="\_blank"}
+  [81 Fed. Reg. 7106, 7114 (Feb. 10, 2016)]({{ site.baseurl }}/exit/?idx=144)
 
   **SECURITY CLASSIFICATION:** None.
 
@@ -1235,7 +1235,7 @@ FRTIB is required to publish a SORN anytime it creates, substantially modifies, 
   None
 
   **Federal Register**
-  [81 Fed. Reg. 7106, 7115 (Feb. 10, 2016)](https://www.federalregister.gov/documents/2016/02/10/2016-02673/privacy-act-of-1974-systems-of-records){:target="\_blank"}
+  [81 Fed. Reg. 7106, 7115 (Feb. 10, 2016)]({{ site.baseurl }}/exit/?idx=144)
 
   **SECURITY CLASSIFICATION:** None.
 
@@ -1318,13 +1318,13 @@ FRTIB is required to publish a SORN anytime it creates, substantially modifies, 
   </button>
   <div id="a20" class="usa-accordion-content" markdown="1">
 
-  **SUMMARY**: Pursuant to the Privacy Act of 1974, [5 U.S.C. 552](https://api.fdsys.gov/link?collection=uscode&title=5&year=mostrecent&section=552&type=usc&link-type=html){:target="\_blank"}a, the Federal Retirement Thrift Investment Board (FRTIB) is proposing to establish a new system of records. Records contained in this system will be used to educate participants about various aspects of the TSP.
+  **SUMMARY**: Pursuant to the Privacy Act of 1974, [5 U.S.C. 552]({{ site.baseurl }}/exit/?idx=156) a, the Federal Retirement Thrift Investment Board (FRTIB) is proposing to establish a new system of records. Records contained in this system will be used to educate participants about various aspects of the TSP.
 
   **DATES**: This system will become effective upon its publication in today’s **Federal Register**, with the exception of the routine uses, which are effective January 10, 2019. FRTIB invites written comments on the routine uses or other aspects of this system of records. Submit any comments by January 10, 2019.
 
   **ADDRESSES**: You may submit written comments to FRTIB by any one of the following methods:
 
-  * _Federal eRulemaking Portal_: [https://www.regulations.gov](https://www.regulations.gov){:target="\_blank"}. Follow the website instructions for submitting comments.
+  * _Federal eRulemaking Portal_: [https://www.regulations.gov]({{ site.baseurl }}/exit/?idx=145). Follow the website instructions for submitting comments.
   * _Fax_: (202) 942-1676.
   * _Mail or Hand Delivery_: Office of General Counsel, Federal Retirement Thrift Investment Board, 77 K Street NE, Suite 1000, Washington, DC 20002.
 
@@ -1345,7 +1345,7 @@ FRTIB is required to publish a SORN anytime it creates, substantially modifies, 
 
   **SYSTEM MANAGER**: Director, Office of Communications and Education, Federal Retirement Thrift Investment Board, 77 K Street NE, Suite 1000, Washington, DC 20002, or by phone by calling (202) 942-1600.
 
-  **AUTHORITY FOR MAINTENANCE OF THE SYSTEM**: [5 U.S.C. 8474](https://api.fdsys.gov/link?collection=uscode&title=5&year=mostrecent&section=8474&type=usc&link-type=html){:target="\_blank"}.
+  **AUTHORITY FOR MAINTENANCE OF THE SYSTEM**: [5 U.S.C. 8474]({{ site.baseurl }}/exit/?idx=157).
 
   **PURPOSE OF THE SYSTEM**: The purpose of the system is to educate TSP participants and other individuals about the TSP; to track and analyze aggregated activity to determine the effectiveness of targeted outreach campaigns; and to solicit feedback regarding FRTIB education and outreach efforts.
 
@@ -1382,7 +1382,7 @@ FRTIB is required to publish a SORN anytime it creates, substantially modifies, 
 
   **ADMINISTRATIVE, TECHNICAL, AND PHYSICAL SAFEGUARDS**: FRTIB has adopted appropriate administrative, technical, and physical controls in accordance with FRTIB's security program to protect the security, confidentiality, availability, and integrity of the information, and to ensure that records are not disclosed to or accessed by unauthorized individuals.
 
-  **RECORD ACCESS PROCEDURES:** Individuals seeking to access records within this system must submit a request pursuant to [5 CFR part 1630](https://www.federalregister.gov/select-citation/2018/12/11/5-CFR-1630){:target="\_blank"}. Attorneys or other persons acting on behalf of an individual must provide written authorization from that individual, such as a Power of Attorney, in order for the representative to act on their behalf.
+  **RECORD ACCESS PROCEDURES:** Individuals seeking to access records within this system must submit a request pursuant to [5 CFR part 1630]({{ site.baseurl }}/exit/?idx=158). Attorneys or other persons acting on behalf of an individual must provide written authorization from that individual, such as a Power of Attorney, in order for the representative to act on their behalf.
 
   **CONTESTING RECORD PROCEDURES:** See Record Access Procedures above.
 
@@ -1412,7 +1412,7 @@ FRTIB is required to publish a SORN anytime it creates, substantially modifies, 
 
   **Federal Register**
 
-  [81 Fed. Reg. 81116, 81135 (Nov. 17, 2016)](https://www.federalregister.gov/documents/2016/11/17/2016-27702/privacy-act-of-1974-publication-of-notices-of-systems-of-records-and-proposed-new-systems-of-records){:target="\_blank"} (replaced FRTIB-3)
+  [81 Fed. Reg. 81116, 81135 (Nov. 17, 2016)]({{ site.baseurl }}/exit/?idx=56) (replaced FRTIB-3)
   </div>
 </li>
 <!-- OPM/GOVT-1 -->
@@ -1429,15 +1429,15 @@ FRTIB is required to publish a SORN anytime it creates, substantially modifies, 
 
   **Federal Register**
 
-  [77 Fed. Reg. 73694 (Dec. 11, 2012)](https://www.federalregister.gov/documents/2012/12/11/2012-29777/privacy-act-of-1974-update-existing-system-of-records){:target="\_blank"}
+  [77 Fed. Reg. 73694 (Dec. 11, 2012)]({{ site.baseurl }}/exit/?idx=57)
 
-  [76 Fed. Reg. 32997 (June 7, 2011)](https://www.federalregister.gov/documents/2011/06/07/2011-13971/privacy-act-of-1974-update-existing-system-of-records){:target="\_blank"}
+  [76 Fed. Reg. 32997 (June 7, 2011)]({{ site.baseurl }}/exit/?idx=58)
 
-  [71 Fed. Reg. 35341 (June 19, 2006)](https://www.federalregister.gov/documents/2006/06/19/06-5459/privacy-act-of-1974-publication-of-notice-of-systems-of-records-a-proposed-new-routine-use-new){:target="\_blank"}
+  [71 Fed. Reg. 35341 (June 19, 2006)]({{ site.baseurl }}/exit/?idx=59)
 
-  [65 Fed. Reg. 24731 (April 27, 2000)](https://www.federalregister.gov/documents/2000/04/27/00-10088/privacy-act-of-1974-publication-of-notice-of-systems-of-records-and-proposed-new-routine-uses){:target="\_blank"}
+  [65 Fed. Reg. 24731 (April 27, 2000)]({{ site.baseurl }}/exit/?idx=60)
 
-  [61 Fed. Reg. 36919 (July 15, 1996)](https://www.federalregister.gov/documents/1996/07/15/93-17425/privacy-act-of-1974-publication-of-notices-of-systems-of-records-and-a-proposed-new-routine-use){:target="\_blank"}
+  [61 Fed. Reg. 36919 (July 15, 1996)]({{ site.baseurl }}/exit/?idx=61)
   (replaced FRTIB-4)
   </div>
 </li>
@@ -1455,11 +1455,11 @@ FRTIB is required to publish a SORN anytime it creates, substantially modifies, 
 
   **Federal Register**
 
-  [71 Fed. Reg. 35341 (June 19, 2006)](https://www.federalregister.gov/documents/2006/06/19/06-5459/privacy-act-of-1974-publication-of-notice-of-systems-of-records-a-proposed-new-routine-use-new){:target="\_blank"}
+  [71 Fed. Reg. 35341 (June 19, 2006)]({{ site.baseurl }}/exit/?idx=59)
 
-  [65 Fed. Reg. 24731 (April 27, 2000)](https://www.federalregister.gov/documents/2000/04/27/00-10088/privacy-act-of-1974-publication-of-notice-of-systems-of-records-and-proposed-new-routine-uses){:target="\_blank"}
+  [65 Fed. Reg. 24731 (April 27, 2000)]({{ site.baseurl }}/exit/?idx=60)
 
-  [61 Fed. Reg. 36919 (July 15, 1996)](https://www.federalregister.gov/documents/1996/07/15/93-17425/privacy-act-of-1974-publication-of-notices-of-systems-of-records-and-a-proposed-new-routine-use){:target="\_blank"}
+  [61 Fed. Reg. 36919 (July 15, 1996)]({{ site.baseurl }}/exit/?idx=61)
   (replaced FRTIB-4)
   </div>
 </li>
@@ -1476,11 +1476,11 @@ FRTIB is required to publish a SORN anytime it creates, substantially modifies, 
 
   **Federal Register**
 
-  [71 Fed. Reg. 35341 (June 19, 2006)](https://www.federalregister.gov/documents/2006/06/19/06-5459/privacy-act-of-1974-publication-of-notice-of-systems-of-records-a-proposed-new-routine-use-new){:target="\_blank"}
+  [71 Fed. Reg. 35341 (June 19, 2006)]({{ site.baseurl }}/exit/?idx=59)
 
-  [65 Fed. Reg. 24731 (April 27, 2000)](https://www.federalregister.gov/documents/2000/04/27/00-10088/privacy-act-of-1974-publication-of-notice-of-systems-of-records-and-proposed-new-routine-uses){:target="\_blank"}
+  [65 Fed. Reg. 24731 (April 27, 2000)]({{ site.baseurl }}/exit/?idx=60)
 
-  [61 Fed. Reg. 36919 (July 15, 1996)](https://www.federalregister.gov/documents/1996/07/15/93-17425/privacy-act-of-1974-publication-of-notices-of-systems-of-records-and-a-proposed-new-routine-use){:target="\_blank"}
+  [61 Fed. Reg. 36919 (July 15, 1996)]({{ site.baseurl }}/exit/?idx=61)
   (replaced FRTIB-4)
   </div>
 </li>
@@ -1498,11 +1498,11 @@ FRTIB is required to publish a SORN anytime it creates, substantially modifies, 
 
   **Federal Register**
 
-  [78 Fed. Reg. 73863 (Dec. 9, 2013)](https://www.federalregister.gov/documents/2013/12/09/2013-29342/privacy-act-of-1974-amendment-to-system-of-records){:target="\_blank"}
+  [78 Fed. Reg. 73863 (Dec. 9, 2013)]({{ site.baseurl }}/exit/?idx=62)
 
-  [76 Fed. Reg. 24489 (May 2, 2011)](https://www.federalregister.gov/documents/2011/05/02/2011-10628/privacy-act-of-1974-amendment-to-system-of-records){:target="\_blank"}, as modified at [77 Fed. Reg. 45353 (July 31, 2012)](https://www.federalregister.gov/documents/2012/07/31/2012-18658/privacy-act-of-1974-amendment-to-system-of-records){:target="\_blank"}
+  [76 Fed. Reg. 24489 (May 2, 2011)]({{ site.baseurl }}/exit/?idx=63), as modified at [77 Fed. Reg. 45353 (July 31, 2012)](h{{ site.baseurl }}/exit/?idx=64)
 
-  [68 Fed. Reg. 3098 (Jan. 22, 2003)](https://www.federalregister.gov/documents/2003/01/22/03-1101/privacy-act-of-1974-systems-of-records){:target="\_blank"}, as corrected at [68 Fed. Reg. 24744 (May 8, 2003)](https://www.federalregister.gov/documents/2003/05/08/03-11416/privacy-act-of-1974-systems-of-records-notice-correction){:target="\_blank"}
+  [68 Fed. Reg. 3098 (Jan. 22, 2003)]({{ site.baseurl }}/exit/?idx=65), as corrected at [68 Fed. Reg. 24744 (May 8, 2003)]({{ site.baseurl }}/exit/?idx=66)
   (replaced FRTIB-8, FRTIB-11)
   </div>
 </li>
@@ -1520,7 +1520,7 @@ FRTIB is required to publish a SORN anytime it creates, substantially modifies, 
 
   **Federal Register**
 
-  [68 Fed. Reg. 3098 (Jan. 22, 2003)](https://www.federalregister.gov/documents/2003/01/22/03-1101/privacy-act-of-1974-systems-of-records){:target="\_blank"}, as corrected at [68 Fed. Reg. 24744 (May 8, 2003)](https://www.federalregister.gov/documents/2003/05/08/03-11416/privacy-act-of-1974-systems-of-records-notice-correction){:target="\_blank"}
+  [68 Fed. Reg. 3098 (Jan. 22, 2003)]({{ site.baseurl }}/exit/?idx=65), as corrected at [68 Fed. Reg. 24744 (May 8, 2003)]({{ site.baseurl }}/exit/?idx=66)
   (replaced FRTIB-11)
 
   </div>
@@ -1539,7 +1539,7 @@ FRTIB is required to publish a SORN anytime it creates, substantially modifies, 
 
   **Federal Register**
 
-  [80 Fed. Reg. 64416 (Oct. 23, 2015)](https://www.federalregister.gov/documents/2015/10/23/2015-26940/privacy-act-of-1974-notice-of-an-updated-system-of-records){:target="\_blank"}
+  [80 Fed. Reg. 64416 (Oct. 23, 2015)]({{ site.baseurl }}/exit/?idx=67)
   (replaced FRTIB-10)
   </div>
 </li>

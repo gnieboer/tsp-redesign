@@ -39,6 +39,6 @@ A chapter 7 bankruptcy action does not affect your ability to obtain a financial
 
 Under chapter 13 of the bankruptcy code, you are only eligible to receive a financial hardship in-service withdrawal if you have unpaid medical expenses, a casualty loss, or unpaid legal fees incurred for a separation or divorce.
 
-For detailed information about the effect of a bankruptcy on your TSP account, see the TSP fact sheet, [Bankruptcy Information](https://www.tsp.gov/PDF/formspubs/tspfs9.pdf).
+For detailed information about the effect of a bankruptcy on your TSP account, see the TSP fact sheet, [Bankruptcy Information](/publications/tspfs9.pdf).
 
 <!-- CONTENT END -->

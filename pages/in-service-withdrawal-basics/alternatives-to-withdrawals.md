@@ -62,4 +62,4 @@ No earnings on amount of loan until funds are repaid
 
 \*When we report a taxable distribution, the Internal Revenue Service (IRS) considers the unpaid balance (including any accrued interest) of the loan to be taxable income.
 
-For more information on each program, read [TSP Loans](https://www.tsp.gov/PDF/formspubs/tspbk04.pdf) and [_In-Service Withdrawals_](https://www.tsp.gov/PDF/formspubs/tspbk12.pdf). These booklets are also available from your agency, service, or through the ThriftLine.
+For more information on each program, read [TSP Loans](/publications/tspbk04.pdf) and [_In-Service Withdrawals_](/publications/tspbk12.pdf). These booklets are also available from your agency, service, or through the ThriftLine.

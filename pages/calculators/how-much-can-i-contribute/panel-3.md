@@ -24,7 +24,7 @@ Elective Deferral Limits panel (3) for How Much Can I Contribute?.
 %}
 
 
-<div class="results-grid-frame">
+<div class="results-grid-frame" markdown="1">
 {% include calculator/resultsRow.html left="Contribution year"
                                       rightID="contribution-year" right="<span class='year-choosen'>YYYY</span>" %}
 {% include calculator/resultsRow.html rightID="deferral-limit" right=""
@@ -38,20 +38,13 @@ Elective Deferral Limits panel (3) for How Much Can I Contribute?.
 
 {% capture newAmountTextBlock %}
 
-<strong>Here’s the new amount you can contribute each remaining pay period if you
-want to maximize your contributions for <span class='year-choosen'>YYYY</span></strong>
+**Here’s the new amount you can contribute each remaining pay period if you
+want to maximize your contributions for <span class='year-choosen'>YYYY</span>**
 (rounded down to the nearest dollar).
 
-<p>To change how much you contribute, log into your payroll system and select the Thrift Savings Plan option. Common payroll systems include <a class="external-link" href="/other/exit/exit_tsp_website.html?urlIdx= 6"
-  title="myPay website opens in a new window.">myPay</a>, EBIS,
-<a class="external-link" href="/other/exit/exit_tsp_website.html?urlIdx=44"
-  title="Employee Personal Page website opens in a new window.">Employee Personal Page</a>,
-<a class="external-link" href="/other/exit/exit_tsp_website.html?urlIdx=45"
-  title="Employee Express website opens in a new window.">Employee Express</a>,
-<a class="external-link" href="/other/exit/exit_tsp_website.html?urlIdx=46"
-  title="LiteBlue website opens in a new window.">LiteBlue</a>,
-and <a class="external-link" href="/other/exit/exit_tsp_website.html?urlIdx=47"
-  title="Direct Access website opens in a new window.">Direct Access</a>.</p>
+To change how much you contribute, log into your payroll system and select the Thrift Savings Plan option. Common payroll systems include
+
+[Direct Access]({{ site.baseurl }}/exit/?idx=47){:rel="nofollow"}, [Employee Express]({{ site.baseurl }}/exit/?idx=7){:rel="nofollow"}, EBIS, [LiteBlue]({{ site.baseurl }}/exit/?idx=8){:rel="nofollow"}, [myPay]({{ site.baseurl }}/exit/?idx=6){:rel="nofollow"}, and [NFC EPP]({{ site.baseurl }}/exit/?idx=9){:rel="nofollow"}.
 
 {% endcapture %}
 {% include calculator/resultsRow.html rightID="new-contribution" right="" left=newAmountTextBlock %}
