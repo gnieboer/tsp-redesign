@@ -11,6 +11,8 @@ scripts:
   - /assets/js/ajax-usa-search-gov.js
   - /assets/js/forms.js
 permalink: /forms/index-search/
+document-ready:
+  - addFormModals();
 ---
 
 # Help me find forms and resources about {#forms}

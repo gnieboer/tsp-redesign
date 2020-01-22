@@ -2,7 +2,8 @@
   Ajax call for search using usa search.
 */
 
-var siteName = "https://search.usa.gov/api/v2/search/i14y";
+var siteName_i14y = "https://search.usa.gov/api/v2/search/i14y";
+var siteName_video = "https://search.usa.gov/api/v2/search/video";
 
 var affiliates = {
   "beta.tsp": "sVO7chy_W4g9AMmHj90csL3Oyn6z7JKRs1Pb8BxCJ9Y=",
@@ -11,6 +12,15 @@ var affiliates = {
 };
 
 var default_limit = 10;
+function getSearchLimit() {
+  return default_limit;
+}
+function setSearchLimit(limit) {
+  if ((limit > 0) && (limit <= 50)) {
+    default_limit = limit;
+  }
+  return default_limit;
+}
 
 function affiliateKeys() {
   return Object.keys(affiliates);
@@ -25,13 +35,10 @@ function buildAffiliateSelect(selectName) {
   })
 }
 
-// var affiliate = "beta.tsp";
-var affiliate = "beta.tsp.plan-news";
-// var accessKey = "9gcFHn4xSylFEK4QUpxR9y50_MJOy3LBi0bh4hIZ7Ew="; // dav
-// var accessKey = "1XBegCSAeuxyTJpE-19b0RvpUboHO40rk0dwtk0QNnM="; // tsp
-// var accessKey = "sVO7chy_W4g9AMmHj90csL3Oyn6z7JKRs1Pb8BxCJ9Y="; // beta.tsp
-// var accessKey = "6HltwZIKfyLoxQKMBODEct4oWEf82aYqOG690gVLWlA=";
-var accessKey = "Rq24ee2O0lnSR6VJmiRiIMDJhNZ_KSVrYzisorSVCr8=";
+var affiliate = "beta.tsp";
+// var affiliate = "beta.tsp.plan-news";
+var accessKey = "sVO7chy_W4g9AMmHj90csL3Oyn6z7JKRs1Pb8BxCJ9Y="; // beta.tsp
+// var accessKey = "Rq24ee2O0lnSR6VJmiRiIMDJhNZ_KSVrYzisorSVCr8="; // plan-news
 
 var doUSAsearch = function(divName, url, getAll, offset, prevResult) {
   $('#'+divName).html('Calling server for data...');
@@ -76,14 +83,14 @@ var doUSAsearch = function(divName, url, getAll, offset, prevResult) {
   );
 }
 
-function buildSearchURL(affiliate, accessKey, limit, offset, query) {
+function buildSearchURL(siteName, affiliate, accessKey, limit, offset, query) {
   var url = siteName
           + '?affiliate=' + affiliate
           + '&access_key=' + accessKey
           + '&limit=' + limit
           + '&query=' + query;
   if (offset > 0) { url += '&offset=' + offset; }
-  console.log('searching |'+url+'|');
+  // console.log('searching |'+url+'|');
   return url;
 }
 
@@ -95,7 +102,7 @@ function search(queryBox, resultDiv) {
   }
   terms = encodeURIComponent(terms);
   // console.log('searching: '+terms);
-  var url = buildSearchURL(affiliate, accessKey, default_limit, 0, terms);
+  var url = buildSearchURL(siteName_i14y, affiliate, accessKey, default_limit, 0, terms);
   doUSAsearch(resultDiv, url, 0, 0, null);
 }
 
@@ -111,7 +118,7 @@ function search2(queryBox, resultDiv, affiliateSelect) {
     terms = encodeURIComponent(terms);
     // console.log('searching: '+terms);
     var accessKey = affiliates[affiliate];
-    var url = buildSearchURL(affiliate, accessKey, default_limit, 0, terms);
+    var url = buildSearchURL(siteName_i14y, affiliate, accessKey, default_limit, 0, terms);
     doUSAsearch(resultDiv, url, 1, 0, null);
   }
 }
@@ -177,7 +184,7 @@ var doInlineUSAsearch = function(searchName, statusBox, url, callback, getAll, o
       }
       // console.log(json.web.results, json.text_best_bets);
       $('#'+statusBox).html('search complete');
-      callback(searchName, json);
+      callback(searchName, json, offset);
       return true;
     }
   );
@@ -191,16 +198,17 @@ var doInlineUSAsearch = function(searchName, statusBox, url, callback, getAll, o
   );
 }
 
-function inlineUSAsearch(searchName, statusBox, searchSite, terms, callback) {
+function inlineUSAsearch(searchName, statusBox, searchSite, searchType, terms, getAll, offset, callback) {
   if (terms == '') { callback(''); return false; }
   terms = encodeURIComponent(terms);
   // console.log('searching: '+terms);
-
+  var siteName = siteName_i14y;
+  if (searchType == 'video') { siteName = siteName_video; }
   if ( ! (searchSite in affiliates) ) { console.log('searchSite error'); return; }
   var affiliate = searchSite;
   var accessKey = affiliates[affiliate];
-  var url = buildSearchURL(affiliate, accessKey, default_limit, 0, terms);
-  doInlineUSAsearch(searchName, statusBox, url, callback, 1, 0, null, null);
+  var url = buildSearchURL(siteName, affiliate, accessKey, default_limit, 0, terms);
+  doInlineUSAsearch(searchName, statusBox, url, callback, getAll, offset, null);
 }
 
 // onChange for search-bar input
@@ -210,5 +218,5 @@ function searchInline(searchName, userCallback) {
   // console.log('terms = ', terms);
   if (terms == '') { resetInline(searchName); return; }
 
-  inlineUSAsearch(searchName, 'search-message-'+searchName, 'beta.tsp.'+searchName, terms, userCallback);
+  inlineUSAsearch(searchName, 'search-message-'+searchName, 'beta.tsp.'+searchName, 'i14y', terms, 1, 0, userCallback);
 }

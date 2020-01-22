@@ -11,6 +11,8 @@ scripts:
   - /assets/js/ajax-usa-search-gov.js
   - /assets/js/forms.js
 permalink: /forms/modals/
+document-ready:
+  - addFormModals();
 ---
 
 - [TSP-1](/forms/tsp-1.pdf)

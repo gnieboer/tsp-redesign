@@ -5,15 +5,10 @@ styles:
 sidenav:
 scripts:
   - /assets/js/jquery.min.js
-  - /assets/js/bootstrap.min.js
-  - /assets/js/form-modals.js
   - /assets/js/ajaxFetch.js
   - /assets/js/ajax-usa-search-gov.js
   - /assets/js/forms.js
-  - /assets/js/search.js
 permalink: /forms/
-document-ready:
-  - addFormModals();
 ---
 
 # Help me find forms and resources about {#forms}
@@ -27,25 +22,15 @@ document-ready:
         <!-- Topic drop-down list -->
         <form class="usa-search usa-search-big select">
           <label class="usa-sr-only" for="select-forms-topic">Search by topic</label>
-          <select id="select-forms-topic" name="select-forms-topic" onChange="selectFormsTopic();">
+          <select id="select-forms-topic" name="select-forms-topic" onchange="selectFormsTopic();">
               <option value='0'>Search by topic</option>
               {% for topic in site.data.forms_topics %}
               <option value='{{ forloop.index }}'>{{ topic }}</option>
               {% endfor %}
-              <option disabled value='-1'>Choose topic</option>
             </select>
         </form>
 
-        <input id="group" type="hidden" value="forms">
-        <form accept-charset="UTF-8" action="return: false;" id="search-form-forms" method="get"
-          class="animated-search">
-          <div style="margin:0;padding:0;display:inline">
-            <label for="search-terms" class="usa-sr-only">Enter search term(s)</label>
-            <input type="text" name="search-terms" id="search-terms"
-              onChange="myPageChange();" onBlur="myPage(1);"
-              autocomplete="off" placeholder="Enter search term(s)">
-          </div>
-        </form>
+    {% include search-bar.html  onChange="searchInline('forms', formsCallback);" searchName="forms" %}
       </div>
     </section> <!-- // end section.search-forms -->
   </div>
@@ -140,6 +125,14 @@ document-ready:
 {% endif %}
 </div>
 {% endfor %}
+
+{% comment %}inline form search results below{% endcomment %}
+<div id="inline-search-forms" class="hide" markdown="1">
+<!-- DONALD style this (forms) -->
+<span class="see-all"><a href="/forms/">See all</a></span>
+<h2 id="inline-search-forms-message" class="results"></h2>
+<div id='inline-search-forms-results'></div>
+</div>
 </section>
 
 {% assign startAccordion = showTotal %}
@@ -221,12 +214,10 @@ document-ready:
 {% endif %}
 </div>
 {% endfor %}
+
+{% comment %}inline search copies below{% endcomment %}
+<div id="inline-search-resources" class="hide" markdown="1">
+<div id='inline-search-resources-results'></div>
+</div>
+
 </section>
-
-
-{% comment %}inline form search results below{% endcomment %}
-<span id="results-count"></span>
-{% include search-result-blocks.html %}
-
-{% include form-modals.html %}
-{% include search-hit-blocks.html %}

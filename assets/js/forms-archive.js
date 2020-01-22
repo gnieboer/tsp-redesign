@@ -1,13 +1,3 @@
-function myPageChange() {
-  $('#search-terms').blur();
-  return false;
-}
-function myPage(page) {
-  $('#select-forms-topic').val('-1');
-  $('.select-forms-div').addClass('hide');
-  $('.select-resources-div').addClass('hide');
-  gotoPage(page); // from search.js
-}
 
 function selectFormsSearchResult(queryBox) {
   $('.select-forms-div').addClass('hide');
@@ -132,23 +122,12 @@ function formsCallback(searchName, result) {
   var formList = [];
   var resList = [];
   var foundList = [];
-/*
   addMatchesToList(jsonBlock.text_best_bets, formList, resList, foundList);
   addMatchesToList(jsonBlock.graphic_best_bets, formList, resList, foundList);
   addMatchesToList(jsonBlock.web.results, formList, resList, foundList);
 
-*/
-$('#inline-search-forms-results').html('results here');
-console.log('result ', result);
-if (result) {
-  var results = result.web.results;
-  block = '';
-  var len = results.length;
-  for (i = 0; i < len; i++) {
-    block += oneHitHTML(results[i], 'web');
-  }
-}
-
+  $('#inline-search-forms-results').html(makeBlockofHits(formList));
+  $('#inline-search-resources-results').html(makeBlockofHits (resList));
   var terms = $('#search-input-'+searchName).val();
   $("#inline-search-forms-message").html(
     makeFoundMessage(Object.keys(formList).length, Object.keys(resList).length, terms));
@@ -173,7 +152,8 @@ function makeFoundMessage(fCnt, rCnt, terms) {
 
 // reset back to the forms page default
 function resetInline(searchName) {
-  clearResultDivs();  // search.js
+  $('#inline-search-forms').addClass('hide');
+  $('#inline-search-resources').addClass('hide');
   $('.select-forms-div').removeClass('hide');
   $('.select-resources-div').removeClass('hide');
 }

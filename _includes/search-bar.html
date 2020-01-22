@@ -15,14 +15,13 @@ Adds a magnifying glass icon which can be clicked and setups a search box with a
 <form accept-charset="UTF-8" action="{{action}}" id="{{searchID}}" method="get" class="animated-search">
 <div style="margin:0;padding:0;display:inline">
 {% if affiliatePlaceholder > 0 %}
-<select id="{{searchAffiliate}}">
+<select id="{{searchAffiliate}}" onChange="{{onChange}}">
   <option value="0">forgot to make list</option>
 </select>
 {% endif %}
 <label for="{{searchInput}}" class="usa-sr-only">Enter search term(s)</label>
 <input type="text" name="{{searchInput}}" id="{{searchInput}}"
-    onChange="{{onChange}}" onBlur="{{onChange}}"
-    autocomplete="off" placeholder="Enter search term(s)">
+    onChange="{{onChange}}" autocomplete="off" placeholder="Enter search term(s)">
 </div>
 </form>
 </div>
