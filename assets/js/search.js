@@ -95,7 +95,7 @@ function startSearch(page) {
 }
 
 function unsetResultCount() { $('#results-count').html(''); }
-function setResultCount(cnt) { $('#results-count').html(''+cnt+' results'); }
+function setResultCount(cnt) { $('#results-count').html('We found <strong>'+cnt+'</strong> forms and resources about <strong>$term</strong>'); }
 function clearResultDivs() {
   unsetResultCount();
   $('#best-bets').addClass('hide');
