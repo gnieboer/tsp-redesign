@@ -37,7 +37,7 @@ document-ready:
         </form>
 
         <input id="group" type="hidden" value="forms">
-        <form accept-charset="UTF-8" action="return: false;" id="search-form-forms" method="get"
+        <form accept-charset="UTF-8" action="return false;" id="search-form-forms" method="get"
           class="animated-search">
           <div style="margin:0;padding:0;display:inline">
             <label for="search-terms" class="usa-sr-only">Enter search term(s)</label>

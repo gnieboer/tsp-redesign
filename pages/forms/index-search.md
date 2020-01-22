@@ -43,7 +43,7 @@ document-ready:
 
         <div class="flex header-line">
           <!-- Animated search bar -->
-          <form accept-charset="UTF-8" action="return: false;" id="search-form-forms" method="get" class="animated-search">
+          <form accept-charset="UTF-8" action="return false;" id="search-form-forms" method="get" class="animated-search">
           <div style="margin:0;padding:0;display:inline">
 
           <label for="search-input-forms" class="usa-sr-only">Enter search term(s)</label>
