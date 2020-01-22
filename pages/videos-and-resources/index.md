@@ -147,8 +147,6 @@ Social
 
 <div class="usa-width-one-half">
 <section class="twitter-feed" markdown="1">
-<!-- [Tweets by tsp4gov](https://twitter.com/tsp4gov?ref_src=twsrc%5Etfw){:.twitter-timeline data-tweet-limit="3"}
-<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> -->
 
 <a class="twitter-timeline" href="https://twitter.com/tsp4gov/timelines/1172161252178612224?ref_src=twsrc%5Etfw">website-collection - Curated tweets by tsp4gov</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 

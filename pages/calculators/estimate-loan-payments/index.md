@@ -227,7 +227,7 @@ This will depend on how often you are paid (biweekly or monthly, for example). I
   <div class="usa-alert  usa-alert-info ">
     <div class="usa-alert-body">
         <h3 class="usa-alert-heading">Before you apply for a loan</h3>
-        <p class="usa-alert-text" markdown="1">Read the TSP booklet [Loans](/publications/tspbk04.pdf){:.publication} for information about the TSP loan process (including the cost of a TSP loan) and about your obligations to repay the loan. To initiate a Loan Request, visit [TSP Loans](https://secure.tsp.gov/tsp/loan.do?subaction=menu&amp;_name=loan){:.external-link} in My Account.</p>
+        <p class="usa-alert-text" markdown="1">Read the TSP booklet [Loans](/publications/tspbk04.pdf){:.publication} for information about the TSP loan process (including the cost of a TSP loan) and about your obligations to repay the loan. To initiate a Loan Request, visit [TSP Loans](https://www.tsp.gov/tsp/loan.do?subaction=menu&amp;_name=loan){:.external-link} in My Account.</p>
     </div>
   </div>
 
