@@ -1,8 +1,13 @@
 {% comment %}
 Adds a magnifying glass icon which can be clicked and setups a search box with a callback to the page.
 {% endcomment %}
+<<<<<<< HEAD
 {% assign action = include.action | default: 'javascript:void(0);' %}
 {% assign onChange = include.onChange | default: 'javascript:void(0);' %}
+=======
+{% assign action = include.action | default: 'return false;' %}
+{% assign onChange = include.onChange | default: 'return false;' %}
+>>>>>>> ec1ac7ce1c8469c09f31c43ddfea570cbbc1a7f8
 {% assign searchName = include.searchName | default: 'search_form' %}
 {% assign searchID = 'search-form-' | append: searchName %}
 {% assign searchInput = 'search-input-' | append: searchName %}
