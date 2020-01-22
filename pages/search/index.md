@@ -3,15 +3,18 @@ title: Search tsp.gov
 layout: page
 permalink: /search/
 scripts:
-- /assets/js/jquery.min.js
-- /assets/js/ajaxFetch.js
-- /assets/js/ajax-usa-search-gov.js
-- /assets/js/calculator/calculator.js
-- /assets/js/search.js
+  - /assets/js/jquery.min.js
+  - /assets/js/bootstrap.min.js
+  - /assets/js/form-modals.js
+  - /assets/js/ajaxFetch.js
+  - /assets/js/ajax-usa-search-gov.js
+  - /assets/js/calculator/calculator.js
+  - /assets/js/search.js
 document-ready:
   - initGroup();
   - setQS('search-terms');
   - gotoPage(1);
+  - addFormModals();
 ---
 
 <div class="usa-grid-full search">
@@ -46,3 +49,5 @@ document-ready:
 {% include search-result-blocks.html %}
 
 {% include search-hit-blocks.html %}
+
+{% include form-modals.html %}
