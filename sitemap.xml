@@ -48,4 +48,11 @@
     <loc>{{ item.permalink | prepend: site_url }}.html</loc>
     <lastmod>{{ item.path | date: '%A, %B %d, %Y (%I:%M %P)' }}</lastmod>
   </url>{% endunless %}{% endfor %}
+  <!-- FAQs -->{% assign faq_list = site.faq | sort: 'path' %}{% for item in faq_list %}
+  <url>
+    <loc>{{ item.permalink | prepend: site_url }}.html</loc>
+    {% if item.last_modified_at %}
+    <lastmod>{{ item.last_modified_at | date: '%A, %B %d, %Y (%I:%M %P)' }}</lastmod>
+    {% endif %}
+  </url>{% endfor %}
 </urlset>

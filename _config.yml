@@ -2,6 +2,7 @@ title: Thrift Savings Plan
 description:
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://beta.tsp.gov" # the base hostname & protocol for your site, e.g. http://example.com
+myaccount: "https://www.tsp.gov/tsp"
 plugins:
   - jekyll-last-modified-at
 
@@ -58,6 +59,8 @@ collections:
     output: true
   newsletters:
     output: true
+  faq:
+    output: true
 
 defaults:
   -
@@ -65,4 +68,10 @@ defaults:
       path: "_plan_news"
     values:
       layout: page-plan-news
+      sidenav: news-and-resources
+  -
+    scope:
+      path: "_faq"
+    values:
+      layout: page-faq
       sidenav: news-and-resources
