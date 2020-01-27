@@ -5,6 +5,8 @@
 {% endif %}
 {% assign modalID = include.modalID | default: '' %}
 {% assign fullURL = site.url | append: '/' | append: pageurl %}
+{% assign fc = pageurl | slice: 0 %}
+{% if fc == '/' %}{% assign fullURL = site.url | append: pageurl %}{% endif %}
 <div id="shareModal{{modalID}}" class="modal fade" role="dialog">
   <div class="modal-dialog">
 

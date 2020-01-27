@@ -2,12 +2,14 @@ title: Thrift Savings Plan
 description:
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://beta.tsp.gov" # the base hostname & protocol for your site, e.g. http://example.com
-myaccount: "https://www.tsp.gov/tsp"
 plugins:
   - jekyll-last-modified-at
 
 theme: uswds-jekyll
 
+# My Account URLS
+myaccount: "https://www.tsp.gov/tsp"
+profile_settings: "https://www.tsp.gov/tsp/profileSettings.do?subaction=view&amp;_name=profile"
 # To enable search, uncomment the search section
 # You will need to setup a search account with search.gov
 # https://search.usa.gov/signup
