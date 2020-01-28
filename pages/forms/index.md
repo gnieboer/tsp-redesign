@@ -35,7 +35,6 @@ document-ready:
               <option disabled value='-1'>Choose topic</option>
             </select>
         </form>
-
         <input id="group" type="hidden" value="forms">
         <form accept-charset="UTF-8" action="javascript:void(0);" id="search-form-forms" method="get"
           class="animated-search">
@@ -47,9 +46,21 @@ document-ready:
           </div>
         </form>
       </div>
-    </section> <!-- // end section.search-forms -->
-  </div>
-</div>
+    </section><!-- // end section.search-forms -->
+  </div><!-- END div.usa-width-one-whole -->
+</div><!-- END div.usa-grid-full -->
+<section id="inline-results" class="inline-results hide">
+  {% comment %}inline form search results below{% endcomment %}
+  <h2 class="results">We found <strong><span id="results-count"></span></strong> forms and resources about <strong>$term</strong></h2>
+  <div class="usa-grid-full results">
+    <div class="usa-width-one-whole">
+
+      {% include search-result-blocks.html %}
+
+      {% include search-hit-blocks.html %}
+    </div><!-- END div.usa-width-one-whole -->
+  </div><!-- END div.usa-grid-full -->
+</section>
 
 {% assign showTotal = 4 %}
 {% assign startAccordion = showTotal %}
@@ -223,12 +234,21 @@ document-ready:
   {% endfor %}
 </section>
 
+<div class="usa-grid-full results hide">
+  <div class="usa-width-one-whole">
 
-{% comment %}inline form search results below{% endcomment %}
-<h2 id="results-count" class="results"></h2>
+    {% comment %}inline form search results below{% endcomment %}
+    <h2 class="results">We found <strong><span id="results-count"></span></strong> forms and resources about <strong>$term</strong></h2>
 
-{% include search-result-blocks.html %}
+    {% include search-result-blocks.html %}
+
+    {% include search-hit-blocks.html %}
+
+  </div> <!-- END div.usa-width-one-whole -->
+</div> <!-- END div.usa-grid-full -->
+
+
+
+
 
 {% include form-modals.html %}
-
-{% include search-hit-blocks.html %}

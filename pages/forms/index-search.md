@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Forms
+title: STATIC Forms search
 styles:
 sidenav:
 scripts:
@@ -9,6 +9,7 @@ scripts:
   - /assets/js/form-modals.js
   - /assets/js/ajaxFetch.js
   - /assets/js/ajax-usa-search-gov.js
+  - /assets/js/search.js
   - /assets/js/forms.js
 permalink: /forms/index-search/
 document-ready:
@@ -19,8 +20,9 @@ document-ready:
 
 <!-- SEARCH FORMS -->
 
-<div class="usa-grid-full">
+<div class="usa-grid-full results">
   <div class="usa-width-one-whole">
+
     <section class="search-forms">
       <div role="search" class="search-container">
         <!-- Topic drop-down list -->
@@ -56,16 +58,11 @@ document-ready:
 
       </div>
     </section> <!-- // end section.search-forms -->
-  </div>
-</div>
 
-<h2 id="inline-search-forms-message" class="results">We found <strong>8</strong> forms and resources about <strong>rmd</strong>.</h2>
+    {% comment %}inline form search results below{% endcomment %}
+    <h2 id="inline-search-forms-message" class="results">We found <strong><span id="results-count"></span></strong> forms and resources about <strong>$term</strong></h2>
 
-
-<div class="usa-grid-full results">
-  <div class="usa-width-one-whole">
-
-    <section class="search-results" tabindex="-1">
+    <section class="search-results " tabindex="-1">
 
       <!-- BEST BETS -->
       <div class="best-bets">
@@ -168,8 +165,24 @@ document-ready:
         </span>
         </div>
       </div> <!-- END div.results -->
+    </section>
+    <!-- END section.search-results -->
+  </div> <!-- END div.usa-width-one-whole -->
+</div> <!-- END div.usa-grid-full -->
 
-    </section> <!-- END section.search-results -->
+
+
+
+{% include search-result-blocks.html %}
+
+{% include form-modals.html %}
+
+{% include search-hit-blocks.html %}
+
+
+<div class="usa-grid-full results">
+  <div class="usa-width-one-whole">
+
 
     <!-- Pagination -->
     <section class="pagination">
