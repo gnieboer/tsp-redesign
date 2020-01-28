@@ -95,9 +95,10 @@ function startSearch(page) {
 }
 
 function unsetResultCount() { $('#results-count').html(''); }
-function setResultCount(cnt) { $('#results-count').html('We found <strong>'+cnt+'</strong> forms and resources about <strong>$term</strong>'); }
+function setResultCount(cnt) { $('#results-count').html(cnt); }
 function clearResultDivs() {
   unsetResultCount();
+  $('#inline-results').addClass('hide');
   $('#best-bets').addClass('hide');
   $('#results-best-bets').html('');
   $('#web-results').addClass('hide');
@@ -106,6 +107,7 @@ function clearResultDivs() {
   $('#pagination-block').html('');
 }
 function showResultDivs(set) {
+  $('#inline-results').removeClass('hide');
   if (set == 'best-bets') {
     $('#best-bets').removeClass('hide');
   }

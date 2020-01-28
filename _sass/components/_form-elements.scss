@@ -171,6 +171,7 @@ h2.most-popular, h2.results {
 }
 h2.results {
   text-align: left;
+  // padding: 1rem 0;
 }
 
 .redbg {
@@ -233,6 +234,7 @@ h2.results {
 
 section#returned-forms, section#popular-forms {
   border-top: 1px solid #e3e3e3;
+
   div.usa-grid-full + div.usa-grid-full {
     margin-top: 3rem;
   }
@@ -350,6 +352,12 @@ section#returned-resources, section#popular-resources {
     }
   }
 } // end #returned-resources
+
+section.inline-results {
+  h2.results {
+    padding: 2rem 0;
+  }
+}
 
 
 @media screen and (max-width: $medium-screen) {
