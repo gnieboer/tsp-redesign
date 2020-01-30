@@ -12,6 +12,9 @@ scripts:
   - /assets/js/plan-news.js
   - /assets/js/ajax-usa-search-gov.js
 permalink: /news-and-resources/plan-news/
+# Jekyll redirects https://github.com/jekyll/jekyll-redirect-from
+redirect_from:
+  - /plan-news/
 ---
 
 # Plan news
