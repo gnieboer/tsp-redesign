@@ -29,7 +29,7 @@ document-ready:
         <li id="videos" onClick="selectSearchGroup('videos', true);" class="group-option">Videos</li>
         <li id="forms" onClick="selectSearchGroup('forms', true);" class="group-option">Forms and Resources</li>
         <li id="plan-news" onClick="selectSearchGroup('plan-news', true);" class="group-option">Plan News</li>
-        <li><span><span id="results-count"></span> results</span></li>
+        <li id="results-count-block"><span><span id="results-count"></span> results</span></li>
         </ul>
       </div>
 

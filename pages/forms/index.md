@@ -9,11 +9,13 @@ scripts:
   - /assets/js/form-modals.js
   - /assets/js/ajaxFetch.js
   - /assets/js/ajax-usa-search-gov.js
+  - /assets/js/calculator/calculator.js
   - /assets/js/search.js
   - /assets/js/forms.js
 permalink: /forms/
 document-ready:
   - addFormModals();
+  - setTopic('select-forms-topic');
 ---
 
 # Help me find forms and resources about {#forms}
@@ -25,16 +27,17 @@ document-ready:
     <section class="search-forms">
       <div role="search" class="search-container">
         <!-- Topic drop-down list -->
-        <form class="usa-search usa-search-big select">
+        <div class="usa-search usa-search-big select">
           <label class="usa-sr-only" for="select-forms-topic">Search by topic</label>
           <select id="select-forms-topic" name="select-forms-topic" onChange="selectFormsTopic();">
-              <option value='0'>Search by topic</option>
+          <option disabled selected value='-1'>Choose topic</option>
               {% for topic in site.data.forms_topics %}
-              <option value='{{ forloop.index }}'>{{ topic }}</option>
+              {% assign dropValue = topic | downcase | replace: " ", "-" %}
+              <option value='{{ dropValue }}'>{{ topic }}</option>
               {% endfor %}
-              <option disabled value='-1'>Choose topic</option>
+              <option value='0'>Show all</option>
             </select>
-        </form>
+        </div>
         <input id="group" type="hidden" value="forms">
         <form accept-charset="UTF-8" action="javascript:void(0);" id="search-form-forms" method="get"
           class="animated-search">
@@ -49,9 +52,12 @@ document-ready:
     </section><!-- // end section.search-forms -->
   </div><!-- END div.usa-width-one-whole -->
 </div><!-- END div.usa-grid-full -->
-<section id="inline-results" class="inline-results hide">
+<section id="form-search-results" class="form-search-results ">
   {% comment %}inline form search results below{% endcomment %}
-  <h2 class="results">We found <strong><span id="results-count"></span></strong> forms and resources about <strong>$term</strong></h2>
+  <h2 id="results-count-block" class="results hide">We found
+    <strong><span id="results-count"></span></strong> forms and resources
+      about <strong><span id="results-terms"></span></strong>
+  </h2>
   <div class="usa-grid-full results">
     <div class="usa-width-one-whole">
 
@@ -93,7 +99,8 @@ document-ready:
   </div>
 
   {% for topic in site.data.forms_topics %}
-  {% assign topicID = forloop.index %}
+  {% assign dropValue = topic | downcase | replace: " ", "-" %}
+  {% assign topicID = dropValue %}
   {% comment %}count number of forms for accordion{% endcomment %}
   {% assign formCnt = 0 %}
   {% for form in site.data.forms %}
@@ -184,7 +191,8 @@ document-ready:
   </div>
 
   {% for topic in site.data.forms_topics %}
-  {% assign topicID = forloop.index %}
+  {% assign dropValue = topic | downcase | replace: " ", "-" %}
+  {% assign topicID = dropValue %}
   {% comment %}count number of resources for accordion{% endcomment %}
   {% assign resCnt = 0 %}
   {% for resource in site.data.publications %}

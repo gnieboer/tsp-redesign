@@ -16,17 +16,17 @@ function getSTRfromURL(url) {
 }
 
 // only call this on page load!
-function getQS() {
-  var qs = getQueryString('qs');
+function getCleanParm(parm, maxLength) {
+  var qs = getQueryString(parm);
   if (typeof qs === 'undefined') { return ''; }
   qs = decodeURIComponent(qs);
   qs = qs.replace(/[^A-Z0-9_-]+/ig,' ');
-  qs = qs.substring(0,150);
+  qs = qs.substring(0,maxLength);
   return qs;
 }
 // only call this on page load!
 function setQS(inputBox) {
-  $('#'+inputBox).val(getQS());
+  $('#'+inputBox).val(getCleanParm('qs', 150));
 }
 // only call this on page load!
 function initGroup() {
@@ -94,11 +94,17 @@ function startSearch(page) {
   return false; // prevent default
 }
 
-function unsetResultCount() { $('#results-count').html(''); }
-function setResultCount(cnt) { $('#results-count').html(cnt); }
+function unsetResultString() {
+  $('#results-count').html('');
+  $('#results-terms').html('');
+}
+function setResultString(cnt, qs) {
+  $('#results-count').html(cnt);
+  $('#results-terms').html(qs);
+}
 function clearResultDivs() {
-  unsetResultCount();
-  $('#inline-results').addClass('hide');
+  unsetResultString();
+  $('#results-count-block').addClass('hide');
   $('#best-bets').addClass('hide');
   $('#results-best-bets').html('');
   $('#web-results').addClass('hide');
@@ -107,7 +113,7 @@ function clearResultDivs() {
   $('#pagination-block').html('');
 }
 function showResultDivs(set) {
-  $('#inline-results').removeClass('hide');
+  $('#results-count-block').removeClass('hide');
   if (set == 'best-bets') {
     $('#best-bets').removeClass('hide');
   }
@@ -196,8 +202,10 @@ function searchCallback(searchName, returnedJSON, offset) {
   var results;  // JSON block of hits
   var resultsTotal = 0;
   var totalHits = 0;
+  var qs = $('#search-terms').val();
   var hitFormat = 'web';
   if (getGroup() == 'videos') {
+    console.log(returnedJSON);
     results = returnedJSON.video.results;
     resultsTotal = returnedJSON.video.total;
     totalHits = resultsTotal;
@@ -209,7 +217,7 @@ function searchCallback(searchName, returnedJSON, offset) {
   }
   var block = '';
   var i;
-  setResultCount(totalHits);
+  setResultString(totalHits, qs);
   if (returnedJSON.text_best_bets) {
     for (i = 0; i < returnedJSON.text_best_bets.length; i++) {
       block += oneHitHTML(returnedJSON.text_best_bets[i], hitFormat);

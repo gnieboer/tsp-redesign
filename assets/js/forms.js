@@ -1,8 +1,11 @@
+
 function myPageChange() {
   $('#search-terms').blur();
   return false;
 }
 function myPage(page) {
+  $('#popular-forms').addClass("hide");
+  $('#popular-resources').addClass("hide");
   $('#select-forms-topic').val('-1');
   $('.select-forms-div').addClass('hide');
   $('.select-resources-div').addClass('hide');
@@ -23,6 +26,16 @@ function inlineSearch(queryBox, resultDiv) {
   selectFormsSearchResult(queryBox);
 }
 
+// only call this on page load!
+function setTopic(dropdown) {
+  var topic = getCleanParm('topic', 30);
+  if (topic == '') { return false; }
+  $('#'+dropdown).val(topic);
+  if (($('#'+dropdown).val()) == null) { $('#'+dropdown).val(-1); return false; };
+  $('#'+dropdown).change();
+  return true;
+}
+
 function selectFormsTopic() {
   var val = document.getElementById("select-forms-topic").value;
   // console.log('selectFormsTopic: |' + val + '|');
@@ -31,6 +44,8 @@ function selectFormsTopic() {
   $('#select-forms-'+val).removeClass("hide");
   $('.select-resources-div').addClass('hide');
   $('#select-resources-'+val).removeClass("hide");
+  $('#popular-forms').removeClass("hide");
+  $('#popular-resources').removeClass("hide");
 }
 
 function showMoreForms(type, formNum) {
