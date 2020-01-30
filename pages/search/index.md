@@ -35,14 +35,14 @@ document-ready:
 
       <input id="group" type="hidden" value="everything">
       <div role="search" class="usa-search usa-search-small">
-        <form class="usa-search usa-search-small">
+        <div class="usa-search usa-search-small">
         <label class="usa-sr-only" for="search-terms">Search small</label>
           <input id="search-terms" type="search" name="search-terms"
             onChange="gotoPage(1);" onBlur="" xonKeypress="inputKeypress();">
           <button onClick="gotoPage(1);" type="submit">
             <span class="usa-sr-only">Search</span>
           </button>
-        </form>
+        </div>
       </div>
     </section> <!-- END section.search-filters -->
 
