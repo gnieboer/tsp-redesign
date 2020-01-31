@@ -16,7 +16,7 @@ document-ready:
 
 <div class="usa-grid-full">
   <div class="usa-width-one-third center" markdown="1">
-  <img src="{{ site.baseurl }}/assets/img/logos/FRTIBSeal-white.png" alt="TSP logo">
+  <img src="{{ site.baseurl }}/assets/img/logos/FRTIBSeal-white.png" alt="Federal Retirement Thrift Investment Board official seal featuring Thrift Saving Plan logo">
   </div> <!-- END div.usa-width-one-half -->
 
   <div class="usa-width-two-thirds" markdown="1">
