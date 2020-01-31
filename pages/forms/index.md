@@ -27,7 +27,8 @@ document-ready:
     <section class="search-forms">
       <div role="search" class="search-container">
         <!-- Topic drop-down list -->
-        <div class="usa-search usa-search-big select">
+
+        <div class="select">
           <label class="usa-sr-only" for="select-forms-topic">Search by topic</label>
           <select id="select-forms-topic" name="select-forms-topic" onChange="selectFormsTopic();">
           <option disabled selected value='-1'>Choose topic</option>
@@ -38,15 +39,14 @@ document-ready:
               <option value='0'>Show all</option>
             </select>
         </div>
+
         <input id="group" type="hidden" value="forms">
         <form accept-charset="UTF-8" action="javascript:void(0);" id="search-form-forms" method="get"
           class="animated-search">
-          <div style="margin:0;padding:0;display:inline">
             <label for="search-terms" class="usa-sr-only">Enter search term(s)</label>
             <input type="text" name="search-terms" id="search-terms"
               onChange="myPageChange();" onBlur="myPage(1);"
               autocomplete="off" placeholder="Enter search term(s)">
-          </div>
         </form>
       </div>
     </section><!-- // end section.search-forms -->

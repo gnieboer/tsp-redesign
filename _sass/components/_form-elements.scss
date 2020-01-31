@@ -15,7 +15,7 @@ section.search-forms {
     width: 100%;
   }
 
-  form {
+  div {
     &.select {
       margin-right: 2rem;
 
@@ -28,6 +28,8 @@ section.search-forms {
         padding: 0 1rem;
       }
     }
+  }
+  form {
     &.animated-search {
       input[type=text] {
         width: 50px;
