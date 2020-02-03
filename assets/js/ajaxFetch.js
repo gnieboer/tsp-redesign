@@ -49,6 +49,15 @@ var singleFundData = function(fund) {
 //    );
 }
 
+function cleanURL() {
+
+	var uri = window.location.toString();
+	if (uri.indexOf("?") > 0) {
+	    var clean_uri = uri.substring(0, uri.indexOf("?"));
+	    window.history.replaceState({}, document.title, clean_uri);
+	}
+}
+
 // translate server fund names to names used on fund comparison page
 function mapFundName (fund) {
   if (fund == 'Linc') { return 'l-income'; }
