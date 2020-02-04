@@ -15,7 +15,7 @@ Before you request a withdrawal from your TSP savings, be sure to read the bookl
 
 To request a partial withdrawal from your TSP account, log into [My Account: Withdrawals](https://www.tsp.gov/tsp/login.html) and click “Partial Withdrawal.”
 
-To request a full withdrawal of your TSP savings, [My Account: Withdrawals](https://www.tsp.gov/tsp/login.html) and click “Full Withdrawal.”
+To request a full withdrawal of your TSP savings, log into [My Account: Withdrawals](https://www.tsp.gov/tsp/login.html) and click “Full Withdrawal.”
 
 We cannot process your withdrawal request unless your agency or service notifies us that you've separated from service and provides the date of your separation. It usually takes up to 30 days after the actual date of your separation for us to receive this information.
 
