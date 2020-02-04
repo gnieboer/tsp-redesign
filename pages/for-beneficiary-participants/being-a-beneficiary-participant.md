@@ -37,7 +37,7 @@ As a beneficiary participant, you’ll enjoy many of the same TSP benefits as em
 <div class="usa-alert  usa-alert-solid">
     <div class="usa-alert-body">
         <h3 class="usa-alert-heading">Roth money in your account?</h3>
-        <p class="usa-alert-text" markdown="1">Get the most out of the TSP. Read [_Managing Your Account for Beneficiary Participants_](javascript:void(0)) and [_Your TSP Account: A Guide for Beneficiary Participants_](javascript:void(0)) for more in-depth information about your benefits and investment options.</p>
+        <p class="usa-alert-text" markdown="1">Get the most out of the TSP. Read [_Managing Your Account for Beneficiary Participants_]({{ site.baseurl }}/publications/tspbk32.pdf) and [_Your TSP Account: A Guide for Beneficiary Participants_]({{ site.baseurl }}/publications/tspbk33.pdf) for more in-depth information about your benefits and investment options.</p>
     </div>
 </div>
 
@@ -213,9 +213,9 @@ You can also make _**a mixed withdrawal**_ which allows you to combine any or al
 
 ## Learn what you’ll need to do to request a withdrawal from your beneficiary participant account.
 
-To request a withdrawal, complete [Withdrawal Request for Beneficiary Participants](javascript:void(0)), _Form TSP-90_. You would’ve received a copy of this form with your welcome letter, but you can also find it under [Forms & Publications](javascript:void(0)). Be sure to read the instructions carefully to ensure that you make an informed decision and provide all of the necessary information so that we  can process your request.
+To request a withdrawal, complete [Withdrawal Request for Beneficiary Participants](javascript:void(0)), _Form TSP-90_. You would’ve received a copy of this form with your welcome letter, but you can also find it under [Forms and resources]({{ site.baseurl }}/forms/). Be sure to read the instructions carefully to ensure that you make an informed decision and provide all of the necessary information so that we  can process your request.
 
-If you're considering monthly payments or an annuity, you should compare these benefits to see which one best suits your situation. You can get help by using the [Monthly Payment Calculator](javascript:void(0)) and the [Retirement Income Calculator](javascript:void(0)).
+If you're considering monthly payments or an annuity, you should compare these benefits to see which one best suits your situation. You can get help by using the [TSP installment payment calculator]({{ site.baseurl }}/calculators/tsp-installment-payment-calculator/) and the [TSP payment and annuity calculator](/calculators/tsp-payment-and-annuity-calculator/).
 
 ### Receiving Your Withdrawal
 
@@ -239,9 +239,9 @@ You should allow at least several weeks from the time you submit your completed 
 
 The Internal Revenue Code (IRC) requires that you begin receiving distributions from your beneficiary participant account based on your life expectancy. The rules for when you must take Required Minimum Distributions depend in part on the deceased participant’s age on the date of his or her death.
 
-Because the rules are complex, more specific information about the IRS required minimum distribution rules can be found in the tax notice _[Tax Information About TSP Withdrawals and Required Minimum Distributions for Beneficiary Participants](javascript:void(0))._
+Because the rules are complex, more specific information about the IRS required minimum distribution rules can be found in the tax notice _[Tax Information About TSP Withdrawals and Required Minimum Distributions for Beneficiary Participants]({{ site.baseurl }}/publications/tsp-776.pdf)._
 
-For more detailed information about the rules associated with death benefit payments, read the TSP tax notice "[Important Tax Information About Thrift Savings Plan Death Benefit Payments](javascript:void(0))." You may also want to consult a tax advisor.
+For more detailed information about the rules associated with death benefit payments, read the TSP tax notice "[Important Tax Information About Thrift Savings Plan Death Benefit Payments]({{ site.baseurl }}/publications/tsp-583.pdf)." You may also want to consult a tax advisor.
 
 </div>
 </li>
