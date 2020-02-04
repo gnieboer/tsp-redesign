@@ -19,7 +19,7 @@ Here are some things to consider:
 + If you decide that you want regular income from your TSP account every month, every quarter (three months), or once a year, you have a couple options:
   * You can request a specific dollar amount when you complete your withdrawal request form. You will receive payments in the amount and frequency you choose that you request until your entire account balance has been paid to you or until you change or stop your payments, which you can do at any time. Note: The amount of each monthly payment must be at least $25.
   * You can have us compute a monthly payment amount for you based on your life expectancy when you complete your request form. Your initial payment will be based on your age and your account balance at the time of the first payment. Each year thereafter, we will recalculate the amount of your monthly payments based on your age and your account balance at the end of the preceding year.
-* Be aware that neither the specified dollar amount nor the TSP-computed payment options is guaranteed to last your entire lifetime.
+* Be aware that neither the specified dollar amount nor the TSP-computed payment option is guaranteed to last your entire lifetime.
 + If you want a guaranteed stream of monthly income, consider purchasing a life annuity, which is a monthly benefit paid to you every month for the rest of your life. This process is sometimes complicated, but we’ve got you covered. Visit [*Annuity basics*](#) for information on purchasing an annuity.
 
 For more information on TSP installment payments and other withdrawal options, read the booklet [*Withdrawals After Leaving Federal Service*](/publications/tspbk02.pdf).
