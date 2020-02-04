@@ -55,7 +55,8 @@ document-ready:
 <section id="form-search-results" class="form-search-results ">
   {% comment %}inline form search results below{% endcomment %}
   <h2 id="results-count-block" class="results hide">We found
-    <strong><span id="results-count"></span></strong> forms and resources
+    <strong><span id="results-count"></span></strong>
+    <span id="formsResourcesSpan">forms and resources</span>
       about <strong><span id="results-terms"></span></strong>
   </h2>
   <div class="usa-grid-full results">
@@ -241,22 +242,5 @@ document-ready:
   </div>
   {% endfor %}
 </section>
-
-<div class="usa-grid-full results hide">
-  <div class="usa-width-one-whole">
-
-    {% comment %}inline form search results below{% endcomment %}
-    <h2 class="results">We found <strong><span id="results-count"></span></strong> forms and resources about <strong>$term</strong></h2>
-
-    {% include search-result-blocks.html %}
-
-    {% include search-hit-blocks.html %}
-
-  </div> <!-- END div.usa-width-one-whole -->
-</div> <!-- END div.usa-grid-full -->
-
-
-
-
 
 {% include form-modals.html %}

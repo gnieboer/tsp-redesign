@@ -101,6 +101,11 @@ function unsetResultString() {
 function setResultString(cnt, qs) {
   $('#results-count').html(cnt);
   $('#results-terms').html(qs);
+  if (cnt == 1) {
+    $('#formsResourcesSpan').text('form/resource');
+  } else {
+    $('#formsResourcesSpan').text('forms and resources');
+  }
 }
 function clearResultDivs() {
   unsetResultString();
