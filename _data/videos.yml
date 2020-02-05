@@ -1,13 +1,13 @@
 - video_title: Lifecycle Funds
-  video_description: In this video, we’ll talk about the professionally designed Lifecycle Funds, also known as the L Funds.
+#  video_description: In this video, we’ll talk about the professionally designed Lifecycle Funds, also known as the L Funds.
   video_id: r6rRMcgBNCc
   video_playlist: PLz_6hPnw1Qq5W5U3hZiD0c05gZKkFStT1
-  video_duration: 1:52
-  video_date: October 14, 2014
+#  video_duration: 1:52
+#  video_date: October 14, 2014
   video_categories:
     - Education
     - Investment options
-  video_download: "/assets/videos/fund-video-lifecycle.mp4"
+  video_download: fund-video-lifecycle.mp4 # Assumption is /assets/videos/
   video_transcript: "Your TSP Investment Options: The Lifecycle Funds
 
   The TSP has a selection of individual and lifecycle funds that let you diversify your retirement savings. You can choose to invest your TSP dollars in everything from short-term U.S. Treasury securities to index funds comprised of domestic and international stocks. In this video, we’ll talk about the professionally designed Lifecycle Funds, also known as the L Funds. If you don’t have the time, experience, or interest to manage your TSP retirement savings, consider one of the L Funds.
@@ -25,12 +25,10 @@
   video_description: In this video, we'll talk about the Government Securities Investment Fund, also known as the G Fund.
   video_id: OHdIdwS33uA
   video_playlist: PLz_6hPnw1Qq5W5U3hZiD0c05gZKkFStT1
-  video_duration: 1:37
-  video_date: July 20, 2015
   video_categories:
     - Education
     - Investment options
-  video_download: "/assets/videos/fund-video-g.mp4"
+  video_download: fund-video-g.mp4
   video_transcript:
 - video_title: The F Fund
   video_description: In this video, we'll talk about the Fixed Income Index Investment Fund, also known as the F Fund. To learn more about the investment index fund that the F Fund tracks, visit [http://www.bloombergindices.com](/exit/?idx=159)
@@ -41,7 +39,7 @@
   video_categories:
     - Education
     - Investment options
-  video_download: "/assets/videos/fund-video-f.mp4"
+  video_download: fund-video-f.mp4
   video_transcript:
 - video_title: The C Fund
   video_description: In this video, we'll talk about the Common Stock Investment Fund, also known as the C Fund.
@@ -52,7 +50,7 @@
   video_categories:
     - Education
     - Investment options
-  video_download: "/assets/videos/fund-video-c.mp4"
+  video_download: fund-video-c.mp4
   video_transcript:
 - video_title: The S Fund
   video_description: In this video, we'll talk about the Small Capitalization Stock Index Fund, also known as the S Fund.
@@ -63,7 +61,7 @@
   video_categories:
     - Education
     - Investment options
-  video_download: "/assets/videos/fund-video-s.mp4"
+  video_download: fund-video-s.mp4
   video_transcript:
 - video_title: The I Fund
   video_description: In this video, we'll talk about the International Stock Index Investment Fund, also known as the I Fund.
@@ -74,5 +72,5 @@
   video_categories:
     - Education
     - Investment options
-  video_download: "/assets/videos/fund-video-i.mp4"
+  video_download: fund-video-i.mp4
   video_transcript:

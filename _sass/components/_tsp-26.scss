@@ -1,0 +1,330 @@
+@media all {
+  section.tsp-26 {
+    display: block;
+    width: 760px;
+    border: 1px solid #000000;
+    margin: auto;
+    padding: 1rem;
+    font-size: 10px;
+    font-family: 'PT Sans', Verdana, Arial, sans-serif;
+
+    h2 {
+      font-size: 1.2rem;
+      margin: 0;
+      font-family: inherit;
+    }
+
+    table {
+      margin: 0;
+    }
+
+    ul.checklist {
+      list-style-type: none;
+      padding: 0 3rem;
+
+      li {
+        font-size: 0.88rem;
+        line-height: 1.2;
+        margin-bottom: 0.75rem;
+
+        &:before {
+          content: "\2713";
+          font-size: 1.2rem;
+          margin-left: -1.5rem;
+          padding-right: 0.5rem;
+        }
+
+        &:last-child:before {
+          content: "\2713";
+          visibility: hidden;
+        }
+
+        p {
+          margin-bottom: 0;
+        }
+      }
+    }
+
+    .form-tag {
+      text-align: right;
+      font-size: 0.8rem;
+      padding-right: 1rem;
+    }
+
+    .mailing-address {
+      padding-left: 35%;
+    }
+  }
+  div {
+    &.buttons {
+      input {
+        background-color: #046b99;
+        border: 0;
+        border-radius: 0;
+        color: #ffffff;
+        cursor: pointer;
+        display: inline-block;
+        font-family: "Source Sans Pro", Helvetica Neue, Helvetica, Roboto, Arial, sans-serif;
+        font-size: 1rem;
+        font-weight: 700;
+        padding: .8rem 1.6rem;
+        text-align: center;
+        text-decoration: none;
+      }
+    }
+  }
+  // END section.tsp-26
+  .txtlbstd {
+    font-size: 1.3rem;
+    color: #000;
+    background-color: transparent;
+    padding-top: 3px;
+  }
+
+  .txtlbfrm {
+    font-size: 0.8rem;
+    color: #000;
+    background-color: transparent;
+    padding-top: 4px;
+  }
+
+  .txtlbfrmSml {
+    font-size: 0.8rem;
+    color: #000;
+    background-color: transparent;
+    padding-top: 3px;
+  }
+
+  .txtlbint {
+    font-size: 0.8rem;
+    color: #000;
+    background-color: transparent;
+    padding-top: 4px;
+    height: 1.0em;
+    text-indent: 13px;
+  }
+
+  .txtlbintlong {
+    font-size: 7pt;
+    text-indent: 66px;
+    height: 1em;
+    text-align: center;
+  }
+
+  .txtlbsm {
+    font-size: 6pt;
+    color: #000;
+    background-color: transparent;
+    text-align: right;
+  }
+
+  .txspstd {
+    font-size: smaller;
+    color: #000;
+    padding-top: 0.0em;
+    background-color: transparent;
+  }
+
+  .bulist {
+    height: 1.0em;
+  }
+
+  .txfmid {
+    padding-right: 0;
+    padding-left: 0;
+    font-size: 9pt;
+    color: #000000;
+    padding-top: 0;
+    font-variant: small-caps;
+  }
+
+  #fmbulllist {
+    font-size: 8pt;
+    padding-bottom: 2px;
+    height: 300px;
+    padding-top: 2px;
+    border: #666699 0 solid;
+  }
+
+  #fmtems {
+    padding-right: 2px;
+    padding-left: 2px;
+    font-size: 8pt;
+    padding-bottom: 2px;
+    padding-top: 2px;
+    border: #666699 0 solid;
+  }
+
+  #fmctlstd {
+    padding: 1px;
+    font-size: 8pt;
+    width: 760px;
+    border: #666699 0 solid;
+  }
+
+  #fmbdstd {
+    margin: 8px 4px;
+    width: 100%;
+    background-color: transparent;
+  }
+
+  input {
+    font-family: Courier,Arial,sans-serif;
+
+    [type=button] {
+      font-family: inherit;
+    }
+  }
+
+  .fmipfbold {
+    border: 1px solid #999;
+    font-weight: bold;
+    font-size: 10pt;
+    width: 1em;
+    color: #000000;
+    padding-top: 1px;
+    font-style: normal;
+    height: 1.35em;
+    background-color: #ffffff;
+    text-align: center;
+    font-variant: small-caps;
+  }
+
+  .fmipfstd {
+    background-color: #fffacd;
+    border: 1px solid #999;
+    color: #000000;
+    font-size: 10pt;
+    padding-top: 1px;
+    font-style: normal;
+    text-transform: uppercase;
+    width: 1.04em;
+    height: 1.35em;
+    text-align: center;
+  }
+
+  .fmipfbig {
+    background-color: #fffacd;
+    border: 1px solid #999;
+    color: #000000;
+    font-size: 10pt;
+    padding-top: 1px;
+    font-style: normal;
+    text-transform: uppercase;
+    width: 1.04em;
+    height: 1.35em;
+    text-align: center;
+  }
+
+  .txtlbbold {
+    font-weight: bold;
+    font-size: 10pt;
+    padding-bottom: 1em;
+    text-transform: capitalize;
+    color: #000000;
+  }
+
+  .txtlbbold2 {
+    font-weight: bold;
+    font-size: 14pt;
+    padding-bottom: 1em;
+    text-transform: capitalize;
+    color: #000000;
+  }
+
+  .txtlbh2 {
+    font-weight: bold;
+    font-size: 11pt;
+    padding-bottom: 0.3em;
+    color: #000000;
+    line-height: 1.2em;
+    padding-top: 0.3em;
+    text-align: center;
+  }
+
+  .txtlbh1 {
+    font-size: 10pt;
+    padding-bottom: 1em;
+    text-transform: capitalize;
+    color: #000000;
+    line-height: 1.2em;
+    padding-top: 1em;
+  }
+
+  .imgadjstd {
+    text-align: center;
+    padding-right: 0;
+    padding-left: 0;
+    color: #000000;
+    padding-top: 0;
+  }
+
+  .btnstd {
+    padding-right: 2px;
+    border-top: #99ccff 1px solid;
+    padding-left: 2px;
+    background: #3366cc;
+    padding-bottom: 2px;
+    font: bold 10pt tahoma;
+    color: white;
+    padding-top: 2px;
+    border-bottom: black 1px solid;
+  }
+}
+@media screen {
+  .fmnoshow {
+    display: inline;
+  }
+
+  .fmalignstd {
+    text-align: left;
+  }
+}
+@media print {
+  section.tsp-26 {
+    border: none;
+    padding: 0;
+  }
+
+  .buttons {
+    display: none;
+  }
+
+  .fmnoshow {
+    display: none;
+  }
+
+  .fmalignstd {
+    text-align: left;
+  }
+
+  .fmipfstd {
+    background-color: #FFFFFF;
+    border: 1px solid #999;
+    color: #000000;
+    font-size: 10pt;
+    font-weight: bold;
+    font-weight: bold;
+    padding-top: 1px;
+    font-style: normal;
+    text-transform: uppercase;
+    width: 1.04em;
+    height: 1.35em;
+    text-align: center;
+  }
+
+  .fmipfbig {
+    background-color: #fffacd;
+    border: 1px solid #999;
+    color: #000000;
+    font-size: 10pt;
+    font-weight: bold;
+    padding-top: 1px;
+    font-style: normal;
+    text-transform: uppercase;
+    font-family: Courier, Arial, sans-serif;
+    width: 1.04em;
+    height: 1.35em;
+    text-align: center;
+  }
+}
