@@ -94,7 +94,7 @@ document-ready:
   {% if cnt >= startAccordion %}
   </div>
   {% endif %}
-  <div id="more-forms-0" class="see-more" onClick="showMoreForms('forms', 0);">
+  <div id="more-forms-0" class="see-more" onClick="showMoreForms('forms', '0');">
     <span>see more forms</span>
   </div>
   </div>
@@ -153,7 +153,7 @@ document-ready:
   </div>
   {% endif %}
   {% if formCnt > showTotal %}
-  <div id="more-forms-{{ topicID }}" class="see-more" onClick="showMoreForms('forms', {{ topicID }});">
+  <div id="more-forms-{{ topicID }}" class="see-more" onClick="showMoreForms('forms', '{{ topicID }}');">
     <span>see more forms</span>
   </div>
   {% endif %}
@@ -186,7 +186,7 @@ document-ready:
   {% if cnt >= startAccordion %}
   </div>
   {% endif %}
-  <div id="more-resources-0" class="see-more" onClick="showMoreForms('resources', 0);">
+  <div id="more-resources-0" class="see-more" onClick="showMoreForms('resources', '0');">
     <span>see more resources</span>
   </div>
   </div>
@@ -235,7 +235,7 @@ document-ready:
   </div>
   {% endif %}
   {% if resCnt > showTotal %}
-  <div id="more-resources-{{ topicID }}" class="see-more" onClick="showMoreForms('resources', {{ topicID }});">
+  <div id="more-resources-{{ topicID }}" class="see-more" onClick="showMoreForms('resources', '{{ topicID }}');">
     <span>see more resources</span>
   </div>
   {% endif %}

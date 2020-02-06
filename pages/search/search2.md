@@ -14,6 +14,10 @@ document-ready:
 #  - doSearch();
 ---
 
+{% comment %}
+Dav's file for search development.
+{% endcomment %}
+
 <section class="plan-news" markdown="1">
 
 {% include search-bar.html  onChange="doSearch2('s2');" searchName="s2" affiliatePlaceholder=1 %}

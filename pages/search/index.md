@@ -15,7 +15,6 @@ document-ready:
   - setQS('search-terms');
   - gotoPage(1);
   - addFormModals();
-  - cleanURL();
 ---
 
 <div class="usa-grid-full search">
