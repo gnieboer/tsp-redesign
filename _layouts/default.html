@@ -5,7 +5,8 @@
 
 <head>
   {% include meta.html %}
-  {% include styles.html %}
+  {% comment %}{% include styles.html %}{% endcomment %}
+  {% include components/styles.html %}
   {% include components/iconfonts.html %}
   {% if site.google_analytics_ua or site.dap_agency %}
   {% include analytics.html %}
