@@ -14,7 +14,7 @@ permalink: /in-service-withdrawal-basics/alternatives-to-withdrawals/
 
 # Alternatives to withdrawals
 
-You should consider the consequences before making an in-service withdrawal from your TSP account. If you're in pay status and are eligible for a TSP loan, you may want to consider that option. The following table compares how taking a TSP loan or making an in-service withdrawal would affect your account.
+The following table compares how taking a TSP loan or making an in-service withdrawal would affect your account.
 
 <table>
 <thead>
@@ -34,7 +34,6 @@ You should consider the consequences before making an in-service withdrawal from
 <td markdown="1">
 - Retirement savings permanently reduced by amount of withdrawal
 - No future earnings on amount withdrawn
-- With financial hardship withdrawal, no employee contributions for 6 months (and no matching contributions, if you are a FERS or BRS participant); members of the uniformed services cannot contribute from incentive, special, or bonus pay
 </td>
 </tr>
 <tr>
@@ -56,16 +55,6 @@ No earnings on amount of loan until funds are repaid
 </td>
 <td markdown="1">
 - No earnings on amount withdrawn
-- With financial hardship withdrawal, no new contributions to accrue earnings for 6 months
-</td>
-</tr>
-<tr>
-<th scope="row" markdown="1">**Effect on Matching Contributions (FERS and BRS Only)**</th>
-<td markdown="1">
-None
-</td>
-<td>
-With financial hardship withdrawal, no matching contributions while employee contributions are suspended
 </td>
 </tr>
 </tbody>
@@ -73,4 +62,4 @@ With financial hardship withdrawal, no matching contributions while employee con
 
 \*When we report a taxable distribution, the Internal Revenue Service (IRS) considers the unpaid balance (including any accrued interest) of the loan to be taxable income.
 
-For more information, read [_Loans_](https://www.tsp.gov/PDF/formspubs/tspbk04.pdf) and [_In-Service Withdrawals_](https://www.tsp.gov/PDF/formspubs/tspbk12.pdf).
+For more information on each program, read [TSP Loans](/publications/tspbk04.pdf) and [_In-Service Withdrawals_](/publications/tspbk12.pdf). These booklets are also available from your agency, service, or through the ThriftLine.

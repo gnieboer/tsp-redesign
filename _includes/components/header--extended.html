@@ -89,15 +89,12 @@
       {% if _secondary %}
       <div class="usa-nav-secondary">
         {% if site.search_site_handle %}
-        <form id="search_form" action="https://search.usa.gov/search" accept-charset="UTF-8" method="get" class="usa-search usa-search-small js-search-form usa-sr-only">
-          <div style="margin:0;padding:0;display:inline">
+        <form id="search_form" action="/search/" accept-charset="UTF-8" method="get" class="usa-search usa-search-small js-search-form usa-sr-only">
             <input name="utf8" type="hidden" value="&#x2713;" />
-          </div>
-          <input id="affiliate" name="affiliate" type="hidden" value="{{ site.search_site_handle }}" />
           <div role="search">
             <label for="query" class="usa-sr-only">Enter Search Term(s):</label>
-            <input type="search" name="query" id="query" autocomplete="off" class="usagov-search-autocomplete" />
-            <button type="submit" name="commit" value="Search">
+            <input type="search" name="qs" id="qs" autocomplete="off" class="usagov-search-autocomplete" />
+            <button type="submit" value="Search">
               <span class="usa-sr-only">Search</span>
             </button>
           </div>

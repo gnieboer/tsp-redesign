@@ -23,7 +23,7 @@
 - form_number: TSP-1-C
   form_url: tsp-1-c.pdf
   form_name: Catch-Up Contribution Election
-  form_info: Start, stop, or change "catch-up" contributions to the TSP. Only for participants age 50 or older.
+  form_info: Start, stop, or change catch-up contributions to the TSP. Only for participants age 50 or older.
   form_date: 1/2015
   form_pages: 2
   form_audience:
@@ -34,7 +34,7 @@
 - form_number: TSP-U-1-C
   form_url: tsp-u-1-c.pdf
   form_name: Catch-Up Contribution Election
-  form_info: Start, stop, or change "catch-up" contributions to the TSP. Only for participants age 50 or older.
+  form_info: Start, stop, or change catch-up contributions to the TSP. Only for participants age 50 or older.
   form_date: 1/2018
   form_pages: 2
   form_audience:
@@ -54,7 +54,7 @@
   -  Death benefits
   -  Beneficiary participants
 - form_number: TSP-9
-  form_url: tsp-9.pdf
+  form_url: tsp-9.pdf&_form=tsp09
   form_name: Change in Address for Separated Participant
   form_info: Change your TSP account address if you are separated from Federal service. If you are separated, you may also request a change of address online using My Account.
   form_date: 6/2008
@@ -108,11 +108,21 @@
   form_topics:
   -  Death benefits
 - form_number: TSP-20
-  form_url: tsp-20.pdf
+  form_url: tsp-20.pdf&_form=tsp20
   form_name: Loan Application
   form_info: Request a general purpose or residential TSP loan. Civilians and uniformed service members can use this form.
   form_date: 4/2012
   form_pages: 2
+  form_audience:
+  -  Both
+  form_topics:
+  -  Loans
+- form_number: TSP-21-R-CL
+  form_url: tsp-21-r-cl.pdf
+  form_name: Residential Loan Checklist
+  form_info: Complete this checklist and include it with your completed Form TSP-21-R, <i>Loan Agreement</i>, and residential loan documentation to ensure timely processing of your loan.
+  form_date: 8/2017
+  form_pages: 1
   form_audience:
   -  Both
   form_topics:
@@ -140,7 +150,7 @@
   -  Loans
 - form_number: TSP-41
   form_url: tsp-41.pdf
-  form_name: Notification to TSP of Nonpay Status
+  form_name: Notification to TSP of Nonpay Status (Agency use)
   form_info: Agency representatives can notify the TSP when a participant who has a TSP loan is placed in an approved nonpay status, or when a participant who entered nonpay status returns to pay status.
   form_date: Local Reproduction
   form_pages: 2
@@ -231,18 +241,17 @@
 - form_number: TSP-95
   form_url: https://www.tsp.gov/tsp/addlWithdrawals.do?subaction=wdMenu&_name=wd&_form=tsp95
   form_name: Changes to Installment Payments
-  form_info: Log in to My Account and access the online tool to request changes to your existing TSP installment payments.
+  form_info: Log in to <a href="https://www.tsp.gov/tsp/addlWithdrawals.do?subaction=wdMenu&_name=wd">My Account</a> and access the online tool to request changes to your existing TSP installment payments.
   form_date: Local reproduction
   form_pages: 0
   form_audience:
   -  Both
   form_topics:
   -  Withdrawals
-  -  Beneficiary participants
 - form_number: TSP-99
   form_url: https://www.tsp.gov/tsp/addlWithdrawals.do?subaction=wdMenu&_name=wd&_form=tsp99
   form_name: Withdrawal Request for Separated and Beneficiary Participants
-  form_info: Log in to My Account and access the online tool to request a withdrawal if you are either separated from service or a beneficiary participant.
+  form_info: Log in to <a href="https://www.tsp.gov/tsp/addlWithdrawals.do?subaction=wdMenu&_name=wd">My Account</a> and access the online tool to request a withdrawal if you are either separated from service or a beneficiary participant.
   form_date: Local reproduction
   form_pages: 0
   form_audience:
@@ -251,7 +260,7 @@
   -  Withdrawals
   -  Beneficiary participants
 - form_number: W-4P
-  form_url: https://www.tsp.gov/other/exit/exit_tsp_website.html?urlIdx=26
+  form_url: /exit/?idx=26
   form_name: Withholding Certificate for Pension or Annuity Payments
   form_info: Request a change to the default tax withholding for a withdrawal. W-4P is an IRS form.
   form_date: Local Reproduction
@@ -260,4 +269,4 @@
   -  Both
   form_topics:
   -  Withdrawals
-  - Tax information
+  -  Tax information

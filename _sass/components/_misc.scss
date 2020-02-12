@@ -22,6 +22,9 @@
   background-color: #116C97;
 }
 
+.hide {
+  display: none;
+}
 @media (min-width: #{$medium-screen}) {
   .usa-hero-callout {
     max-width: 36rem;

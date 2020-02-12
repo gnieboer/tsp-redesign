@@ -11,14 +11,12 @@ permalink: /annuity-basics/annuity-benefits-and-limitations/
 
 Purchasing an annuity means that you pay now to receive monthly payments that last for the rest of your life. We offer the following annuity options through our annuity provider:
 
-Single life annuity or a joint life annuity with your spouse or with someone other than your spouse.
+- Single life annuity
+- Joint life annuity with your spouse or with someone other than your spouse.
 
 <div class="usa-alert usa-alert-info">
 <div class="usa-alert-body" markdown="1">
-The TSP annuity is not the same as the annuity you receive as part of your CSRS or FERS retirement package or military retired pay. Nor is it the same as the monthly payment option you may chose as one of the other full withdrawal options.
-{: .usa-alert-text}
-</div>
-</div>
+The TSP annuity is not the same as a TSP installment payment. A TSP installment payment is one of the other withdrawal options that you have as a separated or beneficiary participant.
 
 ## Single life annuity
 A single life annuity provides a monthly amount only to you for as long as you live. It stops paying after your death.
@@ -38,7 +36,7 @@ The amount of the monthly payment to the survivor - whether the survivor is you 
 
 If you name a joint annuitant other than your spouse who is more than 10 years younger than you, you must choose a joint life annuity with the 50% survivor benefit in most cases.
 
-For more information about joint annuitants, refer to the Life Annuities section of the booklet _[Withdrawing Your TSP Account After Leaving Federal Service](https://www.tsp.gov/PDF/formspubs/tspbk02.pdf)._
+For more information about joint annuitants, refer to the Life Annuities section of the booklet [Withdrawing From Your TSP Account for Separated and Beneficiary Participants](/publications/tspbk02.pdf).
 
 ## Annuity payment options
 Once you’ve chosen either a single life or a joint life annuity, you must decide whether you want to receive "level" or "increasing" payments.
@@ -83,7 +81,7 @@ You can add the ten-year certain feature if you purchase a single life annuity w
 
 ### Spouses' rights
 If you’re married (even if you’re separated from your spouse), spouses' rights apply to annuity purchases.
-If you’re a married FERS or uniformed services participant with a total account balance of more than $3,500 and you are making a full withdrawal of your account, your spouse is entitled by law to a joint life annuity with a 50% survivor benefit, level payments, and no cash refund. If you do not use your entire account balance to purchase this particular type of annuity, your spouse must sign the statement on your withdrawal form that waives his or her right to it. 
+If you’re a married FERS or uniformed services participant with a total account balance of more than $3,500 and you are making a full withdrawal of your account, your spouse is entitled by law to a joint life annuity with a 50% survivor benefit, level payments, and no cash refund. If you do not use your entire account balance to purchase this particular type of annuity, your spouse must sign the statement on your withdrawal form that waives his or her right to it.
 
 ### Rehired employees
 If you're rehired by the federal government after leaving federal service, you will continue to get any TSP annuity payments that you may already be receiving.

@@ -1,33 +1,112 @@
 section {
-  &.search-site {
-      padding: 0 14rem;
-      border: 1px solid red;
 
-      h1 {
-        margin-top: 0;
+  &.search-filters,
+  &.search-results,
+  &.pagination {
+    padding: none;
+  }
+
+  &.search-filters {
+    .usa-search.usa-search-small {
+      [type=search] {
+        max-width: calc(100% - 4.5rem);
+        width: 66rem;
       }
-      h3 {
-        margin: 0;
-        font-weight: normal;
-        line-height: 1.42857143;
-        color: #595959;
-      }
-      input {
-        &[type=search] {
-          width: 100%;
+    }
+
+    input {
+      &[type=search] {
+        max-width: none;
+        // width: 100%;
+        border: 1px solid $color-gray-lighter;
+
+        &:focus {
+          border-bottom: 3px solid $color-primary;
         }
       }
+    }
 
-      a,
-      input[type=submit],
-      #clear-button {
-        &:focus {
-          outline: thin dotted;
-          outline: 5px auto -webkit-focus-ring-color;
-          outline-offset: -2px;
-          outline: #fcb117 solid 3px;
-          }
+    a {
+      text-decoration: none;
+
+      &:hover {
+        text-decoration: underline;
       }
+    }
+
+    a,
+    input[type=submit] {
+      &:focus {
+        outline: thin dotted;
+        outline: 5px auto -webkit-focus-ring-color;
+        outline-offset: -2px;
+        outline: #fcb117 solid 3px;
+      }
+    }
+
+    .filter-block {
+      margin-bottom: 2rem;
+    }
+
+    ul.filters {
+      margin-bottom: 1rem;
+      a {
+        color: $color-gray-dark;
+      }
+
+      li {
+        padding: 0.6rem 1rem 0.8rem;
+        border-top: 3px solid #ffffff;
+
+        &.active {
+          border-top: 3px solid $color-primary;
+        }
+
+        &:last-child {
+          width: 100%;
+          font-family: $sans;
+          font-weight: $light;
+          font-size: 2rem;
+        }
+      }
+    }
+    // end ul.filters
+  }
+  // END section.search-filters
+
+  &.search-results {
+    &:focus {
+      outline-offset: -2px;
+      outline: #fcb117 solid 3px;
+    }
+
+    h3 {
+      font-family: $sans;
+      font-weight: $light;
+      font-size: 2.5rem;
+    }
+
+    h4 {
+      &.title {
+        font-family: $sans;
+        font-weight: $normal;
+        font-size: 1.8rem;
+        margin-bottom: 0.4rem;
+      }
+    }
+
+    .best-bets,
+    .results {
+      padding-bottom: 2rem;
+      border-bottom: 1px solid $color-gray-lighter;
+    }
+
+    .description,
+    .url {
+      display: block;
+      word-wrap: break-word;
+      font-size: 1.6rem;
+    }
 
     .url {
       color: #006800;
@@ -35,23 +114,67 @@ section {
       text-overflow: ellipsis;
       white-space: nowrap;
       height: 1.5em;
-      display: block;
-      word-wrap: break-word;
+      font-size: 1.7rem;
     }
-    #best-bets {
-      margin-bottom: 12px;
-      border-bottom: 1px solid #e0e0e0;
-      padding-bottom: 4px;
-      background-color: #fff;
-      margin: 0 12px 12px;
-      overflow: hidden;
-    }
-  } // end .search-site
-} // end section
+  }
+  // end .search-results
 
-@media screen and (max-width: $large-screen) {
-  #best-bets {
-    margin-bottom: 0;
-    padding-bottom: 0;
+  &.pagination {
+    .disabled {
+      visibility: hidden;
+    }
+    div.pagination-block {
+      text-align: center;
+      margin-top: 1.2rem;
+      padding-bottom: .4rem;
+
+      .previous-page,
+      .next-page {
+        &::before,
+        &::after {
+          font-family: $font-awesome;
+          font-size: 1.5rem;
+          display: inline-block; // prevents underline on :hover
+        }
+      }
+      .previous-page {
+        text-align: right;
+        &::before {
+          content: "\f100";
+          padding-right: .4rem;
+        }
+      }
+
+      .next-page {
+        text-align: left;
+        &::after {
+          content: "\f101";
+          padding-left: .4rem;
+        }
+      }
+
+      a,
+      em {
+        display: inline-block;
+        text-align: center;
+        padding: .5rem;
+        min-width: 3.8rem;
+        &:hover,
+        &:visited {
+          color: $color-primary;
+        }
+      }
+    }
+  } // END &.pagination
+}
+// end section
+@media screen and (min-width: $large-screen) {
+
+  .usa-grid-full {
+    &.search {
+      .usa-width-one-whole {
+        padding: 0 14rem;
+      }
+    }
   }
 }

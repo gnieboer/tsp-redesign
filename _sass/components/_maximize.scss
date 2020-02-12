@@ -17,7 +17,7 @@
     line-height: 2;
   }
   .silver {
-    background-color: $color-silver;
+    background-color: $color-gray-lightest;
   }
   .blue-medium {
     background-color: $color-blue-medium;
@@ -33,7 +33,7 @@
       font-weight: $medium;
       margin-bottom: 1rem;
       padding: 2rem 0;
-      background-color: $color-silver;
+      background-color: $color-gray-lightest;
     }
     thead tr:nth-child(1) th {
       background: white;
@@ -178,7 +178,7 @@
     }
     .silver {
       td {
-        background-color: $color-silver;
+        background-color: $color-gray-lightest;
         border: none;
       }
     }

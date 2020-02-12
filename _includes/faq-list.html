@@ -1,10 +1,11 @@
 <ul class="usa-accordion">
-{% assign defaultSize = site.data.faqs | size %}
+{% assign defaultSize = site.faq | size %}
 {% assign maxFAQs = include.maxFAQs | default: defaultSize %}
-{% for faq in site.data.faqs %}
+{% for faq in site.faq %}
   {% if forloop.index > maxFAQs %}{% break %}{% endif %}
   {% assign faq_id = 'faq' | append: forloop.index %}
-  {% include faq-item.html faq_id=faq_id faq_name=faq.faq_name
-    faq_question=faq.faq_question faq_body=faq.faq_body %}
+  <li>
+  {% include faq-item.html entry=faq expanded="false" %}
+  </li>
 {% endfor %}
 </ul>

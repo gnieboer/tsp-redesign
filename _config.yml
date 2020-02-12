@@ -4,9 +4,13 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://beta.tsp.gov" # the base hostname & protocol for your site, e.g. http://example.com
 plugins:
   - jekyll-last-modified-at
+  - jekyll-redirect-from
 
 theme: uswds-jekyll
 
+# My Account URLS
+myaccount: "https://www.tsp.gov/tsp"
+profile_settings: "https://www.tsp.gov/tsp/profileSettings.do?subaction=view&amp;_name=profile"
 # To enable search, uncomment the search section
 # You will need to setup a search account with search.gov
 # https://search.usa.gov/signup
@@ -14,12 +18,12 @@ theme: uswds-jekyll
 
 search_site_handle: beta.tsp
 
-
 # Configuration for Google Analytics, add your UA code here:
-google_analytics_ua: UA-33523145-2
+# google_analytics_ua: UA-33523145-2
+google_analytics_ua: UA-155812092-1
 
 # Configuration for DAP, add your agency ID here:
-dap_agency: FRTIB
+dap_agency: FRTIB&pua=ua-33523145-2"
 
 # Build settings
 markdown: kramdown
@@ -51,12 +55,14 @@ collections:
   funds:
     output: true
   forms:
-    output: false
+    output: true
   plan_news:
     output: true
   publications:
     output: true
   newsletters:
+    output: true
+  faq:
     output: true
 
 defaults:
@@ -65,4 +71,10 @@ defaults:
       path: "_plan_news"
     values:
       layout: page-plan-news
+      sidenav: news-and-resources
+  -
+    scope:
+      path: "_faq"
+    values:
+      layout: page-faq
       sidenav: news-and-resources

@@ -56,7 +56,7 @@ As you prepare to separate from service, here are some important things you must
 - If you have any TSP loans, pay them off within 90 days of your separation.
 - Read _[Withdrawing Your TSP Account After Leaving Federal Service](javascript:void(0))_ to fully understand your options.
 - Read the tax notice "[Important Tax Information About Payments From Your TSP Account](javascript:void(0))."
-- Read [*TSP Benefits That Apply to Members of the Military Who Return to Federal Civilian Service*](https://www.tsp.gov/PDF/formspubs/tspfs08.pdf) to fully understand all of your rights under the Uniformed Services Employment and Reemployment Rights Act (USERRA).
+- Read [*TSP Benefits That Apply to Members of the Military Who Return to Federal Civilian Service*](/publications/tspfs08.pdf) to fully understand all of your rights under the Uniformed Services Employment and Reemployment Rights Act (USERRA).
 
 
 </div>

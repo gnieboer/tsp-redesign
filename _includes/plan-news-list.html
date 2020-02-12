@@ -1,15 +1,27 @@
 {% comment %}make an array of non-archived plan_news items{% endcomment %}
-{% include components/get_plan_news_list %}
+{% assign plan_news_list = site.plan_news | sort: 'path' | reverse %}
+{% assign topitems = "" | split: ',' %}
+{% assign archive = "" | split: ',' %}
+{% for item in plan_news_list %}{% unless item.path contains '/_hidden/' %}
+{% assign folder = item.path | split: '/' | shift | pop | join: '/' %}
+{% if folder == '' %}
+  {% assign topitems = topitems | push: item %}
+{% else %}
+  {% assign archive = archive | push: item %}
+{% endif %}
+{% endunless %}{% endfor %}
 {% comment %}topitems is now top plan news, archive is the stuff in accordions below,
             both reverse sorted{% endcomment %}
 
+
+<div id="plan-news-default-div">
 {% comment %}Do the top level{% endcomment %}
-{% assign searchBar = 1 %}
 {% assign itemSize = topitems | size %}
 {% assign startTopAccordion = 2 | plus: 1 %}
 {% assign cnt = 0 %}
 {% if itemSize > 0 %}
 <section class="plan-news" markdown="1">
+
 {% assign lastHeader = '' %}
 {% for item in topitems %}
   {% assign cnt = cnt | plus: 1 %}
@@ -20,8 +32,7 @@
   {% assign newHeader = item.path | split: '/' | last | truncate: 7, "" %}
   {% if newHeader == lastHeader %}{% assign showHeader = 0 %}{% endif %}
   {% assign lastHeader = newHeader %}
-  {% include plan-news-item.html entry=item showHeader=showHeader searchBar=searchBar %}
-  {% assign searchBar = 0 %}
+  {% include plan-news-item.html entry=item showHeader=showHeader %}
 {% endfor %}
 {% if cnt >= startTopAccordion %}
 </div>
@@ -61,8 +72,7 @@
   {% assign newHeader = item.path | split: '/' | last | truncate: 7, "" %}
   {% if newHeader == lastHeader %}{% assign showHeader = 0 %}{% endif %}
   {% assign lastHeader = newHeader %}
-  {% include plan-news-item.html entry=item showHeader=showHeader searchBar=searchBar %}
-  {% assign searchBar = 0 %}
+  {% include plan-news-item.html entry=item showHeader=showHeader %}
   {% endunless %}
 {% endfor %}
 </div>
@@ -70,3 +80,15 @@
 </ul>
 </section>
 {% endif %}
+</div>
+<section id="plan-news-search-results" class="plan-news hide" markdown="1">
+<!-- DONALD style this -->
+<span class="see-all"><a href="/news-and-resources/plan-news/">See all</a></span>
+
+{% for item in topitems %}
+  {% include plan-news-item.html entry=item showHeader=0 addBlockName=1 %}
+{% endfor %}
+{% for item in archive %}
+  {% include plan-news-item.html entry=item showHeader=0 addBlockName=1 %}
+{% endfor %}
+</section>

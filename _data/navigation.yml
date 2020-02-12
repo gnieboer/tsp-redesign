@@ -16,6 +16,10 @@ primary:
       href: /account-basics/
     - text: Making contributions
       href: /making-contributions/
+    - text: Forms and resources
+      href: /forms/
+    - text: Frequently asked questions
+      href: /faq/
   - text: Learn about fund options
     links:
     - text: How to invest
@@ -105,6 +109,8 @@ manage-your-plan:
         href: /account-basics/move-money-into-tsp/
       - text: Protect your TSP account
         href: /account-basics/protect-your-tsp-account/
+      - text: Troubleshoot login errors
+        href: /account-basics/troubleshoot-login-errors/
       - text: Update your address
         href: /account-basics/update-your-address/
       - text: Administrative costs
@@ -135,15 +141,13 @@ news-and-resources:
         href: /news-and-resources/plan-news/
       - text: Highlights
         href: /news-and-resources/highlights/
-      - text: Government matters
-        href: /news-and-resources/government-matters/
       - text: Government shutdown
         href: /news-and-resources/government-shutdown/
   - text: FAQs
     href: /faq/
   - text: Videos & resources
     href: /videos-and-resources/
-  - text: Forms & publications
+  - text: Forms and resources
     href: /forms/
   - text: Calculators
     href: /calculators/
@@ -200,8 +204,8 @@ use-your-savings:
   - text: In-service withdrawal basics
     href: /in-service-withdrawal-basics/
     subnav:
-      - text: Economic hardship
-        href: /in-service-withdrawal-basics/economic-hardship/
+      - text: Financial hardship
+        href: /in-service-withdrawal-basics/financial-hardship/
       - text: In-service withdrawal types and terms
         href: /in-service-withdrawal-basics/in-service-withdrawal-types-and-terms/
       - text: Making an in-service withdrawal
@@ -217,8 +221,8 @@ use-your-savings:
         href: /living-in-retirement/withdrawal-options/
       - text: Making a withdrawal
         href: /living-in-retirement/making-a-withdrawal/
-      - text: Changing your withdrawal
-        href: /living-in-retirement/changing-your-withdrawal/
+      - text: Changing your withdrawal request
+        href: /living-in-retirement/changing-your-withdrawal-request/
   - text: Annuity basics
     href: /annuity-basics/
     subnav:
@@ -247,6 +251,8 @@ manage-life-changes:
         href: /planning-for-life-events/spouses-rights/
       - text: Divorce, annulment, and legal separation
         href: /planning-for-life-events/divorce-annulment-and-legal-separation/
+      - text: Retirement benefits court order
+        href: /planning-for-life-events/retirement-benefits-court-order/
       - text: Legal matters
         href: /planning-for-life-events/legal-matters/
   - text: Career changes
@@ -342,9 +348,9 @@ privacy:
 footer:
   - text: Privacy
     href: /privacy/
-  - text: Agency & Service Rep Resources
+  - text: Agency and Service Rep Resources
     href: #
-  - text: News & Resources
+  - text: News and resources
     href: /news-and-resources/
   - text: Calculators
     href: /calculators/

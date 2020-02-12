@@ -21,7 +21,7 @@ Check your leave and earnings statement to be sure that loan payments have start
  
 Be aware that you’re responsible for the repayment of your loan regardless of whether your agency or service misses a payment.
 
-**_If you have two TSP accounts and you want to combine your accounts, you must close any loan in the account you are moving before the accounts can be combined._**
+**If you have two TSP accounts and you want to combine your accounts, you must close any loan in the account you are moving before the accounts can be combined.**
 
 ## Loan interest
 When you repay your loan, you repay it with interest. The repayment amount gets deposited back into your account and is invested according to your most recent [contribution allocation](#).
@@ -30,7 +30,7 @@ Daily interest on your loan is calculated as each payment is posted and is based
 Your loan interest payments are not tax deductible.
 
 ## Extra payments
-You can make extra loan payments (in addition to your payroll deduction) at any time using a personal check, cashier's check, or money order. You must send [Loan Payment Coupon](#), _Form TSP-26_, along with your extra payments.
+You can make extra loan payments (in addition to your payroll deduction) at any time using a personal check, cashier's check, or money order. You must send [Loan Payment Coupon](#) along with your extra payments.
  
 If you use an online banking service to make extra loan payments, make sure that the information the Loan Payment Coupon requires is included on your bank check. If any information is missing, the check will be returned.
 
@@ -50,12 +50,13 @@ Certain exceptions for missed payments are granted if you are in [nonpay status]
 
 ## Taxable distributions
 
-We will declare a taxable distribution on the entire unpaid balance of your loan plus accrued interest:
+We will declare a taxable distribution to the IRS and you will owe income taxes on the entire unpaid balance of your loan plus accrued interest:
 
-+ If you fail to repay your loan(s) according to Loan Agreement.
++ If you fail to repay your loan(s) according to the Loan Agreement.
 + If you miss a loan payment and you do not make it up within the specified time period.
-+ If you do not repay your loan in full within 90 days after you separate from federal service, we will report a taxable distribution to the IRS and you will owe income taxes on the outstanding balance of the loan. 
-+ However, once a taxable distribution is declared, you may be able to roll over the taxable amount into an IRA or eligible employer plan within 60 days to avoid taxes and penalties.
++ If you do not repay your loan in full within 90 days after you separate from federal service.
+
+Once a taxable distribution is declared, you may be able to roll over the taxable amount into an IRA or eligible employer plan within 60 days to avoid taxes and penalties.
 
 ## Taxable amounts
 

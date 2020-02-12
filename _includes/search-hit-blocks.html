@@ -1,0 +1,29 @@
+{% comment %}
+HTML blocks used on dynamic search pages.
+{% endcomment %}
+
+<!-- DONALD: this is a normal hit -->
+<div id="hit-web-format" class="hide">
+  <div class="content-block-item result">
+    <h4 class="title">
+    <a href="URL">TITLE</a></h4>
+    <span class="url">URL</span>
+    <span class="description">SNIPPET</span>
+  </div>
+</div>
+
+<!-- DONALD: this is a video hit -->
+<div id="hit-video-format" class="hide">
+  <div class="content-block-item result video">
+    <h4 class="title"><a href="URL">TITLE</a></h4>
+    <span class="url">URL</span>
+    <div class="thumbnail"><a href="URL">
+      <img alt="TITLE" SRC_THUMBNAIL><span><span class="icon icon-play"></span>DURATION</span>
+    </a></div>
+    <span class="content-host-and-published-distance">
+      <span class="content-host">SOURCE</span>
+      <span class="published-distance">PUBDATE</span>
+    </span>
+    <span class="description">SNIPPET</span>
+  </div>
+</div>
