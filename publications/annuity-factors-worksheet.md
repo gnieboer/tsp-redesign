@@ -1,23 +1,12 @@
 ---
-layout:
-title: Form TSP-26, Loan Payment Coupon
+layout: page
+title: Annuity Interest Adjustment Factors and Worksheet
 sidenav:
 styles:
 scripts:
-permalink: /forms/tsp-26/
+permalink: /publications/annuity-factors-worksheet/
 ---
-<html lang="en-US">
-<head>
-{% include meta.html %}
-<link rel="stylesheet" href="{{ site.baseurl }}/assets/css/tsp-26.css">
-</head>
-
-<body>
-  <!-- Google Tag Manager (noscript) -->
-  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MLDLTMR" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-  <!-- End Google Tag Manager (noscript) -->
-
-<section class="tsp-26">
+<section class="annuity-factors">
 <form class="formborder">
   <div class="fmalignstd">
   <table cellpadding="0" cellspacing="0" class="tableborderzero" id="fmctlstd">
@@ -28,12 +17,7 @@ permalink: /forms/tsp-26/
   <tr>
   <td width="4%"></td>
     <!-- TSP LOGO -->
-  <td align="left" bgcolor="white" colspan="3">
-<!-- Fallback code for SVG in IE 11 -->
-<svg width="280" height="45">
-  <image xlink:href="{{ site.baseurl }}/assets/img/tsp-26/header-tsp-26.svg" src="{{ site.baseurl }}/assets/img/tsp-26/header-tsp-26.png" width="280" height="45" />
-</svg>
-  </td>
+  <td align="left" bgcolor="white" colspan="3"><img src="{{ site.baseurl }}/assets/img/tsp-26/header-tsp-26.svg" width="280" alt="THRIFT SAVINGS PLAN Loan Payment Coupon"/></td>
   </tr>
   <tr valign="top">
   <td class="txtlbfrm" width="4%"></td>
@@ -147,5 +131,3 @@ permalink: /forms/tsp-26/
 </form>
   <div class="form-tag">TSP-26 (1/2020)</div>
 </section>
-<script src="{{ site.baseurl }}/assets/js/coupon.js" type="text/javascript"></script>
-</body>
