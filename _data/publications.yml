@@ -64,7 +64,7 @@
   - Loans
   - Withdrawals
 - publication_url: tspbk33.pdf
-  publication_name: Your TSP Account: A Guide for Beneficiary Participants
+  publication_name: "Your TSP Account: A Guide for Beneficiary Participants"
   publication_info: Comprehensive booklet explaining the TSP benefits and features that are specific to beneficiary participants.
   publication_date: 1/2018
   publication_pages: 23 pages
@@ -224,7 +224,7 @@
   - Investments
   - Transfers and rollovers
 - publication_url: oc91-16.pdf
-  publication_name: IRA: The Thrift Savings Plan and IRAs
+  publication_name: "IRA: The Thrift Savings Plan and IRAs"
   publication_info: Provides general information on a participant's options with respect to an IRA when he or she also participates in the TSP.
   publication_date: 5/2012
   publication_pages: 1 page
@@ -373,7 +373,7 @@
   publication_topics:
   - General information
 - publication_url: tsp-583.pdf
-  publication_name: Tax Information: Death Benefit Payments
+  publication_name: "Tax Information: Death Benefit Payments"
   publication_info: Provides tax information to beneficiaries about death benefit payments from the TSP.
   publication_date: 10/2015
   publication_pages: 2 pages
@@ -383,7 +383,7 @@
   - Death benefits
   - Tax information
 - publication_url: tsp-780.pdf
-  publication_name: Tax Information: Monthly Payments
+  publication_name: "Tax Information: Monthly Payments"
   publication_info: Tax information for participants who are withdrawing their account in a series of monthly payments.
   publication_date: 10/2012
   publication_pages: 2 pages
@@ -393,7 +393,7 @@
   - Tax information
   - Withdrawals
 - publication_url: tsp-536.pdf
-    publication_name: Tax Information: Payments From Your TSP Account
+  publication_name: "Tax Information: Payments From Your TSP Account"
   publication_info: Provides tax information about the various disbursements civilian, uniformed services, and beneficiary participants can make from the TSP.
   publication_date: 1/2018
   publication_pages: 8 pages
@@ -405,7 +405,7 @@
   - Transfers and rollovers
   - Withdrawals
 - publication_url: tsp-582.pdf
-  publication_name: Tax Information: Qualifying Orders
+  publication_name: "Tax Information: Qualifying Orders"
   publication_info: Tax information about payments made under qualifying orders.
   publication_date: 1/2015
   publication_pages: 4 pages
@@ -415,7 +415,7 @@
   - Legal documents
   - Tax information
 - publication_url: tsp-537.pdf
-  publication_name: Tax Information: Special Tax Withholding Rules for Thrift Savings Plan Payments to Nonresident Aliens
+  publication_name: "Tax Information: Special Tax Withholding Rules for Thrift Savings Plan Payments to Nonresident Aliens"
   publication_info: A summary of special tax withholding rules that apply to Thrift Savings Plan (TSP) payments made to nonresident aliens.
   publication_date: 5/2012
   publication_pages: 4 pages
