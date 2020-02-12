@@ -32,22 +32,15 @@ To qualify for a financial hardship withdrawal, you must have a financial need f
 ### Additional requirements for financial hardship withdrawals
 
 In addition to the eligibility rules, the following apply:
-
 - You cannot withdraw less than $1,000.
 - You may only withdraw your own contributions and any earnings those contributions have accrued.
-- If you have both a civilian TSP account and a uniformed services account, you can only make a financial hardship withdrawal from the account associated with your active employment at the time of your withdrawal. However, if both of your accounts are associated with your active employment, you can make a financial hardship withdrawal from each account.
-- You are limited to only one financial hardship withdrawal in a 6-month period.
+- If you have two separate TSP accounts - a civilian TSP account and a uniformed services account - you can only make a financial hardship withdrawal from the account associated with your active employment at the time of your withdrawal. However, if both of your accounts are associated with your active employment, you can make a financial hardship withdrawal from each account.
 
 When you complete your application, you will be required to certify, under penalty of perjury, that you have a genuine financial hardship.
 
 ### Consequences of financial hardship withdrawals
 
-When you make a financial hardship withdrawal, consider the following effects on your TSP account:
-
-- You must pay income tax on the taxable portion of your financial hardship withdrawal, and, if you have not reached age 59½, you may also have to pay a 10% early withdrawal penalty tax.
-- You cannot contribute to your TSP account for 6 months, and you won’t receive any Agency/Service Matching Contributions during that 6-month period.
-- At the end of the 6-month period, you must use your agency/service’s electronic payroll system or complete the [Election Form](/forms/tsp-1.pdf), *Form TSP-1* ([TSP-U-1](/forms/tsp-u-1.pdf), uniformed services) to [resume your contributions](#).
-- If you are a member of the uniformed services (whether BRS or not), when your employee contributions from basic pay stop, any contributions from incentive pay, special pay, or bonus pay will also stop.
+Your financial hardship withdrawal is subject to federal income tax and, in some cases, state income tax. If you're younger than 59½, you may have to pay a 10% early withdrawal penalty tax. Any tax-exempt or Roth contributions included in your withdrawal are not subject to federal income tax; neither are any qualified Roth earnings.
 
 Be sure to read the Tax Notice [*Important Tax Information About Payments From Your TSP Account*](/publications/tsp-536.pdf) to learn more about the tax rules affecting your financial hardship withdrawals.
 
@@ -69,4 +62,4 @@ When you make a age-based withdrawal, consider the following effects on your TSP
 
 - You must pay 20% federal income tax on the taxable portion of your age-based withdrawal unless unless you’re able to transfer or roll it over to an IRA or an eligible employer plan.
 
-The tax notice [Important Tax Information About Payments From Your TSP Account](/publications/tsp-536.pdf)  provides more information about the tax rules affecting age-based withdrawals..
+The tax notice [Important Tax Information About Payments From Your TSP Account](/publications/tsp-536.pdf)  provides more information about the tax rules affecting age-based withdrawals.
