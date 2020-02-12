@@ -42,7 +42,7 @@ When you complete your application, you will be required to certify, under penal
 
 Your financial hardship withdrawal is subject to federal income tax and, in some cases, state income tax. If you're younger than 59½, you may have to pay a 10% early withdrawal penalty tax. Any tax-exempt or Roth contributions included in your withdrawal are not subject to federal income tax; neither are any qualified Roth earnings.
 
-Be sure to read the Tax Notice [*Important Tax Information About Payments From Your TSP Account*](/publications/tsp-536.pdf) to learn more about the tax rules affecting your financial hardship withdrawals.
+Be sure to read the tax notice [*Important Tax Information About Payments From Your TSP Account*](/publications/tsp-536.pdf) to learn more about the tax rules affecting your financial hardship withdrawals.
 
 ## Age-based in-service withdrawals
 
@@ -62,4 +62,4 @@ When you make a age-based withdrawal, consider the following effects on your TSP
 
 - You must pay 20% federal income tax on the taxable portion of your age-based withdrawal unless unless you’re able to transfer or roll it over to an IRA or an eligible employer plan.
 
-The tax notice [Important Tax Information About Payments From Your TSP Account](/publications/tsp-536.pdf)  provides more information about the tax rules affecting age-based withdrawals.
+The tax notice [*Important Tax Information About Payments From Your TSP Account*](/publications/tsp-536.pdf)  provides more information about the tax rules affecting age-based withdrawals.
