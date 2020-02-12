@@ -189,7 +189,7 @@
   form_topics:
   -  General information
 - form_number: TSP-75
-  form_url: tsp-75.pdf
+  form_url: https://www.tsp.gov/tsp/addlWithdrawals.do?subaction=wdMenu&_name=wd&_form=tsp75
   form_name: Age-Based In-Service Withdrawal Request
   form_info: Request a withdrawal from your TSP account if you are age 59½ or older and still employed by the Federal Government.
   form_date: 2/2015
@@ -199,7 +199,7 @@
   form_topics:
   -  Withdrawals
 - form_number: TSP-76
-  form_url: tsp-76.pdf
+  form_url: https://www.tsp.gov/tsp/addlWithdrawals.do?subaction=wdMenu&_name=wd&_form=tsp76
   form_name: Financial Hardship In-Service Withdrawal Request
   form_info: Request a financial hardship withdrawal while still employed.
   form_date: 1/2018
