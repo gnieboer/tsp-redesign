@@ -39,17 +39,23 @@ Allow several weeks from the time you submit your completed withdrawal request a
 
 ### Required Minimum Distributions (RMDs)
 
-The Internal Revenue Code (IRC) requires that you receive a portion of your TSP account beginning in the calendar year when you become age 70½ and are separated from service. The portion is called a Required Minimum Distribution (RMD).
+The Internal Revenue Code (IRC) requires that you receive a portion of your TSP account beginning in the calendar year when you become age 72* and are separated from service. The portion is called a Required Minimum Distribution (RMD).
 
 We calculate RMDs based on your account balance and your age using the IRS Uniform Lifetime Table. For detailed information and the tax rules regarding RMDs, see the TSP tax notice [Important Tax Information About Your TSP Withdrawal and Required Minimum Distributions](/forms/tsp-775.pdf).
 
 #### RMD requirements
 
-+ If you have left federal service and do not begin withdrawing from your TSP account balance in the year you turn 70½, we are required to make the required distribution to you by April 1 of the following year.
++ If you have left federal service and do not begin withdrawing from your TSP account balance in the year you turn 72*, we are required to make the required distribution to you by April 1 of the following year.
 
-+ If you separate from federal service after age 70½, your account will immediately be subject to the IRS minimum distribution requirements.
++ If you separate from federal service after age 72*, your account will immediately be subject to the IRS minimum distribution requirements.
 
-+ If you’re already receiving a series of monthly payments from your TSP account when you turn 70½, your monthly payments will be used to satisfy the IRS minimum distributions requirement. If the total amount of your monthly payments does not satisfy the requirement, we will issue a supplemental payment for the remaining amount in December.
++ If you’re already receiving a series of monthly payments from your TSP account when you turn 72*, your monthly payments will be used to satisfy the IRS minimum distributions requirement. If the total amount of your monthly payments does not satisfy the requirement, we will issue a supplemental payment for the remaining amount in December.
+
++ If you're a beneficiary participant, your deadline for beginning to receive required minimum distributions depends on whether your spouse died before or after his or her required beginning date. 
+
+
+* Participants who turned 70 ½ on or before December 31, 2019, were required to begin receiving RMDs in the year they turned 70 ½.
+
 
 #### RMD payment transfers
 
