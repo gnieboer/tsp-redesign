@@ -28,7 +28,16 @@ permalink: /forms/tsp-26/
   <tr>
   <td width="4%"></td>
     <!-- TSP LOGO -->
-  <td align="left" bgcolor="white" colspan="3"><img src="{{ site.baseurl }}/assets/img/tsp-26/header-tsp-26.svg" width="280" alt="THRIFT SAVINGS PLAN Loan Payment Coupon"/></td>
+  <td align="left" bgcolor="white" colspan="3">
+  <!-- <img src="{{ site.baseurl }}/assets/img/tsp-26/header-tsp-26.svg" width="280" alt="THRIFT SAVINGS PLAN Loan Payment Coupon"/> -->
+
+
+<svg width="280" height="45">
+  <image xlink:href="{{ site.baseurl }}/assets/img/tsp-26/header-tsp-26.svg" src="{{ site.baseurl }}/assets/img/tsp-26/header-tsp-26.png" width="280" height="45" />
+</svg>
+
+
+  </td>
   </tr>
   <tr valign="top">
   <td class="txtlbfrm" width="4%"></td>
