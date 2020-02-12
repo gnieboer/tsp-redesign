@@ -52,7 +52,7 @@ If you’re a FERS employee hired after July 31, 2010, your agency has automatic
 
 If you’re a FERS employee hired before August 1, 2010, you already have a TSP account with accruing Agency Automatic (1%) Contributions. In addition, you can choose to make contributions to your account from your pay and receive Agency Matching Contributions.
 
-To make a contribution election, use your agency’s electronic payroll system (e.g., [Employee Express]({{ site.baseurl }}/exit/?idx=7)) or complete and submit [Election Form]({{ site.baseurl }}/PDF/forms/tsp-1.pdf), *Form TSP-1*.
+To make a contribution election, use your agency’s electronic payroll system (e.g., [Employee Express]({{ site.baseurl }}/exit/?idx=7), EBIS, [LiteBlue](https://liteblue.usps.gov/wps/portal/!ut/p/z1/jY9LC4JAFIV_S4tZ5r1pDwkipEURPQgx7W5ipGkcMJVxMvv3SW1alHV35_B9By4QREAZr5TkRuUZT5t8oOFxNvcW_dEKcWvvEe3NwN9h4Du47kH4BPDLeQj0j98CUPt8CPQLWQLJNI9f33hZ7LgSSIuz0EJbV93UiTFFOWbIMBaGW6YsLJlXDEWtDMOpOtUT95Oc5KWB6N2B4hJE2KX4fvM6DyV10mQ!/dz/d5/L2dBISEvZ0FBIS9nQSEh/), [myPay](https://mypay.dfas.mil/#/), and [NFC EPP](https://www.nfc.usda.gov/EPPS/eplogin.aspx)) or complete and submit *[Election Form]*({{ site.baseurl }}/PDF/forms/tsp-1.pdf), Form TSP-1.
 
 </div>
   </li><li>
@@ -63,7 +63,7 @@ To make a contribution election, use your agency’s electronic payroll system (
     </button>
 <div id="a2" class="usa-accordion-content" markdown="1">
 
-If you’re a CSRS employee, your account is established by your agency after you make a contribution election using your agency's electronic payroll system (e.g., [Employee Express]({{ site.baseurl }}/exit/?idx=7)) or complete and submit [Election Form]({{ site.baseurl }}/PDF/forms/tsp-1.pdf), *Form TSP-1*.
+If you’re a CSRS employee, your account is established by your agency after you make a contribution election using your agency's electronic payroll system (e.g., [Employee Express]({{ site.baseurl }}/exit/?idx=7), EBIS, [LiteBlue](https://liteblue.usps.gov/wps/portal/!ut/p/z1/jY9LC4JAFIV_S4tZ5r1pDwkipEURPQgx7W5ipGkcMJVxMvv3SW1alHV35_B9By4QREAZr5TkRuUZT5t8oOFxNvcW_dEKcWvvEe3NwN9h4Du47kH4BPDLeQj0j98CUPt8CPQLWQLJNI9f33hZ7LgSSIuz0EJbV93UiTFFOWbIMBaGW6YsLJlXDEWtDMOpOtUT95Oc5KWB6N2B4hJE2KX4fvM6DyV10mQ!/dz/d5/L2dBISEvZ0FBIS9nQSEh/), [myPay](https://mypay.dfas.mil/#/), and [NFC EPP](https://www.nfc.usda.gov/EPPS/eplogin.aspx)) or complete and submit *[Election Form]*({{ site.baseurl }}/PDF/forms/tsp-1.pdf), Form TSP-1.
 
 </div>
   </li><li>
@@ -88,7 +88,7 @@ If you served fewer than 12 years as of December 31, 2017, and you chose to join
     </button>
 <div id="a4" class="usa-accordion-content" markdown="1">
 
-If you’re a member of the uniformed services who is not covered by the Blended Retirement System (BRS), your TSP account is established by your service after you make a contribution election using your service's electronic payroll system (e.g., [Employee Express]({{ site.baseurl }}/exit/?idx=7){:rel="nofollow"}, EBIS, [LiteBlue]({{ site.baseurl }}/exit/?idx=8){:rel="nofollow"}, [myPay]({{ site.baseurl }}/exit/?idx=6){:rel="nofollow"}, or [NFC EPP]({{ site.baseurl }}/exit/?idx=9){:rel="nofollow"}), or complete and submit [Election Form]({{ site.baseurl }}/PDF/forms/tsp-u-1.pdf), *Form TSP-U-1*.
+If you’re a member of the uniformed services who is not covered by the Blended Retirement System (BRS), your TSP account is established by your service after you make a contribution election using your service's electronic payroll system ( myPay (Army, Air Force, Navy, Marine Corps) or Direct Access (Coast Guard and NOAA Corps), or complete and submit *[Election Form]*({{ site.baseurl }}/PDF/forms/tsp-u-1.pdf), Form TSP-U-1.
 
 </div>
   </li><li>
