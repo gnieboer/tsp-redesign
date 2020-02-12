@@ -1,0 +1,14 @@
+{% comment %}
+Replaces uswds styles.html.
+If page has style list, then use that.  If not, include the uswds style script.
+{% endcomment %}
+<!-- components/styles -->
+{% assign styleFiles = page.styles %}
+{% if styleFiles %}
+{% for styleFile in styleFiles %}
+<link rel="stylesheet" href="{{ styleFile }}" media="screen">
+{% endfor %}
+{% else %}
+{% include styles.html %}
+{% endif %}
+<!-- components/styles -->
