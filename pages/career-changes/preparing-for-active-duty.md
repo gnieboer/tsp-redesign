@@ -27,15 +27,15 @@ However, you can still contribute to your uniformed services account. It is a go
 
 ### TSP uniformed services account
 
-Don’t have a uniformed services account yet? You may want to establish one by using your service’s electronic payroll system, for example, [myPay]({{ site.baseurl }}/exit/?idx=6){:rel="nofollow"}, or by submitting [Election Form](/forms/tsp-u-1.pdf), *Form TSP-U-1,* to your service.
+Don’t have a uniformed services account yet? You may want to establish one by using your service’s electronic payroll system, for example, [myPay]({{ site.baseurl }}/exit/?idx=6){:rel="nofollow"}, or by submitting [*Election Form*](/forms/tsp-u-1.pdf), Form TSP-U-1, to your service.
 
 Read *[TSP Benefits That Apply to Members of the Military Who Return to Federal Civilian Service](/publications/tspfs08.pdf)* to learn more.
 
 ### TSP loans
 
-Loan payments for your civilian account will stop because they come from payroll deductions. Also, you cannot make payments on that loan from your uniformed services pay. However, you can continue to make loan payments by sending in a personal check or money order to the TSP along with [Loan Payment Coupon](/forms/tsp-26.html), _Form TSP-26_.
+Loan payments for your civilian account will stop because they come from payroll deductions. Also, you cannot make payments on that loan from your uniformed services pay. However, you can continue to make loan payments by sending in a personal check or money order to the TSP along with [*Loan Payment Coupon*](/forms/tsp-26.html), Form TSP-26.
 
-Ask your federal civilian agency to submit [*Notification to TSP of Nonpay Status](/forms/tsp-41.pdf), Form TSP-41.* Once we receive it, we will suspend your loan payments until you return to your federal civilian job. However, there are other acceptable forms of documentation to notify the TSP.
+Ask your federal civilian agency to submit [*Notification to TSP of Nonpay Status*](/forms/tsp-41.pdf), Form TSP-41. Once we receive it, we will suspend your loan payments until you return to your federal civilian job. However, there are other acceptable forms of documentation to notify the TSP.
 
 ## Non-federal civilian employees
 
