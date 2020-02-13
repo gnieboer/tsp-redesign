@@ -16,7 +16,7 @@ When you become a TSP participant, you will receive:
 
 + A TSP account number - the primary means of identifying your account. Once you have logged into your account on the website, you can create a customized user ID to use instead of your account number for web transactions;
 + A web password to access your account on the website; and
-+ A Personal Identification Number (PIN), which you will use to access your account on the ThriftLine (1-877-68-3778).
++ A Personal Identification Number (PIN), which you will use to access your account on the ThriftLine (1-877-968-3778).
 
 After you log into your TSP account for the first time, you can go to your profile settings to validate an email address and cell phone. Then you can enable two-step authentication. 
 
