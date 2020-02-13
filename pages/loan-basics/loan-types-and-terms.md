@@ -44,13 +44,13 @@ We allow two types of loans:
       <td><img src="{{ site.baseurl }}/assets/img/icons/check-circle-green.svg" alt="Check mark">
       <p>Requires no documentation</p></td>
       <td><img src="{{ site.baseurl }}/assets/img/icons/check-circle-green.svg" alt="Check mark">
-      <p>Requires no documentation</p></td>
+      <p>Requires documentation</p></td>
     </tr>
     <tr>
       <td><img src="{{ site.baseurl }}/assets/img/icons/check-circle-green.svg" alt="Check mark">
       <p>Has a repayment term of 1 to 5 years</p></td>
       <td><img src="{{ site.baseurl }}/assets/img/icons/check-circle-green.svg" alt="Check mark">
-      <p>Has a repayment term of 1 to 5 years</p></td>
+      <p>Has a repayment term of 1 to 15 years</p></td>
     </tr>
   </tbody>
 </table>
@@ -117,7 +117,7 @@ TSP account balances are recalculated at the end of each business day based on d
 
 TSP account balances are recalculated at the end of each business day based on daily share prices. As a result, the maximum loan amount may change on a daily basis.
 
-To find out more about the maximum amount available for a loan, use the calculator, [ _Estimate Loan Payments_](#) , or [contact us](/contact/).
+To find out more about the maximum amount available for a loan, use the calculator, [Estimate Loan Payments](#) , or [contact us](/contact/).
 
 ## Loan costs
 
