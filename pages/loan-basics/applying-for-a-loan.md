@@ -36,7 +36,7 @@ By law, your spouse has certain rights to your TSP account. When requesting a lo
 + FERS or uniformed services participants: Your spouse must consent to your TSP loan by signing the Loan Agreement that you print from [My Account](https://www.tsp.gov/tsp/login.html).
 + CSRS participants: We must notify your spouse when you apply for a loan.
 
-Exceptions to the spousal rule may be approved under very limited circumstances. For more information, please refer to [Exception to Spousal Requirements](#), _Form TSP-16_ ([TSP-U-16](#), for uniformed services members).
+Exceptions to the spousal rule may be approved under very limited circumstances. For more information, please refer to [*Exception to Spousal Requirements*](#), Form TSP-16 ([TSP-U-16](#), for uniformed services members).
 
 ## Residential loan documentation
 When you request a residential loan, you must provide supporting documentation of the costs associated with the purchase or construction of your primary residence, before your loan can be approved. 
