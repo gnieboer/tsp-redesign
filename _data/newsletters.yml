@@ -1,5 +1,52 @@
+- newsletter_date: 1/2020
+  newsletter_url: /exit/?idx=160
+  newsletter_articles:
+    - 2019 in review
+  newsletter_info:
+    - "New podcast: The Real TSP"
+    - "TSP webinar with Q&A: Intro to the TSP"
+    - Fourth quarter account information now part of annual statement, available first week of February
+- newsletter_date: 10/2019
+  newsletter_url: /exit/?idx=142
+  newsletter_articles:
+    - ‘Tis the season for an account security checkup!
+  newsletter_info:
+    - Help prevent fraud
+    - Mandatory two-step authentication coming December 2019
+    - "Video: Your Flexible Withdrawal Options"
+    - Fourth quarter account information now part of annual statement
+- newsletter_date: 7/2019
+  newsletter_url: /exit/?idx=108
+    newsletter_articles:
+    - Take stock of your investments
+  newsletter_info:
+    - "Video: The Lifecycle Funds"
+    - Flexible withdrawals begin September 15, 2019
+    - Protect your account
+    - Second quarter statements available online now
+- newsletter_date: 4/2019
+  newsletter_url: /newsletters/high19b.pdf
+  newsletter_articles:
+    - There are so many ways you can TSP!
+  newsletter_info:
+    - A new tsp.gov
+    - A special note about account security
+    - Rates of return for the TSP Funds
+- newsletter_date: 1/2019
+  newsletter_url: /newsletters/high19a.pdf
+  newsletter_articles:
+    - A Message from the Executive Director
+  newsletter_info:
+    - Rates of return for the TSP Funds
+- newsletter_date: 10/2018
+  newsletter_url: /newsletters/high18d.pdf
+  newsletter_articles:
+    - Should I Catch Up My Contributions?
+  newsletter_info:
+    - This version includes a correction from the print version.
+    - Rates of return for the TSP Funds
 - newsletter_date: 7/2018
-  newsletter_url: high18c.pdf
+  newsletter_url: /newsletters/high18c.pdf
   newsletter_articles:
     - Who’s Your Beneficiary?
   newsletter_info:
@@ -7,14 +54,256 @@
     - Did you know that we have a new form to help with submitting a court order to the TSP?
     - Coming in September 2019
 - newsletter_date: 4/2018
-  newsletter_url: high18b.pdf
+  newsletter_url: /newsletters/high18b.pdf
   newsletter_articles:
     - Basic Training - Key Retirement Terms You Should Know
   newsletter_info:
     - Want to have the ability to reset your password online?
 - newsletter_date: 1/2018
-  newsletter_url: high18a.pdf
+  newsletter_url: /newsletters/high18a.pdf
   newsletter_articles:
     - A Message from the Executive Director - At Your Service
   newsletter_info:
     - Rates of return for the TSP Funds
+- newsletter_date: October 2017
+  newsletter_url: /newsletters/high17d.pdf
+  newsletter_articles:
+    - 4 Ways to Pump Up Your TSP Savings
+  newsletter_info:
+    - Rates of return for the TSP Funds
+- newsletter_date: July 2017
+  newsletter_url: /newsletters/high17c.pdf
+  newsletter_articles:
+    - 5 Mistakes You Might Be Making with Your TSP Account (And What to Do About Them)
+  newsletter_info:
+    - Rates of return for the TSP Funds
+- newsletter_date: April 2017
+  newsletter_url: /newsletters/high17b.pdf
+  newsletter_articles:
+    - Do You Know How Much is Enough?
+  newsletter_info:
+    - April is Financial Literacy Month!
+- newsletter_date: January/February 2017
+  newsletter_url: /newsletters/high17a.pdf
+  newsletter_articles:
+    - "A Message from the Executive Director: The TSP is Turning 30 This Year!"
+  newsletter_info:
+    - The TSP is Now on Facebook!
+- newsletter_date: October 2016
+  newsletter_url: /newsletters/high16d.pdf
+  newsletter_articles:
+    - "How To" with the TSP
+  newsletter_info:
+    - How to Interpret Your Investments’ Performance
+- newsletter_date: July 2016
+  newsletter_url: /newsletters/high16c.pdf
+  newsletter_articles:
+    - How the TSP Fits Into FERS
+  newsletter_info:
+    - What If I'm CSRS or Military?
+- newsletter_date: April 2016
+  newsletter_url: /newsletters/high16b.pdf
+  newsletter_articles:
+    - Removing the Mystery from the TSP Core Funds
+  newsletter_info:
+    - Why Are There Limits on Interfund Transfers?
+- newsletter_date: January/February 2016
+  newsletter_url: /newsletters/high16a.pdf
+  newsletter_articles:
+    - A Message from the Executive Director
+  newsletter_info:
+    - Plan Enhancements
+- newsletter_date: October 2015
+  newsletter_url: /newsletters/high15d.pdf
+  newsletter_articles:
+    - Does Your TSP Need a Checkup?
+  newsletter_info:
+    - Notice Something Different?
+    - Rates of return for the TSP Funds
+- newsletter_date: July 2015
+  newsletter_url: /newsletters/high15c.pdf
+  newsletter_articles:
+    - Happy Birthday, L Funds!
+  newsletter_info:
+    - A Tale of Two Investments
+    - Keep in Touch!
+    - Highlights Makeover
+- newsletter_date: April 2015
+  newsletter_url: /newsletters/high15b.pdf
+  newsletter_articles:
+    - Saving at Different Stages
+  newsletter_info:
+    - Separation Anxiety?
+    - Don’t Get Blindsided
+    - Passwords 2.0
+- newsletter_date: January/February 2015
+  newsletter_url: /newsletters/high15a.pdf
+  newsletter_articles:
+    - Review. Rethink. Remain.
+  newsletter_info:
+    - "Attention: Active Duty Army, Air Force, and Navy"
+    - How to Make the Change
+- newsletter_date: October 2014
+  newsletter_url: /newsletters/high14d.pdf
+  newsletter_articles:
+    - Combine and Save with the TSP
+  newsletter_info:
+    - Adding Some "Fun" to Funds
+    - Stay Connected to the TSP
+- newsletter_date: July 2014
+  newsletter_url: /newsletters/high14c.pdf
+  newsletter_articles:
+    - Retirement Income Should Be the Outcome
+  newsletter_info:
+    - There's No "Fun" in Fund Overlap
+    - Monthly and annual rates of return for the TSP Funds
+- newsletter_date: April 2014
+  newsletter_url: /newsletters/high14b.pdf
+  newsletter_articles:
+    - "More Than You Bargained For: The Potential Costs of a TSP Loan"
+  newsletter_info:
+    - Designating Your Beneficiaries
+    - All It Takes Is One! (L Fund)
+- newsletter_date: January/February 2014
+  newsletter_url: /newsletters/high14a.pdf
+  newsletter_articles:
+    - Improving Your TSP Experience
+  newsletter_info:
+    - Vexed About Vesting?
+    - The TSP is on Twitter!
+- newsletter_date: October 2013
+  newsletter_url: /newsletters/high13d.pdf
+  newsletter_articles:
+    - Investing in Bonds? Don't Find Yourself in a Bind
+  newsletter_info:
+    - Separation Anxiety? If you're thinking of separating from Federal service, consider keeping your funds in the TSP
+    - Monthly and annual rates of return for the TSP Funds
+- newsletter_date: July 2013
+  newsletter_url: /newsletters/high13c.pdf
+  newsletter_articles:
+    - Making Sense of Annuities
+  newsletter_info:
+    - Retirement Income Calculator
+    - Monthly and annual rates of return for the TSP Funds
+- newsletter_date: April 2013
+  newsletter_url: /newsletters/high13b.pdf
+  newsletter_articles:
+    - You Ask. We Answer.
+  newsletter_info:
+    - It's Always the Right Time to Save
+    - Monthly and annual rates of return for the TSP Funds
+- newsletter_date: January/February 2013
+  newsletter_url: /newsletters/high13a.pdf
+  newsletter_articles:
+    - More Than You Pay For
+  newsletter_info:
+    - Tax-deferred and Roth transfers into the TSP
+    - Monthly and annual rates of return for the TSP Funds
+- newsletter_date: October 2012
+  newsletter_url: /newsletters/high12d.pdf
+  newsletter_articles:
+    - New TSP Tools and Materials
+  newsletter_info:
+    - Your withdrawal request is serious business, and the new TSP online withdrawal wizard helps you get your withdrawal form in good order.
+    - Monthly and annual rates of return for the TSP Funds
+- newsletter_date: July 2012
+  newsletter_url: /newsletters/high12c.pdf
+  newsletter_articles:
+    - Your New Quarterly Participant Statement
+  newsletter_info:
+    - The introduction of Roth TSP has required us to redesign your participant statements. Your second quarter participant statement is the first to showcase the new design.
+    - How to correct your address
+- newsletter_date: April 2012
+  newsletter_url: /newsletters/high12b.pdf
+  newsletter_articles:
+    - Your Roth Questions Answered
+  newsletter_info:
+    - Generally, Roth TSP might be a good fit for those who expect their tax rate to be higher in retirement than it is now. But it is not that simple.
+    - Monthly and annual rates of return for the TSP Funds
+- newsletter_date: January/February 2012
+  newsletter_url: /newsletters/high12a.pdf
+  newsletter_articles:
+    - Is Roth for You?
+  newsletter_info:
+    - Comparison of Traditional (Pre-tax) and Roth (After-tax) Contributions.
+    - "2011 TSP Expense Ratio: The expense ratio is the amount by which each TSP account is reduced to cover administrative expenses"
+- newsletter_date: October 2011
+  newsletter_url: /newsletters/high11d.pdf
+  newsletter_articles:
+    - Planning for the Effects of Inflation
+  newsletter_info:
+    - When it's time to begin withdrawing your money in retirement, you could purchase a TSP life annuity with increasing payments, and your monthly annuity payments could increase up to 3% each year based on the rate of inflation.
+- newsletter_date: July 2011
+  newsletter_url: /newsletters/high11c.pdf
+  newsletter_articles:
+    - The G Fund - A User's Guide
+  newsletter_info:
+    - A Quick Response (QR) code appears for the first time on a TSP publication. If you have a smartphone (one with Web-based capability), you can download information that supports the feature article.
+- newsletter_date: April 2011
+  newsletter_url: /newsletters/high11b.pdf
+  newsletter_articles:
+    - The Simple Plan
+  newsletter_info:
+    - Transfer or roll over traditional IRAs, SIMPLE IRAs, and other eligible employer plans into your TSP account
+- newsletter_date: January/February 2011
+  newsletter_url: /newsletters/high11a.pdf
+  newsletter_articles:
+    - TSP Lifetime Payment
+  newsletter_info:
+    - Monthly and annual rates of return for the TSP Funds
+- newsletter_date: October 2010
+  newsletter_url: /newsletters/high10d.pdf
+  newsletter_articles:
+    - New Lifecycle Fund on the Block
+  newsletter_info:
+    - End-of-Year Reminders
+- newsletter_date: July 2010
+  newsletter_url: /newsletters/high10c.pdf
+  newsletter_articles:
+    - The House The TSP Built
+  newsletter_info:
+    - Be on the lookout for the new TSP website
+- newsletter_date: April 2010
+  newsletter_url: /newsletters/high10b.pdf
+  newsletter_articles:
+    - A Tale of Two Investors
+  newsletter_info:
+    - Have money in IRAs or other plans?
+- newsletter_date: January/February 2010
+  newsletter_url: /newsletters/high10a.pdf
+  newsletter_articles:
+    - The Bull by the Horns
+  newsletter_info:
+    - What's Stopping You?
+    - Need savings and investment information?
+- newsletter_date: October 2009
+  newsletter_url: /newsletters/high09d.pdf
+  newsletter_articles:
+    - New Law Authorizes Changes to the TSP
+  newsletter_info:
+    - Time for action?
+    - End-of-Year Reminders
+- newsletter_date: July 2009
+  newsletter_url: /newsletters/high09c.pdf
+  newsletter_articles:
+    - Have you named a beneficiary?
+  newsletter_info:
+    - Revamped web site to be tested soon
+    - Adding money from outside sources
+- newsletter_date: April 2009
+  newsletter_url: /newsletters/high09b.pdf
+  newsletter_articles:
+    - "The TSP: Too Good to Ignore"
+  newsletter_info:
+    - "TSP: Right Answers for Your Retirement (crossword puzzle)"
+    - Got questions?
+    - Answers to Crossword Puzzle
+- newsletter_date: January/February 2009
+  newsletter_url: /newsletters/high09a.pdf
+  newsletter_articles:
+    - Now's still a good time for investing in the TSP
+    - New Year Reminders
+  newsletter_info:
+    - Contribution limits
+    - Making loan payments via online banking?
+    - Thanks for your input!

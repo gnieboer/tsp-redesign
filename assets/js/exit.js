@@ -164,7 +164,7 @@ urlList[156] = 'https://api.fdsys.gov/link?collection=uscode&title=5&year=mostre
 urlList[157] = 'https://api.fdsys.gov/link?collection=uscode&title=5&year=mostrecent&section=8474&type=usc&link-type=html';
 urlList[158] = 'https://www.federalregister.gov/select-citation/2018/12/11/5-CFR-1630';
 urlList[159] = 'http://www.bloombergindices.com';
-urlList[160] = '';
+urlList[160] = 'https://content.govdelivery.com/accounts/USTSP/bulletins/27794ce';
 urlList[161] = '';
 urlList[162] = '';
 urlList[163] = '';
