@@ -4,6 +4,9 @@ permalink: /
 layout: home
 class: homepage
 scripts:
+  - /assets/js/jquery.min.js
+  - /assets/js/bootstrap.min.js
+  - /assets/js/sessionstorage-modal.js
 
 alert:
   show-alert: true
@@ -19,6 +22,9 @@ hero:
   alt:
   text:
   content: Plan for a lifetime with the TSP
+
+document-ready:
+  - addFormModals();
 ---
 
 <section class="home-getting-started">
@@ -355,3 +361,5 @@ our participants and beneficiaries ask most often.
 </div>
 </div>
 </section>
+
+{% include form-modals.html %}
