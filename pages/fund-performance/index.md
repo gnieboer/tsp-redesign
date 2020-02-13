@@ -1,5 +1,5 @@
 ---
-title: Rates of returns
+title: Rates of return
 layout: page
 permalink: /fund-performance/
 styles:
@@ -22,7 +22,7 @@ document-ready:
   - indexFundSync('rates-of-return-monthly', true);
 ---
 {% assign chartName = 'rates-of-return' %}
-# Rates of returns
+# Rates of return
 {% include fund-checkboxes.html Lfunds=1 InvFunds=1 Index=1 chartName=chartName %}
 
 <div id="{{chartName}}-div" class="usa-grid-full usa-layout-docs-main_content">
