@@ -54,7 +54,7 @@ We calculate RMDs based on your account balance and your age using the IRS Unifo
 + If you're a beneficiary participant, your deadline for beginning to receive required minimum distributions depends on whether your spouse died before or after his or her required beginning date. 
 
 
-* Participants who turned 70 ½ on or before December 31, 2019, were required to begin receiving RMDs in the year they turned 70 ½.
+<sup>* Participants who turned 70 ½ on or before December 31, 2019, were required to begin receiving RMDs in the year they turned 70 ½.
 
 
 #### RMD payment transfers
