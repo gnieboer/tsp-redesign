@@ -4,6 +4,7 @@ layout: page
 permalink: /search/
 scripts:
   - /assets/js/jquery.min.js
+  - /assets/js/flatpickr/flatpickr.js
   - /assets/js/bootstrap.min.js
   - /assets/js/form-modals.js
   - /assets/js/ajaxFetch.js
