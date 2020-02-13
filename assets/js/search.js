@@ -135,12 +135,18 @@ function formatSnippet(snippet) {
   str = str.replace(/[\ue001]/g, '</strong>');
   return str;
 }
+function formatDuration(dateStr) {
+  var raw_date = new Date(dateStr);
+  return flatpickr.formatDate(raw_date, "F j, Y");
+}
 function oneHitHTML(theHit, hitType) {
   var title = theHit.title;
   var url = theHit.url;
   var snippet = theHit.snippet;
+  if (snippet == null) { snippet = ''; }
   if (theHit.description) { snippet = theHit.description; }
-  var pub_date = theHit.publication_date;
+  // var pub_date = theHit.publication_date;
+  var pub_date = formatDuration(theHit.publication_date);
 
   var theHTML = $('#hit-web-format').html();
   if (hitType == 'video') { theHTML = $('#hit-video-format').html(); }
