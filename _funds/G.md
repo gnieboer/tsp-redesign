@@ -26,9 +26,9 @@ avg_annual_returns:
 summary_update: 12/31/2018
 summary_details:
     assets: $230.3 billion
-    as_of_year: 2018
-    gross_expense:  .051
-    net_expense:    .040
+    as_of_year: 2019
+    gross_expense:  .053
+    net_expense:    .043
     other_expense:  .000
     benchmark_index: Dow Jones U.S. Completion TSM Index | www.djindexes.com
     asset_manager: Not applicable

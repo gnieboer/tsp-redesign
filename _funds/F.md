@@ -26,10 +26,10 @@ avg_annual_returns:
 summary_update: 12/31/2018
 summary_details:
     assets: $27.6 billion
-    as_of_year: 2018
+    as_of_year: 2019
     gross_expense:  .052
-    net_expense:    .041
-    other_expense:  .016
+    net_expense:    .042
+    other_expense:  .004
     benchmark_index: Dow Jones U.S. Completion TSM Index | www.djindexes.com
     asset_manager: BlackRock Institutional Trust Company, N.A
 composition_update: December 31, 2018
