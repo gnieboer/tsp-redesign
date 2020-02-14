@@ -17,7 +17,7 @@
     - Fourth quarter account information now part of annual statement
 - newsletter_date: 7/2019
   newsletter_url: /exit/?idx=108
-    newsletter_articles:
+  newsletter_articles:
     - Take stock of your investments
   newsletter_info:
     - "Video: The Lifecycle Funds"
@@ -92,7 +92,7 @@
 - newsletter_date: October 2016
   newsletter_url: /newsletters/high16d.pdf
   newsletter_articles:
-    - "How To" with the TSP
+    - "&#8220;How To&#8221; with the TSP"
   newsletter_info:
     - How to Interpret Your Investments’ Performance
 - newsletter_date: July 2016
