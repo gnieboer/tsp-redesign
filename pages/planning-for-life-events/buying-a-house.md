@@ -14,7 +14,7 @@ permalink: /planning-for-life-events/buying-a-house/
 
 # Buying a house
 
-If you’re planning to buy or build a new **primary home**, you might consider requesting a residential loan. But before you apply, be sure to read the TSP booklet, _[Loans](/publications/tspbk04.pdf)_. Keep in mind that a residential loan is not a mortgage, and your loan interest payments are not tax deductible as they might be for a mortgage or home equity loan. Furthermore, you cannot use a residential loan for refinancing or replaying an existing mortgagge, for renovations or repairs, for buying out another person's share in your current home, or for the purpose of land only.
+If you’re planning to buy or build a new **primary home**, you might consider requesting a residential loan. But before you apply, be sure to read the TSP booklet, _[Loans](/publications/tspbk04.pdf)_. Keep in mind that a residential loan is not a mortgage, and your loan interest payments are not tax deductible as they might be for a mortgage or home equity loan. Furthermore, you cannot use a residential loan for refinancing or repaying an existing mortgage, for renovations or repairs, for buying out another person's share in your current home, or for the purpose of land only.
 
 ## Residential loan documentation
 
