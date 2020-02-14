@@ -18,7 +18,7 @@ If you’re planning to buy or build a new **primary home**, you might consider 
 
 ## Residential loan documentation
 
-When you request a TSP residential loan, log in to My Account:TSP Loans to start the application process online, then print out and submit the *Loan Agreement* for processing along with any required documentation. Visit [Applying for a loan](tsp.gov/loan-basics/applying-for-a-loan) for more information.
+When you request a TSP residential loan, log in to My Account: TSP Loans to start the application process online, then print out and submit the *Loan Agreement* for processing along with any required documentation. Visit [Applying for a loan](tsp.gov/loan-basics/applying-for-a-loan) for more information.
 
 ### Documentation requirements
 Documentation for all residential loans must
