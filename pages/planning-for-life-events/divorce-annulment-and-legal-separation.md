@@ -20,6 +20,6 @@ Your current or former spouse, or your dependents, could be awarded a portion of
 
 A valid RBCO requires the TSP to freeze your account, preventing you from taking any new loans or withdrawals until the award is paid out or the order is otherwise resolved. However, a freeze will not prevent you from making contributions or changing your contribution allocation or investment choices, and you will still be required to make payments on existing loans.
 
-Be sure to read *[Court Orders and Powers of Attorney](javascript:void(0))* for a complete understanding of your rights and responsibilities.
+Be sure to read [*Court Orders and Powers of Attorney*](https://www.tsp.gov/PDF/formspubs/tspbk11.pdf) for a complete understanding of your rights and responsibilities.
 
 <!-- CONTENT END -->
