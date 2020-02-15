@@ -8,7 +8,7 @@
   video_categories:
     - Education
     - Investment options
-  video_download: fund-video-lifecycle.mp4 # Assumption is /assets/videos/
+  video_download: fund-lifecycle .mp4 # Assumption is /assets/videos/
   video_transcript: "Your TSP Investment Options: The Lifecycle Funds
 
   The TSP has a selection of individual and lifecycle funds that let you diversify your retirement savings. You can choose to invest your TSP dollars in everything from short-term U.S. Treasury securities to index funds comprised of domestic and international stocks. In this video, we’ll talk about the professionally designed Lifecycle Funds, also known as the L Funds. If you don’t have the time, experience, or interest to manage your TSP retirement savings, consider one of the L Funds.
@@ -29,7 +29,7 @@
   video_categories:
     - Education
     - Investment options
-  video_download: fund-video-g.mp4
+  video_download: fund-g.mp4
   video_transcript: "Your TSP Investment Options: The G Fund
 
   The TSP has a selection of individual and lifecycle funds that let you diversify your retirement savings.  You can choose to invest your TSP dollars in everything from short-term U.S. Treasury securities to index funds comprised of domestic and international stocks.
@@ -56,7 +56,7 @@
   video_categories:
     - Education
     - Investment options
-  video_download: fund-video-f.mp4
+  video_download: fund-f.mp4
   video_transcript: "Your TSP Investment Options:  The F Fund
   The TSP has a selection of individual and lifecycle funds that let you diversify your retirement savings.  You can choose to invest your TSP dollars in everything from short-term U.S. Treasury securities to index funds comprised of domestic and international stocks.
 
@@ -83,7 +83,7 @@
   video_categories:
     - Education
     - Investment options
-  video_download: fund-video-c.mp4
+  video_download: fund-c.mp4
   video_transcript: "Your TSP Investment Options:  The C Fund
 
   The TSP has a selection of individual and lifecycle funds that let you diversify your retirement savings.  You can choose to invest your TSP dollars in everything from short-term U.S. Treasury securities to index funds comprised of domestic and international stocks.
@@ -111,7 +111,7 @@
   video_categories:
     - Education
     - Investment options
-  video_download: fund-video-s.mp4
+  video_download: fund-s.mp4
   video_transcript: "Your TSP Investment Options:  The C Fund
 
   The TSP has a selection of individual and lifecycle funds that let you diversify your retirement savings.  You can choose to invest your TSP dollars in everything from short-term U.S. Treasury securities to index funds comprised of domestic and international stocks.
@@ -139,7 +139,7 @@
   video_categories:
     - Education
     - Investment options
-  video_download: fund-video-i.mp4
+  video_download: fund-i.mp4
   video_transcript: "Your TSP Investment Options:  The I Fund
 
   The TSP has a selection of individual and lifecycle funds that let you diversify your retirement savings.  You can choose to invest your TSP dollars in everything from short-term U.S. Treasury securities to index funds comprised of domestic and international stocks.
@@ -662,7 +662,7 @@
 #  video_duration:
 #  video_date:
   video_categories:
-  video_download:
+  video_download: onboarding.mp4
   video_transcript: "Wondering what to do with your TSP account once you leave Federal service? The answer is...nothing!
 
   As long as your balance is $200 or more, you can leave your account right where it is.
@@ -741,8 +741,26 @@
 #  video_duration:
 #  video_date:
   video_categories:
-  video_download:
-  video_transcript:
+  video_download: once-youre-gone-youre-gone.mp4
+  video_transcript: "My name is Lola. I just left Federal Service.
+
+  I rolled my TSP account over into an IRA. I already regret it. I didn’t know about the additional annual fees, commissions, and charges I pay for the money I invest.
+
+  Honestly, it was probably one of the single worst financial actions I’ve ever taken with my savings. I would deposit some of my retirement savings back into the TSP in a heartbeat if I had another chance.
+
+  The worst part is, I can’t go back.
+
+  << sound of video rewinding >>
+
+  My name is Lola. I just left Federal Service.
+
+  I decided to leave my retirement savings in the TSP.
+
+  It seemed like a no brainer really. The TSP has low expenses so I keep more of what I save. Plus, I can still change my investment mix while continuing to accrue earnings. And I can still transfer other eligible retirement accounts into my TSP.
+
+  I knew I made the right decision when I heard financial professionals call the TSP the “best retirement savings and investment vehicle you’ll find anywhere.” Talk about a confidence boost.
+
+  I’m glad I thought this decision through. It’s not like I have a rewind button."
 - video_title: How Can Compound Earnings Work For Me?
 #  video_description:
   video_id: dtlHqHSYZ-s
