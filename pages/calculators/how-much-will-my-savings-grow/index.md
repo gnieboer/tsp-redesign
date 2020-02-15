@@ -278,7 +278,7 @@ aria-controls="panel-2.7">
 Explain this
 </button>
 <div id="panel-2.7" class="usa-accordion-content" markdown="1">
-Enter the annual rate of return you expect to earn on your contributions. View the [Rates of returns](/fund-performance/) for context, but keep in mind that past performance is not a guarantee or a predictor of future returns.
+Enter the annual rate of return you expect to earn on your contributions. View the [Rates of return](/fund-performance/) for context, but keep in mind that past performance is not a guarantee or a predictor of future returns.
 </div>
 </li>
 </ul>      
