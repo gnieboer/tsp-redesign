@@ -8,7 +8,7 @@ function getRatesOfReturn(chart) {
 }
 
 var doAjaxRetrieveRoR = function(divName, url) {
-  $('#'+divName).html('Calling server for data...');
+  $('#'+divName+'-message').html('Calling server for data...');
   var serverCall = $.get(url);
   serverCall.done(
     function (data) {
@@ -49,7 +49,7 @@ function buildSideScrollTableRoR(chartName, data) {
   var monthlyData = [];
   var headerHTML = sideScrollTH('', 'col', '', col[0], false);  // column 0 is date
   for (i = 1; i < col.length; i++) {
-    colClass = borderClass(col[i])+' col'+i;
+    colClass = borderClass(col[i].trim())+' col'+i;
     headerHTML = headerHTML + sideScrollTH('', 'col', colClass, col[i], false);
   }
   headerHTML = sideScrollWrapper('', 'tr', '', '', headerHTML, false);
