@@ -60,7 +60,7 @@ primary:
   #     href: /news-and-resources/
   #   - text: FAQs
   #     href: /faq/
-  #   - text: Videos & resources
+  #   - text: Videos and resources
   #     href: /videos-and-resources/
   #   - text: Forms & publications
   #     href: /forms/
@@ -145,7 +145,7 @@ news-and-resources:
         href: /news-and-resources/government-shutdown/
   - text: FAQs
     href: /faq/
-  - text: Videos & resources
+  - text: Videos and resources
     href: /videos-and-resources/
   - text: Forms and resources
     href: /forms/

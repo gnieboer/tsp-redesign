@@ -8,7 +8,7 @@ urlList[ 0] = 'http://www.tsp.gov';
 urlList[ 1] = 'http://service.govdelivery.com/service/multi_subscribe.html?code=USTSP&amp;custom_id=1178&amp;origin=http://service.govdelivery.com/demos/ustsp/success.html';
 urlList[ 2] = 'http://service.govdelivery.com/service/multi_subscribe.html?code=USTSP';
 urlList[ 3] = 'http://service.govdelivery.com/service/user.html?code=USTSP';
-urlList[ 4] = 'http://service.govdelivery.com/service/multi_subscribe.html?code=USTSP&custom_id=918&origin=http://service.govdelivery.com/demos/ustsp/success.html';
+urlList[ 4] = 'https://service.govdelivery.com/accounts/USTSP/subscriber/new?qsp=918';
 urlList[ 5] = 'http://www.dfas.mil/militarymembers/payentitlements/sdp.html';
 urlList[ 6] = 'https://mypay.dfas.mil/';
 urlList[ 7] = 'https://www.employeeexpress.gov/';
