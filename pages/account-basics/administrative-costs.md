@@ -25,9 +25,18 @@ These expenses are paid by the forfeitures of Agency/Service Automatic (1%) Cont
 
 **Net** expenses represent the amount that your investment returns were reduced by TSP administrative expenses.
 
-__For 2018, the average net expense for participants was $.040* for every $1,000 invested.__
+{% include components/get_sorted_fund_list funds='Individual' reverse=false %}
+{% assign avg_net_expense = 0.0 %}
+{% for fund in sorted %}
+{% assign net_expense_year = fund.summary_details.as_of_year %}
+{% assign avg_net_expense = avg_net_expense | plus: fund.summary_details.net_expense %}
+{% endfor %}
+{% assign avg_net_expense = avg_net_expense | divided_by: sorted.size | round: 3 %}
+{% assign fmt_avg_net_expense = avg_net_expense | remove_first: '0' %}
+{% assign net_expense_year = sorted.first.summary_details.as_of_year %}
+__For {{ net_expense_year }}, the average net expense for participants was ${{ fmt_avg_net_expense }}* for every $1,000 invested.__
 
-Expense ratios may also be expressed in basis points. One basis point is 1/100th of one percent, or .01%. Therefore, the 2018 net expense ratio* of .040% is 4 basis points. Expressed either way, this means that expenses charged to your account in 2018 were approximately 40 cents per $1,000 of investment.
+Expense ratios may also be expressed in basis points. One basis point is 1/100th of one percent, or .01%. Therefore, the {{ net_expense_year }} net expense ratio* of {{ fmt_avg_net_expense }}% is {{ avg_net_expense | times: 100 | round: 1 }} basis points. Expressed either way, this means that expenses charged to your account in {{ net_expense_year }} were approximately {{ avg_net_expense | times: 1000 | round }} cents per $1,000 of investment.
 
 \*_Other expenses are fees paid to the investment manager._
 
