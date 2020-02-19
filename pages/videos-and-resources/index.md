@@ -33,9 +33,7 @@ Videos
 <div class="usa-width-one-third search-videos" markdown="1">
 <!-- Animated search bar -->
 <form accept-charset="UTF-8" action="https://search.usa.gov/search/docs" id="search_form_8657" method="get" class="animated-search">
-<div style="margin:0;padding:0;display:inline">
 <input type="hidden" name="dc" value="8657">
-<input type="hidden" name="utf8" value="&#x2713;" /></div>
 <input type="hidden" name="affiliate" value="beta.tsp" id="affiliate" >
 <label for="query" class="usa-sr-only">Search videos</label>
 <!-- Search input field -->

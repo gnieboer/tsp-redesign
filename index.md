@@ -9,7 +9,7 @@ scripts:
   - /assets/js/sessionstorage-modal.js
 
 alert:
-  show-alert: false
+  show-alert: true
   icon:
   title: Scheduled Outage
   subtitle:

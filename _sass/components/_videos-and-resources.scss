@@ -1,11 +1,12 @@
-
 section.videos-and-resources {
   .wrapper {
     text-align: right;
   }
+
   .usa-accordion-button {
     width: 100%;
   }
+
   div {
     &.social {
       .feeds {
@@ -13,29 +14,35 @@ section.videos-and-resources {
         padding-right: 0;
       }
     }
+
     &.videos {
       background-color: $color-gray-lightest;
+
       .usa-grid {
         padding-left: 0;
         padding-right: 0;
         margin-top: 2rem;
       }
     }
+
     &.search-videos,
     &.video-details {
       text-align: left;
+
       .usa-accordion-button {
         background-color: inherit;
         color: inherit;
         font-weight: 400;
         border: none;
-        padding: 1.5rem .2rem 1.5rem 2rem;
+        padding: 1.5rem 0.2rem 1.5rem 2rem;
         width: auto;
         line-height: 3rem;
+
         &[aria-expanded="true"] {
           background-color: inherit;
           color: inherit;
           font-weight: $bold;
+
           &:after {
             content: '';
             border-bottom: 4px solid #02bfe7;
@@ -44,6 +51,7 @@ section.videos-and-resources {
         }
       }
     }
+
     &.search-videos {
       border-radius: 0.5rem;
       background-color: #afb0b5;
@@ -67,31 +75,55 @@ section.videos-and-resources {
             line-height: 1.3;
             margin: 0.2em 0;
           }
+
           input[type=text]:focus {
             outline: 2px dotted rgba(255, 255, 255, 0.75);
             outline-offset: 3px;
             border: none;
           }
         }
-      } // end form
+      }
+      // end form
+
       .video-filter {
         list-style-type: none;
         margin: 1rem 0 0 0.7rem;
         padding: 0;
         font-size: 1.4rem;
         font-weight: 600;
+        max-height: 44rem;
+        overflow-y: scroll;
+
+        &::-webkit-scrollbar {
+          -webkit-appearance: none;
+        }
+
+        &::-webkit-scrollbar:vertical {
+          width: 11px;
+        }
+
+        &::-webkit-scrollbar-thumb {
+          border-radius: 8px;
+          border: none;
+          /* should match background, can't be transparent */
+          background-color: rgba(0, 0, 0, .5);
+        }
+
         li {
           border-bottom: 1px solid #fff;
           display: block;
           margin-bottom: 0;
           padding: 1.25rem 4rem 1.25rem 0;
           line-height: 1.5;
+
           &:last-child {
             border-bottom: none;
           }
+
           a {
             color: inherit;
             text-decoration: none;
+
             &:hover {
               text-decoration: underline;
             }
@@ -105,17 +137,21 @@ section.videos-and-resources {
       //   }
       // }
     }
+
     &.video-details {
       border: 1px solid $color-gray-lighter;
-      border-radius: .5rem;
+      border-radius: 0.5rem;
       overflow: hidden;
+
       .usa-accordion-content {
         padding: 3rem 2rem;
       }
+
       .overview {
         p {
-          &:last-of-type { // not last-child because ul is the last child of .overview
-            margin-bottom: .2rem;
+          &:last-of-type {
+            // not last-child because ul is the last child of .overview
+            margin-bottom: 0.2rem;
           }
 
           &.release-date {
@@ -123,15 +159,19 @@ section.videos-and-resources {
             font-size: 1.4rem;
           }
         }
+
         ul.categories {
           display: block;
           list-style-type: disc;
           padding-left: 2rem;
+
           li {
             display: list-item;
           }
         }
-      } // end .overview
+      }
+      // end .overview
+
       .download {
         i {
           padding-left: 0.5rem;
@@ -139,13 +179,13 @@ section.videos-and-resources {
       }
     }
   }
+
   section {
     &.facebook-feed {
       text-align: center;
     }
   }
 }
-
 @media only screen and (min-width: $large-screen) {
   section.videos-and-resources {
     .usa-accordion-button {
@@ -155,6 +195,7 @@ section.videos-and-resources {
       border: none;
       padding: 1.5rem 3.6rem;
       width: auto;
+
       &[aria-expanded="true"] {
         background-color: $color-primary-darker;
         color: #fff;
