@@ -1,5 +1,10 @@
 {% assign archive = site.data.newsletters %}
 <section class="newsletters">
+{% comment %}
+limit:3 The 3 indicates show the first 3 items at the top.
+The remainder will be put into the archive section below in accordions
+labeled by year.
+{% endcomment %}
 {% for newsletter in site.data.newsletters limit:3 %}
   {% include newsletter/newsletter-item.html entry=newsletter  %}
   {% assign archive = archive | shift %}

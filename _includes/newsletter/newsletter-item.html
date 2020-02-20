@@ -13,13 +13,11 @@ HTML block for one newsletter item.
 {:.issue}
 
 #### In this issue:
-{% for item in entry.newsletter_info %}
-- {{ item }}
-{% endfor %}
+<ul class="in-this-issue">
 {% for item in entry.newsletter_articles %}
-- {{ item }}
+<li>{{ item }}</li>
 {% endfor %}
-{:.in-this-issue}
+</ul>
 
 [Read more]({{ site.baseurl }}{{ entry.newsletter_url }})
 </div>
