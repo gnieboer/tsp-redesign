@@ -1,0 +1,27 @@
+{% assign archive = site.data.newsletters %}
+<section class="newsletters">
+{% for newsletter in site.data.newsletters limit:3 %}
+  {% include newsletter/newsletter-item.html entry=newsletter  %}
+  {% assign archive = archive | shift %}
+{% endfor %}
+<section>
+
+{% assign prev_year = archive.first.newsletter_date | strip | slice: -4, 4 %}
+<section class="newsletters-archive" markdown="1">
+
+## Archived newsletters
+
+<ul class="usa-accordion">
+{% include newsletter/accordion_start.html label=prev_year %}
+{% for newsletter in archive %}
+{% assign year = newsletter.newsletter_date | strip | slice: -4, 4 %}
+{% if prev_year != year %}
+{% assign prev_year = year %}
+{% include newsletter/accordion_end.html %}
+{% include newsletter/accordion_start.html label=year %}
+{% endif %}
+{% include newsletter/newsletter-item.html entry=newsletter  %}
+{% endfor %}
+{% include newsletter/accordion_end.html %}
+</ul>
+<section>
