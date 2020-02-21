@@ -29,15 +29,10 @@ your contributions
 </div>
 
 <div class="usa-grid-full contribution-type">
-<div class="usa-width-one-half" markdown="1">
+<div class="usa-width-one-whole" markdown="1">
 <img src="{{ site.baseurl }}/assets/img/icons/arrow-up-circle.svg" alt="">
 Reach the IRS  
 contribution limit
-</div>
-<div class="usa-width-one-half" markdown="1">
-<img src="{{ site.baseurl }}/assets/img/icons/arrow-down-circle.svg" alt="">
-Take a financial  
-hardship withdrawal
 </div>
 </div>
 

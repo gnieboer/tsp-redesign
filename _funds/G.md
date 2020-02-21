@@ -23,24 +23,22 @@ avg_annual_returns:
     five_yr: "-"
     ten_yr: "-"
     lifetime: "-"
-summary_update: 12/31/2018
+summary_update: 12/31/2019
 summary_details:
-    assets: $230.3 billion
+    assets: $243.8 billion
     as_of_year: 2019
     gross_expense:  .053
     net_expense:    .043
     other_expense:  .000
-    benchmark_index: Dow Jones U.S. Completion TSM Index | www.djindexes.com
+    benchmark_index: 90-day T-Bill Rate
     asset_manager: Not applicable
 composition_update: December 31, 2018
 composition:
   - [Short-term U.S. Treasury securities, 100.0]
-top_ten_update: 12/31/2018
+top_ten_update: 12/31/2019
 top_ten_holdings:
-  - name: Tesla Motors Inc.
-    abbr: TSLA
-  - name: Las Vegas Sands Corp.
-    abbr: LVS
+  - name:
+    abbr:
 additional_info: |
   The G Fund is invested in short-term U.S. Treasury securities specially issued to the TSP. Payment of principal and interest is guaranteed by the U.S. government. Thus, there is no “credit risk.”
 

@@ -5,9 +5,9 @@ styles:
 sidenav:
 scripts:
   - /assets/js/jquery.min.js
-  - /assets/js/flatpickr/flatpickr.js
   - /assets/js/bootstrap.min.js
   - /assets/js/form-modals.js
+  - /assets/js/flatpickr/flatpickr.js
   - /assets/js/ajaxFetch.js
   - /assets/js/ajax-usa-search-gov.js
   - /assets/js/calculator/calculator.js
@@ -18,7 +18,7 @@ document-ready:
   - addFormModals();
   - setTopic('select-forms-topic');
 ---
- 
+
 # Help me find forms and resources about {#forms}
 
 <!-- SEARCH FORMS -->
