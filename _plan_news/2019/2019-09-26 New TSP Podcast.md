@@ -1,6 +1,6 @@
 ---
 title: New TSP Podcast
-permalink: /plan-news/real-TSP-podcast
+permalink: /plan-news/new-tsp-podcast
 # Y for show as latest on news and resources page
 latest: Y
 ---
