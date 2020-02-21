@@ -13,7 +13,7 @@ questions:
   - question: Why should I invest in the G Fund?
     answer: The payment of G Fund principal and interest is guaranteed by the U.S. Government. This means that the U.S. Government will always make the required payments.
   - question: Am I ok with market and inflation risk?
-    answer: The G Fund is subject to the possibility that your investment will not grow enough to offset the reduction in purchasing power that results from inflation (inflation risk).
+    answer: The G Fund is subject to the possibility that your investment will not grow enough to offset the reduction in purchasing power that results from inflation (<span data-term="Inflation Risk" class="js-glossary-toggle term term-end">inflation risk</span>).
   - question: How can I use the G Fund in my TSP?
     answer: Consider investing in the G Fund if you would like to have all or a portion of your TSP account completely protected from loss. If you choose to invest in the G Fund, you are placing a higher priority on the stability and preservation of your money than on the opportunity to potentially achieve greater long-term growth in your account through investment in the other TSP funds.
 avg_annual_returns:
@@ -37,8 +37,13 @@ composition:
   - [Short-term U.S. Treasury securities, 100.0]
 top_ten_update: 12/31/2019
 top_ten_holdings:
-  - name:
-    abbr:
+- namex: ignored because of top_ten_text
+  abbrx: XXXX
+top_ten_text: |
+  The G Fund rate is calculated by the U.S.
+  Treasury as the weighted average yield of
+  approximately 136 U.S. Treasury securities
+  on the last day of the previous month.
 additional_info: |
   The G Fund is invested in short-term U.S. Treasury securities specially issued to the TSP. Payment of principal and interest is guaranteed by the U.S. government. Thus, there is no “credit risk.”
 
