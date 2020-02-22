@@ -1,15 +1,10 @@
 ---
 layout: page
-
 title: Preparing for active duty or TDY
-
 sidenav: manage-life-changes
-
 styles:
-
 scripts:
-
-permalink: /career-changes/preparing-for-active-duty-or-tdy/
+permalink: /changes-in-your-career/preparing-for-active-duty-or-tdy/
 ---
 # Preparing for active duty or TDY
 
@@ -27,15 +22,15 @@ However, you can still contribute to your uniformed services account. It is a go
 
 ### TSP uniformed services account
 
-Don’t have a uniformed services account yet? You may want to establish one by using your service’s electronic payroll system, for example, [myPay]({{ site.baseurl }}/exit/?idx=6){:rel="nofollow"}, or by submitting [*Election Form*](/forms/tsp-u-1.pdf), Form TSP-U-1, to your service.
+Don’t have a uniformed services account yet? You may want to establish one by using your service’s electronic payroll system, for example, [myPay]({{ site.baseurl }}/exit/?idx=6){:rel="nofollow"}, or by submitting Form TSP-U-1, [*Election Form*]({{ site.baseurl }}/forms/tsp-u-1.pdf), to your service.
 
-Read *[TSP Benefits That Apply to Members of the Military Who Return to Federal Civilian Service](/publications/tspfs08.pdf)* to learn more.
+Read *[TSP Benefits That Apply to Members of the Military Who Return to Federal Civilian Service]({{ site.baseurl }}/publications/tspfs08.pdf)* to learn more.
 
 ### TSP loans
 
-Loan payments for your civilian account will stop because they come from payroll deductions. Also, you cannot make payments on that loan from your uniformed services pay. However, you can continue to make loan payments by sending in a personal check or money order to the TSP along with [*Loan Payment Coupon*](/forms/tsp-26.html), Form TSP-26.
+Loan payments for your civilian account will stop because they come from payroll deductions. Also, you cannot make payments on that loan from your uniformed services pay. However, you can continue to make loan payments by sending in a personal check or money order to the TSP along with Form TSP-26, [*Loan Payment Coupon*]({{ site.baseurl }}/forms/tsp-26/).
 
-Ask your federal civilian agency to submit [*Notification to TSP of Nonpay Status*](/forms/tsp-41.pdf), Form TSP-41. Once we receive it, we will suspend your loan payments until you return to your federal civilian job. However, there are other acceptable forms of documentation to notify the TSP.
+Ask your federal civilian agency to submit [*Notification to TSP of Nonpay Status*]({{ site.baseurl }}/forms/tsp-41.pdf), Form TSP-41. Once we receive it, we will suspend your loan payments until you return to your federal civilian job. However, there are other acceptable forms of documentation to notify the TSP.
 
 ## Non-federal civilian employees
 
@@ -51,11 +46,11 @@ Confirm how much you have contributed to your employer's defined contribution pl
 
 ### Give a power of attorney
 
-Before you go on active duty, you can designate a power of attorney—an individual to serve as your agent in any business with the TSP. Your agent can be given very specific powers or unlimited power to act on your behalf. Use the *[Special Power of Attorney](/publications/oc01-10.pdf)* form to designate a power of attorney.
+Before you go on active duty, you can designate a power of attorney—an individual to serve as your agent in any business with the TSP. Your agent can be given very specific powers or unlimited power to act on your behalf. Use the *[Special Power of Attorney]({{ site.baseurl }}/publications/oc01-10.pdf)* form to designate a power of attorney.
 
 ### Review beneficiaries
 
-If you’d like your TSP account paid out in the [statutory order of precedence]({{ site.baseurl }}/planning-for-life-events/beneficiary-basics/) in the event of your death, it is **not** necessary to designate beneficiaries.
+If you’d like your TSP account paid out in the [statutory order of precedence]({{ site.baseurl }}/account-basics/designating-beneficiaries/) in the event of your death, it is **not** necessary to designate beneficiaries.
 
 If you have designated beneficiaries on file with us, review, update, or change information, if necessary. We do not accept any other types of designations (such as wills).
 <!-- CONTENT END -->

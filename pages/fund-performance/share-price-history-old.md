@@ -15,7 +15,7 @@ document-ready:
 
 # Share price history
 
-To understand how the TSP calculates rates of return for any given period of time and determines compound annual returns, read the Fact Sheet [_Calculating Periodic Returns and Compound Annual Returns_](/publications/oc05-16w.pdf).
+To understand how the TSP calculates rates of return for any given period of time and determines compound annual returns, read the Fact Sheet [_Calculating Periodic Returns and Compound Annual Returns_]({{ site.baseurl }}/publications/oc05-16w.pdf).
 
 {% assign chartName = 'dynamic-share-price' %}
 {% include fund-checkboxes.html Lfunds=1 InvFunds=1 Index=0 chartName=chartName %}

@@ -20,7 +20,7 @@ Be sure to inform us if your name or mailing address changes.
 
 If you’re currently a federal employee, report these changes to your agency or service.
 
-If you’re no longer a federal employee, visit [My Account: Profile Settings](https://www.tsp.gov/tsp/profileSettings.do?subaction=view&amp;_name=profile){:.target="\_blank"} to change your address, or call the [ThriftLine]({{ site.baseurl }}/contact/).
+If you’re no longer a federal employee, visit [My Account: Profile Settings](https://www.tsp.gov/tsp/profileSettings.do?subaction=view&amp;_name=profile){:target="\_blank"} to change your address, or call the [ThriftLine]({{ site.baseurl }}/contact/).
 
 If you’re an active duty uniformed services member, log into the myPay website and go to the TSP section to change your TSP address. **Note**: If you change it in the “Correspondence Address” section of myPay, it will not change your TSP address.
 
@@ -43,12 +43,12 @@ Your current or former spouse, or your dependents, could be awarded a portion of
 
 A valid RBCO will require the TSP to freeze your account, preventing you from taking any new loans or withdrawals until the award is paid out or the order is otherwise resolved. However, a freeze will not prevent you from making contributions or changing your contribution allocation or investment choices, and you will still be required to make payments on existing loans.
 
-Be sure to read *[Court Orders and Powers of Attorney](/publications/tspbk11.pdf)* for a complete understanding of your rights and responsibilities.
+Be sure to read *[Court Orders and Powers of Attorney]({{ site.baseurl }}/publications/tspbk11.pdf)* for a complete understanding of your rights and responsibilities.
 
 ## TSP account garnishment for alimony or child support
 
 You may be required to pay alimony or child support from your TSP account. If we receive a complete, qualifying legal process for garnishment of your TSP account for alimony or child support, we will freeze your account, preventing any loans or withdrawals. The freeze will be removed when payment has been made, or when we receive an order to remove the freeze.
 
-Be sure to read *[Court Orders and Powers of Attorney](/publications/tspbk11.pdf)* for a complete understanding of your rights and responsibilities.
+Be sure to read *[Court Orders and Powers of Attorney]({{ site.baseurl }}/publications/tspbk11.pdf)* for a complete understanding of your rights and responsibilities.
 
 <!-- CONTENT END -->

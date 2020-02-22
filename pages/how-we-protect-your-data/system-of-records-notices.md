@@ -213,7 +213,7 @@ FRTIB is required to publish a SORN anytime it creates, substantially modifies, 
 
   **ADMINISTRATIVE, TECHNICAL, AND PHYSICAL SAFEGUARDS:** FRTIB has adopted appropriate administrative, technical, and physical controls in accordance with FRTIB's security program to protect the security, confidentiality, availability, and integrity of the information, and to ensure that records are not disclosed to or accessed by unauthorized individuals.
 
-  Paper records are stored in locked file cabinets in areas of restricted access that are locked after office hours. Electronic records are stored on computer networks and protected by assigning usernames to individuals needing access to the records and by passwords set by unauthorized users that must be changed periodically.
+  Paper records are stored in locked file cabinets in areas of restricted access that are locked after office hours. Electronic records are stored on computer networks and protected by assigning user IDs to individuals needing access to the records and by passwords set by unauthorized users that must be changed periodically.
 
   **RECORD ACCESS PROCEDURES:** Individuals seeking to determine whether this system of records contains information about themselves should submit a written request to the appropriate entity below, and include the following information:
 
@@ -336,7 +336,7 @@ FRTIB is required to publish a SORN anytime it creates, substantially modifies, 
 
   **ADMINISTRATIVE, TECHNICAL, AND PHYSICAL SAFEGUARDS:** FRTIB has adopted appropriate administrative, technical, and physical controls in accordance with FRTIB's security program to protect the security, confidentiality, availability, and integrity of the information, and to ensure that records are not disclosed to or accessed by unauthorized individuals.
 
-  Paper records are stored in locked file cabinets in areas of restricted access that are locked after office hours. Electronic records are stored on computer networks and protected by assigning usernames to individuals needing access to the records and by passwords set by unauthorized users that must be changed periodically.
+  Paper records are stored in locked file cabinets in areas of restricted access that are locked after office hours. Electronic records are stored on computer networks and protected by assigning user IDs to individuals needing access to the records and by passwords set by unauthorized users that must be changed periodically.
 
   **RECORD ACCESS PROCEDURES:** Individuals seeking to determine whether this system of records contains information about themselves must submit a written request to the FOIA Officer, FRTIB, 77 K Street NE., Washington, DC 20002, and provide the following information:
   1. Full name;
@@ -433,7 +433,7 @@ FRTIB is required to publish a SORN anytime it creates, substantially modifies, 
 
   **ADMINISTRATIVE, TECHNICAL, AND PHYSICAL SAFEGUARDS:** FRTIB has adopted appropriate administrative, technical, and physical controls in accordance with FRTIB's security program to protect the security, confidentiality, availability, and integrity of the information, and to ensure that records are not disclosed to or accessed by unauthorized individuals.
 
-  Paper records are stored in locked file cabinets in areas of restricted access that are locked after office hours. Electronic records are stored on computer networks and protected by assigning usernames to individuals needing access to the records and by passwords set by unauthorized users that must be changed periodically.
+  Paper records are stored in locked file cabinets in areas of restricted access that are locked after office hours. Electronic records are stored on computer networks and protected by assigning user IDs to individuals needing access to the records and by passwords set by unauthorized users that must be changed periodically.
 
   **RECORD ACCESS PROCEDURES:** Individuals seeking to determine whether this system of records contains information about themselves must submit a written request to the FOIA Officer, FRTIB, 77 K Street NE., Washington, DC 20002, and provide the following information:
 
@@ -530,7 +530,7 @@ FRTIB is required to publish a SORN anytime it creates, substantially modifies, 
 
   **ADMINISTRATIVE, TECHNICAL, AND PHYSICAL SAFEGUARDS:** FRTIB has adopted appropriate administrative, technical, and physical controls in accordance with FRTIB's security program to protect the security, confidentiality, availability, and integrity of the information, and to ensure that records are not disclosed to or accessed by unauthorized individuals.
 
-  Paper records are stored in file cabinets in areas of restricted access that are locked after office hours. Electronic records are stored on computer networks, including cloud-based services, and are protected by assigning usernames to individuals needing access to the records and by passwords set by unauthorized users that must be changed periodically.
+  Paper records are stored in file cabinets in areas of restricted access that are locked after office hours. Electronic records are stored on computer networks, including cloud-based services, and are protected by assigning user IDs to individuals needing access to the records and by passwords set by unauthorized users that must be changed periodically.
 
   **RECORD ACCESS PROCEDURES:**
 
@@ -645,7 +645,7 @@ FRTIB is required to publish a SORN anytime it creates, substantially modifies, 
 
   **ADMINISTRATIVE, TECHNICAL, AND PHYSICAL SAFEGUARDS:** FRTIB has adopted appropriate administrative, technical, and physical controls in accordance with FRTIB's security program to protect the security, confidentiality, availability, and integrity of the information, and to ensure that records are not disclosed to or accessed by unauthorized individuals.
 
-  Paper records are stored in locked file cabinets in areas of restricted access that are locked after office hours. Electronic records are stored on computer networks and protected by assigning usernames to individuals needing access to the records and by passwords set by unauthorized users that must be changed periodically.
+  Paper records are stored in locked file cabinets in areas of restricted access that are locked after office hours. Electronic records are stored on computer networks and protected by assigning user IDs to individuals needing access to the records and by passwords set by unauthorized users that must be changed periodically.
 
   RECORD ACCESS PROCEDURES:
 
@@ -752,7 +752,7 @@ FRTIB is required to publish a SORN anytime it creates, substantially modifies, 
 
   **ADMINISTRATIVE, TECHNICAL, AND PHYSICAL SAFEGUARDS:** FRTIB has adopted appropriate administrative, technical, and physical controls in accordance with FRTIB’s security program to protect the security, confidentiality, availability, and integrity of the information, and to ensure that records are not disclosed to or accessed by unauthorized individuals.
 
-  Paper records are stored in locked file cabinets in areas of restricted access that are locked after office hours. Electronic records are stored on computer networks and protected by assigning usernames to individuals needing access to the records and by passwords set by authorized users that must be changed periodically.
+  Paper records are stored in locked file cabinets in areas of restricted access that are locked after office hours. Electronic records are stored on computer networks and protected by assigning user IDs to individuals needing access to the records and by passwords set by authorized users that must be changed periodically.
 
   **RECORD ACCESS PROCEDURES:** Individuals seeking to access records within this system must submit a request pursuant to 5 CFR Part 1630. Attorneys or other persons acting on behalf of an individual must provide written authorization from that individual, such as Power of Attorney, in order for the representative to act on their behalf.
 
@@ -834,7 +834,7 @@ FRTIB is required to publish a SORN anytime it creates, substantially modifies, 
 
   **ADMINISTRATIVE, TECHNICAL, AND PHYSICAL SAFEGUARDS:** FRTIB has adopted appropriate administrative, technical, and physical controls in accordance with FRTIB's security program to protect the security, confidentiality, availability, and integrity of the information, and to ensure that records are not disclosed to or accessed by unauthorized individuals.
 
-  Paper records are stored in file cabinets in areas of restricted access that are locked after office hours. Electronic records are stored on computer networks, including cloud-based services, and are protected by assigning usernames to individuals needing access to the records and by passwords set by unauthorized users that must be changed periodically.
+  Paper records are stored in file cabinets in areas of restricted access that are locked after office hours. Electronic records are stored on computer networks, including cloud-based services, and are protected by assigning user IDs to individuals needing access to the records and by passwords set by unauthorized users that must be changed periodically.
 
   **RECORD ACCESS PROCEDURES:** Individuals seeking to determine whether this system of records contains information about themselves must submit a written request to the FOIA Officer, FRTIB, 77 K Street NE., Washington, DC 20002, and provide the following information:
 
@@ -923,7 +923,7 @@ FRTIB is required to publish a SORN anytime it creates, substantially modifies, 
 
   **ADMINISTRATIVE, TECHNICAL, AND PHYSICAL SAFEGUARDS:** FRTIB has adopted appropriate administrative, technical, and physical controls in accordance with FRTIB's security program to protect the security, confidentiality, availability, and integrity of the information, and to ensure that records are not disclosed to or accessed by unauthorized individuals.
 
-  Paper records are stored in file cabinets in areas of restricted access that are locked after office hours. Electronic records are stored on computer networks, including cloud-based services, and are protected by assigning usernames to individuals needing access to the records and by passwords set by unauthorized users that must be changed periodically.
+  Paper records are stored in file cabinets in areas of restricted access that are locked after office hours. Electronic records are stored on computer networks, including cloud-based services, and are protected by assigning user IDs to individuals needing access to the records and by passwords set by unauthorized users that must be changed periodically.
 
   **RECORD ACCESS PROCEDURES:** Individuals seeking to determine whether this system of records contains information about themselves must submit a written request to the FOIA Officer, FRTIB, 77 K Street NE., Washington, DC 20002, and provide the following information:
 
@@ -1010,7 +1010,7 @@ FRTIB is required to publish a SORN anytime it creates, substantially modifies, 
 
   **ADMINISTRATIVE, TECHNICAL, AND PHYSICAL SAFEGUARDS:** FRTIB has adopted appropriate administrative, technical, and physical controls in accordance with FRTIB's security program to protect the security, confidentiality, availability, and integrity of the information, and to ensure that records are not disclosed to or accessed by unauthorized individuals.
 
-  Paper records are stored in locked file cabinets in areas of restricted access that are locked after office hours. Electronic records are stored on computer networks and protected by assigning usernames to individuals needing access to the records and by passwords set by unauthorized users that must be changed periodically.
+  Paper records are stored in locked file cabinets in areas of restricted access that are locked after office hours. Electronic records are stored on computer networks and protected by assigning user IDs to individuals needing access to the records and by passwords set by unauthorized users that must be changed periodically.
 
   **RECORD ACCESS PROCEDURES:** Individuals seeking to determine whether this system of records contains information about themselves must submit a written request to the FOIA Officer, FRTIB, 77 K Street NE., Washington, DC 20002, and provide the following information:
 
@@ -1103,7 +1103,7 @@ FRTIB is required to publish a SORN anytime it creates, substantially modifies, 
 
   FRTIB has adopted appropriate administrative, technical, and physical controls in accordance with FRTIB's security program to protect the security, confidentiality, availability, and integrity of the information, and to ensure that records are not disclosed to or accessed by unauthorized individuals.
 
-  Paper records are stored in locked file cabinets in areas of restricted access that are locked after office hours. Electronic records are stored on computer networks and protected by assigning usernames to individuals needing access to the records and by passwords set by unauthorized users that must be changed periodically.
+  Paper records are stored in locked file cabinets in areas of restricted access that are locked after office hours. Electronic records are stored on computer networks and protected by assigning user IDs to individuals needing access to the records and by passwords set by unauthorized users that must be changed periodically.
 
   **RECORD ACCESS PROCEDURES:**
 
@@ -1196,7 +1196,7 @@ FRTIB is required to publish a SORN anytime it creates, substantially modifies, 
 
   **ADMINISTRATIVE, TECHNICAL, AND PHYSICAL SAFEGUARDS:** FRTIB has adopted appropriate administrative, technical, and physical controls in accordance with FRTIB's security program to protect the security, confidentiality, availability, and integrity of the information, and to ensure that records are not disclosed to or accessed by unauthorized individuals.
 
-  Paper records are stored in locked file cabinets in areas of restricted access that are locked after office hours. Electronic records are stored on computer networks and protected by assigning usernames to individuals needing access to the records and by passwords set by unauthorized users that must be changed periodically.
+  Paper records are stored in locked file cabinets in areas of restricted access that are locked after office hours. Electronic records are stored on computer networks and protected by assigning user IDs to individuals needing access to the records and by passwords set by unauthorized users that must be changed periodically.
 
   **RECORD ACCESS PROCEDURES:** Individuals seeking to determine whether this system of records contains information about themselves must submit a written request to the FOIA Officer, FRTIB, 77 K Street NE., Washington, DC 20002, and provide the following information:
 
@@ -1286,7 +1286,7 @@ FRTIB is required to publish a SORN anytime it creates, substantially modifies, 
 
   **ADMINISTRATIVE, TECHNICAL, AND PHYSICAL SAFEGUARDS:** FRTIB has adopted appropriate administrative, technical, and physical controls in accordance with FRTIB's security program to protect the security, confidentiality, availability, and integrity of the information, and to ensure that records are not disclosed to or accessed by unauthorized individuals.
 
-  Paper records are stored in locked file cabinets in areas of restricted access that are locked after office hours. Electronic records are stored on computer networks and protected by assigning usernames to individuals needing access to the records and by passwords set by unauthorized users that must be changed periodically.
+  Paper records are stored in locked file cabinets in areas of restricted access that are locked after office hours. Electronic records are stored on computer networks and protected by assigning user IDs to individuals needing access to the records and by passwords set by unauthorized users that must be changed periodically.
 
   **RECORD ACCESS PROCEDURES:** Individuals seeking to determine whether this system of records contains information about themselves must submit a written request to the FOIA Officer, FRTIB, 77 K Street NE., Washington, DC 20002, and provide the following information:
 

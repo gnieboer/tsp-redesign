@@ -9,7 +9,7 @@ styles:
 
 scripts:
 
-permalink: /career-changes/returning-from-deployment/
+permalink: /changes-in-your-career/returning-from-deployment/
 ---
 
 # Returning from deployment or TDY

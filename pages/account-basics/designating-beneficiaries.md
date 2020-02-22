@@ -9,7 +9,7 @@ permalink: /account-basics/designating-beneficiaries/
 
 # Designating beneficiaries
 
-## Do you need to designate a beneficiary? The answer is probably “NO.”
+## Do you need to designate a beneficiary? The answer is probably &#8220;NO.&#8221;
 
 In the event of your death, your TSP account would be distributed this way:
 
@@ -21,7 +21,7 @@ In the event of your death, your TSP account would be distributed this way:
 
 For most people, this is the best option because it accounts for life changes like births, deaths, divorce, or marriage that may happen after you open your account.
 
-If you’d like to make an exception, you may complete Form TSP-3, _[Designation of Beneficiary](#)_. The easiest way to do this is to use the online “wizard,” which you’ll find by logging in here: [My Account:Beneficiaries](https://www.tsp.gov/tsp/beneficiaries.do?subaction=beneLanding&_name=bene).   
+If you’d like to make an exception, you may complete Form TSP-3, _[Designation of Beneficiary]({{ site.baseurl }}/forms/tsp-3.pdf)_. The easiest way to do this is to use the online &#8220;wizard,&#8221; which you’ll find by logging in here: [My Account: Beneficiaries]({{ site.beneficiaries }}).   
 
 Don’t remember whether you’ve submitted a _Designation of Beneficiary_ or you’re not sure who you named as your beneficiaries? Look at your annual statement, check the online wizard, or call the ThriftLine at 1-877-968-3778.
 

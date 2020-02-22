@@ -11,11 +11,11 @@ permalink: /living-in-retirement/making-a-withdrawal/
 
 ## Requesting a withdrawal
 
-Before you request a withdrawal from your TSP savings, be sure to read the booklet [Withdrawing Your TSP Account After Leaving Federal Service](/publications/tspbk02.pdf).
+Before you request a withdrawal from your TSP savings, be sure to read the booklet [Withdrawing Your TSP Account After Leaving Federal Service]({{ site.baseurl }}/publications/tspbk02.pdf).
 
-To request a partial withdrawal from your TSP account, log into [My Account: Withdrawals](https://www.tsp.gov/tsp/login.html) and click “Partial Withdrawal.”
+To request a partial withdrawal from your TSP account, log into [My Account: Withdrawals]({{ site.myaccount }}) and click “Partial Withdrawal.”
 
-To request a full withdrawal of your TSP savings, log into [My Account: Withdrawals](https://www.tsp.gov/tsp/login.html) and click “Full Withdrawal.”
+To request a full withdrawal of your TSP savings, log into [My Account: Withdrawals]({{ site.myaccount }}) and click “Full Withdrawal.”
 
 We cannot process your withdrawal request unless your agency or service notifies us that you've separated from service and provides the date of your separation. It usually takes up to 30 days after the actual date of your separation for us to receive this information.
 
@@ -23,7 +23,7 @@ We cannot process your withdrawal request unless your agency or service notifies
 
 After you leave federal service, you may be able to transfer or roll over all or part of your partitial or full withdrawal amount to an IRA or eligible employer plan.
 
-The tax rules regarding transfers and rollovers can be complicated. You should consult a tax advisor to ensure that you understand the tax consequences of such a transaction. For detailed information about transferring or rolling over your withdrawal, read the tax notice [*Important Tax Information About Payments From Your TSP Account*](/publications/tsp-536.pdf).
+The tax rules regarding transfers and rollovers can be complicated. You should consult a tax advisor to ensure that you understand the tax consequences of such a transaction. For detailed information about transferring or rolling over your withdrawal, read the tax notice [*Important Tax Information About Payments From Your TSP Account*]({{ site.baseurl }}/publications/tsp-536.pdf).
 
 ## Depositing your withdrawal electronically
 
@@ -31,7 +31,7 @@ Any single payment or monthly payment that is not transferred directly to an IRA
 
 ## Receiving your money
 
-Allow several weeks from the time you submit your completed withdrawal request and the time that payment is sent. Your withdrawal could take longer if your agency or service delays reporting your separation from federal service, if you have an outstanding TSP loan, or if you submit forms that are not completed properly. We will notify you in writing when your payment has been sent. You can go to [My Account: Withdrawals](https://www.tsp.gov/tsp/login.html) or call the ThriftLine to find out the status of your request.
+Allow several weeks from the time you submit your completed withdrawal request and the time that payment is sent. Your withdrawal could take longer if your agency or service delays reporting your separation from federal service, if you have an outstanding TSP loan, or if you submit forms that are not completed properly. We will notify you in writing when your payment has been sent. You can go to [My Account: Withdrawals]({{ site.myaccount }}) or call the ThriftLine to find out the status of your request.
 
 
 ## Other considerations
@@ -41,7 +41,7 @@ Allow several weeks from the time you submit your completed withdrawal request a
 
 The Internal Revenue Code (IRC) requires that you receive a portion of your TSP account beginning in the calendar year when you become age 72* and are separated from service. The portion is called a Required Minimum Distribution (RMD).
 
-We calculate RMDs based on your account balance and your age using the IRS Uniform Lifetime Table. For detailed information and the tax rules regarding RMDs, see the TSP tax notice [Important Tax Information About Your TSP Withdrawal and Required Minimum Distributions](/forms/tsp-775.pdf).
+We calculate RMDs based on your account balance and your age using the IRS Uniform Lifetime Table. For detailed information and the tax rules regarding RMDs, see the TSP tax notice [Important Tax Information About Your TSP Withdrawal and Required Minimum Distributions]({{ site.baseurl }}/forms/tsp-775.pdf).
 
 #### RMD requirements
 
@@ -54,7 +54,7 @@ We calculate RMDs based on your account balance and your age using the IRS Unifo
 + If you're a beneficiary participant, your deadline for beginning to receive required minimum distributions depends on whether your spouse died before or after his or her required beginning date. 
 
 
-<sup>* Participants who turned 70 ½ on or before December 31, 2019, were required to begin receiving RMDs in the year they turned 70 ½.
+<sup>* Participants who turned 70&frac12; on or before December 31, 2019, were required to begin receiving RMDs in the year they turned 70&frac12;.
 
 
 #### RMD payment transfers
@@ -77,6 +77,6 @@ If you have both a civilian account and a uniformed services account, you may on
 
 Once you’ve separated, you will have the option of combining your two accounts into one; however, you can only combine the account related to your separation into your other TSP account. Also, if you have a loan in the account you are moving, you must close it before you can combine your accounts.
 
-To combine your TSP accounts, use [Request to Combine Uniformed Services and Civilian TSP Accounts](/publications/tsp-65.pdf), *Form TSP-65.* Money that you transfer will be deposited as employee contributions into the traditional or Roth balance of the combined account based on the way it was identified in the original account.
+To combine your TSP accounts, use [Request to Combine Uniformed Services and Civilian TSP Accounts]({{ site.baseurl }}/publications/tsp-65.pdf), *Form TSP-65.* Money that you transfer will be deposited as employee contributions into the traditional or Roth balance of the combined account based on the way it was identified in the original account.
 
 **Note:** If you have a uniformed services account that includes a tax-exempt balance, that money cannot be transferred to your civilian TSP account unless the tax-exempt contributions are part of your Roth balance. Any tax-exempt contributions that are a part of your traditional balance must remain in your uniformed services account. That account will continue to accrue tax-deferred earnings until you withdraw it.

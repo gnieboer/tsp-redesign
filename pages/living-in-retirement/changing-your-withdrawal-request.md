@@ -31,6 +31,6 @@ To make any of the allowable changes described above, use the online tool that y
 
 If your signature or your spouse’s signature is required or you’re starting or making changes to transfers, you won’t be able to complete the process entirely online. You’ll be given a summary of your request, which you—and your spouse or financial institution if necessary—will need to sign, have notarized, and then mail or fax to us. When we receive these properly completed pages, we’ll be able to complete the transaction you began online.
 
-Be sure to carefully read the TSP tax notice, [Tax Information for TSP Participants Receiving Installment Payments](/publications/tsp-780.pdf)." It outlines the rules for changing your monthly payments and details the tax implications associated with each monthly payment option.
+Be sure to carefully read the TSP tax notice, [Tax Information for TSP Participants Receiving Installment Payments]({{ site.baseurl }}/publications/tsp-780.pdf)." It outlines the rules for changing your monthly payments and details the tax implications associated with each monthly payment option.
 
-If you're currently receiving installment paymens and want to choose a different amount, use our [TSP Installment Payment Calculator](/calculators/tsp-installment-payment-calculator/) to estimate how many payments you will receive and how long they will last.
+If you're currently receiving installment paymens and want to choose a different amount, use our [TSP Installment Payment Calculator]({{ site.baseurl }}/calculators/tsp-installment-payment-calculator/) to estimate how many payments you will receive and how long they will last.

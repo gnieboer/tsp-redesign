@@ -20,13 +20,13 @@ Uniformed services can use [myPay]({{ site.baseurl }}/exit/?idx=6){:rel="nofollo
 ### Does your agency accept paper forms?
 {: .usa-alert-heading}
 
-Download the Election Form, _[Form TSP-1](/forms/tsp-1.pdf)_ (_[TSP-U-1](/forms/tsp-u-1.pdf)_) for uniformed services members), or call the ThriftLine at 1-877-968-3778 and choose option 3 to have it mailed to you.
+Download the Election Form, _[Form TSP-1]({{ site.baseurl }}/forms/tsp-1.pdf)_ (_[TSP-U-1]({{ site.baseurl }}/forms/tsp-u-1.pdf)_) for uniformed services members), or call the ThriftLine at 1-877-968-3778 and choose option 3 to have it mailed to you.
 {: .usa-alert-text}
 </div>
 </div>
 
 ## I was just hired. Am I already contributing?
 
-If you're a brand new employee of the federal government or uniformed services, you were automatically enrolled in the TSP at 3% of your salary. Many people who were automatically enrolled decide to increase their contributions to at least 5% of their salary to [get the full match](/making-contributions/maximize-your-savings/) from their agency or service.
+If you're a brand new employee of the federal government or uniformed services, you were automatically enrolled in the TSP at 3% of your salary. Many people who were automatically enrolled decide to increase their contributions to at least 5% of their salary to [get the full match]({{ site.baseurl }}/making-contributions/maximize-your-savings/) from their agency or service.
 
 <!--  full match should link to "How do I get the full match?" page -->

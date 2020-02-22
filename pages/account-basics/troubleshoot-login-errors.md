@@ -11,7 +11,7 @@ permalink: /account-basics/troubleshoot-login-errors/
 ## Two-step authentication and validating contact information
 ### Two-step authentication helps prevent fraud.
 
-All TSP participants must use two-step authentication to log into My Account. Two-step authentication helps you protect your account against fraud by prompting you for a one-time verification code each time you log in. This login process is more secure because it means that online access to your account requires something you know (your account number or username and password) and something you have (a one-time verification code you receive in your email or on your phone). Someone who tries to log into your account fraudulently won’t be able to gain access without the code.
+All TSP participants must use two-step authentication to log into My Account. Two-step authentication helps you protect your account against fraud by prompting you for a one-time verification code each time you log in. This login process is more secure because it means that online access to your account requires something you know (your account number or user ID and password) and something you have (a one-time verification code you receive in your email or on your phone). Someone who tries to log into your account fraudulently won’t be able to gain access without the code.
 
 ### Set up two-step authentication by validating your contact information.
 
@@ -58,7 +58,7 @@ If you’re trying to validate an email or phone number, you can use the link in
 
 **I no longer have access to my validated contact method.**
 
-You must [call the ThriftLine](tsp.gov/contact) to request that a Participant Service Representative remove the invalid contact information from your profile.
+You must [call the ThriftLine](/contact/) to request that a Participant Service Representative remove the invalid contact information from your profile.
 
 **I don’t have a phone that receives text messages.**
 
@@ -79,27 +79,27 @@ If you give your account credentials to a third-party application, you may recei
 **I don’t know my password.**
 
 You may be able to reset your password online. Go to the My Account login page and select the link Forgot your password?
-If that doesn’t work for you, [call the ThriftLine](tsp.gov/contact).
+If that doesn’t work for you, [call the ThriftLine](/contact/).
 
 **I don’t know my account number.**
 
-You can request your account number online or by [calling the ThriftLine](tsp.gov/contact). We will mail your account number to the address we have on file for you, which should take 3 – 5 business days.
+You can request your account number online or by [calling the ThriftLine](/contact/). We will mail your account number to the address we have on file for you, which should take 3 – 5 business days.
 
 To request your account number online, go to the My Account login page and select the link Forgot your account number or user ID?
 
 **I don’t know my customized user ID.**
 
-You can access your account with your account number and password. Then you can create a new user ID in the “Profile Settings” section of [My Account](tsp.gov/login).
+You can access your account with your account number and password. Then you can create a new user ID in the [Profile Settings]({{ site.profile_settings }}){:target="\_blank"} section of My Account.
 
 ## Other reasons you may have trouble logging in
 
 **You have an older browser.**
 
-An older browser may not support the security features you need to view personal account information. 
+An older browser may not support the security features you need to view personal account information.
 
 **You have both a civilian and a uniformed services TSP account.**
 
-If you have two TSP accounts, you need to set up your contact information or passwords to either connect them in My Account or to keep your login information separate for each account. 
+If you have two TSP accounts, you need to set up your contact information or passwords to either connect them in My Account or to keep your login information separate for each account.
 
 **Your IP address changed.**
 

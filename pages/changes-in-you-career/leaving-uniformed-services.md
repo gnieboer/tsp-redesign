@@ -9,7 +9,7 @@ styles:
 
 scripts:
 
-permalink: /career-changes/leaving-uniformed-services/
+permalink: /changes-in-your-career/leaving-uniformed-services/
 ---
 
 # Leaving uniformed services

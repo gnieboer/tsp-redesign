@@ -36,7 +36,7 @@ The amount of the monthly payment to the survivor - whether the survivor is you 
 
 If you name a joint annuitant other than your spouse who is more than 10 years younger than you, you must choose a joint life annuity with the 50% survivor benefit in most cases.
 
-For more information about joint annuitants, refer to the Life Annuities section of the booklet [Withdrawing From Your TSP Account for Separated and Beneficiary Participants](/publications/tspbk02.pdf).
+For more information about joint annuitants, refer to the Life Annuities section of the booklet [Withdrawing From Your TSP Account for Separated and Beneficiary Participants]({{ site.baseurl }}/publications/tspbk02.pdf).
 
 ## Annuity payment options
 Once you’ve chosen either a single life or a joint life annuity, you must decide whether you want to receive "level" or "increasing" payments.

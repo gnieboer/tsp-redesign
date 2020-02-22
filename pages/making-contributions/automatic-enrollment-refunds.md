@@ -9,7 +9,7 @@ permalink: /making-contributions/automatic-enrollment-refunds/
 
 # Automatic enrollment refunds
 
-Generally, if you were automatically enrolled in the TSP, you have 90 days from the date of your first contribution to request a refund of your own automatic enrollment contributions and earnings. To request a refund, use Form TSP-25, [*Automatic Enrollment Refund Request*](/forms/tsp-25.pdf). If you are a FERS or BRS employee, you will forfeit your Agency/Service Matching Contributions, but Agency Automatic (1%) Contributions will remain in your account. 
+Generally, if you were automatically enrolled in the TSP, you have 90 days from the date of your first contribution to request a refund of your own automatic enrollment contributions and earnings. To request a refund, use Form TSP-25, [*Automatic Enrollment Refund Request*]({{ site.baseurl }}/forms/tsp-25.pdf). If you are a FERS or BRS employee, you will forfeit your Agency/Service Matching Contributions, but Agency Automatic (1%) Contributions will remain in your account. 
 
 If you make a contribution election to change your automatic contributions in any way, you're no longer in the "automatic enrollment period" and cannot request a refund of any contributions you made after that change.
 

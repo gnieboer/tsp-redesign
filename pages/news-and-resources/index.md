@@ -53,7 +53,7 @@ document-ready:
 <section class="latest-news">
   <div class="flex header-line" markdown="1">
 ## Latest news and announcements
-  <span class="see-all">[See all](/news-and-resources/plan-news/)</span>
+  <span class="see-all">[See all]({{ site.baseurl }}/news-and-resources/plan-news/)</span>
   </div>
 <div class="usa-grid">
 <div class="usa-width-one-whole" markdown="1">
@@ -77,7 +77,7 @@ document-ready:
 <section class="popular-videos" markdown="1">
   <div class="flex header-line" markdown="1">
 ## Popular videos and resources
-  <span class="see-all">[See all](/videos-and-resources/)</span>
+  <span class="see-all">[See all]({{ site.baseurl }}/videos-and-resources/)</span>
   </div>
   <!-- YouTube iFrame -->
   <div class="usa-grid">
@@ -104,8 +104,8 @@ In this video, we'll talk about the professionally designed Lifecycle Funds, als
 
 Popular forms
 
-- **TSP-1/TSP-U-1**, [Election Form](/forms/tsp-1.pdf)
-- **TSP-60**, [Request for a transfer into the TSP](/forms/tsp-60.pdf)
+- **TSP-1/TSP-U-1**, [Election Form]({{ site.baseurl }}/forms/tsp-1.pdf)
+- **TSP-60**, [Request for a transfer into the TSP]({{ site.baseurl }}/forms/tsp-60.pdf)
 - **TSP-26**, [Loan payment coupon](javascript:void(0))
 {:.forms-list}
 
@@ -115,9 +115,9 @@ Popular forms
 
 Popular calculators
 
-- [How much should I save?](/calculators/how-much-should-i-save/)
-- [How much will my savings grow?](/calculators/how-much-will-my-savings-grow/)
-- [Retirement income calculator](/calculators/retirement-income-calculator/)
+- [How much should I save?]({{ site.baseurl }}/calculators/how-much-should-i-save/)
+- [How much will my savings grow?]({{ site.baseurl }}/calculators/how-much-will-my-savings-grow/)
+- [Retirement income calculator]({{ site.baseurl }}/calculators/retirement-income-calculator/)
 {:.calculators-list}
 
   </div>

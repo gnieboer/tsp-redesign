@@ -1,14 +1,18 @@
-.usa-accordion .usa-tabs .being-a-bpa {
+ul .usa-accordion .usa-tabs .being-a-bpa {
   display: flex;
   justify-content: space-between;
 }
-.being-a-bpa.usa-tabs {
+.being-a-bpa {
+  li {
+    margin-right: 0;
+  }
   .usa-accordion-button {
     box-sizing: border-box;
     font-size: 1.7rem;
     width: 23.2rem;
     height: 23.2rem;
-    border: 6px solid #323a45;
+    // border: 6px solid #323a45;
+    outline: 6px solid #323a45;
     margin-bottom: 1rem;
     color: #dce4ef;
     background-color: #323a45;
@@ -24,7 +28,7 @@
       }
       &[aria-expanded="true"] {
         font-weight: 400;
-        border: 6px solid #dce4ef;
+        outline: 6px solid #323a45;
         // line-height: 2.5rem;
       }
       &[aria-expanded="true"]:after {
@@ -36,7 +40,7 @@
         border-bottom: none;
         position: relative;
         content: "";
-        top: 1rem;
+        top: 8rem;
         left: 5rem;
       }
   } // .usa-accordion-button END

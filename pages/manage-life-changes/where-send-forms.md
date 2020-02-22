@@ -178,7 +178,7 @@ These documents can also be faxed to (703) 592-0170.
 </section>
 
 ### Transfers or Rollovers of Funds to the TSP
-[Request for a Transfer Into the TSP](/forms/tsp-60.pdf), _Form TSP-60_, the associated check for the funds, and any additional documentation can be mailed to:
+[Request for a Transfer Into the TSP]({{ site.baseurl }}/forms/tsp-60.pdf), _Form TSP-60_, the associated check for the funds, and any additional documentation can be mailed to:
 
 <section class="usa-section usa-graphic_list">
   <div class="usa-grid usa-graphic_list-row">

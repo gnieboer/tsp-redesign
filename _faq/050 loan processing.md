@@ -7,4 +7,4 @@ If you successfully complete the entire loan process online and are approved, yo
 
 If you submitted a paper loan agreement, your request make take several weeks to process.
 
-You may track the [status of your loan]({{ site.myaccount }}/loan.do?subaction=menu&amp;_name=loan){:.target="\_blank"} online or by [contacting us](/contact/).
+You may track the [status of your loan]({{ site.myaccount }}/loan.do?subaction=menu&amp;_name=loan){:target="\_blank"} online or by [contacting us]({{ site.baseurl }}/contact/).

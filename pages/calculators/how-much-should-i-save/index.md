@@ -43,7 +43,7 @@ To find out how much you need to save for retirement, follow the link to the Fed
     <tr>
       <td><span>3</span><p>Current savings balances</p></td>
       <td><img src="{{ site.baseurl }}/assets/img/icons/check-circle-green.svg" alt="Check mark">
-      <p markdown="1">Access your most recent account balance in [My Account](javascript:void(0)), or you can call the [ThriftLine](/contact/). Include savings from other retirement investment accounts, as well.</p></td>
+      <p markdown="1">Access your most recent account balance in [My Account]({{ site.myaccount }}){:target="\_blank"}, or you can call the [ThriftLine]({{ site.baseurl }}/contact/). Include savings from other retirement investment accounts, as well.</p></td>
     </tr>
   </tbody>
 </table>

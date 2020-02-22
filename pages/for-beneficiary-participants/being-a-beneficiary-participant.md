@@ -4,7 +4,12 @@ title: Being a beneficiary participant
 sidenav: manage-life-changes
 styles:
 scripts:
+  - /assets/js/jquery.min.js
+  - /assets/js/bootstrap.min.js
+  - /assets/js/form-modals.js
 permalink: /for-beneficiary-participants/being-a-beneficiary-participant/
+document-ready:
+  - addFormModals();
 ---
 
 # Being a beneficiary participant
@@ -75,7 +80,7 @@ As a beneficiary participant, you’ll enjoy many of the same TSP benefits as em
 
 ## Learn how to move your beneficiary participant account into your existing TSP account
 
-You can move your beneficiary participant account (BPA) into your existing employee or uniformed services TSP account by completing [Withdrawal Request for Beneficiary Participants](javascript:void(0)), _Form TSP-90_. The money you move will be treated as an employee contribution, but it will not be subject to the Internal Revenue Code (IRC) annual elective deferral limit. (See the instructions on Form TSP-90 for more information on combining accounts.)
+You can move your beneficiary participant account (BPA) into your existing employee or uniformed services TSP account by completing Form TSP-99, _[Withdrawal Request for Separated and Beneficiary Participants]({{ site.withdrawals }})_. The money you move will be treated as an employee contribution, but it will not be subject to the Internal Revenue Code (IRC) annual elective deferral limit. (See the instructions on Form TSP-90 for more information on combining accounts.)
 
 In general, once you combine your BPA with your existing TSP account, your BPA money will be subject to the rules that govern the account to which it was moved.
 
@@ -129,7 +134,7 @@ money.
 
 ## Learn two approaches to investing the money in your beneficiary participant account.  
 
-When your beneficiary participant account is first established, the entire balance is invested in the [Lifecycle (L) Fund]({{ site.baseurl }}/pages/funds-lifecycle/) targeted most closely to the year you turn 63 (or the L Income Fund if you’re age 62 or older). This investment remains in place unless you make an [interfund transfer]({{ site.baseurl }}/how-to-invest/change-your-investments/).
+When your beneficiary participant account is first established, the entire balance is invested in the [Lifecycle (L) Fund]({{ site.baseurl }}/funds-lifecycle/) targeted most closely to the year you turn 63 (or the L Income Fund if you’re age 62 or older). This investment remains in place unless you make an [interfund transfer]({{ site.baseurl }}/how-to-invest/change-your-investments/).
 
 **The L Funds** &#8212; These are "lifecycle" funds that are invested according to a professionally designed mix of stocks, bonds, and Government securities. You select your L Fund based on your "time horizon," the future date at which you plan to start withdrawing your money. Depending on your plans, this may be right away or some time in the future.
 
@@ -139,12 +144,9 @@ Choosing how to invest your account is completely up to you. You may invest in a
 </div>
 
 </li>
+</ul>
 
-
-<!-- </ul>
-<ul class="usa-accordion usa-tabs being-a-bpa"> -->
-
-
+<ul class="usa-accordion usa-tabs being-a-bpa">
 <!-- ROW 2, BOX 1, COMBINE YOUR TSP ACCOUNTS -->
   <li>
     <button class="usa-accordion-button"
@@ -157,11 +159,11 @@ Choosing how to invest your account is completely up to you. You may invest in a
 
 ## Learn how to move the money in your Beneficiary Participant Account among the TSP investment funds.
 
-An [interfund transfer]({{ site.baseurl }}/how-to-invest/change-your-investments/) (IFT) allows you to change the way money already in your account is invested. When you make an IFT, you choose the new percentage you want invested in each of our fund options. You cannot move specific dollar amounts or specific types of money (from traditional, tax-exempt and Roth balances) in your account.
+An <span data-term="Interfund Transfer (IFT)" class="js-glossary-toggle term term-end">interfund transfer (IFT)</span> allows you to change the way money already in your account is invested. When you make an IFT, you choose the new percentage you want invested in each of our fund options. You cannot move specific dollar amounts or specific types of money (from traditional, tax-exempt and Roth balances) in your account.
 
 You are allowed two IFTs in a calendar month. After that, you can only move money into the G Fund.
 
-You may request an IFT by visiting My Account: Online Transactions. You can also call the ThriftLine at <nobr>1-877-968-3778</nobr> and follow the automated prompts. You will need your BPA account number (or customized user ID) and password to log into My Account or the Personal Identification Number (PIN) for the ThriftLine.
+You may request an IFT by visiting [My Account: Online Transactions]({{ site.ift }}). You can also call the ThriftLine at <span class="nobr">1-877-968-3778</span> and follow the automated prompts. You will need your BPA account number (or customized user ID) and password to log into My Account or the Personal Identification Number (PIN) for the ThriftLine.
 
 </div>
 </li>
@@ -215,7 +217,7 @@ You can also make _**a mixed withdrawal**_ which allows you to combine any or al
 
 To request a withdrawal, complete [Withdrawal Request for Beneficiary Participants](javascript:void(0)), _Form TSP-90_. You would’ve received a copy of this form with your welcome letter, but you can also find it under [Forms and resources]({{ site.baseurl }}/forms/). Be sure to read the instructions carefully to ensure that you make an informed decision and provide all of the necessary information so that we  can process your request.
 
-If you're considering monthly payments or an annuity, you should compare these benefits to see which one best suits your situation. You can get help by using the [TSP installment payment calculator]({{ site.baseurl }}/calculators/tsp-installment-payment-calculator/) and the [TSP payment and annuity calculator](/calculators/tsp-payment-and-annuity-calculator/).
+If you're considering monthly payments or an annuity, you should compare these benefits to see which one best suits your situation. You can get help by using the [TSP installment payment calculator]({{ site.baseurl }}/calculators/tsp-installment-payment-calculator/) and the [TSP payment and annuity calculator]({{ site.baseurl }}/calculators/tsp-payment-and-annuity-calculator/).
 
 ### Receiving Your Withdrawal
 
@@ -223,8 +225,9 @@ You should allow at least several weeks from the time you submit your completed 
 
 </div>
 </li>
-<!-- </ul>
-<ul class="usa-accordion usa-tabs being-a-bpa"> -->
+</ul>
+
+<ul class="usa-accordion usa-tabs being-a-bpa">
 <!-- ROW 3, BOX 1, COMBINE YOUR TSP ACCOUNTS -->
   <li>
     <button class="usa-accordion-button"
@@ -267,7 +270,7 @@ Upon your death, the remaining money in your TSP account will be distributed thi
 
 For most people, this is often the best option because it accounts for changes like births, deaths, divorce, or marriage that may happen long after you open your account.
 
-If you'd like to make an exception, you may complete [Designation of Beneficiary](javascript:void(0)), [_Form TSP-3_](javascript:void(0)). The easiest way to do this is to use the online “wizard,” which you’ll find by logging into My Account and selecting “Beneficiaries” on the left.
+If you'd like to make an exception, you may complete Form TSP-3, _[Designation of Beneficiary]({{ site.baseurl }}/forms/tsp-3.pdf)_. The easiest way to do this is to use the online “wizard,” which you’ll find by logging into My Account and selecting “Beneficiaries” on the left.
 
 A will or any other document is not valid for the disposition of your beneficiary participant account. It is not a substitute for a _Designation of Beneficiary_ form.
 
@@ -285,7 +288,7 @@ A will or any other document is not valid for the disposition of your beneficiar
 
 ## Learn how to inform us of a participant’s death
 
-For your beneficiaries to receive your account balance after your death, they (or their representatives) must complete _[Information Relating to Deceased Participant](javascript:void(0)),_ Form TSP-17, and submit it with a copy of the certified death certificate. Once we process the information and determine the beneficiaries for your account, we’ll contact them with additional information and instructions.
+For your beneficiaries to receive your account balance after your death, they (or their representatives) must complete Form TSP-17, _[Information Relating to Deceased Participant]({{ site.baseurl }}/forms/tsp-17.pdf),_, and submit it with a copy of the certified death certificate. Once we process the information and determine the beneficiaries for your account, we’ll contact them with additional information and instructions.
 
 Your beneficiary(ies) will receive death benefit payments **directly** from your beneficiary participant account. These payments cannot be transferred or rolled over into an IRA or eligible employer plan, and will be fully taxable in the year your beneficiary(ies) receive it.
 Your beneficiaries will not owe taxes on Roth contributions, qualified earnings on Roth contributions, and tax-exempt contributions in the account.
@@ -294,3 +297,5 @@ Your beneficiaries will not owe taxes on Roth contributions, qualified earnings 
 </li>
 </ul>
 </section>
+
+{% include form-modals.html %}

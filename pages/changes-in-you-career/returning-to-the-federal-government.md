@@ -9,7 +9,7 @@ styles:
 
 scripts:
 
-permalink: /career-changes/returning-to-the-federal-government/
+permalink: /changes-in-your-career/returning-to-the-federal-government/
 ---
 
 # Returning to the federal government
@@ -48,7 +48,7 @@ A refund of your automatic employee contributions **will not stop** your agency 
 
 If you had a break in service of **less than 31 full calendar days**, be sure to let your new agency know if you have any outstanding TSP loans so your payments can resume.
 
-If you’ve missed any loan payments, you’ll have to make up the ones you missed from your own funds. Mail your loan payment directly to us along with [*Loan Payment Coupon*](#), Form TSP-26.
+If you’ve missed any loan payments, you’ll have to make up the ones you missed from your own funds. Mail your loan payment directly to us along with Form TSP-26, [*Loan Payment Coupon*]({{ site.baseurl }}/forms/tsp-26/).
 
 ## Withdrawals
 

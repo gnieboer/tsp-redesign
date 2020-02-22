@@ -9,8 +9,19 @@ plugins:
 theme: uswds-jekyll
 
 # My Account URLS
-myaccount: "https://www.tsp.gov/tsp"
+# How to use: [My Account]({{ site.myaccount }}), [Profiles Settings]({{ site.profile_settings }})
+myaccount: "https://www.tsp.gov/tsp/login.html"
+account_balance: "https://www.tsp.gov/tsp/accountBalance.do?subaction=view&amp;_name=acctbal"
+beneficiaries: "https://www.tsp.gov/tsp/beneficiaries.do?subaction=beneLanding&_name=bene"
+ca: "https://www.tsp.gov/tsp/contribAlloc.do?subaction=view&_name=cae"
+ift: "https://www.tsp.gov/tsp/fundTransfer.do?subaction=view&_name=ift"
+loans: "https://www.tsp.gov/tsp/loan.do?subaction=menu&amp;_name=loan"
+message_center: "https://www.tsp.gov/tsp/securemsg.do?_name=securemsg"
 profile_settings: "https://www.tsp.gov/tsp/profileSettings.do?subaction=view&amp;_name=profile"
+recent_transactions: "https://www.tsp.gov/tsp/activity.do?subaction=RecentTrans&_name=activity"
+statements: "https://www.tsp.gov/tsp/quarterlyStmt.do?subaction=view&amp;_name=stmts"
+withdrawals: "https://www.tsp.gov/tsp/addlWithdrawals.do?subaction=wdMenu&_name=wd"
+
 # To enable search, uncomment the search section
 # You will need to setup a search account with search.gov
 # https://search.usa.gov/signup

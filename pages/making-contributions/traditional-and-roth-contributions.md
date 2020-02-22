@@ -36,7 +36,7 @@ With Roth TSP contributions, you pay the taxes up front, so during retirement, y
 </div>
 </div>
 
-To help you decide which contributions are right for you, check out our videos, “Is Roth TSP Right For Me?” for [civilian](/exit/?idx=150) and [uniformed services](/exit/?idx=151) at [youtube.com/tsp4gov](/exit/?idx=152).  You also may want to try our [Contribution Comparison Calculator](/calculators/contribution-comparison-calculator/).
+To help you decide which contributions are right for you, check out our videos, “Is Roth TSP Right For Me?” for [civilian]({{ site.baseurl }}/exit/?idx=150) and [uniformed services]({{ site.baseurl }}/exit/?idx=151) at [youtube.com/tsp4gov]({{ site.baseurl }}/exit/?idx=152).  You also may want to try our [Contribution Comparison Calculator]({{ site.baseurl }}/calculators/contribution-comparison-calculator/).
 
 <section id="footnotes" markdown="1">
 

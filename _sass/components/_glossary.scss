@@ -173,7 +173,10 @@
   margin-right: 0.15rem;
 }
 
-.term, .term-end {
+.term,
+.term-end,
+a[data-term],
+a[data-term]:visited {
   cursor: pointer;
   border-bottom: 1px dashed #323c42;
   text-decoration: none;
@@ -187,6 +190,17 @@
     top: -1px;
   }
 }
+
+
+a[data-term],
+a[data-term]:visited { /* style for glossary links within glossary.js */
+  color: #fff;
+  border-bottom-color: #fff;
+  &::after {
+    padding-right: .4rem;
+  }
+}
+
 .term:hover, .term:active {
     background-color: #d3d3d3;
 }
@@ -208,7 +222,22 @@
 }
 
 /* FEC.GOV CSS */
-
+// .glossary__definition {
+//   a[data-term],
+//   a[data-term]:visited {
+//     color: #fff;
+//     text-decoration: none;
+//     border-bottom: 1px dashed #fff;
+//     cursor: pointer;
+//     &.term {
+//       border-bottom: 1px dashed #fff;
+//       &:hover,
+//       &:active {
+//         background-color: transparent;
+//       }
+//     }
+//   }
+// }
 .glossary__definition ol li, .glossary__definition ul li, .list--bulleted li, .list--bulleted--alt li, .list--numbered li {
   margin-left: 2rem;
   padding: .5rem 0;

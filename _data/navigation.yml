@@ -51,7 +51,7 @@ primary:
     - text: Planning for life events
       href: /planning-for-life-events/
     - text: Changes in your career
-      href: /career-changes/
+      href: /changes-in-your-career/
     - text: For beneficiary participants
       href: /for-beneficiary-participants/
   # - text: News
@@ -255,21 +255,21 @@ manage-life-changes:
         href: /planning-for-life-events/retirement-benefits-court-order/
       - text: Legal matters
         href: /planning-for-life-events/legal-matters/
-  - text: Career changes
-    href: /career-changes/
+  - text: Changes in your career
+    href: /changes-in-your-career/
     subnav:
       - text: Leaving the federal government
-        href: /career-changes/leaving-the-federal-government/
+        href: /changes-in-your-career/leaving-the-federal-government/
       - text: Returning to the federal government
-        href: /career-changes/returning-to-the-federal-government/
+        href: /changes-in-your-career/returning-to-the-federal-government/
       - text: Changing federal agencies
-        href: /career-changes/changing-federal-agencies/
+        href: /changes-in-your-career/changing-federal-agencies/
       - text: Preparing for active duty or TDY
-        href: /career-changes/preparing-for-active-duty-or-tdy/
+        href: /changes-in-your-career/preparing-for-active-duty-or-tdy/
       - text: Returning from active duty or TDY
-        href: /career-changes/returning-from-active-duty-or-tdy/
+        href: /changes-in-your-career/returning-from-active-duty-or-tdy/
       - text: Entering a non-pay status
-        href: /career-changes/entering-non-pay-status/
+        href: /changes-in-your-career/entering-non-pay-status/
   - text: For beneficiary participants
     href: /for-beneficiary-participants/
     subnav:

@@ -24,7 +24,7 @@ document-ready:
 
 ## Leaving tsp.gov <i class="fal fa-sign-out"></i>
 
-Please be aware that the privacy protection provided on the tsp.gov domain (see [Website privacy policy](/privacy-policy/)) may not be available at the external link.  
+Please be aware that the privacy protection provided on the tsp.gov domain (see [Website privacy policy]({{ site.baseurl }}/privacy-policy/)) may not be available at the external link.  
 
 If your browser does not automatically transfer you in a few seconds, <span id="offsiteLink"></span>.  <!-- DONALD:  this is where the dynamic redirect goes -->
 

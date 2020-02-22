@@ -10,7 +10,7 @@ progress-steps: "Loan details,Results"
 panel-names:
 ---
 
-The Loan Calculator estimates loan payments based on the amount you want to borrow from your TSP account, the [current loan interest rate](/news-and-resources/), and other factors. To borrow from your TSP account, you must be a Federal employee in pay status. If you qualify for a TSP loan, the maximum amount you may be eligible to borrow is $50,000; the minimum amount is $1,000. To find out the amount you have available to borrow, visit [TSP Loans](javascript:void(0)) in the My Account section.
+The Loan Calculator estimates loan payments based on the amount you want to borrow from your TSP account, the [current loan interest rate]({{ site.baseurl }}/news-and-resources/), and other factors. To borrow from your TSP account, you must be a Federal employee in pay status. If you qualify for a TSP loan, the maximum amount you may be eligible to borrow is $50,000; the minimum amount is $1,000. To find out the amount you have available to borrow, visit [TSP Loans](javascript:void(0)) in the My Account section.
 
 **Estimate loan payments and costs**
 
@@ -227,7 +227,7 @@ This will depend on how often you are paid (biweekly or monthly, for example). I
   <div class="usa-alert  usa-alert-info ">
     <div class="usa-alert-body">
         <h3 class="usa-alert-heading">Before you apply for a loan</h3>
-        <p class="usa-alert-text" markdown="1">Read the TSP booklet [Loans](/publications/tspbk04.pdf){:.publication} for information about the TSP loan process (including the cost of a TSP loan) and about your obligations to repay the loan. To initiate a Loan Request, visit [TSP Loans](https://www.tsp.gov/tsp/loan.do?subaction=menu&amp;_name=loan){:.external-link} in My Account.</p>
+        <p class="usa-alert-text" markdown="1">Read the TSP booklet [Loans]({{ site.baseurl }}/publications/tspbk04.pdf){:.publication} for information about the TSP loan process (including the cost of a TSP loan) and about your obligations to repay the loan. To initiate a Loan Request, visit [TSP Loans](https://www.tsp.gov/tsp/loan.do?subaction=menu&amp;_name=loan){:.external-link} in My Account.</p>
     </div>
   </div>
 
@@ -302,5 +302,5 @@ This will depend on how often you are paid (biweekly or monthly, for example). I
 
 </form>
 
-DISCLAIMER: This calculator is provided for informational purposes only. It is not intended to be used as an investment advisory tool or as a guarantee of a final account balance. Please note that the results shown at the end of this calculator assume that elected contributions are made for the entire year. Results do not take into account the following Internal Revenue Code (IRC) limits: <span data-term="Elective Deferral Limit" class="js-glossary-toggle term term-end">elective deferral</span>, <span data-term="Section 415(c) Limit" class="js-glossary-toggle term term-end">section 415(c)</span>, and <span data-term="Catch-Up Contribution Limit" class="js-glossary-toggle term term-end">catch-up contribution</span>. These limits, which may change every year, determine the maximum annual amount that you and/or your employing agency can contribute to the TSP on your behalf. You can view the current year's limits on the TSP website under [News and resources](/news-and-resources/).
+DISCLAIMER: This calculator is provided for informational purposes only. It is not intended to be used as an investment advisory tool or as a guarantee of a final account balance. Please note that the results shown at the end of this calculator assume that elected contributions are made for the entire year. Results do not take into account the following Internal Revenue Code (IRC) limits: <span data-term="Elective Deferral Limit" class="js-glossary-toggle term term-end">elective deferral</span>, <span data-term="Section 415(c) Limit" class="js-glossary-toggle term term-end">section 415(c)</span>, and <span data-term="Catch-Up Contribution Limit" class="js-glossary-toggle term term-end">catch-up contribution</span>. These limits, which may change every year, determine the maximum annual amount that you and/or your employing agency can contribute to the TSP on your behalf. You can view the current year's limits on the TSP website under [News and resources]({{ site.baseurl }}/news-and-resources/).
 {:.disclaimer}

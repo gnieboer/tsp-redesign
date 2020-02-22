@@ -9,7 +9,7 @@ var glossaryTerms = [
   {
     term: 'Account Access',
     definition:
-      "See <a class='glossaryTerm' href='glossary.html?term=MyAccount'>My Account</a>."
+      "See <a data-term='My Account'>My Account</a>."
   },
   {
     term: 'Account Balance',
@@ -19,7 +19,7 @@ var glossaryTerms = [
   {
     term: 'Account Number',
     definition:
-      "The 13-digit number that the TSP assigns to a participant to identify his or her TSP account. The participant must use this TSP account number (or a <a class='glossaryTerm' href='glossary.html?term=CustomUserID'>customized user ID</a>) in conjunction with his or her Web password to log into the My Account section of the TSP website, and must use this number with his or her Personal Identification Number (PIN) to access his or her account on the ThriftLine."
+      "The 13-digit number that the TSP assigns to a participant to identify his or her TSP account. The participant must use this TSP account number (or a <a data-term='Customized User ID'>customized user ID</a>) in conjunction with his or her Web password to log into the My Account section of the TSP website, and must use this number with his or her Personal Identification Number (PIN) to access his or her account on the ThriftLine."
   },
   {
     term: 'Active Investing',
@@ -78,7 +78,7 @@ var glossaryTerms = [
   {
     term: 'Before-Tax Contributions',
     definition:
-      "See &ldquo;<a class='glossaryTerm' href='glossary.html?term=PreTaxContributions'>Pre-Tax Contributions</a>.&rdquo;"
+      "See &#8220;<a data-term='Pre-Tax Contributions'>Pre-Tax Contributions</a>.&#8221;"
   },
   {
     term: 'Beneficiary',
@@ -118,7 +118,7 @@ var glossaryTerms = [
   {
     term: 'Civil Service Retirement System (CSRS)',
     definition:
-      'The term &ldquo;CSRS&rdquo; refers to the retirement system for Federal civilian employees who were hired before January 1, 1984. CSRS refers to the Civil Service Retirement System, including CSRS Offset, the Foreign Service Retirement and Disability System, and other equivalent Government retirement plans.'
+      'The term &#8220;CSRS&#8221; refers to the retirement system for Federal civilian employees who were hired before January 1, 1984. CSRS refers to the Civil Service Retirement System, including CSRS Offset, the Foreign Service Retirement and Disability System, and other equivalent Government retirement plans.'
   },
   {
     term: 'Contribution',
@@ -128,7 +128,7 @@ var glossaryTerms = [
   {
     term: 'Contribution Allocation',
     definition:
-      "A participant's choice that tells the TSP how contributions, rollovers, and loan payments that are going into his or her account should be invested among the TSP funds. (See &ldquo;<a class='glossaryTerm' href='glossary.html?term=InvestmentAllocation'>Contribution Allocation</a>&rdquo; and &ldquo;<a class='glossaryTerm' href='glossary.html?term=IFT'>Interfund Transfer</a>.&rdquo;)"
+      "A participant's choice that tells the TSP how contributions, rollovers, and loan payments that are going into his or her account should be invested among the TSP funds."
   },
   {
     term: 'Contribution Election',
@@ -153,7 +153,7 @@ var glossaryTerms = [
   {
     term: 'Customized User ID',
     definition:
-      "A combination of letters, numbers, and/or symbols that you can create to use instead of your TSP <a class='glossaryTerm' href='glossary.html?term=AccountNumber'>account number</a> to log into the <a class='glossaryTerm' href='glossary.html?term=MyAccount'>My Account</a> section of the TSP website.  The user ID cannot be used on the ThriftLine as a substitute for the account number."
+      "A combination of letters, numbers, and/or symbols that you can create to use instead of your TSP <a data-term='Account Number'>account number</a> to log into the <a data-term='My Account'>My Account</a> section of the TSP website. The user ID cannot be used on the ThriftLine as a substitute for the account number."
   },
   {
     term: 'Default Risk',
@@ -250,7 +250,7 @@ var glossaryTerms = [
   {
     term: 'Investment Allocation',
     definition:
-      "A participant's choice that tells the TSP (1) how money going into his or her account should be invested in the TSP funds (contribution allocation), and/or (2) how money already in the TSP account should be invested in the TSP funds (interfund transfer). An investment allocation can be made on the TSP website in My Account, or by calling the ThriftLine toll-free at <nobr>1-TSP-YOU-FRST</nobr> <nobr>(1-877-968-3778).</nobr> (See &ldquo;<a class='glossaryTerm' href='glossary.html?term=ContributionAllocation'>Contribution Allocation</a>&rdquo; and &ldquo;<a class='glossaryTerm' href='glossary.html?term=IFT'>Interfund Transfer</a>.&rdquo;)"
+      "A participant's choice that tells the TSP (1) how money going into his or her account should be invested in the TSP funds (contribution allocation), and/or (2) how money already in the TSP account should be invested in the TSP funds (interfund transfer). An investment allocation can be made on the TSP website in My Account, or by calling the ThriftLine toll-free at <nobr>1-TSP-YOU-FRST</nobr> <nobr>(1-877-968-3778).</nobr> (See &#8220;<a data-term='Contribution Allocation'>Contribution Allocation'></a>&#8221; and &#8220;<a data-term='Interfund Transfer'>Interfund Transfer</a>.&#8221;)"
   },
   {
     term: 'IRS Life Expectancy Tables',
@@ -264,7 +264,7 @@ var glossaryTerms = [
   {
     term: 'Matching Contributions',
     definition:
-      "See &ldquo;<a class='glossaryTerm' href='glossary.html?term=AgencyMatchingContributions'>Agency Matching Contributions</a>.&rdquo;"
+      "See &#8220;<a data-term='Agency Matching Contributions'>Agency Matching Contributions</a>.&#8221;"
   },
   {
     term: 'Mixed Withdrawal',
@@ -274,22 +274,22 @@ var glossaryTerms = [
   {
     term: 'Monthly Payments',
     definition:
-      "See &ldquo;<a class='glossaryTerm' href='glossary.html?term=TSPMonthlyPayments'>TSP Monthly Payments</a>.&rdquo;"
+      "See &#8220;<a data-term='TSP Monthly Payments'>TSP Monthly Payments</a>.&#8221;"
   },
   {
     term: 'My Account',
     definition:
-      "The secure section of the TSP website, where you can log into your account to find out your account balance or perform certain transactions. See also &ldquo;<a class='glossaryTerm' href='glossary.html?term=CustomUserID'>Customized User Id</a>.&rdquo;"
+      "The secure section of the TSP website, where you can log into your account to find out your account balance or perform certain transactions. See also &#8220;<a data-term='Customized User ID'>Customized User Id</a>.&#8221;"
   },
   {
     term: 'Non-BRS Uniformed Services',
     definition:
-      "Includes any member of the uniformed services not covered by the \"<a href='?term=BRS'>Blended Retirement System</a>. Non-BRS members are encouraged to enroll in the TSP as an important supplement to their defined benefit plan, but they are not eligible for Service Automatic (1%) Contributions or Service Matching Contributions."
+      "Includes any member of the uniformed services not covered by the <a data-term='Blended Retirement System (BRS)'>Blended Retirement System</a>. Non-BRS members are encouraged to enroll in the TSP as an important supplement to their defined benefit plan, but they are not eligible for Service Automatic (1%) Contributions or Service Matching Contributions."
   },
   {
     term: 'Nonpay Status',
     definition:
-      'Actively employed by the Federal government or uniformed services but not receiving regular pay because of furlough, suspension, leave without pay (including leave without pay to perform military service), or pending resolution of a grievance or appeal. (See also "<a href=\'?term=PayStatus\'>Pay Status</a>.")'
+      "Actively employed by the Federal government or uniformed services but not receiving regular pay because of furlough, suspension, leave without pay (including leave without pay to perform military service), or pending resolution of a grievance or appeal. (See also &#8220;<a data-term='Pay Status'>Pay Status</a>&#8221;.)"
   },
   {
     term: 'Partial Withdrawal',
@@ -324,7 +324,7 @@ var glossaryTerms = [
   {
     term: 'Pay Status',
     definition:
-      'Actively employed by the Federal government or uniformed services and receiving regular pay. (See also "<a href=\'?term=NonpayStatus\'>Nonpay Status</a>.")'
+      "Actively employed by the Federal government or uniformed services and receiving regular pay. (See also &#8220;<a data-term='Nonpay Status'>Nonpay Status</a>&#8221;.)"
   },
   {
     term: 'Permanent Disability',
@@ -344,7 +344,7 @@ var glossaryTerms = [
   {
     term: 'Post-Separation Withdrawal',
     definition:
-      'A distribution from a participant\'s account which is available only to participants who have left Federal service or the uniformed services. Sometimes referred to as a "post-employment" withdrawal. (See also "<a href=\'/glossary.html?term=Withdrawal\'>Withdrawal</a>.")'
+      "A distribution from a participant\'s account which is available only to participants who have left Federal service or the uniformed services. Sometimes referred to as a &#8220;post-employment&#8221; withdrawal. (See also &#8220;<a data-term='Withdrawal'>Withdrawal</a>.&#8221;)"
   },
   {
     term: 'Prepayment Risk',
@@ -394,7 +394,7 @@ var glossaryTerms = [
   {
     term: 'Roth Qualified Earnings',
     definition:
-      "See &ldquo;<a class='glossaryTerm' href='glossary.html?term=Qualified'>Qualified Earnings</a>.&rdquo;"
+      "See &#8220;<a data-term='Qualified Earnings'>Qualified Earnings</a>.&#8221;"
   },
   {
     term: 'S&P 500',
@@ -439,7 +439,7 @@ var glossaryTerms = [
   {
     term: 'Statutory Order of Precedence',
     definition:
-      "The order in which your TSP account balance will be paid after your death if you did not have a valid <a class='pdfLink' href='/PDF/formspubs/tsp-3.pdf' title='File size: 500 KB (opens in a new window)'>Form TSP-3</a>, Designation of Beneficiary on file with the TSP.  The disposition of your account will be made as follows: <ol><li>To your spouse.</li><li>If none, to your child or children equally, and descendants of deceased children by representation.</li><li>If none, to your parents equally or to the surviving parent.</li><li>If none, to the appointed executor or administrator of your estate.</li><li>If none, to your next of kin who would be entitled to your estate under the laws of the state in which you resided at the time of your death.</li></ol>"
+      "The order in which your TSP account balance will be paid after your death if you did not have a valid <a href='/forms/tsp-3.pdf'>Form TSP-3</a>, Designation of Beneficiary on file with the TSP.  The disposition of your account will be made as follows: <ol><li>To your spouse.</li><li>If none, to your child or children equally, and descendants of deceased children by representation.</li><li>If none, to your parents equally or to the surviving parent.</li><li>If none, to the appointed executor or administrator of your estate.</li><li>If none, to your next of kin who would be entitled to your estate under the laws of the state in which you resided at the time of your death.</li></ol>"
   },
   {
     term: 'Stocks',
@@ -449,7 +449,7 @@ var glossaryTerms = [
   {
     term: 'Taxable Amount',
     definition:
-      'As used when referring to payments from a TSP account, includes any traditional (non-Roth) contributions that you made (other than those made from tax-exempt pay), any Agency Automatic or Matching contributions (if you are FERS), earnings on your traditional contribtuions and agency contribtuions, and any Roth earnings that are not qualified earnings.  Also referred to as the &ldquo;taxable portion&rdquo; of a payment.'
+      'As used when referring to payments from a TSP account, includes any traditional (non-Roth) contributions that you made (other than those made from tax-exempt pay), any Agency Automatic or Matching contributions (if you are FERS), earnings on your traditional contribtuions and agency contribtuions, and any Roth earnings that are not qualified earnings.  Also referred to as the &#8220;taxable portion&#8221; of a payment.'
   },
   {
     term: 'Tax-Exempt Contributions',
@@ -474,7 +474,7 @@ var glossaryTerms = [
   {
     term: 'Traditional Contribution',
     definition:
-      'Contributions from pay  that has not yet been taxed.&nbsp; Also referred  to as &ldquo;tax-deferred,&rdquo; &ldquo;pre-tax,&rdquo; or &ldquo;non-Roth&rdquo; contributions. Traditional contributions  also include contributions to a traditional balance from tax-exempt pay earned  in a combat zone.'
+      'Contributions from pay  that has not yet been taxed.&nbsp; Also referred  to as &#8220;tax-deferred,&#8221; &#8220;pre-tax,&#8221; or &#8220;non-Roth&#8221; contributions. Traditional contributions  also include contributions to a traditional balance from tax-exempt pay earned  in a combat zone.'
   },
   {
     term: 'Traditional IRA',
@@ -499,7 +499,7 @@ var glossaryTerms = [
   {
     term: 'User ID',
     definition:
-      "See &ldquo;<a class='glossaryTerm' href='glossary.html?term=CustomUserID'>Customized User ID</a>.&rdquo;"
+      "See &#8220;<a data-term='Customized User ID'>Customized User ID</a>.&#8221;"
   },
   {
     term: 'Vested Account Balance',

@@ -14,9 +14,9 @@ For most people, this is the best option because it accounts for life changes li
 divorce, or marriage that may happen after you open your account.
 
 If you’d like to make an exception, you may
-complete [Form TSP-3](/forms/tsp-3.pdf), *Designation of Beneficiary*.
+complete [Form TSP-3]({{ site.baseurl }}/forms/tsp-3.pdf), *Designation of Beneficiary*.
 The easiest way to do this is to use the online tool, which you’ll find by logging in
-here: [My Account: Beneficiaries]({{ site.myaccount }}/beneficiaries.do?subaction=beneLanding&_name=bene){:.target="\_blank"}.
+here: [My Account: Beneficiaries]({{ site.myaccount }}/beneficiaries.do?subaction=beneLanding&_name=bene){:target="\_blank"}.
 
 Don’t remember whether you’ve submitted a Designation of Beneficiary or you’re not sure who you named
 as your beneficiaries? Look at your annual statement, check the online tool, or call the

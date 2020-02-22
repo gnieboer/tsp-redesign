@@ -9,5 +9,5 @@ styles:
 
 scripts:
 
-permalink: /career-changes/preparing-for-deployment/
+permalink: /changes-in-your-career/preparing-for-deployment/
 ---

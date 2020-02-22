@@ -6,17 +6,17 @@
 
     **If you’re currently a federal employee**, report your correct address to your agency. We can’t accept address changes directly from you.
 
-    **If you're an active member of the Air Force, Army, Navy, or Marine Corps**, you can update your address through the [myPay](/exit/?idx=6){:rel="nofollow"} website. Just make sure that you log in and go to the TSP section to change your TSP address. If you change it in the “Correspondence Address” section of myPay, it will not change your TSP address. Members of the Coast Guard and NOAA Corps can use [Direct Access](/exit/?idx=47). Select "Home and Mailing Address" under Tasks, then choose "TSP" from the drop-down menu next to "Address Type."
+    **If you're an active member of the Air Force, Army, Navy, or Marine Corps**, you can update your address through the [myPay]({{ site.baseurl }}/exit/?idx=6){:rel="nofollow"} website. Just make sure that you log in and go to the TSP section to change your TSP address. If you change it in the “Correspondence Address” section of myPay, it will not change your TSP address. Members of the Coast Guard and NOAA Corps can use [Direct Access]({{ site.baseurl }}/exit/?idx=47). Select "Home and Mailing Address" under Tasks, then choose "TSP" from the drop-down menu next to "Address Type."
 
-    **If you’re no longer a federal employee or uniformed services member**, visit [My Account: Profile Settings](https://www.tsp.gov/tsp/profileSettings.do?subaction=view&amp;_name=profile){:.target="\_blank"} to change the address. Or while you’re logged in, use our Change in Address for Separated Participants, Form TSP-9, and fax or mail it to us.
+    **If you’re no longer a federal employee or uniformed services member**, visit [My Account: Profile Settings](https://www.tsp.gov/tsp/profileSettings.do?subaction=view&amp;_name=profile){:target="\_blank"} to change the address. Or while you’re logged in, use our Change in Address for Separated Participants, Form TSP-9, and fax or mail it to us.
 
-    To change or validate your contact information such as your phone number or email address, visit [My Account: Profile Settings](https://www.tsp.gov/tsp/profileSettings.do?subaction=view&amp;_name=profile){:.target="\_blank"}.
+    To change or validate your contact information such as your phone number or email address, visit [My Account: Profile Settings](https://www.tsp.gov/tsp/profileSettings.do?subaction=view&amp;_name=profile){:target="\_blank"}.
 - faq_name: change-contribution
   faq_question: How do I start, change, or stop my contributions to the TSP?
   faq_body: |
-    In most cases, you’ll use your agency’s or service’s electronic payroll system to start, change, or stop your TSP contributions. For example, civilian payroll systems include [Employee Express](/exit/?idx=7){:rel="nofollow"}, EBIS, [LiteBlue](/exit/?idx=8){:rel="nofollow"}, [myPay](/exit/?idx=6){:rel="nofollow"}, or [NFC EPP](/exit/?idx=9){:rel="nofollow"}. Uniformed services can use [myPay](/exit/?idx=6){:rel="nofollow"} (Army, Air Force, Navy, Marine Corps) or [Direct Access](/exit/?idx=47){:rel="nofollow"} (Coast Guard and NOAA Corps).
+    In most cases, you’ll use your agency’s or service’s electronic payroll system to start, change, or stop your TSP contributions. For example, civilian payroll systems include [Employee Express]({{ site.baseurl }}/exit/?idx=7){:rel="nofollow"}, EBIS, [LiteBlue]({{ site.baseurl }}/exit/?idx=8){:rel="nofollow"}, [myPay]({{ site.baseurl }}/exit/?idx=6){:rel="nofollow"}, or [NFC EPP]({{ site.baseurl }}/exit/?idx=9){:rel="nofollow"}. Uniformed services can use [myPay]({{ site.baseurl }}/exit/?idx=6){:rel="nofollow"} (Army, Air Force, Navy, Marine Corps) or [Direct Access]({{ site.baseurl }}/exit/?idx=47){:rel="nofollow"} (Coast Guard and NOAA Corps).
 
-    If your agency or service accepts the paper form, download and complete the Form TSP-1, [_Election Form_](/forms/tsp-1.pdf) (or [Form TSP-U-1](/forms/tsp-u-1.pdf) for uniformed services members), or call the ThriftLine at 1-877-968-3778 and choose option 3 to have it mailed to you.
+    If your agency or service accepts the paper form, download and complete the Form TSP-1, [_Election Form_]({{ site.baseurl }}/forms/tsp-1.pdf) (or [Form TSP-U-1]({{ site.baseurl }}/forms/tsp-u-1.pdf) for uniformed services members), or call the ThriftLine at 1-877-968-3778 and choose option 3 to have it mailed to you.
 - faq_name: catch-up-contributions
   faq_question: When can I begin making catch-up contributions?
   faq_body: |
@@ -24,20 +24,20 @@
 
     Here’s what you should know:
 
-    - You must already be contributing an amount that will reach the IRS annual contribution limit. To see the current limits, visit [Contribution Limits](/making-contributions/contribution-limits/).
+    - You must already be contributing an amount that will reach the IRS annual contribution limit. To see the current limits, visit [Contribution Limits]({{ site.baseurl }}/making-contributions/contribution-limits/).
     - You may start, change, or stop making catch-up contributions at any times.
     - There are no matching contributions for catch-up contributions.
     - You must make a new election each year—they do not restart automatically.
 
     Uniformed services members can use tax-exempt pay to make catch-up contribution, but not incentive pay, special pay, or bonus pay.
 
-    To make a catch-up contribution election, use your agency’s or service’s payroll website (e,g., [Employee Express](/exit/?idx=7){:rel="nofollow"}, EBIS, [LiteBlue](/exit/?idx=8){:rel="nofollow"}, [myPay](/exit/?idx=6){:rel="nofollow"}, and [NFC EPP](/exit/?idx=9){:rel="nofollow"}) or complete [Form TSP-1-C](/forms/tsp-1-c.pdf/), _Catch-Up Contribution Election_ ([TSP-U-1-C](/forms/tsp-u-1-c.pdf/) for uniformed services members) and submit it to your payroll office. You may also download the form or call the ThriftLine at 1-877-968-3778 and press 3 to request a copy.
+    To make a catch-up contribution election, use your agency’s or service’s payroll website (e,g., [Employee Express]({{ site.baseurl }}/exit/?idx=7){:rel="nofollow"}, EBIS, [LiteBlue]({{ site.baseurl }}/exit/?idx=8){:rel="nofollow"}, [myPay]({{ site.baseurl }}/exit/?idx=6){:rel="nofollow"}, and [NFC EPP]({{ site.baseurl }}/exit/?idx=9){:rel="nofollow"}) or complete [Form TSP-1-C]({{ site.baseurl }}/forms/tsp-1-c.pdf/), _Catch-Up Contribution Election_ ([TSP-U-1-C]({{ site.baseurl }}/forms/tsp-u-1-c.pdf/) for uniformed services members) and submit it to your payroll office. You may also download the form or call the ThriftLine at 1-877-968-3778 and press 3 to request a copy.
 - faq_name: lost-password
   faq_question: How do I access my account if I lose or forget my password?
   faq_body: |
     If you forget, lose, or want to change your TSP account password, you’ve got a few options.
 
-    If you forget or lose your password, go to the My Account section of tsp.gov, click on “Forgot your password?” and follow the prompts. If you know your password and want to change it, log in to [My Account: Profile Settings](https://www.tsp.gov/tsp/profileSettings.do?subaction=view&amp;_name=profile){:.target="\_blank"} and click on “Change Your Password.” You can also call the ThriftLine at 1-877-968-3778 and press option 3 to speak to a Participant Service Representative.
+    If you forget or lose your password, go to the My Account section of tsp.gov, click on “Forgot your password?” and follow the prompts. If you know your password and want to change it, log in to [My Account: Profile Settings](https://www.tsp.gov/tsp/profileSettings.do?subaction=view&amp;_name=profile){:target="\_blank"} and click on “Change Your Password.” You can also call the ThriftLine at 1-877-968-3778 and press option 3 to speak to a Participant Service Representative.
 - faq_name: loan-processing
   faq_question: How long does it take for my loan request to process?
   faq_body: |
@@ -46,7 +46,7 @@
 
     If you submitted a paper loan agreement, your request make take several weeks to process.
 
-    You may track the [status of your loan](https://www.tsp.gov/tsp/loan.do?subaction=menu&amp;_name=loan){:.target="\_blank"} online or by [contacting us](/contact/).
+    You may track the [status of your loan](https://www.tsp.gov/tsp/loan.do?subaction=menu&amp;_name=loan){:target="\_blank"} online or by [contacting us]({{ site.baseurl }}/contact/).
 - faq_name: withdrawl-status
   faq_question: How can I check the status of my withdrawal request?
   faq_body: |
@@ -56,7 +56,7 @@
   faq_question: When will Form 1099-R be available and where can I find it on the website?
   faq_body: |
 
-    For participants who received a withdrawal or other taxable distribution during the calendar year, 1099-Rs are mailed by January 31 each year, and electronic versions are available online the first week of February in [My Account: Statements](https://www.tsp.gov/tsp/quarterlyStmt.do?subaction=view&amp;_name=stmts){:.target="\_blank"}.
+    For participants who received a withdrawal or other taxable distribution during the calendar year, 1099-Rs are mailed by January 31 each year, and electronic versions are available online the first week of February in [My Account: Statements](https://www.tsp.gov/tsp/quarterlyStmt.do?subaction=view&amp;_name=stmts){:target="\_blank"}.
 - faq_name: protect-against-fraud
   faq_question: How do I protect my account against fraud?
   faq_body: |
@@ -65,11 +65,11 @@
 
     If you’re unsure whether correspondence or telephone calls claiming to be from the TSP are authentic, **DO NOT** provide any personal or financial information. Contact us directly at 1-877-968-3778 and choose option 3 to speak to a Participant Service Representative if you have questions or if you need to report any suspicious activity involving your TSP account.
 
-    Furthermore, you’re able to make online access to your TSP account even more secure by enabling two-step authentication at login. This means that you’ll receive a one-time verification code by email or text message each time you log into your account. To add this security feature, log into [My Account: Profile Settings](https://www.tsp.gov/tsp/profileSettings.do?subaction=view&amp;_name=profile){:.target="\_blank"}.
+    Furthermore, you’re able to make online access to your TSP account even more secure by enabling two-step authentication at login. This means that you’ll receive a one-time verification code by email or text message each time you log into your account. To add this security feature, log into [My Account: Profile Settings](https://www.tsp.gov/tsp/profileSettings.do?subaction=view&amp;_name=profile){:target="\_blank"}.
 
-    This two-step authentication login process is more secure because it means that online access to your account requires something you know (your account number or username and password) and something you have (the one-time code you receive in your email or on your phone). Someone who tries to log into your account fraudulently won’t be able to gain access without the code.
+    This two-step authentication login process is more secure because it means that online access to your account requires something you know (your account number or user ID and password) and something you have (the one-time code you receive in your email or on your phone). Someone who tries to log into your account fraudulently won’t be able to gain access without the code.
 
-    Before you can use two-step authentication, you must first validate an email address or cell phone. You can validate your contact information in [My Account: Profile Settings](https://www.tsp.gov/tsp/profileSettings.do?subaction=view&amp;_name=profile){:.target="\_blank"}.
+    Before you can use two-step authentication, you must first validate an email address or cell phone. You can validate your contact information in [My Account: Profile Settings](https://www.tsp.gov/tsp/profileSettings.do?subaction=view&amp;_name=profile){:target="\_blank"}.
 - faq_name: online-loan-payments
   faq_question: Can I make loan payments online?
   faq_body: |
@@ -78,13 +78,13 @@
 
     Check your leave and earnings statement to be sure that loan payments have started and that they are in the correct amount. Contact your agency or service if payments have not started or if they’re in the wrong amount.
 
-    Be aware that you’re responsible for the repayment of your loan regardless of whether your agency or service misses a payment. Additional information is available under [Repaying Your Loan](/loan-basics/repaying-your-loan/).
+    Be aware that you’re responsible for the repayment of your loan regardless of whether your agency or service misses a payment. Additional information is available under [Repaying Your Loan]({{ site.baseurl }}/loan-basics/repaying-your-loan/).
 
 - faq_name: leaving-federal-service
   faq_question: Can I leave my money in my TSP account when I leave federal service?
   faq_body: |
 
-    Yes, you can leave your entire account balance in the TSP when you leave federal service if the balance is $200 or more.  You can continue to enjoy tax-deferred earnings and low administrative expenses. Once you separate, you will no longer be able to make employee contributions. However, you can [transfer money](/account-basics/move-money-into-tsp/) into your TSP account from IRAs (although not from Roth IRAs) and eligible employer plans. Your account will continue to accrue earnings, and you can continue to change the way your money is invested in the TSP investment funds by making <span data-term="Interfund Transfer (IFT)" class="js-glossary-toggle term term-end" title="Click to define" tabindex="0">interfund transfers</span>.
+    Yes, you can leave your entire account balance in the TSP when you leave federal service if the balance is $200 or more.  You can continue to enjoy tax-deferred earnings and low administrative expenses. Once you separate, you will no longer be able to make employee contributions. However, you can [transfer money]({{ site.baseurl }}/account-basics/move-money-into-tsp/) into your TSP account from IRAs (although not from Roth IRAs) and eligible employer plans. Your account will continue to accrue earnings, and you can continue to change the way your money is invested in the TSP investment funds by making <span data-term="Interfund Transfer (IFT)" class="js-glossary-toggle term term-end" title="Click to define" tabindex="0">interfund transfers</span>.
 
 - faq_name: contribution-allocation
   faq_question: How do I change how my money is invested?
@@ -95,7 +95,7 @@
     An *interfund transfer (IFT)* allows you to change the way money ALREADY in your account is invested.
     You are allowed two IFTs in a calendar month. After that, you can only transfer money into the G Fund.
 
-    You may request a [contribution allocation](https://www.tsp.gov/tsp/contribAlloc.do?subaction=view&_name=cae){:.target="\_blank"} or an [IFT](https://www.tsp.gov/tsp/fundTransfer.do?subaction=view&_name=ift){:.target="\_blank"} by visiting the Online Transactions section of My Account. You can also call the ThriftLine at 1-877-968-3778 and follow the automated prompts.
+    You may request a [contribution allocation](https://www.tsp.gov/tsp/contribAlloc.do?subaction=view&_name=cae){:target="\_blank"} or an [IFT](https://www.tsp.gov/tsp/fundTransfer.do?subaction=view&_name=ift){:target="\_blank"} by visiting the Online Transactions section of My Account. You can also call the ThriftLine at 1-877-968-3778 and follow the automated prompts.
 
 - faq_name: beneficiaries
   faq_question: How do I designate or change my beneficiaries?
@@ -112,9 +112,9 @@
     divorce, or marriage that may happen after you open your account.
 
     If you’d like to make an exception, you may
-    complete [Form TSP-3](/forms/tsp-3.pdf), *Designation of Beneficiary*.
+    complete [Form TSP-3]({{ site.baseurl }}/forms/tsp-3.pdf), *Designation of Beneficiary*.
     The easiest way to do this is to use the online tool, which you’ll find by logging in
-    here: [My Account: Beneficiaries](https://www.tsp.gov/tsp/beneficiaries.do?subaction=beneLanding&_name=bene){:.target="\_blank"}.
+    here: [My Account: Beneficiaries](https://www.tsp.gov/tsp/beneficiaries.do?subaction=beneLanding&_name=bene){:target="\_blank"}.
 
     Don’t remember whether you’ve submitted a Designation of Beneficiary or you’re not sure who you named
     as your beneficiaries? Look at your annual statement, check the online tool, or call the

@@ -36,7 +36,7 @@ contribution limit
 </div>
 </div>
 
-For more information, visit [Contribution Limits](/making-contributions/contribution-limits/).
+For more information, visit [Contribution Limits]({{ site.baseurl }}/making-contributions/contribution-limits/).
 
 ## Agency/Service Automatic (1%) Contributions
 
@@ -83,7 +83,7 @@ contributions.
 
 **Here’s what you should know:**
 - You must already be contributing an amount that will reach the IRS annual
-contribution limit. To see the most current limits, visit [Contribution Limits](/making-contributions/contribution-limits/).
+contribution limit. To see the most current limits, visit [Contribution Limits]({{ site.baseurl }}/making-contributions/contribution-limits/).
 - You may start, change, or stop making catch-up contributions at any time.
 - There are no matching contributions for catch-up contributions.
 - You must make a new election each calendar year—they do not restart
@@ -93,7 +93,7 @@ automatically.
 contributions, but not incentive pay, special pay, or bonus pay.**
 
 To make a catch-up contribution election, use your agency’s or service’s payroll website
-(e.g., [Employee Express]({{ site.baseurl }}/exit/?idx=7){:rel="nofollow"}, EBIS, [LiteBlue]({{ site.baseurl }}/exit/?idx=8){:rel="nofollow"}, [myPay]({{ site.baseurl }}/exit/?idx=6){:rel="nofollow"}, or [NFC EPP]({{ site.baseurl }}/exit/?idx=9){:rel="nofollow"}) or complete the Catch-Up Contribution Election, [_Form TSP-1-C_](/forms/tsp-1-c.pdf) (or [_TSP-U-1-C_](/forms/tsp-u-1-c.pdf)for uniformed services) and submit it to your payroll office. Or call the ThriftLine
+(e.g., [Employee Express]({{ site.baseurl }}/exit/?idx=7){:rel="nofollow"}, EBIS, [LiteBlue]({{ site.baseurl }}/exit/?idx=8){:rel="nofollow"}, [myPay]({{ site.baseurl }}/exit/?idx=6){:rel="nofollow"}, or [NFC EPP]({{ site.baseurl }}/exit/?idx=9){:rel="nofollow"}) or complete the Catch-Up Contribution Election, [_Form TSP-1-C_]({{ site.baseurl }}/forms/tsp-1-c.pdf) (or [_TSP-U-1-C_]({{ site.baseurl }}/forms/tsp-u-1-c.pdf)for uniformed services) and submit it to your payroll office. Or call the ThriftLine
 at 1-877-968-3778 and choose option 3 to request a copy.
 
 ## A note for members of the uniformed services
@@ -111,4 +111,4 @@ allowances.
 of pay must not exceed the IRS annual addition limit for the year.
 
 
-For more information, visit [Contribution Limits](/making-contributions/contribution-limits/).
+For more information, visit [Contribution Limits]({{ site.baseurl }}/making-contributions/contribution-limits/).

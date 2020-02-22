@@ -153,7 +153,7 @@ aria-controls="panel-2.2">
 Explain this
 </button>
 <div id="panel-2.2" class="usa-accordion-content" markdown="1">
-Log in to [My Account](https://www.tsp.gov/tsp/login.html){:target="\_blank"} to see your current account balance.
+Log in to [My Account]({{ site.myaccount }}){:target="\_blank"} to see your current account balance.
 </div>
 </li>
 </ul>
@@ -169,7 +169,7 @@ aria-controls="panel-2.3">
 Explain this
 </button>
 <div id="panel-2.3" class="usa-accordion-content" markdown="1">
-You may begin contributing to the TSP (through payroll contributions) as soon as you are hired. You also receive <span data-term="Agency Automatic (1%) Contributions" class="js-glossary-toggle term term-end">Agency Automatic (1%) Contributions</span> and are eligible to receive <span data-term="Agency Matching Contributions" class="js-glossary-toggle term term-end">Agency Matching Contributions</span>. Note: Newly hired or rehired FERS employees are automatically enrolled to contribute 3% of basic pay unless they elect otherwise. For more information on agency contributions, see [Contribution types](/making-contributions/contribution-types/).
+You may begin contributing to the TSP (through payroll contributions) as soon as you are hired. You also receive <span data-term="Agency Automatic (1%) Contributions" class="js-glossary-toggle term term-end">Agency Automatic (1%) Contributions</span> and are eligible to receive <span data-term="Agency Matching Contributions" class="js-glossary-toggle term term-end">Agency Matching Contributions</span>. Note: Newly hired or rehired FERS employees are automatically enrolled to contribute 3% of basic pay unless they elect otherwise. For more information on agency contributions, see [Contribution types]({{ site.baseurl }}/making-contributions/contribution-types/).
 </div>
 </li>
 </ul>
@@ -278,7 +278,7 @@ aria-controls="panel-2.7">
 Explain this
 </button>
 <div id="panel-2.7" class="usa-accordion-content" markdown="1">
-Enter the annual rate of return you expect to earn on your contributions. View the [Rates of return](/fund-performance/) for context, but keep in mind that past performance is not a guarantee or a predictor of future returns.
+Enter the annual rate of return you expect to earn on your contributions. View the [Rates of return]({{ site.baseurl }}/fund-performance/) for context, but keep in mind that past performance is not a guarantee or a predictor of future returns.
 </div>
 </li>
 </ul>      
@@ -482,5 +482,5 @@ Enter the annual rate of return you expect to earn on your contributions. View t
 </section>
 </form>
 
-DISCLAIMER: This calculator is provided for informational purposes only. It is not intended to be used as an investment advisory tool or as a guarantee of a final account balance. Please note that the results shown at the end of this calculator assume that elected contributions are made for the entire year. Results do not take into account the following Internal Revenue Code (IRC) limits: <span data-term="Elective Deferral Limit" class="js-glossary-toggle term term-end">elective deferral</span>, <span data-term="Section 415(c) Limit" class="js-glossary-toggle term term-end">section 415(c)</span>, and <span data-term="Catch-Up Contribution Limit" class="js-glossary-toggle term term-end">catch-up contribution</span>. These limits, which may change every year, determine the maximum annual amount that you and/or your employing agency can contribute to the TSP on your behalf. You can view the current year's limits on the TSP website under [News and resources](/news-and-resources/).
+DISCLAIMER: This calculator is provided for informational purposes only. It is not intended to be used as an investment advisory tool or as a guarantee of a final account balance. Please note that the results shown at the end of this calculator assume that elected contributions are made for the entire year. Results do not take into account the following Internal Revenue Code (IRC) limits: <span data-term="Elective Deferral Limit" class="js-glossary-toggle term term-end">elective deferral</span>, <span data-term="Section 415(c) Limit" class="js-glossary-toggle term term-end">section 415(c)</span>, and <span data-term="Catch-Up Contribution Limit" class="js-glossary-toggle term term-end">catch-up contribution</span>. These limits, which may change every year, determine the maximum annual amount that you and/or your employing agency can contribute to the TSP on your behalf. You can view the current year's limits on the TSP website under [News and resources]({{ site.baseurl }}/news-and-resources/).
 {:.disclaimer}

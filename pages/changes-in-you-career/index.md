@@ -9,7 +9,7 @@ styles:
 
 scripts:
 
-permalink: /career-changes/
+permalink: /changes-in-your-career/
 ---
 # Career changes
 

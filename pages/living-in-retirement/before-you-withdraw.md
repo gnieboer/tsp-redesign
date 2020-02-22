@@ -20,13 +20,13 @@ Here are some things to consider:
   * You can request a specific dollar amount when you complete your withdrawal request form. You will receive payments in the amount and frequency you choose that you request until your entire account balance has been paid to you or until you change or stop your payments, which you can do at any time. Note: The amount of each monthly payment must be at least $25.
   * You can have us compute a monthly payment amount for you based on your life expectancy when you complete your request form. Your initial payment will be based on your age and your account balance at the time of the first payment. Each year thereafter, we will recalculate the amount of your monthly payments based on your age and your account balance at the end of the preceding year.
 * Be aware that neither the specified dollar amount nor the TSP-computed payment option is guaranteed to last your entire lifetime.
-+ If you want a guaranteed stream of monthly income, consider purchasing a life annuity, which is a monthly benefit paid to you every month for the rest of your life. This process is sometimes complicated, but we’ve got you covered. Visit [*Annuity basics*](#) for information on purchasing an annuity.
++ If you want a guaranteed stream of monthly income, consider purchasing a life annuity, which is a monthly benefit paid to you every month for the rest of your life. This process is sometimes complicated, but we’ve got you covered. Visit [*Annuity basics*]({{ site.baseurl }}/annuity-basics/) for information on purchasing an annuity.
 
-* Participants who turned 70 ½ on or before December 31, 2019, were required to begin receiving RMDs in the year they turned 70 ½. 
+* Participants who turned 70&frac12; on or before December 31, 2019, were required to begin receiving RMDs in the year they turned 70&frac12;.
 
-For more information on TSP installment payments and other withdrawal options, read the booklet [*Withdrawals After Leaving Federal Service*](/publications/tspbk02.pdf).
+For more information on TSP installment payments and other withdrawal options, read the booklet [*Withdrawals After Leaving Federal Service*]({{ site.baseurl }}/publications/tspbk02.pdf).
 
-For more information about RMDs and tax requirements, see the tax notice [*Important Tax Information About Your TSP Withdrawal and Required Minimum Distributions*](/publications/tsp-775.pdf).
+For more information about RMDs and tax requirements, see the tax notice [*Important Tax Information About Your TSP Withdrawal and Required Minimum Distributions*]({{ site.baseurl }}/publications/tsp-775.pdf).
 
 ## Other considerations
 
@@ -38,7 +38,7 @@ FERS and BRS participants must work for a certain number of years in order to be
 If you have not met the vesting requirement by the time you leave service, any Agency/Service Automatic (1%) Contributions and the earnings on them will be removed from your account and forfeited to the TSP.
 
 **Important:** Civilian service does not count toward vesting in a uniformed services account, and uniformed service does not count toward vesting in a civilian account.
-For more information about vesting, visit [A few words about vesting](#).
+For more information about vesting, visit [A few words about vesting]({{ site.baseurl }}/making-contributions/contribution-types/#a-few-words-about-vesting).
 
 ### Spouses' rights
 

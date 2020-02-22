@@ -9,7 +9,7 @@ styles:
 
 scripts:
 
-permalink: /career-changes/returning-from-active-duty-or-tdy/
+permalink: /changes-in-your-career/returning-from-active-duty-or-tdy/
 ---
 # Returning from active duty or TDY
 
