@@ -10,6 +10,7 @@ progress-steps:
 panel-names:
 ---
 
+Static code version. 
 <!-- PANEL 1 -->
 <form>
 <code> panel-1 </code>

@@ -10,6 +10,8 @@ progress-steps: "Loan details,Results"
 panel-names:
 ---
 
+Working version.
+
 The Loan Calculator estimates loan payments based on the amount you want to borrow from your TSP account, the [current loan interest rate]({{ site.baseurl }}/news-and-resources/), and other factors. To borrow from your TSP account, you must be a Federal employee in pay status. If you qualify for a TSP loan, the maximum amount you may be eligible to borrow is $50,000; the minimum amount is $1,000. To find out the amount you have available to borrow, visit [TSP Loans]({{ site.loans }}) in the My Account section.
 
 **Estimate loan payments and costs**
