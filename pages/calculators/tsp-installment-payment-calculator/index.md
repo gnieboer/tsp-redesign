@@ -9,3 +9,7 @@ calculator-name:
 progress-steps:
 panel-names:
 ---
+
+This version is still under development.
+
+Please use the existing [TSP Installment Payment Calculator](https://www.tsp.gov/PlanningTools/Calculators/installmentPayCalc.html){:target="\_blank"} on tsp.gov.
