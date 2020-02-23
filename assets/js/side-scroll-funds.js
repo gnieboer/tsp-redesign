@@ -195,7 +195,8 @@ function syncTableColumn(col,vis) {
 }
 function setTableCheckbox(name,idx,val) {
   syncTableColumn(idx+1,val);
-  if (name.includes('&')) { return false; }
+  if (name.indexOf('&') > -1) { return false; }
+  // if (name.includes('&')) { return false; }
   if (val) { $('#'+name).prop('checked', true); } else { $('#'+name).prop('checked', false); }
 }
 

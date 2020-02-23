@@ -196,7 +196,8 @@ function fundTooltip(me, chartName) {
   // console.log(me);
   var rc = fundTooltipBody(me);
   var tipTitle = getMonthYearName(me.x+1000000000);
-  if (chartName.includes('-annual')) {
+  // if (chartName.includes('-annual')) {
+  if (chartName.indexOf('-annual') > -1) {
     tipTitle = 'Annual Returns ';
     if ((me.x + 1) > me.points[0].series.xAxis.max) { tipTitle = 'YTD Returns '}
     tipTitle += me.x;
