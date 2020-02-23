@@ -1,80 +1,101 @@
-ul .usa-accordion .usa-tabs .being-a-bpa {
-  display: flex;
-  justify-content: space-between;
-}
-.being-a-bpa {
+section.bpa-accordion {
+  ul.usa-accordion.usa-tabs.being-a-bpa {
+    width: 100%;
   li {
-    margin-right: 0;
-  }
+      text-align: center;
+      margin: 0 .5rem;
+      &:last-child {
+        // margin: 0;
+      }
+    }
   .usa-accordion-button {
-    box-sizing: border-box;
+    box-sizing: inherit;
     font-size: 1.7rem;
-    width: 23.2rem;
-    height: 23.2rem;
-    // border: 6px solid #323a45;
-    outline: 6px solid #323a45;
-    margin-bottom: 1rem;
+    font-weight: 600;
+    width: 31%;
+    height: 41%;
+    border: none;
+    outline: none;
+    outline-offset: 0;
     color: #dce4ef;
     background-color: #323a45;
+    background-color: $color-gray-dark;
     line-height: 2.5rem;
     background-image: url($baseurl + '/assets/img/icons/plus-tile.svg');
     background-position: right 1rem top;
     background-repeat: no-repeat;
     background-size: 3.2rem;
+    padding: 1rem;
       span {
         display:block;
         margin-bottom: 2rem;
         text-align: center;
+        svg {
+          width: 13rem;
+          display: inline-block;
+        }
+      }
+      span.bpa-topic {
+        text-align: left;
+        max-width: 20ch;
+        margin: 0;
+        padding: 0;
       }
       &[aria-expanded="true"] {
-        font-weight: 400;
-        outline: 6px solid #323a45;
+        outline: 8px solid #dce4ef;
+        outline-offset: 0;
+        background-color: $color-gray-dark;
         // line-height: 2.5rem;
-      }
-      &[aria-expanded="true"]:after {
-        width: 0;
-      	height: 0;
-      	border-left: 3rem solid transparent;
-      	border-right: 3rem solid transparent;
-      	border-top: 4rem solid #323a45;
-        border-bottom: none;
-        position: relative;
-        content: "";
-        top: 8rem;
-        left: 5rem;
+        &:after {
+          content: " ";
+          top: 6.4rem;
+          left: -3rem;
+          width: 0;
+          height: 0;
+          border-top: 3rem solid $color-gray-dark;
+          border-right: 3rem solid transparent;
+          border-left: 3rem solid transparent;
+          position: relative;
+        }
       }
   } // .usa-accordion-button END
+    .usa-accordion-content {
+      margin-bottom: 3rem;
+      background-color: #f1f1f1;
+      border: none;
+      outline: 8px solid #f1f1f1;
+      outline-offset: 0;
+      text-align: left;
 
-  // th {
-  //   font-weight: 700;
-  //   width: 20rem;
-  //   padding-left: 2rem;
-  //   vertical-align: text-top;
-  // }
-  // td {
-  //   > :first-child {
-  //     margin-top: 0;
-  //   }
-  //   h2:first-child {
-  //     background-image: url($baseurl + '/assets/img/icons/check-circle-green.svg');
-  //     background-repeat: no-repeat;
-  //     padding-left: 3rem;
-  //     background-position: left center;
-  //   }
-// } //.being-a-bpa.usa-tabs END
+      h2 {
+        color: #1ba7d0;
+        font-family: $font-sans;
+        font-weight: $font-bold;
+        margin-top: 3rem;
+      }
+      p {
+        max-width: 76ch;
+      }
+    } //.usa-accordion-content END
+  } // END &.being-a-bpa
+} // END section.bpa-accordion
 
-  .usa-accordion-content {
-    margin: -1rem 0 3rem 0;
-    width: 99.1%;
 
-    h2 {
-      color: #1ba7d0;
-      font-family: $font-sans;
-      font-weight: $font-bold;
-      margin-top: 3rem;
-    }
-    p {
-      max-width: 76ch;
-    }
-  } //.usa-accordion-content END
-}
+
+    // th {
+    //   font-weight: 700;
+    //   width: 20rem;
+    //   padding-left: 2rem;
+    //   vertical-align: text-top;
+    // }
+    // td {
+    //   > :first-child {
+    //     margin-top: 0;
+    //   }
+    //   h2:first-child {
+    //     background-image: url($baseurl + '/assets/img/icons/check-circle-green.svg');
+    //     background-repeat: no-repeat;
+    //     padding-left: 3rem;
+    //     background-position: left center;
+    //   }
+  // } //.being-a-bpa.usa-tabs END

@@ -71,9 +71,10 @@ secondary:
   - text: About us
     href: /about-us/
   - text: Login
-    href: "javascript:void(0);"
+    href: "https://www.tsp.gov/tsp/login.html"
     # id:
     class: login-toggle usa-button
+    target: _blank
 
 # SIDENAV MENUS
 calculators:
@@ -81,7 +82,7 @@ calculators:
     href: /calculators/
     subnav:
       - text: How much should I save? (Federal Ballpark E$timate&#174;)
-        href: /calculators/how-much-should-i-save/
+        href: /calculators/
       - text: How much will my savings grow?
         href: /calculators/how-much-will-my-savings-grow/
       - text: How much can I contribute?
@@ -349,12 +350,14 @@ footer:
   - text: Privacy
     href: /privacy/
   - text: Agency and Service Rep Resources
-    href: #
+    href: "https://www.tsp.gov/representative/index.html"
   - text: News and resources
     href: /news-and-resources/
   - text: Calculators
     href: /calculators/
   - text: FOIA
-    href: #
+    href: "https://www.frtib.gov/ReadingRoom/index.html"
+    target: _blank
   - text: FRTIB
-    href: #
+    href: "https://www.frtib.gov/"
+    target: _blank

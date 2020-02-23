@@ -10,4 +10,4 @@ For information about in-service withdrawal options, visit the “In-Service Wit
 
 For information about post-separation withdrawals, visit the “Withdrawals After Leaving Federal Service” section of tsp.gov and download our updated booklet [_Withdrawing from Your TSP Account_]({{ site.baseurl }}/publications/tspbk02.pdf).
 
-**To initiate a withdrawal request**, you’ll use enhanced online tools in My Account. After you [log in](javascript:void(0)), select the “[Withdrawals and Changes to Installment Payments](javascript:void(0))” link from the Online Transactions menu.
+**To initiate a withdrawal request**, you’ll use enhanced online tools in My Account. After you [log in]({{ site.myaccount }}), select the “[Withdrawals and Changes to Installment Payments]({{ site.withdrawals }})” link from the Online Transactions menu.

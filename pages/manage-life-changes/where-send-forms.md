@@ -147,7 +147,7 @@ Information Relating to Deceased Participant forms (TSP-17), death certificates,
 These documents can also be faxed to (703) 592-0170.
 
 ### Loan Payments
-[Loan Payment Coupon](javascript:void(0)), _Form TSP-26_, with payment can be mailed to:
+Form TSP-26, [_Loan Payment Coupon_]({{ site.baseurl }}/forms/tsp-26/), with payment can be mailed to:
 
 <section class="usa-section usa-graphic_list">
   <div class="usa-grid usa-graphic_list-row">

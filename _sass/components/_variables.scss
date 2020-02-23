@@ -34,13 +34,13 @@ $color-aqua-darkest: darken($color-aqua, 10%);
 $color-aqua-light: #99D6EA;
 $color-aqua-lightest: lighten($color-aqua-light, 10%);
 
-$color-gray: #7d7c7c;
-$color-gray-dark: darken($color-gray,15%);
+$color-gray: #5b616b;
+$color-gray-dark: #323a45;
 $color-gray-darker: darken($color-gray,30%);
 $color-gray-darkest: darken($color-gray,45%);
-$color-gray-light: lighten($color-gray,15%);
-$color-gray-lighter: lighten($color-gray,30%);
-$color-gray-lightest: lighten($color-gray,45%);
+$color-gray-light: #aeb0b5;
+$color-gray-lighter: #d6d7d9;
+$color-gray-lightest: #f1f1f1;
 
 $color-error: #cd2026;
 

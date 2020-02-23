@@ -106,7 +106,7 @@ Popular forms
 
 - **TSP-1/TSP-U-1**, [Election Form]({{ site.baseurl }}/forms/tsp-1.pdf)
 - **TSP-60**, [Request for a transfer into the TSP]({{ site.baseurl }}/forms/tsp-60.pdf)
-- **TSP-26**, [Loan payment coupon](javascript:void(0))
+- **TSP-26**, [Loan payment coupon]({{ site.baseurl }}/forms/tsp-26/)
 {:.forms-list}
 
 </div>
@@ -115,7 +115,7 @@ Popular forms
 
 Popular calculators
 
-- [How much should I save?]({{ site.baseurl }}/calculators/how-much-should-i-save/)
+- [How much should I save?]({{ site.baseurl }}/calculators/)
 - [How much will my savings grow?]({{ site.baseurl }}/calculators/how-much-will-my-savings-grow/)
 - [Retirement income calculator]({{ site.baseurl }}/calculators/retirement-income-calculator/)
 {:.calculators-list}

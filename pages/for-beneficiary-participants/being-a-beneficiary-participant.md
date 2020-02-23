@@ -68,12 +68,13 @@ As a beneficiary participant, you’ll enjoy many of the same TSP benefits as em
 <section class="bpa-accordion">
 <ul class="usa-accordion usa-tabs being-a-bpa">
 <!-- ROW 1, BOX 1, COMBINE YOUR TSP ACCOUNTS -->
-
   <li>
     <button class="usa-accordion-button"
       aria-expanded="false"
       aria-controls="r1b1">
-      <span><svg xmlns="http://www.w3.org/2000/svg" width="64%" viewBox="0 0 24 24" fill="none" stroke="#dce4ef" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="feather feather-users"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg></span>
+      <span>
+        <svg xmlns="http://www.w3.org/2000/svg" width="64%" viewBox="0 0 24 24" fill="none" stroke="#dce4ef" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="feather feather-users"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
+      </span>
       Combine your<br>TSP accounts
     </button>
 <div id="r1b1" class="usa-accordion-content" markdown="1">
@@ -146,15 +147,16 @@ Choosing how to invest your account is completely up to you. You may invest in a
 </li>
 </ul>
 
+
 <ul class="usa-accordion usa-tabs being-a-bpa">
 <!-- ROW 2, BOX 1, COMBINE YOUR TSP ACCOUNTS -->
-  <li>
-    <button class="usa-accordion-button"
-      aria-expanded="false"
-      aria-controls="r2b1">
-      <span><svg xmlns="http://www.w3.org/2000/svg" width="64%" viewBox="0 0 24 24" fill="none" stroke="#dce4ef" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="feather feather-users"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg></span>
-      Perform an interfund<br>transfer (IFT)
-    </button>
+<li>
+  <button class="usa-accordion-button"
+    aria-expanded="false"
+    aria-controls="r2b1">
+    <span><svg xmlns="http://www.w3.org/2000/svg" width="64%" viewBox="0 0 24 24" fill="none" stroke="#dce4ef" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="feather feather-users"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg></span>
+    Perform an interfund<br>transfer (IFT)
+  </button>
 <div id="r2b1" class="usa-accordion-content" markdown="1">
 
 ## Learn how to move the money in your Beneficiary Participant Account among the TSP investment funds.
@@ -168,17 +170,16 @@ You may request an IFT by visiting [My Account: Online Transactions]({{ site.ift
 </div>
 </li>
 <!-- ROW 2, BOX 2, COMBINE YOUR TSP ACCOUNTS -->
-  <li>
-    <button class="usa-accordion-button"
-      aria-expanded="false"
-      aria-controls="r2b2">
-      <span><svg xmlns="http://www.w3.org/2000/svg" width="64%" viewBox="0 0 24 24" fill="none" stroke="#dce4ef" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="feather feather-users"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg></span>
-      Learn about<br>withdrawal options
-    </button>
+<li>
+<button class="usa-accordion-button"
+aria-expanded="false"
+aria-controls="r2b2">
+<span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="#dce4ef" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="feather feather-users"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg></span>
+Learn about withdrawal options
+</button>
 <div id="r2b2" class="usa-accordion-content" markdown="1">
 
 ## You don't have to withdraw your money—you can keep it in the TSP until you need it (and until the IRS says you have to start withdrawing).
-
 
 There are two types of withdrawals you can make:
 
@@ -200,22 +201,21 @@ _**Monthly payments**_ allow you to withdraw your account in a series of payment
 _**An annuity**_ you (or your survivor) receive a payment every month for life.  We purchase the annuity on your behalf from a private insurance company with all or any portion of your account balance when you request a full withdrawal. You can purchase an annuity for $3,500 or more. Once you purchase one, it cannot be changed.
 
 You can also make _**a mixed withdrawal**_ which allows you to combine any or all of the three withdrawal options (single payment, monthly payments, or annuity). However, if you request a mixed withdrawal with an annuity, the portion of your account balance used to purchase the annuity cannot equal a dollar amount of less than $3,500.
-
 </div>
 </li>
 <!-- ROW 2, BOX 3, COMBINE YOUR TSP ACCOUNTS -->
-  <li>
-    <button class="usa-accordion-button"
-      aria-expanded="false"
-      aria-controls="r2b3">
-      <span><svg xmlns="http://www.w3.org/2000/svg" width="64%" viewBox="0 0 24 24" fill="none" stroke="#dce4ef" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="feather feather-users"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg></span>
-      Request a<br>withdrawal
-    </button>
+<li>
+  <button class="usa-accordion-button"
+    aria-expanded="false"
+    aria-controls="r2b3">
+    <span><svg xmlns="http://www.w3.org/2000/svg" width="64%" viewBox="0 0 24 24" fill="none" stroke="#dce4ef" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="feather feather-users"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg></span>
+    Request a<br>withdrawal
+  </button>
 <div id="r2b3" class="usa-accordion-content" markdown="1">
 
 ## Learn what you’ll need to do to request a withdrawal from your beneficiary participant account.
 
-To request a withdrawal, complete [Withdrawal Request for Beneficiary Participants](javascript:void(0)), _Form TSP-90_. You would’ve received a copy of this form with your welcome letter, but you can also find it under [Forms and resources]({{ site.baseurl }}/forms/). Be sure to read the instructions carefully to ensure that you make an informed decision and provide all of the necessary information so that we  can process your request.
+To request a withdrawal, complete Form TSP-99, [Withdrawal Request for Separated and Beneficiary Participants]({{ site.withdrawals }}). You would’ve received a copy of this form with your welcome letter, but you can also find it under [Forms and resources]({{ site.baseurl }}/forms/). Be sure to read the instructions carefully to ensure that you make an informed decision and provide all of the necessary information so that we  can process your request.
 
 If you're considering monthly payments or an annuity, you should compare these benefits to see which one best suits your situation. You can get help by using the [TSP installment payment calculator]({{ site.baseurl }}/calculators/tsp-installment-payment-calculator/) and the [TSP payment and annuity calculator]({{ site.baseurl }}/calculators/tsp-payment-and-annuity-calculator/).
 
@@ -229,13 +229,12 @@ You should allow at least several weeks from the time you submit your completed 
 
 <ul class="usa-accordion usa-tabs being-a-bpa">
 <!-- ROW 3, BOX 1, COMBINE YOUR TSP ACCOUNTS -->
-  <li>
-    <button class="usa-accordion-button"
-      aria-expanded="false"
-      aria-controls="r3b1">
-      <span><svg xmlns="http://www.w3.org/2000/svg" width="64%" viewBox="0 0 24 24" fill="none" stroke="#dce4ef" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="feather feather-users"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg></span>
-      Learn about Required<br>Minimum Distributions
-    </button>
+<li>
+<button class="usa-accordion-button"
+aria-expanded="false"
+aria-controls="r3b1">
+<span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="#dce4ef" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="feather feather-users"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg></span>
+Learn about Required Minimum Distributions</button>
 <div id="r3b1" class="usa-accordion-content" markdown="1">
 
 ## Learn the rules that require you to begin receiving annual distributions from your beneficiary participant account.
@@ -249,13 +248,13 @@ For more detailed information about the rules associated with death benefit paym
 </div>
 </li>
 <!-- ROW 3, BOX 2, COMBINE YOUR TSP ACCOUNTS -->
-  <li>
-    <button class="usa-accordion-button"
-      aria-expanded="false"
-      aria-controls="r3b2">
-      <span><svg xmlns="http://www.w3.org/2000/svg" width="64%" viewBox="0 0 24 24" fill="none" stroke="#dce4ef" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="feather feather-users"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg></span>
-      Learn about<br>death benefits
-    </button>
+<li>
+  <button class="usa-accordion-button"
+    aria-expanded="false"
+    aria-controls="r3b2">
+    <span><svg xmlns="http://www.w3.org/2000/svg" width="64%" viewBox="0 0 24 24" fill="none" stroke="#dce4ef" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="feather feather-users"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg></span>
+    Learn about<br>death benefits
+  </button>
 <div id="r3b2" class="usa-accordion-content" markdown="1">
 
 ## Find out what happens to the money in your TSP in the event of your death.
@@ -277,13 +276,13 @@ A will or any other document is not valid for the disposition of your beneficiar
 </div>
 </li>
 <!-- ROW 3, BOX 3, COMBINE YOUR TSP ACCOUNTS -->
-  <li>
-    <button class="usa-accordion-button"
-      aria-expanded="false"
-      aria-controls="r3b3">
-      <span><svg xmlns="http://www.w3.org/2000/svg" width="64%" viewBox="0 0 24 24" fill="none" stroke="#dce4ef" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="feather feather-users"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg></span>
-      Notify the<br>TSP of a death
-    </button>
+<li>
+  <button class="usa-accordion-button"
+    aria-expanded="false"
+    aria-controls="r3b3">
+    <span><svg xmlns="http://www.w3.org/2000/svg" width="64%" viewBox="0 0 24 24" fill="none" stroke="#dce4ef" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="feather feather-users"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg></span>
+    Notify the<br>TSP of a death
+  </button>
 <div id="r3b3" class="usa-accordion-content" markdown="1">
 
 ## Learn how to inform us of a participant’s death
