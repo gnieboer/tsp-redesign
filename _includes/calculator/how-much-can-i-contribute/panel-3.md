@@ -1,6 +1,3 @@
----
-published: false
----
 {% comment %}
 Elective Deferral Limits panel (3) for How Much Can I Contribute?.
 {% endcomment %}
@@ -47,6 +44,7 @@ To change how much you contribute, log into your payroll system and select the T
 [Direct Access]({{ site.baseurl }}/exit/?idx=47){:rel="nofollow"}, [Employee Express]({{ site.baseurl }}/exit/?idx=7){:rel="nofollow"}, EBIS, [LiteBlue]({{ site.baseurl }}/exit/?idx=8){:rel="nofollow"}, [myPay]({{ site.baseurl }}/exit/?idx=6){:rel="nofollow"}, and [NFC EPP]({{ site.baseurl }}/exit/?idx=9){:rel="nofollow"}.
 
 {% endcapture %}
+{% assign newAmountTextBlock = newAmountTextBlock | markdownify %}
 {% include calculator/resultsRow.html rightID="new-contribution" right="" left=newAmountTextBlock %}
 
   </div>

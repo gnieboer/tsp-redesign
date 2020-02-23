@@ -39,12 +39,12 @@ scripts:
 
   {% if page.panel-names %}
     {% comment %}This block auto includes the content of the panels.{% endcomment %}
-    {% assign panelNames = page.panel-names | split: ", " %}
+    {% assign panelNames = page.panel-names %}
     {% assign hide = 0 %}
     {% for panelName in panelNames %}
       {% assign panelID = forloop.index %}
-      {% assign panelMD = 'panel-' | append: panelID | append: '.md' %}
-      {% capture panelHTML %}{% include_relative {{ panelMD }} panelID=panelID hide=hide %}{% endcapture %}
+      {% assign panelMD = 'calculator/' | append: page.calculator-name | append: '/panel-' | append: panelID | append: '.md' %}
+      {% capture panelHTML %}{% include {{ panelMD }} panelID=panelID hide=hide %}{% endcapture %}
       {{ panelHTML | markdownify }}
       {% assign hide = 1 %}
     {% endfor %}
