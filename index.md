@@ -7,7 +7,7 @@ scripts:
   - /assets/js/jquery.min.js
   - /assets/js/bootstrap.min.js
   - /assets/js/sessionstorage-modal.js
-
+  - /assets/js/form-modals.js
 alert:
   show-alert: false
   icon:
