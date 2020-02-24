@@ -255,7 +255,7 @@ function fundHighchart(chartName, csvData, title, indexFundsFlag) {
       },
       title: { text: '' }
     },
-    xAxis: { uniqueNames: false },
+    // xAxis: { uniqueNames: false },
     tooltip: {
       formatter: function () {
         return fundTooltip(this, chartName);
