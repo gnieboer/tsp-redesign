@@ -6,10 +6,10 @@ sidenav: calculators
 scripts: /assets/js/calculator/javascriptTaxTable.js
 permalink: /calculators/estimate-loan-payments/
 calculator-name:
-progress-steps: 
+progress-steps:
 panel-names:
 ---
 
-This version is still under development.
+This version is under development.
 
 Please use the existing [Estimate Loan Payments](https://www.tsp.gov/PlanningTools/Calculators/loanPayments.html){:target="\_blank"} calculator on tsp.gov.

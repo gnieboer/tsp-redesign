@@ -10,6 +10,6 @@ progress-steps:
 panel-names:
 ---
 
-This version is still under development.
+This version is under development.
 
 Please use the existing [Contribution Comparison Calculator](https://www.tsp.gov/PlanningTools/Calculators/contributionComparison.html){:target="\_blank"} on tsp.gov.

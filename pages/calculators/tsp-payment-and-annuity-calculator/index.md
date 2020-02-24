@@ -10,6 +10,6 @@ progress-steps:
 panel-names:
 ---
 
-This version is still under development.
+This version is under development.
 
 Please use the existing [TSP Payment and Annuity Calculator](https://www.tsp.gov/PlanningTools/Calculators/retirementCalculator.html){:target="\_blank"} on tsp.gov.

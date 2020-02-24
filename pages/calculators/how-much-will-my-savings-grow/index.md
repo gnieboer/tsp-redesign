@@ -6,10 +6,10 @@ sidenav: calculators
 scripts: /assets/js/calculator/javascriptTaxTable.js
 permalink: /calculators/how-much-will-my-savings-grow/
 calculator-name:
-progress-steps: 
+progress-steps:
 panel-names:
 ---
 
-This version is still under development.
+This version is under development.
 
 Please use the existing [How Much Will My Savings Grow?](https://www.tsp.gov/PlanningTools/Calculators/howSavingsGrow.html){:target="\_blank"} calculator on tsp.gov.
