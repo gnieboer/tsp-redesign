@@ -15,7 +15,7 @@ document-ready:
 ---
 
 {% comment %}
-Dav's file for search development.
+Dav's file for search development. Deleted from staging, available in dav-search2 branch.
 {% endcomment %}
 
 <section class="plan-news" markdown="1">
