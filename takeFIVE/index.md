@@ -6,9 +6,7 @@ sidenav:
 scripts:
 permalink: /takeFIVE/
 ---
-
 <!DOCTYPE HTML>
-
 <!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7"><![endif]-->
 
 <!--[if IE 7]><html class="no-js lt-ie9 lt-ie8"><![endif]-->
@@ -146,7 +144,7 @@ document.location = "https://youtu.be/V9fy7oE5Af8";
 <!--Slide2 - Content-->
 
 <h1>RETIREMENT SEEMS FAR AWAY</h1>
-<p id="slide2-content">But you could be missing out on $1,000s in <a href="/PlanParticipation/EligibilityAndContributions/typesOfContributions.html#agencyMatching" class="white" target="\_blank">matching money</a> from your agency right now if you aren&rsquo;t contributing at least 5% of your salary to your TSP account. And you can never get that money back.</p>
+<p id="slide2-content">But you could be missing out on $1,000s in <a href="/making-contributions/contribution-types/" class="white" target="\_blank">matching money</a> from your agency right now if you aren&rsquo;t contributing at least 5% of your salary to your TSP account. And you can never get that money back.</p>
 </div>
 
 
@@ -176,7 +174,7 @@ document.location = "https://youtu.be/V9fy7oE5Af8";
     			<p class="grey">Fred is 30. If he begins contributing 5% now, he could have about <span class="bold">$365,000*</span> by age 65.
 
 If he waits until age 40 to save the same amount, he’d have about <span class="bold">$180,000_</span> by age 65.
-Wait until his late 40s, and he’d have around <span class="bold">$90,000_</span> by age 65.<br><span class="asterisk">*Includes matching contributions and assumes a 6% rate of return compounded monthly.</span>
+Wait until his late 40s, and he’d have around <span class="bold">$90,000_</span> by age 65.<br><span class="asterisk">\*Includes matching contributions and assumes a 6% rate of return compounded monthly.</span>
 
 </p>
 			</article>
@@ -191,7 +189,7 @@ Wait until his late 40s, and he’d have around <span class="bold">$90,000_</spa
     		<div id="content" class="grid_7 omega grey-1">
             	<!--Slide3 - Content-->
     			<h1 id="start-young">START NOW</h1>
-                <p>Time is your <a class="white" href="/PlanningTools/InvestmentStrategy/retirementsavings/powerOfCompounding.html#benefits" target="_blank" title="Learn more about compound earnings.">biggest ally</a> when it comes to the growth of your retirement savings. Wait too long, and it will be much harder to catch up. If you&rsquo;re unsure where to start, why not Take FIVE for Your Future?</p>
+                <p>Time is your <a class="white" href="/making-contributions/maximize-your-savings/" target="\_blank" title="Learn more about compound earnings.">biggest ally</a> when it comes to the growth of your retirement savings. Wait too long, and it will be much harder to catch up. If you&rsquo;re unsure where to start, why not Take FIVE for Your Future?</p>
     		</div>
 
     	</div>
@@ -257,7 +255,7 @@ Wait until his late 40s, and he’d have around <span class="bold">$90,000_</spa
          	<div class="grid_12 popup" >
             	<!-- Slide5 - Fred PopUp -->
             	<article id="article-4">
-    				<p class="green">Fred is intimidated by investing. Too many options overwhelm him, so he chooses <a class="white" target="_blank" href="/InvestmentFunds/FundOptions/fundPerformance_L2050.html" title="Learn more about the TSP's Lifecycle 2050 Fund.">L 2050</a>, a Lifecycle fund designed by our experts for people who&rsquo;ll need their money in the year 2045 or later.</p>
+    				<p class="green">Fred is intimidated by investing. Too many options overwhelm him, so he chooses <a class="white" target="\_blank" href="/funds-lifecycle/l-2050/" title="Learn more about the TSP's Lifecycle 2050 Fund.">L 2050</a>, a Lifecycle fund designed by our experts for people who&rsquo;ll need their money in the year 2045 or later.</p>
     			</article>
             </div>
 
@@ -276,9 +274,9 @@ Wait until his late 40s, and he’d have around <span class="bold">$90,000_</spa
     		<div id="content" class="grid_7 omega green-1">
             	<!-- Slide5 - Content -->
     			<h1>Five Funds</h1>
-                <p>The TSP&rsquo;s strength is its simplicity. Choose from: <a class="white" href="/InvestmentFunds/FundsOverview/comparisonMatrix.html" target="_blank" title="Learn more about the TSP's 5 core funds">5 core funds</a> you can mix and match, and
+                <p>The TSP&rsquo;s strength is its simplicity. Choose from: <a class="white" href="/funds-individual/" target="\_blank" title="Learn more about the TSP's 5 core funds">5 core funds</a> you can mix and match, and
 
-<a class="white" href="/InvestmentFunds/FundOptions/index.html" target="_blank" title="Learn more about the TSP's Lifecycle Funds">Lifecycle funds</a> that are professionally designed based on when you’ll need your money.
+<a class="white" href="/funds-lifecycle/" target="\_blank" title="Learn more about the TSP's Lifecycle Funds">Lifecycle funds</a> that are professionally designed based on when you’ll need your money.
 
     			</p>
     		</div>
@@ -324,17 +322,17 @@ Wait until his late 40s, and he’d have around <span class="bold">$90,000_</spa
                 	<div id="payrollPopUp">
                     	<p><span>Agency payroll systems</span>
 
-                                                                        <br><a href="{{ site.baseurl }}/exit/?idx=7" target="_blank">Employee Express</a><br>
-                                                                        <a href="{{ site.baseurl }}/exit/?idx=6" target="_blank">myPay</a><br>
-                                                                        <a href="{{ site.baseurl }}/exit/?idx=8" target="_blank">LiteBlue</a><br>
+                                                                        <br><a href="{{ site.baseurl }}/exit/?idx=7" target="\_blank">Employee Express</a><br>
+                                                                        <a href="{{ site.baseurl }}/exit/?idx=6" target="\_blank">myPay</a><br>
+                                                                        <a href="{{ site.baseurl }}/exit/?idx=8" target="\_blank">LiteBlue</a><br>
                                                                         EBIS<br>
-                                                                        <a href="{{ site.baseurl }}/exit/?idx=9" target="_blank">NFC EPP</a>
+                                                                        <a href="{{ site.baseurl }}/exit/?idx=9" target="\_blank">NFC EPP</a>
 
 </p></div></span>
                 <!-- END Extra Info -->
 
     			<h1>FIVE MINUTES</h1>
-                <p>You're already enrolled, so making changes is easy. <br>Sign into your agency&rsquo;s electronic payroll system and choose<br> the &quot;Thrift Savings Plan&quot; option. Or complete <a href="/PDF/formspubs/tsp-1.pdf" target="_blank" class="white" title="PDF Form TSP-1 designating your TSP Election">Form TSP-1</a><br> and send it to your agency&rsquo;s payroll or benefits office. <br>Call us at 1-877-968-3778 and choose option 3 for help.</p>
+                <p>You're already enrolled, so making changes is easy. <br>Sign into your agency&rsquo;s electronic payroll system and choose<br> the &quot;Thrift Savings Plan&quot; option. Or complete <a href="/forms/tsp-1.pdf" target="\_blank" class="white" title="PDF Form TSP-1 designating your TSP Election">Form TSP-1</a><br> and send it to your agency&rsquo;s payroll or benefits office. <br>Call us at 1-877-968-3778 and choose option 3 for help.</p>
     		</div>
 
     	</div>
@@ -383,47 +381,45 @@ Wait until his late 40s, and he’d have around <span class="bold">$90,000_</spa
 <!-- Slide8 -->
 
 <div class="slide" id="slide8" data-slide="8"  data-stellar-background-ratio="0.1">
-		<div class="container clearfix">
-       		<div class="grid_12 popup" >
-        	</div>
+<div class="container clearfix">
+  <div class="grid_12 popup" ></div>
 
-    			 <div id="content" class="grid_4">
-                 <div style="background: #333; padding:25px; width:330px;"><h2>Video</h2><iframe width="330" height="186" src="https://www.youtube.com/embed/V9fy7oE5Af8?rel=0" frameborder="0" allowfullscreen></iframe></div>
-
-    		</div>
+  <!-- <div id="content" class="grid_4">
+    <div style="background: #333; padding:25px; width:330px;"><h2>Video</h2><iframe width="330" height="186" src="https://www.youtube.com/embed/V9fy7oE5Af8?rel=0" frameborder="0" allowfullscreen></iframe></div>
+  </div> -->
 
 
 
-    		<div id="content" class="grid_7 omega grey-2">
-    			<h1>Learn More</h1>
-                <ul>
-                	<li>Not sure you can afford 5%? Try these <a class="white" href="/PlanningTools/InvestmentStrategy/index.html" target="_blank" title="Use our chart to see ways to save." >ideas</a>.</li>
-                    <li>Estimate how <a class="white" href="/PlanningTools/Calculators/howSavingsGrow.html" target="_blank" title="Use our online calculator to estimate how your savings will grow.">your savings will grow</a>.</li>
-                    <li>See how <a class="white" href="/PlanningTools/Calculators/paycheckEstimator.html" target="_blank" title="Use our Paycheck Estimator Calculator.">your paycheck</a> could be affected.</li>
-                    <li>Determine if before or <a class="white" href="/PlanningTools/Calculators/contributionComparison.html" target="_blank" title="Use our Contribution Compairson Calcultor.">after-tax contributions</a> are right for you.</li>
-                </ul>
-                <div class="clear"></div>
-                <div  class="survey"><p class="title"> We want to hear from you!</p> <p class="text"><a  class="white" href="http://takefive.questionpro.com/" target="_blank">Let us know</a> what you think of this site.</p></div>
-    		</div>
+<div id="content" class="grid_7 omega grey-2">
+<h1>Learn More</h1>
+<ul>
+<li>Not sure you can afford 5%? Try these <a class="white" href="/making-contributions/maximize-your-savings/" target="\_blank" title="Use our chart to see ways to save." >ideas</a>.</li>
+<li>Estimate how <a class="white" href="/calculators/how-much-will-my-savings-grow/" target="\_blank" title="Use our online calculator to estimate how your savings will grow.">your savings will grow</a>.</li>
+<li>See how <a class="white" href="/calculators/paycheck-estimator/" target="\_blank" title="Use our Paycheck Estimator Calculator.">your paycheck</a> could be affected.</li>
+<li>Determine if before or <a class="white" href="/calculators/contribution-comparison-calculator/" target="\_blank" title="Use our Contribution Compairson Calcultor.">after-tax contributions</a> are right for you.</li>
+</ul>
+<div class="clear"></div>
+<!-- <div  class="survey"><p class="title"> We want to hear from you!</p> <p class="text"><a  class="white" href="http://takefive.questionpro.com/" target="\_blank">Let us know</a> what you think of this site.</p></div> -->
+</div>
 
-    	</div>
+</div>
 
-        <footer>
-    		<div class="menu-container" style="background:#333;">
-    			<div class="tsp-container">
-                	<img src="images/IMG_TSP_Logo.png" class="tsp-logo">
-        			<h2>Thrift Savings Plan</h2>
-                </div>
-                <div class="aboutus">
-                	<p><a href="/PlanParticipation/AboutTheTSP/index.html#whoAdministers" target="_blank" title="Learn more about about the Thrift Savings Plan" >About Us</a><br>
-                	<a href="/sitehelp/content/index.html" target="_blank" title="Read the Thrift Savings Plan Privacy Policy">Privacy Policy</a><br>
-                    &copy;2015 Thrift Savings Plan</p>
-                </div>
-        		<div class="clear">
-     			</div>
-    		</div>
-    	</footer>
-    </div>
+<footer>
+<div class="menu-container" style="background:#333;">
+<div class="tsp-container">
+<img src="images/IMG_TSP_Logo.png" class="tsp-logo">
+<h2>Thrift Savings Plan</h2>
+</div>
+<div class="aboutus">
+<p><a href="/about-us/" target="\_blank" title="Learn more about about the Thrift Savings Plan" >About Us</a><br>
+<a href="/privacy-policy/" target="\_blank" title="Read the Thrift Savings Plan Privacy Policy">Privacy Policy</a><br>
+&copy;2020 Thrift Savings Plan</p>
+</div>
+<div class="clear">
+</div>
+</div>
+</footer>
+</div>
 
 </div>
 
@@ -444,6 +440,5 @@ Wait until his late 40s, and he’d have around <span class="bold">$90,000_</spa
   ga('send', 'pageview');
 
 </script>
-
 </body>
 </html>
