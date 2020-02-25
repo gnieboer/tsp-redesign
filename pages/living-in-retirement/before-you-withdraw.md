@@ -15,14 +15,13 @@ We offer several options for withdrawing the money from your account. When makin
 Here are some things to consider:
 
 + If you need a portion of your TSP savings right away, but want to leave the rest to continue growing, consider withdrawing just a portion of your account. The minimum amount you can take is $1000, but there is no limit to how many you can take in your lifetime. (Processing times limit you to one withdrawal every 30 days.)
-+ If you want to avoid paying taxes on the money in your TSP account for as long as possible, do not to take any withdrawals until the IRS requires you to do so. By law, you are required to take required minimum distributions (RMDs) beginning the year you turn 72.* At that time, you'll have to pay taxes at your ordinary income tax rate on any taxable income you receive from your TSP account.  
++ If you want to avoid paying taxes on the money in your TSP account for as long as possible, do not to take any withdrawals until the IRS requires you to do so. By law, you are required to take required minimum distributions (RMDs) beginning the year you turn 72 (Participants who turned 70&frac12; on or before December 31, 2019, were required to begin receiving RMDs in the year they turned 70&frac12;.). At that time, you'll have to pay taxes at your ordinary income tax rate on any taxable income you receive from your TSP account.  
 + If you decide that you want regular income from your TSP account every month, every quarter (three months), or once a year, you have a couple options:
   * You can request a specific dollar amount when you complete your withdrawal request form. You will receive payments in the amount and frequency you choose that you request until your entire account balance has been paid to you or until you change or stop your payments, which you can do at any time. Note: The amount of each monthly payment must be at least $25.
   * You can have us compute a monthly payment amount for you based on your life expectancy when you complete your request form. Your initial payment will be based on your age and your account balance at the time of the first payment. Each year thereafter, we will recalculate the amount of your monthly payments based on your age and your account balance at the end of the preceding year.
 * Be aware that neither the specified dollar amount nor the TSP-computed payment option is guaranteed to last your entire lifetime.
 + If you want a guaranteed stream of monthly income, consider purchasing a life annuity, which is a monthly benefit paid to you every month for the rest of your life. This process is sometimes complicated, but we’ve got you covered. Visit [*Annuity basics*]({{ site.baseurl }}/annuity-basics/) for information on purchasing an annuity.
 
-[^*] Participants who turned 70&frac12; on or before December 31, 2019, were required to begin receiving RMDs in the year they turned 70&frac12;.
 
 For more information on TSP installment payments and other withdrawal options, read the booklet [*Withdrawals After Leaving Federal Service*]({{ site.baseurl }}/publications/tspbk02.pdf).
 
