@@ -22,7 +22,7 @@ Here are some things to consider:
 * Be aware that neither the specified dollar amount nor the TSP-computed payment option is guaranteed to last your entire lifetime.
 + If you want a guaranteed stream of monthly income, consider purchasing a life annuity, which is a monthly benefit paid to you every month for the rest of your life. This process is sometimes complicated, but we’ve got you covered. Visit [*Annuity basics*]({{ site.baseurl }}/annuity-basics/) for information on purchasing an annuity.
 
-* Participants who turned 70&frac12; on or before December 31, 2019, were required to begin receiving RMDs in the year they turned 70&frac12;.
+[^*] Participants who turned 70&frac12; on or before December 31, 2019, were required to begin receiving RMDs in the year they turned 70&frac12;.
 
 For more information on TSP installment payments and other withdrawal options, read the booklet [*Withdrawals After Leaving Federal Service*]({{ site.baseurl }}/publications/tspbk02.pdf).
 
