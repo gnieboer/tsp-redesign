@@ -23,7 +23,7 @@ Here are some things to consider:
 + If you want a guaranteed stream of monthly income, consider purchasing a life annuity, which is a monthly benefit paid to you every month for the rest of your life. This process is sometimes complicated, but we’ve got you covered. Visit [*Annuity basics*]({{ site.baseurl }}/annuity-basics/) for information on purchasing an annuity.
 
 
-For more information on TSP installment payments and other withdrawal options, read the booklet [*Withdrawals After Leaving Federal Service*]({{ site.baseurl }}/publications/tspbk02.pdf).
+For more information on TSP installment payments and other withdrawal options, read the booklet [*Withdrawing From Your TSP Account for Separated and Beneficiary Participants*](https://www.tsp.gov/PDF/formspubs/tspbk02.pdf).
 
 For more information about RMDs and tax requirements, see the tax notice [*Important Tax Information About Your TSP Withdrawal and Required Minimum Distributions*]({{ site.baseurl }}/publications/tsp-775.pdf).
 
