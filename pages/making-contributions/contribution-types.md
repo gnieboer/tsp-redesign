@@ -15,28 +15,24 @@ Each pay period, your agency or service will deduct your contribution from your 
 
 Your agency or service will continue to deduct your contribution until you do the following:
 
-<div class="usa-grid-full contribution-type">
-<div class="usa-width-one-half" markdown="1">
-<img src="{{ site.baseurl }}/assets/img/icons/plus-circle-green.svg" alt="">
-Make a new election  
-changing the amount
-</div>
-<div class="usa-width-one-half" markdown="1">
-<img src="{{ site.baseurl }}/assets/img/icons/x-circle-red-fill.svg" alt="">
-Elect to stop  
-your contributions
-</div>
-</div>
 
 <div class="usa-grid-full contribution-type">
 <div class="usa-width-one-whole" markdown="1">
-<img src="{{ site.baseurl }}/assets/img/icons/arrow-up-circle.svg" alt="">
-Reach the IRS  
-contribution limit
+  <ul class="flex">
+  <li>
+  <img src="{{ site.baseurl }}/assets/img/icons/plus-circle-green.svg" alt="">
+  <span>Make a new election changing the amount</span></li>
+  <li>
+  <img src="{{ site.baseurl }}/assets/img/icons/x-circle-red-fill.svg" alt="">
+  <span>Elect to stop your contributions</span></li>
+  <li>
+  <img src="{{ site.baseurl }}/assets/img/icons/arrow-up-circle.svg" alt="">
+  <span>Reach the IRS contribution limit</span></li>
+  </ul>
 </div>
 </div>
 
-For more information, visit [Contribution Limits]({{ site.baseurl }}/making-contributions/contribution-limits/).
+For more information, visit [Contribution limits]({{ site.baseurl }}/making-contributions/contribution-limits/).
 
 ## Agency/Service Automatic (1%) Contributions
 

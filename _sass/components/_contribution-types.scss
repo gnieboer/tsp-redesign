@@ -1,12 +1,36 @@
-.contribution-type {
-  .usa-width-one-half,
-  .usa-width-one-half {
-    margin-bottom: 3rem;
+.usa-content {
+  .contribution-type {
+
+    .usa-width-one-half,
+    .usa-width-one-half {
+      margin-bottom: 3rem;
+    }
+
+
+    ul.flex {
+      list-style-type: none;
+      margin: 0 0 2rem;
+      padding: 0;
+      align-items: stretch;
+
+      li {
+        display: flex;
+        flex-direction: column;
+        padding-right: 2rem;
+        margin: 0;
+        &:last-child {
+          padding-right: 0;
+        }
+
+        img {
+        width: 60px;
+        margin: 0 0 1rem;
+        }
+
+        span {
+          width: 20ch;
+        }
+      }
+    }
   }
-  img {
-  width: 60px;
-  height: 60px;
-  float: left;
-  margin-right: 10px;
-}
 }
