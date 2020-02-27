@@ -605,3 +605,28 @@ function deleteEmptyPoints(chartName) {
   chart.redraw();
   // deletedAlready[chartName] = 1;
 }
+
+
+var getAnnuityRates = function(spanName) {
+  // fund comparison data
+  var scriptName = 'getAnnuityRates.html';
+  // $('#'+spanName).html('THE annuity interest rate index is 1.75% for annuities purchased in February 2020 and 1.75% for annuities purchased in January 2020.');
+
+  var serverCall = $.get(siteName + '/' + scriptName);
+    serverCall.done(
+      function (data) {
+          // expecting 3 lines, header an last 2 rates
+          var lines = data.split("\n"); // break into rows
+          // console.log(lines);
+          if (lines.length < 3) { showErrorAnnuityRateText(spanName); return; }
+          // skip line[0]
+          setAnnuityRateText(spanName, lines[1], lines[2]);
+      }
+    );
+    serverCall.fail(
+      function (jqXHR, textStatus, errorThrown) {
+          var errMsg = textStatus + ': ' + errorThrown;
+          showErrorAnnuityRateText(spanName);
+      }
+    );
+}

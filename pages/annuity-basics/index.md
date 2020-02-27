@@ -5,11 +5,11 @@ styles:
 sidenav: use-your-savings
 scripts:
   - /assets/js/jquery.min.js
-  - /assets/js/ajaxFetch.js
-  - /assets/js/news-and-resources.js
+  - /assets/js/annuity-basics.js
 permalink: /annuity-basics/
+bottom-scripts: /assets/js/ajaxFetch.js
 document-ready:
-  - getLoanAndAnnuityRate();
+  - getAnnuityRates('annuity-interest-rates');
 ---
 
 # Annuity basics
@@ -22,6 +22,8 @@ The minimum amount with which to purchase an annuity is $3,500. This minimum app
 
 Be aware that an annuity is not the same as a TSP installment payment. A TSP installment payment is one of the other withdrawal options that you have as a separated participant.
 
-The annuity interest rate index is 2.200% for annuities purchased in March 2020 and 1.750% for annuities purchased in February 2020.
+<span id="annuity-interest-rates">
+  Fetching the current annuity interest rate from the server...
+</span>
 
 <!-- CONTENT END -->
