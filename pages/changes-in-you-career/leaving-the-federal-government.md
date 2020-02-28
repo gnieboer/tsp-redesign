@@ -33,7 +33,7 @@ As you prepare to leave federal service, here are four important things you must
 
 - Make sure the TSP has your [current address]({{ site.baseurl }}/account-basics/update-personal-information/) at all times.
 - If you have any TSP loans, pay them off within 90 days of your separation.
-- Read _[Withdrawing Your TSP Account After Leaving Federal Service]({{ site.baseurl }}/publications/tspbk02.pdf)_ to fully understand your options.
+- Read _[Withdrawing From Your TSP Account for Separated and Beneficiary Participants](https://www.tsp.gov/PDF/formspubs/tspbk02.pdf)_ to fully understand your options.
 - Read the tax notice "[Important Tax Information About Payments From Your TSP Account]({{ site.baseurl }}/publications/tsp-536.pdf)."
 
 </div>
