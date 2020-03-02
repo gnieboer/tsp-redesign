@@ -1,93 +1,22 @@
 ---
 layout: calculator
-title: How much will my savings grow?
+title: Calculator components
 styles:
 sidenav: calculators
 scripts: /assets/js/calculator/javascriptTaxTable.js
-permalink: /calculators/how-much-will-my-savings-grow/
+permalink: /calculators/components/
 calculator-name:
-progress-steps: [Introduction,Savings growth information,Savings growth estimate]
+progress-steps: [Retirement system,Paycheck information,Contribution election,Results]
 panel-names:
 ---
 
-Static code version.
-<!-- PANEL 1 -->
-<form>
-<code> panel-1 </code>
-<section id="panel-1" class="calculator-panel">
-<div class="panel-form-field" >
-<fieldset>
-<div class="usa-input-error">
-<legend class="sr-only">Retirement System</legend>
-<label class="usa-input-error-label" for="rs">Retirement System</label>
-<span class="usa-input-error-message" id="rs-error-message" role="alert">Retirement system is required.</span>
-<ul class="usa-unstyled-list">
-  <li>
-    <input
-      type="radio"
-      id="FERS"
-      name="rs"
-      value="FERS"
-      onclick="rsGood();">
-      <label for="FERS"><span data-term="Federal Employees' Retirement System (FERS)" class="js-glossary-toggle term term-end">FERS</span></label>
-  </li>
-  <li>
-    <input
-      type="radio"
-      id="CSRS"
-      name="rs"
-      value="CSRS"
-      onclick="rsGood();">
-      <label for="CSRS"><span data-term="Civil Service Retirement System (CSRS)" class="js-glossary-toggle term term-end">CSRS</span></label>
-  </li>
-  <li>
-    <input
-      type="radio"
-      id="USBRS"
-      name="rs"
-      value="USBRS"
-      onclick="rsGood();">
-      <label for="USBRS"><span data-term="Uniformed Services" class="js-glossary-toggle term term-end">Uniformed Services: BRS</span></label>
-  </li>
-  <li>
-    <input
-      type="radio"
-      id="US"
-      name="rs"
-      value="US"
-      onclick="rsGood();">
-      <label for="US"><span data-term="Non-BRS Uniformed Services" class="js-glossary-toggle term term-end">Uniformed Services: non-BRS</span></label>
-  </li>
-  <li>
-    <input
-      type="radio"
-      id="BP"
-      name="rs"
-      value="BP"
-      onclick="rsGood();">
-      <label for="BP"><span data-term="Beneficiary Participant" class="js-glossary-toggle term term-end">Beneficiary Participant</span></label>
-  </li>
-</ul>
-</div> <!-- end div.usa-input-error -->
-</fieldset>
-</div>
-  <ul class="navigation-buttons">
-  <span id="showResults2">
-  <button class="usa-button " href="javascript:void(0);" onclick="processPanel(2, 0, 3, 0); return false;">Continue</button>
-  </span>
-  </ul>
-</section> <!-- end section#panel-1 -->
 
-<!-- PANEL 2 -->
-<code> panel-2 </code>
-<section id="panel-2" class="calculator-panel">
-<div class="panel-form-field" >
+RADIO BUTTON GROUP
 <fieldset>
-
 <div class="usa-input-error">
 <legend class="sr-only">Growth model</legend>
 <label class="usa-input-error-label" for="growthSelector" aria-details="panel-2.1">Growth model</label>
-<span class="usa-input-error-message" id="rs-error-message" role="alert">Growth model is required.</span>
+<span class="usa-input-error-message" id="growthSelector-error-message" role="alert">Growth model is required.</span>
 <ul class="usa-unstyled-list">
   <li>  
     <input
@@ -120,6 +49,113 @@ Static code version.
 </ul>
 </div> <!-- end div.usa-input-error -->
 </fieldset>
+
+DROP DOWN LIST
+<!---->
+<div class="usa-input-error">
+<label class="usa-input-error-label" for="paySchedule">Pay Schedule:</label>
+<span class="usa-input-error-message" id="paySchedule-message" role="alert">Pay schedule is required.</span>
+<select id="paySchedule" name="paySchedule" class="" onchange="payScheduleGood();" onblur="payScheduleGood();">
+   <option value="Select">Select Your Pay Schedule</option>
+   <option value="Biweekly">Biweekly (every 2 weeks, 26 times a year)</option>
+   <option value="Weekly">Weekly (52 times a year)</option>
+   <option value="Semimonthly">Semimonthly (twice a month, 24 times a year)</option>
+   <option value="Monthly">Monthly (12 times a year).</option>
+</select>
+</div>
+
+CURRENCY INPUT
+<div class="usa-input-error">
+<label class="usa-input-error-label" for="repayTime" aria-details="panel-2.2">Enter the amount you already have in your TSP account:</label>
+<span class="usa-input-error-message" id="ptYears-message" role="alert">Your actual or approximate TSP account balance is required.</span>
+<span data-format="$" class="input-symbol-left">
+<input id="ptYears" class="" type="text" name="repayTime" value="" size="2" maxlength="2" onchange="ptYearsMonthsGood(false);">
+</span>
+</div>
+
+Static code version.
+<!-- PANEL 1 -->
+<form>
+<code> panel-1 </code>
+<section id="panel-1" class="calculator-panel">
+  <div class="panel-form-field" >
+  <fieldset>
+  <div class="usa-input-error">
+  <legend class="sr-only">Retirement System</legend>
+  <label class="usa-input-error-label" for="rs">Retirement System</label>
+  <span class="usa-input-error-message" id="rs-error-message" role="alert">Retirement system is required.</span>
+  <ul class="usa-unstyled-list">
+    <li>
+      <input
+        type="radio"
+        id="FERS"
+        name="rs"
+        value="FERS"
+        onclick="rsGood();">
+        <label for="FERS"><span data-term="Federal Employees' Retirement System (FERS)" class="js-glossary-toggle term term-end">FERS</span></label>
+    </li>
+    <li>
+      <input
+        type="radio"
+        id="CSRS"
+        name="rs"
+        value="CSRS"
+        onclick="rsGood();">
+        <label for="CSRS"><span data-term="Civil Service Retirement System (CSRS)" class="js-glossary-toggle term term-end">CSRS</span></label>
+    </li>
+    <li>
+      <input
+        type="radio"
+        id="USBRS"
+        name="rs"
+        value="USBRS"
+        onclick="rsGood();">
+        <label for="USBRS"><span data-term="Uniformed Services" class="js-glossary-toggle term term-end">Uniformed Services: BRS</span></label>
+    </li>
+    <li>
+      <input
+        type="radio"
+        id="US"
+        name="rs"
+        value="US"
+        onclick="rsGood();">
+        <label for="US"><span data-term="Non-BRS Uniformed Services" class="js-glossary-toggle term term-end">Uniformed Services: non-BRS</span></label>
+    </li>
+    <li>
+      <input
+        type="radio"
+        id="BP"
+        name="rs"
+        value="BP"
+        onclick="rsGood();">
+        <label for="BP"><span data-term="Beneficiary Participant" class="js-glossary-toggle term term-end">Beneficiary Participant</span></label>
+    </li>
+  </ul>
+  </div> <!-- end div.usa-input-error -->
+  </fieldset>
+  </div>
+    <ul class="navigation-buttons">
+    <span id="showResults2">
+    <button class="usa-button " href="javascript:void(0);" onclick="processPanel(2, 0, 3, 0); return false;">Continue</button>
+    </span>
+    </ul>
+</section> <!-- end section#panel-1 -->
+
+<!-- PANEL 2 -->
+<code> panel-2 </code>
+<section id="panel-2" class="calculator-panel">
+<div class="panel-form-field" >
+<h2>Salary information</h2>
+
+<!-- GROSS PAY PER PAYCHECK -->
+<div class="usa-input-error">
+<label class="usa-input-error-label" for="repayTime" aria-details="panel-2.1">Gross pay per paycheck:</label>
+<span class="usa-input-error-message" id="grossPay-message" role="alert">Your gross pay per paycheck is required.</span>
+<span data-format="$" class="input-symbol-left">
+<input id="grossPay" class="" type="text" maxlength="6" onchange="grossPayGood();" onblur="grossPayGood();" name="grossPay">.00
+</span>
+</div><!-- end div.usa-input-error -->
+
 <ul class="usa-accordion explain-this">
 <li>
 <button class="usa-accordion-button"

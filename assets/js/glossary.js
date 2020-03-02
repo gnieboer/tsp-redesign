@@ -474,7 +474,7 @@ var glossaryTerms = [
   {
     term: 'Traditional Contribution',
     definition:
-      'Contributions from pay  that has not yet been taxed.&nbsp; Also referred  to as &#8220;tax-deferred,&#8221; &#8220;pre-tax,&#8221; or &#8220;non-Roth&#8221; contributions. Traditional contributions  also include contributions to a traditional balance from tax-exempt pay earned  in a combat zone.'
+      'Contributions from pay that has not yet been taxed.&nbsp; Also referred  to as &#8220;tax-deferred,&#8221; &#8220;pre-tax,&#8221; or &#8220;non-Roth&#8221; contributions. Traditional contributions also include contributions to a traditional balance from tax-exempt pay earned  in a combat zone.'
   },
   {
     term: 'Traditional IRA',

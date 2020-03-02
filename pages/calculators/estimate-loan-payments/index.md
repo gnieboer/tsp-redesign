@@ -6,7 +6,7 @@ sidenav: calculators
 scripts: /assets/js/calculator/javascriptTaxTable.js
 permalink: /calculators/estimate-loan-payments/
 calculator-name:
-progress-steps: "Loan details,Results"
+progress-steps: [Loan details,Results]
 panel-names:
 ---
 
