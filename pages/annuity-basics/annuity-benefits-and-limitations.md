@@ -43,11 +43,11 @@ Once you’ve chosen either a single life or a joint life annuity, you must deci
 
 ### Level payments
 
-The amount of the monthly annuity payment remains the same from year to year. Thus, with a single life annuity, you receive the same monthly payment for as long as you live. With a joint life annuity, you receive the same monthly payment for as long as you and your joint annuitant are alive. The monthly payment to the survivor will depend on whether you have chosen a 100 percent survivor annuity or a 50 percent survivor annuity, but it will remain at the same level for the life of the survivor.
+The amount of the monthly annuity payment for **remains the same** from year to year. Thus, with a single life annuity, you receive the same monthly payment for as long as you live. With a joint life annuity, you receive the same monthly payment for as long as you and your joint annuitant are alive. The monthly payment to the survivor will depend on whether you have chosen a 100 percent survivor annuity or a 50 percent survivor annuity, but it will remain at the same level for the life of the survivor.
 
 ### Increasing payments
 
-The amount of the monthly annuity payment will increase by 2% each year on the anniversary date of the first payment. (Payments from TSP annuities purchased before March 2, 2020, increase annually between 0% and 3% based on the Consumer Price Index.) When annuity payments start, they are smaller than they would have been if you had selected level payments, but they increase each year. Increasing payments can be combined with either the single life annuity or the joint life annuity with spouse. You cannot choose increasing payments when the joint annuitant is not your spouse.
+The amount of the monthly annuity payment **will increase by 2% each year** on the anniversary date of the first payment. (Payments from TSP annuities purchased before March 2, 2020, increase annually between 0% and 3% based on the Consumer Price Index.) When annuity payments start, they are smaller than they would have been if you had selected level payments, but they increase each year. Increasing payments can be combined with either the single life annuity or the joint life annuity with spouse. You cannot choose increasing payments when the joint annuitant is not your spouse.
 
 ### Factors affecting your monthly annuity payment
 
