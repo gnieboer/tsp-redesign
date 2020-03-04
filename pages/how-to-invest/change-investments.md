@@ -17,4 +17,4 @@ To change which fund(s) you invest in, there are two transactions you can make:
 
 You are allowed two IFTs in a calendar month. After that, you can only transfer money into the G Fund.
 
-You may request a contribution allocation or an IFT by visiting [Online Transactions](#). You can also call the ThriftLine at 1-877-968-3778 and follow the automated prompts.
+You may request a contribution allocation or an IFT by visiting [My Account: Online Transactions](https://www.tsp.gov/tsp/login.html). You can also call the ThriftLine at 1-877-968-3778 and follow the automated prompts.
