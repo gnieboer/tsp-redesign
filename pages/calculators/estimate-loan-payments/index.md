@@ -35,7 +35,7 @@ The Loan Calculator estimates loan payments based on the amount you want to borr
 </ul>
 </fieldset>
 <!-- Explain this -->
-<ul class="usa-accordion">
+<ul class="usa-accordion explain-this">
 <li>
 <button class="usa-accordion-button"
 aria-expanded="false"
@@ -59,7 +59,7 @@ Enter an estimate of how much you’ll contribute before any changes take effect
 <input class="positiveinteger" type="text" id="loanAmt" name="loanAmt" maxlength="5" value="1000" onchange="loanAmtGood(false);">
 </span>
 <!-- Explain this -->
-<ul class="usa-accordion">
+<ul class="usa-accordion explain-this">
 <li>
 <button class="usa-accordion-button"
 aria-expanded="false"
@@ -90,7 +90,7 @@ Enter a whole dollar amount between $1,000 and $50,000.
 </ul>
 </fieldset>
 <!-- Explain this -->
-<ul class="usa-accordion">
+<ul class="usa-accordion explain-this">
 <li>
 <button class="usa-accordion-button"
 aria-expanded="false"
@@ -121,9 +121,9 @@ You may have **only one general purpose loan and one residential loan** outstand
 <li>
 <input type="radio" id="repayTime" name="repayment-terms" value="repayTime">
 <label for="repayTime">Repay the loan over</label>
-  <input id="ptYears" class="positiveinteger" type="text" name="repayTime" value="" size="2" maxlength="2" onchange="ptYearsMonthsGood(false);"><label for="ptYears" class="sr-only">Number of years</label>
+  <input id="ptYears" class="" type="text" name="repayTime" value="" size="2" maxlength="2" onchange="ptYearsMonthsGood(false);"><label for="ptYears" class="sr-only">Number of years</label>
   year(s) and
-  <input id="ptMonths" class="positiveinteger" type="text" name="repayTime" value="0" size="2" maxlength="2" onchange="ptYearsMonthsGood(false);" title="Months"><label for="ptMonths" class="sr-only">Number of months</label> month(s)
+  <input id="ptMonths" class="" type="text" name="repayTime" value="0" size="2" maxlength="2" onchange="ptYearsMonthsGood(false);" title="Months"><label for="ptMonths" class="sr-only">Number of months</label> month(s)
 </li>
 <!-- Radio 2 -->
 <li>
@@ -141,7 +141,7 @@ You may have **only one general purpose loan and one residential loan** outstand
 </ul>
 </fieldset>
 <!-- Explain this -->
-<ul class="usa-accordion">
+<ul class="usa-accordion explain-this">
 <li>
 <button class="usa-accordion-button"
 aria-expanded="false"
@@ -169,7 +169,7 @@ Enter an estimate of how much you’ll contribute before any changes take effect
 <option value="monthly">Monthly (12  times a year)</option>
 </select>
 <!-- Explain this -->
-<ul class="usa-accordion">
+<ul class="usa-accordion explain-this">
 <li>
 <button class="usa-accordion-button"
 aria-expanded="false"

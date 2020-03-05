@@ -11,6 +11,7 @@ panel-names:
 ---
 
 Static code version.
+
 <!-- PANEL 1 -->
 <form>
 <code> panel-1 </code>
@@ -277,30 +278,324 @@ Static code version.
 </ul>
 </section>
 
+<!-- PANEL 2, part II - Dedution worksheet -->
+<code> panel-2, part II - Dedution worksheet  </code>
+<section id="panel-2-worksheet" class="calculator-panel" markdown="1">
+
+## Deductions worksheet
+
+Use this worksheet to calculate your payroll deductions. Your most recent paycheck stub will give you the most accurate amounts.
+
+- Only fill in the items that apply to you.
+- Do not include your current TSP contributions.
+
+Your Federal income tax amount will automatically be calculated using the current IRS withholding table, so do not include that amount in your payroll deductions.
+
+<ul class="usa-accordion">
+<li>
+<button
+class="usa-accordion-button"
+aria-expanded="true"
+aria-controls="deductions-pre-tax">
+Pre-tax deductions
+</button>
+<div id="deductions-pre-tax" class="usa-accordion-content">
+<fieldset>
+  <legend class="sr-only">Pre-tax deductions</legend>
+  <label for="pre1">Federal Employee Health Benefits (FEHB):</label>
+  <span data-format="$" class="input-symbol-left">
+  <input
+  maxlength="7"
+  type="text"
+  id="pre1"
+  name="pre1"
+  onblur="getDeTotal('', 'pre', false);">.00
+  </span>
+
+  <label for="pre2">Health Benefits (dental and vision):</label>
+  <span data-format="$" class="input-symbol-left">
+  <input
+  maxlength="7"
+  type="text"
+  id="pre2"
+  name="pre2"
+  onblur="getDeTotal('', 'pre', false);">.00
+  </span>
+
+  <label for="pre3">Flexible Spending Account (FSA):</label>
+  <span data-format="$" class="input-symbol-left">
+  <input
+  maxlength="7"
+  type="text"
+  id="pre3"
+  name="pre3"
+  onblur="getDeTotal('', 'pre', false);">.00
+  </span>
+
+  <label for="pre4">Other / Misc:</label>
+  <span data-format="$" class="input-symbol-left">
+  <input
+  maxlength="7"
+  type="text"
+  id="pre4"
+  name="pre4"
+  onblur="getDeTotal('', 'pre', false);">.00
+  </span>
+</fieldset>
+</div><!-- END div#deductions-pre-tax-->
+</li>
+
+<li>
+<button
+class="usa-accordion-button"
+aria-expanded="true"
+aria-controls="deductions-other">
+Other payroll deductions
+</button>
+<div id="deductions-other" class="usa-accordion-content">
+<fieldset>
+<legend class="sr-only">Other payroll deductions</legend>
+<label for="post1">Social Security Tax (OASDI):</label>
+<span data-format="$" class="input-symbol-left">
+<input
+maxlength="7"
+type="text"
+id="post1"
+name="post1"
+onblur="getDeTotal('', 'post', false);">.00
+</span>
+
+<label for="post2">Medicare Tax:</label>
+<span data-format="$" class="input-symbol-left">
+<input
+maxlength="7"
+type="text"
+id="post2"
+name="post2"
+onblur="getDeTotal('', 'pre', false);">.00
+</span>
+
+<label for="post3">State Tax:</label>
+<span data-format="$" class="input-symbol-left">
+<input
+maxlength="7"
+type="text"
+id="post3"
+name="post3"
+onblur="getDeTotal('', 'pre', false);">.00
+</span>
+
+<label for="post4">County Tax:</label>
+<span data-format="$" class="input-symbol-left">
+<input
+maxlength="7"
+type="text"
+id="post4"
+name="post4"
+onblur="getDeTotal('', 'pre', false);">.00
+</span>
+
+<label for="post5">City Tax:</label>
+<span data-format="$" class="input-symbol-left">
+<input
+maxlength="7"
+type="text"
+id="post5"
+name="post5"
+onblur="getDeTotal('', 'post', false);">.00
+</span>
+
+<label for="post6">Local Tax:</label>
+<span data-format="$" class="input-symbol-left">
+<input
+maxlength="7"
+type="text"
+id="post6"
+name="post6"
+onblur="getDeTotal('', 'pre', false);">.00
+</span>
+
+<label for="post7">Long Term Care Insurance (LTC):</label>
+<span data-format="$" class="input-symbol-left">
+<input
+maxlength="7"
+type="text"
+id="post7"
+name="post7"
+onblur="getDeTotal('', 'pre', false);">.00
+</span>
+
+<label for="post8">Federal Employees' Group Life Insurance (FEGLI):</label>
+<span data-format="$" class="input-symbol-left">
+<input
+maxlength="7"
+type="text"
+id="post8"
+name="post8"
+onblur="getDeTotal('', 'pre', false);">.00
+</span>
+
+<label for="post9">Garnishments / Debt Repayments:</label>
+<span data-format="$" class="input-symbol-left">
+<input
+maxlength="7"
+type="text"
+id="post9"
+name="post9"
+onblur="getDeTotal('', 'post', false);">.00
+</span>
+
+<label for="post10">Tax Levy:</label>
+<span data-format="$" class="input-symbol-left">
+<input
+maxlength="7"
+type="text"
+id="post10"
+name="post10"
+onblur="getDeTotal('', 'pre', false);">.00
+</span>
+
+<label for="post11">TSP Loan:</label>
+<span data-format="$" class="input-symbol-left">
+<input
+maxlength="7"
+type="text"
+id="post11"
+name="post11"
+onblur="getDeTotal('', 'pre', false);">.00
+</span>
+
+<label for="post12">Allotments:</label>
+<span data-format="$" class="input-symbol-left">
+<input
+maxlength="7"
+type="text"
+id="post12"
+name="post12"
+onblur="getDeTotal('', 'pre', false);">.00
+</span>
+
+<label for="post13">Retirement (not including your TSP contributions):</label>
+<span data-format="$" class="input-symbol-left">
+<input
+maxlength="7"
+type="text"
+id="post13"
+name="post13"
+onblur="getDeTotal('', 'post', false);">.00
+</span>
+
+<label for="post14">Savings Bond:</label>
+<span data-format="$" class="input-symbol-left">
+<input
+maxlength="7"
+type="text"
+id="post14"
+name="post14"
+onblur="getDeTotal('', 'pre', false);">.00
+</span>
+
+<label for="post15">Charity:</label>
+<span data-format="$" class="input-symbol-left">
+<input
+maxlength="7"
+type="text"
+id="post15"
+name="post15"
+onblur="getDeTotal('', 'pre', false);">.00
+</span>
+
+<label for="post16">Union Dues:</label>
+<span data-format="$" class="input-symbol-left">
+<input
+maxlength="7"
+type="text"
+id="post16"
+name="post16"
+onblur="getDeTotal('', 'pre', false);">.00
+</span>
+
+<label for="post17">Military Service Credit Deposits:</label>
+<span data-format="$" class="input-symbol-left">
+<input
+maxlength="7"
+type="text"
+id="post17"
+name="post17"
+onblur="getDeTotal('', 'post', false);">.00
+</span>
+
+<label for="post18">Civilian Service Credit Deposits:</label>
+<span data-format="$" class="input-symbol-left">
+<input
+maxlength="7"
+type="text"
+id="post18"
+name="post18"
+onblur="getDeTotal('', 'pre', false);">.00
+</span>
+
+<label for="post19">Other / Misc:</label>
+<span data-format="$" class="input-symbol-left">
+<input
+maxlength="7"
+type="text"
+id="post19"
+name="post19"
+onblur="getDeTotal('', 'pre', false);">.00
+</span>
+</fieldset>
+</div><!-- END div#deductions-other -->
+</li>
+</ul>
+
+<ul class="navigation-buttons">
+  <li>
+  <button class="usa-button previous" href="javascript:void(0);" onclick="showPanel(2); return false;">Previous</button>
+  </li>
+  <li>
+  <button class="usa-button clear" href="javascript:void(0);" onclick="doReport(); return false;">Clear worksheet</button>
+  </li>
+  <li>
+  <button class="usa-button save" href="javascript:void(0);" onclick="doReport(); return false;">Save totals</button>
+  </li>
+</ul>
+</section>
+
 <!-- PANEL 3 -->
 <code> panel-3 </code>
 <section id="panel-3" class="calculator-panel">
 <h2>TSP Contributions Per Paycheck</h2>
   <div class="usa-grid">
       <!-- Scenario 1 -->
-      <div class="usa-width-one-half">
-        <!-- 3.1 Traditional contributions -->
+      <div class="usa-width-one-half scenario">
+        <h3>Scenario 1 (required)</h3>
+        <!-- Scenario 1, 3.1 Traditional contributions -->
         <div class="panel-form-field">
-        Scenario 1 (required)
         <fieldset>
         <div class="usa-input-error">
         <legend class="sr-only">Traditional contributions</legend>
         <label class="usa-input-error-label" for="growthSelector" aria-details="panel-3.1"><span data-term="Traditional Contribution" class="js-glossary-toggle term term-end">Traditional contributions</span></label>
         <span class="usa-input-error-message" id="growthSelector-error-message" role="alert">Enter either a whole percentage or a fixed dollar amount for your traditional contribution.</span>
-        <ul class="usa-unstyled-list">
+        <ul class="usa-unstyled-list contributions">
           <li>  
             <input
               type="radio"
-              id="balanceOnly"
-              name="growthSelector"
-              value="balanceOnly"
-              onclick="deemphasize(0);">
-              <label for="balanceOnly">Percentage of paycheck</label>
+              id="trad_option1_a"
+              name="trad_option1"
+              value="percent"
+              checked="checked"
+              onblur="check_amounts(true, 'ok');">
+            <label for="balanceOnly">Percentage of paycheck:</label>
+
+            <span data-format="%" class="input-symbol-right">
+            <input
+              type="text"
+              id="trad_option1Percent"
+              name="trad_option1Percent"
+              maxlength="2"
+              onblur="check_amounts(true, 'ok');" value=""></span>
+
           </li>  
           <li>
             <input
@@ -309,7 +604,15 @@ Static code version.
               name="growthSelector"
               value="futureOnly"
               onclick="deemphasize(1);">
-              <label for="futureOnly">Fixed amount</label>
+            <label for="futureOnly">Fixed amount</label>
+
+            <span data-format="$" class="input-symbol-left">
+            <input
+              maxlength="6"
+              type="text"
+              id="trad_option1Amount"
+              name="trad_option1Amount"
+              onblur="check_amounts(true, 'ok');"></span>
           </li>
         </ul>
         </div> <!-- end div.usa-input-error -->
@@ -319,81 +622,277 @@ Static code version.
         <li>
         <button class="usa-accordion-button"
         aria-expanded="false"
-        aria-controls="panel-3.1">
+        aria-controls="panel-option1-traditional">
         Explain this
         </button>
-<div id="panel-3.1" class="usa-accordion-content" markdown="1">
+<div id="panel-option1-traditional" class="usa-accordion-content" markdown="1">
 Traditional contributions come out of your pay **before** taxes are calculated; you pay taxes on these contributions and their earnings when you withdraw them.
 </div>
         </li>
         </ul>
         </div><!-- END div.panel-form-field -->
-        <!-- 3.2 Roth contributions -->
+        <!-- Scenario 1, 3.2 Roth contributions -->
         <div class="panel-form-field">
-        <fieldset>
-        <div class="usa-input-error">
-        <legend class="sr-only">Roth contributions</legend>
-        <label class="usa-input-error-label" for="growthSelector" aria-details="panel-3.1">Roth contributions</label>
-        <span class="usa-input-error-message" id="growthSelector-error-message" role="alert">Enter either a whole percentage or a fixed dollar amount for your Roth contribution.</span>
-        <ul class="usa-unstyled-list">
-          <li>  
-            <input
-              type="radio"
-              id="balanceOnly"
-              name="growthSelector"
-              value="balanceOnly"
-              onclick="deemphasize(0);">
-              <label for="balanceOnly">Percentage of paycheck</label>
-          </li>  
+          <fieldset>
+          <div class="usa-input-error">
+          <legend class="sr-only">Roth contributions</legend>
+          <label class="usa-input-error-label" for="growthSelector" aria-details="panel-3.1"><span data-term="Roth Contribution" class="js-glossary-toggle term term-end">Roth contributions</span></label>
+          <span class="usa-input-error-message" id="growthSelector-error-message" role="alert">Enter either a whole percentage or a fixed dollar amount for your Roth contribution.</span>
+          <ul class="usa-unstyled-list contributions">
+            <li>  
+              <input
+                type="radio"
+                id="roth_option1_a"
+                name="roth_option1"
+                value="percent"
+                checked="checked"
+                onblur="check_amounts(true, 'ok');">
+                <label for="roth_option1_a">Percentage of paycheck</label>
+
+                <span data-format="%" class="input-symbol-right">
+                <input
+                  type="text"
+                  id="roth_option1Percent"
+                  name="roth_option1Percent"
+                  maxlength="2"
+                  onblur="check_amounts(true, 'ok');" value=""></span>
+            </li>  
+            <li>
+              <input
+                type="radio"
+                id="roth_option1_b"
+                name="roth_option1"
+                value="fixed"
+                onblur="check_amounts(true, 'ok');">
+                <label for="roth_option1_b">Fixed amount</label>
+
+                <span data-format="$" class="input-symbol-left">
+                <input
+                  maxlength="6"
+                  type="text"
+                  id="roth_option1Amount"
+                  name="roth_option1Amount"
+                  onblur="check_amounts(true, 'ok');"></span>
+            </li>
+          </ul>
+          </div> <!-- end div.usa-input-error -->
+          </fieldset>
+          <!-- Explain this -->
+          <ul class="usa-accordion explain-this">
           <li>
-            <input
-              type="radio"
-              id="futureOnly"
-              name="growthSelector"
-              value="futureOnly"
-              onclick="deemphasize(1);">
-              <label for="futureOnly">Fixed amount</label>
+          <button class="usa-accordion-button"
+          aria-expanded="false"
+          aria-controls="panel-option1-roth">
+          Explain this
+          </button>
+<div id="panel-option1-roth" class="usa-accordion-content" markdown="1">
+Roth contributions come out of your pay **after** taxes are calculated;  you pay no taxes on these contributions when you withdraw them. Roth earnings are also tax-free when withdrawn, as long as you meet the IRS requirements to qualify.
+</div>
           </li>
-        </ul>
-        </div> <!-- end div.usa-input-error -->
-        </fieldset>
+          </ul>
         </div><!-- END div.panel-form-field -->
-        <!-- 3.3 Catch-up contributions -->
+        <!-- Scenario 1, 3.3 Catch-up contributions -->
         <div class="panel-form-field">
-        <fieldset>
-        <div class="usa-input-error">
-        <legend class="sr-only">Catch-up contributions</legend>
-        <label class="usa-input-error-label" for="growthSelector" aria-details="panel-3.1"><span data-term="Catch-Up Contributions" class="js-glossary-toggle term term-end">Catch-up contributions</span></label>
-        <span class="usa-input-error-message" id="growthSelector-error-message" role="alert">Enter either a whole percentage or a fixed dollar amount for your catch-up contribution.</span>
-        <ul class="usa-unstyled-list">
-          <li>  
+          <fieldset>
+            <legend><span data-term="Catch-up Contributions" class="js-glossary-toggle term term-end">Catch-up contributions</span></legend>
+            <label for="catch_option1Trad" aria-details="panel-3.3">Traditional:</label>
+            <span data-format="$" class="input-symbol-left">
             <input
-              type="radio"
-              id="balanceOnly"
-              name="growthSelector"
-              value="balanceOnly"
-              onclick="deemphasize(0);">
-              <label for="balanceOnly">Percentage of paycheck</label>
-          </li>  
-          <li>
+              id="catch_option1Trad"
+              type="text"
+              name="catch_option1Trad"
+              maxlength="6"
+              onblur="check_amounts(true, 'ok');"
+              value="">.00
+            </span>
+            <label for="rcatch_option1Roth" aria-details="panel-3.3">Roth:</label>
+            <span data-format="$" class="input-symbol-left">
             <input
-              type="radio"
-              id="futureOnly"
-              name="growthSelector"
-              value="futureOnly"
-              onclick="deemphasize(1);">
-              <label for="futureOnly">Fixed amount</label>
-          </li>
-        </ul>
-        </div> <!-- end div.usa-input-error -->
-        </fieldset>
+              id="catch_option1Roth"
+              type="text"
+              name="catch_option1Roth"
+              maxlength="6"
+              onblur="check_amounts(true, 'ok');" value="">.00
+            </span>
+          </fieldset>
+          <!-- Explain this -->
+          <ul class="usa-accordion explain-this">
+            <li>
+            <button class="usa-accordion-button"
+            aria-expanded="false"
+            aria-controls="panel-option1-catch-up">
+            Explain this
+            </button>
+            <div id="panel-option1-catch-up" class="usa-accordion-content">
+            Only for participants who are age 50 or older. You must first exceed the elective deferral limit ($19,500.00 in 2020) to make catch-up contributions.
+            </div>
+            </li>
+          </ul>
         </div><!-- END div.panel-form-field -->
       </div><!-- END div.usa-grid-one-half -->
+
       <!-- Scenario 2 -->
-      <div class="usa-width-one-half">
+      <div class="usa-width-one-half scenario">
+        <h3>Scenario 2 (optional)</h3>
+        <!-- Scenario 1, 3.1 Traditional contributions -->
         <div class="panel-form-field">
-        Scenario 2
-        </div>
+        <fieldset>
+        <div class="usa-input-error">
+        <legend class="sr-only">Traditional contributions</legend>
+        <label class="usa-input-error-label" for="growthSelector" aria-details="panel-3.1"><span data-term="Traditional Contribution" class="js-glossary-toggle term term-end">Traditional contributions</span></label>
+        <span class="usa-input-error-message" id="growthSelector-error-message" role="alert">Enter either a whole percentage or a fixed dollar amount for your traditional contribution.</span>
+        <ul class="usa-unstyled-list contributions">
+          <li>  
+            <input
+              type="radio"
+              id="trad_option2_a"
+              name="trad_option2"
+              value="percent"
+              checked="checked"
+              onblur="check_amounts(true, 'ok');">
+            <label for="balanceOnly">Percentage of paycheck:</label>
+
+            <span data-format="%" class="input-symbol-right">
+            <input
+              type="text"
+              id="trad_option2Percent"
+              name="trad_option2Percent"
+              maxlength="2"
+              onblur="check_amounts(true, 'ok');" value=""></span>
+
+          </li>  
+          <li>
+            <input
+              type="radio"
+              id="futureOnly"
+              name="growthSelector"
+              value="futureOnly"
+              onclick="deemphasize(1);">
+            <label for="futureOnly">Fixed amount</label>
+
+            <span data-format="$" class="input-symbol-left">
+            <input
+              maxlength="6"
+              type="text"
+              id="trad_option2Amount"
+              name="trad_option2Amount"
+              onblur="check_amounts(true, 'ok');"></span>
+          </li>
+        </ul>
+        </div> <!-- end div.usa-input-error -->
+        </fieldset>
+        <!-- Explain this -->
+        <ul class="usa-accordion explain-this">
+        <li>
+        <button class="usa-accordion-button"
+        aria-expanded="false"
+        aria-controls="panel-option2-traditional">
+        Explain this
+        </button>
+<div id="panel-option2-traditional" class="usa-accordion-content" markdown="1">
+Traditional contributions come out of your pay **before** taxes are calculated; you pay taxes on these contributions and their earnings when you withdraw them.
+</div>
+        </li>
+        </ul>
+        </div><!-- END div.panel-form-field -->
+        <!-- Scenario 1, 3.2 Roth contributions -->
+        <div class="panel-form-field">
+          <fieldset>
+          <div class="usa-input-error">
+          <legend class="sr-only">Roth contributions</legend>
+          <label class="usa-input-error-label" for="growthSelector" aria-details="panel-3.1"><span data-term="Roth Contribution" class="js-glossary-toggle term term-end">Roth contributions</span></label>
+          <span class="usa-input-error-message" id="growthSelector-error-message" role="alert">Enter either a whole percentage or a fixed dollar amount for your Roth contribution.</span>
+          <ul class="usa-unstyled-list contributions">
+            <li>  
+              <input
+                type="radio"
+                id="roth_option2_a"
+                name="roth_option2"
+                value="percent"
+                checked="checked"
+                onblur="check_amounts(true, 'ok');">
+                <label for="roth_option2_a">Percentage of paycheck</label>
+
+                <span data-format="%" class="input-symbol-right">
+                <input
+                  type="text"
+                  id="roth_option2Percent"
+                  name="roth_option2Percent"
+                  maxlength="2"
+                  onblur="check_amounts(true, 'ok');" value=""></span>
+            </li>  
+            <li>
+              <input
+                type="radio"
+                id="roth_option2_b"
+                name="roth_option2"
+                value="fixed"
+                onblur="check_amounts(true, 'ok');">
+                <label for="roth_option2_b">Fixed amount</label>
+
+                <span data-format="$" class="input-symbol-left">
+                <input
+                  maxlength="6"
+                  type="text"
+                  id="roth_option2Amount"
+                  name="roth_option2Amount"
+                  onblur="check_amounts(true, 'ok');"></span>
+            </li>
+          </ul>
+          </div> <!-- end div.usa-input-error -->
+          </fieldset>
+          <!-- Explain this -->
+          <ul class="usa-accordion explain-this">
+          <li>
+          <button class="usa-accordion-button"
+          aria-expanded="false"
+          aria-controls="panel-option2-roth">
+          Explain this
+          </button>
+<div id="panel-option2-roth" class="usa-accordion-content" markdown="1">
+Roth contributions come out of your pay **after** taxes are calculated;  you pay no taxes on these contributions when you withdraw them. Roth earnings are also tax-free when withdrawn, as long as you meet the IRS requirements to qualify.
+</div>
+          </li>
+          </ul>
+        </div><!-- END div.panel-form-field -->
+        <!-- Scenario 1, 3.3 Catch-up contributions -->
+        <div class="panel-form-field">
+          <fieldset>
+            <legend><span data-term="Catch-up Contributions" class="js-glossary-toggle term term-end">Catch-up contributions</span></legend>
+            <label for="catch_option2Trad" aria-details="panel-3.3">Traditional:</label>
+            <span data-format="$" class="input-symbol-left">
+            <input
+              id="catch_option2Trad"
+              type="text"
+              name="catch_option2Trad"
+              maxlength="6"
+              onblur="check_amounts(true, 'ok');"
+              value="">.00
+            </span>
+            <label for="rcatch_option2Roth" aria-details="panel-3.3">Roth:</label>
+            <span data-format="$" class="input-symbol-left">
+            <input
+              id="catch_option2Roth"
+              type="text"
+              name="catch_option2Roth"
+              maxlength="6"
+              onblur="check_amounts(true, 'ok');" value="">.00
+            </span>
+          </fieldset>
+          <!-- Explain this -->
+          <ul class="usa-accordion explain-this">
+            <li>
+            <button class="usa-accordion-button"
+            aria-expanded="false"
+            aria-controls="panel-option2-catch-up">
+            Explain this
+            </button>
+            <div id="panel-option2-catch-up" class="usa-accordion-content">
+            Only for participants who are age 50 or older. You must first exceed the elective deferral limit ($19,500.00 in 2020) to make catch-up contributions.
+            </div>
+            </li>
+          </ul>
+        </div><!-- END div.panel-form-field -->
       </div><!-- END div.usa-grid-one-half -->
   </div><!-- END div.usa-grid -->
 
@@ -406,6 +905,7 @@ Traditional contributions come out of your pay **before** taxes are calculated; 
   </li>
   </ul>
 </section>
+
 
 <!-- PANEL 4 -->
 <code> panel-4 </code>

@@ -9,4 +9,31 @@ button,
       padding-left: .5rem;
     }
   }
+
+  &.clear {
+    &:after {
+      font-family: $font-awesome;
+      content: "\f55a";
+      font-weight: $light;
+      padding-left: .5rem;
+    }
+  }
+
+  &.save {
+    &:after {
+      font-family: $font-awesome;
+      content: "\f0c7";
+      font-weight: $light;
+      padding-left: .5rem;
+    }
+  }
+
+  &.previous {
+    &:after {
+      // font-family: $font-awesome;
+      // content: "";
+      // font-weight: $light;
+      // padding-left: .5rem;
+    }
+  }
 }

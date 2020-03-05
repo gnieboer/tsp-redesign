@@ -64,14 +64,22 @@ DROP DOWN LIST
 </select>
 </div>
 
-CURRENCY INPUT
+CURRENCY $ INPUT
 <div class="usa-input-error">
 <label class="usa-input-error-label" for="repayTime" aria-details="panel-2.2">Enter the amount you already have in your TSP account:</label>
 <span class="usa-input-error-message" id="ptYears-message" role="alert">Your actual or approximate TSP account balance is required.</span>
+
 <span data-format="$" class="input-symbol-left">
 <input id="ptYears" class="" type="text" name="repayTime" value="" size="2" maxlength="2" onchange="ptYearsMonthsGood(false);">
 </span>
+
 </div>
+
+PERCENTAGE % INPUT
+
+<span data-format="%" class="input-symbol-right">
+<input class="" maxlength="2" type="text" id="annualPayPercent" name="annualPayPercent" onblur="annualPayPercentGood();">
+</span>
 
 Static code version.
 <!-- PANEL 1 -->
