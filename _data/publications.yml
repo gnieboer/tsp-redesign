@@ -16,17 +16,8 @@
   - Fact Sheet
   publication_topics:
   - Withdrawals
-# - publication_url: monthly-annuity-factors.pdf
-#   publication_name: Monthly Annuity Factors
-#   publication_info: Use these monthly annuity factors with the annuity worksheet to estimate your monthly annuity payment.
-#   publication_date: 7/2014
-#   publication_pages: 1 page
-#   publication_type:
-#   - Annuity
-#   publication_topics:
-#   - Withdrawals
-- publication_url: interestAdjustmentFactors.pdf
-  publication_name: Annuity Interest Adjustment Factors
+- publication_url: https://www.tsp.gov/PDF/formspubs/monthlyAnnuityFactors.html
+  publication_name: Annuity Factor, Monthly
   publication_info: Use these monthly annuity factors with the annuity worksheet to estimate your monthly annuity payment.
   publication_date: 7/2014
   publication_pages: 1 page
@@ -34,11 +25,11 @@
   - Annuity
   publication_topics:
   - Withdrawals
-- publication_url: worksheet.pdf
-  publication_name: Annuity Worksheet
-  publication_info: Estimate the amount of your monthly annuity payment using this worksheet.
-  publication_date: 4/2006
-  publication_pages: 2 pages
+- publication_url: monthly-annuity-payment-worksheet.pdf
+  publication_name: Annuity Worksheet and Interest Adjustment Factors
+  publication_info: Estimate the amount of your monthly annuity payment using this worksheet and the included monthly annuity factors.
+  publication_date: 3/2020
+  publication_pages: 5 pages
   publication_type:
   - Annuity
   publication_topics:
