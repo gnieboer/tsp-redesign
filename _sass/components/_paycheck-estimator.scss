@@ -18,3 +18,23 @@
     }
   }
 }
+
+.usa-content {
+
+  .expected-annual-return {
+    margin-top: 2rem;
+
+    ul {
+      &.inline-input {
+        max-width: none;
+        li {
+          justify-content: center; // Center input in panel
+        }
+      }
+    }
+
+    .explain-this {
+      margin: auto; // Center accordion in panel
+    }
+  }// END div.expected-annual-return
+}

@@ -564,7 +564,7 @@ onblur="getDeTotal('', 'pre', false);">.00
 
 <!-- PANEL 3 -->
 <code> panel-3 </code>
-<section id="panel-3" class="calculator-panel">
+<section id="panel-3" class="calculator-panel contribution-election">
 <h2>TSP Contributions Per Paycheck</h2>
   <div class="usa-grid">
       <!-- Scenario 1 -->
@@ -729,7 +729,7 @@ Roth contributions come out of your pay **after** taxes are calculated;  you pay
             </li>
           </ul>
         </div><!-- END div.panel-form-field -->
-      </div><!-- END div.usa-grid-one-half -->
+      </div><!-- END div.usa-width-one-half -->
 
       <!-- Scenario 2 -->
       <div class="usa-width-one-half scenario">
@@ -893,15 +893,48 @@ Roth contributions come out of your pay **after** taxes are calculated;  you pay
             </li>
           </ul>
         </div><!-- END div.panel-form-field -->
-      </div><!-- END div.usa-grid-one-half -->
+      </div><!-- END div.usa-width-one-half -->
   </div><!-- END div.usa-grid -->
+<div class="usa-grid expected-annual-return">
+  <div class="usa-width-one-whole">
+    <div class="panel-form-field">
+    <ul class="inline-input">
+      <li>
+      <label class="" for="annualReturn" aria-details="expected-annual-return">Expected annual return:</label>
+      <span data-format="%" class="input-symbol-right">
+      <input
+        id="annualReturn"
+        name="annualReturn"
+        type="text"
+        value=""
+        maxlength="7"
+        onblur="annualReturnGood();">
+      </span>
+      </li>
+    </ul>
+    <!-- Explain this -->
+    <ul id="auto" class="usa-accordion explain-this">
+    <li>
+    <button class="usa-accordion-button"
+    aria-expanded="false"
+    aria-controls="expected-annual-return">
+    Explain this
+    </button>
+<div id="expected-annual-return" class="usa-accordion-content" markdown="1">
+View the [Rates of return]({{ site.baseurl }}/fund-performance/). Past performance is not a guarantee or a predictor of future returns.
+</div>
+    </li>
+    </ul>
+    </div><!-- END div.panel-form-field -->
+  </div><!-- END div.usa-width-one-whole -->
+</div><!-- END div.usa-grid -->
 
   <ul class="navigation-buttons">
   <li>
   <button class="usa-button " href="javascript:void(0);" onclick="showPanel(2); return false;">Previous</button>
   </li>
   <li>
-  <button class="usa-button print" href="javascript:void(0);" onclick="doReport(); return false;">Print report</button>
+  <button class="usa-button" href="javascript:void(0);" onclick="doReport(); return false;">Submit</button>
   </li>
   </ul>
 </section>

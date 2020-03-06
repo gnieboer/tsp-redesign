@@ -77,6 +77,7 @@ CURRENCY $ INPUT
 
 PERCENTAGE % INPUT
 
+<label class="" for="annualPayPercent" aria-details="panel-2.2">Enter the amount you already have in your TSP account:</label>
 <span data-format="%" class="input-symbol-right">
 <input class="" maxlength="2" type="text" id="annualPayPercent" name="annualPayPercent" onblur="annualPayPercentGood();">
 </span>

@@ -116,7 +116,7 @@ You may have **only one general purpose loan and one residential loan** outstand
 <div class="panel-form-field" >
 <fieldset>
 <legend aria-details="panel-1.4">Repayment terms:<br />(select <strong>ONE</strong>)</legend>
-<ul class="usa-unstyled-list repayment-terms">
+<ul class="usa-unstyled-list inline-input">
 <!-- Radio 1 -->
 <li>
 <input type="radio" id="repayTime" name="repayment-terms" value="repayTime">
