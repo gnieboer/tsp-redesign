@@ -3,8 +3,8 @@ function onPlayerReady(event) {
   event.target.playVideo();
 }
 function showVideo(vidCode) {
-  $('.video-details').addClass('hide');
-  $('#'+vidCode+'-block').removeClass('hide');
+  $('.video-details').hide();
+  $('#'+vidCode+'-block').show();
   console.log('show '+vidCode);
   // $('#video-iframe').attr("src", "https://www.youtube.com/embed/"+vidCode+"&rel=0")
   // $('#video-iframe').attr("src", "https://www.youtube.com/embed/"+vidCode);
@@ -36,6 +36,9 @@ function initVideoList() {
   inlineUSAsearch('videos', 'search-status', 'beta.tsp', 'video', 'tsp', 1, 0, videoSearchCallback);
 }
 
+var vidKeys = [];
+var vidTitles = [];
+
 function videoSearchCallback(searchName, returnedJSON, offset) {
   if (typeof returnedJSON === 'undefined') { return false; }
   var results;  // JSON block of hits
@@ -45,12 +48,17 @@ function videoSearchCallback(searchName, returnedJSON, offset) {
   var hitFormat = 'web';
   var vidCode = '';
   var tmp;
+  vidKeys = [];
+  vidTitles = [];
 
   console.log(returnedJSON);
   results = returnedJSON.video.results;
   resultsTotal = returnedJSON.video.total;
   totalHits = resultsTotal;
   hitFormat = 'video';
+
+  $('.show-video-link').hide();
+  var vidList = $('.show-video-link');
 
   if (results) {
     var len = results.length;
@@ -62,14 +70,52 @@ function videoSearchCallback(searchName, returnedJSON, offset) {
         if (tmp.length > 1) { vidCode = tmp[tmp.length-1]; }
       }
       if (vidCode != '') {
-        if ($("#"+vidCode+'-overview').length > 0) {
+        $('#show-'+vidCode).show();
+        if ($("#"+vidCode+'-block').length > 0) {
           // console.log(i, ' vidCode = ', vidCode, ' ', results[i].publication_date, ' ', results[i].duration);
           $('#'+vidCode+'-pub-date').html(formatDuration(results[i].publication_date));
           $('#'+vidCode+'-duration').html(results[i].duration);
-          $('#'+vidCode+'-description').html(results[i].snippet);
+          // $('#'+vidCode+'-description').html(formatSnippet(results[i].snippet));
+          vidKeys.push(vidCode);
+          vidTitles.push(cleanSnippet(results[i].title.toUpperCase()));
+        } else {
+          console.log('not in yml file '+vidCode);
         }
       }
     }
   }
+  var i;
+  for (i = 0; i < vidList.length; i++) {
+    if ($('#'+vidList[i].id).is(':hidden')) { console.log('not in search result: ' + vidList[i].id); }
+  }
+  for (i = 0; i < vidKeys.length; i++) {
+    console.log(vidKeys[i], vidTitles[i]);
+  }
   return false;
+}
+
+function videoOnKeyUp() {
+  var input = $('#'+'browse-titles').val();
+  // console.log('input '+input);
+  showVideoTitles(input);
+}
+function showVideoTitles(str) {
+  if (str == '') {
+    // show all the ones we've got data for
+    for (var i = 0; i < vidKeys.length; i++) {
+      $('#show-'+vidKeys[i]).show();
+    }
+    // console.log('count is '+($('.show-video-link:visible').length));
+    return false;
+  }
+  // str has a value, use it as a search key
+  for (var i = 0; i < vidKeys.length; i++) {
+    if (vidTitles[i].includes(str.toUpperCase())) {
+      $('#show-'+vidKeys[i]).show();
+    } else {
+      $('#show-'+vidKeys[i]).hide();
+    }
+  }
+  // console.log('count is '+($('.show-video-link:visible').length));
+  return true;
 }

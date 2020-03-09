@@ -1,4 +1,3 @@
-<section>
 <div id="{{video.video_id}}-block" class="video-details hide">
   <ul class="usa-accordion usa-tabs">
   <!-- Overview -->
@@ -17,26 +16,29 @@
 
   </div>
   </li>
-  {% if video.video_transcript %}
   <!-- Transcript -->
   <li>
   <button class="usa-accordion-button" aria-expanded="false" aria-controls="{{video.video_id}}-transcript">Transcript</button>
   <div id="{{video.video_id}}-transcript" class="usa-accordion-content" markdown="1">
+  {% if video.video_transcript %}
   {{ video.video_transcript}}
+  {% else %}
+  Transcript not available.
+  {% endif %}
   </div>
   </li>
-  {% endif %}
-  {% if video.video_download %}
   <!-- Download -->
   <li>
   <button class="usa-accordion-button" aria-expanded="false" aria-controls="{{video.video_id}}-download">Download</button>
   <div id="{{video.video_id}}-download" class="usa-accordion-content" markdown="1">
 
+{% if video.video_download %}
 <a href="{{ site.baseurl }}/assets/videos/{{ video.video_download }}" class="download"
       aria-label="Download video">{{ video.video_title }}<i class="far fa-arrow-circle-down"></i></a>
+{% else %}
+Video not available.
+{% endif %}
   </div>
   </li>
-  {% endif %}
   </ul>
 </div>
-</section>

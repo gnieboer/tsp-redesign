@@ -47,13 +47,11 @@ Videos
 <!-- Search videos -->
 <div class="usa-width-one-third search-videos" markdown="1">
 <!-- Animated search bar -->
-<form accept-charset="UTF-8" action="https://search.usa.gov/search/docs" id="search_form_8657" method="get" class="animated-search">
-<input type="hidden" name="dc" value="8657">
-<input type="hidden" name="affiliate" value="beta.tsp" id="affiliate" >
-<label for="query" class="usa-sr-only">Search videos</label>
-<!-- Search input field -->
-<input type="text" name="query" id="query_8657" autocomplete="off" placeholder="&#xf002; Search videos">
-</form>
+<div class="usa-search usa-search-small">
+<label for="browse-titles" class="usa-sr-only">Search videos</label>
+<input type="text" name="query" id="browse-titles" autocomplete="off" placeholder="&#xf002; Search videos"
+  onKeyUp="videoOnKeyUp();">
+</div>
 
 {% include video-list.html %}
 </div>
