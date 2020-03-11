@@ -36,8 +36,32 @@ function initVideoList() {
   inlineUSAsearch('videos', 'search-status', 'beta.tsp', 'video', 'tsp', 1, 0, videoSearchCallback);
 }
 
+var keyHash = {};
 var vidKeys = [];
 var vidTitles = [];
+var vidDescs = [];
+var vidTrans = [];
+
+function clearVidArrays() {
+  keyHash = {};
+  vidKeys = [];
+  vidTitles = [];
+  vidDescs = [];
+  vidTrans = [];
+}
+
+function addToVidArrays(key, result) {
+  if (!(key in keyHash)) {
+    // console.log('adding '+key);
+    keyHash[key] = key;
+    vidKeys.push(key);
+    vidTitles.push(cleanSnippet(result.title.toUpperCase()));
+    // $('#'+vidCode+'-description').html(formatSnippet(results.snippet));
+    vidDescs.push($('#'+key+'-description').text().toUpperCase());
+    vidTrans.push($('#'+key+'-transcript').text().toUpperCase());
+  }
+
+}
 
 function videoSearchCallback(searchName, returnedJSON, offset) {
   if (typeof returnedJSON === 'undefined') { return false; }
@@ -48,8 +72,7 @@ function videoSearchCallback(searchName, returnedJSON, offset) {
   var hitFormat = 'web';
   var vidCode = '';
   var tmp;
-  vidKeys = [];
-  vidTitles = [];
+  clearVidArrays();
 
   console.log(returnedJSON);
   results = returnedJSON.video.results;
@@ -75,9 +98,7 @@ function videoSearchCallback(searchName, returnedJSON, offset) {
           // console.log(i, ' vidCode = ', vidCode, ' ', results[i].publication_date, ' ', results[i].duration);
           $('#'+vidCode+'-pub-date').html(formatDuration(results[i].publication_date));
           $('#'+vidCode+'-duration').html(results[i].duration);
-          // $('#'+vidCode+'-description').html(formatSnippet(results[i].snippet));
-          vidKeys.push(vidCode);
-          vidTitles.push(cleanSnippet(results[i].title.toUpperCase()));
+          addToVidArrays(vidCode, results[i]);
         } else {
           console.log('not in yml file '+vidCode);
         }
@@ -88,9 +109,7 @@ function videoSearchCallback(searchName, returnedJSON, offset) {
   for (i = 0; i < vidList.length; i++) {
     if ($('#'+vidList[i].id).is(':hidden')) { console.log('not in search result: ' + vidList[i].id); }
   }
-  for (i = 0; i < vidKeys.length; i++) {
-    console.log(vidKeys[i], vidTitles[i]);
-  }
+  // for (i = 0; i < vidKeys.length; i++) { console.log(vidKeys[i], vidTitles[i], vidDescs[i], vidTrans[i]); }
   return false;
 }
 
@@ -99,8 +118,22 @@ function videoOnKeyUp() {
   // console.log('input '+input);
   showVideoTitles(input);
 }
+
+function strInTitle(str, idx) {
+  if (vidTitles[idx].includes(str)) { return true; }
+  return false;
+}
+function strInDesc(str, idx) {
+  if (vidDescs[idx].includes(str)) { return true; }
+  return false;
+}
+function strInTran(str, idx) {
+  if (vidTrans[idx].includes(str)) { return true; }
+  return false;
+}
 function showVideoTitles(str) {
-  if (str == '') {
+  uStr = str.toUpperCase();
+  if (uStr == '') {
     // show all the ones we've got data for
     for (var i = 0; i < vidKeys.length; i++) {
       $('#show-'+vidKeys[i]).show();
@@ -110,7 +143,7 @@ function showVideoTitles(str) {
   }
   // str has a value, use it as a search key
   for (var i = 0; i < vidKeys.length; i++) {
-    if (vidTitles[i].includes(str.toUpperCase())) {
+    if (strInTitle(uStr,i)||strInDesc(uStr,i)||strInTran(uStr,i)) {
       $('#show-'+vidKeys[i]).show();
     } else {
       $('#show-'+vidKeys[i]).hide();
