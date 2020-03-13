@@ -15,6 +15,7 @@ You can choose between two tax treatments for your TSP contributions:
   <div class="usa-width-one-half">
   <div class="usa-alert">
   <div class="usa-alert-body" markdown="1">
+  
 ## Traditional contributions
 
 Traditional contributions

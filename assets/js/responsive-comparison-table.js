@@ -1,6 +1,6 @@
 // Responsive comparison table JS
 
-$( "ul.funds-lifecycle" ).on( "click", "li", function() {
+$( "ul.funds-lifecycle, ul.scenarios" ).on( "click", "li", function() {
   var pos = $(this).index()+2;
   $("table.l tr").find('td:not(:eq(0))').hide();
   $('table.l td:nth-child('+pos+')').css('display','table-cell');

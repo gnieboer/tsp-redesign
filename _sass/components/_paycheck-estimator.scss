@@ -1,3 +1,32 @@
+span {
+  &.whole-number {
+    input {
+      width: 95%;
+    }
+    &:after {
+      content: ".00";
+      right: -0.5rem;
+    }
+  }
+}
+
+section.calculator-panel.comparison.paycheck { // Panel 4: Results
+
+  td.sep {
+    .flex {
+      a {
+        font-weight: 400;
+        i {
+          padding: 0 0 0 .75rem;
+        }
+      }
+    }
+  }
+
+  #footnotes {
+    margin-bottom: 2rem;
+  }
+}
 .usa-width-one-half {
   &.scenario {
     h3 {

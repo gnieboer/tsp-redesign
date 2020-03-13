@@ -50,10 +50,10 @@ Expense ratios may also be expressed in basis points. One basis point is 1/100th
 {% assign rowString = "YTD|Year-to-date, 1YR|1-year, 3YR|3-year, 5YR|5-year, 10YR|10-year, Life|Life" %}
 {% assign rows = rowString | split: ', ' %}
 
-<ul class="funds-lifecycle">
+<ul class="funds-lifecycle table-header-buttons">
 {% for fund in sorted %}
   <li{% if forloop.index == 3 %} class="active"{% endif %}>
-    <button>{{ fund.Fund_name }}</button>
+    <button type="button">{{ fund.Fund_name }}</button>
   </li>
 {% endfor %}
 </ul>
@@ -82,7 +82,7 @@ Expense ratios may also be expressed in basis points. One basis point is 1/100th
     </tr>
 {% endfor %}
     <tr>
-      <td colspan="6" class="sep">{{ sorted.first.summary_details.as_of_year }} Administrative Expenses</td>
+      <td colspan="6" class="sep">{{ sorted.first.summary_details.as_of_year }} Administrative Expenses<sup markdown="1">[1](#foot_1)</sup></td>
     </tr>
     <tr>
       <td>Gross</td>
@@ -101,7 +101,7 @@ Expense ratios may also be expressed in basis points. One basis point is 1/100th
       {% endfor %}
     </tr>
     <tr>
-      <td colspan="6" class="sep">{{ sorted.first.summary_details.as_of_year }} Other Expenses<sup>2</sup></td>
+      <td colspan="6" class="sep">{{ sorted.first.summary_details.as_of_year }} Other Expenses<sup markdown="1">[2](#foot_2)</sup></td>
     </tr>
     <tr>
       <td></td>
@@ -118,10 +118,10 @@ Expense ratios may also be expressed in basis points. One basis point is 1/100th
 ## Individual funds
 {% include components/get_sorted_fund_list funds='Individual' reverse=false %}
 
-<ul class="funds-individual">
+<ul class="funds-individual table-header-buttons">
 {% for fund in sorted %}
   <li{% if forloop.index == 3 %} class="active"{% endif %}>
-    <button>{{ fund.Fund_name }}</button>
+    <button type="button">{{ fund.Fund_name }}</button>
   </li>
 {% endfor %}
 </ul>
@@ -150,7 +150,7 @@ Expense ratios may also be expressed in basis points. One basis point is 1/100th
         </tr>
     {% endfor %}
     <tr>
-      <td colspan="6" class="sep">{{ sorted.first.summary_details.as_of_year }} Administrative Expenses</td>
+      <td colspan="6" class="sep">{{ sorted.first.summary_details.as_of_year }} Administrative Expenses<sup markdown="1">[1](#foot_1)</sup></td>
     </tr>
     <tr>
       <td>Gross</td>
@@ -169,7 +169,7 @@ Expense ratios may also be expressed in basis points. One basis point is 1/100th
       {% endfor %}
     </tr>
     <tr>
-      <td colspan="6" class="sep">{{ sorted.first.summary_details.as_of_year }} Other Expenses<sup>2</sup></td>
+      <td colspan="6" class="sep">{{ sorted.first.summary_details.as_of_year }} Other Expenses<sup markdown="1">[2](#foot_2)</sup></td>
     </tr>
     <tr>
       <td></td>
@@ -187,8 +187,11 @@ The returns for the TSP funds represent net earnings after the deduction of admi
 **Additional information about the TSP core funds:** The Government Securities Investment (G) Fund contains government securities; the Fixed Income Index
 Investment (F) Fund contains government, corporate, and asset-backed bonds; the Common Stock Index Investment (C) Fund contains stocks of large and mediumsized U.S. companies; the Small Capitalization Stock Index Investment (S) Fund contains stocks of small to medium-sized U.S. companies; and the International Stock Index Investment (I) Fund contains stocks from more than 20 developed countries.
 
-<sup>1</sup>Net administrative expenses are the expenses charged to TSP participants per dollar invested in the respective funds after offsetting gross administrative expenses
-with account forfeitures and loan fees.
+</section>
 
-<sup>2</sup>Fees paid to investment manager
+<section id="footnotes" markdown="1">
+
+1. {: #foot_1} Net administrative expenses are the expenses charged to TSP participants per dollar invested in the respective funds after offsetting gross administrative expenses
+with account forfeitures and loan fees.
+2. {: #foot_2} Fees paid to investment manager
 </section>

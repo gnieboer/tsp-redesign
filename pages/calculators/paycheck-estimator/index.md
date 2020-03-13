@@ -3,7 +3,10 @@ layout: calculator
 title: Paycheck estimator
 styles:
 sidenav: calculators
-scripts: /assets/js/calculator/javascriptTaxTable.js
+scripts:
+  - /assets/js/calculator/javascriptTaxTable.js
+  - /assets/js/jquery.min.js
+  - /assets/js/responsive-comparison-table-paycheck.js
 permalink: /calculators/paycheck-estimator/
 calculator-name:
 progress-steps: [Retirement system,Paycheck information,Contribution election,Results]
@@ -12,8 +15,9 @@ panel-names:
 
 Static code version.
 
-<!-- PANEL 1 -->
 <form>
+
+<!-- PANEL 1 -->
 <code> panel-1 </code>
 <section id="panel-1" class="calculator-panel">
   <div class="panel-form-field" >
@@ -89,8 +93,8 @@ Static code version.
   <div class="usa-input-error">
   <label class="usa-input-error-label" for="repayTime" aria-details="panel-2.1">Gross pay per paycheck:</label>
   <span class="usa-input-error-message" id="grossPay-message" role="alert">Your gross pay per paycheck is required.</span>
-  <span data-format="$" class="input-symbol-left">
-  <input id="grossPay" class="" type="text" maxlength="6" onchange="grossPayGood();" onblur="grossPayGood();" name="grossPay" aria-describedby="grossPay-message">.00
+  <span data-format="$" class="input-symbol-left whole-number">
+  <input id="grossPay" class="" type="number" maxlength="6" onchange="grossPayGood();" onblur="grossPayGood();" name="grossPay" aria-describedby="grossPay-message">
   </span>
   </div><!-- end div.usa-input-error -->
 
@@ -216,16 +220,16 @@ Static code version.
 
   <!-- 2.6 PRE-TAX DEDUCTIONS -->
   <label for="additionalWithholding">Pre-tax deductions:</label>
-  <span data-format="$" class="input-symbol-left">
+  <span data-format="$" class="input-symbol-left whole-number">
   <input
     id="beforeDeduction"
     class=""
-    type="text"
+    type="number"
     name="beforeDeduction"
     value=""
     maxlength="6"
     onblur="beforeDeductionGood();">
-    </span> .00
+    </span>
 
   <!-- Explain this -->
   <ul class="usa-accordion explain-this">
@@ -243,16 +247,16 @@ Static code version.
 
   <!-- 2.7 OTHER PAYROLL DEDUCTIONS  -->
   <label for="additionalWithholding">Other payroll deductions:</label>
-  <span data-format="$" class="input-symbol-left">
+  <span data-format="$" class="input-symbol-left whole-number">
   <input
     id="afterDeduction"
     class=""
-    type="text"
+    type="number"
     name="afterDeduction"
     value=""
     maxlength="6"
     onblur="afterDeductionGood();">
-    </span> .00
+    </span>
 
   <ul class="usa-accordion explain-this">
   <li>
@@ -303,43 +307,43 @@ Pre-tax deductions
 <fieldset>
   <legend class="sr-only">Pre-tax deductions</legend>
   <label for="pre1">Federal Employee Health Benefits (FEHB):</label>
-  <span data-format="$" class="input-symbol-left">
+  <span data-format="$" class="input-symbol-left whole-number">
   <input
   maxlength="7"
-  type="text"
+  type="number"
   id="pre1"
   name="pre1"
-  onblur="getDeTotal('', 'pre', false);">.00
+  onblur="getDeTotal('', 'pre', false);">
   </span>
 
   <label for="pre2">Health Benefits (dental and vision):</label>
-  <span data-format="$" class="input-symbol-left">
+  <span data-format="$" class="input-symbol-left whole-number">
   <input
   maxlength="7"
-  type="text"
+  type="number"
   id="pre2"
   name="pre2"
-  onblur="getDeTotal('', 'pre', false);">.00
+  onblur="getDeTotal('', 'pre', false);">
   </span>
 
   <label for="pre3">Flexible Spending Account (FSA):</label>
-  <span data-format="$" class="input-symbol-left">
+  <span data-format="$" class="input-symbol-left whole-number">
   <input
   maxlength="7"
-  type="text"
+  type="number"
   id="pre3"
   name="pre3"
-  onblur="getDeTotal('', 'pre', false);">.00
+  onblur="getDeTotal('', 'pre', false);">
   </span>
 
   <label for="pre4">Other / Misc:</label>
-  <span data-format="$" class="input-symbol-left">
+  <span data-format="$" class="input-symbol-left whole-number">
   <input
   maxlength="7"
-  type="text"
+  type="number"
   id="pre4"
   name="pre4"
-  onblur="getDeTotal('', 'pre', false);">.00
+  onblur="getDeTotal('', 'pre', false);">
   </span>
 </fieldset>
 </div><!-- END div#deductions-pre-tax-->
@@ -356,193 +360,193 @@ Other payroll deductions
 <fieldset>
 <legend class="sr-only">Other payroll deductions</legend>
 <label for="post1">Social Security Tax (OASDI):</label>
-<span data-format="$" class="input-symbol-left">
+<span data-format="$" class="input-symbol-left whole-number">
 <input
 maxlength="7"
-type="text"
+type="number"
 id="post1"
 name="post1"
-onblur="getDeTotal('', 'post', false);">.00
+onblur="getDeTotal('', 'post', false);">
 </span>
 
 <label for="post2">Medicare Tax:</label>
-<span data-format="$" class="input-symbol-left">
+<span data-format="$" class="input-symbol-left whole-number">
 <input
 maxlength="7"
-type="text"
+type="number"
 id="post2"
 name="post2"
-onblur="getDeTotal('', 'pre', false);">.00
+onblur="getDeTotal('', 'pre', false);">
 </span>
 
 <label for="post3">State Tax:</label>
-<span data-format="$" class="input-symbol-left">
+<span data-format="$" class="input-symbol-left whole-number">
 <input
 maxlength="7"
-type="text"
+type="number"
 id="post3"
 name="post3"
-onblur="getDeTotal('', 'pre', false);">.00
+onblur="getDeTotal('', 'pre', false);">
 </span>
 
 <label for="post4">County Tax:</label>
-<span data-format="$" class="input-symbol-left">
+<span data-format="$" class="input-symbol-left whole-number">
 <input
 maxlength="7"
-type="text"
+type="number"
 id="post4"
 name="post4"
-onblur="getDeTotal('', 'pre', false);">.00
+onblur="getDeTotal('', 'pre', false);">
 </span>
 
 <label for="post5">City Tax:</label>
-<span data-format="$" class="input-symbol-left">
+<span data-format="$" class="input-symbol-left whole-number">
 <input
 maxlength="7"
-type="text"
+type="number"
 id="post5"
 name="post5"
-onblur="getDeTotal('', 'post', false);">.00
+onblur="getDeTotal('', 'post', false);">
 </span>
 
 <label for="post6">Local Tax:</label>
-<span data-format="$" class="input-symbol-left">
+<span data-format="$" class="input-symbol-left whole-number">
 <input
 maxlength="7"
-type="text"
+type="number"
 id="post6"
 name="post6"
-onblur="getDeTotal('', 'pre', false);">.00
+onblur="getDeTotal('', 'pre', false);">
 </span>
 
 <label for="post7">Long Term Care Insurance (LTC):</label>
-<span data-format="$" class="input-symbol-left">
+<span data-format="$" class="input-symbol-left whole-number">
 <input
 maxlength="7"
-type="text"
+type="number"
 id="post7"
 name="post7"
-onblur="getDeTotal('', 'pre', false);">.00
+onblur="getDeTotal('', 'pre', false);">
 </span>
 
 <label for="post8">Federal Employees' Group Life Insurance (FEGLI):</label>
-<span data-format="$" class="input-symbol-left">
+<span data-format="$" class="input-symbol-left whole-number">
 <input
 maxlength="7"
-type="text"
+type="number"
 id="post8"
 name="post8"
-onblur="getDeTotal('', 'pre', false);">.00
+onblur="getDeTotal('', 'pre', false);">
 </span>
 
 <label for="post9">Garnishments / Debt Repayments:</label>
-<span data-format="$" class="input-symbol-left">
+<span data-format="$" class="input-symbol-left whole-number">
 <input
 maxlength="7"
-type="text"
+type="number"
 id="post9"
 name="post9"
-onblur="getDeTotal('', 'post', false);">.00
+onblur="getDeTotal('', 'post', false);">
 </span>
 
 <label for="post10">Tax Levy:</label>
-<span data-format="$" class="input-symbol-left">
+<span data-format="$" class="input-symbol-left whole-number">
 <input
 maxlength="7"
-type="text"
+type="number"
 id="post10"
 name="post10"
-onblur="getDeTotal('', 'pre', false);">.00
+onblur="getDeTotal('', 'pre', false);">
 </span>
 
 <label for="post11">TSP Loan:</label>
-<span data-format="$" class="input-symbol-left">
+<span data-format="$" class="input-symbol-left whole-number">
 <input
 maxlength="7"
-type="text"
+type="number"
 id="post11"
 name="post11"
-onblur="getDeTotal('', 'pre', false);">.00
+onblur="getDeTotal('', 'pre', false);">
 </span>
 
 <label for="post12">Allotments:</label>
-<span data-format="$" class="input-symbol-left">
+<span data-format="$" class="input-symbol-left whole-number">
 <input
 maxlength="7"
-type="text"
+type="number"
 id="post12"
 name="post12"
-onblur="getDeTotal('', 'pre', false);">.00
+onblur="getDeTotal('', 'pre', false);">
 </span>
 
 <label for="post13">Retirement (not including your TSP contributions):</label>
-<span data-format="$" class="input-symbol-left">
+<span data-format="$" class="input-symbol-left whole-number">
 <input
 maxlength="7"
-type="text"
+type="number"
 id="post13"
 name="post13"
-onblur="getDeTotal('', 'post', false);">.00
+onblur="getDeTotal('', 'post', false);">
 </span>
 
 <label for="post14">Savings Bond:</label>
-<span data-format="$" class="input-symbol-left">
+<span data-format="$" class="input-symbol-left whole-number">
 <input
 maxlength="7"
-type="text"
+type="number"
 id="post14"
 name="post14"
-onblur="getDeTotal('', 'pre', false);">.00
+onblur="getDeTotal('', 'pre', false);">
 </span>
 
 <label for="post15">Charity:</label>
-<span data-format="$" class="input-symbol-left">
+<span data-format="$" class="input-symbol-left whole-number">
 <input
 maxlength="7"
-type="text"
+type="number"
 id="post15"
 name="post15"
-onblur="getDeTotal('', 'pre', false);">.00
+onblur="getDeTotal('', 'pre', false);">
 </span>
 
 <label for="post16">Union Dues:</label>
-<span data-format="$" class="input-symbol-left">
+<span data-format="$" class="input-symbol-left whole-number">
 <input
 maxlength="7"
-type="text"
+type="number"
 id="post16"
 name="post16"
-onblur="getDeTotal('', 'pre', false);">.00
+onblur="getDeTotal('', 'pre', false);">
 </span>
 
 <label for="post17">Military Service Credit Deposits:</label>
-<span data-format="$" class="input-symbol-left">
+<span data-format="$" class="input-symbol-left whole-number">
 <input
 maxlength="7"
-type="text"
+type="number"
 id="post17"
 name="post17"
-onblur="getDeTotal('', 'post', false);">.00
+onblur="getDeTotal('', 'post', false);">
 </span>
 
 <label for="post18">Civilian Service Credit Deposits:</label>
-<span data-format="$" class="input-symbol-left">
+<span data-format="$" class="input-symbol-left whole-number">
 <input
 maxlength="7"
-type="text"
+type="number"
 id="post18"
 name="post18"
-onblur="getDeTotal('', 'pre', false);">.00
+onblur="getDeTotal('', 'pre', false);">
 </span>
 
 <label for="post19">Other / Misc:</label>
-<span data-format="$" class="input-symbol-left">
+<span data-format="$" class="input-symbol-left whole-number">
 <input
 maxlength="7"
-type="text"
+type="number"
 id="post19"
 name="post19"
-onblur="getDeTotal('', 'pre', false);">.00
+onblur="getDeTotal('', 'pre', false);">
 </span>
 </fieldset>
 </div><!-- END div#deductions-other -->
@@ -696,23 +700,23 @@ Roth contributions come out of your pay **after** taxes are calculated;  you pay
           <fieldset>
             <legend><span data-term="Catch-up Contributions" class="js-glossary-toggle term term-end">Catch-up contributions</span></legend>
             <label for="catch_option1Trad" aria-details="panel-3.3">Traditional:</label>
-            <span data-format="$" class="input-symbol-left">
+            <span data-format="$" class="input-symbol-left whole-number">
             <input
               id="catch_option1Trad"
-              type="text"
+              type="number"
               name="catch_option1Trad"
               maxlength="6"
               onblur="check_amounts(true, 'ok');"
-              value="">.00
+              value="">
             </span>
             <label for="rcatch_option1Roth" aria-details="panel-3.3">Roth:</label>
-            <span data-format="$" class="input-symbol-left">
+            <span data-format="$" class="input-symbol-left whole-number">
             <input
               id="catch_option1Roth"
-              type="text"
+              type="number"
               name="catch_option1Roth"
               maxlength="6"
-              onblur="check_amounts(true, 'ok');" value="">.00
+              onblur="check_amounts(true, 'ok');" value="">
             </span>
           </fieldset>
           <!-- Explain this -->
@@ -734,7 +738,7 @@ Roth contributions come out of your pay **after** taxes are calculated;  you pay
       <!-- Scenario 2 -->
       <div class="usa-width-one-half scenario">
         <h3>Scenario 2 (optional)</h3>
-        <!-- Scenario 1, 3.1 Traditional contributions -->
+        <!-- Scenario 2, 3.1 Traditional contributions -->
         <div class="panel-form-field">
         <fieldset>
         <div class="usa-input-error">
@@ -795,7 +799,7 @@ Traditional contributions come out of your pay **before** taxes are calculated; 
         </li>
         </ul>
         </div><!-- END div.panel-form-field -->
-        <!-- Scenario 1, 3.2 Roth contributions -->
+        <!-- Scenario 2, 3.2 Roth contributions -->
         <div class="panel-form-field">
           <fieldset>
           <div class="usa-input-error">
@@ -855,28 +859,28 @@ Roth contributions come out of your pay **after** taxes are calculated;  you pay
           </li>
           </ul>
         </div><!-- END div.panel-form-field -->
-        <!-- Scenario 1, 3.3 Catch-up contributions -->
+        <!-- Scenario 2, 3.3 Catch-up contributions -->
         <div class="panel-form-field">
           <fieldset>
             <legend><span data-term="Catch-up Contributions" class="js-glossary-toggle term term-end">Catch-up contributions</span></legend>
             <label for="catch_option2Trad" aria-details="panel-3.3">Traditional:</label>
-            <span data-format="$" class="input-symbol-left">
+            <span data-format="$" class="input-symbol-left whole-number">
             <input
               id="catch_option2Trad"
-              type="text"
+              type="number"
               name="catch_option2Trad"
               maxlength="6"
               onblur="check_amounts(true, 'ok');"
-              value="">.00
+              value="">
             </span>
             <label for="rcatch_option2Roth" aria-details="panel-3.3">Roth:</label>
-            <span data-format="$" class="input-symbol-left">
+            <span data-format="$" class="input-symbol-left whole-number">
             <input
               id="catch_option2Roth"
-              type="text"
+              type="number"
               name="catch_option2Roth"
               maxlength="6"
-              onblur="check_amounts(true, 'ok');" value="">.00
+              onblur="check_amounts(true, 'ok');" value="">
             </span>
           </fieldset>
           <!-- Explain this -->
@@ -939,14 +943,151 @@ View the [Rates of return]({{ site.baseurl }}/fund-performance/). Past performan
   </ul>
 </section>
 
-
 <!-- PANEL 4 -->
 <code> panel-4 </code>
-<section id="panel-4" class="calculator-panel">
-<div class="panel-form-field">
+<section id="panel-4" class="calculator-panel comparison paycheck">
+
 <h2>TSP Contributions Per Paycheck</h2>
 
-</div><!-- END div.panel-form-field -->
+<ul class="table-header-buttons">
+  <li class="bg-blue active">
+    <button type="button">Scenario 1</button>
+  </li>
+  <li class="bg-blue">
+    <button type="button">Scenario 2</button>
+  </li>
+</ul>  
+
+<table>
+  <thead>
+    <tr>
+      <th class="hide w"></th>
+      <th class="bg-blue default">Scenario 1</th>
+      <th class="bg-blue">Scenario 2</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td colspan="3" class="sep">
+        <div class="flex space-between"><span>Paycheck results</span> <a href="javascript:void(0);">Adjust <i class="fal fa-sliders-v"></i></a></div>
+      </td>
+    </tr>
+    <tr>
+      <td>Gross pay per paycheck</td>
+      <td class="default"><span>$2,000.00</span></td>
+      <td><span>$2,000.00</span></td>
+    </tr>
+    <tr>
+      <td>Your Traditional (Pre-Tax) Contribution</td>
+      <td class="default"><span>-$200.00</span></td>
+      <td><span>-$0.00</span></td>
+    </tr>
+    <tr>
+      <td>Your Roth (After-Tax) Contribution</td>
+      <td class="default"><span>-$200.00</span></td>
+      <td><span>-$0.00</span></td>
+    </tr>
+    <tr>
+      <td>Your Traditional Catch-Up Contribution</td>
+      <td class="default"><span>-$0.00</span></td>
+      <td><span>-$0.00</span></td>
+    </tr>
+    <tr>
+      <td>Your Roth Catch-Up Contribution</td>
+      <td class="default"><span>-$0.00</span></td>
+      <td><span>-$0.00</span></td>
+    </tr>
+    <tr>
+      <td>Federal Income Taxes</td>
+      <td class="default"><span>-$146.62</span></td>
+      <td><span>-$170.62</span></td>
+    </tr>
+    <tr>
+      <td>Additional Federal Tax Withholding</td>
+      <td class="default"><span>-$0.00</span></td>
+      <td><span>-$0.00</span></td>
+    </tr>
+    <tr>
+      <td>Other Taxes and Payroll Deductions</td>
+      <td class="default"><span>-$0.00</span></td>
+      <td><span>-$0.00</span></td>
+    </tr>
+    <tr>
+      <td>Total Amount Deducted From Your Pay</td>
+      <td class="default"><span><strong>-$546.62</strong></span></td>
+      <td><span><strong>-$170.62</strong></span></td>
+    </tr>
+    <tr class="emphasis">
+      <td>Net Paycheck</td>
+      <td class="default"><span>$1,453.38</span></td>
+      <td><span>$1,829.38</span></td>
+    </tr>
+    <tr>
+      <td colspan="3" class="sep"><div class="flex space-between"><span>Contributions summary</span> <a href="javascript:void(0);">Adjust <i class="fal fa-sliders-v"></i></a></div></td>
+    </tr>
+    <tr>
+      <td>Total Amount of Your Contribution(s)</td>
+      <td class="default"><span>$400.00</span></td>
+      <td><span>$0.00</span></td>
+    </tr>
+    <tr>
+      <td>Agency Automatic (1%) Contribution*</td>
+      <td class="default"><span>$20.00</span></td>
+      <td><span>$20.00</span></td>
+    </tr>
+    <tr>
+      <td>Agency Matching Contribution*</td>
+      <td class="default"><span>$80.00</span></td>
+      <td><span>$0.00</span></td>
+    </tr>
+    <tr class="emphasis">
+      <td>Total Contributions Increase Your TSP Account By</td>
+      <td class="default"><span>$500.00</span></td>
+      <td><span>$20.00</span></td>
+    </tr>
+  </tbody>
+</table>
+
+<ul class="usa-accordion icons">
+  <!-- PROJECTED GROWTH -->
+  <li>
+    <button
+      class="usa-accordion-button"
+      aria-expanded="true"
+      aria-controls="projected-growth">
+      Projected growth of a single contribution <i class="far fa-chart-line" aria-hidden="true"></i>
+    </button>
+    <div id="projected-growth" class="usa-accordion-content">
+      <p>The results below show how much your contribution(s) will grow over time based on a(n) 6.00% expected annual rate of return.</p>
+    <fieldset class="usa-fieldset-inputs projected-growth">
+    <legend class="">Show growth as:</legend>
+    <ul class="usa-unstyled-list">
+      <li>
+      <input type="radio" id="resultSelectorChart" name="resultSelector" value="graph" onclick="showData(0);" checked="">
+      <label for="resultSelectorChart"><strong>Graph</strong></label>
+      </li>
+
+      <li>
+      <input type="radio" id="resultSelectorTable" name="resultSelector" value="table" onclick="showData(1);">
+      <label for="resultSelectorTable"><strong>Table</strong></label>
+      </li>
+
+      <li>
+      <input type="radio" id="resultSelectorCombined" name="resultSelector" value="combined" onclick="showData(2);">
+      <label for="resultSelectorCombined"><strong>Combined</strong></label>
+      </li>
+    </ul>
+    </fieldset>
+    </div>
+  </li>
+</ul>
+
+<div id="footnotes">
+<ul class="fa-ul">
+  <li><span class="fa-li"><i class="fas fa-asterisk"></i></span>All agency contributions are deposited into the traditional balance of your TSP account regardless of whether you have chosen to make traditional or Roth employee contributions. There are no <span data-term="Agency Matching Contributions" class="js-glossary-toggle term term-end">Agency Matching Contributions</span> of <span data-term="Catch-Up Contributions" class="js-glossary-toggle term term-end">catch-up contributions</span>.</li>
+</ul>
+</div>
+
 <ul class="navigation-buttons">
   <li>
   <button class="usa-button " href="javascript:void(0);" onclick="showPanel(2); return false;">Previous</button>
@@ -955,7 +1096,10 @@ View the [Rates of return]({{ site.baseurl }}/fund-performance/). Past performan
   <button class="usa-button print" href="javascript:void(0);" onclick="doReport(); return false;">Print report</button>
   </li>
 </ul>
-</section>
+
+</section><!-- END section#panel-4 -->
+
+
 </form>
 
 DISCLAIMER: This calculator is provided for informational purposes only. It is not intended to be used as an investment advisory tool or as a guarantee of a final account balance. Please note that the results shown at the end of this calculator assume that elected contributions are made for the entire year. Results do not take into account the following Internal Revenue Code (IRC) limits: <span data-term="Elective Deferral Limit" class="js-glossary-toggle term term-end">elective deferral</span>, <span data-term="Section 415(c) Limit" class="js-glossary-toggle term term-end">section 415(c)</span>, and <span data-term="Catch-Up Contribution Limit" class="js-glossary-toggle term term-end">catch-up contribution</span>. These limits, which may change every year, determine the maximum annual amount that you and/or your employing agency can contribute to the TSP on your behalf. You can view the current year's limits on the TSP website under [News and resources]({{ site.baseurl }}/news-and-resources/).
