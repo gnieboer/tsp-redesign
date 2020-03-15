@@ -20,6 +20,10 @@ document-ready:
   # - chartResize('rates-of-return-monthly');
   - indexFundSync('rates-of-return-annual', true);
   - indexFundSync('rates-of-return-monthly', true);
+redirect_from:
+  - /InvestmentFunds/FundPerformance/returnSummary.html
+  - /InvestmentFunds/FundPerformance/monthlyReturns.html
+  - /InvestmentFunds/FundPerformance/annualReturns.html
 ---
 {% assign chartName = 'rates-of-return' %}
 # Rates of return

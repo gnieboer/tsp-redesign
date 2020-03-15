@@ -17,6 +17,8 @@ scripts:
   - /assets/js/share-price-history.js
 document-ready:
   - getSharePricesRaw('dynamic-share-price');
+redirect_from:
+  - /InvestmentFunds/FundPerformance/
 ---
 {% assign chartName = 'dynamic-share-price' %}
 

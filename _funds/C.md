@@ -3,6 +3,8 @@ permalink: /funds-individual/c-fund/
 layout: fund-details
 title: C fund
 sidenav: fund-options
+redirect_from:
+  - /InvestmentFunds/FundOptions/fundPerformance_C.html
 Fund_type: Index
 Fund_name: C Fund
 Fund_order: 3

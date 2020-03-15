@@ -5,6 +5,8 @@ sidenav: news-and-resources
 styles:
 scripts:
 permalink: /news-and-resources/newsletters/
+redirect_from:
+  - /forms/newsletterArchive.html
 ---
 
 # Newsletters

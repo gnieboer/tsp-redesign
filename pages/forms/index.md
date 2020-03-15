@@ -17,6 +17,20 @@ permalink: /forms/
 document-ready:
   - addFormModals();
   - setTopic('select-forms-topic');
+redirect_from:
+  - /forms/civilianForms.html
+  - /forms/uniformedServicesForms.html
+  - /forms/allPublications.html
+  - /forms/addressNameChange.html
+  - /forms/beneficiaryParticipants.html
+  - /forms/contributions.html
+  - /forms/deathBenefits.html
+  - /forms/generalInformation.html
+  - /forms/investments.html
+  - /forms/legalDocuments.html
+  - /forms/loans.html
+  - /forms/transfersAndRollovers.html
+  - /forms/withdrawals.html
 ---
 
 # Help me find forms and resources about {#forms}

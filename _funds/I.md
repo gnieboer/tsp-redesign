@@ -3,6 +3,8 @@ permalink: /funds-individual/i-fund/
 layout: fund-details
 title: I fund
 sidenav: fund-options
+redirect_from:
+  - /InvestmentFunds/FundOptions/fundPerformance_I.html
 Fund_type: Index
 Fund_name: I Fund
 Fund_order: 5

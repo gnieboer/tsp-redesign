@@ -5,6 +5,8 @@ sidenav: news-and-resources
 styles:
 scripts:
 permalink: /news-and-resources/government-shutdown/
+redirect_from:
+  - /whatsnew/Content/shutdown.html
 ---
 
 # Government shutdown

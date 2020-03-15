@@ -14,6 +14,8 @@ document-ready:
   - clickFund(2);
   - clickFund(3);
   - groupFundAnnualReturns('Lfunds');
+redirect_from:
+  - /InvestmentFunds/FundOptions/
 ---
 
 # Lifecycle funds

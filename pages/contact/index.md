@@ -2,6 +2,8 @@
 layout: page
 title: Contact
 permalink: /contact/
+redirect_from:
+  - /ParticipantSupport/Content/contact/
 ---
 # We're here to help.
 

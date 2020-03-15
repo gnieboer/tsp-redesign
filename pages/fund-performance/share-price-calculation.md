@@ -5,6 +5,8 @@ layout: page
 permalink: /fund-performance/share-price-calculation/
 styles:
 scripts:
+redirect_from:
+  - /InvestmentFunds/FundsOverview/sharePriceCalculation.html
 ---
 # Share price calculation
 The value of your TSP account is determined each business day based on the daily share price and the number of shares you hold in each fund.
