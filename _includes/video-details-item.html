@@ -10,9 +10,14 @@ Duration: <span id="{{video.video_id}}-duration">{{ video.video_duration }}</spa
 
 <span id="{{video.video_id}}-description">{{ video.video_description }}</span>
 
+{% if video.video_categories %}
 Categories:
-{{ video.video_categories }}
-{:.categories}
+<ul id="{{video.video_id}}-categories" class="categories">
+{% for vid in video.video_categories %}
+<li><a onClick="doVideoSearch('{{vid}}');">{{vid}}</a></li>
+{% endfor %}
+</ul>
+{% endif %}
 
 </div>
 </li>

@@ -51,6 +51,7 @@ Videos
 <label for="browse-titles" class="usa-sr-only">Search videos</label>
 <input type="text" name="query" id="browse-titles" autocomplete="off" placeholder="&#xf002; Search videos"
   onKeyUp="videoOnKeyUp();">
+  <span onClick="doVideoSearch('');"><i class="fa fa-remove"></i></span>
 </div>
 
 {% include video-list.html %}

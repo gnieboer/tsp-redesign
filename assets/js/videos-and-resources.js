@@ -5,7 +5,7 @@ function onPlayerReady(event) {
 function showVideo(vidCode) {
   $('.video-details').hide();
   $('#'+vidCode+'-block').show();
-  console.log('show '+vidCode);
+  // console.log('show '+vidCode);
   // $('#video-iframe').attr("src", "https://www.youtube.com/embed/"+vidCode+"&rel=0")
   // $('#video-iframe').attr("src", "https://www.youtube.com/embed/"+vidCode);
   var ytURL = "https://www.youtube.com/embed/";
@@ -36,11 +36,18 @@ function initVideoList() {
   inlineUSAsearch('videos', 'search-status', 'beta.tsp', 'video', 'tsp', 1, 0, videoSearchCallback);
 }
 
+function doVideoSearch(term) {
+  // console.log(term);
+  $('#browse-titles').val(term);
+  videoOnKeyUp();
+}
+
 var keyHash = {};
 var vidKeys = [];
 var vidTitles = [];
 var vidDescs = [];
 var vidTrans = [];
+var vidCats = [];
 
 function clearVidArrays() {
   keyHash = {};
@@ -48,6 +55,7 @@ function clearVidArrays() {
   vidTitles = [];
   vidDescs = [];
   vidTrans = [];
+  vidCats = [];
 }
 
 function addToVidArrays(key, result) {
@@ -59,6 +67,7 @@ function addToVidArrays(key, result) {
     // $('#'+vidCode+'-description').html(formatSnippet(results.snippet));
     vidDescs.push($('#'+key+'-description').text().toUpperCase());
     vidTrans.push($('#'+key+'-transcript').text().toUpperCase());
+    vidCats.push($('#'+key+'-categories').text().toUpperCase());
   }
 
 }
@@ -74,7 +83,7 @@ function videoSearchCallback(searchName, returnedJSON, offset) {
   var tmp;
   clearVidArrays();
 
-  console.log(returnedJSON);
+  // console.log(returnedJSON);
   results = returnedJSON.video.results;
   resultsTotal = returnedJSON.video.total;
   totalHits = resultsTotal;
@@ -131,6 +140,10 @@ function strInTran(str, idx) {
   if (vidTrans[idx].includes(str)) { return true; }
   return false;
 }
+function strInCat(str, idx) {
+  if (vidCats[idx].includes(str)) { return true; }
+  return false;
+}
 function showVideoTitles(str) {
   uStr = str.toUpperCase();
   if (uStr == '') {
@@ -143,7 +156,7 @@ function showVideoTitles(str) {
   }
   // str has a value, use it as a search key
   for (var i = 0; i < vidKeys.length; i++) {
-    if (strInTitle(uStr,i)||strInDesc(uStr,i)||strInTran(uStr,i)) {
+    if (strInTitle(uStr,i)||strInDesc(uStr,i)||strInTran(uStr,i)||strInCat(uStr,i)) {
       $('#show-'+vidKeys[i]).show();
     } else {
       $('#show-'+vidKeys[i]).hide();
