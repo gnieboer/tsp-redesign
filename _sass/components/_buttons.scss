@@ -1,39 +1,59 @@
 button,
 .usa-button {
   border-radius: 0;
-  &.print {
-    &:after {
-      font-family: $font-awesome;
-      content: "\f02f";
-      font-weight: $light;
-      padding-left: .5rem;
-    }
-  }
 
-  &.clear {
-    &:after {
-      font-family: $font-awesome;
-      content: "\f55a";
-      font-weight: $light;
-      padding-left: .5rem;
+    &.print {
+      &:after {
+        font-family: $font-awesome;
+        content: "\f02f";
+        font-weight: $light;
+        padding-left: .5rem;
+      }
     }
-  }
 
-  &.save {
-    &:after {
-      font-family: $font-awesome;
-      content: "\f0c7";
-      font-weight: $light;
-      padding-left: .5rem;
-    }
-  }
+    &.calculate {
+      &:after {
+        font-family: $font-awesome;
+        content: "\f1ec";
+        font-weight: $light;
+        padding-left: .5rem;
 
-  &.previous {
-    &:after {
-      // font-family: $font-awesome;
-      // content: "";
-      // font-weight: $light;
-      // padding-left: .5rem;
+      }
     }
-  }
+
+    &.clear {
+      &:after {
+        font-family: $font-awesome;
+        content: "\f55a";
+        font-weight: $light;
+        padding-left: .5rem;
+      }
+    }
+
+    &.save {
+      &:after {
+        font-family: $font-awesome;
+        content: "\f0c7";
+        font-weight: $light;
+        padding-left: .5rem;
+      }
+    }
+
+    &.start {
+      &:after {
+        // font-family: $font-awesome;
+        // content: "\f144";
+        // font-weight: $light;
+        // padding-left: .5rem;
+      }
+    }
+
+    &.previous {
+      &:after {
+        // font-family: $font-awesome;
+        // content: "";
+        // font-weight: $light;
+        // padding-left: .5rem;
+      }
+    }
 }
