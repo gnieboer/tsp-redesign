@@ -8,6 +8,8 @@ permalink: /calculators/tsp-installment-payment-calculator/
 calculator-name:
 progress-steps:
 panel-names:
+redirect_from:
+  - /PlanningTools/Calculators/installmentPayCalc.html
 ---
 
 This version is still under development.

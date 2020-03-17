@@ -11,6 +11,8 @@ bottom-scripts: /assets/js/ajaxFetch.js
 document-ready:
   - groupFundAnnualReturns('Lfunds');
   - groupFundAnnualReturns('Index');
+redirect_from:
+  - /PlanParticipation/BeneficiaryParticipants/administrativeExpenses.html
 ---
 
 # Administrative costs
@@ -50,7 +52,7 @@ Expense ratios may also be expressed in basis points. One basis point is 1/100th
 {% assign rowString = "YTD|Year-to-date, 1YR|1-year, 3YR|3-year, 5YR|5-year, 10YR|10-year, Life|Life" %}
 {% assign rows = rowString | split: ', ' %}
 
-<ul class="funds-lifecycle table-header-buttons">
+<ul class="funds-lifecycle">
 {% for fund in sorted %}
   <li{% if forloop.index == 3 %} class="active"{% endif %}>
     <button type="button">{{ fund.Fund_name }}</button>
@@ -118,7 +120,7 @@ Expense ratios may also be expressed in basis points. One basis point is 1/100th
 ## Individual funds
 {% include components/get_sorted_fund_list funds='Individual' reverse=false %}
 
-<ul class="funds-individual table-header-buttons">
+<ul class="funds-individual">
 {% for fund in sorted %}
   <li{% if forloop.index == 3 %} class="active"{% endif %}>
     <button type="button">{{ fund.Fund_name }}</button>

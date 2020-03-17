@@ -8,6 +8,8 @@ permalink: /calculators/estimate-loan-payments/
 calculator-name:
 progress-steps: [Loan details,Results]
 panel-names:
+redirect_from:
+  - /PlanningTools/Calculators/loanPayments.html
 ---
 
 Working version.

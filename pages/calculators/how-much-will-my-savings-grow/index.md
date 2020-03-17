@@ -8,6 +8,8 @@ permalink: /calculators/how-much-will-my-savings-grow/
 calculator-name:
 progress-steps: [Introduction,Savings growth information,Savings growth estimate]
 panel-names:
+redirect_from:
+  - /PlanningTools/Calculators/howSavingsGrow.html
 ---
 
 Static code version.

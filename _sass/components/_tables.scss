@@ -181,59 +181,69 @@ section {
 // RESPONSIVE COMPARISON: Administrative costs
 // Dependencies: /assets/js/jquery.min.js, responsive-comparison-table.js
 section.comparison,
-section.comparison.paycheck {
-  ul.table-header-buttons {
-    display:flex;
-    top:0px;
-    z-index:10;
-    padding-bottom:14px;
-    padding-left: 0;
-    margin-top: 0;
-    margin-bottom: 0;
-    max-width: 100% !important;
+section.comparison.paycheck,
+section.comparison.contribution-comparison-calculator {
+  ul {
 
-    li {
-      list-style:none;
-      flex:1;
+    &.table-header-buttons,
+    &.funds-lifecycle,
+    &.funds-individual
+    {
+      display:flex;
+      top:0px;
+      z-index:10;
+      padding-bottom:14px;
+      padding-left: 0;
+      margin-top: 0;
       margin-bottom: 0;
-      &:last-child {
-        border-right:1px solid #DDD;
-      }
-    }
+      max-width: 100% !important;
 
-    button {
-      &[type="button"] {
-        width:100%;
-        border: 1px solid #DDD;
-        border-right:0;
-        border-top:0;
-        padding: 10px;
-        margin: 0 0;
-        background:#FFF;
-        font-size:14px;
-        font-weight:bold;
-        height:60px;
-        color:#999;
-        border-radius: 0;
-      }
-
-    }
-    li {
-      button {
-        &[type="button"] {
-          background:#F5F5F5;
-          color:#000;
-          border-top:3px solid #0097CF;
+      li {
+        list-style:none;
+        flex:1;
+        margin-bottom: 0;
+        &:last-child {
+          border-right:1px solid #DDD;
         }
       }
-    }
-    li.active {
+
       button {
         &[type="button"] {
-          border-top:3px solid #A32362;
+          width:100%;
+          border: 1px solid #DDD;
+          border-right:0;
+          border-top:0;
+          padding: 10px;
+          margin: 0 0;
+          background:#FFF;
+          font-size:14px;
+          font-weight:bold;
+          height:60px;
+          color:#999;
+          border-radius: 0;
+        }
+
+      }
+
+      li {
+        button {
+          &[type="button"] {
+            background:#F5F5F5;
+            color:#000;
+            border-top:3px solid #0097CF;
+          }
         }
       }
-    }
+
+      li.active {
+        button {
+          &[type="button"] {
+            border-top:3px solid #A32362;
+          }
+        }
+      }
+
+    } // END &.table-header-buttons, &.funds-lifecycle, &.funds-individual
   } // END ul
 
   table {
@@ -273,7 +283,8 @@ section.comparison.paycheck {
   }
 
 
-  .sep {
+  .sep,
+  .compare-two {
     background:#F5F5F5;
     font-weight:bold;
   }
@@ -301,24 +312,24 @@ section.comparison.paycheck {
     }
   }
 
-} // end section.comparison, section.comparison.paycheck
+  &.paycheck,
+  &.contribution-comparison-calculator {
+    table {
 
-section.comparison.paycheck {
-  table {
+      .w { width: 32rem;}
 
-    .w { width: 32rem;}
-
-    tr.emphasis {
-      td+td {
-        font-size: 3rem;
+      tr.emphasis {
+        td+td {
+          font-size: 3rem;
+        }
       }
-    }
 
-    td+td { // Omits the first <td> following a <tr>; every <td> that follows a <td>
-      text-align: right;
-      padding-right: 1rem;
-      display:none;
-    }
+      td+td { // Omits the first <td> following a <tr>; every <td> that follows a <td>
+        text-align: right;
+        padding-right: 1rem;
+        // display:none;
+      }
 
-  }
-} // end section.comparison.paycheck
+    }
+  } // end &.paycheck, &.contribution-comparison-calculator
+} // end section.comparison

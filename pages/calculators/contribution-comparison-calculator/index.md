@@ -3,28 +3,39 @@ layout: calculator
 title: Contribution comparison calculator
 styles:
 sidenav: calculators
-scripts: /assets/js/calculator/javascriptTaxTable.js
+scripts:
+  - /assets/js/calculator/javascriptTaxTable.js
+  - /assets/js/jquery.min.js
+  - /assets/js/responsive-comparison-table.js
 permalink: /calculators/contribution-comparison-calculator/
 calculator-name:
 progress-steps: [Introduction,Retirement profile,Results]
 panel-names:
+redirect_from:
+  - /PlanningTools/Calculators/contributionComparison.html
 ---
 
+<form>
+<!-- PANEL 1 -->
+<code> panel-1 </code>
+<section id="panel-1" class="calculator-panel" markdown="1">
 The Contribution comparison calculator helps you assess how the tax treatment choice you make for your employee contributions affects your paycheck. With Roth TSP contributions, you make contributions with after-tax income by paying taxes up front. During retirement, you receive <span data-term="Qualified Earnings" class="js-glossary-toggle term term-end">qualified Roth distributions</span> tax-free. The traditional TSP lets you make contributions before taxes are taken out of your income and then pay taxes on withdrawals.
 
 This calculator provides a side-by-side comparison of traditional and Roth contributions to help you assess whether Roth TSP might be right for you. Keep in mind you may choose to contribute all, some, or none of your contributions to the Roth TSP. If contributing to both Roth and traditional balances within your TSP account, your combined contributions cannot exceed the <span data-term="elective deferral limit" class="js-glossary-toggle term term-end">elective deferral limit</span>.
 
 Note that the calculator results are based on the limited information captured. You should consult a qualified tax or financial advisor to further assess your individual situation.
 
+
 <ul class="navigation-buttons">
 <button id="EC46AE22-Tab1Continue" class="usa-button start" href="javascript:void(0);">Get started</button>
 </ul>
+</section><!-- END section#panel-1 -->
 
-<form>
 
-<!-- PANEL 1 -->
-<code> panel-1 </code>
-<section id="panel-1" class="calculator-panel">
+
+<!-- PANEL 2 -->
+<code> panel-2 </code>
+<section id="panel-2" class="calculator-panel">
   <div class="panel-form-field" >
 
   <!-- 1. How many years until you retire? -->
@@ -181,34 +192,6 @@ Note that the calculator results are based on the limited information captured. 
   </ul>
   </fieldset>
 
-  <!-- <fieldset>
-  <legend class="sr-only">Growth model</legend>
-  <label for="paycheckImpact" aria-details="panel-2.9">Show equal paycheck impact (amount deducted) for Roth and traditional contributions.</label>
-
-  <ul class="usa-unstyled-list">
-    <li>  
-      <input
-        type="radio"
-        id="showYes"
-        name="paycheckImpact"
-        value="showYes"
-        onclick="">
-        <label for="showYes">Yes</label>
-    </li>  
-    <li>
-      <input
-        type="radio"
-        checked
-        id="showNo"
-        name="paycheckImpact"
-        value="showNo"
-        onclick="">
-        <label for="showNo">No</label>
-    </li>
-  </ul>
-
-  </fieldset> -->
-
   <!-- Explain this -->
   <ul class="usa-accordion explain-this">
   <li>
@@ -222,12 +205,6 @@ Note that the calculator results are based on the limited information captured. 
   </div>
   </li>
   </ul>
-
-
-
-
-
-
 </div><!-- END div.panel-form-field -->
 
 <ul class="navigation-buttons">
@@ -237,6 +214,118 @@ Note that the calculator results are based on the limited information captured. 
 </span>
 </ul>
 
-</section> <!-- end section#panel-1 -->
+</section> <!-- end section#panel-2 -->
+
+<!-- PANEL 3 -->
+<code> panel-3 </code>
+<section id="panel-3" class="calculator-panel comparison contribution-comparison-calculator">
+
+<h2>Effect on your paycheck</h2>
+
+<ul class="table-header-buttons">
+  <li class="bg-blue active">
+    <button type="button">Traditional</button>
+  </li>
+  <li class="bg-blue">
+    <button type="button">Roth</button>
+  </li>
+</ul>  
+
+<table>
+  <thead>
+    <tr>
+      <th class="hide w"></th>
+      <th class="bg-blue default">Traditional</th>
+      <th class="bg-blue">Roth</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td colspan="3" class="compare-two">
+        <div class="flex space-between"><span>Effect on your paycheck</span> <a href="javascript:void(0);">Adjust <i class="fal fa-sliders-v"></i></a></div>
+      </td>
+    </tr>
+    <tr>
+      <td>Gross pay per paycheck</td>
+      <td class="default"><span>$650.38</span></td>
+      <td><span>$730.77</span></td>
+    </tr>
+    <tr>
+      <td>Gross pay per year</td>
+      <td class="default"><span>$16,910.00</span></td>
+      <td><span>$19,000.00</span></td>
+    </tr>
+    <tr>
+      <td>Contribution percentage</td>
+      <td class="default"><span>19.0%</span></td>
+      <td><span>19.0%</span></td>
+    </tr>
+    <tr>
+      <td>Your contribution per check</td>
+      <td class="default"><span>$730.77</span></td>
+      <td><span>$730.77</span></td>
+    </tr>
+    <tr>
+      <td>Your contributions per year</td>
+      <td class="default"><span>$19,000.00</span></td>
+      <td><span>$19,000.00</span></td>
+    </tr>
+  </tbody>
+</table>
+
+<ul class="usa-accordion">
+<li>
+<button
+class="usa-accordion-button"
+aria-expanded="true"
+aria-controls="account-balance">
+Account balance
+</button>
+<div id="account-balance" class="usa-accordion-content" markdown="1">
+
+<div style="border: 1px solid red; width: 100%" markdown="1">
+**Highchart above text.**
+
+Inline styles are for position only. Do not not duplicate.
+</div>
+
+You have chosen the same contribution percentage for Roth and traditional contributions; therefore, the Roth and traditional retirement balances will be the same. Keep in mind that your traditional TSP balance will be subject to income tax when you withdraw it, but withdrawals from your Roth balance will be tax-free provided you meet the <span data-term="Qualified Earnings" class="js-glossary-toggle term term-end">IRS requirements</span>.
+
+The benefit of having a tax-free Roth TSP balance in retirement, however, must be weighed against the rate at which those contributions were taxed during your working years and any tax benefits you may have lost out on due to your higher AGI.
+
+Predicting your tax bracket in retirement is the key to determining if Roth TSP or traditional TSP contributions are the right choice for you now.
+
+</div><!-- END div#deductions-pre-tax-->
+</li>
+
+<li>
+<button
+class="usa-accordion-button"
+aria-expanded="true"
+aria-controls="annual-income">
+Annual income
+</button>
+<div id="annual-income" class="usa-accordion-content" markdown="1">
+
+<div style="border: 1px solid red; width: 100%" markdown="1">
+**Highchart above text.**
+
+Inline styles are for position only. Do not not duplicate.
+</div>
+
+This net (after-tax) annual income comparison provides a more accurate reflection of whether you might benefit from paying taxes up front (Roth TSP) or when you withdraw your money (traditional TSP).
+
+Keep in mind that while a Roth TSP annual income stream may be higher when you withdraw your money, the benefit must be weighed against the rate at which those contributions were taxed during your working years and any tax benefits you may have lost out on due to your higher AGI.
+
+It all comes down to what tax bracket you are in now and which one you think you may fall in while in retirement. Therefore, you may wish to consult a tax advisor to assist you with your retirement planning and contribution decisions.
+</div><!-- END div#deductions-other -->
+</li>
+</ul>
+
+<ul class="navigation-buttons">
+<button id="EC46AE22-Tab1Continue" class="usa-button previous" href="javascript:void(0);">Previous</button>
+</ul>
+
+</section>
 
 </form>

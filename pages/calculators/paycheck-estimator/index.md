@@ -6,11 +6,13 @@ sidenav: calculators
 scripts:
   - /assets/js/calculator/javascriptTaxTable.js
   - /assets/js/jquery.min.js
-  - /assets/js/responsive-comparison-table-paycheck.js
+  - /assets/js/responsive-comparison-table.js
 permalink: /calculators/paycheck-estimator/
 calculator-name:
 progress-steps: [Retirement system,Paycheck information,Contribution election,Results]
 panel-names:
+redirect_from:
+  - /PlanningTools/Calculators/paycheckEstimator.html
 ---
 
 Static code version.
@@ -209,14 +211,12 @@ Static code version.
     maxlength="6"
     onblur="additionalWithholdingGood();">
     </span>
-
 </div><!-- END div.panel-form-field -->
-
 
 <div class="panel-form-field" >
   <h2 aria-details="panel-2.6">Deductions</h2>
 
-<p>Your Federal income tax amount will automatically be calculated using the current IRS withholding table, so do not include that amount in your payroll deductions.</p>
+  <p>Your Federal income tax amount will automatically be calculated using the current IRS withholding table, so do not include that amount in your payroll deductions.</p>
 
   <!-- 2.6 PRE-TAX DEDUCTIONS -->
   <label for="additionalWithholding">Pre-tax deductions:</label>
@@ -282,8 +282,8 @@ Static code version.
 </ul>
 </section>
 
-<!-- PANEL 2, part II - Dedution worksheet -->
-<code> panel-2, part II - Dedution worksheet  </code>
+<!-- PANEL 2, part II - Deduction worksheet -->
+<code> panel-2, part II - Deduction worksheet  </code>
 <section id="panel-2-worksheet" class="calculator-panel" markdown="1">
 
 ## Deductions worksheet
@@ -968,7 +968,7 @@ View the [Rates of return]({{ site.baseurl }}/fund-performance/). Past performan
   </thead>
   <tbody>
     <tr>
-      <td colspan="3" class="sep">
+      <td colspan="3" class="compare-two">
         <div class="flex space-between"><span>Paycheck results</span> <a href="javascript:void(0);">Adjust <i class="fal fa-sliders-v"></i></a></div>
       </td>
     </tr>
@@ -1023,7 +1023,7 @@ View the [Rates of return]({{ site.baseurl }}/fund-performance/). Past performan
       <td><span>$1,829.38</span></td>
     </tr>
     <tr>
-      <td colspan="3" class="sep"><div class="flex space-between"><span>Contributions summary</span> <a href="javascript:void(0);">Adjust <i class="fal fa-sliders-v"></i></a></div></td>
+      <td colspan="3" class="compare-two"><div class="flex space-between"><span>Contributions summary</span> <a href="javascript:void(0);">Adjust <i class="fal fa-sliders-v"></i></a></div></td>
     </tr>
     <tr>
       <td>Total Amount of Your Contribution(s)</td>

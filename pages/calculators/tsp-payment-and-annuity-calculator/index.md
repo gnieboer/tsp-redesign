@@ -8,6 +8,8 @@ permalink: /calculators/tsp-payment-and-annuity-calculator/
 calculator-name:
 progress-steps:
 panel-names:
+redirect_from:
+  - /PlanningTools/Calculators/retirementCalculator.html
 ---
 
 This version is still under development.
