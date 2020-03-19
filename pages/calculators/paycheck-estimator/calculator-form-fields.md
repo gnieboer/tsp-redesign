@@ -20,6 +20,7 @@ ERROR CODE
 
 
 RADIO BUTTON GROUP
+<!---->
 <fieldset>
 <div class="usa-input-error">
 <legend class="sr-only">Growth model</legend>
@@ -73,6 +74,7 @@ DROP DOWN LIST
 </div><!-- end div.usa-input-error -->
 
 CURRENCY $ INPUT
+<!---->
 <div class="usa-input-error">
 <label class="usa-input-error-label" for="repayTime" aria-details="panel-2.2">Enter the amount you already have in your TSP account:</label>
 <span class="usa-input-error-message" id="ptYears-message" role="alert">Your actual or approximate TSP account balance is required.</span>
@@ -83,18 +85,25 @@ CURRENCY $ INPUT
 
 </div>
 
-PERCENTAGE % INPUT
+CURRENCY $ INPUT, WHOLE NUMBER ONLY
+<!---->
+<span data-format="$" class="input-symbol-left **whole-number**">
 
-<label class="" for="annualPayPercent" aria-details="panel-2.2">Enter the amount you already have in your TSP account:</label>
+
+PERCENTAGE % INPUT
+<!---->
+<div class="usa-input-error">
+<label class="usa-input-error-label" for="INPUT_NAME" aria-details="OPTIONAL">LABEL TEXT:</label>
 <span data-format="%" class="input-symbol-right">
   <input
-    class=""
     maxlength="2"
     type=""
     id=""
     name=""
     onblur="">
 </span>
+</div><!-- END div.usa-input-error -->
+
 
 NUMBER INPUT (not currency, not %, NO ERROR MESSAGE)
 
