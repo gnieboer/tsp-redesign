@@ -21,6 +21,18 @@ function copyToClipboard(element) {
   tooltip.innerHTML = "Copied!";
 }
 
+function copyDivToClipboard(element) {
+  var el = document.getElementById(element);
+  var range = document.createRange();
+  range.selectNodeContents(el);
+  var sel = window.getSelection();
+  sel.removeAllRanges();
+  sel.addRange(range);
+  document.execCommand('copy');
+  console.log("Contents copied to clipboard.");
+  return false;
+}
+
 function inputToClipboard(element) {
   var $temp = $("<input>");
   $("body").append($temp);
