@@ -252,3 +252,8 @@ function searchCallback(searchName, returnedJSON, offset) {
   if (typeof addFormModals == 'function') { addFormModals(); }
   return false;
 }
+
+function searchPageLoad() {
+  var refer = location.pathname;
+  if (refer.slice(0, 14) == '/PDF/formspubs') { window.location.href = '/forms'; }
+}
