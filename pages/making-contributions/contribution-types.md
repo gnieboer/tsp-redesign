@@ -71,7 +71,7 @@ As a FERS or BRS participant, you receive matching contributions on the first 5%
 
 The first 3% of pay that you contribute will be matched dollar-for-dollar; the next 2% will be matched at 50 cents on the dollar. Contributions above 5% of your pay will not be matched. If you stop making regular employee contributions, your matching contributions will also stop.
 
-If you are FERS or BRS, your Agency/Service Matching Contributions are based on the total amount of money (traditional and Roth) that you contribute each pay period. All agency/service contributions are deposited into your traditional balance.
+If you're FERS or BRS, your Agency/Service Matching Contributions are based on the total amount of money (traditional and Roth) that you contribute each pay period. All agency/service contributions are deposited into your traditional balance.
 
 ## Catch-up Contributions
 Starting in the year you turn 50, you may be eligible to make catch-up
