@@ -63,8 +63,10 @@ Note that the calculator results are based on the limited information captured. 
   </div>
   </li>
   </ul>
+</div>
 
   <!-- 2. How many years will you spend in retirement? -->
+  <div class="panel-form-field">
   <div class="usa-input-error">
   <label class="usa-input-error-label" for="cccYearsInRetirement">How many years will you spend in retirement?</label>
   <span class="usa-input-error-message" id="cccYearsInRetirement-message" role="alert">Estimated years in retirement is required.</span>
@@ -90,8 +92,10 @@ Note that the calculator results are based on the limited information captured. 
   </div>
   </li>
   </ul>
+  </div>
 
   <!-- 3. Current annual salary -->
+  <div class="panel-form-field">
   <div class="usa-input-error">
   <label class="usa-input-error-label" for="cccSalary" aria-details="panel-2.3">Current annual salary:</label>
   <span class="usa-input-error-message" id="cccSalary-message" role="alert">Current annual salary is required.</span>
@@ -105,8 +109,10 @@ Note that the calculator results are based on the limited information captured. 
   </span>
 
   </div><!-- END div.usa-input-error -->
+  </div>
 
   <!-- 4. Expected rate of return -->
+  <div class="panel-form-field">
   <div class="usa-input-error">
   <label class="usa-input-error-label" for="cccInterestRate" aria-details="panel-2.4">Expected rate of return:</label>
   <span class="usa-input-error-message" id="cccInterestRate-message" role="alert">Expected rate of return is required.</span>
@@ -121,8 +127,10 @@ Note that the calculator results are based on the limited information captured. 
         onblur="annualPayPercentGood();">
     </span>
   </div><!-- END div.usa-input-error -->
+  </div>
 
   <!-- 5. Contributions per year, as a percentage of your salary -->
+  <div class="panel-form-field">
   <div class="usa-input-error">
   <label class="usa-input-error-label" for="cccContributions" aria-details="panel-2.5">Contributions per year, as a percentage of your salary:</label>
   <span class="usa-input-error-message" id="cccContributions-message" role="alert">This question is required.</span>
@@ -136,8 +144,10 @@ Note that the calculator results are based on the limited information captured. 
         class="EC46AE22error">
     </span>
   </div><!-- END div.usa-input-error -->
+  </div>
 
   <!-- 6. Current household tax rate -->
+  <div class="panel-form-field">
   <div class="usa-input-error">
   <label class="usa-input-error-label" for="cccTaxRateNow" aria-details="panel-2.6">Current household tax rate:</label>
   <span class="usa-input-error-message" id="cccTaxRateNow-message" role="alert">Current tax rate is required.</span>
@@ -151,8 +161,10 @@ Note that the calculator results are based on the limited information captured. 
         class="EC46AE22error">    
     </span>
   </div><!-- END div.usa-input-error -->
+  </div>
 
   <!-- 7. Estimated retirement household tax rate -->
+  <div class="panel-form-field">
   <div class="usa-input-error">
   <label class="usa-input-error-label" for="cccTaxRateLater" aria-details="panel-2.7">Estimated retirement household tax rate:</label>
   <span class="usa-input-error-message" id="cccTaxRateLater-message" role="alert">Estimated retirement tax rate is required.</span>
@@ -166,8 +178,10 @@ Note that the calculator results are based on the limited information captured. 
         class="EC46AE22error">          
     </span>
   </div><!-- END div.usa-input-error -->
+  </div>
 
   <!-- 8. Pay frequency -->
+  <div class="panel-form-field">
   <label for="cccPaychecks">Pay frequency:</label>
   <select name="cccPaychecks" id="cccPaychecks" class="">
     <option value="26" selected="selected">Biweekly (every 2 weeks, 26 times a year)</option>
@@ -175,8 +189,10 @@ Note that the calculator results are based on the limited information captured. 
     <option value="24">Semi-monthly (twice a month, 24 times a year)</option>
     <option value="12">Monthly (12 times a year)</option>
   </select>
+  </div>
 
   <!-- 9. Show equal paycheck impact -->
+  <div class="panel-form-field">
   <fieldset class="usa-fieldset-inputs show-equal">
   <legend class="usa-sr-only">Show equal paycheck impact (amount deducted) for Roth and traditional contributions.</legend>
 
@@ -286,7 +302,7 @@ Account balance
 <div style="border: 1px solid red; width: 100%" markdown="1">
 **Highchart above text.**
 
-Inline styles are for position only. Do not not duplicate.
+Inline styles are for position only. Eliminate them for production.
 </div>
 
 You have chosen the same contribution percentage for Roth and traditional contributions; therefore, the Roth and traditional retirement balances will be the same. Keep in mind that your traditional TSP balance will be subject to income tax when you withdraw it, but withdrawals from your Roth balance will be tax-free provided you meet the <span data-term="Qualified Earnings" class="js-glossary-toggle term term-end">IRS requirements</span>.
