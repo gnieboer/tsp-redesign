@@ -23,12 +23,23 @@ section.videos-and-resources {
         padding-right: 0;
         margin-top: 2rem;
       }
+
+      .categories {
+        a {
+          cursor: pointer;
+        }
+      }
     }
 
     &.search-videos,
     &.video-details {
       text-align: left;
 
+      input {
+        font-family: $font-awesome,$sans;
+        font-weight: $normal;
+
+      }
       .usa-accordion-button {
         background-color: inherit;
         color: inherit;
@@ -55,7 +66,7 @@ section.videos-and-resources {
     &.search-videos {
       border-radius: 0.5rem;
       background-color: #afb0b5;
-      background-color: $color-gray;
+      background-color: $color-gray-light;
       color: #fff;
       padding: 1.5rem 1rem;
 
