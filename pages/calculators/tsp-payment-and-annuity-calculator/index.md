@@ -113,7 +113,9 @@ For example: If your TSP account balance at retirement is $500,000, and you take
   maxlength="2"
   onblur="ageNowGood();">
 </div><!-- END div.usa-input-error -->
+</div>
 
+<div class="panel-form-field">
 <div class="usa-input-error">
 <label class="usa-input-error-label" for="ageFrom">At what age do you want to start receiving monthly income from the TSP?</label>
 <span class="usa-input-error-message" id="ageFrom-message" role="alert">Age that you want to start receiving monthly income from the TSP is required.</span>
@@ -124,7 +126,9 @@ For example: If your TSP account balance at retirement is $500,000, and you take
   maxlength="2"
   onblur="ageFromGood();">
 </div><!-- END div.usa-input-error -->
+</div>
 
+<div class="panel-form-field">
 <div class="usa-input-error">
 <label class="usa-input-error-label" for="ageToLive" aria-details="panel-3.1">To what age do you expect to live?</label>
 <span class="usa-input-error-message" id="ageToLive-message" role="alert">Age to which you expect to live is required.</span>
@@ -149,7 +153,9 @@ Explain this
 </div>
 </li>
 </ul>
+</div>
 
+<div class="panel-form-field">
 <div class="usa-input-error">
 <label class="usa-input-error-label" for="birthMonth">Month in which you were born:</label>
 <span class="usa-input-error-message" id="birthMonth-message" role="alert">Birth month is required.</span>
@@ -184,8 +190,8 @@ Explain this
 <!-- PANEL 4 -->
 <code> panel 4: Monthly income </code>
 <section id="panel-4" class="calculator-panel" markdown="1">
-<div class="panel-form-field">
 
+<div class="panel-form-field">
 <div class="usa-input-error">
 <label class="usa-input-error-label" for="amountToReceive">What amount do you want to receive each month?</label>
 <span class="usa-input-error-message" id="amountToReceive-message" role="alert">You must request to receive at least $25 a month.</span>
@@ -198,7 +204,9 @@ Explain this
   onblur="amountToReceiveGood();">
 </span>
 </div>
+</div>
 
+<div class="panel-form-field">
 <div class="usa-input-error">
 <label class="usa-input-error-label" for="rateOfReturn" aria-details="panel-4.1">Expected or estimated rate of return (e.g., 5%):</label>
 <span class="usa-input-error-message" id="rateOfReturn-message" role="alert">Rate of return is required. Enter &#8220;0&#8221; for no rate of return.</span>
@@ -233,7 +241,6 @@ On the other hand, as you are drawing down your account balance, you should be c
 </div>
 </li>
 </ul>
-
 </div><!-- END div.panel-form-field -->
 
 <ul class="navigation-buttons">
@@ -252,7 +259,6 @@ On the other hand, as you are drawing down your account balance, you should be c
 <section id="panel-5" class="calculator-panel" markdown="1">
 
 <div class="panel-form-field">
-
 <fieldset>
 <div class="usa-input-error">
 <legend class="sr-only">Do you have a dependent?</legend>
@@ -280,9 +286,11 @@ On the other hand, as you are drawing down your account balance, you should be c
 </ul>
 </div><!-- end div.usa-input-error -->
 </fieldset>
+</div>
 
 <!-- If Dependent = Yes -->
 <!-- DAV: this fieldset should be hidden until user clicks "yes" in question above. -->
+<div class="panel-form-field">
 <fieldset>
 <div class="usa-input-error">
 <legend class="sr-only">What is your relationship to your dependent?</legend>
@@ -326,7 +334,9 @@ A joint annuitant other than your spouse must be either a former spouse or someo
 </div>
 </li>
 </ul>
+</div>
 
+<div class="panel-form-field">
 <div class="usa-input-error">
 <label class="usa-input-error-label" for="dependentAge">What is your joint annuitant's (spouse or other survivor) current age?</label>
 <span class="usa-input-error-message" id="dependentAge-message" role="alert">Your joint annuitant's current age is required.</span>
