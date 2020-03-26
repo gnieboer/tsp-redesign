@@ -29,4 +29,4 @@ We disburse withdrawals each business day. You can log into [My Account]({{ site
 
 At your request, we will deposit your withdrawal directly into your checking or savings account via electronic funds transfer (EFT). Otherwise, we will mail your in-service withdrawal check to the address in your TSP account record. If you are transferring your age-based withdrawal to your IRA or eligible employer plan, we'll mail the check to your IRA or plan.
 
-You should expect that it will take up to 10 days from the time we receive your properly completed request until the time we send your check.
+You should expect that it will take up to 10 business days from the time we receive your properly completed request until the time we send your check.
