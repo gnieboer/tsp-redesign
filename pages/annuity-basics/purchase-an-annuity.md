@@ -23,6 +23,6 @@ If the result of the pro rata calculation results in either the Roth portion or 
 
  **Example:** You have $80,000 in your traditional balance and $20,000 in your Roth balance and you request an annuity purchase of $10,000. We would calculate that the withdrawal used to purchase the annuity must be $8,000 in traditional money and $2,000 in Roth money. Since that's less than $3,500, we would reject your request.
 
-After we receive all of the information and documentation necessary to purchase your annuity, we will generally process your annuity request and disburse the funds to the annuity provider within 10 business days. **Once youre request has been processed and the balance is removed from your TSP account, you cannot cancel your annuity, change your annuity option, or change your joint annuitant.**
+After we receive all of the information and documentation necessary to purchase your annuity, we will generally process your annuity request and disburse the funds to the annuity provider within 10 business days. **Once your request has been processed and the balance is removed from your TSP account, you cannot cancel your annuity, change your annuity option, or change your joint annuitant.**
 
 To learn more about the life annuity withdrawal option, read the TSP fact sheet [Annuities](https://www.tsp.gov/PDF/formspubs/tspfs24.pdf).
