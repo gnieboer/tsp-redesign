@@ -3,6 +3,8 @@ This script produces an input area for calculator panels.
 {% endcomment %}
 {% assign fieldID = include.fieldID | default: 'panel-1.1' %}
 {% assign id = include.id | default: 'myId' %}
+{% assign radioIDs = include.radioIDs | default: 'radioIDs' %}
+{% assign radioLabels = include.radioLabels | default: 'radioLabels' %}
 {% assign name = include.name | default: id %}
 {% assign dataFormat = include.dataFormat | default: '' %}
 {% assign inputType = include.inputType | default: 'number' %}
@@ -22,8 +24,10 @@ This script produces an input area for calculator panels.
 {% endif %}
 <div class="panel-form-field" >
   <div id="{{id}}-div" class="">
+    {% if inputType != 'radio' %}
     <label class="" id="{{id}}-label" for="{{id}}" aria-details="{{fieldID}}">{{prompt}}</label>
     <span class="usa-input-error-message" id="{{id}}-error-message" role="alert"></span>
+    {% endif %}
     {% if dataFormat != '' %}<span data-format="{{dataFormat}}" class="input-symbol-left">{%endif%}
     {% if inputType == 'number' %}
       <input id="{{id}}" name="{{name}}" class="{{inputClass}}" type="number" {{onBlur}}
@@ -43,6 +47,23 @@ This script produces an input area for calculator panels.
       {% endfor %}
     </select>
     {% endif %}
+    {% if inputType == 'radio' %}
+      <fieldset>
+      <legend  id="{{id}}-label" aria-details="{{fieldID}}">{{prompt}}</legend>
+      <span class="usa-input-error-message" id="{{id}}-error-message" role="alert"></span>
+      <ul class="usa-unstyled-list">
+      {% assign ids = radioIDs | split: ',' %}
+      {% assign labels = radioLabels | split: ',' %}
+      {% assign loops = ids.size | minus: 1 %}
+      {% for i in (0..loops) %}
+        <li>
+        <input id="{{ids[i] | strip}}" type="radio" name="{{id}}" value="{{ids[i] | strip}}" {{onBlur}}>
+        <label for="{{ids[i] | strip}}">{{labels[i] | strip}}</label>
+        </li>
+      {% endfor %}
+      </ul>
+      </fieldset>
+    {% endif %}
     {% if dataFormat != '' %}</span>{%endif%}
   </div>
   {% if explanation != '' %}
@@ -50,7 +71,7 @@ This script produces an input area for calculator panels.
   <li>
     <button class="usa-accordion-button" aria-expanded="false" aria-controls="{{fieldID}}">Explain this</button>
     <div id="{{fieldID}}" class="usa-accordion-content">
-    {{explanation}}
+    {{explanation | markdownify }}
     </div>
   </li>
   </ul>

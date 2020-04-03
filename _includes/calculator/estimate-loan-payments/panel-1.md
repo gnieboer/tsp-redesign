@@ -12,84 +12,39 @@ The Loan Calculator estimates loan payments based on the amount you want to borr
 
 **Estimate loan payments and costs**
 
-<div class="panel-form-field" >
-<fieldset>
-<legend aria-details="panel-1.1">Select your employment category:</legend>
-<ul class="usa-unstyled-list">
-<li>
-<input id="civilian" type="radio" name="employment-category" value="civilian">
-<label for="civilian">Civilian</label>
-</li>
-<li>
-<input id="uniformed-services" type="radio" name="employment-category" value="uniformed-services">
-<label for="uniformed-services">Uniformed Services</label>
-</li>
-</ul>
-</fieldset>
-<!-- Explain this -->
-<ul class="usa-accordion explain-this">
-<li>
-<button class="usa-accordion-button"
-aria-expanded="false"
-aria-controls="panel-1.1">
-Explain this
-</button>
-<div id="panel-1.1" class="usa-accordion-content" markdown="1">
+{% include calculator/div-panel-form-field.html
+  fieldID="panel-1.1" id="employmentCategory"
+  inputType="radio" radioIDs="Civilian, Uniformed" radioLabels="Civilian, Uniformed Services"
+  inputClass="usa-unstyled-list"
+  onBlur="employmentCategoryGood(true);"
+  prompt="Select your employment category:"
+  explanation="
 
-People often use this calculator to figure out a new dollar amount they should contribute to reach the IRS limit without going over. But when you change how much you’re contributing, it can take 1-2 pay periods for your agency or service to process the new amount. During that time, the TSP will still receive the amount you’re contributing now.
+  People often use this calculator to figure out a new dollar amount they should contribute to reach the IRS limit without going over. But when you change how much you’re contributing, it can take 1-2 pay periods for your agency or service to process the new amount. During that time, the TSP will still receive the amount you’re contributing now.
 
-Enter an estimate of how much you’ll contribute before any changes take effect. If you are uncertain, check with your personnel or finance office.
+  Enter an estimate of how much you’ll contribute before any changes take effect. If you are uncertain, check with your personnel or finance office.
+  "
+%}
 
-</div>
-</li>
-</ul>
-</div> <!---->
+{% include calculator/div-panel-form-field.html
+  fieldID="panel-1.2" id="loanAmt"
+  inputClass="positiveinteger"  dataFormat="$"
+  min="1000" value="1000" max="50000" maxLength=5 step="1"
+  placeholder="" onBlur="loanAmtGood(false);"
+  prompt="Loan amount you wish to borrow:"
+  explanation="
 
-<div class="panel-form-field" >
-<label for="loanAmt" aria-details="panel-1.2" >Loan amount you wish to borrow:</label>
-<span data-format="$" class="input-symbol-left">
-<input class="positiveinteger" type="text" id="loanAmt" name="loanAmt" maxlength="5" value="1000" onchange="loanAmtGood(false);">
-</span>
-<!-- Explain this -->
-<ul class="usa-accordion explain-this">
-<li>
-<button class="usa-accordion-button"
-aria-expanded="false"
-aria-controls="panel-1.2">
-Explain this
-</button>
-<div id="panel-1.2" class="usa-accordion-content" markdown="1">
+  Enter a whole dollar amount between $1,000 and $50,000.
+  "
+%}
 
-Enter a whole dollar amount between $1,000 and $50,000.
-
-</div>
-</li>
-</ul>
-</div> <!---->
-
-<div class="panel-form-field" >
-<fieldset>
-<legend aria-details="panel-1.3">Select the type of loan you wish to apply for:</legend>
-<ul class="usa-unstyled-list">
-<li>
-<input type="radio" id="General" name="loanType" value="General" onclick="loanTypeGood(false);">
-<label for="General">General purpose</label>
-</li>
-<li>
-<input type="radio" id="Residential" name="loanType" value="Residential" onclick="loanTypeGood(false);">
-<label for="Residential">Residential</label>
-</li>
-</ul>
-</fieldset>
-<!-- Explain this -->
-<ul class="usa-accordion explain-this">
-<li>
-<button class="usa-accordion-button"
-aria-expanded="false"
-aria-controls="panel-1.3">
-Explain this
-</button>
-<div id="panel-1.3" class="usa-accordion-content" markdown="1">
+{% include calculator/div-panel-form-field.html
+  fieldID="panel-1.3" id="loanType"
+  inputType="radio" radioIDs="General, Residential" radioLabels="General purpose, Residential"
+  inputClass="usa-unstyled-list"
+  onBlur="loanTypeGood(false);"
+  prompt="Select the type of loan you wish to apply for:"
+  explanation="
 
 There are two types of loans.
 
@@ -99,39 +54,58 @@ There are two types of loans.
 A residential loan can be used only for the purchase or construction of a primary residence. The residence can be a house, condominium, shares in a cooperative housing corporation, a townhouse, boat, mobile home, or recreational vehicle, but it must be used as your **primary residence.** The residence must be purchased (in whole or in part) by you or your spouse. You can obtain a residential loan for constructing a new residence or purchasing an existing residence. You **cannot** use a residential loan for refinancing or prepaying an existing mortgage, for renovations or repairs, for buying out another person’s share in your current residence, or for the purchase of land only.
 
 You may have **only one general purpose loan and one residential loan** outstanding at any one time. This is a per-account limit. If you have both a civilian account and a uniformed services account, you may have one of each type of loan for each account.
+  "
+%}
 
-</div>
-</li>
-</ul>
-</div> <!---->
+
+<!--
+<div id="paySchedule-div" class="panel-form-field" >
+<label for="paySchedule" id="paySchedule-label" aria-details="panel-1.5" >Your pay schedule:</label>
+<span class="usa-input-error-message" id="paySchedule-error-message" role="alert"></span>
+-->
 
 <div class="panel-form-field" >
+<div id="payType-div">
 <fieldset>
-<legend aria-details="panel-1.4">Repayment terms:<br />(select <strong>ONE</strong>)</legend>
+<legend id="payType-label" aria-details="panel-1.4">Repayment terms:<br />(select <strong>ONE</strong>)</legend>
+<span class="usa-input-error-message" id="payType-error-message" role="alert"></span>
 <ul class="usa-unstyled-list inline-input">
 <!-- Radio 1 -->
+<span class="usa-input-error-message" id="ptYears-error-message" role="alert"></span>
+<span class="usa-input-error-message" id="ptMonths-error-message" role="alert"></span>
 <li>
-<input type="radio" id="repayTime" name="repayment-terms" value="repayTime">
-<label for="repayTime">Repay the loan over</label>
-  <input id="ptYears" class="" type="text" name="repayTime" value="" size="2" maxlength="2" onchange="ptYearsMonthsGood(false);"><label for="ptYears" class="sr-only">Number of years</label>
+<input type="radio" id="repayTime" name="repayment-terms" value="repayTime" onclick="payTypeGood(false);">
+<label id="repayTime-label" for="repayTime">Repay the loan over</label>
+  <input id="ptYears" class="" type="number" name="repayTime" value="" size="2" maxlength="2"
+  min="1" max="15" step="1" placeholder="" onchange="ptYearsMonthsGood(false, false);">
+  <label for="ptYears" class="sr-only">Number of years</label>
   year(s) and
-  <input id="ptMonths" class="" type="text" name="repayTime" value="0" size="2" maxlength="2" onchange="ptYearsMonthsGood(false);" title="Months"><label for="ptMonths" class="sr-only">Number of months</label> month(s)
+  <input id="ptMonths" class="" type="number" name="repayTime" value="0" size="2" maxlength="2"
+  min="0" max="11" step="1" placeholder="" onchange="ptYearsMonthsGood(false, false);" title="Months">
+  <label for="ptMonths" class="sr-only">Number of months</label> month(s)
 </li>
 <!-- Radio 2 -->
+<span class="usa-input-error-message" id="ptAmount-error-message" role="alert"></span>
 <li>
 <input type="radio" id="repayPayday" name="repayment-terms" value="repayPayday" onclick="payTypeGood(false);">
-<label for="repayPayday">Repay the loan by paying</label>
+<label id="repayPayday-label" for="repayPayday">Repay the loan by paying</label>
   <span data-format="$" class="input-symbol-left">
-  <input id="additionalAmount" name="repayPayday" class="positivefloat" value="0" size="8" type="number" onblur="totalContributionGood(false, true);" onchange="totalContributionGood(false, true);" /></span><label for="additionalAmount" class="sr-only">Payment amount</label> each pay period
+  <input id="ptAmount" name="repayPayday" class="positivefloat" value="0" size="8" type="number" onblur="ptAmountGood(false);" onchange="ptAmountGood(false);" /></span><label for="ptAmount" class="sr-only">Payment amount</label> each pay period
 </li>
+{% comment %}
 <!-- Radio 3 -->
+<span class="usa-input-error-message" id="ptNumpay-error-message" role="alert"></span>
 <li>
 <input type="radio" id="repayPayments" name="repayment-terms" value="repayPayments" onclick="payTypeGood(false);">
-<label for="repayPayments">Repay by making</label>
-  <input id="ptNumpay" class="positiveinteger" type="text" name="repayPayments" value="" size="3" maxlength="3" onchange="ptNumpayGood(false);"><label for="ptNumpay" class="sr-only">Number of payments</label> payments
+<label id="repayPayments-label" for="repayPayments">Repay by making</label>
+  <input id="ptNumpay" class="positiveinteger" type="number" name="repayPayments" value="" size="3"
+   maxlength="3" min="1" max="180" step="1" placeholder="" onchange="ptNumpayGood(false);">
+   <label for="ptNumpay" class="sr-only">Number of payments</label> payments
 </li>
+{% endcomment %}
 </ul>
 </fieldset>
+</div>
 <!-- Explain this -->
 <ul class="usa-accordion explain-this">
 <li>
@@ -151,21 +125,23 @@ Enter an estimate of how much you’ll contribute before any changes take effect
 </ul>
 </div> <!---->
 
-<div class="panel-form-field" >
-<label for="paySchedule" aria-details="panel-1.5" >Your pay schedule:</label>
-<select id="paySchedule" name="paySchedule" onchange="payScheduleGood(false);">
-<option value="select">Select Your Pay Schedule</option>
-<option value="biweekly">Biweekly  (every 2 weeks, 26 times a year)</option>
-<option value="weekly">Weekly (52  times a year)</option>
-<option value="semi-monthly">Semi-monthly (twice a month, 24 times a year)</option>
-<option value="monthly">Monthly (12  times a year)</option>
+<div id="paySchedule-hide" class="panel-form-field" >
+<div id="paySchedule-div" class="">
+<label for="paySchedule" id="paySchedule-label" aria-details="panel-1.5" >Your pay schedule:</label>
+<span class="usa-input-error-message" id="paySchedule-error-message" role="alert"></span>
+<select id="paySchedule" name="paySchedule" onChange="payScheduleGood(false);">
+<option value="Select">Select Your Pay Schedule</option>
+<option value="Biweekly">Biweekly  (every 2 weeks, 26 times a year)</option>
+<option value="Weekly">Weekly (52  times a year)</option>
+<option value="Semi-monthly">Semi-monthly (twice a month, 24 times a year)</option>
+<option value="Monthly">Monthly (12  times a year)</option>
 </select>
+</div>
+<input type="hidden" name="lastPaySchedule" id="lastPaySchedule" value="Select">
 <!-- Explain this -->
 <ul class="usa-accordion explain-this">
 <li>
-<button class="usa-accordion-button"
-aria-expanded="false"
-aria-controls="panel-1.5">
+<button class="usa-accordion-button" aria-expanded="false" aria-controls="panel-1.5">
 Explain this
 </button>
 <div id="panel-1.5" class="usa-accordion-content" markdown="1">
@@ -189,6 +165,10 @@ This will depend on how often you are paid (biweekly or monthly, for example). I
 </li>
 </ul>
 </div> <!---->
+
+**Interest Rate: The current rate for new loans is
+<span id="loan-rate">not available</span>,
+which is the current G Fund interest rate.**
 
 {% include calculator/button-block.html panelID=panelID showResults=2 %}
 

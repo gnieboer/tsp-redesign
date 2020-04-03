@@ -61,7 +61,7 @@ Generates a list of buttons.  The box around them and the ul should be done by t
 {% if showResults != 0 %}
 <span id="showResults{{ panelID }}">
   {% capture click %}processPanel({{ panelID }}, 0, {{ showResults }}, 0); return false;{% endcapture %}
-  {% include calculator/button.html text='Show Results' onClick=click xtraClass2='primary forward' inList=1 %}
+  {% include calculator/button.html text='Show results' onClick=click xtraClass2='primary forward' inList=1 %}
 </span>
 {% endif %}
 

@@ -7,7 +7,6 @@ $(".positiveinteger").numeric({ negative : false, decimalPlaces: 0 });
 $(".positivefloat").numeric({ negative : false, decimalPlaces: 2 });
 
 $(document).ready(function() {
-  console.log('estimate loan payments document ready');
   setMaxPanels({{ maxPanels }});
   showPanel(1);
 });

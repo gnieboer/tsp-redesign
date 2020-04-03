@@ -6,7 +6,7 @@ This is the javascript specific to panel 2.
 <script type="text/javascript">
 <!--
 panelNames['{{ panelName}}'] = {{ panelID }};
-panelGood[{{ panelID }}] = function(submit) {
+panelGood[{{ panelID }}] = function(forceValue) {
   return totalContributionGood(true, true);
 };
 

@@ -19,6 +19,8 @@ Read the TSP booklet [Loans]({{ site.baseurl }}/publications/tspbk04.pdf){:.publ
 
 **Estimated loan terms (actual terms may vary)**
 
+<span class="usa-input-error-message" id="calculate-error-message" role="alert"></span>
+
 <div class="results-grid-frame" markdown="1">
 
 {% include calculator/resultsRow.html rightID="employment-category" right="" left="Employment Category" %}

@@ -385,7 +385,7 @@ Enter the annual rate of return you expect to earn on your contributions. View t
   <button class="usa-button " href="javascript:void(0);" onclick="showPanel(1); return false;">Previous</button>
   </li>
   <li>
-  <button id="showResults2" class="usa-button" href="javascript:void(0);" onclick="processPanel(2, 0, 3, 0); return false;">Show Results</button>
+  <button id="showResults2" class="usa-button" href="javascript:void(0);" onclick="processPanel(2, 0, 3, 0); return false;">Show results</button>
   </li>
 </ul>
 
