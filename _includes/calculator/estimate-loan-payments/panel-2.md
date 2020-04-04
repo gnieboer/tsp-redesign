@@ -29,7 +29,7 @@ Read the TSP booklet [Loans]({{ site.baseurl }}/publications/tspbk04.pdf){:.publ
 {% include calculator/resultsRow.html rightID="repayment-terms" right="" left="Repayment Terms" %}
 {% include calculator/resultsRow.html rightID="repayment-frequency" right="" left="Repayment frequency" %}
 {% include calculator/resultsRow.html rightID="interest-rate" right="" left="Interest rate" %}
-{% include calculator/resultsRow.html rightID="payment-amount" right="" left="Payment amount" %}
+{% include calculator/resultsRow.html rightID="payment-amount" right="" left="Payment amount" errorBox=1 %}
 {% include calculator/resultsRow.html rightID="number-payments" right="" left="Number of payments" %}
 {% include calculator/resultsRow.html rightID="total-interest" right=""
   left="Total interest (finance charge)" %}

@@ -93,6 +93,7 @@ function calculatePayments() {
 
     // make sure the number of payments satisfy the min and max year requirements,
     // set the number of payments and the payType then recalculate, if there is a problem
+    // clearError('repayment-terms');
     var rounded_pmts = Math.ceil(num_pmts);
     // console.log('rounded_pmts ' + rounded_pmts);
     if ((rounded_pmts - pmts_year) < 0) {
@@ -100,8 +101,9 @@ function calculatePayments() {
         num_pmts = pmts_year;
         pmt_amt = payment_amount(loanAmt, intRate, pmts_year, num_pmts);
         pmt_amt = Math.round(pmt_amt*100)/100;
-        errmsg = '<b>NOTE:</b> The minimum repayment period is one year. Therefore, the amount of each payment has been decreased.';
+        var emsg = '<b>NOTE:</b> The minimum repayment period is one year. Therefore, the amount of each payment has been decreased.';
         $('#repayment-terms').html('Repay ' + CurrencyFormatted(pmt_amt, 'cents') + ' each pay period.');
+        showError('payment-amount', emsg);
     }
     var max_yrs = getMaxYears();
     if ((rounded_pmts - (pmts_year * max_yrs)) > 0) {
@@ -109,9 +111,10 @@ function calculatePayments() {
         payType = 'repayPayments';
         pmt_amt = payment_amount(loanAmt, intRate, pmts_year, num_pmts);
         pmt_amt = Math.round(pmt_amt*100)/100;
-        errmsg = '<b>NOTE:</b> You must repay your ' + getLoanType() + ' loan within '
+        var emsg = '<b>NOTE:</b> You must repay your ' + getLoanType() + ' loan within '
             + max_yrs + ' years,  Therefore, the amount of each payment has been increased.';
         $('#repayment-terms').html('Repay ' + CurrencyFormatted(pmt_amt, 'cents') + ' each pay period.');
+        showError('payment-amount', emsg);
     }
   }
 

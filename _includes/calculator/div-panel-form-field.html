@@ -22,7 +22,11 @@ This script produces an input area for calculator panels.
 {% if onBlur != '' %}
 {% assign onBlur = 'onBlur="' | append: onBlur | append: '" onChange="' | append: onBlur | append: '"' %}
 {% endif %}
-<div class="panel-form-field" >
+{% assign outerDivID = include.outerDivID | default: '' %}
+{% if outerDivID != '' %}
+{% assign outerDivID = 'id="' | append: outerDivID | append: '"' %}
+{% endif %}
+<div {{outerDivID}} class="panel-form-field" >
   <div id="{{id}}-div" class="">
     {% if inputType != 'radio' %}
     <label class="" id="{{id}}-label" for="{{id}}" aria-details="{{fieldID}}">{{prompt}}</label>
@@ -46,6 +50,17 @@ This script produces an input area for calculator panels.
       <option value="{{i}}" {{ selected }}>{{i}}</option>
       {% endfor %}
     </select>
+    {% endif %}
+    {% if inputType == 'selectList' %}
+      <select class="{{inputClass}}" id="{{id}}" name="{{name}}" {{onBlur}}>
+      {% assign ids = radioIDs | split: ',' %}
+      {% assign labels = radioLabels | split: ',' %}
+      {% assign loops = ids.size | minus: 1 %}
+      {% assign cur = ids[i] | strip %}
+      {% for i in (0..loops) %}{% assign cur = ids[i] | strip %}{% if cur == value %}{% assign selected = 'selected' %}{% else %}{% assign selected = '' %}{% endif %}
+        <option value="{{cur}}" {{ selected }}>{{labels[i] | strip}}</option>
+      {% endfor %}
+      </select>
     {% endif %}
     {% if inputType == 'radio' %}
       <fieldset>

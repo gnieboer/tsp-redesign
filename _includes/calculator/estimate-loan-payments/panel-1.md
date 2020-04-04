@@ -125,26 +125,7 @@ Enter an estimate of how much you’ll contribute before any changes take effect
 </ul>
 </div> <!---->
 
-<div id="paySchedule-hide" class="panel-form-field" >
-<div id="paySchedule-div" class="">
-<label for="paySchedule" id="paySchedule-label" aria-details="panel-1.5" >Your pay schedule:</label>
-<span class="usa-input-error-message" id="paySchedule-error-message" role="alert"></span>
-<select id="paySchedule" name="paySchedule" onChange="payScheduleGood(false);">
-<option value="Select">Select Your Pay Schedule</option>
-<option value="Biweekly">Biweekly  (every 2 weeks, 26 times a year)</option>
-<option value="Weekly">Weekly (52  times a year)</option>
-<option value="Semi-monthly">Semi-monthly (twice a month, 24 times a year)</option>
-<option value="Monthly">Monthly (12  times a year)</option>
-</select>
-</div>
-<input type="hidden" name="lastPaySchedule" id="lastPaySchedule" value="Select">
-<!-- Explain this -->
-<ul class="usa-accordion explain-this">
-<li>
-<button class="usa-accordion-button" aria-expanded="false" aria-controls="panel-1.5">
-Explain this
-</button>
-<div id="panel-1.5" class="usa-accordion-content" markdown="1">
+{% capture pay_schedule_explanation %}
 
 This will depend on how often you are paid (biweekly or monthly, for example). If you are uncertain, check with your personnel or finance office.
 
@@ -161,10 +142,18 @@ This will depend on how often you are paid (biweekly or monthly, for example). I
 
 \*A biweekly frequency occasionally results in 27 salary payments for a year.  Contact your personnel or payroll office if you do not know the number of salary payments you will receive for the remainder of the year.
 
-</div>
-</li>
-</ul>
-</div> <!---->
+{% endcapture %}
+{% include calculator/div-panel-form-field.html
+  fieldID="panel-1.5" id="paySchedule"
+  inputType="selectList"
+  radioIDs="Select,Biweekly,Weekly,Semi-monthly,Monthly"
+  radioLabels="Select your pay schedule,Biweekly (every 2 weeks&comma; 26 times a year),Weekly (52  times a year),Semi-monthly (twice a month&comma; 24 times a year),Monthly (12  times a year)"
+  inputClass="" outerDivID="paySchedule-hide"
+  onBlur="payScheduleGood(false);"
+  prompt="Your pay schedule:"
+  explanation=pay_schedule_explanation
+%}
+<input type="hidden" name="lastPaySchedule" id="lastPaySchedule" value="Select">
 
 **Interest Rate: The current rate for new loans is
 <span id="loan-rate">not available</span>,
