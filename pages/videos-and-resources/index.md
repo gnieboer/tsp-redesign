@@ -49,6 +49,8 @@ Videos
 <!-- Animated search bar -->
 <div class="usa-search usa-search-small">
 <label for="browse-titles" class="usa-sr-only">Search videos</label>
+
+<span class="clear-contents-icon">
 <input
   type="text"
   name="query"
@@ -56,7 +58,8 @@ Videos
   autocomplete="off"
   placeholder="&#xf002; Search videos"
   onKeyUp="videoOnKeyUp();">
-  <span onClick="doVideoSearch('');"><i class="fa fa-remove"></i></span>
+  <span onClick="doVideoSearch('');"></span>
+</span>
 </div>
 
 {% include video-list.html %}
