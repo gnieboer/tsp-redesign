@@ -1,5 +1,3 @@
----
----
 <section class="bootstrap-modals-forms">
   <!-- FEEDBACK -->
   <div class="modal fade" id="feedback-modal" role="dialog">
@@ -35,11 +33,11 @@
         </div>
 
         <div class="modal-body">
-          <p>Don’t walk away from free money! If you are a FERS or BRS participant, your agency or service matches your contributions — up to 4% if you contribute 5% each pay period. Furthermore, when you add the Agency/Service Automatic (1%) Contributions to your matching contributions, you’ll double your 5% investment instantly.</p>
+          <p>Don’t walk away from free money! If you are a FERS or BRS participant, your agency or service matches your contributions &#8212; up to 4% if you contribute 5% each pay period. Furthermore, when you add the Agency/Service Automatic (1%) Contributions to your matching contributions, you’ll double your 5% investment instantly.</p>
 
             <ul class="flex column center usa-unstyled-list">
               <li>
-                <button onclick="location.href= '/forms/tsp-1.pdf';" class="usa-button">Continue to Form TSP-1<i class="fal fa-file-pdf"></i></button>
+                <button onclick="location.href= '{{ site.baseurl }}/forms/tsp-1.pdf';" class="usa-button">Continue to Form TSP-1<i class="fal fa-file-pdf"></i></button>
               </li>
             </ul>
         </div>
@@ -69,10 +67,10 @@
 
             <ul class="flex column center usa-unstyled-list">
               <li>
-                <button onclick="location.href= 'https://www.tsp.gov/tsp/beneficiaries.do?subaction=beneLanding&amp;_name=bene';" class="usa-button"><strong>YES,</strong><br>take me to the TSP-3 Wizard.</button>
+                <button onclick="location.href= '{{ site.beneficiaries }}';" class="usa-button"><strong>YES,</strong><br>take me to the TSP-3 Wizard.</button>
               </li>
               <li>
-                <a class="form" href="/forms/tsp-3.pdf">No thanks, just download Form TSP-3</a>.
+                <a class="form" href="{{ site.baseurl }}/forms/tsp-3.pdf">No thanks, just download Form TSP-3</a>.
               </li>
             </ul>
         </div>
@@ -112,7 +110,7 @@
               <ul class="flex column center usa-unstyled-list">
                 <li>
 
-                  <button onclick="location.href= 'https:www.tsp.gov/tsp/profileSettings.do?subaction=view&amp;amp;\_name=profile';" class="usa-button"><strong>YES,</strong><br>take me to My Account.</button>
+                  <button onclick="location.href= '{{ site.profile_settings }}';" class="usa-button"><strong>YES,</strong><br>take me to My Account.</button>
                 </li>
 
               </ul>
@@ -155,7 +153,7 @@
 
             <ul class="flex column center usa-unstyled-list">
               <li>
-                <a href="/forms/tsp-15.pdf" class="form">Download Form TSP-15</a>.
+                <a href="{{ site.basurl }}/forms/tsp-15.pdf" class="form">Download Form TSP-15</a>.
               </li>
             </ul>
 
@@ -188,7 +186,7 @@
           <div class="video-wrapper">
             <iframe allowfullscreen="true" frameborder="0" src="https://www.youtube.com/embed/5z-KXHZAF-U?rel=0"></iframe>
           </div>
-          <p>Log in to <a href="https://www.tsp.gov/tsp/loan.do?subaction=menu&amp;amp;_name=loan">My Account</a> and access the online wizard under &#8220;TSP Loans&#8221; to help you with your loan request.</p>
+          <p>Log in to <a href="{{ site.loans }}">My Account</a> and access the online wizard under &#8220;TSP Loans&#8221; to help you with your loan request.</p>
         </div>
 
         <div class="modal-footer">
@@ -221,10 +219,10 @@
             </li>
           </ul>
           <div class="yes hide center">
-            <p><a class="form" href="/forms/tsp-25.pdf">Download Form TSP-25</a></p>
+            <p><a class="form" href="{{ site.baseurl }}/forms/tsp-25.pdf">Download Form TSP-25</a></p>
           </div>
           <div class="no hide">
-            <p>You are ineligible to receive an automatic enrollment refund. Please call the <a href="/contact/">ThriftLine</a> if you have any questions.</p>
+            <p>You are ineligible to receive an automatic enrollment refund. Please call the <a href="{{ site.baseurl }}/contact/">ThriftLine</a> if you have any questions.</p>
           </div>
         </div>
 
@@ -253,10 +251,10 @@
           <ul class="flex column center usa-unstyled-list">
             <li>
 
-              <button onclick="location.href= '/planning-for-life-events/retirement-benefits-court-order/';" class="usa-button"><strong>YES,</strong><br>take me to the Retirement Benefits Court Order Wizard.</button>
+              <button onclick="location.href= '{{ site.baseurl }}/planning-for-life-events/retirement-benefits-court-order/';" class="usa-button"><strong>YES,</strong><br>take me to the Retirement Benefits Court Order Wizard.</button>
             </li>
             <li>
-              <a href="/forms/tsp-92.pdf" class="form">No thanks, just download Form TSP-92</a>.
+              <a href="{{ site.baseurl }}/forms/tsp-92.pdf" class="form">No thanks, just download Form TSP-92</a>.
             </li>
           </ul>
           <!-- <p class="center"><a href="/forms/tsp-92.pdf" class="form">No thanks, just download Form TSP-92</a>.</p> -->
