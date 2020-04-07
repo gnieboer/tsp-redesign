@@ -26,7 +26,7 @@ Generates a list of buttons.  The box around them and the ul should be done by t
 
 {% if getStarted != 0 %}
 {% capture click %}processPanel({{ panelID }}, 0, {{ getStarted }}, 0); return false;{% endcapture %}
-{% include calculator/button.html text='Get Started' onClick=click xtraClass2='primary' inList=1 %}
+{% include calculator/button.html text='Get started' onClick=click xtraClass2='primary' inList=1 %}
 {% endif %}
 
 {% if start != 0 %}
