@@ -1,5 +1,4 @@
 section.videos-and-resources {
-
   ol,
   ul {
     &.transcript-list {
@@ -34,7 +33,7 @@ section.videos-and-resources {
     }
 
     &.videos {
-      background-color: $color-gray-lightest;
+      // background-color: $color-gray-lightest;
 
       .usa-grid {
         padding-left: 0;
@@ -56,7 +55,12 @@ section.videos-and-resources {
       input {
         font-family: $font-awesome,$sans;
         font-weight: $normal;
-
+        padding-right: 3rem;
+        width: 100%;
+        max-width: 100%;
+        &:focus {
+          border-bottom: 3px solid #f9c642;
+        }
       }
 
       .usa-accordion-button {
@@ -91,34 +95,40 @@ section.videos-and-resources {
 
       span.clear-contents-icon {
         position: absolute;
+        width: 100%;
       }
 
       span.clear-contents-icon {
         span {
           position: absolute;
-          display: block;
-          top: 12px;
-          left: 164px;
-          width: 16px;
-          height: 15px;
+          display: flex;
+          align-items: center;
+          top: 0;
+          right: 0;
+          width: auto;
+          height: 100%;
+          text-align: right;
+          padding: 0 1rem;
+          // top: 12px;
+          // left: 164px;
+          // width: 16px;
+          // height: 15px;
           // background: url('https://beta.tsp.gov/assets/img/x_red.svg') 0 -2px;
           // background-repeat: no-repeat;
           &::after {
             // position: absolute;
             font-family: $font-awesome;
-            top: -3px;
-            left: 4px;
+            // top: -3px;
+            // left: 4px;
             content: "\f057";
             cursor: pointer;
             color: $color-gray;
           }
         }
       }
-
       // .videos-list {
       //   margin-top: 7rem;
       // }
-
       form {
         &.animated-search {
           input[type=text] {
@@ -144,7 +154,6 @@ section.videos-and-resources {
         }
       }
       // end form
-
       .video-filter {
         list-style-type: none;
         margin: 7rem 0 0 0.7rem;
@@ -231,7 +240,6 @@ section.videos-and-resources {
         }
       }
       // end .overview
-
       .download {
         i {
           padding-left: 0.5rem;
@@ -246,6 +254,7 @@ section.videos-and-resources {
     }
   }
 }
+
 @media only screen and (min-width: $large-screen) {
   section.videos-and-resources {
     .usa-accordion-button {
@@ -263,4 +272,87 @@ section.videos-and-resources {
       }
     }
   }
+}
+
+@media only screen and (max-width: $large-screen) {
+  section.videos-and-resources {
+    div {
+      &.video-details {
+        .usa-accordion-button {
+          width: 100%;
+
+          &[aria-expanded="true"]:after {
+            content: '';
+            border-bottom: none;
+            display: block;
+          }
+        }
+
+        .usa-accordion > li {
+          list-style: none;
+          margin-top: 0.5rem;
+          margin-bottom: 0.5rem;
+          width: 100%;
+
+          &:last-child {
+            button {
+              border-bottom: none;
+            }
+          }
+
+          button {
+            background-color: #ffffff;
+            border-bottom: 1px solid $color-gray-light;
+
+            &[aria-expanded="true"] {
+              background-color: #ffffff;
+              border-bottom: 4px solid #02bfe7;
+            }
+          }
+
+        }
+
+      } // END &.video-details
+    }
+  }
+  // END section.videos-and-resources
+}
+
+@media only screen and (max-width: $medium-screen) {
+  section.videos-and-resources {
+
+    .usa-accordion-content {
+      padding: 0;
+    }
+
+    div {
+      &.search-videos {
+
+        span.clear-contents-icon {
+          width: 100%;
+
+          span {
+            &:after {
+              font-size: 2.5rem;
+            }
+          }
+        }
+
+        .video-filter {
+          max-height: 25rem;
+
+          li {
+            line-height: 2;
+            font-size: 2rem;
+          }
+        }
+
+      } // END &.search-videos
+
+      &.video-details {
+        margin: 2rem 1rem;
+      }
+    }
+  }
+  // END section.videos-and-resources
 }

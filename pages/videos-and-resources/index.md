@@ -56,7 +56,7 @@ Videos
   name="query"
   id="browse-titles"
   autocomplete="off"
-  placeholder="&#xf002; Search videos"
+  placeholder="&#xf002; Search"
   onKeyUp="videoOnKeyUp();">
   <span onClick="doVideoSearch('');"></span>
 </span>
