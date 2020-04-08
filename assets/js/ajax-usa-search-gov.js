@@ -62,8 +62,11 @@ var doUSAsearch = function(divName, url, getAll, offset, prevResult) {
       }
       // console.log(json.web.results.length, json.text_best_bets.length);
       if (getAll == 1) {
-        if (json.web.next_offset > 0) {
-          doUSAsearch(divName, url, getAll, json.web.next_offset, json);
+        var next_offset = 0;
+        if (json.video) { next_offset = json.video.next_offset; }
+          else { next_offset = json.web.next_offset; }
+        if (next_offset > 0) {
+          doUSAsearch(divName, url, getAll, next_offset, json);
           return false;
         }
       }
@@ -90,7 +93,7 @@ function buildSearchURL(siteName, affiliate, accessKey, limit, offset, query) {
           + '&limit=' + limit
           + '&query=' + query;
   if (offset > 0) { url += '&offset=' + offset; }
-  // console.log('searching |'+url+'|');
+  console.log('buildSearchURL |'+url+'|');
   return url;
 }
 
@@ -166,8 +169,15 @@ var doInlineUSAsearch = function(searchName, statusBox, url, callback, getAll, o
   serverCall.done(
     function (json) {
       if (prevResult != null) {
-        if (prevResult.web.results != null) {
-          json.web.results = prevResult.web.results.concat(json.web.results);
+        if (prevResult.web != null) {
+          if (prevResult.web.results != null) {
+            json.web.results = prevResult.web.results.concat(json.web.results);
+          }
+        }
+        if (prevResult.video != null) {
+          if (prevResult.video.results != null) {
+            json.video.results = prevResult.video.results.concat(json.video.results);
+          }
         }
         if (prevResult.text_best_bets != null) {
           json.text_best_bets = prevResult.text_best_bets.concat(json.text_best_bets);
@@ -177,8 +187,11 @@ var doInlineUSAsearch = function(searchName, statusBox, url, callback, getAll, o
         }
       }
       if (getAll == 1) {
-        if (json.web.next_offset > 0) {
-          doInlineUSAsearch(searchName, statusBox, url, callback, getAll, json.web.next_offset, json);
+        var next_offset = 0;
+        if (json.video != null) { next_offset = json.video.next_offset; }
+          else { next_offset = json.web.next_offset; }
+        if (next_offset > 0) {
+          doInlineUSAsearch(searchName, statusBox, url, callback, getAll, next_offset, json);
           return false;
         }
       }

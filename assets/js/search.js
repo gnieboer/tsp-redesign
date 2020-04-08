@@ -129,6 +129,12 @@ function showResultDivs(set) {
     $('#pagination').removeClass('hide');
   }
 }
+function cleanSnippet(snippet) {
+  if (snippet == null) { return; }
+  var str = snippet.replace(/[\ue000]/g, '');
+  str = str.replace(/[\ue001]/g, '');
+  return str;
+}
 function formatSnippet(snippet) {
   if (snippet == null) { return; }
   var str = snippet.replace(/[\ue000]/g, '<strong>');

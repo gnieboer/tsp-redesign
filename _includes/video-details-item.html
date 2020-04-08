@@ -1,0 +1,50 @@
+<div id="{{video.video_id}}-block" class="video-details hide">
+<ul class="usa-accordion usa-tabs">
+<!-- Overview -->
+<li>
+<button class="usa-accordion-button" aria-expanded="true" aria-controls="{{video.video_id}}-overview">Overview</button>
+<div id="{{video.video_id}}-overview" class="usa-accordion-content overview" markdown="1">
+Released <span id="{{video.video_id}}-pub-date">{{ video.video_date }}</span> &#124;
+Duration: <span id="{{video.video_id}}-duration">{{ video.video_duration }}</span>
+{:.release-date}
+
+<span id="{{video.video_title}}-title" class="hide">{{ video.video_title }}</span>
+<span id="{{video.video_id}}-description">{{ video.video_description }}</span>
+
+{% if video.video_categories %}
+Categories:
+<ul id="{{video.video_id}}-categories" class="categories">
+{% for cat in video.video_categories %}
+<li><a onClick="doCatSearch('{{cat}}');">{{cat}}</a></li>
+{% endfor %}
+</ul>
+{% endif %}
+
+</div>
+</li>
+<!-- Transcript -->
+<li>
+<button class="usa-accordion-button" aria-expanded="false" aria-controls="{{video.video_id}}-transcript">Transcript</button>
+<div id="{{video.video_id}}-transcript" class="usa-accordion-content" markdown="1">
+{% if video.video_transcript %}
+{{ video.video_transcript}}
+{% else %}
+Transcript not available.
+{% endif %}
+</div>
+</li>
+<!-- Download -->
+<li>
+<button class="usa-accordion-button" aria-expanded="false" aria-controls="{{video.video_id}}-download">Download</button>
+<div id="{{video.video_id}}-download" class="usa-accordion-content" markdown="1">
+
+{% if video.video_download %}
+<a href="{{ site.baseurl }}/assets/videos/{{ video.video_download }}" class="download"
+    aria-label="Download video">{{ video.video_title }}<i class="far fa-arrow-circle-down"></i></a>
+{% else %}
+Video not available.
+{% endif %}
+</div>
+</li>
+</ul>
+</div>
