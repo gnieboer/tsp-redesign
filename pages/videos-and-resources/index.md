@@ -62,8 +62,7 @@ Videos
 </span>
 </div>
 
-{% include video-list.html %}
-</div>
+{% include video-list.html %}</div>
 
 {% include video-details-list.html %}
 </div>
