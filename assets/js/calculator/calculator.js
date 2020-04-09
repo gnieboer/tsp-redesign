@@ -57,7 +57,7 @@ function showError(element, message) {
   $('#'+element+'-label').addClass("usa-input-error-label");
   // $('#'+element+'-error-message').addClass("usa-input-error-message");
   $('#'+element+'-error-message').html(message);
-  // console.log('error is '+message)
+  console.log('error is '+message)
   // document.getElementById(element).setAttribute("aria-describedby", element+'-error-message');
   return false;
 }
