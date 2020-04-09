@@ -1,15 +1,16 @@
 ---
 layout: page
-
 title: Divorce, annulment, and legal separation
-
 sidenav: manage-life-changes
-
 styles:
-
 scripts:
-
 permalink: /planning-for-life-events/divorce-annulment-and-legal-separation/
+redirect_from:
+<<<<<<< HEAD
+  - /LifeEvents/personal/spouse/garnishing.html
+=======
+  - /LifeEvents/personal/spouse/garnishing/
+>>>>>>> 637af4923eefebba6d9b5d0a5b3c6ec427165abb
 ---
 
 # Divorce, annulment, and legal separation

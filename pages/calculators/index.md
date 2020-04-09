@@ -9,6 +9,8 @@ permalink: /calculators/
 calculator-name:
 progress-steps:
 panel-names:
+redirect_from:
+  - /PlanningTools/Calculators/
 ---
 
 To find out how much you need to save for retirement, follow the link to the Federal Ballpark E$timate&#174; calculator below. The calculator was developed by the American Savings Education Council to calculate how much you need to save each year from now until retirement based on your estimates of retirement income and existing savings.
