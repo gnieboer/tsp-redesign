@@ -196,6 +196,11 @@ section.videos-and-resources {
             &:hover {
               text-decoration: underline;
             }
+
+            &:focus {
+              outline: 2px dotted $color-gray-light;
+              outline-offset: 3px;
+            }
           }
         }
       }
