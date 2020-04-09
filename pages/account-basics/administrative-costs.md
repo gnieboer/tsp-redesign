@@ -11,6 +11,8 @@ bottom-scripts: /assets/js/ajaxFetch.js
 document-ready:
   - groupFundAnnualReturns('Lfunds');
   - groupFundAnnualReturns('Index');
+redirect_from:
+  - /InvestmentFunds/FundsOverview/expenses.html
 ---
 
 # Administrative costs

@@ -5,6 +5,12 @@ sidenav: manage-your-plan
 styles:
 scripts:
 permalink: /account-basics/
+redirect_from:
+  - /ParticipantSupport/
+  - /ParticipantSupport/Content/
+  - /PlanningTools/
+  - /PlanParticipation/
+  - /PlanParticipation/AccountManagement/managing/
 ---
 
 # Account basics

@@ -1,15 +1,12 @@
 ---
 layout: page
-
 title: Marriage
-
 sidenav: manage-life-changes
-
 styles:
-
 scripts:
-
 permalink: /planning-for-life-events/marriage/
+redirect_from:
+  - /LifeEvents/personal/spouse/
 ---
 
 # Marriage

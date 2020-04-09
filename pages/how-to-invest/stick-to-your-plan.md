@@ -5,6 +5,8 @@ styles:
 sidenav: fund-options
 scripts:
 permalink: /how-to-invest/stick-to-your-plan/
+redirect_from:
+  - /PlanningTools/InvestmentStrategy/sticktoyourplan/
 ---
 
 # Stick to your plan

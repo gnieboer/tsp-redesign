@@ -5,6 +5,8 @@ styles:
 sidenav: manage-your-plan
 scripts:
 permalink: /making-contributions/contribution-limits/
+redirect_from:
+  - /PlanParticipation/EligibilityAndContributions/contributionLimits.html
 ---
 
 # Know your limits
