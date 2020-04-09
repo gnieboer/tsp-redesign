@@ -5,6 +5,8 @@ sidenav: manage-your-plan
 styles:
 scripts:
 permalink: /account-basics/designating-beneficiaries/
+redirect_from:
+  - /PlanParticipation/AccountManagement/beneficiaries/
 ---
 
 # Designating beneficiaries

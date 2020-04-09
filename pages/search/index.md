@@ -16,6 +16,8 @@ document-ready:
   - setQS('search-terms');
   - gotoPage(1);
   - addFormModals();
+redirect_from:
+  - /ParticipantSupport/Content/search/
 ---
 
 <div class="usa-grid-full search">

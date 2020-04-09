@@ -18,11 +18,10 @@ document-ready:
   - addFormModals();
   - setTopic('select-forms-topic');
 redirect_from:
-  - /forms/civilianForms.html
-  - /forms/uniformedServicesForms.html
-  - /forms/allPublications.html
   - /forms/addressNameChange.html
+  - /forms/allPublications.html
   - /forms/beneficiaryParticipants.html
+  - /forms/civilianForms.html
   - /forms/contributions.html
   - /forms/deathBenefits.html
   - /forms/generalInformation.html
@@ -30,6 +29,7 @@ redirect_from:
   - /forms/legalDocuments.html
   - /forms/loans.html
   - /forms/transfersAndRollovers.html
+  - /forms/uniformedServicesForms.html
   - /forms/withdrawals.html
 ---
 

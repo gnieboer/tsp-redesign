@@ -1,15 +1,12 @@
 ---
 layout: page
-
 title: Leaving the federal government
-
 sidenav: manage-life-changes
-
 styles:
-
 scripts:
-
 permalink: /changes-in-your-career/leaving-the-federal-government/
+redirect_from:
+  - /LifeEvents/career/seperatingFromGovService/
 ---
 
 # Leaving the federal government

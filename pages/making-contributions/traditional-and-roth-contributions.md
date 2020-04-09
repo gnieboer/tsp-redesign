@@ -5,6 +5,8 @@ styles:
 sidenav: manage-your-plan
 scripts:
 permalink: /making-contributions/traditional-and-roth-contributions/
+redirect_from:
+  - /PlanParticipation/EligibilityAndContributions/TaxTreatment/
 ---
 
 # Traditional and Roth contributions

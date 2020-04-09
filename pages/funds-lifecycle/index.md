@@ -16,6 +16,7 @@ document-ready:
   - groupFundAnnualReturns('Lfunds');
 redirect_from:
   - /InvestmentFunds/FundOptions/
+  - /InvestmentFunds/FundsOverview/comparisonMatrix/
 ---
 
 # Lifecycle funds
