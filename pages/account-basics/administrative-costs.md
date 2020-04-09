@@ -12,11 +12,7 @@ document-ready:
   - groupFundAnnualReturns('Lfunds');
   - groupFundAnnualReturns('Index');
 redirect_from:
-<<<<<<< HEAD
   - /InvestmentFunds/FundsOverview/expenses.html
-=======
-  - /InvestmentFunds/FundsOverview/expenses/
->>>>>>> 637af4923eefebba6d9b5d0a5b3c6ec427165abb
 ---
 
 # Administrative costs

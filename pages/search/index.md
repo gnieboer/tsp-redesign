@@ -17,11 +17,7 @@ document-ready:
   - gotoPage(1);
   - addFormModals();
 redirect_from:
-<<<<<<< HEAD
   - /ParticipantSupport/Content/search.html
-=======
-  - /ParticipantSupport/Content/search/
->>>>>>> 637af4923eefebba6d9b5d0a5b3c6ec427165abb
 ---
 
 <div class="usa-grid-full search">
