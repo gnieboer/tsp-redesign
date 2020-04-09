@@ -6,7 +6,11 @@ styles:
 scripts:
 permalink: /account-basics/designating-beneficiaries/
 redirect_from:
+<<<<<<< HEAD
   - /PlanParticipation/AccountManagement/beneficiaries.html
+=======
+  - /PlanParticipation/AccountManagement/beneficiaries/
+>>>>>>> 637af4923eefebba6d9b5d0a5b3c6ec427165abb
 ---
 
 # Designating beneficiaries

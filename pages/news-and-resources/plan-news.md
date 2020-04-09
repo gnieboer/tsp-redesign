@@ -14,7 +14,11 @@ scripts:
 permalink: /news-and-resources/plan-news/
 # Jekyll redirects https://github.com/jekyll/jekyll-redirect-from
 redirect_from:
+<<<<<<< HEAD
   - /ParticipantSupport/Content/notifications.html
+=======
+  - /ParticipantSupport/Content/notifications/
+>>>>>>> 637af4923eefebba6d9b5d0a5b3c6ec427165abb
   - /plan-news/
   - /whatsnew/Content/
 ---

@@ -6,7 +6,11 @@ styles:
 scripts:
 permalink: /changes-in-your-career/leaving-the-federal-government/
 redirect_from:
+<<<<<<< HEAD
   - /LifeEvents/career/seperatingFromGovService.html
+=======
+  - /LifeEvents/career/seperatingFromGovService/
+>>>>>>> 637af4923eefebba6d9b5d0a5b3c6ec427165abb
 ---
 
 # Leaving the federal government
