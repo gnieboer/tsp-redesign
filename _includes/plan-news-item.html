@@ -6,7 +6,8 @@ HTML block for one faq item accordion.
 {% assign plan_news_name = entry.permalink | split: '/' | last | default: 'anchor' | append: '-' | append: addBlockName %}
 {% assign plan_news_posted = entry.path | split: '/' | last | truncate: 10, '' | default: '--' %}
 {% assign showHeader = include.showHeader | default: 1 %}
-{% assign entryHTML = entry.permalink | append: '.html' %}
+{% assign xentryHTML = entry.permalink | append: '.html' %}
+{% assign entryHTML = entry.permalink %}
 {% if addBlockName != 0 %}<div id="{{plan_news_name}}-block" class="plan-news-search-block">{% endif %}
 <a name="{{plan_news_name}}"></a>
 {% if showHeader != 0 %}
