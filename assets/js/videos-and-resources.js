@@ -2,17 +2,32 @@
 function onPlayerReady(event) {
   event.target.playVideo();
 }
-function showVideo(vidCode) {
+function showVideo(vidCode, changeURL) {
   $('.video-details').hide();
   $('#'+vidCode+'-block').show();
   // console.log('show '+vidCode);
   var ytURL = "https://www.youtube.com/embed/";
   var ytOptions = "?modestbranding=1&rel=0&iv_load_policy=3&fs=0&disablekb=1&showinfo=0&autoplay=0";
   $('#video-iframe').attr("src", ytURL+vidCode+ytOptions);
+  if (changeURL) {
+    window.history.pushState({}, vidCode, '/videos-and-resources/?vidCode='+vidCode);
+  }
+}
+
+// only call this on page load!
+function initVideoFromURL(def, flag) {
+  var vidCode = getQueryString('vidCode');
+  if (typeof vidCode === 'undefined') { vidCode = def; }
+  vidCode = decodeURIComponent(vidCode);
+  vidCode = vidCode.replace(/[^A-Z0-9_-]/ig,'');
+  vidCode = vidCode.substring(0,15);
+  if ($('#show-'+vidCode).length) { showVideo(vidCode, flag); } else { showVideo(def, flag); }
+  return false;
 }
 
 function initVideoList() {
-  showVideo('r6rRMcgBNCc');
+  // showVideo('r6rRMcgBNCc', 0);
+  initVideoFromURL('r6rRMcgBNCc', 0);
 
   // do a search to get all the video details
   // inlineUSAsearch('videos', 'search-status', 'beta.tsp', 'video', 'tsp', 1, 0, videoSearchCallback);
