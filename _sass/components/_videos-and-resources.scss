@@ -260,6 +260,13 @@ section.videos-and-resources {
   }
 }
 
+// Used only by /videos-and-resources/index-yml.html
+
+.copy-yml {
+  font-family: monospace;
+  white-space: pre-line;
+}
+
 @media only screen and (min-width: $large-screen) {
   section.videos-and-resources {
     .usa-accordion-button {

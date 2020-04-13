@@ -14,11 +14,14 @@ scripts:
 permalink: /videos-and-resources/index-yml.html
 document-ready:
   - initVideoList();
-published: false
+# Set this to 'true' in order to receive latest data from YouTube, COPY data, and then set back to 'false'
+published: true
 ---
 
 # Build Video YML
-
+<div class="usa-grid">
+<div class="usa-width-one-whole">
+<label for="API-KEY">API Key</label>
 <input id="API-KEY" size="45" value="AIzaSyDLozGtZFvP49NZxV1SodEiUdqDJvaG0M8"><button id="API-button" onClick="buildYML('API-KEY', 'yml-file');">Build YML</button>
 
 <div class="hide">
@@ -30,4 +33,7 @@ published: false
 </div>
 
 <button id="yml-file-button" onClick="copyDivToClipboard('yml-file');">Copy YML</button>
-<div id='yml-file' style="font-family: monospace; white-space: pre;">Enter API key and click button</div>  
+<div id='yml-file' class='copy-yml'>Enter API key and click button</div>  
+
+</div>
+</div>
