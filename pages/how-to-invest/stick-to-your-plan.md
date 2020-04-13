@@ -1,6 +1,6 @@
 ---
 layout: page
-title: stick-to-your-plan
+title: Stick to your plan
 styles:
 sidenav: fund-options
 scripts:

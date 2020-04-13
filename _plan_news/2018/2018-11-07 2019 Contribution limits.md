@@ -1,5 +1,5 @@
 ---
-title: COPY 2018 Contribution limits
+title: 2018 Contribution limits
 permalink: /plan-news/2019-limits
 latest: No
 ---

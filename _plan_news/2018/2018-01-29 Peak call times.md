@@ -1,5 +1,5 @@
 ---
-title: COPY Peak call times
+title: Peak call times
 permalink: /plan-news/call-times
 latest:
 ---
