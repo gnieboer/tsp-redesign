@@ -48,9 +48,11 @@ FC_prefix_array['BP'] = "You cannot contribute additional funds to the TSP accou
     + "For more information about Beneficiary Participant accounts, ";
 
 function set_FC_text(rs) {
-  if (typeof (FC_prefix_array[rs]) != 'undefined') { $('#FC_info').html(FC_prefix_array[rs]); }
+  if ($('#FC_'+rs) != 'undefined') {
+    $('.FC_Info').hide();
+    $('#FC_'+rs).show();
+  }
 }
-set_FC_text('FERS');
 
 function selectedGrowth(id) {
   console.log(id);

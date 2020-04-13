@@ -7,6 +7,8 @@ Name middle panels (2) for CALC.
 
 <section id="panel-{{ panelID }}" class="calculator-panel" style="{{ hide }}"  markdown="1">
 
+## Retirement system: <span id="retirementSystem"></span>
+
 {% include calculator/div-panel-form-field.html
   fieldID="panel-2.1" id="growthSelector"
   inputType="radio" radioIDs="balanceOnly, futureOnly, bothGrowth"
@@ -32,8 +34,30 @@ Log in to [My Account]({{ site.myaccount }}){:target="\_blank"} to see your curr
 %}
 
 {% comment %}Start of multi-input block Future Contrib.  We must close <div> at end{% endcomment %}
+{% comment %}This block also has glossary filled dynamic text creating a complex text block where one of five choices is displayed based on the rs choosen on the previous page.{% endcomment %}
+{% capture FC_more_info %}For more information on agency contributions, see [Contribution types]({{ site.baseurl }}/making-contributions/contribution-types/).{{ seeMoreInfo }}
+{% endcapture %}
+{% capture explanation2_3FERS %}
+<span id="FC_FERS" class="FC_Info hide">FERS You may begin contributing to the TSP (through payroll contributions) as soon as you are hired. You also receive <span data-term="Agency Automatic (1%) Contributions" class="js-glossary-toggle term term-end">Agency Automatic (1%) Contributions</span> and are eligible to receive <span data-term="Agency Matching Contributions" class="js-glossary-toggle term term-end">Agency Matching Contributions</span>. Note: Newly hired or rehired FERS employees are automatically enrolled to contribute 3% of basic pay unless they elect otherwise. {{ FC_more_info }}</span>
+{% endcapture %}
+{% capture explanation2_3CSRS %}
+<span id="FC_CSRS" class="FC_Info hide">CSRS You may begin contributing to the TSP (through payroll contributions) as soon as you are hired. Note: Newly rehired CSRS employees are automatically enrolled to contribute 3% of basic pay unless they elect otherwise. CSRS employees do not receive agency contributions.</span>
+{% endcapture %}
+{% capture explanation2_3USBRS %}
+<span id="FC_USBRS" class="FC_Info hide">USBRS You can contribute from incentive pay, special pay, or bonus pay, as long you contribute from your basic pay. You can elect to contribute from incentive pay, special pay, or bonus pay, even if you are not currently receiving them. These contributions will be deducted when you do receive any of these types of pay. BRS members also receive <span data-term="Service Automatic (1%) Contributions" class="js-glossary-toggle term term-end">Service Automatic (1%) Contributions</span> and are eligible to receive <span data-term="Service Matching Contributions" class="js-glossary-toggle term term-end">Service Matching Contributions</span>. Note: Newly hired or rehired uniformed services members are automatically covered by BRS and enrolled to contribute 3% of basic pay unless they elect otherwise. {{ FC_more_info }}</span>
+{% endcapture %}
+{% capture explanation2_3US %}
+<span id="FC_US" class="FC_Info hide">US You may begin contributing to the TSP (through payroll contributions) as soon as you are hired. You can contribute from incentive pay, special pay, or bonus pay, as long you contribute from your basic pay. You can elect to contribute from incentive pay, special pay, or bonus pay, even if you are not currently receiving them. These contributions will be deducted when you do receive any of these types of pay. Note: Non-BRS members of the uniformed services do not receive <span data-term="Service Automatic (1%) Contributions" class="js-glossary-toggle term term-end">Service Automatic (1%) Contributions</span> or <span data-term="Service Matching Contributions" class="js-glossary-toggle term term-end">Service Matching Contributions</span>.</span>
+{% endcapture %}
+{% capture explanation2_3BP %}
+<span id="FC_BP" class="FC_Info hide">BP You cannot contribute additional funds to the TSP account that was established for you.</span>
+{% endcapture %}
 {% capture explanation2_3 %}
-You may begin contributing to the TSP (through payroll contributions) as soon as you are hired. You also receive <span data-term="Agency Automatic (1%) Contributions" class="js-glossary-toggle term term-end">Agency Automatic (1%) Contributions</span> and are eligible to receive <span data-term="Agency Matching Contributions" class="js-glossary-toggle term term-end">Agency Matching Contributions</span>. Note: Newly hired or rehired FERS employees are automatically enrolled to contribute 3% of basic pay unless they elect otherwise. For more information on agency contributions, see [Contribution types]({{ site.baseurl }}/making-contributions/contribution-types/).
+{{ explanation2_3FERS }}
+{{ explanation2_3CSRS }}
+{{ explanation2_3USBRS }}
+{{ explanation2_3US }}
+{{ explanation2_3BP }}
 {% endcapture %}
 {% include calculator/div-panel-form-field.html
   fieldID="panel-2.3" inputType="none" H2="Future contributions"
