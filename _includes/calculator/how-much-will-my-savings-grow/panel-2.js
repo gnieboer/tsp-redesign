@@ -7,9 +7,11 @@ This is the javascript specific to panel 2.
 <!--
 panelNames['{{ panelName}}'] = {{ panelID }};
 panelGood[{{ panelID }}] = function(forceValue) {
-  return true;
-  return ( growthChoiceGood() & yearsServedGood(1) & DIEMSdateGood(1)
-      & balanceGood() & contributionsGood() & yearsToGoGood() & rateOfReturnGood() );
+  return ( growthSelectorGood() & yearsServedGood(1) & DIEMSdateGood(1) & balanceGood()
+    );
+
+  //
+  //     & contributionsGood() & yearsToGoGood() & rateOfReturnGood() );
 };
 
 panelEnter[{{ panelID }}] = function(panel) {
@@ -20,33 +22,6 @@ panelExit[{{ panelID }}] = function(panel) {
   return true;
 }
 
-//
-var FC_more_info =  "see <a class=\"textBoxLinkBlue\""
-                    + " onClick=\"openWindow('/PlanParticipation/EligibilityAndContributions/typesOfContributions.html', 750, 650);\""
-                    + " href=\"javascript:void(0);\">Types of Contributions</a> under Plan Participation."
-
-var FC_prefix_array = new Array();
-FC_prefix_array['FERS'] = "You may begin contributing to the TSP (through payroll contributions) as soon as you are hired. You also receive "
-    + "Agency Automatic (1%) Contributions and are eligible to receive Agency Matching Contributions. Note: Newly hired or rehired "
-    + "FERS employees are automatically enrolled to contribute 3% of basic pay unless they elect otherwise. For more information on agency contributions, "
-    + FC_more_info;
-FC_prefix_array['CSRS'] = "You may begin contributing to the TSP (through payroll contributions) as soon as you are hired. "
-    + "Note: Newly rehired CSRS employees are automatically enrolled to contribute 3% of basic pay unless they elect otherwise. "
-    + "CSRS employees do not receive agency contributions.";
-FC_prefix_array['US'] = "You may begin contributing to the TSP (through payroll contributions) as soon as you are hired. "
-    + "You can contribute from incentive pay, special pay, or bonus pay, as long you contribute from your basic pay. You can elect to "
-    + "contribute from incentive pay, special pay, or bonus pay, even if you are not currently receiving them. These contributions "
-    + "will be deducted when you do receive any of these types of pay. Note: Non-BRS members of the uniformed services do not receive "
-    + "Service Automatic (1%) Contributions or Service Matching contributions.";
-FC_prefix_array['USBRS'] = "You can contribute from incentive pay, special pay, or bonus pay, as long you contribute from your basic pay. "
-    + "You can elect to contribute from incentive pay, special pay, or bonus pay, even if you are not currently receiving them. "
-    + "These contributions will be deducted when you do receive any of these types of pay. BRS members also receive Service Automatic (1%) "
-    + "Contributions and are eligible to receive Service Matching Contributions. Note: Newly hired or rehired uniformed services members "
-    + "are automatically covered by BRS and enrolled to contribute 3% of basic pay unless they elect otherwise. For more information on service contributions, "
-    + FC_more_info;
-FC_prefix_array['BP'] = "You cannot contribute additional funds to the TSP account that was established for you. "
-    + "For more information about Beneficiary Participant accounts, ";
-
 function set_FC_text(rs) {
   if ($('#FC_'+rs) != 'undefined') {
     $('.FC_Info').hide();
@@ -56,9 +31,111 @@ function set_FC_text(rs) {
 
 function selectedGrowth(id) {
   console.log(id);
+  growthSelectorGood();
   // deemphasize(0);
 }
 // my functions
+function balanceGood() {
+  return ( amountToUseGood() );
+}
+function contributionsGood() {
+  return ( annualPayGood() & payScheduleGood() & annualPayPercentGood() & annualPayIncreasePercentGood() & catchupAmountGood() & yearsToContributeGood() );
+}
+
+function set_gc(gc) {
+  if (gc == 'balanceOnly') { $('#balanceOnly').prop('checked', true); $('#balanceOnly').trigger('click'); }
+  if (gc == 'futureOnly') { $('#futureOnly').prop('checked', true);   $('#futureOnly').trigger('click'); }
+  if (gc == 'bothGrowth') { $('#bothGrowth').prop('checked', true);   $('#bothGrowth').trigger('click'); }
+}
+
+function getGrowthSelector() {
+  if ($('#balanceOnly').prop('checked')) { return 'balanceOnly'; }
+  if ($('#futureOnly').prop('checked')) { return 'futureOnly'; }
+  if ($('#bothGrowth').prop('checked')) { return 'bothGrowth'; }
+
+  return '';
+}
+
+function growthSelectorGood() {
+  var growthSelector = getGrowthSelector();
+
+  if (growthSelector == '') return showError('growthSelector', 'Please select how you will use this calculator.');
+
+  var choice = 'Both';
+  if (growthSelector == 'balanceOnly') choice = 'Existing Account Balance';
+  if (growthSelector == 'futureOnly') choice = 'Future Contributions';
+  $('#lblAYRgrowthSelector').html(choice);
+  return clearError('growthSelector');
+}
+
+var DIEMS = flatpickr("#DIEMSdate", {
+  altInput: true,
+  altFormat: "F j, Y",
+  dateFormat: "F j, Y",
+  // dateFormat: "Y-m-d",
+  allowInput: true,
+  // defaultDate: [new Date().fp_incr(-30), "today"],
+  minDate: "01/01/1900",
+  maxDate: "today",
+});
+
+function DIEMSdateGood(submit) {
+  var growthSelector = getGrowthSelector();
+  if ((growthSelector == 'balanceOnly') || (growthSelector == '')) { return clearError('DIEMSdate'); }
+  var DIEMSdate = $.trim($('#DIEMSdate').val());
+  console.log('Date '+DIEMSdate);
+  console.log(DIEMS);
+  $('#lblAYRDIEMSdate').html(DIEMSdate);
+  if (!$('#USBRS').prop('checked')) { return clearError('DIEMSdate'); }
+  if (DIEMSdate.length > 0) { return clearError('DIEMSdate'); }
+  if (submit) { return showError('DIEMSdate', 'Enter DIEMS date.'); }
+  clearError('DIEMSdate');
+  return false;
+}
+
+function yearsServedGood() {
+  var growthSelector = getGrowthSelector();
+  if ((growthSelector == 'balanceOnly') || (growthSelector == '')) { return clearError('yearsServed'); }
+  if (!$('#USBRS').prop('checked')) { return clearError('yearsServed'); }
+
+  var yearsServed = getPosInteger('yearsServed', -1);
+  $('#lblAYRyearsServed').html(yearsServed);
+
+  if (yearsServed < 0) {
+    return showError('yearsServed', "Enter your years served.");
+  }
+  if ((yearsServed < 0) || (yearsServed > 99)) {
+    return showError('yearsServed', "Years Served must be between 0 and 99.");
+  }
+//  if (yearsServed > 26) {
+//    return showError('yearsServed', "Years served more than 26 makes you inelligble for US-BRS.");
+//  }
+
+  testWarning();
+  return clearError('yearsServed');
+}
+
+function testWarning() {
+ console.log('still need to add testWarning');
+}
+
+function amountToUseGood() {
+  var growthSelector = getGrowthSelector();
+  if ((growthSelector == 'futureOnly') || (growthSelector == '')) { return clearError('amountToUse'); }
+
+  var amountToUse = getPosInteger('amountToUse', -1);
+
+  if (amountToUse <= 0) {
+    return showError('amountToUse', "You must enter the amount that is currently in your TSP account.");
+  }
+  if (amountToUse > 5000000) {
+    return showError('amountToUse', "Existing balance must not be greater than $5,000,000.");
+  }
+
+  $('#lblAYRamountToUse').html(CurrencyFormatted(amountToUse));
+  return clearError('amountToUse');
+}
+
 /*
 function deemphasize(flag) {
   if (flag == 0) {
@@ -113,79 +190,13 @@ function deemphasize(flag) {
     enableAccountBalance();
     enableFutureContributions();
   }
-  growthChoiceGood();
-}
-
-function balanceGood() {
-  return ( amountToUseGood() );
-}
-function contributionsGood() {
-  return ( annualPayGood() & payScheduleGood() & annualPayPercentGood() & annualPayIncreasePercentGood() & catchupAmountGood() & yearsToContributeGood() );
-}
-
-function set_gc(gc) {
-  if (gc == 'balanceOnly') { $('#balanceOnly').attr('checked', true); $('#balanceOnly').trigger('click'); }
-  if (gc == 'futureOnly') { $('#futureOnly').attr('checked', true);   $('#futureOnly').trigger('click'); }
-  if (gc == 'bothGrowth') { $('#bothGrowth').attr('checked', true);   $('#bothGrowth').trigger('click'); }
+  growthSelectorGood();
 }
 
 $('#catchupNoteText').html("Catch-up contributions are traditional and/or Roth contributions that are made by "
     + "a participant age 50 or older. You must first exceed the elective deferral limit ("
     + CurrencyFormatted(IRC_contribution_limit) + " in " + IRC_limit_year + ") to make catch-up contributions.");
 
-function getGrowthChoice() {
-  if ($('#balanceOnly').attr('checked')) { return 'balanceOnly'; }
-  if ($('#futureOnly').attr('checked')) { return 'futureOnly'; }
-  if ($('#bothGrowth').attr('checked')) { return 'bothGrowth'; }
-
-  return '';
-}
-
-function growthChoiceGood() {
-  var growthChoice = getGrowthChoice();
-
-  if (growthChoice == '') return showError('growthChoice', 'Please select how you will use this calculator.');
-
-  var choice = 'Both';
-  if (growthChoice == 'balanceOnly') choice = 'Existing Account Balance';
-  if (growthChoice == 'futureOnly') choice = 'Future Contributions';
-  $('#lblAYRgrowthChoice').html(choice);
-  return clearError('growthChoice');
-}
-
-function DIEMSdateGood(submit) {
-  var growthChoice = getGrowthChoice();
-  if ((growthChoice == 'balanceOnly') || (growthChoice == '')) { return clearError('DIEMSdate'); }
-  var DIEMSdate = $.trim($('#DIEMSdate').val());
-  $('#lblAYRDIEMSdate').html(DIEMSdate);
-  if (!$('#USBRS').attr('checked')) { return clearError('DIEMSdate'); }
-  if (DIEMSdate.length > 0) { return clearError('DIEMSdate'); }
-  if (submit) { return showError('DIEMSdate', 'Enter DIEMS date.'); }
-  clearError('DIEMSdate');
-  return false;
-}
-
-function yearsServedGood() {
-  var growthChoice = getGrowthChoice();
-  if ((growthChoice == 'balanceOnly') || (growthChoice == '')) { return clearError('yearsServed'); }
-  if (!$('#USBRS').attr('checked')) { return clearError('yearsServed'); }
-
-  var yearsServed = getPosInteger('yearsServed', -1);
-  $('#lblAYRyearsServed').html(yearsServed);
-
-  if (yearsServed < 0) {
-    return showError('yearsServed', "Enter your years served.");
-  }
-  if ((yearsServed < 0) || (yearsServed > 99)) {
-    return showError('yearsServed', "Years Served must be between 0 and 99.");
-  }
-//  if (yearsServed > 26) {
-//    return showError('yearsServed', "Years served more than 26 makes you inelligble for US-BRS.");
-//  }
-
-  testWarning();
-  return clearError('yearsServed');
-}
 
 function enableServiceSoFar() {
   enableElement('yearsServed');
@@ -202,8 +213,8 @@ function disableServiceSoFar() {
 
 
 function amountToUseGood() {
-  var growthChoice = getGrowthChoice();
-  if ((growthChoice == 'futureOnly') || (growthChoice == '')) { return clearError('amountToUse'); }
+  var growthSelector = getGrowthSelector();
+  if ((growthSelector == 'futureOnly') || (growthSelector == '')) { return clearError('amountToUse'); }
 
   var amountToUse = getPosInteger('amountToUse', -1);
 
@@ -248,9 +259,9 @@ function disableFutureContributions() {
 }
 
 function annualPayGood() {
-  var growthChoice = getGrowthChoice();
-  if ((growthChoice == 'balanceOnly') || (growthChoice == '')) { return clearError('annualPay'); }
-  if ($('#BP').attr('checked')) { return clearError('annualPay'); }
+  var growthSelector = getGrowthSelector();
+  if ((growthSelector == 'balanceOnly') || (growthSelector == '')) { return clearError('annualPay'); }
+  if ($('#BP').prop('checked')) { return clearError('annualPay'); }
 
   var annualPay = getPosInteger('annualPay', -1);
 
@@ -267,11 +278,11 @@ function annualPayGood() {
 }
 
 function payScheduleGood() {
-  var growthChoice = getGrowthChoice();
-  if ((growthChoice == 'balanceOnly') || (growthChoice == '')) { return clearError('paySchedule'); }
-  if ($('#BP').attr('checked')) { return clearError('paySchedule'); }
-  if ($('#US').attr('checked')) { return clearError('paySchedule'); }
-  if ($('#USBRS').attr('checked')) { return clearError('paySchedule'); }
+  var growthSelector = getGrowthSelector();
+  if ((growthSelector == 'balanceOnly') || (growthSelector == '')) { return clearError('paySchedule'); }
+  if ($('#BP').prop('checked')) { return clearError('paySchedule'); }
+  if ($('#US').prop('checked')) { return clearError('paySchedule'); }
+  if ($('#USBRS').prop('checked')) { return clearError('paySchedule'); }
 
   $('#lblAYRpaySchedule').html($('#paySchedule').val());
   if ($('#paySchedule').val() == 'Select') {
@@ -282,9 +293,9 @@ function payScheduleGood() {
 }
 
 function annualPayPercentGood() {
-  var growthChoice = getGrowthChoice();
-  if ((growthChoice == 'balanceOnly') || (growthChoice == '')) { return clearError('annualPayPercent'); }
-  if ($('#BP').attr('checked')) { return clearError('annualPayPercent'); }
+  var growthSelector = getGrowthSelector();
+  if ((growthSelector == 'balanceOnly') || (growthSelector == '')) { return clearError('annualPayPercent'); }
+  if ($('#BP').prop('checked')) { return clearError('annualPayPercent'); }
 
   if ($("#annualPayPercent").val() == '') {
     return showError('annualPayPercent', "Please enter the percent of your annual pay you would like to save.");
@@ -302,9 +313,9 @@ function annualPayPercentGood() {
 }
 
 function annualPayIncreasePercentGood() {
-  var growthChoice = getGrowthChoice();
-  if ((growthChoice == 'balanceOnly') || (growthChoice == '')) { return clearError('annualPayIncreasePercent'); }
-  if ($('#BP').attr('checked')) { return clearError('annualPay'); }
+  var growthSelector = getGrowthSelector();
+  if ((growthSelector == 'balanceOnly') || (growthSelector == '')) { return clearError('annualPayIncreasePercent'); }
+  if ($('#BP').prop('checked')) { return clearError('annualPay'); }
 
   if ($("#annualPayIncreasePercent").val() == '') {
     // return showError('annualPayIncreasePercent', "Please enter your estimated annual pay increase.");
@@ -325,9 +336,9 @@ function annualPayIncreasePercentGood() {
 }
 
 function catchupAmountGood() {
-  var growthChoice = getGrowthChoice();
-  if ((growthChoice == 'balanceOnly') || (growthChoice == '')) { return clearError('catchupAmount'); }
-  if ($('#BP').attr('checked')) { return clearError('catchupAmount'); }
+  var growthSelector = getGrowthSelector();
+  if ((growthSelector == 'balanceOnly') || (growthSelector == '')) { return clearError('catchupAmount'); }
+  if ($('#BP').prop('checked')) { return clearError('catchupAmount'); }
 
   var catchupAmount = getPosInteger('catchupAmount', 0);
 
@@ -345,8 +356,8 @@ function catchupAmountGood() {
 
 // test relation to each other
 function yearsContribAndGo() {
-  var growthChoice = getGrowthChoice();
-  if ((growthChoice == 'balanceOnly') || (growthChoice == '')) { return true; }
+  var growthSelector = getGrowthSelector();
+  if ((growthSelector == 'balanceOnly') || (growthSelector == '')) { return true; }
   var yearsToGo = getPosInteger('yearsToGo', -1);
   var yearsToContribute = getPosInteger('yearsToContribute', -1);
 
@@ -360,8 +371,8 @@ function yearsContribAndGo() {
 }
 
 function checkYearsToContribute() {
-  var growthChoice = getGrowthChoice();
-  if ((growthChoice == 'balanceOnly') || (growthChoice == '')) { return clearError('yearsToContribute'); }
+  var growthSelector = getGrowthSelector();
+  if ((growthSelector == 'balanceOnly') || (growthSelector == '')) { return clearError('yearsToContribute'); }
   var yearsToContribute = getPosInteger('yearsToContribute', -1);
 
   if (yearsToContribute <= 0) {
@@ -377,9 +388,9 @@ function checkYearsToContribute() {
 }
 
 function yearsToContributeGood() {
-  var growthChoice = getGrowthChoice();
-  if ((growthChoice == 'balanceOnly') || (growthChoice == '')) { return clearError('yearsToContribute'); }
-  if ($('#BP').attr('checked')) { return clearError('yearsToContribute'); }
+  var growthSelector = getGrowthSelector();
+  if ((growthSelector == 'balanceOnly') || (growthSelector == '')) { return clearError('yearsToContribute'); }
+  if ($('#BP').prop('checked')) { return clearError('yearsToContribute'); }
 
   if (checkYearsToContribute() == false) return false;
 
@@ -438,7 +449,7 @@ function clear_warning_icon() { $('#WarnOpContr').hide(); }
 function show_warning_icon() { $('#WarnOpContr').show(); }
 
 function testWarning() {
-  if ($('#BP').attr('checked')) { return; }
+  if ($('#BP').prop('checked')) { return; }
   if (getPosInteger('yearsToContribute', -1) <= 0) { return; }
 
   var annualPay = getPosInteger('annualPay', -1);

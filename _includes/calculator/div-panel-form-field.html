@@ -29,9 +29,11 @@ This script produces an input area for calculator panels.
 {% if outerDivID != '' %}
 {% assign outerDivID = 'id="' | append: outerDivID | append: '"' %}
 {% endif %}
+{% assign anchor = include.anchor | default: '' %}
 {% assign dontOpenOuterDiv = include.dontOpenOuterDiv | default: false %}
 {% assign dontCloseOuterDiv = include.dontCloseOuterDiv | default: false %}
 {% if dontOpenOuterDiv %}{% assign dontCloseOuterDiv = true %}{% endif %}
+{% if anchor != '' %}<a name="{{anchor}}"></a>{% endif %}
 {% unless dontOpenOuterDiv %}<div {{outerDivID}} class="panel-form-field" >{% endunless %}
   {% if H2 != '' %}<h2>{{H2}}</h2>{% endif %}
   {% if inputType != 'none' %}

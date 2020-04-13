@@ -10,68 +10,93 @@ Name middle panels (2) for CALC.
 ## Retirement system: <span id="retirementSystem"></span>
 
 {% include calculator/div-panel-form-field.html
-  fieldID="panel-2.1" id="growthSelector"
+  fieldID="panel-2.1" id="growthSelector" anchor="growth"
   inputType="radio" radioIDs="balanceOnly, futureOnly, bothGrowth"
   radioLabels="Existing account balance, Future contributions, Both"
   inputClass="usa-unstyled-list"
-  onBlur="selectedGrowth(this.id);"
+  onBlur="growthSelectorGood();"
   prompt="Growth model"
   explanation="
   This calculator will show you the growth of your current account balance, growth of future contributions from your paycheck, or both. You must select a growth model.
   "
 %}
 
-{% capture explanation2_2 %}
+{% comment %}Start of multi-input block Service So Far.  We must close <div> at end{% endcomment %}
+{% capture explanation2_2 %}none{% endcapture %}
+{% include calculator/div-panel-form-field.html outerDivID="serviceSoFar"
+  fieldID="panel-2.2" inputType="none" H2="Your service so far" anchor="service"
+  explanation=''  dontCloseOuterDiv=true
+%}
+{% include calculator/div-panel-form-field.html
+  fieldID="panel-2.3" id="yearsServed"
+  inputClass=""  min="0" value="" max="99" maxLength=2 step="1"
+  placeholder="" onBlur="yearsServedGood();"
+  prompt="Enter the number of years you have already served (whole numbers only):"
+  explanation=""  dontOpenOuterDiv=true
+%}
+{% capture explanation2_4 %}
+Your DIEMS (Date of Initial Entry into Military Service) is the date on which you committed to enlist or enter an academy, not necessarily the date you began serving. Ask your service personnel office if you are unsure of your DIEMS.
+{% endcapture %}
+{% include calculator/div-panel-form-field.html
+  fieldID="panel-2.4" id="DIEMSdate"
+  inputClass=""  maxLength=11
+  placeholder="" onBlur="DIEMSdateGood(0);"
+  prompt="Enter your DIEMS:"
+  explanation=explanation2_4   dontOpenOuterDiv=true
+%}
+</div>{% comment %}End of multi-input block Account contribs{% endcomment %}
+
+{% capture explanation2_5 %}
 Log in to [My Account]({{ site.myaccount }}){:target="\_blank"} to see your current account balance.
 {% endcapture %}
 {% include calculator/div-panel-form-field.html
-  fieldID="panel-2.2" id="amountToUse"
+  fieldID="panel-2.5" id="amountToUse"  anchor="balance"
   inputClass=""  dataFormat="$" H2="Existing account balance"
   min="0" value="" max="5000000" maxLength=7 step="1"
   placeholder="" onBlur="amountToUseGood(true);"
   prompt="Enter the amount you already have in your TSP account:"
-  explanation=explanation2_2
+  explanation=explanation2_5
 %}
 
 {% comment %}Start of multi-input block Future Contrib.  We must close <div> at end{% endcomment %}
 {% comment %}This block also has glossary filled dynamic text creating a complex text block where one of five choices is displayed based on the rs choosen on the previous page.{% endcomment %}
 {% capture FC_more_info %}For more information on agency contributions, see [Contribution types]({{ site.baseurl }}/making-contributions/contribution-types/).{{ seeMoreInfo }}
 {% endcapture %}
-{% capture explanation2_3FERS %}
+{% capture explanation2_6FERS %}
 <span id="FC_FERS" class="FC_Info hide">FERS You may begin contributing to the TSP (through payroll contributions) as soon as you are hired. You also receive <span data-term="Agency Automatic (1%) Contributions" class="js-glossary-toggle term term-end">Agency Automatic (1%) Contributions</span> and are eligible to receive <span data-term="Agency Matching Contributions" class="js-glossary-toggle term term-end">Agency Matching Contributions</span>. Note: Newly hired or rehired FERS employees are automatically enrolled to contribute 3% of basic pay unless they elect otherwise. {{ FC_more_info }}</span>
 {% endcapture %}
-{% capture explanation2_3CSRS %}
+{% capture explanation2_6CSRS %}
 <span id="FC_CSRS" class="FC_Info hide">CSRS You may begin contributing to the TSP (through payroll contributions) as soon as you are hired. Note: Newly rehired CSRS employees are automatically enrolled to contribute 3% of basic pay unless they elect otherwise. CSRS employees do not receive agency contributions.</span>
 {% endcapture %}
-{% capture explanation2_3USBRS %}
+{% capture explanation2_6USBRS %}
 <span id="FC_USBRS" class="FC_Info hide">USBRS You can contribute from incentive pay, special pay, or bonus pay, as long you contribute from your basic pay. You can elect to contribute from incentive pay, special pay, or bonus pay, even if you are not currently receiving them. These contributions will be deducted when you do receive any of these types of pay. BRS members also receive <span data-term="Service Automatic (1%) Contributions" class="js-glossary-toggle term term-end">Service Automatic (1%) Contributions</span> and are eligible to receive <span data-term="Service Matching Contributions" class="js-glossary-toggle term term-end">Service Matching Contributions</span>. Note: Newly hired or rehired uniformed services members are automatically covered by BRS and enrolled to contribute 3% of basic pay unless they elect otherwise. {{ FC_more_info }}</span>
 {% endcapture %}
-{% capture explanation2_3US %}
+{% capture explanation2_6US %}
 <span id="FC_US" class="FC_Info hide">US You may begin contributing to the TSP (through payroll contributions) as soon as you are hired. You can contribute from incentive pay, special pay, or bonus pay, as long you contribute from your basic pay. You can elect to contribute from incentive pay, special pay, or bonus pay, even if you are not currently receiving them. These contributions will be deducted when you do receive any of these types of pay. Note: Non-BRS members of the uniformed services do not receive <span data-term="Service Automatic (1%) Contributions" class="js-glossary-toggle term term-end">Service Automatic (1%) Contributions</span> or <span data-term="Service Matching Contributions" class="js-glossary-toggle term term-end">Service Matching Contributions</span>.</span>
 {% endcapture %}
-{% capture explanation2_3BP %}
+{% capture explanation2_6BP %}
 <span id="FC_BP" class="FC_Info hide">BP You cannot contribute additional funds to the TSP account that was established for you.</span>
 {% endcapture %}
-{% capture explanation2_3 %}
-{{ explanation2_3FERS }}
-{{ explanation2_3CSRS }}
-{{ explanation2_3USBRS }}
-{{ explanation2_3US }}
-{{ explanation2_3BP }}
+{% capture explanation2_6 %}
+{{ explanation2_6FERS }}
+{{ explanation2_6CSRS }}
+{{ explanation2_6USBRS }}
+{{ explanation2_6US }}
+{{ explanation2_6BP }}
 {% endcapture %}
 {% include calculator/div-panel-form-field.html
-  fieldID="panel-2.3" inputType="none" H2="Future contributions"
-  explanation=explanation2_3  dontCloseOuterDiv=true
+  fieldID="panel-2.6" inputType="none" H2="Future contributions" anchor="future"
+  explanation=explanation2_6  dontCloseOuterDiv=true
 %}
 {% include calculator/div-panel-form-field.html
-  fieldID="panel-2.4" id="yearsToContribute"
+  fieldID="panel-2.7" id="yearsToContribute"
   min="0" value="" max="99" maxLength=2 step="1"
   placeholder="" onBlur="yearsToContributeGood();"
   prompt="Enter the number of years you plan to contribute:"
   explanation=''  dontOpenOuterDiv=true
 %}
 {% include calculator/div-panel-form-field.html
-  fieldID="panel-2.5" id="annualPay"
+  fieldID="panel-2.8" id="annualPay"
   inputClass=""  dataFormat="$"
   min="1" value="" max="1000000" maxLength=7 step="1"
   placeholder="" onBlur="annualPayGood();"
@@ -100,7 +125,7 @@ This will depend on how often you are paid (biweekly or monthly, for example). I
 
 {% endcapture %}
 {% include calculator/div-panel-form-field.html
-  fieldID="panel-2.6" id="paySchedule"
+  fieldID="panel-2.9" id="paySchedule"
   inputType="selectList"
   radioIDs="Select,Biweekly,Weekly,Semi-monthly,Monthly"
   radioLabels="Select your pay schedule,Biweekly (every 2 weeks&comma; 26 times a year),Weekly (52  times a year),Semi-monthly (twice a month&comma; 24 times a year),Monthly (12  times a year)"
@@ -109,7 +134,7 @@ This will depend on how often you are paid (biweekly or monthly, for example). I
   explanation=pay_schedule_explanation dontOpenOuterDiv=true
 %}
 {% include calculator/div-panel-form-field.html
-  fieldID="panel-2.7" id="annualPayPercent"
+  fieldID="panel-2.10" id="annualPayPercent"
   inputClass=""  dataFormat="%"
   min="0" value="" max="99" maxLength=5 step="0.01"
   placeholder="" onBlur="annualPayPercentGood();"
@@ -117,22 +142,22 @@ This will depend on how often you are paid (biweekly or monthly, for example). I
   explanation=""   dontOpenOuterDiv=true
 %}
 {% include calculator/div-panel-form-field.html
-  fieldID="panel-2.8" id="annualPayIncreasePercent"
+  fieldID="panel-2.11" id="annualPayIncreasePercent"
   inputClass=""  dataFormat="%"
   min="0" value="" max="15" maxLength=5 step="0.01"
   placeholder="" onBlur="annualPayIncreasePercentGood();"
   prompt="Enter the percentage of your expected annual pay increase:"
   explanation=""   dontOpenOuterDiv=true
 %}
-{% capture prompt2_9 %}
+{% capture prompt2_12 %}
 Enter the dollar amount that you plan to contribute each year in <span data-term="Catch-Up Contributions" class="js-glossary-toggle term term-end">catch-up contributions</span>:
 {% endcapture %}
 {% include calculator/div-panel-form-field.html
-  fieldID="panel-2.9" id="catchupAmount"
+  fieldID="panel-2.12" id="catchupAmount"
   inputClass=""  dataFormat="$"
   min="1" value="" max="9999" maxLength=4 step="1"
   placeholder="" onBlur="catchupAmountGood();"
-  prompt=prompt2_9
+  prompt=prompt2_12
   explanation="
   Catch-up contributions (up to $6,000 in 2019) are traditional and/or Roth contributions that are made by a participant age 50 or older. You must first exceed the elective deferral limit ($19,000.00 in 2019) to make catch-up contributions.
   "
@@ -142,13 +167,13 @@ Enter the dollar amount that you plan to contribute each year in <span data-term
 
 
 {% comment %}Start of multi-input block Account contribs.  We must close <div> at end{% endcomment %}
-{% capture explanation2_3 %}none{% endcapture %}
+{% capture explanation2_13 %}none{% endcapture %}
 {% include calculator/div-panel-form-field.html
-  fieldID="panel-2.10" inputType="none" H2="Account contributions"
+  fieldID="panel-2.13" inputType="none" H2="Account contributions" anchor="time"
   explanation=''  dontCloseOuterDiv=true
 %}
 {% include calculator/div-panel-form-field.html
-  fieldID="panel-2.11" id="yearsToGo"
+  fieldID="panel-2.14" id="yearsToGo"
   inputClass=""
   min="0" value="" max="99" maxLength=2 step="1"
   placeholder="" onBlur="yearsToGoGood();"
@@ -158,16 +183,16 @@ Enter the dollar amount that you plan to contribute each year in <span data-term
   "
   dontOpenOuterDiv=true
 %}
-{% capture explanation2_12 %}
+{% capture explanation2_15 %}
 Enter the annual rate of return you expect to earn on your contributions. View the [Rates of return]({{ site.baseurl }}/fund-performance/){:target="\_blank"} for context, but keep in mind that past performance is not a guarantee or a predictor of future returns.
 {% endcapture %}
 {% include calculator/div-panel-form-field.html
-  fieldID="panel-2.12" id="rateOfReturn"
+  fieldID="panel-2.15" id="rateOfReturn"
   inputClass=""  dataFormat="%"
   min="0" value="" max="99" maxLength=7 step="0.01"
   placeholder="" onBlur="rateOfReturnGood();"
   prompt="Expected annual rate of return:"
-  explanation=explanation2_12   dontOpenOuterDiv=true
+  explanation=explanation2_15   dontOpenOuterDiv=true
 %}
 </div>{% comment %}End of multi-input block Account contribs{% endcomment %}
 

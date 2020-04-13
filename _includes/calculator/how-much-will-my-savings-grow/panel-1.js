@@ -36,11 +36,11 @@ function rsBPshowHide(show) {
 
 function rsShowHide(rs) {
   if (rs == 'USBRS') {
-    $('#ServiceSoFar').show();
-    $('#ServiceSoFarAYR').show();
+    $('#serviceSoFar').show();
+    $('#serviceSoFarAYR').show();
   } else {
-    $('#ServiceSoFar').hide();
-    $('#ServiceSoFarAYR').hide();
+    $('#serviceSoFar').hide();
+    $('#serviceSoFarAYR').hide();
   }
 
   if (rs == 'BP') {

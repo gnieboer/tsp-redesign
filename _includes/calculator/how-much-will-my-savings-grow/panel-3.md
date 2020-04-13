@@ -116,93 +116,45 @@ To change how much you contribute, log into your payroll system and select the T
     </li>
     <!-- ADJUST YOUR RESULTS -->
     <li>
-      <button
-        class="usa-accordion-button"
-        aria-expanded="true"
-        aria-controls="adjust-results">
+      <button class="usa-accordion-button" aria-expanded="true" aria-controls="adjust-results">
         Adjust your results <i class="fal fa-sliders-v"></i>
       </button>
       <div id="adjust-results" class="usa-accordion-content">
 
+{% include calculator/AYR-table.html caption="Retirement System" showPanel=1 gotoAnchor='system' %}
+{% include calculator/AYR-table-row.html closeTable=true
+  prompt="Retirement system:" rowID='lblAYRretirementSystem' %}
 
-      <table class="usa-table-borderless">
-      <caption class="">Retirement system <a href="javascript:void(0)">Change</a></caption>
-      <colgroup><col><col></colgroup>
-      <tbody>
-      <tr>
-        <th scope="row">Retirement system:</th>
-        <td>FERS</td>
-      </tr>
-      </tbody>
-      </table>
+{% include calculator/AYR-table.html caption="Type(s) of growth" showPanel=2 gotoAnchor='growth' %}
+{% include calculator/AYR-table-row.html prompt="Growth model:" rowID='lblAYRgrowthSelector' closeTable=true %}
 
-      <table class="usa-table-borderless">
-      <caption>Type(s) of Growth <a href="javascript:void(0)">Change</a></caption>
-      <colgroup><col><col></colgroup>
-      <tbody>
-      <tr>
-        <th scope="row">Growth model:</th>
-        <td>Both</td>
-      </tr>
-      </tbody>
-      </table>
+{% include calculator/AYR-table.html caption="Your service so far" showPanel=2 gotoAnchor='service' tableID="serviceSoFarAYR"%}
+{% include calculator/AYR-table-row.html prompt="Number of years already served:" rowID='lblAYRyearsServed' %}
+{% include calculator/AYR-table-row.html closeTable=true
+  prompt="DIEMS (Date of Initial Entry into Military Service)" rowID='lblAYRDIEMSdate' %}
 
-      <table class="usa-table-borderless">
-      <caption>Existing account balance <a href="javascript:void(0)">Change</a></caption>
-      <colgroup><col><col></colgroup>
-      <tbody>
-      <tr>
-        <th scope="row">Current account balance:</th>
-        <td>$350,000.00</td>
-      </tr>
-      </tbody>
-      </table>
+{% include calculator/AYR-table.html caption="Existing account balance" showPanel=2 gotoAnchor='balance' %}
+{% include calculator/AYR-table-row.html closeTable=true
+  prompt="Current account balance" rowID='lblAYRamountToUse' %}
 
-      <table class="usa-table-borderless">
-      <caption>Future contributions <a href="javascript:void(0)">Change</a></caption>
-      <colgroup><col><col></colgroup>
-      <tbody>
-      <tr>
-        <th scope="row">Years to make contributions:</th>
-        <td>12</td>
-      </tr>
-      <tr>
-        <th scope="row">Annual pay:</th>
-        <td>$100,000.00</td>
-      </tr>
-      <tr>
-        <th scope="row">Pay schedule:</th>
-        <td>Biweekly</td>
-      </tr>
-      <tr>
-        <th scope="row">Percent salary to save:</th>
-        <td>19%</td>
-      </tr>
-      <tr>
-        <th scope="row">Expected Percent Salary Increase:</th>
-        <td>1.60%</td>
-      </tr>
-      <tr>
-        <th scope="row">Annual catch-up contributions:</th>
-        <td>$5,500</td>
-      </tr>
-      </tbody>
-      </table>
+{% include calculator/AYR-table.html caption="Future contributions" showPanel=2 gotoAnchor='future' %}
+{% include calculator/AYR-table-row.html
+  prompt="Years to make contributions:" rowID='lblAYRyearsToContribute' %}
+{% include calculator/AYR-table-row.html prompt="Annual pay:" rowID='lblAYRannualPay' %}
+{% include calculator/AYR-table-row.html prompt="Pay schedule:" rowID='lblAYRpaySchedule' %}
+{% include calculator/AYR-table-row.html
+  prompt="Percent salary to save:" rowID='lblAYRannualPayPercent' %}
+{% include calculator/AYR-table-row.html
+  prompt="Expected Percent Salary Increase:" rowID='lblAYRannualPayIncreasePercent' %}
+{% include calculator/AYR-table-row.html closeTable=true
+  prompt="Annual catch-up contributions:" rowID='lblAYRcatchupAmount' %}
 
-      <table class="usa-table-borderless">
-      <caption>Account growth <a href="javascript:void(0)">Change</a></caption>
-      <colgroup><col><col></colgroup>
-      <tbody>
-      <tr>
-        <th scope="row">Number of years until you start withdrawing:</th>
-        <td>12</td>
-      </tr>
-      <tr>
-        <th scope="row">Expected annual return:</th>
-        <td>6.00%</td>
-      </tr>
-      </tbody>
-      </table>
+{% include calculator/AYR-table.html caption="Account growth" showPanel=2 gotoAnchor='time' %}
+{% include calculator/AYR-table-row.html
+  prompt="Number of years until you start withdrawing:" rowID='lblAYRyearsToGo' %}
+{% include calculator/AYR-table-row.html closeTable=true
+    prompt="Expected annual return:" rowID='lblAYRrateOfReturn' %}
+
       </div>
     </li>
   </ul>
