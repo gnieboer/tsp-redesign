@@ -1,5 +1,5 @@
 <ul class="video-filter">
 {% for video in site.data.videos %}
-<li id="show-{{video.video_id}}" class="show-video-link"><a href="javascript:showVideo('{{video.video_id }}',1);">{{ video.video_title }}</a></li>
+<li id="show-{{video.video_id}}" class="show-video-link"><a href="javascript:showVideo('{{video.video_id }}',1);"><span id="{{video.video_id}}-link-title">{{ video.video_id }}</span></a></li>
 {% endfor %}
 </ul>

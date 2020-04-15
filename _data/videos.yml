@@ -1,36 +1,41 @@
-- video_title: "Your TSP Investment Options: The Lifecycle Funds"
-  video_id: r6rRMcgBNCc
-  video_description: "In this video, we'll talk about the professionally designed Lifecycle Funds, also known as the L Funds."
-  video_duration: "1:53"
-  video_date: 2014-10-14
+## The only values that need to be listed for each video are those that are not returned from YouTube:
+## video_id (returned, but needed for matching)
+## video_categories
+## video_download
+## video_transcript
+
+# YOUR TSP INVESMENT OPTIONS PLAYLIST
+- video_id: r6rRMcgBNCc
   video_categories:
     - Education
     - Investment options
-  video_download: fund-lifecycle.mp4
+  video_download: fund-lifecycle.mp4 # Assumption is /assets/videos/
   video_transcript: "Your TSP Investment Options: The Lifecycle Funds
+
 
 
   The TSP has a selection of individual and lifecycle funds that let you diversify your retirement savings. You can choose to invest your TSP dollars in everything from short-term U.S. Treasury securities to index funds comprised of domestic and international stocks. In this video, we’ll talk about the professionally designed Lifecycle Funds, also known as the L Funds. If you don’t have the time, experience, or interest to manage your TSP retirement savings, consider one of the L Funds.
 
 
+
   Each L Fund features a combination of the five individual funds (G, F, C, S, and I) that is appropriate for your “time horizon” or the future date at which you plan to start withdrawing the money in your TSP account.
+
 
 
   Here’s how it works:
 
 
+
   The L Funds assume that the farther you are away from needing your money, the more you are able to tolerate risk. Therefore, they give you the opportunity to enjoy the potentially higher returns associated with investing in the stock markets. But the funds continually adjust, so as the time nears for you to withdraw your money, it is more conservatively invested. That way, you’re not exposing your entire savings to unexpected market changes right when you need the income.
+
 
 
   As with all investments, there are risks. The L Funds carry the same risks that are associated with all of the underlying individual TSP funds. Watch our other fund videos for more information.
 
 
+
   To find out which L Fund might be right for you, or to learn about the other TSP funds, watch our entire series of fund videos. Or visit tsp.gov to review our fund information sheets."
-- video_title: "Your TSP Investment Options: The G Fund"
-  video_id: OHdIdwS33uA
-  video_description: "In this video, we'll talk about the Government Securities Investment Fund, also known as the G Fund."
-  video_duration: "1:38"
-  video_date: 2015-07-20
+- video_id: OHdIdwS33uA
   video_categories:
     - Education
     - Investment options
@@ -60,11 +65,7 @@
 
 
   Want to know more about the G Fund or any of the other TSP investment options?  Watch our entire series of fund videos. Or visit tsp.gov to review our fund information sheets."
-- video_title: "Your TSP Investment Options: The F Fund"
-  video_id: XRkYnT22Nuc
-  video_description: "In this video, we'll talk about the Fixed Income Index Investment Fund, also known as the F Fund. To learn more about the investment index fund that the F Fund tracks, visit http://www.bloombergindices.com"
-  video_duration: "1:43"
-  video_date: 2016-10-12
+- video_id: XRkYnT22Nuc
   video_categories:
     - Education
     - Investment options
@@ -86,22 +87,17 @@
 
   There are risks:
 
-  <ul class='transcript-list'>
-  <li>The F Fund moves up and down with returns in the bond market. </li>
-  <li>Also, there's a chance that principal and interest on bonds that comprise the index will not be paid, or that principal will be paid early if interest rates fall.</li>
-  <li>Finally, there's a chance that your F Fund investment may not grow enough to offset inflation, which chips away at your buying power.</li>
-  </ul>
-
+<ul class='transcript-list'>
+<li>The F Fund moves up and down with returns in the bond market.</li>
+<li>Also, there's a chance that principal and interest on bonds that comprise the index will not be paid, or that principal will be paid early if interest rates fall.</li>
+<li>Finally, there's a chance that your F Fund investment may not grow enough to offset inflation, which chips away at your buying power.</li>
+</ul>
 
   But with risk comes reward.  In the F Fund, you have the opportunity to earn potentially higher rates of return, over the long term, than you would by only investing in the G Fund.
 
 
   Want to know more about the F Fund or any of the other TSP investment options?  Watch our entire series of fund videos. Or visit tsp.gov to review our fund information sheets."
-- video_title: "Your TSP Investment Options: The C Fund"
-  video_id: zaDZbQKoMh8
-  video_description: "In this video, we'll talk about the Common Stock Investment Fund, also known as the C Fund."
-  video_duration: "1:34"
-  video_date: 2014-10-14
+- video_id: zaDZbQKoMh8
   video_categories:
     - Education
     - Investment options
@@ -133,11 +129,7 @@
 
 
   Want to know more about the C Fund or any of the other TSP investment options?  Watch our entire series of fund videos. Or visit tsp.gov to review our fund information sheets."
-- video_title: "Your TSP Investment Options: The S Fund"
-  video_id: FlsqG9Xrr-U
-  video_description: "In this video, we'll talk about the Small Capitalization Stock Index Fund, also known as the S Fund."
-  video_duration: "1:36"
-  video_date: 2014-10-14
+- video_id: FlsqG9Xrr-U
   video_categories:
     - Education
     - Investment options
@@ -168,11 +160,7 @@
 
 
   Want to know more about the S Fund or any of the other TSP investment options?  Watch our entire series of fund videos. Or visit tsp.gov to review our fund information sheets."
-- video_title: "Your TSP Investment Options: The I Fund"
-  video_id: ns7o3hecjOg
-  video_description: "In this video, we'll talk about the International Stock Index Investment Fund, also known as the I Fund."
-  video_duration: "1:43"
-  video_date: 2014-10-14
+- video_id: ns7o3hecjOg
   video_categories:
     - Education
     - Investment options
@@ -205,11 +193,8 @@ But with risk comes reward.  In the I Fund, you have the opportunity to earn pot
 
 
 Want to know more about the I Fund or any of the other TSP investment options?  Watch our entire series of fund videos. Or visit tsp.gov to review our fund information sheets."
-- video_title: "Who Inherits Your Money, Order of Precedence, Online Wizard | Now You Know | Thrift Savings Plan"
-  video_id: pVfoGJYFS7U
-  video_description: "Designating Your Beneficiaries: Do you know who will receive the money in your TSP account when you die? If you don’t, take some time to ensure your money goes where you want."
-  video_duration: "1:19"
-  video_date: 2019-05-21
+# NOW YOU KNOW PLAYLIST
+- video_id: pVfoGJYFS7U
   video_categories:
     - Now you know
   video_download: now-you-know-order-of-precedence.mp4
@@ -229,11 +214,7 @@ Want to know more about the I Fund or any of the other TSP investment options?  
 
 
   If you don’t remember whether you’ve submitted a Form TSP-3, you can find out by calling the ThriftLine at 1-877-968-3778 and choosing option 3 to speak with a Participant Service Representative. And now you know."
-- video_title: "TSP Contributions: How to Start, Change, or Stop Your Contributions | Now You Know"
-  video_id: 8GNfyc3AleI
-  video_description: "Want to know how to start, change, or stop your TSP contributions? Here’s how."
-  video_duration: "0:49"
-  video_date: 2018-07-16
+- video_id: 8GNfyc3AleI
   video_categories:
     - Now you know
   video_download: now-you-know-tsp-contributions.mp4
@@ -244,11 +225,7 @@ Want to know more about the I Fund or any of the other TSP investment options?  
 
 
   If your agency or service accepts a paper form, you can download and complete the TSP election form from tsp.gov, use the form they give you, or call the ThriftLine at 1-877-968-3778 and choose option 3 to have it sent to you. And now you know."
-- video_title: "Changing Your Address: Active and Separated Participants, Uniformed Services | Now You Know"
-  video_id: BrdMYz-R33s
-  video_description: "Want to prevent missing out on important TSP communications? Here’s what you should do."
-  video_duration: "1:02"
-  video_date: 2018-06-19
+- video_id: BrdMYz-R33s
   video_categories:
     - Now you know
   video_download: now-you-know-changing-your-address.mp4
@@ -265,11 +242,7 @@ Want to know more about the I Fund or any of the other TSP investment options?  
 
 
   If you’re an active duty uniformed services member, you can update your address through the myPay website. Just make sure that you log in and go to the TSP section to change your TSP address. If you change it in the “Correspondence Address” section of myPay, it will not change your TSP address. And now you know."
-- video_title: "Catch-Up Contributions: When You’re Eligible, Contribution Limits, How-to Contribute | Now You Know"
-  video_id: fE_6wGds0ac
-  video_description: "Did you know turning 50 means you can save more for retirement? Making catch-up contributions could be a great way to boost your savings as you near retirement."
-  video_duration: "1:09"
-  video_date: 2018-06-01
+- video_id: fE_6wGds0ac
   video_categories:
     - Now you know
   video_download: now-you-know-catch-up-contributions.mp4
@@ -283,11 +256,7 @@ Want to know more about the I Fund or any of the other TSP investment options?  
 
 
   You must make a new catch-up contribution election each calendar year by completing and submitting a new form. You can download the form from tsp.gov or call the ThriftLine at 1-877-968-3778 and choose option 3 to request a copy. And now you know."
-- video_title: "Stay with the TSP: Low Admin Expenses, Transfer Money from Eligible Plans | Now You Know"
-  video_id: WvP_r94Pk3c
-  video_description: "Stay with the TSP after leaving federal Service. Just because you leave federal service doesn’t mean you have to leave the TSP. Here’s why you should stay with us."
-  video_duration: "0:51"
-  video_date: 2018-05-17
+- video_id: WvP_r94Pk3c
   video_categories:
     - Now you know
   video_download: now-you-know-stay-with-the-tsp.mp4
@@ -301,11 +270,7 @@ Want to know more about the I Fund or any of the other TSP investment options?  
 
 
   Your account will continue to accrue earnings, and you can continue to change the way your money is invested in the TSP investment funds by making interfund transfers. And now you know."
-- video_title: "TSP Loans: Borrowing from Your Retirement | Now You Know"
-  video_id: 4jS1GiL3JCk
-  video_description: "Think twice about borrowing from your TSP account. It could cost you more than you realize."
-  video_duration: "1:04"
-  video_date: 2018-05-02
+- video_id: 4jS1GiL3JCk
   video_categories:
     - Now you know
   video_download: now-you-know-tsp-loans.mp4
@@ -325,13 +290,7 @@ Want to know more about the I Fund or any of the other TSP investment options?  
 
 
   Remember: the purpose of contributing to the TSP is to provide you with retirement income, not to build up a balance to borrow from. So, think twice before you take a TSP loan. Your TSP account and your future self will thank you! And now you know."
-- video_title: "Opted into BRS? Contributions Are NOT Automatic, Don’t Miss Free Money, Get Matching | Now You Know"
-  video_id: zY42j4tBXfc
-  video_description: "Your contributions are NOT automatic if you opted into BRS – they don’t happen unless you choose to make them. If you skip that important step, you’ll miss out on free money you’ve earned from your service. Now You Know | Thrift Savings Plan
-
-Take a look at 'Is Roth TSP Right for Me? (Uniformed Services)'  https://youtu.be/HGz9YdnI3f0"
-  video_duration: "1:18"
-  video_date: 2018-04-05
+- video_id: zY42j4tBXfc
   video_categories:
     - Now you know
   video_download: now-you-know-opted-into-brs.mp4
@@ -351,11 +310,7 @@ Take a look at 'Is Roth TSP Right for Me? (Uniformed Services)'  https://youtu.b
 
 
   If you haven't already, log into your payroll system to get more of the match you've earned from your service. And Now You Know."
-- video_title: "Protecting Your TSP Account Against Fraud | Now You Know"
-  video_id: mJ2xFMXPjno
-  video_description: "You play an important role in safeguarding your TSP account information against fraud. This video will show you how."
-  video_duration: "0:51"
-  video_date: 2018-03-07
+- video_id: mJ2xFMXPjno
   video_categories:
     - Now you know
   video_download: now-you-know-protecting-your-account-against-fraud.mp4
@@ -366,11 +321,7 @@ Take a look at 'Is Roth TSP Right for Me? (Uniformed Services)'  https://youtu.b
 
 
   If you’re unsure whether correspondence or telephone calls claiming to be from the TSP are authentic, DO NOT provide any personal or financial information to them. If you have questions or if you need to report any suspicious activity involving your TSP account, call us at 1-877-968-3778 and choose option 3 to speak to a Participant Service Representative. And now you know."
-- video_title: "Making Traditional vs. Roth TSP Contributions | Now You Know"
-  video_id: FOYZ_cabP1c
-  video_description: "Do you know the difference between traditional contributions and Roth TSP contributions? This video can help you understand what they are."
-  video_duration: "1:10"
-  video_date: 2018-03-07
+- video_id: FOYZ_cabP1c
   video_categories:
     - Now you know
   video_download: now-you-know-traditional-vs-roth-contributions.mp4
@@ -390,11 +341,7 @@ Take a look at 'Is Roth TSP Right for Me? (Uniformed Services)'  https://youtu.b
 
 
   The bottom line is, it’s a tax decision based on your current tax rate relative to what you expect your tax rate to be when you retire. For more information, check out our videos, “Is Roth TSP Right For Me?” – Civilian and uniformed services – at youtube.com/tsp4gov. And now you know."
-- video_title: "Changing How You’re Invested, Two Transaction Types, Old Money Vs. New Money | Now You Know | TSP"
-  video_id: EyrMbaabItQ
-  video_description: "TSP Investment Funds: To change how your money is distributed among the TSP funds, there are two transactions you can make. This video will show you what they are."
-  video_duration: "0:57"
-  video_date: 2018-03-07
+- video_id: EyrMbaabItQ
   video_categories:
     - Now you know
   video_download: now-you-know-changing-how-youre-invested.mp4
@@ -405,13 +352,7 @@ Take a look at 'Is Roth TSP Right for Me? (Uniformed Services)'  https://youtu.b
 
 
   Remember, you’re allowed two IFT’s in a calendar month. After that you can only transfer money into the G Fund. You may request a contribution allocation or an IFT by logging into My Account at tsp.gov and visiting the “Online Transactions” menu on the left. You can also call the ThriftLine at 1-877-968-3778 and follow the automated prompts. And now you know."
-- video_title: "Password Reset | Now You Know"
-  video_id: l4-o2TFmVnE
-  video_description: "Have you ever lost your TSP online password and had to wait to get a new one mailed to you? Now you’ve got a couple of more convenient options.
-
-TSP Thriftline: 1-877-968-3778 Option 3"
-  video_duration: "0:50"
-  video_date: 2017-10-10
+- video_id: l4-o2TFmVnE
   video_categories:
     - Now you know
   video_download: now-you-know-password-reset.mp4
@@ -424,32 +365,24 @@ TSP Thriftline: 1-877-968-3778 Option 3"
 
 
   Or, you can call the ThriftLine at 1-877-968-3778, press option 3, and a Participant Service Representative will help you. And now you know."
-- video_title: "The Real TSP: TSP Basics (Part 1)"
-  video_id: Zw6VFeZZ_i0
-  video_description: "Join TSP educators, Chris and Robyn, as they discuss the basics of the Thrift Savings Plan like getting matching contributions from your agency or service, transferring money into your TSP account, expenses, and more. Co-host Lazetta will answer real questions with real TSP answers in a segment called, “At Your Service.”"
-  video_duration: "26:31"
-  video_date: 2019-09-25
+# THE REAL TSP PODCAST PLAYLIST
+- video_id: Zw6VFeZZ_i0
   video_categories:
     - Podcast
-- video_title: "The Real TSP: TSP Basics (Part 2)"
-  video_id: lnC8sz1txYs
-  video_description: "When’s the best time to increase your TSP contributions? Are you investing in the right fund(s)? What do “risk tolerance” and “compounded interest” have to do with your future? In this episode, TSP educators Chris, Robyn, and Lazetta answer these questions and many more in part two of “TSP Basics.”"
-  video_duration: "19:15"
-  video_date: 2019-09-25
+  video_download:
+  video_transcript:
+- video_id: lnC8sz1txYs
   video_categories:
     - Podcast
-- video_title: "The Real TSP: Your New Flexible TSP Withdrawal Options"
-  video_id: pbGEMhys9Vw
-  video_description: "Wondering what all the fuss is about with the new changes to the TSP withdrawal options? Find out in this special episode with hosts Chris and Robyn as they discuss what’s changed and how the changes may affect you. Tune in to hear topics on withdrawal types, customized installment payments, tax withholding options, spousal requirements, and more."
-  video_duration: "16:09"
-  video_date: 2020-01-06
+  video_download:
+  video_transcript:
+- video_id: pbGEMhys9Vw
   video_categories:
     - Podcast
-- video_title: "Is Roth TSP Right for Me? (Civilian)"
-  video_id: m15Cr8WAxhc
-  video_description: "Roth contributions explained."
-  video_duration: "4:15"
-  video_date: 2012-10-19
+  video_download:
+  video_transcript:
+## ROTH TSP PLAYLIST
+- video_id: m15Cr8WAxhc
   video_categories:
     - Frequently asked questions
     - Investment options
@@ -489,11 +422,7 @@ TSP Thriftline: 1-877-968-3778 Option 3"
 
 
   As with all financial planning, you should re-evaluate your decisions periodically. So, even if Roth TSP may not be your best strategy now, be sure to check in whenever your life situation changes."
-- video_title: "Is Roth TSP Right for Me? (Uniformed Services)"
-  video_id: HGz9YdnI3f0
-  video_description: "Roth contributions explained."
-  video_duration: "2:22"
-  video_date: 2017-10-25
+- video_id: HGz9YdnI3f0
   video_categories:
     - Frequently asked questions
     - Investment options
@@ -543,13 +472,25 @@ TSP Thriftline: 1-877-968-3778 Option 3"
 
 
   As with all financial planning, you should re-evaluate your decisions periodically. So, even if Roth TSP may not be your best strategy now, be sure to check in whenever your life situation changes."
-- video_title: "Investing in Bonds"
-  video_id: DqWi6lUtqBQ
-  video_description: "Learn what bonds are and how you can invest in them through the TSP."
-  video_duration: "2:30"
-  video_date: 2014-02-18
+- video_id: xNtEokRg3rM
+  video_categories:
+    - Podcast
+    - Roth
+    - Uniformed Services
+  video_download:
+  video_transcript:
+- video_id: eH0uvgwrvtc
+  video_categories:
+    - Podcast
+    - Roth
+    - Uniformed Services
+  video_download:
+  video_transcript:
+## FREQUENTLY ASKED QUESTIONS PLAYLIST
+- video_id: DqWi6lUtqBQ
   video_categories:
     - Frequently asked questions
+  video_download:
   video_transcript: "As a TSP participant, you have the opportunity to invest in bonds. But what is a bond? In this video, we'll go over some of the basics.
 
 
@@ -572,11 +513,7 @@ TSP Thriftline: 1-877-968-3778 Option 3"
 
 
   Want to know more about bonds, the F Fund, or any of the other TSP investment options? Watch our series of videos on YouTube. Or visit tsp.gov to review our fund information sheets."
-- video_title: "Combine and Save: Transfer Into the TSP"
-  video_id: tfxC3moUEQ0
-  video_description: "Whether you are a civilian employee, a member of the uniformed services, or a separated participant, you can move your existing retirement savings into your TSP account as long as the money is considered an eligible rollover distribution. Watch our video and then click on our transfer forms [TSP-60](/forms/tsp-60.pdf) and [TSP-60-R](/forms/tsp-60-r.pdf) to get started."
-  video_duration: "2:26"
-  video_date: 2014-05-19
+- video_id: tfxC3moUEQ0
   video_categories:
     - Frequently asked questions
   video_download: combine-and-save-transfer-into-tsp.mp4
@@ -608,24 +545,46 @@ TSP Thriftline: 1-877-968-3778 Option 3"
   Ready to move your money? Here’s how:
 
 
-  Go to the website, print and fill out [Form TSP-60](/forms/tsp-60.pdf) _Request for a Transfer Into the TSP_. To transfer Roth money, use Form [TSP-60-R](/forms/tsp-60-r.pdf).
+  Go to the website, print and fill out [Form TSP-60](/forms/tsp-60.pdf) Request for a Transfer Into the TSP. To transfer Roth money, use Form [TSP-60-R](/forms/tsp-60.pdf).
 
 
   Or call the ThriftLine and ask to speak to a Participant Services Representative. We’ll help walk you through the steps."
-- video_title: "Your Flexible Withdrawal Options"
-  video_id: oQh9HgrwkDI
-  video_description: "Learn about the new TSP withdrawal options that are now available, including multiple partial withdrawals, traditional-only or Roth-only withdrawals, and more flexible installment payment plans."
-  video_duration: "2:03"
-  video_date: 2019-09-26
+- video_id: 4t3tuoopg-Q
+  video_categories:
+    - Frequently asked questions
+    - How-to
+  video_download:
+  video_transcript: "Have you ever spent time filling out a form and sending it in – only to find out that it couldn’t be processed?  We know how frustrating that can be. In this video, we share five tips for completing your TSP requests correctly the first time.
+
+
+  One. Use our wizards. The TSP has developed interactive tools – called “wizards” – that you can use online to help complete certain requests.
+  Just visit tsp.gov, sign into My Account, and look under “Online Transactions” in the left column.
+  The wizard will walk you through entering your information, and our question icons can explain each step as you go.
+  If you’re taking a loan or withdrawal, you can even submit your request online in some cases. Even if you aren’t eligible to complete your request online, the interactive screens prefill the appropriate sections of the form correctly. Then, all you have to do is print it out, enter any missing information – such as signatures, dates, or notary information – and mail or fax it to us.
+
+
+  Two. Think inside the box. Pay special attention to any boxes you check on your form. They should match up with information you provide in other areas. For example, if you check the box on a withdrawal request indicating that you would like to transfer part of your withdrawal, make sure you complete the corresponding section with details about where the transfer should go.
+
+
+  Three. Check your status. If you’ve recently left the Federal government, remember that you can keep your money in the TSP. But if you decide to make a withdrawal, make sure your agency or service notifies the TSP of your separation. We’ll send you a letter once this occurs. Until then, you are unable to receive a full or partial withdrawal while your agency or service lists you as active.
+
+
+  Four. Sweat the small stuff. Many of our forms are read by an optical scanner, so even minor stray marks can cause errors. Use simple block text and be mindful of the boxes. Only complete the pages that are relevant to your account – for example, you can ignore the Roth section of a withdrawal form if you don’t have a Roth balance. And make sure that any percentages add up to 100 when they need to. Double-checking these details can save a lot of time down the line.
+  Of course, if you complete your request online using a wizard, the wizard will verify your information, prevent you from making these types of mistakes and – based on the information you provide – direct you to complete only the sections you need.
+
+
+  Five. Once is enough. Finally, please only send your request once. We can only process the first one we receive – even if you mail or fax the same request multiple times. For certain transactions including loans and withdrawals, you can sign into My Account and check the status of your submission within five days.
+
+
+  As always, we’re a phone call away if you need help. Call 1-TSP-YOU-FRST and choose option 3 to connect with a Participant Service Representative. We’re available to speak with you weekdays from 7 a.m. until 9 p.m. Eastern time."
+## WITHDRAWALS PLAYLIST
+- video_id: oQh9HgrwkDI
   video_categories:
     - Withdrawals
     - Frequently asked questions
   video_download: your-flexible-withdrawal-options.mp4
-- video_title: "The Cost of Taking a TSP Loan"
-  video_id: 5z-KXHZAF-U
-  video_description: "Find out the downsides of taking a loan from your TSP account."
-  video_duration: "3:01"
-  video_date: 2014-07-08
+  video_transcript:
+- video_id: 5z-KXHZAF-U
   video_categories:
     - Withdrawals
     - Frequently asked questions
@@ -655,11 +614,8 @@ TSP Thriftline: 1-877-968-3778 Option 3"
 
 
   You can find out more about loans on our website and you can use our loan calculator in the Planning & Tools section to estimate loan payments.  Just make sure that before you take a loan, you know what you’re getting into and what it’s costing you."
-- video_title: "The TSP for BRS Members: What's It All About?"
-  video_id: h7n-sWNrz1I
-  video_description: "Are you a uniformed services member and covered by the Blended Retirement System (BRS)? If you joined the uniformed services on or after January 1, 2018 or you began service before 2018 and opted into BRS, this video will help you understand how the Thrift Savings Plan works for you."
-  video_duration: "3:27"
-  video_date: 2018-01-01
+## STANDALONE VIDEOS
+- video_id: h7n-sWNrz1I
   video_categories:
     - Uniformed Services
   video_download: tsp-for-brs-members.mp4
@@ -700,11 +656,7 @@ TSP Thriftline: 1-877-968-3778 Option 3"
 
 
   Want to know more? Visit our website, watch our other YouTube videos, or call the ThriftLine and speak to a Participant Services Representative."
-- video_title: "The TSP for non-BRS Uniformed Services Members"
-  video_id: uPYDiMQo6Kg
-  video_description: "Learn more about TSP benefits for uniformed services members who are not part of the Blended Retirement System (BRS)."
-  video_duration: "2:48"
-  video_date: 2018-01-01
+- video_id: uPYDiMQo6Kg
   video_categories:
     - Uniformed Services
   video_download: tsp-for-non-brs-uniformed-services-members.mp4
@@ -745,11 +697,7 @@ TSP Thriftline: 1-877-968-3778 Option 3"
 
 
   Want to know more? Visit our website at tsp.gov or call the ThriftLine and speak to a Participant Services Representative. For more information about contributing to the TSP, contact your service’s payroll office."
-- video_title: "Welcome to the TSP! Here’s What You Need to Know"
-  video_id: jTA47cJhjFc
-  video_description: "If you are a new civilian federal employee, here’s what you should know about the Thrift Savings Plan."
-  video_duration: "2:41"
-  video_date: 2017-12-14
+- video_id: jTA47cJhjFc
   video_categories:
     - How-to
     - Frequently asked questions
@@ -779,11 +727,8 @@ TSP Thriftline: 1-877-968-3778 Option 3"
 
 
   Investing in the TSP is the smart, simple way to save for your retirement. Visit us at tsp.gov to learn more."
-- video_title: "Don't Move! Reasons to Stay in the TSP."
-  video_id: Tw-Djekceeo
-  video_description: ""
-  video_duration: "2:09"
-  video_date: 2017-10-26
+- video_id: Tw-Djekceeo
+  video_categories:
   video_download: dont-move-stay-in-the-tsp.mp4
   video_transcript: "Wondering what to do with your TSP account once you leave Federal service? The answer is...nothing!
 
@@ -804,11 +749,9 @@ TSP Thriftline: 1-877-968-3778 Option 3"
 
 
   Be sure to check out our other YouTube videos to learn more about vesting, interfund transfers, and combining other retirement plans into the TSP."
-- video_title: "Three Ways to Add $100,000 to Your TSP Account"
-  video_id: HRl8TgYMlB4
-  video_description: "Saving for retirement may sound daunting, but there are small things you can do that can help in the long run.  This video, aimed at the uniformed services members, shows how thinking small, like cutting back your cable or cell phone, can help your savings grow over time.  To learn more about the TSP visit https://www.tsp.gov."
-  video_duration: "1:58"
-  video_date: 2016-12-07
+- video_id: HRl8TgYMlB4
+  video_categories:
+  video_download:
   video_transcript: "Uniformed Services: 3 Ways to Add $100,000 to Your TSP Account
 
 
@@ -829,13 +772,39 @@ TSP Thriftline: 1-877-968-3778 Option 3"
 
 
   <sup>*</sup> Figures assume consistent saving over 30 years and an investment return of 6% per year compounded monthly."
-- video_title: "Once You're Gone, You're Gone"
-  video_id: xrH0l-HA58o
-  video_description: "Life is full of regrets; don’t let leaving the TSP become one of yours. This eye-opening video may make you think twice about moving your money to another plan.
+- video_id: 1e4Zs4suGWs
+  video_categories:
+    - Withdrawals
+  video_download:
+  video_transcript: "The 10% Early Withdrawal Penalty Tax
 
-https://www.tsp.gov/staywithus"
-  video_duration: "1:50"
-  video_date: 2015-11-16
+  Are you younger than age 59½ and planning to withdraw money from your TSP account?  Then you need to know about the IRS 10% early withdrawal penalty tax.
+
+  This penalty applies to any taxable* portion of a TSP distribution that you do not transfer or roll over to an IRA or eligible employer plan.  So it could apply to a financial hardship withdrawal that you take while still employed with the Federal Government, to a partial or full withdrawal that you might take after you’ve separated from service, or to an unpaid loan balance that is declared a taxable distribution.
+
+  The most important thing you should know about the early withdrawal penalty tax is that it is in addition to any regular income tax you may owe on the amount of your distribution.
+
+  The good news?  There are some exceptions in which you would not be subject to the additional tax if you take your withdrawal before age 59½. Let’s take them one at a time:
+
+  If you separate from Federal service during or after the year you reach age 55, and you take a distribution from your TSP account before you are 59½, you will not have to pay this 10% penalty tax on any taxable amount (even on amounts that you do not transfer or roll over).  But a word of caution:  You cannot escape the additional tax by separating from service before the year you turn 55, and then waiting until you are 55 to take a distribution.
+
+  Here’s another exception:  If you are younger than age 59½ when you separate from Federal service, and you decide to take TSP payments spread over your life expectancy, you will not have to pay the 10% additional penalty tax on those payments . The same is true on any annuity payments you receive when you use any portion of your TSP account for a life annuity.
+
+  Let’s review several other exceptions:
+
+  The 10% early withdrawal penalty tax does not apply to:
+
+  - Eligible refunds of automatic enrollment contributions,
+  - Payments made as a result of your total and permanent disability, or death,
+  - Distributions from beneficiary participant accounts,
+  - Payments ordered by a domestic relations court, or
+  - Payments you receive in a year in which you have deductible medical expenses that exceed 7.5% of your adjusted gross income.
+
+  Are you a member of the uniformed services?  Then you should also know that any portion of a TSP distribution that is made up of tax-exempt contributions from pay you earned in a combat zone pay is not subject to the 10% early withdrawal penalty tax.  Furthermore, if you are an eligible Reservist called to duty for more than 179 days, you may be exempt from having to pay the additional tax on a TSP distribution.  If you are in this category, please refer to our tax notice, Important Tax Information About Payments From Your TSP Account, for details.
+
+  Still have questions?  The TSP is happy to help you.  You can find more information on our website or you can call the ThriftLine and ask to speak to a Participant Services Representative."
+- video_id: xrH0l-HA58o
+  video_categories:
   video_download: once-youre-gone-youre-gone.mp4
   video_transcript: "My name is Lola. I just left Federal Service.
 
@@ -859,11 +828,9 @@ https://www.tsp.gov/staywithus"
 
 
   I’m glad I thought this decision through. It’s not like I have a rewind button."
-- video_title: "How Can Compound Earnings Work For Me?"
-  video_id: dtlHqHSYZ-s
-  video_description: "Learn how compounding makes it possible for your retirement savings to increase exponentially."
-  video_duration: "1:41"
-  video_date: 2015-07-07
+- video_id: dtlHqHSYZ-s
+  video_categories:
+  video_download:
   video_transcript: "Because You Asked: How Can Compound Earnings Work for Me?
 
 
@@ -889,11 +856,9 @@ https://www.tsp.gov/staywithus"
 
 
   <sup>*</sup>Assumes a consistent 5% annual rate of return."
-- video_title: "How the TSP Fits Into FERS"
-  video_id: XnlQZa7g_d4
-  video_description: "Covered by the Federal Employees Retirement System? Watch this video to learn how the TSP fits into your retirement benefits package."
-  video_duration: "1:18"
-  video_date: 2015-05-05
+- video_id: XnlQZa7g_d4
+  video_categories:
+  video_download:
   video_transcript: "If you’re covered by the Federal Employees Retirement System, you rely on a three-part retirement package:
 
   <ol class='transcript-list'>

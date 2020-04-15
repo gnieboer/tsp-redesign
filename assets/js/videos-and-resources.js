@@ -196,6 +196,7 @@ function showVideoTitles(str, group) {
   return true;
 }
 
+
 function buildYML(apiKey, resultDiv) {
   var youtubeSite = "https://www.googleapis.com/youtube/v3/videos?";
   // var key = "key=AIzaSyDLozGtZFvP49NZxV1SodEiUdqDJvaG0M8";
@@ -213,41 +214,7 @@ function buildYML(apiKey, resultDiv) {
   getFromYouTube(fullURL, resultDiv);
 }
 
-function leadZero(i) { return (i>9) ? i : "0" + i; }
-
-function durationToTime(duration) {
-console.log(duration);
-  var str = duration.replace(/^PT/,'');
-  var hours = 0;
-  var minutes = 0;
-  var seconds = 0;
-  console.log(str);
-  if (str.includes('H')) {
-    var tmp = str.split('H');
-    hours = tmp[0];
-    str = tmp[1];
-    console.log('found H', hours, str);
-  }
-  if (str.includes('M')) {
-    var tmp = str.split('M');
-    minutes = tmp[0];
-    str = tmp[1];
-    console.log('found M', minutes, str);
-  }
-  if (str.includes('S')) {
-    var tmp = str.split('S');
-    seconds = tmp[0];
-    str = tmp[1];
-    console.log('found S', seconds, str);
-  }
-
-  if (hours > 0) { return hours + ':' + leadZero(minutes) + ':' + leadZero(seconds); }
-  if (minutes > 0) { return minutes + ':' + leadZero(seconds); }
-  // return seconds + ' seconds';
-  return minutes + ':' + leadZero(seconds);
-}
-
-function parseYouTubeData(resultDiv, data) {
+function parseYouTubeDataYML(resultDiv, data) {
   var rc = '';
   var items = data.items;
   for (var i = 0; i < items.length; i++) {
@@ -256,6 +223,9 @@ function parseYouTubeData(resultDiv, data) {
     rc += "  video_id: " + item.id + "\n";
     var description = item.snippet.description;
     description = description.replace(/"/g, "'");
+    description = description.replace(/\n/g, "<br><br>");
+    console.log('description');
+    console.log(description);
     rc += "  video_description: \"" + description + "\"\n";
     rc += "  video_duration: \"" + durationToTime(item.contentDetails.duration) + "\"\n";
     var date = item.snippet.publishedAt;
@@ -279,45 +249,92 @@ function parseYouTubeData(resultDiv, data) {
   // console.log('|', rc, '|', data, '|');
   $('#'+resultDiv).text(rc);
 }
-/*
-- video_title: Lifecycle Funds
-#  video_description: In this video, we’ll talk about the professionally designed Lifecycle Funds, also known as the L Funds.
-  video_id: r6rRMcgBNCc
-  video_playlist: PLz_6hPnw1Qq5W5U3hZiD0c05gZKkFStT1
-#  video_duration: 1:52
-#  video_date: October 14, 2014
-  video_categories:
-    - Education
-    - Investment options
-  video_download: fund-lifecycle .mp4 # Assumption is /assets/videos/
-  video_transcript: "Your TSP Investment Options: The Lifecycle Funds
 
-  The TSP has a selection of individual and lifecycle funds that let you diversify your retirement savings. You can choose to invest your TSP dollars in everything from short-term U.S. Treasury securities to index funds comprised of domestic and international stocks. In this video, we’ll talk about the professionally designed Lifecycle Funds, also known as the L Funds. If you don’t have the time, experience, or interest to manage your TSP retirement savings, consider one of the L Funds.
+function parseYouTubeDataJS(resultDiv, data) {
+  var rc = '';
+  rc += "function setYouTubeVideoData() {\n";
+  // rc += "  console.log('setting YouTube data');\n";
+  var id = '';
+  var date = '';
+  var title = '';
+  var duration = '';
+  var description = '';
+  var item = null;
 
-  Each L Fund features a combination of the five individual funds (G, F, C, S, and I) that is appropriate for your “time horizon” or the future date at which you plan to start withdrawing the money in your TSP account.
+  var items = data.items;
+  for (var i = 0; i < items.length; i++) {
+    item = items[i];
+    id = item.id;
+    title = item.snippet.title;
+    date = item.snippet.publishedAt;
+    date = date.split('T')[0];
+    date = flatpickr.formatDate(flatpickr.parseDate(date, "Y-m-d"), "F j, Y");
+    description = item.snippet.description;
+    description = description.replace(/\n/g, "<br>");
+    duration = durationToTime(item.contentDetails.duration);
+    title = title.replace(/"/g, "'");
+    description = description.replace(/"/g, "'");
 
-  Here’s how it works:
+    rc += "\n";
+    rc += "  $(\"#"+id+"-link-title\").html(\""+title+"\");\n"
+    rc += "  $(\"#"+id+"-title\").html(\""+title+"\");\n"
+    rc += "  $(\"#"+id+"-download-title\").html(\""+title+"\");\n"
+    rc += "  $(\"#"+id+"-pub-date\").html(\""+date+"\");\n"
+    rc += "  $(\"#"+id+"-description\").html(\""+description+"\");\n"
+    rc += "  $(\"#"+id+"-duration\").html(\""+duration+"\");\n"
+  }
+  // console.log('|', rc, '|', data, '|');
+  rc += "}\n\n";
+  $('#'+resultDiv).text(rc);
+}
 
-  The L Funds assume that the farther you are away from needing your money, the more you are able to tolerate risk. Therefore, they give you the opportunity to enjoy the potentially higher returns associated with investing in the stock markets. But the funds continually adjust, so as the time nears for you to withdraw your money, it is more conservatively invested. That way, you’re not exposing your entire savings to unexpected market changes right when you need the income.
-
-  As with all investments, there are risks. The L Funds carry the same risks that are associated with all of the underlying individual TSP funds. Watch our other fund videos for more information.
-
-  To find out which L Fund might be right for you, or to learn about the other TSP funds, watch our entire series of fund videos. Or visit tsp.gov to review our fund information sheets."
-*/
 var getFromYouTube = function(url, resultDiv) {
-
   var serverCall = $.get(url);
     serverCall.done(
       function (data) {
-          parseYouTubeData(resultDiv, data);
+          parseYouTubeDataJS(resultDiv, data);
       }
     );
     serverCall.fail(
       function (jqXHR, textStatus, errorThrown) {
           var errMsg = textStatus + ': ' + errorThrown;
           // $('#aar_caption').html("Average annual returns (as of December "+values[7]+")");
-          console.log('yml data failed');
+          console.log('get data from YouTube failed');
           $('#'+resultDiv).html('getting data failed');
       }
     );
+}
+
+function leadZero(i) { return (i>9) ? i : "0" + i; }
+
+function durationToTime(duration) {
+  // console.log(duration);
+  var str = duration.replace(/^PT/,'');
+  var hours = 0;
+  var minutes = 0;
+  var seconds = 0;
+  // console.log(str);
+  if (str.includes('H')) {
+    var tmp = str.split('H');
+    hours = tmp[0];
+    str = tmp[1];
+    // console.log('found H', hours, str);
+  }
+  if (str.includes('M')) {
+    var tmp = str.split('M');
+    minutes = tmp[0];
+    str = tmp[1];
+    // console.log('found M', minutes, str);
+  }
+  if (str.includes('S')) {
+    var tmp = str.split('S');
+    seconds = tmp[0];
+    str = tmp[1];
+    // console.log('found S', seconds, str);
+  }
+
+  if (hours > 0) { return hours + ':' + leadZero(minutes) + ':' + leadZero(seconds); }
+  if (minutes > 0) { return minutes + ':' + leadZero(seconds); }
+  // return seconds + ' seconds';
+  return minutes + ':' + leadZero(seconds);
 }
