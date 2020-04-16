@@ -47,6 +47,10 @@ This script produces an input area for calculator panels.
       <input id="{{id}}" name="{{name}}" class="{{inputClass}}" type="number" {{onBlur}}
         value="{{value}}" min="{{min}}" max="{{max}}" step="{{step}}" placeholder="{{placeholder}}" />
     {% endif %}
+    {% if inputType == 'integer' %}
+      <input id="{{id}}" name="{{name}}" class="{{inputClass}}" type="number" pattern="\d+" {{onBlur}}
+        value="{{value}}" min="{{min}}" max="{{max}}" step="{{step}}" placeholder="{{placeholder}}" />
+    {% endif %}
     {% if inputType == 'text' %}
       <input id="{{id}}" name="{{name}}" class="{{inputClass}}" type="text" {{onBlur}}
         value="{{value}}" maxLength="{{maxLength}}" placeholder="{{placeholder}}" />

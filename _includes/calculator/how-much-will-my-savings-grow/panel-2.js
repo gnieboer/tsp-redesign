@@ -8,10 +8,11 @@ This is the javascript specific to panel 2.
 panelNames['{{ panelName}}'] = {{ panelID }};
 panelGood[{{ panelID }}] = function(forceValue) {
   return ( growthSelectorGood() & yearsServedGood(1) & DIEMSdateGood(1) & balanceGood()
+             & yearsToGoGood() & rateOfReturnGood()
     );
 
   //
-  //     & contributionsGood() & yearsToGoGood() & rateOfReturnGood() );
+  //     & contributionsGood() );
 };
 
 panelEnter[{{ panelID }}] = function(panel) {
@@ -134,6 +135,48 @@ function amountToUseGood() {
 
   $('#lblAYRamountToUse').html(CurrencyFormatted(amountToUse));
   return clearError('amountToUse');
+}
+
+
+
+
+function checkYearsToGo() {
+  var yearsToGo = getPosInteger('yearsToGo', -1);
+
+  if (yearsToGo <= 0) {
+    return showError('yearsToGo', "The number of years you expect to leave your money in the TSP account must be greater than 0.");
+  }
+  if (yearsToGo > 99) {
+    return showError('yearsToGo', "The number of years you expect to leave your money in the TSP account must not be greater than 99.");
+  }
+
+  $('#lblAYRyearsToGo').html(yearsToGo);
+  return clearError('yearsToGo');
+}
+
+function yearsToGoGood() {
+  if (checkYearsToGo() == false) return false;
+
+  if (getPosInteger('yearsToContribute', -1) < 0) return true;
+
+  if (checkYearsToContribute() == false) return false;
+
+  return yearsContribAndGo();
+}
+
+function rateOfReturnGood() {
+  if ($("#rateOfReturn").val() == '') {
+    return showError('rateOfReturn', "Please enter your expected rate of return.");
+  }
+  var rateOfReturn = parseFloat($("#rateOfReturn").val());
+
+  if ((rateOfReturn < 0.0) || (rateOfReturn > 99.0)) {
+    return showError('rateOfReturn', "Rate of Return should be between 0% and 99%.");
+  }
+
+  $("#rateOfReturn").val(parseFloat($("#rateOfReturn").val()).toFixed(2));
+  $('#lblAYRrateOfReturn').html($("#rateOfReturn").val()+'%');
+  return clearError('rateOfReturn');
 }
 
 /*
@@ -399,45 +442,6 @@ function yearsToContributeGood() {
   if (checkYearsToGo() == false) return false;
 
   return yearsContribAndGo();
-}
-
-function checkYearsToGo() {
-  var yearsToGo = getPosInteger('yearsToGo', -1);
-
-  if (yearsToGo <= 0) {
-    return showError('yearsToGo', "The number of years you expect to leave your money in the TSP account must be greater than 0.");
-  }
-  if (yearsToGo > 99) {
-    return showError('yearsToGo', "The number of years you expect to leave your money in the TSP account must not be greater than 99.");
-  }
-
-  $('#lblAYRyearsToGo').html(yearsToGo);
-  return clearError('yearsToGo');
-}
-
-function yearsToGoGood() {
-  if (checkYearsToGo() == false) return false;
-
-  if (getPosInteger('yearsToContribute', -1) < 0) return true;
-
-  if (checkYearsToContribute() == false) return false;
-
-  return yearsContribAndGo();
-}
-
-function rateOfReturnGood() {
-  if ($("#rateOfReturn").val() == '') {
-    return showError('rateOfReturn', "Please enter your expected rate of return.");
-  }
-  var rateOfReturn = parseFloat($("#rateOfReturn").val());
-
-  if ((rateOfReturn < 0.0) || (rateOfReturn > 99.0)) {
-    return showError('rateOfReturn', "Rate of Return should be between 0% and 99%.");
-  }
-
-  $("#rateOfReturn").val(parseFloat($("#rateOfReturn").val()).toFixed(2));
-  $('#lblAYRrateOfReturn').html($("#rateOfReturn").val()+'%');
-  return clearError('rateOfReturn');
 }
 
 // we only have one warning in this calculator.  Parameter is for future use if needed

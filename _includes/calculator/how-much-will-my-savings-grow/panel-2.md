@@ -7,8 +7,9 @@ Name middle panels (2) for CALC.
 
 <section id="panel-{{ panelID }}" class="calculator-panel" style="{{ hide }}"  markdown="1">
 
+<div class="hide">
 ## Retirement system: <span id="retirementSystem"></span>
-
+</div>
 {% include calculator/div-panel-form-field.html
   fieldID="panel-2.1" id="growthSelector" anchor="growth"
   inputType="radio" radioIDs="balanceOnly, futureOnly, bothGrowth"
@@ -174,8 +175,8 @@ Enter the dollar amount that you plan to contribute each year in <span data-term
 %}
 {% include calculator/div-panel-form-field.html
   fieldID="panel-2.14" id="yearsToGo"
-  inputClass=""
-  min="0" value="" max="99" maxLength=2 step="1"
+  inputClass=""  inputType="integer"
+  min="1" value="" max="99" maxLength=2 step="1"
   placeholder="" onBlur="yearsToGoGood();"
   prompt="Enter the number of years left until you begin withdrawing from your TSP account:"
   explanation="
