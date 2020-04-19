@@ -2,7 +2,7 @@
 function onPlayerReady(event) {
   event.target.playVideo();
 }
-function showVideo(vidCode, changeURL) {
+function showVideo(vidCode, changeURL, resetScroll) {
   $('.video-details').hide();
   $('#'+vidCode+'-block').show();
   // console.log('show '+vidCode);
@@ -12,22 +12,33 @@ function showVideo(vidCode, changeURL) {
   if (changeURL) {
     window.history.pushState({}, vidCode, '/videos-and-resources/?vidCode='+vidCode);
   }
+  // scroll to video entry
+  if (resetScroll) {
+    var elem = $('#show-'+vidCode);
+    if (elem) {
+      var main = $('#search-videos-ul');
+      var e = elem.position().top;
+      var m = main.offset().top;
+      main.scrollTop(e - m);
+    }
+  }
 }
 
 // only call this on page load!
-function initVideoFromURL(def, flag) {
+function initVideoFromURL(def, updateURL, resetScroll) {
   var vidCode = getQueryString('vidCode');
   if (typeof vidCode === 'undefined') { vidCode = def; }
   vidCode = decodeURIComponent(vidCode);
   vidCode = vidCode.replace(/[^A-Z0-9_-]/ig,'');
   vidCode = vidCode.substring(0,15);
-  if ($('#show-'+vidCode).length) { showVideo(vidCode, flag); } else { showVideo(def, flag); }
+  if ($('#show-'+vidCode).length) { 1; } else { vidCode = def; }
+  showVideo(vidCode, updateURL, resetScroll);
   return false;
 }
 
 function initVideoList() {
-  // showVideo('r6rRMcgBNCc', 0);
-  initVideoFromURL('r6rRMcgBNCc', 0);
+  // showVideo('r6rRMcgBNCc', 0, 0);
+  initVideoFromURL('r6rRMcgBNCc', 0, 1);
 
   // do a search to get all the video details
   // inlineUSAsearch('videos', 'search-status', 'beta.tsp', 'video', 'tsp', 1, 0, videoSearchCallback);
@@ -289,6 +300,7 @@ function parseYouTubeDataJS(resultDiv, data) {
 }
 
 var getFromYouTube = function(url, resultDiv) {
+  console.log(url);
   var serverCall = $.get(url);
     serverCall.done(
       function (data) {
