@@ -142,7 +142,7 @@ function amountToUseGood() {
 
 function checkYearsToGo() {
   var yearsToGo = getPosInteger('yearsToGo', -1);
-
+  $('#yearsToGo').val(yearsToGo); 
   if (yearsToGo <= 0) {
     return showError('yearsToGo', "The number of years you expect to leave your money in the TSP account must be greater than 0.");
   }
