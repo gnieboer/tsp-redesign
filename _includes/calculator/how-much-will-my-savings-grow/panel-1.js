@@ -36,26 +36,32 @@ function rsBPshowHide(show) {
 
 function rsShowHide(rs) {
   if (rs == 'USBRS') {
-    $('#serviceSoFar').show();
-    $('#serviceSoFarAYR').show();
+    $('#serviceSoFar').removeClass('hide');
+    $('#serviceSoFarAYR').removeClass('hide');
   } else {
-    $('#serviceSoFar').hide();
-    $('#serviceSoFarAYR').hide();
+    $('#serviceSoFar').addClass('hide');
+    $('#serviceSoFarAYR').addClass('hide');
   }
 
   if (rs == 'BP') {
+/*
     $('#FutureContributions').hide();
     $('#FutureContributionsResult1').hide();
     $('#FutureContributionsResult2').hide();
     $('#SelectGrowth').hide();
-    set_gc('balanceOnly');
+*/
+    // set_gc('balanceOnly');
+    $('#growthSelectorDiv').addClass('hide');
     return;
   }
 
+  $('#growthSelectorDiv').removeClass('hide');
+/*
   $('#SelectGrowth').show();
   $('#FutureContributionsResult1').show();
   $('#FutureContributionsResult2').show();
   $('#FutureContributions').show();
+*/
   return;
 }
 

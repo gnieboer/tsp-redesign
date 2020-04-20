@@ -16,6 +16,7 @@ panelGood[{{ panelID }}] = function(forceValue) {
 };
 
 panelEnter[{{ panelID }}] = function(panel) {
+  applyGrowthSelectorChoice(getGrowthSelector());
   // window.scroll(0,0);
   return true;
 }
@@ -43,13 +44,8 @@ function contributionsGood() {
   return ( annualPayGood() & payScheduleGood() & annualPayPercentGood() & annualPayIncreasePercentGood() & catchupAmountGood() & yearsToContributeGood() );
 }
 
-function set_gc(gc) {
-  if (gc == 'balanceOnly') { $('#balanceOnly').prop('checked', true); $('#balanceOnly').trigger('click'); }
-  if (gc == 'futureOnly') { $('#futureOnly').prop('checked', true);   $('#futureOnly').trigger('click'); }
-  if (gc == 'bothGrowth') { $('#bothGrowth').prop('checked', true);   $('#bothGrowth').trigger('click'); }
-}
-
 function getGrowthSelector() {
+  if ($('#BP').prop('checked')) { return 'balanceOnly'; }
   if ($('#balanceOnly').prop('checked')) { return 'balanceOnly'; }
   if ($('#futureOnly').prop('checked')) { return 'futureOnly'; }
   if ($('#bothGrowth').prop('checked')) { return 'bothGrowth'; }
@@ -57,16 +53,44 @@ function getGrowthSelector() {
   return '';
 }
 
+function applyGrowthSelectorChoice(growthSelector) {
+  if (growthSelector == 'balanceOnly') {
+    $('#accountBalanceDiv').removeClass('hide');
+    $('#futureContributionsDiv').addClass('hide');
+    return true;
+  }
+  if (growthSelector == 'futureOnly') {
+    $('#accountBalanceDiv').addClass('hide');
+    $('#futureContributionsDiv').removeClass('hide');
+    return true;
+  }
+  if (growthSelector == 'bothGrowth') {
+    $('#accountBalanceDiv').removeClass('hide');
+    $('#futureContributionsDiv').removeClass('hide');
+    return true;
+  }
+  $('#accountBalanceDiv').addClass('hide');
+  $('#futureContributionsDiv').addClass('hide');
+  return false;
+}
 function growthSelectorGood() {
   var growthSelector = getGrowthSelector();
-
+  console.log('gs '+ growthSelector);
   if (growthSelector == '') return showError('growthSelector', 'Please select how you will use this calculator.');
+  applyGrowthSelectorChoice(growthSelector);
 
   var choice = 'Both';
   if (growthSelector == 'balanceOnly') choice = 'Existing Account Balance';
   if (growthSelector == 'futureOnly') choice = 'Future Contributions';
   $('#lblAYRgrowthSelector').html(choice);
   return clearError('growthSelector');
+}
+
+function set_gc(gc) {
+  if (gc == 'balanceOnly') { $('#balanceOnly').prop('checked', true); }
+  if (gc == 'futureOnly') { $('#futureOnly').prop('checked', true); }
+  if (gc == 'bothGrowth') { $('#bothGrowth').prop('checked', true); }
+  growthSelectorGood();
 }
 
 var DIEMS = flatpickr("#DIEMSdate", {
@@ -125,6 +149,8 @@ function amountToUseGood() {
   if ((growthSelector == 'futureOnly') || (growthSelector == '')) { return clearError('amountToUse'); }
 
   var amountToUse = getPosInteger('amountToUse', -1);
+  if (amountToUse > 1) { $('#amountToUse').val(amountToUse); }
+  console.log(amountToUse);
 
   if (amountToUse <= 0) {
     return showError('amountToUse', "You must enter the amount that is currently in your TSP account.");
@@ -142,7 +168,7 @@ function amountToUseGood() {
 
 function checkYearsToGo() {
   var yearsToGo = getPosInteger('yearsToGo', -1);
-  $('#yearsToGo').val(yearsToGo); 
+  $('#yearsToGo').val(yearsToGo);
   if (yearsToGo <= 0) {
     return showError('yearsToGo', "The number of years you expect to leave your money in the TSP account must be greater than 0.");
   }

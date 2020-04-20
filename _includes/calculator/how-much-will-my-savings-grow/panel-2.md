@@ -10,7 +10,9 @@ Name middle panels (2) for CALC.
 <div class="hide">
 ## Retirement system: <span id="retirementSystem"></span>
 </div>
+<input type="hidden" id="lastGrowthSelector" name="lastGrowthSelector" value="">
 {% include calculator/div-panel-form-field.html
+  outerDivID="growthSelectorDiv"
   fieldID="panel-2.1" id="growthSelector" anchor="growth"
   inputType="radio" radioIDs="balanceOnly, futureOnly, bothGrowth"
   radioLabels="Existing account balance, Future contributions, Both"
@@ -51,6 +53,7 @@ Your DIEMS (Date of Initial Entry into Military Service) is the date on which yo
 Log in to [My Account]({{ site.myaccount }}){:target="\_blank"} to see your current account balance.
 {% endcapture %}
 {% include calculator/div-panel-form-field.html
+  outerDivID="accountBalanceDiv" outerDivClass="hide"
   fieldID="panel-2.5" id="amountToUse"  anchor="balance"
   inputClass=""  dataFormat="$" H2="Existing account balance"
   min="0" value="" max="5000000" maxLength=7 step="1"
@@ -85,7 +88,8 @@ Log in to [My Account]({{ site.myaccount }}){:target="\_blank"} to see your curr
 {{ explanation2_6US }}
 {{ explanation2_6BP }}
 {% endcapture %}
-{% include calculator/div-panel-form-field.html
+{% include calculator/div-panel-form-field.html  
+  outerDivID="futureContributionsDiv" outerDivClass="hide"
   fieldID="panel-2.6" inputType="none" H2="Future contributions" anchor="future"
   explanation=explanation2_6  dontCloseOuterDiv=true
 %}
@@ -98,7 +102,7 @@ Log in to [My Account]({{ site.myaccount }}){:target="\_blank"} to see your curr
 %}
 {% include calculator/div-panel-form-field.html
   fieldID="panel-2.8" id="annualPay"
-  inputClass=""  dataFormat="$"
+  inputClass=""  dataFormat="$"  dataFormatClass="whole-number"
   min="1" value="" max="1000000" maxLength=7 step="1"
   placeholder="" onBlur="annualPayGood();"
   prompt="Annual pay:"
@@ -155,7 +159,7 @@ Enter the dollar amount that you plan to contribute each year in <span data-term
 {% endcapture %}
 {% include calculator/div-panel-form-field.html
   fieldID="panel-2.12" id="catchupAmount"
-  inputClass=""  dataFormat="$"
+  inputClass=""  dataFormat="$"  dataFormatClass="whole-number"
   min="1" value="" max="9999" maxLength=4 step="1"
   placeholder="" onBlur="catchupAmountGood();"
   prompt=prompt2_12
