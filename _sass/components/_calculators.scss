@@ -21,6 +21,10 @@ li.show-equal {
       border-bottom: .2rem dotted #aeb0b5;
       background-color: #f3f4f6;
       padding: 2rem;
+
+      .usa-input-error-message {
+        max-width: 46rem;
+      }
     }
   }
   h2,
