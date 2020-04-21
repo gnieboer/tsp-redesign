@@ -22,6 +22,10 @@ function showVideo(vidCode, changeURL, resetScroll) {
       main.scrollTop(e - m);
     }
   }
+  // highlight selected video
+  // $('.show-video-link').removeClass('focus');
+  // $('#show-'+vidCode).addClass('focus');
+  $('#'+vidCode+'-atag').focus();
 }
 
 // only call this on page load!
