@@ -11,8 +11,10 @@ scripts:
   - /assets/js/calculator/calculator.js
   - /assets/js/search.js
   - /assets/js/videos-and-resources.js
+  - /assets/js/videos-YouTube-data.js
 permalink: /videos-and-resources/
 document-ready:
+  - setYouTubeVideoData();
   - initVideoList();
 ---
 

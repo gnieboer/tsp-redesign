@@ -4,12 +4,12 @@
 <li>
 <button class="usa-accordion-button" aria-expanded="true" aria-controls="{{video.video_id}}-overview">Overview</button>
 <div id="{{video.video_id}}-overview" class="usa-accordion-content overview" markdown="1">
-Released <span id="{{video.video_id}}-pub-date">{{ video.video_date }}</span> &#124;
-Duration: <span id="{{video.video_id}}-duration">{{ video.video_duration }}</span>
+Released <span id="{{video.video_id}}-pub-date">DATE?</span> &#124;
+Duration: <span id="{{video.video_id}}-duration">DURATION?</span>
 {:.release-date}
 
-<span id="{{video.video_id}}-title" class="hide">{{ video.video_title }}</span>
-<span id="{{video.video_id}}-description">{{ video.video_description }}</span>
+<span id="{{video.video_id}}-title" class="hide">{{video.video_id}}</span>
+<span id="{{video.video_id}}-description">DESCRIPTION?</span>
 
 {% if video.video_categories %}
 Categories:
@@ -40,7 +40,7 @@ Transcript not available.
 
 {% if video.video_download %}
 <a href="{{ site.baseurl }}/assets/videos/{{ video.video_download }}" class="download"
-    aria-label="Download video">{{ video.video_title }}<i class="far fa-arrow-circle-down"></i></a>
+    aria-label="Download video"><span id="{{video.video_id}}-download-title">{{video.video_id}}</span><i class="far fa-arrow-circle-down"></i></a>
 {% else %}
 Video not available.
 {% endif %}
