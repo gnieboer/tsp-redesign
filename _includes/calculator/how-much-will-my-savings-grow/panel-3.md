@@ -125,23 +125,23 @@ To change how much you contribute, log into your payroll system and select the T
 {% include calculator/AYR-table-row.html closeTable=true
   prompt="Retirement system:" rowID='lblAYRretirementSystem' %}
 
-{% include calculator/AYR-table.html caption="Type(s) of growth" showPanel=2 gotoAnchor='growth' %}
+{% include calculator/AYR-table.html caption="Type(s) of growth" showPanel=2 gotoAnchor='growth' tableID="growthAYR" %}
 {% include calculator/AYR-table-row.html prompt="Growth model:" rowID='lblAYRgrowthSelector' closeTable=true %}
 
-{% include calculator/AYR-table.html caption="Your service so far" showPanel=2 gotoAnchor='service' tableID="serviceSoFarAYR"%}
+{% include calculator/AYR-table.html caption="Your service so far" showPanel=2 gotoAnchor='service' tableID="serviceSoFarAYR" %}
 {% include calculator/AYR-table-row.html prompt="Number of years already served:" rowID='lblAYRyearsServed' %}
 {% include calculator/AYR-table-row.html closeTable=true
   prompt="DIEMS (Date of Initial Entry into Military Service)" rowID='lblAYRDIEMSdate' %}
 
-{% include calculator/AYR-table.html caption="Existing account balance" showPanel=2 gotoAnchor='balance' %}
+{% include calculator/AYR-table.html caption="Existing account balance" showPanel=2 gotoAnchor='balance' tableID="balanceAYR" %}
 {% include calculator/AYR-table-row.html closeTable=true
   prompt="Current account balance" rowID='lblAYRamountToUse' %}
 
-{% include calculator/AYR-table.html caption="Future contributions" showPanel=2 gotoAnchor='future' %}
+{% include calculator/AYR-table.html caption="Future contributions" showPanel=2 gotoAnchor='future' tableID="futureAYR" %}
 {% include calculator/AYR-table-row.html
   prompt="Years to make contributions:" rowID='lblAYRyearsToContribute' %}
 {% include calculator/AYR-table-row.html prompt="Annual pay:" rowID='lblAYRannualPay' %}
-{% include calculator/AYR-table-row.html prompt="Pay schedule:" rowID='lblAYRpaySchedule' %}
+{% include calculator/AYR-table-row.html prompt="Pay schedule:" rowID='lblAYRpaySchedule' named=true %}
 {% include calculator/AYR-table-row.html
   prompt="Percent salary to save:" rowID='lblAYRannualPayPercent' %}
 {% include calculator/AYR-table-row.html
@@ -149,7 +149,7 @@ To change how much you contribute, log into your payroll system and select the T
 {% include calculator/AYR-table-row.html closeTable=true
   prompt="Annual catch-up contributions:" rowID='lblAYRcatchupAmount' %}
 
-{% include calculator/AYR-table.html caption="Account growth" showPanel=2 gotoAnchor='time' %}
+{% include calculator/AYR-table.html caption="Account growth" showPanel=2 gotoAnchor='time' tableID="accountGrowthAYR" %}
 {% include calculator/AYR-table-row.html
   prompt="Number of years until you start withdrawing:" rowID='lblAYRyearsToGo' %}
 {% include calculator/AYR-table-row.html closeTable=true

@@ -7,7 +7,7 @@ This is the javascript specific to panel 1.
 <!--
 panelNames['{{ panelName}}'] = {{ panelID }};
 panelGood[{{ panelID }}] = function(forceValue) {
-  return rsGood();
+  return rsGood(true);
 };
 
 panelEnter[{{ panelID }}] = function(panel) {
@@ -19,43 +19,26 @@ panelExit[{{ panelID }}] = function(panel) {
 }
 
 // my functions
-function rsBPshowHide(show) {
-  if (show) {
-    $('#SelectGrowth').show();
-    $('#FutureContributionsResult1').show();
-    $('#FutureContributionsResult2').show();
-    $('#FutureContributions').show();
-  } else {
-    $('#FutureContributions').hide();
-    $('#FutureContributionsResult1').hide();
-    $('#FutureContributionsResult2').hide();
-    $('#SelectGrowth').hide();
-    set_gc('balanceOnly');
-  }
-}
-
 function rsShowHide(rs) {
   if (rs == 'USBRS') {
-    $('#serviceSoFar').removeClass('hide');
-    $('#serviceSoFarAYR').removeClass('hide');
+    hideServiceSoFar(false);
   } else {
-    $('#serviceSoFar').addClass('hide');
-    $('#serviceSoFarAYR').addClass('hide');
+    hideServiceSoFar(true);
   }
 
   if (rs == 'BP') {
-/*
-    $('#FutureContributions').hide();
-    $('#FutureContributionsResult1').hide();
-    $('#FutureContributionsResult2').hide();
-    $('#SelectGrowth').hide();
-*/
-    // set_gc('balanceOnly');
-    $('#growthSelectorDiv').addClass('hide');
+    hideFuture(true);
+    hideGrowth(true);
     return;
   }
 
-  $('#growthSelectorDiv').removeClass('hide');
+  if ((rs == 'FERS') || (rs == 'CSRS')) {
+    hidePaySchedule(false);
+  } else {
+    hidePaySchedule(true);
+  }
+
+  hideGrowth(false);
 /*
   $('#SelectGrowth').show();
   $('#FutureContributionsResult1').show();
@@ -68,7 +51,6 @@ function rsShowHide(rs) {
 function rsExit() {
 
   if ($('#FERS').prop('checked')) {
-    $('#payScheduleDropDown').show();
     rsShowHide('FERS');
     $('#retirementSystem').html('FERS');
     $('#lblAYRretirementSystem').html($('#retirementSystem').html());
@@ -77,7 +59,6 @@ function rsExit() {
   }
 
   if ($('#CSRS').prop('checked')) {
-    $('#payScheduleDropDown').show();
     rsShowHide('CSRS');
     $('#retirementSystem').html('CSRS');
     $('#lblAYRretirementSystem').html($('#retirementSystem').html());
@@ -86,7 +67,6 @@ function rsExit() {
   }
 
   if ($('#US').prop('checked')) {
-    $('#payScheduleDropDown').hide();
     rsShowHide('US');
     $('#retirementSystem').html('Uniformed Services: All Other Systems');
     $('#lblAYRretirementSystem').html($('#retirementSystem').html());
@@ -95,7 +75,6 @@ function rsExit() {
   }
 
   if ($('#USBRS').prop('checked')) {
-    $('#payScheduleDropDown').hide();
     rsShowHide('USBRS');
     $('#retirementSystem').html('Uniformed Services: Blended Retirement System');
     $('#lblAYRretirementSystem').html($('#retirementSystem').html());
@@ -104,7 +83,6 @@ function rsExit() {
   }
 
   if ($('#BP').prop('checked')) {
-    $('#payScheduleDropDown').show();
     rsShowHide('BP');
     $('#retirementSystem').html('Beneficiary Participant');
     $('#lblAYRretirementSystem').html($('#retirementSystem').html());
@@ -116,15 +94,21 @@ function rsExit() {
   return showError('rs', "Select your retirement system.");
 }
 
-function rsGood() {
-console.log('in rsGood()');
-  if ($('#FERS').prop('checked')) { return clearError('rs'); }
-  if ($('#CSRS').prop('checked')) { return clearError('rs'); }
-  if ($('#US').prop('checked')) { return clearError('rs'); }
-  if ($('#USBRS').prop('checked')) { return clearError('rs'); }
-  if ($('#BP').prop('checked')) { return clearError('rs'); }
-  console.log('still in rsGood()');
-  return showError('rs', "Select your retirement system.");
+function getRetirementSystem() {
+  if ($('#FERS').prop('checked')) { return 'FERS'; }
+  if ($('#CSRS').prop('checked')) { return 'CSRS'; }
+  if ($('#US').prop('checked')) { return 'US'; }
+  if ($('#USBRS').prop('checked')) { return 'USBRS'; }
+  if ($('#BP').prop('checked')) { return 'BP'; }
+  return '';
+}
+
+function rsGood(submit) {
+  var rs = getRetirementSystem();
+  if (rs == '') {
+    if (submit) { return showError('rs', "Select your retirement system."); }
+  }
+  return clearError('rs');
 }
 
 -->

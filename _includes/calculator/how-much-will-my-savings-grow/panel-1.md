@@ -18,7 +18,7 @@ Inputs panel (1) for Estimate Load Payments.
   inputType="radio" radioIDs="FERS, CSRS, USBRS, US, BP"
   radioLabels=radioLabelList
   inputClass="usa-unstyled-list"
-  onBlur="rsGood();"
+  onBlur="rsGood(true);"
   prompt="Retirement system"
   explanation=""
 %}

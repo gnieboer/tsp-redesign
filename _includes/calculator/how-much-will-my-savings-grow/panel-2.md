@@ -17,7 +17,7 @@ Name middle panels (2) for CALC.
   inputType="radio" radioIDs="balanceOnly, futureOnly, bothGrowth"
   radioLabels="Existing account balance, Future contributions, Both"
   inputClass="usa-unstyled-list"
-  onBlur="growthSelectorGood();"
+  onBlur="growthSelectorGood(true);"
   prompt="Growth model"
   explanation="
   This calculator will show you the growth of your current account balance, growth of future contributions from your paycheck, or both. You must select a growth model.
@@ -33,7 +33,7 @@ Name middle panels (2) for CALC.
 {% include calculator/div-panel-form-field.html
   fieldID="panel-2.3" id="yearsServed"
   inputClass=""  min="0" value="" max="99" maxLength=2 step="1"
-  placeholder="" onBlur="yearsServedGood();"
+  placeholder="" onBlur="yearsServedGood(false);"
   prompt="Enter the number of years you have already served (whole numbers only):"
   explanation=""  dontOpenOuterDiv=true
 %}
@@ -42,8 +42,8 @@ Your DIEMS (Date of Initial Entry into Military Service) is the date on which yo
 {% endcapture %}
 {% include calculator/div-panel-form-field.html
   fieldID="panel-2.4" id="DIEMSdate"
-  inputClass=""  maxLength=11
-  placeholder="" onBlur="DIEMSdateGood(0);"
+  inputClass="hasDatepicker"  maxLength=11
+  placeholder="Month Day, Year" onBlur="DIEMSdateGood(true);"
   prompt="Enter your DIEMS:"
   explanation=explanation2_4   dontOpenOuterDiv=true
 %}
@@ -57,7 +57,7 @@ Log in to [My Account]({{ site.myaccount }}){:target="\_blank"} to see your curr
   fieldID="panel-2.5" id="amountToUse"  anchor="balance"
   inputClass=""  dataFormat="$" H2="Existing account balance"
   min="0" value="" max="5000000" maxLength=7 step="1"
-  placeholder="" onBlur="amountToUseGood(true);"
+  placeholder="" onBlur="amountToUseGood(false);"
   prompt="Enter the amount you already have in your TSP account:"
   explanation=explanation2_5
 %}
@@ -100,11 +100,19 @@ Log in to [My Account]({{ site.myaccount }}){:target="\_blank"} to see your curr
   prompt="Enter the number of years you plan to contribute:"
   explanation=''  dontOpenOuterDiv=true
 %}
+<div id="contribution-exceeds-maximum" style="border:1px solid red;"  class="hide">
+Your yearly contribution.<span id="total-contribution">-1</span><br><br>
+<strong>Internal Revenue Code (IRC) <span data-term="Elective Deferral Limit" class="js-glossary-toggle term term-end">Elective Deferral Limit</span></strong><br><br>
+The combined total of your regular employee contributions exceeds the Internal Revenue Code (IRC) elective deferral limit (<span id="IRC-limit">$x19,500.00</span> in <span id="IRC-limit-year">x2020</span>).<br><br>
+If you reach the IRC elective deferral limit before the end of the year, your own contributions will be suspended, and you will miss out on the associated earnings.<br><br>
+Note: If you are age 50 or over, you can make catch-up contributions in excess of the elective deferral limit.<br><br>
+For more accurate results, decrease the amount of regular employee contributions you would like to make. You can also enter a dollar amount for catch-up contributions if you are eligible.
+</div>
 {% include calculator/div-panel-form-field.html
   fieldID="panel-2.8" id="annualPay"
   inputClass=""  dataFormat="$"  dataFormatClass="whole-number"
   min="1" value="" max="1000000" maxLength=7 step="1"
-  placeholder="" onBlur="annualPayGood();"
+  placeholder="" onBlur="annualPayGood(false);"
   prompt="Annual pay:"
   explanation="
   Enter the gross amount of basic pay you receive each year. **Note:** Uniformed services members can contribute from incentive, special, and bonus pay &#8212; civilians cannot.
@@ -129,20 +137,22 @@ This will depend on how often you are paid (biweekly or monthly, for example). I
 \*A biweekly frequency occasionally results in 27 salary payments for a year.  Contact your personnel or payroll office if you do not know the number of salary payments you will receive for the remainder of the year.
 
 {% endcapture %}
+<div id='paySchedule-hide'>
 {% include calculator/div-panel-form-field.html
   fieldID="panel-2.9" id="paySchedule"
   inputType="selectList"
   radioIDs="Select,Biweekly,Weekly,Semi-monthly,Monthly"
   radioLabels="Select your pay schedule,Biweekly (every 2 weeks&comma; 26 times a year),Weekly (52  times a year),Semi-monthly (twice a month&comma; 24 times a year),Monthly (12  times a year)"
   inputClass="" outerDivID="paySchedule-hide"
-  onBlur="payScheduleGood(this);" prompt="Pay schedule:"
+  onBlur="payScheduleGood(false);" prompt="Pay schedule:"
   explanation=pay_schedule_explanation dontOpenOuterDiv=true
 %}
+</div>
 {% include calculator/div-panel-form-field.html
   fieldID="panel-2.10" id="annualPayPercent"
   inputClass=""  dataFormat="%"
-  min="0" value="" max="99" maxLength=5 step="0.01"
-  placeholder="" onBlur="annualPayPercentGood();"
+  min="0" value="" max="99" maxLength=5 step="1"
+  placeholder="" onBlur="annualPayPercentGood(false);"
   prompt="Enter the whole percentage of annual pay that you would like to save:"
   explanation=""   dontOpenOuterDiv=true
 %}
@@ -150,7 +160,7 @@ This will depend on how often you are paid (biweekly or monthly, for example). I
   fieldID="panel-2.11" id="annualPayIncreasePercent"
   inputClass=""  dataFormat="%"
   min="0" value="" max="15" maxLength=5 step="0.01"
-  placeholder="" onBlur="annualPayIncreasePercentGood();"
+  placeholder="" onBlur="annualPayIncreasePercentGood(false);"
   prompt="Enter the percentage of your expected annual pay increase:"
   explanation=""   dontOpenOuterDiv=true
 %}
@@ -161,10 +171,10 @@ Enter the dollar amount that you plan to contribute each year in <span data-term
   fieldID="panel-2.12" id="catchupAmount"
   inputClass=""  dataFormat="$"  dataFormatClass="whole-number"
   min="1" value="" max="9999" maxLength=4 step="1"
-  placeholder="" onBlur="catchupAmountGood();"
+  placeholder="" onBlur="catchupAmountGood(false);"
   prompt=prompt2_12
   explanation="
-  Catch-up contributions (up to $6,000 in 2019) are traditional and/or Roth contributions that are made by a participant age 50 or older. You must first exceed the elective deferral limit ($19,000.00 in 2019) to make catch-up contributions.
+  Catch-up contributions (up to <span id='catch-up-limit'>$6,000</span> in <span id='catch-up-year'>2019</span>) are traditional and/or Roth contributions that are made by a participant age 50 or older. You must first exceed the elective deferral limit (<span id='IRC-limit-cc'>$19,000.00</span> in <span id='IRC-limit-year-cc'>2019</span>) to make catch-up contributions.
   "
   dontOpenOuterDiv=true
 %}
@@ -174,6 +184,7 @@ Enter the dollar amount that you plan to contribute each year in <span data-term
 {% comment %}Start of multi-input block Account contribs.  We must close <div> at end{% endcomment %}
 {% capture explanation2_13 %}none{% endcapture %}
 {% include calculator/div-panel-form-field.html
+  outerDivID="accountContributionsDiv" outerDivClass="hide"
   fieldID="panel-2.13" inputType="none" H2="Account contributions" anchor="time"
   explanation=''  dontCloseOuterDiv=true
 %}
@@ -181,7 +192,7 @@ Enter the dollar amount that you plan to contribute each year in <span data-term
   fieldID="panel-2.14" id="yearsToGo"
   inputClass=""  inputType="integer"
   min="1" value="" max="99" maxLength=2 step="1"
-  placeholder="" onBlur="yearsToGoGood();"
+  placeholder="" onBlur="yearsToGoGood(false);"
   prompt="Enter the number of years left until you begin withdrawing from your TSP account:"
   explanation="
   Subtract the current year from the year you expect to start drawing down from your account.
@@ -195,7 +206,7 @@ Enter the annual rate of return you expect to earn on your contributions. View t
   fieldID="panel-2.15" id="rateOfReturn"
   inputClass=""  dataFormat="%"
   min="0" value="" max="99" maxLength=7 step="0.01"
-  placeholder="" onBlur="rateOfReturnGood();"
+  placeholder="" onBlur="rateOfReturnGood(false);"
   prompt="Expected annual rate of return:"
   explanation=explanation2_15   dontOpenOuterDiv=true
 %}

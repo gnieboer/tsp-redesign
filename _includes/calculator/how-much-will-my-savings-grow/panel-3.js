@@ -12,8 +12,6 @@ panelGood[{{ panelID }}] = function(forceValue) {
 
 panelEnter[{{ panelID }}] = function(panel) {
     // calculate and set values here
-    var contributionLimit = getContributionLimit(+reviewYear);
-    $('#deferral-limit').html(CurrencyFormatted(contributionLimit, 'no_cent'));
     return true;
 }
 panelExit[{{ panelID }}] = function(panel) {
