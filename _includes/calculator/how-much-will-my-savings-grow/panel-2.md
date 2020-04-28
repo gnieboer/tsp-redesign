@@ -96,18 +96,10 @@ Log in to [My Account]({{ site.myaccount }}){:target="\_blank"} to see your curr
 {% include calculator/div-panel-form-field.html
   fieldID="panel-2.7" id="yearsToContribute"
   min="0" value="" max="99" maxLength=2 step="1"
-  placeholder="" onBlur="yearsToContributeGood();"
+  placeholder="" onBlur="yearsToContributeGood(false);"
   prompt="Enter the number of years you plan to contribute:"
   explanation=''  dontOpenOuterDiv=true
 %}
-<div id="contribution-exceeds-maximum" style="border:1px solid red;"  class="hide">
-Your yearly contribution.<span id="total-contribution">-1</span><br><br>
-<strong>Internal Revenue Code (IRC) <span data-term="Elective Deferral Limit" class="js-glossary-toggle term term-end">Elective Deferral Limit</span></strong><br><br>
-The combined total of your regular employee contributions exceeds the Internal Revenue Code (IRC) elective deferral limit (<span id="IRC-limit">$x19,500.00</span> in <span id="IRC-limit-year">x2020</span>).<br><br>
-If you reach the IRC elective deferral limit before the end of the year, your own contributions will be suspended, and you will miss out on the associated earnings.<br><br>
-Note: If you are age 50 or over, you can make catch-up contributions in excess of the elective deferral limit.<br><br>
-For more accurate results, decrease the amount of regular employee contributions you would like to make. You can also enter a dollar amount for catch-up contributions if you are eligible.
-</div>
 {% include calculator/div-panel-form-field.html
   fieldID="panel-2.8" id="annualPay"
   inputClass=""  dataFormat="$"  dataFormatClass="whole-number"
@@ -156,6 +148,24 @@ This will depend on how often you are paid (biweekly or monthly, for example). I
   prompt="Enter the whole percentage of annual pay that you would like to save:"
   explanation=""   dontOpenOuterDiv=true
 %}
+<!-- DONALD - this is the contribution exceeds max note -->
+{% capture contribution_exceeds_maximum_title %}
+Internal Revenue Code (IRC) <span data-term="Elective Deferral Limit" class="js-glossary-toggle term term-end">Elective Deferral Limit</span>
+{% endcapture %}
+{% capture contribution_exceeds_maximum %}
+<br>Your yearly contribution: <span id="total-contribution">0</span><br><br>
+Maximum whole percentage below limit: <span id="maximum-percent-contribution">0</span>%<br><br>
+The combined total of your regular employee contributions exceeds the Internal Revenue Code (IRC) elective deferral limit (<span id="IRC-limit">$x19,500.00</span> in <span id="IRC-limit-year">x2020</span>).<br><br>
+If you reach the IRC elective deferral limit before the end of the year, your own contributions will be suspended, and you will miss out on the associated earnings.<br><br>
+<strong>Note:</strong> If you are age 50 or over, you can make catch-up contributions in excess of the elective deferral limit.<br><br>
+For more accurate results, decrease the amount of regular employee contributions you would like to make. You can also enter a dollar amount for catch-up contributions if you are eligible.
+{% endcapture %}
+{% include calculator/infoBox.html icon='warning'
+    divID="contribution-exceeds-maximum" class="hide"
+    title=contribution_exceeds_maximum_title
+    textBlock=contribution_exceeds_maximum
+%}
+<!-- end of contribution exceeds note -->
 {% include calculator/div-panel-form-field.html
   fieldID="panel-2.11" id="annualPayIncreasePercent"
   inputClass=""  dataFormat="%"

@@ -32,6 +32,19 @@ function CurrencyFormatted(num, no_cent) {
   }
 }
 
+function addCommas(element) {
+  var val = $('#'+element).val();
+  var newval = val.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+  $('#'+element).val(newval);
+  console.log('add commas', val, newval);
+}
+function removeCommas(element) {
+  var val = $('#'+element).val();
+  var newval = val.replace(/,/g, '');
+  $('#'+element).val(newval);
+  console.log('remove commas', val, newval);
+}
+
 function showError1(element, message) {
   // $('#'+element).addClass("usa-input-error"); // aria-describedby="input-error-message"
   $('#'+element+'-input-error').addClass("usa-input-error");

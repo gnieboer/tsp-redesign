@@ -30,6 +30,12 @@ This script produces an input area for calculator panels.
 {% if outerDivID != '' %}
 {% assign outerDivID = 'id="' | append: outerDivID | append: '"' %}
 {% endif %}
+{% assign focusCommas = include.focusCommas | default: '' %}
+{% if focusCommas != '' %}
+{% assign element = "'" | append: id | append: "'" %}
+{% assign focusOutCommas = 'onFocusOut="addCommas(' | append: element | append: ');"' %}
+{% assign focusCommas = 'onFocus="removeCommas(' | append: element | append: ');" ' | append: focusOutCommas %}
+{% endif %}
 {% assign anchor = include.anchor | default: '' %}
 {% assign dontOpenOuterDiv = include.dontOpenOuterDiv | default: false %}
 {% assign dontCloseOuterDiv = include.dontCloseOuterDiv | default: false %}
@@ -45,7 +51,7 @@ This script produces an input area for calculator panels.
     {% endif %}
     {% if dataFormat != '' %}<span data-format="{{dataFormat}}" class="{{dataFormatClass}}">{%endif%}
     {% if inputType == 'number' %}
-      <input id="{{id}}" name="{{name}}" class="{{inputClass}}" type="number" {{onBlur}}
+      <input id="{{id}}" name="{{name}}" class="{{inputClass}}" type="number" {{onBlur}} {{focusCommas}}
         value="{{value}}" min="{{min}}" max="{{max}}" step="{{step}}" placeholder="{{placeholder}}" />
     {% endif %}
     {% if inputType == 'integer' %}

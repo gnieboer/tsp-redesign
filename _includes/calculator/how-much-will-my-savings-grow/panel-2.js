@@ -195,8 +195,11 @@ function testWarning() {
 
   // we have good input for the salary fields
   var contrib = annualPay * (annualPayPercent / 100.0);
+  var maxpcontrib = (100.0 * IRC_contribution_limit) / annualPay;
 
   $('#total-contribution').html(CurrencyFormatted(contrib, 'cent'));
+  $('#maximum-percent-contribution').html(maxpcontrib.toFixed(2));
+
   if (contrib > IRC_contribution_limit)
     $('#contribution-exceeds-maximum').removeClass('hide');
   else
