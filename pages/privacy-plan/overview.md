@@ -17,7 +17,7 @@ The Privacy Division adheres to the policy framework embodied in the Fair Inform
 - Assesses all new or proposed programs, systems, technologies, and business processes for privacy risks and provides recommendations to strengthen privacy protections;
 - Collaborates with FRTIB’s Information Technology Security Management Division (ITSMD) to implement and operationalize policies to secure the confidentiality, integrity, and availability of FRTIB’s information and information systems;  
 - Operates a data breach response program to ensure that all incidents involving personally identifiable information (PII) are properly reported, investigated, and mitigated, as appropriate; and
-- Maintains updated privacy artifacts in compliance with legal requirements (e.g., System of Records Notice, Privacy Impact Assessments, and Privacy Act Notices).
+- Maintains updated privacy artifacts in compliance with legal requirements (e.g., System of Records Notices, Privacy Impact Assessments, and Privacy Act Notices).
 
 ## FRTIB Privacy Office Organization
 
