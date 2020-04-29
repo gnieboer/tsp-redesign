@@ -8,7 +8,7 @@ permalink: /privacy-plan/privacy-control-requirements/
 ---
 # Privacy Control Requirements
 
-FRTIB has implemented NIST SP 800-53, Rev. 4 to ensure compliance with applicable statutory, regulatory, and policy requirements with respect to information security. The Privacy Division is in the process of finalizing privacy controls for FRTIB’s information systems in compliance with NIST SP 800-53, Rev. 4 Appendix J. FRTIB also adheres to Section 208 of the E-Government Act of 2002, which requires agencies to conduct privacy impact assessments (PIA) for electronic systems and collections.  The Privacy Division conducts an initial analysis, known as a privacy threshold analysis (PTA) of each of FRTIB’s electronic systems to determine whether a PIA is required. Finally, FRTIB ensures compliance with the Privacy Act by publishing System of Records Notices (SORN) in the Federal Register.
+FRTIB has implemented NIST SP 800-53, Rev. 4 to ensure compliance with applicable statutory, regulatory, and policy requirements with respect to information security. FRTIB also adheres to Section 208 of the E-Government Act of 2002, which requires agencies to conduct privacy impact assessments (PIA) for electronic systems and collections.  The Privacy Division conducts an initial analysis, known as a privacy threshold analysis (PTA) of each of FRTIB’s electronic systems to determine whether a PIA is required. Finally, FRTIB ensures compliance with the Privacy Act by publishing System of Records Notices (SORN) in the Federal Register.
 
 <ul class="usa-accordion">
 <!-- 7.1 FRTIB Control Allocation  -->
@@ -20,7 +20,7 @@ FRTIB has implemented NIST SP 800-53, Rev. 4 to ensure compliance with applicabl
   </button>
   <div id="a1" class="usa-accordion-content" markdown="1">
 
-FRTIB’s Privacy Division is in the process of finalizing its baseline privacy controls document, which implements the requirements contained in NIST SP 800-53, Rev. 4 Appendix J. The Privacy Division will designate each control as program management, common, information system-specific, or hybrid. Common controls are controls that are inherited by multiple information systems. Information system-specific controls are controls that are implemented for a particular information system or the portion of a hybrid control that is implemented for a particular information system. Hybrid controls are controls that are implemented for an information system in part as a common control and in part as an information system-specific control. The determination as to whether a privacy control is a common, information system-specific, or hybrid control is based on context.
+  FRTIB’s Privacy Division is in the process of implementing the privacy controls in NIST SP-800-53, Rev. 4. The Privacy Division has designated each control as program management, common, information system-specific, or hybrid. Common controls are controls that are inherited by multiple information systems. Information system-specific controls are controls that are implemented for a particular information system or the portion of a hybrid control that is implemented for a particular information system. Hybrid controls are controls that are implemented for an information system in part as a common control and in part as an information system-specific control. The determination as to whether a privacy control is a common, information system-specific, or hybrid control is based on context. The Privacy Division has implemented and assessed the common controls. The Agency is implementing and assessing system-specific controls on a rolling basis as systems are authorized or reauthorized.
 
   </div>
 </li>
@@ -46,14 +46,14 @@ FRTIB’s Privacy Division is in the process of finalizing its baseline privacy 
   </button>
   <div id="a3" class="usa-accordion-content" markdown="1">
 
-  A PIA is legally required by Section 208 of the E-Government Act of 2002 and analyzes how information in an identifiable form is collected, maintained, stored, and disseminated. The PIA analyzes the privacy risks as well as the protections and process for handling information to mitigate the privacy risks. PIAs are conducted when:
+  A PIA is legally required by Section 208 of the E-Government Act of 2002 and analyzes how information in an identifiable form is collected, maintained, stored, and disseminated. The PIA analyzes the privacy risks as well as any protections and processes in place for handling information to mitigate the privacy risks. PIAs are conducted when:
 
   1. Developing or procuring information systems or projects that collect, maintain, or disseminate information in identifiable form, from or about, members of the public; or
   2. Initiating a new electronic collection of information in identifiable form from 10 or more persons (excluding agencies, instrumentalities or employees of the federal government).
 
   FRTIB has incorporated the FIPPS into its PIAs. FRTIB’s PIAs describe: (1) the legal authority that permits the collection of information; (2) the specific type of information used by the system; (3) how and why the system uses the information;     (4) whether the system provides notice to individuals that their information is used by the system; (5) the length of time the system retains information; (6) whether and with whom the system disseminates information; (7) procedures individuals may use to access or amend information used by the system; and (8) physical, technical, and administrative safeguards applied to the system to secure the information.
 
-  Pursuant to FRTIB’s PTA/PIA Policy and Procedures, if the SAOP determines a PIA is required, the Information System Security Officer (ISSO) and System Owner (SO) complete the PIA. An attorney in the Privacy Division then reviews the PIA to ensure it is accurate and complete and analyze whether privacy risks are mitigated to an acceptable level. Once complete, the SAOP signs the document.
+  Pursuant to FRTIB’s PTA/PIA Procedures, if the CPO determines a PIA is required, the Business Owner and Information System Security Officer (ISSO) complete the PIA. An attorney in the Privacy Division then reviews the PIA to ensure it is accurate and complete and analyzes whether privacy risks are mitigated to an acceptable level. Once complete, the CPO signs the document.
 
   </div>
 </li>
