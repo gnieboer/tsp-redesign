@@ -33,7 +33,6 @@ function set_FC_text(rs) {
 }
 
 function selectedGrowth(id, submit) {
-  console.log(id, submit);
   growthSelectorGood(submit);
   // deemphasize(0);
 }
@@ -52,7 +51,7 @@ function getGrowthSelector() {
   return '';
 }
 
-function hideBlock(hideFlag, block1, block2) {
+function hideBlock(hideFlag, block1, block2, block3) {
   if (hideFlag) {
     $('#'+block1).addClass('hide');
     $('#'+block2).addClass('hide');
@@ -64,9 +63,15 @@ function hideBlock(hideFlag, block1, block2) {
 }
 function hideGrowth(hideFlag) { hideBlock(hideFlag, 'growthSelectorDiv', 'growthAYR'); }
 function hideServiceSoFar(hideFlag) { hideBlock(hideFlag, 'serviceSoFar', 'serviceSoFarAYR'); }
-function hideAccountBalance(hideFlag) { hideBlock(hideFlag, 'accountBalanceDiv', 'balanceAYR'); }
+function hideAccountBalance(hideFlag) {
+  hideBlock(hideFlag, 'accountBalanceDiv', 'balanceAYR');
+  hideBlock(hideFlag, 'existing-balance-row', 'account-growth-row');
+}
 function hideAccountContributions(hideFlag) { hideBlock(hideFlag, 'accountContributionsDiv', 'accountGrowthAYR'); }
-function hideFuture(hideFlag) { hideBlock(hideFlag, 'futureContributionsDiv', 'futureAYR'); }
+function hideFuture(hideFlag) {
+  hideBlock(hideFlag, 'futureContributionsDiv', 'futureAYR');
+  hideBlock(hideFlag, 'future-contributions-row', 'future-growth-row');
+}
 function hidePaySchedule(hideFlag) { hideBlock(hideFlag, 'paySchedule-hide', 'lblAYRpaySchedule-row'); }
 
 function applyGrowthSelectorChoice(growthSelector) {
@@ -97,7 +102,6 @@ function applyGrowthSelectorChoice(growthSelector) {
 }
 function growthSelectorGood(submit) {
   var growthSelector = getGrowthSelector();
-  console.log('gs '+ growthSelector);
   if (growthSelector == '') return showError('growthSelector', 'Please select how you will use this calculator.');
   applyGrowthSelectorChoice(growthSelector);
 
@@ -127,12 +131,9 @@ var DIEMS = flatpickr("#DIEMSdate", {
 });
 
 function DIEMSdateGood(submit) {
-  console.log('DIEMSdateGood '+submit);
   var growthSelector = getGrowthSelector();
   if ((growthSelector == 'balanceOnly') || (growthSelector == '')) { return clearError('DIEMSdate'); }
   var DIEMSdate = $.trim($('#DIEMSdate').val());
-  console.log('Date '+DIEMSdate);
-  console.log(DIEMS);
   $('#lblAYRDIEMSdate').html(DIEMSdate);
   $('#DIEMSdate').val(DIEMSdate);
   if (!$('#USBRS').prop('checked')) { return clearError('DIEMSdate'); }
@@ -181,7 +182,6 @@ function setLimits() {
   return true;
 }
 function testWarning() {
-  console.log('testWarning');
   if ($('#BP').prop('checked')) { return; }
   if (getPosInteger('yearsToContribute', -1) <= 0) { return; }
 
@@ -430,6 +430,7 @@ function rateOfReturnGood(submit) {
   rateOfReturn = rateOfReturn.toFixed(2);
   $("#rateOfReturn").val(rateOfReturn);
   $('#lblAYRrateOfReturn').html(rateOfReturn + '%');
+  $('#annual-rate').html(rateOfReturn + '%');
   return clearError('rateOfReturn');
 }
 

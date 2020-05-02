@@ -13,6 +13,10 @@ Results NAME panel (3) for CALC.
     textBlock="To receive the maximum Agency or Service Matching Contributions, you must contribute 5% of your basic pay each pay period."
 %}
 
+<ul class="usa-accordion icons">
+  <!-- PROJECTED BALANCE -->
+{% include calculator/accordion-start.html expanded=true divID='projected-balance1'
+    icon='fal fa-search-dollar' title='Projected Account Balance' inList=true %}
 <div class="results-grid-frame" markdown="1">
 {% include calculator/resultsRow.html left="Your existing account balance"
   rightID="existing-balance" right="" outerDivID="existing-balance-row" %}
@@ -25,91 +29,51 @@ Results NAME panel (3) for CALC.
 {% include calculator/resultsRow.html left="<strong>Total estimated TSP account balance</strong>"
   rightID="final-total" right="" %}
 </div>
+{% include calculator/accordion-end.html  inList=true %}
 
-  <ul class="usa-accordion icons">
-  <!-- PROJECTED BALANCE -->
-    <li>
-      <button
-        class="usa-accordion-button"
-        aria-expanded="false"
-        aria-controls="projected-balance">
-        Projected Account Balance <i class="fal fa-search-dollar" aria-hidden="true"></i>
-      </button>
-      <div id="projected-balance" class="usa-accordion-content">
+<!-- PROJECTED GROWTH -->
+{% include calculator/accordion-start.html expanded=true divID='projected-growth'
+    icon='far fa-chart-line' title='Projected Growth of Your Account' inList=true %}
+  <p>The results below show how much your account will grow over time based on an expected annual rate of return of <span id="annual-rate">--</span>.</p>
+<fieldset class="usa-fieldset-inputs projected-growth">
+<legend class="">Show growth as:</legend>
+<ul class="usa-unstyled-list">
+  <li>
+  <input type="radio" id="resultSelectorGraph" name="resultSelector" value="graph" onclick="showData('graph');">
+  <label for="resultSelectorGraph"><strong>Graph</strong></label>
+  </li>
 
-      <div class="results-grid-frame">
-        <div class="usa-grid results">
-          <div class="usa-width-two-thirds">Your existing account balance</div>
-          <div class="usa-width-one-third">$
-          <span id="accountExisting">350,000.00</span>
-          </div>
-        </div>
-        <div class="usa-grid results">
-          <div class="usa-width-two-thirds ">Growth of your existing account balance</div>
-          <div class="usa-width-one-third ">$
-          <span id="growthExisting">354,268.78</span>
-          </div>
-        </div>
-        <div class="usa-grid results">
-          <div class="usa-width-two-thirds ">Your future contributions</div>
-          <div class="usa-width-one-third ">$
-          <span id="contribFuture">380,745.34</span>
-          </div>
-        </div>
-        <div class="usa-grid results">
-          <div class="usa-width-two-thirds ">Growth of your future contributions</div>
-          <div class="usa-width-one-third ">$
-          <span id="contribFutureGrowth">380,745.34</span>
-          </div>
-        </div>
-        <div class="usa-grid results">
-          <div class="usa-width-two-thirds bold">
-          Total estimated TSP account balance
-          </div>
-          <div class="usa-width-one-third bold">$<span id="totalBalance">1,249,854.26</span></div>
-        </div>
+  <li>
+  <input type="radio" id="resultSelectorTable" name="resultSelector" value="table" onclick="showData('table');">
+  <label for="resultSelectorTable"><strong>Table</strong></label>
+  </li>
 
-      </div> <!-- end div.results-grid-frame -->
+  <li>
+  <input type="radio" id="resultSelectorCombined" name="resultSelector" value="combined" onclick="showData('combined');">
+  <label for="resultSelectorCombined"><strong>Combined</strong></label>
+  </li>
+</ul>
+</fieldset>
+<div id="show-data-graph" class="hide">
+  <div id="chartResult">GRAPH</div>
+</div>
+{% assign chartName = 'savings-grow' %}
+<div class="usa-width-one-whole" markdown="1">
+  <section id="{{chartName}}-section" class="{{chartName}}-table">
+    <div class="table-view">
+      <button id="{{chartName}}-button" class="usa-button-secondary"
+        onClick="toggleTableWidth('{{chartName}}');">
+        Expand table <i class="fal fa-expand-wide"></i></button>
+    </div>
+    <div id="{{chartName}}-table" class="table-side-scroll"></div>
+  </section>
 
-      </div>
-    </li>
-    <!-- PROJECTED GROWTH -->
-    <li>
-      <button
-        class="usa-accordion-button"
-        aria-expanded="false"
-        aria-controls="projected-growth">
-        Projected Growth of Your Account <i class="far fa-chart-line" aria-hidden="true"></i>
-      </button>
-      <div id="projected-growth" class="usa-accordion-content">
-        <p>The results below show how much your account will grow over time based on an expected annual rate of return of 6.00%.</p>
-      <fieldset class="usa-fieldset-inputs projected-growth">
-      <legend class="">Show growth as:</legend>
-      <ul class="usa-unstyled-list">
-        <li>
-        <input type="radio" id="resultSelectorChart" name="resultSelector" value="graph" onclick="showData(0);" checked="">
-        <label for="resultSelectorChart"><strong>Graph</strong></label>
-        </li>
+</div> <!-- END div.usa-width-one-whole -->
+{% include calculator/accordion-end.html  inList=true %}
 
-        <li>
-        <input type="radio" id="resultSelectorTable" name="resultSelector" value="table" onclick="showData(1);">
-        <label for="resultSelectorTable"><strong>Table</strong></label>
-        </li>
-
-        <li>
-        <input type="radio" id="resultSelectorCombined" name="resultSelector" value="combined" onclick="showData(2);">
-        <label for="resultSelectorCombined"><strong>Combined</strong></label>
-        </li>
-      </ul>
-      </fieldset>
-      </div>
-    </li>
-    <!-- ADJUST YOUR RESULTS -->
-    <li>
-      <button class="usa-accordion-button" aria-expanded="true" aria-controls="adjust-results">
-        Adjust your results <i class="fal fa-sliders-v"></i>
-      </button>
-      <div id="adjust-results" class="usa-accordion-content">
+<!-- ADJUST YOUR RESULTS -->
+{% include calculator/accordion-start.html expanded=true divID='adjust-results'
+    icon='fal fa-sliders-v' title='Adjust your results' inList=true %}
 
 {% include calculator/AYR-table.html caption="Retirement System" showPanel=1 gotoAnchor='system' %}
 {% include calculator/AYR-table-row.html closeTable=true
@@ -145,9 +109,8 @@ Results NAME panel (3) for CALC.
 {% include calculator/AYR-table-row.html closeTable=true
     prompt="Expected annual return:" rowID='lblAYRrateOfReturn' %}
 
-      </div>
-    </li>
-  </ul>
+{% include calculator/accordion-end.html  inList=true %}
+</ul>
 
 {% include calculator/button-block.html panelID=panelID revise=2 %}
 

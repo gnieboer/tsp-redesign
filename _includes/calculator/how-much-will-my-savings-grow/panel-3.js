@@ -12,13 +12,47 @@ panelGood[{{ panelID }}] = function(forceValue) {
 
 panelEnter[{{ panelID }}] = function(panel) {
     // calculate and set values here
+    calculateResults();
     return true;
 }
 panelExit[{{ panelID }}] = function(panel) {
     return true;
 }
 
-/*
+function showData(choice) {
+  if (choice == 'graph') {
+    $('#resultSelectorGraph').prop('checked', true);
+    $('#show-data-graph').removeClass('hide');
+    $('#show-data-table').addClass('hide');
+    return true;
+  }
+  if (choice == 'table') {
+    $('#resultSelectorTable').prop('checked', true);
+    $('#show-data-graph').addClass('hide');
+    $('#show-data-table').removeClass('hide');
+    return true;
+  }
+  $('#resultSelectorCombined').prop('checked', true);
+  $('#show-data-graph').removeClass('hide');
+  $('#show-data-table').removeClass('hide');
+  return true;
+}
+function calculateResults1() {
+  // calculate 5 main values
+  var existingBalance = 1000;
+  var balanceGrowth = 2000;
+  var futureContributions = 300;
+  var futureGrowth = 400;
+  var total = 0;
+
+  total = existingBalance + balanceGrowth + futureContributions + futureGrowth;
+  $('#existing-balance').html(CurrencyFormatted(existingBalance, 'cent'));
+  $('#balance-growth').html(CurrencyFormatted(balanceGrowth, 'cent'));
+  $('#future-contributions').html(CurrencyFormatted(futureContributions, 'cent'));
+  $('#future-growth').html(CurrencyFormatted(futureGrowth, 'cent'));
+  $('#final-total').html(CurrencyFormatted(total, 'cent'));
+}
+
 function get_pay_freq(paySchedule) {
   if (paySchedule == 'Biweekly')      return 26.0;
   if (paySchedule == 'Weekly')        return 52.0;
@@ -47,184 +81,57 @@ function USBRSmatch(years, months, matchPercent) {
   return FERSmatch(matchPercent);
 }
 
-// alert('functions done');
-
-var accountBalance = new Array();
-var accountGrowth = new Array();
-var contributions = new Array();
-var contributionGrowth = new Array();
-var total = new Array();
-var salary = new Array();
-
-// These variables hold values used in the calculations
-var agency = 'agency';
-var isMatching = false;
-var rs = 'FERS';
-var contributionsText = 'Contributions';
-if ((rs == 'FERS') || (rs == 'USBRS')) {
-  contributionsText = 'Contributions*';
-  isMatching = true;
-  if (rs == 'USBRS') { agency = 'service'; }
-}
-var matchFootnoteChart = '*Includes any '+agency+'<BR>&nbsp;&nbsp;contributions';
-var matchFootnoteTable = '*Includes any '+agency+' contributions';
-
-var amountToUse = parseInt(0);
-var yearsToContribute = parseInt(0);
-var DIEMSdate = '';
-var matchDelay = 0;
-if (Date.parse(DIEMSdate) < Date.parse('01/01/2018')) { matchDelay = 2; }
-var annualPay = parseInt(0);
-var paySchedule = 'Select';
-var annualPayPercent = parseFloat(0);
-var annualPayIncreasePercent = parseFloat(0);
-var yearsToGo = parseInt(0);
-var yearsServed = parseInt(0);
-var catchupAmount = parseInt(0);
-var rateOfReturn = parseFloat(0);
-
-var growthSelector = 'growthBoth';
-if (rs == 'BP') { growthSelector = 'balanceOnly'; }
-if (growthSelector == 'futureOnly') { amountToUse = 0; }
-if (growthSelector == 'balanceOnly') { yearsToContribute = 0; }
-// alert(growthSelector);
-
-// loop control
-var periodLength = get_pay_freq(paySchedule);
-if (rs == 'US') { periodLength = 12.0; }
-if (rs == 'USBRS') { periodLength = 12.0; }
-if (rs == 'BP') { periodLength = 1.0; }
-var period = 0;
-var year = 0;
-var returnRate = rateOfReturn / 100.0;
-// returnRate = returnRate/periodLength;
-// alert(returnRate/periodLength);
-returnRate = Math.pow(1 + returnRate, 1.0 / periodLength) - 1.0;
-// alert(returnRate);
-
-var annualPayRate = annualPayPercent / 100.0;
-if (rs == 'FERS') { annualPayRate = FERSmatch(annualPayRate); }
-if (rs == 'BP') { yearsToContribute = 0; }
-// annualPayRate = annualPayRate / periodLength;
-var annualPayIncreaseRate = (annualPayIncreasePercent) / 100.0 + 1.00;
-// deal with rounding of catchup
-var catchupPaycheck = parseInt(catchupAmount / periodLength * 100.0) / 100.0;
-var catchupCatchup = parseInt(100 * parseFloat(catchupAmount - parseFloat(catchupPaycheck) * periodLength).toFixed(2));
-
-// alert(catchupPaycheck + '  ' + catchupCatchup);
-
-// yearly loop
-var  tablestr = "<br>\n<table class='tspStandard paycheck-estimator-table' width=100% cellspacing=5>\n";
-  tablestr += "<tr  align=center>\n";
-  tablestr += "<td class='subHeading bold' style='text-align:center; border-right:1px solid #A0A0A0;'>Year</td>";
-  // tablestr += "<td class='subHeading bold' style='text-align:center; border-right:1px solid #A0A0A0;'>Salary</td>";
-  tablestr += "<td class='subHeading bold' style='text-align:right'>Existing Balance</td>";
-  tablestr += "<td class='subHeading bold' style='text-align:right; border-right:1px solid #A0A0A0;'>Account Balance Growth</td>";
-  if (rs != "BP") {
-    tablestr += "<td class='subHeading bold' style='text-align:right'>" + contributionsText + "</td>";
-    tablestr += "<td class='subHeading bold' style='text-align:right; border-right:1px solid #A0A0A0;'>Contribution Growth</td>";
-  }
-  tablestr += "<td class='subHeading bold' style='text-align:right'>Total Projected Balance</td>";
-  tablestr += "</tr>\n";
-var rowclass = 'evenRow';
-
-accountBalance[year] = amountToUse;
-accountGrowth[year] = 0.0;
-contributions[year] = 0.0;
-contributionGrowth[year] = 0.0;
-total[year] = accountBalance[year] + accountGrowth[year] + contributions[year] + contributionGrowth[year];
-salary[year] = parseFloat((annualPay / periodLength).toFixed(2));
-salary[year+1] = salary[year];
-
-if (rowclass == 'evenRow') { rowclass = 'oddRow'; } else { rowclass = 'evenRow'; }
-  tablestr += "<tr class='" + rowclass + "'>\n";
-  tablestr += "<td class='packed'  style='text-align:center; border-right:1px solid #A0A0A0;'>" + year + "</td>";
-  // tablestr += "<td class='packed roth-padding' style='border-right:1px solid #A0A0A0;'>" + CurrencyFormatted(salary[year]) + "</td>";
-  tablestr += "<td class='packed'>" + CurrencyFormatted(accountBalance[year]) + "</td>";
-  tablestr += "<td class='packed roth-padding' style='border-right:1px solid #A0A0A0;'>" + CurrencyFormatted(accountGrowth[year]) + "</td>";
-  if (rs != "BP") {
-    tablestr += "<td class='packed'>" + CurrencyFormatted(contributions[year]) + "</td>";
-    tablestr += "<td class='packed roth-padding' style='border-right:1px solid #A0A0A0;'>" + CurrencyFormatted(contributionGrowth[year]) + "</td>";
-  }
-  tablestr += "<td class='packed'>" + CurrencyFormatted(total[year]) + "</td>";
-  tablestr += "</tr>\n";
-
-for (year = 1; year <= yearsToGo; year++) {
-  accountBalance[year] = amountToUse;
-  accountGrowth[year] = accountGrowth[year-1];
-  contributions[year] = contributions[year-1];
-  contributionGrowth[year] = contributionGrowth[year-1];
-  if (year > 1) { salary[year] = parseFloat((salary[year-1] * annualPayIncreaseRate).toFixed(2)); }
-  for (period = 1; period <= periodLength; period++) {
-    contributionGrowth[year] += parseFloat(((contributions[year] + contributionGrowth[year]) * returnRate).toFixed(2));
-    if (year <= yearsToContribute) {
-// console.log(yearsServed, year, period, yearsToContribute);
-      if (rs == 'USBRS') {
-// console.log(year, period, annualPayRate, salary[year]*annualPayRate, parseFloat(salary[year] * USBRSmatch(year+yearsServed, period, annualPayRate).toFixed(2)), catchupPaycheck);
-        contributions[year] += parseFloat((salary[year] * USBRSmatch(year+yearsServed+matchDelay, period, annualPayRate)).toFixed(2));
-      } else {
-        contributions[year] += parseFloat((salary[year] * annualPayRate).toFixed(2));
-      }
-      contributions[year] += parseFloat(catchupPaycheck);
-      if (period <= catchupCatchup) { contributions[year] += 0.01; }
-    }
-  }
-  accountGrowth[year] += parseFloat(((accountBalance[year-1] + accountGrowth[year-1]) * (rateOfReturn / 100.0)).toFixed(2));
-
-  total[year] = accountBalance[year] + accountGrowth[year] + contributions[year] + contributionGrowth[year];
-
-  if (rowclass == 'evenRow') { rowclass = 'oddRow'; } else { rowclass = 'evenRow'; }
-    tablestr += "<tr class='" + rowclass + "'>\n";
-    tablestr += "<td class='packed'  style='text-align:center; border-right:1px solid #A0A0A0;'>" + year + "</td>";
-    // tablestr += "<td class='packed roth-padding' style='border-right:1px solid #A0A0A0;'>" + CurrencyFormatted(salary[year]*periodLength) + "</td>";
-    tablestr += "<td class='packed'>" + CurrencyFormatted(accountBalance[year]) + "</td>";
-    tablestr += "<td class='packed roth-padding' style='border-right:1px solid #A0A0A0;'>" + CurrencyFormatted(accountGrowth[year]) + "</td>";
-    if (rs != "BP") {
-      tablestr += "<td class='packed'>" + CurrencyFormatted(contributions[year]) + "</td>";
-      tablestr += "<td class='packed roth-padding' style='border-right:1px solid #A0A0A0;'>" + CurrencyFormatted(contributionGrowth[year]) + "</td>";
-    }
-    tablestr += "<td class='packed'>" + CurrencyFormatted(total[year]) + "</td>";
-    tablestr += "</tr>\n";
-}
-
-tablestr += "</table>\n";
-if (isMatching) { tablestr += matchFootnoteTable; }
-$('#thetable').html(tablestr);
-
 var defdot = { symbol: 'circle', radius: 0.1 };
 var defcircle = { symbol: 'circle', radius: 2.4 };
 var defdiamond = { symbol: 'diamond', radius: 2.6 };
-
 // the color names below are not HTML defined names, just a close name to identify what is on the screen
-var colorContributions = '#9C1B9C';
-var colorContributionsGrowth = '#C679DD';
-var colorBalance = '#EA6A17';
-var colorBalanceGrowth = '#F4B55B';
-
-var chart;
+var colorContributions = 'i'; // legacy '#9C1B9C';
+var colorContributionsGrowth = 'ii'; // legacy '#C679DD';
+var colorBalance = 'g'; // legacy '#EA6A17';
+var colorBalanceGrowth = 'ig'; // legacy '#F4B55B';
+var contributionsText = 'Contributions';
 
 function dataBoth() {
   return [
-      { name: 'Contributions Growth',   legendIndex: 1, marker: defcircle, color: colorContributionsGrowth, data: contributionGrowth },
-      { name: contributionsText,                legendIndex: 2, marker: defcircle, color: colorContributions, data: contributions },
-      { name: 'Account Balance Growth',         legendIndex: 3, marker: defcircle, color: colorBalanceGrowth, data: accountGrowth },
-      { name: 'Existing Balance',               legendIndex: 4, marker: defcircle, color: colorBalance, data: accountBalance }
+      { name: 'Contributions Growth',   legendIndex: 1, marker: defcircle, colorIndex: colorContributionsGrowth, data: contributionGrowth },
+      { name: contributionsText,                legendIndex: 2, marker: defcircle, colorIndex: colorContributions, data: contributions },
+      { name: 'Account Balance Growth',         legendIndex: 3, marker: defcircle, colorIndex: colorBalanceGrowth, data: accountGrowth },
+      { name: 'Existing Balance',               legendIndex: 4, marker: defcircle, colorIndex: colorBalance, data: accountBalance }
     ];
 }
 function dataFuture() {
   return [
-      { name: 'Contributions Growth',   legendIndex: 1, marker: defcircle, color: colorContributionsGrowth, data: contributionGrowth },
-      { name: contributionsText,                legendIndex: 2, marker: defcircle, color: colorContributions, data: contributions }
+      { name: 'Contributions Growth',   legendIndex: 1, marker: defcircle, colorIndex: colorContributionsGrowth, data: contributionGrowth },
+      { name: contributionsText,                legendIndex: 2, marker: defcircle, colorIndex: colorContributions, data: contributions }
     ];
 }
 function dataBalance() {
     return [
-      { name: 'Account Growth',         legendIndex: 1, marker: defcircle, color: colorBalanceGrowth, data: accountGrowth },
-      { name: 'Existing Balance&nbsp;&nbsp;&nbsp;',             legendIndex: 2, marker: defcircle, color: colorBalance, data: accountBalance }
+      { name: 'Account Growth',         legendIndex: 1, marker: defcircle, colorIndex: colorBalanceGrowth, data: accountGrowth },
+      { name: 'Existing Balance&nbsp;&nbsp;&nbsp;',             legendIndex: 2, marker: defcircle, colorIndex: colorBalance, data: accountBalance }
     ];
 }
 
-function makeChart(tickInterval, rs, gs) {
+function savingsGrowTooltip(me) {
+  // console.log(me);
+  var rc = tooltipHeader(getMonthYearName(me.x+1000000000));
+  rc = '';
+  var points = me.points;
+  // console.log(me);
+  for (var i = 0; i < points.length; i++) {
+    var lColor = mapServerFundClassName(points[i].series.colorIndex);
+    var name = points[i].series.name;
+    rc += tooltipLegendRow(lColor, '', name, '', CurrencyFormatted(points[i].y, 'cent'));
+  }
+  rc = tooltipRowGroup(rc);
+  rc = tooltipHeader('Year '+me.x)+rc;
+  rc = tooltipDiv('savings-grow-tooltip', rc);
+  // console.log(rc);
+  return rc;
+}
+
+function makeChart(tickInterval, rs, gs, isMatching, matchFootnoteChart) {
+
   if(typeof(tickInterval)==='undefined') tickInterval = 5;
   var plotdata = dataBoth();
   if (gs == 'futureOnly') { plotdata = dataFuture(); }
@@ -235,16 +142,19 @@ function makeChart(tickInterval, rs, gs) {
     credits: { enabled: false },
     chart: {
       renderTo: 'chartResult',
-      type: 'area'
+      type: 'area',
+      spacingBottom: 25,
+      styledMode: true,
     },
     legend: {
       enabled: true,
-      align: 'right',
-      layout: 'vertical',
-      verticalAlign: 'top',
+      reversed: true,
+      // align: 'right',
+      // layout: 'vertical',
+      // verticalAlign: 'top',
       useHTML: true,
-      margin: 8,
-          x: -3,
+      // margin: 8,
+      //    x: -3,
       backgroundColor: (Highcharts.theme && Highcharts.theme.legendBackgroundColorSolid) || 'white',
       borderColor: '#CCC',
       symbolWidth: 10,
@@ -272,40 +182,11 @@ function makeChart(tickInterval, rs, gs) {
       }
     },
     tooltip: {
-      // valueSuffix: ' millions',
-      useHTML: true,
-      borderColor: '#aaaaaa',
-      crosshairs: true,
-      positioner: function (boxWidth, boxHeight, point) {
-        var x = point.plotX;
-        if (point.plotX > 350) { x = 350; }
-        var y = point.plotY;
-        if (point.plotY > 225) { y = 225; }
-        return { x: x, y: y };
+      formatter: function () {
+        return savingsGrowTooltip(this);
       },
-      formatter: function() {
-        var yValues = new Array();
-        var output = '<table>' + '<tr><td><strong>Year ' + this.x + '</strong>:</td></tr>';
-        // output += '<tr><td>&nbsp;</td></tr>';
-        var j = 0;
-        for (j=chart.series.length-1; j>=0; j--) {
-          if ((chart.series[j].visible) && (chart.series[j].data.length > this.x)) {
-              output += '<tr align=right>';
-              output += '<td align=left>' + chart.series[j].name + ':</td><td><strong>';
-              output += CurrencyFormatted(chart.series[j].data[this.x].y) + '</strong></td>';
-              yValues.push(chart.series[j].data[this.x].y);
-              output += '</tr>';
-          }
-        }
-        output += '<tr><td colspan=2><hr></td></tr>';
-        output += '<tr><td>Total Projected Balance: &nbsp;&nbsp;&nbsp;</td><td><strong>' + CurrencyFormatted(total[this.x]) + '</strong></td></tr>';
-        output += '</table>';
-        return output;
-      },
-//      formatter: function() {
-//      return CurrencyFormatted(this.y, 'no_cent')
-//      },
-      shared: true
+      shared: true,
+      useHTML: true
     },
     plotOptions: {
       area: {
@@ -319,32 +200,169 @@ function makeChart(tickInterval, rs, gs) {
   });
 }
 
-$("#rateDiv").html(rateOfReturn.toFixed(2));
-$("#accountExisting").html(CurrencyFormatted(accountBalance[yearsToGo]));
-$("#growthExisting").html(CurrencyFormatted(accountGrowth[yearsToGo]));
-$("#contribFuture").html(CurrencyFormatted(contributions[yearsToGo]));
-$("#contribFutureGrowth").html(CurrencyFormatted(contributionGrowth[yearsToGo]));
-$("#totalBalance").html('<strong>' + CurrencyFormatted(total[yearsToGo]) + '</strong>');
+// alert('functions done');
+var chart;
+var accountBalance = null;
+var accountGrowth = null;
+var contributions = null;
+var contributionGrowth = null;
+var total = null;
+var salary = null;
 
-if (growthSelector == 'futureOnly') {
-  $("#accountExisting").html('');
-  $("#growthExisting").html('');
-  $('#AccountBalanceResult1').addClass("deemphasis");
-  $('#AccountBalanceResult2').addClass("deemphasis");
-}
-if (growthSelector == 'balanceOnly') {
-  $("#contribFuture").html('');
-  $("#contribFutureGrowth").html('');
-  $('#FutureContributionsResult1').addClass("deemphasis");
-  $('#FutureContributionsResult2').addClass("deemphasis");
+function clearArrays() {
+  accountBalance = new Array();
+  accountGrowth = new Array();
+  contributions = new Array();
+  contributionGrowth = new Array();
+  total = new Array();
+  salary = new Array();
 }
 
-function doReport() {
-  var pageUrl = "howSavingsGrowReport.html" + window.location.search;
-  openWindow(pageUrl, 750, 600);
+function buildTable(growthSelector, contributionsText, yearsToGo) {
+  // build table header
+  var headerHTML = sideScrollTH('', 'col', '', 'Year', false);
+  if (growthSelector != 'futureOnly') {
+    headerHTML += sideScrollTH('', 'col', mapServerFundClassName(colorBalance), 'Existing Balance', false);
+    headerHTML += sideScrollTH('', 'col', mapServerFundClassName(colorBalanceGrowth), 'Account Balance Growth', false);
+  }
+  if (growthSelector != 'balanceOnly') {
+    headerHTML += sideScrollTH('', 'col', mapServerFundClassName(colorContributions), contributionsText, false);
+    headerHTML += sideScrollTH('', 'col', mapServerFundClassName(colorContributionsGrowth), 'Contribution Growth', false);
+  }
+  headerHTML += sideScrollTH('', 'col', '', 'Total Projected Balance', false);
+  headerHTML = sideScrollWrapper('', 'tr', '', '', headerHTML, false);
+  headerHTML = sideScrollWrapper('  ', 'thead', '', '', headerHTML, true);
+
+  var bodyHTML = '';
+  for (var year = 0; year <= yearsToGo; year++) {
+    row = sideScrollTH('', '', '', year, false);
+    if (growthSelector != 'futureOnly') {
+      row += sideScrollTH('', '', 'col1', CurrencyFormatted(accountBalance[year], 'cent'), false);
+      row += sideScrollTH('', '', 'col2', CurrencyFormatted(accountGrowth[year], 'cent'), false);
+    }
+    if (growthSelector != 'balanceOnly') {
+      row += sideScrollTH('', '', 'col3', CurrencyFormatted(contributions[year], 'cent'), false);
+      row += sideScrollTH('', '', 'col4', CurrencyFormatted(contributionGrowth[year], 'cent'), false);
+    }
+    row += sideScrollTH('', '', '', CurrencyFormatted(total[year]), false);
+    bodyHTML += sideScrollWrapper('    ', 'tr', '', '', row, true);
+  }
+
+  bodyHTML = sideScrollWrapper('  ', 'tbody', '', '', bodyHTML, true);
+  var tableHTML = sideScrollTable('', 'savings-grow-table', '', headerHTML+bodyHTML, true);
+  return tableHTML;
 }
 
-var text = 'Includes any agency<BR>contributions';
-*/
+function calculateResults() {
+  clearArrays();
+
+  // These variables hold values used in the calculations
+  var agency = 'agency';
+  var isMatching = false;
+  var rs = getRetirementSystem();
+  contributionsText = 'Contributions';
+  if ((rs == 'FERS') || (rs == 'USBRS')) {
+    contributionsText = 'Contributions*';
+    isMatching = true;
+    if (rs == 'USBRS') { agency = 'service'; }
+  }
+  var matchFootnoteChart = '*Includes any '+agency+' contributions';
+  var matchFootnoteTable = '*Includes any '+agency+' contributions';
+  // console.log('rs '+rs, 'agency '+agency);
+
+  var amountToUse = getPosInteger('amountToUse', 0);
+  var yearsToContribute = getPosInteger('yearsToContribute', 0);
+  var DIEMSdate = $.trim($('#DIEMSdate').val());
+  var DIEMSdate2 = flatpickr.parseDate(DIEMSdate, "F j, Y");
+  DIEMSdate2 = parseInt(flatpickr.formatDate(DIEMSdate2, "Ymd"));
+  var matchDelay = 0;
+  if (DIEMSdate2 < 20180101) { matchDelay = 2; }
+  var annualPay = getPosInteger('annualPay', 0);
+  var paySchedule = getPaySchedule();
+  var annualPayPercent = getPosFloat('annualPayPercent', 0.0);
+  var annualPayIncreasePercent = getPosFloat('annualPayIncreasePercent', 0.0);
+  var yearsToGo = getPosInteger('yearsToGo', 0);
+  var yearsServed = getPosInteger('yearsServed', 0);
+  var catchupAmount = getPosInteger('catchupAmount', 0);
+  var rateOfReturn = getPosFloat('rateOfReturn', 0.0);
+
+  var growthSelector = getGrowthSelector();
+  if (rs == 'BP') { growthSelector = 'balanceOnly'; }
+  if (growthSelector == 'futureOnly') { amountToUse = 0; }
+  if (growthSelector == 'balanceOnly') { yearsToContribute = 0; }
+  // console.log(growthSelector);
+  // console.log(amountToUse,yearsToContribute,matchDelay,DIEMSdate,DIEMSdate2,annualPay,paySchedule,annualPayPercent,annualPayIncreasePercent,yearsToGo,yearsServed,catchupAmount,rateOfReturn);
+
+  // loop control
+  var periodLength = get_pay_freq(paySchedule);
+  if (rs == 'US') { periodLength = 12.0; }
+  if (rs == 'USBRS') { periodLength = 12.0; }
+  if (rs == 'BP') { periodLength = 1.0; }
+  var period = 0;
+  var year = 0;
+  var returnRate = rateOfReturn / 100.0;
+  returnRate = Math.pow(1 + returnRate, 1.0 / periodLength) - 1.0;
+  // console.log(periodLength, returnRate);
+  var annualPayRate = annualPayPercent / 100.0;
+  if (rs == 'FERS') { annualPayRate = FERSmatch(annualPayRate); }
+  if (rs == 'BP') { yearsToContribute = 0; }
+  // annualPayRate = annualPayRate / periodLength;
+  var annualPayIncreaseRate = (annualPayIncreasePercent) / 100.0 + 1.00;
+  // deal with rounding of catchup
+  var catchupPaycheck = parseInt(catchupAmount / periodLength * 100.0) / 100.0;
+  var catchupCatchup = parseInt(100 * parseFloat(catchupAmount - parseFloat(catchupPaycheck) * periodLength).toFixed(2));
+
+  // alert(catchupPaycheck + '  ' + catchupCatchup);
+  accountBalance[year] = amountToUse;
+  accountGrowth[year] = 0.0;
+  contributions[year] = 0.0;
+  contributionGrowth[year] = 0.0;
+  total[year] = accountBalance[year] + accountGrowth[year] + contributions[year] + contributionGrowth[year];
+  salary[year] = parseFloat((annualPay / periodLength).toFixed(2));
+  salary[year+1] = salary[year];
+
+  for (year = 1; year <= yearsToGo; year++) {
+    accountBalance[year] = amountToUse;
+    accountGrowth[year] = accountGrowth[year-1];
+    contributions[year] = contributions[year-1];
+    contributionGrowth[year] = contributionGrowth[year-1];
+    if (year > 1) { salary[year] = parseFloat((salary[year-1] * annualPayIncreaseRate).toFixed(2)); }
+    for (period = 1; period <= periodLength; period++) {
+      contributionGrowth[year] += parseFloat(((contributions[year] + contributionGrowth[year]) * returnRate).toFixed(2));
+      if (year <= yearsToContribute) {
+        // console.log('1', yearsServed, year, period, yearsToContribute);
+        if (rs == 'USBRS') {
+          // console.log('2', year, period, annualPayRate, salary[year]*annualPayRate, parseFloat(salary[year] * USBRSmatch(year+yearsServed, period, annualPayRate).toFixed(2)), catchupPaycheck);
+          contributions[year] += parseFloat((salary[year] * USBRSmatch(year+yearsServed+matchDelay, period, annualPayRate)).toFixed(2));
+        } else {
+          contributions[year] += parseFloat((salary[year] * annualPayRate).toFixed(2));
+        }
+        contributions[year] += parseFloat(catchupPaycheck);
+        if (period <= catchupCatchup) { contributions[year] += 0.01; }
+      }
+    }
+    accountGrowth[year] += parseFloat(((accountBalance[year-1] + accountGrowth[year-1]) * (rateOfReturn / 100.0)).toFixed(2));
+    total[year] = accountBalance[year] + accountGrowth[year] + contributions[year] + contributionGrowth[year];
+  }
+  var table = buildTable(growthSelector, contributionsText, yearsToGo);
+
+  if (isMatching) { table += matchFootnoteTable; }
+  $('#savings-grow-table').html(table);
+
+  $('#existing-balance').html(CurrencyFormatted(accountBalance[yearsToGo], 'cent'));
+  $('#balance-growth').html(CurrencyFormatted(accountGrowth[yearsToGo], 'cent'));
+  $('#future-contributions').html(CurrencyFormatted(contributions[yearsToGo], 'cent'));
+  $('#future-growth').html(CurrencyFormatted(contributionGrowth[yearsToGo], 'cent'));
+  $('#final-total').html('<strong>' + CurrencyFormatted(total[yearsToGo], 'cent') + '</strong>');
+
+
+  var tickInterval = parseInt(yearsToGo / 10);
+  chart = makeChart(tickInterval, rs, growthSelector, isMatching, matchFootnoteChart);
+  if (isMatching) {
+    chart.renderer.text(matchFootnoteChart, chart.legend.group.translateX+5, chart.chartHeight-15).css({ fontSize: '12', textAlign: 'left'}).add();
+    //chart.renderer.label(matchFootnoteChart, chart.legend.group.translateX+5, chart.chartHeight-15, null, null, null, true).css({ fontSize: '12', textAlign: 'left'}).add();
+  }
+}
+
 -->
 </script>
