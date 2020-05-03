@@ -5,7 +5,6 @@ permalink: /fund-performance/
 styles:
 scripts:
   - /assets/js/jquery.min.js
-  - /assets/js/jquery.numeric.js
   - /assets/js/highcharts/highcharts.js
   - /assets/js/highcharts/exporting.js
   - /assets/js/highcharts/data.js
@@ -20,6 +19,10 @@ document-ready:
   # - chartResize('rates-of-return-monthly');
   - indexFundSync('rates-of-return-annual', true);
   - indexFundSync('rates-of-return-monthly', true);
+redirect_from:
+  - /InvestmentFunds/FundPerformance/returnSummary.html
+  - /InvestmentFunds/FundPerformance/monthlyReturns.html
+  - /InvestmentFunds/FundPerformance/annualReturns.html
 ---
 {% assign chartName = 'rates-of-return' %}
 # Rates of return
@@ -31,13 +34,13 @@ document-ready:
     <ul class="usa-accordion">
       <li>
         <button class="usa-accordion-button" aria-expanded="true" aria-controls="{{ chartName }}-annual">Annual Returns</button>
-        <div id="{{ chartName }}-annual" class="usa-accordion-content hc-annual-returns-all" aria-hidden="false"></div>
+        <div id="{{ chartName }}-annual" class="usa-accordion-content hc-annual-returns-all" aria-hidden="false">Fetching data, please wait.</div>
       </li>
     </ul>
     <ul class="usa-accordion">
       <li>
         <button class="usa-accordion-button" aria-expanded="true" aria-controls="{{ chartName }}-monthly">Monthly Returns</button>
-        <div id="{{ chartName }}-monthly" class="usa-accordion-content hc-annual-returns-all" aria-hidden="false"></div>
+        <div id="{{ chartName }}-monthly" class="usa-accordion-content hc-annual-returns-all" aria-hidden="false">Fetching data, please wait.</div>
       </li>
     </ul>
 
@@ -46,7 +49,7 @@ document-ready:
         onClick="toggleTableWidth('{{chartName}}');">
         Expand table <i class="fal fa-expand-wide"></i></button>
     </div>
-    <div id="{{chartName}}-table" class="table-side-scroll"></div>
+    <div id="{{chartName}}-table" class="table-side-scroll">Fetching data, please wait.</div>
   </section>
 
 </div> <!-- END div.usa-width-one-whole -->

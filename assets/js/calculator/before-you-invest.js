@@ -2,6 +2,7 @@ function checkYearBorn(doCalc) {
   // if (getPosInteger('year-born', 0) == 0) { return false; }
   $('#review-funds').hide();
   var born = getPosInteger('year-born', 0);
+  if (born > 0) { $('#year-born').val(born); }
   var thisYear = new Date().getFullYear();
   var minYear = thisYear - 120;
   var maxYear = thisYear - 18;
@@ -83,8 +84,6 @@ function showMore(fund) {
   // console.log('The more button for fund ' + fund + ' was clicked.');
   return true;
 }
-
-$(".positiveinteger").numeric({ negative : false, decimalPlaces: 0 });
 
 $(document ).ready(function() {
   $('#review-funds').hide();

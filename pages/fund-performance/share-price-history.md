@@ -7,7 +7,6 @@ scripts:
   - /assets/js/flatpickr/flatpickr.js
   - /assets/js/flatpickr/date-range.js
   - /assets/js/jquery.min.js
-  - /assets/js/jquery.numeric.js
   - /assets/js/highcharts/highcharts.js
   - /assets/js/highcharts/exporting.js
   - /assets/js/highcharts/data.js
@@ -17,6 +16,8 @@ scripts:
   - /assets/js/share-price-history.js
 document-ready:
   - getSharePricesRaw('dynamic-share-price');
+redirect_from:
+  - /InvestmentFunds/FundPerformance/
 ---
 {% assign chartName = 'dynamic-share-price' %}
 

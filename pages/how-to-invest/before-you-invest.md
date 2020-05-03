@@ -6,7 +6,6 @@ sidenav: fund-options
 Fund_type: L
 scripts:
   - /assets/js/jquery.min.js
-  - /assets/js/jquery.numeric.js
   - /assets/js/highcharts/highcharts.js
   - /assets/js/highcharts/data.js
   - /assets/js/calculator/calculator.js
@@ -25,11 +24,16 @@ Consider the following when you plan your retirement strategy.
 <div class="before-you-invest-tool step1" id="enter-birthdate">
   <h3 class="step-title"><span>1.</span> First, let's see how many years you have to invest. Time impacts your ability to save for retirement.</h3>
   <section class="step-1">
-  <div id="year-born-input-error" class="">
+  {% assign year = 'now' | date: "%Y" %}
+  {% assign minyear = year | minus: 120 %}
+  {% assign maxyear = year | minus: 15 %}
+  <div id="year-born-div" class="">
       <label id="year-born-label" class="" for="year-born">What year were you born?</label>
-      <span id="year-born-error-message" class="" role="alert"></span>
-      <input id="year-born" name="year-born" type="text" class="positiveinteger border-bottom"
-        onChange="checkYearBorn(0);" onBlur="checkYearBorn(0);" aria-labeledby="year-born-label" aria-describedby="">
+      <span id="year-born-error-message" class="usa-input-error-message" role="alert"></span>
+      <input id="year-born" name="year-born" type="number" class="border-bottom"
+        min="{{minyear}}" max="{{maxyear}}" step="1"
+        onChange="checkYearBorn(0);" onBlur="checkYearBorn(0);"
+        aria-labeledby="year-born-label" aria-describedby="">
   </div>
   </section>
 </div>
