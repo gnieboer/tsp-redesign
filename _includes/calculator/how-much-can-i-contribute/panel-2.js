@@ -30,6 +30,7 @@ function ytdContGood(contributionLimit, reviewYear, forceValue) {
   var def = 0;
   if (forceValue) { def = -1; }
   var ytdCont = getPosInteger('ytd-cont', def);
+  if (ytdCont > 0) { $('#ytd-cont').val(ytdCont); }
 
   if (ytdCont < 0) {
     return showError('ytd-cont', "Please enter the amount that you have contributed so far this year.");
@@ -46,6 +47,7 @@ function estContGood(contributionLimit, reviewYear, forceValue) {
   var def = 0;
   if (forceValue) { def = -1; }
   var estCont = getPosInteger('est-cont', def);
+  if (estCont > 0) { $('#est-cont').val(estCont); }
 
   if (estCont < 0) {
     return showError('est-cont', "Please enter the additional amount you expect to contribute before your new election takes effect.");
