@@ -5,13 +5,13 @@ permalink: /search2/
 #sidenav: fund-options
 scripts:
   - /assets/js/jquery.min.js
-  - /assets/js/jquery.numeric.js
   - /assets/js/calculator/calculator.js
   - /assets/js/ajaxFetch.js
   - /assets/js/ajax-usa-search-gov.js
 document-ready:
   - buildAffiliateSelect('s2');
 #  - doSearch();
+published: false
 ---
 
 {% comment %}

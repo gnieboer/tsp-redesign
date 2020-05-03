@@ -58,7 +58,7 @@ Enter an estimate of how much you’ll contribute before any changes take effect
 <div class="panel-form-field" >
 <label for="loanAmt" aria-details="panel-1.2" >Loan amount you wish to borrow:</label>
 <span data-format="$" class="input-symbol-left">
-<input class="positiveinteger" type="text" id="loanAmt" name="loanAmt" maxlength="5" value="1000" onchange="loanAmtGood(false);">
+<input class="" type="text" id="loanAmt" name="loanAmt" maxlength="5" value="1000" onchange="loanAmtGood(false);">
 </span>
 <!-- Explain this -->
 <ul class="usa-accordion explain-this">
@@ -132,13 +132,13 @@ You may have **only one general purpose loan and one residential loan** outstand
 <input type="radio" id="repayPayday" name="repayment-terms" value="repayPayday" onclick="payTypeGood(false);">
 <label for="repayPayday">Repay the loan by paying</label>
   <span data-format="$" class="input-symbol-left">
-  <input id="additionalAmount" name="repayPayday" class="positivefloat" value="0" size="8" type="number" onblur="totalContributionGood(false, true);" onchange="totalContributionGood(false, true);" /></span><label for="additionalAmount" class="sr-only">Payment amount</label> each pay period
+  <input id="additionalAmount" name="repayPayday" class="" value="0" size="8" type="number" onblur="totalContributionGood(false, true);" onchange="totalContributionGood(false, true);" /></span><label for="additionalAmount" class="sr-only">Payment amount</label> each pay period
 </li>
 <!-- Radio 3 -->
 <li>
 <input type="radio" id="repayPayments" name="repayment-terms" value="repayPayments" onclick="payTypeGood(false);">
 <label for="repayPayments">Repay by making</label>
-  <input id="ptNumpay" class="positiveinteger" type="text" name="repayPayments" value="" size="3" maxlength="3" onchange="ptNumpayGood(false);"><label for="ptNumpay" class="sr-only">Number of payments</label> payments
+  <input id="ptNumpay" class="" type="text" name="repayPayments" value="" size="3" maxlength="3" onchange="ptNumpayGood(false);"><label for="ptNumpay" class="sr-only">Number of payments</label> payments
 </li>
 </ul>
 </fieldset>

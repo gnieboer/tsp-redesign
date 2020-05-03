@@ -28,7 +28,7 @@ The Loan Calculator estimates loan payments based on the amount you want to borr
 
 {% include calculator/div-panel-form-field.html
   fieldID="panel-1.2" id="loanAmt"
-  inputClass="positiveinteger"  dataFormat="$"
+  inputClass=""  dataFormat="$"
   min="1000" value="1000" max="50000" maxLength=5 step="1"
   placeholder="" onBlur="loanAmtGood(false);"
   prompt="Loan amount you wish to borrow:"
@@ -98,7 +98,7 @@ You may have **only one general purpose loan and one residential loan** outstand
 <li>
 <input type="radio" id="repayPayments" name="repayment-terms" value="repayPayments" onclick="payTypeGood(false);">
 <label id="repayPayments-label" for="repayPayments">Repay by making</label>
-  <input id="ptNumpay" class="positiveinteger" type="number" name="repayPayments" value="" size="3"
+  <input id="ptNumpay" class="" type="number" name="repayPayments" value="" size="3"
    maxlength="3" min="1" max="180" step="1" placeholder="" onchange="ptNumpayGood(false);">
    <label for="ptNumpay" class="sr-only">Number of payments</label> payments
 </li>

@@ -24,7 +24,8 @@ panelExit[{{ panelID }}] = function(panel) {
 // my functions
 function accountAmountGood(submit) {
   if ((!submit) && $('#accountAmount').val() === '') return true;
-  var val = parseInt($('#accountAmount').val()) || 0.0;
+  var val = parseInt($('#accountAmount').val()) || 0;
+  if (val > 0) { $('#accountAmount').val(val); }
 
   if (val <= 0.0) {
     return showError('accountAmount',
@@ -32,6 +33,9 @@ function accountAmountGood(submit) {
   }
   if (val < 200.0) {
     return showError('accountAmount', "Enter a dollar amount that is at least $200.");
+  }
+  if (val > 10000000.0) {
+    return showError('accountAmount', "Enter a dollar amount that is at most $10,000,000.");
   }
 
   $('#account-amount').html(CurrencyFormatted(val, 'no_cent'));
@@ -51,7 +55,6 @@ function frequencyGood(submit) {
   clearError('amountToReceive');
   amountToReceiveGood(lastSubmit);
   var choice = getFrequency();
-  console.log('choice |'+choice+'|');
   $('#monthly-payment').html(choice);
   if (choice == 'Monthly') {
     $('#frequency').html('Monthly');
@@ -105,6 +108,10 @@ function amountToReceiveGood(submit) {
   if ((!submit) && $('#amountToReceive').val() === '') return true;
   var amountToReceive = parseFloat($('#amountToReceive').val()) || 0.0;
   var accountAmount = parseFloat($('#accountAmount').val()) || 0.0;
+  if (amountToReceive > 0.0) {
+    amountToReceive = parseFloat(amountToReceive.toFixed(2));
+    $('#amountToReceive').val(amountToReceive);
+  }
 
   if (amountToReceive <= 0.0) {
     return showError('amountToReceive', amountToReceiveErrorString());
