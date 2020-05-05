@@ -237,17 +237,16 @@ function buildTable(growthSelector, contributionsText, yearsToGo) {
   for (var year = 0; year <= yearsToGo; year++) {
     row = sideScrollTH('', '', '', year, false);
     if (growthSelector != 'futureOnly') {
-      row += sideScrollTH('', '', 'col1', CurrencyFormatted(accountBalance[year], 'cent'), false);
-      row += sideScrollTH('', '', 'col2', CurrencyFormatted(accountGrowth[year], 'cent'), false);
+      row += sideScrollWrapper('', 'td', '', 'col1', CurrencyFormatted(accountBalance[year], 'cent'), false);
+      row += sideScrollWrapper('', 'td', '', 'col2', CurrencyFormatted(accountGrowth[year], 'cent'), false);
     }
     if (growthSelector != 'balanceOnly') {
-      row += sideScrollTH('', '', 'col3', CurrencyFormatted(contributions[year], 'cent'), false);
-      row += sideScrollTH('', '', 'col4', CurrencyFormatted(contributionGrowth[year], 'cent'), false);
+      row += sideScrollWrapper('', 'td', '', 'col3', CurrencyFormatted(contributions[year], 'cent'), false);
+      row += sideScrollWrapper('', 'td', '', 'col4', CurrencyFormatted(contributionGrowth[year], 'cent'), false);
     }
-    row += sideScrollTH('', '', '', CurrencyFormatted(total[year]), false);
+    row += sideScrollWrapper('', 'td', '', '', CurrencyFormatted(total[year]), false);
     bodyHTML += sideScrollWrapper('    ', 'tr', '', '', row, true);
   }
-
   bodyHTML = sideScrollWrapper('  ', 'tbody', '', '', bodyHTML, true);
   var tableHTML = sideScrollTable('', 'savings-grow-table', '', headerHTML+bodyHTML, true);
   return tableHTML;
