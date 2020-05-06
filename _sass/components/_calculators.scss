@@ -277,30 +277,16 @@ div.results-grid-frame {
 
 } // end @media $medium-screen
 
-// .deco-box {
-//   .usa-grid {
-//     padding: 0;
-//     div {
-//       padding: 3rem 1.8rem;
-//     }
-//   }
-// }
-//
-// .deco-box.start {
-//   .usa-grid {
-//     div {
-//       padding: 0;
-//     }
-//   }
-//   .usa-grid:first-child {
-//     div {
-//       padding: 3rem 1rem 0 1rem;
-//       }
-//   }
-// }
+@media screen and (max-width: $small-screen) {
+  .usa-content {
+    ul {
+      &.navigation-buttons {
+        display: block;
 
-//   // zebra striping
-//
-// div.deco-box > div.usa-grid.results:nth-of-type(odd) {
-//     background-color: $color-gray-lightest;
-// }
+        button {
+          padding: 1.5rem;
+        }
+      }
+    }
+  }
+} // end @media $small-screen

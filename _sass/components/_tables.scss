@@ -28,22 +28,26 @@
 }
 
 section {
+
   .table-view { // RIGHT-ALIGNS TABLE EXPAND/COLLAPSE BUTTON
     padding: 0;
     margin: 0;
     text-align: right;
     max-width: 100%;
   }
+
   &.share-price-table { // Width for "sticky" left-column header
     .column-width {
       width: 16rem;
     }
   }
+
   &.rates-of-return-table { // Width for "sticky" left-column header
     .column-width {
       width: 16rem;
     }
   }
+
 } // end section
 
 // "STICKY" LEFT-COLUMN HEADER: Share price history & Rates of return
@@ -57,6 +61,7 @@ section {
   .empty-table-cell {
     background-color: $color-gray-lightest;
   }
+
   table {
   table-layout: fixed;
   width: 100%;
@@ -99,7 +104,7 @@ section {
         position: sticky;
         top: 0;
         text-align: center;
-        width: 15rem;
+        // width: 5rem;
         &:first-child {
           position: sticky;
           z-index: 5;
@@ -172,9 +177,9 @@ section {
      display: none;
    }
 
-   .column-width {
-     width: 14rem;
-   }
+   // .column-width {
+   //   width: 14rem;
+   // }
   } // end table
 } // end div.table-side-scroll
 
