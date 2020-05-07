@@ -20,11 +20,11 @@ var acting_year = constrainYear(determineActingYear());
 // console.log('acting year is ' + acting_year);
 
 // assume most recent tax table
-// IRS Pub. 15-T, Page 6, LEFT.  2020 Percentage Method Tables for Automated Payroll Systems
+// IRS Pub. 15-T, Page 6, LEFT, Single.  2020 Percentage Method Tables for Automated Payroll Systems
 var taxtableS = [ [3800.00, 0.00, 0.0], [13675.00, 0.10, 0.0], [43925.00, 0.12, 987.5],
                 [89325.00, 0.22, 4617.5], [167100.00, 0.24, 14605.5], [211150.00, 0.32, 33271.5],
                 [522200.00, 0.35, 47367.5], [-1, 0.37, 156235.0] ];
-// IRS Pub. 15, Table 7(b) MARRIED person, ANNUAL Payroll Period
+// IRS Pub. 15-T, Page 6, LEFT, Married.  2020 Percentage Method Tables for Automated Payroll Systems
 var taxtableM = [ [11900.00, 0.00, 0.0], [31650.00, 0.10, 0.0], [92150.00, 0.12, 1975.0],
                 [182950.00, 0.22, 9235.0], [338500.00, 0.24, 29211.0], [426600.00, 0.32, 66543.0],
                 [633950.0, 0.35, 94735.0], [-1, 0.37, 167307.50] ];
