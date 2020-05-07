@@ -54,20 +54,14 @@ Results NAME panel (3) for CALC.
   </li>
 </ul>
 </fieldset>
+{% assign chartName = 'savings-grow' %}
 <div id="show-data-graph" class="hide">
   <div id="chartResult">GRAPH</div>
 </div>
-{% assign chartName = 'savings-grow' %}
-<div class="usa-width-one-whole" markdown="1">
+<div id="show-data-table" class="usa-width-one-whole" markdown="1">
   <section id="{{chartName}}-section" class="{{chartName}}-table">
-    <div class="table-view">
-      <button id="{{chartName}}-button" class="usa-button-secondary"
-        onClick="toggleTableWidth('{{chartName}}');">
-        Expand table <i class="fal fa-expand-wide"></i></button>
-    </div>
     <div id="{{chartName}}-table" class="table-side-scroll"></div>
   </section>
-
 </div> <!-- END div.usa-width-one-whole -->
 {% include calculator/accordion-end.html  inList=true %}
 
@@ -112,7 +106,7 @@ Results NAME panel (3) for CALC.
 {% include calculator/accordion-end.html  inList=true %}
 </ul>
 
-{% include calculator/button-block.html panelID=panelID revise=2 %}
+{% include calculator/button-block.html panelID=panelID prev=2 print=1 %}
 
 </section>
 

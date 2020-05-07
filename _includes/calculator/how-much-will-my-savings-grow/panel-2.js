@@ -38,7 +38,8 @@ function selectedGrowth(id, submit) {
 }
 // my functions
 function contributionsGood(submit) {
-  return ( annualPayGood(submit) & payScheduleGood(submit) & annualPayPercentGood(submit)
+  return ( annualPayGood(submit) & payScheduleGood(submit)
+      & contributionSelectorGood(submit) & annualPayFixedGood(submit) & annualPayPercentGood(submit)
       & annualPayIncreasePercentGood(submit) & catchupAmountGood(submit) & yearsToContributeGood(submit) );
 }
 
@@ -233,9 +234,7 @@ function amountToUseGood(submit) {
 
 
 function annualPayGood(submit) {
-  var growthSelector = getGrowthSelector();
-  if ((growthSelector == 'balanceOnly') || (growthSelector == '')) { return clearError('annualPay'); }
-  if ($('#BP').prop('checked')) { return clearError('annualPay'); }
+  if (noFuture()) { return clearError('annualPay'); }
 
   if ($("#annualPay").val() == '') {
     if (submit) {
@@ -267,8 +266,11 @@ function getPaySchedule() {
   return 'Monthly';
 }
 function payScheduleGood(submit) {
+  if (noFuture()) { return clearError('paySchedule'); }
+/*
   var growthSelector = getGrowthSelector();
   if ((growthSelector == 'balanceOnly') || (growthSelector == '')) { return clearError('paySchedule'); }
+*/
   var paySchedule = getPaySchedule();
 
   if (paySchedule == 'Select') {
@@ -279,10 +281,60 @@ function payScheduleGood(submit) {
   return clearError('paySchedule');
 }
 
-function annualPayPercentGood(submit) {
+// test if the future options have been selected.  true if no future options
+function noFuture() {
   var growthSelector = getGrowthSelector();
-  if ((growthSelector == 'balanceOnly') || (growthSelector == '')) { return clearError('annualPayPercent'); }
-  if ($('#BP').prop('checked')) { return clearError('annualPayPercent'); }
+  if ((growthSelector == 'balanceOnly') || (growthSelector == '')) { return true; }
+  if ($('#BP').prop('checked')) { return true; }
+  return false;
+}
+function getContributionSelector() {
+  if ($('#contributionFixed').prop('checked')) { return 'contributionFixed'; }
+  if ($('#contributionPercentage').prop('checked')) { return 'contributionPercentage'; }
+  return '';
+}
+function contributionSelectorGood(submit) {
+  if (noFuture()) { return clearError('contributionSelector'); }
+  var contributionSelector = getContributionSelector();
+  if (contributionSelector == 'contributionFixed') {
+    $('#annualPayFixed-div').removeClass('hide');
+    $('#annualPayPercent-div').addClass('hide');
+    return clearError('contributionSelector');
+  }
+  if (contributionSelector == 'contributionPercentage') {
+    $('#annualPayFixed-div').addClass('hide');
+    $('#annualPayPercent-div').removeClass('hide');
+    return clearError('contributionSelector');
+  }
+  $('#annualPayFixed-div').addClass('hide');
+  $('#annualPayPercent-div').addClass('hide');
+  return showError('contributionSelector', 'Enter type of contribution')
+}
+function annualPayFixedGood(submit) {
+  if (noFuture()) { return clearError('annualPayFixed'); }
+  var contributionSelector = getContributionSelector();
+  if (contributionSelector == 'contributionPercentage') { return clearError('annualPayFixed'); }
+
+  var annualPay = getPosInteger('annualPay', -1);
+  var annualPayFixed = getPosInteger('annualPayFixed', -1);
+  if (annualPayFixed > 0) { $('#annualPayFixed').val(annualPayFixed); }
+  if (annualPayFixed > annualPay) {
+    return showError('annualPayFixed', "Fixed contribution amount must be less than annual pay.");
+  }
+
+  if (annualPayFixed <= 0) {
+    return showError('annualPayFixed', "Please enter the fixed amount of your annual pay you would like to save.");
+  }
+  if ((annualPayFixed < 1) || (annualPayFixed > 1000000)) {
+    return showError('annualPayFixed', "Fixed contribution amount must be between $1 and $1,000,000.");
+  }
+
+  return clearError('annualPayFixed');
+}
+function annualPayPercentGood(submit) {
+  if (noFuture()) { return clearError('annualPayPercent'); }
+  var contributionSelector = getContributionSelector();
+  if (contributionSelector == 'contributionFixed') { return clearError('annualPayPercent'); }
 
   if ($("#annualPayPercent").val() == '') {
     if (submit) {

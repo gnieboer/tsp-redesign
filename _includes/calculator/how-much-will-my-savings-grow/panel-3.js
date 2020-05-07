@@ -89,7 +89,7 @@ var colorContributions = 'i'; // legacy '#9C1B9C';
 var colorContributionsGrowth = 'ii'; // legacy '#C679DD';
 var colorBalance = 'g'; // legacy '#EA6A17';
 var colorBalanceGrowth = 'ig'; // legacy '#F4B55B';
-var contributionsText = 'Contributions';
+var contributionsText = 'Contributions<sup>1</sup>';
 
 function dataBoth() {
   return [
@@ -222,12 +222,16 @@ function buildTable(growthSelector, contributionsText, yearsToGo) {
   // build table header
   var headerHTML = sideScrollTH('', 'col', '', 'Year', false);
   if (growthSelector != 'futureOnly') {
-    headerHTML += sideScrollTH('', 'col', mapServerFundClassName(colorBalance), 'Existing Balance', false);
-    headerHTML += sideScrollTH('', 'col', mapServerFundClassName(colorBalanceGrowth), 'Account Balance Growth', false);
+    // headerHTML += sideScrollTH('', 'col', mapServerFundClassName(colorBalance), 'Existing Balance', false);
+    // headerHTML += sideScrollTH('', 'col', mapServerFundClassName(colorBalanceGrowth), 'Account Balance Growth', false);
+    headerHTML += sideScrollTH('', 'col', 'border-balance-existing', 'Existing Balance', false);
+    headerHTML += sideScrollTH('', 'col', 'border-balance-growth', 'Account Balance Growth', false);
   }
   if (growthSelector != 'balanceOnly') {
-    headerHTML += sideScrollTH('', 'col', mapServerFundClassName(colorContributions), contributionsText, false);
-    headerHTML += sideScrollTH('', 'col', mapServerFundClassName(colorContributionsGrowth), 'Contribution Growth', false);
+    // headerHTML += sideScrollTH('', 'col', mapServerFundClassName(colorContributions), contributionsText, false);
+    // headerHTML += sideScrollTH('', 'col', mapServerFundClassName(colorContributionsGrowth), 'Contribution Growth', false);
+    headerHTML += sideScrollTH('', 'col', 'border-contributions', contributionsText, false);
+    headerHTML += sideScrollTH('', 'col', 'border-contributions-growth', 'Contribution Growth', false);
   }
   headerHTML += sideScrollTH('', 'col', '', 'Total Projected Balance', false);
   headerHTML = sideScrollWrapper('', 'tr', '', '', headerHTML, false);
@@ -235,14 +239,14 @@ function buildTable(growthSelector, contributionsText, yearsToGo) {
 
   var bodyHTML = '';
   for (var year = 0; year <= yearsToGo; year++) {
-    row = sideScrollTH('', '', '', year, false);
+    row = sideScrollTH('', 'row', '', year, false);
     if (growthSelector != 'futureOnly') {
-      row += sideScrollWrapper('', 'td', '', 'col1', CurrencyFormatted(accountBalance[year], 'cent'), false);
-      row += sideScrollWrapper('', 'td', '', 'col2', CurrencyFormatted(accountGrowth[year], 'cent'), false);
+      row += sideScrollWrapper('', 'td', '', '', CurrencyFormatted(accountBalance[year], 'cent'), false);
+      row += sideScrollWrapper('', 'td', '', '', CurrencyFormatted(accountGrowth[year], 'cent'), false);
     }
     if (growthSelector != 'balanceOnly') {
-      row += sideScrollWrapper('', 'td', '', 'col3', CurrencyFormatted(contributions[year], 'cent'), false);
-      row += sideScrollWrapper('', 'td', '', 'col4', CurrencyFormatted(contributionGrowth[year], 'cent'), false);
+      row += sideScrollWrapper('', 'td', '', '', CurrencyFormatted(contributions[year], 'cent'), false);
+      row += sideScrollWrapper('', 'td', '', '', CurrencyFormatted(contributionGrowth[year], 'cent'), false);
     }
     row += sideScrollWrapper('', 'td', '', '', CurrencyFormatted(total[year]), false);
     bodyHTML += sideScrollWrapper('    ', 'tr', '', '', row, true);
@@ -261,12 +265,13 @@ function calculateResults() {
   var rs = getRetirementSystem();
   contributionsText = 'Contributions';
   if ((rs == 'FERS') || (rs == 'USBRS')) {
-    contributionsText = 'Contributions*';
+    contributionsText = 'Contributions<sup>1</sup>';
     isMatching = true;
     if (rs == 'USBRS') { agency = 'service'; }
   }
-  var matchFootnoteChart = '*Includes any '+agency+' contributions';
-  var matchFootnoteTable = '*Includes any '+agency+' contributions';
+  var matchFootnoteChart = '1. Includes any '+agency+' contributions';
+  var matchFootnoteTable = "<div id='footnotes'>\n  <ol>    <li>Includes any "+agency+" contributions</li>\n  </ol>\n</div>";
+
   // console.log('rs '+rs, 'agency '+agency);
 
   var amountToUse = getPosInteger('amountToUse', 0);
@@ -278,6 +283,8 @@ function calculateResults() {
   if (DIEMSdate2 < 20180101) { matchDelay = 2; }
   var annualPay = getPosInteger('annualPay', 0);
   var paySchedule = getPaySchedule();
+  var contributionSelector = getContributionSelector();
+  var annualPayFixed = getPosFloat('annualPayFixed', 0.0);
   var annualPayPercent = getPosFloat('annualPayPercent', 0.0);
   var annualPayIncreasePercent = getPosFloat('annualPayIncreasePercent', 0.0);
   var yearsToGo = getPosInteger('yearsToGo', 0);
@@ -334,7 +341,11 @@ function calculateResults() {
           // console.log('2', year, period, annualPayRate, salary[year]*annualPayRate, parseFloat(salary[year] * USBRSmatch(year+yearsServed, period, annualPayRate).toFixed(2)), catchupPaycheck);
           contributions[year] += parseFloat((salary[year] * USBRSmatch(year+yearsServed+matchDelay, period, annualPayRate)).toFixed(2));
         } else {
-          contributions[year] += parseFloat((salary[year] * annualPayRate).toFixed(2));
+          if (contributionSelector == 'contributionFixed') {
+            contributions[year] += parseFloat(annualPayFixed);            
+          } else {
+            contributions[year] += parseFloat((salary[year] * annualPayRate).toFixed(2));
+          }
         }
         contributions[year] += parseFloat(catchupPaycheck);
         if (period <= catchupCatchup) { contributions[year] += 0.01; }

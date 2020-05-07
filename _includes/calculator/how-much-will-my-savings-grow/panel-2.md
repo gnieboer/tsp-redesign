@@ -140,14 +140,34 @@ This will depend on how often you are paid (biweekly or monthly, for example). I
   explanation=pay_schedule_explanation dontOpenOuterDiv=true
 %}
 </div>
+{% comment %} -----  %/$ Contribution code below here ------ {% endcomment %}
 {% include calculator/div-panel-form-field.html
-  fieldID="panel-2.10" id="annualPayPercent"
+  fieldID="panel-2.10.r" id="contributionSelector"
+  inputType="radio" radioIDs="contributionFixed, contributionPercentage"
+  radioLabels="Fixed dollar amount, Percentage"
+  inputClass="usa-unstyled-list"
+  onBlur="contributionSelectorGood(true);"
+  prompt="Enter the amount of annual pay that you would like to save:"
+  explanation="" xexplanation="Enter the amount or percentage you will add to your savings from each paycheck."
+  dontOpenOuterDiv=true
+%}
+{% include calculator/div-panel-form-field.html
+  fieldID="panel-2.10.f" id="annualPayFixed"
+  inputClass=""  dataFormat="$"
+  min="0" value="" max="1000000" maxLength=7 step="1"
+  placeholder="" onBlur="annualPayFixedGood(false);"
+  prompt=" " xprompt="Enter the fixed amount of annual pay that you would like to save:"
+  explanation=""   dontOpenOuterDiv=true
+%}
+{% include calculator/div-panel-form-field.html
+  fieldID="panel-2.10.p" id="annualPayPercent"
   inputClass=""  dataFormat="%"
   min="0" value="" max="99" maxLength=5 step="1"
   placeholder="" onBlur="annualPayPercentGood(false);"
-  prompt="Enter the whole percentage of annual pay that you would like to save:"
+  prompt=" " xprompt="Enter the whole percentage of annual pay that you would like to save:"
   explanation=""   dontOpenOuterDiv=true
 %}
+{% comment %} -----  %/$ Contribution code above here ------ {% endcomment %}
 <!-- DONALD - this is the contribution exceeds max note -->
 {% capture contribution_exceeds_maximum_title %}
 Internal Revenue Code (IRC) <span data-term="Elective Deferral Limit" class="js-glossary-toggle term term-end">Elective Deferral Limit</span>

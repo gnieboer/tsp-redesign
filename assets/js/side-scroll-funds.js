@@ -305,12 +305,12 @@ function sideScrollTH(prefix, scope, xclass, txt, nl) {
 // tbody, tr, thead
 function sideScrollWrapper(prefix, tag, id, xclass, content, nl) {
   var myID = '';
-  var myID = '';
+  var myNL = '';
   var myClass = '';
   if (nl) { myNL = "\n";}
   if (xclass != '') { myClass = ' class="'+xclass+'"'; }
   if (id != '') { myID = ' id="'+id+'"'; }
-  return    prefix + '  <'+tag+myID+myClass+'>' + "\n"
+  return    prefix + '<'+tag+myID+myClass+'>' + myNL
           + content
-          + prefix + '  </'+tag+'>' + "\n"
+          + prefix + '</'+tag+'>' + myNL;
 }

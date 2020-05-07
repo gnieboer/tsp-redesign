@@ -12,6 +12,7 @@ Generates a list of buttons.  The box around them and the ul should be done by t
 {% assign submit = include.submit | default: 0 %}
 {% assign showResults = include.showResults | default: 0 %}
 {% assign revise = include.revise | default: 0 %}
+{% assign print = include.print | default: 0 %}
 {% assign bonusButton1 = include.bonusButton1 | default: 0 %}
 {% assign bonusButton2 = include.bonusButton2 | default: 0 %}
 
@@ -36,7 +37,7 @@ Generates a list of buttons.  The box around them and the ul should be done by t
 
 {% if prev != 0 %}
 {% capture click %}showPanel({{ prev }}); return false;{% endcapture %}
-{% include calculator/button.html text='Previous' href='javascript:void(0);' onClick=click xtraClass2='back' inList=1 %}
+{% include calculator/button.html text='Previous' href='javascript:void(0);' onClick=click buttonClass="usa-button-secondary" xtraClass2='back' inList=1 %}
 {% endif %}
 
 {% if nextOK != 0 %}
@@ -81,5 +82,10 @@ Generates a list of buttons.  The box around them and the ul should be done by t
   {% capture click %}processPanel({{ panelID }}, 0, 0, 0); return false;{% endcapture %}
   {% include calculator/button.html text='Submit' onClick=click xtraClass2='primary' xtraClass1='disabled' inList=1 %}
 </span>
+{% endif %}
+
+{% if print != 0 %}
+  {% capture printAction %}doReport(); return false;{% endcapture %}
+  {% include calculator/button.html text='Print report' onClick=printAction xtraClass1='print' inList=1 %}
 {% endif %}
 </ul></nav>
