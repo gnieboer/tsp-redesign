@@ -77,6 +77,21 @@ secondary:
     target: _blank
 
 # SIDENAV MENUS
+agency-service-reps:
+  - text: Agency and Service Rep resources
+    href: /agency-service-reps/
+    subnav:
+      - text: Bulletins
+        href: /agency-service-reps/bulletins/
+      - text: Announcements
+        href: /agency-service-reps/announcements/
+      - text: Training
+        href: /agency-service-reps/training/
+      - text: Toolkits
+        href: /agency-service-reps/toolkits/
+      - text: Web-based TSP Data Submission
+        href: /agency-service-reps/tsp-data-submission/
+
 calculators:
   - text: Calculators
     href: /calculators/
@@ -360,8 +375,8 @@ privacy:
 footer:
   - text: Privacy
     href: /privacy/
-  - text: Agency and Service Rep Resources
-    href: "https://www.tsp.gov/representative/index.html"
+  - text: Agency and Service Rep resources
+    href: /agency-service-reps/
   - text: News and resources
     href: /news-and-resources/
   - text: Calculators
