@@ -1,0 +1,100 @@
+section {
+  &.search-bulletins {
+    form.animated-search {
+      &.bulletins {
+        input[type=text]:focus {
+          width: 100%;
+          border: 2px solid green;
+        }
+      }
+    }
+  }
+
+  &.bulletins-current,
+  &.bulletins-archive {
+
+    div.bulletin {
+
+      input {
+        opacity: 0; // hide the checkbox whose state truncates the adjacent <p>
+        position: absolute;
+        pointer-events: none;
+      }
+
+      p {
+        display: none // Otherwise every <p> will appear, truncated to x lines
+      }
+
+      p {
+        &:first-of-type { // Display only the first <p> in div.bulletin
+          display: -webkit-box;
+          -webkit-line-clamp: 4; // If the <p> has less than three lines, all content is displayed
+          -webkit-box-orient: vertical;
+          overflow: hidden;
+          // border: 1px solid red;
+        }
+      }
+      input:focus ~ label {
+        outline: -webkit-focus-ring-color auto 5px;
+      }
+
+      input:checked + p:first-of-type {
+        -webkit-line-clamp: unset;
+      }
+
+      input:checked ~ label {
+        display: none;
+      }
+    } // END div.bulletin
+
+    .usa-grid {
+      padding: 1.8rem 3rem 3rem 0;
+    }
+
+    .post-and-share {
+      color: $color-primary;
+      align-items: center;
+      max-width: 66ch;
+
+      button {
+        &.new-window {
+          margin-top: 0;
+          margin-right: 0;
+          margin-left: auto;
+          box-shadow: inset 0 0 0 2px $color-green;
+          color: $color-green;
+
+        }
+      }
+
+      label {
+        border-radius: 4px;
+        padding: 0.2em 0.6em;
+        border: 1px solid #009ce2;
+        background-color: #00acff;
+        color: #fff;
+        font-size: 0.8em;
+        margin-top: 0;
+        margin-left: auto;
+        max-width: fit-content;
+      }
+
+      span {
+        font-weight: 700;
+      }
+
+      .tooltip > button,
+      button:not(.usa-button-secondary) {
+        background-color: inherit;
+        border: none;
+        // border: 1px solid pink;
+        margin: 0;
+        color: inherit;
+        padding: 0 1.2rem;
+      }
+    }
+    // end .post-and-share
+  }
+  // end .bulletins-current
+}
+// end section
