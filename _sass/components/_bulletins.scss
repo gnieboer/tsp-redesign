@@ -1,5 +1,134 @@
+// CSS for individual Bulletin
+h1#bulletin {
+  font-family: $sans;
+  font-weight: 600;
+  text-align: center;
+  margin-top: 0.67em;
+  line-height: 0.8;
+  max-width: 28ch;
+  padding-bottom: 1rem;
+
+  span {
+    text-align: center;
+    font-size: 2.25rem;
+    font-weight: $normal;
+    // color: $color-green;
+
+    // &.usv {
+    //   color: $color-cool-blue;
+    //
+    //   i {
+    //     color: inherit;
+    //     font-size: inherit;
+    //     padding-left: .4rem;
+    //   }
+    // }
+  }
+}
+
 section {
+  &.bulletin {
+    h2,
+    h3 {
+      font-family: $sans;
+      font-size: 3rem;
+      font-weight: $normal;
+    }
+    h3 {
+      font-size: 2rem;
+      font-weight: $bold;
+    }
+
+    #footnotes {
+      width: 66ch;
+      margin-top: 3.4rem;
+      border-top: none;
+    }
+  }
+
+  footer {
+    border-top: 1px solid $color-gray-light;
+    margin-top: 2rem;
+    padding-top: 2rem;
+    .usa-grid {
+      padding-left: 0;
+      margin-bottom: 1.6rem;
+    }
+    .usa-width-one-sixth {
+      font-weight: $medium;
+    }
+  }
+}
+
+
+
+// CSS for Bulletins landing page
+
+.calculator-panel.subscribe {
+  margin-bottom: 4rem;
+  ul.usa-accordion {
+    &.explain-this {
+      max-width: 46rem;
+      li {
+        background-color: transparent;
+        .usa-accordion-button {
+          // background-color: $color-primary;
+          background-image: none;
+          font-weight: 400;
+          // color: #fff;
+          position: relative;
+          line-height: 2rem;
+          padding: 1.5rem 2rem 1.5rem 0;
+          font-size: 2.4rem;
+          font-weight: $bold;
+
+            span {
+              background-color: $color-primary;
+              padding: .9rem 1.5rem;
+              // background-image: none;
+              // font-weight: 400;
+              color: #fff;
+              // position: relative;
+              // line-height: 2rem;
+              // padding: 1.5rem 2rem;
+              // font-size: 2.4rem;
+              // font-weight: $bold;
+            }
+          &:after {
+            font-family: $font-awesome;
+            font-weight: $light;
+            font-size: 2.5rem;
+            content: "\f056";
+            float: right;
+          }
+          &[aria-expanded="false"] {
+            &:after {
+              content: "\f055";
+            }
+          }
+          &:hover {
+            background-color: transparent;
+            color: $color-gray-darkest;
+            span {
+              background-color: $color-gray-dark;
+            }
+          }
+        } // end .usa-accordion-button
+        .usa-accordion-content {
+          background-color: transparent;
+        } // end .usa-accordion-content
+      }
+    }
+  }
+} // end .calculator-panel
+
+section {
+
   &.search-bulletins {
+    margin-top: 2rem;
+  }
+
+  &.search-forms {
     form.animated-search {
       &.bulletins {
         input[type=text]:focus {
@@ -80,7 +209,10 @@ section {
       }
 
       span {
-        font-weight: 700;
+        font-weight: $normal;
+        .bulletin-number {
+          font-weight: $bold;
+        }
       }
 
       .tooltip > button,
