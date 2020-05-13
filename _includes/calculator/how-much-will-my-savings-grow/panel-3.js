@@ -85,10 +85,10 @@ var defdot = { symbol: 'circle', radius: 0.1 };
 var defcircle = { symbol: 'circle', radius: 2.4 };
 var defdiamond = { symbol: 'diamond', radius: 2.6 };
 // the color names below are not HTML defined names, just a close name to identify what is on the screen
-var colorContributions = 'i'; // legacy '#9C1B9C';
-var colorContributionsGrowth = 'ii'; // legacy '#C679DD';
-var colorBalance = 'g'; // legacy '#EA6A17';
-var colorBalanceGrowth = 'ig'; // legacy '#F4B55B';
+var colorContributions = 'gold'; // legacy '#9C1B9C';
+var colorContributionsGrowth = 'gold-lighter'; // legacy '#C679DD';
+var colorBalance = 'secondary'; // legacy '#EA6A17';
+var colorBalanceGrowth = 'secondary-light'; // legacy '#F4B55B';
 var contributionsText = 'Contributions<sup>1</sup>';
 
 function dataBoth() {
@@ -119,14 +119,14 @@ function savingsGrowTooltip(me) {
   var points = me.points;
   // console.log(me);
   for (var i = 0; i < points.length; i++) {
-    var lColor = mapServerFundClassName(points[i].series.colorIndex);
+    var lColor = points[i].series.colorIndex;
     var name = points[i].series.name;
     rc += tooltipLegendRow(lColor, '', name, '', CurrencyFormatted(points[i].y, 'cent'));
   }
   rc = tooltipRowGroup(rc);
   rc = tooltipHeader('Year '+me.x)+rc;
   rc = tooltipDiv('savings-grow-tooltip', rc);
-  // console.log(rc);
+  console.log(rc);
   return rc;
 }
 
@@ -278,7 +278,8 @@ function calculateResults() {
   var yearsToContribute = getPosInteger('yearsToContribute', 0);
   var DIEMSdate = $.trim($('#DIEMSdate').val());
   var DIEMSdate2 = flatpickr.parseDate(DIEMSdate, "F j, Y");
-  DIEMSdate2 = parseInt(flatpickr.formatDate(DIEMSdate2, "Ymd"));
+  console.log(DIEMSdate2);
+  if (DIEMSdate2) { DIEMSdate2 = parseInt(flatpickr.formatDate(DIEMSdate2, "Ymd")); }
   var matchDelay = 0;
   if (DIEMSdate2 < 20180101) { matchDelay = 2; }
   var annualPay = getPosInteger('annualPay', 0);
@@ -313,6 +314,7 @@ function calculateResults() {
   if (rs == 'FERS') { annualPayRate = FERSmatch(annualPayRate); }
   if (rs == 'BP') { yearsToContribute = 0; }
   // annualPayRate = annualPayRate / periodLength;
+  var annualPayAmt = 0.0;
   var annualPayIncreaseRate = (annualPayIncreasePercent) / 100.0 + 1.00;
   // deal with rounding of catchup
   var catchupPaycheck = parseInt(catchupAmount / periodLength * 100.0) / 100.0;
@@ -339,15 +341,16 @@ function calculateResults() {
         // console.log('1', yearsServed, year, period, yearsToContribute);
         if (rs == 'USBRS') {
           // console.log('2', year, period, annualPayRate, salary[year]*annualPayRate, parseFloat(salary[year] * USBRSmatch(year+yearsServed, period, annualPayRate).toFixed(2)), catchupPaycheck);
-          contributions[year] += parseFloat((salary[year] * USBRSmatch(year+yearsServed+matchDelay, period, annualPayRate)).toFixed(2));
+          annualPayAmt = parseFloat((salary[year] * USBRSmatch(year+yearsServed+matchDelay, period, annualPayRate)).toFixed(2));
         } else {
           if (contributionSelector == 'contributionFixed') {
-            contributions[year] += parseFloat(annualPayFixed);            
+            annualPayAmt = parseFloat((annualPayFixed / periodLength).toFixed(2));
           } else {
-            contributions[year] += parseFloat((salary[year] * annualPayRate).toFixed(2));
+            annualPayAmt = parseFloat((salary[year] * annualPayRate).toFixed(2));
           }
         }
-        contributions[year] += parseFloat(catchupPaycheck);
+        console.log('contrib is ' + annualPayAmt + ' and ' + parseFloat(catchupPaycheck));
+        contributions[year] += annualPayAmt + parseFloat(catchupPaycheck);
         if (period <= catchupCatchup) { contributions[year] += 0.01; }
       }
     }
@@ -356,7 +359,9 @@ function calculateResults() {
   }
   var table = buildTable(growthSelector, contributionsText, yearsToGo);
 
-  if (isMatching) { table += matchFootnoteTable; }
+  // if (isMatching) { table += matchFootnoteTable; }
+  if (isMatching) { $('#show-data-footnote').html(matchFootnoteTable); }
+    else { $('#show-data-footnote').html(''); }
   $('#savings-grow-table').html(table);
 
   $('#existing-balance').html(CurrencyFormatted(accountBalance[yearsToGo], 'cent'));
@@ -368,10 +373,10 @@ function calculateResults() {
 
   var tickInterval = parseInt(yearsToGo / 10);
   chart = makeChart(tickInterval, rs, growthSelector, isMatching, matchFootnoteChart);
-  if (isMatching) {
-    chart.renderer.text(matchFootnoteChart, chart.legend.group.translateX+5, chart.chartHeight-15).css({ fontSize: '12', textAlign: 'left'}).add();
-    //chart.renderer.label(matchFootnoteChart, chart.legend.group.translateX+5, chart.chartHeight-15, null, null, null, true).css({ fontSize: '12', textAlign: 'left'}).add();
-  }
+  // if (isMatching) {
+  //   chart.renderer.text(matchFootnoteChart, chart.legend.group.translateX+5, chart.chartHeight-15).css({ fontSize: '12', textAlign: 'left'}).add();
+  //   //chart.renderer.label(matchFootnoteChart, chart.legend.group.translateX+5, chart.chartHeight-15, null, null, null, true).css({ fontSize: '12', textAlign: 'left'}).add();
+  // }
 }
 
 -->

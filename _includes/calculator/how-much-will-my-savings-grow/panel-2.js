@@ -7,17 +7,14 @@ This is the javascript specific to panel 2.
 <!--
 panelNames['{{ panelName}}'] = {{ panelID }};
 panelGood[{{ panelID }}] = function(forceValue) {
-( growthSelectorGood(true) & yearsServedGood(true) & DIEMSdateGood(true) & amountToUseGood(true)
- & contributionsGood(true) & yearsToGoGood(true) & rateOfReturnGood(true) );
-return true;
-  return ( growthSelectorGood(true) & yearsServedGood(true) & DIEMSdateGood(true) & amountToUseGood(true)
-             & contributionsGood(true) & yearsToGoGood(true) & rateOfReturnGood(true)
-    );
+  return ( rateOfReturnGood(true) & yearsToGoGood(true) & contributionsGood(true)
+    & amountToUseGood(true) & DIEMSdateGood(true) & yearsServedGood(true) & growthSelectorGood(true) );
 };
 
 panelEnter[{{ panelID }}] = function(panel) {
   setLimits();
   applyGrowthSelectorChoice(getGrowthSelector());
+  contributionSelectorGood(false);
   // window.scroll(0,0);
   return true;
 }
@@ -74,6 +71,17 @@ function hideFuture(hideFlag) {
   hideBlock(hideFlag, 'future-contributions-row', 'future-growth-row');
 }
 function hidePaySchedule(hideFlag) { hideBlock(hideFlag, 'paySchedule-hide', 'lblAYRpaySchedule-row'); }
+function hideFixedContribution(hideFlag) {
+  if (hideFlag) {
+    $('#annualPayFixed-label').addClass('hide');
+    $('#contributionSelector-div').addClass('hide');
+    $('#annualPayPercent-label').removeClass('hide');
+  } else {
+    $('#annualPayFixed-label').addClass('hide');
+    $('#contributionSelector-div').removeClass('hide');
+    $('#annualPayPercent-label').addClass('hide');
+  }
+ }
 
 function applyGrowthSelectorChoice(growthSelector) {
   rsExit();
@@ -201,10 +209,11 @@ function testWarning() {
   $('#total-contribution').html(CurrencyFormatted(contrib, 'cent'));
   $('#maximum-percent-contribution').html(maxpcontrib.toFixed(2));
 
-  if (contrib > IRC_contribution_limit)
+  if ((contrib > IRC_contribution_limit) && (getContributionSelector() == 'contributionPercentage')) {
     $('#contribution-exceeds-maximum').removeClass('hide');
-  else
+  } else {
     $('#contribution-exceeds-maximum').addClass('hide');
+  }
 }
 
 function amountToUseGood(submit) {
@@ -289,12 +298,15 @@ function noFuture() {
   return false;
 }
 function getContributionSelector() {
+  var rs = getRetirementSystem();
+  if ((rs == 'US') || (rs == 'USBRS')) { return 'contributionPercentage'; }
   if ($('#contributionFixed').prop('checked')) { return 'contributionFixed'; }
   if ($('#contributionPercentage').prop('checked')) { return 'contributionPercentage'; }
   return '';
 }
 function contributionSelectorGood(submit) {
   if (noFuture()) { return clearError('contributionSelector'); }
+  testWarning();
   var contributionSelector = getContributionSelector();
   if (contributionSelector == 'contributionFixed') {
     $('#annualPayFixed-div').removeClass('hide');
@@ -308,10 +320,12 @@ function contributionSelectorGood(submit) {
   }
   $('#annualPayFixed-div').addClass('hide');
   $('#annualPayPercent-div').addClass('hide');
-  return showError('contributionSelector', 'Enter type of contribution')
+  if (submit) { return showError('contributionSelector', 'Enter type of contribution'); }
+  return clearError('contributionSelector');
 }
 function annualPayFixedGood(submit) {
   if (noFuture()) { return clearError('annualPayFixed'); }
+  testWarning();
   var contributionSelector = getContributionSelector();
   if (contributionSelector == 'contributionPercentage') { return clearError('annualPayFixed'); }
 
@@ -333,6 +347,7 @@ function annualPayFixedGood(submit) {
 }
 function annualPayPercentGood(submit) {
   if (noFuture()) { return clearError('annualPayPercent'); }
+  testWarning();
   var contributionSelector = getContributionSelector();
   if (contributionSelector == 'contributionFixed') { return clearError('annualPayPercent'); }
 
@@ -349,7 +364,6 @@ function annualPayPercentGood(submit) {
     return showError('annualPayPercent', "Annual percent to save should be between 0% and 99%.");
   }
 
-  testWarning();
   $('#lblAYRannualPayPercent').html(annualPayPercent + '%');
   return clearError('annualPayPercent');
 }

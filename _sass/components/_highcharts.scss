@@ -25,6 +25,11 @@
 .highcharts-color-blue { fill: blue; stroke: blue; stroke-width: 1px; }
 .highcharts-color-gray { fill: gray; stroke: gray; stroke-width: 1px; }
 
+.highcharts-color-secondary { fill: $color-secondary; stroke: $color-secondary; stroke-width: 1px; }
+.highcharts-color-secondary-light { fill: $color-secondary-light; stroke: $color-secondary-light; stroke-width: 1px; }
+.highcharts-color-gold { fill: $color-gold; stroke: $color-gold; stroke-width: 1px; }
+.highcharts-color-gold-lighter { fill: $color-gold-lighter; stroke: $color-gold-lighter; stroke-width: 1px; }
+
 // Colors for data series and points.
 $colors: #7cb5ec #434348 #90ed7d #f7a35c #8085e9 #f15c80 #e4d354 #2b908f #f45b5b #91e8e1 !default;
 //  $color-g-fund $color-f-fund $color-c-fund $color-s-fund $color-i-fund  $l-funds

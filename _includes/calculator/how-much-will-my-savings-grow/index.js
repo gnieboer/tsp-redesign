@@ -2,11 +2,16 @@
 <script type="text/javascript">
 <!--
 
-$(document).ready(function() {
-  setMaxPanels({{ maxPanels }});
-  showPanel(1);
+function initValues(def) {
+  var doSetValues = getQueryString('doSetValues');
+  if (typeof doSetValues === 'undefined') { doSetValues = def; }
+  if (doSetValues) {
+    setValues(doSetValues);
+  }
+}
 
-  if (1) {
+function setValues(flag) {
+  if (flag == 1) {
     console.log('selecting options to show maximum contribution exceeded');
     $('#CSRS').click();
     processPanel(1,0,2,0);
@@ -17,7 +22,9 @@ $(document).ready(function() {
     $('#annualPayPercent').blur();
 
     $(document).scrollTop($('#annualPay-div').position().top);
-
+  }
+  if (flag == 2) {
+    setValues(1);
     // set all the fields
     $('#USBRS').click();
     processPanel(1,0,2,0);
@@ -26,14 +33,22 @@ $(document).ready(function() {
     $('#DIEMSdate').val('July 17, 2001');
     $('#paySchedule').val('Monthly');
     $('#amountToUse').val(320000);
+    $('#contributionFixed').click();
+    $('#annualPayFixed').val(13000);
     $('#annualPayIncreasePercent').val(2);
     $('#catchupAmount').val(375);
     $('#yearsToGo').val(10);
     $('#rateOfReturn').val(2.75);
     processPanel(2,0,3,0);
     $('#resultSelectorCombined').click();
-    processPanel(1,0,2,0);
   }
+}
+
+$(document).ready(function() {
+  setMaxPanels({{ maxPanels }});
+  showPanel(1);
+
+  initValues(1);
 });
 
 -->

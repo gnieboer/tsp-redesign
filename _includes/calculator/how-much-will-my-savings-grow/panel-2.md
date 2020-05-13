@@ -13,7 +13,7 @@ Name middle panels (2) for CALC.
 <input type="hidden" id="lastGrowthSelector" name="lastGrowthSelector" value="">
 {% include calculator/div-panel-form-field.html
   outerDivID="growthSelectorDiv"
-  fieldID="panel-2.1" id="growthSelector" anchor="growth"
+  fieldID="panel-2.1" id="growthSelector"
   inputType="radio" radioIDs="balanceOnly, futureOnly, bothGrowth"
   radioLabels="Existing account balance, Future contributions, Both"
   inputClass="usa-unstyled-list"
@@ -153,7 +153,7 @@ This will depend on how often you are paid (biweekly or monthly, for example). I
 %}
 {% include calculator/div-panel-form-field.html
   fieldID="panel-2.10.f" id="annualPayFixed"
-  inputClass=""  dataFormat="$"
+  inputClass=""  dataFormat="$" innerDivClass="hide"
   min="0" value="" max="1000000" maxLength=7 step="1"
   placeholder="" onBlur="annualPayFixedGood(false);"
   prompt=" " xprompt="Enter the fixed amount of annual pay that you would like to save:"
@@ -161,10 +161,10 @@ This will depend on how often you are paid (biweekly or monthly, for example). I
 %}
 {% include calculator/div-panel-form-field.html
   fieldID="panel-2.10.p" id="annualPayPercent"
-  inputClass=""  dataFormat="%"
+  inputClass=""  dataFormat="%" innerDivClass="hide"
   min="0" value="" max="99" maxLength=5 step="1"
   placeholder="" onBlur="annualPayPercentGood(false);"
-  prompt=" " xprompt="Enter the whole percentage of annual pay that you would like to save:"
+  prompt="Enter the whole percentage of annual pay that you would like to save:"
   explanation=""   dontOpenOuterDiv=true
 %}
 {% comment %} -----  %/$ Contribution code above here ------ {% endcomment %}

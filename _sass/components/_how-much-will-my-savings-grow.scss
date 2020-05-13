@@ -99,12 +99,18 @@ section {
   &.usa-accordion-content {
     padding: 1.5rem 0;
 
+    #resultSelectorDiv {
+        padding-right: 2rem;
+        padding-left: 2rem;
+    }
+/*
     div {
       &:first-child:not(.table-side-scroll) {
         padding-right: 2rem;
         padding-left: 2rem;
       }
     }
+*/
   }
 } // end #projected-growth
 

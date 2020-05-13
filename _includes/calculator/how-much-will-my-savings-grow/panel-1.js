@@ -26,6 +26,12 @@ function rsShowHide(rs) {
     hideServiceSoFar(true);
   }
 
+  if ((rs == 'USBRS') || ( rs == 'US')) {
+    hideFixedContribution(true);
+  } else {
+    hideFixedContribution(false);
+  }
+
   if (rs == 'BP') {
     hideFuture(true);
     hideGrowth(true);

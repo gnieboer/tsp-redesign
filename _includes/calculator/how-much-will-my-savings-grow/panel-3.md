@@ -34,7 +34,7 @@ Results NAME panel (3) for CALC.
 <!-- PROJECTED GROWTH -->
 {% include calculator/accordion-start.html expanded=true divID='projected-growth'
     icon='far fa-chart-line' title='Projected Growth of Your Account' inList=true %}
-  <p>The results below show how much your account will grow over time based on an expected annual rate of return of <span id="annual-rate">--</span>.</p>
+  <div id="resultSelectorDiv"><p>The results below show how much your account will grow over time based on an expected annual rate of return of <span id="annual-rate">--</span>.</p>
 <fieldset class="usa-fieldset-inputs projected-growth">
 <legend class="">Show growth as:</legend>
 <ul class="usa-unstyled-list">
@@ -53,7 +53,7 @@ Results NAME panel (3) for CALC.
   <label for="resultSelectorCombined"><strong>Combined</strong></label>
   </li>
 </ul>
-</fieldset>
+</fieldset></div>
 {% assign chartName = 'savings-grow' %}
 <div id="show-data-graph" class="hide">
   <div id="chartResult">GRAPH</div>
@@ -63,17 +63,18 @@ Results NAME panel (3) for CALC.
     <div id="{{chartName}}-table" class="table-side-scroll"></div>
   </section>
 </div> <!-- END div.usa-width-one-whole -->
+<div id="show-data-footnote" class="usa-width-one-whole"></div>
 {% include calculator/accordion-end.html  inList=true %}
 
 <!-- ADJUST YOUR RESULTS -->
 {% include calculator/accordion-start.html expanded=true divID='adjust-results'
     icon='fal fa-sliders-v' title='Adjust your results' inList=true %}
 
-{% include calculator/AYR-table.html caption="Retirement System" showPanel=1 gotoAnchor='system' %}
+{% include calculator/AYR-table.html caption="Retirement System" showPanel=1 gotoAnchor='rs-anchor' %}
 {% include calculator/AYR-table-row.html closeTable=true
   prompt="Retirement system:" rowID='lblAYRretirementSystem' %}
 
-{% include calculator/AYR-table.html caption="Type(s) of growth" showPanel=2 gotoAnchor='growth' tableID="growthAYR" %}
+{% include calculator/AYR-table.html caption="Type(s) of growth" showPanel=2 gotoAnchor='growthSelector-anchor' tableID="growthAYR" %}
 {% include calculator/AYR-table-row.html prompt="Growth model:" rowID='lblAYRgrowthSelector' closeTable=true %}
 
 {% include calculator/AYR-table.html caption="Your service so far" showPanel=2 gotoAnchor='service' tableID="serviceSoFarAYR" %}
@@ -81,7 +82,7 @@ Results NAME panel (3) for CALC.
 {% include calculator/AYR-table-row.html closeTable=true
   prompt="DIEMS (Date of Initial Entry into Military Service)" rowID='lblAYRDIEMSdate' %}
 
-{% include calculator/AYR-table.html caption="Existing account balance" showPanel=2 gotoAnchor='balance' tableID="balanceAYR" %}
+{% include calculator/AYR-table.html caption="Existing account balance" showPanel=2 gotoAnchor='amountToUse-anchor' tableID="balanceAYR" %}
 {% include calculator/AYR-table-row.html closeTable=true
   prompt="Current account balance" rowID='lblAYRamountToUse' %}
 

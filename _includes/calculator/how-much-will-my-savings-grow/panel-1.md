@@ -14,7 +14,7 @@ Inputs panel (1) for Estimate Load Payments.
 {% capture BP %}<span data-term="Beneficiary Participant" class="js-glossary-toggle term term-end">Beneficiary Participant</span>{% endcapture %}
 {% assign radioLabelList = FERS | append: CSRS | append: USBRS | append: US | append: BP %}
 {% include calculator/div-panel-form-field.html
-  fieldID="panel-1.1" id="rs" anchor="system"
+  fieldID="panel-1.1" id="rs"
   inputType="radio" radioIDs="FERS, CSRS, USBRS, US, BP"
   radioLabels=radioLabelList
   inputClass="usa-unstyled-list"

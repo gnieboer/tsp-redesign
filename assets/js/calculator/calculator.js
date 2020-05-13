@@ -72,6 +72,7 @@ function showError(element, message) {
   $('#'+element+'-error-message').html(message);
   console.log('error is '+message)
   // document.getElementById(element).setAttribute("aria-describedby", element+'-error-message');
+  gotoAnchor(element+'-anchor');
   return false;
 }
 function clearError(element) {
@@ -84,6 +85,7 @@ function clearError(element) {
   return true;
 }
 
+function gotoAnchor(anchor) { location.replace("#" + anchor); }
 function getPosFloat(id, def) {
   var val = parseFloat($('#'+id).val());
   if (isNaN(val)) { val = def; }
