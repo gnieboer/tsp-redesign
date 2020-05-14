@@ -8,9 +8,9 @@ scripts:
   - /assets/js/jquery.min.js
   - /assets/js/responsive-comparison-table.js
 permalink: /calculators/paycheck-estimator/
-calculator-name: paycheck-estimator
+calculator-name:
 progress-steps: [Retirement system,Paycheck information,Contribution election,Results]
-panel-names: [System,Information,Election,Results]
+panel-names:
 redirect_from:
   - /PlanningTools/Calculators/paycheckEstimator.html
 ---
