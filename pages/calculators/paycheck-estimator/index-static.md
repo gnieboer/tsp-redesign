@@ -7,7 +7,7 @@ scripts:
   - /assets/js/calculator/javascriptTaxTable.js
   - /assets/js/jquery.min.js
   - /assets/js/responsive-comparison-table.js
-permalink: /calculators/paycheck-estimator/
+permalink: /calculators/paycheck-estimator/index-static.html
 calculator-name:
 progress-steps: [Retirement system,Paycheck information,Contribution election,Results]
 panel-names:

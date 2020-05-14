@@ -20,6 +20,7 @@ function setValues(flag) {
     $('#annualPay').val(100000);
     $('#annualPayPercent').val(47);
     $('#annualPayPercent').blur();
+    $('#contributionPercentage').click();
 
     $(document).scrollTop($('#annualPay-div').position().top);
   }
@@ -49,7 +50,7 @@ $(document).ready(function() {
   setMaxPanels({{ maxPanels }});
   showPanel(1);
 
-  initValues(1);
+  initValues(0);
 });
 
 -->
