@@ -45,6 +45,7 @@ function setValues(flag) {
 }
 
 $(document).ready(function() {
+  $('#resultSelectorCombined').click();
   setMaxPanels({{ maxPanels }});
   showPanel(1);
 

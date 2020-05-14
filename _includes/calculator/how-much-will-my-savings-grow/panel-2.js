@@ -35,9 +35,9 @@ function selectedGrowth(id, submit) {
 }
 // my functions
 function contributionsGood(submit) {
-  return ( annualPayGood(submit) & payScheduleGood(submit)
-      & contributionSelectorGood(submit) & annualPayFixedGood(submit) & annualPayPercentGood(submit)
-      & annualPayIncreasePercentGood(submit) & catchupAmountGood(submit) & yearsToContributeGood(submit) );
+  return ( catchupAmountGood(submit) & annualPayIncreasePercentGood(submit)
+    & annualPayPercentGood(submit) & annualPayFixedGood(submit) & contributionSelectorGood(submit)
+    & payScheduleGood(submit) & annualPayGood(submit) & yearsToContributeGood(submit) );
 }
 
 function getGrowthSelector() {
