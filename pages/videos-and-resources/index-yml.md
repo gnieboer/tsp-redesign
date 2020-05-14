@@ -15,7 +15,7 @@ permalink: /videos-and-resources/index-yml.html
 document-ready:
   - initVideoList();
 # Set this to 'true' in order to receive latest data from YouTube, COPY data, and then set back to 'false'
-published: true
+published: false
 ---
 
 
