@@ -111,6 +111,10 @@ ol.progstep li {
   //background-color: #ccc;
   background-color: var(--progress-notready-color);
 }
+ol.progstep li.progstep-done,
+ol.progstep li.progstep-active {
+  cursor: pointer;
+}
 ol.progstep li.progstep-done {
 	color: var(--progress-border-color);
 	background-color: var(--progress-done-color);
