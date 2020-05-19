@@ -68,6 +68,9 @@ primary:
   #     href: /calculators/
 
 secondary:
+  - text: <i class="fas fa-share-alt"></i>
+    href: "javascript:void(0)"
+    class: hide
   - text: About us
     href: /about-us/
   - text: Login

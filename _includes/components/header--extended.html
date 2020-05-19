@@ -1,17 +1,3 @@
-<!-- drop-down to ASR
-<section class="usa-banner" style="background-color: #e5e5e5;">
-  <header class="usa-banner-header">
-      <div class="usa-grid usa-banner-inner">
-              <form class="usa-form">
-              <select name="options" id="options">
-              <option value="value1">Active participants</option>
-              <option value="value2">Agency/Service Trainers and Benefits Specialists</option>
-              <option value="value3">Separated participants</option>
-              </select>
-              </form>
-        </div>
-    <header>
-</section> -->
 <!-- news banner -->
 
 {% if page.alert.show-alert == true %}
@@ -89,7 +75,7 @@
       {% if _secondary %}
       <div class="usa-nav-secondary">
         {% if site.search_site_handle %}
-        <form id="search_form" action="/search/" accept-charset="UTF-8" method="get" class="usa-search usa-search-small js-search-form usa-sr-only">
+        <!-- <form id="search_form" action="/search/" accept-charset="UTF-8" method="get" class="usa-search usa-search-small js-search-form usa-sr-only">
             <input name="utf8" type="hidden" value="&#x2713;" />
           <div role="search">
             <label for="query" class="usa-sr-only">Enter Search Term(s):</label>
@@ -98,12 +84,25 @@
               <span class="usa-sr-only">Search</span>
             </button>
           </div>
-        </form>
+        </form> -->
+
         {% endif %}
         <ul class="usa-unstyled-list usa-nav-secondary-links">
           {% if site.search_site_handle %}
-          <li class="js-search-button-container">
+          <!-- <li class="js-search-button-container">
             <button class="usa-header-search-button js-search-button">Search</button>
+          </li> -->
+
+          <li>
+            <!-- Animated search bar -->
+            <section class="nav-search-bar">
+              <form accept-charset="UTF-8" action="javascript:void(0);" id="search-form-plan-news" method="get" class="animated-search" _lpchecked="1">
+              <div>
+              <label for="search-input-plan-news" class="usa-sr-only">Enter search term(s)</label>
+              <input type="text" name="search-input-plan-news" id="search-input-plan-news" onchange="searchInline('plan-news', planNewsCallback);" autocomplete="off" placeholder="Enter search term(s)">
+              </div>
+              </form>
+            </section>
           </li>
           {% endif %}
           {% assign secondary_links = site.data.navigation[_secondary.links] | default: _secondary.links %}
