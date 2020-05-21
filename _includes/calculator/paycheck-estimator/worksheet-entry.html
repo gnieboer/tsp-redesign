@@ -1,0 +1,11 @@
+{% assign setName = include.setName | default: 'post' %}
+{% assign entryID = include.entryID | default: 0 %}
+{% assign prompt = include.prompt | default: 'FORGOT PROMPT' %}
+{% assign varID = setName | append: entryID %}
+{% assign panel = "panel-2." | append: varID %}
+{% assign onBlur = "getDeTotal('', '" | append: setName | append: "',false);" %}
+{% include calculator/div-panel-form-field.html
+  fieldID=panel id=varID min="1" value="" max="100000" maxLength=6 step="1"
+  placeholder="" dataFormat="$"  dataFormatClass="whole-number"
+  onBlur=onBlur  prompt=prompt explanation=""  dontOpenOuterDiv=true
+%}

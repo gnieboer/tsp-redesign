@@ -5,7 +5,6 @@ styles:
 sidenav: calculators
 scripts:
   - /assets/js/flatpickr/flatpickr.js
-#  - /assets/js/flatpickr/date-range.js
   - /assets/js/calculator/javascriptTaxTable.js
   - /assets/js/highcharts/highcharts.js
   - /assets/js/highcharts/exporting.js

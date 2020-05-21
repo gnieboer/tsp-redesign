@@ -7,32 +7,21 @@ This is the javascript specific to panel 2.
 <!--
 panelNames['{{ panelName}}'] = {{ panelID }};
 panelGood[{{ panelID }}] = function(forceValue) {
+  return true;
   return ( rateOfReturnGood(true) & yearsToGoGood(true) & contributionsGood(true)
     & amountToUseGood(true) & DIEMSdateGood(true) & yearsServedGood(true) & growthSelectorGood(true) );
 };
 
 panelEnter[{{ panelID }}] = function(panel) {
-  setLimits();
-  applyGrowthSelectorChoice(getGrowthSelector());
-  contributionSelectorGood(false);
+  hideWorksheet({{panelID}});
   // window.scroll(0,0);
   return true;
 }
 panelExit[{{ panelID }}] = function(panel) {
+  hideWorksheet({{panelID}});
   return true;
 }
 
-function set_FC_text(rs) {
-  if ($('#FC_'+rs) != 'undefined') {
-    $('.FC_Info').hide();
-    $('#FC_'+rs).show();
-  }
-}
-
-function selectedGrowth(id, submit) {
-  growthSelectorGood(submit);
-  // deemphasize(0);
-}
 // my functions
 function contributionsGood(submit) {
   return ( catchupAmountGood(submit) & annualPayIncreasePercentGood(submit)
@@ -49,16 +38,7 @@ function getGrowthSelector() {
   return '';
 }
 
-function hideBlock(hideFlag, block1, block2, block3) {
-  if (hideFlag) {
-    $('#'+block1).addClass('hide');
-    $('#'+block2).addClass('hide');
-    return true;
-  }
-  $('#'+block1).removeClass('hide');
-  $('#'+block2).removeClass('hide');
-  return false;
-}
+// hideBlock() calls
 function hideGrowth(hideFlag) { hideBlock(hideFlag, 'growthSelectorDiv', 'growthAYR'); }
 function hideServiceSoFar(hideFlag) { hideBlock(hideFlag, 'serviceSoFar', 'serviceSoFarAYR'); }
 function hideAccountBalance(hideFlag) {
@@ -500,143 +480,26 @@ function rateOfReturnGood(submit) {
   return clearError('rateOfReturn');
 }
 
-/*
-function deemphasize(flag) {
-  if (flag == 0) {
-    $('#ServiceSoFar').addClass("deemphasis");
-    $('#ServiceSoFarAYR').addClass("deemphasis");
-    $('#AccountBalance').removeClass("deemphasis");
-    $('#AccountBalanceAYR').removeClass("deemphasis");
-    $('#modal-formexistingbalance').show();
-    $('#FutureContributions').addClass("deemphasis");
-    $('#FutureContributionsAYR').addClass("deemphasis");
-    $('#modal-formfuturecontributions').hide();
-    if (getPosInteger('yearsToGo', -1) > 0) checkYearsToGo();
-    if (getPosInteger('amountToUse', -1) > 0) amountToUseGood(true);
-    disableServiceSoFar();
-    enableAccountBalance();
-    disableFutureContributions();
-    contributionsGood(true);
-  }
-  if (flag == 1) {
-    $('#ServiceSoFar').removeClass("deemphasis");
-    $('#ServiceSoFarAYR').removeClass("deemphasis");
-    $('#AccountBalance').addClass("deemphasis");
-    $('#AccountBalanceAYR').addClass("deemphasis");
-    $('#modal-formexistingbalance').hide();
-    $('#FutureContributions').removeClass("deemphasis");
-    $('#FutureContributionsAYR').removeClass("deemphasis");
-    $('#modal-formfuturecontributions').show();
-    if ((getPosInteger('yearsToContribute', -1) > 0) && (getPosInteger('yearsToGo', -1) > 0)) { yearsToGoGood(true); }
-    if (getPosFloat('annualPayIncreasePercent', 0.0) > 0.0) { annualPayIncreasePercentGood(true); }
-    if (getPosInteger('annualPayPercent', -1) > 0) { annualPayPercentGood(true); }
-    if (getPosInteger('catchupAmount', -1) > 0) catchupAmountGood(true);
-    enableServiceSoFar();
-    disableAccountBalance();
-    enableFutureContributions();
-    amountToUseGood(false);
-  }
-  if (flag == 2) {
-    $('#ServiceSoFar').removeClass("deemphasis");
-    $('#ServiceSoFarAYR').removeClass("deemphasis");
-    $('#AccountBalance').removeClass("deemphasis");
-    $('#AccountBalanceAYR').removeClass("deemphasis");
-    $('#modal-formexistingbalance').show();
-    $('#FutureContributions').removeClass("deemphasis");
-    $('#FutureContributionsAYR').removeClass("deemphasis");
-    $('#modal-formfuturecontributions').show();
-    if (getPosInteger('amountToUse', -1) > 0) amountToUseGood(true);
-    if ((getPosInteger('yearsToContribute', -1) > 0) && (getPosInteger('yearsToGo', -1) > 0)) { yearsToGoGood(true); }
-    if (getPosFloat('annualPayIncreasePercent', 0.0) > 0.0) { annualPayIncreasePercentGood(true); }
-    if (getPosInteger('annualPayPercent', -1) > 0) { annualPayPercentGood(true); }
-    if (getPosInteger('catchupAmount', -1) > 0) catchupAmountGood(true);
-    enableServiceSoFar();
-    enableAccountBalance();
-    enableFutureContributions();
-  }
-  growthSelectorGood(true);
+function showWorksheet(idx) {
+  $('#panel-'+idx).addClass('hide');
+  $('#panel-'+idx+'-worksheet').removeClass('hide');
 }
 
-$('#catchupNoteText').html("Catch-up contributions are traditional and/or Roth contributions that are made by "
-    + "a participant age 50 or older. You must first exceed the elective deferral limit ("
-    + CurrencyFormatted(IRC_contribution_limit) + " in " + IRC_limit_year + ") to make catch-up contributions.");
-
-
-function enableServiceSoFar() {
-  enableElement('yearsServed');
-  // enableElement('DIEMSdate');
-  // $('DIEMSdate').datepicker({ showOn: 'on'});
+function hideWorksheet(idx) {
+  $('#panel-'+idx).removeClass('hide');
+  $('#panel-'+idx+'-worksheet').addClass('hide');
 }
 
-function disableServiceSoFar() {
-  disableElement('yearsServed');
-  // disableElement('DIEMSdate');
-  // $('DIEMSdate').datepicker({ showOn: 'off'});
+function clearWorksheet(idx) {
+  $('#xxx').val(0.0);
 }
 
-function enableAccountBalance() {
-  enableElement('amountToUse');
+function saveWorkseetTotals(idx) {
+  // sum values, copy to panel 2
+
+  $('#beforeDeduction').val(100);
+  $('#afterDeduction').val(150);
+  hideWorksheet(idx);
 }
-
-function disableAccountBalance() {
-  disableElement('amountToUse');
-}
-
-function enableFutureContributions() {
-  enableElement('yearsToContribute');
-  enableElement('annualPay');
-  // enableElement('paySchedule');
-  $('#paySchedule').removeAttr('disabled');
-  enableElement('annualPayPercent');
-  enableElement('annualPayIncreasePercent');
-  enableElement('catchupAmount');
-  testWarning();
-}
-
-function disableFutureContributions() {
-  disableElement('yearsToContribute');
-  disableElement('annualPay');
-  // disableElement('paySchedule');
-  $('#paySchedule').attr('disabled','disabled');
-  disableElement('annualPayPercent');
-  disableElement('annualPayIncreasePercent');
-  disableElement('catchupAmount');
-}
-
-
-// we only have one warning in this calculator.  Parameter is for future use if needed
-function show_amount_warnings(whichwarn) {
-  option_open(false, true, '17000', false, ''); disable_warning_icon('contrib');
-}
-
-function clear_warning_icon() { $('#WarnOpContr').hide(); }
-function show_warning_icon() { $('#WarnOpContr').show(); }
-
-function testWarning() {
-  if ($('#BP').prop('checked')) { return; }
-  if (getPosInteger('yearsToContribute', -1) <= 0) { return; }
-
-  var annualPay = getPosInteger('annualPay', -1);
-  if ((annualPay < 1) || (annualPay > 1000000)) { return; }
-
-  if ($("#annualPayPercent").val() == '') { return; }
-  var annualPayPercent = parseInt($("#annualPayPercent").val());
-  if ((annualPayPercent < 0) || (annualPayPercent > 99)) { return; }
-
-  // we have good input for the salary fields
-  var contrib = annualPay * (annualPayPercent / 100.0);
-
-  if (contrib > IRC_contribution_limit)
-    show_warning_icon();
-  else
-    clear_warning_icon();
-}
-
-$(document).ready(function () {
-  disableServiceSoFar();
-  disableAccountBalance();
-  disableFutureContributions();
-});
-*/
 -->
 </script>

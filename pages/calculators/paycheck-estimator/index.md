@@ -4,8 +4,13 @@ title: Paycheck estimator
 styles:
 sidenav: calculators
 scripts:
+  - /assets/js/flatpickr/flatpickr.js
   - /assets/js/calculator/javascriptTaxTable.js
-  - /assets/js/jquery.min.js
+  - /assets/js/highcharts/highcharts.js
+  - /assets/js/highcharts/exporting.js
+  - /assets/js/highcharts/data.js
+  - /assets/js/ajaxFetch.js
+  - /assets/js/side-scroll-funds.js
   - /assets/js/responsive-comparison-table.js
 permalink: /calculators/paycheck-estimator/
 calculator-name: paycheck-estimator
@@ -15,10 +20,7 @@ redirect_from:
   - /PlanningTools/Calculators/paycheckEstimator.html
 ---
 
-Static code version.
-
-<form>
-
+{% capture static %}
 <!-- PANEL 1 -->
 <code> panel-1 </code>
 <section id="panel-1" class="calculator-panel">
@@ -1099,8 +1101,4 @@ View the [Rates of return]({{ site.baseurl }}/fund-performance/). Past performan
 
 </section><!-- END section#panel-4 -->
 
-
-</form>
-
-DISCLAIMER: This calculator is provided for informational purposes only. It is not intended to be used as an investment advisory tool or as a guarantee of a final account balance. Please note that the results shown at the end of this calculator assume that elected contributions are made for the entire year. Results do not take into account the following Internal Revenue Code (IRC) limits: <span data-term="Elective Deferral Limit" class="js-glossary-toggle term term-end">elective deferral</span>, <span data-term="Section 415(c) Limit" class="js-glossary-toggle term term-end">section 415(c)</span>, and <span data-term="Catch-Up Contribution Limit" class="js-glossary-toggle term term-end">catch-up contribution</span>. These limits, which may change every year, determine the maximum annual amount that you and/or your employing agency can contribute to the TSP on your behalf. You can view the current year's limits on the TSP website under [News and resources]({{ site.baseurl }}/news-and-resources/).
-{:.disclaimer}
+{% endcapture %}

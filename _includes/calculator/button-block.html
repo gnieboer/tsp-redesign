@@ -15,6 +15,7 @@ Generates a list of buttons.  The box around them and the ul should be done by t
 {% assign print = include.print | default: 0 %}
 {% assign bonusButton1 = include.bonusButton1 | default: 0 %}
 {% assign bonusButton2 = include.bonusButton2 | default: 0 %}
+{% assign bonusButton3 = include.bonusButton3 | default: 0 %}
 
 <nav><ul class="navigation-buttons">
 {% if showPDF != 0 %}
@@ -39,6 +40,8 @@ Generates a list of buttons.  The box around them and the ul should be done by t
 {% capture click %}showPanel({{ prev }}); return false;{% endcapture %}
 {% include calculator/button.html text='Previous' href='javascript:void(0);' onClick=click buttonClass="usa-button-secondary" xtraClass2='back' inList=1 %}
 {% endif %}
+
+{% if bonusButton2 != 0 %}{{ bonusButton2}}{% endif %}
 
 {% if nextOK != 0 %}
 <span id="areYouSurebottomButtons{{ panelID }}" style="display:none">
@@ -66,7 +69,7 @@ Generates a list of buttons.  The box around them and the ul should be done by t
 </span>
 {% endif %}
 
-{% if bonusButton2 != 0 %}{{ bonusButton2}}{% endif %}
+{% if bonusButton3 != 0 %}{{ bonusButton3}}{% endif %}
 
 {% if revise != 0 %}
   {% capture click %}showPanel({{ revise }}); return false;{% endcapture %}

@@ -54,52 +54,6 @@ function rsShowHide(rs) {
   return;
 }
 
-function rsExit() {
-
-  if ($('#FERS').prop('checked')) {
-    rsShowHide('FERS');
-    $('#retirementSystem').html('FERS');
-    $('#lblAYRretirementSystem').html($('#retirementSystem').html());
-    set_FC_text('FERS');
-    return clearError('rs');
-  }
-
-  if ($('#CSRS').prop('checked')) {
-    rsShowHide('CSRS');
-    $('#retirementSystem').html('CSRS');
-    $('#lblAYRretirementSystem').html($('#retirementSystem').html());
-    set_FC_text('CSRS');
-    return clearError('rs');
-  }
-
-  if ($('#US').prop('checked')) {
-    rsShowHide('US');
-    $('#retirementSystem').html('Uniformed Services: All Other Systems');
-    $('#lblAYRretirementSystem').html($('#retirementSystem').html());
-    set_FC_text('US');
-    return clearError('rs');
-  }
-
-  if ($('#USBRS').prop('checked')) {
-    rsShowHide('USBRS');
-    $('#retirementSystem').html('Uniformed Services: Blended Retirement System');
-    $('#lblAYRretirementSystem').html($('#retirementSystem').html());
-    set_FC_text('USBRS');
-    return clearError('rs');
-  }
-
-  if ($('#BP').prop('checked')) {
-    rsShowHide('BP');
-    $('#retirementSystem').html('Beneficiary Participant');
-    $('#lblAYRretirementSystem').html($('#retirementSystem').html());
-    set_FC_text('BP');
-    return clearError('rs');
-  }
-
-  console.log('still in rsExit()');
-  return showError('rs', "Select your retirement system.");
-}
-
 function getRetirementSystem() {
   if ($('#FERS').prop('checked')) { return 'FERS'; }
   if ($('#CSRS').prop('checked')) { return 'CSRS'; }
@@ -107,6 +61,52 @@ function getRetirementSystem() {
   if ($('#USBRS').prop('checked')) { return 'USBRS'; }
   if ($('#BP').prop('checked')) { return 'BP'; }
   return '';
+}
+
+function rsExit() {
+  var rs = getRetirementSystem();
+
+  if (rs == 'FERS') {
+    rsShowHide('FERS');
+    $('#retirementSystem').html('FERS');
+    $('#lblAYRretirementSystem').html($('#retirementSystem').html());
+    set_FC_text('FERS');
+    return clearError('rs');
+  }
+
+  if (rs == 'CSRS') {
+    rsShowHide('CSRS');
+    $('#retirementSystem').html('CSRS');
+    $('#lblAYRretirementSystem').html($('#retirementSystem').html());
+    set_FC_text('CSRS');
+    return clearError('rs');
+  }
+
+  if (rs == 'US') {
+    rsShowHide('US');
+    $('#retirementSystem').html('Uniformed Services: All Other Systems');
+    $('#lblAYRretirementSystem').html($('#retirementSystem').html());
+    set_FC_text('US');
+    return clearError('rs');
+  }
+
+  if (rs == 'USBRS') {
+    rsShowHide('USBRS');
+    $('#retirementSystem').html('Uniformed Services: Blended Retirement System');
+    $('#lblAYRretirementSystem').html($('#retirementSystem').html());
+    set_FC_text('USBRS');
+    return clearError('rs');
+  }
+
+  if (rs == 'BP') {
+    rsShowHide('BP');
+    $('#retirementSystem').html('Beneficiary Participant');
+    $('#lblAYRretirementSystem').html($('#retirementSystem').html());
+    set_FC_text('BP');
+    return clearError('rs');
+  }
+
+  return showError('rs', "Select your retirement system.");
 }
 
 function rsGood(submit) {

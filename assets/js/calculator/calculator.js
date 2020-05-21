@@ -99,3 +99,15 @@ function getPosInteger(id, def) {
 
   return val;
 }
+
+// most calculators will hide an AYR element when they hide an input element
+function hideBlock(hideFlag, block1, block2) {
+  if (hideFlag) {
+    $('#'+block1).addClass('hide');
+    $('#'+block2).addClass('hide');
+    return true;
+  }
+  $('#'+block1).removeClass('hide');
+  $('#'+block2).removeClass('hide');
+  return false;
+}

@@ -1,5 +1,5 @@
 {% comment %}
-Inputs panel (1) for Estimate Load Payments.
+Retirement System panel (1) for Paycheck Estimator.
 {% endcomment %}
 {% assign panelID = include.panelID | default: 1 %}
 {% assign hide = 'display: block;' %}
@@ -12,10 +12,10 @@ Inputs panel (1) for Estimate Load Payments.
 {% capture USBRS %}<span data-term="Uniformed Services" class="js-glossary-toggle term term-end">Uniformed Services: BRS</span>,{% endcapture %}
 {% capture US %}<span data-term="Non-BRS Uniformed Services" class="js-glossary-toggle term term-end">Uniformed Services: non-BRS</span>,{% endcapture %}
 {% capture BP %}<span data-term="Beneficiary Participant" class="js-glossary-toggle term term-end">Beneficiary Participant</span>{% endcapture %}
-{% assign radioLabelList = FERS | append: CSRS | append: USBRS | append: US | append: BP %}
+{% assign radioLabelList = FERS | append: CSRS | append: USBRS | append: US %}
 {% include calculator/div-panel-form-field.html
   fieldID="panel-1.1" id="rs"
-  inputType="radio" radioIDs="FERS, CSRS, USBRS, US, BP"
+  inputType="radio" radioIDs="FERS, CSRS, USBRS, US"
   radioLabels=radioLabelList
   inputClass="usa-unstyled-list"
   onBlur="rsGood(true);"
