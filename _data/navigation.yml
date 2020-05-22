@@ -68,11 +68,8 @@ primary:
   #     href: /calculators/
 
 secondary:
-  - text: <i class="fas fa-share-alt"></i>
+  - text: <i name="share-page" class="fas fa-share-alt"></i><label class="usa-sr-only" for="share-page">Share</label>
     href: "javascript:void(0)"
-    class: hide
-  - text: About us
-    href: /about-us/
   - text: Login
     href: "https://www.tsp.gov/tsp/login.html"
     # id:
@@ -352,17 +349,16 @@ privacy:
 
 # MISCELLANEOUS
 footer:
-  - text: Privacy
-    href: /privacy/
-  - text: Agency and Service Rep Resources
-    href: "https://www.tsp.gov/representative/index.html"
-  - text: News and resources
-    href: /news-and-resources/
   - text: Calculators
     href: /calculators/
+  - text: News and resources
+    href: /news-and-resources/
+  - text: Agency and Service Rep Resources
+    href: "https://www.tsp.gov/representative/index.html"
+  - text: About us
+    href: /about-us/
+  - text: Privacy
+    href: /privacy/
   - text: FOIA
     href: "https://www.frtib.gov/ReadingRoom/index.html"
-    target: _blank
-  - text: FRTIB
-    href: "https://www.frtib.gov/"
     target: _blank
