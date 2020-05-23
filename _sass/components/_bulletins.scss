@@ -46,6 +46,33 @@ section {
     }
   }
 
+  &.bulletins-current {
+    border-bottom: 1px solid #d6d7d9;
+    padding-bottom: 4rem;
+
+    .see-more {
+      text-transform: none;
+      color: $color-base;
+      min-height: 2rem;
+      span {
+        cursor: pointer;
+        padding-right: 0.8rem;
+        &:hover {
+          text-decoration: underline;
+        }
+        &::before {
+          content: "";
+        }
+      }
+      .rotate {
+        transition: transform .1s linear;
+      }
+      .rotate.down {
+        transform:rotate(180deg);
+      }
+    } // end .see-more
+  }
+
   footer {
     border-top: 1px solid $color-gray-light;
     margin-top: 2rem;
