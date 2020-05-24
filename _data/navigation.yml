@@ -87,8 +87,8 @@ agency-service-reps:
         href: /agency-service-reps/announcements/
       - text: Training
         href: /agency-service-reps/training/
-      - text: Toolkits
-        href: /agency-service-reps/toolkits/
+      - text: Media gallery
+        href: /agency-service-reps/media-gallery/
       - text: Web-based TSP Data Submission
         href: /agency-service-reps/tsp-data-submission/
 
@@ -373,17 +373,16 @@ privacy:
 
 # MISCELLANEOUS
 footer:
-  - text: Privacy
-    href: /privacy/
-  - text: Agency and Service Rep resources
-    href: /agency-service-reps/
-  - text: News and resources
-    href: /news-and-resources/
   - text: Calculators
     href: /calculators/
+  - text: News and resources
+    href: /news-and-resources/
+  - text: Agency and Service Rep Resources
+    href: "https://www.tsp.gov/representative/index.html"
+  - text: About us
+    href: /about-us/
+  - text: Privacy
+    href: /privacy/
   - text: FOIA
     href: "https://www.frtib.gov/ReadingRoom/index.html"
-    target: _blank
-  - text: FRTIB
-    href: "https://www.frtib.gov/"
     target: _blank

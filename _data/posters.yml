@@ -1,0 +1,6 @@
+## This is for ASR > Media gallery
+
+# YOUR TSP INVESMENT OPTIONS PLAYLIST
+- poster_title: Attend the workshop &#8220;TSP A TO Z&#8221; ## <a> title attribute
+  poster_download: AtoZ.pdf ## Base directory /assets/img/posters/
+  poster_thumbnail: AtoZ.jpg ## Base directory /assets/img/posters/thumbnails/

@@ -20,4 +20,27 @@ a {
       font-style: normal;
     }
   }
+  &.youtube {
+    &:after {
+      font-family: "Font Awesome 5 Brands";
+      content: "\f167";
+      padding-left: 0.4rem;
+      font-style: normal;
+      display: inline-block;
+      text-decoration: none;
+      color: #ff0702;
+    }
+  }
+  &.download {
+    &:after {
+      font-family: $font-awesome;
+      content: "\f0ed";
+      padding-left: 0.4rem;
+      font-style: normal;
+      font-weight: $black;
+      display: inline-block;
+      text-decoration: none;
+      color: $color-gray;
+    }
+  }
 }
