@@ -20,17 +20,6 @@ a {
       font-style: normal;
     }
   }
-  &.youtube {
-    &:after {
-      font-family: "Font Awesome 5 Brands";
-      content: "\f167";
-      padding-left: 0.4rem;
-      font-style: normal;
-      display: inline-block;
-      text-decoration: none;
-      color: #ff0702;
-    }
-  }
   &.download {
     &:after {
       font-family: $font-awesome;
@@ -41,6 +30,20 @@ a {
       display: inline-block;
       text-decoration: none;
       color: $color-gray;
+    }
+  }
+
+  &.pdf {
+    &:after {
+      font-family: $font-awesome;
+      content: "\f1c1";
+      padding-left: 0.4rem;
+      font-style: normal;
+      font-weight: $normal;
+      display: inline-block;
+      text-decoration: none;
+      color: $color-gray;
+      color: #de231a;
     }
   }
 }

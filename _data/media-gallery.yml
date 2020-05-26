@@ -1,0 +1,48 @@
+## This is for ASR > Media gallery
+## VIDEOS
+- video_title: Welcome to the TSP! Here’s What You Need to Know ## h2 text
+  video_download: welcome-to-the-tsp.mp4 ## Base directory /assets/videos/
+  video_thumbnail: welcome-to-the-tsp.jpg ## Base directory /assets/videos/thumbnails/
+- video_title: Once You're Gone, You're Gone.
+  video_download: once-youre-gone-youre-gone.mp4
+  video_thumbnail: once-youre-gone-youre-gone.jpg
+- video_title: Three Ways to Add $100,000 to Your TSP Account
+  video_download: three-ways-to-add-100000.mp4
+  video_thumbnail: three-ways-to-add-100000.jpg ##
+- video_title: How Can Compound Earnings Work for Me?
+  video_download: compound-earnings.mp4
+  video_thumbnail: compound-earnings.jpg
+- video_title: How the TSP Fits into FERS
+  video_download: how-the-tsp-fits-into-fers.mp4
+  video_thumbnail: how-the-tsp-fits-into-fers.mp4
+- video_title: The Cost of Taking a TSP Loan
+  video_download: cost-of-taking-a-tsp-loan.mp4
+  video_thumbnail: cost-of-taking-a-tsp-loan.jpg
+## POSTERS
+- poster_title: Mid-career retirement planning ## h2 text
+  poster_download: a-to-z.pdf ## Base directory /assets/posters/
+  poster_thumbnail: a-to-z.jpg ## Base directory /assets/posters/thumbnails/
+- poster_title: Early to mid-career workshop
+  poster_download: early-to-mid-career-01.pdf
+  poster_thumbnail: early-to-mid-career-01.jpg
+- poster_title: Early to mid-career workshop
+  poster_download: early-to-mid-career-02.pdf
+  poster_thumbnail: early-to-mid-career-02.jpg
+- poster_title: Welcome to the Thrift Savings Plan (new hire)
+  poster_download: new-hire.pdf
+  poster_thumbnail: new-hire.jpg
+- poster_title: TSP Pre-separation workshop
+  poster_download: pre-separation-workshop.pdf
+  poster_thumbnail: pre-separation-workshop.jpg
+- poster_title: Stay with the TSP
+  poster_download: stay-with-the-tsp.pdf
+  poster_thumbnail: stay-with-the-tsp.jpg
+- poster_title: Don't get blindsided
+  poster_download: blindsided.pdf
+  poster_thumbnail: blindsided.jpg
+- poster_title: Investments all over the map?
+  poster_download: all-over-the-map.pdf
+  poster_thumbnail: all-over-the-map.jpg
+- poster_title: Take FIVE for your future
+  poster_download: take-five.pdf
+  poster_thumbnail: take-five.jpg
