@@ -7,6 +7,10 @@ This is the javascript specific to panel 2.
 <!--
 panelNames['{{ panelName}}'] = {{ panelID }};
 panelGood[{{ panelID }}] = function(forceValue) {
+  return (
+    percentFixedGood('roth_option1', true) & percentFixedGood('trad_option1', true)
+);
+
   return ( rateOfReturnGood(true) & yearsToGoGood(true) & contributionsGood(true)
     & amountToUseGood(true) & DIEMSdateGood(true) & yearsServedGood(true) & growthSelectorGood(true) );
 };
@@ -20,6 +24,22 @@ panelEnter[{{ panelID }}] = function(panel) {
 }
 panelExit[{{ panelID }}] = function(panel) {
   return true;
+}
+
+// show/hide percent/Fixed for panel 3 radio selectors
+function percentFixedGood(buttonName, submit) {
+  if ($('#'+buttonName+'_a').prop('checked')) {
+    $('#'+buttonName+'Percent-div').removeClass("hide");
+    $('#'+buttonName+'Amount-div').addClass("hide");
+    return clearError(buttonName);
+  }
+  if ($('#'+buttonName+'_b').prop('checked')) {
+    $('#'+buttonName+'Percent-div').addClass("hide");
+    $('#'+buttonName+'Amount-div').removeClass("hide");
+    return clearError(buttonName);
+  }
+  if (submit) { return showError(buttonName, 'Enter type of contribution'); }
+  return clearError(buttonName);
 }
 
 function set_FC_text(rs) {

@@ -1,0 +1,41 @@
+{% assign type = include.type | default: 'trad' %}
+{% assign option = include.option | default: 1 %}
+{% assign idx = include.idx | default: 1 %}
+{% assign side = include.side | default: 'L' %}
+{% assign outerID = 'scenario' | append: option | append: type %}
+{% assign checkAmounts = "check_amounts(true, 'ok');" %}
+{% assign divExplain = include.divExplain | default: " " %}
+{% assign CCprompt = include.prompt | default: 'forgot to set prompt' %}
+
+{% assign tid = type | append: '_option' | append: option %}
+{% assign panel = 'panel3.' | append: idx | append: side %}
+{% assign radioIDs = tid | append: '_a, ' | append: tid | append: '_b' %}
+{% comment %}Start of multi-input block panel 3 catch-up contributions.  We must close <div> at end{% endcomment %}
+{% include calculator/div-panel-form-field.html
+  outerDivID=outerID fieldID=panel id=tid
+  inputType="none"  prompt=""   explanation=""   dontCloseOuterDiv=true %}
+  {{CCprompt}}
+{% assign fid = tid | append: 'Trad' %}
+{% assign idx = idx | plus: 1 %}
+{% assign panel = 'panel3.' | append: idx | append: side | append: '.t' %}
+{% include calculator/div-panel-form-field.html
+  fieldID=panel id=fid  inputClass=""  dataFormat="$"  dataFormatClass="whole-number"
+  min="0" value="" max="1000000" maxLength=7 step="1"
+  placeholder="" onBlur=checkAmounts  prompt="Traditional:"
+  explanation=""   dontOpenOuterDiv=true
+%}
+{% assign fid = tid | append: 'Roth' %}
+{% assign idx = idx | plus: 1 %}
+{% assign panel = 'panel3.' | append: idx | append: side | append: '.r' %}
+{% include calculator/div-panel-form-field.html
+  fieldID=panel id=fid  inputClass=""  dataFormat="$"  dataFormatClass="whole-number"
+  min="0" value="" max="1000000" maxLength=7 step="1"
+  placeholder="" onBlur=checkAmounts  prompt="Roth:"
+  explanation=""   dontOpenOuterDiv=true
+%}
+{% assign idx = idx | plus: 1 %}
+{% assign panel = 'panel3.' | append: idx | append: side %}
+{% include calculator/div-panel-form-field.html fieldID=panel inputType="none"
+  explanation=divExplain   dontOpenOuterDiv=true
+%}
+</div>{% comment %}End of multi-input block Account Traditional contributions 1{% endcomment %}

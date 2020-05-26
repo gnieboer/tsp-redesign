@@ -18,7 +18,7 @@ function setValues(flag) {
   }
   if (flag == 2) {
     setValues(1);
-    // set all the fields
+    processPanel(2,0,3,0);
   }
 }
 

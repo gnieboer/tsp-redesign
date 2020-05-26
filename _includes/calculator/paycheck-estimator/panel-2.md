@@ -92,8 +92,7 @@ This will depend on how often you are paid (biweekly or monthly, for example). I
   explanation=""  dontCloseOuterDiv=true
 %}
 <p>Your Federal income tax amount will automatically be calculated using the current IRS withholding table, so do not include that amount in your payroll deductions.</p>
-<p>Use the <a onClick="{{worksheetCall}}">Deduction Worksheet</a> to calculate your payroll deductions.</p>
-<p>Your most recent paycheck stub will give you the most accurate amounts.</p>
+<p>Use the <a onClick="{{worksheetCall}}">Deduction Worksheet</a> to calculate your payroll deductions. Your most recent paycheck stub will give you the most accurate amounts.</p>
 {% include calculator/div-panel-form-field.html
   fieldID="panel-2.9" id="beforeDeduction"
   min="1" value="" max="10000" maxLength=1 step="1"
