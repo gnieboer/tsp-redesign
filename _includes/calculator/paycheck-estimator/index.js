@@ -18,7 +18,7 @@ function setValues(flag) {
   }
   if (flag == 2) {
     setValues(1);
-    processPanel(2,0,3,0);
+    processPanel(3,0,4,0);
   }
 }
 
@@ -26,6 +26,10 @@ $(document).ready(function() {
   $('#resultSelectorCombined').click();
   setMaxPanels({{ maxPanels }});
   showPanel(1);
+  $('#trad_option1_a').click();
+  $('#trad_option2_a').click();
+  $('#roth_option1_a').click();
+  $('#roth_option2_a').click();
 
   initValues(0);
 });

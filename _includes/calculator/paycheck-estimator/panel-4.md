@@ -6,31 +6,55 @@ Results NAME panel (3) for CALC.
 {% assign gridClass2 = include.gridClass2 | default: 'results' %}
 {% if include.hide == 1 %} {% assign hide = 'display: none;' %} {% endif %}
 
-<section id="panel-{{ panelID }}" class="calculator-panel" style="{{ hide }}" markdown="1">
+<section id="panel-{{ panelID }}" class="calculator-panel comparison paycheck" style="{{ hide }}" markdown="1">
 
-{% include calculator/infoBox.html icon='info'
-    title="Maximizing Agency or Service Contributions"
-    textBlock="To receive the maximum Agency or Service Matching Contributions, you must contribute 5% of your basic pay each pay period."
-%}
+<h2>TSP Contributions Per Paycheck</h2>
+
+<ul class="table-header-buttons">
+  <li class="bg-blue active">
+    <button type="button">Scenario 1</button>
+  </li>
+  <li class="bg-blue">
+    <button type="button">Scenario 2</button>
+  </li>
+</ul>  
+
+{% assign tableRow = 'calculator/paycheck-estimator/panel-4-table-row.html' %}
+<table>
+  <thead>
+    <tr>
+      <th class="hide w"></th>
+      <th class="bg-blue default">Scenario 1</th>
+      <th class="bg-blue rightRow">Scenario 2</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td colspan="3" class="compare-two">
+        <div class="flex space-between"><span>Paycheck results</span> <a href="javascript:showPanel(2);">Adjust <i class="fal fa-sliders-v"></i></a></div>
+      </td>
+    </tr>
+{% include {{tableRow}} title="Gross pay per paycheck" rowID="grosspay" %}
+{% include {{tableRow}} title="Your Traditional (Pre-Tax) Contribution" rowID="trad" %}
+{% include {{tableRow}} title="Your Roth (After-Tax) Contribution" rowID="roth" %}
+{% include {{tableRow}} title="Your Traditional Catch-Up Contribution" rowID="tradCatchup" %}
+{% include {{tableRow}} title="Your Roth Catch-Up Contribution" rowID="rothCatchup" %}
+{% include {{tableRow}} title="Federal Income Taxes" rowID="federalTaxes" %}
+{% include {{tableRow}} title="Additional Federal Tax Withholding" rowID="addlFedTax" %}
+{% include {{tableRow}} title="Other Taxes and Payroll Deductions" rowID="otherTaxDeductions" %}
+{% include {{tableRow}} title="Total Amount Deducted From Your Pay" rowID="totalDeduct" %}
+{% include {{tableRow}} trClass="emphasis" title="Net Paycheck" rowID="netPay" %}
+    <tr>
+      <td colspan="3" class="compare-two"><div class="flex space-between"><span>Contributions summary</span> <a href="javascript:showPanel(3);">Adjust <i class="fal fa-sliders-v"></i></a></div></td>
+    </tr>
+{% include {{tableRow}} title="Total Amount of Your Contribution(s)" rowID="totalContributions" %}
+{% include {{tableRow}} trID="autoContrib" title="Agency Automatic (1%) Contribution<sup>1</sup>" rowID="agencyAutomatic" %}
+{% include {{tableRow}} trID="matchContrib" title="Agency Matching Contribution<sup>1</sup>" rowID="agencyMatchingContributions" %}
+{% include {{tableRow}} trClass="emphasis" title="Total Contributions Increase Your TSP Account By" rowID="TSPIncrease" %}
+  </tbody>
+</table>
 
 <ul class="usa-accordion icons">
-  <!-- PROJECTED BALANCE -->
-{% include calculator/accordion-start.html expanded=true divID='projected-balance1'
-    icon='fal fa-search-dollar' title='Projected Account Balance' inList=true %}
-<div class="results-grid-frame" markdown="1">
-{% include calculator/resultsRow.html left="Your existing account balance"
-  rightID="existing-balance" right="" outerDivID="existing-balance-row" %}
-{% include calculator/resultsRow.html left="Growth of your existing account balance"
-  rightID="balance-growth" right="" outerDivID="account-growth-row" %}
-{% include calculator/resultsRow.html left="Your future contributions"
-  rightID="future-contributions" right="" outerDivID="future-contributions-row" %}
-{% include calculator/resultsRow.html left="Growth of your future contributions"
-  rightID="future-growth" right="" outerDivID="future-growth-row" %}
-{% include calculator/resultsRow.html left="<strong>Total estimated TSP account balance</strong>"
-  rightID="final-total" right="" %}
-</div>
-{% include calculator/accordion-end.html  inList=true %}
-
 <!-- PROJECTED GROWTH -->
 {% include calculator/accordion-start.html expanded=true divID='projected-growth'
     icon='far fa-chart-line' title='Projected Growth of Your Account' inList=true %}
@@ -65,49 +89,18 @@ Results NAME panel (3) for CALC.
 </div> <!-- END div.usa-width-one-whole -->
 <div id="show-data-footnote" class="usa-width-one-whole"></div>
 {% include calculator/accordion-end.html  inList=true %}
-
-<!-- ADJUST YOUR RESULTS -->
-{% include calculator/accordion-start.html expanded=true divID='adjust-results'
-    icon='fal fa-sliders-v' title='Adjust your results' inList=true %}
-
-{% include calculator/AYR-table.html caption="Retirement System" showPanel=1 gotoAnchor='rs-anchor' %}
-{% include calculator/AYR-table-row.html closeTable=true
-  prompt="Retirement system:" rowID='lblAYRretirementSystem' %}
-
-{% include calculator/AYR-table.html caption="Type(s) of growth" showPanel=2 gotoAnchor='growthSelector-anchor' tableID="growthAYR" %}
-{% include calculator/AYR-table-row.html prompt="Growth model:" rowID='lblAYRgrowthSelector' closeTable=true %}
-
-{% include calculator/AYR-table.html caption="Your service so far" showPanel=2 gotoAnchor='service' tableID="serviceSoFarAYR" %}
-{% include calculator/AYR-table-row.html prompt="Number of years already served:" rowID='lblAYRyearsServed' %}
-{% include calculator/AYR-table-row.html closeTable=true
-  prompt="DIEMS (Date of Initial Entry into Military Service)" rowID='lblAYRDIEMSdate' %}
-
-{% include calculator/AYR-table.html caption="Existing account balance" showPanel=2 gotoAnchor='amountToUse-anchor' tableID="balanceAYR" %}
-{% include calculator/AYR-table-row.html closeTable=true
-  prompt="Current account balance" rowID='lblAYRamountToUse' %}
-
-{% include calculator/AYR-table.html caption="Future contributions" showPanel=2 gotoAnchor='future' tableID="futureAYR" %}
-{% include calculator/AYR-table-row.html
-  prompt="Years to make contributions:" rowID='lblAYRyearsToContribute' %}
-{% include calculator/AYR-table-row.html prompt="Annual pay:" rowID='lblAYRannualPay' %}
-{% include calculator/AYR-table-row.html prompt="Pay schedule:" rowID='lblAYRpaySchedule' named=true %}
-{% include calculator/AYR-table-row.html
-  prompt="Percent salary to save:" rowID='lblAYRannualPayPercent' %}
-{% include calculator/AYR-table-row.html
-  prompt="Expected Percent Salary Increase:" rowID='lblAYRannualPayIncreasePercent' %}
-{% include calculator/AYR-table-row.html closeTable=true
-  prompt="Annual catch-up contributions:" rowID='lblAYRcatchupAmount' %}
-
-{% include calculator/AYR-table.html caption="Account growth" showPanel=2 gotoAnchor='time' tableID="accountGrowthAYR" %}
-{% include calculator/AYR-table-row.html
-  prompt="Number of years until you start withdrawing:" rowID='lblAYRyearsToGo' %}
-{% include calculator/AYR-table-row.html closeTable=true
-    prompt="Expected annual return:" rowID='lblAYRrateOfReturn' %}
-
-{% include calculator/accordion-end.html  inList=true %}
 </ul>
 
-{% include calculator/button-block.html panelID=panelID prev=2 print=1 %}
+<div id="footnotes">
+<ol id="agencyFootnote">
+  <li>All agency contributions are deposited into the traditional balance of your TSP account regardless of whether you have chosen to make traditional or Roth employee contributions. There are no <span data-term="Agency Matching Contributions" class="js-glossary-toggle term term-end">Agency Matching Contributions</span> of <span data-term="Catch-Up Contributions" class="js-glossary-toggle term term-end">catch-up contributions</span>.</li>
+</ol>
+<ol id="serviceFootnote">
+  <li>All service contributions are deposited into the traditional balance of your TSP account regardless of whether you have chosen to make traditional or Roth employee contributions. There are no <span data-term="Service Matching Contributions" class="js-glossary-toggle term term-end">Service Matching Contributions</span> of <span data-term="Catch-Up Contributions" class="js-glossary-toggle term term-end">catch-up contributions</span>. Most members are not eligible for matching contributions until they have served two years. All service contributions stop after a member has served 26 years. Check with your service regarding eligibility for service contributions.</li>
+</ol>
+</div>
+
+{% include calculator/button-block.html panelID=panelID prev=3 print=1 %}
 
 </section>
 

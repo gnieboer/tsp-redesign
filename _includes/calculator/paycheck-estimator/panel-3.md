@@ -17,21 +17,24 @@ Name middle panels (2) for CALC.
 <h2>TSP Contributions Per Paycheck</h2>
   <div class="usa-grid">
 
+{% assign tradroth = 'calculator/paycheck-estimator/panel-3-percent-fixed-block.html' %}
+{% assign catchup = 'calculator/paycheck-estimator/panel-3-catch-up-block.html' %}
+
 <!-- Scenario 1 -->
 <div class="usa-width-one-half scenario">
   <h3>Scenario 1 (required)</h3><!-- Scenario 1, Traditional contributions -->
-{% include calculator/paycheck-estimator/panel-3-percent-fixed-block.html side="L" type='trad' option=1 idx=1 divExplain=trad_explain prompt=trad_glossary %}
-{% include calculator/paycheck-estimator/panel-3-percent-fixed-block.html side="L" type='roth' option=1 idx=5 divExplain=roth_explain prompt=roth_glossary %}
-{% include calculator/paycheck-estimator/panel-3-catch-up-block.html side="L" type='catch' option=1 idx=9 divExplain=catch_explain prompt=catch_glossary %}
+{% include {{tradroth}} side="L" type='trad' option=1 idx=1 divExplain=trad_explain prompt=trad_glossary %}
+{% include {{tradroth}} side="L" type='roth' option=1 idx=5 divExplain=roth_explain prompt=roth_glossary %}
+{% include {{catchup}} side="L" type='catch' option=1 idx=9 divExplain=catch_explain prompt=catch_glossary %}
 </div><!-- end Scenario 1 -->
 
 <!-- Scenario 2 -->
 <div class="usa-width-one-half scenario">
   <h3>Scenario 2 (optional)</h3>
   <!-- Scenario 2, Traditional contributions -->
-{% include calculator/paycheck-estimator/panel-3-percent-fixed-block.html side="R" type='trad' option=2 idx=1 divExplain=trad_explain prompt=trad_glossary %}
-{% include calculator/paycheck-estimator/panel-3-percent-fixed-block.html side="R" type='roth' option=2 idx=5 divExplain=roth_explain prompt=roth_glossary %}
-{% include calculator/paycheck-estimator/panel-3-catch-up-block.html side="R" type='catch' option=2 idx=9 divExplain=catch_explain prompt=catch_glossary %}
+{% include {{tradroth}} side="R" type='trad' option=2 idx=1 divExplain=trad_explain prompt=trad_glossary %}
+{% include {{tradroth}} side="R" type='roth' option=2 idx=5 divExplain=roth_explain prompt=roth_glossary %}
+{% include {{catchup}} side="R" type='catch' option=2 idx=9 divExplain=catch_explain prompt=catch_glossary %}
 </div><!-- end Scenario 2 -->
 
 </div><!-- end grid -->
@@ -39,47 +42,12 @@ Name middle panels (2) for CALC.
 {% capture explanation3_13 %}
 Enter the annual rate of return you expect to earn on your contributions. View the [Rates of return]({{ site.baseurl }}/fund-performance/){:target="\_blank"} for context, but keep in mind that past performance is not a guarantee or a predictor of future returns.
 {% endcapture %}
-{% include calculator/div-panel-form-field.html
+{% include calculator/div-panel-form-field.html innerDivClass="expected-annual-return"
   fieldID="panel-3.13" id="annualReturn" inputClass=""  dataFormat="%"
   min="0" value="" max="99" maxLength=7 step="0.01"
   placeholder="" onBlur="annualReturnGood(false);"
   prompt="Expected annual return:"
   explanation=explanation3_13  %}
-
-
-<div class="usa-grid expected-annual-return">
-  <div class="usa-width-one-whole">
-    <div class="panel-form-field">
-    <ul class="inline-input">
-      <li>
-      <label class="" for="annualReturn" aria-details="expected-annual-return">Expected annual return:</label>
-      <span data-format="%" class="input-symbol-right">
-      <input
-        id="annualReturn"
-        name="annualReturn"
-        type="text"
-        value=""
-        maxlength="7"
-        onblur="annualReturnGood();">
-      </span>
-      </li>
-    </ul>
-    <!-- Explain this -->
-    <ul id="auto" class="usa-accordion explain-this">
-    <li>
-    <button class="usa-accordion-button"
-    aria-expanded="false"
-    aria-controls="expected-annual-return">
-    Explain this
-    </button>
-<div id="expected-annual-return" class="usa-accordion-content" markdown="1">
-View the [Rates of return]({{ site.baseurl }}/fund-performance/). Past performance is not a guarantee or a predictor of future returns.
-</div>
-    </li>
-    </ul>
-    </div><!-- END div.panel-form-field -->
-  </div><!-- END div.usa-width-one-whole -->
-</div><!-- END div.usa-grid -->
 
 {% include calculator/button-block.html panelID=panelID prev=2 showResults=4 %}
 
