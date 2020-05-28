@@ -94,60 +94,66 @@ section {
 .calculator-panel.subscribe {
   margin-bottom: 4rem;
   ul.usa-accordion {
-    &.explain-this {
-      max-width: 46rem;
-      li {
-        background-color: transparent;
-        .usa-accordion-button {
-          // background-color: $color-primary;
-          background-image: none;
-          font-weight: 400;
-          // color: #fff;
-          position: relative;
-          line-height: 2rem;
-          padding: 1.5rem 2rem 1.5rem 0;
-          font-size: 2.4rem;
-          font-weight: $bold;
-
-            span {
-              background-color: $color-primary;
-              padding: .9rem 1.5rem;
-              // background-image: none;
-              // font-weight: 400;
-              color: #fff;
-              // position: relative;
-              // line-height: 2rem;
-              // padding: 1.5rem 2rem;
-              // font-size: 2.4rem;
-              // font-weight: $bold;
-            }
-          &:after {
-            font-family: $font-awesome;
-            font-weight: $light;
-            font-size: 2.5rem;
-            content: "\f056";
-            float: right;
-          }
-          &[aria-expanded="false"] {
-            &:after {
-              content: "\f055";
-            }
-          }
-          &:hover {
-            background-color: transparent;
-            color: $color-gray-darkest;
-            span {
-              background-color: $color-gray-dark;
-            }
-          }
-        } // end .usa-accordion-button
-        .usa-accordion-content {
-          background-color: transparent;
-        } // end .usa-accordion-content
-      }
-    }
+    // &.explain-this {
+    //   max-width: 46rem;
+    //   li {
+    //     background-color: transparent;
+    //     .usa-accordion-button {
+    //       // background-color: $color-primary;
+    //       background-image: none;
+    //       font-weight: 400;
+    //       // color: #fff;
+    //       position: relative;
+    //       line-height: 2rem;
+    //       padding: 1.5rem 2rem 1.5rem 0;
+    //       font-size: 2.4rem;
+    //       font-weight: $bold;
+    //
+    //         span {
+    //           background-color: $color-primary;
+    //           padding: .9rem 1.5rem;
+    //           // background-image: none;
+    //           // font-weight: 400;
+    //           color: #fff;
+    //           // position: relative;
+    //           // line-height: 2rem;
+    //           // padding: 1.5rem 2rem;
+    //           // font-size: 2.4rem;
+    //           // font-weight: $bold;
+    //         }
+    //       &:after {
+    //         font-family: $font-awesome;
+    //         font-weight: $light;
+    //         font-size: 2.5rem;
+    //         content: "\f056";
+    //         float: right;
+    //       }
+    //       &[aria-expanded="false"] {
+    //         &:after {
+    //           content: "\f055";
+    //         }
+    //       }
+    //       &:hover {
+    //         background-color: transparent;
+    //         color: $color-gray-darkest;
+    //         span {
+    //           background-color: $color-gray-dark;
+    //         }
+    //       }
+    //     } // end .usa-accordion-button
+    //     .usa-accordion-content {
+    //       background-color: transparent;
+    //     } // end .usa-accordion-content
+    //   }
+    // }
   }
 } // end .calculator-panel
+
+div.select-bulletins-topic {
+  h2.results {
+    padding: 2rem 0 3rem 0;
+  }
+}
 
 section {
 

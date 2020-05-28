@@ -11,25 +11,26 @@ permalink: /agency-service-reps/bulletins/
 
 TSP bulletins provide guidance to TSP Agency and Service representatives for implementing the provisions of law, regulations, and procedures relating to the TSP.
 
+<div><button class="usa-button-big" onclick="window.location.href = '{{ site.baseurl }}/exit/?idx=2';">Subscribe</button></div>
 
-
-<div class="calculator-panel subscribe"><ul class="usa-accordion explain-this">
-<li>
-  <button class="usa-accordion-button" aria-expanded="false" aria-controls="subscribe"><span>Subscribe</span></button>
-  <div id="subscribe" class="usa-accordion-content">
-  <p>The Thrift Savings Plan is happy to offer a free email subscription service. This service allows TSP representatives to receive automatic notifications by email when new or updated information is available in the "Agency and Service Representative resources" section of the TSP Web site.</p>
-  <button class="usa-button" onclick="window.location.href = '{{ site.baseurl }}/exit/?idx=2';">Subscribe</button>
-  </div>
-</li>
-</ul></div>
+<div class="calculator-panel subscribe">
+  <ul class="usa-accordion explain-this">
+    <li>
+      <button class="usa-accordion-button" aria-expanded="false" aria-controls="subscribe">Explain this</button>
+      <div id="subscribe" class="usa-accordion-content">
+      <p>The Thrift Savings Plan is happy to offer a free email subscription service. This service allows TSP representatives to receive automatic notifications by email when new or updated information is available in the "Agency and Service Representative resources" section of the TSP Web site.</p>
+      </div>
+    </li>
+  </ul>
+</div>
 
 <!-- # Help me find bulletins and resources about {#forms} -->
 
 <!-- SEARCH FORMS -->
-<section class="search-bulletins">
+<section class="search-bulletins search-forms">
   <div class="usa-grid-full">
     <div class="usa-width-one-whole">
-      <section class="search-forms">
+      <!-- <section class="search-forms"> -->
         <div role="search" class="search-container">
           <!-- Topic drop-down list -->
           <div class="select">
@@ -50,6 +51,7 @@ TSP bulletins provide guidance to TSP Agency and Service representatives for imp
               <option value="0">Show all</option>
             </select>
           </div>
+          <span class="or">or</span>
           <!-- SEARCH FIELD -->
           <input id="group" type="hidden" value="forms">
           <form accept-charset="UTF-8" action="javascript:void(0);" id="search-form-forms bulletins" method="get"
@@ -60,10 +62,14 @@ TSP bulletins provide guidance to TSP Agency and Service representatives for imp
                 autocomplete="off" placeholder="Enter search term(s)">
           </form>
         </div>
-      </section><!-- // end section.search-forms -->
+    <!--  </section> // end section.search-forms -->
     </div><!-- END div.usa-width-one-whole -->
   </div><!-- END div.usa-grid-full -->
 </section>
+
+<div class="select-bulletins-topic">
+  <h2 class="results">We found <strong>13</strong> bulletins about <strong>General information</strong></h2>
+</div>
 
 <!-- Bulletins CURRENT YEAR -->
 <section class="bulletins-current">
