@@ -5,7 +5,7 @@ title: I fund
 sidenav: fund-options
 redirect_from:
   - /InvestmentFunds/FundOptions/fundPerformance_I.html
-Fund_type: Index
+Fund_type: Individual
 Fund_name: I Fund
 Fund_order: 5
 Fund_subtitle: International Stock Index Investment Fund
