@@ -22,11 +22,11 @@ If your vested account balance is $200 or more when you leave federal service, y
 
 Each individual’s situation is different and should be considered when making this decision. Our goal is to help provide the tools you need to make the best choice for yourself. These eye-opening videos may make you think twice about moving your money to another retirement plan.
 
-+ [Once You’re Gone, You’re Gone]({{ site.baseurl }}/exit/?idx=153)
-+ [Don’t Move]({{ site.baseurl }}/exit/?idx=154)
-+ [Combine and Save: Transfer into the TSP]({{ site.baseurl }}/exit/?idx=155)
++ [Once You’re Gone, You’re Gone]({{ site.baseurl }}/exit/?idx=153){:rel="nofollow"}
++ [Don’t Move]({{ site.baseurl }}/exit/?idx=154){:rel="nofollow"}
++ [Combine and Save: Transfer into the TSP]({{ site.baseurl }}/exit/?idx=155){:rel="nofollow"}
 
-And be sure to check out our other videos at [youtube.com/tsp4gov]({{ site.baseurl }}/exit/?idx=152) to learn more.
+And be sure to check out our other videos at [youtube.com/tsp4gov]({{ site.baseurl }}/exit/?idx=152){:rel="nofollow"} to learn more.
 
 
 
