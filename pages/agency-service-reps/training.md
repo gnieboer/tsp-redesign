@@ -15,6 +15,15 @@ TSP trainers are available for webinars. See the [TSP Webinars]({{ site.baseurl 
 
 Unfortunately, we are unable to accommodate requests for in-person events at this time.
 
+- To attend, you must register via the links on this page.
+- You must have access to WebEx to register and attend TSP webinars. You do not need a WebEx account.
+- You can use any internet connected device to register and attend the TSP webinars.
+- If your agency/service does not allow access to WebEx please contact the appropriate office at your agency/service for assistance.
+- The registration password for all TSP webinars in WebEx is TSPweb.
+- After you register, you’ll receive an email with a link to join the webinar online and a phone number if you want to access the audio only.
+- **All scheduled start times are listed in Eastern Time.**
+- All dates and topics are subject to change and/or cancellation. Additional dates and topics may be added.
+
 <ul class="usa-accordion">
   <li>
     <button
@@ -26,14 +35,14 @@ Unfortunately, we are unable to accommodate requests for in-person events at thi
   <div id="webinars" class="usa-accordion-content" markdown="1">
   Our Office of Communications and Education hosts TSP webinars to supplement TSP training events hosted by agencies and services.
 
-  - To attend, you must register via the links on this page.
-  - You must have access to WebEx to register and attend TSP webinars. You do not need a WebEx account.
-  - You can use any internet connected device to register and attend the TSP webinars.
-  - If your agency/service does not allow access to WebEx please contact the appropriate office at your agency/service for assistance.
-  - The registration password for all TSP webinars in WebEx is TSPweb.
-  - After you register, you’ll receive an email with a link to join the webinar online and a phone number if you want to access the audio only.
-  - **All scheduled start times are listed in Eastern Time.**
-  - All dates and topics are subject to change and/or cancellation. Additional dates and topics may be added.
+  + To attend, you must register via the links on this page.
+  + You must have access to WebEx to register and attend TSP webinars. You do not need a WebEx account.
+  + You can use any internet connected device to register and attend the TSP webinars.
+  + If your agency/service does not allow access to WebEx please contact the appropriate office at your agency/service for assistance.
+  + The registration password for all TSP webinars in WebEx is TSPweb.
+  + After you register, you’ll receive an email with a link to join the webinar online and a phone number if you want to access the audio only.
+  + **All scheduled start times are listed in Eastern Time.**
+  + All dates and topics are subject to change and/or cancellation. Additional dates and topics may be added.
 
   Our education staff has created a distribution list of agency and service representatives that can assist in distributing TSP webinar information to participants. Individual participants should not request to be on the list.
 
@@ -45,13 +54,13 @@ This webinar provides an introduction to the Thrift Savings Plan for new employe
 
 ### May 18, 2020
 
-- 10:00 a.m. – Register now
-- 1:00 p.m. – Register now
+- 10:00 a.m. – Register
+- 1:00 p.m. – Register
 
 ### June 17, 2020
 
-- 10:00 a.m. – Register now
-- 1:00 p.m. – Register now
+- 10:00 a.m. – [Register]({{ site.baseurl }}/exit/?idx=189){:rel="nofollow"}
+- 1:00 p.m. – [Register]({{ site.baseurl }}/exit/?idx=190){:rel="nofollow"}
 
 ## TSP contributions
 
@@ -59,103 +68,103 @@ This webinar provides an overview of the TSP contribution rules. TSP webinars ar
 
 ### May 5, 2020
 
-- 1:00 p.m. – Register now
-- 7:00 p.m. – Register now
+- 1:00 p.m. – Register
+- 7:00 p.m. – Register
 
 ### May 19, 2020
 
-- 10:00 a.m. – Register now
-- 1:00 p.m. – Register now
+- 10:00 a.m. – Register
+- 1:00 p.m. – Register
 
 ### June 24, 2020
 
-- 10:00 a.m. – Register now
-- 1:00 p.m. – Register now
+- 10:00 a.m. – [Register]({{ site.baseurl }}/exit/?idx=195){:rel="nofollow"}
+- 1:00 p.m. – [Register]({{ site.baseurl }}/exit/?idx=196){:rel="nofollow"}
 
-## TSP Investment Funds
+## TSP investment funds
 
 This webinar provides an overview of the TSP investment funds. TSP webinars are hosted by the FRTIB’s Office of Communications and Education. This is a 1-hour webinar.
 
 ### May 12, 2020
 
-- 10:00 a.m. – Register now
-- 1:00 p.m. – Register now
+- 10:00 a.m. – Register
+- 1:00 p.m. – Register
 
 ### May 27, 2020
 
-- 10:00 a.m. – Register now
-- 1:00 p.m. – Register now
+- 10:00 a.m. – Register
+- 1:00 p.m. – Register
 
 ### June 9, 2020
 
-- 10:00 a.m. – Register now
-- 1:00 p.m. – Register now
+- 10:00 a.m. – [Register]({{ site.baseurl }}/exit/?idx=199){:rel="nofollow"}
+- 1:00 p.m. – [Register]({{ site.baseurl }}/exit/?idx=200){:rel="nofollow"}
 
 ### June 23, 2020
 
-- 10:00 a.m. – Register now
-- 1:00 p.m. – Register now
+- 10:00 a.m. – [Register]({{ site.baseurl }}/exit/?idx=201){:rel="nofollow"}
+- 1:00 p.m. – [Register]({{ site.baseurl }}/exit/?idx=202){:rel="nofollow"}
 
-## TSP Loans
+## TSP loans
 
 This webinar provides an overview of the TSP loan program. TSP webinars are hosted by the FRTIB’s Office of Communications and Education. This is a 1-hour webinar.
 
 ### May 6, 2020
 
-- 1:00 p.m. – Register now
-- 7:00 p.m. – Register now
+- 1:00 p.m. – Register
+- 7:00 p.m. – Register
 
 ### June 10, 2020
 
-- 10:00 a.m. – Register now
-- 1:00 p.m. – Register now
+- 10:00 a.m. – [Register]({{ site.baseurl }}/exit/?idx=205){:rel="nofollow"}
+- 1:00 p.m. – [Register]({{ site.baseurl }}/exit/?idx=206){:rel="nofollow"}
 
-## TSP In-Service Withdrawals
+## TSP in-service withdrawals
 
 This webinar provides an overview of the TSP in-service withdrawal options. TSP webinars are hosted by the FRTIB’s Office of Communications and Education. This is a 1-hour webinar.
 
 ### May 13, 2020
 
-- 10:00 a.m. – Register now
-- 1:00 p.m. – Register now
+- 10:00 a.m. – Register
+- 1:00 p.m. – Register
 
 ### June 11, 2020
 
-- 10:00 a.m. – Register now
-- 1:00 p.m. – Register now
+- 10:00 a.m. – [Register]({{ site.baseurl }}/exit/?idx=209){:rel="nofollow"}
+- 1:00 p.m. – [Register]({{ site.baseurl }}/exit/?idx=210){:rel="nofollow"}
 
-## TSP Post-Service Withdrawals
+## TSP post-service withdrawals
 
 This webinar provides an overview of the TSP post-service withdrawal options. The information in this webinar is beneficial to TSP participants that are within 10 years or less of retirement and participants that have separated or retired. TSP webinars are hosted by the FRTIB’s Office of Communications and Education. This is a 1-hour webinar.
 
 ### May 7, 2020
 
-- 1:00 p.m. – Register now
-- 7:00 p.m. – Register now
+- 1:00 p.m. – Register
+- 7:00 p.m. – Register
 
 ### May 20, 2020
 
-- 10:00 a.m. – Register now
-- 1:00 p.m. – Register now
+- 10:00 a.m. – Register
+- 1:00 p.m. – Register
 
 ### June 19, 2020
 
-- 10:00 a.m. – Register now
-- 1:00 p.m. – Register now
+- 10:00 a.m. – [Register]({{ site.baseurl }}/exit/?idx=215){:rel="nofollow"}
+- 1:00 p.m. – [Register]({{ site.baseurl }}/exit/?idx=216){:rel="nofollow"}
 
-## TSP Death Benefits
+## TSP death benefits
 
 This webinar provides an overview of TSP death benefits. TSP webinars are hosted by the FRTIB’s Office of Communications and Education. This is a 1-hour webinar.
 
 ### May 14, 2020
 
-- 10:00 a.m. – Register now
-- 1:00 p.m. – Register now
+- 10:00 a.m. – Register
+- 1:00 p.m. – Register
 
 ### June 15, 2020
 
-- 10:00 a.m. – Register now
-- 1:00 p.m. – Register now
+- 10:00 a.m. – [Register]({{ site.baseurl }}/exit/?idx=219){:rel="nofollow"}
+- 1:00 p.m. – [Register]({{ site.baseurl }}/exit/?idx=220){:rel="nofollow"}
 
 </div>
   </li>
@@ -181,9 +190,9 @@ The Federal Retirement Thrift Investment Board offers a variety of TSP training 
 
 Click on any course to learn more and get registered:
 
-- [TSP 101: The TSP for Agency and Service Representatives] (2-day class)
-- [2]-Day Advanced TSP Training for Military Financial Educators[] (2-day class)
-- [TSP Payroll Operations and Error Correction] (1-day class)
+- [TSP 101: The TSP for Agency and Service Representatives]({{ site.baseurl }}/exit/?idx=70){:rel="nofollow"} (2-day class)
+- [2-Day Advanced TSP Training for Military Financial Educators]({{ site.baseurl }}/exit/?idx=71){:rel="nofollow"} (2-day class)
+- [TSP Payroll Operations and Error Correction]({{ site.baseurl }}/exit/?idx=72){:rel="nofollow"} (1-day class)
 
 ### Eligibility
 

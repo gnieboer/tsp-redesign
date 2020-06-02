@@ -36,6 +36,7 @@ To help you with employee outreach, we&#8217;ve compiled a selection of educatio
                 <!-- DAV, <a> title will be the same for all videos -->
                   <a
                     href="{{ site.baseurl }}/exit/?idx=161"
+                    rel="nofollow"
                     title="Watch on YouTube">
                   <!-- DAV, img alt text will be the same for all video thumbnails -->
                   <!-- DAV, img aria-labelledby = h2# -->
@@ -72,6 +73,7 @@ To help you with employee outreach, we&#8217;ve compiled a selection of educatio
               <li>
                 <a
                   href="{{ site.baseurl }}/exit/?idx=162"
+                  rel="nofollow"
                   title="Watch on YouTube">
                   <img
                     src="{{ site.baseurl }}/assets/videos/thumbnails/once-youre-gone-youre-gone.jpg"
@@ -104,6 +106,7 @@ To help you with employee outreach, we&#8217;ve compiled a selection of educatio
               <li>
                 <a
                   href="{{ site.baseurl }}/exit/?idx=163"
+                  rel="nofollow"
                   title="Watch on YouTube">
                   <img
                     src="{{ site.baseurl }}/assets/videos/thumbnails/cost-of-taking-tsp-loan.jpg"
@@ -130,6 +133,7 @@ To help you with employee outreach, we&#8217;ve compiled a selection of educatio
               <li>
                 <a
                   href="{{ site.baseurl }}/exit/?idx=164"
+                  rel="nofollow"
                   title="Watch on YouTube">
                   <img
                     src="{{ site.baseurl }}/assets/videos/thumbnails/how-tsp-fits-into-fers.jpg"
