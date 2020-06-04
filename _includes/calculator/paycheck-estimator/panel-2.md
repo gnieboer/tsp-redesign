@@ -21,6 +21,7 @@ Paycheck infomation panels (2) for paycheck estimator.
   onBlur="grossPayGood(false);" prompt="Gross pay per paycheck:"
   explanation=""  dontOpenOuterDiv=true
 %}
+<span class="hide">Annual Pay <span ID='annualGrossPay'></span></span>
 {% capture pay_schedule_explanation %}
 
 This will depend on how often you are paid (biweekly or monthly, for example). If you are uncertain, check with your personnel or finance office.
@@ -50,6 +51,7 @@ This will depend on how often you are paid (biweekly or monthly, for example). I
   explanation=pay_schedule_explanation dontOpenOuterDiv=true
 %}
 </div>
+<input type="hidden" name="lastPaySchedule" id="lastPaySchedule" value="Select">
 </div>{% comment %}End of multi-input block Salary information{% endcomment %}
 
 {% comment %}Start of multi-input block Tax withholding.  We must close <div> at end{% endcomment %}
@@ -69,7 +71,7 @@ This will depend on how often you are paid (biweekly or monthly, for example). I
 {% capture federal_allowances_info %}You can use the <span class="nobr">[Tax Withholding Estimator](/exit/?idx=161){:rel="nofollow"}{:target="\_blank"}</span> on the IRS website for help in determining how many allowances to claim.{% endcapture %}
 {% include calculator/div-panel-form-field.html
   fieldID="panel-2.6" id="fedAllowances"
-  min="1" value="" max="9" maxLength=1 step="1"
+  min="1" value="" max="99" maxLength=2 step="1"
   placeholder="" onBlur="fedAllowancesGood(false);"
   prompt="Enter the number of your federal allowances:"
   explanation=federal_allowances_info  dontOpenOuterDiv=true
@@ -77,9 +79,9 @@ This will depend on how often you are paid (biweekly or monthly, for example). I
 {% capture federal_allowances_info %}none{% endcapture %}
 {% include calculator/div-panel-form-field.html
   fieldID="panel-2.7" id="additionalWithholding"
-  min="1" value="" max="10000" maxLength=1 step="1"
+  min="1" value="" max="10000" maxLength=5 step="1"
   dataFormat="$"  dataFormatClass="whole-number"
-  placeholder="" onBlur="additionalWithholdingGood(false);"
+  placeholder="" onBlur="sumWithholdingGood(false);"
   prompt="Additional tax withholding:" explanation=""  dontOpenOuterDiv=true
 %}
 </div>{% comment %}End of multi-input block Tax withholding{% endcomment %}
@@ -95,18 +97,18 @@ This will depend on how often you are paid (biweekly or monthly, for example). I
 <p>Use the <a onClick="{{worksheetCall}}">Deduction Worksheet</a> to calculate your payroll deductions. Your most recent paycheck stub will give you the most accurate amounts.</p>
 {% include calculator/div-panel-form-field.html
   fieldID="panel-2.9" id="beforeDeduction"
-  min="1" value="" max="10000" maxLength=1 step="1"
+  min="1" value="" max="10000" maxLength=5 step="1"
   dataFormat="$"  dataFormatClass="whole-number"
-  placeholder="" onBlur="beforeDeductionGood(false);"
+  placeholder="" onBlur="sumWithholdingGood(false);"
   prompt="Pre-tax deductions:"
   explanation="Examples of pre-tax deductions are health insurance and Flexible Spending Accounts. **Do not include current TSP contributions**."
   dontOpenOuterDiv=true
 %}
 {% include calculator/div-panel-form-field.html
   fieldID="panel-2.10" id="afterDeduction"
-  min="1" value="" max="10000" maxLength=1 step="1"
+  min="1" value="" max="10000" maxLength=5 step="1"
   dataFormat="$"  dataFormatClass="whole-number"
-  placeholder="" onBlur="afterDeductionGood(false);"
+  placeholder="" onBlur="sumWithholdingGood(false);"
   prompt="Other payroll deductions:"
   explanation="Examples of other payroll deductions are savings allotments and charitable contributions. **Do not include current TSP contributions**."
   dontOpenOuterDiv=true

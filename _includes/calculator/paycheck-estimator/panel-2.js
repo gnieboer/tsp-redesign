@@ -7,12 +7,15 @@ This is the javascript specific to panel 2.
 <!--
 panelNames['{{ panelName}}'] = {{ panelID }};
 panelGood[{{ panelID }}] = function(forceValue) {
-  return true;
-  return ( rateOfReturnGood(true) & yearsToGoGood(true) & contributionsGood(true)
-    & amountToUseGood(true) & DIEMSdateGood(true) & yearsServedGood(true) & growthSelectorGood(true) );
+  console.log('2 good is '+(sumWithholdingGood(true) & fedAllowancesGood(true) & taxStatusGood(true)
+    & payScheduleGood(true) & grossPayGood(true)), sumWithholdingGood(true));
+  return ( sumWithholdingGood(true) & fedAllowancesGood(true) & taxStatusGood(true)
+    & payScheduleGood(true) & grossPayGood(true)
+   );
 };
 
 panelEnter[{{ panelID }}] = function(panel) {
+  setAnnualGrossPay();
   hideWorksheet({{panelID}});
   // window.scroll(0,0);
   return true;
@@ -22,229 +25,17 @@ panelExit[{{ panelID }}] = function(panel) {
   return true;
 }
 
-// my functions
-function contributionsGood(submit) {
-  return ( catchupAmountGood(submit) & annualPayIncreasePercentGood(submit)
-    & annualPayPercentGood(submit) & annualPayFixedGood(submit) & contributionSelectorGood(submit)
-    & payScheduleGood(submit) & annualPayGood(submit) & yearsToContributeGood(submit) );
-}
-
-function getGrowthSelector() {
-  if ($('#BP').prop('checked')) { return 'balanceOnly'; }
-  if ($('#balanceOnly').prop('checked')) { return 'balanceOnly'; }
-  if ($('#futureOnly').prop('checked')) { return 'futureOnly'; }
-  if ($('#bothGrowth').prop('checked')) { return 'bothGrowth'; }
-
-  return '';
-}
 
 // hideBlock() calls
-function hideGrowth(hideFlag) { hideBlock(hideFlag, 'growthSelectorDiv', 'growthAYR'); }
-function hideServiceSoFar(hideFlag) { hideBlock(hideFlag, 'serviceSoFar', 'serviceSoFarAYR'); }
-function hideAccountBalance(hideFlag) {
-  hideBlock(hideFlag, 'accountBalanceDiv', 'balanceAYR');
-  hideBlock(hideFlag, 'existing-balance-row', 'account-growth-row');
-}
-function hideAccountContributions(hideFlag) { hideBlock(hideFlag, 'accountContributionsDiv', 'accountGrowthAYR'); }
-function hideFuture(hideFlag) {
-  hideBlock(hideFlag, 'futureContributionsDiv', 'futureAYR');
-  hideBlock(hideFlag, 'future-contributions-row', 'future-growth-row');
-}
 function hidePaySchedule(hideFlag) { hideBlock(hideFlag, 'paySchedule-hide', 'lblAYRpaySchedule-row'); }
-function hideFixedContribution(hideFlag) {
-  if (hideFlag) {
-    $('#annualPayFixed-label').addClass('hide');
-    $('#contributionSelector-div').addClass('hide');
-    $('#annualPayPercent-label').removeClass('hide');
-  } else {
-    $('#annualPayFixed-label').addClass('hide');
-    $('#contributionSelector-div').removeClass('hide');
-    $('#annualPayPercent-label').addClass('hide');
-  }
- }
 
-function applyGrowthSelectorChoice(growthSelector) {
-  rsExit();
-  if (growthSelector == 'balanceOnly') {
-    hideAccountBalance(false);
-    hideFuture(true);
-    hideAccountContributions(false);
-    return true;
-  }
-  if (growthSelector == 'futureOnly') {
-    hideAccountBalance(true);
-    hideFuture(false);
-    hideAccountContributions(false);
-    return true;
-  }
-  if (growthSelector == 'bothGrowth') {
-    hideAccountBalance(false);
-    hideFuture(false);
-    hideAccountContributions(false);
-    return true;
-  }
-  hideServiceSoFar(true);
-  hideAccountBalance(true);
-  hideFuture(true);
-  hideAccountContributions(true);
-  return false;
-}
-function growthSelectorGood(submit) {
-  var growthSelector = getGrowthSelector();
-  if (growthSelector == '') return showError('growthSelector', 'Please select how you will use this calculator.');
-  applyGrowthSelectorChoice(growthSelector);
-
-  var choice = 'Both';
-  if (growthSelector == 'balanceOnly') choice = 'Existing Account Balance';
-  if (growthSelector == 'futureOnly') choice = 'Future Contributions';
-  $('#lblAYRgrowthSelector').html(choice);
-  return clearError('growthSelector');
-}
-
-function set_gc(gc) {
-  if (gc == 'balanceOnly') { $('#balanceOnly').prop('checked', true); }
-  if (gc == 'futureOnly') { $('#futureOnly').prop('checked', true); }
-  if (gc == 'bothGrowth') { $('#bothGrowth').prop('checked', true); }
-  growthSelectorGood(submit);
-}
-
-var DIEMS = flatpickr("#DIEMSdate", {
-  altInput: true,
-  altFormat: "F j, Y",
-  dateFormat: "F j, Y",
-  // dateFormat: "Y-m-d",
-  allowInput: false,
-  // defaultDate: [new Date().fp_incr(-30), "today"],
-  minDate: "01/01/1900",
-  maxDate: "today",
-});
-
-function DIEMSdateGood(submit) {
-  var growthSelector = getGrowthSelector();
-  if ((growthSelector == 'balanceOnly') || (growthSelector == '')) { return clearError('DIEMSdate'); }
-  var DIEMSdate = $.trim($('#DIEMSdate').val());
-  $('#lblAYRDIEMSdate').html(DIEMSdate);
-  $('#DIEMSdate').val(DIEMSdate);
-  if (!$('#USBRS').prop('checked')) { return clearError('DIEMSdate'); }
-  if (DIEMSdate.length > 0) { return clearError('DIEMSdate'); }
-  if (submit) { return showError('DIEMSdate', 'Enter DIEMS date.'); }
-  clearError('DIEMSdate');
-  return false;
-}
-
-function yearsServedGood(submit) {
-  var growthSelector = getGrowthSelector();
-  if ((growthSelector == 'balanceOnly') || (growthSelector == '')) { return clearError('yearsServed'); }
-  if (!$('#USBRS').prop('checked')) { return clearError('yearsServed'); }
-
-  var yearsServed = getPosInteger('yearsServed', -1);
-  if (yearsServed > 0) { $('#yearsServed').val(yearsServed); }
-  $('#lblAYRyearsServed').html(yearsServed);
-
-  if (yearsServed < 0) {
-    return showError('yearsServed', "Enter your years served.");
-  }
-  if ((yearsServed < 0) || (yearsServed > 99)) {
-    return showError('yearsServed', "Years Served must be between 0 and 99.");
-  }
-//  if (yearsServed > 26) {
-//    return showError('yearsServed', "Years served more than 26 makes you inelligble for US-BRS.");
-//  }
-
-  testWarning();
-  return clearError('yearsServed');
-}
-
-function clear_warning_icon() { $('#WarnOpContr').hide(); }
-function show_warning_icon() { $('#WarnOpContr').show(); }
-
-function setLimits() {
-  // in CC note
-  $('#catch-up-limit').html(CurrencyFormatted(IRC_catchup_contribution_limit, 'cent'));
-  $('#catch-up-year').html(IRC_limit_year);
-  $('#IRC-limit-cc').html(CurrencyFormatted(IRC_contribution_limit, 'cent'));
-  $('#IRC-limit-year-cc').html(IRC_limit_year);
-
-  // in warning
-  $('#IRC-limit').html(CurrencyFormatted(IRC_contribution_limit, 'cent'));
-  $('#IRC-limit-year').html(IRC_limit_year);
-  return true;
-}
-function testWarning() {
-  if ($('#BP').prop('checked')) { return; }
-  if (getPosInteger('yearsToContribute', -1) <= 0) { return; }
-
-  var annualPay = getPosInteger('annualPay', -1);
-  if (catchupAmount > 0) { $('#catchupAmount').val(catchupAmount); }
-  if ((annualPay < 1) || (annualPay > 1000000)) { return; }
-
-  if ($("#annualPayPercent").val() == '') { return; }
-  var annualPayPercent = parseInt($("#annualPayPercent").val());
-  if ((annualPayPercent < 0) || (annualPayPercent > 99)) { return; }
-
-  // we have good input for the salary fields
-  var contrib = annualPay * (annualPayPercent / 100.0);
-  var maxpcontrib = (100.0 * IRC_contribution_limit) / annualPay;
-
-  $('#total-contribution').html(CurrencyFormatted(contrib, 'cent'));
-  $('#maximum-percent-contribution').html(maxpcontrib.toFixed(2));
-
-  if ((contrib > IRC_contribution_limit) && (getContributionSelector() == 'contributionPercentage')) {
-    $('#contribution-exceeds-maximum').removeClass('hide');
-  } else {
-    $('#contribution-exceeds-maximum').addClass('hide');
-  }
-}
-
-function amountToUseGood(submit) {
-  var growthSelector = getGrowthSelector();
-  if ((growthSelector == 'futureOnly') || (growthSelector == '')) { return clearError('amountToUse'); }
-
-  if ($("#amountToUse").val() == '') {
-    if (submit) {
-      return showError('amountToUse', "You must enter the amount that is currently in your TSP account.");
-    }
-    return clearError('amountToUse');
-  }
-
-  var amountToUse = getPosInteger('amountToUse', -1);
-  if (amountToUse > 0) { $('#amountToUse').val(amountToUse); }
-
-  if (amountToUse <= 0) {
-    return showError('amountToUse', "You must enter the amount that is currently in your TSP account.");
-  }
-  if (amountToUse > 5000000) {
-    return showError('amountToUse', "Existing balance must not be greater than $5,000,000.");
-  }
-
-  $('#lblAYRamountToUse').html(CurrencyFormatted(amountToUse));
-  return clearError('amountToUse');
-}
-
-
-function annualPayGood(submit) {
-  if (noFuture()) { return clearError('annualPay'); }
-
-  if ($("#annualPay").val() == '') {
-    if (submit) {
-      return showError('annualPay', "Enter your annual pay.");
-    }
-    return clearError('annualPay');
-  }
-
-  var annualPay = getPosInteger('annualPay', -1);
-  if (annualPay > 0) { $('#annualPay').val(annualPay); }
-
-  if (annualPay <= 0) {
-    return showError('annualPay', "Enter your annual pay.");
-  }
-  if ((annualPay < 1) || (annualPay > 1000000)) {
-    return showError('annualPay', "Annual pay amount must be between $1 and $1,000,000.");
-  }
-
-  testWarning();
-  $('#lblAYRannualPay').html(CurrencyFormatted(annualPay));
-  return clearError('annualPay');
+// my functions
+function get_pay_freq(paySchedule) {
+  if (paySchedule == 'Biweekly')      return 26.0;
+  if (paySchedule == 'Weekly')        return 52.0;
+  if (paySchedule == 'Semi-monthly')  return 24.0;
+  if (paySchedule == 'Monthly')       return 12.0;
+  return 1.0;
 }
 
 function getPaySchedule() {
@@ -270,216 +61,6 @@ function payScheduleGood(submit) {
   return clearError('paySchedule');
 }
 
-// test if the future options have been selected.  true if no future options
-function noFuture() {
-  var growthSelector = getGrowthSelector();
-  if ((growthSelector == 'balanceOnly') || (growthSelector == '')) { return true; }
-  if ($('#BP').prop('checked')) { return true; }
-  return false;
-}
-function getContributionSelector() {
-  var rs = getRetirementSystem();
-  if ((rs == 'US') || (rs == 'USBRS')) { return 'contributionPercentage'; }
-  if ($('#contributionFixed').prop('checked')) { return 'contributionFixed'; }
-  if ($('#contributionPercentage').prop('checked')) { return 'contributionPercentage'; }
-  return '';
-}
-function contributionSelectorGood(submit) {
-  if (noFuture()) { return clearError('contributionSelector'); }
-  testWarning();
-  var contributionSelector = getContributionSelector();
-  if (contributionSelector == 'contributionFixed') {
-    $('#annualPayFixed-div').removeClass('hide');
-    $('#annualPayPercent-div').addClass('hide');
-    return clearError('contributionSelector');
-  }
-  if (contributionSelector == 'contributionPercentage') {
-    $('#annualPayFixed-div').addClass('hide');
-    $('#annualPayPercent-div').removeClass('hide');
-    return clearError('contributionSelector');
-  }
-  $('#annualPayFixed-div').addClass('hide');
-  $('#annualPayPercent-div').addClass('hide');
-  if (submit) { return showError('contributionSelector', 'Enter type of contribution'); }
-  return clearError('contributionSelector');
-}
-function annualPayFixedGood(submit) {
-  if (noFuture()) { return clearError('annualPayFixed'); }
-  testWarning();
-  var contributionSelector = getContributionSelector();
-  if (contributionSelector == 'contributionPercentage') { return clearError('annualPayFixed'); }
-
-  var annualPay = getPosInteger('annualPay', -1);
-  var annualPayFixed = getPosInteger('annualPayFixed', -1);
-  if (annualPayFixed > 0) { $('#annualPayFixed').val(annualPayFixed); }
-  if (annualPayFixed > annualPay) {
-    return showError('annualPayFixed', "Fixed contribution amount must be less than annual pay.");
-  }
-
-  if (annualPayFixed <= 0) {
-    return showError('annualPayFixed', "Please enter the fixed amount of your annual pay you would like to save.");
-  }
-  if ((annualPayFixed < 1) || (annualPayFixed > 1000000)) {
-    return showError('annualPayFixed', "Fixed contribution amount must be between $1 and $1,000,000.");
-  }
-
-  return clearError('annualPayFixed');
-}
-function annualPayPercentGood(submit) {
-  if (noFuture()) { return clearError('annualPayPercent'); }
-  testWarning();
-  var contributionSelector = getContributionSelector();
-  if (contributionSelector == 'contributionFixed') { return clearError('annualPayPercent'); }
-
-  if ($("#annualPayPercent").val() == '') {
-    if (submit) {
-      return showError('annualPayPercent', "Please enter the percent of your annual pay you would like to save.");
-    }
-    return clearError('annualPayPercent');
-  }
-  var annualPayPercent = getPosInteger('annualPayPercent', -1);
-  if (annualPayPercent >= 0) { $('#annualPayPercent').val(annualPayPercent); }
-
-  if ((annualPayPercent < 0) || (annualPayPercent > 99)) {
-    return showError('annualPayPercent', "Annual percent to save should be between 0% and 99%.");
-  }
-
-  $('#lblAYRannualPayPercent').html(annualPayPercent + '%');
-  return clearError('annualPayPercent');
-}
-
-function annualPayIncreasePercentGood(submit) {
-  var growthSelector = getGrowthSelector();
-  if ((growthSelector == 'balanceOnly') || (growthSelector == '')) { return clearError('annualPayIncreasePercent'); }
-  if ($('#BP').prop('checked')) { return clearError('annualPay'); }
-
-  if ($("#annualPayIncreasePercent").val() == '') {
-    // return showError('annualPayIncreasePercent', "Please enter your estimated annual pay increase.");
-    $('#lblAYRannualPayIncreasePercent').html('0.00%');
-    return clearError('annualPayIncreasePercent');
-  }
-  var annualPayIncreasePercent = getPosFloat('annualPayIncreasePercent', 0.0);
-
-  // if ((annualPayIncreasePercent < 0.0) || (annualPayIncreasePercent > 15.0)) {
-  if (annualPayIncreasePercent > 15.0) {
-    return showError('annualPayIncreasePercent', "Salary increase should be between 0% and 15%.");
-  }
-
-  $("#annualPayIncreasePercent").val((annualPayIncreasePercent).toFixed(2));
-  $('#lblAYRannualPayIncreasePercent').html(annualPayIncreasePercent.toFixed(2)+'%');
-  return clearError('annualPayIncreasePercent');
-}
-
-function catchupAmountGood(submit) {
-  var growthSelector = getGrowthSelector();
-  if ((growthSelector == 'balanceOnly') || (growthSelector == '')) { return clearError('catchupAmount'); }
-  if ($('#BP').prop('checked')) { return clearError('catchupAmount'); }
-
-  var catchupAmount = getPosInteger('catchupAmount', 0);
-  if (catchupAmount > 0) { $('#catchupAmount').val(catchupAmount); }
-
-  // if (catchupAmount <= 0) {
-  //   return showError('catchupAmount', "Enter your catch up amount.");
-  // }
-  // if ((catchupAmount < 1) || (catchupAmount > IRC_catchup_contribution_limit)) {
-  if (catchupAmount > IRC_catchup_contribution_limit) {
-    return showError('catchupAmount', "Catch-up contributions cannot exceed "
-      + CurrencyFormatted(IRC_catchup_contribution_limit) + " for " + IRC_limit_year + ".");
-  }
-
-  $('#lblAYRcatchupAmount').html(CurrencyFormatted(catchupAmount));
-  return clearError('catchupAmount');
-}
-
-// test relation to each other
-function yearsContribAndGo() {
-  var growthSelector = getGrowthSelector();
-  if ((growthSelector == 'balanceOnly') || (growthSelector == '')) { return true; }
-  var yearsToGo = getPosInteger('yearsToGo', -1);
-  var yearsToContribute = getPosInteger('yearsToContribute', -1);
-
-  if (yearsToContribute > yearsToGo) {
-    showError('yearsToContribute',
-        "The number of years you plan to contribute to the plan must be less than or equal to the number of years until you begin withdrawing from your TSP account.");
-    return showError('yearsToGo',
-        "The number of years until you begin withdrawing from your TSP account must be greater than or equal to the number of years you plan to contribute to the plan.");
-  }
-  return true;
-}
-
-function checkYearsToContribute() {
-  var growthSelector = getGrowthSelector();
-  if ((growthSelector == 'balanceOnly') || (growthSelector == '')) { return clearError('yearsToContribute'); }
-  var yearsToContribute = getPosInteger('yearsToContribute', -1);
-  if (yearsToContribute > 0) { $('#yearsToContribute').val(yearsToContribute); }
-
-  if (yearsToContribute <= 0) {
-    return showError('yearsToContribute', "The number of years you plan to contribute must be greater than 0.");
-  }
-
-  if (yearsToContribute > 99) {
-    return showError('yearsToContribute', "The number of years you expect to contribute must not be greater than 99.");
-  }
-
-  $('#lblAYRyearsToContribute').html(yearsToContribute);
-  return clearError('yearsToContribute');
-}
-
-function yearsToContributeGood(submit) {
-  var growthSelector = getGrowthSelector();
-  if ((growthSelector == 'balanceOnly') || (growthSelector == '')) { return clearError('yearsToContribute'); }
-  if ($('#BP').prop('checked')) { return clearError('yearsToContribute'); }
-
-  if (checkYearsToContribute() == false) return false;
-
-  if (getPosInteger('yearsToGo', -1) < 0) return true;
-
-  if (checkYearsToGo() == false) return false;
-
-  return yearsContribAndGo();
-}
-
-
-
-function checkYearsToGo() {
-  var yearsToGo = getPosInteger('yearsToGo', -1);
-  if (yearsToGo > 0) { $('#yearsToGo').val(yearsToGo); }
-  if (yearsToGo <= 0) {
-    return showError('yearsToGo', "The number of years you expect to leave your money in the TSP account must be greater than 0.");
-  }
-  if (yearsToGo > 99) {
-    return showError('yearsToGo', "The number of years you expect to leave your money in the TSP account must not be greater than 99.");
-  }
-  $('#lblAYRyearsToGo').html(yearsToGo);
-  return clearError('yearsToGo');
-}
-
-function yearsToGoGood(submit) {
-  if (checkYearsToGo() == false) return false;
-
-  if (getPosInteger('yearsToContribute', -1) < 0) return true;
-
-  if (checkYearsToContribute() == false) return false;
-
-  return yearsContribAndGo();
-}
-
-function rateOfReturnGood(submit) {
-  if ($("#rateOfReturn").val() == '') {
-    if (submit) { return showError('rateOfReturn', "Please enter your expected rate of return."); }
-    return clearError('rateOfReturn');
-  }
-  var rateOfReturn = getPosFloat('rateOfReturn', -1.0);
-  if ((rateOfReturn < 0.0) || (rateOfReturn > 99.0)) {
-    return showError('rateOfReturn', "Rate of Return should be between 0% and 99%.");
-  }
-  rateOfReturn = rateOfReturn.toFixed(2);
-  $("#rateOfReturn").val(rateOfReturn);
-  $('#lblAYRrateOfReturn').html(rateOfReturn + '%');
-  $('#annual-rate').html(rateOfReturn + '%');
-  return clearError('rateOfReturn');
-}
-
 function showWorksheet(idx) {
   $('#panel-'+idx).addClass('hide');
   $('#panel-'+idx+'-worksheet').removeClass('hide');
@@ -496,10 +77,201 @@ function clearWorksheet(idx) {
 
 function saveWorkseetTotals(idx) {
   // sum values, copy to panel 2
+  var i = 0;
+  var before = 0;
+  var after = 0;
+  for (i = 1; i <= 4; i++) { before += getPosInteger('pre'+i, 0); }
+  for (i = 1; i <= 19; i++) { after += getPosInteger('post'+i, 0); }
 
-  $('#beforeDeduction').val(100);
-  $('#afterDeduction').val(150);
+  $('#beforeDeduction').val(before);
+  $('#afterDeduction').val(after);
   hideWorksheet(idx);
 }
+
+function setAnnualGrossPay() {
+  $('#annualGrossPay').html("");
+  var pay_freq = get_pay_freq($('#paySchedule').val());
+  var monthly = getPosInteger('grossPay', -1);
+  if (monthly < 0) { return false; }
+  if (pay_freq < 5) { return false; }
+  // var pay = "[" + CurrencyFormatted(monthly * pay_freq) + "/yr]";
+  var pay = CurrencyFormatted(monthly * pay_freq) + " per year";
+  $('#annualGrossPay').html(pay);
+  return true;
+}
+
+function grossPayGood(submit) {
+  if (!submit) {
+    if ($("#grossPay").val() == '') { return clearError('grossPay'); }
+  }
+  var grossPay = getPosInteger('grossPay', -1);
+  if (grossPay > 0) { $('#grossPay').val(grossPay); }
+
+  setAnnualGrossPay();
+  if (grossPay < 0.0) {
+    return showError('grossPay', "Enter your gross pay per paycheck.");
+  }
+  if ((grossPay < 1.0) || (grossPay > 100000.0)) {
+    return showError('grossPay', "Gross Pay amount must be between $1 and $100,000.");
+  }
+
+  clearError('grossPay');
+  //$('#lblAYRgrossPay').html(CurrencyFormatted(grossPay));
+  return sumWithholdingGood(submit);
+}
+
+
+function set_taxStatus(status) {
+  $('#taxStatusSingle').attr('checked', false);
+  $('#taxStatusMarried').attr('checked', false);
+  $('#taxStatusSingleRate').attr('checked', false);
+
+  if (status == 'S') { $('#taxStatusSingle').attr('checked', true); }
+  if (status == 'M') { $('#taxStatusMarried').attr('checked', true); }
+  if (status == 'MS') { $('#taxStatusSingleRate').attr('checked', true); }
+}
+function getTaxStatus() {
+  if ($('#taxStatusSingle').prop('checked')) { return 'S'; }
+  if ($('#taxStatusMarried').prop('checked')) { return 'M'; }
+  if ($('#taxStatusSingleRate').prop('checked')) { return 'MS'; }
+  return '';
+}
+
+function taxStatusGood(submit) {
+  var status = getTaxStatus();
+
+  if (status == 'S') {
+    $('#taxStatusString').val('S');
+    //$('#lblAYRtaxStatus').html('Single');
+    return clearError('taxStatus');
+  }
+  if (status == 'M') {
+    $('#taxStatusString').val('M');
+    //$('#lblAYRtaxStatus').html('Married');
+    return clearError('taxStatus');
+  }
+  if (status == 'MS') {
+    $('#taxStatusString').val('MS');
+    //$('#lblAYRtaxStatus').html('Married, Single Rate');
+    return clearError('taxStatus');
+  }
+
+  return showError('taxStatus', "Select your tax status.");
+}
+
+function payScheduleGood(submit) {
+  $('#lastPaySchedule').val($('#paySchedule').val());
+  //$('#lblAYRpaySchedule').html($('#paySchedule').val());
+  setAnnualGrossPay();
+  if ($('#paySchedule').val() == 'Select') {
+    return showError('paySchedule', "Select your pay schedule.");
+  }
+
+  return clearError('paySchedule');
+}
+
+function fedAllowancesGood(submit) {
+  if (!submit) {
+    if ($("#fedAllowances").val() == '') { return clearError('fedAllowances'); }
+  }
+  var fedAllowances = getPosInteger('fedAllowances', -1);
+  if (fedAllowances > 0) { $('#fedAllowances').val(fedAllowances); }
+
+  var fedAllowances = getPosInteger('fedAllowances', -1);
+  if (fedAllowances < 0) {
+    return showError('fedAllowances', "Enter your total federal allowances.");
+  }
+  if (fedAllowances > 99) {
+    return showError('fedAllowances', "Federal allowances must be less than 100.");
+  }
+
+
+  //$('#lblAYRfedAllowances').html(parseFloat(0+$('#fedAllowances').val()));
+  return clearError('fedAllowances');
+}
+
+function additionalWithholdingGood(submit) {
+  if (!submit) {
+    if ($("#additionalWithholding").val() == '') { return clearError('additionalWithholding'); }
+  }
+  var additionalWithholding = getPosInteger('additionalWithholding', -1);
+  if (additionalWithholding > 0) { $('#additionalWithholding').val(additionalWithholding); }
+
+  if (additionalWithholding < 0) {
+    return showError('additionalWithholding', "Enter your additional withholding amount.");
+  }
+  if (additionalWithholding > 10000) {
+    return showError('additionalWithholding', "Additional withholding should be no more than $10,000.");
+  }
+
+  //$('#lblAYRadditionalWithholding').html(CurrencyFormatted(parseFloat($('#additionalWithholding').val())));
+  return clearError('additionalWithholding');
+}
+function beforeDeductionGood(submit) {
+  if (!submit) {
+    if ($("#beforeDeduction").val() == '') { return clearError('beforeDeduction'); }
+  }
+  var beforeDeduction = getPosInteger('beforeDeduction', -1);
+  if (beforeDeduction > 0) { $('#beforeDeduction').val(beforeDeduction); }
+
+  if (beforeDeduction < 0) {
+    return showError('beforeDeduction', "Enter your total total before tax deductions.");
+  }
+  if (beforeDeduction > 10000) {
+    return showError('beforeDeduction', "Total before tax deductions should be no more than $10,000.");
+  }
+
+    //$('#lblAYRbeforeDeduction').html(CurrencyFormatted(parseFloat($('#beforeDeduction').val())));
+  return clearError('beforeDeduction');
+}
+function afterDeductionGood(submit) {
+  if (!submit) {
+    if ($("#afterDeduction").val() == '') { return clearError('afterDeduction'); }
+  }
+  var afterDeduction = getPosInteger('afterDeduction', -1);
+  if (afterDeduction > 0) { $('#afterDeduction').val(afterDeduction); }
+
+  if (afterDeduction < 0) {
+    return showError('afterDeduction', "Enter your total after tax deductions.");
+  }
+  if (afterDeduction > 10000) {
+    return showError('afterDeduction', "Total after tax deductions should be no more than $10,000.");
+  }
+
+  //$('#lblAYRafterDeduction').html(CurrencyFormatted(parseFloat($('#afterDeduction').val())));
+  return clearError('afterDeduction');
+}
+
+function sumWithholdingGood(submit) {
+  var good = afterDeductionGood(submit) & beforeDeductionGood(submit) & additionalWithholdingGood(submit);
+  console.log('good is '+good);
+  if (!good) { return false; }
+
+  var amts = sumWithholding(0, 0);
+  var msg1 = "Additional tax withholding must be less than your gross pay.";
+  var msg2 = "The total amount of your deductions must be less than your gross pay.";
+
+  if ((amts[0]-amts[5]) < 0.0) {
+    // showError('grossPay', msg);
+    testError((amts[4] <= 0.0), 'afterDeduction', msg2);
+    testError((amts[3] <= 0.0), 'beforeDeduction', msg2);
+    testError((amts[2] <= 0.0), 'additionalWithholding', msg1);
+    return false;
+  }
+  return true;
+}
+
+function deductionGood(field, submit) {
+  if ($("#"+field).val() == '') { return clearError(field); }
+  var fieldVal = getPosInteger(field, -1);
+  if (fieldVal > 0) { $('#'+field).val(fieldVal); }
+
+  if (fieldVal < 0) {
+    return showError(field, "Enter the deduction amount.");
+  }
+
+  return clearError(field);
+}
+
 -->
 </script>

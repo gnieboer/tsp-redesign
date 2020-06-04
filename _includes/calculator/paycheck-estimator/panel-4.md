@@ -47,7 +47,7 @@ Results NAME panel (3) for CALC.
     <tr>
       <td colspan="3" class="compare-two"><div class="flex space-between"><span>Contributions summary</span> <a href="javascript:showPanel(3);">Adjust <i class="fal fa-sliders-v"></i></a></div></td>
     </tr>
-{% include {{tableRow}} title="Total Amount of Your Contribution(s)" rowID="totalContributions" %}
+{% include {{tableRow}} trID="partContrib" title="Total Amount of Your Contribution(s)" rowID="totalContributions" %}
 {% include {{tableRow}} trID="autoContrib" title="Agency Automatic (1%) Contribution<sup>1</sup>" rowID="agencyAutomatic" %}
 {% include {{tableRow}} trID="matchContrib" title="Agency Matching Contribution<sup>1</sup>" rowID="agencyMatchingContributions" %}
 {% include {{tableRow}} trClass="emphasis" title="Total Contributions Increase Your TSP Account By" rowID="TSPIncrease" %}

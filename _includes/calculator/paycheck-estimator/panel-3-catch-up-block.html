@@ -3,7 +3,7 @@
 {% assign idx = include.idx | default: 1 %}
 {% assign side = include.side | default: 'L' %}
 {% assign outerID = 'scenario' | append: option | append: type %}
-{% assign checkAmounts = "check_amounts(true, 'ok');" %}
+{% assign checkAmounts = "check_amounts(false);" %}
 {% assign divExplain = include.divExplain | default: " " %}
 {% assign CCprompt = include.prompt | default: 'forgot to set prompt' %}
 

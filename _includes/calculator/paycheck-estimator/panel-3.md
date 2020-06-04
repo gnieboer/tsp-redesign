@@ -12,6 +12,10 @@ Name middle panels (2) for CALC.
 {% capture trad_explain %}Traditional contributions come out of your pay **before** taxes are calculated; you pay taxes on these contributions and their earnings when you withdraw them.{% endcapture %}
 {% capture roth_explain %}Roth contributions come out of your pay **after** taxes are calculated;  you pay no taxes on these contributions when you withdraw them. Roth earnings are also tax-free when withdrawn, as long as you meet the IRS requirements to qualify.{% endcapture %}
 {% capture catch_explain %}Only for participants who are age 50 or older. You must first exceed the elective deferral limit ($19,500.00 in 2020) to make catch-up contributions.{% endcapture %}
+{% capture catch_explain1 %}{{catch_explain}}
+<p>Your current traditional and Roth contributions total <span id="totalTR1">$0</span> annually.</p>{% endcapture %}
+{% capture catch_explain2 %}{{catch_explain}}
+<p>Your current traditional and Roth contributions total <span id="totalTR2">$0</span> annually.</p>{% endcapture %}
 
 <section id="panel-{{ panelID }}" class="calculator-panel contribution-election" style="{{ hide }}"  markdown="1">
 <h2>TSP Contributions Per Paycheck</h2>
@@ -25,7 +29,7 @@ Name middle panels (2) for CALC.
   <h3>Scenario 1 (required)</h3><!-- Scenario 1, Traditional contributions -->
 {% include {{tradroth}} side="L" type='trad' option=1 idx=1 divExplain=trad_explain prompt=trad_glossary %}
 {% include {{tradroth}} side="L" type='roth' option=1 idx=5 divExplain=roth_explain prompt=roth_glossary %}
-{% include {{catchup}} side="L" type='catch' option=1 idx=9 divExplain=catch_explain prompt=catch_glossary %}
+{% include {{catchup}} side="L" type='catch' option=1 idx=9 divExplain=catch_explain1 prompt=catch_glossary %}
 </div><!-- end Scenario 1 -->
 
 <!-- Scenario 2 -->
@@ -34,7 +38,7 @@ Name middle panels (2) for CALC.
   <!-- Scenario 2, Traditional contributions -->
 {% include {{tradroth}} side="R" type='trad' option=2 idx=1 divExplain=trad_explain prompt=trad_glossary %}
 {% include {{tradroth}} side="R" type='roth' option=2 idx=5 divExplain=roth_explain prompt=roth_glossary %}
-{% include {{catchup}} side="R" type='catch' option=2 idx=9 divExplain=catch_explain prompt=catch_glossary %}
+{% include {{catchup}} side="R" type='catch' option=2 idx=9 divExplain=catch_explain2 prompt=catch_glossary %}
 </div><!-- end Scenario 2 -->
 
 </div><!-- end grid -->

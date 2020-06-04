@@ -61,6 +61,7 @@ function clearError1(element) {
   $('#'+element+'-label').removeClass("usa-input-error-label");
   $('#'+element+'-error-message').removeClass("usa-input-error-message");
   $('#'+element+'-error-message').html('');
+console.log('clearError for ['+element+']: ');
   document.getElementById(element).setAttribute("aria-describedby", '');
   return true;
 }
@@ -70,7 +71,7 @@ function showError(element, message) {
   $('#'+element+'-label').addClass("usa-input-error-label");
   // $('#'+element+'-error-message').addClass("usa-input-error-message");
   $('#'+element+'-error-message').html(message);
-  console.log('error is '+message)
+console.log('error for ['+element+']: '+message);
   // document.getElementById(element).setAttribute("aria-describedby", element+'-error-message');
   gotoAnchor(element+'-anchor');
   return false;
@@ -84,6 +85,35 @@ function clearError(element) {
   // document.getElementById(element).setAttribute("aria-describedby", '');
   return true;
 }
+function testError(test, id, msg) {
+    if (test) { clearError(id); } else { showError(id, msg); }
+}
+
+var warningClass = "bgYellow";
+function isWarning(element) {
+  if ($('#'+element).hasClass(warningClass)) { return true; }
+  return false;
+}
+function showWarning(element, message) {
+  $('#'+element+'-div').addClass("usa-alert-warning");
+  $('#'+element+'-label').addClass("usa-alert-warning-label");
+  // $('#'+element+'-error-message').addClass("usa-input-error-message");
+  $('#'+element+'-error-message').html(message);
+console.log('error for ['+element+']: '+message);
+  // document.getElementById(element).setAttribute("aria-describedby", element+'-error-message');
+  gotoAnchor(element+'-anchor');
+  return false;
+}
+function clearWarning(element) {
+  // $('#'+element).removeClass("usa-input-error"); // aria-describedby="input-error-message"
+  $('#'+element+'-div').removeClass("usa-alert-warning");
+  $('#'+element+'-label').removeClass("usa-alert-warning-label");
+  // $('#'+element+'-error-message').removeClass("usa-input-error-message");
+  $('#'+element+'-error-message').html('');
+  // document.getElementById(element).setAttribute("aria-describedby", '');
+  return true;
+}
+
 
 function gotoAnchor(anchor) { location.replace("#" + anchor); }
 function getPosFloat(id, def) {

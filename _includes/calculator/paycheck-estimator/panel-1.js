@@ -32,8 +32,21 @@ function rsShowHide(rs) {
 
   if ((rs == 'FERS') || (rs == 'CSRS')) {
     hidePaySchedule(false);
+    $('#agencyFootnote').removeClass('hide');
+    $('#serviceFootnote').addClass('hide');
   } else {
     hidePaySchedule(true);
+    $('#agencyFootnote').addClass('hide');
+    $('#serviceFootnote').removeClass('hide');
+  }
+  if ((rs == 'FERS') || (rs == 'URBRS')) {
+    $('#partContrib').removeClass('hide');
+    $('#autoContrib').removeClass('hide');
+    $('#matchContrib').removeClass('hide');
+  } else {
+    $('#partContrib').addClass('hide');
+    $('#autoContrib').addClass('hide');
+    $('#matchContrib').addClass('hide');
   }
   return;
 }

@@ -279,12 +279,6 @@ function payScheduleGood(forceValue) {
   return clearError('paySchedule');
 }
 
-/*
-function testError(test, id, msg) {
-    if (test) { clearError(id); } else { showError(id, msg); }
-}
-*/
-
 // get loan rate
 function getLoanRate() {
   $('#loan-rate').html('...');
