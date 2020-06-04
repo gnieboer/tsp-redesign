@@ -121,6 +121,28 @@ div.usa-input-error {
   }
 }
 
+// Warning HANDLING
+
+div.usa-input-error {
+  &.warning {
+    border-left: 4px solid $color-gold;
+    background-color: $color-gold-lightest;
+
+    .usa-input-error-message {
+      color: $color-base;
+      font-style: italic;
+      font-weight: $normal;
+    }
+
+    input {
+      border: 3px solid $color-gold;
+      // &:focus {
+      //   border: 3px solid $color-error;
+      // }
+    }
+  }
+}
+
 // FORMS & RESOURCES
 
 input {
