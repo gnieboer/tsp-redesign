@@ -6,6 +6,37 @@
   }
 }
 
+section.charts {
+
+  #chart-1 {
+    table {
+      width: 100%;
+      table-layout: fixed;
+      td[colspan] {
+        text-align: center;
+      }
+    }
+  }
+
+  #chart-2 {
+    table {
+      width: 100%;
+      table-layout: fixed;
+      colgroup {
+        width: 12rem;
+      }
+      th {
+        text-align: center;
+      }
+      td {
+        text-align: right;
+      }
+    }
+  }
+
+}
+
+
 // EXPAND/COLLAPSE TABLE button
 @media only screen and (max-width: #{$large-screen}) {
   .table-view {
