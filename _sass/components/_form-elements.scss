@@ -143,6 +143,41 @@ div.usa-input-error {
   }
 }
 
+div.usa-input-warning {
+    border-left: 4px solid $color-gold;
+    background-color: $color-gold-lightest;
+    margin-top: 3rem;
+    padding-bottom: 0.8rem;
+    padding-left: 1.5rem;
+    padding-top: 0.8rem;
+    position: relative;
+    right: 1.9rem;
+
+    label {
+      margin-top: 0;
+
+      &.usa-input-warning-label {
+        display: block;
+        font-size: 1.7rem;
+        font-weight: $bold;
+      }
+    }
+
+    .usa-input-warning-message {
+      color: $color-base;
+      display: block;
+      font-size: 1.7rem;
+      font-weight: $normal;
+      font-style: italic;
+      padding-bottom: 3px;
+      padding-top: 3px;
+    }
+
+    input {
+      border: 3px solid $color-gold;
+    }
+}
+
 // FORMS & RESOURCES
 
 input {
