@@ -8,6 +8,7 @@ scripts:
   - /assets/js/jquery.min.js
   - /assets/js/responsive-comparison-table.js
 permalink: /calculators/paycheck-estimator/index-static.html
+
 calculator-name:
 progress-steps: [Retirement system,Paycheck information,Contribution election,Results]
 panel-names:
@@ -16,6 +17,123 @@ redirect_from:
 ---
 
 Static code version.
+
+<section id="paycheck-estimator-section" class="paycheck-estimator-table">
+  <div id="paycheck-estimator-table" class="table-side-scroll">
+
+<!-- DAV, lines 25-43 ... <table> - </thead> -->
+  <table class="paycheck-estimator-table">
+
+  <col class="column-width">
+  <colgroup span="2"></colgroup>
+  <colgroup span="2"></colgroup>
+
+  <thead>
+    <tr>
+      <th scope="col" rowspan="2">Year</th>
+      <th colspan="2" scope="colgroup">Scenario 1</th>
+      <th colspan="2" scope="colgroup" >Scenario 2</th>
+    </tr>
+    <tr class="second-level">
+      <th scope="col">Traditional</th>
+      <th scope="col">Roth</th>
+      <th scope="col">Traditional</th>
+      <th scope="col">Roth</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr>
+      <th scope="row">0</th>
+      <td>$1,200.00</td>
+      <td>$130.00</td>
+      <td>$1,800.00</td>
+      <td>$0.00</td>
+    </tr>
+    <tr>
+<th scope="row">1</th><td>$1,272.00</td><td>$137.80</td><td>$1,908.00</td><td>$0.00</td>    </tr>
+    <tr>
+<th scope="row">2</th><td>$1,348.32</td><td>$146.07</td><td>$2,022.48</td><td>$0.00</td>    </tr>
+    <tr>
+<th scope="row">3</th><td>$1,429.22</td><td>$154.83</td><td>$2,143.83</td><td>$0.00</td>    </tr>
+    <tr>
+<th scope="row">4</th><td>$1,514.97</td><td>$164.12</td><td>$2,272.46</td><td>$0.00</td>    </tr>
+    <tr>
+<th scope="row">5</th><td>$1,605.87</td><td>$173.97</td><td>$2,408.81</td><td>$0.00</td>    </tr>
+    <tr>
+<th scope="row">6</th><td>$1,702.22</td><td>$184.41</td><td>$2,553.34</td><td>$0.00</td>    </tr>
+    <tr>
+<th scope="row">7</th><td>$1,804.35</td><td>$195.47</td><td>$2,706.54</td><td>$0.00</td>    </tr>
+    <tr>
+<th scope="row">8</th><td>$1,912.61</td><td>$207.20</td><td>$2,868.93</td><td>$0.00</td>    </tr>
+    <tr>
+<th scope="row">9</th><td>$2,027.37</td><td>$219.63</td><td>$3,041.07</td><td>$0.00</td>    </tr>
+    <tr>
+<th scope="row">10</th><td>$2,149.01</td><td>$232.81</td><td>$3,223.53</td><td>$0.00</td>    </tr>
+    <tr>
+<th scope="row">11</th><td>$2,277.95</td><td>$246.78</td><td>$3,416.94</td><td>$0.00</td>    </tr>
+    <tr>
+<th scope="row">12</th><td>$2,414.63</td><td>$261.59</td><td>$3,621.96</td><td>$0.00</td>    </tr>
+    <tr>
+<th scope="row">13</th><td>$2,559.51</td><td>$277.29</td><td>$3,839.28</td><td>$0.00</td>    </tr>
+    <tr>
+<th scope="row">14</th><td>$2,713.08</td><td>$293.93</td><td>$4,069.64</td><td>$0.00</td>    </tr>
+    <tr>
+<th scope="row">15</th><td>$2,875.86</td><td>$311.57</td><td>$4,313.82</td><td>$0.00</td>    </tr>
+    <tr>
+<th scope="row">16</th><td>$3,048.41</td><td>$330.26</td><td>$4,572.65</td><td>$0.00</td>    </tr>
+    <tr>
+<th scope="row">17</th><td>$3,231.31</td><td>$350.08</td><td>$4,847.01</td><td>$0.00</td>    </tr>
+    <tr>
+<th scope="row">18</th><td>$3,425.19</td><td>$371.08</td><td>$5,137.83</td><td>$0.00</td>    </tr>
+    <tr>
+<th scope="row">19</th><td>$3,630.70</td><td>$393.34</td><td>$5,446.10</td><td>$0.00</td>    </tr>
+    <tr>
+<th scope="row">20</th><td>$3,848.54</td><td>$416.94</td><td>$5,772.87</td><td>$0.00</td>    </tr>
+    <tr>
+<th scope="row">21</th><td>$4,079.45</td><td>$441.96</td><td>$6,119.24</td><td>$0.00</td>    </tr>
+    <tr>
+<th scope="row">22</th><td>$4,324.22</td><td>$468.48</td><td>$6,486.39</td><td>$0.00</td>    </tr>
+    <tr>
+<th scope="row">23</th><td>$4,583.67</td><td>$496.59</td><td>$6,875.57</td><td>$0.00</td>    </tr>
+    <tr>
+<th scope="row">24</th><td>$4,858.69</td><td>$526.39</td><td>$7,288.10</td><td>$0.00</td>    </tr>
+    <tr>
+<th scope="row">25</th><td>$5,150.21</td><td>$557.97</td><td>$7,725.39</td><td>$0.00</td>    </tr>
+    <tr>
+<th scope="row">26</th><td>$5,459.22</td><td>$591.45</td><td>$8,188.91</td><td>$0.00</td>    </tr>
+    <tr>
+<th scope="row">27</th><td>$5,786.77</td><td>$626.94</td><td>$8,680.24</td><td>$0.00</td>    </tr>
+    <tr>
+<th scope="row">28</th><td>$6,133.98</td><td>$664.56</td><td>$9,201.05</td><td>$0.00</td>    </tr>
+    <tr>
+<th scope="row">29</th><td>$6,502.02</td><td>$704.43</td><td>$9,753.11</td><td>$0.00</td>    </tr>
+    <tr>
+<th scope="row">30</th><td>$6,892.14</td><td>$746.70</td><td>$10,338.30</td><td>$0.00</td>    </tr>
+    <tr>
+<th scope="row">31</th><td>$7,305.67</td><td>$791.50</td><td>$10,958.60</td><td>$0.00</td>    </tr>
+    <tr>
+<th scope="row">32</th><td>$7,744.01</td><td>$838.99</td><td>$11,616.12</td><td>$0.00</td>    </tr>
+    <tr>
+<th scope="row">33</th><td>$8,208.65</td><td>$889.33</td><td>$12,313.09</td><td>$0.00</td>    </tr>
+    <tr>
+<th scope="row">34</th><td>$8,701.17</td><td>$942.69</td><td>$13,051.88</td><td>$0.00</td>    </tr>
+    <tr>
+<th scope="row">35</th><td>$9,223.24</td><td>$999.25</td><td>$13,834.99</td><td>$0.00</td>    </tr>
+    <tr>
+<th scope="row">36</th><td>$9,776.63</td><td>$1,059.20</td><td>$14,665.09</td><td>$0.00</td>    </tr>
+    <tr>
+<th scope="row">37</th><td>$10,363.23</td><td>$1,122.75</td><td>$15,545.00</td><td>$0.00</td>    </tr>
+    <tr>
+<th scope="row">38</th><td>$10,985.02</td><td>$1,190.12</td><td>$16,477.70</td><td>$0.00</td>    </tr>
+    <tr>
+<th scope="row">39</th><td>$11,644.12</td><td>$1,261.53</td><td>$17,466.36</td><td>$0.00</td>    </tr>
+    <tr>
+<th scope="row">40</th><td>$12,342.77</td><td>$1,337.22</td><td>$18,514.34</td><td>$0.00</td>    </tr>
+  </tbody>
+</table>
+</div>
+  </section>
 
 <form>
 
