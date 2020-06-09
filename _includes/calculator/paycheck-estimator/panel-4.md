@@ -6,7 +6,8 @@ Results NAME panel (3) for CALC.
 {% assign gridClass2 = include.gridClass2 | default: 'results' %}
 {% if include.hide == 1 %} {% assign hide = 'display: none;' %} {% endif %}
 
-<section id="panel-{{ panelID }}" class="calculator-panel comparison paycheck" style="{{ hide }}" markdown="1">
+<section id="panel-{{ panelID }}" class="calculator-panel paycheck" style="{{ hide }}" markdown="1">
+<section id="comparison-section" class="calculator-panel comparison paycheck" markdown="1">
 
 <h2>TSP Contributions Per Paycheck</h2>
 
@@ -53,7 +54,9 @@ Results NAME panel (3) for CALC.
 {% include {{tableRow}} trClass="emphasis" title="Total Contributions Increase Your TSP Account By" rowID="TSPIncrease" %}
   </tbody>
 </table>
+</section> <!-- end of comparison-section -->
 
+<section id="results-section" class="calculator-panel paycheck" markdown="1">
 <ul class="usa-accordion icons">
 <!-- PROJECTED GROWTH -->
 {% include calculator/accordion-start.html expanded=true divID='projected-growth'
@@ -78,13 +81,29 @@ Results NAME panel (3) for CALC.
   </li>
 </ul>
 </fieldset></div>
-{% assign chartName = 'savings-grow' %}
+{% assign chartName = 'paycheck-estimator' %}
 <div id="show-data-graph" class="hide">
+<!-- DONALD:  This is the zoom feature -->
+<div class="balanceAfter" id="balanceAfter">
+  <label for="option12year">Growth of a single contribution after</label>
+  <select id="option12year">
+{% for i in (1..40) %}
+    <option value="{{i}}">{{i}}</option>
+{% endfor %}
+  </select>
+  years
+  <span id="option12zoom">
+    <a id="unzoomedSpan" class="zoom-link">Zoom Graph </a><i id="zoomTextImg" class="fal fa-search" ></i>
+    <span id="zoomedSpan" class="zoomed hidden">Zoomed</span>
+  </span>
+</div>
+<!-- DONALD:  This is the end of the zoom feature -->
   <div id="chartResult">GRAPH</div>
 </div>
+<!-- DONALD table HTML is here -->
 <div id="show-data-table" class="usa-width-one-whole" markdown="1">
   <section id="{{chartName}}-section" class="{{chartName}}-table">
-    <div id="{{chartName}}-table" class="table-side-scroll"></div>
+    <div id="{{chartName}}-table" class="table-side-scroll">TABLE</div>
   </section>
 </div> <!-- END div.usa-width-one-whole -->
 <div id="show-data-footnote" class="usa-width-one-whole"></div>
@@ -102,7 +121,8 @@ Results NAME panel (3) for CALC.
 
 {% include calculator/button-block.html panelID=panelID prev=3 print=1 %}
 
-</section>
+</section> <!-- end of results-section -->
+</section> <!-- end of panel -->
 
 
 DISCLAIMER: This calculator is provided for informational purposes only. It is not intended to be used as an investment advisory tool or as a guarantee of a final account balance. Please note that the results shown at the end of this calculator assume that elected contributions are made for the entire year. Results do not take into account the following Internal Revenue Code (IRC) limits: <span data-term="Elective Deferral Limit" class="js-glossary-toggle term term-end">elective deferral</span>, <span data-term="Section 415(c) Limit" class="js-glossary-toggle term term-end">section 415(c)</span>, and <span data-term="Catch-Up Contribution Limit" class="js-glossary-toggle term term-end">catch-up contribution</span>. These limits, which may change every year, determine the maximum annual amount that you and/or your employing agency can contribute to the TSP on your behalf. You can view the current year's limits on the TSP website under [News and resources]({{ site.baseurl }}/news-and-resources/).

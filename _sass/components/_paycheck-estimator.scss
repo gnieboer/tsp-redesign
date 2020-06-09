@@ -67,3 +67,123 @@ section.calculator-panel.comparison.paycheck { // Panel 4: Results
     }
   }// END div.expected-annual-return
 }
+
+// DAV WAS HERE
+section {
+
+  &.paycheck-estimator-table { // Width for "sticky" left-column header
+    margin-top: 1rem;
+
+    .column-width {
+      width: 6rem;
+    }
+
+    // "STICKY" LEFT-COLUMN HEADER: Share price history & Rates of return
+    .table-side-scroll { // parent container
+      position: relative;
+      width: 100%;
+      z-index: 1;
+      margin: 0 auto;
+      overflow: auto;
+
+      table {
+      min-width: 682px;
+
+        thead {
+
+          th {
+            border-top-style: solid;
+            border-top-width: 3px;
+            border-top-color: #ddd;
+            position: -webkit-sticky;
+            position: sticky;
+            top: 0;
+            text-align: center;
+            vertical-align: bottom;
+
+            &:first-child {
+              position: sticky;
+              z-index: 5;
+            }
+
+            &.border-balance-existing {
+              border-top-color: $color-secondary; // #e31c3d
+            }
+            &.border-balance-growth {
+              border-top-color: $color-secondary-light; // #e59393
+            }
+
+            &.border-contributions {
+              border-top-color: $color-gold; // #fdb81e
+            }
+            &.border-contributions-growth {
+              border-top-color: $color-gold-lighter; // #fad980
+            }
+
+          }
+        } // end thead
+
+        th, td {
+          border-top: none;
+          border-right: 1px solid #ddd;
+          border-bottom: 1px solid #ddd;
+          border-left: none;
+          vertical-align: top;
+        }
+
+        td {
+          text-align: right;
+          background: #fff;
+        }
+
+        th {
+          background: $color-gray-lightest;
+          &:first-child {
+          position: -webkit-sticky;
+          position: sticky;
+          left: 0;
+          z-index: 2;
+          text-align: center;
+          }
+        }
+      }
+    }
+  }
+} // end section
+
+
+// DAV WAS ALSO HERE - WARNING STYLES
+.usa-input-warning-element {
+  background-color: #ffff99;
+}
+
+.usa-input-warning-label {
+  display: block;
+  font-size: 1.7rem;
+  font-weight: 700;
+}
+
+:not(span.usa-input-error-message) {
+  span.usa-input-warning-message {
+    color: $color-base;
+    display: block;
+    font-size: 1.7rem;
+    font-weight: 700;
+    padding-bottom: 3px;
+    padding-top: 3px;
+    font-style: italic;
+  }
+}
+:not(div.usa-input-error) {
+  div.usa-input-warning {
+    border-left: 4px solid $color-gold;
+    background-color: $color-gold-lightest;
+
+    input {
+      border: 3px solid $color-gold;
+      // &:focus {
+      //   border: 3px solid $color-error;
+      // }
+    }
+  }
+}

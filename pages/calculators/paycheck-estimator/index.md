@@ -8,6 +8,7 @@ scripts:
   - /assets/js/highcharts/highcharts.js
   - /assets/js/highcharts/exporting.js
   - /assets/js/highcharts/data.js
+  - /assets/js/ajaxFetch.js
   - /assets/js/side-scroll-funds.js
   - /assets/js/responsive-comparison-table.js
 #scripts:

@@ -239,8 +239,8 @@ function test_limits(submit, amts, contribs) {
       if ($('#'+roth_input).val() != '') { showWarning(roth_input, msg); }
     }
     if (op2annualTR > limitRegular) {
-      var trad_input = getInputID(rs, 'trad', 1);
-      var roth_input = getInputID(rs, 'trad', 1);
+      var trad_input = getInputID(rs, 'trad', 2);
+      var roth_input = getInputID(rs, 'trad', 2);
       if ($('#'+trad_input).val() != '') { showWarning(trad_input, msg); }
       if ($('#'+roth_input).val() != '') { showWarning(roth_input, msg); }
     }
@@ -282,6 +282,10 @@ function check_amounts(submit) {
   var contribs = sumContributions();
   var amts = sumWithholding(contribs[2]+contribs[6], contribs[4]+contribs[8]);
 
+  // test exceeding yearly IRC limits (warnings first so they can be overwritten by errors)
+  // if (!test_limits(submit, amts, contribs)) { rc = false; }
+  test_limits(submit, amts, contribs);
+
   // test totals
   var val1 = amts[0] - contribs[0] - amts[5];
   var val2 = amts[0] - contribs[1] - amts[6];
@@ -293,24 +297,21 @@ function check_amounts(submit) {
   if (val1 < 0.0) {
     var trad_input = getInputID(rs, 'trad', 1);
     var roth_input = getInputID(rs, 'roth', 1);
-    if (contribs[2] > 0.0) { showError(trad_input, msgTradRoth); }
-    if (contribs[3] > 0.0) { showError(roth_input, msgTradRoth); }
-    if (contribs[6] > 0.0) { showError('catch_option1Trad', msgCatch); }
     if (contribs[7] > 0.0) { showError('catch_option1Roth', msgCatch); }
+    if (contribs[6] > 0.0) { showError('catch_option1Trad', msgCatch); }
+    if (contribs[3] > 0.0) { showError(roth_input, msgTradRoth); }
+    if (contribs[2] > 0.0) { showError(trad_input, msgTradRoth); }
     rc = false;
   }
   if (val2 < 0.0) {
     var trad_input = getInputID(rs, 'trad', 2);
     var roth_input = getInputID(rs, 'roth', 2);
-    if (contribs[4] > 0.0) { showError(trad_input, msgTradRoth); }
-    if (contribs[5] > 0.0) { showError(roth_input, msgTradRoth); }
-    if (contribs[8] > 0.0) { showError('catch_option2Trad', msgCatch); }
     if (contribs[9] > 0.0) { showError('catch_option2Roth', msgCatch); }
+    if (contribs[8] > 0.0) { showError('catch_option2Trad', msgCatch); }
+    if (contribs[5] > 0.0) { showError(roth_input, msgTradRoth); }
+    if (contribs[4] > 0.0) { showError(trad_input, msgTradRoth); }
     rc = false;
   }
-
-  // test exceeding yearly IRC limits
-  if (!test_limits(submit, amts, contribs)) { rc = false; }
 
   return rc;
 }
