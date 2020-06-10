@@ -2,6 +2,7 @@
   bulletin_date: January 8, 2014
   bulletin_url: /bulletins/14-1.pdf
   bulletin_description: Thrift Savings Plan training courses
-  bulletin_audience: 
+  agency: true
+  service: false
   bulletin_topics:
     - Resources
