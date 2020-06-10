@@ -122,7 +122,7 @@ div.usa-input-error {
 }
 
 // Warning HANDLING
-
+/*
 div.usa-input-error {
   &.warning {
     border-left: 4px solid $color-gold;
@@ -142,8 +142,9 @@ div.usa-input-error {
     }
   }
 }
+*/
 
-div.usa-input-warning {
+div.usa-input-warning:not(.usa-input-error) {
     border-left: 4px solid $color-gold;
     background-color: $color-gold-lightest;
     margin-top: 3rem;
