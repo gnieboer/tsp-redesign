@@ -19,16 +19,23 @@ redirect_from:
   - /InvestmentFunds/FundsOverview/comparisonMatrix.html
 ---
 
-# Lifecycle funds
+# Lifecycle (L) Funds
 
-The L Funds, or Lifecycle Funds, offer a simple, low maintenance way of investing money in your TSP account by using an appropriate mix of the G, F, C, S, and I Funds that most closely matches your time horizon, or target retirement date.
+Each of the ten L Funds is a diversified mix of the five core funds (G, F, C, S, and I). They were designed to let you
+invest your entire portfolio in a single L Fund and get the best expected return for the amount of expected risk that is
+appropriate for you.
 
-The L Funds’ investment objective is to strike an optimal balance between the expected risk and return associated with each fund. Any other use of the L Funds may result in a greater amount of risk in your portfolio than is necessary in order to achieve the same expected rate of return.
+Every quarter (three months), the target allocations of all the L Funds except L Income are automatically adjusted,
+gradually shifting them from higher risk and reward to lower risk and reward as they get closer to their target dates.
+When an L Fund reaches its target date, it goes out of existence and any money in it becomes part of the L Income
+Fund, which generally keeps the same target allocation. For example, in 2025, the L 2025 Fund will be rolled into the L
+Income Fund.
 
-As your retirement date approaches, the investment mix of each L Fund becomes more conservative (less risky), and it is automatically adjusted for you. The L Funds make the investing process easy for you because you do not have to figure out how to diversify your account or how and when to rebalance - it’s done for you.
-
-#### Risks
-
-When you invest in the L Funds, you are subject to the investment risks associated with the G, F, C, S, and I funds. This means that the L Funds can have periods of gain and loss, just as the individual TSP funds do.
+One of the important things about the L Funds is that they stick to their target allocations for a full quarter regardless of
+what the markets do. Every trading day, some of the core funds in an L Fund will do better than others. At the end of the
+day, the core funds that did better will make up a higher percentage of the L Fund than the ones that did less well. To
+maintain each L Fund’s target allocation, we rebalance it at the end of every trading day. We do this by buying and
+selling the core funds that make up the L Fund so that the percentages go back to what they were at the beginning of
+the day. In effect we’re buying low and selling high at the end of every trading day.
 
 {% include components/fund-comparison.html funds='lifecycle' %}
