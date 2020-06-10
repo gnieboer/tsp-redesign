@@ -41,13 +41,14 @@ TSP bulletins provide guidance to TSP Agency and Service representatives for imp
               <option value="court-orders">Court orders</option>
               <option value="death-benefits">Death benefits</option>
               <option value="eligibility">Eligibility</option>
-              <option value="general-information">General information</option>
               <option value="enrollment">Enrollment</option>
+              <option value="general-information">General information</option>
               <option value="investments">Investments</option>
               <option value="loans">Loans</option>
               <option value="promotional-materials">Promotional materials</option>
               <option value="resources">Resources</option>
               <option value="vesting">Vesting</option>
+              <option value="vesting">Withdrawals</option>
               <option value="0">Show all</option>
             </select>
           </div>

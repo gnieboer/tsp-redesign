@@ -8,20 +8,27 @@
 
 section.charts {
 
-  #chart-1 {
-    table {
-      width: 100%;
-      table-layout: fixed;
+  table.chart {
+    width: 100%;
+    table-layout: fixed;
+    margin-top: 2.2rem;
+
+    &.open-season {
+      colgroup {
+        width: 50%;
+      }
+      .empty-cell {
+        background-color: $color-gray-lightest;
+      }
+    }
+
+    &.percentage-limits {
       td[colspan] {
         text-align: center;
       }
     }
-  }
 
-  #chart-2 {
-    table {
-      width: 100%;
-      table-layout: fixed;
+    &.contribution-limits {
       colgroup {
         width: 12rem;
       }
@@ -33,7 +40,6 @@ section.charts {
       }
     }
   }
-
 }
 
 
