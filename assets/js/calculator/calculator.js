@@ -100,7 +100,7 @@ function showWarning(element, message) {
   $('#'+element+'-div').addClass("usa-input-warning");
   $('#'+element+'-label').addClass("usa-input-warning-label");
   $('#'+element+'-error-message').addClass("usa-input-warning-message");
-  $('#'+element).addClass("usa-input-warning-element");
+  // $('#'+element).addClass("usa-input-warning-element");
   $('#'+element+'-error-message').html(message);
 console.log('warning for ['+element+']: '+message);
   // document.getElementById(element).setAttribute("aria-describedby", element+'-warning-message');
@@ -112,7 +112,7 @@ function clearWarning(element) {
   $('#'+element+'-div').removeClass("usa-input-warning");
   $('#'+element+'-label').removeClass("usa-input-warning-label");
   $('#'+element+'-error-message').removeClass("usa-input-warning-message");
-  $('#'+element).removeClass("usa-input-warning-element");
+  // $('#'+element).removeClass("usa-input-warning-element");
   $('#'+element+'-error-message').html('');
   // document.getElementById(element).setAttribute("aria-describedby", '');
   return true;
