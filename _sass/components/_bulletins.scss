@@ -74,15 +74,24 @@ section {
   }
 
   footer {
-    border-top: 1px solid $color-gray-light;
-    margin-top: 2rem;
-    padding-top: 2rem;
-    .usa-grid {
-      padding-left: 0;
-      margin-bottom: 1.6rem;
-    }
-    .usa-width-one-sixth {
-      font-weight: $medium;
+    &.bulletin-footer {
+      border-top: 1px solid $color-gray-light;
+      margin-top: 2rem;
+      padding-top: 2rem;
+
+      .usa-grid {
+        padding-left: 0;
+        margin-bottom: 1.6rem;
+      }
+
+      .usa-width-one-sixth {
+        font-weight: $medium;
+      }
+
+      ul {
+        list-style-type: none;
+        padding-left: 0;
+      }
     }
   }
 }

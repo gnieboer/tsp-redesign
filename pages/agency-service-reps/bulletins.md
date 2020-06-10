@@ -48,7 +48,7 @@ TSP bulletins provide guidance to TSP Agency and Service representatives for imp
               <option value="promotional-materials">Promotional materials</option>
               <option value="resources">Resources</option>
               <option value="vesting">Vesting</option>
-              <option value="vesting">Withdrawals</option>
+              <option value="withdrawals">Withdrawals</option>
               <option value="0">Show all</option>
             </select>
           </div>
@@ -63,6 +63,14 @@ TSP bulletins provide guidance to TSP Agency and Service representatives for imp
                 autocomplete="off" placeholder="Enter search term(s)">
           </form>
         </div>
+        <!-- checkbox to see USV bulletins only -->
+        <!-- DAV, when checked, only bulletins with "service: true" should be displayed -->
+        <input
+          id="usv-only"
+          type="checkbox"
+          name="usv-only"
+          value="usv-only" />
+        <label for="usv-only">Show only Uniformed Services (U) bulletins</label>
     <!--  </section> // end section.search-forms -->
     </div><!-- END div.usa-width-one-whole -->
   </div><!-- END div.usa-grid-full -->
@@ -192,6 +200,72 @@ TSP bulletins provide guidance to TSP Agency and Service representatives for imp
       </div> <!-- END div.bulletin-->
     </div> <!-- END div.usa-width-one-whole -->
   </div> <!-- END div.usa-grid -->
+
+
+
+
+  <!-- BULLETIN block for PDF without body text (title only) -->
+  <div class="usa-grid">
+    <div class="usa-width-one-whole">
+      <div id="bulletin-14-1-div" class="bulletin">
+        <p><strong>Thrift Savings Plan Training Courses</strong></p>
+        </div>
+
+        <div class="flex post-and-share">
+          <!-- Flex item #1, Date -->
+          <span id="bulletin-14-1-posted" class="post-date"><span class="bulletin-number">Bulletin 14-1</span>, January 8, 2014</span>
+
+          <!-- Flex item #2, Share Modal -->
+          <button type="button" class="share" data-toggle="modal" data-target="#shareModalbulletin-14-1">
+            <i class="fas fa-share-alt"></i><span class="sr-only">Share</span>
+          </button>
+
+          <!-- Flex item #3, Copy to clipboard -->
+          <div class="tooltip">
+            <button class="copy" onclick="copyPlanNewsToClipboard('scheduled-system-maintenance-2020-02-25-0')" onmouseout="outFunc('scheduled-system-maintenance-2020-02-25-0')">
+            <span class="tooltiptext" id="tooltip_scheduled-system-maintenance-2020-02-25-0">Copy to clipboard</span>
+            <i class="far fa-copy"></i><span class="sr-only">Copy to clipboard</span></button>
+          </div>
+
+          <!-- Flex item #4, read more -->
+          <button class="usa-button-secondary new-window">read more</button>
+
+          <!-- Share modal -->
+          <div id="shareModalbulletin-20-2" class="modal fade" role="dialog">
+            <div class="modal-dialog">
+              <!-- Modal content-->
+              <div class="modal-content">
+              <div class="post-share-modal modal-body">
+              <div>
+              <a href="https://www.facebook.com/sharer/sharer.php?u=http://localhost:4000/plan-news/scheduled-system-maintenance-2020-02-25/&amp;title=Plan news" class="btn btn-social btn-facebook" target="\_blank">
+              <span class="fa fa-facebook"></span>Facebook</a>
+              <a href="https://twitter.com/intent/tweet?status=Plan news+at+http://localhost:4000/plan-news/scheduled-system-maintenance-2020-02-25/" class="btn btn-social btn-twitter" target="\_blank">
+              <span class="fa fa-twitter"></span>Twitter</a>
+              <a href="https://www.linkedin.com/shareArticle?mini=true&amp;url=http://localhost:4000/plan-news/scheduled-system-maintenance-2020-02-25/&amp;title=&amp;summary=&amp;source=" class="btn btn-social btn-linkedin" target="\_blank">
+              <span class="fa fa-linkedin"></span>LinkedIn</a>
+              <a href="mailto:?&amp;subject=Blog%20Post:%20Plan news&amp;body=Check%20out%20this%20amazing%20blog%20post!%20http://localhost:4000/plan-news/scheduled-system-maintenance-2020-02-25/" class="btn btn-social btn-email" target="\_blank">
+              <span class="fa fa-envelope"></span>Email</a>
+              <hr>
+              </div>
+              <div>
+              <h3>Post Address</h3>
+              <p>A direct link to this post!</p>
+              <input type="text" id="fullURLscheduled-system-maintenance-2020-02-25-0" value="http://localhost:4000/plan-news/scheduled-system-maintenance-2020-02-25/">
+              <a href="#" onclick="inputToClipboard('fullURLscheduled-system-maintenance-2020-02-25-0');" class="usa-button">Copy</a>
+              </div>
+              </div><!-- END div.modal-content -->
+            </div> <!-- END div.modal-dialog -->
+          </div> <!-- END div.modal -->
+        </div> <!-- END div.flex post-and-share -->
+
+      </div> <!-- END div.bulletin-->
+    </div> <!-- END div.usa-width-one-whole -->
+  </div> <!-- END div.usa-grid -->
+
+
+
+
+
 
   <div class="see-more">
     <span onclick="showMorePlans('plans', 'a');">See more</span><i id="more-plans-a" class="far fa-angle-up rotate"></i>

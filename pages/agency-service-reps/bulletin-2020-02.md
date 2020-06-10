@@ -6,15 +6,31 @@ sidenav: agency-service-reps
 scripts:
 permalink: /agency-service-reps/bulletin-20-02/
 redirect-from:
-  - /bulletin-20-2
-topics:
+  - /PDF/bulletins/20-02.html
+bulletin_number: 20-2
+bulletin_date: February 18, 2020
+bulletin_url: /agency-service-reps/bulletin-20-02/
+title: Effect of Nonpay Status on Thrift Savings Plan Participation
+agency: true
+service: false
+bulletin_chapter:
+  - 3
+bulletin_topic:
   - Eligibility
+supersedes:
+  - "[TSP Bulletin 12-20]({{ site.baseurl }}/bulletins/20-12), Effect of Nonpay Status on Thrift Savings Plan Participation"
 ---
-<!-- <h1 id="bulletin">TSP bulletin<br />
+<!-- DAV, following the Plan news model, I suppose these go in /_bulletins ? -->
+<h1 id="bulletin">TSP bulletin<br />
+<!-- TARGET AUDIDENCE -->
+<!-- If agency = true; service = false -->
 <span>for Agency TSP Representatives</span><br />
+<!-- If agency = false; service = true -->
 <span>for Service TSP Representatives</span><br />
+<!-- If agency = true; service = true -->
 <span>for Agency and Service TSP Representatives</span>
-</h1> -->
+</h1>
+
 ## Effect of Nonpay Status on Thrift Savings Plan Participation
 <section class="bulletin" markdown="1">
 
@@ -119,14 +135,16 @@ Participants who are in nonpay status may withdraw funds from their TSP account 
 </ol>
 </div>
 <!-- section <footer> -->
-<footer>
+<footer class="bulletin-footer">
   <div class="usa-grid">
     <div class="usa-width-one-sixth">Bulletin:</div>
+    <!-- { page.bulletin_number } -->
     <div class="usa-width-five-sixths">20-2</div>
   </div>
 
   <div class="usa-grid">
     <div class="usa-width-one-sixth">Date:</div>
+    <!-- { page.bulletin_date } -->
     <div class="usa-width-five-sixths">February 18, 2020</div>
   </div>
 
@@ -136,14 +154,24 @@ Participants who are in nonpay status may withdraw funds from their TSP account 
   </div>
 
   <div class="usa-grid">
-    <div class="usa-width-one-sixth">Chapter:</div>
-    <!-- DAV, the Chapter link should function as the drop-down selector on the Bulletins landing page. It should load that page, with the topic link bulletins displayed. -->
-    <div class="usa-width-five-sixths">This bulletin may be filed in Chapter 3, <a href="javascript:void(0)">Eligibility</a>.</div>
+    <div class="usa-width-one-sixth">Chapter(s):</div>
+    <div class="usa-width-five-sixths">
+      <ul>
+        <!-- Chapter { page.chapter }, { page.topic } -->
+        <li>Chapter 3, <a href="javascript:void(0)">Eligibility</a></li>
+        <!-- DAV, if possible the Chapter <a> link should function as the drop-down selector on the Bulletins landing page. It should load that page, with the topic link bulletins displayed. -->
+      </ul>
+
+    </div>
   </div>
 
   <div class="usa-grid">
   <div class="usa-width-one-sixth">Supersedes:</div>
-  <div class="usa-width-five-sixths" markdown="1">[TSP Bulletin 12-20]({{ site.baseurl }}/bulletins/20-12), Effect of Nonpay Status on Thrift Savings Plan Participation, dated August 16, 2012
+  <div class="usa-width-five-sixths" markdown="1">
+  <ul>
+    <!-- { page.supersedes } -->
+    <li>[TSP Bulletin 12-20]({{ site.baseurl }}/bulletins/20-12), Effect of Nonpay Status on Thrift Savings Plan Participation</li>
+  </ul>
   </div>
   </div>
 </footer>
