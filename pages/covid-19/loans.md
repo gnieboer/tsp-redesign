@@ -22,7 +22,7 @@ redirect_from:
 ## Loans for Participants Affected by COVID-19
 The CARES Act allows us to offer temporary loan options to TSP participants affected by COVID-19. **These options will be available no later than June 22, 2020.** We will provide details about that soon. The information we’re providing here is current but subject to change as we receive additional guidance and information.
 
-<div class="usa-alert usa-alert-info">
+<div class="usa-alert usa-alert-info usa-alert-paragraph">
 <div class="usa-alert-body">
 <h3 class="usa-alert-heading">Withdrawal options</h3>
 <p class="usa-alert-text" markdown="1">

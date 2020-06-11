@@ -60,7 +60,7 @@ If you received any withdrawal between February 1 and May 15 that is eligible fo
 
 The CARES Act allows us to make temporary changes related to required minimum distributions. Learn more.
 
-<div class="usa-alert usa-alert-info">
+<div class="usa-alert usa-alert-info usa-alert-paragraph">
 <div class="usa-alert-body">
 <h3 class="usa-alert-heading">Required minimum distributions</h3>
 <p class="usa-alert-text" markdown="1">
