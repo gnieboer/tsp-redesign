@@ -152,6 +152,15 @@ news-and-resources:
     href: /forms/
   - text: Calculators
     href: /calculators/
+  - text: COVID-19
+    href: /covid-19/
+    subnav:
+      - text: RMD changes
+        href: /covid-19/rmd-changes/
+      - text: Withdrawals
+        href: /covid-19/withdrawals/
+      - text: Loans
+        href: /covid-19/loans/
 
 fund-options:
   - text: How to invest

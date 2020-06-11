@@ -165,7 +165,7 @@ urlList[157] = 'https://api.fdsys.gov/link?collection=uscode&title=5&year=mostre
 urlList[158] = 'https://www.federalregister.gov/select-citation/2018/12/11/5-CFR-1630';
 urlList[159] = 'http://www.bloombergindices.com';
 urlList[160] = 'https://content.govdelivery.com/accounts/USTSP/bulletins/27794ce';
-urlList[161] = '';
+urlList[161] = 'https://www.usps.com/international/mail-shipping-services.htm#readmore';
 urlList[162] = '';
 urlList[163] = '';
 urlList[164] = '';
