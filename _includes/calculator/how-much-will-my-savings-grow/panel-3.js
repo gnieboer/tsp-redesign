@@ -252,7 +252,7 @@ function buildTable(growthSelector, contributionsText, yearsToGo) {
     bodyHTML += sideScrollWrapper('    ', 'tr', '', '', row, true);
   }
   bodyHTML = sideScrollWrapper('  ', 'tbody', '', '', bodyHTML, true);
-  var tableHTML = sideScrollTable('', 'savings-grow-table', '', headerHTML+bodyHTML, true);
+  var tableHTML = sideScrollTable('', 'savings-grow-table', '', headerHTML+bodyHTML, true, '');
   return tableHTML;
 }
 

@@ -323,18 +323,16 @@ console.log('a trad1 2 ', totalTrad1, totalTrad2);
 
 function buildTable(yearsToGo) {
   // build table header
-  var headerHTML1 = sideScrollTH('', 'col', '', 'Year', false);
-  headerHTML1 += sideScrollTH('', 'col', '', 'Scenario 1', false);
-  headerHTML1 += sideScrollTH('', 'col', '', '', false);
-  headerHTML1 += sideScrollTH('', 'col', '', 'Scenario 2', false);
-  headerHTML1 += sideScrollTH('', 'col', '', '', false);
+  var headerHTML1 = sideScrollTH2('', 'col', '', 'rowspan="2"', 'Year', false);
+  headerHTML1 += sideScrollTH2('', 'colgroup', '', 'colspan="2"', 'Scenario 1', false);
+  headerHTML1 += sideScrollTH2('', 'colgroup', '', 'colspan="2"', 'Scenario 2', false);
   headerHTML1 = sideScrollWrapper('', 'tr', '', '', headerHTML1, false);
-  var headerHTML2 = sideScrollTH('', 'col', '', '', false);
+  var headerHTML2 = '';
   headerHTML2 += sideScrollTH('', 'col', '', 'Traditional', false);
   headerHTML2 += sideScrollTH('', 'col', '', 'Roth', false);
   headerHTML2 += sideScrollTH('', 'col', '', 'Traditional', false);
   headerHTML2 += sideScrollTH('', 'col', '', 'Roth', false);
-  headerHTML2 = sideScrollWrapper('', 'tr', '', '', headerHTML2, false);
+  headerHTML2 = sideScrollWrapper('', 'tr', '', 'second-level', headerHTML2, false);
   var headerHTML = sideScrollWrapper('  ', 'thead', '', '', headerHTML1 + headerHTML2, true);
 
   var bodyHTML = '';
@@ -347,7 +345,11 @@ function buildTable(yearsToGo) {
     bodyHTML += sideScrollWrapper('    ', 'tr', '', '', row, true);
   }
   bodyHTML = sideScrollWrapper('  ', 'tbody', '', '', bodyHTML, true);
-  var tableHTML = sideScrollTable('', 'paycheck-estimator-table', '', headerHTML+bodyHTML, true);
+  // special colgroup because of 2-tier header
+  var colgroup = '<colgroup><col class="column-width"></colgroup>';
+  colgroup += '<colgroup span="2"></colgroup>';
+  colgroup += '<colgroup span="2"></colgroup>';
+  var tableHTML = sideScrollTable('', 'paycheck-estimator-table', '', headerHTML+bodyHTML, true, colgroup);
   return tableHTML;
 }
 

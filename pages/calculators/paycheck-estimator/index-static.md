@@ -287,8 +287,6 @@ Static code version.
         onchange="taxStatusGood();">
         <label for="taxStatusSingleRate">Married, withhold at Single Rate</label>
       </li>
-      <!-- DAV, do you need this hidden input? I copied it from legacy source code. -->
-      <input type="hidden" name="taxStatusString" id="taxStatusString" value="">
     </ul>
     </div> <!-- end div.usa-input-error -->
   </fieldset>

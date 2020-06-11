@@ -140,21 +140,9 @@ function getTaxStatus() {
 function taxStatusGood(submit) {
   var status = getTaxStatus();
 
-  if (status == 'S') {
-    $('#taxStatusString').val('S');
-    //$('#lblAYRtaxStatus').html('Single');
-    return clearError('taxStatus');
-  }
-  if (status == 'M') {
-    $('#taxStatusString').val('M');
-    //$('#lblAYRtaxStatus').html('Married');
-    return clearError('taxStatus');
-  }
-  if (status == 'MS') {
-    $('#taxStatusString').val('MS');
-    //$('#lblAYRtaxStatus').html('Married, Single Rate');
-    return clearError('taxStatus');
-  }
+  if (status == 'S') { return clearError('taxStatus'); }
+  if (status == 'M') { return clearError('taxStatus'); }
+  if (status == 'MS') { return clearError('taxStatus'); }
 
   return showError('taxStatus', "Select your tax status.");
 }
