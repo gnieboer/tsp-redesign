@@ -89,13 +89,11 @@ section {
       }
 
       .usa-width-five-sixths {
-        p {
+        p,
+        p:first-child,
+        p:last-child {
+          margin-top: 0;
           margin-bottom: 0;
-          &:first-child,
-          &:last-child {
-            margin-top: 0;
-            margin-bottom: 0;
-          }
         }
       }
 
