@@ -22,7 +22,7 @@ redirect_from:
 - [Withdrawals for Participants Affected by COVID-19](#withdrawals-for-participants-affected-by-covid-19)
 - [Rollover Period Extended to July 15](#rollover-period-extended-to-july-15)
 
-## Withdrawals for Participants Affected by COVID-19
+## Withdrawals for participants affected by COVID-19
 The information we’re providing here is current but subject to change as we receive additional guidance and information.
 
 The CARES Act creates special rules for most types of TSP withdrawals made by participants affected by COVID-19. It also allows us to create a new, temporary withdrawal option that waives the usual in-service withdrawal requirements and allows all COVID-affected participants to waive tax withholding. See below for details.
@@ -55,7 +55,7 @@ CARES Act Withdrawal
 This option will be available in July, 2020.
 You may make a one-time withdrawal of up to $100,000 from a civilian or uniformed services account. For those still in federal service, the usual requirements that you be at least 59½ years old or certify that you meet specific financial hardship criteria are waived. Though you may request that we withhold money from your withdrawal for federal income tax, we will not automatically do that. This withdrawal will be eligible for the favorable tax treatment described above, with all of the same options and restrictions. The deadline for applying for this withdrawal will be in December 2020. We will announce the exact cutoff date soon.
 
-## Rollover Period Extended to July 15
+## Rollover period extended to July 15
 If you received any withdrawal between February 1 and May 15 that is eligible for rollover, then the IRS has extended your 60-day rollover deadline to July 15th. If you received an RMD (or an installment payment that included an RMD) between February 1 and May 15, then you can roll those amounts over—to an IRA or eligible employer plan or back into your TSP account—provided that you do so by July 15th. Use Form TSP‑60. You are eligible for this extended rollover period whether or not you have been affected by COVID-19. You do not need to meet any of the criteria described above.
 
 The CARES Act allows us to make temporary changes related to required minimum distributions. Learn more.
