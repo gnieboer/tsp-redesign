@@ -19,8 +19,8 @@ redirect_from:
 
 <h1><div class="nav-header">COVID-19</div>Loans</h1>
 
-## Loans for Participants Affected by COVID-19
-The CARES Act allows us to offer temporary loan options to TSP participants affected by COVID-19. **These options will be available no later than June 22, 2020.** We will provide details about that soon. The information we’re providing here is current but subject to change as we receive additional guidance and information.
+## Loan options for participants affected by COVID-19
+Temporary loan options made possible by the CARES Act for TSP participants affected by COVID-19 are now available. Read below for more information.
 
 <div class="usa-alert usa-alert-info usa-alert-paragraph">
 <div class="usa-alert-body">
@@ -31,8 +31,8 @@ The CARES Act also allows us to offer a temporary withdrawal option to participa
 </div>
 </div>
 
-## Definitions and Eligibility
-To be eligible for these CARES Act loan options, you must be a qualified individual. You’re a qualified individual if you meet at least one of the following criteria listed in the CARES Act:
+## Definitions and eligibility
+To be eligible for the CARES Act loan options, you must be a **qualified individual**. You’re a qualified individual if you meet at least one of the following criteria listed in the CARES Act:
 
 - You have been diagnosed with the virus SARS–CoV–2 or with coronavirus disease 2019 (COVID–19) by a test approved by the Centers for Disease Control and Prevention.
 - Your spouse or dependent (as defined in section 152 of the Internal Revenue Code of 1986) has been diagnosed with such virus or disease by such a test.
@@ -42,4 +42,7 @@ To be eligible for these CARES Act loan options, you must be a qualified individ
 The maximum loan amount is increased from $50,000 to $100,000, and the portion of your available balance you can borrow is raised from 50% to 100%. The deadline for applying for a loan with this increased maximum will be in September 2020. We will announce the exact cutoff date soon.
 
 ## Temporary suspension of loan payments
-You may suspend your obligation to make payments on your TSP loan or loans for the rest of calendar year 2020. This applies to existing loans and loans taken in the remainder of 2020. We will make a new form available for you to request this suspension. [**Editor’s note**: As a result of new information on the implementation of the CARES Act, the conditions of loan payment suspension have been changed since we first published this information.]
+You may suspend your obligation to make payments on your TSP loan or loans for the rest of calendar year 2020. This applies to existing loans and loans taken between now and November 30, 2020. To apply, complete and submit [Form TSP-46]({{ site.baseurl }}/forms/tsp-46.pdf), _CARES Act Loan Suspension Request_. Carefully read all of the instructions on the form before submitting.
+
+## Using both loan options
+If you are thinking of getting another loan in 2020 in addition to placing your current loan on suspension, request the loan first so that the suspension can be applied to both loans.

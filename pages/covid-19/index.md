@@ -19,7 +19,7 @@ redirect_from:
 
 <h1><div class="nav-header">COVID-19</div>Latest information</h1>
 
-Updated **May 28, 2020**.
+Updated **June 15, 2020**.
 
 You can check this page for up-to-date details about TSP operations and temporary changes we’re making to support you during this time. The information we’re providing here is current but subject to change as we receive additional guidance and information.
 
@@ -36,7 +36,7 @@ You can check this page for up-to-date details about TSP operations and temporar
 
 
 ## CARES Act temporary loan and withdrawal options
-The CARES Act allows us to offer temporary loan and withdrawal options to TSP participants affected by COVID-19. The loan options will be available no later than June 22, 2020. The withdrawal option will be available in July 2020. **Both the loan and withdrawal options are available to you only if you can certify that you meet certain criteria.**
+The CARES Act allows us to offer temporary loan and withdrawal options to TSP participants affected by COVID-19. The loan options are now available. The withdrawal option will be available in July 2020. **Both the loan and withdrawal options are available to you only if you can certify that you meet certain criteria.**
 
 - [Find out more about these temporary loan options]({{ site.baseurl }}/covid-19/loans/)
 - [Find out more about this temporary withdrawal option]({{ site.baseurl }}/covid-19/withdrawals/)
