@@ -53,13 +53,11 @@ You have not checked the option to minimize the impact Roth contributions have o
 Additionally, Roth TSP contributions will not reduce your adjusted gross income (AGI) the way that traditional contributions will. A higher AGI means you may lose out on certain tax advantages.
 </section>
 
-<section id="results-section" class="calculator-panel contribution-comparison-calculator" markdown="1">
+<section id="balance-section" class="calculator-panel contribution-comparison-calculator" markdown="1">
 
-<!-- DONALD -->
----
-## Account balance
 <div id="account-balance-chart"></div>
 
+{% capture explanation_balance %}
 <div id="checked-balance">
 <p>You have chosen to keep the impact on your paycheck equal; therefore, your gross (pre-tax) traditional balance will be higher because the higher contribution percentage allows you to put aside a higher dollar amount and potentially receive a greater return through earnings.</p>
 
@@ -72,20 +70,28 @@ Additionally, Roth TSP contributions will not reduce your adjusted gross income 
 </div>
 
 <p>Predicting your tax bracket in retirement is the key to determining if Roth TSP or traditional TSP contributions are the right choice for you now.</p>
+{% endcapture %}
+{% include calculator/div-panel-form-field.html fieldID="panel-balance"
+  inputType="none" explanation=explanation_balance  dontOpenOuterDiv=true
+%}
 <!-- END div#deductions-pre-tax-->
 
-<!-- DONALD -->
----
-## Annual income
-<div id="annual-income-chart"></div>
+</section>
+<section id="balance-section" class="calculator-panel contribution-comparison-calculator" markdown="1">
 
+<div id="annual-income-chart"></div>
+{% capture explanation_income %}
 <p>This net (after-tax) annual income comparison provides a more accurate reflection of whether you might benefit from paying taxes up front (Roth TSP) or when you withdraw your money (traditional TSP).</p>
 
 <p id="not-checked-income">
 Keep in mind that while a Roth TSP annual income stream may be higher when you withdraw your money, the benefit must be weighed against the rate at which those contributions were taxed during your working years and any tax benefits you may have lost out on due to your higher AGI.
 </p>
 
-<p>It all comes down to what tax bracket you are in now and which one you think you may fall in while in retirement. Theefore, you may wish to consult a tax advisor to assist you with your retirement planning and contribution decisions.</p>
+<p>It all comes down to what tax bracket you are in now and which one you think you may fall in while in retirement. Therefore, you may wish to consult a tax advisor to assist you with your retirement planning and contribution decisions.</p>
+{% endcapture %}
+{% include calculator/div-panel-form-field.html fieldID="panel-income"
+  inputType="none" explanation=explanation_income  dontOpenOuterDiv=true
+%}
 
 
 {% include calculator/button-block.html panelID=panelID prev=2 print=1 %}
