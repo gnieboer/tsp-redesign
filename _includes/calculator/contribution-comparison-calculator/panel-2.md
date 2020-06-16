@@ -81,7 +81,7 @@ elective deferral limit (<span id='irc-contribution-limit'></span> for <span id=
   inputClass=""  dataFormat="%"
   min="0" value="" max="99" maxLength=7 step="0.01"
   placeholder="" onBlur="cccTaxRateLaterGood(false);"
-  prompt="Current household tax rate:"
+  prompt="Estimated retirement household tax rate:"
   explanation=""
 %}
 

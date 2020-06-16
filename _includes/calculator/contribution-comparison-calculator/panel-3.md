@@ -54,9 +54,10 @@ Additionally, Roth TSP contributions will not reduce your adjusted gross income 
 </section>
 
 <section id="results-section" class="calculator-panel contribution-comparison-calculator" markdown="1">
-<ul class="usa-accordion">
-{% include calculator/accordion-start.html expanded=true divID='account-balance'
-    title='Account balance' inList=true %}
+
+<!-- DONALD -->
+---
+## Account balance
 <div id="account-balance-chart"></div>
 
 <div id="checked-balance">
@@ -72,9 +73,10 @@ Additionally, Roth TSP contributions will not reduce your adjusted gross income 
 
 <p>Predicting your tax bracket in retirement is the key to determining if Roth TSP or traditional TSP contributions are the right choice for you now.</p>
 <!-- END div#deductions-pre-tax-->
-{% include calculator/accordion-end.html  inList=true %}
-{% include calculator/accordion-start.html expanded=true divID='annual-income'
-    title='Annual income' inList=true %}
+
+<!-- DONALD -->
+---
+## Annual income
 <div id="annual-income-chart"></div>
 
 <p>This net (after-tax) annual income comparison provides a more accurate reflection of whether you might benefit from paying taxes up front (Roth TSP) or when you withdraw your money (traditional TSP).</p>
@@ -84,9 +86,7 @@ Keep in mind that while a Roth TSP annual income stream may be higher when you w
 </p>
 
 <p>It all comes down to what tax bracket you are in now and which one you think you may fall in while in retirement. Theefore, you may wish to consult a tax advisor to assist you with your retirement planning and contribution decisions.</p>
-{% include calculator/accordion-end.html  inList=true %}
 
-</ul>
 
 {% include calculator/button-block.html panelID=panelID prev=2 print=1 %}
 
