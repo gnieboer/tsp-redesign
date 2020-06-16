@@ -5,8 +5,8 @@ permalink: /plan-news/help-for-hurricanes-florence-and-michael-victims/
 **Help for Hurricanes Florence and Michael victims** &#8212; The TSP has made a temporary change to the financial hardship withdrawal rules for participants affected by Hurricanes Florence or Michael: As of December 4, 2018, we will treat any Financial Hardship In-Service Withdrawal Request as a qualifying hardship and will waive the rule prohibiting employee contributions for 6 months after taking a hardship withdrawal provided one of the following is true
 
 1. Your primary residence or place of employment is located in a [covered disaster area]({{ site.baseurl }}/exit/?idx=68) and has incurred a loss as a result of Hurricanes Florence or Michael.<br>
-OR<br>
-2. Your hardship withdrawal will be used to assist an eligible family member who lives or works in a covered disaster area and who has incurred a loss as a result of Hurricanes Florence or Michael.
+**OR**
+2. Your hardship withdrawal will be used to assist an eligible family member who lives or works in a [covered disaster area]({{ site.baseurl }}/exit/?idx=68)  and who has incurred a loss as a result of Hurricanes Florence or Michael.
 
 **IN ADDITION**, you must also meet **all** of the following requirements:
 
