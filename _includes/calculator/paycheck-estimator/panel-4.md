@@ -1,5 +1,5 @@
 {% comment %}
-Results NAME panel (3) for CALC.
+Results panel (4) for paycheck esitomator.
 {% endcomment %}
 {% assign panelID = include.panelID | default: 3 %}
 {% assign hide = 'display: block;' %}

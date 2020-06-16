@@ -190,7 +190,6 @@ function calculateResults() {
    var catchTrad2amt = contribs[8];
    var catchRoth2amt = contribs[9];
    totalTrad2 = trad2amt + catchTrad2amt;
-console.log('a trad1 2 ', totalTrad1, totalTrad2);
    var monthTax1 = amts[5];
    var monthTax2 = amts[6];
    var additionalWithholding = amts[2];
@@ -218,7 +217,6 @@ console.log('a trad1 2 ', totalTrad1, totalTrad2);
      EMPmatch2 = USBRSmatching(grossPay, match_contrib2);
    }
   }
-  console.log(' x trad1 2 ', totalTrad1, totalTrad2);
 
   // set input values in scenario table
   if (true) {
@@ -254,7 +252,7 @@ console.log('a trad1 2 ', totalTrad1, totalTrad2);
   }
 
   // build data for 40 years
-  console.log('building arrays');
+  // console.log('building arrays');
   // loop control
   var year = 0;
   var maxyear = 40;
@@ -415,7 +413,6 @@ function makeChart(chartMax, year) {
 
   if (year < 1) { year = 1; }
   if (year > 40) { year = 40; }
-  console.log('trad1 2 ', totalTrad1, totalTrad2);
 
   return  new Highcharts.Chart({
             credits: { enabled: false },
