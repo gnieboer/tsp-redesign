@@ -1,8 +1,8 @@
 ---
-title: 2017 Withdrawls
-permalink: /plan-news/2017-withdrawl
+title: 2017 withdrawal options now available
+permalink: /plan-news/2017-withdrawal-options-now-available/
 ---
-**2017 withdrawal options now available &#8212; We’re pleased to announce that all participants now have more options when seeking to withdraw retirement savings from their TSP accounts.**
+**2017 withdrawal options now available** &#8212; We’re pleased to announce that all participants now have more options when seeking to withdraw retirement savings from their TSP accounts.
 
 For a detailed summary of the new withdrawal options, read our updated fact sheet, [_Questions and Answers about Changes to TSP Withdrawal Options_]({{ site.baseurl }}/publications/tspfs10.pdf).
 
