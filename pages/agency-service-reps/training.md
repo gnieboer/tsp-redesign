@@ -13,7 +13,7 @@ Thank you for your interest in TSP education.
 
 TSP trainers are available for webinars. See the [TSP Webinars]({{ site.baseurl }}#intro-to-tsp) information for a list of webinars available for online registration. If you are an agency or service representative and would like to request a webinar for your employees, email **training@tsp.gov** with the text &#8220;webinar&#8221; in the subject line.
 
-Unfortunately, we are unable to accommodate requests for in-person events at this time.
+_Unfortunately, we are unable to accommodate requests for in-person events at this time._
 
 - To attend, you must register via the links on this page.
 - You must have access to WebEx to register and attend TSP webinars. You do not need a WebEx account.
