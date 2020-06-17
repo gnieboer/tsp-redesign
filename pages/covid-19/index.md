@@ -19,7 +19,7 @@ redirect_from:
 
 <h1><div class="nav-header">COVID-19</div>Latest information</h1>
 
-Updated **June 15, 2020**.
+Updated **June 16, 2020**.
 
 You can check this page for up-to-date details about TSP operations and temporary changes we’re making to support you during this time. The information we’re providing here is current but subject to change as we receive additional guidance and information.
 
@@ -36,10 +36,10 @@ You can check this page for up-to-date details about TSP operations and temporar
 
 
 ## CARES Act temporary loan and withdrawal options
-The CARES Act allows us to offer temporary loan and withdrawal options to TSP participants affected by COVID-19. The loan options are now available. The withdrawal option will be available in July 2020. **Both the loan and withdrawal options are available to you only if you can certify that you meet certain criteria.**
+The CARES Act allows us to offer temporary loan and withdrawal options to TSP participants affected by COVID-19. The loan options are now available. Favorable tax treatment of withdrawals you’re currently eligible for are also in effect. The TSP CARES Act withdrawal option will be available by late July 2020. **Both the loan and withdrawal options are available to you only if you can certify that you meet certain CARES Act criteria and TSP eligibility rules.**
 
 - [Find out more about these temporary loan options]({{ site.baseurl }}/covid-19/loans/)
-- [Find out more about this temporary withdrawal option]({{ site.baseurl }}/covid-19/withdrawals/)
+- [Find out more about temporary withdrawal options]({{ site.baseurl }}/covid-19/withdrawals/)
 
 ## Payments you make to the TSP by check may take longer to process
 Because of public health precautions being taken at our processing facilities, payments made by check will most likely take longer to appear in your TSP account. These include payments to make up missed loan payments, submit additional loan payments, or to roll over payments from IRAs or other employer plans. We appreciate your patience.
@@ -57,6 +57,32 @@ The COVID-19 pandemic caused a steep and sudden decline in the stock markets and
 
 ## Online transactions and secure messaging in My Account
 **We strongly encourage you to take steps right now to make sure you have online access to My Account.** After you log in securely, you can send questions and requests to TSP representatives through the Message Center, and you can perform many TSP transactions on your own.
+
+<div class="usa-grid covid">
+<div class="usa-width-one-half" markdown="1">
+#### What you can do online in My Account
+
+- Add and validate your email address(es) or cell phone.
+- Access statements, documents, and correspondence.
+- Change your [contribution allocation]({{ site.baseurl }}/how-to-invest/change-your-investments/) to determine how your money gets invested.
+- Rebalance your portfolio with [interfund transfers](({{ site.baseurl }}/how-to-invest/change-your-investments/)).
+- Begin a [loan or withdrawal request]({{ site.baseurl }}/loan-basics/applying-for-a-loan/) and make changes to installment payments. (In certain circumstances, you can complete your entire request online.)
+- View your account balance.
+</div>
+
+<div class="usa-width-one-half" markdown="1">
+#### How to get help online through our Secure Message Center
+
+1. Log in to [My Account]({{ site.myaccount }}).
+2. From the menu, select **Message Center**.
+3. Select the **Messages** tab.
+4. Select the **Compose Message** button.
+
+A TSP representative will reply to your message within 2 business days.
+
+When the response is available, you can log in to My Account and return to the Message Center to view it. You’ll also be able to submit a reply if you need additional help.
+</div>
+</div>
 
 ## How to update your mailing address
 If you’re actively employed, you must notify your agency or service when your address changes.
