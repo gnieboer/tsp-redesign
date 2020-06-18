@@ -2,11 +2,9 @@ User-agent: usasearch
 Crawl-delay: 2
 Disallow: /assets/
 Disallow: /styleguide/
-Disallow: /bulletins/
 
 User-agent: *
 Crawl-delay: 10
 Disallow: /assets/
 Disallow: /styleguide/
-Disallow: /bulletins/
 Sitemap: https://beta.tsp.gov/sitemap.xml
