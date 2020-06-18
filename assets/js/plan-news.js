@@ -12,12 +12,17 @@ function show(prefix, suffix) {
 function showMorePlans(type, formNum) {
   var controlDiv = 'more-'+type+'-'+formNum;
   var contentDiv = 'more-'+type+'-content-'+formNum;
+  var arrowIcon = 'arrow';
   if ($('#'+controlDiv).hasClass('down')) {
     $('#'+contentDiv).addClass('hide');
     $('#'+controlDiv).removeClass('down');
+    $('#'+controlDiv).html("See more");
+    $('#'+arrowIcon).removeClass('down');
   } else {
     $('#'+contentDiv).removeClass('hide');
     $('#'+controlDiv).addClass('down');
+    $('#'+controlDiv).html("See fewer");
+    $('#'+arrowIcon).addClass('down');
   }
 }
 
