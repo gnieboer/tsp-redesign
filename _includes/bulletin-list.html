@@ -1,0 +1,93 @@
+{% comment %}make an array of non-archived bulletin items{% endcomment %}
+{% assign bulletin_list = site.bulletins | sort: 'path' | reverse %}
+{% assign topitems = "" | split: ',' %}
+{% assign archive = "" | split: ',' %}
+{% for item in bulletin_list %}{% unless item.path contains '/_hidden/' %}
+{% assign folder = item.path | split: '/' | shift | pop | join: '/' %}
+{% if folder == '' %}
+  {% assign topitems = topitems | push: item %}
+{% else %}
+  {% assign archive = archive | push: item %}
+{% endif %}
+{% endunless %}{% endfor %}
+{% comment %}topitems is now top bulletins, archive is the stuff in accordions below,
+            both reverse sorted{% endcomment %}
+
+<div id="bulletin-default-div">
+{% comment %}Do the top level{% endcomment %}
+{% assign itemSize = topitems | size %}
+{% assign startTopAccordion = 2 | plus: 1 %}
+{% assign cnt = 0 %}
+{% if itemSize > 0 %}
+<section class="bulletins-current" markdown="1">
+
+{% assign lastHeader = '' %}
+{% for item in topitems %}
+  {% assign cnt = cnt | plus: 1 %}
+  {% if cnt == startTopAccordion %}
+  <div id="more-plans-content-a" class="hide">
+  {% endif %}
+  {% assign showHeader = 1 %}
+  {% assign newHeader = item.path | split: '/' | last | truncate: 7, "" %}
+  {% if newHeader == lastHeader %}{% assign showHeader = 0 %}{% endif %}
+  {% assign lastHeader = newHeader %}
+  {% include bulletin-item.html entry=item showHeader=showHeader %}
+{% endfor %}
+{% if cnt >= startTopAccordion %}
+</div>
+<div class="see-more">
+  <span onclick="showMorePlans('plans', 'a');">See more</span><i id="more-plans-a" class="far fa-angle-up rotate"></i>
+</div>
+{% endif %}
+</section>
+{% endif %}
+
+{% comment %}Do the accordions{% endcomment %}
+{% assign lastFolder = folder %}
+{% assign itemSize = archive | size %}
+{% if itemSize > 0 %}
+{% assign lastHeader = '' %}
+<section class="bulletins-archive" markdown="1">
+{% assign item = archive | first %}
+{% assign folder = item.path | split: '/' | shift | pop | join: '/' %}
+{% assign lastFolder = folder %}
+## Archived news and announcements
+<ul class="usa-accordion">
+<li>
+<button class="usa-accordion-button" aria-expanded="false" aria-controls="year-{{folder}}">{{folder}}</button>
+<div id="year-{{folder}}" class="usa-accordion-content" markdown="1">
+{% for item in archive %}
+  {% unless item.path contains "/_hidden/" %}
+  {% assign folder = item.path | split: '/' | shift | pop | join: '/' %}
+  {% if folder != lastFolder %}
+{% assign lastFolder = folder %}
+</div>
+</li>
+<li>
+<button class="usa-accordion-button" aria-expanded="false" aria-controls="year-{{folder}}">{{folder}}</button>
+<div id="year-{{folder}}" class="usa-accordion-content" markdown="1">
+  {% endif %}
+  {% assign showHeader = 1 %}
+  {% assign newHeader = item.path | split: '/' | last | truncate: 7, "" %}
+  {% if newHeader == lastHeader %}{% assign showHeader = 0 %}{% endif %}
+  {% assign lastHeader = newHeader %}
+  {% include bulletin-item.html entry=item showHeader=showHeader %}
+  {% endunless %}
+{% endfor %}
+</div>
+</li>
+</ul>
+</section>
+{% endif %}
+</div>
+<section id="bulletins-search-results" class="bulletins hide" markdown="1">
+<!-- DONALD style this -->
+<span class="see-all"><a href="/agency-service-reps/bulletins/">See all</a></span>
+
+{% for item in topitems %}
+  {% include bulletin-item.html entry=item showHeader=0 addBlockName=1 %}
+{% endfor %}
+{% for item in archive %}
+  {% include bulletin-item.html entry=item showHeader=0 addBlockName=1 %}
+{% endfor %}
+</section>
