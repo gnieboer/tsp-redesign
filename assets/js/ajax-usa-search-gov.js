@@ -93,7 +93,7 @@ function buildSearchURL(siteName, affiliate, accessKey, limit, offset, query) {
           + '&limit=' + limit
           + '&query=' + query;
   if (offset > 0) { url += '&offset=' + offset; }
-  console.log('buildSearchURL |'+url+'|');
+  // console.log('buildSearchURL |'+url+'|');
   return url;
 }
 
