@@ -4,7 +4,7 @@ title: Bulletins
 styles:
 sidenav: agency-service-reps
 scripts:
-permalink: /agency-service-reps/bulletins/
+permalink: /agency-service-reps/bulletins-static/
 ---
 
 # Bulletins
@@ -25,11 +25,6 @@ TSP bulletins provide guidance to TSP Agency and Service representatives for imp
 </div>
 
 <!-- # Help me find bulletins and resources about {#forms} -->
-{% include bulletin-list.html %}
-
----
----
----
 
 <!-- SEARCH FORMS -->
 <section class="search-bulletins search-forms">
