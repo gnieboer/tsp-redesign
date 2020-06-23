@@ -1,0 +1,92 @@
+{% assign entry = include.entry %}
+{% assign addBlockName = include.addBlockName | default: 0 %}
+{% assign bulletin_name = entry.permalink | split: '/' | last | default: 'anchor' | append: '-' | append: addBlockName %}
+{% assign bulletin_posted = entry.path | split: '/' | last | truncate: 10, '' | default: '--' %}
+{% assign bulletin_name = bulletin_name | replace: '.pdf', '' %}
+{% assign title = entry.title | default: "Missing TITLE" %}
+{% assign xentryHTML = entry.permalink | append: '.html' %}
+{% assign entryHTML = entry.permalink %}
+
+<h1 id="bulletin">TSP bulletin<br />
+<!-- TARGET AUDIDENCE -->
+{% if entry.agency == true and entry.service == false %}
+<span>for Agency TSP Representatives</span><br />
+{% endif %}
+{% if entry.agency == false and entry.service == true %}
+<span>for Service TSP Representatives</span><br />
+{% endif %}
+{% if entry.agency == true and entry.service == true %}
+<span>for Agency and Service TSP Representatives</span>
+{% endif %}
+</h1>
+
+<h2>{{entry.title}}</h2>
+<section id="{{bulletin_name}}-div" class="bulletin" markdown="1">
+{{entry.content}}
+
+<!-- section <footer> -->
+<footer class="bulletin-footer">
+<div class="usa-grid">
+<div class="usa-width-one-sixth">Bulletin:</div>
+<div class="usa-width-five-sixths">{{bulletin_number}}</div>
+</div>
+
+<div class="usa-grid">
+<div class="usa-width-one-sixth">Date:</div>
+<!-- { date from filename } -->
+<div class="usa-width-five-sixths">{{bulletin_posted | date: '%B %d, %Y'}}</div>
+</div>
+
+<div class="usa-grid">
+<div class="usa-width-one-sixth">Inquiries:</div>
+<div class="usa-width-five-sixths">Questions concerning this bulletin should be directed to Agency Technical Services at <span class="nobr">1-888-802-0179</span>.</div>
+</div>
+
+<div class="usa-grid">
+<div class="usa-width-one-sixth">Chapter(s):</div>
+<div class="usa-width-five-sixths" markdown="1">
+<!-- Chapter { page.bulletin_chapter comma separated pair } -->
+{% for chapter in entry.bulletin_chapter %}
+{% assign chapter_number = chapter | split: ',' | first %}
+{% assign chapter_topic = chapter | split: ',' | last %}
+{% if forloop.first == false %} __ {% endif %}
+Chapter {{chapter_number | strip }}, {{chapter_topic | strip }}
+{% endfor %}
+<!-- DAV, if possible the Chapter <a> link should function as the drop-down selector on the Bulletins landing page. It should load that page, with the topic link bulletins displayed. -->
+</div>
+</div>
+
+<div class="usa-grid">
+<div class="usa-width-one-sixth">Supersedes:</div>
+
+<div class="usa-width-five-sixths" markdown="1">
+{%- if entry.supersedes == "N/A" -%}
+<p>N/A</p>
+{% else %}
+{% for supersede in entry.supersedes %}
+  {% assign str = supersede | replace_first: ',', '_,_' %}
+  {% assign supersede_name = str | split: '_,_' | first %}
+  {% assign supersede_title = str | split: '_,_' | last %}
+  <p><a href="/bulletins/{{supersede_name}}/">TSP Bulletin {{supersede_name}}</a>, {{supersede_title}}</p>
+{% endfor %}
+{% endif %}
+</div>
+
+</div>
+</footer>
+</section>
+
+<section class="bulletins-current" markdown="1">
+<div class="usa-grid">
+  <div class="usa-width-one-whole">
+    <div class="flex post-and-share">
+      <span class="bulletin-number">Bulletin {{entry.bulletin_number}}</span>,
+      <span id="{{bulletin_name}}-posted" class="post-date" >{{bulletin_posted | date: '%B %d, %Y'}}</span>
+      <!-- Flex item #0, Name -->{% include social-media-share.html modalID=bulletin_name %}
+      <!-- Flex item #1, Date -->{% include copy-to-clipboard.html element=bulletin_name function='copyPlanNewsToClipboard' %}
+      {% comment %}{% if entry.permalink %}<a href="{{entryHTML}}">Entry</a>{% endif %}{% endcomment %}
+      <!-- Flex item #2, Share Modal -->{% include share-bar.html pageurl=entryHTML modalID=bulletin_name %}
+    </div>
+  </div> <!-- END div.usa-width-one-whole -->
+</div> <!-- END div.usa-grid -->
+</section>

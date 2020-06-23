@@ -179,7 +179,7 @@ section {
     margin-top: 2rem;
   }
 
-  &.inline-search {
+  &.search-forms {
     form.animated-search {
       &.bulletins {
         input[type=text]:focus {
@@ -262,7 +262,6 @@ section {
       .bulletin-number {
         font-weight: $bold;
       }
-
       span {
         font-weight: $normal;
       }
