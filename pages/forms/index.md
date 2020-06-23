@@ -39,7 +39,7 @@ redirect_from:
 
 <div class="usa-grid-full">
   <div class="usa-width-one-whole">
-    <section class="search-forms">
+    <section class="inline-search">
       <div role="search" class="search-container">
         <!-- Topic drop-down list -->
 
@@ -64,7 +64,7 @@ redirect_from:
               autocomplete="off" placeholder="Enter search term(s)">
         </form>
       </div>
-    </section><!-- // end section.search-forms -->
+    </section><!-- // end section.inline-search -->
   </div><!-- END div.usa-width-one-whole -->
 </div><!-- END div.usa-grid-full -->
 <section id="form-search-results" class="form-search-results ">
