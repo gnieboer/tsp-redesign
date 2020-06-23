@@ -54,7 +54,7 @@ redirect_from:
               <option value='0'>Show all</option>
             </select>
         </div>
-
+        <span class="or">or</span>
         <input id="group" type="hidden" value="forms">
         <form accept-charset="UTF-8" action="javascript:void(0);" id="search-form-forms" method="get"
           class="animated-search">
