@@ -1,0 +1,47 @@
+---
+layout: default
+main:
+  class: usa-grid usa-section usa-content usa-layout-docs
+scripts:
+  - /assets/js/jquery.min.js
+  - /assets/js/bootstrap.min.js
+  - /assets/js/copy-to-clipboard.js
+---
+{% assign sidenav = site.data.navigation[page.sidenav] | default: page.sidenav %}
+{% assign xtra_class = '' %}
+{% if sidenav %}
+
+{% assign xtra_class = 'usa-width-three-fourths' %}
+<aside class="usa-width-one-fourth usa-layout-docs-sidenav sticky">
+  <ul class="usa-accordion">
+    <li>
+      <button class="usa-accordion-button"
+        aria-expanded="true"
+        aria-controls="sidenav-mobile">
+        More in this section
+      </button>
+      <div id="sidenav-mobile" class="usa-accordion-content">
+        {% include sidenav.html links=sidenav fake='/agency-serice-reps/bulletins-fake/' %}
+      </div>
+    </li>
+  </ul>
+</aside>
+{% endif %}
+
+{% capture top_of_page %}
+# Bulletins
+{:#bulletins}
+
+{% include next-outage.html %}
+{% endcapture %}
+
+<div class="{{xtra_class}} usa-layout-docs-main_content" markdown="1">
+  {{ top_of_page | markdownify }}
+
+  <!-- DONALD style this -->
+  <span class="see-all"><a href="/agency-serice-reps/bulletins/">See all</a></span>
+
+  <section class="bulletin-archive">
+  {% include bulletin-item.html entry=page showHeader=0 searchBar=0 %}
+  </section>
+</div>

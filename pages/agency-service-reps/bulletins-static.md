@@ -4,7 +4,7 @@ title: Bulletins
 styles:
 sidenav: agency-service-reps
 scripts:
-permalink: /agency-service-reps/bulletins/
+permalink: /agency-service-reps/bulletins-static/
 ---
 
 # Bulletins
@@ -25,17 +25,12 @@ TSP bulletins provide guidance to TSP Agency and Service representatives for imp
 </div>
 
 <!-- # Help me find bulletins and resources about {#forms} -->
-{% include bulletin-list.html %}
-
----
----
----
 
 <!-- SEARCH FORMS -->
-<section class="search-bulletins inline-search">
+<section class="search-bulletins search-forms">
   <div class="usa-grid-full">
     <div class="usa-width-one-whole">
-      <!-- <section class="inline-search"> -->
+      <!-- <section class="search-forms"> -->
         <div role="search" class="search-container">
           <!-- Topic drop-down list -->
           <div class="select">
@@ -76,7 +71,7 @@ TSP bulletins provide guidance to TSP Agency and Service representatives for imp
           name="usv-only"
           value="usv-only" />
         <label for="usv-only">Show only Uniformed Services (U) bulletins</label>
-    <!--  </section> // end section.inline-search -->
+    <!--  </section> // end section.search-forms -->
     </div><!-- END div.usa-width-one-whole -->
   </div><!-- END div.usa-grid-full -->
 </section>
