@@ -14,6 +14,17 @@ function usvOnlyChecked() {
   return false;
 }
 
+function usvOnlyGood() {
+  var flag = usvOnlyChecked();
+  if (flag) {
+    $('.not-service-bulletin').addClass('hide');
+    $('.is-service-bulletin').removeClass('hide');
+  } else {
+    $('.is-service-bulletin').addClass('hide');
+    $('.not-service-bulletin').removeClass('hide');
+  }
+}
+
 
 
 <!-- ------------------------------------------------ -->
@@ -35,6 +46,8 @@ function inlineSearch(queryBox, resultDiv) {
 function setTopic(dropdown) {
   var topic = getCleanParm('topic', 30);
   if (topic == '') { return false; }
+  topic = topic.toLowerCase().replace(' ', '-');
+  console.log('set Topic ', dropdown, topic);
   $('#'+dropdown).val(topic);
   if (($('#'+dropdown).val()) == null) { $('#'+dropdown).val(-1); return false; };
   $('#'+dropdown).change();

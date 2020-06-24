@@ -28,7 +28,7 @@
 <footer class="bulletin-footer">
 <div class="usa-grid">
 <div class="usa-width-one-sixth">Bulletin:</div>
-<div class="usa-width-five-sixths">{{bulletin_number}}</div>
+<div class="usa-width-five-sixths">{{entry.bulletin_number}}</div>
 </div>
 
 <div class="usa-grid">
@@ -48,7 +48,9 @@
 <!-- Chapter { page.bulletin_chapter comma separated pair } -->
 {% for chapter in entry.bulletin_chapter %}
 {% assign chapter_number = chapter | split: ',' | first %}
-{% assign chapter_topic = chapter | split: ',' | last %}
+{% assign chapter_topic = chapter | split: ',' | last | strip %}
+{% assign parent_url = site.baseurl | append: "/agency-service-reps/bulletins/?topic=" | append: chapter_topic %}
+{% assign chapter_topic = "<a href='" | append: parent_url | append: "'>" | append: chapter_topic | append: "</a>" %}
 {% if forloop.first == false %} __ {% endif %}
 Chapter {{chapter_number | strip }}, {{chapter_topic | strip }}
 {% endfor %}
@@ -60,7 +62,7 @@ Chapter {{chapter_number | strip }}, {{chapter_topic | strip }}
 <div class="usa-width-one-sixth">Supersedes:</div>
 
 <div class="usa-width-five-sixths" markdown="1">
-{%- if entry.supersedes == "N/A" -%}
+{%- if entry.supersedes[0] == "N/A" -%}
 <p>N/A</p>
 {% else %}
 {% for supersede in entry.supersedes %}
