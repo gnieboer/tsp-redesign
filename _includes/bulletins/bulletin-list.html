@@ -4,14 +4,17 @@
 {% assign archive = "" | split: ',' %}
 {% assign idx = include.idx | default: 'x' %}
 {% assign noAccordions = include.noAccordions | default: false %}
+{% assign total_size_u = 0 %}
 {% for item in bulletin_list %}{% unless item.path contains '/_hidden/' %}
 {% assign topics = item.bulletin_topic | join: '~~~' | downcase | split: '~~~' %}
 {% if include.topic == "" or topics contains include.topic %}
 {% assign folder = item.path | split: '/' | shift | pop | join: '/' %}
 {% if folder == '' or noAccordions == true %}
   {% assign topitems = topitems | push: item %}
+  {% if item.service %}{% assign total_size_u = total_size_u | plus: 1 %}{% endif %}
 {% else %}
   {% assign archive = archive | push: item %}
+  {% if item.service %}{% assign total_size_u = total_size_u | plus: 1 %}{% endif %}
 {% endif %}
 {% endif %}
 {% endunless %}{% endfor %}
@@ -22,9 +25,12 @@
 {% assign aSize = archive | size %}
 {% assign total_size = topitems | size | plus: aSize %}
 {% if total_size == 1 %}{% assign type = 'bulletin' %}{% endif %}
-{% unless include.topic == "cant match" %}
-<div class="select-bulletins-topic">
+{% unless include.topic == "" %}
+<div class="select-bulletins-topic not-service-bulletin">
   <h2 class="results">We found <strong>{{total_size}}</strong> {{type}} about <strong>{{include.topic | capitalize }}</strong></h2>
+</div>
+<div class="select-bulletins-topic is-service-bulletin hide">
+  <h2 class="results">We found <strong>{{total_size_u}}</strong> {{type}} about <strong>{{include.topic | capitalize }}</strong></h2>
 </div>
 {% endunless %}
 
@@ -97,7 +103,7 @@
 </div>
 <section id="bulletins-search-results" class="bulletins hide" markdown="1">
 <!-- DONALD style this -->
-<span class="see-all"><a href="/agency-service-reps/bulletins/">See all</a></span>
+<span class="see-all"><a href="{{ site.baseurl }}/agency-service-reps/bulletins/">See all</a></span>
 
 {% for item in topitems %}
   {% include bulletins/bulletin-item.html entry=item showHeader=0 addBlockName=1 %}

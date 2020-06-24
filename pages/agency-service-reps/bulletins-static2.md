@@ -25,7 +25,7 @@ TSP bulletins provide guidance to TSP Agency and Service representatives for imp
 </div>
 
 <!-- # Help me find bulletins and resources about {#forms} -->
-{% include bulletin-list.html %}
+{% include bulletins/bulletin-list.html %}
 
 ---
 ---
