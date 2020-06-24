@@ -2,9 +2,14 @@
 
 var glossaryTerms = [
   {
+    term: '3-Month T-Bill',
+    definition:
+      'The 3-Month T-Bill is a short-term U.S. Government security with a maturity period of 3 months. The 3-Month T-Bill rate is not the benchmark for the G Fund; it is presented only as a reference point for yields on short-term securities.'
+  },
+  {
     term: 'Account Access',
     definition:
-      "See <a class='glossaryTerm' href='glossary.html?term=MyAccount'>My Account</a>."
+      "See <a data-term='My Account'>My Account</a>."
   },
   {
     term: 'Account Balance',
@@ -14,7 +19,7 @@ var glossaryTerms = [
   {
     term: 'Account Number',
     definition:
-      "The 13-digit number that the TSP assigns to a participant to identify his or her TSP account. The participant must use this TSP account number (or a <a class='glossaryTerm' href='glossary.html?term=CustomUserID'>customized user ID</a>) in conjunction with his or her Web password to log into the My Account section of the TSP website, and must use this number with his or her Personal Identification Number (PIN) to access his or her account on the ThriftLine."
+      "The 13-digit number that the TSP assigns to a participant to identify his or her TSP account. The participant must use this TSP account number (or a <a data-term='Customized User ID'>customized user ID</a>) in conjunction with his or her Web password to log into the My Account section of the TSP website, and must use this number with his or her Personal Identification Number (PIN) to access his or her account on the ThriftLine."
   },
   {
     term: 'Active Investing',
@@ -27,14 +32,14 @@ var glossaryTerms = [
       'Contributions that are made after taxes have been taken from pay. Roth contributions are made after-tax.'
   },
   {
-    term: 'Agency Automatic (1%) Contributions',
+    term: 'Agency/Service Automatic (1%) Contributions',
     definition:
-      "Contributions equal to 1% of basic pay each pay period, contributed to a FERS participant's TSP account by his or her agency."
+      'Contributions equal to 1% of basic pay each pay period, contributed to a FERS or BRS participant&#8217;s TSP account by his or her agency or service. (CSRS employees and non-BRS uniformed services members do not receive these contributions.)'
   },
   {
-    term: 'Agency Matching Contributions',
+    term: 'Agency/Service Matching Contributions',
     definition:
-      'Contributions made by agencies to TSP accounts of FERS employees who contribute their own money to the TSP. (CSRS employees do not receive matching contributions. At present, members of the uniformed services also do not receive matching contributions.)'
+      'Contributions made by agencies to TSP accounts of FERS and BRS participants who contribute their own money to the TSP. (CSRS employees and non-BRS uniformed services members do not receive matching contributions.)'
   },
   {
     term: 'Annual Additions (Section 415(c)) Limit',
@@ -57,11 +62,6 @@ var glossaryTerms = [
       'Applies to FERS and CSRS employees hired or rehired after July 31, 2010. As a result of the Thrift Savings Plan Enhancement Act of 2009, Public Law 111-31, signed into law on June 22, 2009, agencies must enroll their newly hired or rehired FERS and CSRS employees in the TSP. Automatic enrollment contributions are deducted from an employee&#8217;s pay at a rate of 3% of basic pay per pay period and deposited into their TSP accounts. Automatically enrolled participants may make a contribution election at any time to change or stop their TSP contributions.'
   },
   {
-    term: 'Basic Pay',
-    definition:
-      '<b>Civilian</b> &mdash; This pay is defined in 5 United States Code (U.S.C.) 8331(3)..<br><b>Uniformed Services</b> &mdash; This refers to compensation payable under sections 204 and 206 of U.S.C. title 37. Section 204 pay is pay for active duty; section 206 pay (e.g., inactive duty for training (IDT) pay) is pay earned by members of the Ready Reserve (including the National Guard).'
-  },
-  {
     term: 'Basic Pay (Civilian)',
     definition: 'This pay is defined in 5 United States Code (U.S.C.) 8331(3).'
   },
@@ -73,7 +73,7 @@ var glossaryTerms = [
   {
     term: 'Before-Tax Contributions',
     definition:
-      "See &ldquo;<a class='glossaryTerm' href='glossary.html?term=PreTaxContributions'>Pre-Tax Contributions</a>.&rdquo;"
+      "See &#8220;<a data-term='Pre-Tax Contributions'>Pre-Tax Contributions</a>.&#8221;"
   },
   {
     term: 'Beneficiary',
@@ -113,7 +113,7 @@ var glossaryTerms = [
   {
     term: 'Civil Service Retirement System (CSRS)',
     definition:
-      'The term &ldquo;CSRS&rdquo; refers to the retirement system for Federal civilian employees who were hired before January 1, 1984. CSRS refers to the Civil Service Retirement System, including CSRS Offset, the Foreign Service Retirement and Disability System, and other equivalent Government retirement plans.'
+      'The term &#8220;CSRS&#8221; refers to the retirement system for Federal civilian employees who were hired before January 1, 1984. CSRS refers to the Civil Service Retirement System, including CSRS Offset, the Foreign Service Retirement and Disability System, and other equivalent Government retirement plans.'
   },
   {
     term: 'Contribution',
@@ -123,7 +123,7 @@ var glossaryTerms = [
   {
     term: 'Contribution Allocation',
     definition:
-      "A participant's choice that tells the TSP how contributions, rollovers, and loan payments that are going into his or her account should be invested among the TSP funds. (See &ldquo;<a class='glossaryTerm' href='glossary.html?term=InvestmentAllocation'>Contribution Allocation</a>&rdquo; and &ldquo;<a class='glossaryTerm' href='glossary.html?term=IFT'>Interfund Transfer</a>.&rdquo;)"
+      'A participant&#8217;s choice that tells the TSP how contributions, rollovers, and loan payments that are going into his or her account should be invested among the TSP funds.'
   },
   {
     term: 'Contribution Election',
@@ -148,21 +148,29 @@ var glossaryTerms = [
   {
     term: 'Customized User ID',
     definition:
-      "A combination of letters, numbers, and/or symbols that you can create to use instead of your TSP <a class='glossaryTerm' href='glossary.html?term=AccountNumber'>account number</a> to log into the <a class='glossaryTerm' href='glossary.html?term=MyAccount'>My Account</a> section of the TSP website.  The user ID cannot be used on the ThriftLine as a substitute for the account number."
+      "A combination of letters, numbers, and/or symbols that you can create to use instead of your TSP <a data-term='Account Number'>account number</a> to log into the <a data-term='My Account'>My Account</a> section of the TSP website. The user ID cannot be used on the ThriftLine as a substitute for the account number."
   },
   {
     term: 'Default Risk',
     definition:
-      'The risk that a borrower will not make a scheduled payment of principal and/or interest. Also referred to as Default Risk.'
+      "See &#8220;<a data-term='Credit Risk'>Credit Risk</a>&#8221;"
   },
   {
     term: 'Designation of Beneficiary',
     definition:
-      "The participant's formal indication of who should receive the money in his or her account in the event of his or her death. Participants must use the TSP Designation of Beneficiary form (TSP-3). (A will is not valid for the disposition of a participant's TSP account.)"
+      'The participant&#8217;s formal indication of who should receive the money in his or her account in the event of his or her death. Participants must use the TSP Designation of Beneficiary form (TSP-3). (A will is not valid for the disposition of a participant&#8217;s TSP account.)'
   },
   {
     term: 'Disburse',
     definition: 'To pay out money, as from the TSP.'
+  },
+  {
+    term: 'Dow Jones',
+    definition: 'The Dow Jones U.S. Completion Total Stock Market Index is an index of all actively traded U.S. common stocks that are not included in the S&P 500. The index is designed to be the broadest measure of the non-S&P 500 domestic stock markets.'
+  },
+  {
+    term: 'EAFE',
+    definition: 'The EAFE Index, published by MSCI, is an index of the equity markets of the developed world outside of the United States and Canada. It is the most widely used international stock index.'
   },
   {
     term: 'Elective Deferral Limit',
@@ -182,7 +190,7 @@ var glossaryTerms = [
   {
     term: "Federal Employees' Retirement System (FERS)",
     definition:
-      'The term "FERS" refers to the retirement system for Federal civilian employees who were hired on or after January 1, 1984. FERS refers to the Federal Employees\' Retirement System, the Foreign Service Pension System, and other equivalent Government retirement plans.'
+      'The term &#8220;FERS&#8221; refers to the retirement system for Federal civilian employees who were hired on or after January 1, 1984. FERS refers to the Federal Employees&#8217; Retirement System, the Foreign Service Pension System, and other equivalent Government retirement plans.'
   },
   {
     term: 'Fixed Income Investments',
@@ -222,7 +230,7 @@ var glossaryTerms = [
   {
     term: 'In-Service Withdrawal',
     definition:
-      "A disbursement made from a participant's account which is available only to a participant who is still employed by the Federal Government, including the uniformed services."
+      'A disbursement made from a participant&#8217;s account which is available only to a participant who is still employed by the Federal Government, including the uniformed services.'
   },
   {
     term: 'Insurable Interest',
@@ -237,7 +245,7 @@ var glossaryTerms = [
   {
     term: 'Investment Allocation',
     definition:
-      "A participant's choice that tells the TSP (1) how money going into his or her account should be invested in the TSP funds (contribution allocation), and/or (2) how money already in the TSP account should be invested in the TSP funds (interfund transfer). An investment allocation can be made on the TSP website in My Account, or by calling the ThriftLine toll-free at <nobr>1-TSP-YOU-FRST</nobr> <nobr>(1-877-968-3778).</nobr> (See &ldquo;<a class='glossaryTerm' href='glossary.html?term=ContributionAllocation'>Contribution Allocation</a>&rdquo; and &ldquo;<a class='glossaryTerm' href='glossary.html?term=IFT'>Interfund Transfer</a>.&rdquo;)"
+      "A participant's choice that tells the TSP (1) how money going into his or her account should be invested in the TSP funds (contribution allocation), and/or (2) how money already in the TSP account should be invested in the TSP funds (interfund transfer). An investment allocation can be made on the TSP website in My Account, or by calling the ThriftLine toll-free at <nobr>1-TSP-YOU-FRST</nobr> <nobr>(1-877-968-3778).</nobr> (See &#8220;<a data-term='Contribution Allocation'>Contribution Allocation'></a>&#8221; and &#8220;<a data-term='Interfund Transfer'>Interfund Transfer</a>.&#8221;)"
   },
   {
     term: 'IRS Life Expectancy Tables',
@@ -251,7 +259,7 @@ var glossaryTerms = [
   {
     term: 'Matching Contributions',
     definition:
-      "See &ldquo;<a class='glossaryTerm' href='glossary.html?term=AgencyMatchingContributions'>Agency Matching Contributions</a>.&rdquo;"
+      "See &#8220;<a data-term='Agency Matching Contributions'>Agency Matching Contributions</a>.&#8221;"
   },
   {
     term: 'Mixed Withdrawal',
@@ -261,27 +269,27 @@ var glossaryTerms = [
   {
     term: 'Monthly Payments',
     definition:
-      "See &ldquo;<a class='glossaryTerm' href='glossary.html?term=TSPMonthlyPayments'>TSP Monthly Payments</a>.&rdquo;"
+      "See &#8220;<a data-term='TSP Monthly Payments'>TSP Monthly Payments</a>.&#8221;"
   },
   {
     term: 'My Account',
     definition:
-      "The secure section of the TSP website, where you can log into your account to find out your account balance or perform certain transactions. See also &ldquo;<a class='glossaryTerm' href='glossary.html?term=CustomUserID'>Customized User Id</a>.&rdquo;"
+      "The secure section of the TSP website, where you can log into your account to find out your account balance or perform certain transactions. See also &#8220;<a data-term='Customized User ID'>Customized User Id</a>.&#8221;"
   },
   {
     term: 'Non-BRS Uniformed Services',
     definition:
-      "Includes any member of the uniformed services not covered by the \"<a href='?term=BRS'>Blended Retirement System</a>. Non-BRS members are encouraged to enroll in the TSP as an important supplement to their defined benefit plan, but they are not eligible for Service Automatic (1%) Contributions or Service Matching Contributions."
+      "Includes any member of the uniformed services not covered by the <a data-term='Blended Retirement System (BRS)'>Blended Retirement System</a>. Non-BRS members are encouraged to enroll in the TSP as an important supplement to their defined benefit plan, but they are not eligible for Service Automatic (1%) Contributions or Service Matching Contributions."
   },
   {
     term: 'Nonpay Status',
     definition:
-      'Actively employed by the Federal government or uniformed services but not receiving regular pay because of furlough, suspension, leave without pay (including leave without pay to perform military service), or pending resolution of a grievance or appeal. (See also "<a href=\'?term=PayStatus\'>Pay Status</a>.")'
+      "Actively employed by the Federal government or uniformed services but not receiving regular pay because of furlough, suspension, leave without pay (including leave without pay to perform military service), or pending resolution of a grievance or appeal. (See also &#8220;<a data-term='Pay Status'>Pay Status</a>&#8221;.)"
   },
   {
     term: 'Partial Withdrawal',
     definition:
-      "A one-time post-employment distribution of part of a participant's account balance which can be taken if the participant did not make an age-based in-service withdrawal while employed by the Federal Government or the uniformed services.  A partial withdrawal is participant-elected and is made in a single payment."
+      'A one-time post-employment distribution of part of a participant&#8217;s account balance which can be taken if the participant did not make an age-based in-service withdrawal while employed by the Federal Government or the uniformed services.  A partial withdrawal is participant-elected and is made in a single payment.'
   },
   {
     term: 'Participant',
@@ -291,7 +299,7 @@ var glossaryTerms = [
   {
     term: 'Participant Statements',
     definition:
-      "Statements that are furnished to each TSP participant after the end of each calendar quarter and after the end of each calendar year. Quarterly statements show the participant's account balance (in both dollars and shares) and the transactions in his or her account during the quarter covered. Annual statements summarize the financial activity in the participant's account during the year covered and provide other important account data such as the participant's personal investment performance, primary beneficiary information, and an account profile."
+      'Statements that are furnished to each TSP participant after the end of each calendar quarter and after the end of each calendar year. Quarterly statements show the participant&#8217;s account balance (in both dollars and shares) and the transactions in his or her account during the quarter covered. Annual statements summarize the financial activity in the participant&#8217;s account during the year covered and provide other important account data such as the participant&#8217;s personal investment performance, primary beneficiary information, and an account profile.'
   },
   {
     term: 'Passive Investing',
@@ -304,6 +312,11 @@ var glossaryTerms = [
       'A code made up of letters, numbers, and special characters that  TSP participants use in conjunction with their TSP account number (or customized user ID) when accessing their account through the TSP website. For new participants, the initial password is computer generated and is sent shortly after the first contribution is received by the TSP. Participants will be prompted to customize their passwords when they log into their accounts for the first time.'
   },
   {
+    term: 'Pay Entry Basic Date',
+    definition:
+      "See &#8220;<a data-term='PEBD'>PEDB</a>.&#8221;"
+  },
+  {
     term: 'Payee',
     definition:
       'The individual or organization who is the intended recipient of the court-ordered disbursement.'
@@ -311,7 +324,12 @@ var glossaryTerms = [
   {
     term: 'Pay Status',
     definition:
-      'Actively employed by the Federal government or uniformed services and receiving regular pay. (See also "<a href=\'?term=NonpayStatus\'>Nonpay Status</a>.")'
+      "Actively employed by the Federal government or uniformed services and receiving regular pay. (See also &#8220;<a data-term='Nonpay Status'>Nonpay Status</a>&#8221;.)"
+  },
+  {
+    term: 'PEBD',
+    definition:
+      'Pay Entry Basic Date. The date the TSP uses to mark the beginning of a member&#8217;s service, for the purpose of determining vesting period and eligibility to receive service automatic and matching contributions. The Navy and Marine Corps refer to this as the pay entry base date, while the Air Force calls it simply the pay date. The Department of Defense refers to it as the basic pay date.'
   },
   {
     term: 'Permanent Disability',
@@ -321,7 +339,7 @@ var glossaryTerms = [
   {
     term: 'Personal Identification Number (PIN)',
     definition:
-      "A four-digit number that the participant can use (in conjunction with his or her TSP account number) to access his or her own account on the ThriftLine. The initial PIN is computer-generated and is sent to the participant shortly after the participant's first contribution is received by the TSP."
+      'A four-digit number that the participant can use (in conjunction with his or her TSP account number) to access his or her own account on the ThriftLine. The initial PIN is computer-generated and is sent to the participant shortly after the participant&#8217;s first contribution is received by the TSP.'
   },
   {
     term: 'Personal Investment Performance (PIP)',
@@ -331,7 +349,7 @@ var glossaryTerms = [
   {
     term: 'Post-Separation Withdrawal',
     definition:
-      'A distribution from a participant\'s account which is available only to participants who have left Federal service or the uniformed services. Sometimes referred to as a "post-employment" withdrawal. (See also "<a href=\'/glossary.html?term=Withdrawal\'>Withdrawal</a>.")'
+      "A distribution from a participant\'s account which is available only to participants who have left Federal service or the uniformed services. Sometimes referred to as a &#8220;post-employment&#8221; withdrawal. (See also &#8220;<a data-term='Withdrawal'>Withdrawal</a>.&#8221;)"
   },
   {
     term: 'Prepayment Risk',
@@ -356,12 +374,12 @@ var glossaryTerms = [
   {
     term: 'Required Minimum Distribution (RMD)',
     definition:
-      "The amount of money, based on a participant's age and previous year's TSP account balance, that the IRS requires be distributed to a participant each year after the participant has reached age 70&#189;  and is separated from service."
+      'The amount of money, based on a participant&#8217;s age and previous year&#8217;s TSP account balance, that the IRS requires be distributed to a participant each year after the participant has reached age 72 and is separated from service. Participants who turned 70 &frac12; on or before December 31, 2019, were required to begin receiving RMDs in the year they turned 70 &frac12;.'
   },
   {
     term: 'Risk (Volatility)',
     definition:
-      "The amount of change (both up and down) in an investment's value over time."
+      'The amount of change (both up and down) in an investment&#8217;s value over time.'
   },
   {
     term: 'Roth Balance',
@@ -381,17 +399,17 @@ var glossaryTerms = [
   {
     term: 'Roth Qualified Earnings',
     definition:
-      "See &ldquo;<a class='glossaryTerm' href='glossary.html?term=Qualified'>Qualified Earnings</a>.&rdquo;"
+      "See &#8220;<a data-term='Qualified Earnings'>Qualified Earnings</a>.&#8221;"
+  },
+  {
+    term: 'S&P 500',
+    definition:
+      'The S&P 500 is an index of 500 large to medium-sized U.S. companies that are traded in the U.S. stock market. The index was designed by Standard & Poor’s Corporation (S&P) to provide a representative measure of the U.S. stock market’s performance. The S&P 500 is considered a “big company” index.'
   },
   {
     term: 'Section 415(c) Limit',
     definition:
       'An annual dollar limit, established under Internal Revenue Code (IRC) section 415(c), that limits the amount of money that can be contributed by a participant or on behalf of a participant to employer-sponsored plans like the TSP (includes all employee and agency contributions).'
-  },
-  {
-    term: 'Section 415(c) Limit',
-    definition:
-      'An annual dollar limit, established under Internal Revenue Code (IRC) section 415(c), that limits the amount of money that can be contributed by a participant or on behalf of a participant to employer-sponsored plans like the TSP (includes all employee and agency contributions).  <strong>Note:</strong>  If you are contributing from pay that is subject to the combat zone tax exclusion, those tax-exempt contributions are only subject to the section 415(c) limit.'
   },
   {
     term: 'Securities',
@@ -402,6 +420,14 @@ var glossaryTerms = [
     term: 'Separate Account',
     definition:
       'A segregated account for the purpose of holding the invested assets of the Trust.'
+  },
+  {
+    term: 'Service Automatic (1%) Contributions',
+    definition: "See &#8220;<a data-term='Agency/Service Automatic (1%) Contributions'>Agency/Service Automatic (1%) Contributions</a>.&#8221;"
+  },
+  {
+    term: 'Service Matching Contributions',
+    definition: "See &#8220;<a data-term='Agency/Service Matching Contributions'>Agency/Service Matching Contributions</a>.&#8221;"
   },
   {
     term: 'SIMPLE IRA',
@@ -421,7 +447,7 @@ var glossaryTerms = [
   {
     term: 'Statutory Order of Precedence',
     definition:
-      "The order in which your TSP account balance will be paid after your death if you did not have a valid <a class='pdfLink' href='/PDF/formspubs/tsp-3.pdf' title='File size: 500 KB (opens in a new window)'>Form TSP-3</a>, Designation of Beneficiary on file with the TSP.  The disposition of your account will be made as follows: <ol><li>To your spouse.</li><li>If none, to your child or children equally, and descendants of deceased children by representation.</li><li>If none, to your parents equally or to the surviving parent.</li><li>If none, to the appointed executor or administrator of your estate.</li><li>If none, to your next of kin who would be entitled to your estate under the laws of the state in which you resided at the time of your death.</li></ol>"
+      "The order in which your TSP account balance will be paid after your death if you did not have a valid <a href='/forms/tsp-3.pdf'>Form TSP-3</a>, Designation of Beneficiary on file with the TSP.  The disposition of your account will be made as follows: <ol><li>To your spouse.</li><li>If none, to your child or children equally, and descendants of deceased children by representation.</li><li>If none, to your parents equally or to the surviving parent.</li><li>If none, to the appointed executor or administrator of your estate.</li><li>If none, to your next of kin who would be entitled to your estate under the laws of the state in which you resided at the time of your death.</li></ol>"
   },
   {
     term: 'Stocks',
@@ -429,9 +455,14 @@ var glossaryTerms = [
       'Equity securities issued as ownership in a publicly held corporation.'
   },
   {
+    term: 'Tax Withholding',
+    definition:
+      'The requirement that we withhold a portion of payments from your TSP account for federal taxes. The default amount to be withheld depends on the type of payment. Increasing, decreasing, and/or waiving tax withholding are options for some payment types.'
+  },
+  {
     term: 'Taxable Amount',
     definition:
-      'As used when referring to payments from a TSP account, includes any traditional (non-Roth) contributions that you made (other than those made from tax-exempt pay), any Agency Automatic or Matching contributions (if you are FERS), earnings on your traditional contribtuions and agency contribtuions, and any Roth earnings that are not qualified earnings.  Also referred to as the &ldquo;taxable portion&rdquo; of a payment.'
+      'As used when referring to payments from a TSP account, includes any traditional (non-Roth) contributions that you made (other than those made from tax-exempt pay), any Agency Automatic or Matching contributions (if you are FERS), earnings on your traditional contribtuions and agency contribtuions, and any Roth earnings that are not qualified earnings.  Also referred to as the &#8220;taxable portion&#8221; of a payment.'
   },
   {
     term: 'Tax-Exempt Contributions',
@@ -441,7 +472,7 @@ var glossaryTerms = [
   {
     term: 'ThriftLine',
     definition:
-      "The TSP's automated voice response system. It provides general news about the TSP and allows participants to access certain information and perform some transactions over the telephone. You can also use the ThriftLine to contact participant service representatives at the TSP. To access your account through the ThriftLine, you will need your TSP account number and ThriftLine PIN."
+      'The TSP&#8217;s automated voice response system. It provides general news about the TSP and allows participants to access certain information and perform some transactions over the telephone. You can also use the ThriftLine to contact participant service representatives at the TSP. To access your account through the ThriftLine, you will need your TSP account number and ThriftLine PIN.'
   },
   {
     term: 'Time Horizon',
@@ -456,12 +487,17 @@ var glossaryTerms = [
   {
     term: 'Traditional Contribution',
     definition:
-      'Contributions from pay  that has not yet been taxed.&nbsp; Also referred  to as &ldquo;tax-deferred,&rdquo; &ldquo;pre-tax,&rdquo; or &ldquo;non-Roth&rdquo; contributions. Traditional contributions  also include contributions to a traditional balance from tax-exempt pay earned  in a combat zone.'
+      'Contributions from pay  that has not yet been taxed.&nbsp; Also referred  to as &#8220;tax-deferred,&#8221; &#8220;pre-tax,&#8221; or &#8220;non-Roth&#8221; contributions. Traditional contributions  also include contributions to a traditional balance from tax-exempt pay earned  in a combat zone.'
   },
   {
     term: 'Traditional IRA',
     definition:
       'A traditional individual retirement account described in &#167; 408(a) of the Internal Revenue Code (IRC), or an individual retirement annuity described in IRC &#167; 408(b). It does not include an inherited IRA, a Roth IRA, a SIMPLE IRA, or a Coverdell Education Savings Account (formerly known as an education IRA.)'
+  },
+  {
+    term: 'Transfer Eligibility',
+    definition:
+      'Your ability under the law to transfer a payment from your TSP account directly to an IRA or eligible employer plan. Not all payments are eligible for transfer (e.g., installment payments expected to last 10 years or more).'
   },
   {
     term: 'TSP Monthly Payments',
@@ -474,24 +510,29 @@ var glossaryTerms = [
       'Uniformed members of the Army, Navy, Air Force, Marine Corps, Coast Guard, Public Health Service, and the National Oceanic and Atmospheric Administration serving on active duty, and members of the Ready Reserve or National Guard of those services in any pay status.'
   },
   {
+    term: 'U.S. Aggregate Index',
+    definition:
+      'The U.S. Aggregate Index consists of high-quality fixed-income securities with maturities of more than one year. The index is comprised of Treasury and Agency bonds, asset-backed securities, and corporate and non-corporate bonds.'
+  },
+  {
     term: 'User ID',
     definition:
-      "See &ldquo;<a class='glossaryTerm' href='glossary.html?term=CustomUserID'>Customized User ID</a>.&rdquo;"
+      "See &#8220;<a data-term='Customized User ID'>Customized User ID</a>.&#8221;"
   },
   {
     term: 'Vested Account Balance',
     definition:
-      'The part of your Thrift Savings Plan (TSP) account balance that you are entitled to keep. It consists of all of your employee contributions and earnings, all of your Agency Matching Contributions and earnings (if you are a FERS participant and receive matching contributions from your agency), and, if you are a FERS participant, your Agency Automatic (1%) Contributions and earnings &mdash; provided you have met your time-in-service requirement as determined by your TSP Service Computation Date. Your vested account balance also includes any money transferred into the TSP from IRAs or eligible employer plans &mdash; and the earnings on that money.'
+      'The part of your Thrift Savings Plan (TSP) account balance that you are entitled to keep. It consists of all of your employee contributions and earnings, all of your Agency/Service Matching Contributions and earnings (if you are a FERS or BRS participant and receive matching contributions from your agency/service), and, if you are a FERS or BRS participant, your Agency/Service Automatic (1%) Contributions and earnings - provided you have met your time-in-service requirement as determined by your TSP Service Computation Date or <a data-term="PEBD">PEBD</a>. Your vested account balance also includes any money transferred into the TSP from IRAs or eligible employer plans - and the earnings on that money.'
   },
   {
     term: 'Vesting',
     definition:
-      'For a FERS participant, the time in service that he or she must have upon separation from service in order to be entitled to keep Agency Automatic (1%) Contributions and associated earnings. A participant is vested in (entitled to keep) the Agency Automatic (1%) Contribution in his or her account after completing 3 years of Federal service (2 years for most FERS employees in Congressional and certain noncareer positions).'
+      'Achieving ownership of all money in an account. Vesting only applies to the Agency/Service Automatic (1%) Contributions (and their earnings) and occurs after a participant works in the federal or uniformed services for a certain number of years. All years of service in a position eligible for the TSP count toward vesting, even if the participant doesn’t contribute to the TSP during that time. Most FERS employees are vested in (entitled to keep) these automatic contributions after three years of federal civilian service. BRS members and FERS employees in congressional and noncareer positions become vested after two years of service. <strong>Important</strong>: Civilian service does not count toward vesting in a uniformed services (BRS) account, and uniformed service does not count toward vesting in a civilian account.'
   },
   {
     term: 'Volatility',
     definition:
-      "The amount of change (both up and down) in an investment's value over time."
+      "See &#8220;<a data-term='Risk (Volatility)'>Risk</a>&#8221;"
   },
   {
     term: 'Withdrawal',

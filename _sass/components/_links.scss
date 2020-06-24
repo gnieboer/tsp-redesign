@@ -1,0 +1,23 @@
+a {
+  &.publication,
+  &.form {
+    &:after {
+      font-family: $font-awesome;
+      content: "\f1c1";
+      padding-left: 0.4rem;
+      font-style: normal;
+      font-weight: $light;
+    }
+  }
+  &.publication {
+    font-style: italic;
+  }
+  &.external-link {
+    &:after {
+      font-family: $font-awesome;
+      content: "\f14c";
+      padding-left: 0.4rem;
+      font-style: normal;
+    }
+  }
+}

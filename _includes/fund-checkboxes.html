@@ -1,0 +1,62 @@
+{% comment %}
+Checkboxes for rates of return and shareprice pages.
+Calling page needs to define fundCheckboxClick(chart, fund_checkbox).
+{% endcomment %}
+
+{% assign Lfunds = include.Lfunds | default: 1 %}
+{% assign InvFunds = include.InvFunds | default: 1 %}
+{% assign Index = include.Index | default: 1 %}
+{% assign chartName = include.chartName %}
+
+<!-- PROGRAMMED fieldset -->
+<section class="fund-selection">
+{% if Lfunds == 1 %}
+  <fieldset class="usa-fieldset-inputs usa-sans lifecycle-funds">
+    <legend>Lifecycle funds</legend>
+    {% include components/get_sorted_fund_list funds='lifecycle' %}
+    <ul class="usa-unstyled-list">
+      {% for fund in sorted %}
+      <li>
+        <input id="{{ fund.Fund_name | replace: " ", "_"}}" type="checkbox" name="rorCB"  checked
+              onClick="fundCheckboxClick('{{chartName}}', '{{ fund.Fund_name | replace: " ", "_"}}');">
+        <label for="{{ fund.Fund_name | replace: " ", "_"}}">{{ fund.Fund_name }}</label>
+      </li>
+      {% endfor %}
+      <li>
+        <input type="checkbox" name="rorCB" id="Lfunds" checked
+              onClick="fundCheckboxClick('{{chartName}}', 'Lfunds');">
+              <label for="Lfunds">Select all</label>
+      </li>
+    </ul>
+  </fieldset>
+{% endif %}
+
+{% if InvFunds == 1 %}
+<fieldset class="usa-fieldset-inputs usa-sans individual-funds">
+  <legend>Individual funds</legend>
+
+  {% include components/get_sorted_fund_list funds='Individual' %}
+  <ul class="usa-unstyled-list">
+    {% for fund in sorted %}
+    <li>
+      <input id="{{ fund.Fund_name | replace: " ", "_"}}" type="checkbox" name="rorCB" checked
+            onClick="fundCheckboxClick('{{chartName}}', '{{ fund.Fund_name | replace: " ", "_"}}');">
+      <label for="{{ fund.Fund_name | replace: " ", "_"}}">{{ fund.Fund_name }}</label>
+    </li>
+    {% endfor %}
+    <li>
+      <input id="InvFunds" type="checkbox" name="rorCB" checked
+            onClick="fundCheckboxClick('{{chartName}}', 'InvFunds');">
+      <label for="InvFunds">Select all</label>
+    </li>
+{% if Index == 1 %}
+    <li class="break">
+      <input id="Index" type="checkbox" name="index-funds"
+            onClick="fundCheckboxClick('{{chartName}}', 'Index');">
+      <label for="Index">Show <span data-term="Index Fund" class="js-glossary-toggle term term-end">index funds</span></label>
+    </li>
+{% endif %}
+  </ul>
+</fieldset>
+{% endif %}
+</section>

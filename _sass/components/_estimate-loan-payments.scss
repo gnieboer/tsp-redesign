@@ -1,0 +1,126 @@
+ul.repayment-terms {
+  li {
+    display: flex;
+    align-items: baseline;
+    input,
+    input:focus
+     {
+      width: auto;
+      margin: 0 .7rem;
+      // padding: 0;
+      min-width: 5rem;
+      text-align: center;
+    }
+  }
+
+  // NUMBER FORMAT SYMBOLS ($, %)
+    span[data-format] {
+        // position: relative;
+        // display: inline-flex;
+        width: auto;
+        // max-width: 46rem;
+        &:before,
+        &:after {
+          top: 1rem;
+          left: 1.8rem;
+          // color: #6f707b;
+          // pointer-events: none;
+          // position: absolute;
+          // padding: 1rem 0.7em;
+          margin: 0;
+        }
+        &.input-symbol-left {
+          // &:before {
+          //   content: attr(data-format);
+          //   left: 0;
+          // }
+          input {
+            // margin: 0;
+            // padding: 0;
+            // padding-left: 3rem;
+            text-align: left;
+          }
+        }
+        // &.input-symbol-right {
+        //   &:before {
+        //     content: attr(data-format);
+        //     right: 0;
+        //   }
+        //   input {
+        //     padding-right: 3rem;
+        //   }
+        // }
+    } // end span[data-format]
+}
+
+.pay-schedule-table {
+  td,
+  th {
+    &:nth-child(2) {
+      text-align: center;
+    }
+  }
+}
+
+@media screen and (max-width: $medium-screen) {
+  ul.repayment-terms {
+    li {
+      display: list-item;
+      // align-items: baseline;
+      // input,
+      // input:focus
+      //  {
+      //   width: auto;
+      //   margin: 0 .7rem;
+      //   // padding: 0;
+      //   min-width: 5rem;
+      //   text-align: center;
+      // }
+      input,
+      input:focus
+       {
+        display: inline-flex;
+        width: 50%;
+        margin: 0 1rem 2rem 0;
+      }
+    }
+    // NUMBER FORMAT SYMBOLS ($, %)
+      span[data-format] {
+          // position: relative;
+          display: inline;
+          width: 100%;
+          // max-width: 46rem;
+          &:before,
+          &:after {
+            top: -0.1rem;
+            left: 1.4rem;
+            // color: #6f707b;
+            // pointer-events: none;
+            // position: absolute;
+            // padding: 1rem 0.7em;
+            // margin: 0;
+          }
+          // &.input-symbol-left {
+          //   // &:before {
+          //   //   content: attr(data-format);
+          //   //   left: 0;
+          //   // }
+          //   input {
+          //     // margin: 0;
+          //     // padding: 0;
+          //     // padding-left: 3rem;
+          //     text-align: left;
+          //   }
+          // }
+          // &.input-symbol-right {
+          //   &:before {
+          //     content: attr(data-format);
+          //     right: 0;
+          //   }
+          //   input {
+          //     padding-right: 3rem;
+          //   }
+          // }
+      } // end span[data-format]
+  }
+}

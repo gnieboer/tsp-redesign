@@ -1,0 +1,35 @@
+{% assign formAudience = form.form_audience[0] %}
+{% assign audienceClass = "redbg" %}
+{% if formAudience ==  "Civilian" %}                 {% assign audienceClass = "form-civilian" %}   {% endif %}
+{% if formAudience ==  "Uniformed Services" %}       {% assign audienceClass = "form-uniformed" %}  {% endif %}
+{% if formAudience ==  "Both" %}                     {% assign audienceClass = "form-both" %}       {% endif %}
+{% if formAudience ==  "Beneficiary Participant" %}  {% assign audienceClass = "form-bpa" %}        {% endif %}
+{% assign divBlockID = "" %}
+{% assign divBlockClass = "" %}
+{% assign nameDiv = include.nameDiv | default: 0 %}
+{% if nameDiv != 0 %}
+  {% assign divBlockID = "id='" | append: form.form_url | replace: '.', '-' | append: "-block'" %}
+  {% assign divBlockClass = "div-block-class div-form-class" %}
+{% endif %}
+{% include components/testURL.html curPath='/forms/' rawURL=form.form_url %}{% assign formURL= absURL %}
+
+<div class="usa-width-one-half {{divBlockClass}}" {{divBlockID}}>
+  <div class="item-frame">
+
+    <div class="top {{ audienceClass }}">
+      {% if formAudience ==  "Uniformed Services" %}
+        <i class="fad fa-medal" aria-label="Form is for use by Uniformed Services members only" alt="Military star" title="Form is for use by Uniformed Services members only"></i>
+      {% endif %}
+    <p class="form-title">{{ form.form_name}}</p>
+    <p class="form-number">
+      <a href="{{ formURL }}" xxx="{{ prefixURL }}" class="form-name">
+        Form {{ form.form_number}}
+      </a>
+    </p>
+    </div>
+    <div class="form-description">
+    <p>Use this form to:</p>
+    <p>{{ form.form_info }}</p>
+    </div>
+  </div> <!-- end .item-frame -->
+</div> <!-- end .usa-width-one-half -->

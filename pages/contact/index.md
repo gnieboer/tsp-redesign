@@ -2,6 +2,8 @@
 layout: page
 title: Contact
 permalink: /contact/
+redirect_from:
+  - /ParticipantSupport/Content/contact/
 ---
 # We're here to help.
 
@@ -216,9 +218,9 @@ Processing Unit
 P.O. Box 385200  
 Birmingham, AL 35238-5200  
 **Fax Number:**  
-1-866-458-1452 (toll free)  
+1-844-985-1597 (toll free)
 **or**  
-(205) 439-4501 (not toll free)  
+(205) 929-8445 (not toll free)  
 
 **Overnight Delivery**  
 IBS - TSP Processing Unit  
@@ -246,9 +248,9 @@ Birmingham, AL 35242
 <div class="usa-grid-full">
 <div class="usa-width-two-thirds" markdown="1">
 
-Use this email address if you would like to contact [FRTIB’s Privacy Office](/privacy/), or if you would like to submit a privacy complaint.
+Use this email address if you would like to contact [FRTIB’s Privacy Office]({{ site.baseurl }}/privacy/), or if you would like to submit a privacy complaint.
 
-Additionally, we have developed instructions for submitting a [Privacy Act request](/contact-privacy/submit-privacy-act-request/) if you wish to access or correct records that FRTIB maintains about you.
+Additionally, we have developed instructions for submitting a [Privacy Act request]({{ site.baseurl }}/contact-privacy/submit-privacy-act-request/) if you wish to access or correct records that FRTIB maintains about you.
 
 </div>
 <div class="usa-width-one-third" markdown="1">

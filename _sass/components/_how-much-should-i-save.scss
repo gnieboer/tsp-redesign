@@ -1,0 +1,17 @@
+.calculator-requirements {
+  span {
+    height: 26px;
+    width: 26px;
+    border: 2px solid #02bfe7;
+    border-radius: 50%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    float: left;
+    margin-right: .75rem;
+    font-size: 1.8rem;
+    font-weight: $medium;
+    line-height: 0;
+    text-align: center;
+  }
+}

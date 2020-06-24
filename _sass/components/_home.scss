@@ -1,34 +1,39 @@
 .homepage {
-  h2, h3 {
+  h2,
+  h3 {
     font-family: $font-sans;
   }
 }
 
-a.learn-more, .usa-learn-more a {
+.usa-learn-more a,
+.home-getting-started a {
   font-family: $font-sans;
   font-size: 2.6rem;
   color: #046b99;
   text-decoration: none;
   font-weight: 600;
+
   &::after {
     content: '';
     position: relative;
     display: inline-block;
-    background: url(/assets/img/icons/arrow_sw.svg) no-repeat;
+    // background: url($baseurl + '/assets/img/icons/arrow_sw.svg') no-repeat;
+    background: url($baseurl + '/assets/img/icons/arrow_sw.svg') no-repeat;
     transform: rotate(180deg);
     width: 1.8rem;
     height: 2.8rem;
     margin: 0 0 0 1.4rem;
   }
+
   &:hover {
     text-decoration: underline;
   }
 }
-
 // HERO IMAGE
 .usa-section-dark {
   background-color: #323a45;
 }
+
 .usa-hero {
   h1 {
     font-weight: 500;
@@ -41,51 +46,79 @@ a.learn-more, .usa-learn-more a {
   .usa-width-two-thirds {
     padding-right: $spacing-md-small;
   }
-  .usa-width-one-third, .usa-width-one-fourth {
-  }
-}
 
+  .usa-width-one-fourth,
+  .usa-width-one-third {}
+}
 // New homepage styles
 // SECTION 1
+section {
 
-.home-getting-started {
+  &.home-getting-started {
+    h2 {
+      color: #046b99;
+      font-size: 2.5rem;
+    }
+    .usa-grid {
+      display: flex;
+      align-items: stretch;
+    }
+    .usa-width-one-third {
+      padding: 4rem 1.5rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      // min-height: 52rem;
 
-  h2 {
-    color: #046b99;
-    font-size: 2.5rem;
-  }
+      // &.column {
+      //   display: flex;
+      //   flex-direction: column;
+      //   justify-content: space-between;
+      // }
+      div.container {
 
-  .usa-width-one-third {
-    padding:4rem 1.5rem 0 1.5rem;
-    div:nth-of-type(1) {
-    height: 16rem;
-    display: flex;
-    align-items: center;
-    margin-bottom: 3rem;
-      img {
-        height: 14rem;
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
       }
-      img.team {
-        height: 12rem;
+      div.icon {
+        height: 16rem;
+        display: flex;
+        align-items: center;
+
+        img {
+          height: 14rem;
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+        }
+
+        img.team {
+          height: 12rem;
+        }
+      }
+    }
+
+    .usa-learn-more {
+      padding: 0 1.5rem 4rem;
+    }
+
+    p {
+      font-size: $h3-font-size;
+      color: #000;
+    }
+  }
+}
+@media only screen and (max-width: $medium-screen) {
+  section {
+    &.home-getting-started {
+      .usa-grid {
+        display: block;
       }
     }
   }
-  .usa-learn-more {
-    padding: 0 1.5rem 4rem 1.5rem;
-  }
-  p {
-    font-size: $h3-font-size;
-    color: #000;
-  }
 }
-
-
-// SECTION: OUR FUNDS AT A GLANCE
-.home-our-funds {
+// SECTION: OUR FUNDS
+#home-our-funds {
   background-color: #f1f1f1;
+
   h2 {
     background-color: #fff;
     color: #323a45;
@@ -94,60 +127,219 @@ a.learn-more, .usa-learn-more a {
     font-size: 4rem;
     text-align: center;
   }
-}
-// SECTION: QUICK LINKS > _quick-links.scss
 
+  .usa-grid {
+    padding-top: 4rem;
+  }
+
+  .usa-tabs { // _accoridion-usa-tabs overrides
+
+    li {
+      margin-right: 0;
+    }
+
+    .usa-accordion-button {
+      width: 100%;
+      display: block;
+      text-align: center;
+      font-size: 2rem;
+      background-color: #ffffff;
+      color: $color-primary-darker;
+      margin-bottom: 1rem;
+      padding: 1.5rem 2rem;
+      &[aria-expanded="true"] {
+        background-color: $color-primary-darker;
+        color: $color-white;
+        line-height: 1;
+        &:after {
+          content: '';
+          position: relative;
+          left: -7.5rem;
+          top: 5.7rem;
+          width: 0;
+          height: 0;
+          border-left: 20px solid transparent;
+          border-right: 20px solid transparent;
+          border-bottom: none;
+          border-top-width: 20px;
+          border-top-style: solid;
+          border-top-color: #323a45;
+          clear: both;
+        }
+      }
+    }
+    .usa-accordion-content {
+      margin-bottom: 3rem;
+      background-color: inherit;
+
+      p {
+        margin: auto;
+        font-size: 3rem;
+        padding: 3rem 0;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: $large-screen) {
+#home-our-funds {
+  background-color: #f1f1f1;
+
+  h2 {
+    background-color: #fff;
+    color: #323a45;
+    padding: 4rem 0;
+    margin: 0;
+    font-size: 4rem;
+    text-align: center;
+  }
+
+  .usa-grid {
+    padding-top: 4rem;
+  }
+
+  .usa-tabs { // _accoridion-usa-tabs overrides
+
+    li {
+      margin-right: 0;
+    }
+
+    .usa-accordion-button {
+      width: 49%;
+      display: inline-block;
+      border: none;
+      text-align: center;
+      font-size: 2rem;
+      background-color: #ffffff;
+      color: $color-primary-darker;
+      margin-bottom: 1rem;
+      &[aria-expanded="true"] {
+        background-color: $color-primary-darker;
+        color: $color-white;
+        line-height: 1;
+        &:after {
+          content: '';
+          position: relative;
+          // left: -45px;
+          // top: 57px;
+          width: 0;
+          height: 0;
+          border-left: 20px solid transparent;
+          border-right: 20px solid transparent;
+          border-bottom: none;
+          border-top-width: 20px;
+          border-top-style: solid;
+          border-top-color: #323a45;
+          clear: both;
+        }
+      }
+    }
+
+    // LEVEL 2: L FUNDS
+    .lifecycle-funds {
+      li {
+        display: block;
+        border-bottom: 1px solid #afafaf;
+
+        &:last-child {
+          border-bottom: none;
+        }
+      }
+
+      .usa-accordion-button {
+        position: relative;
+        text-align: left;
+        width: 100%;
+        background-color: transparent;
+        font-size: 3rem;
+        padding-left: 0;
+        line-height: 7rem;
+
+        .secondary {
+          color: #046b99;
+        }
+
+        &[aria-expanded="true"] {
+          background-color: inherit;
+          color: inherit;
+          line-height: 7rem;
+        }
+
+        &[aria-expanded="true"]::after {
+          content: none;
+        }
+      }
+    }
+    // end .lifecycle-funds
+  }
+  // end .usa-tabs
+}
+// end #home-our-funds
+} // end @media
+
+
+// SECTION: QUICK LINKS > _quick-links.scss
 // SECTION: KNOW YOURSELF AS AN INVESTOR
 .section-investor {
-  background-image: url('/assets/img/photo/Woman_holding_coffee.jpg');
+  background-image: url($baseurl + '/assets/img/photo/Woman_holding_coffee.jpg');
   background-size: cover;
+  background-position: center;
   padding: 22rem 0;
+
   h2 {
     margin-top: 0;
     color: #323a45;
     font-size: 6rem;
   }
+
   p {
     font-size: 3rem;
     color: #046b99;
   }
 }
-
 // SECTION: STAY CONNECTED WITH US
 .section-connected {
   background-color: #f1f1f1;
   text-align: center;
+
   h2 {
     background-color: #fff;
     padding: 4rem 0;
     margin: 0;
     font-size: 4rem;
   }
+
   h3 {
     font-size: 2.6rem;
-    padding: 0 0 4rem 0;
+    padding: 0 0 4rem;
     margin: 0;
+
     a {
       color: $color-black;
       text-decoration: none;
+
       &:hover {
         text-decoration: underline;
       }
+
       &:visited {
         color: $color-black;
       }
     }
   }
+
   .usa-grid {
     display: flex;
     justify-content: space-evenly;
-    padding:0;
+    padding: 0;
     border-left: 0.8rem solid $color-white;
   }
+
   .usa-width-one-third {
     border-right: 0.8rem solid $color-white;
     margin: 0;
     padding: 4rem 0;
+
     img {
       height: 12rem;
       display: block;
@@ -156,39 +348,46 @@ a.learn-more, .usa-learn-more a {
     }
   }
 }
-
 // SECTION: FIND THE ANSWERS AT YOUR FINGERTIPS
 .section-find-answers {
-  background-image: url('/assets/img/photo/Woman_FeatherEdge.png');
+  background-image: url($baseurl + '/assets/img/photo/Woman_FeatherEdge.png');
   background-size: cover;
-  padding: 4rem 0 38rem 0;
+  padding: 4rem 0 38rem;
   color: #323a45;
-  text-align: center;
+  // text-align: center;
   margin-top: 0.8rem;
+  height: 70rem;
+
   h2 {
     margin-top: 0;
     color: #323a45;
     font-size: 6rem;
   }
+
   p {
     font-size: 2.8rem;
     color: #046b99;
+    width: auto;
+    max-width: 40ch;
   }
+
   a {
     color: #323a45;
     font-size: 3.3rem;
     text-decoration: none;
     padding: 0;
+
     &::after {
       content: '';
       position: absolute;
       display: inline-block;
-      background: url("/assets/img/icons/arrow_sw.svg") no-repeat;
+      background: url($baseurl + "/assets/img/icons/arrow_sw.svg") no-repeat;
       transform: rotate(180deg);
       width: 2rem;
       height: 3.7rem;
       margin: 0 0 0 1.4rem;
     }
+
     &:hover {
       text-decoration: underline;
     }
@@ -196,55 +395,75 @@ a.learn-more, .usa-learn-more a {
 }
 
 .fund-grid {
-h3 {
-  font-family: "Source Sans Pro", "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
-  margin-bottom: 1rem;
-  font-size: 2rem;
-  font-weight: 800;
-  text-decoration: none;
-  border-bottom: 4px solid transparent;
-  color: initial;
-  a {
+  h3 {
+    font-family: "Source Sans Pro", "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
+    margin-bottom: 1rem;
+    font-size: 2rem;
+    font-weight: 800;
     text-decoration: none;
+    border-bottom: 4px solid transparent;
     color: initial;
-    border-bottom: 4px solid $color-primary-alt;
-    &:hover {
-      border-bottom: 4px solid $color-primary;
+
+    a {
+      text-decoration: none;
+      color: initial;
+      border-bottom: 4px solid $color-primary-alt;
+
+      &:hover {
+        border-bottom: 4px solid $color-primary;
+      }
     }
   }
-}
- p {margin:0;}
- .usa-width-one-third {
-   margin-bottom: 8rem;
- }
- img {
-   height: 25px;
+
+  p {
+    margin: 0;
+  }
+
+  .usa-width-one-third {
+    margin-bottom: 8rem;
+  }
+
+  img {
+    height: 25px;
     width: 25px;
     vertical-align: bottom;
     margin-left: 1rem;
- }
+  }
 }
 // TERTIARY NAVIGATION
+
 .agency-service .usa-grid {
   h2 {
     text-align: center;
     font-size: 3rem;
     font-family: $font-sans;
   }
-  h2, h3, p {
+
+  h2,
+  h3,
+  p {
     text-align: center;
     color: white;
   }
+
   p {
     font-size: $h3-font-size;
   }
 }
+
 .tertiary-navigation .usa-grid {
   ul {
     font-size: 1.5rem;
   }
+
   li:first-of-type {
     font-family: $font-serif;
     font-weight: bold;
+  }
+}
+@media only screen and (max-width: $large-screen) {
+
+  .section-investor {
+    padding: 5rem 0;
   }
 }

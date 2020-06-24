@@ -15,33 +15,24 @@ Each pay period, your agency or service will deduct your contribution from your 
 
 Your agency or service will continue to deduct your contribution until you do the following:
 
+
 <div class="usa-grid-full contribution-type">
-<div class="usa-width-one-half" markdown="1">
-<img src="{{ site.baseurl }}/assets/img/icons/plus-circle-green.svg" alt="">
-Make a new election  
-changing the amount
-</div>
-<div class="usa-width-one-half" markdown="1">
-<img src="{{ site.baseurl }}/assets/img/icons/x-circle-red-fill.svg" alt="">
-Elect to stop  
-your contributions
+<div class="usa-width-one-whole" markdown="1">
+  <ul class="flex">
+  <li>
+  <img src="{{ site.baseurl }}/assets/img/icons/plus-circle-green.svg" alt="">
+  <span>Make a new election changing the amount</span></li>
+  <li>
+  <img src="{{ site.baseurl }}/assets/img/icons/x-circle-red-fill.svg" alt="">
+  <span>Elect to stop your contributions</span></li>
+  <li>
+  <img src="{{ site.baseurl }}/assets/img/icons/arrow-up-circle.svg" alt="">
+  <span>Reach the IRS contribution limit</span></li>
+  </ul>
 </div>
 </div>
 
-<div class="usa-grid-full contribution-type">
-<div class="usa-width-one-half" markdown="1">
-<img src="{{ site.baseurl }}/assets/img/icons/arrow-up-circle.svg" alt="">
-Reach the IRS  
-contribution limit
-</div>
-<div class="usa-width-one-half" markdown="1">
-<img src="{{ site.baseurl }}/assets/img/icons/arrow-down-circle.svg" alt="">
-Take a financial  
-hardship withdrawal
-</div>
-</div>
-
-For more information, visit [Contribution Limits](https://www.tsp.gov/PlanParticipation/EligibilityAndContributions/contributionLimits.html){:target="\_blank"}.
+For more information, visit [Contribution limits]({{ site.baseurl }}/making-contributions/contribution-limits/).
 
 ## Agency/Service Automatic (1%) Contributions
 
@@ -54,7 +45,7 @@ pay and do not reduce your pay for income tax purposes.**
 ### A few words about vesting
 {: .card-title}
 
-+ Being “vested” means you’re entitled to keep all of the money in your account. Vesting only applies to Agency/Service Automatic (1%) Contributions (and their earnings) and occurs after you work in the federal government or uniformed services for a certain number of years. All your years of service in a position eligible for the TSP count toward vesting, even if you don’t contribute to the TSP during that time. Most FERS participants are vested in Agency/Service Automatic (1%) Contributions after completing 3 years of service. 
++ Being “vested” means you’re entitled to keep all of the money in your account. Vesting only applies to Agency/Service Automatic (1%) Contributions (and their earnings) and occurs after you work in the federal government or uniformed services for a certain number of years. All your years of service in a position eligible for the TSP count toward vesting, even if you don’t contribute to the TSP during that time. Most FERS participants are vested in Agency/Service Automatic (1%) Contributions after completing 3 years of service.
 + FERS employees in congressional and certain noncareer positions become vested in Agency Automatic (1%) Contributions after 2 years of service.
 + BRS members become vested in Service Automatic (1%) Contributions after 2 years of service.
 
@@ -80,6 +71,8 @@ As a FERS or BRS participant, you receive matching contributions on the first 5%
 
 The first 3% of pay that you contribute will be matched dollar-for-dollar; the next 2% will be matched at 50 cents on the dollar. Contributions above 5% of your pay will not be matched. If you stop making regular employee contributions, your matching contributions will also stop.
 
+Further, your Agency/Service Matching Contributions are based on the total amount of money (traditional and Roth) that you contribute each pay period. All agency/service contributions are deposited into your traditional balance.
+
 ## Catch-up Contributions
 Starting in the year you turn 50, you may be eligible to make catch-up
 contributions to your TSP account in addition to your regular employee
@@ -88,24 +81,16 @@ contributions.
 
 **Here’s what you should know:**
 - You must already be contributing an amount that will reach the IRS annual
-contribution limit. To see the most current limits, visit [Contribution Limits](#).
+contribution limit. To see the most current limits, visit [Contribution Limits]({{ site.baseurl }}/making-contributions/contribution-limits/).
 - You may start, change, or stop making catch-up contributions at any time.
 - There are no matching contributions for catch-up contributions.
 - You must make a new election each calendar year—they do not restart
 automatically.
 
-**Uniformed services members can use tax-exempt pay to make catch-up
-contributions, but not incentive pay, special pay, or bonus pay.**
-
-
-To make a catch-up contributions, use your agency’s or service’s payroll website
-(e.g., Employee Express, myPay, LiteBlue, EBIS, or NFC-EPP) or complete the Catch-Up Contribution Election form, _Form
+**If you are a uniformed services member and enter a combat zone, your catch-up contributions must be Roth. (The TSP cannot accept traditional tax-exempt contributions toward the catch-up limit.) You also cannot make catch-up contributions from incentive pay, special pay, or bonus pay.**
 
 To make a catch-up contribution election, use your agency’s or service’s payroll website
-(e.g., Employee Express, myPay, LiteBlue, EBIS, or NFC-EPP) or complete the Catch-Up Contribution Election, _Form
-
-TSP-1-C_ (or TSP-U-1-C for uniformed services)
-and submit it to your payroll office. Download the [form](#) or call the ThriftLine
+(e.g., [Employee Express]({{ site.baseurl }}/exit/?idx=7){:rel="nofollow"}, EBIS, [LiteBlue]({{ site.baseurl }}/exit/?idx=8){:rel="nofollow"}, [myPay]({{ site.baseurl }}/exit/?idx=6){:rel="nofollow"}, or [NFC EPP]({{ site.baseurl }}/exit/?idx=9){:rel="nofollow"}) or complete the Catch-Up Contribution Election, [_Form TSP-1-C_]({{ site.baseurl }}/forms/tsp-1-c.pdf) (or [_TSP-U-1-C_]({{ site.baseurl }}/forms/tsp-u-1-c.pdf)for uniformed services) and submit it to your payroll office. Or call the ThriftLine
 at 1-877-968-3778 and choose option 3 to request a copy.
 
 ## A note for members of the uniformed services
@@ -123,4 +108,4 @@ allowances.
 of pay must not exceed the IRS annual addition limit for the year.
 
 
-For more information, visit [Contribution Limits](https://www.tsp.gov/PlanParticipation/EligibilityAndContributions/contributionLimits.html){:target="\_blank"}.
+For more information, visit [Contribution Limits]({{ site.baseurl }}/making-contributions/contribution-limits/).

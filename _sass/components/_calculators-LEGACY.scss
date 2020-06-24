@@ -1,0 +1,1322 @@
+// DECO BOX
+
+.deco-box {
+    background-color: #fff;
+    border: .3rem solid #046b99;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    .usa-width-one-whole, ul.deco-box-inner {
+      list-style: none;
+      display: inline-flex;
+      min-width: 50%;
+      margin: 3rem 0;
+    }
+    .deco-box-inner {
+      background-color: $color-gray-lightest;
+      border: .2rem solid #046b99;
+      // border-radius: 6px;
+      // -webkit-border-radius: 5;
+      // -moz-border-radius: 5;
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      select, button {
+        margin: 0;
+      }
+
+    }
+    select {
+      width: auto;
+    }
+}
+
+/*  cssDecoBox 11/24/2016 */
+
+.cssDecoBoxFrame {
+    padding: 5px 5px;
+    margin: 0;
+    background: #fff;
+    border-radius: 6px;
+    box-sizing: border-box;
+}
+
+
+.innerDecoBox {
+    background: #fff;
+    border: 5px solid #EADDCD;
+    border-radius: 6px;
+    -webkit-border-radius: 5;
+    -moz-border-radius: 5;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.cssDecoBox h3 {
+    color: #AB4B00;
+    margin: 0px 0px 14px 0px;
+}
+
+.cssDecoBoxText {
+    margin: 0;
+    padding: 1.5em 1.7em;
+}
+
+.buttonDivider {
+    border-right: 1px solid #a7a3a3;
+}
+
+/*
+copied from legacy site.
+New styles are imediately below, older stuff to trim later follows after.
+*/
+
+
+/* this is the div surrounding the entire panel */
+// .calculator-panel {
+//   // border:1px solid red;
+//   min-height: 200px;
+// }
+/* this is the box around the interior content of the panel */
+.calculatorInnerBox {
+  border:3px solid #046b99;
+  //min-width: 300px;
+  padding: 10px 25px;
+}
+
+/* required icon */
+.required {
+  color: red;
+}
+
+
+
+
+div.infoBox {
+     -moz-border-radius: 6px;
+     -webkit-border-radius: 6px;
+     background-color: #f0f7fb;
+     background-image: url(/assets/img/icons/info.svg);
+     background-position: 12px 20px;
+     background-repeat: no-repeat;
+     border: solid 1px #3498db;
+     border-left: solid 6px #3498db;
+     border-radius: 6px;
+     line-height: 18px;
+     overflow: hidden;
+     padding: 2px 10px 2px 60px;
+     margin: 10px 10px 10px 30px;
+     width: 90%
+     //width: 500px;
+     //float: right;
+}
+
+ select.graySelect2 {
+    font-family: Arial;
+    border: 1px solid #999999;
+    background-color: #F5F5F5;
+    width: 100px;
+}
+
+.calculatorRow {
+  bottom: 10px;
+  margin: 10px 10px 10px 10px;
+  width: 100%;
+  //height: 30px;
+}
+.calculatorLeft{
+  display: block;
+  float: left;
+  width: 400px;
+  margin: 0px 10px 0px 10px;
+}
+.calculatorRight{
+  display: block;
+  float: right;
+  width: 100px;
+  margin: 0px 10px 0px 10px;
+  text-align: right;
+}
+
+// input.regInput, select.regInput {
+//      width: 55px;
+//      font-size: 0.92em;
+//      color: #444444;
+//      padding: 3px 2px 3px 2px;
+//      margin-right: 3px;
+//      border: 1px solid #BBBCBF;
+// }
+ input.shortInput {
+     width: 30px;
+     font-size: 0.92em;
+     color: #444444;
+     padding: 3px 2px 3px 2px;
+     margin-right: 3px;
+     border: 1px solid #BBBCBF;
+}
+ input.errInput {
+     width: 55px;
+     font-size: 0.92em;
+     color: #444444;
+     padding: 3px 2px 3px 2px;
+     margin-right: 3px;
+     border: 1px solid #BBBCBF;
+     background-color: #ffffcc;
+}
+ input.errShortInput {
+     width: 30px;
+     height: 16px;
+     font-size: 0.92em;
+     color: #444444;
+     padding: 3px 2px 0px 2px;
+     margin-right: 3px;
+     border: 1px solid #BBBCBF;
+     background-color: #ffffcc;
+}
+ input.errWideInput {
+     width: 261px;
+     color: #444444;
+     padding: 2px 2px 2px 2px;
+     margin-right: 3px;
+     border: 1px solid #BBBCBF;
+     background-color: #ffffcc;
+}
+
+/* BELOW is the LEGACY stuff */
+.w200 {width: 200px !important;}
+
+.paycheckSectionTitle {
+  font-size: 1.1em;
+  font-weight: bold;
+  color: #AB4B00;
+}
+.paycheckSectionText {
+  font-size: 0.9em;
+  font-weight: bold;
+  color: #AB4B00;
+}
+.retirementSystem {
+  padding: 0 15px 0 5px;
+  font-size: 1.1em;
+  font-weight: bold;
+}
+.paycheckDivider {
+  margin: 20px 0 12px 0;
+  font-size: 0;
+  border-bottom: 1px solid #AAAAAA;
+}
+.paycheckDividerNoSpace {
+  margin: 1px 0 1px 0;
+  font-size: 0;
+  border-bottom: 1px solid #CCCCCC;
+}
+.paycheckNote {
+  font-size: 0.7em;
+}
+.radiusDE {
+        border-radius: 10px;
+        border: solid 1px #999;
+        width: 240px;
+        height: 200px;
+        margin: 0 0 0 8px;
+        }
+
+.radiusTopDE {
+        border-top-left-radius: 8px;
+        border-top-right-radius: 8px;
+        width: inherit;
+        height: 28px;
+        background-color: #DBEFF8;
+        padding-top: 8px;
+        text-indent: 8px;
+}
+#worksheet {
+        float:left;
+        margin: 0;
+        width: 110px;
+        height: 172px;
+        text-align:center;
+        padding-top: 30px;
+}
+.calculatorSectionTitle {
+  font-size: 1.05em;
+  font-weight: bold;
+  color: #AB4B00;
+}
+div.breadcrumbs{
+    height: 30px;
+    }
+div.breadcrumbs img{
+    float: left;
+    }
+.orangeInfoBlock {
+  margin: 10px 0 10px 0;
+  padding: 10px 15px 10px 15px;
+  background: #FFF9EF;
+  border: 3px solid #FFDC9C;
+}
+.balanceAfter {
+	margin: 9px 0 18px 0;
+}
+.labelRoth{
+  padding-left: 50px;
+}
+.optionBlockFull {
+  padding: 10px 15px 10px 15px;
+  border: 3px solid #ECECEC;
+}
+.roth{
+  padding: 15px 15px 7px 13px;
+}
+form#inputform{
+  z-index:1;
+}
+table.charts {
+  margin-left: -5px;
+}
+.optionBlock {
+  margin: 0px 0 12px 0;
+  padding: 0px;
+  width: 325px;
+  border: 3px solid #ECECEC;
+}
+.optionBlockClear {
+  margin: 0px 0 12px 0;
+  padding: 0px;
+  width: 325px;
+}
+.optionBlock .blockTitle {
+  margin: 0;
+  padding: 4px 10px 6px 10px;
+  font-size: 1.1em;
+  font-weight: bold;
+  background: #FFF0D7;
+}
+.optionBlock .blockContent, .optionBlockClear .blockContent {
+  margin: 0;
+  padding: 15px 0 15px 4px;
+}
+div.maxContNotice {
+padding-top: 7px;
+}
+// p.disclaimer{
+//   margin-top:20px;
+//   color: #676664;
+// }
+// p.disclaimer span{
+//   font-weight:bold;
+// }
+// div.disclaimer{
+//   margin-top:20px;
+//   color: #676664;
+//   line-height: 1.5;
+//   margin-bottom: 15px;
+//   height: 300px;
+// }
+// div.disclaimer span{
+//   font-weight:bold;
+// }
+div.moduleContent #mod {
+  width: 719px;
+}
+table.paycheckResults, table.paycheckResults2, table.paycheckResults3, table.paycheckResults4 {
+  width: 100%;
+  border-collapse:  collapse;
+  margin-bottom: 15px;
+}
+table.paycheckResults tr.blueBg, table.paycheckResults2 tr.blueBg {
+  background: #F1F9FC;
+}
+table.paycheckResults3 tr, table.paycheckResults4 tr {
+  background: #ffffff;
+}
+table.paycheckResults3 tr.blueBg, table.paycheckResults4 tr.blueBg {
+  background: #F1F9FC;
+}
+table.paycheckResults th, table.paycheckResults td {
+  padding: 5px;
+}
+table.paycheckResults th.rowTitle, table.paycheckResults td.rowTitle {
+  padding: 5px 20px 5px 40px;
+}
+table.paycheckResults th.rowTitleRight, table.paycheckResults td.rowTitleRight {
+  padding: 5px 20px 5px 40px;
+  text-align: right;
+}
+table.paycheckResults th.option1, table.paycheckResults td.option1 {
+  padding: 5px 20px 5px 20px;
+  text-align: right;
+}
+table.paycheckResults th.option2, table.paycheckResults td.option2 {
+  padding: 5px 60px 5px 20px;
+  text-align: right;
+}
+table.paycheckResults2 th, table.paycheckResults3 th, table.paycheckResults2 td, table.paycheckResults3 td {
+  text-align: right;
+  padding: 5px 10px 5px 10px;
+}
+table.paycheckResults4 th, table.paycheckResults4 td {
+  text-align: right;
+  padding: 5px;
+}
+table.paycheckResults3 tr.highlight, table.paycheckResults4 tr.highlight {
+  background: #FEFFC9 !important;
+  border: 3px solid #3F48CC !important;
+}
+table th#right{
+  border-right: 1px #a4c9d6 solid;
+  padding-right:10px;
+}
+th.optionHead {
+  background: #FFF;
+  border-bottom:#666;
+}
+span.errInput{
+  color: #ff1010;
+}
+input.errInput {
+    background-color: #ffffff;
+    border: 2px solid red;
+}
+select.errInput {
+    background-color: #ffffff;
+    border: 2px solid red;
+}
+table.noSizing th, table.noSizing td {
+  font-size: 1em;
+}
+table.noSizing th.rowHeading {
+  font-weight: normal;
+}
+.tdInputCell {
+  vertical-align: top;
+  font-size: 1.2em;
+}
+
+table.tspStandard th.centerLeftBorder {
+  text-align: center !important;
+  border-left: 1px solid #aaaaaa;
+}
+table.tspStandard th.normalWhitespace {
+  white-space: normal;
+}
+table.tspStandard th.leftBorder, table.tspStandard td.leftBorder {
+  border-left: 1px solid #aaaaaa;
+}
+
+.thinColumn {
+  max-width: 15%;
+}
+.resultOption {
+  margin: 0 0 0 20px;
+  width: 260px;
+  height: 18px;
+  padding: 3px 0;
+  font-weight: bold;
+  background: url("/resources/images/calculator_result_option_bg.gif") no-repeat;
+}
+div.result-heading, div.result-table {
+  margin: 0px 15px 25px 15px;
+}
+div.result-chart {
+  display: none;
+  margin: 0px 15px 25px 15px;
+}
+div.chartTitle {
+font-size:14px;
+color:#ab4b00;
+font-weight:bold;
+}
+div.chart-wrapper-div{
+  height:100%;
+  width: 687px;
+}
+div.calcTip {
+  width: 100%;
+  margin-top:15px;
+  height: 60px;
+}
+div.left-tip{
+        background: url("/resources/images/tips_large.jpg") no-repeat scroll left top transparent;
+        color: #000000;
+        float: left;
+        height: 60px;
+    margin: 0 10px 0 0px;
+        width: 435px;
+}
+div.right-tip{
+        background: url("/resources/images/tips_small.jpg") no-repeat scroll left top transparent;
+        color: #000000;
+        float: left;
+        height: 60px;
+        width: 239px;
+}
+div.leftTipText{
+        margin: 7px 10px 0 10px;
+        font-weight:bold;
+        color:#ab4b00;
+}
+div.rightTipText{
+        margin: 7px 10px 0 10px;
+        font-weight:bold;
+        color:#ab4b00;
+}
+div.spacer-div{
+  margin: 0px 15px;
+}
+
+.worksheetLeft {
+  float: left;
+  width: 350px;
+}
+.worksheetRight {
+  float: right;
+  width: 390px;
+}
+.worksheetLeft table {
+  width: 100%;
+  border-collapse:  collapse;
+  margin: 10 0 0 0;
+  padding: 0;
+}
+.worksheetRight table {
+  width: auto;
+  border-collapse:  collapse;
+  margin: 10 0 0 0;
+  padding: 0;
+}
+.worksheetLeft table td.left, .worksheetRight table td.left {
+  padding: 2px 0 2px 0;
+}
+.worksheetLeft table td.mid, .worksheetRight table td.mid {
+  width: 1px;
+  padding: 2px 0 2px 5px;
+  text-align: right;
+}
+.worksheetLeft table td.right, .worksheetRight table td.right {
+  width: 1px;
+  padding: 2px 0 2px 0;
+}
+.worksheetLeft table td.leftTotal, .worksheetRight table td.leftTotal {
+  padding: 2px 0 2px 0;
+  text-align: right;
+  font-weight: bold;
+}
+.worksheetRight table td.rightTotal {
+  width: 48px;
+  padding: 2px 0 2px 0;
+}
+.worksheetRight table td.rightMid {
+  width: 70px;
+  padding: 2px 0 2px 0;
+  text-align: right;
+}
+#preTotal, #postTotal {
+  padding-right: 5px;
+  font-weight: bold;
+}
+.postTaxWrapper {
+  height: 285px;
+  overflow: auto;
+  padding-right: 10px;
+}
+.inputError {
+  color: #ff0000 !important;
+  border-color: #ff0000 !important;
+}
+
+.paycheckReport {
+  width: 719px;
+  padding: 30px 0 30px 0;
+  margin: 0 auto;
+}
+.paycheckReport h1 {
+  float: none;
+  display: block;
+  margin: 0 0 20px 0;
+  border-bottom: 1px solid #AB4B00;
+}
+.paycheckReport .reportBlock {
+  margin: 0 0 10px 0;
+  padding: 0 20px 20px 20px;
+  border: 1px solid #999999;
+}
+.paycheckReport .headingSmall {
+  margin: 20px 0 2px 0;
+  color: #AB4B00;
+  font-weight: bold;
+  border-bottom: 1px solid #CCCCCC;
+}
+.paycheckReport table {
+  width: 100%;
+  border-collapse:  collapse;
+  margin: 10 0 0 0;
+  padding: 0;
+}
+.paycheckReport table th, .paycheckReport table td {
+  padding: 3px;
+}
+.paycheckReport table.userInputs th {
+  text-align: left;
+}
+.paycheckReport .headingLarge {
+  margin: 20px 0 5px 0;
+  font-size: 1.1em;
+  font-weight: bold;
+  color: #AB4B00;
+}
+
+table.growthByYear {
+  width: 100%;
+  margin: 10px 0 20px 0;
+  border-collapse:  collapse;
+}
+table.growthByYear th {
+  font-size: 0.9em;
+  background: #E5E5E5;
+}
+table.growthByYear th, table.growthByYear td {
+  padding: 4px;
+  font-weight: normal;
+  text-align: left;
+  border-top: 1px solid #CCCCCC;
+  border-bottom: 1px solid #CCCCCC;
+}
+table.growthByYear th.option, table.growthByYear td.option {
+  text-align: right;
+}
+table.growthByYear th.year2, table.growthByYear td.year2 {
+  padding-left: 20px;
+  border-left: 1px solid #CCCCCC;
+}
+.calculatorRequired {
+  font-family: verdana, arial;
+  font-size: 1.1em;
+  font-weight: bold;
+  color: #ff0000;
+}
+a.underLine:link, a.underLine:visited, a.underLine:hover {
+  text-decoration: underline;
+}
+a.worksheet {
+  padding: 6px 0 0 25px;
+  background: url("/resources/images/icon_Worksheet.gif") no-repeat left top;
+}
+/* get rid of those system borders being generated for A tags */
+a:active {
+outline:none;
+}
+a:focus {
+outline:none;
+}
+
+.calculatorErrorOld {
+display: none;
+  margin: 5px 0 0 0;
+  padding: 5px;
+  background: #FFF3F3;
+  border: 2px solid #FFDEDE;
+}
+.calculatorError {
+  display: none;
+  margin: 0 0 0 0;
+  padding: 0 0 0 5px;
+  color: red;
+}
+.calculatorError2{
+  display: none;
+  margin: 166px 0 0 0;
+  padding: 5px;
+  background: #FFF3F3;
+  border: 2px solid #FFDEDE;
+}
+.calculatorErrorMessage {
+  padding: 0 0 0 20px;
+  background: url("/resources/images/icon_CalculatorError.gif") left top no-repeat;
+}
+.calculatorRequiredSpacer {
+  padding-left: 15px;
+  padding-right: 20px;
+}
+.worksheetRequiredSpacer {
+  width: 45%;
+}
+
+.middle {
+  vertical-align: middle;
+}
+
+.optional {
+  color: #666666;
+}
+
+.decoBox .decoBoxCalculatorTopFilledRight {
+  height: 10px;
+  font-size: 1px;
+  text-align: left;
+  background: url("/resources/images/decoBoxCalculatorTopFilledRight_U.gif") top right no-repeat;
+}
+.decoBox .decoBoxCalculatorTopFilledRight .moduleContent {
+  height: 10px;
+  display: block;
+  padding: 0px 30px 0 30px;
+  background: transparent url("/resources/images/decoBoxCalculatorTopFilledLeft_U.gif") top left no-repeat;
+}
+
+.calculatorResultSelector {
+  padding: 2px 0 0px 2px;
+  width: 260px;
+  height: 24px;
+  background: url("/resources/images/calculator_result_option_bg.gif") no-repeat;
+  margin:0px 0px 15px 0px;
+  font-weight: bold;
+}
+div.calculatorResultSelector label{
+	vertical-align: 2px;
+	padding-right: 11px;
+}
+.calculatorResultSelector span {
+  padding: 0;
+}
+.calculatorResultSelector span.option {
+#   padding: 0 0 0 5px;
+}
+
+table.growthByYearRoth {
+  width: 100%;
+  margin: 10px 0 20px 0;
+  border-collapse:  collapse;
+}
+table.growthByYearRoth th {
+  font-size: 0.9em;
+}
+table.growthByYearRoth th, table.growthByYearRoth td {
+  padding: 4px;
+  font-weight: normal;
+  text-align: left;
+  border-top: 1px solid #CCCCCC;
+  border-bottom: 1px solid #CCCCCC;
+}
+table.growthByYearRoth th.optionRoth {
+  text-align: center;
+  border-bottom:#666;
+}
+table.growthByYearRoth th.option {
+  background: #E5E5E5;
+}
+table.growthByYearRoth th.year1 {
+  padding-left: 10px;
+  border-left: 1px solid #CCCCCC;
+  background: #E5E5E5;
+}
+div#chartDiv {
+  position: relative;
+}
+
+table.paycheck-estimator-form-paycheck-information
+{
+	width:100%;
+}
+
+.blockContent.paycheck-estimator
+{
+	padding: 15px 11px;
+}
+.paycheck-estimator div.header-padding-top
+{
+	padding-top: 14px;
+}
+
+/*
+.blockContent.paycheck-estimator input.errInput
+{
+    border: 2px solid red !important;
+}
+.blockContent.paycheck-estimator input.warningInput
+{
+    border: 2px solid #fdc76a;
+}
+*/
+
+.blockContent.paycheck-estimator input.shortInput
+{
+	width: 30px;
+}
+.blockContent.paycheck-estimator input.disabledInput
+{
+    border: 2px solid #fdc76a;
+}
+div.paycheck-estimator-traditional
+{
+	background: none repeat scroll 0 0 #FEF8ED;
+    padding: 5px 15px;
+	margin: 6px 0;
+}
+div.paycheck-estimator-traditional image.image-or, div.paycheck-estimator-roth image.image-or
+{
+	margin-left:-15px;
+	padding: 10px 0 10px 0;
+}
+div.paycheck-estimator-traditional  div.option1-traditional-percentage, div.option2-traditional-percentage
+{
+	padding: 6px 0 6px 17px;
+}
+div.paycheck-estimator-traditional div.option1-traditional-fixed, div.option2-traditional-fixed
+{
+	padding: 6px 0 6px 17px;
+}
+div.paycheck-estimator-roth
+{
+	background: none repeat scroll 0 0 #FEF8ED;
+    padding: 5px 15px;
+	margin: 6px 0;
+}
+div.paycheck-estimator-roth  div.option1-roth-percentage, div.option2-roth-percentage
+{
+	padding: 6px 0 6px 17px;
+}
+div.paycheck-estimator-roth div.option1-roth-fixed, div.option2-roth-fixed
+{
+	padding: 6px 0 6px 17px;
+}
+div.paycheck-estimator-catch-up
+{
+	background: none repeat scroll 0 0 #FEF8ED;
+    padding: 5px 15px;
+	margin: 6px 0;
+	overflow: hidden;
+}
+div.paycheck-estimator img.image-or
+{
+	margin-left: -14px;
+}
+div.catch-up-error
+{
+    background: none repeat scroll 0 0 #FEF8ED;
+    display: block;
+    padding: 5px 0 9px 24px !important;
+}
+.warning-icon-container
+{
+    width: 18px;
+    display: inline-block;
+}
+div.traditional-roth-catch-up
+{
+	text-align: right;
+	width: 85%;
+	padding: 0px 0 0px 7px;
+}
+div.traditional-catch-up
+{
+	text-align: right;
+	margin-bottom: 7px;
+}
+.tspError.pe-error
+{
+	padding-top: 5px;
+}
+div.paycheck-estimator-annual-return-block
+{
+    border: 3px solid #ECECEC;
+    display: block;
+    overflow: hidden;
+    width: 99.4%;
+}
+div.annual-return-block
+{
+	padding: 10px;
+}
+
+table.paycheck-estimator-table  td.roth-padding,th.roth-padding
+{
+	padding-right: 32px !important;
+}
+
+table.paycheckResults td#net1Pay
+{
+    background: url("/resources/images/curledPaper_bg.png") no-repeat scroll 36px 0 transparent;
+	padding-top: 10px;
+	height: 43px;
+	width: 100px;
+}
+
+table.paycheckResults td#net2Pay
+{
+    background: url("/resources/images/curledPaper_bg.png") no-repeat scroll 36px 0 transparent;
+	padding-top: 10px;
+	height: 43px;
+	width: 100px;
+}
+div.adjust-results-div
+{
+	margin-top: 10px;
+}
+div.preload_image
+{
+	background: url("/resources/images/paycheck-arrow1.gif")  no-repeat -9999px -9999px;
+}
+
+span#option12zoom  a.hidden, span.hidden, img.hidden
+{
+	display: none;
+}
+
+.zoom-link {
+   margin-left: 10px;
+   cursor: pointer;
+   color: #3181CB;
+   text-decoration: underline;
+}
+img.zoomTextImg{
+   vertical-align: top;
+   border: none;
+}
+.zoomed {
+   color: #49850d;
+   margin-left: 10px;
+   font-weight: bold;
+   text-decoration: none;
+}
+/*
+.incomeExample .incomeExampleTitle, .modalBlockTitle {
+  margin: 0 0 15px 0;
+  padding: 3px 3px 5px 0px;
+  color: #445981;
+  font-family: Verdana, Tahoma, Arial;
+  font-size: 1.1em;
+  font-weight: bold;
+  background: url("/resources/images/pgSectionTitle_btmLine.gif") left bottom no-repeat;
+}
+*/
+.incomeExample {
+  padding: 0 100px 20px 0;
+}
+.incomeExample .incomeExampleTitle, .modalBlockTitle {
+  margin: 0 0 15px 0;
+  padding: 3px 3px 5px 0px;
+  color: #445981;
+  font-family: Verdana, Tahoma, Arial;
+  font-size: 1.1em;
+  font-weight: bold;
+  background: url("/resources/images/pgSectionTitle_btmLine.gif") left bottom no-repeat;
+}
+.incomeExample .incomeExampleBody {
+}
+.incomeExample .incomeExampleBody .incomeExamplePicture {
+  float: left;
+  width: 100px;
+  padding: 0 0 0 20px;
+}
+.incomeExample .incomeExampleBody .incomeExampleText {
+  float: left;
+  width: 500px;
+  padding: 0 0 0 40px;
+}
+#modal-rateofreturn-content a {
+    color: #3181CB !important;
+    text-decoration: none !important;
+}
+#modal-formlengthofretirementplanned-content
+{
+  padding:8px 8px 37px 8px !important;
+}
+#simplemodal-container a.modalCloseImg
+{
+    right: 32px !important;
+}
+div.spacedlabels label {margin-right: 1.4em;}
+div.spacedlabels label.noMargin {margin-right: 0;}
+label.disabled { color:gray; }
+
+div.deemphasis {
+	color: #ccc;
+	opacity:0.5;
+	filter:alpha(opacity=50); /* For IE8 and earlier */
+}
+tr.deemphasis {
+	color: #ccc;
+	opacity:0.5;
+	filter:alpha(opacity=50); /* For IE8 and earlier */
+}
+
+/*********************************************
+	CLEARFIX:
+	apply to clear floats
+*********************************************/
+.clearfix:after{
+	clear:both;
+	content:' ';
+	display:block;
+	font-size:0;
+	line-height:0;
+	visibility:hidden;
+	width:0;
+	height:0;
+}
+
+.clearfix{display:inline-block;}
+.clearfix{display:block;}
+
+/**************************** From calculator_retirement.css **********************/
+#ruler {
+background:url("/resources/images/ruler2.gif") no-repeat;
+background-position: 17px 0px;
+height: 50px;
+padding-right: 15px;
+}
+#ruler2 {
+background:url("/resources/images/ruler.gif") no-repeat;
+background-position: 17px 0px;
+padding-right: 15px;
+}
+#ruler3 {
+background:url("/resources/images/ruler2.gif") no-repeat;
+background-position: 17px 0px;
+height: 163px;
+}
+p.topHead {
+font-size: 1.1em;
+font-weight: bold;
+}
+p.notesTop {
+margin-top:10px;
+}
+span.notes{
+padding: 3px 3px 0 3px;
+background-color: #FFDC9C;
+border: 1px solid #FCCD75;
+}
+/*
+.lengthRetirement {
+overflow: auto;
+}
+*/
+div.ricSubmitButton {
+margin:auto;
+width: 97%;
+padding-top: 10px;
+}
+table.calcNote {
+  width: 100%;
+  color: #666666;
+  border-collapse: collapse;
+}
+table.calcNote th {
+  width: 30px;
+  text-align: right;
+  vertical-align: top;
+}
+table.calcNote td {
+  padding-left: 12px;
+}
+table.calcTip {
+  width: 100%;
+  color: #666666;
+  border-collapse: collapse;
+}
+.resultsFigures {
+    font-weight: bold;
+}
+.resultsNote {
+  font-size: 0.7em;
+}
+.infoBoxMiniCalculator {
+  width: 550px;
+ color: #666666;
+}
+table td.calcQuestion {
+  width: 500px;
+  padding-right: 10px;
+  font-size: 1.1em;
+  font-weight: bold;
+}
+
+a.comparisonLinkLg:link, a.comparisonLinkLg:visited, a.comparisonLinkLg:hover {
+  padding: 0 0 0 17px;
+  font-size: 1.1em;
+  font-weight: bold;
+  text-decoration: underline;
+  background: url("/resources/images/icon_brown_triangle_13.gif") left 2px no-repeat;
+}
+a.comparisonLinkSm:link, a.comparisonLinkSm:visited, a.comparisonLinkSm:hover {
+  padding: 0 0 0 15px;
+  color: #0B5091;
+  text-decoration: underline;
+  background: url("/resources/images/icon_blue_triangle_11.gif") left 2px no-repeat;
+}
+
+table.retirementComparison {
+  width: 100%;
+  margin-bottom: 10px;
+  border-collapse: collapse;
+  border: 3px solid #B6B6B6;
+}
+table.retirementComparison th.colHeading {
+  padding: 12px 10px;
+  font-size: 1.1em;
+  font-weight: bold;
+  text-align: left;
+  vertical-align: top;
+  color: #A94C00;
+  background: #F3F7E9;
+  border: 1px solid #B6B6B6;
+}
+table.retirementComparison th.rowHeading {
+  padding: 10px;
+  font-weight: bold;
+  text-align: left;
+  vertical-align: top;
+  color: #504738;
+  border: 1px solid #B6B6B6;
+}
+table.retirementComparison td {
+  padding: 10px;
+  vertical-align: top;
+  border: 1px solid #B6B6B6;
+}
+.retirementComparisonAnswer {
+  color: #A94C00;
+  font-size: 1.1em;
+  font-weight: bold;
+}
+
+.tabOptionBoxWrapper {
+  margin: 0px 0px 15px 0px;
+  padding: 2px;
+}
+.tabOptionBox {
+  padding: 14px;
+  background:#dbeff8;
+  border: 1px solid #aadaf1;
+  font-size:1.7em;
+  height: 32px;
+  width: 683px;
+  line-height: 24px;
+  vertical-align: top;
+}
+.tabOptionBox  a{
+  float: right;
+  margin-right: 14px;
+  vertical-align: top;
+}
+/*
+.tabOptionBox  table{
+  width: 100%;
+}
+.tabOptionBox  table td.printer-friendly-report-button{
+    text-align: right;
+}
+.calcTabTitle {
+  font-size: 1.7em;
+}
+*/
+input#resultSelectorChart {
+line-height:1.4em;
+}
+.selectedTabRC {
+  height: 37px;
+  width:       143px;
+  background: url("/resources/images/tabSelectedRC.gif") no-repeat;
+  padding: 15px 0 4px;
+
+}
+.unselectedTabRC {
+  height:     45px;
+  background: url("/resources/images/tabUnselectedRC.jpg") no-repeat;
+  Display: block;
+  padding: 15px 0 4px;
+}
+.doubleTab {
+  padding-top:10px;
+}
+.specTab {
+  padding-top:5px;
+}
+.specTab2 {
+  padding-top:0px;
+}
+.unselectedTabRC a.tabLink:link, a.tabLink:visited {
+  display: block;
+  padding: 10px 8px;
+}
+.tabSpacerMidRC {
+  height:     45px;
+  background: url("/resources/images/tabSpacerRC.jpg");
+}
+.tabsRC {
+  height:     45px;
+}
+.selectedTab_121 {
+  display:     inline;
+  float:       left;
+  width:       121px;
+  height:      auto;
+  padding:     8px 0 4px 0;
+  font-weight: bold;
+  background:  url("/resources/images/tabSelected_121.gif") no-repeat;
+  font-size:   12px;
+}
+.unselectedTab_121 {
+  display:    inline;
+  float:      left;
+  width:      121px;
+  height:     auto;
+  padding:    9px 0 4px 0;
+  background: url("/resources/images/tabUnselected_121.gif") no-repeat;
+  font-size:  12px;
+}
+.selectedTab_185 {
+  display:     inline;
+  float:       left;
+  width:       185px;
+  height:      auto;
+  padding:     8px 0 4px 0;
+  font-weight: bold;
+  background:  url("/resources/images/tabSelected_185.gif") no-repeat;
+  font-size:   12px;
+}
+.unselectedTab_185 {
+  display:    inline;
+  float:      left;
+  width:      185px;
+  height:     auto;
+  padding:    9px 0 4px 0;
+  background: url("/resources/images/tabUnselected_185.gif") no-repeat;
+  font-size:  12px;
+}
+.selectedTab_237 {
+  display:     inline;
+  float:       left;
+  width:       237px;
+  height:      auto;
+  padding:     8px 0 4px 0;
+  font-weight: bold;
+  background:  url("/resources/images/tabSelected_237.gif") no-repeat;
+  font-size:   12px;
+}
+.unselectedTab_237 {
+  display:    inline;
+  float:      left;
+  width:      237px;
+  height:     auto;
+  padding:    9px 0 4px 0;
+  background: url("/resources/images/tabUnselected_237.gif") no-repeat;
+  font-size:  12px;
+}
+.tabSpacerRight_28 {
+  display:    inline;
+  float:      left;
+  width:      28px;
+  height:     27px;
+  background: url("/resources/images/tabSpacer.gif");
+}
+
+/* New CSS for Retirement Calculator Since 2011-07-25 */
+.modalContentWrapper {
+  height: 450px;
+  padding-right: 15px;
+  overflow: auto;
+}
+.modalContentWrapperNarrow {
+margin: 0 auto;
+overflow: auto;
+width: 700px;
+height: 400px;
+}
+.modalContentWrapperNarrow a {
+    color: #3181CB !important;
+    text-decoration: none !important;
+}
+h3.lengthRetirementHeader{
+  margin-top:5px !important;
+}
+
+
+/* BUTTON STYLE FOR CSS BUTTONS */
+/*  Transferred to subPage.css  */
+/* FONT AWESOME */
+
+.fa-asterisk {
+    margin: 0;
+}
+
+i.fa-question-circle {
+    color: #2279d0;
+    font-size: 1.5em;
+}
+
+i.fa-info-circle {
+    color: #303F9E;
+}
+
+i.fa-exclamation-triangle {
+    color: #F6A300;
+    font-size: 1.2em;
+}
+
+.icon-before:before,
+.icon-after:after {
+    font-family: 'FontAwesome';
+    font-style: normal;
+    font-size: 1em;
+}
+
+.icon-before:before {
+    padding-right: 4px;
+}
+
+.icon-after:after {
+    padding-left: 4px;
+}
+
+.icon-before.required:before {
+    content: "\f069";
+    color: red;
+}
+
+.icon-before.attention:before {
+    content: "\f071";
+    color: #F6A300;
+    font-size: 1.1em;
+}
+
+.icon-before.information:before {
+    content: "\f05a";
+    color: #303F9E;
+    font-size: 2em;
+}
+
+i.required {
+    color: red;
+}
+
+.icon-help {
+    padding-left: 4px;
+}
+
+.mr3 {
+    margin-right: 3px;
+}
+
+.ml3 {
+    margin-left: 3px;
+}
+
+.visible {
+   visibility: visible;
+}
+
+.hidden {
+   visibility: hidden;
+}
+.bold {
+  font-weight: bold;
+}
+.outline {
+  text-shadow: -1px 1px 2px #000,
+				  1px 1px 2px #000,
+				  1px -1px 0 #000,
+				  -1px -1px 0 #000;
+}

@@ -1,0 +1,20 @@
+{% assign pubs = site.publications %}
+{{ pubs | size }}
+{% assign newsitems = site.plan_news | sort: 'name' | reverse %}
+{% assign lastfolder = '' %}
+{% for item in newsitems %}
+  {% unless item.path contains "/_hidden/" %}
+  {% assign folder = item.path | split: '/' | shift | pop | join: '/' %}
+  {% if folder != lastfolder %}
+    {% if lastfolder == '' %}
+    ## Archived news and announcements
+    {% else %}
+    ----- end accordion {{lastfolder}} -----
+    {% endif %}
+    {% assign lastfolder = folder %}
+    ----- start accordion {{ folder }} -----
+  {% endif %}
+  {% include plan-news-item.html entry=item folder=folder %}
+  {% endunless %}
+{% endfor %}
+  {% if lastfolder != '' %}----- end accordion {{lastfolder}}-----{% endif %}

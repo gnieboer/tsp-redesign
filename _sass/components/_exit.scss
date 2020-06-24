@@ -1,0 +1,37 @@
+section.exit {
+  .usa-grid-full {
+    display: flex;
+    align-items: center;
+    background-color: $color-blue-lightest;
+    padding: 0;
+
+    .usa-width-one-third {
+      background-color: $color-blue-light;
+      padding: 4rem 2rem;
+      color: white;
+    }
+    .usa-width-two-thirds {
+      background-color: inherit;
+      color: white;
+      padding: 4rem;
+      padding-right: 5rem;
+      a,
+      a:visited {
+        color: white;
+      }
+    }
+  }
+
+  h2 {
+    font-family: $sans;
+    font-weight: $bold;
+    text-transform: uppercase;
+    letter-spacing: 0.4rem;
+    font-size: 2rem;
+  }
+
+  p {
+    font-size: 2rem;
+    font-weight: $light;
+  }
+}

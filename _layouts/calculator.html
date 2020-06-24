@@ -5,8 +5,7 @@ main:
 
 scripts:
   - /assets/js/jquery.min.js
-  - /assets/js/jquery.numeric.js
-  - /assets/js/fontawesome-all.min.js
+  - /assets/js/fontawesome.min.js
   - /assets/js/calculator/calculator.js
   - /assets/js/calculator/calculator_panels.js
 ---
@@ -15,24 +14,36 @@ scripts:
 {% assign sidenav = site.data.navigation[page.sidenav] | default: page.sidenav %}
 {% if sidenav %}
 <aside class="usa-width-one-fourth usa-layout-docs-sidenav sticky">
-  {% include sidenav.html links=sidenav %}
+  <ul class="usa-accordion">
+    <li>
+      <button class="usa-accordion-button"
+        aria-expanded="true"
+        aria-controls="sidenav-mobile">
+        More in this section
+      </button>
+      <div id="sidenav-mobile" class="usa-accordion-content">
+        {% include sidenav.html links=sidenav %}
+      </div>
+    </li>
+  </ul>
 </aside>
 {% assign contentClass = "usa-width-three-fourths" %}
 {% endif %}
 
 <div class="{{ contentClass }} usa-layout-docs-main_content">
-  {% if page.title %}<h1>{{ page.title }}</h1>{% endif %}
+  {% assign altPageTitle = page.title-alternate | default: page.title %}
+  {% if altPageTitle %}<h1>{{ altPageTitle }}</h1>{% endif %}
   {% if page.progress-steps %}{% include calculator/progressBar.html progressSteps=page.progress-steps %}{% endif %}
   {{ content }}
 
   {% if page.panel-names %}
     {% comment %}This block auto includes the content of the panels.{% endcomment %}
-    {% assign panelNames = page.panel-names | split: ", " %}
+    {% assign panelNames = page.panel-names %}
     {% assign hide = 0 %}
     {% for panelName in panelNames %}
       {% assign panelID = forloop.index %}
-      {% assign panelMD = 'panel' | append: panelID | append: '.md' %}
-      {% capture panelHTML %}{% include_relative {{ panelMD }} panelID=panelID hide=hide %}{% endcapture %}
+      {% assign panelMD = 'calculator/' | append: page.calculator-name | append: '/panel-' | append: panelID | append: '.md' %}
+      {% capture panelHTML %}{% include {{ panelMD }} panelID=panelID hide=hide %}{% endcapture %}
       {{ panelHTML | markdownify }}
       {% assign hide = 1 %}
     {% endfor %}

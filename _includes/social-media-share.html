@@ -1,0 +1,8 @@
+{% comment %}
+Add share modal to page.
+{% endcomment %}
+{% assign element = include.element | default: 'p1' %}
+{% assign modalID = include.modalID | default: '' %}
+<button type="button" class="share" data-toggle="modal" data-target="#shareModal{{modalID}}">
+  <i class="fas fa-share-alt"></i><span class="sr-only">Share</span>
+</button>

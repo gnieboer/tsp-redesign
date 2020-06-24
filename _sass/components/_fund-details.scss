@@ -1,147 +1,263 @@
+section#fund-tabs {
+  #footnotes {
+    border-top: none;
+  }
+}
 .fund-details {
+  .as-of-date {
+    color: #999;
+    font-size: 1.5rem;
+    padding-left: 1rem;
+  }
 
-.as-of-date {
-  color: #999;
-  font-size: 1.5rem;
-}
-.fund-details-header {
-  border-bottom: 2px solid #B5B3B3;
-  padding-bottom: 3rem;
-  h1 {
-    margin-bottom: 0;
-    font-size: 5rem;
-    line-height: 5rem;
+  .fund-details-header {
+    border-bottom: 2px solid #B5B3B3;
+    padding-bottom: 3rem;
+
+    h1 {
+      margin-bottom: 0;
+      font-size: 5rem;
+      line-height: 5rem;
+    }
+
+    .compare-funds-button {
+      float: right;
+    }
+
+    .fund-subtitle {
+      font-size: 2.5rem;
+      margin-top: 0;
+      width: 25ch;
+    }
   }
-  .compare-funds-button {
-    float:right;
+
+  .fund-questions {
+    .usa-accordion-button {
+      background-position: left 2rem center;
+      padding: 1.5rem 2rem 1.5rem 5.5rem;
+      background-color: $color-white;
+      font-size: $h3-font-size;
+      background-image: url($baseurl + "/assets/img/icons/minus-circle.svg");
+      color: $color-primary;
+      background-size: initial;
+
+      &[aria-expanded=false] {
+        background-image: url($baseurl + "/assets/img/icons/plus-circle.svg");
+        color: $color-base;
+      }
+    }
   }
-  .fund-subtitle {
-    font-size: 2.5rem;
-    margin-top: 0;
-    width: 25ch;
+
+  .fund-objective {
+    font-size: 2rem;
+    padding: 3rem;
+    background-color: $color-primary-alt-darkest;
+    color: $color-white;
   }
-}
-.fund-questions {
-  .usa-accordion-button {
-    background-position: left 2rem center;
-    padding: 1.5rem 2rem 1.5rem 5.5rem;
-    background-color: $color-white;
-    font-size: $h3-font-size;
-    background-image: url('/assets/img/icons/minus-circle.svg');
-    color: $color-primary;
-    background-size: initial;
-    &[aria-expanded=false] {
-    background-image: url('/assets/img/icons/plus-circle.svg');
-    color: $color-base;
+
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: $font-sans;
+  }
+
+  .avg-annual-returns {
+    width: 100%;
+    border-bottom: 2px solid $color-gray-lightest;
+
+    td,
+    th {
+      text-align: center;
+      border: none;
+    }
+
+    th:first-child {
+      padding-left: 1.5rem;
+    }
+
+    td {
+      color: $color-green;
+    }
+
+    caption {
+      font-family: $font-sans;
+      text-align: center;
+      font-size: $h2-font-size;
+      font-weight: $font-normal;
+      border-bottom: 1px solid $color-gray-lightest;
+      border-top: 1px solid $color-gray-lightest;
+      padding: 0.5rem 0;
     }
   }
 }
 
-
-.fund-objective {
-  font-size: 2rem;
-  padding: 3rem;
-  background-color: $color-primary-alt-darkest;
-  color: $color-white;
-}
-h2, h3, h4, h5, h6 {
-  font-family: $font-sans;
-}
-.avg-annual-returns {
-  width: 100%;
-  border-bottom: 2px solid $color-gray-lightest;
-
-  th, td {text-align: center;border: none;}
-  th:first-child {
-    padding-left: 1.5rem;
-  }
-  td {color: $color-green;}
-  caption {
-    font-family: $font-sans;
-    text-align:center;
-    font-size: $h2-font-size;
-    font-weight: $font-normal;
-    border-bottom: 1px solid $color-gray-lightest;
-    border-top: 1px solid $color-gray-lightest;
-    padding: .5rem 0;
-  }
-}
-
-}
-
-
 @media screen and (min-width: 992px) {
+  section#fund-tabs {
+    .usa-tabs {
 
-.usa-tabs {
-  width: auto;
-  h2, h3, h4  {
-    font-family: $font-sans;
-    font-weight: $font-normal;
-  }
-  > li {
-    display:inline;
-    width: auto;
-    background-color: transparent;
-    margin-right: 1rem;
-  }
-  .usa-accordion-button {
-    width: auto;
-    display:inline-block;
-    clear:both;
-    color: #afafaf;
-    background-color: $color-white;
-    background-image: none;
-    font-weight: normal;
-    padding-right: 2rem;
-    border: none;
-    border-bottom-color: transparent;
-    &[aria-expanded="true"] {
-      background-color: $color-white;
-      color: $color-base;
-      font-weight: $font-bold;
-      line-height: 3rem;
-      &:after {
-        content: '';
-        border-bottom: 4px solid $color-primary-alt;
+      h2,
+      h3,
+      h4 {
+        font-family: $font-sans;
+        font-weight: $medium;
+      }
+
+      > li {
+        display: inline;
+        width: auto;
+        background-color: transparent;
+        margin-right: 1rem;
+      }
+      section.fund-tab-composition {
+        .hc-composition-pie {
+          width: auto;
+          // height: auto;
+          .highcharts-container {
+            text-align: center;
+            .highcharts-root {
+              display: inline-block;
+            }
+          }
+        }
+        table {
+          width: 100%;
+          font-size: 1.5rem;
+          border: none;
+          tr {
+            border-bottom-width: 1px;
+            border-bottom-style: dotted;
+          }
+          tbody {
+            tr:last-child {
+              border-bottom: none;
+            }
+          }
+          td,
+          th {
+            border: none;
+          }
+
+          th {
+            &:first-child {
+              width: 50%;
+            }
+
+            &:nth-last-child(-n+2) {
+              text-align: center;
+            }
+          }
+
+          td {
+            &:nth-last-child(-n+2) {
+              text-align: center;
+            }
+          }
+        }
+        .sortableColumn { // Composition sortable <th>
+          background-image: url($baseurl + '/assets/img/icons/arrow-up-circle.svg');
+          background-repeat: no-repeat;
+          -webkit-transition: background-color, .2s, box-shadow, .2s, color, .2s;
+          -moz-transition: background-color, .2s, box-shadow, .2s, color, .2s;
+          transition: background-color, .5s, box-shadow, .2s, color, .2s;
+          // background-size: .7em;
+          background-size: 1.2em;
+          background-position: 0% 50%;
+          background-color: transparent;
+          box-shadow: 0 0 0 4px transparent;
+          border-bottom: none;
+          cursor: pointer;
+          margin-left: 2px;
+          padding-left: 1.3em !important;
+          text-decoration: none;
+        }
+        .sort-column-asc, .sort-column-desc  {
+          background-image: url($baseurl + "/assets/img/icons/arrow-down-circle.svg");
+          background-repeat: no-repeat;
+          color: #339933;
+        }
+        .sort-column-desc {
+          background-image: url($baseurl +  "/assets/img/icons/arrow-up-circle.svg");
+        }
+        #footnotes {
+          padding-left: 1.5rem;
+          li {
+            display: list-item;
+          }
+        }
+      } // end section.fund-tab-composition
+
+      .usa-accordion-button {
+        width: auto;
+        display: inline-block;
+        clear: both;
+        color: $color-gray-light;
+        background-color: $color-white;
+        background-image: none;
+        font-weight: normal;
+        padding-right: 2rem;
+        border: none;
+        border-bottom-color: transparent;
+
+        &[aria-expanded="true"] {
+          background-color: $color-white;
+          color: $color-base;
+          font-weight: $font-bold;
+          line-height: 3rem;
+
+          &:after {
+            content: '';
+            border-bottom: 4px solid $color-primary-alt;
+            display: block;
+          }
+        }
+      }
+
+      .usa-accordion-content {
+        float: left;
+        clear: both;
+        width: 100%;
+        border-top: none;
+        background-color: $color-gray-lightest;
+        padding: 1.2rem 1rem;
+
+        .usa-grid-full {
+          display: flex;
+
+          > div {
+            background-color: $color-white;
+            padding: 2rem;
+          }
+        }
+
+        &[aria-hidden="false"] {
+          background-color: $color-gray-lightest;
+        }
+      }
+    } // end .usa-tabs
+  } // end section#fund-tabs
+
+  .fund-summary-top-ten {
+    ol {
+      list-style: none;
+      padding: 0;
+      li {
         display: block;
       }
     }
-  }
-  .usa-accordion-content {
-    float:left;
-    clear:both;
-    width: 100%;
-    border-top: none;
-    background-color: $color-gray-lightest;
-    .usa-grid-full {
-      display: flex;
-      > div {
-        background-color: $color-white;
-        padding: 2rem;
-      }
-    }
-    &[aria-hidden="false"] {
-      background-color: $color-gray-lightest;
 
+    .holdings-abbr {
+      color: $color-primary;
+      font-weight: 800;
+      display: inline-block;
+      margin-right: 2rem;
+      width: 4rem;
     }
-  }
-}
-}
 
-.fund-summary-top-ten {
-  ol {
-    list-style: none;
-    padding: 0;
-  }
-  .holdings-abbr {
-    color: $color-primary;
-    font-weight: 800;
-    display: inline-block;
-    margin-right: 2rem;
-    width: 4rem;
-  }
-  li {
-    border-bottom: 1px solid #dfdfdf;
-    padding: .25rem 0 1rem;
+    li {
+      border-bottom: 1px solid #dfdfdf;
+      padding: 0.25rem 0 1rem;
+    }
   }
 }

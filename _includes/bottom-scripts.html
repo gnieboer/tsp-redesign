@@ -17,12 +17,24 @@ Autoloads calculator panel js files.
   {% comment %}This block auto includes the content of the main js and panel js files.{% endcomment %}
   {% assign calcPath = "calculator/" | append: page.calculator-name | append: "/" %}
   {% assign indexJS = 'index.js' | prepend: calcPath %}
-  {% assign panelNames = page.panel-names | split: ", " %}
+  {% assign panelNames = page.panel-names %}
   {% assign maxPanels = panelNames | size %}
   {% for panelName in panelNames %}
     {% assign panelID = forloop.index %}
-    {% assign panelJS = calcPath | append: 'panel' | append: panelID | append: '.js' %}
+    {% assign panelJS = calcPath | append: 'panel-' | append: panelID | append: '.js' %}
     {% include {{ panelJS }} panelID=panelID panelName=panelName %}
   {% endfor %}
   {% include {{ indexJS }}  maxPanels=maxPanels %}
+{% endif %}
+
+{% if page.document-ready %}
+<script type="text/javascript">
+<!--
+$(document).ready(function() {
+  {% for item in page.document-ready %}
+    {{ item }}
+  {% endfor %}
+});
+-->
+</script>
 {% endif %}

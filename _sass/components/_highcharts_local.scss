@@ -1,0 +1,148 @@
+.hc-composition-pie {
+  width: 100px;
+  height: 35px;
+  // margin: 0 auto;
+  // border-style: solid;
+  // border-width: 1px;
+  .highcharts-pie-series .highcharts-point {
+  	// stroke: #EDE;
+  	stroke-width: 0px;
+  }
+  .highcharts-color-0 { fill: $color-blue-medium; stroke: $color-blue-medium; }
+  .highcharts-color-1 { fill: $color-gray-lighter; stroke: $color-gray-lighter; }
+}
+
+.hc-growth-lifetime {
+  min-width: 310px;
+  height: 400px;
+  margin: 0 auto;
+}
+.hc-share-price-chart {
+}
+.hc-annual-returns-all {
+  // height: auto;
+  // display: block;
+  // overflow-x: scroll;
+}
+.hc-annual-returns-bar {
+  min-width: 310px;
+  height: 400px;
+  margin: 0 auto;
+}
+.hc-annual-returns-table {
+  .even { background-color: #f2f2f2; }
+  .odd { }
+  .active { font-weight: bold; }
+  .rate-of-return-bar {
+    &:before {
+      font-family: "Font Awesome 5 Pro";
+      content: "\f0c8";
+      font-weight: 900;
+      padding-right: .6rem;
+      font-size: inherit;
+      width: 50%;
+     }
+   }
+}
+.spann {
+  &:before {
+    content: "<span ";
+   }
+  &:after {
+    content: "</span>";
+  }
+
+}
+.hc-lfund-stacked-area {
+  min-width: 310px;
+  height: 400px;
+  margin: 0 auto;
+  .highcharts-crosshair-category {
+      stroke-width: 5px;
+      stroke: $neutral-color-100;
+      stroke-opacity: 1.00;
+  }
+  .highcharts-plot-line {
+      fill: none;
+      stroke: $neutral-color-100;
+      stroke-width: 2px;
+  }
+
+}
+
+.hc-note {
+  font-size: 70%;
+  color: gray;
+}
+
+.hc-small-pie-box {
+  width: 200px;
+  height: 200px;
+  margin: 0 auto;
+  // border: 1px solid black;
+}
+
+.hc-summary-pie-box {
+  width: 250px;
+  height: 250px;
+  margin: 0 auto;
+  // border: 1px dashed red;
+}
+.hc-summary-tooltip {
+  // width: 140px;
+  // height: 100px;
+  // margin: 0 auto;
+  text-align: center;
+  // border: 1px dashed red;
+}
+
+.hc-debug-pie-box {
+  width: 500px;
+  height: 500px;
+  margin: 0 auto;
+  border: 1px solid black;
+}
+
+.tooltip-bar {
+  &:before {
+    font-family: "Font Awesome 5 Pro";
+    content: "\f0c8";
+    font-weight: 900;
+    padding-right: .6rem;
+    font-size: inherit;
+    width: 50%;
+   }
+}
+
+.before-invest-tooltip, .l-fund-tooltip, .growth-100-tooltip, .rates-of-return-tooltip,
+  .l-fund-summary-tooltip, .dynamic-share-price-tooltip {
+  // background-color: black;
+  // color: white;
+  .tooltip-title {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 3px;
+  }
+  .tooltip-row-group {
+    display: table-row-group;
+  }
+  .tooltip-row {
+    display: table-row;
+  }
+  .tooltip-left {
+    display: table-cell;
+    padding-right: 2px;
+    text-align: left;
+  }
+  .tooltip-right {
+    display: table-cell;
+    padding-left: 2px;
+    text-align: right;
+  }
+}
+.l-fund-summary-tooltip {
+  margin: auto;
+  width: 140px;
+  // border: 1px dashed red;
+}

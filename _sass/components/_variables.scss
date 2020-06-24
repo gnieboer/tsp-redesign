@@ -7,6 +7,8 @@ $h6-font-size: 1.3rem;
 
 $sans: "Source Sans Pro";
 $serif: "Merriweather";
+$font-awesome: "Font Awesome 5 Pro";
+$font-awesome-duo: "Font Awesome 5 Duotone";
 
 $spacing-x-small: 0.5rem;
 $spacing-small: 1rem;
@@ -22,6 +24,9 @@ $color-blue-lightest: lighten($color-blue-light, 10%);
 
 $color-blue-medium: #116C97;
 
+$color-primary: #046b99;
+$color-primary-darker: #323a45;
+$color-base: #222223;
 
 $color-aqua: #00B5E2;
 $color-aqua-dark: darken($color-aqua, 5%);
@@ -29,29 +34,57 @@ $color-aqua-darkest: darken($color-aqua, 10%);
 $color-aqua-light: #99D6EA;
 $color-aqua-lightest: lighten($color-aqua-light, 10%);
 
-$color-silver: #f1f1f1;
-$color-gray: #7d7c7c;
-$color-gray-dark: darken($color-gray, 5%);
-$color-gray-darkest: darken($color-gray, 10%);
+$color-gray: #5b616b;
+$color-gray-dark: #323a45;
+$color-gray-darker: darken($color-gray,30%);
+$color-gray-darkest: darken($color-gray,45%);
 $color-gray-light: #aeb0b5;
-$color-gray-lightest: lighten($color-gray-light, 10%);
+$color-gray-lighter: #d6d7d9;
+$color-gray-lightest: #f1f1f1;
 
-$color-g-fund: #f17621;
-$color-f-fund: #e31c3d;
-$color-c-fund: #046b99;
-$color-s-fund: #fdb81e;
-$color-i-fund: #2e8540;
+$color-error: #cd2026;
 
+// Fund colors
+$color-g-fund: #dd5900;
+$color-f-fund: #8e2344;
+$color-c-fund: #009e60;
+$color-s-fund: #00a3dd;
+$color-i-fund: #5b027a;
+$color-l-fund: #ffc600;
+
+// inflation = $color-gray
+
+// Fund index colors
+$color-index-g: lighten($color-g-fund, 40%); // 90-day T-Bill Rate
+$color-index-f: lighten($color-f-fund, 40%); // Bloomberg Barclays U.S. Aggregate Bond Index
+$color-index-c: lighten($color-c-fund, 40%); // S&P 500
+$color-index-s: lighten($color-s-fund, 40%); // Dow Jones
+$color-index-i: lighten($color-i-fund, 40%); // MSCI EAFE
+$color-index-l: lighten($color-l-fund, 40%); // L-income for "Avg Returns"
+
+// Fund performance table header <th> flair
+$border-g: 3px solid $color-g-fund;
+$border-index-g: 3px solid $color-index-g;
+$border-f: 3px solid $color-f-fund;
+$border-index-f: 3px solid $color-index-f;
+$border-c: 3px solid $color-c-fund;
+$border-index-c: 3px solid $color-index-c;
+$border-s: 3px solid $color-s-fund;
+$border-index-s: 3px solid $color-index-s;
+$border-i: 3px solid $color-i-fund;
+$border-index-i: 3px solid $color-index-i;
+$border-l: 3px solid $color-l-fund;
 
 $small-screen:  481px;
 $medium-screen: 600px;
 $large-screen:  951px;
+$desktop-screen:  1201px;
 
 $light: 300;
+$normal: 400;
 $medium: 600;
 $bold: 700;
 $black: 900;
 
-$l-funds: #ffc600;
 
 $fa-font-path:        "../webfonts";

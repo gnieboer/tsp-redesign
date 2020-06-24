@@ -3,37 +3,72 @@ permalink: /funds-individual/s-fund/
 layout: fund-details
 title: S fund
 sidenav: fund-options
-Fund_letter: S
+redirect_from:
+  - /InvestmentFunds/FundOptions/fundPerformance_S.html
+Fund_type: Index
+Fund_name: S Fund
 Fund_order: 4
-subfund_name:
 Fund_subtitle: Small cap stock Index investment fund
 Fund_objective: The S Fund's investment objective is to match the performance of the Dow Jones U.S. Completion Total Stock Market Index, a broad market index made up of stocks of small-to-medium U.S. companies not included in the S&P 500 Index.
-Fund_objective_short: To match the performance of the Dow Jones U.S. Completion Total Stock Market Index.
+Fund_objective_short: Match the performance of the Dow Jones U.S. Completion Total Stock Market Index.
 questions:
   - question: Why should I invest in the S Fund?
     answer: While investment in the S Fund carries risk, it also offers the opportunity to experience gains from equity ownership of small-to-mid-sized U.S. companies. It provides and excellent means of further diversifying your domestic equity holdings.
   - question: Am I ok with market and inflation risk?
-    answer: There is a risk of loss if the Dow Jones U.S. Completion TSM Index declines in response to changes in overall economic conditions (market risk) or if the S Fund does not grow enough to offset the reduction in purchasing power (inflation risk).
+    answer: There is a risk of loss if the Dow Jones U.S. Completion TSM Index declines in response to changes in overall economic conditions (<span data-term="Market Risk" class="js-glossary-toggle term term-end">market risk</span>) or if the S Fund does not grow enough to offset the reduction in purchasing power (<span data-term="Inflation Risk" class="js-glossary-toggle term term-end">inflation risk</span>).
   - question: How can I use the S Fund in my TSP?
     answer: The S Fund can be useful in a portfolio that also contains stock funds that track other indexes. The C, S, and I Funds, for example, track different segments of the overall stock market without overlapping. By investing in all segments of the stock market (as opposed to just one), you reduce your exposure to market risk.
 avg_annual_returns:
-    ytd: 15.99%
-    one_yr: 13.89%
-    three_yr: 14.89%
-    five_yr: 15.89%
-    ten_yr: 16.89%
-    inception: 5.09%
+    ytd: "-"
+    one_yr: "-"
+    three_yr: "-"
+    five_yr: "-"
+    ten_yr: "-"
+    lifetime: "-"
+summary_update: 12/31/2019
 summary_details:
-    assets: $67.6 billion
-    admin_expense: $0.032/$1,000 account balance. 0.032% (3.2 basis points)
-    other_expense: $0.027%
+    assets: $74.1 billion
+    as_of_year: 2019
+    gross_expense:  .052
+    net_expense:    .042
+    other_expense:  .018
     benchmark_index: Dow Jones U.S. Completion TSM Index | www.djindexes.com
     asset_manager: BlackRock Institutional Trust Company, N.A
+composition_update: December 31, 2019
+composition:
+  - [Information Technology, 17.8]
+  - [Financials, 17.6]
+  - [Health Care, 13.6]
+  - [Industrials, 13.6]
+  - [Consumer Discretionary, 11.3]
+  - [Real Estate, 9.4]
+  - [Communication Services, 4.8]
+  - [Materials, 4.0]
+  - [Consumer Staples, 2.7]
+  - [Utilities, 2.7]
+  - [Energy, 2.5]
+top_ten_update: 12/31/2019
 top_ten_holdings:
   - name: Tesla Motors Inc.
     abbr: TSLA
-  - name: Las Vegas Sands Corp.
-    abbr: LVS
+  - name: Blackstone Group, Inc. Class A
+    abbr: BX
+  - name: Lululemon Athletica, Inc.
+    abbr: LULU
+  - name: Workday, Inc. Class A
+    abbr: WDAY
+  - name: Splunk, Inc.
+    abbr: SPLK
+  - name: Palo Alto Networks, Inc.
+    abbr: PANW
+  - name: CoStar Group, Inc.
+    abbr: CSGP
+  - name: Square, Inc. Class A
+    abbr: SQ
+  - name: Dexcom, Inc.
+    abbr: DXCM
+  - name: Liberty Broadband Corp. Series C
+    abbr: LBRDK
 additional_info: |
   The S Fund is invested in a separate account
   that is managed by BlackRock Institutional
@@ -61,36 +96,18 @@ additional_info: |
   contracts of the S&P 400 and Russell 2000
   (other broad equity indexes).
 risks: |
-  Your investment in the C Fund is subject to [market risk](#) because the prices of the stocks in the S&P 500 Index rise and fall.
+  Your investment in the S Fund is subject to <span data-term="Market Risk" class="js-glossary-toggle term term-end">market risk</span> because the Dow Jones U.S. Completion Total Stock Market Index returns will move up and down in response to overall economic conditions.
 
-  By investing in the C Fund, you are also exposed to [inflation risk](#), meaning your C Fund investment may not grow enough to offset inflation.
-risk_level: low
+  By investing in the S Fund, you are also exposed to <span data-term="Inflation Risk" class="js-glossary-toggle term term-end">inflation risk</span>, meaning your S Fund investment may not grow enough to offset the reduction in purchasing power that results from inflation.
+risk_level: medium-high
 rewards: |
-  While investment in the C Fund carries risk, it also offers the opportunity to experience gains from equity ownership of large and mid-sized U.S. company stocks.
-
+  While investment in the S Fund carries risk, it also offers the opportunity to experience gains from equity ownership of small to mid-sized U.S. companies. It provides an excellent means of further diversifying your domestic equity holdings.
+scripts:
+bottom-scripts: /assets/js/ajaxFetch.js
+document-ready:
+  - singleFundData('S');
+  - getFundIndexAverageAnnualReturns('S');
+  - getGrowthLifetime('S');
+  - doCompositionPies();
+  - $('.sortableColumn').click(function(e) { toggleSort(this); });
 ---
-
-<li>
-    <button class="usa-accordion-button" aria-expanded="false" aria-controls="a2">
-  Performance &amp; risks
-</button>
-    <div id="a2" class="usa-accordion-content">
-      <div class="usa-grid-full">
-        <div class="usa-width-one-whole">
-          <h3>Charts and graphs</h3>
-        </div>
-      </div>
-    </div>
-</li>
-<li>
-    <button class="usa-accordion-button" aria-expanded="false" aria-controls="a3">
-  Composition
-</button>
-    <div id="a3" class="usa-accordion-content">
-    <div class="usa-grid-full">
-      <div class="usa-width-one-whole">
-        <h3>Charts and graphs 2</h3>
-      </div>
-    </div>
-    </div>
-</li>

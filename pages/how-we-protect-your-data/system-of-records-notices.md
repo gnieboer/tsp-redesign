@@ -1,13 +1,9 @@
 ---
 layout: page
 title: System of Records Notices (SORNs)
-
 sidenav: privacy
-
 styles:
-
 scripts:
-
 permalink: /how-we-protect-your-data/system-of-records-notices/
 ---
 # System of Records Notices (SORNs)
@@ -20,7 +16,7 @@ FRTIB is required to publish a SORN anytime it creates, substantially modifies, 
 
 <ul class="usa-accordion">
 <!-- FRTIB-1 -->
-<li>
+<li id="frtib-1">
   <button class="usa-accordion-button"
     aria-expanded="false"
     aria-controls="a1">
@@ -34,7 +30,7 @@ FRTIB is required to publish a SORN anytime it creates, substantially modifies, 
   None  
 
   **Federal Register**
-  [79 Fed. Reg. 21246, 21247 (Apr. 15, 2014)](https://www.federalregister.gov/documents/2014/04/15/2014-08398/privacy-act-of-1974-systems-of-records){:target="\_blank"}
+  [79 Fed. Reg. 21246, 21247 (Apr. 15, 2014)]({{ site.baseurl }}/exit/?idx=52)
 
   **System location**
   These records are located at the office of the entity engaged by the Agency to perform record keeping services for the TSP. The current address for this record keeper is listed at http://www.tsp.gov.
@@ -62,13 +58,13 @@ FRTIB is required to publish a SORN anytime it creates, substantially modifies, 
   3. Court orders; or
   4. Spouses, former spouses, other family members, beneficiaries, legal guardians, and personal representatives (executors, administrators).
   {: .alpha}
-
+{{ site.baseurl }}/exit/?idx=58
 
   **Routine uses of records maintained in the system, including categories of users and purposes of such uses**
   These records and information in these records may be used:
-
-  1. To disclose financial data and addresses to Federal, state, and local governmental tax enforcement agencies so that they may enforce applicable tax laws.
-  2. To disclose to the designated annuity vendor in order to provide TSP participants who have left Federal service with an annuity.
+{{ site.baseurl }}/exit/?idx=62
+  1. To disclos{{ site.baseurl }}/exit/?idx=63 enforce applicable tax laws.
+  2. To disclose{{ site.baseurl }}/exit/?idx=64ity.
   3. To disclose to sponsors of eligible retirement plans for purposes of transferring the funds in the participant's account to an Individual Retirement Arrangement or into another eligible retirement plan.
   4. To disclose to current and former spouses and their attorneys in order to protect spousal rights under FERSA and to receive benefits to which they may be entitled.
   5. When a participant to whom a record pertains dies, to disclose the following types of information to any potential beneficiary: Information in the participant's record which could have been properly disclosed to the participant when living (unless doing so would constitute a clearly unwarranted invasion of privacy) and the name and relationship of any other person who claims the benefits or who is entitled to share the benefits payable.
@@ -148,7 +144,7 @@ FRTIB is required to publish a SORN anytime it creates, substantially modifies, 
   </div>
 </li>
 <!-- FRTIB-2 -->
-<li>
+<li id="frtib-2">
   <button class="usa-accordion-button"
     aria-expanded="false"
     aria-controls="a2">
@@ -162,7 +158,7 @@ FRTIB is required to publish a SORN anytime it creates, substantially modifies, 
     Subsections (c)(3); (d); (e)(1); (e)(4)(G), (H), (I); and (f) of 5 U.S.C. 552a
 
   **Federal Register**
-    [80 Fed. Reg. 43428, 43432 (July 22, 2015)](https://www.federalregister.gov/documents/2015/07/22/2015-17924/privacy-act-of-1974-systems-of-records){:target="\_blank"}
+    [80 Fed. Reg. 43428, 43432 (July 22, 2015)]({{ site.baseurl }}/exit/?idx=53)
 
   **SECURITY CLASSIFICATION:** Most personnel identity verification records are not classified. However, in some cases, records of certain individuals, or portions of some records may be classified in the interest of national security.
 
@@ -213,7 +209,7 @@ FRTIB is required to publish a SORN anytime it creates, substantially modifies, 
 
   **ADMINISTRATIVE, TECHNICAL, AND PHYSICAL SAFEGUARDS:** FRTIB has adopted appropriate administrative, technical, and physical controls in accordance with FRTIB's security program to protect the security, confidentiality, availability, and integrity of the information, and to ensure that records are not disclosed to or accessed by unauthorized individuals.
 
-  Paper records are stored in locked file cabinets in areas of restricted access that are locked after office hours. Electronic records are stored on computer networks and protected by assigning usernames to individuals needing access to the records and by passwords set by unauthorized users that must be changed periodically.
+  Paper records are stored in locked file cabinets in areas of restricted access that are locked after office hours. Electronic records are stored on computer networks and protected by assigning user IDs to individuals needing access to the records and by passwords set by unauthorized users that must be changed periodically.
 
   **RECORD ACCESS PROCEDURES:** Individuals seeking to determine whether this system of records contains information about themselves should submit a written request to the appropriate entity below, and include the following information:
 
@@ -242,7 +238,7 @@ FRTIB is required to publish a SORN anytime it creates, substantially modifies, 
   </div>
 </li>
 <!-- FRTIB-3 -->
-<li>
+<li id="frtib-3">
   <button class="usa-accordion-button"
     disabled
     aria-expanded="false"
@@ -252,7 +248,7 @@ FRTIB is required to publish a SORN anytime it creates, substantially modifies, 
   <div id="a3" class="usa-accordion-content" markdown="1"></div>
 </li>
 <!-- FRTIB-4 -->
-<li>
+<li id="frtib-4">
   <button class="usa-accordion-button"
     disabled
     aria-expanded="false"
@@ -262,7 +258,7 @@ FRTIB is required to publish a SORN anytime it creates, substantially modifies, 
   <div id="a4" class="usa-accordion-content" markdown="1"></div>
 </li>
 <!-- FRTIB-5 -->
-<li>
+<li id="frtib-5">
   <button class="usa-accordion-button"
     aria-expanded="false"
     aria-controls="a5">
@@ -277,7 +273,7 @@ FRTIB is required to publish a SORN anytime it creates, substantially modifies, 
   None
 
   **Federal Register**
-  [80 Fed. Reg. 43428, 43433 (July 22, 2015)](https://www.federalregister.gov/documents/2015/07/22/2015-17924/privacy-act-of-1974-systems-of-records){:target="\_blank"}
+  [80 Fed. Reg. 43428, 43433 (July 22, 2015)]({{ site.baseurl }}/exit/?idx=53)
 
   **SECURITY CLASSIFICATION:** None.
 
@@ -336,7 +332,7 @@ FRTIB is required to publish a SORN anytime it creates, substantially modifies, 
 
   **ADMINISTRATIVE, TECHNICAL, AND PHYSICAL SAFEGUARDS:** FRTIB has adopted appropriate administrative, technical, and physical controls in accordance with FRTIB's security program to protect the security, confidentiality, availability, and integrity of the information, and to ensure that records are not disclosed to or accessed by unauthorized individuals.
 
-  Paper records are stored in locked file cabinets in areas of restricted access that are locked after office hours. Electronic records are stored on computer networks and protected by assigning usernames to individuals needing access to the records and by passwords set by unauthorized users that must be changed periodically.
+  Paper records are stored in locked file cabinets in areas of restricted access that are locked after office hours. Electronic records are stored on computer networks and protected by assigning user IDs to individuals needing access to the records and by passwords set by unauthorized users that must be changed periodically.
 
   **RECORD ACCESS PROCEDURES:** Individuals seeking to determine whether this system of records contains information about themselves must submit a written request to the FOIA Officer, FRTIB, 77 K Street NE., Washington, DC 20002, and provide the following information:
   1. Full name;
@@ -360,7 +356,7 @@ FRTIB is required to publish a SORN anytime it creates, substantially modifies, 
   </div>
 </li>
 <!-- FRTIB-6 -->
-<li>
+<li id="frtib-6">
   <button class="usa-accordion-button"
     disabled
     aria-expanded="false"
@@ -370,7 +366,7 @@ FRTIB is required to publish a SORN anytime it creates, substantially modifies, 
   <div id="a6" class="usa-accordion-content" markdown="1"></div>
 </li>
 <!-- FRTIB-7 -->
-<li>
+<li id="frtib-7">
   <button class="usa-accordion-button"
     aria-expanded="false"
     aria-controls="a7">
@@ -385,7 +381,7 @@ FRTIB is required to publish a SORN anytime it creates, substantially modifies, 
   None
 
   **Federal Register**
-  [81 Fed. Reg. 7106, 7109 (Feb. 10, 2016)](https://www.federalregister.gov/documents/2016/02/10/2016-02673/privacy-act-of-1974-systems-of-records){:target="\_blank"}
+  [81 Fed. Reg. 7106, 7109 (Feb. 10, 2016)]({{ site.baseurl }}/exit/?idx=144)
 
   **SECURITY CLASSIFICATION:** None.
 
@@ -433,7 +429,7 @@ FRTIB is required to publish a SORN anytime it creates, substantially modifies, 
 
   **ADMINISTRATIVE, TECHNICAL, AND PHYSICAL SAFEGUARDS:** FRTIB has adopted appropriate administrative, technical, and physical controls in accordance with FRTIB's security program to protect the security, confidentiality, availability, and integrity of the information, and to ensure that records are not disclosed to or accessed by unauthorized individuals.
 
-  Paper records are stored in locked file cabinets in areas of restricted access that are locked after office hours. Electronic records are stored on computer networks and protected by assigning usernames to individuals needing access to the records and by passwords set by unauthorized users that must be changed periodically.
+  Paper records are stored in locked file cabinets in areas of restricted access that are locked after office hours. Electronic records are stored on computer networks and protected by assigning user IDs to individuals needing access to the records and by passwords set by unauthorized users that must be changed periodically.
 
   **RECORD ACCESS PROCEDURES:** Individuals seeking to determine whether this system of records contains information about themselves must submit a written request to the FOIA Officer, FRTIB, 77 K Street NE., Washington, DC 20002, and provide the following information:
 
@@ -456,7 +452,7 @@ FRTIB is required to publish a SORN anytime it creates, substantially modifies, 
   </div>
 </li>
 <!-- FRTIB-8 -->
-<li>
+<li id="frtib-8">
   <button class="usa-accordion-button"
     disabled
     aria-expanded="false"
@@ -466,7 +462,7 @@ FRTIB is required to publish a SORN anytime it creates, substantially modifies, 
   <div id="a8" class="usa-accordion-content" markdown="1"></div>
 </li>
 <!-- FRTIB-9 -->
-<li>
+<li id="frtib-9">
   <button class="usa-accordion-button"
     aria-expanded="false"
     aria-controls="a9">
@@ -481,7 +477,7 @@ FRTIB is required to publish a SORN anytime it creates, substantially modifies, 
   None
 
   **Federal Register**
-  [80 Fed. Reg. 43428, 43434 (July 22, 2015)](https://www.federalregister.gov/documents/2015/07/22/2015-17924/privacy-act-of-1974-systems-of-records){:target="\_blank"}
+  [80 Fed. Reg. 43428, 43434 (July 22, 2015)]({{ site.baseurl }}/exit/?idx=53)
 
   **SECURITY CLASSIFICATION:** None.
 
@@ -530,7 +526,7 @@ FRTIB is required to publish a SORN anytime it creates, substantially modifies, 
 
   **ADMINISTRATIVE, TECHNICAL, AND PHYSICAL SAFEGUARDS:** FRTIB has adopted appropriate administrative, technical, and physical controls in accordance with FRTIB's security program to protect the security, confidentiality, availability, and integrity of the information, and to ensure that records are not disclosed to or accessed by unauthorized individuals.
 
-  Paper records are stored in file cabinets in areas of restricted access that are locked after office hours. Electronic records are stored on computer networks, including cloud-based services, and are protected by assigning usernames to individuals needing access to the records and by passwords set by unauthorized users that must be changed periodically.
+  Paper records are stored in file cabinets in areas of restricted access that are locked after office hours. Electronic records are stored on computer networks, including cloud-based services, and are protected by assigning user IDs to individuals needing access to the records and by passwords set by unauthorized users that must be changed periodically.
 
   **RECORD ACCESS PROCEDURES:**
 
@@ -555,7 +551,7 @@ FRTIB is required to publish a SORN anytime it creates, substantially modifies, 
   </div>
 </li>
 <!-- FRTIB-10 -->
-<li>
+<li id="frtib-10">
   <button class="usa-accordion-button"
     disabled
     aria-expanded="false"
@@ -565,7 +561,7 @@ FRTIB is required to publish a SORN anytime it creates, substantially modifies, 
   <div id="a10" class="usa-accordion-content" markdown="1"></div>
 </li>
 <!-- FRTIB-11 -->
-<li>
+<li id="frtib-11">
   <button class="usa-accordion-button"
     disabled
     aria-expanded="false"
@@ -575,7 +571,7 @@ FRTIB is required to publish a SORN anytime it creates, substantially modifies, 
     <div id="a11" class="usa-accordion-content" markdown="1"></div>
 </li>
 <!-- FRTIB-12 -->
-<li>
+<li id="frtib-12">
   <button class="usa-accordion-button"
     aria-expanded="false"
     aria-controls="a12">
@@ -590,7 +586,7 @@ FRTIB is required to publish a SORN anytime it creates, substantially modifies, 
   None
 
   **Federal Register**
-  [81 Fed. Reg. 7106, 7110 (Feb. 10, 2016)](https://www.federalregister.gov/documents/2016/02/10/2016-02673/privacy-act-of-1974-systems-of-records){:target="\_blank"}
+  [81 Fed. Reg. 7106, 7110 (Feb. 10, 2016)]({{ site.baseurl }}/exit/?idx=144)
 
   **SECURITY CLASSIFICATION:** None.
 
@@ -645,7 +641,7 @@ FRTIB is required to publish a SORN anytime it creates, substantially modifies, 
 
   **ADMINISTRATIVE, TECHNICAL, AND PHYSICAL SAFEGUARDS:** FRTIB has adopted appropriate administrative, technical, and physical controls in accordance with FRTIB's security program to protect the security, confidentiality, availability, and integrity of the information, and to ensure that records are not disclosed to or accessed by unauthorized individuals.
 
-  Paper records are stored in locked file cabinets in areas of restricted access that are locked after office hours. Electronic records are stored on computer networks and protected by assigning usernames to individuals needing access to the records and by passwords set by unauthorized users that must be changed periodically.
+  Paper records are stored in locked file cabinets in areas of restricted access that are locked after office hours. Electronic records are stored on computer networks and protected by assigning user IDs to individuals needing access to the records and by passwords set by unauthorized users that must be changed periodically.
 
   RECORD ACCESS PROCEDURES:
 
@@ -672,7 +668,7 @@ FRTIB is required to publish a SORN anytime it creates, substantially modifies, 
   </div>
 </li>
 <!-- FRTIB-13 -->
-<li>
+<li id="frtib-13">
   <button class="usa-accordion-button"
     aria-expanded="false"
     aria-controls="a13">
@@ -681,84 +677,92 @@ FRTIB is required to publish a SORN anytime it creates, substantially modifies, 
   <div id="a13" class="usa-accordion-content" markdown="1">
 
   **Summary of Purpose**
-  Investigate allegations of an act of fraud or forgery relating to a participant or beneficiary account or of the misappropriation of FRTIB’s/TSP’s name, brand, or logos
+  Pursuant to the Privacy Act of 1974, 5 U.S.C. 552a, the Federal Retirement Thrift Investment Board (FRTIB) is proposing to modify its system of records for fraud and forgery records. Records contained in this system are used to investigate potential or actual fraud against TSP participant or beneficiary accounts. FRTIB is modifying this system of records to account for its process for addressing new alerts the Financial Services Information Sharing and Analysis Center (FS-ISAC) sends to FRTIB to better help protect and secure participant account information.
 
-  **Exemptions**  
-  Subsections (c)(3); (d); (e)(1); (e)(4)(G), (H), (I); and (f) of 5 U.S.C. 552a
+  **DATES:**
+  This system will become effective upon its publication in today’s Federal Register. FRTIB is not proposing any changes to the routine uses.
 
-  **Federal Register**
-  [81 Fed. Reg. 7106, 7111 (Feb. 10, 2016)](https://www.federalregister.gov/documents/2016/02/10/2016-02673/privacy-act-of-1974-systems-of-records){:target="\_blank"}
+  **ADDRESSES:**
+  You may submit written comments to FRTIB by any one of the following methods:
+  - _Federal [eRulemaking Portal]({{ site.baseurl }}/exit/?idx=145)._ Follow the website instructions for submitting comments.
+  - _Fax_: (202) 942-1676.
+  - _Mail or Hand Delivery:_ Office of General Counsel, Federal Retirement Thrift Investment Board, 77 K Street NE, Suite 1000, Washington, DC 20002.
 
-  **SECURITY CLASSIFICATION:** None.
+  **FOR FURTHER INFORMATION CONTACT:**
+  Marla Greenberg, Chief Privacy Officer, Federal Retirement Thrift Investment Board, Office of General Counsel, 77 K Street NE, Suite 1000, Washington, DC 20002, (202) 942-1600. For access to any of the FRTIB’s system of records, contact Amanda Haas, FOIA Officer, Office of General Counsel, at the above address and phone number.
 
-  **SYSTEM LOCATION:** Records are located at the Federal Retirement Thrift Investment Board, 77 K Street NE., Suite 1000, Washington, DC 20002. Records may also be kept at an additional location for Business Continuity purposes.
+  **SUPPLEMENTARY INFORMATION:**
+  FRTIB is proposing to modify its system of records for fraud and forgery records, entitled, “FRTIB-13, Fraud and Forgery Records.” The proposed changes are necessary because they enable the FRTIB to protect participant accounts based on additional information FRTIB receives from the FS-ISAC, concerning account credentials that may have been compromised. FRTIB is proposing to amend the purpose of the system of records to provide additional context around how the Agency protects participant accounts from fraudulent activity. FRTIB is proposing to change the categories of individuals covered by the system, to include information about participants and beneficiaries who may be actual or potential victims of fraud.
 
-  **SYSTEM MANAGER:** Supervisory Fraud Specialist, Federal Retirement Thrift Investment Board, 77 K Street NE., Suite 1000, Washington, DC 20002.
+  Additionally, FRTIB is proposing to modify the category of records in the system to include telephone numbers, IP addresses, and notifications from FS-ISAC, which includes potentially or actually compromised credentials participants use to log into their TSP account online. FRTIB is also proposing a change to record source categories to include FS-ISAC. Finally, FRTIB is proposing technical and clarifying language to conform to the standards established in OMB Circular A-108, but these changes are not substantive in nature. FRTIB is not proposing modifications to its routine uses or exemptions claimed.
+
+  **Megan Grumbine,**
+  General Counsel and Senior Agency Official for Privacy
+
+  **SYSTEM NAME:**
+  Fraud and Forgery Records.
+
+  **SECURITY CLASSIFICATION:** Unclassified.
+
+  **SYSTEM LOCATION:** Records are located at the Federal Retirement Thrift Investment Board, 77 K Street NE, Suite 1000, Washington, DC 20002. Records may also be kept at an additional location for Business Continuity purposes.
+
+  **SYSTEM MANAGER:** Supervisory Fraud Specialist, Federal Retirement Thrift Investment Board, 77 K Street NE, Suite 1000, Washington, DC 20002.
 
   **AUTHORITY FOR MAINTENANCE OF THE SYSTEM:** 5 U.S.C. 8474; and 44 U.S.C. 3101.
 
-  **PURPOSE OF THE SYSTEM:** These records are used to inquire into and investigate allegations that a TSP participant, beneficiary, alternate payee, or third party has committed or attempted to commit an act of fraud or forgery relating to a participant or beneficiary account or the Thrift Savings Fund; and to collect information to verify allegations that a third party has misappropriated the FRTIB's (or TSP's) name, brand, or logos.
+  **PURPOSE(S):** These records are used to inquire into and investigate allegations that a TSP participant, beneficiary, alternate payee, or third party has committed or attempted to commit an act of fraud or forgery relating to a participant or beneficiary account or the Thrift Savings Fund; _to prevent fraud and to protect participant accounts from potential fraud;_ and to collect information to verify allegations that a third party has misappropriated the FRTIB’s (or TSP’s) name, brand, or logos.
 
-  **CATEGORIES OF INDIVIDUALS COVERED BY THE SYSTEM:** This system of records contains information on Thrift Savings Plan (TSP) participants, beneficiaries, alternate payees, and third party individuals alleged to have committed an act of fraud or forgery relating to participant and beneficiary accounts; and third parties alleged to have misappropriated, or attempted to misappropriate the FRTIB's (including the TSP's) name, brand, or logos.
+  **CATEGORIES OF INDIVIDUALS COVERED BY THE SYSTEM:** This system of records contains information on Thrift Savings Plan (TSP) participants, beneficiaries, alternate payees, and third party individuals alleged to have committed an act of fraud or forgery relating to participant and beneficiary accounts; and third parties alleged to have misappropriated, or attempted to misappropriate the FRTIB’s (including the TSP’s) name, brand, or logos. _This system of records also contains information about TSP participants and beneficiaries who may be actual or potential victims of fraud._
 
-  **CATEGORIES OF RECORDS IN THE SYSTEM:** These records contain the following kinds of information: name, date of birth, and Social Security number of TSP participants, beneficiaries, alternate payees, and third parties alleged to have committed an act of fraud or forgery relating to participant accounts or the Thrift Savings Fund; TSP account information related to the fraud or forgery allegation; information obtained from other agencies as it relates to allegations of fraud or forgery; documentation of complaints and allegations of fraud and forgery; exhibits, statements, affidavits, or records obtained during investigations of fraud, or forgery, court and administrative orders, transcripts, and documents; internal staff memoranda; staff working papers; and other documents and records related to the investigation of fraud or forgery, including the disposition of the allegations; and reports on the investigation.
+  **CATEGORIES OF RECORDS IN THE SYSTEM:** These records contain the following kinds of information: name, date of birth, _telephone number, IP address,_ and Social Security number of TSP participants, beneficiaries, alternate payees, and third parties alleged to have committed an act of fraud or forgery relating to participant accounts or the Thrift Savings Fund; TSP account information related to the fraud or forgery allegation; information obtained from other agencies as it relates to allegations of fraud or forgery; documentation of complaints and allegations of fraud and forgery; exhibits, statements, affidavits, or records obtained during investigations of fraud, or forgery, court and administrative orders, transcripts, and documents; internal staff memoranda; staff working papers; _notifications from the Financial Services Information Sharing and Analysis Center (FS-ISAC), including credentials used to log into MyAccount that have been potentially or actually compromised;_ and other documents and records related to the investigation of fraud or forgery, including the disposition of the allegations; and reports on the investigation.
 
-  **RECORD SOURCE CATEGORIES:** Records in this system may be provided by or obtained from the following: persons to whom the information relates when practicable, including TSP participants, beneficiaries, alternate payees, or other third parties; complainants; informants; witnesses; investigators; persons reviewing the allegations; Federal, state and local agencies; and investigative reports and records.
+  **RECORD SOURCE CATEGORIES:** Records in this system may be provided by or obtained from the following: persons to whom the information relates when practicable, including TSP participants, beneficiaries, alternate payees, or other third parties; complainants; informants; witnesses; investigators; persons reviewing the allegations; Federal, state and local agencies; _FS-ISAC;_ and investigative reports and records.
 
   **ROUTINE USES OF RECORDS MAINTAINED IN THE SYSTEM, INCLUDING CATEGORIES OF USERS AND THE PURPOSES OF SUCH USES:**
 
   Information about covered individuals may be disclosed without consent as permitted by the Privacy Act of 1974, as amended, 5 U.S.C. 552a(b); and:
 
-  1. General Routine Uses G1 through G2; G4 through G5; G8 through G14; and G16 apply to this system of records (see Prefatory Statement of General Routine Uses);
-      1. G1. Routine Use—Audit: A record from this system of records may be disclosed to an agency, organization, or individual for the purpose of performing an audit or oversight operations as authorized by law, but only such information as is necessary and relevant to such audit or oversight function when necessary to accomplish an agency function related to this system of records. Individuals provided information under this routine use are subject to the same Privacy Act requirements and limitations on disclosure as are applicable to FRTIB officers and employees.
-      2. G2. Routine Use—Breach Mitigation and Notification: A record from this system of records may be disclosed to appropriate agencies, entities, and persons when: (1) FRTIB suspects or has confirmed that the security or confidentiality of information in the system of records has been compromised; (2) FRTIB has determined that as a result of the suspected or confirmed compromise there is a risk of harm to economic or property interests, identity theft or fraud, or harm to the security or integrity of this system or other systems or programs (whether maintained by FRTIB or another agency or entity) that rely upon the compromised information; and (3) the disclosure made to such agencies, entities, and persons is reasonably necessary to assist in connection with the FRTIB's efforts to respond to the suspected or confirmed compromise and prevent, minimize, or remedy such harm.
-      3. G4. Routine Use—Congressional Inquiries: A record from this system of records may be disclosed to a Congressional office from the record of an individual in response to an inquiry from that Congressional office made at the request of the individual to whom the record pertains.
-      4. G5. Routine Use—Contractors, et al.: A record from this system of records may be disclosed to contractors, grantees, experts, consultants, the agents thereof, and others performing or working on a contract, service, grant, cooperative agreement, or other assignment for FRTIB, when necessary to accomplish an agency function related to this system of records. Individuals provided information under this routine use are subject to the same Privacy Act requirements and limitations on disclosure as are applicable to FRTIB officers and employees.
-      5. G8. Routine Use—Investigations, Third Parties: A record from this system of records may be disclosed to third parties during the course of a law enforcement investigation to the extent necessary to obtain information pertinent to the investigation, provided disclosure is appropriate to the proper performance of the official duties of the third party officer making the disclosure.
-      6. G9. Routine Use—Investigations, Other Agencies: A record from this system of records may be disclosed to appropriate federal, state, local, tribal, or foreign government agencies or multilateral governmental organizations for the purpose of investigating or prosecuting the violations of, or for enforcing or implementing, a statute, rule, regulation, order, license, or treaty where FRTIB determines that the information would assist in the enforcement of civil or criminal laws.
-      7. G10. Routine Use—Law Enforcement Intelligence: A record from this system of records may be disclosed to a federal, state, tribal, local, or foreign government agency or organization, or international organization, lawfully engaged in collecting law enforcement intelligence information, whether civil or criminal, or charged with investigating, prosecuting, enforcing or implementing civil or criminal laws, related rules, regulations or orders, to enable these entities to carry out their law enforcement responsibilities, including the collection of law enforcement intelligence.
-      8. G11. Routine Use—Law Enforcement Referrals: A record from this system of records may be disclosed to an appropriate federal, state, tribal, local, international, or foreign agency or other appropriate authority charged with investigating or prosecuting a violation or enforcing or implementing a law, rule, regulation, or order, where a record, either on its face or in conjunction with other information, indicates a violation or potential violation of law, which includes criminal, civil, or regulatory violations and such disclosure is proper and consistent with the official duties of the person making the disclosure.
-      9. G12. Routine Use—Litigation, DOJ or Outside Counsel: A record from this system of records may be disclosed to the Department of Justice, FRTIB's outside counsel, other federal agency conducting litigation or in proceedings before any court, adjudicative or administrative body, when: (1) FRTIB, or (2) any employee of FRTIB in his or her official capacity, or (3) any employee of FRTIB in his or her individual capacity where DOJ or FRTIB has agreed to represent the employee, or (4) the United States or any agency thereof, is a party to the litigation or has an interest in such litigation, and FRTIB determines that the records are both relevant and necessary to the litigation and the use of such records is compatible with the purpose for which FRTIB collected the records.
-      10. G13. Routine Use—Litigation, Opposing Counsel: A record from this system of records may be disclosed to a court, magistrate, or administrative tribunal in the course of presenting evidence, including disclosures to opposing counsel or witnesses in the course of civil discovery, litigation, or settlement negotiations or in connection with criminal law proceedings or in response to a subpoena.
-      11. G14. Routine Use—NARA/Records Management: A record from this system of records may be disclosed to the National Archives and Records Administration (NARA) or other federal government agencies pursuant to the Federal Records Act.
-      12. G16. Routine Use—Security Threat: A record from this system of records may be disclosed to federal and foreign government intelligence or counterterrorism agencies when FRTIB reasonably believes there to be a threat or potential threat to national or international security for which the information may be useful in countering the threat or potential threat, when FRTIB reasonably believes such use is to assist in anti-terrorism efforts, and disclosure is appropriate to the proper performance of the official duties of the person making the disclosure.
-      {: .alpha}
-  2. Information used to verify allegations that a third party has misappropriated the FRTIB's (or TSP's) name, brand, or logos may be disclosed to the Federal Bureau of Investigation; Department of Justice; Securities and Exchange Commission; Federal Trade Commission; Consumer Financial Protection Bureau; or the Financial Industry Regulatory Authority for further investigation, prosecution, or enforcement;
-  3. A record from this system may be disclosed to the Secret Service for the purpose of investigating forgery, and to the Department of Justice, when substantiated by the Secret Service;
-  4. A record pertaining to this system may be disclosed to the current or former employing agency of the participant, beneficiary, alternate payee, or third party alleged to have committed fraud or forgery against a participant account or the Thrift Savings Fund for the purpose of further investigation or administrative action; and
-  5. A record from this system may be disclosed to informants, complainants, or victims to the extent necessary to provide those persons with information and explanations concerning the progress or results of the investigation.
+  1. A record from this system may be disclosed to the Federal Bureau of Investigation; Department of Justice; Securities and Exchange Commission; Federal Trade Commission; Consumer Financial Protection Bureau; or the Financial Industry Regulatory Authority for further investigation, prosecution, or enforcement.
+  2. A record from this system may be disclosed to the Secret Service for the purpose of investigating forgery, and to the Department of Justice, when substantiated by the Secret Service.
+  3. A record pertaining to this system may be disclosed to the current or former employing agency of the participant, beneficiary, alternate payee, or third party alleged to have committed fraud or forgery against a participant account or the Thrift Savings Fund for the purpose of further investigation or administrative action.
+  4. A record from this system may be disclosed to informants, complainants, or victims to the extent necessary to provide those persons with information and explanations concerning the progress or results of the investigation.
+  5. Audit: A record from this system of records may be disclosed to an agency, organization, or individual for the purpose of performing an audit or oversight operations as authorized by law, but only such information as is necessary and relevant to such audit or oversight function when necessary to accomplish an agency function related to this system of records. Individuals provided information under this routine use are subject to the same Privacy Act requirements and limitations on disclosure as are applicable to FRTIB officers and employees.
+  6. Breach Mitigation and Notification: Response to Breach of FRTIB Records: A record from this system of records may be disclosed to appropriate agencies, entities, and persons when (1) FRTIB suspects or has confirmed that there has been a breach of the system of records; (2) FRTIB has determined that as a result of the suspected or confirmed breach there is a risk of harm to individuals, FRTIB (including its information systems, programs, and operations), the Federal Government, or national security; and (3) the disclosure made to such agencies, entities, and persons is reasonably necessary to assist in connection with FRTIB’s efforts to respond to the suspected or confirmed breach or to prevent, minimize, or remedy such harm.
+  7. Response to Breach of Other Records: A record from this system of records may be disclosed to another Federal agency or Federal entity, when FRTIB determines that information from this system of records is reasonably necessary to assist the recipient agency or entity in (1) responding to a suspected or confirmed breach or (2) preventing, minimizing, or remedying the risk of harm to individuals, the recipient agency or entity (including its information systems, programs, and operations), the Federal Government, or national security, resulting from a suspected or confirmed breach.
+  8.	Congressional Inquiries: A record from this system of records may be disclosed to a Congressional office from the record of an individual in response to an inquiry from that Congressional office made at the request of the individual to whom the record pertains.
+  9.	Contractors, et al.: A record from this system of records may be disclosed to contractors, grantees, experts, consultants, the agents thereof, and others performing or working on a contract, service, grant, cooperative agreement, or other assignment for FRTIB, when necessary to accomplish an agency function related to this system of records. Individuals provided information under this routine use are subject to the same Privacy Act requirements and limitations on disclosure as are applicable to FRTIB officers and employees.
+  10.	Investigations, Third Parties: A record from this system of records may be disclosed to third parties during the course of a law enforcement investigation to the extent necessary to obtain information pertinent to the investigation, provided disclosure is appropriate to the proper performance of the official duties of the third party officer making the disclosure.
+  11.	Investigations, Other Agencies: A record from this system of records may be disclosed to appropriate Federal, state, local, tribal, or foreign government agencies or multilateral governmental organizations for the purpose of investigating or prosecuting the violations of, or for enforcing or implementing, a statute, rule, regulation, order, license, or treaty where FRTIB determines that the information would assist in the enforcement of civil or criminal laws.
+  12.	Law Enforcement Intelligence: A record from this system of records may be disclosed to a Federal, state, tribal, local, or foreign government agency or organization, or international organization, lawfully engaged in collecting law enforcement intelligence information, whether civil or criminal, or charged with investigating, prosecuting, enforcing or implementing civil or criminal laws, related rules, regulations or orders, to enable these entities to carry out their law enforcement responsibilities, including the collection of law enforcement intelligence.
+  13.	Law Enforcement Referrals: A record from this system of records may be disclosed to an appropriate Federal, state, tribal, local, international, or foreign agency or other appropriate authority charged with investigating or prosecuting a violation or enforcing or implementing a law, rule, regulation, or order, where a record, either on its face or in conjunction with other information, indicates a violation or potential violation of law, which includes criminal, civil, or regulatory violations and such disclosure is proper and consistent with the official duties of the person making the disclosure.
+  14.	Litigation, DOJ or Outside Counsel: A record from this system of records may be disclosed to the Department of Justice, FRTIB's outside counsel, other Federal agency conducting litigation or in proceedings before any court, adjudicative or administrative body, when: (1) FRTIB, or (2) any employee of FRTIB in his or her official capacity, or (3) any employee of FRTIB in his or her individual capacity where DOJ or FRTIB has agreed to represent the employee, or (4) the United States or any agency thereof, is a party to the litigation or has an interest in such litigation, and FRTIB determines that the records are both relevant and necessary to the litigation and the use of such records is compatible with the purpose for which FRTIB collected the records.
+  15. Litigation, Opposing Counsel: A record from this system of records may be disclosed to a court, magistrate, or administrative tribunal in the course of presenting evidence, including disclosures to opposing counsel or witnesses in the course of civil discovery, litigation, or settlement negotiations or in connection with criminal law proceedings or in response to a subpoena.
+  16.	NARA/Records Management: A record from this system of records may be disclosed to the National Archives and Records Administration (NARA) or other Federal Government agencies pursuant to the Federal Records Act.
+  17.	Security Threat: A record from this system of records may be disclosed to Federal and foreign government intelligence or counterterrorism agencies when FRTIB reasonably believes there to be a threat or potential threat to national or international security for which the information may be useful in countering the threat or potential threat, when FRTIB reasonably believes such use is to assist in anti-terrorism efforts, and disclosure is appropriate to the proper performance of the official duties of the person making the disclosure.
 
-  **POLICIES AND PRACTICES FOR STORAGE OF RECORDS:** Records are maintained in paper and electronic form, including on computer databases, all of which are stored in a secure location.
+  **POLICIES AND PRACTICES FOR STORAGE OF RECORDS:** Records are maintained in paper and electronic form, including on computer databases _and cloud-based services_, all of which are _securely_ stored.
 
   **POLICIES AND PRACTICES FOR RETRIEVAL OF RECORDS:** Records are retrieved by name or file number.
 
   **POLICIES AND PRACTICES FOR RETENTION AND DISPOSAL OF RECORDS:** Records in this system are destroyed seven years after the case is closed.
 
-  **ADMINISTRATIVE, TECHNICAL, AND PHYSICAL SAFEGUARDS:** FRTIB has adopted appropriate administrative, technical, and physical controls in accordance with FRTIB's security program to protect the security, confidentiality, availability, and integrity of the information, and to ensure that records are not disclosed to or accessed by unauthorized individuals.
+  **ADMINISTRATIVE, TECHNICAL, AND PHYSICAL SAFEGUARDS:** FRTIB has adopted appropriate administrative, technical, and physical controls in accordance with FRTIB’s security program to protect the security, confidentiality, availability, and integrity of the information, and to ensure that records are not disclosed to or accessed by unauthorized individuals.
 
-  Paper records are stored in locked file cabinets in areas of restricted access that are locked after office hours. Electronic records are stored on computer networks and protected by assigning usernames to individuals needing access to the records and by passwords set by authorized users that must be changed periodically.
+  Paper records are stored in locked file cabinets in areas of restricted access that are locked after office hours. Electronic records are stored on computer networks and protected by assigning user IDs to individuals needing access to the records and by passwords set by authorized users that must be changed periodically.
 
-  **RECORD ACCESS PROCEDURES:** Individuals seeking to determine whether this system of records contains information about themselves should submit a written request to the FOIA Officer, 77 K Street NE., Washington, DC 20002, and include the following information:
+  **RECORD ACCESS PROCEDURES:** Individuals seeking to access records within this system must submit a request pursuant to 5 CFR Part 1630. Attorneys or other persons acting on behalf of an individual must provide written authorization from that individual, such as Power of Attorney, in order for the representative to act on their behalf.
 
-  1. Full name;
-  2. Any available information regarding the type of record involved;
-  3. The address to which the record information should be sent; and
-  4. You must sign your request.
-  {: .alpha}
+  **CONTESTING RECORD PROCEDURES:** _See Record Access Procedures above_.
 
-  Attorneys or other persons acting on behalf of an individual must provide written authorization from that individual, such as a Power of Attorney, in order for the representative to act on their behalf. Individuals requesting access must also comply with FRTIB's Privacy Act regulations regarding verification of identity and access to such records, available at 5 CFR part 1630.
+  **NOTIFICATION PROCEDURES:** _See Record Access Procedures above_.
 
-  **CONTESTING RECORD PROCEDURES:** See Record Access Procedures above.
+  **EXEMPTIONS CLAIMED FOR SYSTEM:** Pursuant to 5 U.S.C. 552a(k)(2), records in this system of records are exempt from the requirements of subsections (c)(3); (d); (e)(1); (e)(4)(G), (H), (I); and (f) of 5 U.S.C. 552a, provided, however, that if any individual is denied any right, privilege, or benefit that he or she would otherwise be entitled to by Federal law, or for which he or she would otherwise be eligible, as a result of the maintenance of these records, such material shall be provided to the individual, except to the extent that the disclosure of the material would reveal the identity of a source who furnished information to the Government with an express promise that the identity of the source would be held in confidence.
 
-  **NOTIFICATION PROCEDURES:** See Record Access Procedures above.
-
-  **EXEMPTIONS PROMULGATED FOR THE SYSTEM:** Pursuant to 5 U.S.C. 552a(k)(2), records in this system of records are exempt from the requirements of subsections (c)(3); (d); (e)(1); (e)(4)(G), (H), (I); and (f) of 5 U.S.C. 552a, provided, however, that if any individual is denied any right, privilege, or benefit that he or she would otherwise be entitled to by federal law, or for which he or she would otherwise be eligible, as a result of the maintenance of these records, such material shall be provided to the individual, except to the extent that the disclosure of the material would reveal the identity of a source who furnished information to the Government with an express promise that the identity of the source would be held in confidence.
-
-  **HISTORY:** 62 FR 49013 (Sept. 18, 1997); 77 FR 11534 (Feb. 27, 2012); 80 FR 43428 (July 22, 2015); 81 FR 7106 (Feb. 10, 2016).
+  **HISTORY:** 81 Fed. Reg. 7,106 (Feb. 10, 2016).
   </div>
 </li>
 <!-- FRTIB-14 -->
-<li>
+<li id="frtib-14">
   <button class="usa-accordion-button"
     aria-expanded="false"
     aria-controls="a14">
@@ -773,7 +777,7 @@ FRTIB is required to publish a SORN anytime it creates, substantially modifies, 
   Subsections (c)(3); (d); (e)(1); (e)(4)(G), (H), (I); and (f) of 5 U.S.C. 552a
 
   **Federal Register**
-  [80 Fed. Reg. 43428, 43437 (July 22, 2015)](https://www.federalregister.gov/documents/2015/07/22/2015-17924/privacy-act-of-1974-systems-of-records){:target="\_blank"}
+  [80 Fed. Reg. 43428, 43437 (July 22, 2015)]({{ site.baseurl }}/exit/?idx=53)
 
   **SECURITY CLASSIFICATION:** None.
 
@@ -826,7 +830,7 @@ FRTIB is required to publish a SORN anytime it creates, substantially modifies, 
 
   **ADMINISTRATIVE, TECHNICAL, AND PHYSICAL SAFEGUARDS:** FRTIB has adopted appropriate administrative, technical, and physical controls in accordance with FRTIB's security program to protect the security, confidentiality, availability, and integrity of the information, and to ensure that records are not disclosed to or accessed by unauthorized individuals.
 
-  Paper records are stored in file cabinets in areas of restricted access that are locked after office hours. Electronic records are stored on computer networks, including cloud-based services, and are protected by assigning usernames to individuals needing access to the records and by passwords set by unauthorized users that must be changed periodically.
+  Paper records are stored in file cabinets in areas of restricted access that are locked after office hours. Electronic records are stored on computer networks, including cloud-based services, and are protected by assigning user IDs to individuals needing access to the records and by passwords set by unauthorized users that must be changed periodically.
 
   **RECORD ACCESS PROCEDURES:** Individuals seeking to determine whether this system of records contains information about themselves must submit a written request to the FOIA Officer, FRTIB, 77 K Street NE., Washington, DC 20002, and provide the following information:
 
@@ -850,7 +854,7 @@ FRTIB is required to publish a SORN anytime it creates, substantially modifies, 
   </div>
 </li>
 <!-- FRTIB-15 -->
-<li>
+<li id="frtib-15">
   <button class="usa-accordion-button"
     aria-expanded="false"
     aria-controls="a15">
@@ -865,7 +869,7 @@ FRTIB is required to publish a SORN anytime it creates, substantially modifies, 
   Subsections (c)(3); (d); (e)(1); (e)(4)(G), (H), (I); and (f) of 5 U.S.C. 552a
 
   **Federal Register**
-  [80 Fed. Reg. 43428, 43438 (July 22, 2015)](https://www.federalregister.gov/documents/2015/07/22/2015-17924/privacy-act-of-1974-systems-of-records){:target="\_blank"}
+  [80 Fed. Reg. 43428, 43438 (July 22, 2015)]({{ site.baseurl }}/exit/?idx=53)
 
   **SECURITY CLASSIFICATION:** None.
 
@@ -915,7 +919,7 @@ FRTIB is required to publish a SORN anytime it creates, substantially modifies, 
 
   **ADMINISTRATIVE, TECHNICAL, AND PHYSICAL SAFEGUARDS:** FRTIB has adopted appropriate administrative, technical, and physical controls in accordance with FRTIB's security program to protect the security, confidentiality, availability, and integrity of the information, and to ensure that records are not disclosed to or accessed by unauthorized individuals.
 
-  Paper records are stored in file cabinets in areas of restricted access that are locked after office hours. Electronic records are stored on computer networks, including cloud-based services, and are protected by assigning usernames to individuals needing access to the records and by passwords set by unauthorized users that must be changed periodically.
+  Paper records are stored in file cabinets in areas of restricted access that are locked after office hours. Electronic records are stored on computer networks, including cloud-based services, and are protected by assigning user IDs to individuals needing access to the records and by passwords set by unauthorized users that must be changed periodically.
 
   **RECORD ACCESS PROCEDURES:** Individuals seeking to determine whether this system of records contains information about themselves must submit a written request to the FOIA Officer, FRTIB, 77 K Street NE., Washington, DC 20002, and provide the following information:
 
@@ -940,7 +944,7 @@ FRTIB is required to publish a SORN anytime it creates, substantially modifies, 
   </div>
 </li>
 <!-- FRTIB-16 -->
-<li>
+<li id="frtib-16">
   <button class="usa-accordion-button"
     aria-expanded="false"
     aria-controls="a16">
@@ -955,7 +959,7 @@ FRTIB is required to publish a SORN anytime it creates, substantially modifies, 
   None
 
   **Federal Register**
-  [81 Fed. Reg. 7106, 7112 (Feb. 10, 2016)](https://www.federalregister.gov/documents/2016/02/10/2016-02673/privacy-act-of-1974-systems-of-records){:target="\_blank"}
+  [81 Fed. Reg. 7106, 7112 (Feb. 10, 2016)]({{ site.baseurl }}/exit/?idx=144)
 
   **SECURITY CLASSIFICATION:** None.
 
@@ -1002,7 +1006,7 @@ FRTIB is required to publish a SORN anytime it creates, substantially modifies, 
 
   **ADMINISTRATIVE, TECHNICAL, AND PHYSICAL SAFEGUARDS:** FRTIB has adopted appropriate administrative, technical, and physical controls in accordance with FRTIB's security program to protect the security, confidentiality, availability, and integrity of the information, and to ensure that records are not disclosed to or accessed by unauthorized individuals.
 
-  Paper records are stored in locked file cabinets in areas of restricted access that are locked after office hours. Electronic records are stored on computer networks and protected by assigning usernames to individuals needing access to the records and by passwords set by unauthorized users that must be changed periodically.
+  Paper records are stored in locked file cabinets in areas of restricted access that are locked after office hours. Electronic records are stored on computer networks and protected by assigning user IDs to individuals needing access to the records and by passwords set by unauthorized users that must be changed periodically.
 
   **RECORD ACCESS PROCEDURES:** Individuals seeking to determine whether this system of records contains information about themselves must submit a written request to the FOIA Officer, FRTIB, 77 K Street NE., Washington, DC 20002, and provide the following information:
 
@@ -1026,7 +1030,7 @@ FRTIB is required to publish a SORN anytime it creates, substantially modifies, 
   </div>
 </li>
 <!-- FRTIB-17 -->
-<li>
+<li id="frtib-17">
   <button class="usa-accordion-button"
     aria-expanded="false"
     aria-controls="a17">
@@ -1041,7 +1045,7 @@ FRTIB is required to publish a SORN anytime it creates, substantially modifies, 
   None
 
   **Federal Register**
-  [81 Fed. Reg. 7106, 7113 (Feb. 10, 2016)](https://www.federalregister.gov/documents/2016/02/10/2016-02673/privacy-act-of-1974-systems-of-records){:target="\_blank"}
+  [81 Fed. Reg. 7106, 7113 (Feb. 10, 2016)]({{ site.baseurl }}/exit/?idx=144)
 
   **SECURITY CLASSIFICATION:** None.
 
@@ -1095,7 +1099,7 @@ FRTIB is required to publish a SORN anytime it creates, substantially modifies, 
 
   FRTIB has adopted appropriate administrative, technical, and physical controls in accordance with FRTIB's security program to protect the security, confidentiality, availability, and integrity of the information, and to ensure that records are not disclosed to or accessed by unauthorized individuals.
 
-  Paper records are stored in locked file cabinets in areas of restricted access that are locked after office hours. Electronic records are stored on computer networks and protected by assigning usernames to individuals needing access to the records and by passwords set by unauthorized users that must be changed periodically.
+  Paper records are stored in locked file cabinets in areas of restricted access that are locked after office hours. Electronic records are stored on computer networks and protected by assigning user IDs to individuals needing access to the records and by passwords set by unauthorized users that must be changed periodically.
 
   **RECORD ACCESS PROCEDURES:**
 
@@ -1119,7 +1123,7 @@ FRTIB is required to publish a SORN anytime it creates, substantially modifies, 
   </div>
 </li>
 <!-- FRTIB-18 -->
-<li>
+<li id="frtib-18">
   <button class="usa-accordion-button"
     aria-expanded="false"
     aria-controls="a18">
@@ -1134,7 +1138,7 @@ FRTIB is required to publish a SORN anytime it creates, substantially modifies, 
   None
 
   **Federal Register**
-  [81 Fed. Reg. 7106, 7114 (Feb. 10, 2016)](https://www.federalregister.gov/documents/2016/02/10/2016-02673/privacy-act-of-1974-systems-of-records){:target="\_blank"}
+  [81 Fed. Reg. 7106, 7114 (Feb. 10, 2016)]({{ site.baseurl }}/exit/?idx=144)
 
   **SECURITY CLASSIFICATION:** None.
 
@@ -1188,7 +1192,7 @@ FRTIB is required to publish a SORN anytime it creates, substantially modifies, 
 
   **ADMINISTRATIVE, TECHNICAL, AND PHYSICAL SAFEGUARDS:** FRTIB has adopted appropriate administrative, technical, and physical controls in accordance with FRTIB's security program to protect the security, confidentiality, availability, and integrity of the information, and to ensure that records are not disclosed to or accessed by unauthorized individuals.
 
-  Paper records are stored in locked file cabinets in areas of restricted access that are locked after office hours. Electronic records are stored on computer networks and protected by assigning usernames to individuals needing access to the records and by passwords set by unauthorized users that must be changed periodically.
+  Paper records are stored in locked file cabinets in areas of restricted access that are locked after office hours. Electronic records are stored on computer networks and protected by assigning user IDs to individuals needing access to the records and by passwords set by unauthorized users that must be changed periodically.
 
   **RECORD ACCESS PROCEDURES:** Individuals seeking to determine whether this system of records contains information about themselves must submit a written request to the FOIA Officer, FRTIB, 77 K Street NE., Washington, DC 20002, and provide the following information:
 
@@ -1212,7 +1216,7 @@ FRTIB is required to publish a SORN anytime it creates, substantially modifies, 
   </div>
 </li>
 <!-- FRTIB-19 -->
-<li>
+<li id="frtib-19">
   <button class="usa-accordion-button"
     aria-expanded="false"
     aria-controls="a19">
@@ -1227,7 +1231,7 @@ FRTIB is required to publish a SORN anytime it creates, substantially modifies, 
   None
 
   **Federal Register**
-  [81 Fed. Reg. 7106, 7115 (Feb. 10, 2016)](https://www.federalregister.gov/documents/2016/02/10/2016-02673/privacy-act-of-1974-systems-of-records){:target="\_blank"}
+  [81 Fed. Reg. 7106, 7115 (Feb. 10, 2016)]({{ site.baseurl }}/exit/?idx=144)
 
   **SECURITY CLASSIFICATION:** None.
 
@@ -1278,7 +1282,7 @@ FRTIB is required to publish a SORN anytime it creates, substantially modifies, 
 
   **ADMINISTRATIVE, TECHNICAL, AND PHYSICAL SAFEGUARDS:** FRTIB has adopted appropriate administrative, technical, and physical controls in accordance with FRTIB's security program to protect the security, confidentiality, availability, and integrity of the information, and to ensure that records are not disclosed to or accessed by unauthorized individuals.
 
-  Paper records are stored in locked file cabinets in areas of restricted access that are locked after office hours. Electronic records are stored on computer networks and protected by assigning usernames to individuals needing access to the records and by passwords set by unauthorized users that must be changed periodically.
+  Paper records are stored in locked file cabinets in areas of restricted access that are locked after office hours. Electronic records are stored on computer networks and protected by assigning user IDs to individuals needing access to the records and by passwords set by unauthorized users that must be changed periodically.
 
   **RECORD ACCESS PROCEDURES:** Individuals seeking to determine whether this system of records contains information about themselves must submit a written request to the FOIA Officer, FRTIB, 77 K Street NE., Washington, DC 20002, and provide the following information:
 
@@ -1302,7 +1306,7 @@ FRTIB is required to publish a SORN anytime it creates, substantially modifies, 
   </div>
 </li>
 <!-- FRTIB-20 -->
-<li>
+<li id="frtib-20">
   <button class="usa-accordion-button"
     aria-expanded="false"
     aria-controls="a20">
@@ -1310,13 +1314,13 @@ FRTIB is required to publish a SORN anytime it creates, substantially modifies, 
   </button>
   <div id="a20" class="usa-accordion-content" markdown="1">
 
-  **SUMMARY**: Pursuant to the Privacy Act of 1974, [5 U.S.C. 552](https://api.fdsys.gov/link?collection=uscode&title=5&year=mostrecent&section=552&type=usc&link-type=html){:target="\_blank"}a, the Federal Retirement Thrift Investment Board (FRTIB) is proposing to establish a new system of records. Records contained in this system will be used to educate participants about various aspects of the TSP.
+  **SUMMARY**: Pursuant to the Privacy Act of 1974, [5 U.S.C. 552]({{ site.baseurl }}/exit/?idx=156) a, the Federal Retirement Thrift Investment Board (FRTIB) is proposing to establish a new system of records. Records contained in this system will be used to educate participants about various aspects of the TSP.
 
   **DATES**: This system will become effective upon its publication in today’s **Federal Register**, with the exception of the routine uses, which are effective January 10, 2019. FRTIB invites written comments on the routine uses or other aspects of this system of records. Submit any comments by January 10, 2019.
 
   **ADDRESSES**: You may submit written comments to FRTIB by any one of the following methods:
 
-  * _Federal eRulemaking Portal_: [https://www.regulations.gov](https://www.regulations.gov){:target="\_blank"}. Follow the website instructions for submitting comments.
+  * _Federal eRulemaking Portal_: [https://www.regulations.gov]({{ site.baseurl }}/exit/?idx=145). Follow the website instructions for submitting comments.
   * _Fax_: (202) 942-1676.
   * _Mail or Hand Delivery_: Office of General Counsel, Federal Retirement Thrift Investment Board, 77 K Street NE, Suite 1000, Washington, DC 20002.
 
@@ -1337,7 +1341,7 @@ FRTIB is required to publish a SORN anytime it creates, substantially modifies, 
 
   **SYSTEM MANAGER**: Director, Office of Communications and Education, Federal Retirement Thrift Investment Board, 77 K Street NE, Suite 1000, Washington, DC 20002, or by phone by calling (202) 942-1600.
 
-  **AUTHORITY FOR MAINTENANCE OF THE SYSTEM**: [5 U.S.C. 8474](https://api.fdsys.gov/link?collection=uscode&title=5&year=mostrecent&section=8474&type=usc&link-type=html){:target="\_blank"}.
+  **AUTHORITY FOR MAINTENANCE OF THE SYSTEM**: [5 U.S.C. 8474]({{ site.baseurl }}/exit/?idx=157).
 
   **PURPOSE OF THE SYSTEM**: The purpose of the system is to educate TSP participants and other individuals about the TSP; to track and analyze aggregated activity to determine the effectiveness of targeted outreach campaigns; and to solicit feedback regarding FRTIB education and outreach efforts.
 
@@ -1374,7 +1378,7 @@ FRTIB is required to publish a SORN anytime it creates, substantially modifies, 
 
   **ADMINISTRATIVE, TECHNICAL, AND PHYSICAL SAFEGUARDS**: FRTIB has adopted appropriate administrative, technical, and physical controls in accordance with FRTIB's security program to protect the security, confidentiality, availability, and integrity of the information, and to ensure that records are not disclosed to or accessed by unauthorized individuals.
 
-  **RECORD ACCESS PROCEDURES:** Individuals seeking to access records within this system must submit a request pursuant to [5 CFR part 1630](https://www.federalregister.gov/select-citation/2018/12/11/5-CFR-1630){:target="\_blank"}. Attorneys or other persons acting on behalf of an individual must provide written authorization from that individual, such as a Power of Attorney, in order for the representative to act on their behalf.
+  **RECORD ACCESS PROCEDURES:** Individuals seeking to access records within this system must submit a request pursuant to [5 CFR part 1630]({{ site.baseurl }}/exit/?idx=158). Attorneys or other persons acting on behalf of an individual must provide written authorization from that individual, such as a Power of Attorney, in order for the representative to act on their behalf.
 
   **CONTESTING RECORD PROCEDURES:** See Record Access Procedures above.
 
@@ -1391,7 +1395,7 @@ FRTIB is required to publish a SORN anytime it creates, substantially modifies, 
 
 <ul class="usa-accordion">
 <!-- EEOC/GOVT-1 -->
-<li>
+<li id="frtib-eeoc-govt-1">
   <button class="usa-accordion-button"
     aria-expanded="false"
     aria-controls="b1">
@@ -1404,11 +1408,11 @@ FRTIB is required to publish a SORN anytime it creates, substantially modifies, 
 
   **Federal Register**
 
-  [81 Fed. Reg. 81116, 81135 (Nov. 17, 2016)](https://www.federalregister.gov/documents/2016/11/17/2016-27702/privacy-act-of-1974-publication-of-notices-of-systems-of-records-and-proposed-new-systems-of-records){:target="\_blank"} (replaced FRTIB-3)
+  [81 Fed. Reg. 81116, 81135 (Nov. 17, 2016)]({{ site.baseurl }}/exit/?idx=56) (replaced FRTIB-3)
   </div>
 </li>
 <!-- OPM/GOVT-1 -->
-<li>
+<li id="frtib-opm-govt-1">
   <button class="usa-accordion-button"
     aria-expanded="false"
     aria-controls="b2">
@@ -1421,20 +1425,20 @@ FRTIB is required to publish a SORN anytime it creates, substantially modifies, 
 
   **Federal Register**
 
-  [77 Fed. Reg. 73694 (Dec. 11, 2012)](https://www.federalregister.gov/documents/2012/12/11/2012-29777/privacy-act-of-1974-update-existing-system-of-records){:target="\_blank"}
+  [77 Fed. Reg. 73694 (Dec. 11, 2012)]({{ site.baseurl }}/exit/?idx=57)
 
-  [76 Fed. Reg. 32997 (June 7, 2011)](https://www.federalregister.gov/documents/2011/06/07/2011-13971/privacy-act-of-1974-update-existing-system-of-records){:target="\_blank"}
+  [76 Fed. Reg. 32997 (June 7, 2011)]({{ site.baseurl }}/exit/?idx=58)
 
-  [71 Fed. Reg. 35341 (June 19, 2006)](https://www.federalregister.gov/documents/2006/06/19/06-5459/privacy-act-of-1974-publication-of-notice-of-systems-of-records-a-proposed-new-routine-use-new){:target="\_blank"}
+  [71 Fed. Reg. 35341 (June 19, 2006)]({{ site.baseurl }}/exit/?idx=59)
 
-  [65 Fed. Reg. 24731 (April 27, 2000)](https://www.federalregister.gov/documents/2000/04/27/00-10088/privacy-act-of-1974-publication-of-notice-of-systems-of-records-and-proposed-new-routine-uses){:target="\_blank"}
+  [65 Fed. Reg. 24731 (April 27, 2000)]({{ site.baseurl }}/exit/?idx=60)
 
-  [61 Fed. Reg. 36919 (July 15, 1996)](https://www.federalregister.gov/documents/1996/07/15/93-17425/privacy-act-of-1974-publication-of-notices-of-systems-of-records-and-a-proposed-new-routine-use){:target="\_blank"}
+  [61 Fed. Reg. 36919 (July 15, 1996)]({{ site.baseurl }}/exit/?idx=61)
   (replaced FRTIB-4)
   </div>
 </li>
 <!-- OPM/GOVT-2-->
-<li>
+<li id="frtib-opm-govt-2-">
   <button class="usa-accordion-button"
     aria-expanded="false"
     aria-controls="b3">
@@ -1447,16 +1451,16 @@ FRTIB is required to publish a SORN anytime it creates, substantially modifies, 
 
   **Federal Register**
 
-  [71 Fed. Reg. 35341 (June 19, 2006)](https://www.federalregister.gov/documents/2006/06/19/06-5459/privacy-act-of-1974-publication-of-notice-of-systems-of-records-a-proposed-new-routine-use-new){:target="\_blank"}
+  [71 Fed. Reg. 35341 (June 19, 2006)]({{ site.baseurl }}/exit/?idx=59)
 
-  [65 Fed. Reg. 24731 (April 27, 2000)](https://www.federalregister.gov/documents/2000/04/27/00-10088/privacy-act-of-1974-publication-of-notice-of-systems-of-records-and-proposed-new-routine-uses){:target="\_blank"}
+  [65 Fed. Reg. 24731 (April 27, 2000)]({{ site.baseurl }}/exit/?idx=60)
 
-  [61 Fed. Reg. 36919 (July 15, 1996)](https://www.federalregister.gov/documents/1996/07/15/93-17425/privacy-act-of-1974-publication-of-notices-of-systems-of-records-and-a-proposed-new-routine-use){:target="\_blank"}
+  [61 Fed. Reg. 36919 (July 15, 1996)]({{ site.baseurl }}/exit/?idx=61)
   (replaced FRTIB-4)
   </div>
 </li>
 <!-- OPM/GOVT-3 -->
-<li>
+<li id="frtib-opm-govt-3">
   <button class="usa-accordion-button"
     aria-expanded="false"
     aria-controls="b4">
@@ -1468,16 +1472,16 @@ FRTIB is required to publish a SORN anytime it creates, substantially modifies, 
 
   **Federal Register**
 
-  [71 Fed. Reg. 35341 (June 19, 2006)](https://www.federalregister.gov/documents/2006/06/19/06-5459/privacy-act-of-1974-publication-of-notice-of-systems-of-records-a-proposed-new-routine-use-new){:target="\_blank"}
+  [71 Fed. Reg. 35341 (June 19, 2006)]({{ site.baseurl }}/exit/?idx=59)
 
-  [65 Fed. Reg. 24731 (April 27, 2000)](https://www.federalregister.gov/documents/2000/04/27/00-10088/privacy-act-of-1974-publication-of-notice-of-systems-of-records-and-proposed-new-routine-uses){:target="\_blank"}
+  [65 Fed. Reg. 24731 (April 27, 2000)]({{ site.baseurl }}/exit/?idx=60)
 
-  [61 Fed. Reg. 36919 (July 15, 1996)](https://www.federalregister.gov/documents/1996/07/15/93-17425/privacy-act-of-1974-publication-of-notices-of-systems-of-records-and-a-proposed-new-routine-use){:target="\_blank"}
+  [61 Fed. Reg. 36919 (July 15, 1996)]({{ site.baseurl }}/exit/?idx=61)
   (replaced FRTIB-4)
   </div>
 </li>
 <!-- OGE/GOVT-1 -->
-<li>
+<li id="frtib-oge-govt-1">
   <button class="usa-accordion-button"
     aria-expanded="false"
     aria-controls="b5">
@@ -1490,16 +1494,16 @@ FRTIB is required to publish a SORN anytime it creates, substantially modifies, 
 
   **Federal Register**
 
-  [78 Fed. Reg. 73863 (Dec. 9, 2013)](https://www.federalregister.gov/documents/2013/12/09/2013-29342/privacy-act-of-1974-amendment-to-system-of-records){:target="\_blank"}
+  [78 Fed. Reg. 73863 (Dec. 9, 2013)]({{ site.baseurl }}/exit/?idx=62)
 
-  [76 Fed. Reg. 24489 (May 2, 2011)](https://www.federalregister.gov/documents/2011/05/02/2011-10628/privacy-act-of-1974-amendment-to-system-of-records){:target="\_blank"}, as modified at [77 Fed. Reg. 45353 (July 31, 2012)](https://www.federalregister.gov/documents/2012/07/31/2012-18658/privacy-act-of-1974-amendment-to-system-of-records){:target="\_blank"}
+  [76 Fed. Reg. 24489 (May 2, 2011)]({{ site.baseurl }}/exit/?idx=63), as modified at [77 Fed. Reg. 45353 (July 31, 2012)](h{{ site.baseurl }}/exit/?idx=64)
 
-  [68 Fed. Reg. 3098 (Jan. 22, 2003)](https://www.federalregister.gov/documents/2003/01/22/03-1101/privacy-act-of-1974-systems-of-records){:target="\_blank"}, as corrected at [68 Fed. Reg. 24744 (May 8, 2003)](https://www.federalregister.gov/documents/2003/05/08/03-11416/privacy-act-of-1974-systems-of-records-notice-correction){:target="\_blank"}
+  [68 Fed. Reg. 3098 (Jan. 22, 2003)]({{ site.baseurl }}/exit/?idx=65), as corrected at [68 Fed. Reg. 24744 (May 8, 2003)]({{ site.baseurl }}/exit/?idx=66)
   (replaced FRTIB-8, FRTIB-11)
   </div>
 </li>
 <!-- OGE/GOVT-2 -->
-<li>
+<li id="frtib-oge-govt-2">
   <button class="usa-accordion-button"
     aria-expanded="false"
     aria-controls="b6">
@@ -1512,13 +1516,13 @@ FRTIB is required to publish a SORN anytime it creates, substantially modifies, 
 
   **Federal Register**
 
-  [68 Fed. Reg. 3098 (Jan. 22, 2003)](https://www.federalregister.gov/documents/2003/01/22/03-1101/privacy-act-of-1974-systems-of-records){:target="\_blank"}, as corrected at [68 Fed. Reg. 24744 (May 8, 2003)](https://www.federalregister.gov/documents/2003/05/08/03-11416/privacy-act-of-1974-systems-of-records-notice-correction){:target="\_blank"}
+  [68 Fed. Reg. 3098 (Jan. 22, 2003)]({{ site.baseurl }}/exit/?idx=65), as corrected at [68 Fed. Reg. 24744 (May 8, 2003)]({{ site.baseurl }}/exit/?idx=66)
   (replaced FRTIB-11)
 
   </div>
 </li>
 <!-- GSA/GOVT-7 -->
-<li>
+<li id="frtib-gsa-govt-7">
   <button class="usa-accordion-button"
     aria-expanded="false"
     aria-controls="b7">
@@ -1531,7 +1535,7 @@ FRTIB is required to publish a SORN anytime it creates, substantially modifies, 
 
   **Federal Register**
 
-  [80 Fed. Reg. 64416 (Oct. 23, 2015)](https://www.federalregister.gov/documents/2015/10/23/2015-26940/privacy-act-of-1974-notice-of-an-updated-system-of-records){:target="\_blank"}
+  [80 Fed. Reg. 64416 (Oct. 23, 2015)]({{ site.baseurl }}/exit/?idx=67)
   (replaced FRTIB-10)
   </div>
 </li>

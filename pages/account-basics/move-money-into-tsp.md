@@ -29,11 +29,11 @@ We **will not accept** Roth rollovers that have already been paid to you and **w
 
 ### Transfer money directly into the TSP
 
-A transfer or “direct rollover” occurs when the eligible plan sends all or part of your money to the TSP. Use [Request for a Transfer Into the TSP](javascript:void(0)), *Form TSP-60*, for tax-deferred amounts. To transfer Roth money, use [Request for a Roth Transfer Into the TSP](javascript:void(0)), *Form TSP-60-R*.
+A transfer or “direct rollover” occurs when the eligible plan sends all or part of your money to the TSP. Use Form TSP-60, [_Request for a Transfer Into the TSP_]({{ site.baseurl }}/forms/tsp-60.pdf), for tax-deferred amounts. To transfer Roth money, use Form TSP-60-R, [_Request for a Roth Transfer Into the TSP_]({{ site.baseurl }}/forms/tsp-60-r.pdf).
 
 ### Roll Over Traditional Money into the TSP
 
-A “rollover” is when you receive eligible money directly from your traditional IRA or plan and then you later put it into your TSP account. You cannot roll over Roth money into the TSP and you must complete your rollover within 60 days from the date you receive your funds. Use [Request for a Transfer Into the TSP](javascript:void(0)), *Form TSP-60*, to roll over eligible traditional money.
+A “rollover” is when you receive eligible money directly from your traditional IRA or plan and then you later put it into your TSP account. You cannot roll over Roth money into the TSP and you must complete your rollover within 60 days from the date you receive your funds. Use Form TSP-60, [_Request for a Transfer Into the TSP_]({{ site.baseurl }}/forms/tsp-60.pdf), to roll over eligible traditional money.
 
 ### More to know:
 Transfer or rollover money does not count towards the Internal Revenue Code (IRC) contribution limits, and your eligible transfer and rollover will be invested according to your <span data-term="contribution allocation" class="js-glossary-toggle term term-end">contribution allocation</span> on file.
@@ -47,7 +47,7 @@ Tax rules differ depending upon which method you choose to move your IRA or elig
 ### Transfers
 {: .card-title}
 
-You don’t have to pay taxes on the money you transfer in immediately. However, depending on the type of money you transfer, you may have to pay income taxes when you start taking withdrawals from your TSP account. For more information, read [*Important Tax Information About Payments From Your TSP Account*](javascript:void(0)).
+You don’t have to pay taxes on the money you transfer in immediately. However, depending on the type of money you transfer, you may have to pay income taxes when you start taking withdrawals from your TSP account. For more information, read [_Important Tax Information About Payments From Your TSP Account_]({{ site.baseurl }}/publications/tsp-536.pdf).
 
 ### Rollovers
 {: .card-title}

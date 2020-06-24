@@ -1,9 +1,15 @@
 .fund-comparison-tool {
+  table {
+    width: 100%;
+    table-layout: fixed;
+    padding-left: 6rem;
+  }
   thead th, td {
     background-color: inherit;
     border-top: none;
     &:first-child {
       border-left: none;
+      width: auto;
     }
   }
   th {
@@ -27,6 +33,11 @@
     &:last-child {
       td {
         border-bottom: none;
+      }
+    }
+    &:first-child {
+      td {
+        vertical-align: text-top;
       }
     }
   }
@@ -57,85 +68,92 @@
     &:hover {
       // background-color: #323a45;
     }
-    .G-fund {
-      color: $color-g-fund;
-    }
-    .F-fund {
-      color: $color-f-fund;
-    }
-    .C-fund {
-      color: $color-c-fund;
-    }
-    .S-fund {
-      color: $color-s-fund;
-    }
-    .I-fund {
-      color: $color-i-fund;
-    }
   }
-.fund-content {
-  text-align: center;
-   p {
-     padding: 1rem;
-     font-size: 1.6rem;
-   }
-   p.numeric {
-     font-size: 2.4rem;
-   }
-   ul.flex {
-     list-style-type: none;
-     padding-inline-start: 0;
-     margin-block-end: 0;
-     li {
-       color: $color-gray-light;
-       padding: 0 0.3rem;
-       margin: 0;
+  .fund-content {
+    text-align: center;
+     p {
+       padding: 1rem;
+       font-size: 1.6rem;
+     }
+     p.numeric {
        font-size: 2.4rem;
      }
-   }
-   ul {
-     &.low-risk {
-       li:nth-child(-n+1) {
-         color: $color-blue-medium;
+     ul.flex {
+       list-style-type: none;
+       padding-inline-start: 0;
+       margin-block-end: 0;
+       li {
+         color: $color-gray-light;
+         padding: 0 0.3rem;
+         margin: 0;
+         // font-size: 2.4rem;
        }
      }
-     &.low-medium-risk {
-       li:nth-child(-n+2) {
-         color: $color-blue-medium;
+     ul {
+       &.low-risk {
+         li:nth-child(-n+1) {
+           color: $color-blue-medium;
+         }
+       }
+       &.low-medium-risk {
+         li:nth-child(-n+2) {
+           color: $color-blue-medium;
+         }
+       }
+       &.medium-risk {
+         li:nth-child(-n+3) {
+           color: $color-blue-medium;
+         }
+       }
+       &.medium-high-risk {
+         li:nth-child(-n+4) {
+           color: $color-blue-medium;
+         }
+       }
+       &.high-risk {
+         li:nth-child(-n+5) {
+           color: $color-blue-medium;
+         }
        }
      }
-     &.medium-risk {
-       li:nth-child(-n+3) {
-         color: $color-blue-medium;
+     .risk-level {
+       color: #000000;
+       font-size: 1.2rem;
+       margin-bottom: 1rem;
+     }
+
+  @media only screen and (max-width: $medium-screen ) {
+       ul {
+         display: none;
        }
      }
-     &.medium-high-risk {
-       li:nth-child(-n+4) {
-         color: $color-blue-medium;
-       }
-     }
-     &.high-risk {
-       li:nth-child(-n+5) {
-         color: $color-blue-medium;
-       }
-     }
-   }
-   .risk-level {
-     color: #000000;
-     font-size: 1.2rem;
-     margin-bottom: 1rem;
-   }
-}
-.usa-accordion-content[aria-hidden="false"] {
-  padding: 0;
-  margin: 0;
-  background-color: transparent;
-}
-[type=checkbox]+label::before {
-  // display: none;
-}
-}
-fieldset {
+  } // END .fund-content
+
+  .usa-accordion-content[aria-hidden="false"] {
+    padding: 0;
+    margin: 0;
+    background-color: transparent;
+  }
+  [type=checkbox]+label::before {
+    // display: none;
+  }
+  .returns-by-year {
+    th {
+      &:first-child {
+        text-align: left;
+        padding-left: 7%;
+      }
+    }
+    p.numeric {
+      margin: 0;
+      padding: 0;
+      font-size: 1.6rem;
+      line-height: 0;
+    }
+  } // END .returns-by-year
+} // END .fund-comparison-tool
+
+fieldset.comparison {
   padding: 3rem;
   margin: 3rem;
   text-align: center;
@@ -181,4 +199,72 @@ ul#fund-comparison {
   background-color: #323a45;
 }
 }
+}
+
+@media only screen and (max-width: $medium-screen ) {
+  fieldset.comparison {
+    padding: 0;
+    margin: 0;
+    text-align: center;
+
+    legend {
+      max-width: 14ch;
+      margin-bottom: 2rem;
+    }
+
+    [type=checkbox] + label {
+      display: grid;
+    }
+  }
+
+  .fund-comparison-tool {
+    table {
+      width: 100%;
+      table-layout: fixed;
+      padding-left: 6rem;
+    }
+
+    thead th, td {
+      padding: 0;
+    }
+
+    th {
+      font-size: 1.5rem;
+      padding: 0;
+    }
+
+    .fund-content {
+      p {
+        padding: 1rem 0.25rem;
+        &.numeric {
+          text-align: center;
+          font-size: 2rem;
+        }
+      }
+
+      .risk-level {
+        margin: 2rem 0;
+      }
+    }
+
+    .returns-by-year {
+      th {
+        &:first-child {
+          padding: 1rem 0 1rem 0.4rem;
+        }
+      }
+      p.numeric {
+        margin: 0;
+        padding: 0;
+        font-size: 1.6rem;
+        line-height: 0;
+      }
+    }
+
+    .fund-header {
+      span {
+        font-size: 2rem;
+      }
+    }
+  } // END .fund-comparison-tool
 }

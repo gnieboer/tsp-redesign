@@ -1,0 +1,10 @@
+{% comment %}
+Add a copy to clipboard button on your page.
+{% endcomment %}
+{% assign element = include.element | default: 'p1' %}
+{% assign function = include.function | default: 'copyToClipboard' %}
+<div class="tooltip">
+  <button class="copy" onclick="{{function}}('{{element}}')" onmouseout="outFunc('{{element}}')">
+  <span class="tooltiptext" id="tooltip_{{element}}">Copy to clipboard</span>
+  <i class="far fa-copy"></i><span class="sr-only">Copy to clipboard</span></button>
+</div>

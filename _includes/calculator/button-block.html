@@ -15,53 +15,53 @@ Generates a list of buttons.  The box around them and the ul should be done by t
 {% assign bonusButton1 = include.bonusButton1 | default: 0 %}
 {% assign bonusButton2 = include.bonusButton2 | default: 0 %}
 
-<ul id="button-bar" class="buttonNav flexRow flexEnd">
+<ul class="navigation-buttons">
 {% if showPDF != 0 %}
 <input type="submit" name="PDF" value="Show Blank PDF">
 {% include calculator/button.html text='Download' title='Blank PDF form opens in a new window.'
-    href='courtOrderDir/courtOrder.pdf' onClick="blankPDF();" xtraClass2='primary' %}
+    href='courtOrderDir/courtOrder.pdf' onClick="blankPDF();" xtraClass2='primary' inList=1 %}
 {% endif %}
 
 {% if bonusButton1 != 0 %}{{ bonusButton1}}{% endif %}
 
 {% if getStarted != 0 %}
 {% capture click %}processPanel({{ panelID }}, 0, {{ getStarted }}, 0); return false;{% endcapture %}
-{% include calculator/button.html text='Get Started' onClick=click xtraClass2='primary' %}
+{% include calculator/button.html text='Get Started' onClick=click xtraClass2='primary' inList=1 %}
 {% endif %}
 
 {% if start != 0 %}
 {% capture click %}processPanel({{ panelID }}, 0, {{ start }}, 0); return false;{% endcapture %}
-{% include calculator/button.html text='Start' onClick=click xtraClass2='primary' %}
+{% include calculator/button.html text='Start' onClick=click xtraClass2='primary' inList=1 %}
 {% endif %}
 
 {% if prev != 0 %}
 {% capture click %}showPanel({{ prev }}); return false;{% endcapture %}
-{% include calculator/button.html text='Previous' href='javascript:void(0);' onClick=click xtraClass2='back' %}
+{% include calculator/button.html text='Previous' href='javascript:void(0);' onClick=click xtraClass2='back' inList=1 %}
 {% endif %}
 
 {% if nextOK != 0 %}
 <span id="areYouSurebottomButtons{{ panelID }}" style="display:none">
   {% capture click %}processPanel(-{{ panelID }}, 0, {{ next }}, 0); return false;{% endcapture %}
-  {% include calculator/button.html onClick=click xtraClass2='forward'
+  {% include calculator/button.html onClick=click xtraClass2='forward' inList=1
      text='Add <img src="/resources/images/yield_icon_calculator.png" alt="Required field" height="12px"> to PDF later' %}
 </span>
 <span id="continue{{ panelID }}NotOK" style="display: none">
   {% capture click %}processPanel({{ panelID }}, 0, 0, 0); return false;{% endcapture %}
-  {% include calculator/button.html text='Continue' onClick=click xtraClass2='primary forward' xtraClass1='disabled' %}
+  {% include calculator/button.html text='Continue' onClick=click xtraClass2='primary forward' xtraClass1='disabled' inList=1 %}
 </span>
 {% endif %}
 
 {% if next != 0 %}
 <span id="continue{{ panelID }}OK">
   {% capture click %}processPanel({{ panelID }}, 0, {{ next }}, 0); return false;{% endcapture %}
-  {% include calculator/button.html text='Continue' onClick=click xtraClass2='primary forward' %}
+  {% include calculator/button.html text='Continue' onClick=click xtraClass2='primary forward' inList=1 %}
 </span>
 {% endif %}
 
 {% if showResults != 0 %}
 <span id="showResults{{ panelID }}">
   {% capture click %}processPanel({{ panelID }}, 0, {{ showResults }}, 0); return false;{% endcapture %}
-  {% include calculator/button.html text='Show Results' onClick=click xtraClass2='primary forward' %}
+  {% include calculator/button.html text='Show Results' onClick=click xtraClass2='primary forward' inList=1 %}
 </span>
 {% endif %}
 
@@ -69,17 +69,17 @@ Generates a list of buttons.  The box around them and the ul should be done by t
 
 {% if revise != 0 %}
   {% capture click %}showPanel({{ revise }}); return false;{% endcapture %}
-  {% include calculator/button.html text='Revise' onClick=click xtraClass2='primary back' %}
+  {% include calculator/button.html text='Revise' onClick=click xtraClass2='primary back' inList=1 %}
 {% endif %}
 
 {% if submit != 0 %}
 <span id="submit{{ panelID }}OK">
   {% capture click %}processPanel({{ panelID }}, 0, 0, {{ submit }}); return false;{% endcapture %}
-  {% include calculator/button.html text='Submit' onClick=click xtraClass2='primary' %}
+  {% include calculator/button.html text='Submit' onClick=click xtraClass2='primary' inList=1 %}
 </span>
 <span id="submit{{ panelID }}NotOK" style="display: none">
   {% capture click %}processPanel({{ panelID }}, 0, 0, 0); return false;{% endcapture %}
-  {% include calculator/button.html text='Submit' onClick=click xtraClass2='primary' xtraClass1='disabled' %}
+  {% include calculator/button.html text='Submit' onClick=click xtraClass2='primary' xtraClass1='disabled' inList=1 %}
 </span>
 {% endif %}
   </ul>

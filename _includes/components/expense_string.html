@@ -1,0 +1,20 @@
+{% assign percentOnly = include.percentOnly | default: false %}
+{% assign explain = include.explain | default: false %}
+{% assign value = include.value | prepend: '0' | default: 0.001 %}
+{% assign value10 = value | times: 10 %}
+{% assign value100 = value | times: 100 %}
+{% assign value_split = value | round: 3 | split: "." %}
+{% assign left = value_split[0] %}
+{% assign right = value_split[1] | append: "0000" | truncate: 3, "" %}
+{% assign value10_split = value10 | round: 3 | split: "." %}
+{% assign left10 = value10_split[0] %}
+{% assign right10 = value10_split[1] | append: "0000" | truncate: 3, "" %}
+{% if percentOnly == true %}
+{{left}}.{{right}}%
+{% else %}
+  {% if explain == true %}
+  An expense ratio of {{left}}.{{right}}% translates to {{value100}} basis points or ${{left10}}.{{right10}} per $1,000 acount balance.
+  {% else %}
+  ${{left10}}.{{right10}}/$1,000 account balance {{left}}.{{right}}% ({{ value100 }} basis points)
+  {% endif %}
+{% endif %}

@@ -1,23 +1,40 @@
 title: Thrift Savings Plan
 description:
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://beta.tsp.gov" # the base hostname & protocol for your site, e.g. http://example.com
+plugins:
+  - jekyll-last-modified-at
+  - jekyll-redirect-from
 
 theme: uswds-jekyll
+
+# My Account URLS
+# How to use: [My Account]({{ site.myaccount }}), [Profiles Settings]({{ site.profile_settings }})
+myaccount: "https://www.tsp.gov/tsp/login.html"
+account_balance: "https://www.tsp.gov/tsp/accountBalance.do?subaction=view&amp;_name=acctbal"
+beneficiaries: "https://www.tsp.gov/tsp/beneficiaries.do?subaction=beneLanding&_name=bene"
+ca: "https://www.tsp.gov/tsp/contribAlloc.do?subaction=view&_name=cae"
+ift: "https://www.tsp.gov/tsp/fundTransfer.do?subaction=view&_name=ift"
+loans: "https://www.tsp.gov/tsp/loan.do?subaction=menu&amp;_name=loan"
+message_center: "https://www.tsp.gov/tsp/securemsg.do?_name=securemsg"
+profile_settings: "https://www.tsp.gov/tsp/profileSettings.do?subaction=view&amp;_name=profile"
+recent_transactions: "https://www.tsp.gov/tsp/activity.do?subaction=RecentTrans&_name=activity"
+statements: "https://www.tsp.gov/tsp/quarterlyStmt.do?subaction=view&amp;_name=stmts"
+withdrawals: "https://www.tsp.gov/tsp/addlWithdrawals.do?subaction=wdMenu&_name=wd"
 
 # To enable search, uncomment the search section
 # You will need to setup a search account with search.gov
 # https://search.usa.gov/signup
 # Your search_site_handle value is from the search.gov settings page.
 
-search_site_handle: searchgov-site-handle
-
+search_site_handle: beta.tsp
 
 # Configuration for Google Analytics, add your UA code here:
-google_analytics_ua: UA-33523145-2
+# google_analytics_ua: UA-33523145-2
+google_analytics_ua: UA-155812092-1
 
 # Configuration for DAP, add your agency ID here:
-dap_agency: FRTIB
+dap_agency: FRTIB&pua=ua-33523145-2
 
 # Build settings
 markdown: kramdown
@@ -25,9 +42,9 @@ markdown: kramdown
 scripts:
   - /assets/uswds/js/uswds.min.js
   - /assets/js/vendor/glossary.min.js
-  - /assets/js/login.js
   - /assets/js/glossary.js
   - /assets/js/dialog.js
+  - /assets/js/usa-search.js
 
 # Compress Sass
 # sass:
@@ -44,12 +61,31 @@ exclude:
 keep_files:
   - styleguide
 
+# output: true will copy the collection into _site
 collections:
   funds:
     output: true
   forms:
     output: true
+  plan_news:
+    output: true
   publications:
     output: true
   newsletters:
     output: true
+  faq:
+    output: true
+
+defaults:
+  -
+    scope:
+      path: "_plan_news"
+    values:
+      layout: page-plan-news
+      sidenav: news-and-resources
+  -
+    scope:
+      path: "_faq"
+    values:
+      layout: page-faq
+      sidenav: news-and-resources

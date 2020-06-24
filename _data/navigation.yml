@@ -16,6 +16,10 @@ primary:
       href: /account-basics/
     - text: Making contributions
       href: /making-contributions/
+    - text: Forms and resources
+      href: /forms/
+    - text: Frequently asked questions
+      href: /faq/
   - text: Learn about fund options
     links:
     - text: How to invest
@@ -24,8 +28,14 @@ primary:
       href: /funds-lifecycle/
     - text: Individual funds
       href: /funds-individual/
-    - text: Fund performance
+  - text: Fund performance
+    links:
+    - text: Rates of return
       href: /fund-performance/
+    - text: Share price history
+      href: /fund-performance/share-price-history/
+    - text: Share price calculation
+      href: /fund-performance/share-price-calculation/
   - text: Use your savings
     links:
     - text: Loan basics
@@ -44,50 +54,64 @@ primary:
       href: /changes-in-your-career/
     - text: For beneficiary participants
       href: /for-beneficiary-participants/
-
+  # - text: News
+  #   links:
+  #   - text: Plan News
+  #     href: /news-and-resources/
+  #   - text: FAQs
+  #     href: /faq/
+  #   - text: Videos and resources
+  #     href: /videos-and-resources/
+  #   - text: Forms & publications
+  #     href: /forms/
+  #   - text: Calculators
+  #     href: /calculators/
 
 secondary:
   - text: About us
     href: /about-us/
   - text: Login
-    href: "javascript:void(0);"
+    href: "https://www.tsp.gov/tsp/login.html"
     # id:
     class: login-toggle usa-button
+    target: _blank
 
 # SIDENAV MENUS
 calculators:
   - text: Calculators
     href: /calculators/
     subnav:
-      - text: How much should I save? (Ballpark Estimate)
-        href: /calculators/boiler-plate/
+      - text: How much should I save? (Federal Ballpark E$timate&#174;)
+        href: /calculators/
       - text: How much will my savings grow?
-        href: /calculators/boiler-plate/
+        href: /calculators/how-much-will-my-savings-grow/
       - text: How much can I contribute?
         href: /calculators/how-much-can-i-contribute/
       - text: Paycheck estimator
-        href: /calculators/boiler-plate/
+        href: /calculators/paycheck-estimator/
       - text: Contribution comparison calculator
-        href: /calculators/boiler-plate/
-      - text: Retirement income calculator
-        href: /calculators/boiler-plate/
-      - text: TSP monthly payment calculator
-        href: /calculators/boiler-plate/
+        href: /calculators/contribution-comparison-calculator/
+      - text: TSP payment and annuity calculator
+        href: /calculators/tsp-payment-and-annuity-calculator/
+      - text: TSP installment payment calculator
+        href: /calculators/tsp-installment-payment-calculator/
       - text: Estimate loan payments
-        href: /calculators/boiler-plate/
+        href: /calculators/estimate-loan-payments/
 
 manage-your-plan:
   - text: Account basics
     href: /account-basics/
     subnav:
-      - text: Your account number
-        href: /account-basics/your-account-number/
+      - text: Access your account
+        href: /account-basics/access-your-account/
       - text: How the TSP fits into your retirement
         href: /account-basics/how-tsp-fits/
       - text: Move money into the TSP
         href: /account-basics/move-money-into-tsp/
       - text: Protect your TSP account
         href: /account-basics/protect-your-tsp-account/
+      - text: Troubleshoot login errors
+        href: /account-basics/troubleshoot-login-errors/
       - text: Update your address
         href: /account-basics/update-your-address/
       - text: Administrative costs
@@ -107,6 +131,36 @@ manage-your-plan:
         href: /making-contributions/maximize-your-savings/
       - text: Contribution limits
         href: /making-contributions/contribution-limits/
+      - text: Automatic enrollment refunds
+        href: /making-contributions/automatic-enrollment-refunds/
+
+news-and-resources:
+  - text: News and resources
+    href: /news-and-resources/
+    subnav:
+      - text: Plan News
+        href: /news-and-resources/plan-news/
+      - text: Newsletters
+        href: /news-and-resources/newsletters/
+      - text: Government shutdown
+        href: /news-and-resources/government-shutdown/
+  - text: FAQs
+    href: /faq/
+  - text: Videos and resources
+    href: /videos-and-resources/
+  - text: Forms and resources
+    href: /forms/
+  - text: Calculators
+    href: /calculators/
+  - text: COVID-19
+    href: /covid-19/
+    subnav:
+      - text: RMD changes
+        href: /covid-19/rmd-changes/
+      - text: Withdrawals
+        href: /covid-19/withdrawals/
+      - text: Loans
+        href: /covid-19/loans/
 
 fund-options:
   - text: How to invest
@@ -116,8 +170,10 @@ fund-options:
         href: /how-to-invest/investor-types/
       - text: Before you invest
         href: /how-to-invest/before-you-invest/
-      - text: Changing your investments
+      - text: Change your investments
         href: /how-to-invest/change-your-investments/
+      - text: Stick to your plan
+        href: /how-to-invest/stick-to-your-plan/
   - text: Lifecycle funds
     href: /funds-lifecycle/
     subnav:
@@ -144,15 +200,6 @@ fund-options:
         href: /funds-individual/s-fund/
       - text: I Fund
         href: /funds-individual/i-fund/
-  - text: Fund performance
-    href: /fund-performance/
-    subnav:
-      - text: Rates of returns
-        href: /fund-performance/rates-of-returns/
-      - text: Share price history
-        href: /fund-performance/share-price-history/
-      - text: Share price calculation
-        href: /fund-performance/share-price-calculation/
 
 use-your-savings:
   - text: Loan basics
@@ -169,8 +216,8 @@ use-your-savings:
   - text: In-service withdrawal basics
     href: /in-service-withdrawal-basics/
     subnav:
-      - text: Economic hardship
-        href: /in-service-withdrawal-basics/economic-hardship/
+      - text: Financial hardship
+        href: /in-service-withdrawal-basics/financial-hardship/
       - text: In-service withdrawal types and terms
         href: /in-service-withdrawal-basics/in-service-withdrawal-types-and-terms/
       - text: Making an in-service withdrawal
@@ -186,8 +233,8 @@ use-your-savings:
         href: /living-in-retirement/withdrawal-options/
       - text: Making a withdrawal
         href: /living-in-retirement/making-a-withdrawal/
-      - text: Changing your withdrawal
-        href: /living-in-retirement/changing-your-withdrawal/
+      - text: Changing your withdrawal request
+        href: /living-in-retirement/changing-your-withdrawal-request/
   - text: Annuity basics
     href: /annuity-basics/
     subnav:
@@ -195,6 +242,14 @@ use-your-savings:
         href: /annuity-basics/annuity-benefits-and-limitations/
       - text: Purchase an annuity
         href: /annuity-basics/purchase-an-annuity/
+
+fund-performance:
+  - text: Rates of return
+    href: /fund-performance/
+  - text: Share price history
+    href: /fund-performance/share-price-history/
+  - text: Share price calculation
+    href: /fund-performance/share-price-calculation/
 
 manage-life-changes:
   - text: Planning for life events
@@ -208,10 +263,12 @@ manage-life-changes:
         href: /planning-for-life-events/spouses-rights/
       - text: Divorce, annulment, and legal separation
         href: /planning-for-life-events/divorce-annulment-and-legal-separation/
+      - text: Retirement benefits court order
+        href: /planning-for-life-events/retirement-benefits-court-order/
       - text: Legal matters
         href: /planning-for-life-events/legal-matters/
-  - text: Career changes
-    href: /career-changes/
+  - text: Changes in your career
+    href: /changes-in-your-career/
     subnav:
       - text: Leaving the federal government
         href: /changes-in-your-career/leaving-the-federal-government/
@@ -271,6 +328,8 @@ privacy:
         href: /privacy-policy/cookies/
       - text: Security monitoring
         href: /privacy-policy/security-monitoring/
+      - text: Participant outreach emails
+        href: /privacy-policy/participant-outreach-emails/
   - text: FRTIB Privacy Program Plan
     href: /privacy-plan/
     subnav:
@@ -301,13 +360,15 @@ privacy:
 footer:
   - text: Privacy
     href: /privacy/
-  - text: Agency & Service Rep Resources
-    href: #
-  - text: News & Resources
-    href: #
+  - text: Agency and Service Rep Resources
+    href: "https://www.tsp.gov/representative/index.html"
+  - text: News and resources
+    href: /news-and-resources/
   - text: Calculators
-    href: #
+    href: /calculators/
   - text: FOIA
-    href: #
+    href: "https://www.frtib.gov/ReadingRoom/index.html"
+    target: _blank
   - text: FRTIB
-    href: #
+    href: "https://www.frtib.gov/"
+    target: _blank

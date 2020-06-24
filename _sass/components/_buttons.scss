@@ -1,3 +1,12 @@
-button, .usa-button {
+button,
+.usa-button {
   border-radius: 0;
+  &.print {
+    &:after {
+      font-family: $font-awesome;
+      content: "\f02f";
+      font-weight: $light;
+      padding-left: .5rem;
+    }
+  }
 }

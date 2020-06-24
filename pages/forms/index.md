@@ -4,277 +4,258 @@ title: Forms
 styles:
 sidenav:
 scripts:
- - /assets/js/forms-demo.js
+  - /assets/js/jquery.min.js
+  - /assets/js/bootstrap.min.js
+  - /assets/js/form-modals.js
+  - /assets/js/flatpickr/flatpickr.js
+  - /assets/js/ajaxFetch.js
+  - /assets/js/ajax-usa-search-gov.js
+  - /assets/js/calculator/calculator.js
+  - /assets/js/search.js
+  - /assets/js/forms.js
 permalink: /forms/
+document-ready:
+  - addFormModals();
+  - setTopic('select-forms-topic');
+redirect_from:
+  - /forms/addressNameChange.html
+  - /forms/allPublications.html
+  - /forms/beneficiaryParticipants.html
+  - /forms/civilianForms.html
+  - /forms/contributions.html
+  - /forms/deathBenefits.html
+  - /forms/generalInformation.html
+  - /forms/investments.html
+  - /forms/legalDocuments.html
+  - /forms/loans.html
+  - /forms/transfersAndRollovers.html
+  - /forms/uniformedServicesForms.html
+  - /forms/withdrawals.html
 ---
 
-# Help me find forms <br>and resources about {#forms}
+# Help me find forms and resources about {#forms}
 
 <!-- SEARCH FORMS -->
-<section id="search-forms">
-<div class="usa-grid-full">
-  <div class="usa-width-one-half">
-    <div role="search">
-    <form class="usa-search usa-search-big">
-      <label class="usa-sr-only" for="search-field-big">Search small</label>
-      <!-- <input id="search-field-small" type="search" name="search"> -->
-        <!-- Dropdown -->
-        <select id="search-field-big" type="search" name="search" onchange="myFunction()">
-        <option value='0'>Select</option>
-        <option value='1'>Address/Name Change</option>
-        <option value='2'>Beneficiary Participants</option>
-        <option value='3'>Contributions</option>
-        <option value='4'>Death Benefits</option>
-        <option value='5'>General Information</option>
-        <option value='6'>Legal Documents</option>
-        <option value='7'>Loans</option>
-        <option value='8'>Transfers and Rollovers</option>
-        <option value='9'>Withdrawals</option>
-        </select>
-      <button type="submit">
-        <span class="usa-sr-only">Search</span>
-      </button>
-    </form>
-    </div>
-  </div>
-  <div class="usa-width-one-half"></div>
-</div>
-</section> <!-- // end #search-forms -->
 
-<!-- ## Most popular forms
-{:.forms} -->
-<div id="popular-demo">
+<div class="usa-grid-full">
+  <div class="usa-width-one-whole">
+    <section class="search-forms">
+      <div role="search" class="search-container">
+        <!-- Topic drop-down list -->
+
+        <div class="select">
+          <label class="usa-sr-only" for="select-forms-topic">Search by topic</label>
+          <select id="select-forms-topic" name="select-forms-topic" onChange="selectFormsTopic();">
+          <option disabled selected value='-1'>Choose topic</option>
+              {% for topic in site.data.forms_topics %}
+              {% assign dropValue = topic | downcase | replace: " ", "-" %}
+              <option value='{{ dropValue }}'>{{ topic }}</option>
+              {% endfor %}
+              <option value='0'>Show all</option>
+            </select>
+        </div>
+
+        <input id="group" type="hidden" value="forms">
+        <form accept-charset="UTF-8" action="javascript:void(0);" id="search-form-forms" method="get"
+          class="animated-search">
+            <label for="search-terms" class="usa-sr-only">Enter search term(s)</label>
+            <input type="text" name="search-terms" id="search-terms"
+              onChange="myPageChange();" onBlur="myPage(1);"
+              autocomplete="off" placeholder="Enter search term(s)">
+        </form>
+      </div>
+    </section><!-- // end section.search-forms -->
+  </div><!-- END div.usa-width-one-whole -->
+</div><!-- END div.usa-grid-full -->
+<section id="form-search-results" class="form-search-results ">
+  {% comment %}inline form search results below{% endcomment %}
+  <h2 id="results-count-block" class="results hide">We found
+    <strong><span id="results-count"></span></strong>
+    <span id="formsResourcesSpan">forms and resources</span>
+      about <strong><span id="results-terms"></span></strong>
+  </h2>
+  <div class="usa-grid-full results">
+    <div class="usa-width-one-whole">
+
+      {% include search-result-blocks.html %}
+
+      {% include search-hit-blocks.html %}
+    </div><!-- END div.usa-width-one-whole -->
+  </div><!-- END div.usa-grid-full -->
+</section>
+
+{% assign showTotal = 4 %}
+{% assign startAccordion = showTotal %}
+
 <section id="popular-forms" markdown="1">
+  {% assign cnt = 0 %}
+  <div id="select-forms-0" class="select-forms-div" markdown="1">
+  <h2 class="most-popular" id="most-popular-forms">Most popular forms</h2>
+  <!-- # All Forms  -->
+  <div class="usa-grid-full">
+  {% for form in site.data.forms %}
+    {% assign cnt = cnt | plus: 1 %}
+    {% include forms/form.html nameDiv=1 %}
+    {% assign mod = cnt | modulo: 2 %}
+  {% if mod == 0 %}
+  </div>
+  {% if cnt == startAccordion %}
+  <div id="more-forms-content-0" class="hide">
+  {% endif %}
+  <div class="usa-grid-full">  
+  {% endif %}
+  {% endfor %}
+  </div>
+  {% if cnt >= startAccordion %}
+  </div>
+  {% endif %}
+  <div id="more-forms-0" class="see-more" onClick="showMoreForms('forms', '0');">
+    <span>see more forms</span>
+  </div>
+  </div>
 
-## Most popular forms
-{:.most-popular}
+  {% for topic in site.data.forms_topics %}
+  {% assign dropValue = topic | downcase | replace: " ", "-" %}
+  {% assign topicID = dropValue %}
+  {% comment %}count number of forms for accordion{% endcomment %}
+  {% assign formCnt = 0 %}
+  {% for form in site.data.forms %}
+  {% for form_topic in form.form_topics %}
+  {% if form_topic == topic %}
+    {% assign formCnt = formCnt | plus: 1 %}
+  {% endif %}
+  {% endfor %}
+  {% endfor %}
+  {% assign resCnt = 0 %}
+  {% for resource in site.data.publications %}
+  {% for form_topic in resource.publication_topics %}
+  {% if form_topic == topic %}
+    {% assign resCnt = resCnt | plus: 1 %}
+  {% endif %}
+  {% endfor %}
+  {% endfor %}
+  {% assign startAccordion = formCnt | plus: 1 %}
+  {% if formCnt > showTotal %}{% assign startAccordion = showTotal %}{% endif %}
 
-<div class="usa-grid-full">
-  <div class="usa-width-one-half">
-    <div class="item-frame">
-      <div class="top">
-      <p class="form-title">Request for a transfer into the TSP</p>
-      <p class="form-number">Form TSP-60</p>
-      </div>
-      <div class="form-description">
-      <p>Use this form to:</p>
-      <p>Request a transfer of Roth money from an applicable retirement plan into the Roth balance of your Thrift Savings Plan account.</p>
-      </div>
-    </div> <!-- end .item-frame -->
-  </div> <!-- end .usa-width-one-half -->
-  <div class="usa-width-one-half">
-    <div class="item-frame">
-      <div class="top">
-      <p class="form-title">Change in address for separated participants</p>
-      <p class="form-number">Form TSP-9</p>
-      </div>
-    <div class="form-description">
-      <p>Use this form to:</p>
-      <p>Change your address or online at My Account, and then select Profile Settings.</p>
-    </div>
-    </div> <!-- end .item-frame -->
-  </div> <!-- end .usa-width-one-half -->
-</div>
-<div class="usa-grid-full">
-  <div class="usa-width-one-half">
-    <div class="item-frame">
-      <div class="top">
-      <p class="form-title">Loan payment coupon</p>
-      <p class="form-number">Form TSP-26</p>
-      </div>
-      <div class="form-description">
-      <p>Use this form to:</p>
-      <p>Make loan payments in addition to payments made through payroll deductions.</p>
-      </div>
-    </div> <!-- end .item-frame -->
-  </div> <!-- end .usa-width-one-half -->
-  <div class="usa-width-one-half">
-    <div class="item-frame">
-      <div class="top">
-      <p class="form-title">Change in address for separated participants</p>
-      <p class="form-number">Form TSP-9</p>
-      </div>
-    <div class="form-description">
-      <p>Use this form to:</p>
-      <p>Name a person or persons to receive your account balance after your death.</p>
-    </div>
-    </div> <!-- end .item-frame -->
-  </div> <!-- end .usa-width-one-half -->
-</div>
-<!-- IF forms returned for selected TOPIC is greater than 4, display SEE MORE FORMS -->
-<div class="see-more"><span><a href="javascript:void(0)">see more forms</a></span></div>
-</section> <!-- end section#returned-forms -->
+  <div id="select-forms-{{ topicID }}"  class="select-forms-div hide" markdown="1">
+  <h2 class="results">
+    We found <strong>{{formCnt}}</strong> forms
+    and <strong>{{resCnt}}</strong> resources about <strong>{{ topic }}</strong>
+  </h2>
+  {% if formCnt > 0 %}
+  <!-- # {{ topic }} Forms  -->
+  {% endif %}
+  {% assign cnt = 0 %}
+  <div class="usa-grid-full">
+  {% for form in site.data.forms %}
+  {% for form_topic in form.form_topics %}
+  {% if form_topic == topic %}
+    {% assign cnt = cnt | plus: 1 %}
+    {% include forms/form.html %}
+    {% assign mod = cnt | modulo: 2 %}
+  {% if mod == 0 %}
+  </div>
+  {% if cnt == startAccordion %}
+  <div id="more-forms-content-{{ topicID }}" class="hide">
+  {% endif %}
+  <div class="usa-grid-full">  
+  {% endif %}
+  {% endif %}
+  {% endfor %}
+  {% endfor %}
+  </div>
+  {% if cnt >= startAccordion %}
+  </div>
+  {% endif %}
+  {% if formCnt > showTotal %}
+  <div id="more-forms-{{ topicID }}" class="see-more" onClick="showMoreForms('forms', '{{ topicID }}');">
+    <span>see more forms</span>
+  </div>
+  {% endif %}
+  </div>
+  {% endfor %}
+</section>
+
+{% assign startAccordion = showTotal %}
 
 <section id="popular-resources" markdown="1">
+  {% assign cnt = 0 %}
+  <div id="select-resources-0" class="select-resources-div" markdown="1">
+  <h2 class="most-popular" id="most-popular-resources">Most popular resources</h2>
+  <!-- # All Resources -->
+  <div class="usa-grid-full">
+  {% for resource in site.data.publications %}
+    {% assign cnt = cnt | plus: 1 %}
+    {% include forms/resource.html nameDiv=1 %}
+    {% assign mod = cnt | modulo: 2 %}
+  {% if mod == 0 %}
+  </div>
+  {% if cnt == startAccordion %}
+  <br>
+  <div id="more-resources-content-0" class="hide">
+  {% endif %}
+  <div class="usa-grid-full">  
+  {% endif %}
+  {% endfor %}
+  </div>
+  {% if cnt >= startAccordion %}
+  </div>
+  {% endif %}
+  <div id="more-resources-0" class="see-more" onClick="showMoreForms('resources', '0');">
+    <span>see more resources</span>
+  </div>
+  </div>
 
-## Most popular resources
-{:.most-popular}
-<!-- Row 1 -->
-<div class="usa-grid-full">
-  <div class="usa-width-one-half">
-    <div class="item-frame">
-      <div class="top">
-      <i class="fas fa-book"></i>
-      </div>
-      <div class="resource-title">
-      <p>Your TSP Account: A guide for Beneficiary Participants Booklet</p>
-      </div>
-    </div> <!-- end .item-frame -->
-  </div> <!-- end .usa-width-one-half -->
-  <div class="usa-width-one-half">
-    <div class="item-frame">
-      <div class="top">
-      <i class="fal fa-sticky-note"></i>
-      </div>
-      <div class="resource-title">
-      <p>Catch-Up Contributions Fact Sheet</p>
-      </div>
-    </div> <!-- end .item-frame -->
-  </div> <!-- end .usa-width-one-half -->
-</div>
-<!-- Row 2 -->
-<div class="usa-grid-full">
-  <div class="usa-width-one-half">
-    <div class="item-frame">
-      <div class="top">
-      <i class="fas fa-book"></i>
-      </div>
-      <div class="resource-title">
-      <p>Court Orders and Powers of Attorney Booklet</p>
-      </div>
-    </div> <!-- end .item-frame -->
-  </div> <!-- end .usa-width-one-half -->
-  <div class="usa-width-one-half">
-    <div class="item-frame">
-      <div class="top">
-      <i class="fas fa-book"></i>
-      </div>
-      <div class="resource-title">
-      <p>In-Service Withdrawals Booklet</p>
-      </div>
-    </div> <!-- end .item-frame -->
-  </div> <!-- end .usa-width-one-half -->
-</div>
-<!-- IF forms returned for selected TOPIC is greater than 4, display SEE MORE FORMS -->
-<div class="see-more"><span><a href="javascript:void(0)">see more resources</a></span></div>
+  {% for topic in site.data.forms_topics %}
+  {% assign dropValue = topic | downcase | replace: " ", "-" %}
+  {% assign topicID = dropValue %}
+  {% comment %}count number of resources for accordion{% endcomment %}
+  {% assign resCnt = 0 %}
+  {% for resource in site.data.publications %}
+  {% for form_topic in resource.publication_topics %}
+  {% if form_topic == topic %}
+    {% assign resCnt = resCnt | plus: 1 %}
+  {% endif %}
+  {% endfor %}
+  {% endfor %}
+  {% assign startAccordion = resCnt | plus: 1 %}
+  {% if resCnt > showTotal %}{% assign startAccordion = showTotal %}{% endif %}
+  {% assign cnt = 0 %}
 
+  <div id="select-resources-{{ topicID }}"  class="select-resources-div hide" markdown="1">
+  {% if resCnt > 0 %}
+  <h2 class="most-popular" id="{{topic}}-resources">{{topic}} resources</h2>
+  <!-- # {{ topic }} Resources  -->
+  {% endif %}
+  <div class="usa-grid-full">
+  {% for resource in site.data.publications %}
+  {% for form_topic in resource.publication_topics %}
+  {% if form_topic == topic %}
+    {% assign cnt = cnt | plus: 1 %}
+    {% include forms/resource.html %}
+    {% assign mod = cnt | modulo: 2 %}
+  {% if mod == 0 %}
+  </div>
+  {% if cnt == startAccordion %}
+  <br>
+  <div id="more-resources-content-{{ topicID }}" class="select-resources-div hide">
+  {% endif %}
+  <div class="usa-grid-full">  
+  {% endif %}
+  {% endif %}
+  {% endfor %}
+  {% endfor %}
+  </div>
+  {% if cnt >= startAccordion %}
+  </div>
+  {% endif %}
+  {% if resCnt > showTotal %}
+  <div id="more-resources-{{ topicID }}" class="see-more" onClick="showMoreForms('resources', '{{ topicID }}');">
+    <span>see more resources</span>
+  </div>
+  {% endif %}
+  </div>
+  {% endfor %}
 </section>
-</div>
 
-<!-- RETURNED -->
-<div id="returned-demo" class="fadeOut">
-<section id="returned-forms" markdown="1">
-
-## We found **4** forms and **3** resources about **Loans**
-{:.results}
-
-<div class="usa-grid-full">
-  <div class="usa-width-one-half">
-    <div class="item-frame">
-      <div class="top">
-      <p class="form-title">Request for a transfer into the TSP</p>
-      <p class="form-number">Form TSP-60</p>
-      </div>
-      <div class="form-description">
-      <p>Use this form to:</p>
-      <p>Request a transfer of Roth money from an applicable retirement plan into the Roth balance of your Thrift Savings Plan account.</p>
-      </div>
-    </div> <!-- end .item-frame -->
-  </div> <!-- end .usa-width-one-half -->
-  <div class="usa-width-one-half">
-    <div class="item-frame">
-      <div class="top">
-      <p class="form-title">Change in address for separated participants</p>
-      <p class="form-number">Form TSP-9</p>
-      </div>
-    <div class="form-description">
-      <p>Use this form to:</p>
-      <p>Change your address or online at My Account, and then select Profile Settings.</p>
-    </div>
-    </div> <!-- end .item-frame -->
-  </div> <!-- end .usa-width-one-half -->
-</div>
-<div class="usa-grid-full">
-  <div class="usa-width-one-half">
-    <div class="item-frame">
-      <div class="top">
-      <p class="form-title">Loan payment coupon</p>
-      <p class="form-number">Form TSP-26</p>
-      </div>
-      <div class="form-description">
-      <p>Use this form to:</p>
-      <p>Make loan payments in addition to payments made through payroll deductions.</p>
-      </div>
-    </div> <!-- end .item-frame -->
-  </div> <!-- end .usa-width-one-half -->
-  <div class="usa-width-one-half">
-    <div class="item-frame">
-      <div class="top">
-      <p class="form-title">Change in address for separated participants</p>
-      <p class="form-number">Form TSP-9</p>
-      </div>
-    <div class="form-description">
-      <p>Use this form to:</p>
-      <p>Name a person or persons to receive your account balance after your death.</p>
-    </div>
-    </div> <!-- end .item-frame -->
-  </div> <!-- end .usa-width-one-half -->
-</div>
-<!-- IF forms returned for selected TOPIC is greater than 4, display SEE MORE FORMS -->
-<div class="see-more"><span><a href="javascript:void(0)">see more forms</a></span></div>
-</section>
-<section id="returned-resources" markdown="1">
-
-## Loan resources
-{:.most-popular}
-<!-- Row 1 -->
-<div class="usa-grid-full">
-  <div class="usa-width-one-half">
-    <div class="item-frame">
-      <div class="top">
-      <i class="fas fa-book"></i>
-      </div>
-      <div class="resource-title">
-      <p>Your TSP Account: A guide for Beneficiary Participants Booklet</p>
-      </div>
-    </div> <!-- end .item-frame -->
-  </div> <!-- end .usa-width-one-half -->
-  <div class="usa-width-one-half">
-    <div class="item-frame">
-      <div class="top">
-      <i class="fal fa-sticky-note"></i>
-      </div>
-      <div class="resource-title">
-      <p>Catch-Up Contributions Fact Sheet</p>
-      </div>
-    </div> <!-- end .item-frame -->
-  </div> <!-- end .usa-width-one-half -->
-</div>
-<!-- Row 2 -->
-<div class="usa-grid-full">
-  <div class="usa-width-one-half">
-    <div class="item-frame">
-      <div class="top">
-      <i class="fas fa-book"></i>
-      </div>
-      <div class="resource-title">
-      <p>Court Orders and Powers of Attorney Booklet</p>
-      </div>
-    </div> <!-- end .item-frame -->
-  </div> <!-- end .usa-width-one-half -->
-  <div class="usa-width-one-half">
-    <div class="item-frame">
-      <div class="top">
-      <i class="fas fa-book"></i>
-      </div>
-      <div class="resource-title">
-      <p>In-Service Withdrawals Booklet</p>
-      </div>
-    </div> <!-- end .item-frame -->
-  </div> <!-- end .usa-width-one-half -->
-</div>
-<!-- IF forms returned for selected TOPIC is greater than 4, display SEE MORE FORMS -->
-<div class="see-more"><span><a href="javascript:void(0)">see more resources</a></span></div>
-
-</section>
-</div>
+{% include form-modals.html %}

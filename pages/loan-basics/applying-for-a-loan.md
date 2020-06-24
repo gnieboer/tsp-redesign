@@ -13,33 +13,28 @@ permalink: /loan-basics/applying-for-a-loan/
 ---
 
 # Applying for a loan
-Before you apply for a TSP loan, please review our booklet, [Loans](#). Be sure to read it thoroughly to make sure you understand all the rules and eligibility restrictions.
-
-## Online requests
-+ Log in to [My Account](https://www.tsp.gov/tsp/loan.do?subaction=menu&amp;_name=loan) to use the wizard to complete the [Loan Application](), *Form TSP-20*. **Note:** Depending on your marital status, the type of loan you are requesting, and how you want your funds sent to you, you may not be able to complete your loan request online.
-+ If you’re unable to complete the loan process online, print out the Loan Agreement and mail it to us with any additional required information. We must receive the Loan Agreement before the expiration date that appears at the top.
-
+Before you apply for a TSP loan, please review our booklet, [_Loans_]({{ site.baseurl }}/publications/tspbk04.pdf). Be sure to read it thoroughly to make sure you understand all the rules and eligibility restrictions.
 
 ## Submitting your request
-+ Log in to [My Account: TSP Loans](https://www.tsp.gov/tsp/login.html) to start your loan request. **Note:** Depending on your marital status, the type of loan you are requesting, and how you want your funds sent to you, you may not be able to submit your loan request online.
-+ If you’re unable to complete the loan process online, print out the _Loan Agreement,_ sign it, and mail it to us with any additional required information. We must receive the loan agreement before the expiration date that appears at the top.
++ Log in to [My Account]({{ site.loans }}) to start your loan request. **Note:** Depending on your marital status, the type of loan you are requesting, and how you want your funds sent to you, you may not be able to submit your loan request online.
++ If you’re unable to complete the loan process online, print out the Loan Agreement, sign it, and mail it to us with any additional required information. We must receive the Loan Agreement before the expiration date that appears at the top.
 
 <div class="usa-alert usa-alert-info">
 <div class="usa-alert-body" markdown="1">
-Use our [Loan Calculator](#) to estimate loan payments based on the amount you want to borrow from your TSP account, the current loan interest rate, and other factors.
+Use our [Loan Calculator]({{ site.baseurl }}/calculators/estimate-loan-payments/) to estimate loan payments based on the amount you want to borrow from your TSP account, the current loan interest rate, and other factors.
 {: .usa-alert-text}
 </div>
 </div>
 
 ## Spousal rules
 By law, your spouse has certain rights to your TSP account. When requesting a loan, you must indicate if you are married, even if you are separated from your spouse.
-+ FERS or uniformed services participants: Your spouse must consent to your TSP loan by signing the Loan Agreement that you print from [My Account](https://www.tsp.gov/tsp/login.html).
++ FERS or uniformed services participants: Your spouse must consent to your TSP loan by signing the Loan Agreement that you print from [My Account]({{ site.myaccount }}).
 + CSRS participants: We must notify your spouse when you apply for a loan.
 
-Exceptions to the spousal rule may be approved under very limited circumstances. For more information, please refer to [Exception to Spousal Requirements](#), _Form TSP-16_ ([TSP-U-16](#), for uniformed services members).
+Exceptions to the spousal rule may be approved under very limited circumstances. For more information, please refer to Form TSP-16, [*Exception to Spousal Requirements*]({{ site.baseurl }}/forms/tsp-16.pdf),  ([TSP-U-16]({{ site.baseurl }}/forms/tsp-u-16.pdf), for uniformed services members).
 
 ## Residential loan documentation
-When you request a residential loan, you must provide supporting documentation of the costs associated with the purchase or construction of your primary residence, before your loan can be approved. 
+When you request a residential loan, you must provide supporting documentation of the costs associated with the purchase or construction of your primary residence, before your loan can be approved.
 
 ### Documentation requirements
 #### All residential loans
@@ -71,7 +66,7 @@ Purchasing a boat as a primary residence requires you to provide all of the foll
 + Signed statement that the boat will be your primary residence
 ## Loan processing
 + If you successfully complete the entire loan process online, and are approved, you will receive your money in 8 to 13 business days. If you submit a paper loan agreement, it may take several weeks.
-+ You may track the status of your loan by logging into [My Account](https://www.tsp.gov/tsp/login.html) or by [contacting us](#).
++ You may track the status of your loan by logging into [My Account]({{ site.myaccount }}) or by [contacting us]({{ site.baseurl }}/contact/).
 ## Receiving your money
 
 + If your loan request was made and approved online, you will receive your money in the form of a check, mailed to the address we have on file for you. You will not have the option of receiving your funds by electronic funds transfer (EFT).

@@ -1,0 +1,45 @@
+// RATES OF RETURNS
+
+.usa-content {
+  fieldset {
+    &.lifecycle-funds,
+    &.individual-funds  {
+      margin-bottom: 3rem;
+      ul {
+        display: flex;
+        flex-wrap: wrap;
+        &:not(.usa-accordion),
+        &:not(.usa-accordion-bordered) {
+          max-width: none;
+          li {
+            padding-right: 3rem;
+            &:last-child {
+              padding-right: 0;
+            }
+          }
+        }
+      }
+      legend {
+        font-size: 1.7rem;
+        padding-bottom: 1.2rem;
+      }
+    }
+    .break {
+      flex-basis: 100%;
+    }
+  }
+  @media screen and (max-width: $medium-screen) {
+    fieldset {
+      &.lifecycle-funds,
+      &.individual-funds {
+        ul {
+          display: block;
+        }
+      }
+      &.lifecycle-funds {
+        float: left;
+        width: 48%;
+      }
+    }
+  } // end @media $medium-screen
+} // end .usa-content

@@ -51,7 +51,7 @@
 }
 
 .button--close--inverse {
-    background-image: url("/assets/img/symbol_close.svg");
+    background-image: url($baseurl + "/assets/img/symbol_close.svg");
     color: #fff;
     background-color: #212121;
     background-repeat: no-repeat;
@@ -134,7 +134,7 @@
 }
 
 .glossary__content button {
-    background-image: url("/assets/img/symbol-accordion-close.svg");
+    background-image: url($baseurl + "/assets/img/symbol-accordion-close.svg");
     background-color: #212121;
     background-repeat: no-repeat;
     background-size: 2rem;
@@ -152,13 +152,13 @@
 }
 
 .glossary__content button[aria-expanded=true] {
-    background-image: url("/assets/img/symbol-accordion-close.svg");
+    background-image: url($baseurl + "/assets/img/symbol-accordion-close.svg");
     background-repeat: no-repeat;
 
 }
 
 .glossary__content button[aria-expanded=false] {
-    background-image: url("/assets/img/symbol-accordion-open.svg");
+    background-image: url($baseurl + "/assets/img/symbol-accordion-open.svg");
     background-repeat: no-repeat;
     border-bottom: 1px solid #fff;
 }
@@ -173,23 +173,34 @@
   margin-right: 0.15rem;
 }
 
-.term, .term-end {
-  background-image: url("/assets/img/icons/glossary.svg");
-  background-repeat: no-repeat;
-  -webkit-transition: background-color, .2s, box-shadow, .2s, color, .2s;
-  -moz-transition: background-color, .2s, box-shadow, .2s, color, .2s;
-  transition: background-color, .5s, box-shadow, .2s, color, .2s;
-  background-size: .7em;
-  background-position: 100% 50%;
-  background-color: transparent;
-  box-shadow: 0 0 0 4px transparent;
-  border-bottom: none;
+.term,
+.term-end,
+a[data-term],
+a[data-term]:visited {
   cursor: pointer;
-  margin-right: 2px;
-  padding-right: .9em;
   border-bottom: 1px dashed #323c42;
   text-decoration: none;
+  &::after {
+    font-family: $font-awesome;
+    font-weight: $light;
+    content: "\f518";
+    padding-left: .4rem;
+    font-size: 1.1rem;
+    position: relative;
+    top: -1px;
+  }
 }
+
+
+a[data-term],
+a[data-term]:visited { /* style for glossary links within glossary.js */
+  color: #fff;
+  border-bottom-color: #fff;
+  &::after {
+    padding-right: .4rem;
+  }
+}
+
 .term:hover, .term:active {
     background-color: #d3d3d3;
 }
@@ -211,7 +222,22 @@
 }
 
 /* FEC.GOV CSS */
-
+// .glossary__definition {
+//   a[data-term],
+//   a[data-term]:visited {
+//     color: #fff;
+//     text-decoration: none;
+//     border-bottom: 1px dashed #fff;
+//     cursor: pointer;
+//     &.term {
+//       border-bottom: 1px dashed #fff;
+//       &:hover,
+//       &:active {
+//         background-color: transparent;
+//       }
+//     }
+//   }
+// }
 .glossary__definition ol li, .glossary__definition ul li, .list--bulleted li, .list--bulleted--alt li, .list--numbered li {
   margin-left: 2rem;
   padding: .5rem 0;

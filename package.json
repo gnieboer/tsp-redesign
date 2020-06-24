@@ -1,0 +1,31 @@
+{
+  "name": "tsp-redesign",
+  "version": "1.0.0",
+  "description": "### About the prototype",
+  "main": "index.md",
+  "dependencies": {
+    "axios": "^0.19.2",
+    "handlebars": "^4.7.6",
+    "js-yaml": "^3.13.1",
+    "kind-of": "^6.0.3",
+    "lodash": "^4.17.15",
+    "minimist": "^1.2.5"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/frtib/tsp-redesign.git"
+  },
+  "keywords": [
+    "tsp"
+  ],
+  "author": "FRTIB",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/frtib/tsp-redesign/issues"
+  },
+  "homepage": "https://github.com/frtib/tsp-redesign#readme"
+}

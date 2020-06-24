@@ -13,7 +13,7 @@ permalink: /privacy-policy/information-captured-stored/
 ---
 # Information automatically captured and stored
 
-## Public Website Access
+## Public website access
 
 The public components of the FRTIB and TSP websites do not collect any personal information about you. When you browse, read pages, or download information on the FRTIB or TSP website, we automatically gather and store certain technical (non-personal) information about your visit. This information is only used to help make the sites more effective and user-friendly.
 
@@ -27,12 +27,12 @@ Information automatically collected and stored includes:
 
 In addition, this website uses Google Analytics. Please refer to the following policies on Google's website for more information:
 
-- [Google's main privacy policy](https://policies.google.com/privacy?hl=en){:target="\_blank"}
-- [Google Analytics Cookie Usage on Websites](https://support.google.com/analytics/answer/6004245){:target="\_blank"}
-- [Opt out of Google Analytics Cookies](https://tools.google.com/dlpage/gaoptout?hl=en){:target="\_blank"}
+- [Google's main privacy policy]({{ site.baseurl }}/exit/?idx=147)
+- [Google Analytics Cookie Usage on Websites]({{ site.baseurl }}/exit/?idx=148)
+- [Opt out of Google Analytics Cookies]({{ site.baseurl }}/exit/?idx=149)
 
 
-## TSP Account Access
+## TSP account access
 If you choose to access your account in the secure section of the TSP website (tsp.gov), we do request your account number (or user ID) and web password in order to identify your account. When you provide your account information, you are consenting to the electronic transmission of the personal financial information you have requested. Your consent is effective during the entire time you are accessing your TSP account through the website.
 
 We only share information you give us with other government agencies if your transaction relates to another agency, or as otherwise required by law. Read the warning on the login page.

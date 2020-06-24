@@ -6,7 +6,11 @@
 .contribution-limits.usa-tabs.usa-accordion {
   li {
     background-color: inherit;
-  }
+    &:last-child {
+        margin-right: 0;
+      }
+    }
+
   .usa-accordion-button {
     text-align: center;
     font-size: 2rem;
@@ -14,6 +18,7 @@
     background-color: #ffffff;
     border: 1px solid #333;
     margin-bottom: 1rem;
+    padding: 2.5rem 2rem;
     span {
       display:block;
       margin-bottom: 1rem;
@@ -27,33 +32,51 @@
     }
   }
 
-  th {
+  .usa-grid-full {
+    background-color: #ffffff;
+    border-top: 1px solid #5b616b;
+    font-weight: 400;
+    padding: 1rem 1.5rem;
+  }
+
+  .usa-width-one-third {
     font-weight: 700;
-    width: 20rem;
-    padding-left: 2rem;
+    max-width: 20rem;
+    padding-left: .6rem;
+    margin-right: 0;
     vertical-align: text-top;
   }
-  td {
-    > :first-child {
+
+  .usa-width-two-thirds {
       margin-top: 0;
+      padding: 0 0 1rem 0;
+      h2:first-child {
+        background-image: url($baseurl + '/assets/img/icons/check-circle-green.svg');
+        background-repeat: no-repeat;
+        padding-left: 3rem;
+        background-position: left center;
+        margin-top: 0;
+      }
     }
-    h2:first-child {
-      background-image: url('/assets/img/icons/check-circle-green.svg');
-      background-repeat: no-repeat;
-      padding-left: 3rem;
-      background-position: left center;
-    }
-  }
   .usa-accordion-content {
     margin-bottom: 3rem;
   }
-}
+} // END .contribution-limits.usa-tabs.usa-accordion
 
-
-@media screen and (min-width: 992px) {
+@media screen and (min-width: $large-screen) {
   .contribution-limits.usa-tabs.usa-accordion {
     .usa-accordion-button {
       width: 20rem;
     }
   }
+}
+
+@media screen and (max-width: $medium-screen) {
+  .contribution-limits.usa-tabs.usa-accordion {
+    .usa-width-two-thirds {
+      h2:first-child {
+        margin-top: 0.75em;
+        }
+      }
+    }
 }

@@ -2,40 +2,52 @@
 ---
 <!DOCTYPE html>
 <html lang="{{ page.lang | default: site.lang | default: 'en-US' }}">
-  <head>
-    <meta name="robots" content="noindex, nofollow">
-    {% include meta.html %}
-    {% include styles.html %}
-    {% include components/iconfonts.html %}
-    {% if site.google_analytics_ua or site.dap_agency %}
-      {% include analytics.html %}
-    {% endif %}
-    <!-- Google Tag Manager -->
-    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-    })(window,document,'script','dataLayer','GTM-MLDLTMR');</script>
-    <!-- End Google Tag Manager -->
-    <script id="_fed_an_ua_tag" language="javascript" src="https://dap.digitalgov.gov/Universal-Federated-Analytics-Min.js?agency=FRTIB&pua=ua-33523145-2"></script>
-  </head>
-  <body class="{{ layout.class }} {{ page.class }}">
-    <!-- Google Tag Manager (noscript) -->
-    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MLDLTMR"
-    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-    <!-- End Google Tag Manager (noscript) -->
-    {% include skipnav.html %}
-    {% include header.html %}
 
-    <main id="main-content"{% for _attr in layout.main %} {{ _attr[0] }}="{{ _attr[1] }}"{% endfor %}>
+<head>
+  {% include meta.html %}
+  {% comment %}{% include styles.html %}{% endcomment %}
+  {% include components/styles.html %}
+  {% include components/iconfonts.html %}
+  {% if site.google_analytics_ua or site.dap_agency %}
+  {% include analytics.html %}
+  {% endif %}
+  <!-- Google Tag Manager -->
+  <script>
+    (function(w, d, s, l, i) {
+      w[l] = w[l] || [];
+      w[l].push({
+        'gtm.start': new Date().getTime(),
+        event: 'gtm.js'
+      });
+      var f = d.getElementsByTagName(s)[0],
+        j = d.createElement(s),
+        dl = l != 'dataLayer' ? '&l=' + l : '';
+      j.async = true;
+      j.src =
+        'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+      f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-MLDLTMR');
+  </script>
+  <!-- End Google Tag Manager -->
+</head>
+
+<body class="{{ layout.class }} {{ page.class }}">
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MLDLTMR" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+  {% include skipnav.html %}
+  {% include header.html %}
+
+  <main id="main-content" {% for _attr in layout.main %} {{ _attr[0] }}="{{ _attr[1] }}" {% endfor %}>
     {{ content }}
-    </main>
-    {% include components/glossary.html %}
-    <footer>
-      {% include components/top-footer.html %}
-      {% include footer.html %}
-    </footer>
-    {% include scripts.html %}
-    {% include bottom-scripts.html %}
-  </body>
+  </main>
+  {% include components/glossary.html %}
+  <footer>
+    {% include components/top-footer.html %}
+    {% include footer.html %}
+  </footer>
+  {% include scripts.html %}
+  {% include bottom-scripts.html %}
+</body>
+
 </html>

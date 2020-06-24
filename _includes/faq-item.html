@@ -1,0 +1,28 @@
+{% comment %}
+HTML block for one faq item accordion.
+{% endcomment %}
+
+{% assign entry = include.entry %}
+{% assign faq_name = entry.permalink | split: '/' | last | default: 'anchor' %}
+{% assign entryHTML = entry.permalink | append: '.html' %}
+{% assign faq_id = include.faq_id | default: faq_name %}
+{% assign faq_question = include.faq_question | default: entry.title %}
+{% assign faq_body = include.faq_body | default: entry.content %}
+{% assign expanded = include.expanded | default: "true" %}
+<!-- {{faq_name}} -->
+<a name="{{faq_name}}-start"></a>
+<button id="{{faq_name}}-button" class="usa-accordion-button" aria-expanded="{{ expanded }}" aria-controls="{{faq_id}}">
+{{faq_question}}
+</button>
+<div id="{{faq_id}}" class="usa-accordion-content" markdown="1">
+  <div id="{{faq_id}}-div">
+  {{faq_body}}
+  </div>
+  <div class="flex post-and-share">
+    <!-- Share Modal -->
+    {% include social-media-share.html modalID=faq_id %}
+    {% include copy-to-clipboard.html element=faq_id function='copyPlanNewsToClipboard' %}
+    {% comment %}{% if entry.permalink %}<a href="{{entryHTML}}">Entry</a>{% endif %}{% endcomment %}
+    {% include share-bar.html pageurl=entryHTML modalID=faq_id %}
+  </div>
+</div>

@@ -3,21 +3,19 @@ progressSteps overrides all the other settings if present, for the calc layout
 calculator layout uses progress steps, others can call either way
 {% endcomment %}
 {% if include.progressSteps %}
-  {% assign stepNames = include.progressSteps | split: ',' %}
+{% assign stepNames = include.progressSteps %}
   {% assign curStep = 1 %}
   {% assign numSteps = stepNames | size %}
 {% else %}
   {% assign curStep = include.curStep | default: 1 %}
   {% assign numSteps = include.numSteps | default: 3 %}
-  {% assign stepNames = include.stepNames | default: "Step 1, Step 2, Step 3" | split: ',' %}
+  {% assign stepNames = include.stepNames | default: [Step 1, Step 2, Step 3] %}
 {% endif %}
 {% if numSteps < 1 %} {% assign numSteps = 1 %} {% endif %}
 {% if numSteps > 12 %} {% assign numSteps = 12 %} {% endif %}
 {% if curStep < 1 %} {% assign curStep = 1 %} {% endif %}
 {% if curStep > numSteps %} {% assign curStep = numSteps %} {% endif %}
 
-
-  <link rel="stylesheet" href="/assets/css/progressTracker.css">
   <!-- PROGRESS BAR START -->
   <div id="parent">
     <div id="step">

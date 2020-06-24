@@ -1,0 +1,41 @@
+// Defined in _variables
+
+.g-fund {
+  color: $color-g-fund;
+}
+.f-fund {
+  color: $color-f-fund;
+}
+.c-fund {
+  color: $color-c-fund;
+}
+.s-fund {
+  color: $color-s-fund;
+}
+.i-fund {
+  color: $color-i-fund;
+}
+.l-fund { color: $color-l-fund; }
+.l-income {
+  color: $color-l-fund;
+}
+.l-2020 {
+  color: $color-l-fund;
+}
+.l-2030 {
+  color: $color-l-fund;
+}
+.l-2040 {
+  color: $color-l-fund;
+}
+.l-2050 {
+  color: $color-l-fund;
+}
+.index-g { color: $color-index-g } // 90-day T-Bill Rate
+.index-f { color: $color-index-f } // Bloomberg Barclays U.S. Aggregate Bond Index}
+.index-c { color: $color-index-c } // S&P 500
+.index-s { color: $color-index-s } // Dow Jones
+.index-i { color: $color-index-i } // MSCI EAFE
+.index-l { color: $color-index-l } // MSCI EAFE
+
+.inflation-color { color: gray } // MSCI EAFE

@@ -1,0 +1,24 @@
+{% comment %}
+HTML block for one newsletter item.
+{% endcomment %}
+{% assign entry = include.entry %}
+{% assign url_suffix = entry.newsletter_url | strip | slice: -3, 3 | downcase %}
+{% assign entry_title = 'Thrift Savings Planner' %}
+{% if url_suffix == 'pdf' %}{% assign entry_title = 'Highlights' %}{% endif %}
+<div class="usa-grid">
+<div class="usa-width-one-whole" markdown="1">
+
+- ### {{ entry_title }}
+- {{ entry.newsletter_date }}
+{:.issue}
+
+#### In this issue:
+<ul class="in-this-issue">
+{% for item in entry.newsletter_articles %}
+<li>{{ item }}</li>
+{% endfor %}
+</ul>
+
+[Read more]({{ site.baseurl }}{{ entry.newsletter_url }})
+</div>
+</div>
