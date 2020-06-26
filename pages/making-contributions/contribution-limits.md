@@ -7,6 +7,7 @@ scripts:
 permalink: /making-contributions/contribution-limits/
 redirect_from:
   - /PlanParticipation/EligibilityAndContributions/contributionLimits.html
+  - /limits
 ---
 
 # Know your limits
