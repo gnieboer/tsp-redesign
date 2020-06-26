@@ -67,7 +67,7 @@ TSP bulletins provide guidance to TSP Agency and Service representatives for imp
         <!-- checkbox to see USV bulletins only -->
         <!-- DAV, when checked, only bulletins with "service: true" should be displayed -->
         <input id="usv-only" type="checkbox" name="usv-only" value="usv-only" onChange="usvOnlyGood();" onBlur="usvOnlyGood();"/>
-        <label for="usv-only">Show only Uniformed Services (U) bulletins</label>
+        <label for="usv-only">Show only Uniformed Services bulletins</label>
     </div><!-- END div.usa-width-one-whole -->
   </div><!-- END div.usa-grid-full -->
 </section>
@@ -84,11 +84,11 @@ TSP bulletins provide guidance to TSP Agency and Service representatives for imp
   </div>
 
 {% for topic in site.data.bulletins_topics %}
-  {% assign dropValue = topic | downcase | replace: " ", "-" %}
-  {% assign topicID = dropValue %}
+  {% assign dropValue = topic | downcase  %}
+  {% assign topicID = dropValue | replace: " ", "-" %}
   <div id="select-bulletins-{{ topicID }}"  class="select-bulletins-div hide" markdown="1">
   <!-- # All {{topicID}} Bulletins  -->
-  {% include bulletins/bulletin-list.html topic=topicID idx=forloop.index noAccordions=true %}
+  {% include bulletins/bulletin-list.html topic=dropValue idx=forloop.index noAccordions=true %}
   </div>
 {% endfor %}
 </section>
