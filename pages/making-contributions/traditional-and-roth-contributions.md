@@ -7,6 +7,8 @@ scripts:
 permalink: /making-contributions/traditional-and-roth-contributions/
 redirect_from:
   - /PlanParticipation/EligibilityAndContributions/TaxTreatment/
+  - /contributioncomparison
+  - /roth
 ---
 
 # Traditional and Roth contributions

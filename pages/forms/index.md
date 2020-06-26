@@ -31,6 +31,7 @@ redirect_from:
   - /forms/transfersAndRollovers.html
   - /forms/uniformedServicesForms.html
   - /forms/withdrawals.html
+  - /publications
 ---
 
 # Help me find forms and resources about {#forms}

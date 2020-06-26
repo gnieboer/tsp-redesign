@@ -23,6 +23,7 @@ redirect_from:
   - /InvestmentFunds/FundPerformance/returnSummary.html
   - /InvestmentFunds/FundPerformance/monthlyReturns.html
   - /InvestmentFunds/FundPerformance/annualReturns.html
+  - /returns
 ---
 {% assign chartName = 'rates-of-return' %}
 # Rates of return

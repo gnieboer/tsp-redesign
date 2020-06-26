@@ -5,6 +5,8 @@ sidenav: manage-your-plan
 styles:
 scripts:
 permalink: /account-basics/access-your-account/
+redirect_from:
+  - /troubleshooting
 ---
 
 # Access your account
@@ -27,7 +29,7 @@ Two-step authentication helps you protect your account against fraud by promptin
 
 The security of your account number (or user ID), password and ThriftLine PIN is critical to safeguarding the assets in your TSP account. You are responsible for any activity in your account transacted by someone who has access to these numbers. Remember to:
 + Validate your contact information in your My Account [profile settings]({{ site.profile_settings }}){:target="\_blank"}.
-+ Use strong and unique passwords. 
-+ Beware of phishing scams. 
-+ Close your browser after you log out. 
++ Use strong and unique passwords.
++ Beware of phishing scams.
++ Close your browser after you log out.
 + Keep your contact information up to date.
