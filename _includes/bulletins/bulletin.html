@@ -20,6 +20,9 @@
 {% endif %}
 </h1>
 
+<!-- DONALD style this -->
+<span class="see-all"><a href="{{ site.baseurl }}/agency-service-reps/bulletins/">See all</a></span>
+
 <h2>{{entry.title}}</h2>
 <section id="{{bulletin_name}}-div" class="bulletin" markdown="1">
 {{entry.content}}
@@ -48,13 +51,15 @@
 <!-- Chapter { page.bulletin_chapter comma separated pair } -->
 {% for chapter in entry.bulletin_chapter %}
 {% assign chapter_number = chapter | split: ',' | first %}
-{% assign chapter_topic = chapter | split: ',' | last | strip %}
+{% assign chapter_topic = chapter | split: ',' | last | strip | downcase | capitalize %}
+<!-- dav check chapter topic here and link if good topic -->
+{% if site.data.bulletins_topics contains chapter_topic %}
 {% assign parent_url = site.baseurl | append: "/agency-service-reps/bulletins/?topic=" | append: chapter_topic %}
 {% assign chapter_topic = "<a href='" | append: parent_url | append: "'>" | append: chapter_topic | append: "</a>" %}
-{% if forloop.first == false %} __ {% endif %}
-Chapter {{chapter_number | strip }}, {{chapter_topic | strip }}
+{% endif %}
+Chapter {{chapter_number | strip }}, {{chapter_topic | strip }}{% if forloop.last == false %}, {% endif %}
+
 {% endfor %}
-<!-- DAV, if possible the Chapter <a> link should function as the drop-down selector on the Bulletins landing page. It should load that page, with the topic link bulletins displayed. -->
 </div>
 </div>
 
@@ -62,6 +67,7 @@ Chapter {{chapter_number | strip }}, {{chapter_topic | strip }}
 <div class="usa-width-one-sixth">Supersedes:</div>
 
 <div class="usa-width-five-sixths" markdown="1">
+{% comment %}Code for supersedes with links
 {%- if entry.supersedes[0] == "N/A" -%}
 <p>N/A</p>
 {% else %}
@@ -72,6 +78,8 @@ Chapter {{chapter_number | strip }}, {{chapter_topic | strip }}
   <p><a href="/bulletins/{{supersede_name}}/">TSP Bulletin {{supersede_name}}</a>, {{supersede_title}}</p>
 {% endfor %}
 {% endif %}
+{% endcomment %}
+  <p>{{entry.supersedes}}</p>
 </div>
 
 </div>
@@ -82,10 +90,10 @@ Chapter {{chapter_number | strip }}, {{chapter_topic | strip }}
 <div class="usa-grid">
   <div class="usa-width-one-whole">
     <div class="flex post-and-share">
-      <span class="bulletin-number">Bulletin {{entry.bulletin_number}}</span>,
+      <span class="bulletin-number">Bulletin {{entry.bulletin_number}}</span>,&nbsp;
       <span id="{{bulletin_name}}-posted" class="post-date" >{{bulletin_posted | date: '%B %d, %Y'}}</span>
       <!-- Flex item #0, Name -->{% include social-media-share.html modalID=bulletin_name %}
-      <!-- Flex item #1, Date -->{% include copy-to-clipboard.html element=bulletin_name function='copyPlanNewsToClipboard' %}
+      {% comment %}<!-- Flex item #1, Date -->{% include copy-to-clipboard.html element=bulletin_name function='copyPlanNewsToClipboard' %}{% endcomment %}
       {% comment %}{% if entry.permalink %}<a href="{{entryHTML}}">Entry</a>{% endif %}{% endcomment %}
       <!-- Flex item #2, Share Modal -->{% include share-bar.html pageurl=entryHTML modalID=bulletin_name %}
     </div>
