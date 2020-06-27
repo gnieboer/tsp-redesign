@@ -10,6 +10,8 @@ sidenav: use-your-savings
 scripts:
 
 permalink: /loan-basics/your-loan-in-nonpay-status/
+redirect_from:
+  - /reamortization
 ---
 
 # Your loan in a nonpay status

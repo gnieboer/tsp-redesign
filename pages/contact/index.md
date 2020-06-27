@@ -218,7 +218,7 @@ Processing Unit
 P.O. Box 385200  
 Birmingham, AL 35238-5200  
 **Fax Number:**  
-1-844-985-1597 (toll free)  
+1-844-985-1597 (toll free)
 **or**  
 (205) 929-8445 (not toll free)  
 
