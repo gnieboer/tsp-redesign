@@ -25,7 +25,7 @@
       {% comment %}{% if entry.permalink %}<a href="{{entryHTML}}">Entry</a>{% endif %}{% endcomment %}
       <!-- Flex item #2, Share Modal -->{% include share-bar.html pageurl=entryHTML modalID=bulletin_name %}
       <!-- Flex item #4, read more -->
-      <button class="usa-button-secondary new-window" onclick="window.location.href = '{{ site.baseurl }}{{entryHTML}}';">read more</button>
+      <button class="usa-button-secondary read-more" onclick="window.location.href = '{{ site.baseurl }}{{entryHTML}}';">read more</button>
     </div>
 
   </div> <!-- END div.usa-width-one-whole -->
