@@ -103,7 +103,7 @@ urlList[161] = 'https://www.youtube.com/watch?v=jTA47cJhjFc'; // Onboarding
 urlList[162] = 'https://www.youtube.com/watch?v=xrH0l-HA58o'; // Once you're gone...
 urlList[163] = 'https://www.youtube.com/watch?v=5z-KXHZAF-U'; // Cost of taking a TSP loan
 urlList[164] = 'https://www.youtube.com/watch?v=XnlQZa7g_d4'; // How the TSP fits into FERS
-urlList[165] = '';
+urlList[165] = 'https://twitter.com/tsp4gov';
 urlList[166] = '';
 urlList[167] = '';
 urlList[168] = '';
@@ -136,11 +136,11 @@ urlList[210] = 'https://tspmeet.webex.com/tspmeet/onstage/g.php?MTID=eaad9b14719
 urlList[211] = '';
 urlList[212] = '';
 urlList[213] = '';
-urlList[214] = '';
+urlList[214] = 'https://www.federalregister.gov/documents/2010/06/17/2010-14583/employee-contribution-elections-and-contribution-allocations';
 urlList[215] = 'https://tspmeet.webex.com/tspmeet/onstage/g.php?MTID=ef7635f18bb211b41349458e11d61982f';
 urlList[216] = 'https://tspmeet.webex.com/tspmeet/onstage/g.php?MTID=ee1949a5583ee5f9793aa788b19de6869';
-urlList[217] = '';
-urlList[218] = '';
+urlList[217] = 'https://americasavesweek.org/';
+urlList[218] = 'https://militarysaves.org/';
 urlList[219] = 'https://tspmeet.webex.com/tspmeet/onstage/g.php?MTID=ef6443b38bea97475706d43468bbca201';
 urlList[220] = 'https://tspmeet.webex.com/tspmeet/onstage/g.php?MTID=ed09b4252a4c150583dd379b8dd970e5b';
 
