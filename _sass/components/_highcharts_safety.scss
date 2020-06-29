@@ -6,8 +6,29 @@
  * License: www.highcharts.com/license
  */
 
+
+.highcharts-color-g { fill: $color-g-fund; stroke: $color-g-fund; stroke-width: 1px; }
+.highcharts-color-f { fill: $color-f-fund; stroke: $color-f-fund; stroke-width: 1px; }
+.highcharts-color-c { fill: $color-c-fund; stroke: $color-c-fund; stroke-width: 1px; }
+.highcharts-color-s { fill: $color-s-fund; stroke: $color-s-fund; stroke-width: 1px; }
+.highcharts-color-i { fill: $color-i-fund; stroke: $color-i-fund; stroke-width: 1px; }
+.highcharts-color-ig { fill: $color-index-g; stroke: $color-index-g; stroke-width: 1px; }
+.highcharts-color-if { fill: $color-index-f; stroke: $color-index-f; stroke-width: 1px; }
+.highcharts-color-ic { fill: $color-index-c; stroke: $color-index-c; stroke-width: 1px; }
+.highcharts-color-is { fill: $color-index-s; stroke: $color-index-s; stroke-width: 1px; }
+.highcharts-color-ii { fill: $color-index-i; stroke: $color-index-i; stroke-width: 1px; }
+.highcharts-color-lf { fill: $color-l-fund; stroke: $color-l-fund; stroke-width: 1px; }
+.highcharts-color-il { fill: $color-index-l; stroke: $color-index-l; stroke-width: 1px; }
+.highcharts-color-black { fill: black; stroke: black; stroke-width: 1px; }
+.highcharts-color-white { fill: white; stroke: white; stroke-width: 1px; }
+.highcharts-color-red { fill: red; stroke: red; stroke-width: 1px; }
+.highcharts-color-blue { fill: blue; stroke: blue; stroke-width: 1px; }
+.highcharts-color-gray { fill: gray; stroke: gray; stroke-width: 1px; }
+
 // Colors for data series and points.
 $colors: #7cb5ec #434348 #90ed7d #f7a35c #8085e9 #f15c80 #e4d354 #2b908f #f45b5b #91e8e1 !default;
+//  $color-g-fund $color-f-fund $color-c-fund $color-s-fund $color-i-fund  $l-funds
+//  $color-usabi-fund $color-sp500-fund $color-djusc-fund $color-eafe-fund #000000 #ffffff ; //
 
 // Chart background, point stroke for markers and columns etc
 $background-color: #ffffff !default;
@@ -31,7 +52,7 @@ $highlight-color-20: #ccd6eb !default; // Ticks and axis line.
 $highlight-color-10: #e6ebf5 !default; // Pressed button, color axis min color.
 
 // Fonts
-$font-family: "Lucida Grande", "Lucida Sans Unicode", Arial, Helvetica, sans-serif !default;
+$font-family: $sans !default;
 $title-font-size: 1.5em !default;
 $subtitle-font-size: 1em !default;
 $legend-font-size: 1em !default;
@@ -90,7 +111,6 @@ $indicator-negative-line: #F21313;
     -webkit-tap-highlight-color: rgba(0,0,0,0);
     font-family: $font-family;
     font-size: 12px;
-    user-select: none;
 }
 .highcharts-root {
     display: block;
@@ -133,7 +153,7 @@ $indicator-negative-line: #F21313;
 /* Titles */
 .highcharts-title {
     fill: $neutral-color-80;
-    font-size: $title-font-size;
+    font-size: 2.5rem;
 }
 .highcharts-subtitle {
     fill: $neutral-color-60;
@@ -215,9 +235,6 @@ $indicator-negative-line: #F21313;
     fill: $tooltip-background;
     fill-opacity: 0.85;
 }
-div.highcharts-tooltip {
-    filter: none;
-}
 
 .highcharts-selection-marker {
     fill: $highlight-color-80;
@@ -230,33 +247,16 @@ div.highcharts-tooltip {
     stroke-linecap: round;
     stroke-linejoin: round;
 }
-
-.highcharts-empty-series {
-    stroke-width: 1px;
-    fill: none;
-    stroke: $neutral-color-20;
-}
-
 .highcharts-state-hover .highcharts-graph {
     stroke-width: 3;
 }
-
-.highcharts-point-inactive {
-    opacity: 0.2;
-    transition: opacity 50ms; /* quick in */
-}
-
-.highcharts-series-inactive {
-    opacity: 0.2;
-    transition: opacity 50ms; /* quick in */
-}
-
 .highcharts-state-hover path {
-    transition: stroke-width 50ms; /* quick in */
+    transition: stroke-width 50; /* quick in */
 }
 .highcharts-state-normal path {
     transition: stroke-width 250ms; /* slow out */
 }
+
 /* Legend hover affects points and series */
 g.highcharts-series,
 .highcharts-point,
@@ -290,10 +290,6 @@ g.highcharts-series,
     stroke-width: 1px;
     stroke: $background-color;
 }
-.highcharts-a11y-markers-hidden .highcharts-point:not(.highcharts-point-hover):not(.highcharts-a11y-marker-visible),
-.highcharts-a11y-marker-hidden {
-    opacity: 0;
-}
 .highcharts-point {
     stroke-width: 1px;
 }
@@ -314,9 +310,6 @@ g.highcharts-series,
 }
 .highcharts-data-label-connector {
     fill: none;
-}
-.highcharts-data-label-hidden {
-    pointer-events: none;
 }
 .highcharts-halo {
     fill-opacity: 0.25;
@@ -397,28 +390,7 @@ g.highcharts-series,
     fill-opacity: 0.75;
 }
 
-.highcharts-vector-series .highcharts-point {
-    fill: none;
-    stroke-width: 2px;
-}
 
-.highcharts-windbarb-series .highcharts-point {
-    fill: none;
-    stroke-width: 2px;
- }
-
-.highcharts-lollipop-stem {
-	stroke: $neutral-color-100;
-}
-
-.highcharts-focus-border {
-    fill: none;
-    stroke-width: 2px;
-}
-
-.highcharts-legend-item-hidden .highcharts-focus-border {
-    fill: none !important;
-}
 
 /* Legend */
 .highcharts-legend-box {
@@ -838,4 +810,3 @@ text.highcharts-drilldown-data-label,
 .highcharts-grid-axis .highcharts-axis-line {
     stroke-width: 1px;
 }
-
