@@ -28,7 +28,7 @@ Ensure that your TSP contributions resume and are being deducted from your pay. 
 
 Decide whether you want to make up contributions to your civilian TSP account for the period of time you missed as a result of your military service (including catch-up contributions if you are age 50 or older).
 Submit a written request to your agency within 60 days of the date of your reemployment or restoration to federal civilian service to make up your eligible missed TSP contributions. Contact your agency’s human resources office to request information on their procedures for processing USERRA claims.
-If you’re receiving tax-free pay, such as combat zone or hazardous duty pay, while on TDY, you may consider adjusting your contributions upon return to your regular pay. When you contribute that pay to Roth TSP (after-tax), the earnings from your pay will also be tax-exempt when you withdraw them. However, you will still have to meet the current IRC maximum elective deferral limits. 
+If you’re receiving tax-free pay, such as combat zone or hazardous duty pay, while on TDY, you may consider adjusting your contributions upon return to your regular pay. When you contribute that pay to Roth TSP (after-tax), the qualified earnings from your pay will also be tax-exempt when you withdraw them. However, you will still have to meet the current IRC maximum elective deferral limits. 
  
 ## Claiming your retroactive contributions*
  

@@ -70,6 +70,7 @@
 {% if page.country_composition %}
       {% assign sortable = '' %}
       {% if page.country_composition.size > 1 %}{% assign sortable = 'sortableColumn' %}{% endif %}
+      <section class="fund-tab-composition">
       <div class="usa-grid-full">
         <div class="usa-width-one-whole">
           <h3>Portfolio Weight
@@ -113,6 +114,7 @@
           </ol>
         </div>
       </div>
+      </section>
 {% endif %}
 
 {% endif %}

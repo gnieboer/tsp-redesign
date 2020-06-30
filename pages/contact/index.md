@@ -2,6 +2,8 @@
 layout: page
 title: Contact
 permalink: /contact/
+redirect_from:
+  - /ParticipantSupport/Content/contact/
 ---
 # We're here to help.
 
@@ -216,9 +218,9 @@ Processing Unit
 P.O. Box 385200  
 Birmingham, AL 35238-5200  
 **Fax Number:**  
-1-866-458-1452 (toll free)  
+1-844-985-1597 (toll free)
 **or**  
-(205) 439-4501 (not toll free)  
+(205) 929-8445 (not toll free)  
 
 **Overnight Delivery**  
 IBS - TSP Processing Unit  

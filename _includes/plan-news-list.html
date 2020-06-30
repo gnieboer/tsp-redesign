@@ -36,8 +36,8 @@
 {% endfor %}
 {% if cnt >= startTopAccordion %}
 </div>
-<div class="see-more">
-  <span onclick="showMorePlans('plans', 'a');">See more</span><i id="more-plans-a" class="far fa-angle-up rotate"></i>
+<div class="see-more" onclick="showMorePlans('plans', 'a');">
+  <span id="more-plans-a">See more</span><i id="arrow" class="far fa-angle-up rotate"></i>
 </div>
 {% endif %}
 </section>
@@ -83,7 +83,7 @@
 </div>
 <section id="plan-news-search-results" class="plan-news hide" markdown="1">
 <!-- DONALD style this -->
-<span class="see-all"><a href="/news-and-resources/plan-news/">See all</a></span>
+<span class="see-all"><a href="{{ site.baseurl }}/news-and-resources/plan-news/">See all</a></span>
 
 {% for item in topitems %}
   {% include plan-news-item.html entry=item showHeader=0 addBlockName=1 %}

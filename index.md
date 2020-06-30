@@ -7,7 +7,7 @@ scripts:
   - /assets/js/jquery.min.js
   - /assets/js/bootstrap.min.js
   - /assets/js/sessionstorage-modal.js
-
+  - /assets/js/form-modals.js
 alert:
   show-alert: false
   icon:
@@ -300,7 +300,7 @@ A fund containing international stocks from more than 20 developed countries.
 
 Being confident about your retirement plans makes it easier to deal with uncertain times in the market.
 
-[Learn more]({{ site.baseurl }}/how-to-invest/before-you-invest/)
+[Learn more]({{ site.baseurl }}/how-to-invest/stick-to-your-plan/)
 
 <!-- maybe link to BYI tool or Stick to Your Plan language that I just discovered doesn't, but should and will eventually exist. -->
 

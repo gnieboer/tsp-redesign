@@ -33,4 +33,4 @@ If your signature or your spouse’s signature is required or you’re starting 
 
 Be sure to carefully read the TSP tax notice, [Tax Information for TSP Participants Receiving Installment Payments]({{ site.baseurl }}/publications/tsp-780.pdf)." It outlines the rules for changing your monthly payments and details the tax implications associated with each monthly payment option.
 
-If you're currently receiving installment paymens and want to choose a different amount, use our [TSP Installment Payment Calculator]({{ site.baseurl }}/calculators/tsp-installment-payment-calculator/) to estimate how many payments you will receive and how long they will last.
+If you're currently receiving installment payments and want to choose a different amount, use our [TSP Installment Payment Calculator]({{ site.baseurl }}/calculators/tsp-installment-payment-calculator/) to estimate how many payments you will receive and how long they will last.

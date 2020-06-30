@@ -1,7 +1,8 @@
-button,
-.usa-button {
-  border-radius: 0;
-
+button {
+  &.usa-button,
+  &.usa-button-big,
+  &.usa-button-secondary {
+    border-radius: 0;
     &.print {
       &:after {
         font-family: $font-awesome;

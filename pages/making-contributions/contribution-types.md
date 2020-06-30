@@ -5,6 +5,8 @@ styles:
 sidenav: manage-your-plan
 scripts:
 permalink: /making-contributions/contribution-types/
+redirect_from:
+  - /contributions
 ---
 
 # Contribution types
@@ -15,28 +17,24 @@ Each pay period, your agency or service will deduct your contribution from your 
 
 Your agency or service will continue to deduct your contribution until you do the following:
 
-<div class="usa-grid-full contribution-type">
-<div class="usa-width-one-half" markdown="1">
-<img src="{{ site.baseurl }}/assets/img/icons/plus-circle-green.svg" alt="">
-Make a new election  
-changing the amount
-</div>
-<div class="usa-width-one-half" markdown="1">
-<img src="{{ site.baseurl }}/assets/img/icons/x-circle-red-fill.svg" alt="">
-Elect to stop  
-your contributions
-</div>
-</div>
 
 <div class="usa-grid-full contribution-type">
 <div class="usa-width-one-whole" markdown="1">
-<img src="{{ site.baseurl }}/assets/img/icons/arrow-up-circle.svg" alt="">
-Reach the IRS  
-contribution limit
+  <ul class="flex">
+  <li>
+  <img src="{{ site.baseurl }}/assets/img/icons/plus-circle-green.svg" alt="">
+  <span>Make a new election changing the amount</span></li>
+  <li>
+  <img src="{{ site.baseurl }}/assets/img/icons/x-circle-red-fill.svg" alt="">
+  <span>Elect to stop your contributions</span></li>
+  <li>
+  <img src="{{ site.baseurl }}/assets/img/icons/arrow-up-circle.svg" alt="">
+  <span>Reach the IRS contribution limit</span></li>
+  </ul>
 </div>
 </div>
 
-For more information, visit [Contribution Limits]({{ site.baseurl }}/making-contributions/contribution-limits/).
+For more information, visit [Contribution limits]({{ site.baseurl }}/making-contributions/contribution-limits/).
 
 ## Agency/Service Automatic (1%) Contributions
 
@@ -75,6 +73,8 @@ As a FERS or BRS participant, you receive matching contributions on the first 5%
 
 The first 3% of pay that you contribute will be matched dollar-for-dollar; the next 2% will be matched at 50 cents on the dollar. Contributions above 5% of your pay will not be matched. If you stop making regular employee contributions, your matching contributions will also stop.
 
+Further, your Agency/Service Matching Contributions are based on the total amount of money (traditional and Roth) that you contribute each pay period. All agency/service contributions are deposited into your traditional balance.
+
 ## Catch-up Contributions
 Starting in the year you turn 50, you may be eligible to make catch-up
 contributions to your TSP account in addition to your regular employee
@@ -89,8 +89,7 @@ contribution limit. To see the most current limits, visit [Contribution Limits](
 - You must make a new election each calendar year—they do not restart
 automatically.
 
-**Uniformed services members can use tax-exempt pay to make catch-up
-contributions, but not incentive pay, special pay, or bonus pay.**
+**If you are a uniformed services member and enter a combat zone, your catch-up contributions must be Roth. (The TSP cannot accept traditional tax-exempt contributions toward the catch-up limit.) You also cannot make catch-up contributions from incentive pay, special pay, or bonus pay.**
 
 To make a catch-up contribution election, use your agency’s or service’s payroll website
 (e.g., [Employee Express]({{ site.baseurl }}/exit/?idx=7){:rel="nofollow"}, EBIS, [LiteBlue]({{ site.baseurl }}/exit/?idx=8){:rel="nofollow"}, [myPay]({{ site.baseurl }}/exit/?idx=6){:rel="nofollow"}, or [NFC EPP]({{ site.baseurl }}/exit/?idx=9){:rel="nofollow"}) or complete the Catch-Up Contribution Election, [_Form TSP-1-C_]({{ site.baseurl }}/forms/tsp-1-c.pdf) (or [_TSP-U-1-C_]({{ site.baseurl }}/forms/tsp-u-1-c.pdf)for uniformed services) and submit it to your payroll office. Or call the ThriftLine
