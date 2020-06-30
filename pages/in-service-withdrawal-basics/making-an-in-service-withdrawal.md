@@ -1,15 +1,12 @@
 ---
 layout: page
-
 title: Making an in-service withdrawal
-
 styles:
-
 sidenav: use-your-savings
-
 scripts:
-
 permalink: /in-service-withdrawal-basics/making-an-in-service-withdrawal/
+redirect_from:
+  - /apply
 ---
 
 # Making an in-service withdrawal

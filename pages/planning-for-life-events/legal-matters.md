@@ -5,6 +5,8 @@ sidenav: manage-life-changes
 styles:
 scripts:
 permalink: /planning-for-life-events/legal-matters/
+redirect_from:
+  - /poa
 ---
 
 # Legal matters

@@ -10,6 +10,8 @@ sidenav: use-your-savings
 scripts:
 
 permalink: /living-in-retirement/
+redirect_from:
+  - /withdrawalnow
 ---
 
 # Living in retirement

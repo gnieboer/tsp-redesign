@@ -1,13 +1,9 @@
-{{ site.baseurl }}/exit/?idx=56---
+---
 layout: page
 title: System of Records Notices (SORNs)
-
 sidenav: privacy
-
 styles:
-
 scripts:
-
 permalink: /how-we-protect-your-data/system-of-records-notices/
 ---
 # System of Records Notices (SORNs)

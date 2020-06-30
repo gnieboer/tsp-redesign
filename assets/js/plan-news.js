@@ -12,12 +12,17 @@ function show(prefix, suffix) {
 function showMorePlans(type, formNum) {
   var controlDiv = 'more-'+type+'-'+formNum;
   var contentDiv = 'more-'+type+'-content-'+formNum;
+  var arrowIcon = 'arrow';
   if ($('#'+controlDiv).hasClass('down')) {
     $('#'+contentDiv).addClass('hide');
     $('#'+controlDiv).removeClass('down');
+    $('#'+controlDiv).html("See more");
+    $('#'+arrowIcon).removeClass('down');
   } else {
     $('#'+contentDiv).removeClass('hide');
     $('#'+controlDiv).addClass('down');
+    $('#'+controlDiv).html("See fewer");
+    $('#'+arrowIcon).addClass('down');
   }
 }
 
@@ -33,8 +38,10 @@ function planNewsCallback(searchName, result) {
   // console.log(searchName, results);
   var items = [];
   for (var i = 0; i < hits; i++) {
-    var str = results[i].url.split(/\//).pop().replace(/.html$/, '');
+    // var str = results[i].url.split(/\//).pop().replace(/.html$/, '');
+    var str = results[i].url.slice(0, -1).split(/\//).pop();
     // console.log(str)
+    // console.log(results[i].url, str);
     items.push(str);
   }
   // console.log(items.length);
@@ -71,7 +78,7 @@ function showMatches(searchName, items) {
 
   // show winners
   items.forEach(function (item, index) {
-    // console.log('processing ', item, index);
+    // console.log('processing ', item, index, '#'+item+'-1-block');
     // $('#'+item+'-block').show();
     $('#'+item+'-1-block').removeClass('hide');
   });

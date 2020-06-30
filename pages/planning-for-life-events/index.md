@@ -7,6 +7,7 @@ scripts:
 permalink: /planning-for-life-events/
 redirect_from:
   - /lifeevents/
+  - /personalevents
 ---
 # Planning for life events
 

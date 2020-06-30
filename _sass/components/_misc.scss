@@ -32,6 +32,11 @@ html {
 .hide {
   display: none;
 }
+.nav-header { // Used in COVID-19 section
+  font-size: 2.2rem;
+  margin-bottom: .6rem;
+  font-family: $font-sans;
+}
 @media (min-width: #{$medium-screen}) {
   .usa-hero-callout {
     max-width: 36rem;

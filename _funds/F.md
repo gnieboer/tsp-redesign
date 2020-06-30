@@ -5,6 +5,7 @@ title: F fund
 sidenav: fund-options
 redirect_from:
   - /InvestmentFunds/FundOptions/fundPerformance_F.html
+  - /ffund
 Fund_type: Index
 Fund_name: F Fund
 Fund_order: 2
