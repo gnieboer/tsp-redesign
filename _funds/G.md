@@ -3,6 +3,9 @@ permalink: /funds-individual/g-fund/
 layout: fund-details
 title: G fund
 sidenav: fund-options
+redirect_from:
+  - /InvestmentFunds/FundOptions/fundPerformance_G.html
+  - /gfund
 Fund_type: Index
 Fund_name: G Fund
 Fund_order: 1

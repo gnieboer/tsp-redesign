@@ -8,7 +8,7 @@ permalink: /privacy-plan/protecting-pii/
 ---
 # Overview of Handling and Protecting Personally Identifiable Information (PII)
 
-Handling and safeguarding PII maintained and used by FRTIB personnel is necessary to ensure the trust of TSP participants and beneficiaries. Privacy Act requests involving participants who request TSP account-specific information are administered by a division within FRTIB’s Office of Participant Services. In an effort to protect PII, FRTIB’s Information Security Management Division has deployed a data loss prevention (DLP) tool to enhance the security of FRTIB’s most critical asset—PII. FRTIB’s DLP enhances privacy protections to PII and helps to reduce breaches.
+Handling and safeguarding PII maintained and used by FRTIB personnel is necessary to ensure the trust of TSP participants and beneficiaries. Privacy Act requests involving participants who request TSP account-specific information are administered by a division within FRTIB’s Office of Participant Services. In an effort to protect PII, FRTIB’s Information Technology Security Management Division has deployed a data loss prevention (DLP) tool to enhance the security of FRTIB’s most critical asset—PII. FRTIB’s DLP enhances privacy protections to PII and helps to reduce breaches. The Privacy Division has also published a PII Handling Policy which details how to identify and safeguard PII.
 
 ## Recognizing PII
 
@@ -34,13 +34,13 @@ The following types of PII are considered sensitive when associated with an indi
 
 ## Minimizing the Collection of PII
 
-FRTIB complies with the Privacy Act’s requirement to limit the collection of PII from individuals. FRTIB maintains only relevant and necessary information about individuals, in accordance with a legally authorized purpose. FRTIB also complies with the Office of Management and Budget (OMB) Circular A-130, Managing Information as a Strategic Resource, which directs agencies to eliminate unnecessary collections, maintenance, and uses of Social Security numbers (SSN).
+FRTIB complies with the Privacy Act’s requirement to limit the collection of PII from individuals. FRTIB maintains only relevant and necessary information about individuals, in accordance with a legally authorized purpose. FRTIB also complies with the Office of Management and Budget (OMB) Circular A-130, _Managing Information as a Strategic Resource_, which directs agencies to eliminate unnecessary collections, maintenance, and uses of Social Security numbers (SSN).
 
 FRTIB’s Privacy Division maintains an inventory of PII holdings and uses the PTA, PIA, and SORN processes to identify methods to further reduce the data the Agency collects and to ensure, to the maximum extent practicable, that such holdings are accurate, relevant, timely, and complete. Moreover, FRTIB’s SAOP ensures FRTIB minimizes the collection and use of participant information contained on TSP forms and correspondence.
 
 ## Handling and Transmitting PII
 
-FRTIB requires strict handling guidelines for employees and contractors who handle PII due to the nature of the data and the increased risk to an individual if data were to be compromised. Methods for handling PII include, but are not limited to the following, and must be done in accordance with FRTIB’s approved records schedules:
+FRTIB requires strict handling guidelines for employees and contractors who handle PII due to the nature of the data and the increased risk to an individual if data were to be compromised. Methods for properly handling PII include, but are not limited to the following, and must be done in accordance with FRTIB’s approved records schedules:
 
 - Store sensitive PII on secure FRTIB network, systems, and FRTIB-approved media;
 - Secure sensitive paper PII data by locking it in desks and filing cabinets;
@@ -54,7 +54,7 @@ Sensitive PII may be distributed or released to other individuals only if: (1) i
 
 Other ways for communicating, sending, and receiving sensitive PII include:
 
-- Facsimile – When faxing information, FRTIB personnel should include an advisory statement about the contents on the cover sheet and should notify the recipient before and after transmission.  
-- Mail – FRTIB personnel should physically secure PII when in transit by sealing it in an opaque envelope or container, and mail it using First Class or Priority Mail, or a comparable commercial service. FRTIB personnel should not mail, or send by courier sensitive PII on CDs, DVDs, hard drives, flash drives, USB drives, floppy disks, or other removable media unless the data is encrypted.
-- Hard Copy – FRTIB personnel should also hand-deliver documents containing sensitive PII whenever needed. FRTIB personnel should not leave sensitive PII unattended on printers, facsimile machines, copiers, or in other common places.
+- Facsimile &#8212; When faxing information, FRTIB personnel should include an advisory statement about the contents on the cover sheet and should notify the recipient before and after transmission.  
+- Mail &#8212; FRTIB personnel should physically secure PII when in transit by sealing it in an opaque envelope or container, and mail it using First Class or Priority Mail, or a comparable commercial service. FRTIB personnel should not mail, or send by courier sensitive PII on CDs, DVDs, hard drives, flash drives, USB drives, floppy disks, or other removable media unless the data is encrypted.
+- Hard Copy &#8212; FRTIB personnel should also hand-deliver documents containing sensitive PII whenever needed. FRTIB personnel should not leave sensitive PII unattended on printers, facsimile machines, copiers, or in other common places.
 <!-- CONTENT END -->

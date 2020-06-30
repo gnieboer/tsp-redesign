@@ -77,6 +77,23 @@ secondary:
     target: _blank
 
 # SIDENAV MENUS
+agency-service-reps:
+  - text: Agency and Service Rep resources
+    href: /agency-service-reps/
+    subnav:
+      - text: Bulletins
+        href: /agency-service-reps/bulletins/
+      - text: Announcements
+        href: /agency-service-reps/announcements/
+      - text: Training
+        href: /agency-service-reps/training/
+      - text: Media gallery
+        href: /agency-service-reps/media-gallery/
+      - text: TSP Data Submission
+        href: /agency-service-reps/tsp-data-submission/
+      - text: Historical information
+        href: /agency-service-reps/historical-information/
+
 calculators:
   - text: Calculators
     href: /calculators/
@@ -152,6 +169,15 @@ news-and-resources:
     href: /forms/
   - text: Calculators
     href: /calculators/
+  - text: COVID-19
+    href: /covid-19/
+    subnav:
+      - text: RMD changes
+        href: /covid-19/rmd-changes/
+      - text: Withdrawals
+        href: /covid-19/withdrawals/
+      - text: Loans
+        href: /covid-19/loans/
 
 fund-options:
   - text: How to invest
@@ -161,8 +187,10 @@ fund-options:
         href: /how-to-invest/investor-types/
       - text: Before you invest
         href: /how-to-invest/before-you-invest/
-      - text: Changing your investments
+      - text: Change your investments
         href: /how-to-invest/change-your-investments/
+      - text: Stick to your plan
+        href: /how-to-invest/stick-to-your-plan/
   - text: Lifecycle funds
     href: /funds-lifecycle/
     subnav:
@@ -347,17 +375,16 @@ privacy:
 
 # MISCELLANEOUS
 footer:
-  - text: Privacy
-    href: /privacy/
-  - text: Agency and Service Rep Resources
-    href: "https://www.tsp.gov/representative/index.html"
-  - text: News and resources
-    href: /news-and-resources/
   - text: Calculators
     href: /calculators/
+  - text: News and resources
+    href: /news-and-resources/
+  - text: Agency and Service Rep Resources
+    href: /agency-service-reps/
+  - text: About us
+    href: /about-us/
+  - text: Privacy
+    href: /privacy/
   - text: FOIA
     href: "https://www.frtib.gov/ReadingRoom/index.html"
-    target: _blank
-  - text: FRTIB
-    href: "https://www.frtib.gov/"
     target: _blank

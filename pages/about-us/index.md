@@ -2,6 +2,8 @@
 layout: page
 title: About us
 permalink: /about-us/
+redirect_from:
+  - /PlanParticipation/AboutTheTSP/
 ---
 
 # About us

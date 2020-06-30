@@ -1,6 +1,8 @@
 ---
 title: How do I designate or change my beneficiaries?
 permalink: /faq/beneficiaries
+redirect_from:
+  - /LifeEvents/personal/spouse/birth.html
 ---
 
 In the event of your death, your TSP account would be distributed this way:

@@ -11,11 +11,11 @@ permalink: /living-in-retirement/making-a-withdrawal/
 
 ## Requesting a withdrawal
 
-Before you request a withdrawal from your TSP savings, be sure to read the booklet [Withdrawing Your TSP Account After Leaving Federal Service]({{ site.baseurl }}/publications/tspbk02.pdf).
+Before you request a withdrawal from your TSP savings, be sure to read the booklet [Withdrawing Your TSP Account After Leaving Federal Service](https://www.tsp.gov/PDF/formspubs/tspbk02.pdf).
 
-To request a partial withdrawal from your TSP account, log into [My Account: Withdrawals]({{ site.myaccount }}) and click “Partial Withdrawal.”
+To request a withdrawal, log into My Account and click on the “Withdrawals and Changes to Installment Payments” link on the menu. From there you’ll have access to an online tool with which to start your withdrawal.
 
-To request a full withdrawal of your TSP savings, log into [My Account: Withdrawals]({{ site.myaccount }}) and click “Full Withdrawal.”
+Depending on your circumstances and the type of withdrawal you request, you may be able to complete your transaction entirely online. If your signature or your spouse’s signature is required, you’re purchasing an annuity, or you’re transferring any part of your withdrawal, you won’t be able to complete the process entirely online. You’ll be given a summary of your request, which you—and your spouse or financial institution if necessary—will need to sign, have notarized, and then mail or fax to us.
 
 We cannot process your withdrawal request unless your agency or service notifies us that you've separated from service and provides the date of your separation. It usually takes up to 30 days after the actual date of your separation for us to receive this information.
 

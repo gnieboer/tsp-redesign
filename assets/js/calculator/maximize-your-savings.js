@@ -87,10 +87,19 @@ function calculate(doCalc) {
   }
 
   var milestones = [62, 67, 72];
+  var i;
+  // IE doesn't like let of stmt
+  /*
   for (let i of milestones) {
     $('#balance-1-'+i).html(CurrencyFormatted(balance5[i]));
     $('#balance-2-'+i).html(CurrencyFormatted(balance8[i]));
     $('#balance-3-'+i).html(CurrencyFormatted(balance10[i]));
+  }
+  */
+  for (i = 0; i < milestones.length; i++) {
+    $('#balance-1-'+milestones[i]).html(CurrencyFormatted(balance5[milestones[i]]));
+    $('#balance-2-'+milestones[i]).html(CurrencyFormatted(balance8[milestones[i]]));
+    $('#balance-3-'+milestones[i]).html(CurrencyFormatted(balance10[milestones[i]]));
   }
 }
 

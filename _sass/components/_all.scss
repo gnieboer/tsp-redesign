@@ -6,6 +6,8 @@
 @import 'exit';
 @import 'header';
 @import 'banner';
+@import 'announcements';
+@import 'bulletins';
 @import 'typography';
 @import 'form-elements';
 @import 'feedback';
@@ -57,12 +59,14 @@
 @import 'share';
 @import 'modals';
 @import 'progress-bar';
+@import 'media-gallery';
 // @import 'share-buttons';
 @import 'youtube';
 @import 'search';
 @import 'how-much-should-i-save';
 @import 'how-much-will-my-savings-grow';
 @import 'annuity-factors';
+@import 'covid';
 // @import 'font-awesome/brands.scss'
 @import 'highcharts';
 @import 'highcharts_local'

@@ -28,17 +28,17 @@ Check with your personnel or benefits office.
 
 ## Participant eligibility
 
-Most employees of the United States government are eligible to participate in the Thrift Savings Plan (TSP). **You are eligible if you’re:**
+Most employees of the United States government are eligible to participate in the TSP. **You are eligible if you’re any of the following:**
 
-- A FERS employee (generally if you were hired on or after January 1, 1984), or
-- A CSRS employee (generally if you were hired before January 1, 1984 and did not convert to FERS), or
-- A member of the uniformed services (active duty or Ready Reserve), or
+- A FERS employee (generally if you were hired on or after January 1, 1984)
+- A CSRS employee (generally if you were hired before January 1, 1984 and did not convert to FERS)
+- A member of the uniformed services (active duty or Ready Reserve)
 - A civilian in certain other categories of government service
 
-In addition to being covered by an eligible retirement system, you must also be:
+In addition to being covered by an eligible retirement system, you must also be
 
 - actively employed by the federal government as a civilian employee or as a member of the uniformed services,
-- in a pay status, in order to contribute, and
+- in a pay status in order to contribute, and
 - working full- or part-time.
 
 ## Establishing your TSP account
@@ -116,7 +116,7 @@ If you’re a FERS or CSRS employee rehired after July 31, 2010, your agency has
     </button>
 <div id="a6" class="usa-accordion-content" markdown="1">
 
-If you were already in the BRS before you left the service—whether as a new member of the uniformed services or an opt-in—you will be automatically reenrolled when you reenter. If you were not in the BRS but had fewer than 12 years of service when you left, your service may give you the opportunity to opt in when you reenter. In either case, assuming you had served 60 days before leaving, your enrollment will begin with the first pay period after reentering. If neither situation applies to you, you can still start a TSP account or resume contributing to your existing account as a non-BRS member. Follow the instructions in [Start, change, or stop contributions]({{ site.baseurl }}/making-contributions/start-change-stop-contributions/).
+If you were already in the Blended Retirement System (BRS) before you left the service—whether as a new member of the uniformed services or an opt-in—you will be automatically reenrolled when you reenter. If you were not in the BRS but had fewer than 12 years of service when you left, your service may give you the opportunity to opt in when you reenter. In either case, assuming you had served 60 days before leaving, your enrollment will begin with the first pay period after reentering. If neither situation applies to you, you can still start a TSP account or resume contributing to your existing account as a non-BRS member. Follow the instructions in [Start, change, or stop contributions]({{ site.baseurl }}/making-contributions/start-change-stop-contributions/).
 
 </div>
   </li>

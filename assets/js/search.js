@@ -88,6 +88,7 @@ function startSearch(page) {
   var searchSite = 'beta.tsp';
   if (getGroup() == 'forms') { searchSite = 'beta.tsp.forms'; }
   if (getGroup() == 'plan-news') { searchSite = 'beta.tsp.plan-news'; }
+  if (getGroup() == 'bulletins') { searchSite = 'beta.tsp.bulletins'; }
   clearResultDivs();
   var qs = $('#search-terms').val();
   inlineUSAsearch('all', 'search-status', searchSite, siteName, qs, getAll, offset, searchCallback);
@@ -128,6 +129,12 @@ function showResultDivs(set) {
   if (set == 'pagination') {
     $('#pagination').removeClass('hide');
   }
+}
+function cleanSnippet(snippet) {
+  if (snippet == null) { return; }
+  var str = snippet.replace(/[\ue000]/g, '');
+  str = str.replace(/[\ue001]/g, '');
+  return str;
 }
 function formatSnippet(snippet) {
   if (snippet == null) { return; }
@@ -251,4 +258,9 @@ function searchCallback(searchName, returnedJSON, offset) {
   showResultDivs('pagination');
   if (typeof addFormModals == 'function') { addFormModals(); }
   return false;
+}
+
+function searchPageLoad() {
+  var refer = location.pathname;
+  if (refer.slice(0, 14) == '/PDF/formspubs') { window.location.href = '/forms'; }
 }

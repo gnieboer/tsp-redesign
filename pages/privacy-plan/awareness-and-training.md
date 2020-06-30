@@ -8,7 +8,7 @@ permalink: /privacy-plan/awareness-and-training/
 ---
 # Awareness and Training
 
-Handling and safeguarding PII maintained and used by FRTIB personnel is necessary to ensure the trust of TSP participants and beneficiaries. Privacy Act requests involving participants who request TSP account-specific information are administered by a division within FRTIB’s Office of Participant Services. In an effort to protect PII, FRTIB’s Information Security Management Division has deployed a data loss prevention (DLP) tool to enhance the security of FRTIB’s most critical asset—PII. FRTIB’s DLP enhances privacy protections to PII and helps to reduce breaches.
+FRTIB requires all employees and contractors with access to PII to complete privacy training when first beginning work with the Agency and annually thereafter. FRTIB conducts its annual training through the Agency’s Enterprise Learning Management System (ELMS). The training provides an overview of important statutory, regulatory, and other federal privacy requirements, including the Privacy Act and the E-Government Act of 2002.  The Privacy Division has published Privacy Training Procedures detailing privacy training requirements along with relevant roles and responsibilities.  
 
 ## New Employee Orientation Training
 

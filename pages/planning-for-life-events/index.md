@@ -1,15 +1,13 @@
 ---
 layout: page
-
 title: Planning for life events
-
 sidenav: manage-life-changes
-
 styles:
-
 scripts:
-
 permalink: /planning-for-life-events/
+redirect_from:
+  - /lifeevents/
+  - /personalevents
 ---
 # Planning for life events
 

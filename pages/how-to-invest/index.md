@@ -5,6 +5,8 @@ styles:
 sidenav: fund-options
 scripts:
 permalink: /how-to-invest/
+redirect_from:
+  - /InvestmentFunds/
 ---
 
 # How to invest

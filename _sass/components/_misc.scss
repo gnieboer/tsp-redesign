@@ -23,13 +23,20 @@ html {
 .nobr {
   white-space: nowrap;
 }
-
+.underline {
+  text-decoration: underline;
+}
 .blue-medium {
   background-color: #116C97;
 }
 
 .hide {
   display: none;
+}
+.nav-header { // Used in COVID-19 section
+  font-size: 2.2rem;
+  margin-bottom: .6rem;
+  font-family: $font-sans;
 }
 @media (min-width: #{$medium-screen}) {
   .usa-hero-callout {

@@ -11,15 +11,7 @@
   {% assign divBlockID = "id='" | append: form.form_url | replace: '.', '-' | append: "-block'" %}
   {% assign divBlockClass = "div-block-class div-form-class" %}
 {% endif %}
-{% assign formURL = '/forms/' | append: form.form_url %}
-{% assign prefixURL = form.form_url | slice: 0 %}
-{% if prefixURL == '/' %}
-{% assign formURL = form.form_url %}
-{% endif %}
-{% assign prefixURL = form.form_url | slice: 0, 4 %}
-{% if prefixURL == 'http' %}
-{% assign formURL = form.form_url %}
-{% endif %}
+{% include components/testURL.html curPath='/forms/' rawURL=form.form_url %}{% assign formURL= absURL %}
 
 <div class="usa-width-one-half {{divBlockClass}}" {{divBlockID}}>
   <div class="item-frame">

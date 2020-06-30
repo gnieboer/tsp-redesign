@@ -4,10 +4,12 @@
   "description": "### About the prototype",
   "main": "index.md",
   "dependencies": {
-    "axios": "^0.19.0",
-    "handlebars": "^4.5.3",
+    "axios": "^0.19.2",
+    "handlebars": "^4.7.6",
     "js-yaml": "^3.13.1",
-    "lodash": "^4.17.15"
+    "kind-of": "^6.0.3",
+    "lodash": "^4.17.15",
+    "minimist": "^1.2.5"
   },
   "devDependencies": {},
   "scripts": {
