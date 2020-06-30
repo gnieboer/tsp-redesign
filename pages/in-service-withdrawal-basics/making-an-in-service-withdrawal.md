@@ -13,9 +13,14 @@ redirect_from:
 
 ## Applying for a financial hardship withdrawal or an age-based withdrawal
 
-+ Begin your Financial Hardship In-Service Withdrawal Request by going to [My Account: Withdrawals]({{ site.myaccount }}). You can begin and, in some cases, complete your request online. It depends on whether you are required to obtain your spouse's signed consent.
-
-+ Begin your Age-Based In-Service Withdrawal Request by going to [My Account: Withdrawals]({{ site.myaccount }}). You can begin and, in some cases, complete your request online. It depends on whether you are required to obtain your spouse's signed consent waiver.
++ Begin your “Financial Hardship In-Service Withdrawal Request” by logging in to
+My Account and selecting **Withdrawals and Changes to Installment Payments**
+from the menu. Depending on your circumstances, you may be able to complete
+your request entirely online.
++ Begin your “Age-Based In-Service Withdrawal Request” by logging in to My Account
+and selecting **Withdrawals and Changes to Installment Payments** from the menu.
+Depending on your circumstances, you may be able to complete your request entirely
+online.
 
 If you have a pending application for an in-service withdrawal or for a TSP loan at the time we receive your request, it will not be accepted. We allow only one request for an in-service withdrawal or loan at a time.
 
