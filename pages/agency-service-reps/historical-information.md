@@ -21,46 +21,238 @@ The TSP provides agency and service representatives with historical information 
       Contribution limits
     </button>
     <div id="chart-2" class="usa-accordion-content">
-      <table class="chart contribution-limits">
-        <colgroup></colgroup>
-        <caption class="">
-        Elective deferral, section 415(c), and catch-up contribution limits<br>1987 &#8211; Present
-        </caption>
-        <thead>
-          <tr>
-            <th scope="col">Tax year</th>
-            <th scope="col">
-              <span
-                data-term="Elective Deferral Limit"
-                class="js-glossary-toggle term term-end">
-                Elective deferral</span></th>
-            <th scope="col">
-              <span
-                data-term="Section 415(c) limit"
-                class="js-glossary-toggle term term-end">
-                Section 415(c)</span></th>
-            <th scope="col">
-              <span
-                data-term="Catch-Up Contributions"
-                class="js-glossary-toggle term term-end">
-                Catch-up contributions</span></th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <th scope="row">2020</th>
-            <td>$19,500</td>
-            <td>$57,000</td>
-            <td>$6,500</td>
-          </tr>
-          <tr>
-            <th scope="row">2019</th>
-            <td>$19,000</td>
-            <td>$56,000</td>
-            <td>$6,000</td>
-          </tr>
-        </tbody>
-      </table>
+    <table class="chart contribution-limits">
+      <colgroup></colgroup>
+      <caption class="">
+      Elective deferral, section 415(c), and catch-up contribution limits<br>1987 &#8211; Present
+      </caption>
+      <thead>
+        <tr>
+          <th scope="col">Tax year</th>
+          <th scope="col">
+            <span
+              data-term="Elective Deferral Limit"
+              class="js-glossary-toggle term term-end">
+              Elective deferral</span></th>
+          <th scope="col">
+            <span
+              data-term="Section 415(c) limit"
+              class="js-glossary-toggle term term-end">
+              Section 415(c)</span></th>
+          <th scope="col">
+            <span
+              data-term="Catch-Up Contributions"
+              class="js-glossary-toggle term term-end">
+              Catch-up contributions</span></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">2020</th>
+          <td>$19,500</td>
+          <td>$57,000</td>
+          <td>$6,500</td>
+        </tr>
+        <tr>
+          <th scope="row">2019</th>
+          <td>$19,000</td>
+          <td>$56,000</td>
+          <td>$6,000</td>
+        </tr>
+        <tr>
+          <th scope="row">2018</th>
+          <td>$18,500</td>
+          <td>$55,000</td>
+          <td>$6,000</td>
+        </tr>
+        <tr>
+          <th scope="row">2017</th>
+          <td>$18,000</td>
+          <td>$54,000</td>
+          <td>$6,000</td>
+        </tr>
+        <tr>
+          <th scope="row">2016</th>
+          <td>$18,000</td>
+          <td>$53,000</td>
+          <td>$6,000</td>
+        </tr>
+        <tr>
+          <th scope="row">2015</th>
+          <td>$18,000</td>
+          <td>$53,000</td>
+          <td>$6,000</td>
+        </tr>
+        <tr>
+          <th scope="row">2014</th>
+          <td>$17,500</td>
+          <td>$52,000</td>
+          <td>$5,500</td>
+        </tr>
+        <tr>
+          <th scope="row">2013</th>
+          <td>$17,500</td>
+          <td>$51,000</td>
+          <td>$5,500</td>
+        </tr>
+        <tr>
+          <th scope="row">2012</th>
+          <td>$17,000</td>
+          <td>$50,000</td>
+          <td>$5,500</td>
+        </tr>
+        <tr>
+          <th scope="row">2011</th>
+          <td>$16,500</td>
+          <td>$49,000</td>
+          <td>$5,500</td>
+        </tr>
+        <tr>
+          <th scope="row">2010</th>
+          <td>$16,500</td>
+          <td>$49,000</td>
+          <td>$5,500</td>
+        </tr>
+        <tr>
+          <th scope="row">2009</th>
+          <td>$16,500</td>
+          <td>$49,000</td>
+          <td>$5,500</td>
+        </tr>
+        <tr>
+          <th scope="row">2008</th>
+          <td>$15,500</td>
+          <td>$46,000</td>
+          <td>$5,000</td>
+        </tr>
+        <tr>
+          <th scope="row">2007</th>
+          <td>$15,500</td>
+          <td>$45,000</td>
+          <td>$5,000</td>
+        </tr>
+        <tr>
+          <th scope="row">2006</th>
+          <td>$15,000</td>
+          <td>$44,000</td>
+          <td>$5,000</td>
+        </tr>
+        <tr>
+          <th scope="row">2005</th>
+          <td>$14,000</td>
+          <td>$42,000</td>
+          <td>$4,000</td>
+        </tr>
+        <tr>
+          <th scope="row">2004</th>
+          <td>$13,000</td>
+          <td>$41,000</td>
+          <td>$3,000</td>
+        </tr>
+        <tr>
+          <th scope="row">2003</th>
+          <td>$12,000</td>
+          <td>$40,000</td>
+          <td>$2,000</td>
+        </tr>
+        <tr>
+          <th scope="row">2002</th>
+          <td>$11,000</td>
+          <td>$40,000</td>
+          <td>N/A</td>
+        </tr>
+        <tr>
+          <th scope="row">2001</th>
+          <td>$10,500</td>
+          <td>N/A</td>
+          <td>N/A</td>
+        </tr>
+        <tr>
+          <th scope="row">2000</th>
+          <td>$10,500</td>
+          <td>N/A</td>
+          <td>N/A</td>
+        </tr>
+        <tr>
+          <th scope="row">1999</th>
+          <td>$10,000</td>
+          <td>N/A</td>
+          <td>N/A</td>
+        </tr>
+        <tr>
+          <th scope="row">1998</th>
+          <td>$10,000</td>
+          <td>N/A</td>
+          <td>N/A</td>
+        </tr>
+        <tr>
+          <th scope="row">1997</th>
+          <td>$9,500</td>
+          <td>N/A</td>
+          <td>N/A</td>
+        </tr>
+        <tr>
+          <th scope="row">1996</th>
+          <td>$9,500</td>
+          <td>N/A</td>
+          <td>N/A</td>
+        </tr>
+        <tr>
+          <th scope="row">1995</th>
+          <td>$9,240</td>
+          <td>N/A</td>
+          <td>N/A</td>
+        </tr>
+        <tr>
+          <th scope="row">1994</th>
+          <td>$9,240</td>
+          <td>N/A</td>
+          <td>N/A</td>
+        </tr>
+        <tr>
+          <th scope="row">1993</th>
+          <td>$8,994</td>
+          <td>N/A</td>
+          <td>N/A</td>
+        </tr>
+        <tr>
+          <th scope="row">1992</th>
+          <td>$8,728</td>
+          <td>N/A</td>
+          <td>N/A</td>
+        </tr>
+        <tr>
+          <th scope="row">1991</th>
+          <td>$8,475</td>
+          <td>N/A</td>
+          <td>N/A</td>
+        </tr>
+        <tr>
+          <th scope="row">1990</th>
+          <td>$7,979</td>
+          <td>N/A</td>
+          <td>N/A</td>
+        </tr>
+        <tr>
+          <th scope="row">1989</th>
+          <td>$7,627</td>
+          <td>N/A</td>
+          <td>N/A</td>
+        </tr>
+        <tr>
+          <th scope="row">1988</th>
+          <td>$7,313</td>
+          <td>N/A</td>
+          <td>N/A</td>
+        </tr>
+        <tr>
+          <th scope="row">1987</th>
+          <td>$7,000</td>
+          <td>N/A</td>
+          <td>N/A</td>
+        </tr>
+      </tbody>
+    </table>
     </div>
   </li>
 
