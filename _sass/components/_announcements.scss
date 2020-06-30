@@ -1,0 +1,10 @@
+section {
+  &.plan-news.announcements {
+    .usa-grid {
+      border-top: 2px dotted $color-gray-lighter;
+      &:first-of-type {
+        border-top: none;
+      }
+    }
+  }
+}

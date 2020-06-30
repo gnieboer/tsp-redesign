@@ -20,4 +20,30 @@ a {
       font-style: normal;
     }
   }
+  &.download {
+    &:after {
+      font-family: $font-awesome;
+      content: "\f0ed";
+      padding-left: 0.4rem;
+      font-style: normal;
+      font-weight: $black;
+      display: inline-block;
+      text-decoration: none;
+      color: $color-gray;
+    }
+  }
+
+  &.pdf {
+    &:after {
+      font-family: $font-awesome;
+      content: "\f1c1";
+      padding-left: 0.4rem;
+      font-style: normal;
+      font-weight: $normal;
+      display: inline-block;
+      text-decoration: none;
+      color: $color-gray;
+      color: #de231a;
+    }
+  }
 }

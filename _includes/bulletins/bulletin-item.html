@@ -1,0 +1,60 @@
+{% comment %}HTML block for one bulletin item accordion.{% endcomment %}
+{% assign entry = include.entry %}
+{% assign addBlockName = include.addBlockName | default: 0 %}
+{% assign bulletin_name = entry.permalink | split: '/' | last | default: 'anchor' | append: '-' | append: addBlockName %}
+{% assign bulletin_posted = entry.path | split: '/' | last | truncate: 10, '' | default: '--' %}
+{% assign bulletin_name = bulletin_name | replace: '.pdf', '' %}
+{% assign title = entry.title | default: "Missing TITLE" %}
+{% assign xentryHTML = entry.permalink | append: '.html' %}
+{% assign entryHTML = entry.permalink %}
+{% assign reducedContent = entry.content | strip_html | slice: 0, 400 %}
+{% assign bulletinClass = "not-service-bulletin" %}
+{% if entry.service %}{% assign bulletinClass = "" %}{% endif %}
+<!-- BULLETIN block -->
+<div class="usa-grid {{bulletinClass}}">
+  <div class="usa-width-one-whole">
+    <div id="{{bulletin_name}}-div" class="bulletin">
+      <p><strong>{{ title }}</strong> — {{ reducedContent }}</p>
+    </div>
+
+    <div class="flex post-and-share">
+      <span class="bulletin-number">Bulletin {{entry.bulletin_number}}</span>,&nbsp;
+      <span id="{{bulletin_name}}-posted" class="post-date" > {{bulletin_posted | date: '%B %d, %Y'}}</span>
+      <!-- Flex item #0, Name -->{% include social-media-share.html modalID=bulletin_name %}
+      {% comment %}<!-- Flex item #1, Date -->{% include copy-to-clipboard.html element=bulletin_name function='copyPlanNewsToClipboard' %}{% endcomment %}
+      {% comment %}{% if entry.permalink %}<a href="{{entryHTML}}">Entry</a>{% endif %}{% endcomment %}
+      <!-- Flex item #2, Share Modal -->{% include share-bar.html pageurl=entryHTML modalID=bulletin_name %}
+      <!-- Flex item #4, read more -->
+      <button class="usa-button-secondary read-more" onclick="window.location.href = '{{ site.baseurl }}{{entryHTML}}';">read more</button>
+    </div>
+
+  </div> <!-- END div.usa-width-one-whole -->
+</div> <!-- END div.usa-grid -->
+
+{% comment %}
+{% assign showHeader = include.showHeader | default: 1 %}
+{% assign xentryHTML = entry.permalink | append: '.html' %}
+{% assign entryHTML = entry.permalink %}
+{% if addBlockName != 0 %}<div id="{{bulletin_name}}-block" class="bulletin-search-block">{% endif %}
+<a name="{{bulletin_name}}"></a>
+{% if showHeader != 0 %}
+<div class="flex header-line" markdown="1">
+## {{bulletin_posted | date: '%B %Y'}} bulletin
+</div>
+{% endif %}
+
+<div class="usa-grid">
+<div class="usa-width-one-whole" markdown="1">
+<div id="{{bulletin_name}}-div" class="bulletin">{{entry.content}}</div>
+<div class="flex post-and-share">
+  <span id="{{bulletin_name}}-posted" class="post-date" >Posted: {{bulletin_posted | date: '%B %d, %Y'}}</span>
+  <!-- Share Modal -->
+  {% include social-media-share.html modalID=bulletin_name %}
+  {% include copy-to-clipboard.html element=bulletin_name function='copyPlanNewsToClipboard' %}
+  {% comment %}{% if entry.permalink %}<a href="{{entryHTML}}">Entry</a>{% endif %}{% endcomment %}
+  {% include share-bar.html pageurl=entryHTML modalID=bulletin_name %}
+</div>
+</div>
+</div>
+{% if addBlockName != 0 %}</div>{% endif %}
+{% endcomment %}

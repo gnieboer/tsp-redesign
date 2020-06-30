@@ -1,12 +1,24 @@
-button,
-.usa-button {
-  border-radius: 0;
-  &.print {
-    &:after {
-      font-family: $font-awesome;
-      content: "\f02f";
-      font-weight: $light;
-      padding-left: .5rem;
+button {
+  &.usa-button,
+  &.usa-button-big,
+  &.usa-button-secondary {
+    border-radius: 0;
+    &.print {
+      &:after {
+        font-family: $font-awesome;
+        content: "\f02f";
+        font-weight: $light;
+        padding-left: .5rem;
+      }
+    }
+
+    &.new-window {
+      &:after {
+        font-family: $font-awesome;
+        content: "\f08e";
+        font-weight: $light;
+        padding-left: .5rem;
+      }
     }
   }
 }

@@ -88,6 +88,7 @@ function startSearch(page) {
   var searchSite = 'beta.tsp';
   if (getGroup() == 'forms') { searchSite = 'beta.tsp.forms'; }
   if (getGroup() == 'plan-news') { searchSite = 'beta.tsp.plan-news'; }
+  if (getGroup() == 'bulletins') { searchSite = 'beta.tsp.bulletins'; }
   clearResultDivs();
   var qs = $('#search-terms').val();
   inlineUSAsearch('all', 'search-status', searchSite, siteName, qs, getAll, offset, searchCallback);

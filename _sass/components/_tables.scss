@@ -6,6 +6,43 @@
   }
 }
 
+section.charts {
+
+  table.chart {
+    width: 100%;
+    table-layout: fixed;
+    margin-top: 2.2rem;
+
+    &.open-season {
+      colgroup {
+        width: 50%;
+      }
+      .empty-cell {
+        background-color: $color-gray-lightest;
+      }
+    }
+
+    &.percentage-limits {
+      td[colspan] {
+        text-align: center;
+      }
+    }
+
+    &.contribution-limits {
+      colgroup {
+        width: 12rem;
+      }
+      th {
+        text-align: center;
+      }
+      td {
+        text-align: right;
+      }
+    }
+  }
+}
+
+
 // EXPAND/COLLAPSE TABLE button
 @media only screen and (max-width: #{$large-screen}) {
   .table-view {
