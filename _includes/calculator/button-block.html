@@ -12,10 +12,12 @@ Generates a list of buttons.  The box around them and the ul should be done by t
 {% assign submit = include.submit | default: 0 %}
 {% assign showResults = include.showResults | default: 0 %}
 {% assign revise = include.revise | default: 0 %}
+{% assign print = include.print | default: 0 %}
 {% assign bonusButton1 = include.bonusButton1 | default: 0 %}
 {% assign bonusButton2 = include.bonusButton2 | default: 0 %}
+{% assign bonusButton3 = include.bonusButton3 | default: 0 %}
 
-<ul class="navigation-buttons">
+<nav><ul class="navigation-buttons">
 {% if showPDF != 0 %}
 <input type="submit" name="PDF" value="Show Blank PDF">
 {% include calculator/button.html text='Download' title='Blank PDF form opens in a new window.'
@@ -26,7 +28,7 @@ Generates a list of buttons.  The box around them and the ul should be done by t
 
 {% if getStarted != 0 %}
 {% capture click %}processPanel({{ panelID }}, 0, {{ getStarted }}, 0); return false;{% endcapture %}
-{% include calculator/button.html text='Get Started' onClick=click xtraClass2='primary' inList=1 %}
+{% include calculator/button.html text='Get started' onClick=click xtraClass2='primary' inList=1 %}
 {% endif %}
 
 {% if start != 0 %}
@@ -36,8 +38,10 @@ Generates a list of buttons.  The box around them and the ul should be done by t
 
 {% if prev != 0 %}
 {% capture click %}showPanel({{ prev }}); return false;{% endcapture %}
-{% include calculator/button.html text='Previous' href='javascript:void(0);' onClick=click xtraClass2='back' inList=1 %}
+{% include calculator/button.html text='Previous' href='javascript:void(0);' onClick=click buttonClass="usa-button-secondary" xtraClass2='back' inList=1 %}
 {% endif %}
+
+{% if bonusButton2 != 0 %}{{ bonusButton2}}{% endif %}
 
 {% if nextOK != 0 %}
 <span id="areYouSurebottomButtons{{ panelID }}" style="display:none">
@@ -61,11 +65,11 @@ Generates a list of buttons.  The box around them and the ul should be done by t
 {% if showResults != 0 %}
 <span id="showResults{{ panelID }}">
   {% capture click %}processPanel({{ panelID }}, 0, {{ showResults }}, 0); return false;{% endcapture %}
-  {% include calculator/button.html text='Show Results' onClick=click xtraClass2='primary forward' inList=1 %}
+  {% include calculator/button.html text='Show results' onClick=click xtraClass2='primary forward' inList=1 %}
 </span>
 {% endif %}
 
-{% if bonusButton2 != 0 %}{{ bonusButton2}}{% endif %}
+{% if bonusButton3 != 0 %}{{ bonusButton3}}{% endif %}
 
 {% if revise != 0 %}
   {% capture click %}showPanel({{ revise }}); return false;{% endcapture %}
@@ -82,4 +86,9 @@ Generates a list of buttons.  The box around them and the ul should be done by t
   {% include calculator/button.html text='Submit' onClick=click xtraClass2='primary' xtraClass1='disabled' inList=1 %}
 </span>
 {% endif %}
-  </ul>
+
+{% if print != 0 %}
+  {% capture printAction %}window.print(); return false;{% endcapture %}
+  {% include calculator/button.html text='Print report' onClick=printAction xtraClass1='print' inList=1 %}
+{% endif %}
+</ul></nav>

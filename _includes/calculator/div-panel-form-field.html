@@ -3,8 +3,14 @@ This script produces an input area for calculator panels.
 {% endcomment %}
 {% assign fieldID = include.fieldID | default: 'panel-1.1' %}
 {% assign id = include.id | default: 'myId' %}
+{% assign H2 = include.H2 | default: '' %}
+{% assign radioIDs = include.radioIDs | default: 'radioIDs' %}
+{% assign radioLabels = include.radioLabels | default: 'radioLabels' %}
+{% assign ulID = include.ulID | default: '' %}
 {% assign name = include.name | default: id %}
 {% assign dataFormat = include.dataFormat | default: '' %}
+{% assign dataFormatClass = "input-symbol-left " | append: include.dataFormatClass %}
+{% if dataFormat == '%' %}{% assign dataFormatClass = "input-symbol-right " | append: include.dataFormatClass %}{% endif %}
 {% assign inputType = include.inputType | default: 'number' %}
 {% assign selectList = include.selectList | default: 10 %}
 {% assign value = include.value | default: '' %}
@@ -20,18 +26,44 @@ This script produces an input area for calculator panels.
 {% if onBlur != '' %}
 {% assign onBlur = 'onBlur="' | append: onBlur | append: '" onChange="' | append: onBlur | append: '"' %}
 {% endif %}
-<div class="panel-form-field" >
-  <div id="{{id}}-div" class="">
+{% assign innerDivClass = include.innerDivClass | default: '' %}
+{% assign outerDivClass = include.outerDivClass | default: '' %}
+{% assign outerDivID = include.outerDivID | default: '' %}
+{% if outerDivID != '' %}
+{% assign outerDivID = 'id="' | append: outerDivID | append: '"' %}
+{% endif %}
+{% assign focusCommas = include.focusCommas | default: '' %}
+{% if focusCommas != '' %}
+{% assign element = "'" | append: id | append: "'" %}
+{% assign focusOutCommas = 'onFocusOut="addCommas(' | append: element | append: ');"' %}
+{% assign focusCommas = 'onFocus="removeCommas(' | append: element | append: ');" ' | append: focusOutCommas %}
+{% endif %}
+{% assign anchor = include.anchor | default: '' %}
+{% assign dontOpenOuterDiv = include.dontOpenOuterDiv | default: false %}
+{% assign dontCloseOuterDiv = include.dontCloseOuterDiv | default: false %}
+{% if dontOpenOuterDiv %}{% assign dontCloseOuterDiv = true %}{% endif %}
+<div>{% if id != 'myId' %}<a name="{{id}}-anchor"></a>{% endif %}
+{% if anchor != '' %}<a name="{{anchor}}"></a>{% endif %}</div>
+{% unless dontOpenOuterDiv %}<div {{outerDivID}} class="panel-form-field {{outerDivClass}}" >{% endunless %}
+  {% if H2 != '' %}<h2>{{H2}}</h2>{% endif %}
+  {% if inputType != 'none' %}
+  {% capture commonValues %}id="{{id}}" name="{{name}}" class="{{inputClass}}"
+    value="{{value}}" placeholder="{{placeholder}}" aria-labelledby="{{id}}-label"{% endcapture%}
+  <div id="{{id}}-div" class="{{innerDivClass}}">
+    {% if inputType != 'radio' %}
     <label class="" id="{{id}}-label" for="{{id}}" aria-details="{{fieldID}}">{{prompt}}</label>
     <span class="usa-input-error-message" id="{{id}}-error-message" role="alert"></span>
-    {% if dataFormat != '' %}<span data-format="{{dataFormat}}" class="input-symbol-left">{%endif%}
+    {% endif %}
+    {% if dataFormat != '' %}<span data-format="{{dataFormat}}" class="{{dataFormatClass}}">{%endif%}
     {% if inputType == 'number' %}
-      <input id="{{id}}" name="{{name}}" class="{{inputClass}}" type="number" {{onBlur}}
-        value="{{value}}" min="{{min}}" max="{{max}}" step="{{step}}" placeholder="{{placeholder}}" />
+      <input {{commonValues}} type="number" {{onBlur}} min="{{min}}" max="{{max}}" step="{{step}}" />
+    {% endif %}
+    {% if inputType == 'integer' %}
+      <input {{commonValues}} type="number" pattern="\d+" {{onBlur}}
+        min="{{min}}" max="{{max}}" step="{{step}}" />
     {% endif %}
     {% if inputType == 'text' %}
-      <input id="{{id}}" name="{{name}}" class="{{inputClass}}" type="text" {{onBlur}}
-        value="{{value}}" maxLength="{{maxLength}}" placeholder="{{placeholder}}" />
+      <input {{commonValues}} type="text" {{onBlur}} maxLength="{{maxLength}}" />
     {% endif %}
     {% if inputType == 'no-select' or inputType == 'select' %}
     <select class="{{inputClass}}" id="{{id}}" name="{{name}}">
@@ -43,16 +75,45 @@ This script produces an input area for calculator panels.
       {% endfor %}
     </select>
     {% endif %}
+    {% if inputType == 'selectList' %}
+      <select class="{{inputClass}}" id="{{id}}" name="{{name}}" {{onBlur}}>
+      {% assign ids = radioIDs | split: ',' %}
+      {% assign labels = radioLabels | split: ',' %}
+      {% assign loops = ids.size | minus: 1 %}
+      {% assign cur = ids[i] | strip %}
+      {% for i in (0..loops) %}{% assign cur = ids[i] | strip %}{% if cur == value %}{% assign selected = 'selected' %}{% else %}{% assign selected = '' %}{% endif %}
+        <option value="{{cur}}" {{ selected }}>{{labels[i] | strip}}</option>
+      {% endfor %}
+      </select>
+    {% endif %}
+    {% if inputType == 'radio' %}
+      <fieldset class="usa-fieldset-inputs usa-sans">
+      <legend class="" id="{{id}}-label" for="{{id}}" aria-details="{{fieldID}}">{{prompt}}</legend>
+      <span class="usa-input-error-message" id="{{id}}-error-message" role="alert"></span>
+      <ul {{ulID}} class="usa-unstyled-list">
+      {% assign ids = radioIDs | split: ',' %}
+      {% assign labels = radioLabels | split: ',' %}
+      {% assign loops = ids.size | minus: 1 %}
+      {% for i in (0..loops) %}
+        <li>
+        <input id="{{ids[i] | strip}}" aria-labelledby="{{ids[i] | strip}}-label" type="radio" name="{{id}}" value="{{ids[i] | strip}}" {{onBlur}}>
+        <label id="{{ids[i] | strip}}-label" for="{{ids[i] | strip}}">{{labels[i] | strip}}</label>
+        </li>
+      {% endfor %}
+      </ul>
+      </fieldset>
+    {% endif %}
     {% if dataFormat != '' %}</span>{%endif%}
   </div>
+  {% endif %}{% comment %}end of inputType block{% endcomment %}
   {% if explanation != '' %}
   <ul class="usa-accordion explain-this">
   <li>
     <button class="usa-accordion-button" aria-expanded="false" aria-controls="{{fieldID}}">Explain this</button>
     <div id="{{fieldID}}" class="usa-accordion-content">
-    {{explanation}}
+    {{explanation | markdownify }}
     </div>
   </li>
   </ul>
   {% endif %}
-</div> <!---->
+{% unless dontCloseOuterDiv %}</div><!---->{% endunless %}

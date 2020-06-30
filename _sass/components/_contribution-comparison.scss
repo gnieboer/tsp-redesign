@@ -1,0 +1,11 @@
+li.show-equal {
+
+  [type=checkbox] + label::before {
+      margin-left: -3rem;
+    }
+
+  label {
+    margin-top: 3rem;
+    margin-left: 3rem;
+  }
+}
