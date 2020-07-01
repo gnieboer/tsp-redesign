@@ -11,7 +11,7 @@ permalink: /account-basics/troubleshoot-login-errors/
 ## Two-step authentication and validating contact information
 ### Two-step authentication helps prevent fraud.
 
-All TSP participants must use two-step authentication to log into My Account. Two-step authentication helps you protect your account against fraud by prompting you for a one-time verification code each time you log in. This login process is more secure because it means that online access to your account requires something you know (your account number or user ID and password) and something you have (a one-time verification code you receive in your email or on your phone). Someone who tries to log into your account fraudulently won’t be able to gain access without the code.
+All TSP participants must use two-step authentication to log in to My Account. Two-step authentication helps you protect your account against fraud by prompting you for a one-time verification code each time you log in. This login process is more secure because it means that online access to your account requires something you know (your account number or user ID and password) and something you have (a one-time verification code you receive in your email or on your phone). Someone who tries to log in to your account fraudulently won’t be able to gain access without the code.
 
 ### Set up two-step authentication by validating your contact information.
 
@@ -27,12 +27,12 @@ If you already have contact information in your account, you will see a label un
 This is especially important if you work in a secure environment that doesn’t allow access to personal email or electronic devices.
 **When you add an email or phone number, avoid closing or navigating away from the browser window.**
 
-If you need to log into your email to retrieve the validation code, open a new tab or window to do so.
+If you need to log in to your email to retrieve the validation code, open a new tab or window to do so.
 
-You must be logged into My Account in order to enter the validation code. You have one hour to use the validation code, but My Account will automatically log you out after ten minutes of inactivity. If you do need to navigate away from My Account or get logged out before you complete the validation process, you can use the link you receive with the validation code to log in again and complete the validation process.
+You must be logged in to My Account in order to enter the validation code. You have one hour to use the validation code, but My Account will automatically log you out after ten minutes of inactivity. If you do need to navigate away from My Account or get logged out before you complete the validation process, you can use the link you receive with the validation code to log in again and complete the validation process.
 
 **Consider validating two email addresses and a phone number.**
-When you log into My Account, you will see a prompt to choose the contact method you want to use to receive your login verification code. By validating multiple contact methods, you have more flexibility in how to access your account.
+When you log in to My Account, you will see a prompt to choose the contact method you want to use to receive your login verification code. By validating multiple contact methods, you have more flexibility in how to access your account.
 
 **Make sure your contact method is secure.**
 Your account is only as secure as your login credentials. Make sure you enable any additional security features, such as two-step authentication and passcodes, on your email accounts and devices.
@@ -54,7 +54,7 @@ Only the most recent code you request of each type will work. Make sure you’re
 
 If you’re trying to log in with two-step authentication and navigate away from the verification code input, you need to log in again to receive a new code.
 
-If you’re trying to validate an email or phone number, you can use the link in the validation code email or text message. You must be logged into My Account to use the validation code link. Remember that the validation code expires after one hour. If the link or code doesn’t work, you should add or edit your email or phone number again to receive a new code.
+If you’re trying to validate an email or phone number, you can use the link in the validation code email or text message. You must be logged in to My Account to use the validation code link. Remember that the validation code expires after one hour. If the link or code doesn’t work, you should add or edit your email or phone number again to receive a new code.
 
 **I no longer have access to my validated contact method.**
 
@@ -70,11 +70,11 @@ You can validate an international phone number as long as you can receive text m
 
 **I don’t want to give you my phone or email.**
 
-If you are unable or unwilling to provide one of the requested contact methods, you may be unable to log into My Account.
+If you are unable or unwilling to provide one of the requested contact methods, you may be unable to log in to My Account.
 
 **My financial aggregator or app or service on another website stopped working.**
 
-If you give your account credentials to a third-party application, you may receive a My Account login code each time that application attempts to retrieve information from your TSP account. Providing your TSP account credentials to a third-party application may put your account security at risk. We recommend that you only log into My Account through tsp.gov. The TSP cannot endorse any information or advice from third-party applications or services.
+If you give your account credentials to a third-party application, you may receive a My Account login code each time that application attempts to retrieve information from your TSP account. Providing your TSP account credentials to a third-party application may put your account security at risk. We recommend that you only log in to My Account through tsp.gov. The TSP cannot endorse any information or advice from third-party applications or services.
 
 **I don’t know my password.**
 
