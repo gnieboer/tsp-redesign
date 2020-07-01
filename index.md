@@ -207,6 +207,7 @@ aria-controls="l2040" markdown="1">
 </button>
 <div id="l2040" class="usa-accordion-content" markdown="1">
 Consider if you plan to begin withdrawing from your TSP account between 2038 and 2042 or you were born between 1975 and 1979.
+
 [Learn more]({{ site.baseurl }}/funds-lifecycle/l-2040/){:.learn-more}
 </div>
 </li>
