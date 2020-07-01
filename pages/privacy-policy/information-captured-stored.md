@@ -27,9 +27,9 @@ Information automatically collected and stored includes:
 
 In addition, this website uses Google Analytics. Please refer to the following policies on Google's website for more information:
 
-- [Google's main privacy policy]({{ site.baseurl }}/exit/?idx=147)
-- [Google Analytics Cookie Usage on Websites]({{ site.baseurl }}/exit/?idx=148)
-- [Opt out of Google Analytics Cookies]({{ site.baseurl }}/exit/?idx=149)
+- [Google's main privacy policy]({{ site.baseurl }}/exit/?idx=147){:rel="nofollow"}
+- [Google Analytics Cookie Usage on Websites]({{ site.baseurl }}/exit/?idx=148){:rel="nofollow"}
+- [Opt out of Google Analytics Cookies]({{ site.baseurl }}/exit/?idx=149){:rel="nofollow"}
 
 
 ## TSP account access

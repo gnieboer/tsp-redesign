@@ -33,7 +33,7 @@ If you’re not sure whether correspondence or phone calls claiming to be from t
 
 ## What you should do to help prevent fraud
 Steps you should take to protect your TSP account include:
-+ **Check for a secure website connection—** Before you submit data or attempt to log into your account on tsp.gov, make sure you’re on the right website. In your browser’s address bar, look for a lock icon, a green bar, or “https://” at the beginning of the URL for tsp.gov.
++ **Check for a secure website connection—** Before you submit data or attempt to log in to your account on tsp.gov, make sure you’re on the right website. In your browser’s address bar, look for a lock icon, a green bar, or “https://” at the beginning of the URL for tsp.gov.
 + **Protect your password and PIN—** Create a password that’s unique to your TSP account, and don’t share it with anyone. Your password and PIN are your business, and no one at the TSP will ever need to know that information for any reason. If your browser offers autocomplete, disable it so it doesn’t store your My Account login credentials.
 + **Validate your contact information—** Keep your email address(es) and phone number up to date and validate them in your My Account profile settings. You must validate your contact information in order to use two-step authentication to log in securely.
 
@@ -54,7 +54,7 @@ Account security features we give you include:
 
 + **Temporary account lockout—** To discourage unauthorized users from attempting to gain access to your account, our system will suspend login access for one hour after it detects three unsuccessful attempts.
 
-+ **Automatic My Account logout—** If you’re logged into My Account and our system detects 10 minutes of inactivity, it will automatically end the session and log you out to prevent unwanted access to your account information.
++ **Automatic My Account logout—** If you’re logged in to My Account and our system detects 10 minutes of inactivity, it will automatically end the session and log you out to prevent unwanted access to your account information.
 
 + **Transaction confirmations by mail—** When you make changes to your account, we’ll mail you a confirmation notice. If you receive confirmation of an action on your account that you did not request, contact us immediately.
 
@@ -63,6 +63,6 @@ Account security features we give you include:
 You may encounter software or mobile applications that reference the Thrift Savings Plan and prompt you for your TSP account credentials. **The TSP does not support these applications.** We cannot endorse any information or advice you may receive from third-party software or applications. Providing your TSP account credentials to third-party software or applications may jeopardize your account security.
 
 ## Add Extra Security to Your Account
-After you log into your TSP account for the first time, you can go to your profile settings to validate an email address and cell phone. Then you will be led through the steps necessary to enable two-step authentication.
+After you log in to your TSP account for the first time, you can go to your profile settings to validate an email address and cell phone. Then you will be led through the steps necessary to enable two-step authentication.
 
-Two-step authentication helps you protect your account against fraud by prompting you for a one-time verification code each time you log in. This login process is more secure because it means that online access to your account requires something you know (your account number or user ID and password) and something you have (a one-time verification code you receive in your email or on your phone). Someone who tries to log into your account fraudulently won’t be able to gain access without the code.
+Two-step authentication helps you protect your account against fraud by prompting you for a one-time verification code each time you log in. This login process is more secure because it means that online access to your account requires something you know (your account number or user ID and password) and something you have (a one-time verification code you receive in your email or on your phone). Someone who tries to log in to your account fraudulently won’t be able to gain access without the code.

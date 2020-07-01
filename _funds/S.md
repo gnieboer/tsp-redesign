@@ -5,6 +5,7 @@ title: S fund
 sidenav: fund-options
 redirect_from:
   - /InvestmentFunds/FundOptions/fundPerformance_S.html
+  - /sfund
 Fund_type: Index
 Fund_name: S Fund
 Fund_order: 4

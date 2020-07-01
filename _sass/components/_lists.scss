@@ -10,6 +10,19 @@
 .roman {
   list-style-type: lower-roman;
 }
+ol.parens {
+  counter-reset: list;
+  li {
+    list-style: none;
+    position: relative;
+    &:before {
+      counter-increment: list;
+      content: counter(list, decimal) ") ";
+      position: absolute;
+      left: -2.4rem;
+    }
+  }
+}
 
 // Background image list
 ul.check, ul.cross, ul.alert {

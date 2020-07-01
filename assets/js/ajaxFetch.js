@@ -87,8 +87,10 @@ function tooltipRowGroup(group) {
   return  '<div class="tooltip-row-group">' + group + "</div>\n";
 }
 function tooltipLegendRow(legendColor, lClass, left, rClass, right) {
+  var box = '<div class="tooltip-bar '+legendColor+'"></div>';
+  if (legendColor == null) { box = '<div></div>'; }
   return  '<div class="tooltip-row">'
-        + '<div class="tooltip-bar '+legendColor+'"></div>'
+        + box
         + tooltipLeftRight(lClass, left, rClass, right)
         + "</div>\n";
 }

@@ -7,6 +7,8 @@ scripts:
 permalink: /making-contributions/traditional-and-roth-contributions/
 redirect_from:
   - /PlanParticipation/EligibilityAndContributions/TaxTreatment/
+  - /contributioncomparison
+  - /roth
 ---
 
 # Traditional and Roth contributions
@@ -17,6 +19,7 @@ You can choose between two tax treatments for your TSP contributions:
   <div class="usa-width-one-half">
   <div class="usa-alert">
   <div class="usa-alert-body" markdown="1">
+  
 ## Traditional contributions
 
 Traditional contributions
@@ -38,7 +41,7 @@ With Roth TSP contributions, you pay the taxes up front, so during retirement, y
 </div>
 </div>
 
-To help you decide which contributions are right for you, check out our videos, “Is Roth TSP Right For Me?” for [civilian]({{ site.baseurl }}/exit/?idx=150) and [uniformed services]({{ site.baseurl }}/exit/?idx=151) at [youtube.com/tsp4gov]({{ site.baseurl }}/exit/?idx=152).  You also may want to try our [Contribution Comparison Calculator]({{ site.baseurl }}/calculators/contribution-comparison-calculator/).
+To help you decide which contributions are right for you, check out our videos, “Is Roth TSP Right For Me?” for [civilian]({{ site.baseurl }}/exit/?idx=150){:rel="nofollow"} and [uniformed services]({{ site.baseurl }}/exit/?idx=151){:rel="nofollow"} at [youtube.com/tsp4gov]({{ site.baseurl }}/exit/?idx=152){:rel="nofollow"}.  You also may want to try our [Contribution Comparison Calculator]({{ site.baseurl }}/calculators/contribution-comparison-calculator/){:rel="nofollow"}.
 
 You can make both traditional **and** Roth contributions if you want. You can contribute in any percentages or amounts you choose subject to IRC limits and change your election at any time.
 

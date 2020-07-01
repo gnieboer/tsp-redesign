@@ -1,0 +1,114 @@
+{% comment %}make an array of non-archived bulletin items{% endcomment %}
+{% assign bulletin_list = site.bulletins | sort: 'path' | reverse %}
+{% assign topitems = "" | split: ',' %}
+{% assign archive = "" | split: ',' %}
+{% assign idx = include.idx | default: 'x' %}
+{% assign noAccordions = include.noAccordions | default: false %}
+{% assign total_size_u = 0 %}
+{% for item in bulletin_list %}{% unless item.path contains '/_hidden/' %}
+{% assign topics = item.bulletin_topic | join: '~~~' | downcase | split: '~~~' %}
+{% if include.topic == "" or topics contains include.topic %}
+{% assign folder = item.path | split: '/' | shift | pop | join: '/' %}
+{% if folder == '' or noAccordions == true %}
+  {% assign topitems = topitems | push: item %}
+  {% if item.service %}{% assign total_size_u = total_size_u | plus: 1 %}{% endif %}
+{% else %}
+  {% assign archive = archive | push: item %}
+  {% if item.service %}{% assign total_size_u = total_size_u | plus: 1 %}{% endif %}
+{% endif %}
+{% endif %}
+{% endunless %}{% endfor %}
+{% comment %}topitems is now top bulletins, archive is the stuff in accordions below,
+            both reverse sorted{% endcomment %}
+
+{% assign type = 'bulletins' %}
+{% assign aSize = archive | size %}
+{% assign total_size = topitems | size | plus: aSize %}
+{% if total_size == 1 %}{% assign type = 'bulletin' %}{% endif %}
+{% unless include.topic == "" %}
+<div class="select-bulletins-topic not-service-bulletin">
+  <h2 class="results">We found <strong>{{total_size}}</strong> {{type}} about <strong>{{include.topic | capitalize }}</strong></h2>
+</div>
+<div class="select-bulletins-topic is-service-bulletin hide">
+  <h2 class="results">We found <strong>{{total_size_u}}</strong> {{type}} about <strong>{{include.topic | capitalize }}</strong></h2>
+</div>
+{% endunless %}
+
+<div id="bulletin-default-div">
+{% comment %}Do the top level{% endcomment %}
+{% assign itemSize = topitems | size %}
+{% assign startTopAccordion = 2 | plus: 1 %}
+{% assign cnt = 0 %}
+{% if itemSize > 0 %}
+<section class="bulletins-current" markdown="1">
+
+{% assign lastHeader = '' %}
+{% for item in topitems %}
+  {% assign cnt = cnt | plus: 1 %}
+  {% if cnt == startTopAccordion %}
+  <div id="more-bulletins-content-{{idx}}" class="hide">
+  {% endif %}
+  {% assign showHeader = 1 %}
+  {% assign newHeader = item.path | split: '/' | last | truncate: 7, "" %}
+  {% if newHeader == lastHeader %}{% assign showHeader = 0 %}{% endif %}
+  {% assign lastHeader = newHeader %}
+  {% include bulletins/bulletin-item.html entry=item showHeader=showHeader %}
+{% endfor %}
+{% if cnt >= startTopAccordion %}
+</div>
+<div class="see-more" onclick="showMoreBulletins('bulletins', '{{idx}}');">
+  <span id="more-bulletins-{{idx}}">See more bulletins</span><i id="more-bulletins-arrow-{{idx}}" class="far fa-angle-up rotate"></i>
+</div>
+{% endif %}
+</section>
+{% endif %}
+
+{% comment %}Do the accordions{% endcomment %}
+{% assign lastFolder = folder %}
+{% assign itemSize = archive | size %}
+{% if itemSize > 0 %}
+{% assign lastHeader = '' %}
+<section class="bulletins-archive" markdown="1">
+{% assign item = archive | first %}
+{% assign folder = item.path | split: '/' | shift | pop | join: '/' %}
+{% assign lastFolder = folder %}
+## Archived bulletins
+<ul class="usa-accordion">
+<li>
+<button class="usa-accordion-button" aria-expanded="false" aria-controls="year-{{folder}}-{{idx}}">{{folder}}</button>
+<div id="year-{{folder}}-{{idx}}" class="usa-accordion-content" markdown="1">
+{% for item in archive %}
+  {% unless item.path contains "/_hidden/" %}
+  {% assign folder = item.path | split: '/' | shift | pop | join: '/' %}
+  {% if folder != lastFolder %}
+{% assign lastFolder = folder %}
+</div>
+</li>
+<li>
+<button class="usa-accordion-button" aria-expanded="false" aria-controls="year-{{folder}}-{{idx}}">{{folder}}</button>
+<div id="year-{{folder}}-{{idx}}" class="usa-accordion-content" markdown="1">
+  {% endif %}
+  {% assign showHeader = 1 %}
+  {% assign newHeader = item.path | split: '/' | last | truncate: 7, "" %}
+  {% if newHeader == lastHeader %}{% assign showHeader = 0 %}{% endif %}
+  {% assign lastHeader = newHeader %}
+  {% include bulletins/bulletin-item.html entry=item showHeader=showHeader %}
+  {% endunless %}
+{% endfor %}
+</div>
+</li>
+</ul>
+</section>
+{% endif %}
+</div>
+<section id="bulletins-search-results" class="bulletins hide" markdown="1">
+<!-- DONALD style this -->
+<span class="see-all"><a href="{{ site.baseurl }}/agency-service-reps/bulletins/">See all</a></span>
+
+{% for item in topitems %}
+  {% include bulletins/bulletin-item.html entry=item showHeader=0 addBlockName=1 %}
+{% endfor %}
+{% for item in archive %}
+  {% include bulletins/bulletin-item.html entry=item showHeader=0 addBlockName=1 %}
+{% endfor %}
+</section>

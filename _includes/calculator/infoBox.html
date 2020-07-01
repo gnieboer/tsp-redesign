@@ -4,8 +4,12 @@ This script produces an info block/box for the calcualtors.
 {% assign icon = include.icon | default: 'info' %}
 {% assign title = include.title | default: 'You forgot to specifiy a title for this block' %}
 {% assign textBlock = include.textBlock | default: 'You forgot to specifiy some text for this block' %}
-
-<div class="usa-alert  usa-alert-info ">
+{% assign class = include.class | default: '' %}
+{% assign divID = include.divID | default: '' %}
+{% if divID != '' %}
+{% assign divID = 'id="' | append: divID | append: '"' %}
+{% endif %}
+<div {{divID}} class="usa-alert  usa-alert-{{icon}} {{class}}">
     <div class="usa-alert-body">
         <h3 class="usa-alert-heading">{{ title }}</h3>
         <p class="usa-alert-text" markdown="1">{{ textBlock }}</p>

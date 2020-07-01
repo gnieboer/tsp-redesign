@@ -33,6 +33,13 @@ background-size: 4rem;
     padding-left: 5rem;
   }
 }
+.usa-alert-warning {
+  // background-image: url($baseurl + '/assets/img/icons/alert-circle.svg');
+  border-top-color: #000000;
+  .usa-alert-body {
+    padding-left: 5rem;
+  }
+}
 .usa-alert-error {
   border-top-color: #e31c3d;
   background-image: url($baseurl + '/assets/img/icons/x-circle-red.svg');

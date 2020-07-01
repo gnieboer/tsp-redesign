@@ -5,6 +5,8 @@ styles:
 sidenav: manage-your-plan
 scripts:
 permalink: /making-contributions/contribution-types/
+redirect_from:
+  - /contributions
 ---
 
 # Contribution types

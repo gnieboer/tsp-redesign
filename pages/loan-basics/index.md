@@ -8,6 +8,8 @@ scripts:
   - /assets/js/ajaxFetch.js
   - /assets/js/news-and-resources.js
 permalink: /loan-basics/
+redirect_from:
+  - /loans
 document-ready:
   - getLoanAndAnnuityRate();
 ---
