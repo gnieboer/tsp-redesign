@@ -27,6 +27,7 @@ function setValues(flag) {
     $('#beforeDeduction').val(75);
     $('#afterDeduction').val(50);
     processPanel(2,0,3,0);
+    /*
     $('#trad_option1_f').click();
     $('#trad_option2_f').click();
     $('#roth_option1_f').click();
@@ -43,6 +44,7 @@ function setValues(flag) {
     $('#catch_option2Trad').val(200);
     $('#catch_option1Roth').val(30);
     $('#catch_option2Roth').val(40);
+    */
   }
   if (flag == 3) {
     setValues(2);
