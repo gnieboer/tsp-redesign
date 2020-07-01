@@ -65,6 +65,8 @@ keep_files:
 collections:
   funds:
     output: true
+  funds-retired:
+    output: true
   forms:
     output: true
   plan_news:

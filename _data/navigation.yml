@@ -170,8 +170,6 @@ fund-options:
     subnav:
       - text: L Income
         href: /funds-lifecycle/l-income/
-      - text: L 2020
-        href: /funds-lifecycle/l-2020/
       - text: L 2025
         href: /funds-lifecycle/l-2025/
       - text: L 2030
