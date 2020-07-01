@@ -42,6 +42,8 @@ function getLFundData(fund) {
   if (fund == 'L2050') { return getL2050Data(); }
   if (fund == '2050') { return getL2050Data(); }
   if (fund == 'L2050') { return getL2050Data(); }
+  if (fund == '2025') { return getL2025Data(); }
+  if (fund == 'L2025') { return getL2025Data(); }
   if (fund == '2035') { return getL2035Data(); }
   if (fund == 'L2035') { return getL2035Data(); }
   if (fund == '2045') { return getL2045Data(); }
