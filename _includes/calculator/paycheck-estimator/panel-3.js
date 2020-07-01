@@ -7,6 +7,7 @@ This is the javascript specific to panel 3.
 <!--
 panelNames['{{ panelName}}'] = {{ panelID }};
 panelGood[{{ panelID }}] = function(forceValue) {
+  console.log(annualReturnGood(true) , check_amounts(true));
   return ( annualReturnGood(true) & check_amounts(true) );
 };
 
@@ -89,7 +90,7 @@ function sumWithholding(op1TradTotal, op2TradTotal) {
   monthTax2 = parseFloat((monthTax2 / maxpay_freq).toFixed(2));
 
   val = parseFloat((val - afterHold).toFixed(2));
-  console.log ['sumWithholding', val, grossPay, addHold, beforeHold, afterHold, monthTax1, monthTax2];
+  // console.log ['sumWithholding', val, grossPay, addHold, beforeHold, afterHold, monthTax1, monthTax2];
   return [val, grossPay, addHold, beforeHold, afterHold, monthTax1, monthTax2];
 }
 
@@ -250,7 +251,6 @@ function test_limits(submit, amts, contribs) {
 
 // reuseable simple check.  all boxes should be 0+ and whole numbers
 function inputGood(field, submit) {
-  console.log(' testing ' + field, submit);
   clearWarning(field);
   if (!submit) {
     if ($('#'+field).val() == '') { return clearError(field); }
@@ -270,7 +270,6 @@ function check_amounts(submit) {
         'trad_option2Percent', 'trad_option2Amount', 'roth_option2Percent', 'roth_option2Amount',
         'catch_option2Trad', 'catch_option2Roth'];
   for (var i = 0; i < idList.length; i++) { rc &= inputGood(idList[i], submit); }
-  console.log('rc ', rc);
   sumContributions();
 
   // test for good input

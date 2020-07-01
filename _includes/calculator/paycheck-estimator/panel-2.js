@@ -7,8 +7,6 @@ This is the javascript specific to panel 2.
 <!--
 panelNames['{{ panelName}}'] = {{ panelID }};
 panelGood[{{ panelID }}] = function(forceValue) {
-  console.log('2 good is '+(sumWithholdingGood(true) & fedAllowancesGood(true) & taxStatusGood(true)
-    & payScheduleGood(true) & grossPayGood(true)), sumWithholdingGood(true));
   return ( sumWithholdingGood(true) & fedAllowancesGood(true) & taxStatusGood(true)
     & payScheduleGood(true) & grossPayGood(true)
    );
@@ -232,7 +230,6 @@ function afterDeductionGood(submit) {
 
 function sumWithholdingGood(submit) {
   var good = afterDeductionGood(submit) & beforeDeductionGood(submit) & additionalWithholdingGood(submit);
-  console.log('good is '+good);
   if (!good) { return false; }
 
   var amts = sumWithholding(0, 0);

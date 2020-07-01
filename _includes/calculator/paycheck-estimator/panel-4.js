@@ -676,7 +676,7 @@ function paycheckTooltip(me) {
     }
   }
   rc = tooltipDiv('paycheck-estimator-tooltip', rc);
-  console.log(rc);
+  // console.log(rc);
   return rc;
 }
 
