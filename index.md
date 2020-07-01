@@ -127,10 +127,55 @@ The [Lifecycle (L)]({{ site.baseurl }}/funds-lifecycle/) Funds are made of each 
 <li>
 <button class="usa-accordion-button"
 aria-expanded="false"
-aria-controls="a3" markdown="1">
+aria-controls="l2065" markdown="1">
+**L 2065 Lifecycle Fund** | <span class="secondary">Is this fund for me?</span>
+</button>
+<div id="l2065" class="usa-accordion-content" markdown="1">
+
+Consider if you were born 1983 or later, or plan to need your TSP savings in 2045 or later.
+
+[Learn more]({{ site.baseurl }}/funds-lifecycle/l-2065/){:.learn-more}
+
+</div>
+</li>
+
+<li>
+<button class="usa-accordion-button"
+aria-expanded="false"
+aria-controls="l2060" markdown="1">
+**L 2060 Lifecycle Fund** | <span class="secondary">Is this fund for me?</span>
+</button>
+<div id="l2060" class="usa-accordion-content" markdown="1">
+
+Consider if you were born 1983 or later, or plan to need your TSP savings in 2045 or later.
+
+[Learn more]({{ site.baseurl }}/funds-lifecycle/l-2060/){:.learn-more}
+
+</div>
+</li>
+
+<li>
+<button class="usa-accordion-button"
+aria-expanded="false"
+aria-controls="l2055" markdown="1">
+**L 2055 Lifecycle Fund** | <span class="secondary">Is this fund for me?</span>
+</button>
+<div id="l2055" class="usa-accordion-content" markdown="1">
+
+Consider if you were born 1983 or later, or plan to need your TSP savings in 2045 or later.
+
+[Learn more]({{ site.baseurl }}/funds-lifecycle/l-2055/){:.learn-more}
+
+</div>
+</li>
+
+<li>
+<button class="usa-accordion-button"
+aria-expanded="false"
+aria-controls="l2050" markdown="1">
 **L 2050 Lifecycle Fund** | <span class="secondary">Is this fund for me?</span>
 </button>
-<div id="a3" class="usa-accordion-content" markdown="1">
+<div id="l2050" class="usa-accordion-content" markdown="1">
 
 Consider if you were born 1983 or later, or plan to need your TSP savings in 2045 or later.
 
@@ -142,24 +187,37 @@ Consider if you were born 1983 or later, or plan to need your TSP savings in 204
 <li>
 <button class="usa-accordion-button"
 aria-expanded="false"
-aria-controls="a4" markdown="1">
-**L 2040 Lifecycle Fund** | <span class="secondary">Is this fund for me?</span>
+aria-controls="l2045" markdown="1">
+**L 2045 Lifecycle Fund** | <span class="secondary">Is this fund for me?</span>
 </button>
-<div id="a4" class="usa-accordion-content" markdown="1">
+<div id="l2045" class="usa-accordion-content" markdown="1">
 
 Consider if you were born 1973 – 1982, or plan to need your TSP savings between 2035 and 2044.
 
-[Learn more]({{ site.baseurl }}/funds-lifecycle/l-2040/){:.learn-more}
+[Learn more]({{ site.baseurl }}/funds-lifecycle/l-2045/){:.learn-more}
 
 </div>
 </li>
+
 <li>
 <button class="usa-accordion-button"
 aria-expanded="false"
-aria-controls="a5" markdown="1">
-**L 2030 Lifecycle Fund** | <span class="secondary">Is this fund for me?</span>
+aria-controls="l2040" markdown="1">
+**L 2040 Lifecycle Fund** | <span class="secondary">Is this fund for me?</span>
 </button>
-<div id="a5" class="usa-accordion-content" markdown="1">
+<div id="l2040" class="usa-accordion-content" markdown="1">
+Consider if you were born 1973 – 1982, or plan to need your TSP savings between 2035 and 2044.
+[Learn more]({{ site.baseurl }}/funds-lifecycle/l-2040/){:.learn-more}
+</div>
+</li>
+
+<li>
+<button class="usa-accordion-button"
+aria-expanded="false"
+aria-controls="l2035" markdown="1">
+**L 2035 Lifecycle Fund** | <span class="secondary">Is this fund for me?</span>
+</button>
+<div id="l2035" class="usa-accordion-content" markdown="1">
 
 Consider if you were born 1963 – 1972, or plan to need your TSP savings between 2025 and 2034.
 
@@ -171,24 +229,40 @@ Consider if you were born 1963 – 1972, or plan to need your TSP savings betwee
 <li>
 <button class="usa-accordion-button"
 aria-expanded="false"
-aria-controls="a6" markdown="1">
-**L 2020 Lifecycle Fund** | <span class="secondary">Is this fund for me?</span>
+aria-controls="l2030" markdown="1">
+**L 2030 Lifecycle Fund** | <span class="secondary">Is this fund for me?</span>
 </button>
-<div id="a6" class="usa-accordion-content" markdown="1">
+<div id="l2030" class="usa-accordion-content" markdown="1">
 
-Consider if you were born 1954 – 1962, or plan to need your TSP savings between 2018 and 2024.
+Consider if you were born 1963 – 1972, or plan to need your TSP savings between 2025 and 2034.
 
-[Learn more]({{ site.baseurl }}/funds-lifecycle/l-2020/){:.learn-more}
+[Learn more]({{ site.baseurl }}/funds-lifecycle/l-2030/){:.learn-more}
 
 </div>
 </li>
+
 <li>
 <button class="usa-accordion-button"
 aria-expanded="false"
-aria-controls="a7" markdown="1">
+aria-controls="l2025" markdown="1">
+**L 2025 Lifecycle Fund** | <span class="secondary">Is this fund for me?</span>
+</button>
+<div id="l2025" class="usa-accordion-content" markdown="1">
+
+Consider if you were born 1954 – 1962, or plan to need your TSP savings between 2018 and 2024.
+
+[Learn more]({{ site.baseurl }}/funds-lifecycle/l-2025/){:.learn-more}
+
+</div>
+</li>
+
+<li>
+<button class="usa-accordion-button"
+aria-expanded="false"
+aria-controls="lincome" markdown="1">
 **Income Lifecycle Fund** | <span class="secondary">Is this fund for me?</span>
 </button>
-<div id="a7" class="usa-accordion-content" markdown="1">
+<div id="lincome" class="usa-accordion-content" markdown="1">
 
 Consider if you were born before 1954, or are using your TSP savings or expect to in the next year.
 
