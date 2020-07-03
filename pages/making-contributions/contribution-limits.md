@@ -7,6 +7,7 @@ scripts:
 permalink: /making-contributions/contribution-limits/
 redirect_from:
   - /PlanParticipation/EligibilityAndContributions/contributionLimits.html
+  - /limits
 ---
 
 # Know your limits
@@ -85,7 +86,7 @@ At any time beginning in the year you turn 50, you have the opportunity to **mak
   What to know
   </div>
   <div class="usa-width-two-thirds" markdown="1">
-Catch-up contributions are made on top of your regular employee contributions; however, they do not receive any matching. To be eligible to make these special contributions, you must be on track to meet the IRS elective deferral limit.
+Catch-up contributions are made on top of your regular employee contributions; however, they do not receive any matching. To be eligible to make these special contributions, you must be on track to meet the IRS elective deferral limit. They are separate from the elective deferral and annual addition limits.
 
 <div class="usa-alert usa-alert-info">
 <div class="usa-alert-body">You must make a new catch-up contribution election each calendar year—they do not restart automatically.</div>
@@ -123,7 +124,7 @@ What it means
 
 ## All Ages
 
-The annual addition limit is the **total amount of all the contributions you make in a calendar year.** This limit is per employer and includes money from all sources: employee contributions (tax-deferred, after-tax, and tax-exempt), Agency/Service Automatic (1%) Contributions, and Agency/Service Matching Contributions.
+The annual addition limit is the **total amount of all the contributions you make in a calendar year.** This limit is per employer and includes money from all sources: employee contributions (tax-deferred, after-tax, and tax-exempt), Agency/Service Automatic (1%) Contributions, and Agency/Service Matching Contributions. It does not include catch-up contributions.
 </div>
 </div> <!-- end div.usa-grid-full -->
 
@@ -150,7 +151,7 @@ Even if you don't reach the annual addition limit, keep it in mind when deciding
 </li>
 </ul>
 
-**Are you about to max out? Be careful not to exceed the contribution limits before December 31. If you do, we won't be able to process any more of your contributions for the remainder of the year, which means you'll miss out on Matching Contributions.**
+**Are you about to max out? Be careful not to exceed the contribution limits before December 31 if you're eligible for matching. If you do, we won't be able to process any more of your contributions for the remainder of the year, which means you'll miss out on matching contributions.**
 
 Grab your latest Leave and Earnings Statement and check
 out our [calculator](#), “How much should I contribute?”

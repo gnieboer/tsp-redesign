@@ -24,6 +24,6 @@ We use and retain your personal information only for this purpose and only as lo
 
 The FRTIB is authorized to collect and store this information pursuant to 5 U.S.C. § 8474. This information is accessed and maintained as defined in Federal Retirement Thrift Investment Board's System of Records Notice, FRTIB-20, Communications, Education, and Outreach Materials.
 
-We send these emails through the [GovDelivery]({{ site.baseurl }}/exit/?idx=146) email service provider. You can choose to stop receiving these emails by selecting the “unsubscribe” link at the bottom of an email sent to your email address.
+We send these emails through the [GovDelivery]({{ site.baseurl }}/exit/?idx=146){:rel="nofollow"} email service provider. You can choose to stop receiving these emails by selecting the “unsubscribe” link at the bottom of an email sent to your email address.
 
 Participant outreach subscriptions are only available to you when you add an email address to My Account. Anyone may subscribe to our [public email notifications]("https://www.tsp.gov/ParticipantSupport/Content/notifications.html").

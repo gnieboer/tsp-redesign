@@ -1,10 +1,85 @@
-.calculator-panel {
-  ul.usa-accordion {
-    &.default {
-      max-width: none;
+// SIDE-SCROLL TABLE
+section {
+
+  &.savings-grow-table { // Width for "sticky" left-column header
+    margin-top: 1rem;
+
+    .column-width {
+      width: 6rem;
+    }
+
+    // "STICKY" LEFT-COLUMN HEADER: Share price history & Rates of return
+    .table-side-scroll { // parent container
+      position: relative;
+      width: 100%;
+      z-index: 1;
+      margin: 0 auto;
+      overflow: auto;
+
+      table {
+      min-width: 682px;
+
+        thead {
+
+          th {
+            border-top-style: solid;
+            border-top-width: 3px;
+            border-top-color: #ddd;
+            position: -webkit-sticky;
+            position: sticky;
+            top: 0;
+            text-align: center;
+            vertical-align: bottom;
+
+            &:first-child {
+              position: sticky;
+              z-index: 5;
+            }
+
+            &.border-balance-existing {
+              border-top-color: $color-secondary; // #e31c3d
+            }
+            &.border-balance-growth {
+              border-top-color: $color-secondary-light; // #e59393
+            }
+
+            &.border-contributions {
+              border-top-color: $color-gold; // #fdb81e
+            }
+            &.border-contributions-growth {
+              border-top-color: $color-gold-lighter; // #fad980
+            }
+
+          }
+        } // end thead
+
+        th, td {
+          border-top: none;
+          border-right: 1px solid #ddd;
+          border-bottom: 1px solid #ddd;
+          border-left: none;
+          vertical-align: top;
+        }
+
+        td {
+          text-align: right;
+          background: #fff;
+        }
+
+        th {
+          background: $color-gray-lightest;
+          &:first-child {
+          position: -webkit-sticky;
+          position: sticky;
+          left: 0;
+          z-index: 2;
+          text-align: center;
+          }
+        }
+      }
     }
   }
-}
+} // end section
 
 #projected-growth {
   ul {
@@ -19,6 +94,23 @@
   legend {
     padding-bottom: 1.3rem;
     font-weight: 400;
+  }
+
+  &.usa-accordion-content {
+    padding: 1.5rem 0;
+
+    #resultSelectorDiv {
+        padding-right: 2rem;
+        padding-left: 2rem;
+    }
+/*
+    div {
+      &:first-child:not(.table-side-scroll) {
+        padding-right: 2rem;
+        padding-left: 2rem;
+      }
+    }
+*/
   }
 } // end #projected-growth
 
@@ -67,3 +159,27 @@
     }
   }
 } // end #adjust-results
+
+@media only screen and (max-width: $small-screen) {
+  #projected-growth {
+    ul {
+      &.usa-unstyled-list {
+        display: block;
+      }
+    }
+  }
+
+  .projected-growth-span {
+    width: 80%;
+    display: inline-block;
+    line-height: 1.5;
+  }
+} // END media
+
+// .calculator-panel {
+//   ul.usa-accordion {
+//     &.default {
+//       max-width: none;
+//     }
+//   }
+// }

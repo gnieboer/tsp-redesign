@@ -1,45 +1,78 @@
-// CALCULATOR PANEL
-.calculator-panel {
-  border: none;
-  div {
-    &.panel-form-field {
-      border-bottom: .2rem dotted #aeb0b5;
-      background-color: #f3f4f6;
-      padding: 2rem;
+li.show-equal {
+
+  [type=checkbox] + label::before {
+      margin-left: -3rem;
     }
+
+  label {
+    margin-top: 3rem;
+    margin-left: 3rem;
   }
-  h2,
-  h4 {
-    font-family: $sans;
-  }
-  h2 {
-    margin: .5em 0;
-    font-size: 2.5rem;
-  }
-  select {
-    // width: auto;
-  }
-  .usa-grid {
-    padding: 0;
-    &.results {
-      &:nth-of-type(odd) {
-      background-color: #f1f1f1;
+}
+
+// CALCULATOR PANEL
+section {
+  &.calculator-panel {
+    border: none;
+
+    div {
+      &.panel-form-field {
+        border-bottom: 0.2rem dotted #aeb0b5;
+        background-color: #f3f4f6;
+        padding: 2rem;
+      }
+
+      &.panel-field {
+        border-bottom: 0.2rem dotted #aeb0b5;
+        background-color: inherit;
       }
     }
-    // div {
-    //   padding: 3rem 1.8rem;
-    // }
-    input, select {
-      float: right;
-      text-align: right;
+
+    h2,
+    h4 {
+      font-family: $sans;
     }
-  }
-  legend {
-    font-size: inherit;
-    // font-weight: inherit;
-    cursor: default;
-    // padding-top: 3rem;
-    // font-style: $bold;
+
+    h2 {
+      margin: 0.5em 0;
+      font-size: 2.5rem;
+    }
+
+    .usa-grid {
+      padding: 0;
+
+      &.results {
+        &:nth-of-type(odd) {
+          background-color: #f1f1f1;
+        }
+      }
+      // div {
+      //   padding: 3rem 1.8rem;
+      // }
+      input,
+      select {
+        float: right;
+        text-align: right;
+      }
+    }
+
+    fieldset {
+      &.usa-fieldset-inputs {
+        legend {
+          font-size: inherit;
+          cursor: default;
+          font-weight: $normal;
+          padding: 3px 0;
+          margin-bottom: 0.2em;
+
+          &.usa-input-error-label {
+            font-weight: $bold;
+            padding: 0;
+            margin-bottom: 0;
+          }
+        }
+      }
+    }
   }
 }
 
@@ -53,6 +86,62 @@
       }
     }
   }
+}
+
+// INLINE INPUT FIELDS
+ul.inline-input {
+  li {
+    display: flex;
+    align-items: baseline;
+    input,
+    input:focus
+     {
+      width: auto;
+      margin: 0 .7rem;
+      // padding: 0;
+      min-width: 5rem;
+      text-align: center;
+    }
+  }
+
+  // NUMBER FORMAT SYMBOLS ($, %)
+    span[data-format] {
+        // position: relative;
+        // display: inline-flex;
+        width: auto;
+        // max-width: 46rem;
+        &:before,
+        &:after {
+          top: 1rem;
+          left: 1.8rem;
+          // color: #6f707b;
+          // pointer-events: none;
+          // position: absolute;
+          // padding: 1rem 0.7em;
+          margin: 0;
+        }
+        &.input-symbol-left {
+          // &:before {
+          //   content: attr(data-format);
+          //   left: 0;
+          // }
+          input {
+            // margin: 0;
+            // padding: 0;
+            // padding-left: 3rem;
+            text-align: left;
+          }
+        }
+        // &.input-symbol-right {
+        //   &:before {
+        //     content: attr(data-format);
+        //     right: 0;
+        //   }
+        //   input {
+        //     padding-right: 3rem;
+        //   }
+        // }
+    } // end span[data-format]
 }
 
 // ZEBRA STRIPING
@@ -188,30 +277,16 @@ div.results-grid-frame {
 
 } // end @media $medium-screen
 
-// .deco-box {
-//   .usa-grid {
-//     padding: 0;
-//     div {
-//       padding: 3rem 1.8rem;
-//     }
-//   }
-// }
-//
-// .deco-box.start {
-//   .usa-grid {
-//     div {
-//       padding: 0;
-//     }
-//   }
-//   .usa-grid:first-child {
-//     div {
-//       padding: 3rem 1rem 0 1rem;
-//       }
-//   }
-// }
+@media screen and (max-width: $small-screen) {
+  .usa-content {
+    ul {
+      &.navigation-buttons {
+        display: block;
 
-//   // zebra striping
-//
-// div.deco-box > div.usa-grid.results:nth-of-type(odd) {
-//     background-color: $color-gray-lightest;
-// }
+        button {
+          padding: 1.5rem;
+        }
+      }
+    }
+  }
+} // end @media $small-screen

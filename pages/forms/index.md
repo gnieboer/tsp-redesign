@@ -31,6 +31,7 @@ redirect_from:
   - /forms/transfersAndRollovers.html
   - /forms/uniformedServicesForms.html
   - /forms/withdrawals.html
+  - /publications
 ---
 
 # Help me find forms and resources about {#forms}
@@ -39,7 +40,7 @@ redirect_from:
 
 <div class="usa-grid-full">
   <div class="usa-width-one-whole">
-    <section class="search-forms">
+    <section class="inline-search">
       <div role="search" class="search-container">
         <!-- Topic drop-down list -->
 
@@ -54,7 +55,7 @@ redirect_from:
               <option value='0'>Show all</option>
             </select>
         </div>
-
+        <span class="or">or</span>
         <input id="group" type="hidden" value="forms">
         <form accept-charset="UTF-8" action="javascript:void(0);" id="search-form-forms" method="get"
           class="animated-search">
@@ -64,7 +65,7 @@ redirect_from:
               autocomplete="off" placeholder="Enter search term(s)">
         </form>
       </div>
-    </section><!-- // end section.search-forms -->
+    </section><!-- // end section.inline-search -->
   </div><!-- END div.usa-width-one-whole -->
 </div><!-- END div.usa-grid-full -->
 <section id="form-search-results" class="form-search-results ">

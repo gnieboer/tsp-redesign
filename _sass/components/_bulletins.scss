@@ -1,0 +1,309 @@
+// CSS for individual Bulletin
+h1#bulletin {
+  font-family: $sans;
+  font-weight: 600;
+  text-align: center;
+  margin-top: 0.67em;
+  line-height: 0.8;
+  max-width: 28ch;
+  padding-bottom: 1rem;
+
+  span {
+    text-align: center;
+    font-size: 2.25rem;
+    font-weight: $normal;
+    // color: $color-green;
+
+    // &.usv {
+    //   color: $color-cool-blue;
+    //
+    //   i {
+    //     color: inherit;
+    //     font-size: inherit;
+    //     padding-left: .4rem;
+    //   }
+    // }
+  }
+}
+
+section {
+  &.bulletin {
+    h2,
+    h3 {
+      font-family: $sans;
+      font-size: 3rem;
+      font-weight: $normal;
+    }
+    h3 {
+      font-size: 2rem;
+      font-weight: $bold;
+    }
+
+    #footnotes {
+      width: 66ch;
+      margin-top: 3.4rem;
+      border-top: none;
+    }
+    a.back-to-top {
+      color: $color-primary;
+      &:link {
+        font-size: 1.4rem;
+        position: sticky;
+        top: 3rem;
+        float: right;
+      }
+
+      div {
+        position: relative;
+        left: 140%;
+        color: #046b99;
+
+        &:after {
+          font-family: $font-awesome;
+          content: "\f35b";
+          font-weight: $bold;
+          display: inline-block;
+          padding-left: .5rem;
+          text-decoration: none;
+          font-size: 1.6rem;
+        }
+      }
+    }
+  }
+
+  &.bulletins-current {
+    border-bottom: 1px solid #d6d7d9;
+    padding-bottom: 4rem;
+
+    .see-more {
+      text-transform: none;
+      color: $color-base;
+      min-height: 2rem;
+      span {
+        cursor: pointer;
+        padding-right: 0.8rem;
+        &:hover {
+          text-decoration: underline;
+        }
+        &::before {
+          content: "";
+        }
+      }
+      .rotate {
+        transition: transform .1s linear;
+      }
+      .rotate.down {
+        transform:rotate(180deg);
+      }
+    } // end .see-more
+  }
+
+  footer {
+    &.bulletin-footer {
+      border-top: 1px solid $color-gray-light;
+      margin-top: 2rem;
+      padding-top: 2rem;
+
+      .usa-grid {
+        padding-left: 0;
+        margin-bottom: 1.6rem;
+      }
+
+      .usa-width-one-sixth {
+        font-weight: $medium;
+      }
+
+      .usa-width-five-sixths {
+        p,
+        p:first-child,
+        p:last-child {
+          margin-top: 0;
+          margin-bottom: 0;
+        }
+      }
+
+      // ul {
+      //   list-style-type: none;
+      //   padding-left: 0;
+      // }
+    }
+  }
+}
+
+
+
+// CSS for Bulletins landing page
+
+.calculator-panel.subscribe {
+  margin-bottom: 4rem;
+  ul.usa-accordion {
+    // &.explain-this {
+    //   max-width: 46rem;
+    //   li {
+    //     background-color: transparent;
+    //     .usa-accordion-button {
+    //       // background-color: $color-primary;
+    //       background-image: none;
+    //       font-weight: 400;
+    //       // color: #fff;
+    //       position: relative;
+    //       line-height: 2rem;
+    //       padding: 1.5rem 2rem 1.5rem 0;
+    //       font-size: 2.4rem;
+    //       font-weight: $bold;
+    //
+    //         span {
+    //           background-color: $color-primary;
+    //           padding: .9rem 1.5rem;
+    //           // background-image: none;
+    //           // font-weight: 400;
+    //           color: #fff;
+    //           // position: relative;
+    //           // line-height: 2rem;
+    //           // padding: 1.5rem 2rem;
+    //           // font-size: 2.4rem;
+    //           // font-weight: $bold;
+    //         }
+    //       &:after {
+    //         font-family: $font-awesome;
+    //         font-weight: $light;
+    //         font-size: 2.5rem;
+    //         content: "\f056";
+    //         float: right;
+    //       }
+    //       &[aria-expanded="false"] {
+    //         &:after {
+    //           content: "\f055";
+    //         }
+    //       }
+    //       &:hover {
+    //         background-color: transparent;
+    //         color: $color-gray-darkest;
+    //         span {
+    //           background-color: $color-gray-dark;
+    //         }
+    //       }
+    //     } // end .usa-accordion-button
+    //     .usa-accordion-content {
+    //       background-color: transparent;
+    //     } // end .usa-accordion-content
+    //   }
+    // }
+  }
+} // end .calculator-panel
+
+div.select-bulletins-topic {
+  h2.results {
+    padding: 2rem 0 3rem 0;
+  }
+}
+
+section {
+
+  &.search-bulletins {
+    margin-top: 2rem;
+  }
+
+  &.inline-search {
+    form.animated-search {
+      &.bulletins {
+        input[type=text]:focus {
+          width: 100%;
+          border: 2px solid green;
+        }
+      }
+    }
+  }
+
+  &.bulletins-current,
+  &.bulletins-archive {
+
+    div.bulletin {
+
+      input {
+        opacity: 0; // hide the checkbox whose state truncates the adjacent <p>
+        position: absolute;
+        pointer-events: none;
+      }
+
+      p {
+        display: none // Otherwise every <p> will appear, truncated to x lines
+      }
+
+      p {
+        &:first-of-type { // Display only the first <p> in div.bulletin
+          display: -webkit-box;
+          -webkit-line-clamp: 4; // If the <p> has less than three lines, all content is displayed
+          -webkit-box-orient: vertical;
+          overflow: hidden;
+          // border: 1px solid red;
+        }
+      }
+      input:focus ~ label {
+        outline: -webkit-focus-ring-color auto 5px;
+      }
+
+      input:checked + p:first-of-type {
+        -webkit-line-clamp: unset;
+      }
+
+      input:checked ~ label {
+        display: none;
+      }
+    } // END div.bulletin
+
+    .usa-grid {
+      padding: 1.8rem 3rem 3rem 0;
+    }
+
+    .post-and-share {
+      color: $color-primary;
+      align-items: center;
+      max-width: 66ch;
+
+      button {
+        &.read-more {
+          margin-top: 0;
+          margin-right: 0;
+          margin-left: auto;
+          box-shadow: inset 0 0 0 2px $color-green;
+          color: $color-green;
+
+        }
+      }
+
+      label {
+        border-radius: 4px;
+        padding: 0.2em 0.6em;
+        border: 1px solid #009ce2;
+        background-color: #00acff;
+        color: #fff;
+        font-size: 0.8em;
+        margin-top: 0;
+        margin-left: auto;
+        max-width: fit-content;
+      }
+
+      .bulletin-number {
+        font-weight: $bold;
+      }
+
+      span {
+        font-weight: $normal;
+      }
+
+      .tooltip > button,
+      button:not(.usa-button-secondary) {
+        background-color: inherit;
+        border: none;
+        // border: 1px solid pink;
+        margin: 0;
+        color: inherit;
+        padding: 0 1.2rem;
+      }
+    }
+    // end .post-and-share
+  }
+  // end .bulletins-current
+}
+// end section

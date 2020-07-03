@@ -6,13 +6,22 @@
 
 
 // SEARCH FORM ELEMENTS
-section.search-forms {
+section.inline-search {
   padding-bottom: 5rem;
   margin-bottom: 0;
 
   .search-container {
     display: flex;
     width: 100%;
+    align-items: center;
+
+    .or {
+      line-height: 1;
+      font-size: 3rem;
+      margin-right: 2rem;
+      font-weight: $light;
+      color: $color-gray;
+    }
   }
 
   div {
@@ -124,6 +133,64 @@ div.usa-input-error {
     //   border: 3px solid $color-error;
     // }
   }
+}
+
+// Warning HANDLING
+/*
+div.usa-input-error {
+  &.warning {
+    border-left: 4px solid $color-gold;
+    background-color: $color-gold-lightest;
+
+    .usa-input-error-message {
+      color: $color-base;
+      font-style: italic;
+      font-weight: $normal;
+    }
+
+    input {
+      border: 3px solid $color-gold;
+      // &:focus {
+      //   border: 3px solid $color-error;
+      // }
+    }
+  }
+}
+*/
+
+div.usa-input-warning:not(.usa-input-error) {
+    border-left: 4px solid $color-gold;
+    background-color: $color-gold-lightest;
+    margin-top: 3rem;
+    padding-bottom: 0.8rem;
+    padding-left: 1.5rem;
+    padding-top: 0.8rem;
+    position: relative;
+    right: 1.9rem;
+
+    label {
+      margin-top: 0;
+
+      &.usa-input-warning-label {
+        display: block;
+        font-size: 1.7rem;
+        font-weight: $bold;
+      }
+    }
+
+    .usa-input-warning-message {
+      color: $color-base;
+      display: block;
+      font-size: 1.7rem;
+      font-weight: $normal;
+      font-style: italic;
+      padding-bottom: 3px;
+      padding-top: 3px;
+    }
+
+    input {
+      border: 3px solid $color-gold;
+    }
 }
 
 // FORMS & RESOURCES

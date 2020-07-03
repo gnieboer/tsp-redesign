@@ -18,6 +18,7 @@ document-ready:
   - getSharePricesRaw('dynamic-share-price');
 redirect_from:
   - /InvestmentFunds/FundPerformance/
+  - /prices
 ---
 {% assign chartName = 'dynamic-share-price' %}
 

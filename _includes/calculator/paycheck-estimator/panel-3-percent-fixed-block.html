@@ -1,0 +1,46 @@
+{% assign type = include.type | default: 'trad' %}
+{% assign option = include.option | default: 1 %}
+{% assign idx = include.idx | default: 1 %}
+{% assign side = include.side | default: 'L' %}
+{% assign outerID = 'scenario' | append: option | append: type %}
+{% assign checkAmounts = "check_amounts(false);" %}
+{% assign divExplain = include.divExplain | default: " " %}
+{% assign prompt = include.prompt | default: 'forgot to set prompt' %}
+
+{% assign tid = type | append: '_option' | append: option %}
+{% assign panel = 'panel3.' | append: idx | append: side %}
+{% assign radioIDs = tid | append: '_p, ' | append: tid | append: '_f' %}
+{% assign ulID = 'id="' | append: tid | append: '-ul"' %}
+{% assign blur = "percentFixedGood('" | append: type | append: "', '" | append: option | append: "', false); " | append: checkAmounts %}
+{% comment %}Start of multi-input block panel 3 contributions.  We must close <div> at end{% endcomment %}
+{% include calculator/div-panel-form-field.html
+  outerDivID=outerID fieldID=panel id=tid ulID=ulID
+  inputType="radio" radioIDs=radioIDs  radioLabels="Percentage of paycheck, Fixed amount"
+  inputClass="usa-unstyled-list"  onBlur=blur
+  prompt=prompt   explanation=""   dontCloseOuterDiv=true %}
+{% assign pid = tid | append: 'Percent' %}
+{% assign idx = idx | plus: 1 %}
+{% assign panel = 'panel3.' | append: idx | append: side | append: '.p' %}
+{% include calculator/div-panel-form-field.html
+  fieldID=panel id=pid
+  inputClass=""  dataFormat="%" innerDivClass="hide"
+  min="0" value="" max="99" maxLength=5 step="1"
+  placeholder="" onBlur=checkAmounts  prompt=" "
+  explanation=""   dontOpenOuterDiv=true
+%}
+{% assign fid = tid | append: 'Amount' %}
+{% assign idx = idx | plus: 1 %}
+{% assign panel = 'panel3.' | append: idx | append: side | append: '.f' %}
+{% include calculator/div-panel-form-field.html
+  fieldID=panel id=fid
+  inputClass=""  dataFormat="$" innerDivClass="hide"
+  min="0" value="" max="1000000" maxLength=7 step="1"
+  placeholder="" onBlur=checkAmounts  prompt=" "
+  explanation=""   dontOpenOuterDiv=true
+%}
+{% assign idx = idx | plus: 1 %}
+{% assign panel = 'panel3.' | append: idx | append: side %}
+{% include calculator/div-panel-form-field.html fieldID=panel inputType="none"
+  explanation=divExplain   dontOpenOuterDiv=true
+%}
+</div>{% comment %}End of multi-input block Account Traditional contributions 1{% endcomment %}
