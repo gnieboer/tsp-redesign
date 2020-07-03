@@ -68,13 +68,12 @@ primary:
   #     href: /calculators/
 
 secondary:
-  - text: <i name="share-page" class="fas fa-share-alt"></i><label class="usa-sr-only" for="share-page">Share</label>
-    href: "javascript:void(0)"
-  - text: Login
-    href: "https://www.tsp.gov/tsp/login.html"
+#  - text: Login
+#    href: "https://www.tsp.gov/tsp/login.html"
     # id:
-    class: login-toggle usa-button
-    target: _blank
+#    type: button
+#    class: usa-button
+#    target: _blank
 
 # SIDENAV MENUS
 calculators:

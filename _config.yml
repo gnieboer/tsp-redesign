@@ -42,6 +42,10 @@ markdown: kramdown
 scripts:
   - /assets/uswds/js/uswds.min.js
   - /assets/js/vendor/glossary.min.js
+  - /assets/js/jquery.min.js
+  - /assets/js/bootstrap.min.js
+  - /assets/js/copy-to-clipboard.js
+  - /assets/js/form-modals.js
   - /assets/js/glossary.js
   - /assets/js/dialog.js
   - /assets/js/usa-search.js
