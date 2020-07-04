@@ -61,7 +61,7 @@
 {% assign parent_url = site.baseurl | append: "/agency-service-reps/bulletins/?topic=" | append: chapter_topic %}
 {% assign chapter_topic = "<a href='" | append: parent_url | append: "'>" | append: chapter_topic | append: "</a>" %}
 {% endif %}
-Chapter {{chapter_number | strip }}, {{chapter_topic | strip }}{% if forloop.last == false %}, {% endif %}
+<p>Chapter {{chapter_number | strip }}, {{chapter_topic | strip }}{% if forloop.last == false %}</p> {% endif %}
 
 {% endfor %}
 {% endif %}
