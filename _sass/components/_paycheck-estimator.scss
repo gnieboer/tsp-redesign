@@ -1,0 +1,165 @@
+span {
+  &.whole-number {
+    input {
+      width: 95%;
+    }
+    &:after {
+      content: ".00";
+      right: -0.5rem;
+    }
+  }
+}
+
+section.calculator-panel.comparison.paycheck { // Panel 4: Results
+
+  td.sep {
+    .flex {
+      a {
+        font-weight: 400;
+        i {
+          padding: 0 0 0 .75rem;
+        }
+      }
+    }
+  }
+
+  #footnotes {
+    margin-bottom: 2rem;
+  }
+}
+.usa-width-one-half {
+  &.scenario {
+    h3 {
+      background-color: $color-gray;
+      color: #fff;
+      padding: 1rem .75rem;
+      margin-bottom: 0;
+      font-family: $sans;
+      font-weight: 400;;
+    }
+    .contributions {
+      li {
+        margin-bottom: 2rem;
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+}
+
+.usa-content {
+
+  .expected-annual-return {
+    margin-top: 2rem;
+
+    ul {
+      &.inline-input {
+        max-width: none;
+        li {
+          justify-content: center; // Center input in panel
+        }
+      }
+    }
+
+    .explain-this {
+      margin: auto; // Center accordion in panel
+    }
+  }// END div.expected-annual-return
+}
+
+// DAV WAS HERE
+section {
+
+  &.paycheck-estimator-table { // Width for "sticky" left-column header
+    margin-top: 1rem;
+
+    .column-width {
+      width: 6rem;
+    }
+
+    // "STICKY" LEFT-COLUMN HEADER: Share price history & Rates of return
+    .table-side-scroll { // parent container
+      position: relative;
+      width: 100%;
+      z-index: 1;
+      margin: 0 auto;
+      overflow: auto;
+
+      table {
+      min-width: 682px;
+
+        thead {
+
+          tr { // Omit first <th> of second-level header ("Traditional")
+            th:first-child {
+              position: static;
+              z-index: 0;
+              text-align: center;
+            }
+          }
+          tr:not(.second-level) {
+
+            th {
+              border-top-style: solid;
+              border-top-width: 3px;
+              border-top-color: #ddd;
+              position: -webkit-sticky;
+              position: sticky;
+              top: 0;
+              text-align: center;
+              vertical-align: bottom;
+
+              &:first-child {
+                position: sticky;
+                z-index: 5;
+              }
+
+              &.border-balance-existing {
+                border-top-color: $color-secondary; // #e31c3d
+              }
+              &.border-balance-growth {
+                border-top-color: $color-secondary-light; // #e59393
+              }
+
+              &.border-contributions {
+                border-top-color: $color-gold; // #fdb81e
+              }
+              &.border-contributions-growth {
+                border-top-color: $color-gold-lighter; // #fad980
+              }
+
+            }
+          } // end tr
+        } // end thead
+
+        tbody {
+
+          th, td {
+            border-top: none;
+            border-right: 1px solid #ddd;
+            border-bottom: 1px solid #ddd;
+            border-left: none;
+            vertical-align: top;
+          }
+
+          td {
+            text-align: right;
+            background: #fff;
+          }
+
+          th {
+            background: $color-gray-lightest;
+              &:first-child {
+              position: -webkit-sticky;
+              position: sticky;
+              left: 0;
+              z-index: 2;
+              text-align: center;
+              }
+          }
+        }
+      }
+    }
+  }
+} // end section

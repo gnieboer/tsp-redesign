@@ -4,10 +4,6 @@ title: News and resources
 sidenav: news-and-resources
 styles:
 scripts:
-  - /assets/js/jquery.min.js
-  - /assets/js/bootstrap.min.js
-  - /assets/js/copy-to-clipboard.js
-#  - /assets/js/share-modal.js
   - /assets/js/ajaxFetch.js
   - /assets/js/calculator/calculator.js
   - /assets/js/calculator/javascriptTaxTable.js

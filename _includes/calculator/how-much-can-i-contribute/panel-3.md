@@ -23,7 +23,7 @@ Elective Deferral Limits panel (3) for How Much Can I Contribute?.
 
 <div class="results-grid-frame" markdown="1">
 {% include calculator/resultsRow.html left="Contribution year"
-                                      rightID="contribution-year" right="<span class='year-choosen'>YYYY</span>" %}
+  rightID="contribution-year" right="<span class='year-choosen'>YYYY</span>" %}
 {% include calculator/resultsRow.html rightID="deferral-limit" right=""
   left="IRS Elective Deferral Limit for <span class='year-choosen'>YYYY</span>" %}
 {% include calculator/resultsRow.html rightID="total-contributed" right=""

@@ -16,8 +16,15 @@ permalink: /loan-basics/applying-for-a-loan/
 Before you apply for a TSP loan, please review our booklet, [_Loans_]({{ site.baseurl }}/publications/tspbk04.pdf). Be sure to read it thoroughly to make sure you understand all the rules and eligibility restrictions.
 
 ## Submitting your request
-+ Log in to [My Account]({{ site.loans }}) to start your loan request. **Note:** Depending on your marital status, the type of loan you are requesting, and how you want your funds sent to you, you may not be able to submit your loan request online.
-+ If you’re unable to complete the loan process online, print out the Loan Agreement, sign it, and mail it to us with any additional required information. We must receive the Loan Agreement before the expiration date that appears at the top.
+### Online requests
+1. Complete your loan application by logging in to My Account. **Note:** Depending on your marital status,
+the type of loan you are requesting, and how you want to receive your funds, you may need to take
+additional steps to submit your application.
+2. If the online tool prompts you to print and submit your loan request, you must open and print the loan
+agreement package supplied to you, sign and date the form, include any additional required
+information, and send the completed request to us. You can then upload your submission in My
+Account, or you can mail or fax us your request according to the instructions on the form.
+3. Submit this request one time only. We will cancel any subsequent request we receive.
 
 <div class="usa-alert usa-alert-info">
 <div class="usa-alert-body" markdown="1">

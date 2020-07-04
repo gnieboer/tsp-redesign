@@ -3,13 +3,18 @@ layout: calculator
 title: How much will my savings grow?
 styles:
 sidenav: calculators
-scripts: /assets/js/calculator/javascriptTaxTable.js
+scripts:
+  - /assets/js/flatpickr/flatpickr.js
+  - /assets/js/calculator/javascriptTaxTable.js
+  - /assets/js/highcharts/highcharts.js
+  - /assets/js/highcharts/exporting.js
+  - /assets/js/highcharts/data.js
+  - /assets/js/ajaxFetch.js
+  - /assets/js/side-scroll-funds.js
 permalink: /calculators/how-much-will-my-savings-grow/
-calculator-name:
-progress-steps:
-panel-names:
+calculator-name: how-much-will-my-savings-grow
+progress-steps: [Introduction,Savings growth information,Savings growth estimate]
+panel-names: [Introduction, Inputs, Estimate]
+redirect_from:
+  - /PlanningTools/Calculators/howSavingsGrow.html
 ---
-
-This version is under development.
-
-Please use the existing [How Much Will My Savings Grow?](https://www.tsp.gov/PlanningTools/Calculators/howSavingsGrow.html){:target="\_blank"} calculator on tsp.gov.

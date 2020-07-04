@@ -68,13 +68,12 @@ primary:
   #     href: /calculators/
 
 secondary:
-  - text: About us
-    href: /about-us/
-  - text: Login
-    href: "https://www.tsp.gov/tsp/login.html"
+#  - text: Login
+#    href: "https://www.tsp.gov/tsp/login.html"
     # id:
-    class: login-toggle usa-button
-    target: _blank
+#    type: button
+#    class: usa-button
+#    target: _blank
 
 # SIDENAV MENUS
 agency-service-reps:

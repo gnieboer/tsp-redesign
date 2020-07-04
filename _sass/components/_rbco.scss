@@ -1,0 +1,108 @@
+// TEMPORARY STYLE FOR PANEL ACCORDIONS ON STATIC VERSION OF RBCO
+
+ul.usa-accordion {
+  &.rbco {
+    .usa-accordion-content {
+      padding: 2.5rem 0 0;
+    }
+  }
+}
+// end TEMPORARY STYLES
+
+section {
+  &.calculator-panel {
+
+    input[disabled] {
+      cursor: default;
+      color: $color-gray;
+      font-style: italic;
+    }
+
+    input,
+    button.usa-button {
+      &.attention {
+        background-color: $color-gold-light;
+      }
+    }
+
+    button.usa-button {
+      &.attention {
+        color: $color-base;
+      }
+    }
+  }
+
+  ul.usa-accordion-bordered {
+    &.award {
+      .panel-form-field {
+        background-color: inherit;
+      }
+    }
+  }
+  // END .calculator-panel
+}
+// END section
+
+.panel-form-field {
+
+  &.account-types {
+    ul {
+      &.account-type,
+      &.usa-unstyled-list {
+        li {
+          // border: 1px solid red;
+          &:last-child {
+            margin-bottom: 4rem;
+            // border-color: blue;
+            padding-left: 3rem;
+
+            label {
+              margin-top: 1.75rem;
+            }
+
+            .dual-accounts {
+              max-width: 46rem;
+              padding: .3rem 0;
+              i {
+                color: $color-gray;
+                margin-right: .7rem;
+                font-size: 2.1rem;
+                line-height: 1.4;
+              }
+            }
+
+          }
+        }
+      }
+    }
+  }
+}
+// END .panel-form-field
+
+.button-stack {
+  text-align: center;
+  width: 100%;
+  margin: 2rem 0;
+  padding: 0;
+
+  button {
+    width: 66%;
+
+    &:last-child {
+      font-size: 2rem;
+      line-height: 1.4;
+      font-weight: $normal;
+    }
+  }
+}
+@media only screen and (max-width: $small-screen) {
+  .button-stack {
+    button {
+      width: 100%;
+
+      &:last-child {
+        font-weight: $medium;
+      }
+    }
+  }
+}

@@ -3,6 +3,7 @@ button {
   &.usa-button-big,
   &.usa-button-secondary {
     border-radius: 0;
+
     &.print {
       &:after {
         font-family: $font-awesome;
@@ -12,10 +13,28 @@ button {
       }
     }
 
-    &.new-window {
+    &.calculate {
       &:after {
         font-family: $font-awesome;
-        content: "\f08e";
+        content: "\f1ec";
+        font-weight: $light;
+        padding-left: .5rem;
+      }
+    }
+
+    &.clear {
+      &:after {
+        font-family: $font-awesome;
+        content: "\f55a";
+        font-weight: $light;
+        padding-left: .5rem;
+      }
+    }
+
+    &.save {
+      &:after {
+        font-family: $font-awesome;
+        content: "\f0c7";
         font-weight: $light;
         padding-left: .5rem;
       }

@@ -5,11 +5,9 @@ styles:
 sidenav: calculators
 scripts: /assets/js/calculator/javascriptTaxTable.js
 permalink: /calculators/tsp-installment-payment-calculator/
-calculator-name:
-progress-steps:
-panel-names:
+calculator-name: tsp-installment-payment-calculator
+progress-steps: [Introduction, Installment Payment Information, Installment Payment Estimate]
+panel-names: [Introduction, Information, Estimate]
+redirect_from:
+  - /PlanningTools/Calculators/installmentPayCalc.html
 ---
-
-This version is under development.
-
-Please use the existing [TSP Installment Payment Calculator](https://www.tsp.gov/PlanningTools/Calculators/installmentPayCalc.html){:target="\_blank"} on tsp.gov.
