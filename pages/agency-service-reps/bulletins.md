@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Bulletins
+title: Bulletinss
 styles:
 sidenav: agency-service-reps
 scripts:
