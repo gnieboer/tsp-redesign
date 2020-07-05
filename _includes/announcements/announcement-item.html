@@ -1,0 +1,32 @@
+{% comment %}
+HTML block for one faq item accordion.
+{% endcomment %}
+{% assign entry = include.entry %}
+{% assign addBlockName = include.addBlockName | default: 0 %}
+{% assign announcement_name = entry.permalink | split: '/' | last | default: 'anchor' | append: '-' | append: addBlockName %}
+{% assign announcement_posted = entry.path | split: '/' | last | truncate: 10, '' | default: '--' %}
+{% assign showHeader = include.showHeader | default: 1 %}
+{% assign entryHTML = entry.permalink %}
+{% assign contentDivClass = include.contentDivClass | default: "" %}
+{% if addBlockName != 0 %}<div id="{{announcement_name}}-block" class="announcement-search-block">{% endif %}
+<a name="{{announcement_name}}"></a>
+{% if showHeader != 0 %}
+<div class="flex header-line" markdown="1">
+## {{announcement_posted | date: '%B %Y'}} news and announcements
+</div>
+{% endif %}
+
+<div class="usa-grid">
+<div class="usa-width-one-whole" markdown="1">
+<div id="{{announcement_name}}-div" class="{{contentDivClass}}">{{entry.content}}</div>
+<div class="flex post-and-share">
+  <span id="{{announcement_name}}-posted" class="post-date" >Posted: {{announcement_posted | date: '%B %d, %Y'}}</span>
+  <!-- Share Modal -->
+  {% include social-media-share.html modalID=announcement_name %}
+  {% comment %}{% include copy-to-clipboard.html element=announcement_name function='copyPlanNewsToClipboard' %}{% endcomment %}
+  {% comment %}{% if entry.permalink %}<a href="{{entryHTML}}">Entry</a>{% endif %}{% endcomment %}
+  {% include share-bar.html pageurl=entryHTML modalID=announcement_name %}
+</div>
+</div>
+</div>
+{% if addBlockName != 0 %}</div>{% endif %}
