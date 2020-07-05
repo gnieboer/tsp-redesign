@@ -6,16 +6,16 @@
   <!-- plan news -->
   <channel>
     <title>Plan news</title>
-    <link>https://www.tsp.gov/whatsnew/Content/index.html</link>
+    <link>https://beta.tsp.gov/news-and-resources/plan-news/</link>
     <description>Read about the most recent updates to the TSP.</description>
-    <lastUpdate>{{ item.path | date: '%A, %B %d, %Y (%I:%M %P)' }}</lastUpdate>
+    <lastUpdate>{{ item.path | date: '%A, %B %-d, %Y (%I:%M %P)' }}</lastUpdate>
     {% assign plan_news_list = site.plan_news | sort: 'path' %}
     {% for item in plan_news_list %}
     {% unless item.path contains '/_hidden/' %}
     <item>
       <title>{{ item.title }}</title>
       <link>{{ item.permalink | prepend: site_url }}</link>
-      <lastUpdate>{{ item.path | date: '%A, %B %d, %Y (%I:%M %P)' }}</lastUpdate>
+      <lastUpdate>{{ item.path | split: '/' | last | slice: 0, 10 | date: '%A, %B %-d, %Y (%I:%M %P)' }}</lastUpdate>
     </item>
     {% endunless %}
     {% endfor %}
