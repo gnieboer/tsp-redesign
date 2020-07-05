@@ -3,7 +3,7 @@ layout:
 title: Form TSP-26, Loan Payment Coupon
 sidenav:
 styles:
-scripts:
+scripts: 
 permalink: /forms/tsp-26/
 ---
 <html lang="en-US">
@@ -38,7 +38,17 @@ permalink: /forms/tsp-26/
   <tr valign="top">
   <td class="txtlbfrm" width="4%"></td>
   <td class="txtlbfrm" width="60%"></td>
-  <td class="txtlbfrm" width="36%"><input class="fmipfbig" maxlength="1" name="CH.1" tabindex="1" type="text" /> <input class="fmipfbig" maxlength="1" name="CH.2" tabindex="2" type="text" /> <input class="fmipfbig" maxlength="1" name="CH.3" tabindex="3" type="text" /> <input class="fmipfbig" maxlength="1" name="CH.4" tabindex="4" type="text" /> <input class="fmipfbig" maxlength="1" name="CH.5" tabindex="5" type="text" /> <input class="fmipfbig" maxlength="1" name="CH.6" tabindex="6" type="text" /> <input class="fmipfbig" maxlength="1" name="CH.7" tabindex="7" type="text" /> <input class="fmipfbig" maxlength="1" name="CH.8" tabindex="8" type="text" /> <input class="fmipfbig" maxlength="1" name="CH.9" tabindex="9" type="text" /> <input class="fmipfbig" maxlength="1" name="CH.10" tabindex="10" type="text" /></td>
+  <td class="txtlbfrm" width="36%">
+  <input class="fmipfbig" maxlength="1" name="CH.1" tabindex="1" type="text" />
+  <input class="fmipfbig" maxlength="1" name="CH.2" tabindex="2" type="text" />
+  <input class="fmipfbig" maxlength="1" name="CH.3" tabindex="3" type="text" />
+  <input class="fmipfbig" maxlength="1" name="CH.4" tabindex="4" type="text" />
+  <input class="fmipfbig" maxlength="1" name="CH.5" tabindex="5" type="text" />
+  <input class="fmipfbig" maxlength="1" name="CH.6" tabindex="6" type="text" />
+  <input class="fmipfbig" maxlength="1" name="CH.7" tabindex="7" type="text" />
+  <input class="fmipfbig" maxlength="1" name="CH.8" tabindex="8" type="text" />
+  <input class="fmipfbig" maxlength="1" name="CH.9" tabindex="9" type="text" />
+  <input class="fmipfbig" maxlength="1" name="CH.10" tabindex="10" type="text" /></td>
   </tr>
   <tr valign="top">
   <td class="txtlbfrm" width="4%"></td>
@@ -51,7 +61,14 @@ permalink: /forms/tsp-26/
   <tr valign="top">
   <td class="txtlbfrm" width="4%"></td>
   <td class="txtlbfrm" width="60%"></td>
-  <td class="txtlbfrm" width="36%"><input class="fmipfstd" maxlength="1" name="DC.1" tabindex="21" type="text" /> <input class="fmipfstd" maxlength="1" name="DC.2" tabindex="22" type="text" /> <span class="txtlbh2">/</span> <input class="fmipfstd" maxlength="1" name="DC.3" tabindex="23" type="text" /> <input class="fmipfstd" maxlength="1" name="DC.4" tabindex="24" type="text" /> <span class="txtlbh2">/</span> <input class="fmipfbold" maxlength="1" name="DC.5" readonly="readonly" type="text" value="2" /> <input class="fmipfbold" maxlength="1" name="DC.6" readonly="readonly" type="text" value="0" /> <input class="fmipfstd" maxlength="1" name="DC.7" tabindex="27" type="text" /> <input class="fmipfstd" maxlength="1" name="DC.8" tabindex="28" type="text" /></td>
+  <td class="txtlbfrm" width="36%">
+  <input class="fmipfstd" maxlength="1" name="DC.1" tabindex="21" type="text" />
+  <input class="fmipfstd" maxlength="1" name="DC.2" tabindex="22" type="text" /> <span class="txtlbh2">/</span>
+  <input class="fmipfstd" maxlength="1" name="DC.3" tabindex="23" type="text" />
+  <input class="fmipfstd" maxlength="1" name="DC.4" tabindex="24" type="text" /> <span class="txtlbh2">/</span> <input class="fmipfbold" maxlength="1" name="DC.5" readonly="readonly" type="text" value="2" />
+  <input class="fmipfbold" maxlength="1" name="DC.6" readonly="readonly" type="text" value="0" />
+  <input class="fmipfstd" maxlength="1" name="DC.7" tabindex="27" type="text" />
+  <input class="fmipfstd" maxlength="1" name="DC.8" tabindex="28" type="text" /></td>
   </tr>
   <tr valign="top">
   <td class="txtlbfrm" width="4%"></td>
@@ -111,7 +128,7 @@ permalink: /forms/tsp-26/
   <tr>
   <td class="txtlbstd" colspan="4">
   <div class="buttons" align="center">
-  <input name="Print" onclick="printpage(event)" tabindex="998" type="button" value="Print" />
+  <input name="Print" onclick="window.print()" tabindex="998" type="button" value="Print" />
   <input name="Clear" onclick="clearpage(event)" tabindex="999" type="reset" value="Clear" />
   </div>
   </td>

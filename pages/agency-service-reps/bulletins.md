@@ -1,16 +1,11 @@
 ---
 layout: page
-title: Bulletins
+title: Bulletinss
 styles:
 sidenav: agency-service-reps
 scripts:
-  - /assets/js/jquery.min.js
-  - /assets/js/bootstrap.min.js
-#  - /assets/js/form-modals.js
-#  - /assets/js/flatpickr/flatpickr.js
   - /assets/js/ajaxFetch.js
   - /assets/js/ajax-usa-search-gov.js
-  - /assets/js/copy-to-clipboard.js
   - /assets/js/calculator/calculator.js
   - /assets/js/search.js
   - /assets/js/bulletins.js
@@ -53,8 +48,8 @@ TSP bulletins provide guidance to TSP Agency and Service representatives for imp
               <option value='0'>Show all</option>
             </select>
           </div>
+          <!-- SEARCH FIELD
           <span class="or">or</span>
-          <!-- SEARCH FIELD -->
           <input id="group" type="hidden" value="bulletins">
           <form accept-charset="UTF-8" action="javascript:void(0);" id="search-form-bulletins bulletins" method="get"
             class="animated-search bulletins">
@@ -62,7 +57,7 @@ TSP bulletins provide guidance to TSP Agency and Service representatives for imp
               <input type="text" name="search-terms" id="search-terms"
                 onChange="myPageChange();" onBlur="myPage(1);"
                 autocomplete="off" placeholder="Enter search term(s)">
-          </form>
+          </form> -->
         </div>
         <!-- checkbox to see USV bulletins only -->
         <!-- DAV, when checked, only bulletins with "service: true" should be displayed -->

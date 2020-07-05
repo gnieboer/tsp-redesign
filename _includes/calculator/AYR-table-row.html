@@ -1,0 +1,18 @@
+{% comment %}
+This creates the start of an 'Adjust Your Results' table.
+{% endcomment %}
+{% assign prompt = include.prompt | default: 'Caption' %}
+{% assign rowID = include.rowID | default: 'cellname' %}
+{% assign gotoAnchor = include.gotoAnchor | default: 'top' %}
+{% assign closeTable = include.closeTable | default: false %}
+{% assign named = include.named | default: false %}
+{% if named %}
+<tr id="{{rowID}}-row">
+{% else %}
+<tr>
+{% endif %}
+  <th scope="row">{{prompt}}</th>
+  <td id="{{rowID}}">xxx</td>
+</tr>
+{% if closeTable %}</tbody>
+</table>{% endif %}

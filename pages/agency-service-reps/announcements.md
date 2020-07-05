@@ -19,6 +19,7 @@ redirect_from:
 ---
 
 # Announcements
+
 <section class="plan-news" markdown="1">
 {% include announcements/announcement-sub-header.html %}
 </section>
