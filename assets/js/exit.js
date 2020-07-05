@@ -104,8 +104,8 @@ urlList[162] = 'https://www.youtube.com/watch?v=xrH0l-HA58o'; // Once you're gon
 urlList[163] = 'https://www.youtube.com/watch?v=5z-KXHZAF-U'; // Cost of taking a TSP loan
 urlList[164] = 'https://www.youtube.com/watch?v=XnlQZa7g_d4'; // How the TSP fits into FERS
 urlList[165] = 'https://twitter.com/tsp4gov';
-urlList[166] = '';
-urlList[167] = '';
+urlList[166] = 'https://www.irs.gov/individuals/tax-withholding-estimator';
+urlList[167] = 'https://www.usps.com/international/mail-shipping-services.htm#readmore';
 urlList[168] = '';
 urlList[169] = '';
 urlList[170] = '';
