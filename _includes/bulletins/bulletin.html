@@ -101,7 +101,7 @@
   <div class="usa-width-one-whole">
     <div class="flex post-and-share">
       <span class="bulletin-number">Bulletin {{entry.bulletin_number}}</span>,&nbsp;
-      <span id="{{bulletin_name}}-posted" class="post-date" >{{bulletin_posted | date: '%B %d, %Y'}}</span>
+      <span id="{{bulletin_name}}-posted" class="post-date" >{{bulletin_posted | date: '%B %-d, %Y'}}</span>
       <!-- Flex item #0, Name -->{% include social-media-share.html modalID=bulletin_name %}
       <!-- Flex item #1, Date -->{% include copy-to-clipboard.html element=bulletin_name function='copyPlanNewsToClipboard' %}
       {% if entry.permalink %}<a href="{{entryHTML}}">Entry</a>{% endif %}
