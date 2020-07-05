@@ -193,7 +193,7 @@ function setProgress(num) {
     else
       setProgressState(i, progressState[i]);
   }
-  if (num != {{ numSteps }}) { setProgressState({{ numSteps }}, ''); }
+  if (num != {{ numSteps }}) { setProgressState({{ numSteps }}, ''); }  // block last panel
 
   return true;
 };

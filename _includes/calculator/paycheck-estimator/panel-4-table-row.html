@@ -1,0 +1,11 @@
+{% assign trID = include.trID | default: '' %}
+{% if trID != '' %}{% assign trID = 'id="' | append: trID | append: '"' %}{% endif %}
+{% assign trClass = include.trClass | default: '' %}
+{% if trClass != '' %}{% assign trClass = 'class="' | append: trClass | append: '"' %}{% endif %}
+{% assign title = include.title | default: 'Title' %}
+{% assign rowID = include.rowID | default: 'rowID' %}
+<tr {{trID}} {{trClass}}>
+  <td>{{title}}</td>
+  <td class="default"><span id="{{rowID}}1">$x,xxx</span></td>
+  <td class="rightRow"><span id="{{rowID}}2">$y,yyy</span></td>
+</tr>

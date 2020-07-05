@@ -65,22 +65,26 @@ section.charts {
 }
 
 section {
+
   .table-view { // RIGHT-ALIGNS TABLE EXPAND/COLLAPSE BUTTON
     padding: 0;
     margin: 0;
     text-align: right;
     max-width: 100%;
   }
+
   &.share-price-table { // Width for "sticky" left-column header
     .column-width {
       width: 16rem;
     }
   }
+
   &.rates-of-return-table { // Width for "sticky" left-column header
     .column-width {
       width: 16rem;
     }
   }
+
 } // end section
 
 // "STICKY" LEFT-COLUMN HEADER: Share price history & Rates of return
@@ -94,6 +98,7 @@ section {
   .empty-table-cell {
     background-color: $color-gray-lightest;
   }
+
   table {
   table-layout: fixed;
   width: 100%;
@@ -136,7 +141,7 @@ section {
         position: sticky;
         top: 0;
         text-align: center;
-        width: 15rem;
+        // width: 5rem;
         &:first-child {
           position: sticky;
           z-index: 5;
@@ -209,102 +214,164 @@ section {
      display: none;
    }
 
-   .column-width {
-     width: 14rem;
-   }
+   // .column-width {
+   //   width: 14rem;
+   // }
   } // end table
 } // end div.table-side-scroll
 
 // RESPONSIVE COMPARISON: Administrative costs
 // Dependencies: /assets/js/jquery.min.js, responsive-comparison-table.js
-section.comparison {
-ul {
-  display:flex;
-  top:0px;
-  z-index:10;
-  padding-bottom:14px;
-  padding-left: 0;
-  margin-top: 0;
-  margin-bottom: 0;
-  max-width: 100% !important;
-}
-li {
-  list-style:none;
-  flex:1;
-  margin-bottom: 0;
-}
-li:last-child {
-  border-right:1px solid #DDD;
-}
-button {
-  width:100%;
-  border: 1px solid #DDD;
-  border-right:0;
-  border-top:0;
-  padding: 10px;
-  margin: 0 0;
-  background:#FFF;
-  font-size:14px;
-  font-weight:bold;
-  height:60px;
-  color:#999
-}
-li button {
-  background:#F5F5F5;
-  color:#000;
-  border-top:3px solid #0097CF;
-}
-li.active button {
-  border-top:3px solid #A32362;
-}
-table { border-collapse:collapse; table-layout:fixed; width:100%; margin-top: 0;}
-th { background:#F5F5F5; display:none; }
-td, th {
-  height:53px
-}
-td,th { border:1px solid #DDD; padding:10px; empty-cells:show; }
-td,th {
-  text-align:left;
-}
-th { border-top: 3px solid #0097CF; }
-td+td, th+th {
-  text-align:center;
-  display:none;
-}
-td.default {
-  display:table-cell;
-}
-.bg-purple {
-border-top:3px solid #A32362;
-}
-
-
-.sep {
-  background:#F5F5F5;
-  font-weight:bold;
-}
-.txt-l { font-size:28px; font-weight:bold; }
-.txt-top { position:relative; top:-9px; left:-2px; }
-.tick { font-size:18px; color:#2CA01C; }
-.hide {
-  border:0;
-  background:none;
-}
-
-@media (min-width: $medium-screen) {
+section.comparison,
+section.comparison.paycheck,
+section.comparison.contribution-comparison-calculator {
   ul {
-    display:none;
-  }
-  td,th {
-    display:table-cell !important;
-  }
-  td,th {
-    width: 24rem;
 
-  }
-  td+td, th+th {
-    width: auto;
-  }
-}
+    &.table-header-buttons,
+    &.funds-lifecycle,
+    &.funds-individual
+    {
+      display:flex;
+      top:0px;
+      z-index:10;
+      padding-bottom:14px;
+      padding-left: 0;
+      margin-top: 0;
+      margin-bottom: 0;
+      max-width: 100% !important;
 
-} // end .comparison
+      li {
+        list-style:none;
+        flex:1;
+        margin-bottom: 0;
+        &:last-child {
+          border-right:1px solid #DDD;
+        }
+      }
+
+      button {
+        &[type="button"] {
+          width:100%;
+          border: 1px solid #DDD;
+          border-right:0;
+          border-top:0;
+          padding: 10px;
+          margin: 0 0;
+          background:#FFF;
+          font-size:14px;
+          font-weight:bold;
+          height:60px;
+          color:#999;
+          border-radius: 0;
+        }
+
+      }
+
+      li {
+        button {
+          &[type="button"] {
+            background:#F5F5F5;
+            color:#000;
+            border-top:3px solid #0097CF;
+          }
+        }
+      }
+
+      li.active {
+        button {
+          &[type="button"] {
+            border-top:3px solid #A32362;
+          }
+        }
+      }
+
+    } // END &.table-header-buttons, &.funds-lifecycle, &.funds-individual
+  } // END ul
+
+  table {
+    border-collapse:collapse;
+    table-layout:fixed;
+    width:100%;
+    margin-top: 0;
+
+    td, th {
+      height:53px;
+      border:1px solid #DDD;
+      padding:10px;
+      empty-cells:show;
+      text-align:left;
+    }
+
+    th {
+      // background:#F5F5F5;
+      // display:none;
+      border-top: 3px solid #0097CF;
+    }
+
+    td+td, th+th { // Omits the first <td> or <th> following a <tr>
+      text-align:center;
+      display:none;
+    }
+    td.default {
+      display:table-cell;
+    }
+  } // END table
+
+
+
+
+  .bg-purple {
+  border-top:3px solid #A32362;
+  }
+
+
+  .sep,
+  .compare-two {
+    background:#F5F5F5;
+    font-weight:bold;
+  }
+  .txt-l { font-size:28px; font-weight:bold; }
+  .txt-top { position:relative; top:-9px; left:-2px; }
+  .tick { font-size:18px; color:#2CA01C; }
+  .hide {
+    border:0;
+    background:none;
+  }
+
+  @media (min-width: $medium-screen) {
+    ul.table-header-buttons {
+        display:none;
+    }
+    td,th {
+      display:table-cell !important;
+    }
+    td,th {
+      width: 24rem;
+
+    }
+    td+td, th+th {
+      width: auto;
+    }
+  }
+
+  &.paycheck,
+  &.contribution-comparison-calculator {
+    table {
+
+      .w { width: 32rem;}
+
+      tr.emphasis {
+        td+td {
+          font-size: 3rem;
+        }
+      }
+
+      td+td { // Omits the first <td> following a <tr>; every <td> that follows a <td>
+        text-align: right;
+        padding-right: 1rem;
+        // display:none;
+      }
+
+    }
+  } // end &.paycheck, &.contribution-comparison-calculator
+} // end section.comparison

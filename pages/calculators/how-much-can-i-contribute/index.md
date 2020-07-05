@@ -10,4 +10,6 @@ progress-steps: [Introduction,Elective Contributions,Elective Deferral Limits]
 panel-names: [Introduction, Contributions, Limits]
 document-ready:
   - setDropdownDefault();
+redirect_from:
+  - /PlanningTools/Calculators/electiveContributions.html
 ---
