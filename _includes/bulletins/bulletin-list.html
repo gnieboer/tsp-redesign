@@ -52,7 +52,7 @@
   {% assign newHeader = item.path | split: '/' | last | truncate: 7, "" %}
   {% if newHeader == lastHeader %}{% assign showHeader = 0 %}{% endif %}
   {% assign lastHeader = newHeader %}
-  {% include bulletins/bulletin-item.html entry=item showHeader=showHeader %}
+  {% include bulletins/bulletin-item.html entry=item showHeader=showHeader addBlockName=idx %}
 {% endfor %}
 {% if cnt >= startTopAccordion %}
 </div>

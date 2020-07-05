@@ -49,6 +49,10 @@
 <div class="usa-width-one-sixth">Chapter(s):</div>
 <div class="usa-width-five-sixths" markdown="1">
 <!-- Chapter { page.bulletin_chapter comma separated pair } -->
+{% assign chLen = entry.bulletin_chapter | strip | size %}
+{% if chLen <= 5 %}
+<p>N/A</p>
+{% else %}
 {% for chapter in entry.bulletin_chapter %}
 {% assign chapter_number = chapter | split: ',' | first %}
 {% assign chapter_topic = chapter | split: ',' | last | strip | downcase | capitalize %}
@@ -57,9 +61,10 @@
 {% assign parent_url = site.baseurl | append: "/agency-service-reps/bulletins/?topic=" | append: chapter_topic %}
 {% assign chapter_topic = "<a href='" | append: parent_url | append: "'>" | append: chapter_topic | append: "</a>" %}
 {% endif %}
-Chapter {{chapter_number | strip }}, {{chapter_topic | strip }}{% if forloop.last == false %}, {% endif %}
+<p>Chapter {{chapter_number | strip }}, {{chapter_topic | strip }}{% if forloop.last == false %}</p> {% endif %}
 
 {% endfor %}
+{% endif %}
 </div>
 </div>
 
@@ -79,24 +84,30 @@ Chapter {{chapter_number | strip }}, {{chapter_topic | strip }}{% if forloop.las
 {% endfor %}
 {% endif %}
 {% endcomment %}
+  {% assign ssLen = entry.supersedes | strip | size %}
+  {% if ssLen <= 5 %}
+  <p>N/A</p>
+  {% else %}
   <p>{{entry.supersedes}}</p>
+  {% endif %}
 </div>
 
 </div>
 </footer>
 </section>
-
+{% comment %}This block does the ending share bar if we ever want it.
 <section class="bulletins-current" markdown="1">
 <div class="usa-grid">
   <div class="usa-width-one-whole">
     <div class="flex post-and-share">
       <span class="bulletin-number">Bulletin {{entry.bulletin_number}}</span>,&nbsp;
-      <span id="{{bulletin_name}}-posted" class="post-date" >{{bulletin_posted | date: '%B %d, %Y'}}</span>
+      <span id="{{bulletin_name}}-posted" class="post-date" >{{bulletin_posted | date: '%B %-d, %Y'}}</span>
       <!-- Flex item #0, Name -->{% include social-media-share.html modalID=bulletin_name %}
-      {% comment %}<!-- Flex item #1, Date -->{% include copy-to-clipboard.html element=bulletin_name function='copyPlanNewsToClipboard' %}{% endcomment %}
-      {% comment %}{% if entry.permalink %}<a href="{{entryHTML}}">Entry</a>{% endif %}{% endcomment %}
+      <!-- Flex item #1, Date -->{% include copy-to-clipboard.html element=bulletin_name function='copyPlanNewsToClipboard' %}
+      {% if entry.permalink %}<a href="{{entryHTML}}">Entry</a>{% endif %}
       <!-- Flex item #2, Share Modal -->{% include share-bar.html pageurl=entryHTML modalID=bulletin_name %}
     </div>
   </div> <!-- END div.usa-width-one-whole -->
 </div> <!-- END div.usa-grid -->
 </section>
+{% endcomment %}

@@ -67,6 +67,8 @@ keep_files:
 
 # output: true will copy the collection into _site
 collections:
+  announcements:
+    output: true
   bulletins:
     output: true
   funds:
@@ -83,6 +85,12 @@ collections:
     output: true
 
 defaults:
+  -
+    scope:
+      path: "_announcements"
+    values:
+      layout: page-announcement
+      sidenav: agency-service-reps
   -
     scope:
       path: "_bulletins"

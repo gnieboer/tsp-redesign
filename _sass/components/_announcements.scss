@@ -6,5 +6,28 @@ section {
         border-top: none;
       }
     }
+    // DONALD: DAV was here.   verify this
+    .see-more {
+      text-transform: none;
+      color: $color-base;
+      min-height: 2rem;
+      span {
+        cursor: pointer;
+        padding-right: 0.8rem;
+        &:hover {
+          text-decoration: underline;
+        }
+        &::before {
+          content: "";
+        }
+      }
+      .rotate {
+        transition: transform .1s linear;
+      }
+      .rotate.down {
+        transform:rotate(180deg);
+      }
+    } // end .see-more
+    // END DAV was here
   }
 }
