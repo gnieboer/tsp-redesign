@@ -72,7 +72,7 @@
 {% assign item = archive | first %}
 {% assign folder = item.path | split: '/' | shift | pop | join: '/' %}
 {% assign lastFolder = folder %}
-## Archived bulletins
+### Archived bulletins
 <ul class="usa-accordion">
 <li>
 <button class="usa-accordion-button" aria-expanded="false" aria-controls="year-{{folder}}-{{idx}}">{{folder}}</button>

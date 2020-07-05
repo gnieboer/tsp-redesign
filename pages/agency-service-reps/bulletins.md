@@ -19,17 +19,14 @@ document-ready:
 TSP bulletins provide guidance to TSP Agency and Service representatives for implementing the provisions of law, regulations, and procedures relating to the TSP.
 
 <div><button class="usa-button-big" onclick="window.location.href = '{{ site.baseurl }}/exit/?idx=2';">Subscribe</button></div>
-
-<div class="calculator-panel subscribe">
-  <ul class="usa-accordion explain-this">
-    <li>
-      <button class="usa-accordion-button" aria-expanded="false" aria-controls="subscribe">Explain this</button>
-      <div id="subscribe" class="usa-accordion-content">
-      <p>The Thrift Savings Plan is happy to offer a free email subscription service. This service allows TSP representatives to receive automatic notifications by email when new or updated information is available in the "Agency and Service Representative resources" section of the TSP Web site.</p>
-      </div>
-    </li>
-  </ul>
-</div>
+<ul class="usa-accordion explain-this subscribe">
+  <li>
+    <button class="usa-accordion-button" aria-expanded="false" aria-controls="subscribe">Explain this</button>
+    <div id="subscribe" class="usa-accordion-content">
+    <p>The Thrift Savings Plan is happy to offer a free email subscription service. This service allows TSP representatives to receive automatic notifications by email when new or updated information is available in the "Agency and Service Representative resources" section of the TSP Web site.</p>
+    </div>
+  </li>
+</ul>
 
 <!-- SEARCH FORMS -->
 <section class="search-bulletins inline-search">
@@ -67,23 +64,20 @@ TSP bulletins provide guidance to TSP Agency and Service representatives for imp
   </div><!-- END div.usa-grid-full -->
 </section>
 
-<!-- # Help me find bulletins about {#forms} -->
-{% assign showTotal = 4 %}
+{% assign showTotal = 4 %}<!-- # Help me find bulletins about {#forms} -->
 {% assign startAccordion = showTotal %}
 {% assign bulletin_list = site.bulletins | sort: 'path' | reverse %}
 
 <section id="popular-bulletins" markdown="1">
-  <div id="select-bulletins-0" class="select-bulletins-div" markdown="1">
-  <!-- # All Bulletins  -->
-  {% include bulletins/bulletin-list.html topic="" idx='a' %}
-  </div>
+<div id="select-bulletins-0" class="select-bulletins-div" markdown="1">
+{% include bulletins/bulletin-list.html topic="" idx='a' %}<!-- # All Bulletins  -->
+</div>
 
 {% for topic in site.data.bulletins_topics %}
   {% assign dropValue = topic | downcase  %}
   {% assign topicID = dropValue | replace: " ", "-" %}
   <div id="select-bulletins-{{ topicID }}"  class="select-bulletins-div hide" markdown="1">
-  <!-- # All {{topicID}} Bulletins  -->
-  {% include bulletins/bulletin-list.html topic=dropValue idx=forloop.index noAccordions=true %}
+  {% include bulletins/bulletin-list.html topic=dropValue idx=forloop.index noAccordions=true %}<!-- # All {{topicID}} Bulletins  -->
   </div>
 {% endfor %}
 </section>

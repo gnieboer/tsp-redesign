@@ -3,7 +3,7 @@
   section {
     &.plan-news,
     &.plan-news-archive {
-      border-bottom: 1px solid $color-gray-lighter;
+      // border-bottom: 1px solid $color-gray-lighter;
       padding-bottom: 4rem;
 
       .usa-grid {
@@ -21,10 +21,15 @@
 
       h2 {
         font-weight: 400;
-        border-bottom: 1px solid $color-gray-lighter;
         padding-bottom: 0.5em;
         margin-top: 3rem;
         margin-bottom: 0;
+      }
+
+      h3 {
+        display: inline-block;
+        border-top: 1px solid $color-gray-lighter;
+        padding-top: 1rem;
       }
 
       form {
@@ -96,15 +101,15 @@
     &.plan-news-archive { // overrides for section.plan-news-archive
       border-bottom: none;
       padding-bottom: 0;
-      h2 {
-        border-bottom: none;
-      }
+      // h2 {
+      //   border-bottom: none;
+      // }
       .usa-accordion-content {
         padding-left: 0;
 
-        > h2 {
-          border-bottom: 1px solid $color-gray-lighter;
-        }
+        // > h2 {
+        //   border-bottom: 1px solid $color-gray-lighter;
+        // }
       }
     } // end &.plan-news-archive
   } // end section

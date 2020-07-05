@@ -52,7 +52,7 @@
 {% assign item = archive | first %}
 {% assign folder = item.path | split: '/' | shift | pop | join: '/' %}
 {% assign lastFolder = folder %}
-## Archived news and announcements
+### Archived news and announcements
 <ul class="usa-accordion">
 <li>
 <button class="usa-accordion-button" aria-expanded="false" aria-controls="year-{{folder}}">{{folder}}</button>
