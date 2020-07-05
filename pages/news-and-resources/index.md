@@ -103,9 +103,9 @@ In this video, we'll talk about the professionally designed Lifecycle Funds, als
 
 Popular forms
 
-- **TSP-1/TSP-U-1**, [Election Form]({{ site.baseurl }}/forms/tsp-1.pdf)
-- **TSP-60**, [Request for a transfer into the TSP]({{ site.baseurl }}/forms/tsp-60.pdf)
-- **TSP-26**, [Loan payment coupon]({{ site.baseurl }}/forms/tsp-26/)
+- **TSP-1/TSP-U-1**, [_Election Form_]({{ site.baseurl }}/forms/tsp-1.pdf&_icon=false)
+- **TSP-60**, [_Request for a transfer into the TSP_]({{ site.baseurl }}/forms/tsp-60.pdf&_icon=false)
+- **TSP-26**, [_Loan payment coupon_]({{ site.baseurl }}/forms/tsp-26/)
 {:.forms-list}
 
 </div>
