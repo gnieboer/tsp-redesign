@@ -21,7 +21,7 @@ scripts:
         More in this section
       </button>
       <div id="sidenav-mobile" class="usa-accordion-content">
-        {% include sidenav.html links=sidenav fake='/news-and-resources/plan-news-fake/' %}
+        {% include sidenav.html links=sidenav fake='/agency-service-reps/announcements/' %}
       </div>
     </li>
   </ul>
@@ -29,9 +29,10 @@ scripts:
 {% endif %}
 
 {% capture top_of_page %}
-# {{page.title}} announcement
-
-{% include next-outage.html %}
+# Announcement
+<section class="plan-news" markdown="1">
+{% include announcements/announcement-sub-header.html %}
+</section>
 {% endcapture %}
 
 <div class="{{xtra_class}} usa-layout-docs-main_content" markdown="1">

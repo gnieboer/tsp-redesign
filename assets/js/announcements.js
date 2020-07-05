@@ -15,13 +15,23 @@ function showSearchMatches(str) {
   var div = '';
   var matchCnt = 0;
   var ucStr = str.toUpperCase();
+  var str_array;
   // all in this messy function so I am not passing around a lot of objects
   $('.announcement-search-block').each(function(i, obj) {
     // console.log(obj);
     console.log(obj.id);
     block = obj.id;
     div = block.slice(0,-5) + 'div';
-    if ($('#'+div).text().toUpperCase().includes(ucStr)) { $('#'+block).removeClass('hide'); matchCnt++; console.log('showing ', block); }
+    str_array = ucStr.trim().split(/\s+/);
+    for (var i = 0; i < str_array.length; i++) {
+      if (str_array[i].trim() == '') { continue; }
+      if ($('#'+div).text().toUpperCase().includes(str_array[i].trim())) {
+        if ($('#'+block).hasClass('hide')) {
+          $('#'+block).removeClass('hide');
+          matchCnt++;
+        }
+      }
+    }
     var matchStr = "<h3>There were "+matchCnt+" matches to '" + str + "'.</h3>";
     $('#'+'search-result-count').html(matchStr);
    });

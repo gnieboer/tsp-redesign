@@ -23,7 +23,7 @@ HTML block for one faq item accordion.
   <span id="{{announcement_name}}-posted" class="post-date" >Posted: {{announcement_posted | date: '%B %d, %Y'}}</span>
   <!-- Share Modal -->
   {% include social-media-share.html modalID=announcement_name %}
-  {% include copy-to-clipboard.html element=announcement_name function='copyPlanNewsToClipboard' %}
+  {% comment %}{% include copy-to-clipboard.html element=announcement_name function='copyPlanNewsToClipboard' %}{% endcomment %}
   {% comment %}{% if entry.permalink %}<a href="{{entryHTML}}">Entry</a>{% endif %}{% endcomment %}
   {% include share-bar.html pageurl=entryHTML modalID=announcement_name %}
 </div>

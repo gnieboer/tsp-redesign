@@ -19,11 +19,8 @@ redirect_from:
 ---
 
 # Announcements
-
 <section class="plan-news" markdown="1">
-{% include search-bar.html  onChange="announcementsSearch(this);" searchName="announcements" %}
-
-{% include explain-subscribe.html %}
+{% include announcements/announcement-sub-header.html %}
 </section>
 
 <section id="announcement-section" class="plan-news announcements" markdown="1">
