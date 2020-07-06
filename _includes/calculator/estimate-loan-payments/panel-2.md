@@ -10,7 +10,7 @@ Results NAME panel (3) for CALC.
 <section id="panel-{{ panelID }}" class="calculator-panel" style="{{ hide }}" markdown="1">
 
 {% capture beforeApplyTextBlock %}
-Read the TSP booklet [Loans]({{ site.baseurl }}/publications/tspbk04.pdf){:.publication} for information about the TSP loan process (including the cost of a TSP loan) and about your obligations to repay the loan. To initiate a Loan Request, visit [TSP Loans](https://www.tsp.gov/tsp/loan.do?subaction=menu&amp;_name=loan){:.external-link} in My Account.
+Read the TSP booklet [Loans]({{ site.baseurl }}/publications/tspbk04.pdf){:.publication} for information about the TSP loan process (including the cost of a TSP loan) and about your obligations to repay the loan. To initiate a Loan Request, visit [TSP Loans]({{ site.loans }}) in My Account.
 {% endcapture %}
 {% include calculator/infoBox.html icon='info'
     title="Before you apply for a loan"

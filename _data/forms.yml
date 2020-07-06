@@ -118,7 +118,8 @@
   form_topics:
   -  Loans
 - form_number: TSP-20-C
-  form_url: https://www.tsp.gov/tsp/loan.do?subaction=menu&amp;_name=loan&_form=tsp20c
+#  form_url: https://www.tsp.gov/tsp/loan.do?subaction=menu&amp;_name=loan&_form=tsp20c
+  form_url: "{{ site.loans }}"
   form_name: CARES Act Loan Application
   form_info: Apply online for a TSP general purpose loan with an increased maximum loan amount. Only for participants who self-certify that they are affected by COVID-19 as defined in the CARES Act (P.L. 116-136). Do NOT submit supporting documentation, especially medical records. You may submit your completed loan request online by logging in to My Account and selecting Upload Form from the menu.
   form_date:

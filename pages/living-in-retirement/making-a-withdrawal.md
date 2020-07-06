@@ -11,7 +11,7 @@ permalink: /living-in-retirement/making-a-withdrawal/
 
 ## Requesting a withdrawal
 
-Before you request a withdrawal from your TSP savings, be sure to read the booklet [Withdrawing Your TSP Account After Leaving Federal Service](https://www.tsp.gov/PDF/formspubs/tspbk02.pdf).
+Before you request a withdrawal from your TSP savings, be sure to read the booklet [Withdrawing Your TSP Account After Leaving Federal Service]({{ site.baseurl }}/publications/tspbk02.pdf).
 
 To request a withdrawal, log into My Account and click on the “Withdrawals and Changes to Installment Payments” link on the menu. From there you’ll have access to an online tool with which to start your withdrawal.
 
@@ -56,7 +56,7 @@ We calculate RMDs based on your account balance and your age using the IRS Unifo
 
 + If you’re already receiving a series of monthly payments from your TSP account when you turn 72*, your monthly payments will be used to satisfy the IRS minimum distributions requirement. If the total amount of your monthly payments does not satisfy the requirement, we will issue a supplemental payment for the remaining amount in December.
 
-+ If you're a beneficiary participant, your deadline for beginning to receive required minimum distributions depends on whether your spouse died before or after his or her required beginning date. 
++ If you're a beneficiary participant, your deadline for beginning to receive required minimum distributions depends on whether your spouse died before or after his or her required beginning date.
 
 
 <sup>* Participants who turned 70&frac12; on or before December 31, 2019, were required to begin receiving RMDs in the year they turned 70&frac12;.

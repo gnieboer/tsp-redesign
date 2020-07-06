@@ -17,4 +17,4 @@ There are three basic methods of withdrawing money from your TSP account as a se
 + annuity purchases
 
 You can use one of these methods or any combination of them that you choose. There is no limit of the number of withdrawals you can take after you retire, though processing times limit you to no more than one every 30 calendar days.
-For detailed information on your withdrawal options, specific tax consequences, withdrawal change requests, and special withdrawal considerations, visit [Before you withdraw]({{ site.baseurl }}/living-in-retirement/before-you-withdraw/) or read the TSP booklet, [Withdrawing Your TSP Account for Separated and Beneficiary Participants](https://www.tsp.gov/PDF/formspubs/tspbk02.pdf).
+For detailed information on your withdrawal options, specific tax consequences, withdrawal change requests, and special withdrawal considerations, visit [Before you withdraw]({{ site.baseurl }}/living-in-retirement/before-you-withdraw/) or read the TSP booklet, [_Withdrawing Your TSP Account for Separated and Beneficiary Participants_]({{ site.baseurl }}/publications/tspbk02.pdf).

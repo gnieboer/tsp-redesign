@@ -97,7 +97,7 @@
             <button type="button" class="usa-button-secondary" data-toggle="modal" data-target="#shareModal"><i class="fas fa-share-alt"></i><span class="sr-only">Share</span></button>
           </li>
           <li>
-            <button type="button" class="usa-button" onclick="window.location.href='https://www.tsp.gov/tsp/login.html'">Log in</button>
+            <button type="button" class="usa-button" onclick="window.location.href='{{ site.myaccount }}'">Log in</button>
           </li>
           <!-- Loop for text links in header -->
           {% assign secondary_links = site.data.navigation[_secondary.links] | default: _secondary.links %}
