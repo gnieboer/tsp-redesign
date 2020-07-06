@@ -15,12 +15,8 @@
     <item>
       <title>{{ item.title }}</title>
       <link>{{ item.permalink | prepend: site_url }}</link>
-<<<<<<< HEAD:plan-news/plan-news.xml
       <description>{{ item.content }}</description>
-      <lastUpdate>{{ item.path | split: '/' | last | slice: 0, 10 | date: '%A, %B %d, %Y (%I:%M %P)' }}</lastUpdate>
-=======
       <lastUpdate>{{ item.path | split: '/' | last | slice: 0, 10 | date: '%A, %B %-d, %Y (%I:%M %P)' }}</lastUpdate>
->>>>>>> 36704b009686f40a159253788d89b1e25f1a8e0c:plan-news.xml
     </item>
     {% endunless %}
     {% endfor %}
