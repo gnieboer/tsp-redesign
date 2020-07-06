@@ -35,6 +35,9 @@ function showSearchMatches(str) {
       }
     }
     var matchStr = "<h3>There were "+matchCnt+" matches to '" + str + "'.</h3>";
+    if (matchCnt == 1) {
+      matchStr = "<h3>There was 1 match to '" + str + "'.</h3>";
+    }
     $('#'+'search-result-count').html(matchStr);
    });
 }
