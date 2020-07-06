@@ -6,6 +6,7 @@ scripts:
   - /assets/js/jquery.min.js
   - /assets/js/bootstrap.min.js
   - /assets/js/copy-to-clipboard.js
+  - /assets/js/announcements.js
 ---
 {% assign sidenav = site.data.navigation[page.sidenav] | default: page.sidenav %}
 {% assign xtra_class = '' %}
@@ -31,7 +32,8 @@ scripts:
 {% capture top_of_page %}
 # Announcements
 <section class="plan-news" markdown="1">
-{% include announcements/announcement-sub-header.html %}
+{% assign searchFunction = "searchOnAnnouncements('search-input-announcements');" %}
+{% include announcements/announcement-sub-header.html searchFunction=searchFunction %}
 </section>
 {% endcapture %}
 
