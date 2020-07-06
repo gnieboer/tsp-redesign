@@ -4,8 +4,6 @@ title: Announcements
 styles:
 sidenav: agency-service-reps
 scripts:
-  - /assets/js/bootstrap.min.js
-  - /assets/js/copy-to-clipboard.js
   - /assets/js/forms.js
   - /assets/js/calculator/calculator.js
   - /assets/js/announcements.js
