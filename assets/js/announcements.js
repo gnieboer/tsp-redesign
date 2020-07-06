@@ -1,10 +1,7 @@
 function announcementsSearch(field) {
-  console.log('in announcementsSearch', field.value);
-
   $('#announcement-default-div').addClass('hide');
   $('#announcements-search-results').removeClass('hide');
 
-  console.log('hiding them');
   $('.announcement-search-block').addClass('hide');
   showSearchMatches(field.value);
   return true;
@@ -19,16 +16,21 @@ function showSearchMatches(str) {
   // all in this messy function so I am not passing around a lot of objects
   $('.announcement-search-block').each(function(i, obj) {
     // console.log(obj);
-    console.log(obj.id);
     block = obj.id;
     div = block.slice(0,-5) + 'div';
     str_array = ucStr.trim().split(/\s+/);
-    for (var i = 0; i < str_array.length; i++) {
+    if ($('#'+div).text().toUpperCase().includes(str_array[0].trim())) {
+      if ($('#'+block).hasClass('hide')) {
+        $('#'+block).removeClass('hide');
+        matchCnt++;
+      }
+    }
+    for (var i = 1; i < str_array.length; i++) {
       if (str_array[i].trim() == '') { continue; }
-      if ($('#'+div).text().toUpperCase().includes(str_array[i].trim())) {
-        if ($('#'+block).hasClass('hide')) {
-          $('#'+block).removeClass('hide');
-          matchCnt++;
+      if (! $('#'+div).text().toUpperCase().includes(str_array[i].trim())) {
+        if (!$('#'+block).hasClass('hide')) {
+          $('#'+block).addClass('hide');
+          matchCnt--;
         }
       }
     }
