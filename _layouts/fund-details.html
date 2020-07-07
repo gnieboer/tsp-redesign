@@ -38,7 +38,9 @@ scripts:
   </p>
 </div>
 <div class="usa-width-one-fourth">
+  {% if page.Fund_type != 'Retired' %}
   <a href="../" class="usa-button compare-funds-button">Compare funds</a>
+  {% else %}{% endif %}
 </div>
 </div>
 <div class="usa-section fund-questions">
