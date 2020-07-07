@@ -52,7 +52,7 @@
   {% assign newHeader = item.path | split: '/' | last | truncate: 7, "" %}
   {% if newHeader == lastHeader %}{% assign showHeader = 0 %}{% endif %}
   {% assign lastHeader = newHeader %}
-  {% include bulletins/bulletin-item.html entry=item showHeader=showHeader %}
+  {% include bulletins/bulletin-item.html entry=item showHeader=showHeader addBlockName=idx %}
 {% endfor %}
 {% if cnt >= startTopAccordion %}
 </div>
@@ -72,7 +72,7 @@
 {% assign item = archive | first %}
 {% assign folder = item.path | split: '/' | shift | pop | join: '/' %}
 {% assign lastFolder = folder %}
-## Archived bulletins
+### Archived bulletins
 <ul class="usa-accordion">
 <li>
 <button class="usa-accordion-button" aria-expanded="false" aria-controls="year-{{folder}}-{{idx}}">{{folder}}</button>

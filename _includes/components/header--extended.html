@@ -1,17 +1,3 @@
-<!-- drop-down to ASR
-<section class="usa-banner" style="background-color: #e5e5e5;">
-  <header class="usa-banner-header">
-      <div class="usa-grid usa-banner-inner">
-              <form class="usa-form">
-              <select name="options" id="options">
-              <option value="value1">Active participants</option>
-              <option value="value2">Agency/Service Trainers and Benefits Specialists</option>
-              <option value="value3">Separated participants</option>
-              </select>
-              </form>
-        </div>
-    <header>
-</section> -->
 <!-- news banner -->
 
 {% if page.alert.show-alert == true %}
@@ -100,17 +86,23 @@
           </div>
         </form>
         {% endif %}
+
         <ul class="usa-unstyled-list usa-nav-secondary-links">
           {% if site.search_site_handle %}
           <li class="js-search-button-container">
             <button class="usa-header-search-button js-search-button">Search</button>
           </li>
           {% endif %}
+          <li>
+            <button type="button" class="usa-button-secondary" data-toggle="modal" data-target="#shareModal"><i class="fas fa-share-alt"></i><span class="sr-only">Share</span></button>
+          </li>
+          <li>
+            <button type="button" class="usa-button" onclick="window.location.href='{{ site.myaccount }}'">Log in</button>
+          </li>
+          <!-- Loop for text links in header -->
           {% assign secondary_links = site.data.navigation[_secondary.links] | default: _secondary.links %}
           {% for _link in secondary_links %}
-          <li>
-            <a href="{% if _link.external %}{{ _link.href }}{% else %}{{ _link.href }}{% endif %}" id="{{ _link.id }}" class="{{ _link.class }}" target="{{ _link.target }}">{{ _link.text }}</a>
-          </li>
+          <!-- <a href="{% if _link.external %}{{ _link.href }}{% else %}{{ _link.href }}{% endif %}" id="{{ _link.id }}" class="{{ _link.class }}" target="{{ _link.target }}">{{ _link.text }}</a> -->
           {% endfor %}
         </ul>
       </div>

@@ -25,10 +25,7 @@ Name middle panels (2) for CALC.
   inputClass="usa-unstyled-list"
   onBlur="frequencyGood(true);"
   prompt="How often do you want to receive payments?"
-  explanation="
-
-  ?????????????????????
-  "
+  explanation=""
 %}
 
 {% include calculator/div-panel-form-field.html

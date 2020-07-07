@@ -12,6 +12,6 @@ Here’s what you should know:
 - There are no matching contributions for catch-up contributions.
 - You must make a new election each year—they do not restart automatically.
 
-Uniformed services members can use tax-exempt pay to make catch-up contribution, but not incentive pay, special pay, or bonus pay.
+Uniformed service members cannot use incentive pay, special pay, or bonus pay to make catch-up contributions. If you’re in a combat zone, catch-up contributions must be Roth.
 
 To make a catch-up contribution election, use your agency’s or service’s payroll website (e,g., [Employee Express]({{ site.baseurl }}/exit/?idx=7){:rel="nofollow"}, EBIS, [LiteBlue]({{ site.baseurl }}/exit/?idx=8){:rel="nofollow"}, [myPay]({{ site.baseurl }}/exit/?idx=6){:rel="nofollow"}, and [NFC EPP]({{ site.baseurl }}/exit/?idx=9){:rel="nofollow"}) or complete [Form TSP-1-C]({{ site.baseurl }}/forms/tsp-1-c.pdf/), _Catch-Up Contribution Election_ ([TSP-U-1-C]({{ site.baseurl }}/forms/tsp-u-1-c.pdf/) for uniformed services members) and submit it to your payroll office. You may also download the form or call the ThriftLine at 1-877-968-3778 and press 3 to request a copy.
