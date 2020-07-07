@@ -21,6 +21,7 @@ This script produces an input area for calculator panels.
 {% assign maxLength = include.maxLength | default: 11 %}
 {% assign inputClass = include.inputClass | default: "format-left" %}
 {% assign prompt = include.prompt | default: 'What goes in this box?' %}
+{% assign additionalContent = include.additionalContent | default: '' %}
 {% assign explanation = include.explanation | default: '' %}
 {% assign onBlur = include.onBlur | default: '' %}
 {% if onBlur != '' %}
@@ -115,5 +116,8 @@ This script produces an input area for calculator panels.
     </div>
   </li>
   </ul>
+  {% endif %}
+  {% if additionalContent != '' %}
+  <div>{{additionalContent | markdownify}}</div>
   {% endif %}
 {% unless dontCloseOuterDiv %}</div><!---->{% endunless %}
