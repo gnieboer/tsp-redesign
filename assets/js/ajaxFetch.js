@@ -19,6 +19,7 @@ var singleFundData = function(fund) {
           var rc = data.split("|");
           var values = rc[0].split(", ");
           // console.log('values length is ', values.length);
+          console.log(values);
           if (values.length == 7) {
             $('#aar_caption').html("Average annual returns (as of December "+rc[1]+")");
             $('#aar_ytd').html(values[1]+'%');
@@ -27,6 +28,10 @@ var singleFundData = function(fund) {
             $('#aar_5yr').html(values[4]+'%');
             $('#aar_10yr').html(values[5]+'%');
             // $('#aar_incep').html(values[6]);
+          }
+          if (values.length == 2) {
+            var fund_name = values[0].replace('L', 'L ');
+            $('#no_data_yet_message').html("The "+fund_name+" was launched in July 2020. Historical returns will appear below as they become available.");
           }
           // console.log(name + ': ' + data);
       }
@@ -174,6 +179,8 @@ function getGrowthLifetime(fund) {
   if (fund == 'S') { colorIndexFund = 's'; colorIndexInfl = 'gray'; }
   if (fund == 'I') { colorIndexFund = 'i'; colorIndexInfl = 'gray'; }
 
+  console.log('https://www.tsp.gov/components/CORS/getFundGrowthInflation2.html?fund='+fund);
+
   Highcharts.chart('growthLifetime', {
     credits: { enabled: false },
     chart: {
@@ -252,6 +259,13 @@ function getFundIndexAverageAnnualReturns(fund) {
       beforeParse: function (csv) {
         var data = csv.split('|');
         setTitle(data[1]);
+        if (data[0].includes('data unavailable')) {
+          return null;
+          // messy quick hack for no data
+          var unavailable = data[0].split(/\r?\n/);
+          unavailable = [unavailable[0], unavailable[2]].join("\n");
+          return unavailable;
+        }
         buildReturnsTable(data[0]);
         return data[0];
       },

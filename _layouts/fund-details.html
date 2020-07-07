@@ -68,6 +68,7 @@ scripts:
 
 <div class="usa-section">
 <h2>Performance</h2>
+<span id="no_data_yet_message"></span>
 <table class="usa-table-borderless avg-annual-returns">
   <caption id="aar_caption">Average annual returns</caption>
   <thead>
@@ -119,7 +120,7 @@ scripts:
               </p>
             </div>
             <div class="usa-width-one-half fund-summary-top-ten">
-{% if page.Fund_type == 'L' %}
+{% if page.Fund_type == 'L' or page.Fund_type == 'Retired' %}
               <h3>Allocation target</h3>
               <div id="pie-lfund" class="hc-summary-pie-box">
                 <img src="/assets/img/icons/pie-chart.svg" />
