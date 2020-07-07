@@ -32,8 +32,6 @@ function getLFundData(fund) {
   if (fund == 'Income') { return getLincomeData(); }
   if (fund == 'LIncome') { return getLincomeData(); }
   if (fund == 'Linc') { return getLincomeData(); }
-  if (fund == '2010') { return getL2010Data(); }
-  if (fund == 'L2010') { return getL2010Data(); }
   if (fund == '2020') { return getL2020Data(); }
   if (fund == 'L2020') { return getL2020Data(); }
   if (fund == '2030') { return getL2030Data(); }
@@ -44,8 +42,6 @@ function getLFundData(fund) {
   if (fund == 'L2050') { return getL2050Data(); }
   if (fund == '2050') { return getL2050Data(); }
   if (fund == 'L2050') { return getL2050Data(); }
-  if (fund == '2025') { return getL2025Data(); }
-  if (fund == 'L2025') { return getL2025Data(); }
   if (fund == '2035') { return getL2035Data(); }
   if (fund == 'L2035') { return getL2035Data(); }
   if (fund == '2045') { return getL2045Data(); }
@@ -1774,7 +1770,6 @@ function fundDetailsSummaryPie(fund) {
   var idx = getIdx();
 
   var glidePath = getLFundData(fund);
-  if (typeof glidePath[idx] === 'undefined') { idx = glidePath['max']; }
   var data = buildHighchartData(glidePath[idx]);
   var chartOne = smallLifeCyclePie(fund, 'pie-lfund', data);
   chartOne.tooltip.options.enabled = false;
@@ -1791,5 +1786,6 @@ function fundDetailsSummaryPie(fund) {
   rc = tooltipHeader(points[0].name) + rc;
   rc = tooltipDiv('hc-summary-tooltip', rc);
   $('#pie-tooltip').html(rc);
+  console.log('rc: '+rc)
   // console.log(points);
 }

@@ -36,13 +36,13 @@ function addCommas(element) {
   var val = $('#'+element).val();
   var newval = val.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
   $('#'+element).val(newval);
-  // console.log('add commas', val, newval);
+  console.log('add commas', val, newval);
 }
 function removeCommas(element) {
   var val = $('#'+element).val();
   var newval = val.replace(/,/g, '');
   $('#'+element).val(newval);
-  // console.log('remove commas', val, newval);
+  console.log('remove commas', val, newval);
 }
 
 function showError1(element, message) {
@@ -61,7 +61,7 @@ function clearError1(element) {
   $('#'+element+'-label').removeClass("usa-input-error-label");
   $('#'+element+'-error-message').removeClass("usa-input-error-message");
   $('#'+element+'-error-message').html('');
-  // console.log('clearError for ['+element+']: ');
+console.log('clearError for ['+element+']: ');
   document.getElementById(element).setAttribute("aria-describedby", '');
   return true;
 }
@@ -72,7 +72,7 @@ function showError(element, message) {
   $('#'+element+'-error-message').addClass("usa-input-error-message");
   $('#'+element).addClass("usa-input-error-element");
   $('#'+element+'-error-message').html(message);
-  // console.log('error for ['+element+']: '+message);
+console.log('error for ['+element+']: '+message);
   // document.getElementById(element).setAttribute("aria-describedby", element+'-error-message');
   gotoAnchor(element+'-anchor');
   return false;
@@ -102,7 +102,7 @@ function showWarning(element, message) {
   $('#'+element+'-error-message').addClass("usa-input-warning-message");
   // $('#'+element).addClass("usa-input-warning-element");
   $('#'+element+'-error-message').html(message);
-  // console.log('warning for ['+element+']: '+message);
+console.log('warning for ['+element+']: '+message);
   // document.getElementById(element).setAttribute("aria-describedby", element+'-warning-message');
   gotoAnchor(element+'-anchor');
   return false;

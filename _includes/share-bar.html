@@ -6,11 +6,10 @@
 {% assign modalID = include.modalID | default: '' %}
 {% assign fullURL = site.url | append: '/' | append: pageurl %}
 {% assign fc = pageurl | slice: 0 %}
-{% if fc == '/' %}
-{% assign fullURL = site.url | append: pageurl %}
-{% endif %}
+{% if fc == '/' %}{% assign fullURL = site.url | append: pageurl %}{% endif %}
 <div id="shareModal{{modalID}}" class="modal fade" role="dialog">
   <div class="modal-dialog">
+
     <!-- Modal content-->
     <div class="modal-content">
       <div class="post-share-modal modal-body">
@@ -22,7 +21,7 @@
           <a href="https://www.linkedin.com/shareArticle?mini=true&url={{ fullURL }}&title=&summary=&source=" class="btn btn-social btn-linkedin" target="_blank">
             <span class="fa fa-linkedin"></span>LinkedIn</a>
           <a href="mailto:?&subject=Blog%20Post:%20{{ page.title }}&body=Check%20out%20this%20amazing%20blog%20post!%20{{ fullURL }}" class="btn btn-social btn-email" target="_blank">
-            <span class="fas fa-envelope"></span>Email</a>
+            <span class="fa fa-envelope"></span>Email</a>
           <hr>
         </div>
         <div>

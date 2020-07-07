@@ -11,7 +11,7 @@ HTML block for one faq item accordion.
 {% if addBlockName != 0 %}<div id="{{plan_news_name}}-block" class="plan-news-search-block">{% endif %}
 <a name="{{plan_news_name}}"></a>
 {% if showHeader != 0 %}
-<div class="header-line" markdown="1">
+<div class="flex header-line" markdown="1">
 ## {{plan_news_posted | date: '%B %Y'}} news and announcements
 </div>
 {% endif %}
@@ -20,7 +20,7 @@ HTML block for one faq item accordion.
 <div class="usa-width-one-whole" markdown="1">
 <div id="{{plan_news_name}}-div">{{entry.content}}</div>
 <div class="flex post-and-share">
-  <span id="{{plan_news_name}}-posted" class="post-date" >Posted: {{plan_news_posted | date: '%B %-d, %Y'}}</span>
+  <span id="{{plan_news_name}}-posted" class="post-date" >Posted: {{plan_news_posted | date: '%B %d, %Y'}}</span>
   <!-- Share Modal -->
   {% include social-media-share.html modalID=plan_news_name %}
   {% include copy-to-clipboard.html element=plan_news_name function='copyPlanNewsToClipboard' %}

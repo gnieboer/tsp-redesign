@@ -4,6 +4,9 @@ title: Being a beneficiary participant
 sidenav: manage-life-changes
 styles:
 scripts:
+  - /assets/js/jquery.min.js
+  - /assets/js/bootstrap.min.js
+  - /assets/js/form-modals.js
 permalink: /for-beneficiary-participants/being-a-beneficiary-participant/
 document-ready:
   - addFormModals();
