@@ -292,6 +292,7 @@ function mapServerFundName (f, glossaryFlag) {
   if (fund == 'I') { return 'I Fund'; }
 
   if (fund == 'LINC') { return 'L Income'; }
+  if (fund == 'L2010') { return 'L 2010'; }
   if (fund == 'L2020') { return 'L 2020'; }
   if (fund == 'L2025') { return 'L 2025'; }
   if (fund == 'L2030') { return 'L 2030'; }
@@ -335,6 +336,7 @@ function mapServerFundClassName (f) {
 
   if (fund == 'LINC') { return 'l-income'; }
   if (fund == 'LINCX') { return 'index-l'; }
+  if (fund == 'L2010') { return 'l-2010'; }
   if (fund == 'L2020') { return 'l-2020'; }
   if (fund == 'L2025') { return 'l-2025'; }
   if (fund == 'L2030') { return 'l-2030'; }
@@ -468,7 +470,7 @@ function sharePriceDownloadString(scriptName, startdate, enddate, funds) {
 function doSharePriceDownload(startdate, enddate, format, funds) {
   var url = sharePriceDownloadString('getSharePrices.html', startdate, enddate, funds);
   url += '&format='+format+'&download=1';
-  //console.log(url);
+  // console.log(url);
   window.location.href = url;
   //window.open(url, '_blank');
   return false;
@@ -476,6 +478,7 @@ function doSharePriceDownload(startdate, enddate, format, funds) {
 
 var doAjaxRetrieve = function(divName, url) {
   $('#'+divName).html('Calling server for data...');
+  // console.log(url);
   var serverCall = $.get(url);
   serverCall.done(
     function (data) {
@@ -493,6 +496,7 @@ var doAjaxRetrieve = function(divName, url) {
 
 var doAjaxRetrieveCallback = function(divName, url, success, fail) {
   $('#'+divName).html('Calling server for data...');
+  // console.log(url);
   var serverCall = $.get(url);
   serverCall.done(
     function (data) {
@@ -557,7 +561,7 @@ function getSeriesID(name, chart) {
 }
 function checkAnnualReturnsGroup() {
   var flag = true;
-  var lf = ['L___Income', 'L___2020', 'L___2030', 'L___2040', 'L___2050'];
+  var lf = ['L___Income', 'L___2025', 'L___2030', 'L___2035', 'L___2040', 'L___2045', 'L___2050', 'L___2055', 'L___2060', 'L___2065'];
   lf.forEach(function(id) { flag &= $('#'+id).prop('checked') });
   $('#Lfunds').prop('checked', flag);
   flag = true;

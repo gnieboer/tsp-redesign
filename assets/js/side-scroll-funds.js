@@ -59,10 +59,17 @@ function fundCheckboxClickAction(chartName, cbName) {
     // do L group
     var val = $('#Lfunds').prop('checked');  // get its new value
     if ($('#L_Income').prop('checked') != val) { $('#L_Income').click(); }
+    if ($('#L_2010').prop('checked') != val) { $('#L_2010').click(); }
     if ($('#L_2020').prop('checked') != val) { $('#L_2020').click(); }
+    if ($('#L_2025').prop('checked') != val) { $('#L_2025').click(); }
     if ($('#L_2030').prop('checked') != val) { $('#L_2030').click(); }
+    if ($('#L_2035').prop('checked') != val) { $('#L_2035').click(); }
     if ($('#L_2040').prop('checked') != val) { $('#L_2040').click(); }
+    if ($('#L_2045').prop('checked') != val) { $('#L_2045').click(); }
     if ($('#L_2050').prop('checked') != val) { $('#L_2050').click(); }
+    if ($('#L_2055').prop('checked') != val) { $('#L_2055').click(); }
+    if ($('#L_2060').prop('checked') != val) { $('#L_2060').click(); }
+    if ($('#L_2065').prop('checked') != val) { $('#L_2065').click(); }
     syncFundCheckboxGroups();
     return false;
   }
@@ -97,14 +104,14 @@ function indexFundSync(chartName, doTableColumn) {
   var chart = $('#'+chartName).highcharts();
   if (chart == null) { return false; }
   var series = chart.series;
-  highchartsSeriesToggle(series, 7, val, doTableColumn);
-  if (val) fundHighchartClickAction(chartName, 7, '&', series[6].visible);
-  highchartsSeriesToggle(series, 9, val, doTableColumn);
-  if (val) fundHighchartClickAction(chartName, 9, '&', series[8].visible);
-  highchartsSeriesToggle(series, 11, val, doTableColumn);
-  if (val) fundHighchartClickAction(chartName, 11, '&', series[10].visible);
-  highchartsSeriesToggle(series, 13, val, doTableColumn);
-  if (val) fundHighchartClickAction(chartName, 13, '&', series[12].visible);
+  highchartsSeriesToggle(series, 12, val, doTableColumn);
+  if (val) fundHighchartClickAction(chartName, 12, '&', series[6].visible);
+  highchartsSeriesToggle(series, 14, val, doTableColumn);
+  if (val) fundHighchartClickAction(chartName, 14, '&', series[8].visible);
+  highchartsSeriesToggle(series, 16, val, doTableColumn);
+  if (val) fundHighchartClickAction(chartName, 16, '&', series[10].visible);
+  highchartsSeriesToggle(series, 18, val, doTableColumn);
+  if (val) fundHighchartClickAction(chartName, 18, '&', series[12].visible);
   chart.redraw();
   return false;
 }
@@ -123,10 +130,17 @@ function highchartsSeriesToggle(series, idx, show, doTableColumn) {
 function syncCheckboxes(chartName) {
   indexFundSync(chartName, true);
   syncCheckboxByName(chartName, 'L_Income');
-  syncCheckboxByName(chartName, 'L_2020');
+  // syncCheckboxByName(chartName, 'L_2010');
+  // syncCheckboxByName(chartName, 'L_2020');
+  syncCheckboxByName(chartName, 'L_2025');
   syncCheckboxByName(chartName, 'L_2030');
+  syncCheckboxByName(chartName, 'L_2035');
   syncCheckboxByName(chartName, 'L_2040');
+  syncCheckboxByName(chartName, 'L_2045');
   syncCheckboxByName(chartName, 'L_2050');
+  syncCheckboxByName(chartName, 'L_2055');
+  syncCheckboxByName(chartName, 'L_2060');
+  syncCheckboxByName(chartName, 'L_2065');
   syncCheckboxByName(chartName, 'G_Fund');
   syncCheckboxByName(chartName, 'F_Fund');
   syncCheckboxByName(chartName, 'C_Fund');
@@ -138,16 +152,18 @@ function syncCheckboxes(chartName) {
 
 // map cb name to index in fund list
 function checkBoxColumnID(cbName, indexFundsFlag) {
-  var names = ['empty', 'L_Income', 'L_2020', 'L_2030', 'L_2040', 'L_2050',
+  var names = ['empty', 'L_Income', 'L_2025', 'L_2030', 'L_2035', 'L_2040',
+              'L_2045', 'L_2050', 'L_2055', 'L_2060', 'L_2065',
               'G_Fund', 'F_Fund', 'C_Fund', 'S_Fund', 'I_Fund'];
-  var namesI = ['empty', 'L_Income', 'L_2020', 'L_2030', 'L_2040', 'L_2050',
+  var namesI = ['empty', 'L_Income',  'L_2025', 'L_2030', 'L_2035', 'L_2040',
+              'L_2045', 'L_2050', 'L_2055', 'L_2060', 'L_2065',
               'G_Fund', 'F_Fund', 'i', 'C_Fund', 'i', 'S_Fund', 'i', 'I_Fund'];
   if (indexFundsFlag) { return namesI.indexOf(cbName); }
   return names.indexOf(cbName);
 }
 function syncFundCheckboxGroups() {
   var flag = true;
-  var lf = ['L_Income', 'L_2020', 'L_2030', 'L_2040', 'L_2050'];
+  var lf = ['L_Income', 'L_2025', 'L_2030', 'L_2035', 'L_2040', 'L_2045', 'L_2050', 'L_2055', 'L_2060', 'L_2065'];
   lf.forEach(function(id) { flag &= $('#'+id).prop('checked') });
   $('#Lfunds').prop('checked', flag);
   flag = true;
@@ -205,9 +221,11 @@ function fundHighchart(chartName, csvData, title, indexFundsFlag) {
   //console.log(monthData);
   //console.log('in getMonthlyReturnsAll');
   var series14 = [{ colorIndex: 'lf' }, { colorIndex: 'lf' }, { colorIndex: 'lf' }, { colorIndex: 'lf' }, { colorIndex: 'lf' },
+    { colorIndex: 'lf' }, { colorIndex: 'lf' }, { colorIndex: 'lf' }, { colorIndex: 'lf' }, { colorIndex: 'lf' },
     { colorIndex: 'g' }, { colorIndex: 'f' }, { colorIndex: 'if' }, { colorIndex: 'c' }, { colorIndex: 'ic' },
     { colorIndex: 's' }, { colorIndex: 'is' }, { colorIndex: 'i' }, { colorIndex: 'ii' }];
     var series10 = [{ colorIndex: 'lf' }, { colorIndex: 'lf' }, { colorIndex: 'lf' }, { colorIndex: 'lf' }, { colorIndex: 'lf' },
+      { colorIndex: 'lf' }, { colorIndex: 'lf' }, { colorIndex: 'lf' }, { colorIndex: 'lf' }, { colorIndex: 'lf' },
       { colorIndex: 'g' }, { colorIndex: 'f' }, { colorIndex: 'c' }, { colorIndex: 's' }, { colorIndex: 'i' }];
   return Highcharts.chart(chartName, {
     credits: { enabled: false },
@@ -238,7 +256,7 @@ function fundHighchart(chartName, csvData, title, indexFundsFlag) {
         chartOptions: {
           legend: {
             align: 'right', verticalAlign: 'top',
-            layout: 'vertical', x: 0, y: 100
+            layout: 'vertical', x: 0, y: 40
           },
         }
       }]
