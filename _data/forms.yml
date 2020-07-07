@@ -117,6 +117,17 @@
   -  Both
   form_topics:
   -  Loans
+- form_number: TSP-20-C
+  form_url: https://www.tsp.gov/tsp/loan.do?subaction=menu&amp;_name=loan&_form=tsp20c
+#  form_url: "{{ site.loans }}&_form=tsp20c"
+  form_name: CARES Act Loan Application
+  form_info: Apply online for a TSP general purpose loan with an increased maximum loan amount. Only for participants who self-certify that they are affected by COVID-19 as defined in the CARES Act (P.L. 116-136).
+  form_date:
+  form_pages:
+  form_audience:
+  -  Both
+  form_topics:
+  -  Loans
 - form_number: TSP-21-R-CL
   form_url: tsp-21-r-cl.pdf
   form_name: Residential Loan Checklist
@@ -158,6 +169,15 @@
   -  Both
   form_topics:
   -  Loans
+- form_number: TSP-46
+  form_url: tsp-46.pdf
+  form_name: CARES ACT Loan Suspension Request
+  form_info: Request a suspension of your TSP loan payments for the rest of calendar year 2020. Only for participants who self-certify that they are affected by COVID-19 as defined in the CARES Act (P.L. 116-136).
+  form_date: Local Reproduction
+  form_audience:
+  -  Both
+  form_topics:
+  -  Loans
 - form_number: TSP-60
   form_url: tsp-60.pdf
   form_name: Request for a Transfer Into the TSP
@@ -190,6 +210,7 @@
   -  General information
 - form_number: TSP-75
   form_url: https://www.tsp.gov/tsp/addlWithdrawals.do?subaction=wdMenu&_name=wd&_form=tsp75
+#  form_url: "{{ site.loans }}&_form=tsp75"
   form_name: Age-Based In-Service Withdrawal Request
   form_info: Request a withdrawal from your TSP account if you are age 59½ or older and still employed by the Federal Government.
   form_date: 2/2015
@@ -200,6 +221,7 @@
   -  Withdrawals
 - form_number: TSP-76
   form_url: https://www.tsp.gov/tsp/addlWithdrawals.do?subaction=wdMenu&_name=wd&_form=tsp76
+#  form_url: "{{ site.loans }}&_form=tsp76"
   form_name: Financial Hardship In-Service Withdrawal Request
   form_info: Request a financial hardship withdrawal while still employed.
   form_date: 1/2018
@@ -240,8 +262,20 @@
   -  Legal documents
 - form_number: TSP-95
   form_url: https://www.tsp.gov/tsp/addlWithdrawals.do?subaction=wdMenu&_name=wd&_form=tsp95
+  #  form_url: "{{ site.loans }}&_form=tsp95"
   form_name: Changes to Installment Payments
-  form_info: Log in to <a href="https://www.tsp.gov/tsp/addlWithdrawals.do?subaction=wdMenu&_name=wd">My Account</a> and access the online tool to request changes to your existing TSP installment payments.
+  form_info: Log in to [My Account]({{ site.withdrawals }}) and access the online tool to request changes to your existing TSP installment payments.
+  form_date: Local reproduction
+  form_pages: 0
+  form_audience:
+  -  Both
+  form_topics:
+  -  Withdrawals
+- form_number: TSP-96
+  form_url: https://www.tsp.gov/tsp/addlWithdrawals.do?subaction=wdMenu&_name=wd&_form=tsp95
+#  form_url: "{{ site.loans }}&_form=tsp95"
+  form_name: Changes to Installment Payments
+  form_info: Log in to [My Account]({{ site.withdrawals }}) and access the online tool to request changes to your existing TSP installment payments.
   form_date: Local reproduction
   form_pages: 0
   form_audience:
@@ -250,8 +284,9 @@
   -  Withdrawals
 - form_number: TSP-99
   form_url: https://www.tsp.gov/tsp/addlWithdrawals.do?subaction=wdMenu&_name=wd&_form=tsp99
+  #  form_url: "{{ site.loans }}&_form=tsp99"
   form_name: Withdrawal Request for Separated and Beneficiary Participants
-  form_info: Log in to <a href="https://www.tsp.gov/tsp/addlWithdrawals.do?subaction=wdMenu&_name=wd">My Account</a> and access the online tool to request a withdrawal if you are either separated from service or a beneficiary participant.
+  form_info: Log in to [My Account]({{ site.withdrawals }}) and access the online tool to request a withdrawal if you are either separated from service or a beneficiary participant.
   form_date: Local reproduction
   form_pages: 0
   form_audience:

@@ -117,7 +117,7 @@ function buildSideScrollTableRoR(chartName, data) {
   // bodyHTML = sideScrollWrapper('  ', 'tbody', '', '', bodyHTML, true);
 
   // wrap in table
-  var table = sideScrollTable('', chartName+'-table', '', headerHTML+bodyHTML, true);
+  var table = sideScrollTable('', chartName+'-table', '', headerHTML+bodyHTML, true, '');
   // console.log(headerHTML+bodyHTML);
   // console.log(table);
   annualData.unshift(header);

@@ -16,7 +16,7 @@ If you are the next-of-kin or legal representative of a deceased TSP participant
 
 + If the participant was an active federal employee or member of the uniformed services, report the death to the participant's employing agency or service.
 + Report the participant's death to us by calling 1-877-968-3778. Press 3 from the main menu to speak to a Participant Service Representative.
-+ Read, complete, and submit [Information Relating to Deceased Participant]({{ site.baseurl }}/forms/tsp-17.pdf), *Form TSP-17*, along with the participant's certified death certificate. 
++ Read, complete, and submit Form TSP-17, *[Information Relating to Deceased Participant]({{ site.baseurl }}/forms/tsp-17.pdf)*, along with the participant's certified death certificate. 
 
 
 

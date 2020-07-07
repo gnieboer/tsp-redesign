@@ -1,0 +1,28 @@
+.usa-grid {
+  &.covid {
+    margin-top: 3rem;
+    padding-right: 1rem;
+    padding-left: 1rem;
+
+    .usa-width-one-half {
+      padding-right: 0;
+      padding-left: 2rem;
+
+      &:first-child {
+        padding-right: 2rem;
+        padding-left: 0;
+        border-right: 1px solid $color-gray-light;
+      }
+
+      h4 {
+        font-family: $sans;
+        color: #205493;
+      }
+
+      ul,
+      ol {
+        padding-left: 2rem;
+      }
+    } // END .usa-width-one-half
+  }
+}

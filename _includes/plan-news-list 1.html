@@ -7,7 +7,7 @@
   {% assign folder = item.path | split: '/' | shift | pop | join: '/' %}
   {% if folder != lastfolder %}
     {% if lastfolder == '' %}
-    ## Archived news and announcements
+    ### Archived news and announcements
     {% else %}
     ----- end accordion {{lastfolder}} -----
     {% endif %}

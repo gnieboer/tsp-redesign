@@ -5,6 +5,8 @@ styles:
 sidenav: manage-your-plan
 scripts:
 permalink: /making-contributions/contribution-types/
+redirect_from:
+  - /contributions
 ---
 
 # Contribution types
@@ -87,8 +89,7 @@ contribution limit. To see the most current limits, visit [Contribution Limits](
 - You must make a new election each calendar year—they do not restart
 automatically.
 
-**Uniformed services members can use tax-exempt pay to make catch-up
-contributions, but not incentive pay, special pay, or bonus pay.**
+**If you are a uniformed services member and enter a combat zone, your catch-up contributions must be Roth. (The TSP cannot accept traditional tax-exempt contributions toward the catch-up limit.) You also cannot make catch-up contributions from incentive pay, special pay, or bonus pay.**
 
 To make a catch-up contribution election, use your agency’s or service’s payroll website
 (e.g., [Employee Express]({{ site.baseurl }}/exit/?idx=7){:rel="nofollow"}, EBIS, [LiteBlue]({{ site.baseurl }}/exit/?idx=8){:rel="nofollow"}, [myPay]({{ site.baseurl }}/exit/?idx=6){:rel="nofollow"}, or [NFC EPP]({{ site.baseurl }}/exit/?idx=9){:rel="nofollow"}) or complete the Catch-Up Contribution Election, [_Form TSP-1-C_]({{ site.baseurl }}/forms/tsp-1-c.pdf) (or [_TSP-U-1-C_]({{ site.baseurl }}/forms/tsp-u-1-c.pdf)for uniformed services) and submit it to your payroll office. Or call the ThriftLine

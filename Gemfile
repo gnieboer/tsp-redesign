@@ -4,3 +4,5 @@ gem 'uswds-jekyll', :git => 'https://github.com/18F/uswds-jekyll.git'
 gem 'jekyll_pages_api_search'
 gem 'jekyll-last-modified-at'
 gem 'jekyll-redirect-from'
+
+gem "jekyll-liquify", "~> 0.0.2"

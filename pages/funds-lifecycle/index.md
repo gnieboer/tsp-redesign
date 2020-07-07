@@ -17,6 +17,7 @@ document-ready:
 redirect_from:
   - /InvestmentFunds/FundOptions/
   - /InvestmentFunds/FundsOverview/comparisonMatrix.html
+  - /lifecycle
 ---
 
 # Lifecycle (L) Funds

@@ -9,6 +9,7 @@ var affiliates = {
   "beta.tsp": "sVO7chy_W4g9AMmHj90csL3Oyn6z7JKRs1Pb8BxCJ9Y=",
   "beta.tsp.forms": "6HltwZIKfyLoxQKMBODEct4oWEf82aYqOG690gVLWlA=",
   "beta.tsp.plan-news": "Rq24ee2O0lnSR6VJmiRiIMDJhNZ_KSVrYzisorSVCr8=",
+  "beta.tsp.bulletins": "-BOY4iotgFqgjDI6D-8vDacMSDszlS03UNPurypUxHA=",
 };
 
 var default_limit = 10;
@@ -93,7 +94,7 @@ function buildSearchURL(siteName, affiliate, accessKey, limit, offset, query) {
           + '&limit=' + limit
           + '&query=' + query;
   if (offset > 0) { url += '&offset=' + offset; }
-  console.log('buildSearchURL |'+url+'|');
+  // console.log('buildSearchURL |'+url+'|');
   return url;
 }
 

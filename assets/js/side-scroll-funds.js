@@ -299,7 +299,7 @@ function toggleTableWidth(chartName) {
 }
 
 // table-side-scroll building function
-function sideScrollTable(prefix, xclass, id, tableContent, nl) {
+function sideScrollTable(prefix, xclass, id, tableContent, nl, colgroup) {
   var myClass = '';
   var myID = '';
   var myNL = '';
@@ -307,7 +307,9 @@ function sideScrollTable(prefix, xclass, id, tableContent, nl) {
   if (xclass != '') { myClass = ' class="'+xclass+'"'; }
   if (id != '') { myID = ' id="'+id+'"'; }
   var rc =  prefix + '<table' + myID + myClass + '>' + myNL;
-  rc += prefix + '  <colgroup><col class="column-width"></colgroup>' + myNL;
+  // allow caller to control colgroup block
+  if (colgroup == '') { rc += prefix + '  <colgroup><col class="column-width"></colgroup>' + myNL; } // default
+  if ((colgroup.length) > 4) { rc += prefix + '  ' + colgroup + myNL; } // by callerjavascript
   rc += tableContent;
   rc += prefix + '</table>' + myNL;
   return rc;
@@ -321,15 +323,24 @@ function sideScrollTH(prefix, scope, xclass, txt, nl) {
   if (nl) rc += "\n";
   return rc;
 }
+function sideScrollTH2(prefix, scope, xclass, extraHTML, txt, nl) {
+  var myClass = '';
+  var myScope = '';
+  if (xclass != '') { myClass = ' class="'+xclass+'"'; }
+  if (scope != '') { myScope = ' scope="'+scope+'"'; }
+  var rc = prefix + '<th ' + extraHTML + myScope + myClass + '>' + txt + '</th>';
+  if (nl) rc += "\n";
+  return rc;
+}
 // tbody, tr, thead
 function sideScrollWrapper(prefix, tag, id, xclass, content, nl) {
   var myID = '';
-  var myID = '';
+  var myNL = '';
   var myClass = '';
   if (nl) { myNL = "\n";}
   if (xclass != '') { myClass = ' class="'+xclass+'"'; }
   if (id != '') { myID = ' id="'+id+'"'; }
-  return    prefix + '  <'+tag+myID+myClass+'>' + "\n"
+  return    prefix + '<'+tag+myID+myClass+'>' + myNL
           + content
-          + prefix + '  </'+tag+'>' + "\n"
+          + prefix + '</'+tag+'>' + myNL;
 }

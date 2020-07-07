@@ -26,7 +26,7 @@ document-ready:
 
 Please be aware that the privacy protection provided on the tsp.gov domain (see [Website privacy policy]({{ site.baseurl }}/privacy-policy/)) may not be available at the external link.  
 
-If your browser does not automatically transfer you in a few seconds, <span id="offsiteLink"></span>.  <!-- DONALD:  this is where the dynamic redirect goes -->
+If your browser does not automatically transfer you in a few seconds, <span id="offsiteLink"></span>.
 
   </div> <!-- END div.usa-width-one-half -->
 

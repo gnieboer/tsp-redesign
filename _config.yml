@@ -5,6 +5,7 @@ url: "https://beta.tsp.gov" # the base hostname & protocol for your site, e.g. h
 plugins:
   - jekyll-last-modified-at
   - jekyll-redirect-from
+  - jekyll-liquify
 
 theme: uswds-jekyll
 
@@ -42,6 +43,10 @@ markdown: kramdown
 scripts:
   - /assets/uswds/js/uswds.min.js
   - /assets/js/vendor/glossary.min.js
+  - /assets/js/jquery.min.js
+  - /assets/js/bootstrap.min.js
+  - /assets/js/copy-to-clipboard.js
+  - /assets/js/form-modals.js
   - /assets/js/glossary.js
   - /assets/js/dialog.js
   - /assets/js/usa-search.js
@@ -63,6 +68,10 @@ keep_files:
 
 # output: true will copy the collection into _site
 collections:
+  announcements:
+    output: true
+  bulletins:
+    output: true
   funds:
     output: true
   funds-retired:
@@ -79,6 +88,18 @@ collections:
     output: true
 
 defaults:
+  -
+    scope:
+      path: "_announcements"
+    values:
+      layout: page-announcement
+      sidenav: agency-service-reps
+  -
+    scope:
+      path: "_bulletins"
+    values:
+      layout: page-bulletin
+      sidenav: agency-service-reps
   -
     scope:
       path: "_plan_news"
