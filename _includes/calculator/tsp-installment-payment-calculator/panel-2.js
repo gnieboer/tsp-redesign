@@ -7,6 +7,8 @@ This is the javascript specific to panel 2.
 <!--
 panelNames['{{ panelName}}'] = {{ panelID }};
 panelGood[{{ panelID }}] = function(forceValue) {
+  console.log(forceValue, accountAmountGood(forceValue), frequencyGood(forceValue), rateOfReturnGood(forceValue), amountToReceiveGood(forceValue));
+
   return accountAmountGood(forceValue) & frequencyGood(forceValue)
     & rateOfReturnGood(forceValue) & amountToReceiveGood(forceValue);
 };

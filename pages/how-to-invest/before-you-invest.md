@@ -62,7 +62,7 @@ Consider the following when you plan your retirement strategy.
     <div id="holding-area" class="hide">
     {% include components/before-you-invest-fund-block.html fund="Income"
       one=""
-      two="Were born 1958 or earlier or are using your TSP savings or expect to in the near future"
+      two="Were born 1955 or earlier or are using your TSP savings or expect to in the near future"
       three="Aims to preserve your assets while providing some growth"
     %}
     {% include components/before-you-invest-fund-block.html fund="2020"
@@ -70,49 +70,19 @@ Consider the following when you plan your retirement strategy.
       two="Were born 1956&ndash;1961 or plan to need your TSP savings between 2020 and 2024"
       three="Aims to provide moderate growth with a moderate emphasis on preserving your assets"
     %}
-    {% include components/before-you-invest-fund-block.html fund="2025"
-      one=""
-      two="Were born 1958&ndash;1964 or plan to need your TSP savings between 2021 and 2027"
-      three="Aims to provide moderate growth with a moderate emphasis on preserving your assets"
-    %}
     {% include components/before-you-invest-fund-block.html fund="2030"
       one=""
-      two="Were born 1965&ndash;1969 or plan to need your TSP savings between 2028 and 2032"
-      three="Aims to provide moderate-to-high growth over time with a low emphasis on preserving your assets"
-    %}
-    {% include components/before-you-invest-fund-block.html fund="2035"
-      one=""
-      two="Were born 1970&ndash;1974 or plan to need your TSP savings between 2033 and 2037"
+      two="Were born 1962&ndash;1971 or plan to need your TSP savings between 2025 and 2034"
       three="Aims to provide moderate-to-high growth over time with a low emphasis on preserving your assets"
     %}
     {% include components/before-you-invest-fund-block.html fund="2040"
       one=""
-      two="Were born 1975&ndash;1979 or plan to need your TSP savings between 2038 and 2042"
-      three="Focused more on the potential for high growth over time than on the preservation of assets"
-    %}
-    {% include components/before-you-invest-fund-block.html fund="2045"
-      one=""
-      two="Were born 1980&ndash;1984 or plan to need your TSP savings between 2043 and 2047"
+      two="Were born 1972&ndash;1981 or plan to need your TSP savings between 2035 and 2044"
       three="Focused more on the potential for high growth over time than on the preservation of assets"
     %}
     {% include components/before-you-invest-fund-block.html fund="2050"
       one=""
-      two="Were born 1985&ndash;1989 or plan to need your TSP savings between 2048 and 2052"
-      three="Focused more on the potential for high growth over time than on the preservation of assets"
-    %}
-    {% include components/before-you-invest-fund-block.html fund="2055"
-      one=""
-      two="Were born 1990&ndash;1994 or plan to need your TSP savings between 2053 and 2057"
-      three="Focused more on the potential for high growth over time than on the preservation of assets"
-    %}
-    {% include components/before-you-invest-fund-block.html fund="2060"
-      one=""
-      two="Were born 1995&ndash;1999 or plan to need your TSP savings between 2058 and 2062"
-      three="Focused more on the potential for high growth over time than on the preservation of assets"
-    %}
-    {% include components/before-you-invest-fund-block.html fund="2065"
-      one=""
-      two="Were born after 1999 or plan to need your TSP savings after 2062"
+      two="Were born 1982 or later or plan to need your TSP savings in 2045 or later"
       three="Focused more on the potential for high growth over time than on the preservation of assets"
     %}
     </div>

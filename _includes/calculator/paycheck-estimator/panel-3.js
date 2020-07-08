@@ -89,7 +89,7 @@ function sumWithholding(op1TradTotal, op2TradTotal) {
   monthTax2 = parseFloat((monthTax2 / maxpay_freq).toFixed(2));
 
   val = parseFloat((val - afterHold).toFixed(2));
-  // console.log ['sumWithholding', val, grossPay, addHold, beforeHold, afterHold, monthTax1, monthTax2];
+  console.log ['sumWithholding', val, grossPay, addHold, beforeHold, afterHold, monthTax1, monthTax2];
   return [val, grossPay, addHold, beforeHold, afterHold, monthTax1, monthTax2];
 }
 
@@ -150,7 +150,6 @@ function option1Good(submit) {
   var catch_trad = getPosInteger('catch_option1Trad', -1);
   var catch_roth = getPosInteger('catch_option1Roth', -1);
   if ((trad_set + roth_set) <= -2) {
-    console.log(trad_set, roth_set);
     var msg = "Enter either a whole percentage or a fixed dollar amount for traditional and/or Roth contributions for Scenario 1.";
     if ((rs == 'USBRS') || (rs == 'US')) {
       msg = "Enter a whole percentage for traditional and/or Roth contributions for Scenario 1.";
@@ -189,8 +188,8 @@ function option2Good(submit) {
       }
       showError(roth_input, msg);
       showError(trad_input, msg);
-      return false;
     }
+    return false;
   }
   return true;
 }
@@ -251,13 +250,13 @@ function test_limits(submit, amts, contribs) {
 
 // reuseable simple check.  all boxes should be 0+ and whole numbers
 function inputGood(field, submit) {
+  console.log(' testing ' + field, submit);
   clearWarning(field);
   if (!submit) {
     if ($('#'+field).val() == '') { return clearError(field); }
   }
   var id = getPosInteger(field, -1);
   if (id > 0) { $('#'+field).val(id); }
-  if (id < 0) { return showError(field, 'Enter a value of at least 0.'); }
   if (field.slice(-7) == 'Percent') { if (id > 99) { return showError(field, 'Enter a value from 0 to 99.'); } }
   // if (submit) { if (id < 0) { return showError(field, 'Please enter a valid value.'); } }
   return clearError(field);
@@ -266,10 +265,12 @@ function inputGood(field, submit) {
 function check_amounts(submit) {
   // assume all is good
   var rc = true;
-  var i;
-  var idList = [getInputID(rs, 'trad', 1), getInputID(rs, 'roth', 1), getInputID(rs, 'trad', 2), getInputID(rs, 'roth', 2),
-        'catch_option1Trad', 'catch_option1Roth', 'catch_option2Trad', 'catch_option2Roth'];
-  for (i = 0; i < idList.length; i++) { rc &= inputGood(idList[i], false); }
+  var idList = ['trad_option1Percent', 'trad_option1Amount', 'roth_option1Percent', 'roth_option1Amount',
+        'catch_option1Trad', 'catch_option1Roth',
+        'trad_option2Percent', 'trad_option2Amount', 'roth_option2Percent', 'roth_option2Amount',
+        'catch_option2Trad', 'catch_option2Roth'];
+  for (var i = 0; i < idList.length; i++) { rc &= inputGood(idList[i], submit); }
+  console.log('rc ', rc);
   sumContributions();
 
   // test for good input
