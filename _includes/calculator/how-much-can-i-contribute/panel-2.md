@@ -39,18 +39,9 @@ Elective Contributions panel (2) for How Much Can I Contribute?.
   value="26" min="1" max="52"
   prompt="Select the remaining number of salary payments you will receive in <span class='year-choosen'>YYYY</span> after your new amount takes effect:"
   explanation="
-  <p>This will depend on how often you are paid (biweekly or monthly, for example). If you are uncertain, check with your personnel or finance office.</p>
-  <table class=\"pay-schedule-table\">
-  <thead>
-  <tr><th scope=\"col\">Payment Frequency</th><th scope=\"col\">Number of Salary Payments</th></tr>
-  </thead>
-  <tbody>
-  <tr><td>Biweekly</td><td>26*</td></tr>
-  <tr><td>Monthly</td><td>12</td></tr>
-  <tr><td>Weekly</td><td>52</td></tr>
-  <tr><td>Semimonthly</td><td>24</td></tr>
-  </tbody></table>
-  <p>* A biweekly frequency occasionally results in 27 salary payments for a year. Contact your personnel or payroll office if you do not know the number of salary payments you will receive for the remainder of the year.</p>"
+  <p>This will depend on
+  <a onclick=\"window.open('https://www.tsp.gov/PlanningTools/Calculators/numberOfSalaryPayments.html', '\_blank', 'location=yes,height=450,width=650,scrollbars=yes,status=yes');\">how often you are paid</a>
+  (biweekly or monthly, for example). If you are uncertain, check with your personnel or finance office.</p>"
 %}
 </fieldset>
 

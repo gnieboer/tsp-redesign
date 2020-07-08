@@ -4,6 +4,11 @@ title: "COVID-19 updates: Latest Information"
 sidenav: news-and-resources
 styles:
 scripts:
+  - /assets/js/jquery.min.js
+  - /assets/js/forms.js
+  - /assets/js/bootstrap.min.js
+#  - /assets/js/share-modal.js
+  - /assets/js/copy-to-clipboard.js
   - /assets/js/plan-news.js
   - /assets/js/ajax-usa-search-gov.js
 permalink: /covid-19/
@@ -86,4 +91,4 @@ If you’re actively employed, you must notify your agency or service when your 
 If you’re separated from federal or uniformed services, you can [change your address online]({{ site.profile_settings }}) in My Account or [call the ThriftLine]({{ site.baseurl }}/contact/) and speak with a TSP representative.
 
 ## USPS temporarily suspends service to several countries
-Please be advised that the U.S. Postal Service has [temporarily suspended mail delivery service to several countries]({{ site.baseurl }}/exit/?idx=167). Mail addressed to these countries will be returned to sender. If the mailing address we have on file for you is in one of the countries listed, we won’t be able to send you mail. You can view your account statements and notices when you log in to My Account. If you have concerns about receiving other types of TSP mail in these countries, please [call the ThriftLine]({{ site.baseurl }}/contact/) and speak to a TSP representative
+Please be advised that the U.S. Postal Service has [temporarily suspended mail delivery service to several countries]({{ site.baseurl }}/exit/?idx=161). Mail addressed to these countries will be returned to sender. If the mailing address we have on file for you is in one of the countries listed, we won’t be able to send you mail. You can view your account statements and notices when you log in to My Account. If you have concerns about receiving other types of TSP mail in these countries, please [call the ThriftLine]({{ site.baseurl }}/contact/) and speak to a TSP representative

@@ -1,11 +1,3 @@
-/*Downloaded from https://www.codeseek.co/clarkhacks/jekyll-share-modal-source-bBMZaB */
-
-var shrModal = '<div id=\"shareModal\" class=\"modal fade\" role=\"dialog\"> <div class=\"modal-dialog\"> <div class=\"modal-content\"> <div class=\"post-share-modal modal-body\"> <div> <a href=\"http:\/\/www.facebook.com\/sharer\/sharer.php?u={{site.url}}{{page.url}}&title={{page.title}}\" class=\"btn btn-social btn-facebook\"> <span class=\"fa fa-facebook\"><\/span>Facebook<\/a> <a href=\"http:\/\/www.tumblr.com\/share\/link?url={{site.url}}{{page.url}}&name={{page.title}}&description={{post.desc}}\" class=\"btn btn-social btn-tumblr\"> <span class=\"fa fa-tumblr\"><\/span>tumblr<\/a> <a href=\"https:\/\/plus.google.com\/share?url={{site.url}}{{page.url}}\" class=\"btn btn-social btn-google\"> <span class=\"fa fa-google-plus\"><\/span>Google Plus<\/a> <a href=\"mailto:?&subject=Blog%20Post:%20{{page.title}}&body=Check%20out%20this%20amazing%20blog%20post!%20{{site.url}}{{page.url}}\" class=\"btn btn-social btn-email\"> <span class=\"fa fa-envelope\"><\/span>Email<\/a> <a href=\"http:\/\/twitter.com\/intent\/tweet?status={{page.title}}%20at%20%{{site.url}}{{page.url}}\" class=\"btn btn-social btn-twitter\"> <span class=\"fa fa-twitter\"><\/span>Twitter<\/a> <hr> <\/div><div> <h3>Post Address<\/h3> <p> A direct link to this post! <\/p><input type=\"text\" id=\"windowurl\"\/> <a href=\"#\" data-copytarget=\"#windowurl\" class=\"btn btn-primary\">Copy<\/a> <\/div><\/div><\/div><\/div><\/div>';
-var windowLoc = window.location.href;
-document.write(shrModal);
-$("input#windowurl").val(windowLoc);
-
-/*
 // // Get the modal
 // var modal = document.getElementById("share-modal");
 //

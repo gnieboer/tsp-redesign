@@ -1,7 +1,0 @@
-{% comment %}
-Content at the top of announcement md and individual pages.
-Subscribe and explain.
-{% endcomment %}
-{% assign searchFunction = include.searchFunction | default: "announcementsSearch(this);" %}
-{% include search-bar.html  onChange=searchFunction searchName="announcements" %}
-{% include explain-subscribe.html %}

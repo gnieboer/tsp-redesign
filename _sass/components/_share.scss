@@ -47,7 +47,6 @@
   width: auto;
   margin: 0.5rem;
   pointer-events: none;
-  padding: 0;
 }
 
 .modal.show .modal-dialog {
@@ -84,8 +83,7 @@
 .btn-social {
     margin-top: 5px;
     span {
-      &.fa,
-      &.fas {
+      &.fa {
         padding-right: .5rem;
       }
     }

@@ -6,7 +6,7 @@ sidenav: fund-options
 redirect_from:
   - /InvestmentFunds/FundOptions/fundPerformance_C.html
   - /cfund
-Fund_type: Individual
+Fund_type: Index
 Fund_name: C Fund
 Fund_order: 3
 Fund_subtitle: Common Stock Index Investment Fund

@@ -68,7 +68,7 @@ This will depend on how often you are paid (biweekly or monthly, for example). I
   inputClass="usa-unstyled-list"
   onBlur="taxStatusGood(true);"  prompt="Tax filing status"  explanation=""
 %}
-{% capture federal_allowances_info %}You can use the <span class="nobr">[Tax Withholding Estimator](/exit/?idx=166){:rel="nofollow"}{:target="\_blank"}</span> on the IRS website for help in determining how many allowances to claim.{% endcapture %}
+{% capture federal_allowances_info %}You can use the <span class="nobr">[Tax Withholding Estimator](/exit/?idx=161){:rel="nofollow"}{:target="\_blank"}</span> on the IRS website for help in determining how many allowances to claim.{% endcapture %}
 {% include calculator/div-panel-form-field.html
   fieldID="panel-2.6" id="fedAllowances"
   min="1" value="" max="99" maxLength=2 step="1"
