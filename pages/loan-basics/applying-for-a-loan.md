@@ -40,6 +40,18 @@ By law, your spouse has certain rights to your TSP account. When requesting a lo
 
 Exceptions to the spousal rule may be approved under very limited circumstances. For more information, please refer to Form TSP-16, [*Exception to Spousal Requirements*]({{ site.baseurl }}/forms/tsp-16.pdf),  ([TSP-U-16]({{ site.baseurl }}/forms/tsp-u-16.pdf), for uniformed services members).
 
+<div class="usa-alert  usa-alert-info">
+  <div class="usa-alert-body">
+    <h3 class="usa-alert-heading">
+      Temporary waiver of notary requirement
+    </h3>
+    <p class="usa-alert-text">
+      We will temporarily accept and process certain TSP withdrawal and loan forms without requiring notarized signatures in order to support participants in physical distancing measures during the COVID-19 pandemic. All signatures must be handwritten and submitted as directed in the form instructions, but you may leave the notary section blank.
+    </p>
+  </div>
+</div>
+
+
 ## Residential loan documentation
 When you request a residential loan, you must provide supporting documentation of the costs associated with the purchase or construction of your primary residence, before your loan can be approved.
 
