@@ -73,7 +73,7 @@ Purchasing a boat as a primary residence requires you to provide all of the foll
 + Signed statement that the boat will be your primary residence
 ## Loan processing
 + If you successfully complete the entire loan process online, and are approved, you will receive your money in 8 to 13 business days. If you submit a paper loan agreement, it may take several weeks.
-+ You may track the status of your loan by logging into [My Account]({{ site.myaccount }}) or by [contacting us]({{ site.baseurl }}/contact/).
++ You may track the status of your loan by logging in to [My Account]({{ site.myaccount }}) or by [contacting us]({{ site.baseurl }}/contact/).
 ## Receiving your money
 
 + If your loan request was made and approved online, you will receive your money in the form of a check, mailed to the address we have on file for you. You will not have the option of receiving your funds by electronic funds transfer (EFT).
