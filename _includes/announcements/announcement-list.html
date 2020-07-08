@@ -1,0 +1,107 @@
+{% comment %}make an array of non-archived announcement items{% endcomment %}
+{% assign announcement_list = site.announcements | sort: 'path' | reverse %}
+{% assign topitems = "" | split: ',' %}
+{% assign archive = "" | split: ',' %}
+{% assign idx = include.idx | default: 'x' %}
+{% assign noAccordions = include.noAccordions | default: false %}
+{% assign startTopCount = include.startTopCount | default: 2 %}
+{% for item in announcement_list %}{% unless item.path contains '/_hidden/' %}
+{% assign folder = item.path | split: '/' | shift | pop | join: '/' %}
+{% if folder == '' or noAccordions == true %}
+  {% assign topitems = topitems | push: item %}
+{% else %}
+  {% assign archive = archive | push: item %}
+{% endif %}
+{% endunless %}{% endfor %}
+{% comment %}topitems is now top announcements, archive is the stuff in accordions below,
+            both reverse sorted{% endcomment %}
+
+{% assign type = 'announcements' %}
+{% assign aSize = archive | size %}
+{% assign total_size = topitems | size | plus: aSize %}
+{% if total_size == 1 %}{% assign type = 'announcement' %}{% endif %}
+{% comment %}
+<div class="select-announcements-topic not-service-announcement">
+  <h2 class="results">Found <strong>{{total_size}}</strong> {{type}}</h2>
+</div>
+{% endcomment %}
+<div id="announcement-default-div">
+{% comment %}Do the top level{% endcomment %}
+{% assign itemSize = topitems | size %}
+{% assign startTopAccordion = startTopCount | plus: 1 %}
+{% assign cnt = 0 %}
+{% if itemSize > 0 %}
+<section class="announcements-current" markdown="1">
+
+{% assign lastHeader = '' %}
+{% for item in topitems %}
+  {% assign cnt = cnt | plus: 1 %}
+  {% if cnt == startTopAccordion %}
+  <div id="more-announcements-content-{{idx}}" class="hide">
+  {% endif %}
+  {% assign showHeader = 0 %}
+  {% assign newHeader = item.path | split: '/' | last | truncate: 7, "" %}
+  {% if newHeader == lastHeader %}{% assign showHeader = 0 %}{% endif %}
+  {% assign lastHeader = newHeader %}
+  {% include announcements/announcement-item.html entry=item showHeader=showHeader %}
+{% endfor %}
+{% if cnt >= startTopAccordion %}
+</div>
+<div class="see-more" onclick="showMoreAnnouncements('announcements', '{{idx}}');">
+  <span id="more-announcements-{{idx}}">See more </span><i id="more-announcements-arrow-{{idx}}" class="far fa-angle-up rotate"></i>
+</div>
+{% endif %}
+</section>
+{% endif %}
+
+{% comment %}Do the accordions{% endcomment %}
+{% assign lastFolder = folder %}
+{% assign itemSize = archive | size %}
+{% if itemSize > 0 %}
+{% assign lastHeader = '' %}
+<section class="announcements-archive" markdown="1">
+{% assign item = archive | first %}
+{% assign folder = item.path | split: '/' | shift | pop | join: '/' %}
+{% assign lastFolder = folder %}
+## Archived announcements
+<ul class="usa-accordion">
+<li>
+<button class="usa-accordion-button" aria-expanded="false" aria-controls="year-{{folder}}-{{idx}}">{{folder}}</button>
+<div id="year-{{folder}}-{{idx}}" class="usa-accordion-content" markdown="1">
+{% for item in archive %}
+  {% unless item.path contains "/_hidden/" %}
+  {% assign folder = item.path | split: '/' | shift | pop | join: '/' %}
+  {% if folder != lastFolder %}
+{% assign lastFolder = folder %}
+</div>
+</li>
+<li>
+<button class="usa-accordion-button" aria-expanded="false" aria-controls="year-{{folder}}-{{idx}}">{{folder}}</button>
+<div id="year-{{folder}}-{{idx}}" class="usa-accordion-content" markdown="1">
+  {% endif %}
+  {% assign showHeader = 0 %}
+  {% assign newHeader = item.path | split: '/' | last | truncate: 7, "" %}
+  {% if newHeader == lastHeader %}{% assign showHeader = 0 %}{% endif %}
+  {% assign lastHeader = newHeader %}
+  {% include announcements/announcement-item.html entry=item showHeader=showHeader %}
+  {% endunless %}
+{% endfor %}
+</div>
+</li>
+</ul>
+</section>
+{% endif %}
+</div>
+<section id="announcements-search-results" class="announcements hide" markdown="1">
+<!-- DONALD style this -->
+<span class="see-all"><a href="{{ site.baseurl }}/agency-service-reps/announcements/">See all</a></span>
+
+<span id="search-result-count"></span>
+
+{% for item in topitems %}
+  {% include announcements/announcement-item.html entry=item showHeader=0 addBlockName=1 %}
+{% endfor %}
+{% for item in archive %}
+  {% include announcements/announcement-item.html entry=item showHeader=0 addBlockName=1 contentDivClass="announcement-to-search" %}
+{% endfor %}
+</section>

@@ -18,6 +18,20 @@ function checkYearBorn(doCalc) {
 
 function pickBestFund(born) {
   // return content name for three columns and which column to highlight
+  if (born >= 1999) { return [2055, 2060, 2065, 2065, 'three']; }
+  if (born >= 1995) { return [2055, 2060, 2065, 2060, 'two']; }
+  if (born >= 1990) { return [2050, 2055, 2060, 2055, 'two']; }
+  if (born >= 1985) { return [2045, 2050, 2055, 2050, 'two']; }
+  if (born >= 1980) { return [2040, 2045, 2050, 2045, 'two']; }
+  if (born >= 1975) { return [2035, 2040, 2045, 2040, 'two']; }
+  if (born >= 1970) { return [2030, 2035, 2040, 2035, 'two']; }
+  if (born >= 1965) { return [2025, 2030, 2035, 2030, 'two']; }
+  if (born >= 1958) { return ['Income', 2025, 2030, 2025, 'two']; }
+  return ['Income', 2025, 2030, 'Income', 'one'];  // oldest choice
+}
+
+function pickBestFundSafety(born) {
+  // return content name for three columns and which column to highlight
   if (born >= 1982) { return [2030, 2040, 2050, 2050, 'three']; }
   if (born >= 1972) { return [2030, 2040, 2050, 2040, 'two']; }
   if (born >= 1962) { return [2020, 2030, 2040, 2030, 'two']; }

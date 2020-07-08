@@ -26,4 +26,4 @@ The FRTIB is authorized to collect and store this information pursuant to 5 U.S.
 
 We send these emails through the [GovDelivery]({{ site.baseurl }}/exit/?idx=146){:rel="nofollow"} email service provider. You can choose to stop receiving these emails by selecting the “unsubscribe” link at the bottom of an email sent to your email address.
 
-Participant outreach subscriptions are only available to you when you add an email address to My Account. Anyone may subscribe to our [public email notifications]("https://www.tsp.gov/ParticipantSupport/Content/notifications.html").
+Participant outreach subscriptions are only available to you when you add an email address to My Account. Anyone may subscribe to our [public email notifications]({{ site.baseurl }}/exit/?idx=4).

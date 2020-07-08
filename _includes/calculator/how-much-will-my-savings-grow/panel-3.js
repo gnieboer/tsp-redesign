@@ -126,7 +126,7 @@ function savingsGrowTooltip(me) {
   rc = tooltipRowGroup(rc);
   rc = tooltipHeader('Year '+me.x)+rc;
   rc = tooltipDiv('savings-grow-tooltip', rc);
-  console.log(rc);
+  // console.log(rc);
   return rc;
 }
 
@@ -278,7 +278,7 @@ function calculateResults() {
   var yearsToContribute = getPosInteger('yearsToContribute', 0);
   var DIEMSdate = $.trim($('#DIEMSdate').val());
   var DIEMSdate2 = flatpickr.parseDate(DIEMSdate, "F j, Y");
-  console.log(DIEMSdate2);
+  // console.log(DIEMSdate2);
   if (DIEMSdate2) { DIEMSdate2 = parseInt(flatpickr.formatDate(DIEMSdate2, "Ymd")); }
   var matchDelay = 0;
   if (DIEMSdate2 < 20180101) { matchDelay = 2; }
@@ -349,7 +349,7 @@ function calculateResults() {
             annualPayAmt = parseFloat((salary[year] * annualPayRate).toFixed(2));
           }
         }
-        console.log('contrib is ' + annualPayAmt + ' and ' + parseFloat(catchupPaycheck));
+        // console.log('contrib is ' + annualPayAmt + ' and ' + parseFloat(catchupPaycheck));
         contributions[year] += annualPayAmt + parseFloat(catchupPaycheck);
         if (period <= catchupCatchup) { contributions[year] += 0.01; }
       }

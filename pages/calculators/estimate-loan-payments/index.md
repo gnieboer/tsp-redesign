@@ -4,13 +4,15 @@ title: Estimate loan payments
 styles:
 sidenav: calculators
 scripts:
-  - /assets/js/ajaxFetch.js
 permalink: /calculators/estimate-loan-payments/
-calculator-name: estimate-loan-payments
-progress-steps: [Loan details,Results]
-panel-names: [Details, Results]
+calculator-name:
+progress-steps:
+panel-names:
 document-ready:
-  - getLoanRate();
 redirect_from:
   - /PlanningTools/Calculators/loanPayments.html
 ---
+
+This version is under development.
+
+Please use the existing [Estimate Loan Payments](https://www.tsp.gov/PlanningTools/Calculators/loanPayments.html){:target="\_blank"}{:re="me"}  calculator on tsp.gov.

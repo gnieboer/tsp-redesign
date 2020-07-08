@@ -22,14 +22,14 @@
       {% endif %}
     <p class="form-title">{{ form.form_name}}</p>
     <p class="form-number">
-      <a href="{{ formURL }}" xxx="{{ prefixURL }}" class="form-name">
+      <a href="{{ formURL | liquify }}" xxx="{{ prefixURL }}" class="form-name">
         Form {{ form.form_number}}
       </a>
     </p>
     </div>
     <div class="form-description">
     <p>Use this form to:</p>
-    <p>{{ form.form_info }}</p>
+    <p markdown="1">{{ form.form_info | liquify }}</p>
     </div>
   </div> <!-- end .item-frame -->
 </div> <!-- end .usa-width-one-half -->
