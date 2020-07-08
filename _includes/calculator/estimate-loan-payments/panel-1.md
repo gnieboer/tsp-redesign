@@ -10,8 +10,6 @@ Name middle panels (2) for CALC.
 
 The Loan Calculator estimates loan payments based on the amount you want to borrow from your TSP account, the [current loan interest rate]({{ site.baseurl }}/news-and-resources/), and other factors. To borrow from your TSP account, you must be a Federal employee in pay status. If you qualify for a TSP loan, the maximum amount you may be eligible to borrow is $50,000; the minimum amount is $1,000. To find out the amount you have available to borrow, visit [TSP Loans]({{ site.loans }}) in the My Account section.
 
-**Estimate loan payments and costs**
-
 {% include calculator/div-panel-form-field.html
   fieldID="panel-1.1" id="employmentCategory"
   inputType="radio" radioIDs="Civilian, Uniformed" radioLabels="Civilian, Uniformed Services"
@@ -36,6 +34,9 @@ The Loan Calculator estimates loan payments based on the amount you want to borr
 
   Enter a whole dollar amount between $1,000 and $50,000.
   "
+  additionalContent="
+**Interest Rate**: The current rate for new loans is **<span id=\"loan-rate\">not available</span>,** which is the current <span class='nobr'>G Fund</span> interest rate.
+"
 %}
 
 {% include calculator/div-panel-form-field.html
@@ -66,8 +67,8 @@ You may have **only one general purpose loan and one residential loan** outstand
 
 <div class="panel-form-field" >
 <div id="payType-div">
-<fieldset>
-<legend id="payType-label" aria-details="panel-1.4">Repayment terms:<br />(select <strong>ONE</strong>)</legend>
+<fieldset class="usa-fieldset-inputs usa-sans">
+<legend id="payType-label" aria-details="panel-1.4">Repayment terms: (select <strong>ONE</strong>)</legend>
 <span class="usa-input-error-message" id="payType-error-message" role="alert"></span>
 <ul class="usa-unstyled-list inline-input">
 <!-- Radio 1 -->
@@ -123,10 +124,8 @@ Enter an estimate of how much you’ll contribute before any changes take effect
 </div>
 </li>
 </ul>
-</div> <!---->
-
+</div>
 {% capture pay_schedule_explanation %}
-
 This will depend on how often you are paid (biweekly or monthly, for example). If you are uncertain, check with your personnel or finance office.
 
 <table class="pay-schedule-table">
@@ -154,10 +153,6 @@ This will depend on how often you are paid (biweekly or monthly, for example). I
   explanation=pay_schedule_explanation
 %}
 <input type="hidden" name="lastPaySchedule" id="lastPaySchedule" value="Select">
-
-**Interest Rate: The current rate for new loans is
-<span id="loan-rate">not available</span>,
-which is the current G Fund interest rate.**
 
 {% include calculator/button-block.html panelID=panelID showResults=2 %}
 
