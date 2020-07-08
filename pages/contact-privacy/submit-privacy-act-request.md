@@ -37,7 +37,7 @@ For all other inquiries regarding TSP records, you may choose from the methods l
     <tr>
 <td markdown="1">**Online**
 </td>
-<td markdown="1">Log in to [My Account]({{ site.myaccount }})
+<td markdown="1">Log into [My Account]({{ site.myaccount }})
 </td>
       <td>You will need your account number/user ID and password.</td>
     </tr>

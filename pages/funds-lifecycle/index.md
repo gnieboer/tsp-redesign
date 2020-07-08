@@ -20,7 +20,7 @@ redirect_from:
   - /lifecycle
 ---
 
-# Lifecycle (L) Funds
+# Lifecycle funds
 
 Each of the ten L Funds is a diversified mix of the five core funds (G, F, C, S, and I). They were designed to let you
 invest your entire portfolio in a single L Fund and get the best expected return for the amount of expected risk that is

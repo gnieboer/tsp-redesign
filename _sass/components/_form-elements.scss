@@ -14,7 +14,6 @@ section.inline-search {
     display: flex;
     width: 100%;
     align-items: center;
-    padding-top: 2rem;
 
     .or {
       line-height: 1;
@@ -41,11 +40,6 @@ section.inline-search {
   }
   form {
     &.animated-search {
-      div {
-        margin: 0;
-        padding: 0;
-        display: inline;
-      }
       input[type=text] {
         width: 50px;
         // width: 100%;

@@ -6,7 +6,7 @@ sidenav: fund-options
 redirect_from:
   - /InvestmentFunds/FundOptions/fundPerformance_G.html
   - /gfund
-Fund_type: Individual
+Fund_type: Index
 Fund_name: G Fund
 Fund_order: 1
 Fund_subtitle: Government Securities Investment Fund
