@@ -33,7 +33,7 @@ var singleFundData = function(fund) {
             console.log(values[0]);
             if (values[0] != 'L2010') {
               var fund_name = values[0].replace('L', 'L ');
-              $('#no_data_yet_message').html("The "+fund_name+" was launched in July 2020. Historical returns will appear below as they become available.");
+              $('#no_data_yet_message').html("The "+fund_name+" Fund was launched in July 2020. Historical returns will appear below as they become available.");
             }
           }
           // console.log(name + ': ' + data);
