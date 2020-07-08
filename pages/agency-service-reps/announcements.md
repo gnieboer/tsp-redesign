@@ -4,26 +4,18 @@ title: Announcements
 styles:
 sidenav: agency-service-reps
 scripts:
-  - /assets/js/forms.js
-  - /assets/js/calculator/calculator.js
-  - /assets/js/announcements.js
 permalink: /agency-service-reps/announcements/
 # Jekyll redirects https://github.com/jekyll/jekyll-redirect-from
 redirect_from:
   - /representative/Content/announcements.html
   - /representative/Content/announcementsArchive.html
-document-ready:
-  - setQS('search-input-announcements');
 ---
 
 # Announcements
 
-<section class="subscribe-or-search" markdown="1">
-{% include announcements/announcement-sub-header.html %}
-</section>
+This version is under development.
 
-<section id="announcement-section" class="plan-news announcements" markdown="1">
-{% include announcements/announcement-list.html idx='a' %}
-</section>
+Please visit the existing [Announcements](https://www.tsp.gov/representative/Content/announcements.html){:target="\_blank"}{:re="me"} on tsp.gov.
+
 
 <!-- CONTENT END -->

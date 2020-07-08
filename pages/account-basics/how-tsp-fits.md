@@ -4,6 +4,9 @@ title: How the TSP fits into your retirement
 sidenav: manage-your-plan
 styles:
 scripts:
+  - /assets/js/jquery.min.js
+  - /assets/js/bootstrap.min.js
+  - /assets/js/form-modals.js
 permalink: /account-basics/how-tsp-fits/
 document-ready:
   - addFormModals();

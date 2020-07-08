@@ -16,6 +16,6 @@ Keeping your addresss up to date with us is important. How you change your addre
 
 Members of the Coast Guard and NOAA Corps can use [Direct Access]({{ site.baseurl }}/exit/?idx=47){:rel="nofollow"}. Select "Home and Mailing Address" under Tasks, then choose "TSP" from the drop-down menu next to "Address Type."
 
-**If you’re no longer a federal employee or uniformed services member**, visit [My Account: Profile Settings]({{ site.profile_settings }}){:target="\_blank"} to change the address. Or while you’re logged in, use our Change in Address for Separated Participants, Form TSP-9, and upload your form in My Account, or fax or mail it to us.
+**If you’re no longer a federal employee or uniformed services member**, visit [My Account: Profile Settings]({{ site.profile_settings }}){:target="\_blank"} to change the address. You may also [call the ThriftLine](/contact/) to make the change with a Participant Service Representative.
 
-To change or validate your phone number or email address, visit [My Account: Profile Settings]({{ site.profile_settings }}){:target="\_blank"}.
+To change or validate your contact information such as your phone number or email address, visit [My Account: Profile Settings]({{ site.profile_settings }}){:target="\_blank"}.

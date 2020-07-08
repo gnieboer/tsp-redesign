@@ -27,14 +27,9 @@ If your current payments are of a fixed dollar amount that you chose when you se
 
 # Making changes to your TSP installment payments
 
-To make any of the allowable changes described above, use the online tool by logging in to My Account and
-selecting **Withdrawals and Changes to Installment Payments** from the menu. Depending on your
-circumstances, you may be able to complete your request entirely online.
+To make any of the allowable changes described above, use the online tool that you will find by logging into My Account and clicking “Withdrawals and Changes to Installment Payments.” When you’ve completed your online request, you’ll be asked to submit it online if possible.
 
-If your signature or your spouse’s signature is required, or you’re making changes to transfers, you’ll see a
-prompt to print a summary of your request with requirements for notarized signatures or information from your
-financial institution. You may then submit the completed summary by upload through My Account or by mailing
-or faxing it to us according to the form instructions.
+If your signature or your spouse’s signature is required or you’re starting or making changes to transfers, you won’t be able to complete the process entirely online. You’ll be given a summary of your request, which you—and your spouse or financial institution if necessary—will need to sign, have notarized, and then mail or fax to us. When we receive these properly completed pages, we’ll be able to complete the transaction you began online.
 
 Be sure to carefully read the TSP tax notice, [Tax Information for TSP Participants Receiving Installment Payments]({{ site.baseurl }}/publications/tsp-780.pdf)." It outlines the rules for changing your monthly payments and details the tax implications associated with each monthly payment option.
 

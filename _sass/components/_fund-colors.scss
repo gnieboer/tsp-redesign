@@ -1,25 +1,36 @@
 // Defined in _variables
 
+.g-fund {
+  color: $color-g-fund;
+}
+.f-fund {
+  color: $color-f-fund;
+}
+.c-fund {
+  color: $color-c-fund;
+}
+.s-fund {
+  color: $color-s-fund;
+}
+.i-fund {
+  color: $color-i-fund;
+}
 .l-fund { color: $color-l-fund; }
-.l-income { color: $color-l-fund; }
-.l-2010 { color: $color-l-fund; }
-.l-2020 { color: $color-l-fund; }
-.l-2025 { color: $color-l-fund; }
-.l-2030 { color: $color-l-fund; }
-.l-2035 { color: $color-l-fund; }
-.l-2040 { color: $color-l-fund; }
-.l-2045 { color: $color-l-fund; }
-.l-2050 { color: $color-l-fund; }
-.l-2055 { color: $color-l-fund; }
-.l-2060 { color: $color-l-fund; }
-.l-2065 { color: $color-l-fund; }
-
-.g-fund { color: $color-g-fund; }
-.f-fund { color: $color-f-fund; }
-.c-fund { color: $color-c-fund; }
-.s-fund { color: $color-s-fund; }
-.i-fund { color: $color-i-fund; }
-
+.l-income {
+  color: $color-l-fund;
+}
+.l-2020 {
+  color: $color-l-fund;
+}
+.l-2030 {
+  color: $color-l-fund;
+}
+.l-2040 {
+  color: $color-l-fund;
+}
+.l-2050 {
+  color: $color-l-fund;
+}
 .index-g { color: $color-index-g } // 90-day T-Bill Rate
 .index-f { color: $color-index-f } // Bloomberg Barclays U.S. Aggregate Bond Index}
 .index-c { color: $color-index-c } // S&P 500

@@ -9,7 +9,6 @@ function getRatesOfReturn(chart) {
 
 var doAjaxRetrieveRoR = function(divName, url) {
   $('#'+divName+'-message').html('Calling server for data...');
-  // console.log('url ', url);
   var serverCall = $.get(url);
   serverCall.done(
     function (data) {
@@ -122,7 +121,6 @@ function buildSideScrollTableRoR(chartName, data) {
   // console.log(table);
   annualData.unshift(header);
   monthlyData.unshift(header);
-  // console.log(annualData);
   fundHighchart(chartName+'-annual', annualData.join("\n"), '', true);
   fundHighchart(chartName+'-monthly', monthlyData.join("\n"), '', true);
   return table;
