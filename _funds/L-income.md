@@ -15,7 +15,7 @@ Fund_objective_short: For participants who are currently withdrawing their TSP a
 Fund_recommendation: Based on the year you were born, the L Income Fund may be a good choice for you because it provides the most conservative investment mix, while still offering you some diversification.
 questions:
   - question: Why should I invest in the L Income Fund?
-    answer: You should consider investing in the L Income Fund if you are currently withdrawing money from your TSP account in monthly payments or you plan to begin withdrawing money before 2020.
+    answer: You should consider investing in the L Income Fund if you are currently withdrawing money from your TSP account in monthly payments or you plan to begin withdrawing money before 2021.
   - question: Am I ok with market and inflation risk?
     answer: The L Income Fund can have periods of gain and loss, just as the individual TSP funds do. However, the L Income Fund is the most conservative of the L Funds. It focuses on money preservation while providing a small exposure to the riskier funds (C, S, and I Funds) in order to reduce inflation's effect on your purchasing power.
   - question: How can I use the L Income Fund in my TSP Account?
@@ -39,7 +39,7 @@ summary_details:
 top_ten_update:
 top_ten_holdings:
 additional_info: |
-  The L Income Fund is designed to produce current income if you are already receiving money from your TSP account through monthly payments or if you plan to withdraw or to begin withdrawing from your account before 2019. The asset allocations are based on the investment consultant’s assumptions regarding future investment returns, inflation, economic growth, and interest rates. We review these assumptions at least annually to determine whether changes to the allocations are warranted.
+  The L Income Fund is designed to produce current income if you are already receiving money from your TSP account through monthly payments or if you plan to withdraw or to begin withdrawing from your account next year. The asset allocations are based on the investment consultant’s assumptions regarding future investment returns, inflation, economic growth, and interest rates. We review these assumptions at least annually to determine whether changes to the allocations are warranted.
 
   Remember, however, that expected risk and return are based on assumptions about future economic conditions and investment performance. There is no guaranteed rate of return for any period, either short-term or long-term. For the fund’s historical returns, visit [Share Price History]({{ site.baseurl }}/fund-performance/share-price-history/). Past performance does not guarantee future results.
 risks: |
