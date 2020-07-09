@@ -7,6 +7,7 @@
 {% assign title = entry.title | default: "Missing TITLE" %}
 {% assign xentryHTML = entry.permalink | append: '.html' %}
 {% assign entryHTML = entry.permalink %}
+{% if entry.pdflink %}{% assign entryHTML = entry.pdflink %}{% endif %}
 {% assign reducedContent = entry.content | strip_html | slice: 0, 400 %}
 {% assign bulletinClass = "not-service-bulletin" %}
 {% if entry.service %}{% assign bulletinClass = "" %}{% endif %}
@@ -19,7 +20,7 @@
 
     <div class="flex post-and-share">
       <span class="bulletin-number">Bulletin {{entry.bulletin_number}}</span>,&nbsp;
-      <span id="{{bulletin_name}}-posted" class="post-date" > {{bulletin_posted | date: '%B %d, %Y'}}</span>
+      <span id="{{bulletin_name}}-posted" class="post-date" > {{bulletin_posted | date: '%B %-d, %Y'}}</span>
       <!-- Flex item #0, Name -->{% include social-media-share.html modalID=bulletin_name %}
       {% comment %}<!-- Flex item #1, Date -->{% include copy-to-clipboard.html element=bulletin_name function='copyPlanNewsToClipboard' %}{% endcomment %}
       {% comment %}{% if entry.permalink %}<a href="{{entryHTML}}">Entry</a>{% endif %}{% endcomment %}
@@ -47,7 +48,7 @@
 <div class="usa-width-one-whole" markdown="1">
 <div id="{{bulletin_name}}-div" class="bulletin">{{entry.content}}</div>
 <div class="flex post-and-share">
-  <span id="{{bulletin_name}}-posted" class="post-date" >Posted: {{bulletin_posted | date: '%B %d, %Y'}}</span>
+  <span id="{{bulletin_name}}-posted" class="post-date" >Posted: {{bulletin_posted | date: '%B %-d, %Y'}}</span>
   <!-- Share Modal -->
   {% include social-media-share.html modalID=bulletin_name %}
   {% include copy-to-clipboard.html element=bulletin_name function='copyPlanNewsToClipboard' %}

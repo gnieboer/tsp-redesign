@@ -4,11 +4,6 @@ title: "COVID-19 updates: Latest Information"
 sidenav: news-and-resources
 styles:
 scripts:
-  - /assets/js/jquery.min.js
-  - /assets/js/forms.js
-  - /assets/js/bootstrap.min.js
-#  - /assets/js/share-modal.js
-  - /assets/js/copy-to-clipboard.js
   - /assets/js/plan-news.js
   - /assets/js/ajax-usa-search-gov.js
 permalink: /covid-19/
@@ -20,12 +15,13 @@ redirect_from:
 
 <h1><div class="nav-header">COVID-19</div>Latest information</h1>
 
-Updated **June 16, 2020**.
+Updated **June 22, 2020**.
 
-You can check this page for up-to-date details about TSP operations and temporary changes we’re making to support you during this time. The information we’re providing here is current but subject to change as we receive additional guidance and information.
+You can check this page for **up-to-date details about TSP operations and temporary changes** we’re making to support you during this time. The information we’re providing here is current but subject to change as we receive additional guidance and information.
 
 **Plan news and reminders related to <span class="nobr">COVID-19</span>**
 
+- [Submitting loan and withdrawal forms online](#submitting-loan-and-withdrawal-forms-online)
 - [CARES Act temporary loan and withdrawal options](#cares-act-temporary-loan-and-withdrawal-options)
 - [Payments you make to the TSP by check may take longer to process](#payments-you-make-to-the-tsp-by-check-may-take-longer-to-process)
 - [Rollover period extended to July 15](#rollover-period-extended-to-july-15)
@@ -35,6 +31,12 @@ You can check this page for up-to-date details about TSP operations and temporar
 - [How to update your mailing address](#how-to-update-your-mailing-address)
 - [USPS temporarily suspends service to several countries](#usps-temporarily-suspends-service-to-several-countries)
 
+## Submitting loan and withdrawal forms online
+You may now submit loan and withdrawal TSP forms online by logging in to My Account and uploading a PDF copy of the form. You’ll find an up-to-date list of forms we accept online when you log in to [My Account]({{ site.myaccount }}) and select **Upload Form** from the menu. That section provides detailed instructions on how to prepare your file for upload.
+
+You still have the option to mail or fax your completed form and supporting documentation to us. However, be sure to submit your form and documentation **one time only**. We will process the first submission we receive and cancel any subsequent forms of the same type.
+
+The list of forms you can submit online may change at any time, so be sure to check the list in My Account before you begin preparing your file.
 
 ## CARES Act temporary loan and withdrawal options
 The CARES Act allows us to offer temporary loan and withdrawal options to TSP participants affected by COVID-19. The loan options are now available. Favorable tax treatment of withdrawals you’re currently eligible for are also in effect. The TSP CARES Act withdrawal option will be available by late July 2020. **Both the loan and withdrawal options are available to you only if you can certify that you meet certain CARES Act criteria and TSP eligibility rules.**
@@ -91,4 +93,4 @@ If you’re actively employed, you must notify your agency or service when your 
 If you’re separated from federal or uniformed services, you can [change your address online]({{ site.profile_settings }}) in My Account or [call the ThriftLine]({{ site.baseurl }}/contact/) and speak with a TSP representative.
 
 ## USPS temporarily suspends service to several countries
-Please be advised that the U.S. Postal Service has [temporarily suspended mail delivery service to several countries]({{ site.baseurl }}/exit/?idx=161). Mail addressed to these countries will be returned to sender. If the mailing address we have on file for you is in one of the countries listed, we won’t be able to send you mail. You can view your account statements and notices when you log in to My Account. If you have concerns about receiving other types of TSP mail in these countries, please [call the ThriftLine]({{ site.baseurl }}/contact/) and speak to a TSP representative
+Please be advised that the U.S. Postal Service has [temporarily suspended mail delivery service to several countries]({{ site.baseurl }}/exit/?idx=167). Mail addressed to these countries will be returned to sender. If the mailing address we have on file for you is in one of the countries listed, we won’t be able to send you mail. You can view your account statements and notices when you log in to My Account. If you have concerns about receiving other types of TSP mail in these countries, please [call the ThriftLine]({{ site.baseurl }}/contact/) and speak to a TSP representative

@@ -1,0 +1,46 @@
+---
+layout: default
+main:
+  class: usa-grid usa-section usa-content usa-layout-docs
+scripts:
+  - /assets/js/announcements.js
+---
+{% assign sidenav = site.data.navigation[page.sidenav] | default: page.sidenav %}
+{% assign xtra_class = '' %}
+{% if sidenav %}
+
+{% assign xtra_class = 'usa-width-three-fourths' %}
+<aside class="usa-width-one-fourth usa-layout-docs-sidenav sticky">
+  <ul class="usa-accordion">
+    <li>
+      <button class="usa-accordion-button"
+        aria-expanded="true"
+        aria-controls="sidenav-mobile">
+        More in this section
+      </button>
+      <div id="sidenav-mobile" class="usa-accordion-content">
+        {% include sidenav.html links=sidenav fake='/agency-service-reps/announcements/' %}
+      </div>
+    </li>
+  </ul>
+</aside>
+{% endif %}
+
+{% capture top_of_page %}
+# Announcements
+<section class="plan-news" markdown="1">
+{% assign searchFunction = "searchOnAnnouncements('search-input-announcements');" %}
+{% include announcements/announcement-sub-header.html searchFunction=searchFunction %}
+</section>
+{% endcapture %}
+
+<div class="{{xtra_class}} usa-layout-docs-main_content" markdown="1">
+  {{ top_of_page | markdownify }}
+
+  <!-- DONALD style this -->
+  <span class="see-all"><a href="{{ site.baseurl }}/agency-service-reps/announcements/">See all</a></span>
+
+  <section class="plan-news announcements announcements-archive">
+  {% include announcements/announcement-item.html entry=page showHeader=0 searchBar=0 %}
+  </section>
+</div>

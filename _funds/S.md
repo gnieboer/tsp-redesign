@@ -6,7 +6,7 @@ sidenav: fund-options
 redirect_from:
   - /InvestmentFunds/FundOptions/fundPerformance_S.html
   - /sfund
-Fund_type: Index
+Fund_type: Individual
 Fund_name: S Fund
 Fund_order: 4
 Fund_subtitle: Small cap stock Index investment fund
