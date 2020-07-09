@@ -133,6 +133,34 @@ function getPosInteger(id, def) {
 
   return val;
 }
+function getPosFloat(id, def) {
+  var val = parseFloat($('#'+id).val());
+  if (isNaN(val)) { val = def; }
+
+  return val;
+}
+
+
+function resultSelector(set, choice) {
+  var type = choice.replace(set, '');
+  if (type == 'Graph') {
+    $('#'+choice).prop('checked', true);
+    $('#'+set+'-graph').removeClass('hide');
+    $('#'+set+'-table').addClass('hide');
+    return true;
+  }
+  if (type == 'Table') {
+    $('#'+choice).prop('checked', true);
+    $('#'+set+'-graph').addClass('hide');
+    $('#'+set+'-table').removeClass('hide');
+    return true;
+  }
+  $('#'+choice).prop('checked', true);
+  $('#'+set+'-graph').removeClass('hide');
+  $('#'+set+'-table').removeClass('hide');
+  return true;
+}
+
 
 // most calculators will hide an AYR element when they hide an input element
 function hideBlock(hideFlag, block1, block2) {
