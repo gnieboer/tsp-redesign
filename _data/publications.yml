@@ -1,3 +1,20 @@
+- publication_url: tsp-21-r-cl.pdf
+  publication_name: Residential Loan Checklist
+  publication_info: Complete this checklist and include it with your completed Form TSP-21-R, Loan Agreement, and residential loan documentation to ensure timely processing of your loan.
+  publication_date: 8/2017
+  publication_type:
+  - Booklet
+  publication_topics:
+  - Loans
+- publication_url: tspfs27.pdf
+  publication_name: Additional Lifecycle (L) Funds
+  publication_info: Beginning July 1, 2020, new Lifecycle (L) Funds will be available to TSP participants. This fact sheet explains the coming changes.
+  publication_date: 6/2020
+  publication_type:
+  - Fact Sheet
+  publication_topics:
+  - Contributions
+  - Investments
 - publication_url: tspfs07.pdf
   publication_name: Annual Limit on Elective Deferrals
   publication_info: Explains the annual IRS elective deferral limit. It also explains the effect of contributing to more than one plan if the IRS limit is exceeded.
@@ -17,7 +34,7 @@
   publication_topics:
   - Withdrawals
 - publication_url: https://www.tsp.gov/components/CORS/monthlyAnnuityFactors.html
-  publication_name: Annuity Factor, Monthly
+  publication_name: Annuity Factors, Monthly
   publication_info: Use these monthly annuity factors with the annuity worksheet to estimate your monthly annuity payment.
   publication_date: 7/2014
   publication_pages: 1 page
@@ -187,7 +204,7 @@
 - publication_url: tspbk12.pdf
   publication_name: In-Service Withdrawals
   publication_info: Booklet about the TSP in-service withdrawal program, the two types of in-service withdrawals, and the rules that apply to each.
-  publication_date: 1/2018
+  publication_date: 9/2019
   publication_pages: 21 pages
   publication_type:
   - Booklet
@@ -299,7 +316,7 @@
 - publication_url: tsp-776.pdf
   publication_name: Required Minimum Distribution for Beneficiary Participants
   publication_info: Explains in detail the Internal Revenue Code (IRC) required minimum distribution rules for beneficiary participants.
-  publication_date: 9/2014
+  publication_date: 9/2019
   publication_pages: 8 pages
   publication_type:
   - Tax Notice
@@ -310,7 +327,7 @@
 - publication_url: tsp-775.pdf
   publication_name: Required Minimum Distributions
   publication_info: Explains in detail the TSP’s withdrawal deadline and the Internal Revenue Code (IRC) required minimum distribution rules for participants who are age 70½ or older and separated from service.
-  publication_date: 1/2018
+  publication_date: 9/2019
   publication_pages: 8 pages
   publication_type:
   - Tax Notice
@@ -320,7 +337,7 @@
 - publication_url: tsplf37a.pdf
   publication_name: TSP Scorecard
   publication_info: Thinking about moving your TSP savings to another plan? Ask the provider these questions first.
-  publication_date: 11/2014
+  publication_date: 3/2020
   publication_pages: 2 pages
   publication_type:
   - Leaflet
@@ -348,7 +365,7 @@
 - publication_url: tspbk08.pdf
   publication_name: Summary of the Thrift Savings Plan
   publication_info: Comprehensive booklet explaining the TSP, its features, benefits, and generally how it works.
-  publication_date: 1/2018
+  publication_date: 9/2019
   publication_pages: 36 pages
   publication_type:
   - Booklet
@@ -398,7 +415,7 @@
 - publication_url: tsp-582.pdf
   publication_name: "Tax Information: Qualifying Orders"
   publication_info: Tax information about payments made under qualifying orders.
-  publication_date: 1/2015
+  publication_date: 7/2019
   publication_pages: 4 pages
   publication_type:
   - Tax Notice
@@ -429,7 +446,7 @@
 - publication_url: tspfs05.pdf
   publication_name: Transfers From the Thrift Savings Plan to Eligible Retirement Plans
   publication_info: Information about moving money from the Thrift Savings Plan (TSP) to eligible retirement plans. This fact sheet is provided for use by a plan administrator of a traditional IRA or eligible employer plan to complete the transfer of a TSP participant's account.
-  publication_date: 1/2018
+  publication_date: 9/2019
   publication_pages: 2 pages
   publication_type:
   - Fact Sheet
@@ -457,7 +474,7 @@
 - publication_url: tsplf15.pdf
   publication_name: Withdrawals
   publication_info: Brief overview of the TSP withdrawal options and what a participant needs to do to get a withdrawal after leaving Federal service.
-  publication_date: 4/2013
+  publication_date: 9/2019
   publication_pages: 3 pages
   publication_type:
   - Leaflet
