@@ -15,8 +15,24 @@ redirect_from:
 
 <h1><div class="nav-header">COVID-19</div>Withdrawals</h1>
 
-- [Withdrawals for Participants Affected by COVID-19](#withdrawals-for-participants-affected-by-covid-19)
-- [Rollover Period Extended to July 15](#rollover-period-extended-to-july-15)
+- [Extended rollover periods](#extended-rollover-periods)
+- [Withdrawals for participants affected by COVID-19](#withdrawals-for-participants-affected-by-covid-19)
+
+## Extended rollover periods
+
+If you received any withdrawal between February 1 and May 15 that is eligible for rollover, then the IRS has extended your 60-day rollover deadline to July 15th.
+
+If you received an Required Minimum Distribution (or an installment payment that included an RMD) anytime in 2020, then you can roll those amounts over—to an IRA or eligible employer plan or back into your TSP account—provided that you do so by August 31.
+
+Use [Form TSP 60]({{ site.baseurl }}/forms/tsp-60.pdf), _Request for a Transfer Into the TSP_ to make these rollovers. **You are eligible for these extended rollover periods whether or not you have been affected by COVID-19. You do not need to meet any of the criteria described above.**
+
+<div class="usa-alert usa-alert-info usa-alert-paragraph">
+<div class="usa-alert-body">
+<p class="usa-alert-text" markdown="1">
+The CARES Act also allows us to make other temporary changes related to RMDs. [Learn more]({{ site.baseurl }}/covid-19/rmd-changes/).
+</p>
+</div>
+</div>
 
 ## Withdrawals for participants affected by COVID-19
 The information we’re providing here is current but subject to change as we receive additional guidance and information.
@@ -68,19 +84,3 @@ You may repay all or part of the amount of your coronavirus-related distribution
 
 **This option will be available by late July, 2020.**
 You may make a one-time withdrawal of up to $100,000 from a civilian or uniformed services account. For those still in federal service, the usual requirements that you be at least 59½ years old or certify that you meet specific financial hardship criteria are waived. Though you may request that we withhold money from your withdrawal for federal income tax, we will not automatically do that. This withdrawal will be eligible for the favorable tax treatment described above, with all of the same options and restrictions. The deadline for applying for this withdrawal will be in December 2020. We will announce the exact cutoff date soon. When you apply for this withdrawal, you are certifying that you meet one or more of the conditions listed above. To protect your privacy, do NOT send supporting documentation with your application, especially medical information.
-
-
-
-## Rollover period extended to July 15
-If you received any withdrawal between February 1 and May 15 that is eligible for rollover, then the IRS has extended your 60-day rollover deadline to July 15th. If you received an RMD (or an installment payment that included an RMD) between February 1 and May 15, then you can roll those amounts over—to an IRA or eligible employer plan or back into your TSP account—provided that you do so by July 15th. Use Form TSP‑60. You are eligible for this extended rollover period whether or not you have been affected by COVID-19. You do not need to meet any of the criteria described above.
-
-The CARES Act allows us to make temporary changes related to required minimum distributions. Learn more.
-
-<div class="usa-alert usa-alert-info usa-alert-paragraph">
-<div class="usa-alert-body">
-<h3 class="usa-alert-heading">Required minimum distributions</h3>
-<p class="usa-alert-text" markdown="1">
-The CARES Act allows us to make temporary changes related to required minimum distributions. [Learn more]({{ site.baseurl }}/covid-19/rmd-changes/).
-</p>
-</div>
-</div>
