@@ -272,7 +272,7 @@
   form_topics:
   -  Withdrawals
 - form_number: TSP-96
-  form_url: https://www.tsp.gov/tsp/addlWithdrawals.do?subaction=wdMenu&_name=wd&_form=tsp95
+  form_url: https://www.tsp.gov/tsp/addlWithdrawals.do?subaction=wdMenu&_name=wd&_form=tsp96
 #  form_url: "{{ site.loans }}&_form=tsp95"
   form_name: Changes to Installment Payments
   form_info: Log in to [My Account]({{ site.withdrawals }}) and access the online tool to request changes to your existing TSP installment payments.
