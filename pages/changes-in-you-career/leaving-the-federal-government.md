@@ -11,8 +11,6 @@ redirect_from:
 
 # Leaving the federal government
 
-
-
 <ul class="usa-accordion">
 <li>
 <button class="usa-accordion-button"
@@ -30,8 +28,8 @@ As you prepare to leave federal service, here are four important things you must
 
 - Make sure the TSP has your [current address]({{ site.baseurl }}/account-basics/update-personal-information/) at all times.
 - If you have any TSP loans, pay them off within 90 days of your separation.
-- Read _[Withdrawing From Your TSP Account for Separated and Beneficiary Participants](https://www.tsp.gov/PDF/formspubs/tspbk02.pdf)_ to fully understand your options.
-- Read the tax notice "[Important Tax Information About Payments From Your TSP Account]({{ site.baseurl }}/publications/tsp-536.pdf)."
+- Read [_Withdrawing From Your TSP Account for Separated and Beneficiary Participants_]({{ site.baseurl }}/publications/tspbk02.pdf) to fully understand your options.
+- Read the tax notice "[_Important Tax Information About Payments From Your TSP Account_]({{ site.baseurl }}/publications/tsp-536.pdf)."
 
 </div>
 </li>
@@ -51,9 +49,9 @@ As you prepare to separate from service, here are some important things you must
 
 - Make sure we have your [current address]({{ site.baseurl }}/account-basics/update-personal-information/) at all times. While you’re an active duty service member, you can update your address through the MyPay website. Just make sure that you log in and go to the TSP section to change your TSP address. If you change it in the “Correspondence Address” section of myPay, it will not change your TSP address.
 - If you have any TSP loans, pay them off within 90 days of your separation.
-- Read _[Withdrawing Your TSP Account After Leaving Federal Service]({{ site.baseurl }}/publications/tspbk02.pdf)_ to fully understand your options.
+- Read [_Withdrawing Your TSP Account After Leaving Federal Service_]({{ site.baseurl }}/publications/tspbk02.pdf) to fully understand your options.
 - Read the tax notice "[Important Tax Information About Payments From Your TSP Account]({{ site.baseurl }}/publications/tsp-536.pdf)."
-- Read [*TSP Benefits That Apply to Members of the Military Who Return to Federal Civilian Service*]({{ site.baseurl }}/publications/tspfs08.pdf) to fully understand all of your rights under the Uniformed Services Employment and Reemployment Rights Act (USERRA).
+- Read [_TSP Benefits That Apply to Members of the Military Who Return to Federal Civilian Service_]({{ site.baseurl }}/publications/tspfs08.pdf) to fully understand all of your rights under the Uniformed Services Employment and Reemployment Rights Act (USERRA).
 
 
 </div>

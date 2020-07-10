@@ -54,18 +54,6 @@ primary:
       href: /changes-in-your-career/
     - text: For beneficiary participants
       href: /for-beneficiary-participants/
-  # - text: News
-  #   links:
-  #   - text: Plan News
-  #     href: /news-and-resources/
-  #   - text: FAQs
-  #     href: /faq/
-  #   - text: Videos and resources
-  #     href: /videos-and-resources/
-  #   - text: Forms & publications
-  #     href: /forms/
-  #   - text: Calculators
-  #     href: /calculators/
 
 secondary:
 #  - text: Login
@@ -195,14 +183,24 @@ fund-options:
     subnav:
       - text: L Income
         href: /funds-lifecycle/l-income/
-      - text: L 2020
-        href: /funds-lifecycle/l-2020/
+      - text: L 2025
+        href: /funds-lifecycle/l-2025/
       - text: L 2030
         href: /funds-lifecycle/l-2030/
+      - text: L 2035
+        href: /funds-lifecycle/l-2035/
       - text: L 2040
         href: /funds-lifecycle/l-2040/
+      - text: L 2045
+        href: /funds-lifecycle/l-2045/
       - text: L 2050
         href: /funds-lifecycle/l-2050/
+      - text: L 2055
+        href: /funds-lifecycle/l-2055/
+      - text: L 2060
+        href: /funds-lifecycle/l-2060/
+      - text: L 2065
+        href: /funds-lifecycle/l-2065/
   - text: Individual funds
     href: /funds-individual/
     subnav:
@@ -216,6 +214,13 @@ fund-options:
         href: /funds-individual/s-fund/
       - text: I Fund
         href: /funds-individual/i-fund/
+  - text: Retired funds
+    href: /funds-retired/
+    subnav:
+      - text: L 2010
+        href: /funds-retired/l-2010/
+      - text: L 2020
+        href: /funds-retired/l-2020/
 
 use-your-savings:
   - text: Loan basics
