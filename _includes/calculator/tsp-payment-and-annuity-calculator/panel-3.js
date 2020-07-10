@@ -87,6 +87,11 @@ function ageToLiveGood(submit) {
 
 function checkAges(submit) { return ageToLiveGood(submit) & ageFromGood(submit) & ageNowGood(submit); }
 
+function getBirthMonthIdx(month) {
+  var months = ["undecimber","January","February","March","April","May","June","July",
+            "August","September","October","November","December"];
+  return months.indexOf(month.charAt(0).toUpperCase() + month.toLowerCase().slice(1));
+}
 function getBirthMonth() {
   var birthMonth = $('#birthMonth').val();
   return birthMonth;

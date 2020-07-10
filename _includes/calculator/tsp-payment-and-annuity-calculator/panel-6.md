@@ -22,27 +22,27 @@ Estimated monthly annuity payments are based on an **annuity interest rate index
   explanation=""
 %}
 
-<section id="section-resultSetOverview" class="overview">
+<section id="section-resultSetOverview" class="overview hide">
   <h2>Overview</h2>
   {% include selectResult.html selectorID='Overview' %}
 </section>
 
-<section id="section-resultSetMonthly" class="monthly-payments">
+<section id="section-resultSetMonthly" class="monthly-payments hide">
   <h2>TSP monthly payments</h2>
   {% include selectResult.html selectorID='Monthly' %}
 </section>
 
-<section id="section-resultSetSingle" class="single-life">
+<section id="section-resultSetSingle" class="single-life hide">
   <h2>Single life annuity</h2>
   {% include selectResult.html selectorID='Single' %}
 </section>
 
-<section id="section-resultSetSpouse" class="joint-life-spouse">
+<section id="section-resultSetSpouse" class="joint-life-spouse hide">
   <h2>Joint life with spouse annuity</h2>
   {% include selectResult.html selectorID='Spouse' %}
 </section>
 
-<section id="section-resultSetOther" class="joint-life-other">
+<section id="section-resultSetOther" class="joint-life-other hide">
   <h2>Joint life with other survivor annuity</h2>
   {% include selectResult.html selectorID='Other' %}
 </section>

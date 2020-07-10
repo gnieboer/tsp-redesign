@@ -3,7 +3,9 @@ layout: calculator
 title: TSP payment and annuity calculator
 styles:
 sidenav: calculators
-scripts: /assets/js/calculator/javascriptTaxTable.js
+scripts:
+  - /assets/js/calculator/javascriptTaxTable.js
+  - /assets/js/calculator/life_expectancy.js
 permalink: /calculators/tsp-payment-and-annuity-calculator/
 calculator-name: tsp-payment-and-annuity-calculator
 progress-steps: [Introduction,Retirement income,Length of retirement,Monthly income,Annuity options,Results]

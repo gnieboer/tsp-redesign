@@ -1,6 +1,6 @@
 {% assign selectorID = include.selectorID | default: 0 %}
 {% assign rsID = 'resultSelector' | append: selectorID %}
-<div id="resultSelectorDiv">
+<div id="{{rsID}}Div">
 {% if include.introText %}
 <p>{{include.introText}}</p>
 {% endif %}

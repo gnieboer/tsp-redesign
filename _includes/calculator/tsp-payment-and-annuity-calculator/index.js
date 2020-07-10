@@ -49,11 +49,11 @@ $(document).ready(function() {
   initValues(0);
 
   $('#resultSetOverview').click();
-  $('#resultSelectorOverviewGraph').click();
-  $('#resultSelectorMonthlyGraph').click();
-  $('#resultSelectorSingleGraph').click();
-  $('#resultSelectorSpouseGraph').click();
-  $('#resultSelectorOtherGraph').click();
+  $('#resultSelectorOverviewTable').click();
+  $('#resultSelectorMonthlyTable').click();
+  $('#resultSelectorSingleTable').click();
+  $('#resultSelectorSpouseTable').click();
+  $('#resultSelectorOtherTable').click();
 });
 -->
 </script>
