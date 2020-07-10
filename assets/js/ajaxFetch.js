@@ -8,7 +8,7 @@ function somethingNotWorking() {
     + " If the problem persists you can call the ThriftLine for assistance at "
     + "<span class='nobr'>1-877-968-3778</span>.</p>";
 }
-var siteName = "https://www.tsp.gov/components/CORS/";
+var siteName = "https://secure.tsp.gov/components/CORS/";
 
 var singleFundData = function(fund) {
 
@@ -184,7 +184,7 @@ function getGrowthLifetime(fund) {
   if (fund == 'S') { colorIndexFund = 's'; colorIndexInfl = 'gray'; }
   if (fund == 'I') { colorIndexFund = 'i'; colorIndexInfl = 'gray'; }
 
-  console.log('https://www.tsp.gov/components/CORS/getFundGrowthInflation2.html?fund='+fund);
+  console.log('https://secure.tsp.gov/components/CORS/getFundGrowthInflation2.html?fund='+fund);
 
   Highcharts.chart('growthLifetime', {
     credits: { enabled: false },
@@ -197,7 +197,7 @@ function getGrowthLifetime(fund) {
       text: 'Growth of $100 since Inception'
     },
     data: {
-      csvURL: 'https://www.tsp.gov/components/CORS/getFundGrowthInflation2.html?fund='+fund
+      csvURL: 'https://secure.tsp.gov/components/CORS/getFundGrowthInflation2.html?fund='+fund
     },
     // series: [{ colorIndex: colorIndexFund }, { colorIndex: colorIndexValues }, { colorIndex: colorIndexInfl }, { colorIndex: colorIndexValues }],
     series: [{ colorIndex: colorIndexFund }, { colorIndex: colorIndexInfl }],
@@ -274,7 +274,7 @@ function getFundIndexAverageAnnualReturns(fund) {
         buildReturnsTable(data[0]);
         return data[0];
       },
-      csvURL: 'https://www.tsp.gov/components/CORS/getFundIndexAverageAnnualReturns.html?fund='+fund
+      csvURL: 'https://secure.tsp.gov/components/CORS/getFundIndexAverageAnnualReturns.html?fund='+fund
     },
     series: [{ colorIndex: colorFund }, { colorIndex: colorIndex }],
     // exporting: { showTable: true },

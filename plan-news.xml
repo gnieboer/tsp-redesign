@@ -6,7 +6,7 @@
   <!-- plan news -->
   <channel>
     <title>Plan news</title>
-    <link>https://beta.tsp.gov/news-and-resources/plan-news/</link>
+    <link>https://www.tsp.gov/news-and-resources/plan-news/</link>
     <description>Read about the most recent updates to the TSP.</description>
     <lastUpdate>{{ item.path | date: '%A, %B %-d, %Y (%I:%M %P)' }}</lastUpdate>
     {% assign plan_news_list = site.plan_news | sort: 'path' %}

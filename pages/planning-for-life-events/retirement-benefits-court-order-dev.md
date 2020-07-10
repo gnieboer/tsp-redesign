@@ -7,19 +7,14 @@ scripts:
   - /assets/js/calculator/javascriptTaxTable.js
   - /assets/js/rbco-address-toggle.js
 # DAV, rbco-address-toggle.js ^^ can be deleted
-permalink: /planning-for-life-events/retirement-benefits-court-order/
-# progress-steps: [Introduction,Scenario,Party 1,Party 2,Attorney,Case,Awards,Summary]
+permalink: /planning-for-life-events/retirement-benefits-court-order-dev/
+progress-steps: [Introduction,Scenario,Party 1,Party 2,Attorney,Case,Awards,Summary]
 redirect_from:
   - /LifeEvents/personal/spouse/courtOrder.html
+published: false
 ---
 
-This tool is being revised and is currently unavailable. We apologize for the inconvenience and hope to have it up and running soon.
-
-
-<!-- CONTENT END -->
-
-
-<ul class="usa-accordion rbco hide">
+<ul class="usa-accordion rbco">
 <!-- PANEL 1: INTRODUCTION -->
 <li>
   <button

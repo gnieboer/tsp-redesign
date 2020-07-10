@@ -1,7 +1,7 @@
 title: Thrift Savings Plan
 description:
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://beta.tsp.gov" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://www.tsp.gov" # the base hostname & protocol for your site, e.g. http://example.com
 plugins:
   - jekyll-last-modified-at
   - jekyll-redirect-from
@@ -11,17 +11,17 @@ theme: uswds-jekyll
 
 # My Account URLS
 # How to use: [My Account]({{ site.myaccount }}), [Profiles Settings]({{ site.profile_settings }})
-myaccount: "https://www.tsp.gov/tsp/login.html"
-account_balance: "https://www.tsp.gov/tsp/accountBalance.do?subaction=view&amp;_name=acctbal"
-beneficiaries: "https://www.tsp.gov/tsp/beneficiaries.do?subaction=beneLanding&_name=bene"
-ca: "https://www.tsp.gov/tsp/contribAlloc.do?subaction=view&_name=cae"
-ift: "https://www.tsp.gov/tsp/fundTransfer.do?subaction=view&_name=ift"
-loans: "https://www.tsp.gov/tsp/loan.do?subaction=menu&amp;_name=loan"
-message_center: "https://www.tsp.gov/tsp/securemsg.do?_name=securemsg"
-profile_settings: "https://www.tsp.gov/tsp/profileSettings.do?subaction=view&amp;_name=profile"
-recent_transactions: "https://www.tsp.gov/tsp/activity.do?subaction=RecentTrans&_name=activity"
-statements: "https://www.tsp.gov/tsp/quarterlyStmt.do?subaction=view&amp;_name=stmts"
-withdrawals: "https://www.tsp.gov/tsp/addlWithdrawals.do?subaction=wdMenu&_name=wd"
+myaccount: "https://secure.tsp.gov/tsp/login.html"
+account_balance: "https://secure.tsp.gov/tsp/accountBalance.do?subaction=view&amp;_name=acctbal"
+beneficiaries: "https://secure.tsp.gov/tsp/beneficiaries.do?subaction=beneLanding&_name=bene"
+ca: "https://secure.tsp.gov/tsp/contribAlloc.do?subaction=view&_name=cae"
+ift: "https://secure.tsp.gov/tsp/fundTransfer.do?subaction=view&_name=ift"
+loans: "https://secure.tsp.gov/tsp/loan.do?subaction=menu&amp;_name=loan"
+message_center: "https://secure.tsp.gov/tsp/securemsg.do?_name=securemsg"
+profile_settings: "https://secure.tsp.gov/tsp/profileSettings.do?subaction=view&amp;_name=profile"
+recent_transactions: "https://secure.tsp.gov/tsp/activity.do?subaction=RecentTrans&_name=activity"
+statements: "https://secure.tsp.gov/tsp/quarterlyStmt.do?subaction=view&amp;_name=stmts"
+withdrawals: "https://secure.tsp.gov/tsp/addlWithdrawals.do?subaction=wdMenu&_name=wd"
 
 # To enable search, uncomment the search section
 # You will need to setup a search account with search.gov

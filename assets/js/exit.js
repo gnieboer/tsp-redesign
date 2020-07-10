@@ -1,8 +1,8 @@
 // define urls
 var urlList = [];
 
-// https://beta.tsp.gov/exit/?idx=##
-// https://beta.tsp.gov/exit/?idx=67
+// https://www.tsp.gov/exit/?idx=##
+// https://www.tsp.gov/exit/?idx=67
 
 urlList[ 0] = 'http://www.tsp.gov';
 urlList[ 1] = 'http://service.govdelivery.com/service/multi_subscribe.html?code=USTSP&amp;custom_id=1178&amp;origin=http://service.govdelivery.com/demos/ustsp/success.html';

@@ -109,17 +109,9 @@ section.videos-and-resources {
           height: 100%;
           text-align: right;
           padding: 0 1rem;
-          // top: 12px;
-          // left: 164px;
-          // width: 16px;
-          // height: 15px;
-          // background: url('https://beta.tsp.gov/assets/img/x_red.svg') 0 -2px;
-          // background-repeat: no-repeat;
+
           &::after {
-            // position: absolute;
             font-family: $font-awesome;
-            // top: -3px;
-            // left: 4px;
             content: "\f057";
             cursor: pointer;
             color: $color-gray;
