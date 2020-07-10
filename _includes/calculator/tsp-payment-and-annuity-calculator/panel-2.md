@@ -1,66 +1,38 @@
 {% comment %}
 Name middle panels (2) for CALC.
 {% endcomment %}
-{% assign panelID = include.panelID | default: 2 %}
+{% assign panelID = include.panelID | default: 2 %} 
 {% assign hide = 'display: block;' %}
 {% if include.hide == 1 %} {% assign hide = 'display: none;' %} {% endif %}
 
 <section id="panel-{{ panelID }}" class="calculator-panel" style="{{ hide }}"  markdown="1">
 
-{% include calculator/div-panel-form-field.html
-  fieldID="panel-1.1" id="accountAmount"
-  inputClass=""  dataFormat="$"
-  min="200" value="" max="" maxLength=8 step="1"
-  placeholder="" onBlur="accountAmountGood(true);"
-  prompt="Enter the amount from your TSP account that will be used for installment payments:"
-  explanation="
+Answer all of the questions in this calculator to help you decide which monthly income options and features meet your needs. At the end, you will be able to view and compare all your monthly income options.
 
-  You need a vested account balance of at least $200 to receive TSP installment payments.
-  "
-%}
 
-{% include calculator/div-panel-form-field.html
-  fieldID="panel-1.2" id="frequency"
-  inputType="radio" radioIDs="Monthly, Quarterly, Annually" radioLabels="Monthly, Quarterly, Annually"
-  inputClass="usa-unstyled-list"
-  onBlur="frequencyGood(true);"
-  prompt="How often do you want to receive payments?"
-  explanation="
-
-  ?????????????????????
-  "
-%}
-
-{% include calculator/div-panel-form-field.html
-  fieldID="panel-1.3" id="amountToReceive"
-  inputClass=""  dataFormat="$"
-  min="25" value="" max="" maxLength=8 step="1"
-  placeholder="" onBlur="amountToReceiveGood(true);"
-  prompt="What dollar amount would you like to receive in each payment?"
-  explanation="
-
-  You must receive at least $25 per payment.
-  "
-%}
-
-{% capture explanation_1_4 %}
-
-  Indicate a rate of return (i.e., 5.25%) if you would like your calculation based on
-  an assumed annual earnings rate (e.g., the rate you expect your TSP account to grow).
-  Otherwise, your calculation will not include projected earnings. You can view the
-  [Rates of return]({{ site.baseurl }}/fund-performance/){:target="_blank"}
-  page for more information, but remember that past performance is not a guarantee or
-  a predictor of future returns.
+{% capture explanation_2_1 %}
+For example: If your TSP account balance at retirement is $500,000, and you take a <span data-term="Partial Withdrawal" class="js-glossary-toggle term term-end">partial withdrawal</span> of $100,000 to buy a home, you will have $400,000 available for monthly income.
 {% endcapture %}
 {% include calculator/div-panel-form-field.html
-  fieldID="panel-1.4" id="rateOfReturn"
+  fieldID="panel-2.1" id="amountToUse"  anchor="panel2"
   inputClass=""  dataFormat="$"
-  min="0" value="" max="99" maxLength=8 step="1"
-  placeholder="" onBlur="rateOfReturnGood(true);"
-  prompt="Expected annual return rate:"
-  explanation=explanation_1_4
+  min="0" value="" max="99999999" maxLength=8 step="1"
+  placeholder="" onBlur="amountToUseGood(false);"
+  prompt="What amount from your TSP account do you want to use for monthly income?"
+  explanation=explanation_2_1
 %}
 
-{% include calculator/button-block.html panelID=panelID prev=1 showResults=3 %}
+{% include calculator/button-block.html panelID=panelID prev=1 next=3 %}
+
+
+{% capture textBlock_2_1 %}
+Use the [How much will my savings grow?](/calculators/how-much-will-my-savings-grow/) calculator to estimate what your account balance will be when you are ready to retire.
+{% endcapture %}
+{% include calculator/infoBox.html icon='info' title="Don’t know what your balance will be at retirement?"  textBlock=textBlock_2_1 %}
+
+{% capture textBlock_2_2 %}
+Log into [My Account]({{ site.myaccount }}) to find your current account balance, or call the ThriftLine at <span class='nobr'>1-877-968-3778</span>.
+{% endcapture %}
+{% include calculator/infoBox.html icon='info' title="Ready to retire now?" textBlock=textBlock_2_2 %}
 
 </section>
