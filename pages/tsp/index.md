@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Redirect to My Account
+title: My Account
 styles:
 sidenav:
 scripts:
