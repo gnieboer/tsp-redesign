@@ -12,6 +12,7 @@ panelGood[{{ panelID }}] = function(forceValue) {
 
 panelEnter[{{ panelID }}] = function(panel) {
     // calculate and set values here
+    calculate();
     // $('#account-depleted').html(CurrencyFormatted(contributionLimit, 'no_cent'));
     return true;
 }
@@ -19,6 +20,82 @@ panelExit[{{ panelID }}] = function(panel) {
     return true;
 }
 
+function resultSetSelect() {
+  var idList = ['resultSetOverview','resultSetMonthly','resultSetSingle','resultSetSpouse','resultSetOther'];
+  idList.forEach(function(idx) {
+     if ($('#'+idx).prop('checked')) { $('#section-'+idx).removeClass('hide'); } else { $('#section-'+idx).addClass('hide'); }
+  });
+}
+
+// annualized interest rate, period (monthly) multiple returned
+function monthlyCompoundFactor(yearlyRate, periods) {
+  var mult = 1.0 + yearlyRate/100.0;
+  var annualized = periods * (Math.pow(mult, 1.0/periods) - 1.0);
+  return 1.0 + annualized / periods;
+}
+
+function calculate() {
+  var userValues = {};
+  userValues['amountToUse'] = getPosInteger('amountToUse', -1);
+  userValues['ageNow'] = getPosInteger('ageNow', -1);
+  userValues['ageFrom'] = getPosInteger('ageFrom', -1);
+  userValues['ageToLive'] = getPosInteger('ageToLive', -1);
+  userValues['birthMonth'] = getBirthMonth();
+  userValues['birthMonthIdx'] = getBirthMonthIdx(userValues['birthMonth']);
+  userValues['amountToReceive'] = getPosInteger('amountToReceive', -1);
+  userValues['rateOfReturn'] = getPosFloat('rateOfReturn', -1);
+  userValues['monthlyRate'] = monthlyCompoundFactor(userValues['rateOfReturn'], 12.0);
+  userValues['haveDependent'] = getHaveDependent();
+  userValues['dependent'] = getDependent();
+  userValues['dependentAge'] = getPosInteger('dependentAge', -1);
+  console.log(userValues['amountToUse'],userValues['ageNow'],userValues['ageFrom'],userValues['ageToLive'],userValues['birthMonth'],userValues['birthMonthIdx'],userValues['amountToReceive'],userValues['rateOfReturn'],userValues['haveDependent'],userValues['dependent'],userValues['dependentAge']);
+
+  var le_factor = get_life_expectancy_factor(userValues['ageNow'], userValues['birthMonthIdx']);
+  console.log(le_factor, get_life_expectancy_factor(69, 1), get_life_expectancy_factor(70, 1), get_life_expectancy_factor(71, 1));
+  console.log(le_factor, get_life_expectancy_factor(69, 8), get_life_expectancy_factor(70, 8), get_life_expectancy_factor(71, 8));
+
+  calculateMonthlyPayments(userValues);
+}
+
+function calculateMonthlyPayments(uv) {
+   console.log(uv['ageNow'], uv['ageToLive'], uv['monthlyRate']);
+   var lePayment = 0.0;
+   var fdPayments = {};
+   var fdBalance = {};
+   var lePayments = {};
+   var leBalance = {};
+   var start = parseInt(uv['ageFrom']);
+   var end = parseInt(uv['ageToLive']);
+
+   var yr, mth;
+   var RMD = 0.0;
+   fdBalance[start-1] = parseFloat(uv['amountToUse']);
+   leBalance[start-1] = parseFloat(uv['amountToUse']);
+   fdPayments[start-1] = parseFloat(uv['amountToReceive']); 
+   lePayments[start-1] = 0.0;
+   for (yr = start; yr <= end; yr++) {
+     fdBalance[yr] = fdBalance[yr-1];
+     fdPayments[yr] = fdPayments[yr-1];
+     leBalance[yr] = leBalance[yr-1];
+     lePayments[yr] = 0.0;
+     for (mth = 1; mth <= 12; mth++) {
+       if (fdBalance[yr] > 0.0) {
+         if (fdBalance[yr] < fdPayments[yr]) { fdPayments[yr] = fdBalance[yr]; }
+         fdBalance[yr] = (fdBalance[yr]-fdPayments[yr])*uv['monthlyRate'];
+         fdBalance[yr] -= RMD;
+       } else fdPayments[yr] = 0.0;
+       fdBalance[yr] = parseFloat(fdBalance[yr].toFixed(2));
+       leBalance[yr] = parseFloat(leBalance[yr].toFixed(2));
+     }
+   }
+
+   for (yr = start; yr <= end; yr++) {
+     console.log(yr, fdPayments[yr].toFixed(2), fdBalance[yr].toFixed(2));
+   }
+}
+
+
+if (0) {
 var defdot = { symbol: 'circle', radius: 0.1 };
 var defcircle = { symbol: 'circle', radius: 2.4 };
 var defdiamond = { symbol: 'diamond', radius: 2.6 };
@@ -183,6 +260,7 @@ function viewDetailReport(reportNum) {
   var qString = buildQueryString();
   pageUrl += '&' + qString;
   openWindow(pageUrl, 775, 600);
+}
 }
 -->
 </script>

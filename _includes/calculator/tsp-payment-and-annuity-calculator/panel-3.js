@@ -7,10 +7,7 @@ This is the javascript specific to panel 2.
 <!--
 panelNames['{{ panelName}}'] = {{ panelID }};
 panelGood[{{ panelID }}] = function(forceValue) {
-  console.log(forceValue, accountAmountGood(forceValue), frequencyGood(forceValue), rateOfReturnGood(forceValue), amountToReceiveGood(forceValue));
-
-  return accountAmountGood(forceValue) & frequencyGood(forceValue)
-    & rateOfReturnGood(forceValue) & amountToReceiveGood(forceValue);
+  return birthMonthGood(forceValue) & checkAges(forceValue);
 };
 
 panelEnter[{{ panelID }}] = function(panel) {
@@ -21,111 +18,93 @@ panelExit[{{ panelID }}] = function(panel) {
     return true;
 }
 
-// my functions
-function accountAmountGood(submit) {
-  if ((!submit) && $('#accountAmount').val() === '') return true;
-  var val = parseInt($('#accountAmount').val()) || 0;
-  if (val > 0) { $('#accountAmount').val(val); }
+// my functionsr
+function ageNowGood(submit) {
+  if (!submit) {
+    if ($("#ageNow").val() == '') { return clearError('ageNow'); }
+  }
+  var ageNow = getPosInteger('ageNow', -1);
+  if (ageNow > 0) { $('#ageNow').val(ageNow); }
+  if (ageNow > 99) { $('#ageNow').val(99); }
 
-  if (val <= 0.0) {
-    return showError('accountAmount',
-                     "Enter the amount from your account that will be used for TSP installment payments.");
+  if (ageNow < 0) {
+    return showError('ageNow', "Your current age is required.");
   }
-  if (val < 200.0) {
-    return showError('accountAmount', "Enter a dollar amount that is at least $200.");
+  if (ageNow <= 17) {
+    return showError('ageNow', "Federal employees must be at least 18 years old.");
   }
-  if (val > 10000000.0) {
-    return showError('accountAmount', "Enter a dollar amount that is at most $10,000,000.");
+  $('#ageNowAYR').html(ageNow);
+  return clearError('ageNow');
+}
+function ageFromGood(submit) {
+  if (!submit) {
+    if ($("#ageFrom").val() == '') { return clearError('ageFrom'); }
+  }
+  var ageFrom = getPosInteger('ageFrom', -1);
+  if (ageFrom > 0) { $('#ageFrom').val(ageFrom); }
+  if (ageFrom > 99) { $('#ageFrom').val(99); }
+  var ageNow = getPosInteger('ageNow', -1);
+
+  if (ageFrom < 0) {
+    return showError('ageFrom', "Age that you want to start receiving monthly income from the TSP is required.");
+  }
+  if (ageFrom <= 17) {
+    return showError('ageFrom', "Federal employees must be at least 18 years old.");
+  }
+  if (ageNow >= 0) {
+    if (ageFrom < ageNow) {
+      return showError('ageFrom', "The age you start receiving income should be in the future.");
+    }
   }
 
-  $('#account-amount').html(CurrencyFormatted(val, 'no_cent'));
-  return clearError('accountAmount');
+  $('#ageFromAYR').html(ageFrom);
+  return clearError('ageFrom');
+}
+function ageToLiveGood(submit) {
+  if (!submit) {
+    if ($("#ageToLive").val() == '') { return clearError('ageToLive'); }
+  }
+  var ageToLive = getPosInteger('ageToLive', -1);
+  if (ageToLive > 0) { $('#ageToLive').val(ageToLive); }
+  if (ageToLive > 115) { $('#ageToLive').val(115); }
+  var ageFrom = getPosInteger('ageFrom', -1);
+
+  if (ageToLive < 0) {
+    return showError('ageToLive', "Age that you want to start receiving monthly income from the TSP is required.");
+  }
+  if (ageToLive <= 17) {
+    return showError('ageToLive', "Federal employees must be at least 18 years old.");
+  }
+  if (ageFrom >= 0) {
+    if (ageToLive < ageFrom) {
+      return showError('ageToLive', "The age you start receiving income should be in the future.");
+    }
+  }
+
+  $('#ageToLiveAYR').html(ageToLive); 
+  return clearError('ageToLive');
 }
 
-function getFrequency() {
-  if ($('#Monthly').prop('checked')) { return 'Monthly'; }
-  if ($('#Quarterly').prop('checked')) { return 'Quarterly'; }
-  if ($('#Annually').prop('checked')) { return 'Annually'; }
-  // return 'Monthly';
-  return 'none';
+function checkAges(submit) { return ageToLiveGood(submit) & ageFromGood(submit) & ageNowGood(submit); }
+
+function getBirthMonthIdx(month) {
+  var months = ["undecimber","January","February","March","April","May","June","July",
+            "August","September","October","November","December"];
+  return months.indexOf(month.charAt(0).toUpperCase() + month.toLowerCase().slice(1));
 }
-
-var lastSubmit = false;
-function frequencyGood(submit) {
-  clearError('amountToReceive');
-  amountToReceiveGood(lastSubmit);
-  var choice = getFrequency();
-  $('#monthly-payment').html(choice);
-  if (choice == 'Monthly') {
-    $('#frequency').html('Monthly');
-    // $('#lblAYRfrequency').html($('#frequency').html());
-    return clearError('frequency');
-  }
-
-  if (choice == 'Quarterly') {
-    $('#frequency').html('Quarterly');
-    return clearError('frequency');
-  }
-
-  if (choice == 'Annually') {
-    $('#frequency').html('Annually');
-    return clearError('frequency');
-  }
-
-  if ((!submit)) {
-    return clearError('frequency');
-  }
-
-  return showError('frequency', "Choose installment period.");
+function getBirthMonth() {
+  var birthMonth = $('#birthMonth').val();
+  return birthMonth;
 }
+function birthMonthGood(submit) {
+  var birthMonth = getBirthMonth();
 
-function rateOfReturnGood(submit) {
-  if ((!submit) && $('#rateOfReturn').val() === '') return true;
-  if ($("#rateOfReturn").val() == '') {
-    return showError('rateOfReturn', "Please enter your expected rate of return.");
-  }
-  $('#rateOfReturn').val(parseFloat($('#rateOfReturn').val()).toFixed(2));
-  var val = parseFloat($('#rateOfReturn').val());
-  if (isNaN(val)) { $("input#rateOfReturn").val(0.0); val = 0.0; }
-
-  if ((val < 0.0) || (val > 99.0)) {
-    return showError('rateOfReturn', "Rate of Return should be between 0% and 99%.");
+  if (birthMonth == 'Choose month') {
+    if (submit) { return showError('birthMonth', "Birth month is required."); }
   }
 
-  $('#rate-of-return').html(CurrencyFormatted(val, 'cent'));
-  return clearError('rateOfReturn');
-}
-function amountToReceiveErrorString() {
-  var choice = getFrequency();
-  var val = 'period';
-  if (choice == 'Monthly') { val = 'month'; }
-  if (choice == 'Quarterly') { val = 'quarter'; }
-  if (choice == 'Annually') { val = 'year'; }
-  return "Enter the amount that you would like to receive each " + val + '.';
-}
-function amountToReceiveGood(submit) {
-  lastBlankOK = submit;
-  if ((!submit) && $('#amountToReceive').val() === '') return true;
-  var amountToReceive = parseFloat($('#amountToReceive').val()) || 0.0;
-  var accountAmount = parseFloat($('#accountAmount').val()) || 0.0;
-  if (amountToReceive > 0.0) {
-    amountToReceive = parseFloat(amountToReceive.toFixed(2));
-    $('#amountToReceive').val(amountToReceive);
-  }
-
-  if (amountToReceive <= 0.0) {
-    return showError('amountToReceive', amountToReceiveErrorString());
-  }
-  if (amountToReceive < 25.0) {
-    return showError('amountToReceive', "Enter a dollar amount that is at least $25.");
-  }
-  if (amountToReceive > accountAmount) {
-    return showError('amountToReceive',
-        "The amount that you want to receive each month is greater than the amount from your account that you want to use for TSP installment payments."
-        + "   Either increase the amount you want to use for TSP installment payments, or decrease your payment amount.");
-  }
-
-  return clearError('amountToReceive');
+  $('#birthMonthAYR').html(birthMonth);
+  return clearError('birthMonth');
 }
 -->
 </script>

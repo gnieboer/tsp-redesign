@@ -7,125 +7,78 @@ This is the javascript specific to panel 2.
 <!--
 panelNames['{{ panelName}}'] = {{ panelID }};
 panelGood[{{ panelID }}] = function(forceValue) {
-  console.log(forceValue, accountAmountGood(forceValue), frequencyGood(forceValue), rateOfReturnGood(forceValue), amountToReceiveGood(forceValue));
-
-  return accountAmountGood(forceValue) & frequencyGood(forceValue)
-    & rateOfReturnGood(forceValue) & amountToReceiveGood(forceValue);
+  return dependentAgeGood(forceValue) & dependentGood(forceValue) & haveDependentGood(forceValue);
 };
 
 panelEnter[{{ panelID }}] = function(panel) {
+  dependentAgeGood(false) & dependentGood(false) & haveDependentGood(false);
   return true;
 }
 panelExit[{{ panelID }}] = function(panel) {
-  // testPrimeSettingsGrowth();
     return true;
 }
 
 // my functions
-function accountAmountGood(submit) {
-  if ((!submit) && $('#accountAmount').val() === '') return true;
-  var val = parseInt($('#accountAmount').val()) || 0;
-  if (val > 0) { $('#accountAmount').val(val); }
+function getHaveDependent() {
+  if ($('#haveDependentYes').prop('checked')) { return 'Yes'; } 
+  if ($('#haveDependentNo').prop('checked')) { return 'No'; }
+  return '';
+}
+function haveDependentGood(submit) {
+  var haveDependent = getHaveDependent();
+  $('#haveDependentAYR').html(haveDependent);
 
-  if (val <= 0.0) {
-    return showError('accountAmount',
-                     "Enter the amount from your account that will be used for TSP installment payments.");
-  }
-  if (val < 200.0) {
-    return showError('accountAmount', "Enter a dollar amount that is at least $200.");
-  }
-  if (val > 10000000.0) {
-    return showError('accountAmount', "Enter a dollar amount that is at most $10,000,000.");
+  if (haveDependent == 'Yes') {
+    $('#has-a-dependent').removeClass('hide');
+    $('#dependentAYR-row').removeClass('hide');
+    $('#dependentAgeAYR-row').removeClass('hide');
+    return clearError('haveDependent');
   }
 
-  $('#account-amount').html(CurrencyFormatted(val, 'no_cent'));
-  return clearError('accountAmount');
+  $('#has-a-dependent').addClass('hide');
+  $('#dependentAYR-row').addClass('hide');
+  $('#dependentAgeAYR-row').addClass('hide');
+
+  if (haveDependent == 'No') { return clearError('haveDependent'); }
+
+  if (submit) { return showError('haveDependent', "Dependent information is required."); }
+  return clearError('haveDependent');
 }
 
-function getFrequency() {
-  if ($('#Monthly').prop('checked')) { return 'Monthly'; }
-  if ($('#Quarterly').prop('checked')) { return 'Quarterly'; }
-  if ($('#Annually').prop('checked')) { return 'Annually'; }
-  // return 'Monthly';
-  return 'none';
+function getDependent() {
+  if ($('#dependentSpouse').prop('checked')) { return 'Spouse'; }
+  if ($('#dependentOther').prop('checked')) { return 'Other'; }
+  return '';
+}
+function dependentGood(submit) {
+  var dependent = getDependent();
+  $('#dependentAYR').html(dependent);
+  if (getHaveDependent() != 'Yes') { return clearError('dependent'); }
+
+  if (dependent == '') { if (submit) { return showError('dependent', "Dependent information is required."); } }
+
+  return clearError('dependent');
 }
 
-var lastSubmit = false;
-function frequencyGood(submit) {
-  clearError('amountToReceive');
-  amountToReceiveGood(lastSubmit);
-  var choice = getFrequency();
-  $('#monthly-payment').html(choice);
-  if (choice == 'Monthly') {
-    $('#frequency').html('Monthly');
-    // $('#lblAYRfrequency').html($('#frequency').html());
-    return clearError('frequency');
+function dependentAgeGood(submit) {
+  if (getHaveDependent() != 'Yes') { return clearError('dependent'); }
+  if (!submit) {
+    if ($("#dependentAge").val() == '') { return clearError('dependentAge'); }
+  }
+  var dependentAge = getPosInteger('dependentAge', -1);
+  if (dependentAge > 99) { dependentAge = 99; }
+  if (dependentAge > 0) {
+    $('#dependentAge').val(dependentAge);
+    $('#dependentAgeAYR').html(dependentAge);
   }
 
-  if (choice == 'Quarterly') {
-    $('#frequency').html('Quarterly');
-    return clearError('frequency');
+  if (dependentAge < 0) {
+    return showError('dependentAge', "Your joint annuitant's current age is required.");
   }
-
-  if (choice == 'Annually') {
-    $('#frequency').html('Annually');
-    return clearError('frequency');
-  }
-
-  if ((!submit)) {
-    return clearError('frequency');
-  }
-
-  return showError('frequency', "Choose installment period.");
+  //$('#lblAYRgrossPay').html(CurrencyFormatted(grossPay));
+  return clearError('dependentAge');
 }
 
-function rateOfReturnGood(submit) {
-  if ((!submit) && $('#rateOfReturn').val() === '') return true;
-  if ($("#rateOfReturn").val() == '') {
-    return showError('rateOfReturn', "Please enter your expected rate of return.");
-  }
-  $('#rateOfReturn').val(parseFloat($('#rateOfReturn').val()).toFixed(2));
-  var val = parseFloat($('#rateOfReturn').val());
-  if (isNaN(val)) { $("input#rateOfReturn").val(0.0); val = 0.0; }
 
-  if ((val < 0.0) || (val > 99.0)) {
-    return showError('rateOfReturn', "Rate of Return should be between 0% and 99%.");
-  }
-
-  $('#rate-of-return').html(CurrencyFormatted(val, 'cent'));
-  return clearError('rateOfReturn');
-}
-function amountToReceiveErrorString() {
-  var choice = getFrequency();
-  var val = 'period';
-  if (choice == 'Monthly') { val = 'month'; }
-  if (choice == 'Quarterly') { val = 'quarter'; }
-  if (choice == 'Annually') { val = 'year'; }
-  return "Enter the amount that you would like to receive each " + val + '.';
-}
-function amountToReceiveGood(submit) {
-  lastBlankOK = submit;
-  if ((!submit) && $('#amountToReceive').val() === '') return true;
-  var amountToReceive = parseFloat($('#amountToReceive').val()) || 0.0;
-  var accountAmount = parseFloat($('#accountAmount').val()) || 0.0;
-  if (amountToReceive > 0.0) {
-    amountToReceive = parseFloat(amountToReceive.toFixed(2));
-    $('#amountToReceive').val(amountToReceive);
-  }
-
-  if (amountToReceive <= 0.0) {
-    return showError('amountToReceive', amountToReceiveErrorString());
-  }
-  if (amountToReceive < 25.0) {
-    return showError('amountToReceive', "Enter a dollar amount that is at least $25.");
-  }
-  if (amountToReceive > accountAmount) {
-    return showError('amountToReceive',
-        "The amount that you want to receive each month is greater than the amount from your account that you want to use for TSP installment payments."
-        + "   Either increase the amount you want to use for TSP installment payments, or decrease your payment amount.");
-  }
-
-  return clearError('amountToReceive');
-}
 -->
 </script>
