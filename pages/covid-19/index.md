@@ -15,7 +15,7 @@ redirect_from:
 
 <h1><div class="nav-header">COVID-19</div>Latest information</h1>
 
-Updated **June 22, 2020**.
+Updated **July 10, 2020**.
 
 You can check this page for **up-to-date details about TSP operations and temporary changes** we’re making to support you during this time. The information we’re providing here is current but subject to change as we receive additional guidance and information.
 
@@ -39,7 +39,7 @@ You still have the option to mail or fax your completed form and supporting docu
 The list of forms you can submit online may change at any time, so be sure to check the list in My Account before you begin preparing your file.
 
 ## CARES Act temporary loan and withdrawal options
-The CARES Act allows us to offer temporary loan and withdrawal options to TSP participants affected by COVID-19. The loan options are now available. Favorable tax treatment of withdrawals you’re currently eligible for are also in effect. The TSP CARES Act withdrawal option will be available by late July 2020. **Both the loan and withdrawal options are available to you only if you can certify that you meet certain CARES Act criteria and TSP eligibility rules.**
+The temporary loan and withdrawal options for TSP participants affected by COVID-19 are now available. These options are authorized by the Coronavirus Aid, Relief, and Economic Security (CARES) Act. This law also provides favorable tax treatment for other types of withdrawals you’re currently eligible for. **Both the loan and withdrawal options are available to you only if you can certify that you meet certain CARES Act criteria and TSP eligibility rules**.
 
 - [Find out more about these temporary loan options]({{ site.baseurl }}/covid-19/loans/)
 - [Find out more about temporary withdrawal options]({{ site.baseurl }}/covid-19/withdrawals/)
@@ -48,7 +48,7 @@ The CARES Act allows us to offer temporary loan and withdrawal options to TSP pa
 Because of public health precautions being taken at our processing facilities, payments made by check will most likely take longer to appear in your TSP account. These include payments to make up missed loan payments, submit additional loan payments, or to roll over payments from IRAs or other employer plans. We appreciate your patience.
 
 ## Rollover period extended to July 15
-If you received any withdrawal between February 1 and May 15 that is eligible for rollover, then the IRS has extended your 60-day rollover deadline to July 15th. If you received an RMD (or an installment payment that included an RMD) between February 1 and May 15, then you can roll those amounts over—to an IRA or eligible employer plan or back into your TSP account—provided that you do so by July 15th. Use Form TSP‑60. **You are eligible for this extended rollover period whether or not you have been affected by COVID-19.**
+If you received any withdrawal between February 1 and May 15 that is eligible for rollover, then the IRS has extended your 60-day rollover deadline to July 15th Use Form TSP 60. **You are eligible for this extended rollover period whether or not you have been affected by COVID-19**. (See [RMD changes]({{ site.baseurl }}/covid-19/rmd-changes/) for information about the rollover deadline for required minimum distributions you received before 2020 RMDs were suspended.)
 
 ## Temporary waiver of notary requirement
 We will temporarily accept and process certain TSP withdrawal and loan forms without requiring notarized signatures in order to support participants in physical distancing measures during the COVID-19 pandemic. All signatures must be handwritten and submitted as directed in the form instructions, but you may leave the notary section blank.

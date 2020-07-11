@@ -277,7 +277,7 @@ Individual funds
 </button>
 <div id="a2" class="usa-accordion-content" markdown="1">
 
-We have a selection of [individual funds]({{ site.baseurl }}/fund-individual/) that offer broad market diversification. You can choose to have your retirement dollars invested in everything from a short-term U.S. Treasury security to index funds made of domestic and international stocks.
+We have a selection of [individual funds]({{ site.baseurl }}/funds-individual/) that offer broad market diversification. You can choose to have your retirement dollars invested in everything from a short-term U.S. Treasury security to index funds made of domestic and international stocks.
 
 <ul class="usa-accordion lifecycle-funds">
 <li>

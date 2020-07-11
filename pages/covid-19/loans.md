@@ -15,6 +15,8 @@ redirect_from:
 
 <h1><div class="nav-header">COVID-19</div>Loans</h1>
 
+The information we’re providing here is current but subject to change as we receive additional guidance and information.
+
 ## Loan options for participants affected by COVID-19
 Temporary loan options made possible by the CARES Act for TSP participants affected by COVID-19 are now available. Read below for more information.
 
