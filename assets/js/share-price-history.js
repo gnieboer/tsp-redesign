@@ -84,7 +84,11 @@ function buildSideScrollTableSH(chartName, data) {
     var row = sideScrollTH('', '', '', col[0], false);  // column 0 is date
     for (i = 1; i < col.length; i++) {
       colClass = 'col'+i;
-      row = row + sideScrollWrapper('', 'td', '', colClass, fundYvalueFormat(parseFloat(col[i].trim())), false);
+      if (col[i].trim() == '') {
+        row = row + sideScrollWrapper('', 'td', '', 'empty-table-cell ' + colClass, '', false);
+      } else {
+        row = row + sideScrollWrapper('', 'td', '', colClass, fundYvalueFormat(parseFloat(col[i].trim())), false);
+      }
     }
     bodyHTML += sideScrollWrapper('    ', 'tr', '', '', row, true);
   }
