@@ -52,36 +52,20 @@ section.charts {
     }
   }
 }
-// FULL WIDTH TABLES (applied to parent container)
-.full-width {
-  width: 98vw;
-  position: relative;
-  left: 60%;
-  margin-left: -50vw;
-  margin-right: -50vw;
-  &.share-price-table {
-    left: 80%;
-  }
-}
 
 section {
 
-  .table-view { // RIGHT-ALIGNS TABLE EXPAND/COLLAPSE BUTTON
+  .table-view { // LEFT-ALIGNS Scroll left / Scroll right buttons
     padding: 0;
     margin: 0;
-    text-align: right;
+    // text-align: left;
     max-width: 100%;
   }
 
-  &.share-price-table { // Width for "sticky" left-column header
-    .column-width {
-      width: 16rem;
-    }
-  }
-
+  &.share-price-table,
   &.rates-of-return-table { // Width for "sticky" left-column header
     .column-width {
-      width: 16rem;
+      width: 9em;
     }
   }
 
@@ -94,6 +78,7 @@ section {
   z-index: 1;
   margin: 0 auto;
   overflow: auto;
+  scroll-behavior: smooth;
 
   .empty-table-cell {
     background-color: $color-gray-lightest;
@@ -101,8 +86,8 @@ section {
 
   table {
   table-layout: fixed;
-  width: 100%;
-  min-width: 1280px;
+  width: auto;
+  // min-width: 1280px;
   margin: auto;
   border-collapse: separate;
   border-spacing: 0;
@@ -114,6 +99,9 @@ section {
       border-bottom: 1px solid #ddd;
       border-left: none;
       vertical-align: top;
+      padding: 1rem 3rem;
+      // width: 16rem;
+      // max-width: 2rem;
     }
     td {
       text-align: right;
@@ -122,11 +110,14 @@ section {
 
     th {
       background: $color-gray-lightest;
+      white-space: nowrap;
+
       &:first-child {
       position: -webkit-sticky;
       position: sticky;
       left: 0;
       z-index: 2;
+      padding: 1rem 1.5rem;
       }
     }
     thead {
@@ -213,10 +204,6 @@ section {
    [data-toggle="toggle"] {
      display: none;
    }
-
-   // .column-width {
-   //   width: 14rem;
-   // }
   } // end table
 } // end div.table-side-scroll
 

@@ -1,20 +1,20 @@
-
 form.share-price-date-range {
   label {
     margin-top: 0;
   }
+
   input.date-range {
     width: 94%;
   }
 }
-
 // "STICKY" LEFT-COLUMN HEADER: Share price history
-
 .share-price-history-controls {
   display: flex;
   align-items: flex-end;
+
   .usa-width-one-half {
     border: 1px solid blue;
+
     &.expand {
       display: block;
       border: 1px solid red;

@@ -286,17 +286,17 @@ function fundHighchart(chartName, csvData, title, indexFundsFlag) {
 
 
 // expand/collapse button for side scroll tables
-function toggleTableWidth(chartName) {
-  if ($('#'+chartName+'-section').hasClass('full-width')) {
-    $('#'+chartName+'-section').removeClass('full-width');
-    document.getElementById(chartName+'-button').innerHTML = "Expand table <i class='fal fa-expand-wide'></i>";
-  } else {
-    $('#'+chartName+'-section').addClass('full-width');
-    document.getElementById(chartName+'-button').innerHTML = "Collapse table <i class='fal fa-compress-wide'></i>";
-  }
-  // window.redraw();
-  return false;
-}
+// function toggleTableWidth(chartName) {
+//   if ($('#'+chartName+'-section').hasClass('full-width')) {
+//     $('#'+chartName+'-section').removeClass('full-width');
+//     document.getElementById(chartName+'-button').innerHTML = "Expand table <i class='fal fa-expand-wide'></i>";
+//   } else {
+//     $('#'+chartName+'-section').addClass('full-width');
+//     document.getElementById(chartName+'-button').innerHTML = "Collapse table <i class='fal fa-compress-wide'></i>";
+//   }
+//   // window.redraw();
+//   return false;
+// }
 
 // table-side-scroll building function
 function sideScrollTable(prefix, xclass, id, tableContent, nl, colgroup) {
@@ -343,4 +343,52 @@ function sideScrollWrapper(prefix, tag, id, xclass, content, nl) {
   return    prefix + '<'+tag+myID+myClass+'>' + myNL
           + content
           + prefix + '</'+tag+'>' + myNL;
+}
+
+
+
+function sideScrollControls(chartName) {
+  // Side scroll controls for table
+  var container = document.getElementById(chartName+"-table");
+  var rightBtn = document.querySelector("#slideRight");
+  var leftBtn = document.querySelector("#slideLeft");
+
+  rightBtn.addEventListener("click", function (event) {
+    container.scrollLeft += 150;
+    event.preventDefault();
+  });
+
+  leftBtn.addEventListener("click", function (event) {
+    container.scrollLeft -= 150;
+    event.preventDefault();
+  });
+
+
+  //check to determine if an overflow is happening
+  function isOverflowing(element) {
+    return (element.scrollWidth > element.offsetWidth);
+  }
+
+  // If no overflow, disable scroll buttons
+  function disableButtons(element) {
+    if (isOverflowing(element)) {
+        rightBtn.disabled = false;
+        leftBtn.disabled = false;
+    }
+    else {
+        rightBtn.disabled = true;
+        leftBtn.disabled = true;
+    }
+  }
+
+  // Recheck overflow on the following events
+  window.addEventListener('load', function() {
+    disableButtons(container);
+  });
+  window.addEventListener('resize', function() {
+    disableButtons(container);
+  });
+  window.addEventListener('click', function() {
+    disableButtons(container);
+  });
 }
