@@ -2,6 +2,8 @@
 layout: page
 title: Contact
 permalink: /contact/
+scripts:
+  - /assets/js/web-comments.js
 redirect_from:
   - /ParticipantSupport/Content/contact/
 ---
@@ -54,10 +56,10 @@ Birmingham, AL 35238
   <!-- WEB COMMENTS -->
     <div class="usa-width-one-half" markdown="1">
 ![alt text]({{ site.baseurl }}/assets/img/icons/message-square.svg)
-### Web comments    
-Submit comments about this website (1,000 characters maximum). We do not respond to comments submitted through this page.
+### Web feeback   
+Let us know how well tsp.gov meets your needs. We do not respond to feedback submitted through this page.
 **Do not leave personally identifiable information.**
-[Leave a comment](#)
+[Leave feedback](#){:#leave-feedback}{:.nobr}
 
 </div>
     <!-- MAIL & FAX -->
