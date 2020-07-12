@@ -81,7 +81,7 @@ function buildSideScrollTableSH(chartName, data) {
     if (lines[j].trim() == '') { continue; }
     row = '';
     var col = lines[j].split(",");
-    var row = sideScrollTH('', '', '', col[0], false);  // column 0 is date
+    var row = sideScrollTH('', '', '', col[0].replace('.',','), false);  // column 0 is date
     for (i = 1; i < col.length; i++) {
       colClass = 'col'+i;
       if (col[i].trim() == '') {
