@@ -1,6 +1,6 @@
 ---
 title: Share price history
-layout: page
+layout: page-full-width
 permalink: /fund-performance/share-price-history/
 #sidenav: fund-options
 scripts:
@@ -15,13 +15,14 @@ scripts:
   - /assets/js/side-scroll-funds.js
   - /assets/js/share-price-history.js
 document-ready:
-  - getSharePricesRaw('dynamic-share-price');
+  - getSharePricesRaw('dynamic-share-price');  
+  - sideScrollControls('dynamic-share-price');
 redirect_from:
   - /InvestmentFunds/FundPerformance/
   - /prices
 ---
 {% assign chartName = 'dynamic-share-price' %}
-
+<div class="usa-grid centered" markdown="1">
 # Share price history
 
 To understand how the TSP calculates rates of return for any given period of time and determines compound annual returns, read the Fact Sheet [_Calculating Periodic Returns and Compound Annual Returns_]({{ site.baseurl }}/publications/oc05-16w.pdf).
@@ -41,6 +42,7 @@ To understand how the TSP calculates rates of return for any given period of tim
 </fieldset>
 </form>
 </section>
+</div> <!-- end div.usa-grid centered -->
 
 <div id="{{chartName}}-div" class="usa-grid-full usa-layout-docs-main_content">
 <div class="usa-width-one-whole" markdown="1">
@@ -51,12 +53,17 @@ To understand how the TSP calculates rates of return for any given period of tim
         <div id="{{ chartName }}" class="usa-accordion-content hc-share-price-chart" aria-hidden="false"></div>
       </li>
     </ul>
+
     <div class="table-view">
-      <button id="{{chartName}}-button" class="usa-button-secondary"
+      <button id="slideRight" class="slide-right" type="button" class="usa-button-secondary"><i class="fal fa-arrow-to-left"></i> Scroll left</button>
+      <button id="slideLeft" class="slide-left" type="button" class="usa-button-secondary">Scroll right <i class="fal fa-arrow-to-right"></i></button>
+    </div><!-- END div.table-view -->
+
+      <!-- <button id="{{chartName}}-button" class="usa-button-secondary"
         onClick="toggleTableWidth('{{chartName}}');">
-        Expand table <i class="fal fa-expand-wide"></i></button>
+        Expand table <i class="fal fa-expand-wide"></i></button> -->
+    <div id="{{chartName}}-table" class="table-side-scroll">
     </div>
-    <div id="{{chartName}}-table" class="table-side-scroll"></div>
   </section>
 
 </div> <!-- END div.usa-width-one-whole -->

@@ -1,0 +1,52 @@
+// CSS for _layouts/page-full-width.html
+// Used by RoR and Share price history
+
+main {
+  &.usa-grid {
+    &.full-width {
+      max-width: 100%;
+      width: 100%;
+      text-align: center;
+
+      div.usa-layout-docs-main_content {
+        max-width: inherit;
+        width: inherit;
+
+        div.usa-grid {
+          &.centered {
+            display: inline-block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 1040px;
+            text-align: left;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: $desktop-screen) {
+  main {
+    &.usa-grid {
+      &.full-width {
+        max-width: 100%;
+        width: 100%;
+        text-align: center;
+        border: 1px solid red;
+
+        div.usa-layout-docs-main_content {
+
+          div.usa-grid {
+            &.centered {
+              display: block;
+              width: auto;
+              border: 1px solid blue;
+              text-align: left;
+            }
+          }
+        }
+      }
+    }
+  }
+}
