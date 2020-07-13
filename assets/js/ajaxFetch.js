@@ -13,6 +13,7 @@ var siteName = "https://secure.tsp.gov/components/CORS/";
 var singleFundData = function(fund) {
 
   var scriptName = 'getFundAverageAnnualReturns.html?fund=' + fund;
+  console.log(siteName + '/' + scriptName);
   var serverCall = $.get(siteName + '/' + scriptName);
     serverCall.done(
       function (data) {
@@ -22,12 +23,12 @@ var singleFundData = function(fund) {
           console.log(values);
           if (values.length == 7) {
             $('#aar_caption').html("Average annual returns (as of December "+rc[1]+")");
-            $('#aar_ytd').html(values[1]+'%');
-            $('#aar_1yr').html(values[2]+'%');
-            $('#aar_3yr').html(values[3]+'%');
-            $('#aar_5yr').html(values[4]+'%');
-            $('#aar_10yr').html(values[5]+'%');
-            // $('#aar_incep').html(values[6]);
+            if (values[1] != '-') { $('#aar_ytd').html(values[1]+'%'); }
+            if (values[2] != '-') { $('#aar_1yr').html(values[2]+'%'); }
+            if (values[3] != '-') { $('#aar_3yr').html(values[3]+'%'); }
+            if (values[4] != '-') { $('#aar_5yr').html(values[4]+'%'); }
+            if (values[5] != '-') { $('#aar_10yr').html(values[5]+'%'); }
+            // $('#aar_incep').html(values[6]); }
           }
           if (values.length == 2) {
             console.log(values[0]);
