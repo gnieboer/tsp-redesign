@@ -6,8 +6,8 @@ sidenav: agency-service-reps
 scripts:
 permalink: /agency-service-reps/training/
 redirect_from:
-  - /webinars
   - /representative/Content/trainingInfo.html
+  - /webinars/
 ---
 
 # Training resources
