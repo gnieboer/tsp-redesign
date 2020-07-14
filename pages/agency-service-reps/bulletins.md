@@ -10,6 +10,9 @@ scripts:
   - /assets/js/search.js
   - /assets/js/bulletins.js
 permalink: /agency-service-reps/bulletins/
+redirect_from:
+  - /representative/Content/
+  - /representative/Content/bulletinsService.html
 document-ready:
   - setTopic('select-bulletins-topic');
 ---

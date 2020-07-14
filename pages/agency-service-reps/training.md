@@ -7,6 +7,7 @@ scripts:
 permalink: /agency-service-reps/training/
 redirect_from:
   - /webinars
+  - /representative/Content/trainingInfo.html
 ---
 
 # Training resources
@@ -26,6 +27,7 @@ _Unfortunately, we are unable to accommodate requests for in-person events at th
 - **All scheduled start times are listed in Eastern Time.**
 - All dates and topics are subject to change and/or cancellation. Additional dates and topics may be added.
 
+<span id="tspWebinars"></span>
 <ul class="usa-accordion">
   <li>
     <button
