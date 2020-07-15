@@ -125,11 +125,11 @@ function fundYvalueFormat(value) {
 
 function fundTooltip(me, chartName) {
   // console.log(chartName)
-  // console.log(me);
+  console.log(me);
   var rc = fundTooltipBody(me);
   var dateInt = me.x;
   if (dateInt <= 999999999) { dateInt *= 1000; }
-  rc = tooltipHeader(Highcharts.dateFormat('%b %d, %Y', me.x))+rc;
+  rc = tooltipHeader(Highcharts.dateFormat('%b %d, %Y', dateInt))+rc;
   rc = tooltipDiv(chartName+'-tooltip', rc);
   // console.log(rc);
   return rc;
