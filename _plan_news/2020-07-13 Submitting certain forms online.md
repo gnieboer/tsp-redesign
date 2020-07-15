@@ -1,6 +1,6 @@
 ---
 title: Submitting certain forms online
-permalink: /plan-news/more-lifecycle-funds-now-available/
+permalink: /plan-news/submitting-certain-forms-online/
 latest: y
 ---
 
