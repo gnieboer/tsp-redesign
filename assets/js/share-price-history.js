@@ -122,7 +122,9 @@ var doAjaxRetrieveRaw = function(divName, url) {
 function fundYvalueFormat(value) {
   return '$' + value.toFixed(4);
 }
-
+function fundYaxisFormat(value) {
+  return '$' + value;
+}
 function fundTooltip(me, chartName) {
   // console.log(chartName)
   // console.log(me);
