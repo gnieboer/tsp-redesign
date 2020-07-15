@@ -133,8 +133,10 @@ function fundTooltip(me, chartName) {
   if (parseInt(dateInt) > 1000) {
     // key is a unix timestamp
     if (dateInt <= 999999999) { dateInt *= 1000; }
+    dateInt = Highcharts.dateFormat('%b %d, %Y', dateInt);
   }  // else assume its the date format we want
-  rc = tooltipHeader(Highcharts.dateFormat('%b %d, %Y', dateInt))+rc;
+  console.log('key after is ', dateInt);
+  rc = tooltipHeader(dateInt)+rc;
   rc = tooltipDiv(chartName+'-tooltip', rc);
   // console.log(rc);
   return rc;
