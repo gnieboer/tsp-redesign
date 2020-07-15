@@ -26,6 +26,7 @@ avg_annual_returns:
     five_yr: "-"
     ten_yr: "-"
     lifetime: "-"
+inception_date: 4/1/1987
 summary_update: 12/31/2019
 summary_details:
     assets: $243.8 billion
