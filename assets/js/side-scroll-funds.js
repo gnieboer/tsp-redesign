@@ -256,7 +256,7 @@ function fundHighchart(chartName, csvData, title, indexFundsFlag) {
         chartOptions: {
           legend: {
             align: 'right', verticalAlign: 'top',
-            layout: 'vertical', x: 0, y: 40
+            layout: 'vertical', x: 0, y: 20
           },
         }
       }]

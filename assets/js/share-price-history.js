@@ -120,14 +120,23 @@ var doAjaxRetrieveRaw = function(divName, url) {
 }
 
 function fundYvalueFormat(value) {
-  return value.toFixed(4);
+  return '$' + value.toFixed(4);
 }
-
+function fundYaxisFormat(value) {
+  return '$' + value;
+}
 function fundTooltip(me, chartName) {
   // console.log(chartName)
   // console.log(me);
   var rc = fundTooltipBody(me);
-  rc = tooltipHeader(Highcharts.dateFormat('%b %d, %Y', me.x))+rc;
+  // var dateInt = me.x;
+  var dateInt = me.points[0].key;
+  if (parseInt(dateInt) > 1000) {
+    // key is a unix timestamp
+    if (dateInt <= 999999999) { dateInt *= 1000; }
+    dateInt = Highcharts.dateFormat('%b %d, %Y', dateInt);
+  }  // else assume its the date format we want
+  rc = tooltipHeader(dateInt)+rc;
   rc = tooltipDiv(chartName+'-tooltip', rc);
   // console.log(rc);
   return rc;
