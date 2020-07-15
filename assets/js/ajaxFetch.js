@@ -334,7 +334,7 @@ function glossaryTermString(fund, glossaryFlag) {
   if (fund == 'TBILL') { term = '3-Month T-Bill'; } // G
   if (fund == 'LBA') { term = 'U.S. Aggregate Index'; } // F
   if (fund == 'SP500') { term = 'S&P 500'; } // C
-  if (fund == 'W4500') { term = 'Dow Jones US Comp TM'; } // S
+  if (fund == 'W4500') { term = 'Dow Jones'; } // S
   if (fund == 'EAFE') { term = 'EAFE'; } // I
   if (glossaryFlag == 0) { return term; }
   return term;  // disable this for now

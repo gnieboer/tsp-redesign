@@ -127,7 +127,7 @@ function fundTooltip(me, chartName) {
   // console.log(chartName)
   console.log(me);
   var rc = fundTooltipBody(me);
-  var dateInt = me.x;
+  // var dateInt = me.x;
   var dateInt = me.points[0].key;
   console.log('key is ', dateInt);
   if (parseInt(dateInt) > 1000) {
