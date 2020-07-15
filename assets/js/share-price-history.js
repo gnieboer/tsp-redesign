@@ -125,17 +125,15 @@ function fundYvalueFormat(value) {
 
 function fundTooltip(me, chartName) {
   // console.log(chartName)
-  console.log(me);
+  // console.log(me);
   var rc = fundTooltipBody(me);
   // var dateInt = me.x;
   var dateInt = me.points[0].key;
-  console.log('key is ', dateInt);
   if (parseInt(dateInt) > 1000) {
     // key is a unix timestamp
     if (dateInt <= 999999999) { dateInt *= 1000; }
     dateInt = Highcharts.dateFormat('%b %d, %Y', dateInt);
   }  // else assume its the date format we want
-  console.log('key after is ', dateInt);
   rc = tooltipHeader(dateInt)+rc;
   rc = tooltipDiv(chartName+'-tooltip', rc);
   // console.log(rc);
